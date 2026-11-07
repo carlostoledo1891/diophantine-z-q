@@ -29,10 +29,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import check_lean  # noqa: E402  (sha, code_only and the paths of the snapshot check)
 
 ROOT, PROJECT = check_lean.ROOT, check_lean.PROJECT
-CONTRIB = ['EllipticModel']                 # library roots: R.lean and R/**/*.lean
-CHECKS = ['Checks/ContribAxioms.lean']      # compiled last, against the fresh libraries
-EXTRA = {}                                  # module -> path compiled only for the checks
-SPANS = []                                  # (contributed file, frozen file): equal conclusions
+CONTRIB = ['EllipticModel', 'CondZQ']       # library roots: R.lean and R/**/*.lean
+CHECKS = ['Checks/ContribAxioms.lean',      # compiled last, against the fresh libraries
+          'Checks/ConditionalStatement.lean']
+EXTRA = {'Frozen.BoundedIntegerPolynomial': 'Frozen/BoundedIntegerPolynomial.lean'}  # only for the checks
+SPANS = [('CondZQ/Main.lean', 'Frozen/BoundedIntegerPolynomial.lean')]  # equal conclusions
 PIN_SOURCES = True                          # contributed sources must have the expected SHA-256
 EXPECTED = PROJECT / 'CONTRIB_EXPECTED.json'
 FROZEN = 'Frozen/BoundedIntegerPolynomial.lean'

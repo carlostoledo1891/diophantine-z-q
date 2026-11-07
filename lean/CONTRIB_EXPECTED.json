@@ -1,21 +1,58 @@
 {
   "contributed_modules": [
+    "CondZQ",
+    "CondZQ.Assembly",
+    "CondZQ.Basic",
+    "CondZQ.Bridge",
+    "CondZQ.Cutoff",
+    "CondZQ.Hypotheses",
+    "CondZQ.Main",
+    "CondZQ.Model",
     "EllipticModel",
     "EllipticModel.Curve",
     "EllipticModel.InfiniteOrder"
   ],
-  "snapshot_modules_compiled": [],
-  "check_only_modules_compiled": [],
-  "check_only_sorry_warnings": {},
-  "conclusion_spans": {},
+  "snapshot_modules_compiled": [
+    "ZInQ.ExplicitCutoffBounds",
+    "ZInQ.HeightConstantAlgorithm",
+    "ZInQ.HeightConstantComparison",
+    "ZInQ.NumericalTowerBounds",
+    "ZInQ.PolePolynomial",
+    "ZInQ.PoleValuation",
+    "ZInQ.PrecisionAlgorithms",
+    "ZInQ.PrecisionArithmetic",
+    "ZInQ.RationalSeparation"
+  ],
+  "check_only_modules_compiled": [
+    "Frozen.BoundedIntegerPolynomial"
+  ],
+  "check_only_sorry_warnings": {
+    "Frozen.BoundedIntegerPolynomial": 1
+  },
+  "conclusion_spans": {
+    "CondZQ/Main.lean": {
+      "equals": "Frozen/BoundedIntegerPolynomial.lean",
+      "bytes": 355,
+      "sha256": "5406ba3e3d53ea3557819524f6150de802d9b8c8cf7c63c8cd38db805367935b"
+    }
+  },
   "source_sha256": {
-    "Checks/ContribAxioms.lean": "98a5d71ae7ba74dbe1b3724cec2dd5751806a83dfafe3bb4d49a854b6318f2d6",
+    "Checks/ConditionalStatement.lean": "373c936074a6eddbf83cdca4b9f7ec71e96e083b93d248b16e98382b12fcf7ee",
+    "Checks/ContribAxioms.lean": "786b8308aaff4067b4a824af49c842550815c244d7f1b9f3a2f2d9909ff4ad1a",
+    "CondZQ.lean": "24dbd857a0f9d50791f89a905b4e88823afdac8da9187e6aed92a6183b97d3d7",
+    "CondZQ/Assembly.lean": "3ce72259e8e7438aabb4ad335c02975cf88909bc422390292b586b8cf0b00a82",
+    "CondZQ/Basic.lean": "9e4efaf81df27f4708eb95350e0336e1f6b01837fb57e92e01eca89c57a980cc",
+    "CondZQ/Bridge.lean": "d4bcbcd1928a4ddd74f4136e65d98e666819df0e4446ae3b13e1d641bf079d7c",
+    "CondZQ/Cutoff.lean": "a5dacb9f989d748170d51fdb99da9d4f55b71a92e82a277c1248382bfdde996b",
+    "CondZQ/Hypotheses.lean": "aec39a26a981e88a0dfa5a8bb7ec93ad2373607cb6d8f3bb81ae89c019b53e0d",
+    "CondZQ/Main.lean": "d4c192662995dcc850a91eefef07ea8105452eaf576fa25fd8654c59a530b732",
+    "CondZQ/Model.lean": "d30f8af70d3500da6feeabe36fad19aa499fd4d1023a28d140f727b85253822a",
     "EllipticModel.lean": "6d708376476890ff8ef9744570a47520fb400fe3eb23bdabe1fa09fe9a3ffc40",
     "EllipticModel/Curve.lean": "4139d7f32b0d0947f32b9aee5b2e483705c537fe0bb78e3a29403b1f8987c703",
     "EllipticModel/InfiniteOrder.lean": "2bf0ea74a8248d59dfff28e86dbaf76a02e58e3d4889617d20326de42d91929a"
   },
-  "contributed_declarations_axiom_checked": 35,
-  "contributed_modules_audited": 3,
+  "contributed_declarations_axiom_checked": 241,
+  "contributed_modules_audited": 11,
   "named_theorem_axioms": {
     "EllipticModel.P0_addOrderOf": [
       "propext",
@@ -26,9 +63,21 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "CondZQ.exists_bounded_integer_polynomial_defining_integers_of_eight_hypotheses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CondZQChecks.statement_is_the_frozen_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
-  "statement_checks": [],
+  "statement_checks": [
+    "STATEMENT_CHECK_PASS theorem=CondZQ.exists_bounded_integer_polynomial_defining_integers_of_eight_hypotheses hypotheses=CondZQ.HypM,CondZQ.HypH,CondZQ.HypPC,CondZQ.HypC,CondZQ.HypLT,CondZQ.HypCC,CondZQ.HypH1,CondZQ.HypH2 conclusion=type_of% ZInQ.exists_bounded_integer_polynomial_defining_integers"
+  ],
   "allowed_axioms": [
     "propext",
     "Quot.sound",

@@ -1,6 +1,7 @@
 module
 
 import all EllipticModel
+import all CondZQ
 import Lean.Util.CollectAxioms
 
 /-!
@@ -14,7 +15,7 @@ Compiled by `scripts/check_lean_contrib.py --build`.
 open Lean Elab Command in
 run_cmd do
   let env ← getEnv
-  let roots : List Name := [`EllipticModel]
+  let roots : List Name := [`EllipticModel, `CondZQ]
   let mut checked : Nat := 0
   let mut modules : Array Name := #[]
   for idx in [:env.header.modules.size] do
@@ -33,3 +34,4 @@ run_cmd do
 
 #print axioms EllipticModel.P0_addOrderOf
 #print axioms EllipticModel.P0_not_isOfFinAddOrder
+#print axioms CondZQ.exists_bounded_integer_polynomial_defining_integers_of_eight_hypotheses
