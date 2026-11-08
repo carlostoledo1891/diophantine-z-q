@@ -13,7 +13,7 @@ run_cmd do
   let mut modules := 0
   for idx in [:env.header.modules.size] do
     let modName := env.header.modules[idx]!.module
-    if `Frozen.isPrefixOf modName then
+    if Name.isPrefixOf `Frozen modName then
       throwError "Quarantined module imported: {modName}"
     if [`EllipticModel, `CondZQ, `ZInQ, `Examples].any (·.isPrefixOf modName) then
       modules := modules + 1

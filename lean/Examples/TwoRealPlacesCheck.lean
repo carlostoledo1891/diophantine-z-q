@@ -10,13 +10,15 @@ example : sigmaPlus (QuadraticAlgebra.omega : K0) = Real.sqrt 2 ∧
     sigmaMinus (QuadraticAlgebra.omega : K0) = -Real.sqrt 2 :=
   ⟨sigmaPlus_omega, sigmaMinus_omega⟩
 
-example : EPlus = { a₁ := 0, a₂ := 0, a₃ := 0,
-    a₄ := -((75 : ℝ) - 53 * Real.sqrt 2)^2, a₆ := 0 } := by
-  ext <;> simp [E, WeierstrassCurve.map, dco, pow_two]
+example : EPlus = { a₁ := 0, a₂ := 0, a₃ := 0, a₄ := -((75 : ℝ) - 53 * Real.sqrt 2)^2, a₆ := 0 } := by
+  ext <;> simp only [E, WeierstrassCurve.map, map_zero, map_neg, map_mul]
+  simp only [sigmaPlus_apply]
+  norm_num [dco, pow_two]
 
-example : EMinus = { a₁ := 0, a₂ := 0, a₃ := 0,
-    a₄ := -((75 : ℝ) + 53 * Real.sqrt 2)^2, a₆ := 0 } := by
-  ext <;> simp [E, WeierstrassCurve.map, dco, pow_two]
+example : EMinus = { a₁ := 0, a₂ := 0, a₃ := 0, a₄ := -((75 : ℝ) + 53 * Real.sqrt 2)^2, a₆ := 0 } := by
+  ext <;> simp only [E, WeierstrassCurve.map, map_zero, map_neg, map_mul]
+  simp only [sigmaMinus_apply]
+  norm_num [dco, pow_two]
 
 example (σ : K0 →ₐ[ℚ] ℝ) :
     pointMap σ P0 = .some (σ P0x) (σ P0y)
@@ -53,3 +55,11 @@ example (a j : ℤ) (ha : CondZQ.zcoord (a • P0) ≠ 0) :
       (realZ EPlus (diagonal (j • P0)).1 / realZ EPlus (diagonal (a • P0)).1 +
        realZ EMinus (diagonal (j • P0)).2 / realZ EMinus (diagonal (a • P0)).2) / 2 :=
   rval_recovery a j ha
+
+/-- Total division sends a zero ordinate to zero; it supplies no nonvanishing claim. -/
+example (x : K0) (h : E.toAffine.Nonsingular x 0) :
+    CondZQ.zcoord (.some x 0 h) = 0 ∧
+    realZ EPlus (pointMap sigmaPlus (.some x 0 h)) = 0 ∧
+    realZ EMinus (pointMap sigmaMinus (.some x 0 h)) = 0 := by
+  rw [realZ_pointMap, realZ_pointMap]
+  simp [CondZQ.zcoord]
