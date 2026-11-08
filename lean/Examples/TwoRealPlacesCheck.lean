@@ -6,49 +6,53 @@ import Examples.TwoRealPlaces
 
 open EllipticModel EllipticModel.TwoRealPlaces WeierstrassCurve
 
-example : sigmaPlus (QuadraticAlgebra.omega : K0) = Real.sqrt 2 ∧
+namespace EllipticModel.TwoRealPlaces.Tests
+
+theorem generator_images : sigmaPlus (QuadraticAlgebra.omega : K0) = Real.sqrt 2 ∧
     sigmaMinus (QuadraticAlgebra.omega : K0) = -Real.sqrt 2 :=
   ⟨sigmaPlus_omega, sigmaMinus_omega⟩
 
-example : EPlus = { a₁ := 0, a₂ := 0, a₃ := 0, a₄ := -((75 : ℝ) - 53 * Real.sqrt 2)^2, a₆ := 0 } := by
+theorem curvePlus_coefficients : EPlus = { a₁ := 0, a₂ := 0, a₃ := 0, a₄ := -((75 : ℝ) - 53 * Real.sqrt 2)^2, a₆ := 0 } := by
   ext <;> simp only [E, WeierstrassCurve.map, map_zero, map_neg, map_mul]
-  simp only [sigmaPlus_apply]
+  change -(sigmaPlus dco * sigmaPlus dco) = _
+  rw [sigmaPlus_apply]
+  norm_num [dco, pow_two, sub_eq_add_neg]
+
+theorem curveMinus_coefficients : EMinus = { a₁ := 0, a₂ := 0, a₃ := 0, a₄ := -((75 : ℝ) + 53 * Real.sqrt 2)^2, a₆ := 0 } := by
+  ext <;> simp only [E, WeierstrassCurve.map, map_zero, map_neg, map_mul]
+  change -(sigmaMinus dco * sigmaMinus dco) = _
+  rw [sigmaMinus_apply]
   norm_num [dco, pow_two]
 
-example : EMinus = { a₁ := 0, a₂ := 0, a₃ := 0, a₄ := -((75 : ℝ) + 53 * Real.sqrt 2)^2, a₆ := 0 } := by
-  ext <;> simp only [E, WeierstrassCurve.map, map_zero, map_neg, map_mul]
-  simp only [sigmaMinus_apply]
-  norm_num [dco, pow_two]
-
-example (σ : K0 →ₐ[ℚ] ℝ) :
+theorem P0_image (σ : K0 →ₐ[ℚ] ℝ) :
     pointMap σ P0 = .some (σ P0x) (σ P0y)
       ((E.toAffine.map_nonsingular σ.injective P0x P0y).mpr P0_nonsingular) :=
   pointMap_some σ P0x P0y P0_nonsingular
 
-example (P : Pt) (m : ℤ) : diagonal (m • P) = m • diagonal P :=
+theorem signed_multiples (P : Pt) (m : ℤ) : diagonal (m • P) = m • diagonal P :=
   diagonal_zsmul m P
 
-example (m : ℤ) : diagonal (m • P0) =
+theorem signed_P0_multiples (m : ℤ) : diagonal (m • P0) =
     (m • pointMap sigmaPlus P0, m • pointMap sigmaMinus P0) := diagonal_P0_zsmul m
 
-example : diagonal 0 = (0, 0) ∧
+theorem identity_coordinates : diagonal 0 = (0, 0) ∧
     realZ EPlus (diagonal 0).1 = 0 ∧ realZ EMinus (diagonal 0).2 = 0 := by
   simp [realZ]
 
-example : Function.Injective diagonal := diagonal_injective
+theorem injectivity : Function.Injective diagonal := diagonal_injective
 
-example (P : Pt) :
+theorem total_coordinates (P : Pt) :
     (realZ EPlus (diagonal P).1, realZ EMinus (diagonal P).2) =
     (sigmaPlus (CondZQ.zcoord P), sigmaMinus (CondZQ.zcoord P)) := diagonal_zcoord P
 
-example (x y : K0) (h : E.toAffine.Nonsingular x y) (hy : y ≠ 0) :
+theorem guarded_coordinates (x y : K0) (h : E.toAffine.Nonsingular x y) (hy : y ≠ 0) :
     (sigmaPlus y ≠ 0 ∧
       realZ EPlus (pointMap sigmaPlus (.some x y h)) = -sigmaPlus x / sigmaPlus y) ∧
     (sigmaMinus y ≠ 0 ∧
       realZ EMinus (pointMap sigmaMinus (.some x y h)) = -sigmaMinus x / sigmaMinus y) :=
   ⟨guarded_some sigmaPlus x y h hy, guarded_some sigmaMinus x y h hy⟩
 
-example (a j : ℤ) (ha : CondZQ.zcoord (a • P0) ≠ 0) :
+theorem quotient_coordinates (a j : ℤ) (ha : CondZQ.zcoord (a • P0) ≠ 0) :
     realZ EPlus (diagonal (a • P0)).1 ≠ 0 ∧
     realZ EMinus (diagonal (a • P0)).2 ≠ 0 ∧
     (CondZQ.rval a j : ℝ) =
@@ -57,9 +61,11 @@ example (a j : ℤ) (ha : CondZQ.zcoord (a • P0) ≠ 0) :
   rval_recovery a j ha
 
 /-- Total division sends a zero ordinate to zero; it supplies no nonvanishing claim. -/
-example (x : K0) (h : E.toAffine.Nonsingular x 0) :
+theorem zero_ordinate_totalized (x : K0) (h : E.toAffine.Nonsingular x 0) :
     CondZQ.zcoord (.some x 0 h) = 0 ∧
     realZ EPlus (pointMap sigmaPlus (.some x 0 h)) = 0 ∧
     realZ EMinus (pointMap sigmaMinus (.some x 0 h)) = 0 := by
   rw [realZ_pointMap, realZ_pointMap]
   simp [CondZQ.zcoord]
+
+end EllipticModel.TwoRealPlaces.Tests

@@ -1,7 +1,7 @@
 # The actual two-real-place algebraic bridge
 
 `Examples/TwoRealPlaces.lean` applies the pinned Mathlib APIs to PR6's actual
-`EllipticModel.K0`, `E`, `Pt`, `P0` and `CondZQ.Model.zcoord`. This is a library
+`EllipticModel.K0`, `E`, `Pt`, `P0` and `CondZQ.zcoord` from `CondZQ.Model`. This is a library
 application, with no new mathematical-content or open-problem claim.
 `Examples/TwoRealPlacesCheck.lean` consumes the interface, and
 `Checks/TwoRealPlacesAxioms.lean` audits both modules and their project imports.
