@@ -158,9 +158,10 @@ examples. No expected hash is refreshed.
 ## Scope and outstanding work
 
 This non-release application does not alter the manuscript, release profile,
-archived artifacts or existing audit acceptance. Independent review and upstream
-Protocol acceptance remain pending. Codex CLI authored the application and ran
-the scoped compiler and axiom checks; this is author verification.
+archived artifacts or existing audit acceptance. Codex CLI authored the
+application. Completed verification of the current consumer and the exhaustive
+axiom audit has not been established. Independent review and upstream Protocol
+acceptance remain pending.
 
 Real point topology, compact topological group instances, continuity of the
 identity extension of `z`, arbitrarily small `eps`, the derivative of signed
