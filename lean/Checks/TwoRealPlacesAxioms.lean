@@ -9,8 +9,8 @@ import Lean.Util.CollectAxioms
 open Lean Elab Command in
 run_cmd do
   let env ← getEnv
-  let mut checked := 0
-  let mut modules := 0
+  let mut checked : Nat := 0
+  let mut modules : Nat := 0
   for idx in [:env.header.modules.size] do
     let modName := env.header.modules[idx]!.module
     if Name.isPrefixOf `Frozen modName then
