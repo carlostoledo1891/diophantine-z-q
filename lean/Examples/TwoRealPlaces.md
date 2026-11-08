@@ -113,8 +113,16 @@ with the upstream default `-DwarningAsError=false`. Every new module uses
 warnings-as-errors. No linter is disabled and no accepted source is edited.
 The audit rejects any project declaration whose complete axiom closure contains
 anything beyond `propext`, `Quot.sound`, `Classical.choice`, and rejects any
-import of the quarantined `Frozen` target. It covers all declarations, including
-compiler-generated and test declarations, in the eleven project modules.
+import of the quarantined `Frozen` target. The audit directly uses `import all`
+for both example modules and all nine project suppliers listed above, asserts
+full private import visibility for each module, and enumerates its complete
+`constNames` inventory, including private, compiler-generated and test roots.
+It checks representative private helpers from all five suppliers with explicit
+private theorems. Per-module and total counts are computed dynamically;
+`private` uses `Lean.isPrivateName`, and `generated_internal` uses
+`Name.isInternalDetail` after removing the private prefix. These categories can
+overlap and do not restrict the audit: every enumerated declaration is checked.
+Each module's reported axioms are the union of its roots' transitive closures.
 
 From the repository root, the existing narrow source and historical audit checks
 are `python3 -B scripts/check_lean.py`,
