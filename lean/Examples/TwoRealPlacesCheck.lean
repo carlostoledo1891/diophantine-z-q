@@ -60,6 +60,19 @@ theorem quotient_coordinates (a j : ℤ) (ha : CondZQ.zcoord (a • P0) ≠ 0) :
        realZ EMinus (diagonal (j • P0)).2 / realZ EMinus (diagonal (a • P0)).2) / 2 :=
   rval_recovery a j ha
 
+/-- The nonzero-index application combines the strict epsilon and guarded quotient interfaces. -/
+theorem nonzero_index_bridge (a j : ℤ) (ha : a ≠ 0) :
+    CondZQ.zcoord (a • P0) ≠ 0 ∧
+    0 < CondZQ.eps a ∧
+    realZ EPlus (diagonal (a • P0)).1 ≠ 0 ∧
+    realZ EMinus (diagonal (a • P0)).2 ≠ 0 ∧
+    (CondZQ.rval a j : ℝ) =
+      (realZ EPlus (diagonal (j • P0)).1 / realZ EPlus (diagonal (a • P0)).1 +
+       realZ EMinus (diagonal (j • P0)).2 / realZ EMinus (diagonal (a • P0)).2) / 2 := by
+  have hz := zcoord_smul_P0_ne_zero a ha
+  have hrec := rval_recovery a j hz
+  exact ⟨hz, eps_pos_of_ne_zero_index a ha, hrec.1, hrec.2.1, hrec.2.2⟩
+
 /-- Total division sends a zero ordinate to zero; it supplies no nonvanishing claim. -/
 theorem zero_ordinate_totalized (x : K0) (h : E.toAffine.Nonsingular x 0) :
     CondZQ.zcoord (.some x 0 h) = 0 ∧

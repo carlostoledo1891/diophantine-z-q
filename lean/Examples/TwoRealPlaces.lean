@@ -1,6 +1,7 @@
 module
 
 public import CondZQ.Model
+public import EllipticModel.InfiniteOrder
 public import Mathlib.Analysis.Real.Sqrt
 public import Mathlib.Algebra.Group.Prod
 
@@ -101,6 +102,49 @@ theorem diagonal_zcoord (P : Pt) :
     (realZ EPlus (diagonal P).1, realZ EMinus (diagonal P).2) =
       (sigmaPlus (CondZQ.zcoord P), sigmaMinus (CondZQ.zcoord P)) := by
   exact Prod.ext (realZ_pointMap sigmaPlus P) (realZ_pointMap sigmaMinus P)
+
+/-- Every nonzero signed multiple of the actual generator has a nonzero coordinate. -/
+theorem zcoord_smul_P0_ne_zero (a : ℤ) (ha : a ≠ 0) :
+    CondZQ.zcoord (a • P0) ≠ 0 := by
+  have htwo : (2 : ℤ) • (a • P0) ≠ 0 := by
+    intro h
+    have hmul : (2 * a) • P0 = 0 := by simpa only [mul_zsmul] using h
+    have hd := addOrderOf_dvd_iff_zsmul_eq_zero.mpr hmul
+    rw [P0_addOrderOf] at hd
+    have hzero : (2 : ℤ) * a = 0 := by
+      simpa only [Nat.cast_zero, zero_dvd_iff] using hd
+    exact ha ((mul_eq_zero.mp hzero).resolve_left (by norm_num))
+  intro hz0
+  cases hp : a • P0 with
+  | zero => exact htwo (by rw [hp]; exact zsmul_zero _)
+  | some x y h =>
+      have hdiv : -x / y = 0 := by simpa only [hp, CondZQ.zcoord] using hz0
+      have hy : y = 0 := by
+        rcases div_eq_zero_iff.mp hdiv with hx | hy
+        · have hx0 : x = 0 := neg_eq_zero.mp hx
+          have heq := h.1
+          rw [Affine.equation_iff] at heq
+          have hy2 : y ^ 2 = 0 := by simpa [E, hx0] using heq
+          exact sq_eq_zero_iff.mp hy2
+        · exact hy
+      have hdouble := Affine.Point.add_self_of_Y_eq (h₁ := h)
+        (show y = E.toAffine.negY x y by simp [Affine.negY, E, hy])
+      apply htwo
+      rw [two_zsmul, hp]
+      exact hdouble
+
+/-- The epsilon guard is strict at every nonzero signed index. -/
+theorem eps_pos_of_ne_zero_index (l : ℤ) (hl : l ≠ 0) :
+    0 < CondZQ.eps l := by
+  unfold CondZQ.eps
+  have hz := zcoord_smul_P0_ne_zero l hl
+  by_cases hre : (CondZQ.zcoord (l • P0)).re = 0
+  · have him : (CondZQ.zcoord (l • P0)).im ≠ 0 := by
+      intro him
+      apply hz
+      exact QuadraticAlgebra.ext (by simpa using hre) (by simpa using him)
+    exact add_pos_of_nonneg_of_pos (abs_nonneg _) (abs_pos.mpr him)
+  · exact add_pos_of_pos_of_nonneg (abs_pos.mpr hre) (abs_nonneg _)
 
 /-- Recover the rational part of one element, before taking any quotient images. -/
 theorem rationalPart (w : K0) :

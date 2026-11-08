@@ -1,6 +1,7 @@
 module
 
 import all EllipticModel.Curve
+import all EllipticModel.InfiniteOrder
 import all ZInQ.PrecisionArithmetic
 import all ZInQ.PrecisionAlgorithms
 import all ZInQ.HeightConstantAlgorithm
@@ -61,8 +62,8 @@ run_cmd do
       `ZInQ.sub_int_eq_num_sub_mul_den_div] do
     unless privateNames.contains witness do
       throwError "Private supplier helper missing: {witness}"
-  unless modules == 11 do
-    throwError "Expected exactly 11 project modules, found {modules}"
+  unless modules == 12 do
+    throwError "Expected exactly 12 project modules, found {modules}"
   logInfo m!"TWO_REAL_PLACES_AXIOM_AUDIT_PASS declarations={checked} modules={modules} private={privateTotal} generated_internal={generatedTotal}"
 
 #print axioms EllipticModel.TwoRealPlaces.diagonal
@@ -71,3 +72,7 @@ run_cmd do
 #print axioms EllipticModel.TwoRealPlaces.diagonal_zcoord
 #print axioms EllipticModel.TwoRealPlaces.guarded_some
 #print axioms EllipticModel.TwoRealPlaces.rval_recovery
+
+#print axioms EllipticModel.TwoRealPlaces.zcoord_smul_P0_ne_zero
+#print axioms EllipticModel.TwoRealPlaces.eps_pos_of_ne_zero_index
+#print axioms EllipticModel.TwoRealPlaces.Tests.nonzero_index_bridge

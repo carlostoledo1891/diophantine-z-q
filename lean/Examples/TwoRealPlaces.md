@@ -58,7 +58,26 @@ For the **same** element `w : K0`, `rationalPart` gives
 uses exactly `w = zcoord (j • P0) / zcoord (a • P0)`, with signed `a,j : ℤ`.
 It requires `zcoord (a • P0) ≠ 0`, exports both real denominator guards, and
 identifies `(CondZQ.rval a j : ℝ)` with the average of the two real quotients.
-It does not establish the premise for any orbit index.
+The original guarded API is retained. `zcoord_smul_P0_ne_zero a ha` supplies
+its premise for every signed `a : ℤ` with `ha : a ≠ 0`.
+
+The supplier `EllipticModel.P0_addOrderOf` in `EllipticModel.InfiniteOrder`
+has value zero, so a
+nonzero signed multiple of `P0` cannot be killed by doubling. If its total
+`zcoord` were zero, the identity case would already be killed by doubling.
+In the affine case, `-x/y = 0` forces `x = 0` or `y = 0`; the actual curve
+equation forces `y = 0` in the former case too. The existing affine doubling
+identity then gives the same contradiction. This uses the original `E` and
+`P0`, without selecting a replacement curve or generator.
+
+`eps_pos_of_ne_zero_index l hl` applies this nonvanishing fact to the actual
+sum of the absolute rational coordinates defining `CondZQ.eps l`, proving
+`0 < CondZQ.eps l` for every signed nonzero `l`. It gives no smallness estimate.
+The actual consumer `Tests.nonzero_index_bridge a j ha` combines the coordinate
+nonvanishing, strict epsilon positivity, both real denominator guards and the
+original `rval` recovery formula under only `a ≠ 0`, with the same arbitrary
+signed `a,j` in both real factors. The zero index remains outside these strict
+guards.
 
 ## Supplier applications
 
@@ -70,12 +89,13 @@ It does not establish the premise for any orbit index.
 | `AddMonoidHom.prod`, `map_zsmul`, `map_zero` | The two maps from the same `Pt`, one signed integer and one point; `diagonal`, its signed law and actual `P0` consumer. |
 | `Affine.map_nonsingular`, point-map constructor computation | The original `x,y,h`; `pointMap_some` and the `P0` test. |
 | `map_div₀`, `map_neg`, `map_ne_zero` | The same point coordinates and explicit nonzero premise; total compatibility and `guarded_some`. |
+| `P0_addOrderOf`, `addOrderOf_dvd_iff_zsmul_eq_zero`, `Affine.Point.add_self_of_Y_eq` | The original signed multiple `a • P0`, with `a ≠ 0`; `zcoord_smul_P0_ne_zero`, consumed by epsilon positivity and `Tests.nonzero_index_bridge`. |
 | Lift evaluation and field normalization | One `w` and then the exact guarded `CondZQ` quotient; `rationalPart`, `rval_recovery`. |
 
 All indices and exceptional cases of these algebraic APIs are retained: arbitrary
 points, signed integers, identity, and zero denominators for total compatibility.
-The nonzero-denominator conclusion is conditional on its stated guard. There is
-no limit, index-set extension, analytic normalization or independently optimized
+The original quotient API keeps its explicit coordinate guard; the nonzero-index
+consumer discharges that guard from `a ≠ 0`. There is no limit, index-set extension, analytic normalization or independently optimized
 orbit in this application. The downstream object is the original `rval`, not a
 related independently defined ratio.
 
@@ -94,6 +114,7 @@ ZInQ.PoleValuation
 ZInQ.PolePolynomial
 ZInQ.RationalSeparation
 CondZQ.Model
+EllipticModel.InfiniteOrder
 Examples.TwoRealPlaces
 Examples.TwoRealPlacesCheck
 Checks.TwoRealPlacesAxioms
@@ -114,7 +135,7 @@ warnings-as-errors. No linter is disabled and no accepted source is edited.
 The audit rejects any project declaration whose complete axiom closure contains
 anything beyond `propext`, `Quot.sound`, `Classical.choice`, and rejects any
 import of the quarantined `Frozen` target. The audit directly uses `import all`
-for both example modules and all nine project suppliers listed above, asserts
+for both example modules and all ten project suppliers listed above, asserts
 full private import visibility for each module, and enumerates its complete
 `constNames` inventory, including private, compiler-generated and test roots.
 It checks representative private helpers from all five suppliers with explicit
@@ -123,6 +144,9 @@ private theorems. Per-module and total counts are computed dynamically;
 `Name.isInternalDetail` after removing the private prefix. These categories can
 overlap and do not restrict the audit: every enumerated declaration is checked.
 Each module's reported axioms are the union of its roots' transitive closures.
+The audit requires all twelve project modules and explicitly prints the axiom
+closures of the nonzero-coordinate theorem, strict epsilon theorem and their
+actual nonzero-index consumer alongside the original guarded API.
 
 From the repository root, the existing narrow source and historical audit checks
 are `python3 -B scripts/check_lean.py`,
@@ -139,9 +163,8 @@ Protocol acceptance remain pending. Codex CLI authored the application and ran
 the scoped compiler and axiom checks; this is author verification.
 
 Real point topology, compact topological group instances, continuity of the
-identity extension of `z`, admissible orbit denominator guards, positive and
-arbitrarily small `eps`, the derivative of signed `[n]`, the punctured `rval`
-limit and both exact strict inequalities in `accept` remain unproved here.
+identity extension of `z`, arbitrarily small `eps`, the derivative of signed
+`[n]`, the punctured `rval` limit and both exact strict inequalities in `accept` remain unproved here.
 In particular the full target remains
 `∀ n κ : ℤ, n ∉ Cset → κ ≠ 0 → ∃ a l j : ℤ, accept n κ a l j`, with
 `j = n*a`, `1 ≤ a`, `1 ≤ l`, and signed `n,κ` unchanged. No `HypCC`, main theorem,
