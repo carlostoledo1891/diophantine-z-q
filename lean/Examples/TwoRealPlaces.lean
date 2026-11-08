@@ -20,19 +20,19 @@ open WeierstrassCurve
 
 noncomputable def sigmaPlus : K0 →ₐ[ℚ] ℝ :=
   QuadraticAlgebra.lift ⟨Real.sqrt 2, by
-    simpa [smul_eq_mul, pow_two] using Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)⟩
+    simp⟩
 
 noncomputable def sigmaMinus : K0 →ₐ[ℚ] ℝ :=
   QuadraticAlgebra.lift ⟨-Real.sqrt 2, by
-    simpa [smul_eq_mul, pow_two] using Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)⟩
+    simp⟩
 
 @[simp] theorem sigmaPlus_apply (w : K0) :
     sigmaPlus w = (w.re : ℝ) + (w.im : ℝ) * Real.sqrt 2 := by
-  simp [sigmaPlus, QuadraticAlgebra.lift, smul_eq_mul]
+  simp [sigmaPlus, QuadraticAlgebra.lift, Rat.smul_def]
 
 @[simp] theorem sigmaMinus_apply (w : K0) :
     sigmaMinus w = (w.re : ℝ) - (w.im : ℝ) * Real.sqrt 2 := by
-  simp [sigmaMinus, QuadraticAlgebra.lift, smul_eq_mul, sub_eq_add_neg]
+  simp [sigmaMinus, QuadraticAlgebra.lift, Rat.smul_def, sub_eq_add_neg]
 
 @[simp] theorem sigmaPlus_omega :
     sigmaPlus (QuadraticAlgebra.omega : K0) = Real.sqrt 2 := by simp
@@ -40,8 +40,8 @@ noncomputable def sigmaMinus : K0 →ₐ[ℚ] ℝ :=
 @[simp] theorem sigmaMinus_omega :
     sigmaMinus (QuadraticAlgebra.omega : K0) = -Real.sqrt 2 := by simp
 
-abbrev EPlus := E.map sigmaPlus.toRingHom
-abbrev EMinus := E.map sigmaMinus.toRingHom
+noncomputable abbrev EPlus := E.map sigmaPlus.toRingHom
+noncomputable abbrev EMinus := E.map sigmaMinus.toRingHom
 
 /-- Each call installs only the algebra action belonging to its selected place. -/
 noncomputable def pointMap (σ : K0 →ₐ[ℚ] ℝ) :
@@ -54,7 +54,7 @@ noncomputable def diagonal : Pt →+ EPlus.toAffine.Point × EMinus.toAffine.Poi
   (pointMap sigmaPlus).prod (pointMap sigmaMinus)
 
 theorem pointMap_injective (σ : K0 →ₐ[ℚ] ℝ) : Function.Injective (pointMap σ) := by
-  letI : Algebra K0 ℝ := σ.toRingHom.toAlgebra
+  let : Algebra K0 ℝ := σ.toRingHom.toAlgebra
   exact Affine.Point.map_injective (W' := E.toAffine) (Algebra.ofId K0 ℝ)
 
 theorem diagonal_injective : Function.Injective diagonal := by
@@ -65,7 +65,7 @@ theorem diagonal_injective : Function.Injective diagonal := by
 
 /-- The integer index, including its sign, is shared by both factors. -/
 theorem diagonal_zsmul (m : ℤ) (P : Pt) : diagonal (m • P) = m • diagonal P :=
-  map_zsmul diagonal P m
+  map_zsmul diagonal m P
 
 theorem diagonal_P0_zsmul (m : ℤ) :
     diagonal (m • P0) = (m • pointMap sigmaPlus P0, m • pointMap sigmaMinus P0) := by
@@ -117,9 +117,9 @@ theorem rval_recovery (a j : ℤ) (ha : CondZQ.zcoord (a • P0) ≠ 0) :
        realZ EMinus (diagonal (j • P0)).2 / realZ EMinus (diagonal (a • P0)).2) / 2 := by
   change realZ EPlus (pointMap sigmaPlus (a • P0)) ≠ 0 ∧
     realZ EMinus (pointMap sigmaMinus (a • P0)) ≠ 0 ∧ _
-  simp only [realZ_pointMap]
+  simp only [diagonal, AddMonoidHom.prod_apply, realZ_pointMap]
   refine ⟨(map_ne_zero sigmaPlus).mpr ha, (map_ne_zero sigmaMinus).mpr ha, ?_⟩
-  simpa only [CondZQ.rval, map_div₀] using
+  simpa only [CondZQ.rval, diagonal, AddMonoidHom.prod_apply, realZ_pointMap, map_div₀] using
     rationalPart (CondZQ.zcoord (j • P0) / CondZQ.zcoord (a • P0))
 
 end EllipticModel.TwoRealPlaces
