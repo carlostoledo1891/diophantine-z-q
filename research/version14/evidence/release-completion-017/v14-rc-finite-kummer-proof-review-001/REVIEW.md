@@ -1,0 +1,11 @@
+# Direct finite radical pairing proof review
+
+Reviewer: /root/v14_arithmetic_review. Accepted as new local proof and the stated supplier replacement. Target v14-rc-finite-kummer-proof-001/MANIFEST.json SHA256 f50c3a62de0436de8472f987c6ac3f8ec36928439b14527ec1c4b5d1e4a9e1d2. Proof SHA256 e215f7ac149c8915021144b4f30c9c3b3526b9102a662fc6f095cfbd405b8c4a.
+
+I read all23 lines and compared the actual assertion and caller against the previously reviewed ring-class/Kummer packet. This proof supplies perfectness directly and no longer imports Milne's degree formula. Root suggested the proof direction and the constructor authored the packet; I did not author it. Prior exposure includes the previous theorem-based application review.
+
+The splitting field is finite and separable because n is invertible, every radicand is nonzero, and all n-th roots of unity lie in F. Its automorphism group embeds in a product of mu_n, hence is abelian of exponent dividing n. Products of chosen roots realize every class in B, and changes of roots or representatives do not change the ratio. The two nondegeneracy arguments are valid: trivial action fixes the generating roots, while a root fixed by the entire finite Galois group lies in F. The elementary finite abelian group decomposition gives both dual cardinalities, and the two injections force equality and perfectness. This includes n=1 and the trivial subgroup. It does not require F to be a number field or a finite extension.
+
+At the actual infinite cyclotomic base the radical extension is still finite. The unchanged all-relations valuation argument produces a character on B, and perfectness realizes it. The actual needed assertion and4429–4447 caller are unchanged. The separate ring-class component is not replaced by this packet.
+
+All three manifest members, proof span, actual assertion, needed assertion and caller comparisons pass CHECKS.json. Elementary finite Galois theory and finite abelian group structure are explicit foundations. This is genuinely new proof material requiring additive source accounting and installation; it does not retroactively become part of an earlier frozen source set. It gives no finite-layer Chebotarev, class-prime construction or whole-RC approval.

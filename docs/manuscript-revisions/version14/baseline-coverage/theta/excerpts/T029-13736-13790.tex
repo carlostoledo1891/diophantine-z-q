@@ -1,0 +1,55 @@
+% Begin 08-odd-source.tex
+\section{Actual odd theta forms and their operators}\label{app:odd-source}
+We now construct the forms in (3.8), with the same $h_*$, $D_w$, $L$
+and actual Kummer stages as in Section~\ref{sec:rc}.
+Write $m=|h_*|$. An admissible $D$ is positive, squarefree, prime to
+the fixed support and in the prescribed unit classes. Then
+$K_D=\Q(\sqrt{Dh_*})$ is imaginary, split at $2N$, has no extra
+units, and $Dh_*$ is an odd fundamental discriminant.
+The conductor-one point is the unaveraged sum
+\[
+ P_D=\sum_{[\mathfrak a]\in\operatorname{Pic}(\mathcal O_{K_D})}
+       \chi_{h_*}(\Norm\mathfrak a)\,
+                         \pi(x_D^{[\mathfrak a]}).               \tag{O.1}
+\]
+It is distinct from the conductor-$|h|$ ring-class point used in
+Section~\ref{sec:limits}.
+
+% Replace immutable baseline lines 3532--3591 inclusive.
+% Keeps (O.2). This expands the existing non-CM argument.
+\subsection{A fixed witness and one compatible sequence}
+\begin{proposition}[One witness and a compatible detecting sequence]\label{ex:app-detector}
+For the fixed $E=E_\ell$ under the full-corank-one hypothesis of
+Theorem~\ref{hyp:RC}, use the prepared positive unit filter containing
+$1$. There exist a negative odd fundamental discriminant $h_*$ with
+$L(E^{h_*},1)\ne0$, a positive fundamental discriminant $D_w$ in
+that filter with $L'(E^{D_w},1)\ne0$, and a fixed integer $L$ such
+that $LP_D$ belongs to the $D$-twist rational line for every
+admissible $D$ and $Q=LP_{D_w}$ is nontorsion.
+There is one sequence of actual stages with $M\to\infty$, good
+primes $\ell_0$, and additive maps
+\[
+ \lambda_M:E(\F_{\ell_0^2})\longrightarrow\Z/2^M\Z,
+ \qquad v_2\lambda_M(\overline Q)=c_w<M,
+\]
+where $c_w$ is fixed. At these stages Frobenius squared is trivial
+on $E[2^M]$, $(D_w/\ell_0)=1$, $(h_*/\ell_0)=-1$, and
+$\lambda_M$ has Frobenius sign $+1$.
+Any specified finite prime exclusion is permitted. Additional
+field prescriptions require a compatible common lift; no preservation
+of $c_w$ under arbitrary later field prescriptions is asserted.
+\end{proposition}
+\begin{proof}\leavevmode
+We use the positive unit-squareclass filter containing one, with its
+fixed support enlarged before choosing the witness. The rational
+two-isogeny parity theorem \cite[Theorem 1.8]{dd} gives root number
+$-1$ for $E$ under the full-corank-one assumption. Apply clause (ii)
+of \cite[pp.~543--544]{bfh} to its weight-two newform, with every
+old prime in the splitting set, to obtain a negative fundamental
+discriminant $h_*$ with $L(E^{(h_*)},1)\ne0$. Including two makes
+$h_*$ odd and excludes the extra-unit fields. Now add the primes
+of $h_*$ to that set and apply clause (i) to obtain a positive
+fundamental discriminant $D_w$ with $L'(E^{(D_w)},1)\ne0$.
+Splitting at every old prime puts $D_w$ in the filter containing one
+and makes it prime to $h_*$. These choices precede every detecting
+prime and every theta precision.

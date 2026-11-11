@@ -1,0 +1,21 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "time": "2026-11-09T07:01:21.016Z",
+  "target": "v14-gi-active-connections-003/COMPONENTS.json",
+  "sha256": "d475b45b81f7fc845df80c4984b24f17287903141fc9bea9021c7dd729c458a9",
+  "decision": "accept bounded thirteen internal connections",
+  "comparison": [
+    {
+      "p": "/11/connection/available_assertion/uniformity",
+      "a": "One standard-positive orthant survives because there are finitely many; reflections are fixed integer linear maps preserving degree and bounds.",
+      "b": "For fixed standard degree, dimension and represented geometry, the lower-degree representation has standard controlled bounds. The theorem assumes the stated nonzero cutoff correlation; it does not select a consumer orthant."
+    },
+    {
+      "p": "/11/connection/available_assertion/constants",
+      "a": "Zero planes have normalized mass O_s(1/N); bounded sigma makes their contribution infinitesimal.",
+      "b": "The correlation is positive standard and the test and geometric bounds are fixed standard. No estimate for discarded coordinate-zero planes is supplied by this theorem."
+    }
+  ],
+  "reason": "The only two changes remove consumer orthant selection and zero-plane estimates from the available MF assertion. The general fixed-geometry cutoff theorem remains the available statement; the separately reviewed S13 orthant/reflection argument supplies the needed specialization. Prior twelve connection checks and all other fields are retained.",
+  "limits": "No independent external-ancestor closure, whole GI closure, or final coverage approval is inferred."
+}

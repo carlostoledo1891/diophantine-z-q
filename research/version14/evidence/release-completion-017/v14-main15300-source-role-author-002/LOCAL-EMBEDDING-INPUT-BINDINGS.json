@@ -1,0 +1,108 @@
+{
+  "schema": "v14-source-role-supplement/1",
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T09:58:26.161Z",
+  "status": "proposed precise input binding for independently reviewed local derivations; not new global closure",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+    },
+    "start_line": 15739,
+    "end_line": 15752,
+    "excerpt_sha256": "018a5aadabea7bc173b35b64332fe088eee6b243e3cca20cde974901a4c2f187"
+  },
+  "derivation_record": {
+    "path": "v14-main15300-source-role-author-002/LOCAL-EMBEDDING-RELATION.json",
+    "sha256": "d36711294c769ebcfeeb590f2811295b81e6050aa4481b326bdc6a685a9c0185"
+  },
+  "published_inputs": [
+    {
+      "id": "ACTIVE-CJ-LOCAL-PRIMITIVE-CONJUGACY",
+      "use_sha256": "a3889cf58a0ba8e4e23a666f73fedea242eca2c70a863761f02f11b337bd832b",
+      "source": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/cj-local-structure-001/SOURCE-CONNECTION.md",
+            "sha256": "f40e1015c5d651a998856ba90dd74a15d6e01a705da7f70301b1d6ad0c149293"
+          },
+          "start_line": 10,
+          "end_line": 10,
+          "excerpt_sha256": "0ef873f917b2f86e4c5b0c4eae24cba9582c72085e7bfc0bdfcb76ff2cb70563"
+        },
+        "statement": "Any specified isomorphism between two quadratic subfields of a quaternion algebra is induced by an inner automorphism.",
+        "publication": {
+          "title": "Quaternion Algebras",
+          "authors": "John Voight",
+          "venue": "Graduate Texts in Mathematics288, Springer(2021)",
+          "authoritative_version": "Published final chapter with exact source pins in SOURCE-PINS.json",
+          "locator": "Voight Corollary7.1.5 p97; published chapter7",
+          "corrections": "Use official2026-08-05 erratum item19; no H19 fullEnd or isogeny premise."
+        }
+      },
+      "scope": "Apply to quadratic FIELD embeddings in the division case. Split algebra embeddings are handled directly by their two labelled idempotent lines, not claimed to follow from a subfield-only formulation."
+    },
+    {
+      "id": "ACTIVE-CJ-LOCAL-PRIMITIVE-LOCAL-DIVISION",
+      "use_sha256": "88a4f0c296d31149fcba9922dd13910c414ccd147eb74f6d70bde5e802163730",
+      "source": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/cj-local-structure-001/SOURCE-CONNECTION.md",
+            "sha256": "f40e1015c5d651a998856ba90dd74a15d6e01a705da7f70301b1d6ad0c149293"
+          },
+          "start_line": 18,
+          "end_line": 18,
+          "excerpt_sha256": "f94c080f07676bd376df0970571487aa7ac7d5c138d49dd9430d8fb9062da3d1"
+        },
+        "statement": "The local division quaternion algebra has the unramified quadratic cyclic model and unique maximal order, radical and quadratic residue field described in the cited theorem.",
+        "publication": {
+          "title": "Quaternion Algebras",
+          "authors": "John Voight",
+          "venue": "Graduate Texts in Mathematics288, Springer(2021)",
+          "authoritative_version": "Published final chapter with exact source pins in SOURCE-PINS.json",
+          "locator": "Voight13.3.1–4 and Theorem13.3.11 pp205–207; published chapter13",
+          "corrections": "Valuation is v(nrd)/2, not v(nrd); q is the actual inert prime, not the H19 prime3 specialization."
+        }
+      },
+      "scope": "Apply at the actual local division prime ell0. No replacement by the special H19 prime3 or its F9 residue field."
+    }
+  ],
+  "elementary_inputs": [
+    {
+      "name": "Principal local quadratic ideals",
+      "argument": "After identifying the faithful two-dimensional representation of a quadratic field F/Qp with its regular one-dimensional F-module, an OF-stable full Zp lattice I is a fractional ideal. Its nonzero valuations have a minimum a because I is a lattice. Choose x in I of valuation a. Then xOF is contained in I by stability, and every y in I has y/x in OF by minimality. Thus I=xOF. This uses the valuation-ring description of the ring of integers of a finite local field, retained as foundational local-field data. For the split algebra Qp x Qp, its two labelled integral idempotents split I into two rank-one Zp lattices; each is principal by the same Zp valuation argument."
+    },
+    {
+      "name": "Actual split cyclic lattice pair",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 15100,
+        "end_line": 15128,
+        "excerpt_sha256": "38d9ff555577c9aeb831d8b40b9c6be7fdf827d777caef7a3e732e6e886a7b56"
+      },
+      "argument": "Use the actual integral labelled projectors of the split model. They split both lattices in the cyclic index-p^e pair into their two eigendirections. Write the two nonnegative elementary exponents a,b. Cyclicity gives min(a,b)=0 and the index gives a+b=e. Hence exactly (e,0) and (0,e). These are labelled embeddings modulo order units; passing to the full normalizer would identify possibilities and is not allowed."
+    }
+  ],
+  "remaining_foundations": [
+    "Valuation ring and discrete valuation on a finite extension of Qp",
+    "The actual enhanced cyclic level-p^e structure and its identification with the split Eichler lattice pair",
+    "The published division cyclic model and the specified field-embedding conjugacy theorem"
+  ],
+  "boundaries": [
+    "No use of an outgoing embedding-count conclusion as an input",
+    "No claim of conjugacy modulo the full normalizer",
+    "No fresh proof of the global CM reduction or theta comparison"
+  ]
+}

@@ -1,0 +1,269 @@
+[
+  {
+    "origin": "v14-generic-kummer-input-author-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review_and_source_adoption",
+    "use": {
+      "id": "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P1",
+        "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P2",
+        "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P3",
+        "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P4"
+      ],
+      "assertion": {
+        "statement": "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms.",
+        "objects": "The fixed elliptic curve, actual M_I and H_f number fields, finite extensions of Q_p at old places, and their finite extensions.",
+        "hypotheses": "F has characteristic0, E/F is an elliptic curve and a>=1; continuous Galois cohomology with discrete algebraic-point modules.",
+        "quantifiers": "Every permitted field and positive finite coefficient stage; every point and cohomology class in the displayed groups.",
+        "parameter_range": "n=2^a; all residue characteristics including2 for the local fields.",
+        "uniformity": "The same construction is natural for the actual restrictions and field transports; no quantitative constant.",
+        "constants": "No multiplier beyond the separately supplied local c_E enters the exact sequence.",
+        "normalizations": "delta(P)(g)=gQ-Q for nQ=P; ordinary untwisted E[n] at the descent stage.",
+        "exceptional_cases": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+        "limit_order": "Establish surjectivity over the separable closure, construct the cocycle and prove exactness, then apply to point multiples or the separately annihilated restriction kernel."
+      },
+      "classification": "dependency",
+      "reason": "The actual number-field and local-field steps require the generic finite Kummer sequence, not the earlier Q-only forward Selmer specialization.",
+      "shared_contract_justification": "All occurrences use the same characteristic-zero finite Kummer construction; the number-field step uses equivariance and vanishing on multiples, and the local step uses exactness after a separately supplied annihilator.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 5,
+          "end_line": 9,
+          "excerpt_sha256": "ee1ee51fd7484debd433187bafdd9f2aa52e447d3ea71cdc93a82882e438b804"
+        },
+        "statement": "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "J. H. Silverman",
+          "venue": "Second edition, Springer,2009",
+          "authoritative_version": "Exact retained PDF SHA256 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25.",
+          "locator": "SectionIII.4 opening p66; Example4.1 p67; Proposition4.2(a) p68.",
+          "corrections": "Original pages66–68 directly rendered and read. No uninspected erratum is used; this source claim is separate from known division-polynomial and two-isogeny display corrections elsewhere."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 11,
+        "end_line": 29,
+        "excerpt_sha256": "72040594aba013e74a7a137714321687a7afed422f15e5e30ba4caf57e7502d2"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER",
+      "use_sha256": "55343690e869a6d0ee0db00db08956b1e9632f326dd962cef87524a8023ce657",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective.",
+        "objects": "Elliptic curves and their multiplication maps.",
+        "hypotheses": "Elliptic curve over the source field; nonzero integer multiplication.",
+        "quantifiers": "Every such elliptic curve and nonzero integer.",
+        "parameter_range": "Used here only in characteristic0 with positive powers of2.",
+        "uniformity": "Exact algebraic assertion independent of the arithmetic field or conductor.",
+        "constants": "No numerical degree formula is required.",
+        "normalizations": "Usual group-law multiplication, identity mapped to identity.",
+        "exceptional_cases": "Zero multiplication is excluded; this assertion does not itself state the Kummer cohomology sequence.",
+        "limit_order": "Construct multiplication as a field-defined morphism, establish nonconstancy, then use surjectivity of a nonzero isogeny."
+      },
+      "needed_assertion": {
+        "statement": "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms.",
+        "objects": "The fixed elliptic curve, actual M_I and H_f number fields, finite extensions of Q_p at old places, and their finite extensions.",
+        "hypotheses": "F has characteristic0, E/F is an elliptic curve and a>=1; continuous Galois cohomology with discrete algebraic-point modules.",
+        "quantifiers": "Every permitted field and positive finite coefficient stage; every point and cohomology class in the displayed groups.",
+        "parameter_range": "n=2^a; all residue characteristics including2 for the local fields.",
+        "uniformity": "The same construction is natural for the actual restrictions and field transports; no quantitative constant.",
+        "constants": "No multiplier beyond the separately supplied local c_E enters the exact sequence.",
+        "normalizations": "delta(P)(g)=gQ-Q for nQ=P; ordinary untwisted E[n] at the descent stage.",
+        "exceptional_cases": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+        "limit_order": "Establish surjectivity over the separable closure, construct the cocycle and prove exactness, then apply to point multiples or the separately annihilated restriction kernel."
+      },
+      "required_capabilities": [
+        "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms."
+      ],
+      "available_capabilities": [
+        "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective."
+      ],
+      "derived_capabilities": [
+        "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 11,
+          "end_line": 29,
+          "excerpt_sha256": "72040594aba013e74a7a137714321687a7afed422f15e5e30ba4caf57e7502d2"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms.",
+          "objects": "The fixed elliptic curve, actual M_I and H_f number fields, finite extensions of Q_p at old places, and their finite extensions.",
+          "hypotheses": "F has characteristic0, E/F is an elliptic curve and a>=1; continuous Galois cohomology with discrete algebraic-point modules.",
+          "quantifiers": "Every permitted field and positive finite coefficient stage; every point and cohomology class in the displayed groups.",
+          "parameter_range": "n=2^a; all residue characteristics including2 for the local fields.",
+          "uniformity": "The same construction is natural for the actual restrictions and field transports; no quantitative constant.",
+          "constants": "No multiplier beyond the separately supplied local c_E enters the exact sequence.",
+          "normalizations": "delta(P)(g)=gQ-Q for nQ=P; ordinary untwisted E[n] at the descent stage.",
+          "exceptional_cases": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+          "limit_order": "Establish surjectivity over the separable closure, construct the cocycle and prove exactness, then apply to point multiples or the separately annihilated restriction kernel."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 11,
+            "end_line": 29,
+            "excerpt_sha256": "72040594aba013e74a7a137714321687a7afed422f15e5e30ba4caf57e7502d2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3882,
+            "end_line": 3886,
+            "excerpt_sha256": "c30068ba28b272d39f52558c7f50c90d660636202d4ac6e59e030777c97256f9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3942,
+            "end_line": 3946,
+            "excerpt_sha256": "7d18d6ce40537a68b95fe9d6baf570bc9da0c8599cead31474e9c5b465ff7b20"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 49,
+            "end_line": 51,
+            "excerpt_sha256": "b33c19d9fddcd3185b7e9bd7541167739b0bc51ab291d2b263200620fcf6071a"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 97,
+            "end_line": 99,
+            "excerpt_sha256": "7c4cf0ec44bb99517b1d25956bb9634ef47ad9879959692a0b50a2b8e92d67e0"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3882,
+          "end_line": 3886,
+          "excerpt_sha256": "c30068ba28b272d39f52558c7f50c90d660636202d4ac6e59e030777c97256f9"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3942,
+          "end_line": 3946,
+          "excerpt_sha256": "7d18d6ce40537a68b95fe9d6baf570bc9da0c8599cead31474e9c5b465ff7b20"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 49,
+          "end_line": 51,
+          "excerpt_sha256": "b33c19d9fddcd3185b7e9bd7541167739b0bc51ab291d2b263200620fcf6071a"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 97,
+          "end_line": 99,
+          "excerpt_sha256": "7c4cf0ec44bb99517b1d25956bb9634ef47ad9879959692a0b50a2b8e92d67e0"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3882,
+        "end_line": 3886,
+        "excerpt_sha256": "c30068ba28b272d39f52558c7f50c90d660636202d4ac6e59e030777c97256f9"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3942,
+        "end_line": 3946,
+        "excerpt_sha256": "7d18d6ce40537a68b95fe9d6baf570bc9da0c8599cead31474e9c5b465ff7b20"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 49,
+        "end_line": 51,
+        "excerpt_sha256": "b33c19d9fddcd3185b7e9bd7541167739b0bc51ab291d2b263200620fcf6071a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 97,
+        "end_line": 99,
+        "excerpt_sha256": "7c4cf0ec44bb99517b1d25956bb9634ef47ad9879959692a0b50a2b8e92d67e0"
+      }
+    ]
+  }
+]

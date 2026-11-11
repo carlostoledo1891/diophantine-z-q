@@ -1,0 +1,874 @@
+[
+  {
+    "base_use": {
+      "id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "PASSAGE-FORWARD-MODULARITY",
+        "PASSAGE-FORWARD-CONDUCTOR-PARAMETRIZATION",
+        "PASSAGE-RC-MODULARITY",
+        "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY-CALIBRATION-1",
+        "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY-CALIBRATION-2"
+      ],
+      "assertion": {
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+        "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+        "uniformity": "Qualitative existence for each A; no effective degree bound.",
+        "constants": "No numerical bound imported.",
+        "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+        "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+      },
+      "classification": "dependency",
+      "reason": "Both the arbitrary forward-rank elliptic curve and the actual RC curve are over Q. The universal published formulation applies directly at their arithmetic conductors.",
+      "shared_contract_justification": "The same universal theorem is instantiated for the arbitrary forward-rank A/Q and the fixed RC E_l/Q. Neither instance needs or supplies the other instance; their later quotient constructions remain distinct. The universal elliptic-curve statement is applied to the same actual quadratic twist E^h/Q at both invocations of forward-rank. Nonzero normalized L_*(h) implies L(E^h,1) nonzero because the retained period and omitted factors are nonzero. Modularity, rank0/full Sha finiteness and then full two-primary Selmer corank0 are consumed in that order; no converse or new local bound is asserted.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1816,
+          "end_line": 1818,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106,Springer,second edition2009",
+          "authoritative_version": "Published second edition2009, source SHA72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25; current main location is the application.",
+          "locator": "C.13.6 p442; C.16.4(a),(c) p451",
+          "corrections": "Official errata inspected in retained BCDT published-alternative review; no change to consumed clauses. C.16.4(b) excluded."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 1816,
+        "end_line": 1818,
+        "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+      }
+    },
+    "base_connection": {
+      "use_id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+      "use_sha256": "009ba88c2a41b9a765d96e89a21d5b0fed254aebb2680beeefd457af914dbd19",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+        "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+        "uniformity": "Qualitative existence for each A; no effective degree bound.",
+        "constants": "No numerical bound imported.",
+        "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+        "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+      },
+      "needed_assertion": {
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+        "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+        "uniformity": "Qualitative existence for each A; no effective degree bound.",
+        "constants": "No numerical bound imported.",
+        "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+        "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+      },
+      "required_capabilities": [
+        "rational-elliptic-modularity"
+      ],
+      "available_capabilities": [
+        "rational-elliptic-modularity"
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "identification",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1816,
+          "end_line": 1818,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+          "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+          "hypotheses": "A is an elliptic curve over Q.",
+          "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+          "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+          "uniformity": "Qualitative existence for each A; no effective degree bound.",
+          "constants": "No numerical bound imported.",
+          "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+          "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+          "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 1816,
+            "end_line": 1818,
+            "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 1831,
+            "end_line": 1834,
+            "excerpt_sha256": "6d33f99a6eef43d954f098958d905190a76fd1a294dfaf9cdddd5b25804cc6c5"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 2588,
+            "end_line": 2592,
+            "excerpt_sha256": "2bae7366a36a9d639a8d735de43493ce4290f1bde7dbad719780d932cb4bddfa"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 14237,
+            "end_line": 14240,
+            "excerpt_sha256": "9625760788de84bbd2f684c3e709ae10a5364ea263779a3e15896844852d75e1"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 14393,
+            "end_line": 14394,
+            "excerpt_sha256": "dee2026cd7a3f8fc421bd5f3e7920731e65a5863f94bae9269ceca8dc5a47c5b"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1816,
+          "end_line": 1818,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1834,
+          "excerpt_sha256": "6d33f99a6eef43d954f098958d905190a76fd1a294dfaf9cdddd5b25804cc6c5"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 2588,
+          "end_line": 2592,
+          "excerpt_sha256": "2bae7366a36a9d639a8d735de43493ce4290f1bde7dbad719780d932cb4bddfa"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 14237,
+          "end_line": 14240,
+          "excerpt_sha256": "9625760788de84bbd2f684c3e709ae10a5364ea263779a3e15896844852d75e1"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 14393,
+          "end_line": 14394,
+          "excerpt_sha256": "dee2026cd7a3f8fc421bd5f3e7920731e65a5863f94bae9269ceca8dc5a47c5b"
+        }
+      ]
+    },
+    "use": {
+      "id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "PASSAGE-FORWARD-MODULARITY",
+        "PASSAGE-FORWARD-CONDUCTOR-PARAMETRIZATION",
+        "PASSAGE-RC-MODULARITY",
+        "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY-CALIBRATION-1",
+        "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY-CALIBRATION-2",
+        "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY-PICARD-15"
+      ],
+      "assertion": {
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+        "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+        "uniformity": "Qualitative existence for each A; no effective degree bound.",
+        "constants": "No numerical bound imported.",
+        "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+        "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+      },
+      "classification": "dependency",
+      "reason": "Both the arbitrary forward-rank elliptic curve and the actual RC curve are over Q. The universal published formulation applies directly at their arithmetic conductors.",
+      "shared_contract_justification": "The same universal theorem is instantiated for the arbitrary forward-rank A/Q and the fixed RC E_l/Q. Neither instance needs or supplies the other instance; their later quotient constructions remain distinct. The universal elliptic-curve statement is applied to the same actual quadratic twist E^h/Q at both invocations of forward-rank. Nonzero normalized L_*(h) implies L(E^h,1) nonzero because the retained period and omitted factors are nonzero. Modularity, rank0/full Sha finiteness and then full two-primary Selmer corank0 are consumed in that order; no converse or new local bound is asserted. The added Picard-note occurrence uses the same actual A/Q, conductor N and finite-map/divisor conventions. The same elliptic A/Q and conductor N give finite surjective rho:X0(N)->A.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1816,
+          "end_line": 1818,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106,Springer,second edition2009",
+          "authoritative_version": "Published second edition2009, source SHA72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25; current main location is the application.",
+          "locator": "C.13.6 p442; C.16.4(a),(c) p451",
+          "corrections": "Official errata inspected in retained BCDT published-alternative review; no change to consumed clauses. C.16.4(b) excluded."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 1816,
+        "end_line": 1818,
+        "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+      "use_sha256": "3afd7497feb28867bcd0a3d49c15e0ade34102aa50aefc958d4c438367aed42a",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+        "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+        "uniformity": "Qualitative existence for each A; no effective degree bound.",
+        "constants": "No numerical bound imported.",
+        "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+        "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+      },
+      "needed_assertion": {
+        "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+        "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+        "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+        "uniformity": "Qualitative existence for each A; no effective degree bound.",
+        "constants": "No numerical bound imported.",
+        "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+        "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+      },
+      "required_capabilities": [
+        "rational-elliptic-modularity"
+      ],
+      "available_capabilities": [
+        "rational-elliptic-modularity"
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "identification",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1816,
+          "end_line": 1818,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "Every elliptic curve A/Q of arithmetic conductor N is modular and admits a finite surjective Q-morphism X0(N) to A.",
+          "objects": "The actual elliptic curve A/Q, its arithmetic conductor N and its conductor-level modular parametrization.",
+          "hypotheses": "A is an elliptic curve over Q.",
+          "quantifiers": "Every elliptic curve over Q; no semistability, residual-image or non-CM restriction.",
+          "parameter_range": "Arithmetic conductor N of the same A, not an arbitrary enlarged level.",
+          "uniformity": "Qualitative existence for each A; no effective degree bound.",
+          "constants": "No numerical bound imported.",
+          "normalizations": "Published Silverman second edition C.13.6 and C.16.4(a),(c); BCDT attribution retained.",
+          "exceptional_cases": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+          "limit_order": "Choose A and its conductor, then its parametrization before forming later quotient maps."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "C.16.4(b) Fricke formula excluded. No normalized newform, optimality, Manin constant or Hecke identity inferred.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 1816,
+            "end_line": 1818,
+            "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 1831,
+            "end_line": 1834,
+            "excerpt_sha256": "6d33f99a6eef43d954f098958d905190a76fd1a294dfaf9cdddd5b25804cc6c5"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 2588,
+            "end_line": 2592,
+            "excerpt_sha256": "2bae7366a36a9d639a8d735de43493ce4290f1bde7dbad719780d932cb4bddfa"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 14237,
+            "end_line": 14240,
+            "excerpt_sha256": "9625760788de84bbd2f684c3e709ae10a5364ea263779a3e15896844852d75e1"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 14393,
+            "end_line": 14394,
+            "excerpt_sha256": "dee2026cd7a3f8fc421bd5f3e7920731e65a5863f94bae9269ceca8dc5a47c5b"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1816,
+          "end_line": 1818,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1834,
+          "excerpt_sha256": "6d33f99a6eef43d954f098958d905190a76fd1a294dfaf9cdddd5b25804cc6c5"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 2588,
+          "end_line": 2592,
+          "excerpt_sha256": "2bae7366a36a9d639a8d735de43493ce4290f1bde7dbad719780d932cb4bddfa"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 14237,
+          "end_line": 14240,
+          "excerpt_sha256": "9625760788de84bbd2f684c3e709ae10a5364ea263779a3e15896844852d75e1"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 14393,
+          "end_line": 14394,
+          "excerpt_sha256": "dee2026cd7a3f8fc421bd5f3e7920731e65a5863f94bae9269ceca8dc5a47c5b"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/forgetful-picard-current/NOTE.md",
+            "sha256": "afd3b60929199666e657f6d9cc1482631843f7e9e5401bd294604664d05904e5"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "3110b0b16e4ba6db7367890427d7c9696d5f1f3d50ad96d847a475342229a805"
+        }
+      ]
+    },
+    "coverage": {
+      "id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY-PICARD-15",
+      "claim_ids": [
+        "V14-MAIN-POLYNOMIAL-DEFINITION"
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/forgetful-picard-current/NOTE.md",
+          "sha256": "afd3b60929199666e657f6d9cc1482631843f7e9e5401bd294604664d05904e5"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "3110b0b16e4ba6db7367890427d7c9696d5f1f3d50ad96d847a475342229a805"
+      },
+      "status": "reviewed",
+      "reason": "The same elliptic A/Q and conductor N give finite surjective rho:X0(N)->A.",
+      "use_ids": [
+        "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY"
+      ],
+      "no_imports_reason": null
+    },
+    "retained_relationship": {
+      "id": "PICARD-SOURCE-MODULARITY",
+      "existing_use_id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+      "source": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1816,
+        "end_line": 1818,
+        "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+      },
+      "consumer": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/forgetful-picard-current/NOTE.md",
+          "sha256": "afd3b60929199666e657f6d9cc1482631843f7e9e5401bd294604664d05904e5"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "3110b0b16e4ba6db7367890427d7c9696d5f1f3d50ad96d847a475342229a805"
+      },
+      "claim": "The same elliptic A/Q and conductor N give finite surjective rho:X0(N)->A."
+    }
+  },
+  {
+    "base_use": {
+      "id": "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES-PASSAGE"
+      ],
+      "assertion": {
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+        "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+        "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+        "parameter_range": "The fixed geometric divisor groups and finite map.",
+        "uniformity": "Qualitative statement for each A; no effective bound.",
+        "constants": "No numerical constant or effective bound.",
+        "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+        "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+        "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+      },
+      "classification": "dependency",
+      "reason": "Apply this precise imported statement to the actual objects in the displayed local construction; its stronger final output is recorded separately.",
+      "shared_contract_justification": "This record is restricted to the forward-rank use; other applications remain separate.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1855,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        },
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Published source PDF72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "II.3.6(c),(d) p29; III.3.4 pp61–63",
+          "corrections": "Geometric divisor-class convention retained; algebraic representability and norm/base-change are separate local inputs."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 1831,
+        "end_line": 1855,
+        "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+      }
+    },
+    "base_connection": {
+      "use_id": "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES",
+      "use_sha256": "1789e1ea7983071e343df77dcf0db07d9852fd7bf6d25e31ab4c02e23cfae7a7",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+        "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+        "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+        "parameter_range": "The fixed geometric divisor groups and finite map.",
+        "uniformity": "Qualitative statement for each A; no effective bound.",
+        "constants": "No numerical constant or effective bound.",
+        "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+        "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+        "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+      },
+      "needed_assertion": {
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+        "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+        "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+        "parameter_range": "The fixed geometric divisor groups and finite map.",
+        "uniformity": "Qualitative statement for each A; no effective bound.",
+        "constants": "No numerical constant or effective bound.",
+        "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+        "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+        "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+      },
+      "required_capabilities": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES"
+      ],
+      "available_capabilities": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES"
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "identification",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1855,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+          "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+          "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+          "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+          "parameter_range": "The fixed geometric divisor groups and finite map.",
+          "uniformity": "Qualitative statement for each A; no effective bound.",
+          "constants": "No numerical constant or effective bound.",
+          "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+          "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+          "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No rational cusp or rational preimage required; geometric points push forward with coefficient one. No optimality, connected kernel, Hecke action or Manin constant.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 1831,
+            "end_line": 1855,
+            "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1855,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        }
+      ]
+    },
+    "use": {
+      "id": "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES-PASSAGE",
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES-PICARD-31"
+      ],
+      "assertion": {
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+        "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+        "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+        "parameter_range": "The fixed geometric divisor groups and finite map.",
+        "uniformity": "Qualitative statement for each A; no effective bound.",
+        "constants": "No numerical constant or effective bound.",
+        "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+        "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+        "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+      },
+      "classification": "dependency",
+      "reason": "Apply this precise imported statement to the actual objects in the displayed local construction; its stronger final output is recorded separately.",
+      "shared_contract_justification": "This record is restricted to the forward-rank use; other applications remain separate. The added Picard-note occurrence uses the same actual A/Q, conductor N and finite-map/divisor conventions. Function norm valuation identifies the constructed norm with existing divisor pushforward; the separate surjectivity proof is not an input into constructing the norm.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1855,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        },
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Published source PDF72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "II.3.6(c),(d) p29; III.3.4 pp61–63",
+          "corrections": "Geometric divisor-class convention retained; algebraic representability and norm/base-change are separate local inputs."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 1831,
+        "end_line": 1855,
+        "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES",
+      "use_sha256": "e68a03aa72fba1330fb8ad863d979d6802c0071104afffd6d38fd620d669c448",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+        "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+        "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+        "parameter_range": "The fixed geometric divisor groups and finite map.",
+        "uniformity": "Qualitative statement for each A; no effective bound.",
+        "constants": "No numerical constant or effective bound.",
+        "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+        "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+        "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+      },
+      "needed_assertion": {
+        "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+        "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+        "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+        "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+        "parameter_range": "The fixed geometric divisor groups and finite map.",
+        "uniformity": "Qualitative statement for each A; no effective bound.",
+        "constants": "No numerical constant or effective bound.",
+        "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+        "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+        "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+      },
+      "required_capabilities": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES"
+      ],
+      "available_capabilities": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES"
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "identification",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1855,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the stated finite curve morphism, divisor pushforward preserves degree and principal divisors; the identity point identifies the elliptic degree-zero divisor-class group with A.",
+          "objects": "Geometric divisors and degree-zero divisor classes on the stated smooth curves and elliptic A.",
+          "hypotheses": "Finite morphism of smooth curves and identity point on elliptic A.",
+          "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+          "parameter_range": "The fixed geometric divisor groups and finite map.",
+          "uniformity": "Qualitative statement for each A; no effective bound.",
+          "constants": "No numerical constant or effective bound.",
+          "normalizations": "Geometric divisor-class groups; coefficient one for pushforward of a geometric point.",
+          "exceptional_cases": "No assertion that rational line bundles equal all rational Picard points. Picard representability, norm base change, and the algebraic quotient are separate inputs and deductions.",
+          "limit_order": "Pass divisors to divisor classes before the separate algebraic Picard construction."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No rational cusp or rational preimage required; geometric points push forward with coefficient one. No optimality, connected kernel, Hecke action or Manin constant.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+            },
+            "start_line": 1831,
+            "end_line": 1855,
+            "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+          },
+          "start_line": 1831,
+          "end_line": 1855,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/forgetful-picard-current/NOTE.md",
+            "sha256": "afd3b60929199666e657f6d9cc1482631843f7e9e5401bd294604664d05904e5"
+          },
+          "start_line": 31,
+          "end_line": 31,
+          "excerpt_sha256": "a08eaaede0e772c9052ca95ee081a5615795b724c4ed84b45c9e4caeb6d2892a"
+        }
+      ]
+    },
+    "coverage": {
+      "id": "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES-PICARD-31",
+      "claim_ids": [
+        "V14-MAIN-POLYNOMIAL-DEFINITION"
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/forgetful-picard-current/NOTE.md",
+          "sha256": "afd3b60929199666e657f6d9cc1482631843f7e9e5401bd294604664d05904e5"
+        },
+        "start_line": 31,
+        "end_line": 31,
+        "excerpt_sha256": "a08eaaede0e772c9052ca95ee081a5615795b724c4ed84b45c9e4caeb6d2892a"
+      },
+      "status": "reviewed",
+      "reason": "Function norm valuation identifies the constructed norm with existing divisor pushforward; the separate surjectivity proof is not an input into constructing the norm.",
+      "use_ids": [
+        "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES"
+      ],
+      "no_imports_reason": null
+    },
+    "retained_relationship": {
+      "id": "PICARD-SOURCE-DIVISORS",
+      "existing_use_id": "ACTIVE-FORWARD-SILVERMAN-DIVISOR-CLASSES",
+      "source": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1831,
+        "end_line": 1855,
+        "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+      },
+      "consumer": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/forgetful-picard-current/NOTE.md",
+          "sha256": "afd3b60929199666e657f6d9cc1482631843f7e9e5401bd294604664d05904e5"
+        },
+        "start_line": 31,
+        "end_line": 31,
+        "excerpt_sha256": "a08eaaede0e772c9052ca95ee081a5615795b724c4ed84b45c9e4caeb6d2892a"
+      },
+      "claim": "Function norm valuation identifies the constructed norm with existing divisor pushforward; the separate surjectivity proof is not an input into constructing the norm."
+    }
+  }
+]

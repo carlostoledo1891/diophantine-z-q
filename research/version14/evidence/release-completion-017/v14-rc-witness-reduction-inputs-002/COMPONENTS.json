@@ -1,0 +1,361 @@
+{
+  "components": [
+    {
+      "origin": "v14-rc-witness-reduction-inputs-002",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-WITNESS-KUMMER-SPECIALIZATION",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-WITNESS-KUMMER-SPECIALIZATION-P1"
+        ],
+        "assertion": {
+          "statement": "At the actual chosen odd good prime ell0, reduction transports the finite Kummer cocycle of Q to the finite-field Kummer cocycle of its reduction at the same place.",
+          "objects": "The fixed point Q, its2^M division point, and the chosen place above ell0 with residue field F_(ell0^2).",
+          "hypotheses": "The actual finite Chebotarev choice fixes the field, torsion action and Kummer translation. ell0 is odd and a good-reduction prime. All reductions use that same place.",
+          "quantifiers": "Each actual finite stage M and chosen place in the construction.",
+          "parameter_range": "In particular n=2^m at odd good primes.",
+          "uniformity": "Natural finite-stage specialization and cohomology at each actual chosen good place; no uniform valuation bound is supplied by this input.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "Reduce gR-R for2^M R=Q; Frobenius on the quadratic residue field is the square of the chosen arithmetic Frobenius.",
+          "exceptional_cases": "No bound for arbitrary points or reduction primes is inferred. The fixed translation and nonzero row value are separate preceding data.",
+          "limit_order": "Choose the actual finite Galois element and place, reduce its division point cocycle, then apply the row b."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the same-place reduction of the actual Kummer cocycle.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/rc-good-reduction-torsion.md",
+              "sha256": "54b10071813635e3b37eec7e4417aff7efb09d665fc5f6319b5a20d06133f4e6"
+            },
+            "start_line": 5,
+            "end_line": 7,
+            "excerpt_sha256": "908672daabafe824786b1e110ceac5b90485b390c2d9e34ccabc4f1d37273a30"
+          },
+          "statement": "Good-reduction specialization is a Galois-equivariant group homomorphism, injective on prime-to-residue-characteristic torsion; that torsion is unramified.",
+          "publication": {
+            "title": "The Arithmetic of Elliptic Curves",
+            "authors": "J. H. Silverman",
+            "venue": "Second edition,2009",
+            "authoritative_version": "Retained PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+            "locator": "VII2.1 pp188–190;VII3.1 p192;VII4.1 p195"
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3360,
+          "end_line": 3373,
+          "excerpt_sha256": "b6235d5b21ec952684bbdc6b3e945bf87c9d4527470633dbe2edb8dae618ac1d"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-WITNESS-KUMMER-SPECIALIZATION",
+        "use_sha256": "f00ee973e9fd34a9ea23efadfea6f701515ce03dd569032ff4da4e328f1a4909",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Good-reduction specialization is a Galois-equivariant group homomorphism, injective on prime-to-residue-characteristic torsion; that torsion is unramified.",
+          "objects": "An elliptic curve over a local field with good reduction and its prime-to-residue-characteristic torsion.",
+          "hypotheses": "The curve has good reduction; torsion order n is invertible in the residue field.",
+          "quantifiers": "Every such curve and torsion order, after any finite extension needed to define a torsion point.",
+          "parameter_range": "In particular n=2^m at odd good primes.",
+          "uniformity": "Natural under the actual finite field extensions and coefficient reductions at good places.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "Arithmetic Frobenius corresponds under reduction to its action on residue points.",
+          "exceptional_cases": "Does not establish a Chebotarev choice or a valuation bound.",
+          "limit_order": "Choose the good place and finite torsion order, then reduce the actual points and Galois action."
+        },
+        "needed_assertion": {
+          "statement": "At the actual chosen odd good prime ell0, reduction transports the finite Kummer cocycle of Q to the finite-field Kummer cocycle of its reduction at the same place.",
+          "objects": "The fixed point Q, its2^M division point, and the chosen place above ell0 with residue field F_(ell0^2).",
+          "hypotheses": "The actual finite Chebotarev choice fixes the field, torsion action and Kummer translation. ell0 is odd and a good-reduction prime. All reductions use that same place.",
+          "quantifiers": "Each actual finite stage M and chosen place in the construction.",
+          "parameter_range": "In particular n=2^m at odd good primes.",
+          "uniformity": "Natural finite-stage specialization and cohomology at each actual chosen good place; no uniform valuation bound is supplied by this input.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "Reduce gR-R for2^M R=Q; Frobenius on the quadratic residue field is the square of the chosen arithmetic Frobenius.",
+          "exceptional_cases": "No bound for arbitrary points or reduction primes is inferred. The fixed translation and nonzero row value are separate preceding data.",
+          "limit_order": "Choose the actual finite Galois element and place, reduce its division point cocycle, then apply the row b."
+        },
+        "required_capabilities": [
+          "At the actual chosen odd good prime ell0, reduction transports the finite Kummer cocycle of Q to the finite-field Kummer cocycle of its reduction at the same place."
+        ],
+        "available_capabilities": [
+          "Good-reduction specialization is a Galois-equivariant group homomorphism, injective on prime-to-residue-characteristic torsion; that torsion is unramified."
+        ],
+        "derived_capabilities": [
+          "At the actual chosen odd good prime ell0, reduction transports the finite Kummer cocycle of Q to the finite-field Kummer cocycle of its reduction at the same place."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3360,
+            "end_line": 3373,
+            "excerpt_sha256": "b6235d5b21ec952684bbdc6b3e945bf87c9d4527470633dbe2edb8dae618ac1d"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "At the actual chosen odd good prime ell0, reduction transports the finite Kummer cocycle of Q to the finite-field Kummer cocycle of its reduction at the same place.",
+            "objects": "The fixed point Q, its2^M division point, and the chosen place above ell0 with residue field F_(ell0^2).",
+            "hypotheses": "The actual finite Chebotarev choice fixes the field, torsion action and Kummer translation. ell0 is odd and a good-reduction prime. All reductions use that same place.",
+            "quantifiers": "Each actual finite stage M and chosen place in the construction.",
+            "parameter_range": "In particular n=2^m at odd good primes.",
+            "uniformity": "Natural finite-stage specialization and cohomology at each actual chosen good place; no uniform valuation bound is supplied by this input.",
+            "constants": "No effective bound or generators.",
+            "normalizations": "Reduce gR-R for2^M R=Q; Frobenius on the quadratic residue field is the square of the chosen arithmetic Frobenius.",
+            "exceptional_cases": "No bound for arbitrary points or reduction primes is inferred. The fixed translation and nonzero row value are separate preceding data.",
+            "limit_order": "Choose the actual finite Galois element and place, reduce its division point cocycle, then apply the row b."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No bound for arbitrary points or reduction primes is inferred. The fixed translation and nonzero row value are separate preceding data.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3360,
+              "end_line": 3373,
+              "excerpt_sha256": "b6235d5b21ec952684bbdc6b3e945bf87c9d4527470633dbe2edb8dae618ac1d"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3360,
+            "end_line": 3373,
+            "excerpt_sha256": "b6235d5b21ec952684bbdc6b3e945bf87c9d4527470633dbe2edb8dae618ac1d"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3360,
+          "end_line": 3373,
+          "excerpt_sha256": "b6235d5b21ec952684bbdc6b3e945bf87c9d4527470633dbe2edb8dae618ac1d"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-WITNESS-KUMMER-SPECIALIZATION-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3360,
+            "end_line": 3373,
+            "excerpt_sha256": "b6235d5b21ec952684bbdc6b3e945bf87c9d4527470633dbe2edb8dae618ac1d"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-rc-witness-reduction-inputs-002",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-WITNESS-FINITE-FIELD-KUMMER",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-WITNESS-FINITE-FIELD-KUMMER-P1"
+        ],
+        "assertion": {
+          "statement": "For the reduced elliptic curve over F_(ell0^2), the finite Kummer map is identified with H1 of its finite torsion module, computed by Frobenius modulo Frobenius minus one.",
+          "objects": "The fixed point Q, its2^M division point, and the chosen place above ell0 with residue field F_(ell0^2).",
+          "hypotheses": "The reduced elliptic curve is connected over the actual finite field, and2^M is prime to ell0. The multiplication sequence and procyclic finite-field Galois computation are used.",
+          "quantifiers": "Each actual finite stage M and chosen place in the construction.",
+          "parameter_range": "In particular n=2^m at odd good primes.",
+          "uniformity": "Natural finite-stage specialization and cohomology at each actual chosen good place; no uniform valuation bound is supplied by this input.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "A division point R gives the cocycle Fr(R)-R modulo (Fr-1)E[2^M].",
+          "exceptional_cases": "The Lang input kills H1 of the elliptic group; it does not choose the Frobenius or prove the fixed row is nonzero.",
+          "limit_order": "Use Lang vanishing in the finite multiplication sequence, then evaluate the finite torsion cocycle at arithmetic Frobenius."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the finite-field Kummer identification, separate from the characteristic-zero Kummer injection.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 65,
+            "end_line": 70,
+            "excerpt_sha256": "6b0fac1ad33b49a2d34cfd2df6707f43c80ee7120b7887579e1a2c9f3eab1014"
+          },
+          "statement": "For a connected algebraic group over a finite field, the Lang map is surjective; its first Galois cohomology over the finite field vanishes.",
+          "publication": {
+            "title": "Algebraic groups over finite fields",
+            "authors": "S. Lang",
+            "venue": "American Journal of Mathematics78(1956),555–563",
+            "authoritative_version": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename. Exact pinned PDF 665286caefaa894cf789f3b4ce3027accdf4d583836e8b13aafeab744373b44d",
+            "locator": "Theorem1 and corollary, printed p557; Theorem2 identifies torsors",
+            "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3369,
+          "end_line": 3373,
+          "excerpt_sha256": "1bab86af01c624671319583b858b6947c97ecebcb48e15c8587d985aa4992fbb"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-WITNESS-FINITE-FIELD-KUMMER",
+        "use_sha256": "2e3b7767d648f221e548e99d78ab582e1d09f58b926ae289fc93f7692e42de1b",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For a connected algebraic group over a finite field, the Lang map is surjective; its first Galois cohomology over the finite field vanishes.",
+          "objects": "The objects of the stated published theorem in the displayed source scope.",
+          "hypotheses": "A connected algebraic group over a finite field.",
+          "quantifiers": "All objects satisfying the stated source hypotheses.",
+          "parameter_range": "Only the displayed source statement and its exact cited version.",
+          "uniformity": "No additional uniformity beyond that statement is asserted.",
+          "constants": "No new application-specific multiplier is supplied by the source statement.",
+          "normalizations": "Use the source conventions stated in the available statement; application-specific translation is in the connecting argument.",
+          "exceptional_cases": "The source alone does not discharge the separately listed current application premises.",
+          "limit_order": "Establish the stated source premises before applying this input."
+        },
+        "needed_assertion": {
+          "statement": "For the reduced elliptic curve over F_(ell0^2), the finite Kummer map is identified with H1 of its finite torsion module, computed by Frobenius modulo Frobenius minus one.",
+          "objects": "The fixed point Q, its2^M division point, and the chosen place above ell0 with residue field F_(ell0^2).",
+          "hypotheses": "The reduced elliptic curve is connected over the actual finite field, and2^M is prime to ell0. The multiplication sequence and procyclic finite-field Galois computation are used.",
+          "quantifiers": "Each actual finite stage M and chosen place in the construction.",
+          "parameter_range": "In particular n=2^m at odd good primes.",
+          "uniformity": "Natural finite-stage specialization and cohomology at each actual chosen good place; no uniform valuation bound is supplied by this input.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "A division point R gives the cocycle Fr(R)-R modulo (Fr-1)E[2^M].",
+          "exceptional_cases": "The Lang input kills H1 of the elliptic group; it does not choose the Frobenius or prove the fixed row is nonzero.",
+          "limit_order": "Use Lang vanishing in the finite multiplication sequence, then evaluate the finite torsion cocycle at arithmetic Frobenius."
+        },
+        "required_capabilities": [
+          "For the reduced elliptic curve over F_(ell0^2), the finite Kummer map is identified with H1 of its finite torsion module, computed by Frobenius modulo Frobenius minus one."
+        ],
+        "available_capabilities": [
+          "For a connected algebraic group over a finite field, the Lang map is surjective; its first Galois cohomology over the finite field vanishes."
+        ],
+        "derived_capabilities": [
+          "For the reduced elliptic curve over F_(ell0^2), the finite Kummer map is identified with H1 of its finite torsion module, computed by Frobenius modulo Frobenius minus one."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3369,
+            "end_line": 3373,
+            "excerpt_sha256": "1bab86af01c624671319583b858b6947c97ecebcb48e15c8587d985aa4992fbb"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the reduced elliptic curve over F_(ell0^2), the finite Kummer map is identified with H1 of its finite torsion module, computed by Frobenius modulo Frobenius minus one.",
+            "objects": "The fixed point Q, its2^M division point, and the chosen place above ell0 with residue field F_(ell0^2).",
+            "hypotheses": "The reduced elliptic curve is connected over the actual finite field, and2^M is prime to ell0. The multiplication sequence and procyclic finite-field Galois computation are used.",
+            "quantifiers": "Each actual finite stage M and chosen place in the construction.",
+            "parameter_range": "In particular n=2^m at odd good primes.",
+            "uniformity": "Natural finite-stage specialization and cohomology at each actual chosen good place; no uniform valuation bound is supplied by this input.",
+            "constants": "No effective bound or generators.",
+            "normalizations": "A division point R gives the cocycle Fr(R)-R modulo (Fr-1)E[2^M].",
+            "exceptional_cases": "The Lang input kills H1 of the elliptic group; it does not choose the Frobenius or prove the fixed row is nonzero.",
+            "limit_order": "Use Lang vanishing in the finite multiplication sequence, then evaluate the finite torsion cocycle at arithmetic Frobenius."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "The Lang input kills H1 of the elliptic group; it does not choose the Frobenius or prove the fixed row is nonzero.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3369,
+              "end_line": 3373,
+              "excerpt_sha256": "1bab86af01c624671319583b858b6947c97ecebcb48e15c8587d985aa4992fbb"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3369,
+            "end_line": 3373,
+            "excerpt_sha256": "1bab86af01c624671319583b858b6947c97ecebcb48e15c8587d985aa4992fbb"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3369,
+          "end_line": 3373,
+          "excerpt_sha256": "1bab86af01c624671319583b858b6947c97ecebcb48e15c8587d985aa4992fbb"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-WITNESS-FINITE-FIELD-KUMMER-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3369,
+            "end_line": 3373,
+            "excerpt_sha256": "1bab86af01c624671319583b858b6947c97ecebcb48e15c8587d985aa4992fbb"
+          }
+        }
+      ]
+    }
+  ]
+}

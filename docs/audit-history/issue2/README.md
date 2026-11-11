@@ -25,3 +25,7 @@ python -B scripts/check_audit_history.py --self-test
 ```
 
 The checker rejects missing dispositions, missing evidence for claims of prior justification, changed evidence or manuscript bytes, changed application spans and unresolved incorporation. Its negative controls exercise these failure cases. It cannot decide whether the arguments are valid. The [integration protocol](../PROTOCOL.md) specifies the source-level review that still has to be done.
+
+## Subsequent Kato correction
+
+The November 7 follow-up found a missing connection in the Version 10 Kato route: its constructed index set did not cover the 1999 theorem, and the supplied limiting class was not identified. The historical register above is preserved; it is not complete acceptance of that revised route. [Version 11](../../manuscript-revisions/version11/README.md) supplies and independently checks the extension, norm relations and class identity. The current checker now reads a separate application contract and follow-up ledger.

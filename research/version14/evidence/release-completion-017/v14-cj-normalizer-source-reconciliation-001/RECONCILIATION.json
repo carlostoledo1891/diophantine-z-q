@@ -1,0 +1,123 @@
+{
+  "initial_source_uses_sha256": "0257a20d08673a2d91c5bcd7b3706173dbe54433d23f662cdcf63c81949d0edb",
+  "initial_passages_sha256": "c5d1805b6bec9c56e393bf8a0967859107bb13c1445eb21997904d1ff06d49c3",
+  "rows": [
+    {
+      "initial_use_id": "CJ-NORMALIZER-SUP-001",
+      "initial_use_sha256": "50476bb670a5e541d1458353d0a1c569d6bb168a45e19590fff1e96537ba084c",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/cj-level-normalizer-001/PROOF.md",
+          "sha256": "af0522be35419ac63aa18e08c3752e8a491db72f5ff1a1659992c79448cade78"
+        },
+        "start_line": 1,
+        "end_line": 4,
+        "excerpt_sha256": "3481716e6b622fc6547f3c30c1dff9f9ce43765eab41fabd8e6a2dedb44aefac"
+      },
+      "source_role": "conditional_model_and_domain",
+      "incoming_use_ids": [],
+      "no_imports_reason": "The local model and cyclic line are the explicit domain of this conditional lemma. Their realization by the actual global geometric correspondence is not asserted and remains a caller obligation.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-CJ-SPLIT-LEVEL-NORMALIZER"
+      ],
+      "caller_requirements": [
+        "Actual split Eichler model and cyclic line; geometric identification of its normalizer at any global caller."
+      ]
+    },
+    {
+      "initial_use_id": "CJ-NORMALIZER-SUP-002",
+      "initial_use_sha256": "1c1f81ece961e89af6984816fa67d893f3628829d81bc5fd08ab0104b4b4a16b",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/cj-level-normalizer-001/PROOF.md",
+          "sha256": "af0522be35419ac63aa18e08c3752e8a491db72f5ff1a1659992c79448cade78"
+        },
+        "start_line": 5,
+        "end_line": 6,
+        "excerpt_sha256": "0c5dee66eb1ee00d82319b931dac021779ead03f2637c1d1c5dbf845130eb6b3"
+      },
+      "source_role": "local_matrix_derivation",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Direct multiplication of the displayed matrices proves determinant, square and conjugation formulas. No outgoing normalizer result is imported as its own premise.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-CJ-SPLIT-LEVEL-NORMALIZER"
+      ],
+      "caller_requirements": []
+    },
+    {
+      "initial_use_id": "CJ-NORMALIZER-SUP-003",
+      "initial_use_sha256": "7121bee829770780ba6334b1b0be41d2161aa564d0c9e167f2a12bcd52ccca04",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/cj-level-normalizer-001/PROOF.md",
+          "sha256": "af0522be35419ac63aa18e08c3752e8a491db72f5ff1a1659992c79448cade78"
+        },
+        "start_line": 7,
+        "end_line": 8,
+        "excerpt_sha256": "2dcdcfaceb7f297e813c523fb32d55255a36b30fbb82a05de3f203e6dd16185d"
+      },
+      "source_role": "local_projector_derivation",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Within the stated support, the explicit integral complementary projectors have trace one and diagonal residues one and zero. The preceding conjugation formula exchanges these residues. This proves selected-root reversal without identifying dyadic roots merely by their residues.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-CJ-SPLIT-LEVEL-NORMALIZER"
+      ],
+      "caller_requirements": [
+        "Actual split-unit support and selected eigenline; at two, (1+x)/2 belongs to R and r is odd."
+      ]
+    },
+    {
+      "initial_use_id": "CJ-NORMALIZER-SUP-004",
+      "initial_use_sha256": "e5e59a414e823c489d7bd258559e5b549978fdd44f9c433ab6c3f83a79988d5d",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/cj-level-normalizer-001/PROOF.md",
+          "sha256": "af0522be35419ac63aa18e08c3752e8a491db72f5ff1a1659992c79448cade78"
+        },
+        "start_line": 9,
+        "end_line": 10,
+        "excerpt_sha256": "8a52aff8fe693ab9b38864828a32062118dac77a90b241533548c87258dad8a5"
+      },
+      "source_role": "conditional_character_calculation",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Multiplicativity gives alpha(-r)/alpha(r)=alpha(-1); the displayed parity is a stipulated character choice. Unramifiedness makes a character depend only on the norm valuation e. Neither stipulated parity nor unramifiedness is proved by this calculation.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-CJ-SPLIT-LEVEL-NORMALIZER"
+      ],
+      "caller_requirements": [
+        "Prescribed root character with the stated parity; unramified norm character; separate actual modular eigen-action."
+      ]
+    },
+    {
+      "initial_use_id": "CJ-NORMALIZER-SUP-005",
+      "initial_use_sha256": "82208868dafe54c61f8d9b4cca16c594ad93d67019a4a75263b89070b5bed30e",
+      "classification": "background",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/cj-level-normalizer-001/PROOF.md",
+          "sha256": "af0522be35419ac63aa18e08c3752e8a491db72f5ff1a1659992c79448cade78"
+        },
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt_sha256": "0ee22a3e4b4bf6b29f17f07134d63d6df9336c3a18147cba1d28101548076c51"
+      },
+      "source_role": "scope_boundary",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Explicit limitation of the result. It does not prove any of the separate global geometric, character-choice or newform assertions.",
+      "outgoing_provenance_use_ids": [],
+      "caller_requirements": [
+        "Global adelic/geometric correspondence identification and actual character choices remain separate."
+      ]
+    }
+  ],
+  "scope": "Conditional source-level local calculation only; no global caller premise is discharged by this reconciliation."
+}

@@ -1,0 +1,2662 @@
+[
+  {
+    "id": "SRC-CJ-IGUSA-001",
+    "role": "structure",
+    "text": "# Retained CM inputs for the conductor-one comparison",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-002",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-003",
+    "role": "historical scope",
+    "text": "This is an authored source-to-application supplement. It supplies the retained CM inputs of the conductor-one proof with SHA256 `67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8` and of the separately reviewed good-reduction proof with SHA256 `37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921`. It does not assert the full conductor-one comparison independently of its other premises.",
+    "source_binding_use_ids": [],
+    "reason": "Author proposal description; current acceptance is recorded separately."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-004",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-005",
+    "role": "structure",
+    "text": "## 1. Domain and labelled objects",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-006",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-007",
+    "role": "conditional domain",
+    "text": "Let F be an imaginary quadratic field, O its maximal order, and fix an embedding phi:F→C. Fix algebraic closures inside C and at an odd rational prime q, together with the reduction place. Assume q is inert and unramified in F. Let N≥1 be prime to q disc(F), with every prime dividing N split in F. The conductor-one application also assumes O×={±1}; the arguments below do not divide by this group. All isomorphisms of triples preserve the O-labels pointwise. The type condition is d iota(alpha)=phi(alpha) on the tangent space for every alpha∈O.",
+    "source_binding_use_ids": [],
+    "reason": "Defines maximal order, fixed type, same place and selected level. These are caller hypotheses, not consequences proved here."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-008",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-009",
+    "role": "conditional domain",
+    "text": "For every p^e exactly dividing N, select one of the two prime ideals P over p and put n=∏P^e. Thus O/n≅Z/NZ. The selected subgroup of an O-labelled elliptic curve A is C=A[n], meaning the simultaneous kernel of all iota(alpha), alpha∈n. This specifies a subgroup, not a generator or full level structure. The fixed type is retained under Galois automorphisms fixing F. No assertion identifies the two conjugate types or changes the chosen reduction place.",
+    "source_binding_use_ids": [],
+    "reason": "Defines maximal order, fixed type, same place and selected level. These are caller hypotheses, not consequences proved here."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-010",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-011",
+    "role": "structure",
+    "text": "## 2. Uniformization, the ideal action, and degree",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-012",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-013",
+    "role": "actual source application",
+    "text": "Use final Silverman, VI.4.1 and Corollary VI.4.1.1, VI.5.1.1 and VI.5.3, with the official 2015 corrections. They identify complex elliptic curves with lattices and origin-preserving morphisms with complex scalars carrying one lattice into the other. For a curve of the fixed type, its uniformizing lattice Lambda is stable under phi(O). Its rational span is a one-dimensional F-vector space: it has Q-dimension two and a faithful F-action. Choosing a nonzero vector and scaling identifies Lambda with a fractional O-ideal. Since O is the full ring of integers, this ideal is invertible. This is also the correspondence in Silverman C.11.1, p426.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-014",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-015",
+    "role": "local derivation",
+    "text": "For two fractional O-ideals I,J, a complex scalar u with uI=J belongs to F×: choose nonzero x∈I and note ux∈J⊂F, so u=(ux)/x∈F. Conversely multiplication by an element of F× preserves every O-label and the selected subgroup. Hence fixed-type labelled triples, with this fixed n, are indexed by Pic(O).",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-016",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-017",
+    "role": "local derivation",
+    "text": "For an integral nonzero ideal a, the identity on C induces the O-linear isogeny",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-018",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-019",
+    "role": "local derivation",
+    "text": "C/Lambda → C/(a^(-1)Lambda).",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-020",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-021",
+    "role": "local derivation",
+    "text": "Its kernel is a^(-1)Lambda/Lambda=A[a]. Indeed, alpha z∈Lambda for all alpha∈a is equivalent to z∈a^(-1)Lambda; this follows locally from the fact that both ideals are principal over each O_P. Its cardinality is [a^(-1)Lambda:Lambda]=|O/a|=Norm(a), by the same local calculation. Characteristic zero makes the map separable, so its degree is Norm(a). This gives the action [a]*A=C/(a^(-1)Lambda); a principal ideal acts by an isomorphism. Composition multiplies the ideals. Multiplication of invertible ideal classes is free and transitive, so this is a torsor, not a sum with multiplicities.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-022",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-023",
+    "role": "local derivation",
+    "text": "The selected subgroup is n^(-1)Lambda/Lambda. Its local factor at each selected P has order p^e and is cyclic, so the full subgroup has order N and is cyclic. If a is prime to N, the a-isogeny carries this subgroup isomorphically to n^(-1)a^(-1)Lambda/a^(-1)Lambda, since locally at every p|N it is an isomorphism. This includes arbitrary exponents e and p=2 when 2 splits. The argument is not restricted to squarefree N.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-024",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-025",
+    "role": "local derivation",
+    "text": "Every ideal class has an integral representative prime to any specified finite set S of prime ideals. To see this without a prime-distribution theorem, choose an integral ideal I representing the inverse class. For each P∈S choose x_P∈I with valuation v_P(I). The Chinese remainder theorem on I/(∏_{P∈S}P)I gives x∈I having these images in I/PI. Then a=(x)I^(-1) is integral, represents the desired class, and has valuation zero at every P∈S. In particular one can require a to be prime to Nq and any additional finite bad set.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-026",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-027",
+    "role": "structure",
+    "text": "## 3. Integrality and a common finite diagram",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-028",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-029",
+    "role": "actual source application",
+    "text": "The existing final Fowler source, §2.1 pp612–613, associates to every imaginary quadratic order discriminant Delta a monic polynomial H_Delta(T)∈Z[T] whose roots are its singular moduli. The definition at p607 uses the usual elliptic j-invariant. Every A above has Delta=disc(F), so j(A) is an algebraic integer. No class-number estimate, exceptional discriminant, or effectiveness result from Fowler is used. Silverman C.11.2(a), p426, independently states the same integrality for maximal orders.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-030",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-031",
+    "role": "interface boundary",
+    "text": "Consequently every j(A) is integral at the fixed q-adic place. The good-reduction supplement applies Silverman VII.5.5 to each curve in a fixed finite diagram, takes a common finite extension, and then uses BLR and EGA to extend the arrows and all O-labels. The present argument supplies its integral-j premise and its characteristic-zero ideal quotient with degree Norm(a). It does not replace any of that supplement's extension, kernel-specialization, or quotient arguments. The field may depend on the finite diagram; no finite field containing all torsion or all diagrams is required.",
+    "source_binding_use_ids": [],
+    "reason": "States the integral-j output and points forward to the separately proved good-reduction supplement; no circular use of that supplement proves integrality."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-032",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-033",
+    "role": "structure",
+    "text": "## 4. Reciprocity and the inverse convention",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-034",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-035",
+    "role": "literal source statement and qualification",
+    "text": "Silverman C.11.2(c),(d), p426, says that H=F(j(Lambda)) is the Hilbert class field and that all the j-values for Pic(O) lie in it. C.11.4, p427, gives",
+    "source_binding_use_ids": [
+      "ACTIVE-CJ-PRIMITIVE-CM-ARTIN-ACTION"
+    ],
+    "reason": "Records Silverman source statement and its retained convention/good-reduction qualifications. The application occurs in the following argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-036",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-037",
+    "role": "literal source statement and qualification",
+    "text": "j(Lambda)^(Frob(P)) = j(Lambda P^(-1))",
+    "source_binding_use_ids": [
+      "ACTIVE-CJ-PRIMITIVE-CM-ARTIN-ACTION"
+    ],
+    "reason": "Records Silverman source statement and its retained convention/good-reduction qualifications. The application occurs in the following argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-038",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-039",
+    "role": "literal source statement and qualification",
+    "text": "provided there is an H-model with that j-invariant having good reduction at every prime above P. This hypothesis must not be dropped. We retain the printed Frobenius convention of C.11.4 in this formula. That passage does not itself define the residue action. The manuscript's arithmetic convention means x↦x^(Norm(P)); the already used Milne class field notes v4.03, Introduction p7 and Chapter I p20, explicitly define this convention. These are qualified author notes, used here only to record that definition. We do not promote the notes to a final published comparison of Silverman's convention. The bounded consumer is invariant under one global switch to inverse Artin, as proved below.",
+    "source_binding_use_ids": [
+      "ACTIVE-CJ-PRIMITIVE-CM-ARTIN-ACTION"
+    ],
+    "reason": "Records Silverman source statement and its retained convention/good-reduction qualifications. The application occurs in the following argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-040",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-041",
+    "role": "actual source application",
+    "text": "There are finitely many j-values. Silverman III.1.4(c), p45, supplies an H-model for each. Exclude from F the primes below all their bad primes. This is a finite set: an elliptic curve given by a Weierstrass equation over a number field has a smooth integral model away from the finitely many denominator and nonzero-discriminant primes. Enlarge this set by the primes dividing Nq. Section 2 supplies an integral ideal a representing each class and avoiding this set. Factor a into prime ideals. At every successive factor, C.11.4 applies to the corresponding j-value because all models' bad primes were excluded. The commuting Frobenius automorphisms multiply to Art(a) in the source convention, and induction gives",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-042",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-043",
+    "role": "actual source application",
+    "text": "j(Lambda)^(Art(a)) = j(a^(-1)Lambda).",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-044",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-045",
+    "role": "actual source application",
+    "text": "The Artin map for the Hilbert class field factors through Pic(O); thus this formula holds for every class, independently of its chosen good representative. This uses the ordinary Hilbert class field Artin isomorphism implicit in the source, not a new distribution statement about prime ideals. No claim that the chosen H-model has good reduction at q is made.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-046",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-047",
+    "role": "actual source application",
+    "text": "This equality of j-invariants lifts to the required labelled triple. Silverman III.1.4(b), p45, gives an origin-preserving isomorphism g over the algebraic closure between the two elliptic curves. A characteristic-zero endomorphism is determined by its tangent scalar, as follows already from VI.4.1. Because Art(a) is represented by an automorphism fixing F, the conjugated O-action has the same type phi. Thus g iota(alpha) g^(-1) and the target's labelled iota(alpha) have identical tangent scalar phi(alpha), and are equal for every alpha. The isomorphism is O-linear and therefore carries A[n] to the target's n-kernel. This proves",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-048",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-049",
+    "role": "local derivation",
+    "text": "(A,A[n],iota)^(Art(a)) ≅ [a]*(A,A[n],iota).",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-050",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-051",
+    "role": "actual source application",
+    "text": "It also shows that these labelled isomorphism classes are fixed by G_H: the same argument applies when the j-invariant is fixed. Models and arrows may still require a finite extension, which the good-reduction supplement permits. We do not infer a full chosen torsion basis or an isomorphism defined over H from equality of j-invariants.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-052",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-053",
+    "role": "non-required corroboration",
+    "text": "Final Cai–Shu–Tian supplies an independent published compatibility check. At p2524 its P_b is C/b→C/(bn^(-1)), and is defined over the ring class field. At pp2527 and2531 it gives the Artin map and the equality of the Galois and Hecke actions on CM points. In conductor one its P_b equals our [b^(-1)]*P_O. Accordingly P_b^(Art(a))=P_(a^(-1)b) in the convention just fixed. We use the explicit Silverman formula to fix this inverse, rather than infer it from the bare word “reciprocity.” CST's automorphic height hypotheses are not imported into the elementary lattice action.",
+    "source_binding_use_ids": [],
+    "reason": "The separately retained CST comparison is expressly corroboration, not an additional premise of this proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-054",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-055",
+    "role": "local derivation",
+    "text": "If the manuscript's bracket convention uses inverse Artin, reindex the entire class sum by a↦a^(-1). Its genus character is quadratic, so chi(a^(-1))=chi(a). This preserves the unaveraged sum and the chosen reference point. All quotient actions and target class labels must be changed together. It does not permit changing a reduction place separately for different classes. The genus-character construction itself is a separate existing input.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-056",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-057",
+    "role": "structure",
+    "text": "## 5. Forward inert reduction",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-058",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-059",
+    "role": "actual source application",
+    "text": "Final Gross–Zagier, On singular moduli, p198 sets O=Z[tau] and F=Q(tau), and p199, the first paragraph, states that (Delta/q)=-1 gives supersingular reduction at all primes above q. This general forward sentence cites Deuring; it appears in the proof of Corollary 2.5(2), whose further congruence conclusions concern q<12. Only the general forward sentence is used, not those small-prime congruences. The current Delta=disc(F) is fundamental, so an integral basis writes O=Z[tau]; q inert and unramified gives exactly that Legendre-symbol condition. Use the good models already obtained after the common finite extension. Their geometric special j-invariants are the reductions of the same integral singular moduli, so the elliptic curves are supersingular. This is independent of the finite extension used to obtain good reduction. The statement includes q=3; no argument here requires q≥5.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-060",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-061",
+    "role": "output/scope boundary",
+    "text": "This application is solely forward. It does not assert that every oriented supersingular embedding lifts, that a lift is unique, or that reduction is surjective or injective on an oriented class set. In particular we do not use Gross–Zagier Proposition 2.7 as a unique-lifting theorem. The conductor-one proof obtains the class-set bijection from its distinct torsor and equivariance arguments, with its remaining geometric premises.",
+    "source_binding_use_ids": [],
+    "reason": "Restates supplied interfaces and separate premises. It does not establish the named downstream inputs."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-062",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-063",
+    "role": "structure",
+    "text": "## 6. Exact joins and remaining boundaries",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-064",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-065",
+    "role": "output/scope boundary",
+    "text": "For the conductor-one proof, Sections 1–2 above supply its Section 1 fixed-type source torsor and prime-to-Nq ideal isogenies; Section 4 supplies the reciprocity interpretation needed in its Section 5 weighted sum; Sections 3 and5 supply the integral-j and forward-supersingularity premises of its Section 3. For the good-reduction proof, Sections 2–3 above supply precisely the assumed characteristic-zero quotient, degree and j-integrality. Its reviewed geometric specialization then gives the same-place O-equivariance, q-divisible and tangent labels, and selected N-level images.",
+    "source_binding_use_ids": [],
+    "reason": "Restates supplied interfaces and separate premises. It does not establish the named downstream inputs."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-066",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-067",
+    "role": "output/scope boundary",
+    "text": "The enhanced supersingular Eichler class set, rational Skolem–Noether, local lattice/Dieudonne classification, existence of the target reference object, right-uniformizer Frobenius description, genus-character identity, and final weighted theta comparison remain separate applications. Nothing here asserts a completed review of their transitive sources. Source reuse is deliberate: historical A065 already used Fowler integrality, A027 already used final CST, and the good-reduction supplement already pinned final Silverman with errata. The new records expose the present consumers and connecting derivations; they do not reclassify missing exposition as a false theorem.",
+    "source_binding_use_ids": [],
+    "reason": "Restates supplied interfaces and separate premises. It does not establish the named downstream inputs."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-068",
+    "role": "structure",
+    "text": "# CM source connections",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-069",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-070",
+    "role": "historical source-status/navigation",
+    "text": "The [proof](PROOF.md) and [source applications](APPLICATIONS.json) supply the retained maximal-order CM inputs to the conductor-one comparison. The [independent review](REVIEW.md) accepts the five bounded interfaces and the separate CST comparison. The exact accepted proof hash is `28d3ca61e687f3be5e3ba1fe0f9ff4f7c398dab5fbede598d9c10220ca9e8263`.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-071",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-072",
+    "role": "historical source-status/navigation",
+    "text": "The source Frobenius convention remains qualified as stated in the proof. The quadratic sum permits one global inversion, not separate inversions by class or place. [Source checks](SOURCE-CHECKS.md) retain the final-source and correction qualifications. The [good-reduction supplement](../cj-good-reduction-v1/README.md) has its own separate review.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-073",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-074",
+    "role": "historical source-status/navigation",
+    "text": "This payload integration is an authored proposal. The assembled conductor-one argument, A052 geometry and release adoption require their own decisions. Source metadata uses archived work-path identifiers for provenance; those identifiers are not public file links. Source PDFs and private correspondence are not distributed.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-075",
+    "role": "structure",
+    "text": "# Conductor-one inputs in combined005",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-076",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-077",
+    "role": "historical source-status/navigation",
+    "text": "The current local Version 14 candidate incorporates the separately reviewed CM and good-reduction supplements. Its TeX hash is `63db4260c5d918c91935461a814e1296378f051f12c61b12c6f3d896df8a3503`.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-078",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-079",
+    "role": "historical source-status/navigation",
+    "text": "The [independent assembled-interface review](../../evidence/source-incorporation-005/REVIEW.md) accepts the fixed-type, same-place conductor-one reduction, fiber and multiplicity-one interface. Its [exact bindings](../../evidence/source-incorporation-005/BINDINGS.json) connect the original proof with the [CM inputs](../cj-cm-inputs-v1/README.md), [good-reduction specialization](../cj-good-reduction-v1/README.md), and the separately accepted Ribet replacement. This replaces the designated Cornut–Jetchev A028 and Jetchev–Kane A052 imports for these uses. It does not establish equality with the unavailable final editions of those articles.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-080",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-081",
+    "role": "historical source-status/navigation",
+    "text": "The original proof, proposal records and earlier reviews retain their historical wording. Their formerly pending inputs are superseded only to the extent explicitly accepted in the new assembled-interface review. The genus character, local Schwartz functions, theta modularity, modular parametrization, finite functional and nonvanishing conclusions remain separate dependencies. Full-manuscript, complete-inventory and release approval are still pending.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-082",
+    "role": "structure",
+    "text": "# Current source adoption for combined004",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-083",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-084",
+    "role": "historical source-status/navigation",
+    "text": "The original README and proof reviews in this directory preserve their historical scopes. For the selected combined004 manuscript, the A052 geometric, right-module, Tate-lattice and Frobenius interface uses the independently accepted published Ribet replacement. See [the exact replacement review](../../evidence/source-incorporation-004/ribet-review/REVIEW.md). The earlier open geometric-supplier qualification is therefore superseded for this interface. No equivalence with the unavailable final Jetchev--Kane text has been established or is needed for this substitution.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-085",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-086",
+    "role": "historical source-status/navigation",
+    "text": "CM reciprocity, integrality, inert supersingularity, good-reduction specialization and the remaining arithmetic transformations retain their own source applications and reviews. The combined installation does not itself approve the whole conductor-one argument, RC, the full manuscript or a release. Complete inventory reconciliation and protected release checks remain pending.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-087",
+    "role": "structure",
+    "text": "# Direct conductor-one reduction argument",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-088",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-089",
+    "role": "historical source-status/navigation",
+    "text": "This successor preserves the prior unadopted 001 proposal and corrects its historical CJ DOI to 10.1112/blms/bds098. The TeX candidate and mathematical proof are unchanged.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-090",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-091",
+    "role": "historical source-status/navigation",
+    "text": "This package preserves the exact authored conductor-one proof and its conditional independent review. The proof supplies the A028 reduction/orientation and ideal-action connection for maximal CM order, split prime-power level and one inert reduction prime. It does not prove the general conductor-changing Cornut–Jetchev theorem.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-092",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-093",
+    "role": "historical source-status/navigation",
+    "text": "Read [proof.md](proof.md), [PREMISES.json](PREMISES.json) and [SOURCES.json](SOURCES.json) together. The proof's original proposal-status sentences are preserved historical bytes; [reviews/conditional-mathematics.md](reviews/conditional-mathematics.md) records the later bounded decision. That decision retains A052, CM reciprocity and good-reduction facts as real dependencies. A052's final-edition comparison and the precise Frobenius/right-division-uniformizer input remain open. No final source paper is included.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-094",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-095",
+    "role": "historical source-status/navigation",
+    "text": "[CONSUMERS.json](CONSUMERS.json) maps a newly authored minimal candidate against the exact fa53 manuscript. The new curation and candidate need separate independent review. The manuscript reference must not be adopted until this exact package is installed at research/version14/proofs/cj-conductor-one-v1/. An absolute public GitHub link in the candidate becomes usable only after publication.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-096",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-097",
+    "role": "historical source-status/navigation",
+    "text": "[ORIGIN-MAP.json](ORIGIN-MAP.json) maps the original proof/review bytes to portable paths. Original workspace paths inside preserved records are provenance, not a claim that omitted historical files are present. Run `python verify.py` in this directory to check the portable manifest. This verifies bytes, not mathematics or source closure.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-098",
+    "role": "structure",
+    "text": "# A direct conductor-one reduction argument",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-099",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-100",
+    "role": "historical proposal qualification",
+    "text": "This is an authored, conditional replacement for the exact A028 reduction interface. It is not an independent acceptance, a proof of the general Cornut–Jetchev theorem, or a qualification of its unavailable final edition. The separate geometric description of supersingular pairs currently assigned to A052 remains an explicit input with an open final-source qualification.",
+    "source_binding_use_ids": [],
+    "reason": "Historical source-availability wording; later Ribet/source decisions are separate records."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-101",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-102",
+    "role": "structure",
+    "text": "## Statement and retained inputs",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-103",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-104",
+    "role": "conditional statement and declared inputs",
+    "text": "Let F be an imaginary quadratic field with maximal order O, with O^times={+1,-1}. Let q be an odd inert prime, unramified in F. Let N be positive, coprime to q*disc(F), and assume every prime of N splits in F. No squarefreeness of N is assumed. Fix embeddings into C and an algebraic closure of Q_q, including a reduction place. Fix the CM type on O and one of the two O-stable cyclic p^e subgroups for each p^e exactly dividing N.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-105",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-106",
+    "role": "conditional statement and declared inputs",
+    "text": "The source X is the set of isomorphism classes of CM triples (A,C,iota), with End(A)=iota(O), the fixed CM type, and the chosen level orientations. Isomorphisms preserve the labelled O-action. The target is the set of supersingular triples (Abar,Cbar,j), with Cbar cyclic of order N and j:O -> End(Abar,Cbar), up to isomorphism preserving j. Fix the orientation at q induced by the chosen reduction of the CM type, and the specified orientations at all p dividing N.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-107",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-108",
+    "role": "conditional statement and declared inputs",
+    "text": "The claim is that geometric reduction gives an equivariant bijection between these two sets for the ideal-class action of Pic(O). Restriction to the fiber of any fixed underlying supersingular pair gives a bijection onto the corresponding conjugacy classes of embeddings with that orientation. The multiplicity is one.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-109",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-110",
+    "role": "conditional statement and declared inputs",
+    "text": "The retained inputs are explicit:",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-111",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-112",
+    "role": "conditional statement and declared inputs",
+    "text": "1. Complex uniformization of CM elliptic curves, the CM ideal-class action, and its identification with the class-field action used to define x_D^[a] in (O.1). This is the existing CM reciprocity convention; it is not deduced from reduction.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-113",
+    "role": "conditional statement and declared inputs",
+    "text": "2. CM elliptic curves have potentially good reduction and, at a prime inert in the CM field, their geometric reduction is supersingular. The needed forward inert-prime assertion is stated in the final Gross–Zagier *On singular moduli*, printed p.199, first paragraph. Its setting is the CM elliptic curve of the preceding p.198. A finite extension for a good model and an algebraically closed residue field suffice here. No uniqueness of a CM lift is used.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-114",
+    "role": "conditional statement and declared inputs",
+    "text": "3. For good elliptic curves over a strictly henselian discrete valuation ring of residue characteristic q, prime-to-q torsion is finite etale. Specialization identifies its geometric generic and special fibers. Endomorphisms and isogenies of good elliptic curves extend, and a prime-to-q subgroup quotient commutes with specialization. These are the usual good-reduction functor properties already needed for the modular correspondences in A052. They are not a CM lifting/surjectivity theorem.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-115",
+    "role": "conditional statement and declared inputs",
+    "text": "4. The geometric realization of supersingular enhanced elliptic curves by the Eichler class set B^times\\Bhat^times/Rhat^times, including End(Abar,Cbar)=R_z and the compatible prime-to-q Tate lattice description. This is A052, at current lines 14128–14138, currently citing Jetchev–Kane. Its open final-source qualification is retained. A028 is not being used to justify this input.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-116",
+    "role": "conditional statement and declared inputs",
+    "text": "5. Rational Skolem–Noether for maximal quadratic embeddings in B, the centralizer equal to F, and elementary local lattice classification. The manuscript already uses the rational embedding/local calculation before its first A028 invocation. We repeat the required local calculation below rather than assume a global reduction bijection.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-117",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-118",
+    "role": "conditional statement and declared inputs",
+    "text": "Only after these inputs does the direct argument below apply. It supplies the reduction/orientation connection missing from a bare appeal to the word “torsor”.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the exact conditional theorem or its inputs. This is not a proof of those inputs and does not create self-consuming source edges."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-119",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-120",
+    "role": "structure",
+    "text": "## 1. The source torsor, independently of reduction",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-121",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-122",
+    "role": "actual source application",
+    "text": "By complex uniformization an O-linear CM elliptic curve of the fixed type is C/Lambda for a fractional O-ideal Lambda. Two are O-linearly isomorphic exactly when their lattices differ by an element of F^times. Thus the ideal classes act freely and transitively. Choosing a level orientation at each p^e||N specifies C uniquely: O tensor Z_p is Z_p x Z_p, and the cyclic O-stable subgroup of order p^e is in one of the two eigensummands. The choice does not identify two ideal classes. Thus X is a Pic(O)-torsor before considering any reduction.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-123",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-124",
+    "role": "local derivation",
+    "text": "Every ideal class has an integral representative a prime to Nq. For completeness, choose a fractional ideal I in the inverse class. By the Chinese remainder theorem choose x in I with v_P(x)=v_P(I) at every prime P over Nq. Then a=(x)I^(-1) is integral and has valuation zero at each such P. This choice is only a representative; it does not constrain the ideal class.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-125",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-126",
+    "role": "actual source application",
+    "text": "For this representative the ideal action can be realized by the isogeny A -> A/A[a]. With the usual lattice convention its target lattice is a^(-1)Lambda. Using the inverse convention everywhere changes the action by [a] -> [a]^(-1), which will be tracked explicitly in the finite sum.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-127",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-128",
+    "role": "structure",
+    "text": "## 2. The target torsor, without reduction surjectivity",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-129",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-130",
+    "role": "unresolved source-side binding",
+    "text": "Work with embedded pairs, not pairs of conjugate embeddings. Choose a rational embedding i:F -> B and a finite adelic z_0 realizing one fixed tuple of integral local embeddings. At the reference tuple one may take i from the actual reduced reference CM curve. At other tuples the local calculation gives z_0; the geometric existence of its underlying pair is input 4.",
+    "source_binding_use_ids": [],
+    "reason": "Requires explicit source-level binding of the rational embedding/existence input and geometric reference object. Retained local proof is not being replaced by a source-availability claim."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-131",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-132",
+    "role": "local derivation",
+    "text": "Away from Nq a maximal-order O_p-stable lattice is a rank-one torsion-free module over the maximal quadratic order O_p. In the field case this is a fractional ideal of a discrete valuation ring; in the split case it is a pair of rank-one lattices. It is principal in either local algebra. There is one orbit under F_p^times. This includes ramified primes dividing disc(F).",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-133",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-134",
+    "role": "local derivation",
+    "text": "At p^e||N, both lattices in an O_p-stable Eichler pair split under the integral idempotents of Z_p x Z_p. If their quotient is cyclic of order p^e, its two elementary exponents are (e,0) or (0,e). The exponent is not divided between two nonzero summands, because such a quotient would not be cyclic. Each choice is one F_p^times orbit. This argument works for all e>=1 and for p=2; it uses integral idempotents, not division by 2 in a chosen matrix formula.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-135",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-136",
+    "role": "unresolved source-side binding",
+    "text": "At q, F_q/Q_q is unramified quadratic and B_q is division. A local cyclic presentation has B_q=F_q+F_q*Pi, with Pi*a=bar(a)*Pi and Pi^2 a central uniformizer times a unit. The maximal order has residue field F_(q^2). Conjugation by its units fixes that residue field, while Pi induces its nontrivial automorphism. The two O_q embeddings are consequently the two local unit-conjugacy classes. They are distinguished by their residue embeddings, or equivalently by the parity of reduced-norm valuation of a conjugating element. There is no identification of these classes.",
+    "source_binding_use_ids": [],
+    "reason": "Requires explicit source-level binding of the generic q-division cyclic presentation, maximal order residue and unit/uniformizer actions. Retained local proof is not being replaced by a source-availability claim."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-137",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-138",
+    "role": "unresolved source-side binding",
+    "text": "Rational Skolem–Noether allows the field embedding of any target pair to be conjugated to i. Its remaining rational stabilizer is the pointwise centralizer F^times, not the full normalizer. The local calculations show that the adelic representatives of one tuple are exactly Fhat^times*z_0*Rhat^times. Their quotient is",
+    "source_binding_use_ids": [],
+    "reason": "Requires explicit source-level binding of Skolem-Noether and the pointwise centralizer F-times. Retained local proof is not being replaced by a source-availability claim."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-139",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-140",
+    "role": "local derivation",
+    "text": "F^times \\ Fhat^times / (Fhat^times intersect z_0 Rhat^times z_0^(-1))",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-141",
+    "role": "local derivation",
+    "text": "= F^times \\ Fhat^times / Ohat^times = Pic(O).",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-142",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-143",
+    "role": "actual source application",
+    "text": "The intersection is Ohat^times because the embedded order is maximal at every prime. This proves the target component is a free transitive Pic(O)-set. It does not use a map from CM points, a count of their reductions, or the desired surjectivity. The geometric interpretation uses input 4, which remains separate.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-144",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-145",
+    "role": "structure",
+    "text": "## 3. Geometric reduction and the same ideal action",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-146",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-147",
+    "role": "actual source application",
+    "text": "Start with the actual reference CM triple x_0=(A,C,iota), not an arbitrary class in an adelic quotient. Choose a good model after a finite extension at the fixed q-adic place. Its reduction is supersingular by input 2. The labelled action of O and the prime-to-q cyclic subgroup C specialize. The resulting map j:O -> End(Abar,Cbar) is injective: a nonzero O endomorphism is an isogeny, its composition with its dual is multiplication by its positive degree, and that multiplication remains nonzero on the special elliptic curve. It therefore cannot specialize to the zero homomorphism. Since O is maximal, its image is optimal. The q-orientation is the reduction of the fixed CM type on the one-dimensional tangent space. Denote this actual target triple by y_0.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-148",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-149",
+    "role": "actual source application",
+    "text": "For a prime-to-Nq ideal representative a, the kernel A[a] is a prime-to-q finite etale subgroup in the good model. One can describe it by the simultaneous kernels of finitely many generators of a inside A[m], for a positive integer m in a with q not dividing m. Specialization respects this kernel, its O-action, and its quotient. It also respects the image of C under the quotient isogeny. Therefore",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-150",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-151",
+    "role": "local derivation",
+    "text": "red(a*x_0) = a*red(x_0) = a*y_0",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-152",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-153",
+    "role": "local derivation",
+    "text": "as labelled enhanced curves, with a single fixed choice of inverse convention on both sides.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-154",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-155",
+    "role": "actual source application",
+    "text": "This is also the ideal action in section 2. On each prime-to-q rational Tate module the ideal quotient replaces the O_p lattice Lambda_p by a_p^(-1)Lambda_p, exactly the multiplier defining the local adelic action. At q the ideal is a unit and the prime-to-q isogeny is an isomorphism on the q-divisible group. At p dividing N it is an isomorphism on the level torsion, preserving the selected eigensummand. Thus it preserves every orientation of y_0. On the tangent space at q its differential is nonzero, so it intertwines the same residue embedding rather than its conjugate. There is no exceptional pure-inseparable ideal action in this argument because the representatives were chosen prime to q.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-156",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-157",
+    "role": "local derivation",
+    "text": "The equality uses the same chosen reduction place for every class. It does not choose independent places or lifts for different points.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-158",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-159",
+    "role": "structure",
+    "text": "## 4. Bijection, fibers, and every orientation tuple",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-160",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-161",
+    "role": "local derivation",
+    "text": "An equivariant map between nonempty torsors for the same group is bijective: every source is a*x_0, every target is a*y_0, and freeness gives uniqueness. Applying this elementary fact proves the claimed reduction bijection for the reference tuple. Restricting this already proved bijection to the projection onto a fixed supersingular pair gives the fiber assertion. It is not a claim that the map to unlabelled supersingular curves is injective.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-162",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-163",
+    "role": "conditional specialization of supplied operation",
+    "text": "Every other tuple used in the coefficient sum has a geometric anchor. At a prime power p^e||N, the geometric Atkin–Lehner operation uses the p^e quotient and its dual subgroup. It exchanges the two cyclic eigensummands at that prime, preserves the other primary subgroups, and has degree prime to q. It lifts in characteristic zero and commutes with reduction. Starting with x_0 gives the anchors with all possible level orientations and the same q-orientation. The description is valid for powers of two as well.",
+    "source_binding_use_ids": [],
+    "reason": "The good-reduction input specializes an already supplied geometric Atkin-Lehner quotient/dual operation and its finite diagram. It does not construct that operation or identify the split local normalizer with it; those are explicit caller requirements retained with the pending transformation row83.",
+    "caller_requirements": "The good-reduction input specializes an already supplied geometric Atkin-Lehner quotient/dual operation and its finite diagram. It does not construct that operation or identify the split local normalizer with it; those are explicit caller requirements retained with the pending transformation row83."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-164",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-165",
+    "role": "actual source application",
+    "text": "For the other q-orientation, apply q-Frobenius to the reduced enhanced curve and its labelled O-action. The tangent residue embedding is conjugated; the level-primary choices are transported, since N is prime to q. This is the division-uniformizer operation under input 4. Consequently it is a genuine geometric anchor for the other component, not merely an abstract adelic representative. It is not necessary to assert that this other q-component is the image of the same fixed CM-type reduction map. That assertion would be false. The existing coefficient comparison pairs the components by Frobenius instead.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-166",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-167",
+    "role": "actual source application",
+    "text": "Alternatively a conjugate CM type gives that opposite q-orientation, with the corresponding level choices. In both descriptions the two q-signs remain distinct. On the coarse supersingular pair set defined over F_(q^2), Frobenius and inverse Frobenius have the same action. This statement concerns the geometric operation on the pair and its value under the rational modular parametrization; it does not identify the two labelled embeddings.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-168",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-169",
+    "role": "structure",
+    "text": "## 5. The finite sum and the unchanged weights",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-170",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-171",
+    "role": "local derivation",
+    "text": "Choose z_0 in the target to represent y_0, the reduction of the actual reference Heegner point. For the quadratic class character chi used in (O.1), the established equality gives",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-172",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-173",
+    "role": "local derivation",
+    "text": "sum_[a] chi([a]) P_M(a*z_0)",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-174",
+    "role": "local derivation",
+    "text": "= lambda_M( overline( L * sum_[a] chi([a]) pi(x_D^[a]) ) ).",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-175",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-176",
+    "role": "finite-sum deduction under supplied additive map and domain",
+    "text": "Specialization, the fixed multiplication L, and the same additive lambda_M commute with this finite sum. If CM reciprocity uses inverse Artin labels, reindex the complete sum by [a] -> [a]^(-1). The quadratic character is unchanged. No class-group cardinality or stabilizer is divided out. All terms are evaluated in the same F_(q^2) domain supplied by input 4 and the current construction of lambda_M.",
+    "source_binding_use_ids": [],
+    "reason": "Finite-sum linearity is a local argument under input4: the same additive lambda_M is defined on the actual F_(q^2) domain and the parametrization values lie there. This line does not prove that map, its domain or those rationality facts; the actual detector/geometric caller bindings remain required in the pending caller row87.",
+    "caller_requirements": "Finite-sum linearity is a local argument under input4: the same additive lambda_M is defined on the actual F_(q^2) domain and the parametrization values lie there. This line does not prove that map, its domain or those rationality facts; the actual detector/geometric caller bindings remain required in the pending caller row87."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-177",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-178",
+    "role": "local derivation",
+    "text": "For a fixed underlying target pair, the stabilizer of a labelled optimal O embedding under R_z^times is R_z^times intersect F^times=O^times={+1,-1}. Thus its orbit has |R_z^times|/2 elements, even when the supersingular curve has extra automorphisms. The existing weight 1/|R_z^times| leaves exactly 1/2. The trace-zero vectors x and -x determine opposite residue embeddings at q. Unit conjugation acts trivially on the residue field, so it does not identify them. This recovers the precise stabilizer and two-orientation convention of the current proof.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-179",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-180",
+    "role": "unresolved source-side binding",
+    "text": "The equality of contributions from the other tuples still uses the project's explicit Schwartz and parametrization transformations. At p^e||N both factors change by w_(p^e)*chi_hstar(p)^e, whose product is one. At q the residue-weight sign is (-1/q)=-1 and the norm character is chi_hstar(q)=-1, while lambda_M has Frobenius sign +1. These are retained inputs at current lines 14993–15023. The torsor argument supplies multiplicity one and the geometric sum connection; it does not prove those independently constructed character formulas. Their product yields the same c_0*2^omega(N) coefficient after all 2^(omega(N)+1) tuples are counted.",
+    "source_binding_use_ids": [],
+    "reason": "Requires exact current local Schwartz, Atkin-Lehner/parametrization and q-character transformation input bindings; the torsor conclusion does not prove these."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-181",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-182",
+    "role": "structure",
+    "text": "## Scope",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-183",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-184",
+    "role": "unresolved source-side binding",
+    "text": "In the current use, F=Q(sqrt(D*h_star)), q=ell_0, and O is maximal because D*h_star is an odd fundamental discriminant. The support gives q inert, q not dividing NDh_star, and F split at every prime of 2N. The field has no extra units. Every premise matches the conductor-one use; none grants the general nonmaximal-order conductor-changing theorem.",
+    "source_binding_use_ids": [],
+    "reason": "Compare actual current discriminant, split-level, inert-prime and unit hypotheses at the caller; this line asserts that match rather than proving every support fact here."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-185",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-186",
+    "role": "historical proposal qualification",
+    "text": "This proof is proposed for independent review. It can remove the use of A028/Cornut–Jetchev in the conductor-one comparison while retaining A052, CM reciprocity, and the foundational good-reduction inputs explicitly. It does not close A052's unavailable final-edition comparison, reprove its entire geometric class-set realization, or qualify the final Cornut–Jetchev text. The original source and current manuscript remain unchanged.",
+    "source_binding_use_ids": [],
+    "reason": "Historical source-availability wording; later Ribet/source decisions are separate records."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-187",
+    "role": "structure",
+    "text": "# Good reduction and specialization of labelled CM ideal isogenies",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-188",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-189",
+    "role": "historical authorship",
+    "text": "Author: `/root/astra_v14_assertions_arithmetic`, completing the separate root draft pinned in SOURCES.json. This is a new author successor awaiting independent review. The original draft is unchanged. The installed manuscript and portable CJ002 proposal remain separate targets; this file changes neither.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved proposal-stage status and attribution."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-190",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-191",
+    "role": "structure",
+    "text": "## 1. Domain and conclusion",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-192",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-193",
+    "role": "conditional statement",
+    "text": "Let O be the maximal order of an imaginary quadratic field F. Let q be an odd prime inert in F, and let N be positive with q not dividing N. In the conductor-one application, N is also prime to disc(F) and every prime of N splits in F. Fix the reduction place and the labelled CM action iota:O -> End(A). Consider a finite diagram of CM elliptic curves in the given ideal-class orbit, their labelled O-actions, their selected O-stable cyclic level subgroups, and ideal isogenies for nonzero integral ideals a of O prime to qN. Set d=|O/a|. The characteristic-zero ideal-action input supplies A[a], its quotient B=A/A[a], the O-equivariant isogeny f of degree d, and its level subgroup f(C). That ideal-action construction is retained, not proved here.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the finite diagram, integral-j and ideal quotient premises and exact conditional conclusion; later paragraphs prove it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-194",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-195",
+    "role": "conditional statement",
+    "text": "Assume the separately supplied integrality of every j-invariant in this finite diagram. We prove that, after one finite extension of the local field of definition, the curves have common good elliptic models, their labelled actions and isogenies extend, and reduction is injective on O. The special isogeny has degree d and kernel precisely the simultaneous a-kernel of the specialized action. It realizes the ideal quotient, carries the selected level subgroup to its specialized image, and preserves the labelled level eigensummands and the q-residue orientation. On the reduced curves it induces an isomorphism of q-divisible groups.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the finite diagram, integral-j and ideal quotient premises and exact conditional conclusion; later paragraphs prove it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-196",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-197",
+    "role": "conditional statement",
+    "text": "The field extension may depend on the finite diagram. No finite field containing all torsion of all orders or all possible ideal isogenies is asserted. No supersingularity, CM reciprocity, class-set realization, Frobenius formula or reduction-surjectivity theorem is proved by this supplement.",
+    "source_binding_use_ids": [],
+    "reason": "Declares the finite diagram, integral-j and ideal quotient premises and exact conditional conclusion; later paragraphs prove it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-198",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-199",
+    "role": "structure",
+    "text": "## 2. Common good models",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-200",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-201",
+    "role": "local derivation",
+    "text": "Start with a finite extension of Q_q over which all curves, the finitely many arrows and level subgroups are defined. Include a finite Z-generating set of each labelled O-action. Since O is generated by two elements as a Z-module, this includes every endomorphism in the action. Each of these finitely many algebraic data is defined over a finite extension.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-202",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-203",
+    "role": "actual source application",
+    "text": "Silverman VII.5.5, second edition, printed pp.197 and 199, gives potentially good reduction from integral j. Its definition requires a finite extension. Take the compositum of the finitely many good-reduction extensions. Base change preserves the smooth proper models, so they all exist over the ring of integers R of one finite extension K/Q_q. The ring R is a complete noetherian DVR. Its residue characteristic is q, including the allowed case q=3. BLR 1.4/2, printed p.19, equips each smooth proper model with the extending abelian-scheme structure. Thus the models A and B below are elliptic schemes over Spec(R).",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-204",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-205",
+    "role": "actual source application",
+    "text": "For this use Silverman's proof at odd residue characteristic is explicit: after a finite extension put the curve in Legendre form. The integral-j equation has leading coefficient a unit, so its root lambda is integral; reduction of that equation excludes lambda=0,1. Its discriminant is then a unit. The proof only excludes residue characteristic 2. The 2015 errata corrections on printed pp.197–198 concern the neighboring example and the extension field in VII.5.4; the later errata's Neron–Ogg–Shafarevich correction is not an input to this Legendre proof. SOURCE-CHECKS.md records the exact checks.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-206",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-207",
+    "role": "structure",
+    "text": "## 3. Extending maps and retaining the action",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-208",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-209",
+    "role": "actual source application",
+    "text": "BLR Definition 1.2/1 and Proposition 1.2/8, printed pp.12 and 15, say that an abelian scheme over this Dedekind base has the Neron mapping property for every smooth source. Apply this with source A and target B. Any generic-fiber homomorphism f_K extends uniquely to an R-morphism f:A -> B.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-210",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-211",
+    "role": "actual source application",
+    "text": "It is a group homomorphism. The two maps A x_R A -> B expressing addition compatibility have the same generic restriction; A x_R A is smooth, so uniqueness gives equality. The zero-section and inverse compatibilities follow in the same way. Applying uniqueness again to composites shows that extension respects composition, addition and identities. In particular the labelled O-actions extend as ring actions, and every O-equivariance relation of the diagram survives. The conclusion uses the full smooth-source mapping property, not merely extension of sections. BLR's proof uses its published Weil extension theorem 4.4/1; that transitive foundational input remains identified.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-212",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-213",
+    "role": "actual source application",
+    "text": "For a nonzero alpha in O, its generic endomorphism is nonconstant. Silverman III.6.1 and III.6.2(a) supply its dual with dual(alpha) alpha=[m], where m=deg(alpha)>0. The dual is defined over K: uniqueness makes it invariant under every K-Galois automorphism, as the official 2022 errata also explains. Extend both maps and the identity by BLR. If alpha specialized to zero, [m] would be zero on the special elliptic curve. This contradicts III.6.2(d), which gives deg[m]=m^2 in every characteristic. In particular m need not be prime to q for this injectivity argument. Since specialization respects subtraction, distinct elements of O stay distinct.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-214",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-215",
+    "role": "structure",
+    "text": "## 4. Finite etale torsion and specialization",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-216",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-217",
+    "role": "local derivation",
+    "text": "Let n be a positive integer prime to q. On Lie(A/R), the differential of [n] is multiplication by n. This follows directly by differentiating the group addition at the identity: its two restrictions are the identity, hence its tangent map is addition. Iteration gives n times the identity; inversion gives the negative case if needed. Translation carries the identity calculation to every geometric point.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-218",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-219",
+    "role": "actual source application",
+    "text": "The schemes A and A are smooth and locally of finite presentation over R. The induced map on relative cotangent spaces is an isomorphism, since n is an R-unit. EGA IV4, Corollary 17.11.2(c'), printed p.84, therefore makes [n] etale. This cotangent formulation does not impose an equality of residue fields at arbitrary points. The map is proper: its graph is closed because the target is R-separated, and the projection A x_R A -> A is proper by base change. An etale morphism is locally quasi-finite; here it is quasi-compact, so quasi-finite. EGA III1, Corollary 4.4.11, printed p.138, makes this proper quasi-finite map finite. Its target is locally noetherian, as required. Pulling back the zero section proves that A[n] is finite etale over R.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-220",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-221",
+    "role": "actual source application",
+    "text": "EGA IV4, Proposition 18.5.14 gives henselianity of R; Proposition 18.5.15 identifies finite etale algebras over a henselian local ring with those over its residue field. Over the strict henselization R^sh, finite etale schemes are therefore constant finite schemes: the residue field is separably closed and a finite etale algebra over that field is a product of copies of it. Fix a compatible geometric generic point and geometric special point. Each component Spec(R^sh) has one point over each, giving the specialization bijection on torsion. Full faithfulness makes this identification commute with every map between the finite etale schemes, in particular all labelled endomorphisms. This is a geometric-point comparison after fixing the place, not an assertion about rational torsion over the original K.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-222",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-223",
+    "role": "actual source application",
+    "text": "For any finite collection of endomorphisms acting on A[n], their simultaneous kernel is a union of components after this base change, and taking the special fiber selects exactly the same components. Thus simultaneous kernels commute with the comparison. No statement of this kind is being made for q-primary torsion, which need not be etale.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-224",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-225",
+    "role": "structure",
+    "text": "## 5. The actual ideal quotient",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-226",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-227",
+    "role": "actual source application",
+    "text": "Let a and f_K:A_K -> B_K be as in Section 1, with degree d prime to qN. Extend f_K and its dual by Section 3. The two identities",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-228",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-229",
+    "role": "actual source application",
+    "text": "f^dual f=[d] on A,       f f^dual=[d] on B",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-230",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-231",
+    "role": "actual source application",
+    "text": "hold over R. On the rank-one tangent modules their product is multiplication by the unit d, so the differential of f is an isomorphism. Translation and the same EGA argument make f finite etale. Its kernel is finite etale over R and is contained in A[d].",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-232",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-233",
+    "role": "actual source application",
+    "text": "EGA IV4, Proposition 18.2.3 and Remark 18.2.7(i), printed pp.112–113, make f finite locally free. Its rank is locally constant on B. The target B is connected: its generic fiber is connected, and any nonempty open-and-closed part of B has open image in Spec(R), by smoothness, and hence meets the generic fiber. Thus the rank is the same d on every fiber. The special isogeny is consequently nonconstant, finite etale and of degree d; it is surjective because its finite locally free rank is positive everywhere.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-234",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-235",
+    "role": "actual source application",
+    "text": "The finite abelian group O/a has order d, so d belongs to a. Choose a finite Z-generating set alpha_1,...,alpha_r for a. Every simultaneous a-kernel is thus already contained in the d-torsion. All alpha_i extend by Section 3. Inside the constant finite group A[d] over R^sh, let S be their simultaneous kernel. The characteristic-zero ideal-action input identifies S_K with ker(f_K). Both S and ker(f) are unions of components of A[d], so equality on their geometric generic fibers implies equality of those component subsets. Their special fibers are equal. Therefore",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-236",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-237",
+    "role": "local derivation",
+    "text": "ker(f_bar) = A_bar[a]",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-238",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-239",
+    "role": "local derivation",
+    "text": "as finite subgroup schemes, with the original labelled action. This is stronger than equality of numerical cardinalities.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-240",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-241",
+    "role": "local derivation",
+    "text": "For the quotient assertion no new general construction of quotients of abelian schemes is needed. The map f_bar is a finite etale surjective homomorphism. The map A_bar x ker(f_bar) -> A_bar x_(B_bar) A_bar sending (x,s) to (x,x+s) is an isomorphism, with inverse (x,y) -> (x,y-x). Thus f_bar is the torsor quotient by its kernel in the fppf sheaf sense, and B_bar represents that quotient. It is precisely the ideal quotient required here. O-equivariance follows from the extended relations, and base change carries the image f(C) to the image of C_bar.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-242",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-243",
+    "role": "structure",
+    "text": "## 6. Level and q-orientation",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-244",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-245",
+    "role": "actual source application",
+    "text": "Because gcd(d,N)=1, choose integers u,v with ud+vN=1. The map [u]f^dual is the inverse of f on N-torsion on both sides. This proves an isomorphism of the finite etale N-torsion schemes, not just an injection of point sets. It is O-equivariant and commutes with specialization. It therefore sends the selected labelled O-stable cyclic subgroup C to the selected image and preserves each labelled eigensummand for the split primes dividing N. Repeated prime powers in N cause no change to this argument.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-246",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-247",
+    "role": "actual source application",
+    "text": "On the special curves, multiplication by d is an automorphism of the q-divisible group. More explicitly, choose the compatible residues of d^(-1) in Z_q/q^r. At level q^r the inverse to f_bar is multiplication by this residue followed by f_bar^dual. The two dual identities prove both inverse equations; compatibility of the residues proves compatibility with the transition maps. Thus the induced map on the q-divisible groups is an isomorphism, without incorrectly treating their torsion as etale.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-248",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-249",
+    "role": "local derivation",
+    "text": "The tangent differential of f_bar is nonzero. The O-action on the one-dimensional tangent line gives the residue embedding O/qO -> k_bar: it is a unital ring homomorphism, it kills q, and O/qO is a field because q is inert. Differentiating O-equivariance and cancelling the nonzero differential shows that the two scalar actions agree for every labelled alpha in O. This preserves the same residue embedding, not its conjugate. These are exactly the compatibility inputs requested by the separate enhanced Tate/Dieudonne class-set argument. This supplement does not identify that class set or its Frobenius action.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-250",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-251",
+    "role": "structure",
+    "text": "## 7. Scope and related uses",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-252",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-253",
+    "role": "output/scope boundary",
+    "text": "The result supplies common models and the prime-to-q specialization functor in retained inputs 2–3 of the conductor-one proposal. It applies one finite diagram at a time and remains compatible when diagrams are enlarged, by uniqueness of extension. The selected N-level and tangent orientations are both checked because the downstream argument uses both. Applying the common-model step to every member of the finite class orbit does not prove a bijection of reduction fibers.",
+    "source_binding_use_ids": [],
+    "reason": "States the proved finite-diagram interface and explicitly retains other geometric and arithmetic inputs."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-254",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-255",
+    "role": "output/scope boundary",
+    "text": "CM j-integrality, the characteristic-zero ideal action and its reciprocity convention, the forward inert-prime supersingularity theorem, the enhanced supersingular class-set realization, its local Tate/Dieudonne descriptions and Frobenius, and the rational embedding/local-counting input remain separate. The unit restriction and other global hypotheses in the conductor-one target are not removed. Source publication checks here concern the exact Silverman, BLR and EGA interfaces, not final-version equivalence of Cornut–Jetchev or Jetchev–Kane. The accompanying contracts and source pins are author records for independent review.",
+    "source_binding_use_ids": [],
+    "reason": "States the proved finite-diagram interface and explicitly retains other geometric and arithmetic inputs."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-256",
+    "role": "structure",
+    "text": "# Good-reduction specialization",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-257",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-258",
+    "role": "historical source-status/navigation",
+    "text": "The [proof](PROOF.md) is an exact copy of the source-complete supplement at SHA256 `37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921`. The [independent review](REVIEW.md) accepts its stated common-model, labelled-action and prime-to-qN specialization scope. This packaging is a new proposal and has not itself been accepted.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-259",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-260",
+    "role": "historical source-status/navigation",
+    "text": "[Applications](APPLICATIONS.json), [source checks](SOURCE-CHECKS.md) and [metadata](SOURCES.json) retain the original source pins and archived work-path identifiers for provenance. Those identifiers do not purport to be public file links. Source PDFs and renders are not distributed. [The CM connection](../cj-cm-inputs-v1/README.md) separately supplies integral j and the characteristic-zero ideal quotient. The remaining enhanced supersingular geometry and final coefficient comparison are not certified here.",
+    "source_binding_use_ids": [],
+    "reason": "Preserved packaging, provenance and bounded status description, not an additional proof argument."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-261",
+    "role": "structure",
+    "text": "# Igusa's theta identities at the actual genus-two point",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-262",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-263",
+    "role": "historical proposal/scope",
+    "text": "This is an authored source substitution and connecting proof, pending independent",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-264",
+    "role": "historical proposal/scope",
+    "text": "review. It replaces the LNY publisher-proof citation for the two theta identities.",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-265",
+    "role": "historical proposal/scope",
+    "text": "It does not authenticate a final LNY edition or replace the other height inputs.",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-266",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-267",
+    "role": "structure",
+    "text": "## 1. Fixed objects and coordinate conventions",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-268",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-269",
+    "role": "definitions and datum",
+    "text": "Let (A,L) be the principally polarized abelian surface in the current manuscript,",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-270",
+    "role": "definitions and datum",
+    "text": "with its already chosen principal polarization, and choose a compatible symplectic",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-271",
+    "role": "definitions and datum",
+    "text": "homology basis. Write its complex period point as tau in the genus-two Siegel",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-272",
+    "role": "definitions and datum",
+    "text": "upper half-space. For a,b in {0,1}^2 put m=(a/2,b/2) and define",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-273",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-274",
+    "role": "definitions and datum",
+    "text": "z_m = theta_m(tau,0)",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-275",
+    "role": "definitions and datum",
+    "text": "= sum over n in Z^2 of exp(pi*i*(n+a/2)^t*tau*(n+a/2)",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-276",
+    "role": "definitions and datum",
+    "text": "+ pi*i*(n+a/2)^t*b).",
+    "source_binding_use_ids": [],
+    "reason": "Fixes the same principal polarization, period and half-characteristic convention; actual existence of the datum remains a caller input."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-277",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-278",
+    "role": "local derivation",
+    "text": "The positive definite imaginary part gives absolute convergence. These are",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-279",
+    "role": "literal source definition",
+    "text": "Igusa's theta constants: his printed p833 defines theta_m(tau,z) by the series",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-280",
+    "role": "literal source definition",
+    "text": "with e(u)=exp(2*pi*i*u), first term (n+m')^t*tau*(n+m')/2 and second term",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-281",
+    "role": "literal source definition",
+    "text": "(n+m')^t*(z+m''); p834 sets z=0. In particular his characteristic is the",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-282",
+    "role": "literal source definition",
+    "text": "half-integral vector m, whereas LNY p4 labels the same series by the integral",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-283",
+    "role": "literal source definition",
+    "text": "vector (a,b) and puts its halves into the exponent. This is a reindexing, not",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-284",
+    "role": "literal source definition",
+    "text": "a rescaling of tau or the constants. We fix the representatives 0 and1/2 used",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-285",
+    "role": "literal source definition",
+    "text": "by Igusa on p848, so no choice of integer lift remains.",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-DEF"
+    ],
+    "reason": "Records the Igusa series convention; subsequent parity comparison consumes it."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-286",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-287",
+    "role": "actual source application",
+    "text": "Igusa p834 gives parity (-1)^(a dot b). It can also be checked directly by",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-288",
+    "role": "actual source application",
+    "text": "reindexing n as -n-a: z_m=(-1)^(a dot b) z_m. Thus the six odd constants vanish.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-289",
+    "role": "local derivation",
+    "text": "There are ten even characteristics: a=0 permits all four b, and each of the",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-290",
+    "role": "local derivation",
+    "text": "three nonzero a permits two b. No assertion that every even constant is",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-291",
+    "role": "local derivation",
+    "text": "nonzero at every genus-two point is used.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-292",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-293",
+    "role": "structure",
+    "text": "## 2. The exact published identities",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-294",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-295",
+    "role": "literal published identities and qualification",
+    "text": "Igusa, Modular forms and projective invariants, American Journal of Mathematics",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-296",
+    "role": "literal published identities and qualification",
+    "text": "89(3),1967,817-855, p848, gives in this genus-two convention",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-297",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-298",
+    "role": "literal published identities and qualification",
+    "text": "2^2 psi_4 = sum over even m of z_m^8,",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-299",
+    "role": "literal published identities and qualification",
+    "text": "-2^14 chi_10 = product over even m of z_m^2.",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-300",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-301",
+    "role": "literal published identities and qualification",
+    "text": "The minus sign and exponents are visible in the final journal scan. These are",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-302",
+    "role": "literal published identities and qualification",
+    "text": "the same two formulas stated in LNY's proof p4, which itself cites this exact",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-303",
+    "role": "literal published identities and qualification",
+    "text": "page of Igusa. The parity convention is on pp833-834; the count is also given",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-304",
+    "role": "literal published identities and qualification",
+    "text": "in general on p819. The discussion on p850 explicitly identifies the product",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-305",
+    "role": "literal published identities and qualification",
+    "text": "of all even theta constants and notes that its square is required at genus2.",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-306",
+    "role": "literal published identities and qualification",
+    "text": "We do not apply the genus-at-least-three conclusion of Lemma10 to genus2.",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-IGUSA-THETA-FORMS"
+    ],
+    "reason": "States the source identities and genus-two qualifications, rather than consuming their own output."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-307",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-308",
+    "role": "actual source application",
+    "text": "The psi_4 and chi_10 names match the Igusa forms in the current Lin-Yang",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-309",
+    "role": "actual source application",
+    "text": "application. Final Lin-Yang p793, equation(13), cites this same Igusa1967 paper",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-310",
+    "role": "actual source application",
+    "text": "as reference20 and states J4=(J2^2-psi4)/24 and J10=-4chi10. Thus there is no",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-311",
+    "role": "actual source application",
+    "text": "unverified conversion between independently scaled cusp forms in this join.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-312",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-313",
+    "role": "structure",
+    "text": "## 3. The unchanged rational coordinate",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-314",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-315",
+    "role": "actual source application",
+    "text": "For the same quaternionic moduli point the separately retained Lin-Yang",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-316",
+    "role": "actual source application",
+    "text": "parameterization supplies, in one common weighted representative,",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-317",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-318",
+    "role": "actual source application",
+    "text": "J2=12(j+1), J4=6(j^2+j+1), J10=j^3.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-319",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-320",
+    "role": "local ratio and coefficient calculation",
+    "text": "Consequently psi4=144j and chi10=-j^3/4. On the actual open set j finite and",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-321",
+    "role": "local ratio and coefficient calculation",
+    "text": "nonzero, psi4 is nonzero and",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-322",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-323",
+    "role": "local ratio and coefficient calculation",
+    "text": "j = 16*144^5 * chi10^2/psi4^5",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-324",
+    "role": "actual source application",
+    "text": "= 3779136 * (product over even m of z_m)^4",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-325",
+    "role": "actual source application",
+    "text": "/ (sum over even m of z_m^8)^5.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-326",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-327",
+    "role": "local ratio and coefficient calculation",
+    "text": "Indeed 16*144^5*2^(-28+10)=2^6*3^10=3779136. Both numerator and denominator",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-328",
+    "role": "local ratio and coefficient calculation",
+    "text": "in the first ratio have modular weight20. In the last ratio both homogeneous",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-329",
+    "role": "local ratio and coefficient calculation",
+    "text": "polynomials have degree40. Common projective rescaling cancels in either",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-330",
+    "role": "local ratio and coefficient calculation",
+    "text": "description. The published Lin-Yang pullback factor for weight k therefore",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-331",
+    "role": "local ratio and coefficient calculation",
+    "text": "also cancels. All identities use the same point and same period matrix.",
+    "source_binding_use_ids": [],
+    "reason": "Uses the immediately preceding normalized forms and theta identities to compute the ratio, coefficient and homogeneous weights; no new source application at each arithmetic line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-332",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-333",
+    "role": "structure",
+    "text": "## 4. Connection to the theta height",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-334",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-335",
+    "role": "literal theta-coordinate source",
+    "text": "The final published Pazuki paper, Theta height and Faltings height, p25, defines",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-336",
+    "role": "literal theta-coordinate source",
+    "text": "theta_(m1,m2)(tau,z) by exactly the same exponential series. Its Section2.3.4,",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-337",
+    "role": "literal theta-coordinate source",
+    "text": "Definition2.6 and following discussion on pp30-31 identify the coordinates",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-338",
+    "role": "literal theta-coordinate source",
+    "text": "of Theta(0) as theta_(m1,m2)(tau,0) for m1,m2 in",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-339",
+    "role": "literal theta-coordinate source",
+    "text": "{0,1/r,...,(r-1)/r}^g. For r=2 and g=2 these are exactly our sixteen half-",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-340",
+    "role": "literal theta-coordinate source",
+    "text": "characteristics. They are not the alternative theta_(m,0)(r^2 tau,0) coordinates",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-341",
+    "role": "literal theta-coordinate source",
+    "text": "mentioned there, and we do not silently identify the two coordinate systems.",
+    "source_binding_use_ids": [
+      "ACTIVE-H6-SOURCE-PAZUKI-HALF-COORDINATES"
+    ],
+    "reason": "Records Pazuki coordinate statement and notation. The norm/height comparison follows below."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-342",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-343",
+    "role": "actual source application",
+    "text": "Pazuki's coordinates are the raw complex theta values as projective coordinates,",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-344",
+    "role": "actual source application",
+    "text": "not the individual analytic norms printed on p25. The common analytic factor",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-345",
+    "role": "actual source application",
+    "text": "at zero would cancel in a projective point, but no such factor is needed here.",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-346",
+    "role": "local coordinate and norm comparison",
+    "text": "The six odd entries are zero by Section1. Appending them to the ten even entries",
+    "source_binding_use_ids": [],
+    "reason": "Uses the already proved odd-coordinate vanishing and compares the same coordinate norms; zero padding and maximum versus Euclidean norm are elementary, not repeated source imports."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-347",
+    "role": "local coordinate and norm comparison",
+    "text": "does not change the local maximum norm or Euclidean norm. The nonzero projective",
+    "source_binding_use_ids": [],
+    "reason": "Uses the already proved odd-coordinate vanishing and compares the same coordinate norms; zero padding and maximum versus Euclidean norm are elementary, not repeated source imports."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-348",
+    "role": "actual source application",
+    "text": "point and algebraicity of its coordinate ratios are the published Pazuki input",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-349",
+    "role": "actual source application",
+    "text": "on p30. Its Euclidean projective height dominates the maximum-norm projective",
+    "source_binding_use_ids": [],
+    "reason": "Consumes the explicitly linked incoming assertion at this proof step; later derived outputs are not inputs to their own proof."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-350",
+    "role": "local coordinate and norm comparison",
+    "text": "height used in the manuscript. This source substitution does not reprove the",
+    "source_binding_use_ids": [],
+    "reason": "Uses the already proved odd-coordinate vanishing and compares the same coordinate norms; zero padding and maximum versus Euclidean norm are elementary, not repeated source imports."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-351",
+    "role": "scope boundary",
+    "text": "later comparison with Faltings height or its constants.",
+    "source_binding_use_ids": [],
+    "reason": "Explicitly leaves the later Faltings comparison and its constants separate."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-352",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-353",
+    "role": "local derivation",
+    "text": "For clarity, the elementary polynomial estimate is also unchanged. The numerator",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-354",
+    "role": "local derivation",
+    "text": "has coefficient norm3779136, the denominator has coefficient norm10^5. At every",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-355",
+    "role": "local derivation",
+    "text": "archimedean place each evaluated polynomial is bounded by its coefficient norm",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-356",
+    "role": "local derivation",
+    "text": "times the fortieth power of the maximum coordinate norm; the corresponding",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-357",
+    "role": "local derivation",
+    "text": "nonarchimedean bound has coefficient norm at most1. Summing the local inequalities",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-358",
+    "role": "local derivation",
+    "text": "gives h(j)<=40h([z_m])+log(3779136), hence the displayed weaker bound with +22.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-359",
+    "role": "local derivation",
+    "text": "Nonvanishing of the denominator follows from psi4=144j, not from a blanket claim",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-360",
+    "role": "local derivation",
+    "text": "about even theta constants.",
+    "source_binding_use_ids": [],
+    "reason": "Elementary deduction from the previously stated inputs within this proof; no additional external theorem is invoked at this line."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-361",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-362",
+    "role": "structure",
+    "text": "## 5. Scope and required adoption",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-363",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "reason": "Whitespace or section heading."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-364",
+    "role": "historical proposal/scope",
+    "text": "The actual replaced use is the LNY citation at current925967 lines1154-1156 and",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-365",
+    "role": "historical proposal/scope",
+    "text": "its inherited normalization in A017. The Lin-Yang inputs, the principal-polarized",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-366",
+    "role": "historical proposal/scope",
+    "text": "surface, and Pazuki's theta-height theorem remain separate premises. The proposed",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-367",
+    "role": "historical proposal/scope",
+    "text": "manuscript edit supplies the half-characteristic convention and cites Igusa",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-368",
+    "role": "historical proposal/scope",
+    "text": "directly. A companion bibliography edit removes the sole active LNY citation",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-369",
+    "role": "historical proposal/scope",
+    "text": "and supplies Igusa plus a link to this connecting proof. Historical LNY evidence",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-370",
+    "role": "historical proposal/scope",
+    "text": "and its unresolved final-edition comparison remain preserved. The available",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-371",
+    "role": "historical proposal/scope",
+    "text": "published input now supplies exactly the two needed identities; no final LNY",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  },
+  {
+    "id": "SRC-CJ-IGUSA-372",
+    "role": "historical proposal/scope",
+    "text": "authentication, full Igusa proof audit or release acceptance is claimed.",
+    "source_binding_use_ids": [],
+    "reason": "Historical substitution/adoption wording; no new mathematical input is asserted."
+  }
+]

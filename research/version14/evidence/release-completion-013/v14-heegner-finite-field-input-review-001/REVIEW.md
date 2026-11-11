@@ -1,0 +1,11 @@
+# Independent finite-field H1 review
+
+Accepted at the exact H1 scope. Reviewer: /root/v14_arithmetic_review, independent of the author. Selected manifest v14-heegner-finite-field-input-author-001/MANIFEST.json SHA256 f5fc1bf79d0701d077d9fe0fe3c9bd615f3ec49b96d06201147d945255fe656c; proposed proof SHA256 f7565b803d6ce9c51c7e981b0350292de46b33c4c1c379fa74139c8bc7c278b0.
+
+I read the entire elementary proof and actual formal-cohomology consumer. The trace polynomial is nonzero and has degree strictly less than the size of kprime, hence its function is nonzero. Its image lies in k and it is k-linear, so it is onto. Frobenius-minus-identity has kernel exactly k and rank r-1. Its image lies in the trace kernel, which has the same dimension; they agree. A cyclic cocycle is determined by its generator value, and its norm-zero condition therefore makes it a coboundary. These arguments remain valid at r=1 and when the characteristic divides r; no division by r or normal-basis theorem occurs.
+
+For ACTIVE-HEEGNER-ADDITIVE-RESIDUE-H1, the separately supplied formal quotient is Galois-equivariantly the additive residue field because the parameter and uniformizer are defined over the base field and the extension is unramified. Applying the finite calculation supplies each H1 correction needed in the iterative argument. The formal-filtration identification, lifting of corrections and completeness of their limit remain separate.
+
+Scope precision: the retained note85 also says that positive cohomology vanishes and invokes normal-basis inducedness. This replacement proves only H1, which suffices for its actual successive cocycle correction. It does not prove the full literal stronger sentence or a normal-basis theorem. The author acknowledged this distinction; final source-line disposition must preserve it rather than count this as full-sentence higher-cohomology coverage.
+
+Ten independent binding checks pass, including manifest/four members, four distinct source/current locations and the use digest/assertion identities. CHECKS.json records them. The new proof remains a proposed overlay requiring installation and additive source coverage. No canonical edits, full local-cohomology closure or gate approval are implied.

@@ -1,0 +1,142 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "created_utc": "2026-11-09T07:14:43.786Z",
+  "decision": "accepted as ten conditional current connections, not full source closure",
+  "targets": [
+    {
+      "name": "H19-ARITHMETIC-IMPORTS.json",
+      "sha256": "819a1a945e693d8a59d4d07d762510cc099c8600f5252edfa3b4e700f454cf96",
+      "components": 2,
+      "locations": 10,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-ACTUAL-TATE-RESTRICTION",
+          "supplier": "H5-CURRENT-TATE-REALIZATION",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        },
+        {
+          "id": "ACTIVE-H19-ACTUAL-CONDUCTOR-COMPARISON",
+          "supplier": "H5-CURRENT-COMPARISON-CONDUCTOR",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    },
+    {
+      "name": "H19-GEOMETRIC-ISOGENY-COMPONENT.json",
+      "sha256": "bbc31a219fcf263fdf5bf3cfc0f2697de5b68d183113268eb0bf9796433b245d",
+      "components": 1,
+      "locations": 4,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-D210-GEOMETRIC-ISOGENIES",
+          "supplier": null,
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    },
+    {
+      "name": "H19-NUMERICAL-LEVEL-COMPONENTS-002.json",
+      "sha256": "fce03de65e10f681328b8c110885191afb131a33b8202da83c5c9a9de4e659a8",
+      "components": 2,
+      "locations": 8,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-KERNEL-FIELD-BOUND",
+          "supplier": null,
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        },
+        {
+          "id": "ACTIVE-H19-NUMERICAL-CONDUCTOR",
+          "supplier": null,
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    },
+    {
+      "name": "H19-TORSION-REDUCTION-COMPONENT.json",
+      "sha256": "aa3c8461486b440d472d0bfae27368cd3fa71d705c98a0084a6fad1a000324d1",
+      "components": 1,
+      "locations": 4,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-TORSION-GOOD-REDUCTION",
+          "supplier": null,
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    },
+    {
+      "name": "H19-JACOBIAN-FACTOR-COMPONENT.json",
+      "sha256": "843f7a6bf9528783ea7fe51ab9a3623ed7593242be62caf5c71279875977e0e2",
+      "components": 1,
+      "locations": 4,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-EFFECTIVE-JACOBIAN-FACTOR",
+          "supplier": null,
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    },
+    {
+      "name": "H19-INDEX-HEIGHT-COMPONENT.json",
+      "sha256": "e97764d5220d485c9cb936383af382404f0e11b39d7aad13279dd34cc6eaf0ef",
+      "components": 1,
+      "locations": 4,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-INDEX-AND-JACOBIAN-HEIGHT",
+          "supplier": null,
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    },
+    {
+      "name": "H19-GEOMETRY-IMPORTS.json",
+      "sha256": "2cc57751db0a88f2102a8a16162b1885c0ea8bbb55bc367b5a955f6216581d8b",
+      "components": 2,
+      "locations": 8,
+      "all_locations": true,
+      "use_hashes": true,
+      "dependencies": [
+        {
+          "id": "ACTIVE-H19-YUAN-METRIC",
+          "supplier": "CURRENT-YUAN-METRIC",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        },
+        {
+          "id": "ACTIVE-H19-CANONICAL-NORMALIZER-ACTION",
+          "supplier": "CURRENT-DELIGNE-CANONICAL-ACTION",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN"
+        }
+      ]
+    }
+  ],
+  "reading": "Fresh current 7980–8027,8111–8174,8213–8248,8397–8441,8466–8487,9980–10088; earlier current field/metric and original-family comparison reads and their exact independent reviews reused.",
+  "reasoning": [
+    "Geometric isogenies come from commensurable lattices in the actual PEL object; same-L Hom descent and non-CM End=B precede prescribed F-embedding Skolem conjugation. No coherent B-linear maps are inferred from this step.",
+    "The division algebra cannot act faithfully on a positive torus of rank at most two. The explicit normalizer rescaling at split prime 11 gives prime-to-11 conjugate isogenies, so the full torsion field is normal. The reduction criterion is only used away from 11.",
+    "The kernel degree uses the finite sign cochain on G_L, not the full scalar or its value field. Wild ramification is bounded by p-part indices and the different integral; unbounded tame ramification is permitted. Actual local conductor equality is a separate supplied input.",
+    "The H19 Tate and conductor imports concern the original D210 b family. The four internal supplier IDs are actual existing H19 dependencies; no beta or unrelated Voight application is substituted.",
+    "The effective diamond projector uses the whole conjugate differential span and H_eff. After actual Tate restriction and Faltings Hom comparison, absolute simplicity supplies the same-Lprime surface factor. No polarization bound for that surface or complement is assumed.",
+    "The nebentypus-square restriction bounds its order, not its coefficient field. The index has no extra central-sign factor; generic Belyi height and g>=2 give the stated T bound.",
+    "The metric import retains the original stable Faltings normalization and sublattice sign. Canonical normalizer action does not itself supply a degree-576 torsor."
+  ],
+  "limits": [
+    "Each stated input remains a separate active source requirement, including PEL/Hodge/Skolem, reduction, local reciprocity and ramification, actual modular realization, Faltings/Poincare and Belyi estimates.",
+    "Accepted prior source reviews are reused at their exact scopes; no wholesale new publication audit or final graph acceptance is claimed.",
+    "Full frozen-initial reconciliation and final authenticated coverage remain pending."
+  ]
+}

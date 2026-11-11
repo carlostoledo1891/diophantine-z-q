@@ -1,0 +1,153 @@
+name: Current manuscript and quartic verification
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Validate the selected source and manuscript'
+        type: choice
+        options: [all, reproduction, paper, metadata]
+        default: all
+
+permissions:
+  contents: read
+
+concurrency:
+  group: manuscript-integration-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  quartic394:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction' || inputs.mode == 'metadata'
+    name: Version 13 source and quartic replay (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            python: '3.12.14'
+          - os: windows-2022
+            python: '3.12.10'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B docs/manuscript-revisions/version13/portability/test_portability.py
+      - run: python -B scripts/check_quartic394_portable.py
+      - run: python -B docs/manuscript-revisions/version13/validate-applications.py --repo . --self-test
+      - run: python -B quartics/quartic-299-314/verify_lineage.py
+      - run: python -B docs/manuscript-revisions/version14/validate-applications.py --repo . --self-test
+      - run: python -B scripts/check_audit_history.py --self-test
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-394-${{ matrix.os }}
+          path: build/quartic-394/
+  reconstruction:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.22.1'
+      - run: python scripts/check_quartic962.py --out build/quartic-962-reproduction
+      - run: python -B scripts/check_odd_product.py
+      - run: python -B docs/quartic-523-540/inventory.py validate
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-962-reproduction
+          path: build/quartic-962-reproduction/
+  historical_reconstruction:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.22.1'
+      - run: python scripts/check_quartic1272.py --out build/quartic-1272-reproduction
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-1272-reproduction
+          path: build/quartic-1272-reproduction/
+  reproduction:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - name: Rebuild source and replay the complete selected certificate
+        shell: bash
+        run: |
+          ulimit -v 2097152
+          python -E -B quartics/quartic-4973/reproducibility/run.py --output build/quartic-reproduction --stage-seconds 180
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-4973-reproduction
+          path: build/quartic-reproduction/
+  paper:
+    if: inputs.mode == 'all' || inputs.mode == 'paper'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .cache/tectonic
+          key: tectonic-${{ runner.os }}-0.17.0-6ffe055852f8faf66
+      - name: Compile the exact Version 14 manuscript
+        run: python scripts/build_paper.py
+      - name: Render changed pages for visual review
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          ulimit -v 2097152
+          python scripts/render_quartic_review.py --pdf build/paper/quartic_v14.pdf --edition v14 --pages 1,289-301 --expected-pages 309
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-v13-paper
+          path: |
+            build/paper/
+            build/pdf-review/
+  metadata:
+    if: inputs.mode == 'all' || inputs.mode == 'metadata'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12.14'
+      - name: Check manuscript bindings, historical inventory and archive rejection tests
+        shell: bash
+        run: |
+          ulimit -v 2097152
+          python -E -B docs/theorem-application-audit/validate.py
+          python -E -B scripts/check_historical_inventory.py 4 validate --repo . --docs docs/quartic-4973 --acceptance-sha256 06dd04ceb4bdcb40875e70293bf68abba61fd17052a5e90a70ade61af649d88b
+          python -E -B scripts/check_historical_inventory.py 5 validate --repo . --manuscript quartic_1272.tex --expected-input-sha256 695769c38917efa35b6256132cd8b77807d6384ab6d27c38f250ff8947ae6c10
+          python -E -B docs/quartic-962/inventory.py validate --repo . --manuscript manuscripts/quartic_v7.tex --expected-input-sha256 36646fd26f5adcaed33315605e4b1c333c1e60f5c917aeeda63976614823a0f5
+          python -E -B -m unittest discover -s docs/quartic-962 -p test_inventory.py -v
+          python -E -B handoff/test_handoff.py
+          python -E -B scripts/check_manuscript_revision.py

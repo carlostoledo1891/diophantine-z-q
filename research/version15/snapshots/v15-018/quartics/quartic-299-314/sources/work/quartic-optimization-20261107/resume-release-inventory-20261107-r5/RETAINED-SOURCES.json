@@ -1,0 +1,761 @@
+{
+  "text": {
+    "path": "docs/manuscript-revisions/version13/addition.tex",
+    "sha256": "91b278b3ca1684df93e32883d8046a2accda970efc1ed9159b095183092d5a09",
+    "lineCount": 860
+  },
+  "baselineManuscript": {
+    "path": "manuscripts/quartic_v12.tex",
+    "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9"
+  },
+  "existingSourceCatalog": {
+    "path": "docs/theorem-application-audit/sources.json",
+    "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+    "reuse": "Exact source records copied above; existing corrected-online and errata qualifications retained."
+  },
+  "externalSources": {
+    "silverman": {
+      "id": "silverman",
+      "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+      "urls": [],
+      "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+      "source_status": "bytes_pinned",
+      "sourceCatalog": {
+        "path": "docs/theorem-application-audit/sources.json",
+        "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+        "recordId": "silverman",
+        "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+      },
+      "files": [
+        {
+          "sourceFilename": "silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "bytes": 3658085
+        }
+      ],
+      "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+    },
+    "voight-quaternion": {
+      "id": "voight-quaternion",
+      "bibliography": "J. Voight, \\emph{Quaternion algebras}, corrected online edition\nv1.0.7u, August 5, 2026, Main Theorem 14.6.1 and Proposition 14.6.7,\npp. 223--224.\n\\url{https://jvoight.github.io/quat-book.pdf}.",
+      "urls": [
+        "https://jvoight.github.io/quat-book.pdf"
+      ],
+      "version_notes": "v1.0.7u, August 5, 2026, corrected online edition. Corrected online edition, not printed Springer pagination.",
+      "source_status": "bytes_pinned",
+      "sourceCatalog": {
+        "path": "docs/theorem-application-audit/sources.json",
+        "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+        "recordId": "voight-quaternion",
+        "recordSha256": "22aa7969b4847454a41a3580775c9c42c40daab1258a463d161274ee77960ab0"
+      },
+      "files": [
+        {
+          "sourceFilename": "voight-quaternion.pdf",
+          "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+          "bytes": 10663776
+        }
+      ],
+      "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+    }
+  },
+  "inheritedInventory": {
+    "path": "docs/manuscript-revisions/version13/evidence/v12-APPLICATIONS.json",
+    "sha256": "9e63180a33da914e5179ebf5296a287cbb8bbd7007f5e5cc3aaac5d0844be863"
+  },
+  "compatibilityInventory": [
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v12-inputs",
+      "line": 19837,
+      "relation": "explicit new-section reference"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-height-input",
+      "line": 19883,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9:lem:product",
+      "line": 19457,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9:cor:scales",
+      "line": 19493,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9:eq:height-transfer",
+      "line": 19522,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v12-mixed",
+      "line": 19903,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-ratios",
+      "line": 19915,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-tests",
+      "line": 19925,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "lem:v12-mixed-local",
+      "line": 19940,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v12-soundness",
+      "line": 20524,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-margins",
+      "line": 20551,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9chart:eq:old",
+      "line": 19334,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9chart:eq:new",
+      "line": 19338,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9chart:lem:squares",
+      "line": 19343,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9chart:prop:chart",
+      "line": 19358,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9:eq:odd-chart",
+      "line": 19534,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9:prop:odd-chart",
+      "line": 19539,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "v9:eq:squareclass",
+      "line": 19562,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "lem:v5-unramified-log",
+      "line": 10820,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v5-complete-source",
+      "line": 10861,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "lem:v5-one-place",
+      "line": 11038,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "lem:v12-scalar-sound",
+      "line": 20264,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-scalar-valuations",
+      "line": 20292,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-duplication",
+      "line": 20318,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-quaternion-criterion",
+      "line": 20180,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-anchor",
+      "line": 20201,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-anchor-subgroup",
+      "line": 20214,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v12-scalar",
+      "line": 20222,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v12-guards",
+      "line": 20016,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-half-trace",
+      "line": 20024,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "hyp:o8-pole",
+      "line": 7720,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:original-seven-parity",
+      "line": 7742,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:seven-param",
+      "line": 7746,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:seven-first",
+      "line": 7747,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:seven-h",
+      "line": 7748,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "subsec:v12-finite",
+      "line": 20678,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "prop:generator",
+      "line": 339,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v5:scalar32-bridge",
+      "line": 10422,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v5:preparation-zero-bridge",
+      "line": 10557,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v5:real-progression-bridge",
+      "line": 10632,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "sec:v6-962",
+      "line": 10689,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v9:lem:separation",
+      "line": 19700,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "subsec:v9-deep-completeness",
+      "line": 19720,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "subsec:v9-finite",
+      "line": 19741,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "lem:v12-anchor-coefficient",
+      "line": 20115,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-dcancel",
+      "line": 20394,
+      "relation": "label inside the pinned inherited supporting passage"
+    },
+    {
+      "path": "manuscripts/quartic_v12.tex",
+      "sha256": "5ba3f8774732251c178dfabd732d56a41361a73e265666edbd64d49089ebcfd9",
+      "label": "eq:v12-reciprocal-identities",
+      "line": 20400,
+      "relation": "label inside the pinned inherited supporting passage"
+    }
+  ],
+  "explicitInheritedReferences": [
+    "subsec:v12-inputs"
+  ],
+  "v13Manuscript": {
+    "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+    "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+  },
+  "v13Inventory": {
+    "path": "work/quartic-version6-release/repository/docs/manuscript-revisions/version13/APPLICATIONS.json",
+    "sha256": "b7c4027a0f735906b4fdde129f08294871332e49f68b25d5e2fc32e9c42d9674"
+  },
+  "retentionRule": "Carry source records, exact version/errata qualifications and restricted-converse scope unchanged; no new external source or stronger theorem has been introduced by these packets.",
+  "conventions": {
+    "field": "K=Q(rho), rho^2=2; E:y^2=x^3-Dx, D=11-6rho=(3-rho)^2; P=2R0, R0=(1+rho,2rho).",
+    "coefficients": "F_s denotes the rational rho coefficient of f([s]P), while X_n is the rho coefficient of x([n]P). They are different functions. Physical X_A=2*v83, X_T=2*v87, X_Z=2*v89; F_s=2*g0*g1.",
+    "valuations": "At consumed p>76176 use integral unramified normalization. At3 the quadratic field is inert and the curve has good reduction. At2 use v(2)=1, v(rho)=1/2 and the integral formal subgroup, not good reduction.",
+    "localDomain": "The new contact argument uses required positive odd alpha=v_p(F5(A*lambda)), with1+R a unit. A radical-free detector has no asserted global trace inverse.",
+    "fixedConstant": "C=3^(2^25) is a fixed integer coefficient, not a rational variable in symbolic candidates.",
+    "height": "Same three positive rational square scales1,C0^2,(1+C1^2)^2, exponent19 height constant Hcal and root-height transfer Bmax^2-6<7Hcal*|N|^(19/k).",
+    "logarithms": "Same rational N/Q high evaluator at order40 and same G2 shallow evaluator with actual precision12. Tests require middle order10; completeness for326 consumes the stronger actual precision12.",
+    "provenance": "All author/reviewer identities here are identities recorded in the cited internal reports. No provider attestation or new independent approval is asserted."
+  },
+  "revision4ArithmeticInputs": [
+    {
+      "entryId": "N24-COMMON-SCALE-LOCAL",
+      "classification": "Inherited pre-H Kummer periods and trace/pole theorem. Distinct residue classes and lower bounds are proved internally; no new external theorem.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/shared314/PROOF.md",
+          "sha256": "a8b3adc8ed7103aea1fc65cff5654632534fe151ec5ba157ad4413f79cceb4eb",
+          "heading": "## Exact new interface",
+          "startLine": 9,
+          "endLine": 29
+        },
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/shared314/PROOF.md",
+          "sha256": "a8b3adc8ed7103aea1fc65cff5654632534fe151ec5ba157ad4413f79cceb4eb",
+          "heading": "## Local classes before point reconstruction",
+          "startLine": 30,
+          "endLine": 61
+        }
+      ]
+    },
+    {
+      "entryId": "N25-H-DEPTH-BOOTSTRAP",
+      "classification": "Retained formal logarithm unit identity, identity extension and exact primary charts. The bootstrap is a new internal lemma, not a new external arithmetic assumption.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/shared314/PROOF.md",
+          "sha256": "a8b3adc8ed7103aea1fc65cff5654632534fe151ec5ba157ad4413f79cceb4eb",
+          "heading": "## Recovering H depth without the old high H0 test",
+          "startLine": 62,
+          "endLine": 73
+        }
+      ]
+    },
+    {
+      "entryId": "N26-COMMON-SCALE-COMPLETE",
+      "classification": "Retained simultaneous-prime theorem and real-progression lemma. CRT prescription, coefficient estimates and parity calculation are internal.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/shared314/PROOF.md",
+          "sha256": "a8b3adc8ed7103aea1fc65cff5654632534fe151ec5ba157ad4413f79cceb4eb",
+          "heading": "## Completeness and choice order",
+          "startLine": 74,
+          "endLine": 94
+        }
+      ]
+    },
+    {
+      "entryId": "N27-SPARSE-SHARED314",
+      "classification": "Polynomial identity over Q(rho), rho^2=2. No external theorem or new completeness choice.",
+      "proof": [
+        {
+          "path": "work/quartic-under300-20261107/10-combination/sparse-shared314/REPORT.md",
+          "sha256": "1d5657b323e2e7135a0649a87822b519bf95698ef7fcf39435802143e0fc9abe",
+          "heading": "## Exact map and physical interface",
+          "startLine": 11,
+          "endLine": 20
+        }
+      ]
+    },
+    {
+      "entryId": "N28-ORDINARY-SHARED314",
+      "classification": "Exact rational algebra, integer exponent induction and full finite tables only.",
+      "proof": [
+        {
+          "path": "work/quartic-under300-20261107/10-combination/ordinary-sparse-shared314/REPORT.md",
+          "sha256": "c01b2ab5a0f65572d995eab9f52df92980a73160b8e4f8f69bf149d62ab89283",
+          "heading": "## Exact lifting and inverse",
+          "startLine": 19,
+          "endLine": 41
+        },
+        {
+          "path": "work/quartic-under300-20261107/10-combination/ordinary-sparse-shared314/REPORT.md",
+          "sha256": "c01b2ab5a0f65572d995eab9f52df92980a73160b8e4f8f69bf149d62ab89283",
+          "heading": "## Coefficients and reproducibility",
+          "startLine": 42,
+          "endLine": 48
+        }
+      ]
+    },
+    {
+      "entryId": "N29-ANCHOR-GAMMA-CHAIN",
+      "classification": "Laurent reconstruction under an explicit inverse. No new external theorem; new forward existence is N30..N33.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-anchor-shared314-20261107/anchor-gamma313/REPORT.md",
+          "sha256": "c8c5e7cc7e91a08fe9ec074bdaa450e83c55060bdb4b3cd2bdffbc676a1ad361",
+          "heading": "## Frozen algebraic candidate",
+          "startLine": 7,
+          "endLine": 40
+        },
+        {
+          "path": "work/quartic-optimization-20261107/resume-anchor-shared314-20261107/anchor-gamma313/REPORT.md",
+          "sha256": "c8c5e7cc7e91a08fe9ec074bdaa450e83c55060bdb4b3cd2bdffbc676a1ad361",
+          "heading": "## Soundness and exceptional cases",
+          "startLine": 41,
+          "endLine": 46
+        }
+      ]
+    },
+    {
+      "entryId": "N30-ANCHOR-SMALL-LOCAL",
+      "classification": "Retained formal-subgroup finite-index/real-progression application and odd-root coefficient lemma. The local formulas are proved internally. The usual Q2 and odd-Qp unit-square criteria are standard external lemmas invoked without reproving them; no new global arithmetic theorem is introduced.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/anchor313/PROOF.md",
+          "sha256": "ba0b08bf1d155d22d152e1dd2ec23f1b264951663cb53e90f1ed3da214b271a1",
+          "heading": "## Preparation before contact primes",
+          "startLine": 33,
+          "endLine": 46
+        },
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/anchor313/PROOF.md",
+          "sha256": "ba0b08bf1d155d22d152e1dd2ec23f1b264951663cb53e90f1ed3da214b271a1",
+          "heading": "## Explicit local anchor targets",
+          "startLine": 47,
+          "endLine": 74
+        }
+      ]
+    },
+    {
+      "entryId": "N31-ANCHOR-CONTACT-LOCAL",
+      "classification": "Same simultaneous-prime theorem with enlarged fixed exclusions. Norm surjectivity is deduced internally from the standard cyclicity theorem for finite-field multiplicative groups. Cyclicity and one-variable Hensel lifting are invoked standard external lemmas, not proved in the note and not stronger prime-pattern assumptions.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/anchor313/PROOF.md",
+          "sha256": "ba0b08bf1d155d22d152e1dd2ec23f1b264951663cb53e90f1ed3da214b271a1",
+          "heading": "## Explicit local anchor targets",
+          "startLine": 47,
+          "endLine": 74
+        }
+      ]
+    },
+    {
+      "entryId": "N32-ANCHOR-RATIONAL-APPROXIMATION",
+      "classification": "Reuses the same quaternion representation theorem once for a basepoint. Reflection identity, local density reduction and coordinatewise approximation construction are proved internally; standard CRT and the local square-root-near1 lemma are invoked without reproof. No external weak-approximation theorem for quadrics is invoked.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/anchor313/PROOF.md",
+          "sha256": "ba0b08bf1d155d22d152e1dd2ec23f1b264951663cb53e90f1ed3da214b271a1",
+          "heading": "## Explicit simultaneous rational approximation",
+          "startLine": 75,
+          "endLine": 94
+        }
+      ]
+    },
+    {
+      "entryId": "N33-ANCHOR-COMPLETE-ORDER",
+      "classification": "Same prime-selection, real-progression, preparation-zero and pole results with newly checked inputs. No self-approval of the contributed proof.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-depth-20261107/anchor313/PROOF.md",
+          "sha256": "ba0b08bf1d155d22d152e1dd2ec23f1b264951663cb53e90f1ed3da214b271a1",
+          "heading": "## Final order and consequences",
+          "startLine": 95,
+          "endLine": 101
+        },
+        {
+          "path": "work/quartic-optimization-20261107/resume-anchor-shared314-20261107/anchor-gamma313/REPORT.md",
+          "sha256": "c8c5e7cc7e91a08fe9ec074bdaa450e83c55060bdb4b3cd2bdffbc676a1ad361",
+          "heading": "## Completeness construction to be independently reviewed",
+          "startLine": 47,
+          "endLine": 82
+        }
+      ]
+    }
+  ],
+  "revision5ArithmeticInputs": [
+    {
+      "entryId": "N34-ORDINARY-ANCHOR313",
+      "classification": "Exact rational substitution and finite tables only. No new arithmetic application.",
+      "proof": [
+        {
+          "path": "work/quartic-under300-20261107/10-combination/ordinary-anchor313/REPORT.md",
+          "sha256": "ffce81ba79c6b4192e49d7f4ca9b9db20923a6f05fd0d256dec1fa59cf4f6e58",
+          "heading": "Whole report",
+          "startLine": 1,
+          "endLine": 40
+        }
+      ]
+    },
+    {
+      "entryId": "N35-POSITIVE-SOS-WEIGHTS",
+      "classification": "Usual ordered-field property of rational squares and exact integer coefficients. No changed elliptic, local or approximation application.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/root-sparse313/REPORT.md",
+          "sha256": "cbf15de62cfea96e08ae8ed7c09af348c643792a663db991aa4ac344290295bb",
+          "heading": "## Construction and proof",
+          "startLine": 7,
+          "endLine": 20
+        },
+        {
+          "path": "work/quartic-optimization-20261107/root-sparse313/REPORT.md",
+          "sha256": "cbf15de62cfea96e08ae8ed7c09af348c643792a663db991aa4ac344290295bb",
+          "heading": "## Ordinary lift",
+          "startLine": 37,
+          "endLine": 42
+        }
+      ]
+    },
+    {
+      "entryId": "N36-AUXILIARY-ALL-E-VALUATIONS",
+      "classification": "Retained good-place curve equation and accepted shared314 unique-minimum/pole argument, now applied to allE auxiliary points. No new external theorem. Roots retain2E domain.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+          "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+          "heading": "## Valuation periods before logarithms",
+          "startLine": 42,
+          "endLine": 55
+        },
+        {
+          "path": "work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+          "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+          "heading": "## Ratios, auxiliary domain and soundness",
+          "startLine": 95,
+          "endLine": 113
+        }
+      ]
+    },
+    {
+      "entryId": "N37-ZERO-SAFE-RAW-RATIOS",
+      "classification": "Explicit rational polynomial identities. Global H/V0 exclusions and local positivef tests are retained inputs, with their original order.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+          "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+          "heading": "## Raw reciprocal point and zero-safe ratios",
+          "startLine": 15,
+          "endLine": 41
+        },
+        {
+          "path": "work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+          "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+          "heading": "## Literal coordinates and signs",
+          "startLine": 25,
+          "endLine": 57
+        }
+      ]
+    },
+    {
+      "entryId": "N38-AUXILIARY-TORSION-LOG-TRANSFER",
+      "classification": "Existing E(K)=Z R0+E[2], P=2R0; formal logarithm homomorphism and analytic unit at O; accepted shared314 H bootstrap. New internal factor2 identities and domain argument, no new external theorem.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+          "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+          "heading": "## Integral identities and half-integral labels",
+          "startLine": 56,
+          "endLine": 73
+        },
+        {
+          "path": "work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+          "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+          "heading": "## Denominators, real conditions and completeness",
+          "startLine": 74,
+          "endLine": 79
+        }
+      ]
+    },
+    {
+      "entryId": "N39-GLOBAL-APPROXIMANT-DOMAIN",
+      "classification": "Retained exact rational N,Q and split-prime certificates from v13. New domain application of an existing input; no changed approximation coefficients or stronger precision.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+          "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+          "heading": "## Denominators, real conditions and completeness",
+          "startLine": 74,
+          "endLine": 79
+        },
+        {
+          "path": "work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+          "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+          "heading": "## Ratios, auxiliary domain and soundness",
+          "startLine": 95,
+          "endLine": 113
+        }
+      ]
+    },
+    {
+      "entryId": "N40-ORIENTED-RECIPROCAL-CLOSURE",
+      "classification": "Elliptic chord and tangent formulas are used through an explicit polynomial identity and all exceptional branches. The old single-biquadratic closure is not assumed sufficient.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/root-reciprocal307/PROOF.md",
+          "sha256": "9413e67fc1f54980932758304f561aaac418b037dd3406fcb0b87bbac929da0e",
+          "heading": "Whole report",
+          "startLine": 1,
+          "endLine": 50
+        },
+        {
+          "path": "work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+          "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+          "heading": "## Genuine points and complete oriented addition",
+          "startLine": 58,
+          "endLine": 86
+        }
+      ]
+    },
+    {
+      "entryId": "N41-ROOT-RESTORATION-AND-COMPLETENESS",
+      "classification": "Retained squareclass kernel alpha=1 iff the point is in2E(K), parity/anchor and root-product height. Apply them only after recovering the exact old root chart. No enlarged root domain or half-index height theorem.",
+      "proof": [
+        {
+          "path": "work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+          "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+          "heading": "## Recovering the root square chart and the old labels",
+          "startLine": 87,
+          "endLine": 94
+        },
+        {
+          "path": "work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+          "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+          "heading": "## Completeness and simultaneous choices",
+          "startLine": 114,
+          "endLine": 124
+        }
+      ]
+    },
+    {
+      "entryId": "N42-ORDINARY-RECIPROCAL307",
+      "classification": "Exact rational extension and finite coefficients. No new arithmetic use beyond the separately accepted source307.",
+      "proof": [
+        {
+          "path": "work/quartic-under300-20261107/10-combination/ordinary-reciprocal307/REPORT.md",
+          "sha256": "93f81036962bb8ac96d17dac88dc20b2e08bcf5bb412bc926ed466c4de15a1ba",
+          "heading": "## Exact maps",
+          "startLine": 21,
+          "endLine": 35
+        },
+        {
+          "path": "work/quartic-under300-20261107/10-combination/ordinary-reciprocal307/REPORT.md",
+          "sha256": "93f81036962bb8ac96d17dac88dc20b2e08bcf5bb412bc926ed466c4de15a1ba",
+          "heading": "## Executable verification and exact coefficients",
+          "startLine": 36,
+          "endLine": 42
+        }
+      ]
+    }
+  ]
+}

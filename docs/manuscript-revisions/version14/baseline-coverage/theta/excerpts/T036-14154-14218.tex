@@ -1,0 +1,65 @@
+\subsection{Transformation law and recurrence}
+Use the standard global additive character, self-dual measures,
+and the Gaussian $e^{-2\pi Q_B}$ at infinity.  Weil's operator
+formulas \cite[I.13]{weil} give multiplication by $\mathbf e_p(bQ_B)$ for
+$n(b)$, scaled pullback $f_p(x)\mapsto\gamma_{Q_B}(u)f_p(ux)$ for
+$m(u)$ with $u$ a unit, and a constant times Fourier transform
+for the Weyl element.  The upper unipotents $n(\mathbb Z_p)$ fix
+$f_p$, because $Q_B$ is integral on its support.  If $L'_p$ is any
+lattice of translations fixing $f_p$, its Fourier transform has
+support in $(L'_p)^\vee$.  Choose $A_p$ with
+$p^{A_p}Q_B((L'_p)^\vee)\subseteq\mathbb Z_p$.  Fourier conjugation
+then proves that $n^-(p^{A_p}\mathbb Z_p)$ fixes $f_p$.
+This includes $p=2$. At two take $A_2\ge2$ and use the comparison
+with the ordinary theta multiplier given below; no splitting of
+the metaplectic cover over all diagonal units is asserted.
+For clarity, the local normalizations and the lower-unipotent
+argument are as follows. Take
+$\mathbf e_\infty(t)=e^{2\pi it}$ and
+$\mathbf e_p(t)=e^{-2\pi i\{t\}_p}$, so that
+$\prod_v\mathbf e_v(r)=1$ for $r\in\mathbb Q$.
+For $Q(x)=x^{\mathsf T}Ax$ put
+$B_Q(x,y)=Q(x+y)-Q(x)-Q(y)=2x^{\mathsf T}Ay$ and set
+\[
+ \mathcal F_Q\phi(y)=\int\phi(x)\mathbf e_p(B_Q(x,y))\,dx_Q,
+ \qquad dx_Q=|\det(2A)|_p^{1/2}\,dx.
+\]
+Here $dx$ is the coordinate product measure with
+$\operatorname{vol}(\mathbb Z_p^3)=1$.
+At the real place use the same formula
+$dx_Q=|\det(2A)|_\infty^{1/2}dx$ with coordinate Lebesgue measure.
+Thus $\mathcal F_Q^2\phi(x)=\phi(-x)$.
+If $\phi(x+\lambda)=\phi(x)$ for $\lambda\in L'$, translation
+in this integral shows that its Fourier transform vanishes unless
+$\mathbf e_p(B_Q(\lambda,y))=1$ for every $\lambda\in L'$.
+This is precisely the asserted support in $(L')^\vee$.
+Since this dual lattice is compact, an integer $A_p$ with
+$p^{A_p}Q((L')^\vee)\subset\mathbb Z_p$ exists. The operator
+for $n^-(c)$ is a Fourier conjugate of multiplication by
+$\mathbf e_p(-cQ)$; consequently it fixes $\phi$ whenever
+$c\in p^{A_p}\mathbb Z_p$. A scalar used to normalize the Weyl
+operator cancels with its inverse in this conjugation.
+
+All the specified local functions have such a translation lattice.
+At an odd level prime the unit-root condition and its character
+depend on a finite residue quotient. At two the square-unit
+condition is a congruence modulo eight; the integral projectors
+selecting the cyclic quotient, and the finite root character,
+again depend on a finite residue quotient. At a prime dividing
+$m$, valuation one and the nonzero-nilpotent sign depend on finite
+residue data. The division-prime function is already a residue
+function. Each support is contained in a lattice and is a finite
+union of cosets of a sufficiently small lattice. This proves the
+Schwartz--Bruhat and translation assertions for the actual weights.
+
+For the reference $Q_0=\sum X_i^2$, the dyadic dual of
+$\mathbb Z_2^3$ is $\tfrac12\mathbb Z_2^3$ and
+$\operatorname{vol}_{dx_{Q_0}}(\mathbb Z_2^3)=2^{-3/2}$.
+In particular its Fourier transform is
+$2^{-3/2}1_{\frac12\mathbb Z_2^3}$, not $1_{\mathbb Z_2^3}$.
+The lower-unipotent conclusion nevertheless holds at depth two,
+because $4Q_0(\frac12\mathbb Z_2^3)\subset\mathbb Z_2$.
+These positive measure factors affect neither the diagonal
+eigenvalue quotient nor the counting coefficients of the theta sum.
+
+

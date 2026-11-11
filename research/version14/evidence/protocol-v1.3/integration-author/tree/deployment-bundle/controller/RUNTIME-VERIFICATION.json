@@ -1,0 +1,30 @@
+{
+  "status": "26 offline tests passed; independent review and live deployment separate",
+  "runtime_files": {
+    "runtime.py": "fa3fa24abdc9b02e94aad0d52fc2b73718549ecc97f35cc5cec0729c7e8f9366",
+    "test_runtime.py": "8cd673ff3beed71e53c0262203feabae034fd199f34a6bcb5e4eddf1a8066953",
+    "workflow.template.yml": "b4a1937664f2caf1b5a16b6e0af0807a9d6bedbb0a08e83c91c2465fb53c01cb",
+    "requirements.lock": "c34dcac7aed3d145c9bc26f0abf7a5bb661b431bdad45e67c297f321aec7099a",
+    "RUNTIME.md": "1c893b97aa3d1acceb7a0e22449b5107d606773623319d8ce24419aec03b6fcc",
+    "DEPENDENCY-SOURCES.json": "40d9c5a713300294d8ab1ea63794203260232a56fbe0308adb84f0d644d37b1d",
+    "run_runtime_checks.py": "df52ecefdbf63c0850bec8b21002d03fd5d6d186f305580f8b391505838b7bb1",
+    "runtime-tests.log": "a37320d4c3c9daaf617a8996ab17bc09da75ea15d47d2ee024aeae530de7119c"
+  },
+  "dependency_pins": {
+    "git_state.py": "76269c5918bdf81d40e58685a9c207faa85f342cf0cd79e4d8a9203e7ea87815",
+    "../publisher/app_publisher.py": "c0cd99c177e414e0b71ad3094c04588dd1f3094c729c92d7202c315f44a30c23",
+    "../publisher/generation_state.py": "ebd4ac0433d3a3af2991e0344b269b82a6af3345b39051138b13383f404d9ab8",
+    "../publisher/github_app_transport.py": "069b0bf4b962d6b5d318733844b19cfaa9e159507ab210cec4dec25f3d0ce08d",
+    "../adapter/restore_verified_stores.py": "b7aed0fc1dc2379c697893544354afbc368143fbc48eaf2f995b1f6c724d15e3",
+    "../adapter/live_protocol_context.py": "2fd3449f3af9affbe6ee730dd5a9157361907bae064dee21b07f82c9331465c2",
+    "../adapter/live_protocol_context_forks.py": "1bb363a7debfe05daf8c70e5f5dad33ff433bbc02ed6dedd12539252a8092825",
+    "../adapter/github_fork_context.py": "92baccb231bd6cc735326de854d35ae82b31f1cb128071457ad32e930899ac7d",
+    "../immutable-cache/immutable_git_cache.py": "6a349dfad429765bc3e938179ae1243edfb047c2b1a14eea22ee6a420cabd57b"
+  },
+  "network": "No GitHub API calls; tests replace HTTP only, using real signed stores, evaluator, publisher and CAS.",
+  "not_established": [
+    "live API deployment",
+    "Linux binary dependency execution",
+    "mathematical correctness of user evidence"
+  ]
+}

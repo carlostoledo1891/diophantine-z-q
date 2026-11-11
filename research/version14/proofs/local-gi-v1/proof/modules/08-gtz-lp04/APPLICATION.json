@@ -1,0 +1,169 @@
+{
+  "schema": "mathematical-application-v1.4/author-proposal",
+  "application_id": "GTZ-LP-04",
+  "author": "/root/astra_v14_assertions_arithmetic",
+  "operator_identity": "local:v14:arithmetic-assertion-author:20261107",
+  "proof": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+    "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+    "bytes": 32609
+  },
+  "status": "bounded conditional algebraic proof authored; independent acceptance absent; inverse theorem not claimed complete",
+  "assertion": {
+    "statement": "The all-weight bad-commutator subgroup is exactly the rational normal kernel of the petal quotient; quotient filtrations and lattices match exactly; a top character annihilating bad top commutators descends integrally. The corrected comparison construction yields the required strictly lower degree–rank tensor quotient.",
+    "objects": "U/Gamma from the weighted free presentation; G*, Q/Delta, q, eta and eta_tilde; fixed filtered lattice map phi and polynomial comparison family.",
+    "hypotheses": "m>=1,1<=R<=m; finite letter sets; real top character integral on Gamma_top; exact bad-top annihilation; comparison targets taut and rational; phi lattice-compatible; matching horizontal Taylor torus data and exact vertical F_h identity.",
+    "quantifiers": "Every fixed such configuration and every integer polynomial parameter n, every coefficient family member h, every admissible filtration index and all limit points under the specified natural extension.",
+    "parameter_range": "All finite dimension vectors and arbitrary real coefficients; all integral n; top rank R up to m; limit families use fixed standard geometry.",
+    "uniformity": "Quotient geometry and function bounds depend only on fixed m,R,dimension data, target geometry, maps, character and original Lipschitz bound; independent of N,h and orbit coefficients.",
+    "constants": "No new numerical threshold. Unit norm exactly1; finite atlas and compact fundamental set; no character-uniform estimate asserted.",
+    "normalizations": "Use every higher weight in the filtration, every bad weight in G*, rank0=rank1 at positive degree, binomial Taylor coefficients, real-zero vanishing, and e(t)=exp(2 pi i t).",
+    "exceptional_cases": "G* need not be central; saturation is established specifically by Hall coordinates. R>1 yields rank drop, not necessarily ordinary degree drop. Trivial groups/characters and zero scalars are permitted.",
+    "limit_order": "Fix geometry, character and choices before limit N,h. Vertical identity holds over full ultrapowers. Upstream dense-subfamily selection and downstream final construction remain explicit."
+  },
+  "nine_obligations": [
+    {
+      "obligation": "source_hypotheses",
+      "available_to_needed_comparison": "Hall is used only with a free group for uniqueness; BCH requires a finite-dimensional nilpotent Lie algebra. LP13 is used only after rationality and centrality are checked. The analytic vanishing input remains an explicitly named upstream obligation.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 30,
+        "end_line": 174,
+        "excerpt_sha256": "7ebc3d36681b4502f4b5ab3bda15da49ac9d79579796bbaad0e3d1df59af4ad0"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "constructed_objects",
+      "available_to_needed_comparison": "The alphabet, word weight and length, forbidden multidegrees, U, its filtration, Gamma, G*, Q, q and the comparison H are explicitly defined. Real generated G* includes length-one and every weight.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 176,
+        "end_line": 251,
+        "excerpt_sha256": "7ec1d524bf774aad77aed5d16a72dedcdab526c0087dbf7f7c5f5ca2d2f286f4"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "domain_and_indices",
+      "available_to_needed_comparison": "DR has 0<=r<=d, zero group fixed, positive rank0 equals1. Every weight>d word belongs regardless of length. The top is precisely weight m and length R. The index successor at rank d goes to (d+1,0).",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 30,
+        "end_line": 95,
+        "excerpt_sha256": "6c1a00b0544c1fb7d6f430857fa3c45b933f0c9b59e9c58b8f1d6119f60a31a0"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "transition_and_comparison_maps",
+      "available_to_needed_comparison": "The free-presentation Lie quotient and exponential prove ker q=G*. Integral Hall deletion proves the exact lattice intersection. H is generated by the actual diagonal (phi(u),1,q(u)); constant normalization and lattice polynomial gauges preserve the actual orbit.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 193,
+        "end_line": 251,
+        "excerpt_sha256": "34bdd1ead6f68f9baaadafaf38f6c3f60b89dbbf3cdc33aef6a59e6b1172e63e"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "identity_of_consumed_object",
+      "available_to_needed_comparison": "The final decomposition, after small/rational removal, fixes C,L,B and eta. The derived q and eta_tilde are exactly those used to define b_h and its vertical function. Exact triple membership and character cancellation prove the tensor quotient used by rank induction.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 258,
+        "end_line": 445,
+        "excerpt_sha256": "9b0b52f3636d2f18ca827c250395c79afd74dd38dbb0c3eebe9faf436bea14ec"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "coefficients_and_normalizations",
+      "available_to_needed_comparison": "Commutator convention, real powers, e(t), binomial Taylor convention and exact real-zero annihilation are stated. The character is integral on the actual quotient lattice by saturation. Output vertical functions have norm exactly1.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 193,
+        "end_line": 324,
+        "excerpt_sha256": "789a3da2362ac8928e7283005c10c3314d5f038ef5449ef1be59b60b25ec20ec"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "local_conditions",
+      "available_to_needed_comparison": "Polynomial triples lie in H, not just the ambient product; H_0 is fixed. Local torus sections are used with supports contained in charts. The later cutoff completion requires the same global integral vertical character on the final manifold.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 357,
+        "end_line": 496,
+        "excerpt_sha256": "51e428c0479dbfb6480bf29988e1e2c13bacbb2c5e3faced5d351d2959fe6bbc"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "exceptional_and_boundary_cases",
+      "available_to_needed_comparison": "Zero generator sets, trivial top, zero character, zero or negative petal scalars, m=R=1 and R>1 rank-only drop are retained. The kernel is generally noncentral. LP13 cannot supply the noncentral-kernel saturation step.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 193,
+        "end_line": 324,
+        "excerpt_sha256": "789a3da2362ac8928e7283005c10c3314d5f038ef5449ef1be59b60b25ec20ec"
+      },
+      "decision": "authored; independent review pending"
+    },
+    {
+      "obligation": "downstream_consumers",
+      "available_to_needed_comparison": "The bounded Sections9–12 audit identifies all repeated uses of this defect mechanism. Analytic vanishing proof, final semidirect filtration/orbit and full inverse-theorem assembly remain separate explicit obligations. A local proof does not certify the entire theorem.",
+      "derivation": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 498,
+        "end_line": 551,
+        "excerpt_sha256": "537b49932ba9bf9e456bf550f0327010b36c52cc19b1e25e3fd35fa8015b151b"
+      },
+      "decision": "authored; independent review pending"
+    }
+  ],
+  "premises": {
+    "published": [
+      "LP04-U01",
+      "LP04-U02",
+      "LP04-U04",
+      "LP04-U07"
+    ],
+    "versioned_project": [
+      "LP04-U05",
+      "LP04-U06"
+    ],
+    "upstream_to_be_reproved": [
+      "LP04-U03"
+    ]
+  },
+  "unresolved_for_full_inverse_theorem": [
+    "Exact analytic annihilation through repaired bias/independence proof, replacing reliance on disputed Proposition8.3.",
+    "Independent acceptance of LP13-002 and tautification-003 at their pinned scope.",
+    "Final Section12 semidirect filtration and polynomial orbit, and all other inverse-theorem units.",
+    "Independent source-first inventory reconstruction and review of this exact packet."
+  ],
+  "not_used": [
+    "GTZ main inverse theorem as premise",
+    "Unpublished erratum as proof supplier",
+    "General rational-quotient lattice saturation without proof"
+  ]
+}

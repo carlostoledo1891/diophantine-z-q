@@ -1,0 +1,574 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\R}{\mathbb R}\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}\newcommand{\N}{\mathbb N}
+\newcommand{\DR}{\mathrm{DR}}\newcommand{\ee}{\mathrm e}
+\newcommand{\lie}{\mathfrak u}\newcommand{\id}{\mathrm{id}}
+\newcommand{\HH}{\operatorname{Horiz}}\newcommand{\poly}{\operatorname{poly}}
+\title{GTZ-LP-04: the petal quotient and degree--rank construction}
+\author{Author proposal: /root/astra\_v14\_assertions\_arithmetic}
+\date{7 November 2026}
+\begin{document}\maketitle
+\noindent\textbf{Status and scope.} This is a proposed project proof under
+protocol 1.4, awaiting independent review. It proves the algebraic quotient,
+its exact lattice and character statements, and the comparison needed by
+\cite[Lemma 12.1]{GTZ}, conditional on the explicitly stated frequency input.
+It does not prove that input or the entire inverse theorem. The erratum
+\cite{Err} motivated the repair but is not a theorem premise. The related-use
+audit at the end distinguishes completed connecting arguments from other
+proof units. The rational-subgroup and tautification lemmas \cite{LP13,TAUT}
+are separately versioned project proofs awaiting independent acceptance.
+
+\section{Indices, free groups, and the actual objects}
+Fix integers $m\geq1$, $1\leq R\leq m$, and finite disjoint sets of letters
+$C_i,L_i,B_i$ for $1\leq i\leq m$. Their union is $\mathcal A$.
+The letters in $C_i$ are core, those in $L_i$ retained linear petals, and
+those in $B_i$ discarded petals. Every letter in these three sets has weight
+$i$. A bracket word has length $\ell$ equal to its number of entries, weight
+$w$ equal to the sum of their weights, and a multidegree recording the number
+of occurrences of each individual letter. Repeated entries count repeatedly.
+All bracketings are allowed, including length-one words. Write $p$ for the
+number of petal entries, and $b$ for the number of discarded entries.
+We use $[x,y]=x^{-1}y^{-1}xy$, real powers
+$x^t=\exp(t\log x)$, and $\ee(t)=\exp(2\pi\mathrm i t)$.
+
+Let $\mathcal F$ be the free real Lie algebra on symbols $X_a$, $a\in\mathcal A$.
+Its usual length grading and its individual-letter multigrading are retained.
+Take the homogeneous ideal spanned by all words for which
+\begin{equation}\label{eq:truncate}
+ w>m\quad\hbox{or}\quad(w=m\hbox{ and }\ell>R),
+\end{equation}
+and let $\lie$ be the quotient. These forbidden multidegrees are closed under
+addition of any nonzero multidegree, so their span is indeed an ideal.
+All surviving words have length at most $m$. Thus $\lie$ is finite-dimensional
+and nilpotent. Let $U=\exp\lie$, with multiplication given by the finite BCH
+polynomial, and set $e_a=\exp X_a$. The group is connected and simply connected.
+These are the weighted universal objects intended in
+\cite[Definition 9.1, p.~1279]{GTZ}, with the top rank in the relation fixed
+to be $R$, not a running rank index.
+
+Use $\DR=\{(d,r):d,r\in\N,\ 0\leq r\leq d\}$ with lexicographic order.
+Put $U_{(0,0)}=U$. For $d>0$ let
+\begin{equation}\label{eq:filtration}
+ \lie_{(d,r)}=
+ \operatorname{span}_{\R}\{W:w(W)>d\ \hbox{or}
+ [w(W)=d,\ \ell(W)\geq\max(r,1)]\},
+ \qquad U_{(d,r)}=\exp\lie_{(d,r)}.
+\end{equation}
+In particular the first alternative has \emph{no} length restriction.
+For ranks larger than $d$ use the notation $U_{(d,r)}=U_{(d+1,0)}$ only
+as the next-index convention; do not put such pairs into the index monoid.
+Write $U_d=U_{(d,0)}$. The top group is
+\[
+ T=U_{(m,R)}=\exp\operatorname{span}_{\R}
+       \{W:w(W)=m,\ \ell(W)=R\}.
+\]
+
+\begin{lemma}\label{lem:filtration}
+The groups in \eqref{eq:filtration} form a taut degree--rank filtration of
+degree at most $(m,R)$. Each is connected and normal in $U$, and $T$ is central.
+\end{lemma}
+\begin{proof}
+Bracketing words adds weights, lengths, and individual-letter multidegrees.
+Each displayed span is an ideal, since bracketing with a nonzero word increases
+weight. It is a Lie subalgebra and BCH therefore identifies its exponential
+with a connected subgroup. Nesting follows directly from lexicographic order:
+passing to a larger degree removes all lower-weight words, and at fixed degree
+passing to a larger rank increases the length cutoff.
+For positive indices $(d,r),(e,t)$, a bracket of two allowed words either has
+weight greater than $d+e$, or has weight $d+e$ and length at least
+$\max(r,1)+\max(t,1)\geq\max(r+t,1)$. Hence the Lie bracket lies in
+$\lie_{(d+e,r+t)}$. The BCH commutator formula has this bracket and further
+brackets, all in the same ideal, which proves the group commutator condition.
+At index zero use normality. Every generator has weight at least one, so
+$U_{(1,0)}=U$; also $U_{(d,0)}=U_{(d,1)}$ for all $d>0$.
+The truncation gives the claimed degree support. Bracketing a top word with
+any generator raises its weight above $m$, proving centrality of $T$.
+\end{proof}
+
+\section{An integral coordinate lemma}
+Here is the integral premise used, with its scope separated from the subsequent
+quotient argument. Hall collection says that in a free nilpotent group on a
+finite ordered alphabet, every element has a unique collected expression in
+the basic commutators with integer exponents; the length-$j$ basic commutators
+give a basis of its $j$th lower-central quotient. This published statement is
+recorded in \cite[Definition 5.4.3, Theorem 5.4.5 and the final paragraph
+of \S5.4, pp.~96--98]{Tointon}. The weight in that reference is bracket
+\emph{length}, not the additional weight $w$ used here.
+
+The corresponding basic Lie brackets form a homogeneous basis of the free
+nilpotent Lie algebra. To spell out the connection, antisymmetry and Jacobi
+reorder a bracket $[c_i,c_j]$ until $i>j$, and when
+$c_i=[c_s,c_t]$ until $j\geq t$. Jacobi replaces the offending bracket by
+brackets with the smaller inner entry moved outward. Induction on total
+length and then the finite Hall ordering gives spanning by basic brackets.
+Independence follows by mapping the free Lie algebra to the real tensor of
+the lower-central graded Lie ring of the free group: the bracket is induced
+by the group commutator, and Hall's basis assertion makes the images of those
+basic brackets independent in each length. This also respects the individual
+letter multigrading because the reordering identities preserve every count.
+
+\begin{lemma}[Upward-closed monomial quotients]\label{lem:hall}
+In a free nilpotent Lie algebra of class at most $m$, discard an upward-closed
+set of nonzero individual-letter multidegrees. Let $V$ be the exponential
+of the quotient and $\Lambda$ the discrete group generated by the surviving
+$\exp X_a$. The surviving Hall commutators give unique real coordinates
+\[
+ (t_1,\ldots,t_v)\longmapsto c_1^{t_1}\cdots c_v^{t_v}
+\]
+on $V$, and $\Lambda$ is exactly the set with all $t_i\in\Z$.
+It is a lattice. A further upward-closed set of multidegrees defines a
+rational connected normal subgroup $V_S$. The quotient map $q$ between
+two such monomial quotients obeys, for each such $S$,
+\begin{equation}\label{eq:saturation}
+ q(\Lambda\cap V_S)=q(\Lambda)\cap q(V_S).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Order basic commutators by increasing length. For a basic group commutator
+$c$, BCH gives $\log c=W_c+$ terms of strictly greater length, where $W_c$
+is the corresponding basic Lie bracket. Each correction uses all the letters
+of $c$ and possibly more occurrences of them. A discarded basic word
+therefore vanishes in the quotient, including every BCH correction.
+The surviving leading brackets are a basis, since the discarded Lie ideal
+is the direct sum of precisely the discarded multigraded components.
+Consequently the logarithm of the displayed coordinate map is triangular
+by length with diagonal entries one. Solving successively in each length
+gives a polynomial inverse and proves unique real coordinates.
+
+Hall collection expresses every word in the original $\exp X_a$ and their
+inverses as a product of basic group commutators with integer exponents.
+After quotienting, discarded factors are identities, so it gives the claimed
+integer coordinates. Conversely every surviving basic commutator is itself
+a word in the generators, which proves the other inclusion. In particular
+the subgroup is discrete. Suffix spans in the length-ordered basis are ideals,
+since every nonzero bracket increases length. Right multiplication by
+$c_i^{-n}$ changes coordinate $i$ by $-n$, leaves all earlier coordinates
+unchanged, and can change only later coordinates. Reduce the coordinates
+successively modulo integers. Every right coset has a representative with
+coordinates in $[0,1]^v$, a compact set, proving cocompactness.
+
+For $V_S$, quotient once more by its multigraded ideal. The same triangular
+coordinate argument says that an element belongs to $V_S$ exactly when all
+coordinates outside $S$ vanish. Thus its lattice consists of the integer
+coordinates on the basic commutators in $S$, and the same compact-coordinate
+argument proves rationality. A quotient deletes discarded basic factors and
+keeps the remaining ones in their original order. Membership in $q(V_S)$
+forces all retained coordinates outside $S$ to vanish. An element of
+$q(\Lambda)\cap q(V_S)$ therefore lifts as the identical integer product
+of retained basic commutators in $S$. This proves \eqref{eq:saturation}.
+\end{proof}
+
+The truncation \eqref{eq:truncate} is upward-closed, as are all the thresholds
+\eqref{eq:filtration}. The lemma proves that
+$\Gamma=\langle e_a:a\in\mathcal A\rangle_{\Z}$ is a lattice in $U$, and
+every $U_{(d,r)}$ is rational. It also proves the lattice statement below
+without treating it as a general property of arbitrary rational quotients.
+
+\section{The corrected kernel and the descended character}
+Call a word bad when $p\geq2$ or $b\geq1$. Let $I\subseteq\lie$ be the
+span of all bad Lie words of every weight. Let $G^*$ be the connected real
+subgroup generated by all bad iterated \emph{group} commutators in the $e_a$,
+again of every weight and including length one. Equivalently, the real
+generated subgroup contains every real power of each such commutator.
+This convention is essential: a discrete generated subgroup would not be
+the kernel of a map of simply connected Lie groups.
+
+Let $\widetilde{\lie}$ be the free Lie algebra on $C_i\cup L_i$ with relations
+\eqref{eq:truncate} and the vanishing of all words with at least two petal
+entries. Give $\widetilde G=\exp\widetilde{\lie}$ the filtration
+\eqref{eq:filtration} on its surviving words. Put
+$\widetilde\Gamma=\langle\widetilde e_a:a\in C_i\cup L_i\rangle_{\Z}$.
+Define $q:U\to\widetilde G$ by $e_a\mapsto\widetilde e_a$ on retained
+letters and $e_a\mapsto1$ on discarded letters.
+
+\begin{theorem}\label{thm:quotient}
+The homomorphism $q$ is well-defined and surjective, and
+\[
+ \ker q=G^*=\exp I.
+\]
+Thus $G^*$ is connected, rational and normal; it need not be central. For
+every degree--rank index $a$, including zero,
+\begin{align}
+ q(U_a)&=\widetilde G_a\simeq U_a/(G^*\cap U_a),\label{eq:filteredquot}\\
+ q(\Gamma\cap U_a)&=\widetilde\Gamma\cap\widetilde G_a.\label{eq:exactlattice}
+\end{align}
+Suppose $\eta:T\to\R$ is a continuous homomorphism integral on
+$T\cap\Gamma$, and for every bad group commutator $c$ of weight $m$ and
+length $R$ one has $\eta(c)=0$. Then there is a unique continuous
+$\widetilde\eta:\widetilde G_{(m,R)}\to\R$ satisfying
+\[
+ \widetilde\eta(q(t))=\eta(t)\quad(t\in T),\qquad
+ \widetilde\eta(\widetilde\Gamma\cap\widetilde G_{(m,R)})\subseteq\Z.
+\]
+\end{theorem}
+\begin{proof}
+Bad multidegrees are upward-closed, so $I$ is an ideal. The universal property
+of the free Lie algebra identifies $\lie/I$ with $\widetilde{\lie}$:
+killing discarded letters kills every word involving one, and killing
+all words with two petals gives exactly the other defining relations.
+There are no additional relations because both presentations impose the
+same homogeneous ideal on the same free Lie algebra. Exponentiation of this
+surjective Lie map gives $q$, and its kernel is $\exp I$ by the global
+exponential diffeomorphisms.
+
+BCH puts the logarithm of every bad group commutator in $I$. Conversely
+take the bad Hall commutators. Their logarithms have the bad basic Lie
+brackets as leading terms, with only higher-length bad terms. The triangular
+matrix on the finite-dimensional bad subspace is invertible. Their logarithms
+therefore span $I$, and the connected real subgroup they generate is $\exp I$.
+This proves the asserted description of $G^*$, not just its normal closure.
+All these spaces are spanned by rational basic words. Lemma~\ref{lem:hall}
+proves rationality and $q(\Gamma)=\widetilde\Gamma$.
+
+The Lie map deletes bad multigraded components and preserves weight and
+length of every surviving word. Applying \eqref{eq:filtration} before or
+after the map therefore gives identical spaces. Exponentiating proves
+\eqref{eq:filteredquot}, and Lemma~\ref{lem:hall} proves
+\eqref{eq:exactlattice}.
+
+The direct multigrading gives
+\[
+ I\cap\log T=\operatorname{span}_{\R}
+    \{W:W\hbox{ bad},\ w(W)=m,\ \ell(W)=R\}.
+\]
+There is no cancellation between a bad multidegree and a good one. At
+weight $m$ the BCH correction terms in a group commutator have larger
+weight and vanish. Thus the bad group commutators of weight $m$ and
+length $R$ are precisely the exponentials of their Lie brackets.
+The assumption on $\eta$, and real linearity of a continuous homomorphism
+on the vector group $T$, prove that $\eta$ vanishes on $G^*\cap T$.
+It consequently descends through \eqref{eq:filteredquot} at the top index.
+Finally \eqref{eq:exactlattice} lifts every top lattice point downstairs to
+one upstairs, where $\eta$ is integral. This proves the last assertion.
+\end{proof}
+
+\paragraph{Why the omitted lower weights matter.}
+With one core letter $x$ and one discarded letter $b$, both of weight one,
+and $m=3,R=3$, the quotient kills $b$ itself. A subgroup generated only by
+bad weight-three words cannot contain $b$. Moreover $[b,x]$ survives in $U$,
+so the actual kernel is not central. This example tests both false shortcuts.
+
+\paragraph{The precise analytic input.}
+In the notation of \cite{GTZ}, take $m=s-1$, $R=r_*$,
+$|C_i|=D_{*,i}$, $|L_i|=D'_{\mathrm{lin},i}$ and
+$|B_i|=D'_{\mathrm{ind},i}$. Use the \emph{final output} of Lemma 10.10,
+after rational-core and small frequencies have been removed by Lemma 10.9.
+Then the two hypotheses on $\eta$ in Theorem~\ref{thm:quotient} are exactly
+Theorem 11.1(i),(ii): all weight-$m$, length-$R$ words with two petals or
+one beyond-linear petal are annihilated. The repeated (iii),(iv) add nothing.
+For a bracketing convention restricted to left-normed words, Jacobi expresses
+any other bracket of these same entries as a linear combination of such words;
+their petal counts and total weight are unchanged. At the central top layer
+this is also an exact identity of logarithms, so the vanishing extends to
+all bracketings used here.
+
+Theorem 11.1 requires the hypotheses of Theorem 7.2, the limit family of
+degree--rank $(m,R)$ nilcharacters, and the sunflower representation with
+its common standard dimension vector and vertical frequency. Its proof uses
+the additive-quadruple bias conclusion of Proposition 7.3 and the stated
+independence from Lemma 10.10. In the repaired project, that bias conclusion
+must come from LP-03, not the false original Proposition 8.3. No use of
+Theorem 1.3 is made to supply it. This unit assumes these inputs; merely
+partitioning generators does not prove the required vanishing.
+
+\section{Vertical test functions and petal actions}
+\begin{lemma}\label{lem:vertical}
+For the descended integral character there is a finite-dimensional
+unit-vector-valued smooth function on $\widetilde G/\widetilde\Gamma$ of
+vertical frequency $\widetilde\eta$. Its dimension and Lipschitz bound depend
+only on the fixed filtered group, lattice, metric and character.
+\end{lemma}
+\begin{proof}
+The central torus $\widetilde T/(\widetilde T\cap\widetilde\Gamma)$ acts
+freely. Choose finitely many local smooth sections of the resulting principal
+torus bundle and smooth real functions $a_j$ subordinate to their domains,
+with $\sum_j a_j^2>0$ everywhere on the base. Normalize them so
+$\sum_j a_j^2=1$. In a local trivialization $(z,t)$ put the $j$th component
+equal to $a_j(z)\ee(\widetilde\eta(t))$, extending by zero outside its
+support. The support stays inside the chart, so the extension is smooth.
+Transition functions change only the component's phase. The vector has
+norm one, and all components have the same vertical frequency.
+Compactness gives a finite Lipschitz bound. If the torus or character is
+trivial the same construction, or the constant function, applies.
+\end{proof}
+
+The quotient Lie algebra is a direct sum $\mathfrak c\oplus P$, where
+$\mathfrak c$ consists of words with no petals and $P$ of words with one.
+Here $P$ is an abelian ideal: a bracket of two such words has two petals
+and is zero. Thus $\widetilde G_{\mathrm{petal}}=\exp P$ is abelian, normal
+and rational by Lemma~\ref{lem:hall}. Decompose $P=\bigoplus_{a\in L}P_a$
+by the unique petal letter. Core conjugation preserves each $P_a$.
+For a tuple $t=(t_a)\in\R^L$, the map fixing core generators and sending
+$X_a$ to $t_aX_a$ on linear petals is a Lie endomorphism $M_t$:
+it preserves all defining ideals. It scales $P_a$ by $t_a$, so on the petal
+group, written multiplicatively,
+\[
+ M_tM_u=M_{tu},\qquad M_t(p)M_u(p)=M_{t+u}(p),\qquad
+ M_t(gpg^{-1})=gM_t(p)g^{-1}.
+\]
+The last identity follows because $M_t$ commutes with every core adjoint
+action and conjugation by $P$ acts trivially on $P$. This proves the precise
+identities used in (12.8)--(12.10), without treating $M_t$ as an automorphism
+when some $t_a=0$. For integral tuples $t$, $M_t$ preserves
+$\widetilde\Gamma$, because it sends each generator to an integer power.
+It also preserves the petal lattice by its subgroup invariance. These are
+the lattice facts needed by the subsequent shear semidirect products.
+
+\section{The comparison filtration and corrected Lemma 12.1}
+We record sufficient input explicitly. Let $G/\Lambda$, $G^0/\Lambda^0$
+be fixed taut rational degree--rank nilmanifolds of degrees at most $(m,R)$
+and strictly below $(m,R)$, respectively. Let $\phi:U\to G$ be filtered
+and send $\Gamma$ into $\Lambda$. Suppose $a_h,c_h$ are polynomial sequences
+and $F_h$ are unit-vector-valued uniformly Lipschitz functions on
+$G/\Lambda\times G^0/\Lambda^0$ such that
+\begin{equation}\label{eq:Fchar}
+ F_h(\phi(t)x,z)=\ee(\eta(t))F_h(x,z)\quad(t\in T).
+\end{equation}
+Let $E_{h,i}=\prod_{a\in C_i\cup L_i\cup B_i}e_a^{\xi_{h,a}}$ in a fixed
+order, and suppose the horizontal Taylor coefficient of $a_h\Lambda$ is
+that of $\phi(E_{h,i})$ in $G_{(i,1)}/G_{(i,2)}$ modulo the horizontal
+lattice. Let
+\[
+ b_h(n)=\prod_{i,a\in C_i}\widetilde e_a^{\xi_{h,a}\binom ni}
+           \prod_{i,a\in L_i}\widetilde e_a^{\xi_{h,a}\binom ni}.
+\]
+These are exactly the core and retained-petal factors in (12.3)--(12.5).
+Using the function from Lemma~\ref{lem:vertical}, set
+\[
+ \chi_h(n)=F_h(a_h(n)\Lambda,c_h(n)\Lambda^0),\qquad
+ \widetilde\chi_h(n)=\widetilde F(b_h(n)\widetilde\Gamma).
+\]
+
+\begin{proposition}\label{prop:comparison}
+Under these hypotheses, every component of
+$\chi_h\otimes\overline{\widetilde\chi_h}$ is a nilsequence of
+degree--rank strictly below $(m,R)$. The representing filtered nilmanifold
+is fixed independently of $h$ and the coefficients; its Lipschitz bounds
+depend only on the fixed data and original bounds.
+\end{proposition}
+\begin{proof}
+For $d>0$ put $\bar r=\max(r,1)$ and let $\sigma(d,\bar r)$ denote the
+successor of $(d,\bar r)$ in the positive degree--rank list. In the product
+$G\times G^0\times\widetilde G$, let $H_{(d,r)}$ be the connected subgroup
+generated by
+\begin{align*}
+ J_{(d,r)}&=G_{\sigma(d,\bar r)}\times G^0_{(d,\bar r)}
+                        \times\widetilde G_{\sigma(d,\bar r)},\\
+ D(U_{(d,\bar r)})&=\{(\phi(u),1,q(u)):u\in U_{(d,\bar r)}\}.
+\end{align*}
+Set $H_0=H_{(1,0)}$. This specifies the zero group; it is not an arbitrary
+full product. All generator subgroups are rational. For the diagonal image,
+the image of the appropriate lattice generates its real subgroup by the
+Hall coordinates and $\phi(\Gamma)\subseteq\Lambda$. The rational-generated
+subgroup lemma of \cite[Section 2]{LP13} applies.
+
+Nesting is direct. For positive indices $i,j$, commutators of two diagonal
+generators lie in $D(U_{i+j})$. A commutator involving a $J_i$ generator
+has its first and third coordinates in the successor group at $i+j$,
+since $\sigma(i)+j\succeq\sigma(i+j)$, with the convention replacing
+rank zero by one. Its middle coordinate is in $G^0_{i+j}$. The same
+argument works for two $J$ generators. Taking generated Lie algebras and
+BCH gives $[H_i,H_j]\subseteq H_{i+j}$. At zero use
+$H_0=H_{(1,0)}=H_{(1,1)}$ and nesting. Thus this is a taut rational
+degree--rank filtration. Its top group is exactly
+\begin{equation}\label{eq:Htop}
+ H_{(m,R)}=D(T),
+\end{equation}
+because every group in $J_{(m,R)}$ is trivial.
+
+We next check actual polynomial membership, including constant coefficients
+and the distinction between a horizontal vector and its torus class.
+Write $a_h(0)=v_h\lambda_h$ with $v_h$ in a fixed compact representative
+set and $\lambda_h\in\Lambda$. Replace $a_h(n)$ by
+$v_h^{-1}a_h(n)\lambda_h^{-1}$, and replace $F_h(x,z)$ by $F_h(v_hx,z)$.
+Do the same in the second coordinate. Values of $\chi_h$ are unchanged,
+the new sequences start at the identity, and Lipschitz bounds stay uniform.
+Since $G$ is taut, conjugation by $v_h$ acts trivially on every
+$G_{(i,1)}/G_{(i,2)}$: its commutator is in
+$G_{(i+1,1)}\subseteq G_{(i,2)}$. The horizontal torus conditions remain
+unchanged. Equation \eqref{eq:Fchar} remains unchanged since the top group
+of the taut group is central. Tautify the original targets before constructing
+the total-frequency representation, using \cite{TAUT} and then
+\cite[Lemma 9.12]{GTZ}; no conjugated, potentially irrational replacement
+of $\phi$ is being silently used here.
+
+For each $i$, choose $\lambda_{h,i}\in\Lambda\cap G_i$ lifting the
+horizontal lattice difference between the new $a_h$ and $\phi(E_{h,i})$.
+Such a lift exists by the definition of the horizontal lattice. Multiply
+$a_h(n)$ on the right by the inverse of
+$\prod_i\lambda_{h,i}^{\binom ni}$. This does not change its orbit.
+The factor is polynomial by the Taylor criterion
+\cite[Lemma B.9]{GTZ}. The horizontal Taylor map is a homomorphism
+\cite[Definition 9.6 and the argument following it]{GTZ}, so now the
+horizontal equalities hold in the vector groups themselves.
+
+Taylor-expand $a_h(n)=\prod_{i\geq1}a_{h,i}^{\binom ni}$. Then
+$a_{h,i}\phi(E_{h,i})^{-1}\in G_{(i,2)}$. Hence
+$(a_{h,i},1,q(E_{h,i}))\in H_{(i,1)}$. The Taylor criterion and product
+closure \cite[Lemma B.9 and Corollary B.4]{GTZ} show that
+\[
+ n\mapsto\left(a_h(n),1,\prod_iq(E_{h,i})^{\binom ni}\right)
+\]
+is polynomial for $H$. Both its last coordinate and $b_h$ have the same
+horizontal Taylor coefficients, since multiplication of factors is addition
+in each horizontal quotient and discarded generators have image one.
+Their ratio is polynomial and all its horizontal Taylor coefficients vanish.
+Its Taylor coefficient at index $i$ therefore lies in
+$\widetilde G_{(i,2)}$. These groups, with zeroth group
+$\widetilde G_{(1,2)}$, form a degree filtration by the same commutator
+check. The ratio starts at one; Lemma B.9 now shows that it is polynomial
+for this smaller filtration. Embedded in the third coordinate it is
+polynomial in $H$. The second-coordinate map $(1,c_h(n),1)$ is also
+polynomial in $H$. Product closure proves that the exact triple
+$(a_h(n),c_h(n),b_h(n))$ is polynomial in $H$.
+
+Restrict $F_h\otimes\overline{\widetilde F}$ to
+$H/(H\cap(\Lambda\times\Lambda^0\times\widetilde\Gamma))$.
+On $D(t)$ its vertical multiplier is
+$\ee(\eta(t)-\widetilde\eta(q(t)))=1$ for every $t\in T$.
+It therefore descends through the central rational subgroup
+\eqref{eq:Htop}. The central quotient and lattice argument in
+\cite[Sections 2 and 6]{LP13} applies here: this kernel is contained in
+every nontrivial indexed subgroup, unlike the earlier kernel $G^*$.
+The top group becomes trivial, so the quotient has degree--rank strictly
+below $(m,R)$. Restriction, quotient charts, and the compact translations
+cost only constants from the fixed geometry. This proves the proposition.
+\end{proof}
+
+When $R=1$, strictly below $(m,1)$ means ordinary degree at most $m-1$.
+For $R>1$ it means degree--rank at most $(m,R-1)$, not necessarily degree
+at most $m-1$. The first sentence of the published proof of Lemma 12.1
+claims the latter unnecessarily strong conclusion. The proved former
+conclusion is exactly what the following rank-induction step consumes.
+
+\section{Uniformity, limits, and the remaining Section 12 interfaces}
+Every group, ideal, Hall list, lattice and quotient above depends only on
+$m,R$ and the fixed finite labelled dimension data. All formulas are finite
+polynomials, Lie-group maps, or choices from fixed lattice and compact
+representative sections. A fixed ordering chooses the first lift of a lattice
+class; a fixed finite atlas chooses a bounded representative. Applying these
+standard choices to representative sequences gives limit maps. The derivative
+and vertical identities are required on their full ultrapower domains,
+as in \cite{TAUT}; identities only at standard points are insufficient.
+Thus no bound depends on $N$, on $h$, or on the real polynomial coefficients.
+The character is fixed before choosing a vertical test function. No assertion
+of a bound uniform over unbounded characters is made. Taking the dense
+subfamily with fixed geometric data and character is the separate selection
+step in Lemma 10.10 and Section 12, using Appendix A.
+
+The ordinary degree filtration used to build the final semidirect product
+is $\widetilde G_d=\widetilde G_{(d,0)}$. The petal ideal and scalar-action
+identities proved above give precisely the normality, commutativity, and
+integral stability used on pp.~1312--1314. In particular a bracket with two
+petal entries is zero at \emph{every} weight. This assertion would fail if
+one quotiented only by the old top-weight kernel.
+
+There is a separate unit-norm issue at the cutoff in (12.11) and the paragraph
+following it. A compactly supported scalar cutoff times a unit-vector function
+is not itself unit-vector-valued. Here is an exact completion for that use.
+On the final compact nilmanifold choose a smooth vertical-equivariant local
+unit vector $V$ on the torus-coordinate chart, agreeing with
+$\widetilde F(g\widetilde\Gamma)$ there. Choose a smooth function
+$\theta$ of the torus coordinates equal to zero on the closed inner box and
+equal to $\pi/2$ outside a slightly larger box still inside the chart.
+These coordinates are unchanged by the top vertical action. Construct a
+global unit-vector function $V_0$ of the same vertical character by
+Lemma~\ref{lem:vertical}, applied to the final top torus. Then
+\[
+ \bigl(\cos\theta\,V,\ \sin\theta\,V_0\bigr)
+\]
+is smooth, unit-vector-valued, has the required vertical character, and equals
+$(V,0)$ on the inner box. The first component extends by zero, since its
+support stays inside the chart. Choose $\theta$ constant near both boundaries,
+so both extensions are smooth. This preserves the required values for the
+dense parameter set after shrinking to the inner box. Its geometry and bounds
+are fixed before $N$. The final semidirect-product filtration and polynomial
+orbit must still be checked at their displayed definitions; they are not
+consequences of the character descent alone.
+
+\section{Bounded audit of affected uses}
+The failure mechanism is restriction of a generated ideal or filtration to
+too few weights, followed by an unjustified quotient or lattice identification.
+The audit scope is the universal degree--rank definitions and the consumers
+of their commutator/Taylor quotients in Sections 9--12. It includes the
+zero-index and repeated normalization assertions in those passages.
+\begin{enumerate}
+\item Definition 9.1, p.~1279: use the fixed $R=r_*$ in the top relation,
+and count the $\ell$ actual entries. Equations \eqref{eq:truncate} and
+\eqref{eq:filtration}, including all higher weights, give the intended
+object. Lemmas~\ref{lem:filtration} and \ref{lem:hall} prove its filtration
+and lattice, rather than inheriting typographical indices.
+\item Definition 9.6, pp.~1281--1282: use
+$\HH_i=G_{(i,1)}/G_{(i,2)}$, and $G_{(1,2)}=G_{(2,0)}$.
+The vector/torus distinction is discharged in
+Proposition~\ref{prop:comparison}, not by replacing a congruence by equality.
+\item Definition 9.11 and Lemma 9.12, pp.~1284--1287: their $G_i$ means
+$G_{(i,0)}$. First tautify, then choose lattice generators and construct
+the filtered map. This order preserves a genuine lattice map; the proof
+does not assume arbitrary real conjugation preserves the lattice.
+\item Lemma 9.14 and Corollary 9.15, pp.~1287--1288, are explicitly stated
+there not to be used later. Their comparison-filtration argument has the
+same zero-index and horizontal-lattice issues. The construction in
+Proposition~\ref{prop:comparison} supplies that mechanism with $q$ trivial
+when the character is zero. Their broader reuse requires this version,
+not the unqualified original paragraph.
+\item Lemma 10.8, p.~1297: the vertical domain is
+$U_{(m,R)}$, not the larger ordinary degree group $U_m$.
+This unit consistently defines vertical frequencies only on that top group.
+The source argument's other linear-algebra steps are not newly reproved here.
+\item Lemma 10.10 and Theorem 11.1, pp.~1299--1307: use the final
+core/linear/independent decomposition and the exact two vanishing assertions.
+The bias and independence premises remain named upstream inputs.
+The repeated (iii),(iv) of Theorem 11.1 are redundant. Reordering linear
+and independent petals requires relabelling every associated index, not
+changing which generators are annihilated.
+\item Quotient construction, p.~1309: Theorem~\ref{thm:quotient} proves
+the full kernel, every filtered quotient, and the top-lattice saturation
+needed for integral vertical descent. The kernel is not asserted central.
+\item Lemma 12.1, pp.~1309--1311: Proposition~\ref{prop:comparison}
+proves the rank drop with actual constant normalization, horizontal lattice
+lifts, exact polynomial orbit and conjugate vertical cancellation.
+The degree-only strengthening is not used or claimed.
+\item Petal actions, pp.~1311--1314: the proved abelian ideal and its
+individual-petal splitting verify (12.8)--(12.10), including zero and
+negative scaling parameters and integral lattice stability. The displayed
+final multidegree filtration, chart gluing, and polynomial orbit remain
+explicit downstream construction checks for LP-00/LP-07. The unit-norm
+cutoff completion above removes the identified local norm obstruction.
+\end{enumerate}
+This list is an authored bounded audit, not independent source-first coverage
+or acceptance of Sections 9--12. It does not classify unrelated errors outside
+this mechanism. The separate project proofs and the assembled inverse theorem
+must be independently reviewed at their exact versions.
+
+\begin{thebibliography}{9}
+\bibitem{GTZ} B. Green, T. Tao and T. Ziegler,
+An inverse theorem for the Gowers $U^{s+1}[N]$-norm,
+Annals of Mathematics 176 (2012), 1231--1372.
+\url{https://doi.org/10.4007/annals.2012.176.2.11}.
+\bibitem{Tointon} M. C. H. Tointon,
+Introduction to Approximate Groups, LMS Student Texts 94,
+Cambridge University Press, 2020, \S5.4, pp.~96--98.
+\url{https://doi.org/10.1017/9781108652865}.
+The author-posted published-book PDF is pinned in the source manifest;
+its author page lists corrections, none affecting this interface.
+\bibitem{LP13} Project proof by /root/astra\_v14\_baseline\_theta,
+Lemma 13.2 repair, version lemma13-2-002, 7 November 2026.
+Exact manifest and proof hashes are in the accompanying source-use record.
+\bibitem{TAUT} Same author, Tautification and the shifted nilcharacter
+construction, version tautification-003, 7 November 2026.
+\bibitem{Err} B. Green, T. Tao and T. Ziegler,
+Erratum for the inverse theorem, six-page author document,
+pp.~5--6. Attribution and problem identification only; no correction theorem
+is imported from this unpublished document.
+\end{thebibliography}
+\end{document}

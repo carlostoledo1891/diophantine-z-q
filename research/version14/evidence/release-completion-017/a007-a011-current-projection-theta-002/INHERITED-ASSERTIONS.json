@@ -1,0 +1,152 @@
+[
+  {
+    "id": "CURRENT-A007-SQUARE-BOUNDARY",
+    "assertion": {
+      "statement": "The constant square-sequence boundary of a finite character of G_Qp is zero exactly when chi(-1)=1, and otherwise has invariant1/2.",
+      "objects": "chi:G_Qp->mu_infinity; Br(Q_p)[2].",
+      "hypotheses": "Continuous finite-order chi; constant coefficient modules.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Every finite rational prime, including2.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "Two local Brauer classes.",
+      "normalizations": "Reciprocity inversion does not change the order-two test.",
+      "exceptional_cases": "No assertion that squaring is surjective on the sign factor at2.",
+      "limit_order": "Local comparison precedes global Brauer injection."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 5,
+      "end_line": 12,
+      "excerpt_sha256": "72e5f81f2934aa9ae53e2f10b8b86a7f4848929f942ba1c47c002e3892eec758"
+    }
+  },
+  {
+    "id": "CURRENT-A007-GLOBAL-SPLITTING",
+    "assertion": {
+      "statement": "The parity-selected Dirichlet character chi admits a continuous cochain beta in mu_(2m) with beta^2=chi and delta(beta)=epsilon.",
+      "objects": "Normalized inflated sign cocycle epsilon, finite T, finite character chi of order m.",
+      "hypotheses": "L/Q finite Galois unramified outside T;2 in T; local signs chosen as in C2.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "G_Q and every finite and real place.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "m<=2 product_(p in T,p odd)(p-1); no conflation of the two later product bounds.",
+      "normalizations": "Constant roots of unity; beta is generally a cochain, not a global character.",
+      "exceptional_cases": "Empty sign set allowed; real invariant determined, not omitted.",
+      "limit_order": "Match local classes, then global class, then correct the pointwise square root."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 13,
+      "end_line": 20,
+      "excerpt_sha256": "4553fbd44eed4dfebcfe396c0f6d84fc659cd81e3838442822698434c71aae8d"
+    }
+  },
+  {
+    "id": "CURRENT-A007-RAMIFICATION",
+    "assertion": {
+      "statement": "A quadratic global character twist makes beta unramified outside T without changing its square or coboundary; beta|G_L is invariant and its kernel gives L′/Q Galois of degree at most2m[L:Q].",
+      "objects": "beta, chi, epsilon, L and quadratic Q(sqrt(P)).",
+      "hypotheses": "C2 identities; L/Q unramified outside T;2 in T.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "All inertia outside T; finite product P of odd primes.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "Same mu_(2m) and degree bound2m[L:Q].",
+      "normalizations": "The twist multiplies the sign cochain only; a_sigma remains separate.",
+      "exceptional_cases": "P=1 is permitted; additional dyadic ramification lies inside T.",
+      "limit_order": "Prove character/invariance, identify finite bad inertia set, then twist."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 21,
+      "end_line": 26,
+      "excerpt_sha256": "3d9eb48adf1db844c4c725e367f03a0565f571adadb38bdd817123ad26cfa6df"
+    }
+  },
+  {
+    "id": "CURRENT-A011-FRICKE-SPAN",
+    "assertion": {
+      "statement": "The full coefficient-conjugate span of the same primitive weight-two f is stable under h(z)->h(-1/(Nz))/z^2.",
+      "objects": "f, full coefficient field K, every embedding sigma:K->C, V=sum C f^sigma.",
+      "hypotheses": "Normalized primitive weight-two cusp form of level N; exact r5/f identity is a separate input.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "All N and nebentypus, arbitrary coefficient field.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "Shimura map=N times Li weight-two slash.",
+      "normalizations": "Li K_op is coefficient conjugation; c composes with each embedding.",
+      "exceptional_cases": "No single-form Fricke eigenvector or rational-character assumption.",
+      "limit_order": "Unconditional conjugate existence and primitivity first; Fricke condition second."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 27,
+      "end_line": 34,
+      "excerpt_sha256": "f39fef400f41a8b8faf49d171a30dad75a798eb318557a895fc909a9792a7073"
+    }
+  },
+  {
+    "id": "CURRENT-A011-SHIMURA-QUOTIENT",
+    "assertion": {
+      "statement": "For the same f, Shimura gives q:J1(N)->A_f over Q, K-action, dimension[K:Q], conjugate differential span and the product Euler identity outside finitely many primes.",
+      "objects": "A_f,q,K and the coefficient-conjugate span.",
+      "hypotheses": "f normalized Hecke eigenform; C4 supplies Fricke stability for Gamma1(N).",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Q-quotient at the original final primitive level N.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "dim A_f=[K:Q].",
+      "normalizations": "The quotient and differential assertions precede the conditional Euler formula.",
+      "exceptional_cases": "The separate Gamma0 occurrence uses the source alternative clause; its isogeny to E is not proved here.",
+      "limit_order": "Construct quotient unconditionally; apply the verified Fricke premise for Euler factors."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 35,
+      "end_line": 42,
+      "excerpt_sha256": "766bee209f2e7e08332109bc2e3acae4bf18d3f79cae720fbc4f24c9aff76537"
+    }
+  },
+  {
+    "id": "CURRENT-A011-TATE-CONDUCTOR",
+    "assertion": {
+      "statement": "The same r5 occurs in V5(A_f) and V5(J1(N)); its dual occurs in H1_et(A_f), and local Artin/WD conductor is unchanged by duality.",
+      "objects": "Chosen r5, all conjugate modular realizations, A_f and J1(N).",
+      "hypotheses": "C5 Euler identity; modular attachments, Faltings semisimplicity and Serre density/trace lemma.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Common finite5-adic coefficient extension; all local dual conductor comparisons.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "No extra field-degree, Tate-twist or conductor factor.",
+      "normalizations": "Tate arithmetic Frobenius versus geometric Frobenius on cohomology; duality has no Tate twist.",
+      "exceptional_cases": "No conclusion that arbitrary labelled factors follow directly from an unlabelled product; level=conductor is retained separately.",
+      "limit_order": "Compare total semisimple representations, select chosen constituent, then dualize."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 39,
+      "end_line": 48,
+      "excerpt_sha256": "f5f44f413c6773ccb69c1ea6e0a01864b3b770324702f2e6fbd1ef9d2689c0a6"
+    }
+  }
+]

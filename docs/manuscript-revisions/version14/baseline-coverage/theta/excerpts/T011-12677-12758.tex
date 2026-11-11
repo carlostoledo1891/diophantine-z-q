@@ -1,0 +1,82 @@
+\paragraph{The published prime-two Euler-system input.}
+For $p=2$ we use the rational, away-from-two case of
+\cite[Theorem 0.8, pp.~317--318]{kato1999}, with the stronger
+hypothesis in its condition 0.6(ii), to justify the application of
+\cite[Theorem 13.4(2)]{kato}. For our non-CM elliptic representation
+the image of $G_{\Q^{\rm ab}}$ contains an open subgroup of
+$\mathrm{SL}_2(\Z_2)$, as stated in
+\cite[Example 0.6.2, pp.~317--318]{kato1999}, using Serre's open-image
+theorem. A quadratic character $\chi$ is trivial on $G_{\Q^{\rm ab}}$.
+Thus the same subgroup acts on $V\chi$ and contains a matrix
+$\left(\begin{smallmatrix}1&b\\0&1\end{smallmatrix}\right)$ with
+$b\ne0$. Its fixed space over $\Q_2$ has dimension one. This supplies
+the unipotent in $G_{\Q^{\rm ab}}$, not merely in the cyclotomic
+subgroup. The latter subgroup also contains this open
+$\mathrm{SL}_2$ subgroup, so $V\chi$ remains absolutely irreducible
+over $\Q(\mu_{2^\infty})$. Indeed, a line invariant under both upper
+and lower nonidentity unipotents cannot exist, even over an algebraic
+closure. No inference from irreducibility over $G_\Q$ alone is needed.
+
+We check the index set and the supplied class in that theorem
+explicitly. Put $N_K=2Nd$ and $N'_K=cd_s$. These integers are
+coprime by (K5), since $d\mid F$. Section~0.1 of \cite{kato1999}
+requires every index $m$ with $N_K\mid m$ and $(m,N'_K)=1$.
+The enlarged definition (K8) supplies all these classes. They
+originate in the integral $j_*$ group over
+$\mathbf Z[\zeta_m,1/2]$ and map to full cohomology over
+$\mathbf Z[\zeta_m,1/N_K]$. The varying construction support
+$S_{Dm}$ is not an instruction to invert all its primes in this
+last scheme. Apply the fixed lattice map $2^{c_E}$ from (K4) if
+needed, identically at every level.
+
+For a prime $\ell\nmid N'_K$, if $\ell\mid m$ then
+$S_{Dm\ell}=S_{Dm}$, so Proposition~8.12 gives norm factor one.
+If $\ell\nmid m$, the condition $N_K\mid m$ implies
+$\ell\nmid2Nd$, and hence
+$S_{Dm\ell}\setminus S_{Dm}=\{\ell\}$. The equivariance identity
+before (K9) gives the factor
+$P_\ell(\ell^{-1}\sigma_\ell^{-1})=E_\ell(\chi)$, with
+$P_\ell(X)=1-a_\ell\chi(\ell)X+\ell X^2$. These are exactly the
+two cases of (0.1.1) in \cite{kato1999}. Smoothing primes are
+excluded by $N'_K$ and need not be inverted.
+
+For the class in Section~0.7 of that source take its parameter
+$d=1$; this parameter is distinct from our odd conductor part $d$.
+For every $n\geq1$,
+\[
+ S_{DN_K2^n}=S_{D2^n}=\operatorname{prime}(2Nd).
+\]
+Proposition~8.12 therefore gives
+\[
+ \operatorname{cor}_{\mathbf Q(\zeta_{DN_K2^n})/
+                          \mathbf Q(\zeta_{D2^n})}
+             z_{DN_K2^n}=z_{D2^n}.
+\]
+Transitivity of corestriction, through the two intermediate fields
+in the common upper field, now yields
+\[
+ \operatorname{cor}_{\mathbf Q(\zeta_{N_K2^n})/
+                          \mathbf Q(\zeta_{2^n})}y_{N_K2^n}
+ =\operatorname{cor}_{\mathbf Q(\zeta_{D2^n})/
+                          \mathbf Q(\zeta_{2^n})}
+                         (z_{D2^n}\otimes e_\chi)
+ =y_{2^n}.
+\]
+No Euler factor occurs because the supports are equal. No field
+degree occurs because this is corestriction of the actual upper
+class, not corestriction of a restriction. These equalities commute
+with transition maps, and $n\geq1$ is a cofinal tail. Write
+$\xi_K$ for the Section~0.7 class, to distinguish it from the
+modular-symbol combination $\xi$. It is exactly the full-cohomology
+image of $y_{2^\infty}$, multiplied by $2^{c_E}$ if the fixed
+lattice map was needed. That factor is a unit at every height-one
+prime under consideration, so its coordinate ideal is precisely
+$J_{\mathfrak p}$. The preceding
+nonvanishing argument supplies a nontorsion class on each sign
+component, purity gives $w=-1$, and oddness gives condition
+0.6(iv$_{\mathfrak p}$). At the height-one primes used here, $2$ is
+invertible and the localized Iwasawa algebra is a DVR. Theorem 0.8
+then bounds the coordinate ideal of this actual retained class. Its
+strong residual and integral-cokernel assumptions concern primes
+containing $2$, which are not used here.
+

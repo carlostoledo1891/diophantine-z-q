@@ -1,0 +1,75 @@
+{
+  "decision": "accept bounded four actual norm occurrences and roadmap disposition",
+  "reviewer": "/root/v14_arithmetic_author",
+  "author": "/root/v14_sign_conductor",
+  "target": {
+    "path": "v14-kato-norm-occurrences-002/MANIFEST.json",
+    "sha256": "ff66b55f4de51e6590cd9f539f45442a16a4753580da88fa59762fe53082d037"
+  },
+  "base_use": {
+    "id": "ACTIVE-THETA-SOURCE-KATO-NORM-RELATION",
+    "sha256": "ffdd2bf1db7c5dd42fcb16a7a61679a4c3672386bc655630ceef73f4c2a09657"
+  },
+  "findings": [
+    "13558–68 applies the original same-smoothing norm relation after primitive-conductor descent, with transitivity separate.",
+    "13580–88 uses the repeated-two norm relation before the primitive Gauss basis, including D=4|h|.",
+    "13760–69 compares new support and identical support at the actual admissible indices; smoothing primes remain excluded.",
+    "13773–95 uses identical support and corestriction of the actual upper class, not corestriction of a restriction. No degree division occurs.",
+    "13355–61 is now provenance-only. Four actual appends have unique ordered passage IDs."
+  ],
+  "limits": "No new proof of Proposition8.12, class construction, corestriction transitivity, integral lattice comparison, central reciprocity or final ancestry closure. Rebase must preserve intervening accepted locations and unchanged assertion.",
+  "transport": "All four current raw excerpts match; whole-file pin changed from1f7bf748 tobf6aeffb and needs explicit coordinated transport before deployment.",
+  "prior_checks": {
+    "path": "v14-arithmetic-range13256-review-001/KATO-NORM-PRELIMINARY-CHECKS.json",
+    "sha256": "8507939acc4c83229ca63fb4404bb50a9ca03eff95c78bc6d4c1faa93938a709"
+  },
+  "checks": [
+    {
+      "kind": "member",
+      "path": "revise.py",
+      "pass": true
+    },
+    {
+      "kind": "member",
+      "path": "ROLE-NOTES.json",
+      "pass": true
+    },
+    {
+      "kind": "member",
+      "path": "USE-LOCATION-DELTAS.json",
+      "pass": true
+    },
+    {
+      "kind": "unchanged_four_locations",
+      "pass": true
+    },
+    {
+      "kind": "passage_count_unique",
+      "pass": true
+    },
+    {
+      "kind": "current_excerpt",
+      "start": 13558,
+      "pass": true,
+      "whole_pin_matches": false
+    },
+    {
+      "kind": "current_excerpt",
+      "start": 13580,
+      "pass": true,
+      "whole_pin_matches": false
+    },
+    {
+      "kind": "current_excerpt",
+      "start": 13760,
+      "pass": true,
+      "whole_pin_matches": false
+    },
+    {
+      "kind": "current_excerpt",
+      "start": 13773,
+      "pass": true,
+      "whole_pin_matches": false
+    }
+  ]
+}

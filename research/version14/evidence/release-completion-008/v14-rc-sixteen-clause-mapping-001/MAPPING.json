@@ -1,0 +1,903 @@
+{
+  "schema": 1,
+  "author": "/root/v14_integration_review",
+  "status": "author clause mapping; independent comparison requested",
+  "rows": [
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U074",
+      "initial_use_sha256": "0ecc23a4ee3212494ee709cda4108e545219e1498e48fee9b46ab457dead8784",
+      "frozen_assertion": {
+        "statement": "Fix E,pi and allowed types. Scalar g with image(1+2^n)I gives z=g²tau g²tau^-1 fixing every ring-class field and all composita; scalar u4−1 kills their2-primary torsion with e=n+2. Squared elementary matrices span fixed2^(n+1)M2 on all quadratic subgroups. Needed single multiplier independent of K,f,I,precision,G.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U074",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U074-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3718,
+            "end_line": 3797,
+            "excerpt_sha256": "c7499126823fe6ab528805b21e7a9f70e45976a41b67c690bac7d91c35762808"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U074"
+        }
+      ],
+      "part": "Uniform torsion annihilator and squared-matrix span",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-UNIFORM-SCALAR-AND-SPAN",
+          "use_sha256": "8b0dde137ef88bcd6392e40f44e73b7dd6cf64cb63eef50ce3498bcc0caa2ded",
+          "assertion": {
+            "statement": "One scalar element fixes every permitted ring-class field and their finite composita while acting as u^4 on T2(E); hence one2^e, e=n+2, kills all their invariant2-primary torsion. Fixed squared matrix preimages also span a full2-power multiple of M2(Z2) in every quadratic subgroup.",
+            "objects": "The fixed non-CM curve, scalar preimage g with u=1+2^n, actual complex conjugation tau, z=g² tau g² tau inverse, and fixed elementary matrix preimages.",
+            "hypotheses": "The fixed open-image congruence subgroup with n≥2 is supplied; ring-class reciprocity gives abelian Galois groups over each imaginary quadratic K and conjugation inversion.",
+            "quantifiers": "Every permitted imaginary quadratic K, ring-class conductor and finite compositum used in a construction; every quadratic subgroup for the matrix-span assertion.",
+            "parameter_range": "The fixed E and its2-adic Tate module; no restriction on number of conductor primes.",
+            "uniformity": "The same e and the same finite matrix-span witness depend only on E, not K, conductors or finite family size.",
+            "constants": "u=1+2^n; v2(u^4−1)=n+2; squared matrix span contains2^(n+1)M2(Z2).",
+            "normalizations": "g² fixes every quadratic field; conjugation inverts the ring-class image, so z fixes it. The matrix witness uses squares, not assumed residual irreducibility.",
+            "exceptional_cases": "This proves invariant torsion annihilation and characteristic-zero matrix span, not residual rank-two localization or a bound on arbitrary non-ring-class extensions.",
+            "limit_order": "Choose one open-image depth and preimages for E; form the scalar commutator and matrix squares; use actual ring-class inversion; deduce uniform torsion and span bounds."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Serre openness and ring-class reciprocity are separate source inputs."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U078",
+      "initial_use_sha256": "627f357841dec732ce1c47d95267ab50b218cf9236553e6b03610aeeddc8954b",
+      "frozen_assertion": {
+        "statement": "Require rho(Frob_l)≡J mod2^(a+1), a≥m+e. Inert prime splits in lower ring-class field; compare actual upper invariant point U with integral quotient point U0, not arbitrary division point. Torsion error killed by reduction to m. Extra precision bit handles l(l+1)/2. New finite coordinate0, singularJ f_old; retain all old singular conditions/places/orientations.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U078",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U078-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3972,
+            "end_line": 4085,
+            "excerpt_sha256": "b41e45e9b98be1803fd4249d25f356251401e3838c1d6a6a1c75a0b2670d5557"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U078"
+        }
+      ],
+      "part": "Actual finite derivative comparison and precision",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-FINITE-DERIVATIVE-PRECISION",
+          "use_sha256": "6e269bdfc9256b8c07973a401df6dda154fc2255e8ebbf9f78dac847495aec31",
+          "assertion": {
+            "statement": "For the actual once-descended unweighted finite Heegner derivative classes, at retained precision2^m a new inert derivative prime has finite coordinate0 and singular coordinate J times the old finite coordinate; all previously imposed singular conditions remain.",
+            "objects": "The actual classes b_(I,a),b_(I union ell,a), points X=D_I y_(fnI),Y=D_I y_(fnI ell), the fixed multiplierL and chosen local inertia/Frobenius representatives.",
+            "hypotheses": "The complete relative ring-class derivative and once-only descent supply these classes with the stated restriction identity. A uniform2^e kills all relevant upper-field2-primary torsion; a≥m+e and rho(Fr_ell) congruent to J modulo2^(a+1). The actual norm/congruence relations and good reduction are supplied.",
+            "quantifiers": "Every finite derivative set I and each retained new good inert prime outside6fND_K, with the same once-fixed multiplierL.",
+            "parameter_range": "Unweighted E[2^a] classes before character push; reduce to E[2^m] only after the torsion-error comparison.",
+            "uniformity": "One exponent e and one multiplierL work independently of K,f,I,m and finite family size. Required precision is the maximum over the finite set, not repeated descent.",
+            "constants": "a≥m+e and the additional congruence bit2^(a+1), which pays for division by2 in the derivative sum.",
+            "normalizations": "Compare the inertia correction to the actual integer-quotient point U0, not an arbitrary division point. Projection on torsion is multiplication by2^(a−m). Tame generator and chosen place/Frobenius are retained.",
+            "exceptional_cases": "The highly divisible coefficients in (F²−1)Q do not force the old finite coordinate to vanish, because Q is a division point. Character-weighted identities require the separate equivariant coefficient push.",
+            "limit_order": "Perform all other derivatives; descend once; choose an exact restricted Kummer representative; kill the bounded torsion error at projection; prove the new finite coordinate zero by a local division point; only afterward apply character coefficients."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Underlying Heegner norm/congruence and local models remain separate."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U079",
+      "initial_use_sha256": "5607a272b786ba38647a711999b64e7545e1aeb39bcf3daaafdc40034c584058",
+      "frozen_assertion": {
+        "statement": "Only after untwisted descent extend coefficients, apply Shapiro left-regular map v[delta]→theta(delta)v. Explicit all-degree weighted transfer commutes d and section homotopies, no averaging. Old local norms remain Kummer under fixed twist; derivative place/basis transport preserves J identity; Cartesian class-field squares preserve split norm. Primitive class exactly Kummer of L times weighted point.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U079",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U079-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4086,
+            "end_line": 4180,
+            "excerpt_sha256": "b00a6d1e429026376c6ee13efb261c9a1dd3c4439a8aee17a5f7d46ed9dce630"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U079"
+        }
+      ],
+      "part": "Integral weighted push, local preservation and split norm",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-WEIGHTED-COEFFICIENT-PUSH",
+          "use_sha256": "b2bde149197a4c6eb7c5a149bf49d41f9f6cd0fbe73e492f184f8a03817e3074",
+          "assertion": {
+            "objects": "Finite E[2^m] coefficients extended freely to A (or A[G]), unweighted b_(I,a), character theta of Delta_f, and the same finite global/local cochain diagrams.",
+            "hypotheses": "Retain finite unweighted derivative identities, uniform torsion-clearing multiplier, old-place Kummer descent, class-field splitting/Cartesian norm squares, integral Shapiro/Mackey and local tame resolutions.",
+            "quantifiers": "For each finite coefficient ring and retained finite diagram choose a>=m+e satisfying the extra precision; apply the same maps to cycles and all witnesses before compression.",
+            "parameter_range": "Finite coefficients only here; derivative places split in H_f and theta is locally trivial there; old deformation is trivial at2N, but its fixed quadratic twist need not be.",
+            "uniformity": "No new multiplier depending on class-group order, group size, derivative count or active-prime count.",
+            "constants": "Use the single retained multiplier(H11), precision a>=m+e and q congruent1 mod2^(a+2).",
+            "normalizations": "Left cosets and diagonal Tate action; arithmetic Frobenius and its transported Tate basis. Integral finite sums, without normalized averaging.",
+            "exceptional_cases": "Do not commute arbitrary place-change matrices with a fixed untransported J. Do not replace finite/singular D0-retaining conditions by full/zero at derivative places.",
+            "limit_order": "First descend and reduce the unweighted finite class, then push coefficients, then carry cycles/boundaries/homotopies into bounded models; limits and rank bounds come later.",
+            "statement": "The integral theta-weighted Shapiro transfer is a chain map and carries the finite derivative class to P_(I,m) over K, preserving its actual old Kummer, derivative finite/singular, full and unramified conditions and its split norm identity."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Shapiro/Mackey and class-field Cartesian squares remain source inputs."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U080",
+      "initial_use_sha256": "bcdff2b04ca8fd86a6457c59ae39d5b492fe8d917c3bf6ee62c31eb4746d3c60",
+      "frozen_assertion": {
+        "statement": "Derivative model zero differential at retained precision, uniformizer adjusted for chosen Frobenius, −1 a2^m power makes singular self-cup zero. res/cor diagonals (1,f,e,ef)/(ef,e,f,1), shear vanishes by precision. Contracted maps and composition/cube homotopies restrict because every condition retains D0; integral Kummer exact-sequence diagrams supply old places. These chain-level facts are substantive, beyond cohomology equality.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U080",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U080-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4181,
+            "end_line": 4255,
+            "excerpt_sha256": "fb611bfa5170f82f7856aa30907ef86f718c5f9d4df4819c6bf763bea7592fd0"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U080"
+        }
+      ],
+      "part": "D0-retaining local chain diagrams and homotopies",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-DERIVATIVE-LOCAL-DIAGRAMS",
+          "use_sha256": "7406a489425549a03571663e41ab9364c793c4c516fc85ae2249db24f9d3b929",
+          "assertion": {
+            "objects": "Finite E[2^m] coefficients extended freely to A (or A[G]), unweighted b_(I,a), character theta of Delta_f, and the same finite global/local cochain diagrams.",
+            "hypotheses": "Retain finite unweighted derivative identities, uniform torsion-clearing multiplier, old-place Kummer descent, class-field splitting/Cartesian norm squares, integral Shapiro/Mackey and local tame resolutions.",
+            "quantifiers": "For each finite coefficient ring and retained finite diagram choose a>=m+e satisfying the extra precision; apply the same maps to cycles and all witnesses before compression.",
+            "parameter_range": "Finite coefficients only here; derivative places split in H_f and theta is locally trivial there; old deformation is trivial at2N, but its fixed quadratic twist need not be.",
+            "uniformity": "No new multiplier depending on class-group order, group size, derivative count or active-prime count.",
+            "constants": "Use the single retained multiplier(H11), precision a>=m+e and q congruent1 mod2^(a+2).",
+            "normalizations": "Left cosets and diagonal Tate action; arithmetic Frobenius and its transported Tate basis. Integral finite sums, without normalized averaging. Local restriction is diag(1,f,e,ef) and corestriction diag(ef,e,f,1) in D0,F,S,D2 order; transfer shear vanishes at retained precision.",
+            "exceptional_cases": "Do not commute arbitrary place-change matrices with a fixed untransported J. Do not replace finite/singular D0-retaining conditions by full/zero at derivative places.",
+            "limit_order": "First descend and reduce the unweighted finite class, then push coefficients, then carry cycles/boundaries/homotopies into bounded models; limits and rank bounds come later.",
+            "statement": "The compatible local tame models and transferred bar-resolution homotopies preserve each D0-retaining derivative condition, cup-product adjunction, composition and isotropy diagrams needed for the Selmer-cone push."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Tame resolution, cup pairings and actual bar comparisons remain source inputs."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U081",
+      "initial_use_sha256": "054b30c1f2372c1d60b6232abccea7e1f69cd1aeb408416d15100f962e609d52",
+      "frozen_assertion": {
+        "statement": "Global cocycles, local cycles and boundary cochains give actual cone cycle. Push all witnesses together; compression adjusts maps by explicit contraction boundaries. Finite quotient factorizations allow later Chebotarev. Existence/size of finite target contractions deferred to limits, no inference from abstract cohomology ranks.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U081",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U081-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4256,
+            "end_line": 4295,
+            "excerpt_sha256": "04dce84aa5710605a66df8801b5ac8a8c23d5b16e9c3e7ec0c39e2f7fe71232d"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U081"
+        }
+      ],
+      "part": "Actual finite cone witnesses before compression",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-FINITE-CONE-WITNESSES",
+          "use_sha256": "ece2dc12ba1330a44c487a0f02be3d5a8ecc508e57fc42e5cd488054e1df2814",
+          "assertion": {
+            "objects": "Finite E[2^m] coefficients extended freely to A (or A[G]), unweighted b_(I,a), character theta of Delta_f, and the same finite global/local cochain diagrams.",
+            "hypotheses": "Retain finite unweighted derivative identities, uniform torsion-clearing multiplier, old-place Kummer descent, class-field splitting/Cartesian norm squares, integral Shapiro/Mackey and local tame resolutions.",
+            "quantifiers": "For each finite coefficient ring and retained finite diagram choose a>=m+e satisfying the extra precision; apply the same maps to cycles and all witnesses before compression.",
+            "parameter_range": "Finite coefficients only here; derivative places split in H_f and theta is locally trivial there; old deformation is trivial at2N, but its fixed quadratic twist need not be.",
+            "uniformity": "No new multiplier depending on class-group order, group size, derivative count or active-prime count.",
+            "constants": "Use the single retained multiplier(H11), precision a>=m+e and q congruent1 mod2^(a+2).",
+            "normalizations": "Left cosets and diagonal Tate action; arithmetic Frobenius and its transported Tate basis. Integral finite sums, without normalized averaging.",
+            "exceptional_cases": "Do not commute arbitrary place-change matrices with a fixed untransported J. Do not replace finite/singular D0-retaining conditions by full/zero at derivative places. This does not infer bounded model ranks or limit existence from abstract cohomology isomorphisms.",
+            "limit_order": "First descend and reduce the unweighted finite class, then push coefficients, then carry cycles/boundaries/homotopies into bounded models; limits and rank bounds come later.",
+            "statement": "The finite arithmetic supplies actual Selmer-cone cycles, local degree-zero boundary witnesses and comparison entries; simultaneous coefficient push and retained contractions carry their boundary identities into the target diagrams before either limit."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Target contraction bounds and later finite Chebotarev realization remain separate."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U100",
+      "initial_use_sha256": "6e850bafec9d6052fe721eabf14566db4af5ba2edf11f5bdf18c6e52d4e2cb65",
+      "frozen_assertion": {
+        "statement": "Identities5.2 make abstract crossed homomorphisms of product group. Finite ≤dimV+dimW detecting list with residual cone starting degree1 preserves H1 injection under field extension. Primitive/derivative local H0 iso,H1 inject give Selmer→global injection. Orthogonal zero conditions expressly excluded unless actual contractions transport comparison at test ring.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U100",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U100-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 5583,
+            "end_line": 5651,
+            "excerpt_sha256": "b15c40d2febfe178cf2ce2923c2aeb6790d618d8c959312389bdcefec533a77d"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U100"
+        }
+      ],
+      "part": "Finite detecting-list injection and explicit zero-condition exception",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-OUTER-EVALUATION",
+          "use_sha256": "827bb8e8e20edd24ac5e6ea8b2b40c20df1be67175e8345a37acd9e045f5ce98",
+          "assertion": {
+            "statement": "For the retained global, primitive and derivative Selmer models, finite detecting evaluations give an H1 injection preserved by coefficient extension; their bounded outer quotient is a characteristic-zero DVR with uniformizer2, carrying the retained duality maps and approximate cycles as actual crossed homomorphisms.",
+            "objects": "Actual retained cochain maps, product Galois groups, bounded finite detecting lists, primitive/derivative local conditions and O_infinity formed from valuation-bounded ring instances.",
+            "hypotheses": "Fixed bounded minimal-model ranks, omega(k_j)≤A and a fixed number of derivative labels; retained evaluations and compatibility homotopies. Direct Selmer evaluation requires residual H0 isomorphism and H1 injection for the local conditions.",
+            "quantifiers": "Every indicated coefficient extension and each sequence of the bounded ring instances; evaluation at arbitrary sequences of group elements.",
+            "parameter_range": "Primitive and derivative models with the stated local conditions. Orthogonal zero/full models only after an actual contraction at the chosen test ring.",
+            "uniformity": "Detecting lists have bounded length at most dimV+dimW, selected and padded before the common limit. No support-uniform rank beyond the stipulated bound.",
+            "constants": "Uniformizer2; no quantitative rank bound is added beyond the retained (5.1) bound.",
+            "normalizations": "O_infinity is the ultraproduct quotient by sequences whose 2-adic valuation tends to infinity. Cochain evaluation uses the same ultrafilter, full compatibility homotopies and integral minimal-model inverses.",
+            "exceptional_cases": "No continuity claim on one original Galois group and no completeness claim for the outer DVR. Zero local conditions may contribute evaluation-invisible H1, so direct injection is not asserted there. Approximate cycles are not silently replaced by exact finite-stage cycles.",
+            "limit_order": "Choose finite detecting lists and cone cancellations before the common inner limit; form the bounded outer quotient; pass actual matrices and homotopies; only then regard differential-tending-to-zero sequences as crossed homomorphisms."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Actual bounded models and permitted local conditions remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U101",
+      "initial_use_sha256": "3d1abc1ca658aef6d6319ae2c6534e9544a9f4d1dc54e155a7300773bda66e2c",
+      "frozen_assertion": {
+        "statement": "Sequences with unbounded valuations quotient out, nonzero element has fixed integral valuation and unit inverse, giving DVR uniformizer2/char0 fraction field, no completeness claim. Bounded minimal matrices and duality inverses/homotopies survive; approximate cycles become exact via5.2. Detecting-list length bounded; no continuity on original G_K asserted.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U101",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U101-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 5652,
+            "end_line": 5679,
+            "excerpt_sha256": "f04eaa08f2d93e2ce79bfb1371303189ce4d353e0dcc2ce80f3002f14363ac37"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U101"
+        }
+      ],
+      "part": "Separated outer DVR and exact retained diagrams",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-OUTER-EVALUATION",
+          "use_sha256": "827bb8e8e20edd24ac5e6ea8b2b40c20df1be67175e8345a37acd9e045f5ce98",
+          "assertion": {
+            "statement": "For the retained global, primitive and derivative Selmer models, finite detecting evaluations give an H1 injection preserved by coefficient extension; their bounded outer quotient is a characteristic-zero DVR with uniformizer2, carrying the retained duality maps and approximate cycles as actual crossed homomorphisms.",
+            "objects": "Actual retained cochain maps, product Galois groups, bounded finite detecting lists, primitive/derivative local conditions and O_infinity formed from valuation-bounded ring instances.",
+            "hypotheses": "Fixed bounded minimal-model ranks, omega(k_j)≤A and a fixed number of derivative labels; retained evaluations and compatibility homotopies. Direct Selmer evaluation requires residual H0 isomorphism and H1 injection for the local conditions.",
+            "quantifiers": "Every indicated coefficient extension and each sequence of the bounded ring instances; evaluation at arbitrary sequences of group elements.",
+            "parameter_range": "Primitive and derivative models with the stated local conditions. Orthogonal zero/full models only after an actual contraction at the chosen test ring.",
+            "uniformity": "Detecting lists have bounded length at most dimV+dimW, selected and padded before the common limit. No support-uniform rank beyond the stipulated bound.",
+            "constants": "Uniformizer2; no quantitative rank bound is added beyond the retained (5.1) bound.",
+            "normalizations": "O_infinity is the ultraproduct quotient by sequences whose 2-adic valuation tends to infinity. Cochain evaluation uses the same ultrafilter, full compatibility homotopies and integral minimal-model inverses.",
+            "exceptional_cases": "No continuity claim on one original Galois group and no completeness claim for the outer DVR. Zero local conditions may contribute evaluation-invisible H1, so direct injection is not asserted there. Approximate cycles are not silently replaced by exact finite-stage cycles.",
+            "limit_order": "Choose finite detecting lists and cone cancellations before the common inner limit; form the bounded outer quotient; pass actual matrices and homotopies; only then regard differential-tending-to-zero sequences as crossed homomorphisms."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "No completeness or continuity on original absolute Galois group asserted."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U104",
+      "initial_use_sha256": "ff16ff758bc24f156e4dbed48882091dc294b4e2bc87b8d9857b93f592029b93",
+      "frozen_assertion": {
+        "statement": "All four derivative conditions retainD0; strict/relaxed orthogonal, finite/singular self-orthogonal, cone quotientsF[-1]/S[-1]. At stated field old actual class spansH1 and localizationv≠0; exact annihilator forces new classJv span. Determinant valuations equal using fractional unit-volume complements, even when v nonprimitive; same strict torsion retained.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U104",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U104-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 5766,
+            "end_line": 5841,
+            "excerpt_sha256": "ea3a099f058712c56552e02c780fcc2d98905b642ce5000e304830066dcc70c7"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U104"
+        }
+      ],
+      "part": "Four D0-retaining conditions and fractional-complement determinant switch",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-DETERMINANT-SWITCH",
+          "use_sha256": "d772bf21d046fb66312270920c081312b4dd82115981c819b4545fa4e6ba396b",
+          "assertion": {
+            "statement": "At an actual derivative prime with nonzero finite localization of the rank-one generic actual class, switching from finite to singular condition produces a generic kernel spanned by its actual derivative and preserves the valuation of the class-functional determinant coordinate.",
+            "objects": "The actual split derivative local model D0 plus(F plus S)[−1] plus D2[−2], its retained pairing, and the strict/relaxed/finite/singular Selmer cone complexes.",
+            "hypotheses": "The old actual class spans generic H1 and localizes to nonzero v; its actual derivative has finite coordinate0 and singular coordinateJv. Retained integral local pairings/isotropy homotopies and exact global duality/localization identities are supplied.",
+            "quantifiers": "At each new inert derivative prime in the finite sequence, over the stated fraction or test field.",
+            "parameter_range": "Finite and singular planes of rank2; localization v may be divisible in the integral lattice.",
+            "uniformity": "The comparison preserves valuation at every allowed switch, without requiring a uniform divisibility bound on v.",
+            "constants": "The common strict determinant factor, including all strict torsion, is retained on both sides; exterior-volume changes are units.",
+            "normalizations": "Every condition retains D0; relaxed means D0 plus(F plus S)[−1], not the full local complex. Cross pairing is epsilon times <x,Jy>. Fractional complements are chosen to have unit exterior volume.",
+            "exceptional_cases": "Do not require the complement of a divisible v to be integral. Exact annihilator follows from duality/localization, not isotropy alone. The derivative must be the actual class, not a substituted primitive vector.",
+            "limit_order": "Retain the integral local model and triangles; pass to the specified test field; identify strict H1 and the relaxed annihilator; use the actual derivative; compare determinant lines with their common strict factor."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Exact local/global duality and actual derivative identities remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U105",
+      "initial_use_sha256": "3c904b90d372d6ef6606f726bf92dc563f3f937cb795f02146e9b3da9e229513",
+      "frozen_assertion": {
+        "statement": "Known simple-zero instances give generic rank1 and nonzero retained class. If coordinate valuations→−∞, bounded-size outer models, primitive kernel vector and rank2 detection reduce outer dimension by2 while preserving actual inner coordinate; cannot reach0. Terminal dimension1 minor nonzero finite valuation gives u=±alpha beta/Delta with fixed beta lower bound, contradiction. Bound only known simple zeros and omega(k)≤A.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U105",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U105-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 5842,
+            "end_line": 5908,
+            "excerpt_sha256": "7e78788be446abee3f940046713fce80ec7bea95c721ab1860193af0e7da3774"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U105"
+        }
+      ],
+      "part": "Known-simple-zero outer coordinate bound",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-UNIFORM-VALUATION",
+          "use_sha256": "b9f29fe8abad758a9fb0e3e47ecfc30b16abb84bc1771de864fcd43b8a383d1c",
+          "assertion": {
+            "statement": "For known simple-zero ring instances with fixed E,pi,old local types and omega(k)≤A, the actual primitive class-functional coordinate has v2 at least−C(E,A), independently of the active support and companion field.",
+            "objects": "The actual primitive coordinates and bounded minimal two-term models, their primitive generic-kernel vectors, the outer DVR and derivative-switch sequence.",
+            "hypotheses": "Nonzero actual central class with bounded nonzero calibration multiplier gives generic rank1; bounded residual models and outer evaluation are supplied. Nonquadratic outer rank-two detection, exact annihilator duality and actual-class determinant switch preservation hold. The paired functional has fixed denominator exponent a.",
+            "quantifiers": "Every known simple-zero ring instance under the stated fixed data and companion-prime count bound.",
+            "parameter_range": "Outer contradiction sequence with omega(k_j)≤A; each construction uses only finitely many switches.",
+            "uniformity": "C depends on E,A and the fixed old data, not active support or varying companion field. No bound uniform in arbitrarily many switches is used.",
+            "constants": "At terminal outer rank1 a nonzero minor has one finite valuation b on an outer-large set and gives v2(u_j)≥−a−b; this contradicts a sequence tending to−infinity.",
+            "normalizations": "Primitive vectors select localizations; the actual inner classes and their own paired functionals determine the preserved coordinates. Terminal formula is ±alpha beta/Delta with alpha integral and v2(beta)≥−a.",
+            "exceptional_cases": "No uniform numerical bound at the unknown full-corank-one base. Bounded matrix size alone is insufficient; the proof uses nonzero class, detection and determinant-preserving switches.",
+            "limit_order": "Assume a countersequence; fix bounded model size on an outer-large set; reduce outer kernel dimension by finite switches while preserving inner valuations; choose a nonzero terminal minor and contradict unbounded negative valuation."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Rank-two detection, bounded models, nonzero terminal minor and denominator bound remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U106",
+      "initial_use_sha256": "7ef09664b725ad6b4b685a830df4a94a09abe882c9b7e4f744662765b5ea3f48",
+      "frozen_assertion": {
+        "statement": "At Lambda_p,p≠2, residual char0 and saturated generic kernel vector remain visible. Nonquadratic rank2 test reduces dimension. Quadratic moving scalar only at t or t+2; actual tau action fixes coefficients, induced rank4 splits nonisomorphic W±. Finite actionJ, singular−J and transported pairing produce orthogonal symmetric hyperbolic sign planes with only finite/singular isotropic axes.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U106",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U106-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 5909,
+            "end_line": 5987,
+            "excerpt_sha256": "75c88b61e7b1508470e2bc75909a6ab91a60ed3c9a1c67be743cf05c21336909"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U106"
+        }
+      ],
+      "part": "Nonquadratic detection and quadratic sign-plane treatment",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-HEIGHT-ONE-REGULARITY",
+          "use_sha256": "bc097b5c40126196f7984294249037655cb1a66df123cedf56ba0dc5592e2e3d",
+          "assertion": {
+            "statement": "The actual primitive class-functional coordinate is regular at every height-one prime of Lambda other than(2), including(t) and(t+2), hence belongs to Lambda[1/2]. This regularity also holds at the unknown full-corank-one base.",
+            "objects": "The actual primitive scalar Selmer complex, its actual class and own paired functional, and the integral derivative-switch complexes over each height-one DVR.",
+            "hypotheses": "The starting generic kernel has rank one unless the actual class is zero; evaluation injection, characteristic-zero detection, exact local duality and actual-class determinant switch identities are supplied. Primitive integrality holds for the old local conditions.",
+            "quantifiers": "Every height-one prime different from(2), and each finite derivative list produced by the argument.",
+            "parameter_range": "Known simple-zero ring instances and the unknown full-corank-one base, with the latter used only for regularity.",
+            "uniformity": "No uniform numerical valuation bound at the unknown base is asserted. Finite switch termination is pointwise for the height-one test.",
+            "constants": "All switch determinant factors are units; no new numerical constant or inverse localization value is introduced.",
+            "normalizations": "At quadratic specialization the two signs are defined by actual conjugation, not a ring substitution. Finite and singular planes carry opposite J actions and exact symmetric hyperbolic cross pairing. Retain D0, strict torsion factors and the actual class-functional product.",
+            "exceptional_cases": "At(t) and(t+2) use sign splitting and one-or-two-step descent, not nonquadratic irreducibility. Isotropy alone does not prove U=U-perp. Primitive vectors select primes but never replace the actual class. No inverse at an unused relaxed prime.",
+            "limit_order": "Localize at a height-one prime; choose a primitive generic-kernel vector for detection; use actual derivative switches until dimension one; show the actual class and own functional integral there; transport unit-valued determinant comparisons back; intersect all height-one localizations."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Actual quadratic splitting, transported pairing and permitted Frobenius realization remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U107",
+      "initial_use_sha256": "ffc1e929860e810fbd63ef58bcfaec15a5fd4c03acf098a9f282655e37eae6a7",
+      "frozen_assertion": {
+        "statement": "Stable old conditions and exact annihilator give sequences5.5a with no unwanted H0 term. Opposite-sign evaluation spans full sum; actualh with both components nonzero realized by finite Chebotarev. Mixed signs dropdim2; single sign first introduces other sign, second drops2. Always detect component of primitive vector so actual class nonzero; derivative classes keep same L/old conditions, no substitution by primitive vector.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U107",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U107-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 5988,
+            "end_line": 6086,
+            "excerpt_sha256": "9932c5803992f0879d43f8222a8894044131ff544169f93900a79a9a12c9e1ef"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U107"
+        }
+      ],
+      "part": "One/two switches preserving actual derivative classes",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-HEIGHT-ONE-REGULARITY",
+          "use_sha256": "bc097b5c40126196f7984294249037655cb1a66df123cedf56ba0dc5592e2e3d",
+          "assertion": {
+            "statement": "The actual primitive class-functional coordinate is regular at every height-one prime of Lambda other than(2), including(t) and(t+2), hence belongs to Lambda[1/2]. This regularity also holds at the unknown full-corank-one base.",
+            "objects": "The actual primitive scalar Selmer complex, its actual class and own paired functional, and the integral derivative-switch complexes over each height-one DVR.",
+            "hypotheses": "The starting generic kernel has rank one unless the actual class is zero; evaluation injection, characteristic-zero detection, exact local duality and actual-class determinant switch identities are supplied. Primitive integrality holds for the old local conditions.",
+            "quantifiers": "Every height-one prime different from(2), and each finite derivative list produced by the argument.",
+            "parameter_range": "Known simple-zero ring instances and the unknown full-corank-one base, with the latter used only for regularity.",
+            "uniformity": "No uniform numerical valuation bound at the unknown base is asserted. Finite switch termination is pointwise for the height-one test.",
+            "constants": "All switch determinant factors are units; no new numerical constant or inverse localization value is introduced.",
+            "normalizations": "At quadratic specialization the two signs are defined by actual conjugation, not a ring substitution. Finite and singular planes carry opposite J actions and exact symmetric hyperbolic cross pairing. Retain D0, strict torsion factors and the actual class-functional product.",
+            "exceptional_cases": "At(t) and(t+2) use sign splitting and one-or-two-step descent, not nonquadratic irreducibility. Isotropy alone does not prove U=U-perp. Primitive vectors select primes but never replace the actual class. No inverse at an unused relaxed prime.",
+            "limit_order": "Localize at a height-one prime; choose a primitive generic-kernel vector for detection; use actual derivative switches until dimension one; show the actual class and own functional integral there; transport unit-valued determinant comparisons back; intersect all height-one localizations."
+          }
+        },
+        {
+          "id": "ACTIVE-RC-DETERMINANT-SWITCH",
+          "use_sha256": "d772bf21d046fb66312270920c081312b4dd82115981c819b4545fa4e6ba396b",
+          "assertion": {
+            "statement": "At an actual derivative prime with nonzero finite localization of the rank-one generic actual class, switching from finite to singular condition produces a generic kernel spanned by its actual derivative and preserves the valuation of the class-functional determinant coordinate.",
+            "objects": "The actual split derivative local model D0 plus(F plus S)[−1] plus D2[−2], its retained pairing, and the strict/relaxed/finite/singular Selmer cone complexes.",
+            "hypotheses": "The old actual class spans generic H1 and localizes to nonzero v; its actual derivative has finite coordinate0 and singular coordinateJv. Retained integral local pairings/isotropy homotopies and exact global duality/localization identities are supplied.",
+            "quantifiers": "At each new inert derivative prime in the finite sequence, over the stated fraction or test field.",
+            "parameter_range": "Finite and singular planes of rank2; localization v may be divisible in the integral lattice.",
+            "uniformity": "The comparison preserves valuation at every allowed switch, without requiring a uniform divisibility bound on v.",
+            "constants": "The common strict determinant factor, including all strict torsion, is retained on both sides; exterior-volume changes are units.",
+            "normalizations": "Every condition retains D0; relaxed means D0 plus(F plus S)[−1], not the full local complex. Cross pairing is epsilon times <x,Jy>. Fractional complements are chosen to have unit exterior volume.",
+            "exceptional_cases": "Do not require the complement of a divisible v to be integral. Exact annihilator follows from duality/localization, not isotropy alone. The derivative must be the actual class, not a substituted primitive vector.",
+            "limit_order": "Retain the integral local model and triangles; pass to the specified test field; identify strict H1 and the relaxed annihilator; use the actual derivative; compare determinant lines with their common strict factor."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Exact annihilator and simultaneous finite Chebotarev must supply the specified actual element."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U108",
+      "initial_use_sha256": "a9dedfe9b72e40a932e99f7b6493514fffd16be67815a147a2eebd6958b6dcd9",
+      "frozen_assertion": {
+        "statement": "Finite switches end in zero-differential rank1/1, actual class and own functional integral, hence coordinate regular at every p≠2. Added singular conditions integral orthogonal comparison identity; no unused relaxed contraction. Intersection gives Lambda[1/2]. Unknown base regularity separate from numerical outer bound; combine known-instance valuation with central calibration and companion sum≤2A for3.5.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U108",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U108-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6087,
+            "end_line": 6139,
+            "excerpt_sha256": "ba5b00dba90ed9303fd5434f37c0049188fafcc5bd5291e7859e9c2aced8e5ee"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U108"
+        }
+      ],
+      "part": "Height-one regularity and separate known-instance valuation input",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-HEIGHT-ONE-REGULARITY",
+          "use_sha256": "bc097b5c40126196f7984294249037655cb1a66df123cedf56ba0dc5592e2e3d",
+          "assertion": {
+            "statement": "The actual primitive class-functional coordinate is regular at every height-one prime of Lambda other than(2), including(t) and(t+2), hence belongs to Lambda[1/2]. This regularity also holds at the unknown full-corank-one base.",
+            "objects": "The actual primitive scalar Selmer complex, its actual class and own paired functional, and the integral derivative-switch complexes over each height-one DVR.",
+            "hypotheses": "The starting generic kernel has rank one unless the actual class is zero; evaluation injection, characteristic-zero detection, exact local duality and actual-class determinant switch identities are supplied. Primitive integrality holds for the old local conditions.",
+            "quantifiers": "Every height-one prime different from(2), and each finite derivative list produced by the argument.",
+            "parameter_range": "Known simple-zero ring instances and the unknown full-corank-one base, with the latter used only for regularity.",
+            "uniformity": "No uniform numerical valuation bound at the unknown base is asserted. Finite switch termination is pointwise for the height-one test.",
+            "constants": "All switch determinant factors are units; no new numerical constant or inverse localization value is introduced.",
+            "normalizations": "At quadratic specialization the two signs are defined by actual conjugation, not a ring substitution. Finite and singular planes carry opposite J actions and exact symmetric hyperbolic cross pairing. Retain D0, strict torsion factors and the actual class-functional product.",
+            "exceptional_cases": "At(t) and(t+2) use sign splitting and one-or-two-step descent, not nonquadratic irreducibility. Isotropy alone does not prove U=U-perp. Primitive vectors select primes but never replace the actual class. No inverse at an unused relaxed prime.",
+            "limit_order": "Localize at a height-one prime; choose a primitive generic-kernel vector for detection; use actual derivative switches until dimension one; show the actual class and own functional integral there; transport unit-valued determinant comparisons back; intersect all height-one localizations."
+          }
+        },
+        {
+          "id": "ACTIVE-RC-UNIFORM-VALUATION",
+          "use_sha256": "b9f29fe8abad758a9fb0e3e47ecfc30b16abb84bc1771de864fcd43b8a383d1c",
+          "assertion": {
+            "statement": "For known simple-zero ring instances with fixed E,pi,old local types and omega(k)≤A, the actual primitive class-functional coordinate has v2 at least−C(E,A), independently of the active support and companion field.",
+            "objects": "The actual primitive coordinates and bounded minimal two-term models, their primitive generic-kernel vectors, the outer DVR and derivative-switch sequence.",
+            "hypotheses": "Nonzero actual central class with bounded nonzero calibration multiplier gives generic rank1; bounded residual models and outer evaluation are supplied. Nonquadratic outer rank-two detection, exact annihilator duality and actual-class determinant switch preservation hold. The paired functional has fixed denominator exponent a.",
+            "quantifiers": "Every known simple-zero ring instance under the stated fixed data and companion-prime count bound.",
+            "parameter_range": "Outer contradiction sequence with omega(k_j)≤A; each construction uses only finitely many switches.",
+            "uniformity": "C depends on E,A and the fixed old data, not active support or varying companion field. No bound uniform in arbitrarily many switches is used.",
+            "constants": "At terminal outer rank1 a nonzero minor has one finite valuation b on an outer-large set and gives v2(u_j)≥−a−b; this contradicts a sequence tending to−infinity.",
+            "normalizations": "Primitive vectors select localizations; the actual inner classes and their own paired functionals determine the preserved coordinates. Terminal formula is ±alpha beta/Delta with alpha integral and v2(beta)≥−a.",
+            "exceptional_cases": "No uniform numerical bound at the unknown full-corank-one base. Bounded matrix size alone is insufficient; the proof uses nonzero class, detection and determinant-preserving switches.",
+            "limit_order": "Assume a countersequence; fix bounded model size on an outer-large set; reduce outer kernel dimension by finite switches while preserving inner valuations; choose a nonzero terminal minor and contradict unbounded negative valuation."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Central calibration and companion sum<=2A are separate inputs, not proved by normal-domain intersection."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U109",
+      "initial_use_sha256": "c6760b0d9094be57d21817b57cd5131dadc3c6f7f25ca5a296d3b377c61b1e4a",
+      "frozen_assertion": {
+        "statement": "Final K fixed before b, no derivative labels. Augmentation graph coefficients unramified and full graph scalar1+t gives residual local determinant order4. d_K finiteSel2, t_K rational torsion length, h_K finite cohomological torsion length; no assertion full Sha finite at unknown base. Full Selmer corank(E/K)=1.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U109",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U109-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6140,
+            "end_line": 6201,
+            "excerpt_sha256": "4a379941c701aa4ac3723badd6fa184d00d5d24317ad58d6870b0de1981993f8"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U109"
+        }
+      ],
+      "part": "Fixed-K definitions, full corank and actual order-four augmentation",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-FIXED-K-COHOMOLOGY-BUDGET",
+          "use_sha256": "03de842a8724006d43fbac59deb670e5f1ce240cdbbc490964590913076c5cb0",
+          "assertion": {
+            "objects": "The final fixed imaginary quadratic K, compact Kummer complex C_K, actual old-support complex C_old, finite binary group G and retained family over Lambda[G].",
+            "hypotheses": "Odd empty configuration is not a unit; no derivative labels. Retain the fixed companion rank-zero input, finite Kummer self-duality and perfection, actual coefficient-change/support triangles, bounded moving-prime Frobenius determinants, and the same retained finite diagrams.",
+            "quantifiers": "Fix K and old data before varying binary dimension, graph size, moving characters and finite coefficient precision.",
+            "parameter_range": "Two-adic coefficients, M>=1; K has no real places and E[2] is rational of rank2.",
+            "uniformity": "Only fixed-K constants are uniform over binary dimension and graph size; no varying-field estimate is substituted.",
+            "constants": "d_K=dim Sel2(E/K), t_K=length E(K)[2∞], h_K=length H2(C_K)_tors, and the fixed Frobenius valuation bound c_E.",
+            "normalizations": "Derived Kummer local condition includes degree-zero torsion. Arithmetic Frobenius has determinant r, and all augmentation and coefficient maps are the actual retained maps.",
+            "exceptional_cases": "h_K is torsion length of finitely generated cohomology; it is not finiteness of full Sha. The notation r in a limiting comparison does not denote a fixed prime supporting characters of unbounded order.",
+            "limit_order": "Choose final K first; retain finite coefficient comparisons before inner limit; perform family operations over Lambda[G] before localizing.",
+            "statement": "The fixed-K old-support model has total rank at most2d_K+12, at most d_K+5 Smith disks, and total integral torsion length h1<=h_K+2c_E+2t_K, independently of graph size."
+          }
+        },
+        {
+          "id": "ACTIVE-RC-AUGMENTATION-ORDER-FOUR",
+          "use_sha256": "4c4055d4bdb0f0a7a0bfb6baf05d6e93ecf8980b1d2853b67f07f722ba6643c7",
+          "assertion": {
+            "objects": "The final fixed imaginary quadratic K, compact Kummer complex C_K, actual old-support complex C_old, finite binary group G and retained family over Lambda[G].",
+            "hypotheses": "Odd empty configuration is not a unit; no derivative labels. Retain the fixed companion rank-zero input, finite Kummer self-duality and perfection, actual coefficient-change/support triangles, bounded moving-prime Frobenius determinants, and the same retained finite diagrams.",
+            "quantifiers": "Fix K and old data before varying binary dimension, graph size, moving characters and finite coefficient precision.",
+            "parameter_range": "Two-adic coefficients, M>=1; K has no real places and E[2] is rational of rank2.",
+            "uniformity": "Only fixed-K constants are uniform over binary dimension and graph size; no varying-field estimate is substituted.",
+            "constants": "d_K=dim Sel2(E/K), t_K=length E(K)[2∞], h_K=length H2(C_K)_tors, and the fixed Frobenius valuation bound c_E.",
+            "normalizations": "The prescribed Frobenius scalars are1+t and(1+t)^(-1), despite trivial quadratic character at augmentation; E[2] is trivial. This is the two-place determinant, not a group-basis coefficient bound.",
+            "exceptional_cases": "h_K is torsion length of finitely generated cohomology; it is not finiteness of full Sha. The notation r in a limiting comparison does not denote a fixed prime supporting characters of unbounded order.",
+            "limit_order": "Choose final K first; retain finite coefficient comparisons before inner limit; perform family operations over Lambda[G] before localizing.",
+            "statement": "At augmentation the new two-place local block has residual determinant t^4/(1+t)^2 up to the unit q^4, hence residual t-order4 uniformly over graph primes."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Fixed companion forward-corank and actual local coefficient triangle remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U110",
+      "initial_use_sha256": "85a9b547e01d6be3abdc612ed2b3fd87c2f688e977d8dbe9c48f07041450459d",
+      "frozen_assertion": {
+        "statement": "Finite residual dimensions(2,d_K,d_K,2), total minimalZ2 rank2d_K+4. IntegralH0=0,H1tors=E(K)[2∞], self-duality H3tors same length, H1/H2 free rank1 from full corank. Total torsionh_K+2t_K includes divisible Sha only in ranks.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U110",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U110-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6202,
+            "end_line": 6247,
+            "excerpt_sha256": "ea8516cdb6f67b6fb25e661e54e2dc1f61ef5635600acceb7cc85efb7c815632"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U110"
+        }
+      ],
+      "part": "Finite residual dimensions, integral torsion and free ranks",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-FIXED-K-COHOMOLOGY-BUDGET",
+          "use_sha256": "03de842a8724006d43fbac59deb670e5f1ce240cdbbc490964590913076c5cb0",
+          "assertion": {
+            "objects": "The final fixed imaginary quadratic K, compact Kummer complex C_K, actual old-support complex C_old, finite binary group G and retained family over Lambda[G].",
+            "hypotheses": "Odd empty configuration is not a unit; no derivative labels. Retain the fixed companion rank-zero input, finite Kummer self-duality and perfection, actual coefficient-change/support triangles, bounded moving-prime Frobenius determinants, and the same retained finite diagrams.",
+            "quantifiers": "Fix K and old data before varying binary dimension, graph size, moving characters and finite coefficient precision.",
+            "parameter_range": "Two-adic coefficients, M>=1; K has no real places and E[2] is rational of rank2.",
+            "uniformity": "Only fixed-K constants are uniform over binary dimension and graph size; no varying-field estimate is substituted.",
+            "constants": "d_K=dim Sel2(E/K), t_K=length E(K)[2∞], h_K=length H2(C_K)_tors, and the fixed Frobenius valuation bound c_E.",
+            "normalizations": "Derived Kummer local condition includes degree-zero torsion. Arithmetic Frobenius has determinant r, and all augmentation and coefficient maps are the actual retained maps.",
+            "exceptional_cases": "h_K is torsion length of finitely generated cohomology; it is not finiteness of full Sha. The notation r in a limiting comparison does not denote a fixed prime supporting characters of unbounded order.",
+            "limit_order": "Choose final K first; retain finite coefficient comparisons before inner limit; perform family operations over Lambda[G] before localizing.",
+            "statement": "The fixed-K old-support model has total rank at most2d_K+12, at most d_K+5 Smith disks, and total integral torsion length h1<=h_K+2c_E+2t_K, independently of graph size."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Finite/integral Kummer self-duality and perfection remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U111",
+      "initial_use_sha256": "3b85c78ed558c45d3ae826b076c8a6eb3ab39c709038fc56f9b95e83db34671b",
+      "frozen_assertion": {
+        "statement": "Two moving singular disks determinant r(r+1−a_r) nonzero v≤c_E survive common limit. Actual triangle C_K→D_c→Q_r gives residual old rank≤2d_K+12 and torsionh1≤h_K+2c_E+2t_K; m≤d_K+5. Constants fixedK, not varying K or derivative count=b.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U111",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U111-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6248,
+            "end_line": 6326,
+            "excerpt_sha256": "9afccdb2b6f261186bf3e7b56f8e05edee4b896999923c45edeccfd5d57caf3e"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U111"
+        }
+      ],
+      "part": "Moving singular disks and fixed-K rank/torsion budget",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-FIXED-K-COHOMOLOGY-BUDGET",
+          "use_sha256": "03de842a8724006d43fbac59deb670e5f1ce240cdbbc490964590913076c5cb0",
+          "assertion": {
+            "objects": "The final fixed imaginary quadratic K, compact Kummer complex C_K, actual old-support complex C_old, finite binary group G and retained family over Lambda[G].",
+            "hypotheses": "Odd empty configuration is not a unit; no derivative labels. Retain the fixed companion rank-zero input, finite Kummer self-duality and perfection, actual coefficient-change/support triangles, bounded moving-prime Frobenius determinants, and the same retained finite diagrams.",
+            "quantifiers": "Fix K and old data before varying binary dimension, graph size, moving characters and finite coefficient precision.",
+            "parameter_range": "Two-adic coefficients, M>=1; K has no real places and E[2] is rational of rank2.",
+            "uniformity": "Only fixed-K constants are uniform over binary dimension and graph size; no varying-field estimate is substituted.",
+            "constants": "d_K=dim Sel2(E/K), t_K=length E(K)[2∞], h_K=length H2(C_K)_tors, and the fixed Frobenius valuation bound c_E.",
+            "normalizations": "Derived Kummer local condition includes degree-zero torsion. Arithmetic Frobenius has determinant r, and all augmentation and coefficient maps are the actual retained maps.",
+            "exceptional_cases": "h_K is torsion length of finitely generated cohomology; it is not finiteness of full Sha. The notation r in a limiting comparison does not denote a fixed prime supporting characters of unbounded order.",
+            "limit_order": "Choose final K first; retain finite coefficient comparisons before inner limit; perform family operations over Lambda[G] before localizing.",
+            "statement": "The fixed-K old-support model has total rank at most2d_K+12, at most d_K+5 Smith disks, and total integral torsion length h1<=h_K+2c_E+2t_K, independently of graph size."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Bounded nonzero Frobenius determinants and common finite-diagram limits remain required."
+    },
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U112",
+      "initial_use_sha256": "ca13a6b229e14a67f42a53079ebfa88a4a21ae8bb5dafac0ace41697a71ac821",
+      "frozen_assertion": {
+        "statement": "OverLambda[G] lift unit pivots/graded isomorphism so augmentation exactly old upper-triangular plus local quotient disks. Cancel new block only afterO localization. Sign evaluationB_x=A+2V_x, inverse via finite geometric series mod2^M has Laurent order≥−4M independent of number of blocks; adjacent surviving differentials unchanged by d²=0. Bound is signwise, not group-coefficientwise.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U112",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "passages": [
+        {
+          "id": "HIST-arithmetic-AR-U112-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6327,
+            "end_line": 6418,
+            "excerpt_sha256": "bec106929aa479ae237ce207a1152d953a90175998cb54afcf360adb6cde35cf"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/arithmetic/INITIAL-SOURCE-USES.json @ c2aca1c006a6d160db3ba60fce551eabf0858d71f71419709bf58b06701eb503 row AR-U112"
+        }
+      ],
+      "part": "Integral lift and single-inverse Schur pole bound",
+      "connections": [
+        {
+          "id": "ACTIVE-RC-SCHUR-UNIFORM-POLE",
+          "use_sha256": "13885beb0d12b77aebce9c20106db8123ce8d2967d8162300426baa6f9ea8bd8",
+          "assertion": {
+            "objects": "The final fixed imaginary quadratic K, compact Kummer complex C_K, actual old-support complex C_old, finite binary group G and retained family over Lambda[G].",
+            "hypotheses": "Odd empty configuration is not a unit; no derivative labels. Retain the fixed companion rank-zero input, finite Kummer self-duality and perfection, actual coefficient-change/support triangles, bounded moving-prime Frobenius determinants, and the same retained finite diagrams.",
+            "quantifiers": "Fix K and old data before varying binary dimension, graph size, moving characters and finite coefficient precision.",
+            "parameter_range": "Two-adic coefficients, M>=1; K has no real places and E[2] is rational of rank2.",
+            "uniformity": "Only fixed-K constants are uniform over binary dimension and graph size; no varying-field estimate is substituted.",
+            "constants": "d_K=dim Sel2(E/K), t_K=length E(K)[2∞], h_K=length H2(C_K)_tors, and the fixed Frobenius valuation bound c_E.",
+            "normalizations": "Cancellation and graded isomorphism lifts are integral over Lambda[G]; sign evaluations reduce to augmentation mod2. Use B_x^(-1)=C sum_(j=0)^(M-1)(-2F_x)^j, with C,F_x order>=-4; only one inverse occurs in the Schur differential.",
+            "exceptional_cases": "This bounds sign evaluations, not group-basis coefficients. Localize where t is invertible; never invert t in a finite Artin coefficient ring. Added unit disks are exactly those in the existing upper-triangular model, so no extra old rank is asserted.",
+            "limit_order": "Choose final K first; retain finite coefficient comparisons before inner limit; perform family operations over Lambda[G] before localizing.",
+            "statement": "After lifting the actual augmented upper-triangular model over Lambda[G] and cancelling new local blocks, every sign evaluation of the inverse blocks and old-rank Schur differential has Laurent order at least -4M modulo2^M, uniformly in block count; adjacent surviving differentials are unchanged."
+          }
+        }
+      ],
+      "disposition": "Map this conditional deduction at its exact scope; do not infer discharge of incoming source requirements.",
+      "remaining": "Actual old upper-triangular augmentation and residual local order-four inputs remain required."
+    }
+  ]
+}

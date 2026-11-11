@@ -1,0 +1,149 @@
+{"controller_blob_cache_hits": 0, "controller_rate_limit": null, "controller_rate_remaining": null, "controller_rate_reset": null, "controller_requests": 0}
+{"controller_blob_cache_hits": 0, "controller_rate_limit": null, "controller_rate_remaining": null, "controller_rate_reset": null, "controller_requests": 0}
+{"controller_blob_cache_hits": 0, "controller_rate_limit": null, "controller_rate_remaining": null, "controller_rate_reset": null, "controller_requests": 0}
+{"controller_blob_cache_hits": 0, "controller_rate_limit": null, "controller_rate_remaining": null, "controller_rate_reset": null, "controller_requests": 0}
+{"controller_blob_cache_hits": 0, "controller_rate_limit": null, "controller_rate_remaining": null, "controller_rate_reset": null, "controller_requests": 0}
+{"controller_blob_cache_hits": 0, "controller_rate_limit": null, "controller_rate_remaining": null, "controller_rate_reset": null, "controller_requests": 0}
+======================================================================
+ERROR: test_bootstrap_can_feed_real_live_evaluator (test_ingress.IngressTests.test_bootstrap_can_feed_real_live_evaluator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_ingress.py", line 82, in test_bootstrap_can_feed_real_live_evaluator
+    session=live.evaluate_session(self.p,recorder,self.reader,self.selected,self.blobs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\adapter\live_protocol_context_forks.py", line 151, in evaluate_session
+    verify_dependencies();packet=copy.deepcopy(packet)
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\adapter\live_protocol_context_forks.py", line 35, in verify_dependencies
+    core.require(hashlib.sha256((root/name).read_bytes()).hexdigest()==expected,
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\adapter\offline_manifest_gate.py", line 35, in require
+    raise Invalid(code)
+offline_manifest_gate.Invalid: live evaluator dependency pin changed: coverage_gate.py
+
+======================================================================
+FAIL: test_real_full_composition_and_ephemeral_restart (test_runtime.RuntimeTests.test_real_full_composition_and_ephemeral_restart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 150, in test_real_full_composition_and_ephemeral_restart
+    self.assertTrue(first['published_success'], first)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_publication_cache_hits_but_live_comments_reobserved (test_runtime.RuntimeTests.test_real_publication_cache_hits_but_live_comments_reobserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 94, in test_real_publication_cache_hits_but_live_comments_reobserved
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_secret_environment_to_signed_codecs_and_fork_publication (test_runtime.RuntimeTests.test_real_secret_environment_to_signed_codecs_and_fork_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 81, in test_real_secret_environment_to_signed_codecs_and_fork_publication
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_remote_advance_during_evaluation_blocks_success (test_runtime.RuntimeTests.test_remote_advance_during_evaluation_blocks_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 219, in test_remote_advance_during_evaluation_blocks_success
+    with self.assertRaisesRegex(r.Invalid, 'remote protocol state advanced'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Invalid not raised
+
+======================================================================
+FAIL: test_own_success_derived_state_change_remains_successful (test_pr_state_projection.ProjectionTests.test_own_success_derived_state_change_remains_successful)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_pr_state_projection.py", line 29, in test_own_success_derived_state_change_remains_successful
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_full_composition_and_ephemeral_restart (test_pr_state_projection.ProjectionTests.test_real_full_composition_and_ephemeral_restart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 150, in test_real_full_composition_and_ephemeral_restart
+    self.assertTrue(first['published_success'], first)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_publication_cache_hits_but_live_comments_reobserved (test_pr_state_projection.ProjectionTests.test_real_publication_cache_hits_but_live_comments_reobserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 94, in test_real_publication_cache_hits_but_live_comments_reobserved
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_secret_environment_to_signed_codecs_and_fork_publication (test_pr_state_projection.ProjectionTests.test_real_secret_environment_to_signed_codecs_and_fork_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 81, in test_real_secret_environment_to_signed_codecs_and_fork_publication
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_remote_advance_during_evaluation_blocks_success (test_pr_state_projection.ProjectionTests.test_remote_advance_during_evaluation_blocks_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 219, in test_remote_advance_during_evaluation_blocks_success
+    with self.assertRaisesRegex(r.Invalid, 'remote protocol state advanced'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Invalid not raised
+
+======================================================================
+FAIL: test_repository_activity_does_not_revoke_review (test_pr_state_projection.ProjectionTests.test_repository_activity_does_not_revoke_review)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_pr_state_projection.py", line 52, in test_repository_activity_does_not_revoke_review
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_repository_and_ci_counters_can_change (test_pr_state_projection.ProjectionTests.test_repository_and_ci_counters_can_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_pr_state_projection.py", line 40, in test_repository_and_ci_counters_can_change
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_full_composition_and_ephemeral_restart (test_runtime.RuntimeTests.test_real_full_composition_and_ephemeral_restart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 150, in test_real_full_composition_and_ephemeral_restart
+    self.assertTrue(first['published_success'], first)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_publication_cache_hits_but_live_comments_reobserved (test_runtime.RuntimeTests.test_real_publication_cache_hits_but_live_comments_reobserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 94, in test_real_publication_cache_hits_but_live_comments_reobserved
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_real_secret_environment_to_signed_codecs_and_fork_publication (test_runtime.RuntimeTests.test_real_secret_environment_to_signed_codecs_and_fork_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 81, in test_real_secret_environment_to_signed_codecs_and_fork_publication
+    self.assertTrue(result['published_success'], result)
+AssertionError: False is not true : {'status': 'blocked', 'published_success': False, 'generation': 1, 'revocation_confirmed': True, 'diagnostic': {'exception_type': 'Invalid', 'frames': [{'file': 'app_publisher.py', 'function': 'run', 'line': 273}, {'file': 'runtime.py', 'function': 'evaluate', 'line': 350}, {'file': 'live_protocol_context_forks.py', 'function': 'evaluate_session', 'line': 151}, {'file': 'live_protocol_context_forks.py', 'function': 'verify_dependencies', 'line': 35}, {'file': 'offline_manifest_gate.py', 'function': 'require', 'line': 35}]}, 'reason': 'Trusted evaluation or transport did not complete.'}
+
+======================================================================
+FAIL: test_remote_advance_during_evaluation_blocks_success (test_runtime.RuntimeTests.test_remote_advance_during_evaluation_blocks_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-source-extensions-rollout-author-001\local-only\controller\test_runtime.py", line 219, in test_remote_advance_during_evaluation_blocks_success
+    with self.assertRaisesRegex(r.Invalid, 'remote protocol state advanced'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Invalid not raised
+
+----------------------------------------------------------------------
+Ran 113 tests in 38.031s
+
+FAILED (failures=15, errors=1)

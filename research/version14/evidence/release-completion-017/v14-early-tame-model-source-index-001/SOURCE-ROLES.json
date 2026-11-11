@@ -1,0 +1,1420 @@
+[
+  {
+    "id": "EARLY-H6-STABLE-MODEL-EXTENSION",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1119,
+      "end_line": 1124,
+      "excerpt_sha256": "38d641fb33050c1c4f70026dcb0dffa9f8b19e0bfdabaadfcfd0a036baaf4bb5"
+    },
+    "source_id": "stacks-0E97",
+    "available": "Two stable models over a DVR of a smooth proper geometrically connected curve are uniquely isomorphic as models.",
+    "needed": "Each generic normalizer automorphism, including a permutation of geometric connected components, extends uniquely to the actual smooth proper full-three model.",
+    "derivation": "After strict henselization, use each geometrically connected component. Its genus is at least two by the preceding torsion-free orbifold calculation, so its smooth proper model is stable. Apply uniqueness to the source and target models with the generic identification twisted by the automorphism. Uniqueness makes composition compatible and also treats component permutations.",
+    "boundary": "The smooth proper model, geometric component decomposition, torsion-free cover, genus bound and normalizer action are incoming. No existence of the integral model or branch noncollision is proved by this source.",
+    "source": {
+      "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/0E97.html",
+      "sha256": "f222a423374c8172fce073f1a3a07ac747d20514a21bc8fe0da3398a0af8d541",
+      "bytes": 18745,
+      "retrieved_date": "2026-11-05",
+      "retrieval_url": "https://stacks.math.columbia.edu/tag/0E97",
+      "statement": "Two stable models over a DVR of a smooth proper geometrically connected curve are uniquely isomorphic as models."
+    }
+  },
+  {
+    "id": "EARLY-H6-TAME-KUMMER-NORMALIZATION",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1153,
+      "end_line": 1161,
+      "excerpt_sha256": "ab65b52fb38f3f8b8125565259ad83d63ce3c4674542b31081b7f093c5f469a8"
+    },
+    "source_id": "stacks-0EYG",
+    "available": "For a locally Noetherian scheme with regular effective Cartier divisor, a finite etale cover of its complement tamely ramified in codimension one is etale locally a disjoint union of standard tame root covers.",
+    "needed": "At the actual smooth branch sections the tame cover has root coordinates; the normalized pullback changes ramification e to e/gcd(e,a), giving2,1,1 for(4,2),(6,6),(2,2).",
+    "derivation": "The preceding quotient argument supplies disjoint regular branch sections, the complement cover is finite etale, and p>324 makes the inertia orders invertible. The source gives t=z^e etale locally. In the pullback t=s^a, set g=gcd(e,a); after an etale root-of-unity extension, its normalization has branches s=w^(e/g), z=xi*w^(a/g). Apply the three actual index pairs. This is the same local calculation retained in parallel-geometry-report87.",
+    "boundary": "Global finiteness/properness of normalization, exact discriminant/resultant check, actual degree324 and later good reduction of the abelian scheme remain separate.",
+    "source": {
+      "workspace_relative_path": "work/theorem-application-audit-20261105/parallel-009/geometry/0EYG.html",
+      "sha256": "a4c8f58c4c8f844bb05e5ab7f3d5f23aa497a143ade6c18c5e172e1768dbb7bd",
+      "bytes": 20775,
+      "retrieved_date": "2026-11-05",
+      "retrieval_url": "https://stacks.math.columbia.edu/tag/0EYG",
+      "statement": "For a locally Noetherian scheme with regular effective Cartier divisor, a finite etale cover of its complement tamely ramified in codimension one is etale locally a disjoint union of standard tame root covers."
+    }
+  },
+  {
+    "id": "TAME-UNIQUE-FIXED-LIFT",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1131,
+      "end_line": 1137,
+      "excerpt_sha256": "31540d69644d0810ea5cad465ddf52cf9b0ed782da5c7dec99a84a59ac7b8f8d"
+    },
+    "source": {
+      "url": "https://stacks.math.columbia.edu/tag/04GE",
+      "publication": "The Stacks Project",
+      "locator": "Section10.153, Definition10.153.1, Lemmas10.153.2 and10.153.3(8)",
+      "tag": "04GE",
+      "path": "work/source-risk-review-20261107/stacks-early-model-download-root-001/local-only/04GE.html",
+      "sha256": "89d0ae2fc39e588308d217d5676c7960864aef11009514c68845392c02ee45e0",
+      "bytes": 51560,
+      "version": "Official digital Stacks page retrieved2026-11-09T08:59:55Z; exact bytes govern mutable numbering."
+    },
+    "available": {
+      "statement": "Over a henselian local ring, a simple residue root lifts uniquely; equivalently an etale algebra at a residue-rational point has a unique retraction inducing that point.",
+      "hypotheses": "The ring is henselian; the residue root is simple, or the selected etale point has the same residue field.",
+      "parameter_range": "No completeness or characteristic-zero hypothesis in the etale formulation.",
+      "normalizations": "The retraction lifts the specified residue point, not an arbitrary point of the special fibre.",
+      "limit_order": "Fix the henselian ring, etale algebra and selected residue point before taking its unique lift."
+    },
+    "needed": "For the actual tame cyclic stabilizer and a nonidentity generator with tangent eigenvalue different from1, the selected special fixed point has a unique fixed section over the strict henselian DVR.",
+    "derivation": "Use the smooth relative curve and its fixed-point equation near the selected point. The derivative of generator minus identity on the relative tangent line is lambda-1, a unit by the preceding faithful tame tangent action. Thus its fixed subscheme is etale over the base near that point (the one-variable etale Jacobian criterion). Apply the henselian unique-retraction statement to this etale neighbourhood. Every power fixes the resulting section. A nonidentity power also has tangent eigenvalue different from1 because the tangent character of the cyclic stabilizer is faithful; its unique fixed lift is therefore that same section. This is the unique-lift input used in the noncollision argument, not a proof of faithfulness or existence of the stabilizer.",
+    "premises": [
+      "The actual smooth relative curve over the strict henselian DVR and the extended stabilizer action.",
+      "Finite cyclic stabilizer of order prime to residue characteristic with faithful tangent character, established in the preceding argument.",
+      "The etale Jacobian criterion for one equation with invertible relative derivative."
+    ],
+    "boundary": "Does not supply stable model existence/uniqueness, tangent faithfulness, averaged invariant parameter, or global branch-orbit identification."
+  },
+  {
+    "id": "TAME-THREE-SECTION-COORDINATE",
+    "role": "published_inputs_with_local_derivation",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1141,
+      "end_line": 1147,
+      "excerpt_sha256": "686d9cb799f7f6aa08079383c141aed90dcb2fe0919386aa23d60ede13dc2743"
+    },
+    "sources": [
+      {
+        "tag": "0C6L",
+        "path": "work/source-risk-review-20261107/stacks-early-model-download-root-001/local-only/0C6L.html",
+        "sha256": "e182458b1ea9aa030de14ef59f11a74a88edac0295250efbebbaeedd055e1dc6",
+        "bytes": 31418,
+        "url": "https://stacks.math.columbia.edu/tag/0C6L",
+        "version": "Official digital Stacks page retrieved2026-11-09T08:59:55Z; exact bytes govern mutable numbering.",
+        "locator": "Lemma53.10.2, degree-one case"
+      },
+      {
+        "tag": "02O5",
+        "path": "work/source-risk-review-20261107/stacks-early-model-download-root-001/local-only/02O5.html",
+        "sha256": "4ae14d8c651b49563d4e75d7807c3be2fbb93317c594b372b768df0bb4e8c5c8",
+        "bytes": 20206,
+        "url": "https://stacks.math.columbia.edu/tag/02O5",
+        "version": "Official digital Stacks page retrieved2026-11-09T08:59:55Z; exact bytes govern mutable numbering.",
+        "locator": "Proposition30.19.1"
+      },
+      {
+        "tag": "02KE",
+        "path": "work/source-risk-review-20261107/stacks-early-model-download-root-001/local-only/02KE.html",
+        "sha256": "b241d01dd158c79bfc8ed0bb3269fe512f72dd5a7cf496549554e2e8316a7655",
+        "bytes": 24021,
+        "url": "https://stacks.math.columbia.edu/tag/02KE",
+        "version": "Official digital Stacks page retrieved2026-11-09T08:59:55Z; exact bytes govern mutable numbering.",
+        "locator": "Lemma30.5.2"
+      },
+      {
+        "id": "STACKS-02LS",
+        "title": "Proper quasi-finite morphisms",
+        "locator": "Tag 02LS, 37.44.1",
+        "url": "https://stacks.math.columbia.edu/tag/02LS",
+        "version": "Current digital Stacks Project, retrieved 2026-11-08; exact HTML pin controls over mutable numbering",
+        "statement": "A proper locally quasi-finite morphism is finite.",
+        "source": {
+          "path": "work/source-risk-review-20261107/b11-marking-descent-sources-theta-001/local-only/02LS.html",
+          "sha256": "c0002c37c07b94e8e7838fd23294d9748091316488fc2ea0d6ee136cfbcc3f9f",
+          "bytes": 16311
+        },
+        "derived_reading_aid": {
+          "path": "work/source-risk-review-20261107/b11-marking-descent-sources-theta-001/local-only/02LS-statement.txt",
+          "sha256": "5578976b1705eaa9db5a03a771f14084f98902e4c3bb0a200ba57abc1bdb0a4a",
+          "bytes": 313
+        },
+        "qualification": "Digital source, not a claim of identity with an old printed or downloaded edition."
+      }
+    ],
+    "available": {
+      "statement": "On a proper genus-zero curve over a field with H0(O)=k, an invertible sheaf of positive degree d has h0=d+1 and h1=0 and gives a closed immersion in P^d. Proper coherent cohomology over a Noetherian base is coherent; it commutes with flat base change. A proper morphism with finite fibres is finite.",
+      "hypotheses": "The field curve and line bundle have the stated genus, global functions and degree. For coherent finiteness the base is locally Noetherian and the morphism proper; for flat base change the map is quasi-compact and quasi-separated. The finiteness criterion requires properness and finite fibres.",
+      "parameter_range": "Degree d>0; the present specialization uses d=1 and a DVR base.",
+      "normalizations": "O(section) is the positive degree-one line bundle; no scaling of the given ordered sections is present in these source theorems.",
+      "limit_order": "Apply the field theorem to fibres, coherent finiteness and flat base change to the relative line bundle, then the finiteness criterion to the constructed morphism."
+    },
+    "needed": "The actual smooth proper genus-zero model over R=Z_p with three ordered pairwise disjoint sections has a unique isomorphism to P1_R sending them to0,infinity,-16/27, for p>324; this agrees with the given generic j coordinate.",
+    "derivation": "Let s_infinity be the second section and L=O(s_infinity). A section of a smooth relative curve is an effective Cartier divisor; L has degree1 on both smooth geometrically connected genus-zero fibres. The field theorem gives h0=2,h1=0 and the degree-one P1 isomorphism. Coherent finiteness makes H0(C,L) and H1(C,L) finite R-modules. The exact sequence0→L --pi→ L→L_k→0 and H1(C_k,L_k)=0 show H1(C,L)/pi=0; Nakayama gives H1(C,L)=0. Thus H0(C,L)/pi=H0(C_k,L_k). H0(C,L) is torsion-free (L and C are R-flat), hence free of rank2. Flat base change identifies its generic fibre with H0(C_K,L_K). The evaluation map is surjective on both fibres, hence surjective by Nakayama at every point. It defines C→P1_R, an isomorphism on both fibres. This map is proper and has finite fibres, hence finite. On an affine target its finite algebra map is an isomorphism: the cokernel vanishes locally over the special fibre by Nakayama and over the generic fibre by the fibre isomorphism; surjectivity follows globally. Its kernel modulo pi is zero because the target algebra is R-flat, and the same local Nakayama/generic argument gives zero kernel. Therefore C is P1_R. In P1_R the first two disjoint sections are represented by a basis of R^2; the third has both coordinates units, since it is disjoint from them. A diagonal unit scaling sends it to -16/27, which is a unit for p>324. An automorphism fixing0 andinfinity is diagonal, and fixing this unit forces it to be scalar; this proves uniqueness. The generic j coordinate has the same three ordered values, so it equals this isomorphism. No additional prime has been inverted.",
+    "premises": [
+      "The given smooth proper geometrically connected genus-zero model over Z_p.",
+      "Three ordered Z_p sections, pairwise disjoint, already obtained in the preceding branch argument.",
+      "A section of a smooth relative curve is an effective Cartier divisor; standard Nakayama and free finite torsion-free modules over a DVR."
+    ],
+    "boundary": "Does not produce the smooth model, descend unlabelled branch points to Z_p, or establish their disjointness. Those are explicit incoming properties of the actual model. It normalizes only the already-labelled ordered triple."
+  },
+  {
+    "id": "EARLY-H6-POLARIZED-COARSE-SOURCE",
+    "ordinary_application_id": "H6-POLARIZED-COARSE-AND-COORDINATE",
+    "record_sha256": "348ecb88992a94abbb85fde25cd3ee9eaf66a45d65b8473c9723da4f072a71f3",
+    "record": {
+      "id": "H6-POLARIZED-COARSE-AND-COORDINATE",
+      "kind": "argument",
+      "authors": [
+        "01a1bed7-e1a5-71d2-ad81-4ebad20c2845"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+          "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+          "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+          "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+          "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+          "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+          "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+          "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+          "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+          "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+          "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+          "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+          "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+          "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+          "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+          "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+          "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+          "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+          "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+          "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+          "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+          "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+          "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+        }
+      ],
+      "obligations": {
+        "source_hypotheses": {
+          "status": "checked",
+          "required": "For this bounded application: Fixed discriminant-six maximal order O in B=(2,-3), mu=2j+ij; accepted A001 polarized quotient and corrected Lin–Yang normalization inputs.",
+          "constructed": "Fixed discriminant-six maximal order O in B=(2,-3), mu=2j+ij; accepted A001 polarized quotient and corrected Lin–Yang normalization inputs.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "constructed_objects": {
+          "status": "checked",
+          "required": "For this bounded application: The actual positive principal form E=Trd(mu^-1 x bar(y)) on O and its principally polarized moduli object.",
+          "constructed": "The actual positive principal form E=Trd(mu^-1 x bar(y)) on O and its principally polarized moduli object.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "index_domain_coverage": {
+          "status": "checked",
+          "required": "For this bounded application: The full four-element positive-normalizer quotient, with all three ordered marks.",
+          "constructed": "The full four-element positive-normalizer quotient, with all three ordered marks.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "transition_maps": {
+          "status": "checked",
+          "required": "For this bounded application: A001 matches the Rosati involution and preservation relation; the three marked CM values identify the same rational Hauptmodul; accepted LY substitution gives the weighted Igusa tuple.",
+          "constructed": "A001 matches the Rosati involution and preservation relation; the three marked CM values identify the same rational Hauptmodul; accepted LY substitution gives the weighted Igusa tuple.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "consumed_object_identity": {
+          "status": "checked",
+          "required": "For this bounded application: The same principally polarized coarse point has coordinate j and tuple [12(j+1),6(j^2+j+1),4(j^3-2j^2+1),j^3].",
+          "constructed": "The same principally polarized coarse point has coordinate j and tuple [12(j+1),6(j^2+j+1),4(j^3-2j^2+1),j^3].",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "coefficient_conventions": {
+          "status": "checked",
+          "required": "For this bounded application: E is unimodular; the printed 6E is not called principal. Weighted rescaling is at the stated weights and does not assert a rational genus-two model.",
+          "constructed": "E is unimodular; the printed 6E is not called principal. Weighted rescaling is at the stated weights and does not assert a rational genus-two model.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "local_conditions": {
+          "status": "checked",
+          "required": "For this bounded application: This characteristic-zero coarse identification does not supply a fine integral model.",
+          "constructed": "This characteristic-zero coarse identification does not supply a fine integral model.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "exceptional_cases": {
+          "status": "checked",
+          "required": "For this bounded application: Finite nonzero j is the locus consumed later; disputed BG product-isomorphism and explicit-conic arguments are not used.",
+          "constructed": "Finite nonzero j is the locus consumed later; disputed BG product-isomorphism and explicit-conic arguments are not used.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        },
+        "downstream_consumption": {
+          "status": "checked",
+          "required": "For this bounded application: Supplies the fixed polarized datum, ordered j coordinate and common geometric point criterion to the actual cover and H6.",
+          "constructed": "Supplies the fixed polarized datum, ordered j coordinate and common geometric point criterion to the actual cover and H6.",
+          "justification": "The new composition proof, section Fixed polarized point and coordinate, connects the pinned accepted supplier arguments to this exact construction. Original published-source qualifications and later provider updates remain in force; this is not a new audit of all source ancestors.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/PROOF.md",
+              "sha256": "1aad18da5c1619e9e8afb4670fd28c9f4770445d0598c6c44bafd824731402ab"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/a001-moduli-current-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "9fac34db7bfd3155a1a785b20c482d327cb6410a5099d23ffb3c15c09fabd657"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/PROOF.md",
+              "sha256": "b963eca85750ebc724370ec76b271a97461208db7c6cf3e5cbb8aa909779f666"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+              "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/INDEPENDENT-REVIEW.md",
+              "sha256": "124edf6a9eab7a42d0af342a4a214311900eaaef47c1e0f51f59463d74d12d15"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/ly-d6-normalization-v1/reviews/CURRENT-INTERFACE-REVIEW.md",
+              "sha256": "0769ee921fff7e9a25f9be3a67560c00132f479f2c73fdbddfbcc3de1d4bead1"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/LOCAL-CONNECTION.md",
+              "sha256": "2a83a93f4cd5fce30eccb6a5bed323485a4508bab2a8f1bd7bac704da946dd54"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/TATE-POLARIZED.md",
+              "sha256": "595c1953b79d8b1df869a9915c8325bb4ed50e38ca5faa0fbc1850015bc3b3fe"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/FIVE-MARKING.md",
+              "sha256": "0b1db6b00283fbd09e4ba003532b3f9bdce5ad83dc41e9f834dc236a9511400c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+              "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+              "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/GENERIC-FUNCTOR.md",
+              "sha256": "05d0bbad3db56a54a1e9816a5300a67391a63fa276c1fb5a8d46fe60d6eb7052"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-connection-review-compiler-001.md",
+              "sha256": "11635715b4020521cddaf080388e169359d5f9a06d34afdfee43920409cc9b99"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-tate-polarized-review-gaussian-001.md",
+              "sha256": "b619dc9e553be4258240538a03618fdb24ce3f7040db694bc138827ee2e4c0d8"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-marking-descent-review-gaussian-001.md",
+              "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-normalizer-review-compiler-001.md",
+              "sha256": "60681dc7081a8a35eb90b726cd15a5ebaf5384dc6fc0f8a1dec73bb2572ffd06"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-assembly-review-compiler-001.md",
+              "sha256": "083648ee87d350d40f299828caeaffdb7f85dae8ba5e19697f086024d29d8650"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/b11-provider-update-review-compiler-001.md",
+              "sha256": "eccf38a00b4d3f721970e6b37a44a859f2f7b1d9503815314146407358a0fac3"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/reviews/GENERIC-FUNCTOR-REVIEW.md",
+              "sha256": "e8c4486f5ca6305429cd5e6e93b99152e270a2216ec8f1163fa90794a56d5cc6"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/h6-current-joins-independent-003/REVIEW.md",
+              "sha256": "9c5e868ba3c284855bd35e000d395bffe823fa5dd4d361d3795ea8b11aba355c"
+            },
+            {
+              "side": "head",
+              "path": "research/version14/evidence/current-h6-original-datum-001/PROOF.md",
+              "sha256": "79abaacbde60b37cc86c6182d849aeba4440ac779e290d20514d583c4ee7eca8"
+            }
+          ]
+        }
+      }
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1171,
+      "end_line": 1179,
+      "excerpt_sha256": "06d2a1191ddf0f746bad8d6b5199992121e055a6fb756d942738f22b9a2f0a10"
+    },
+    "role": "Retained actual source application; no outgoing datum use is reimported into its proof."
+  }
+]

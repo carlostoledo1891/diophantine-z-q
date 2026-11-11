@@ -1,0 +1,7 @@
+# Ribet A052 successor 002
+
+Author proposal, pending independent review. This preserves the complete mathematical report and application contracts of successor 001 by exact reference. It adds only two downstream wording corrections to its candidate: the finite-sum domain and the arithmetic/geometric Frobenius comparison now say supersingular coarse points, not pairs. Thus neither sentence claims descent of labelled moduli objects. The two original source/bibliography edits are unchanged.
+
+The coordinate convention is explicit. Ribet p440 describes a transporter, whose direction must not be silently interchanged with the right-module coordinate. Here I=Hom(E0,E), transported by a rational quasi-isogeny E to E0, is a right R-module and Ihat=z Rhat. Remark3.5(a), p441, supplies that right-module convention; the left order is B intersect z Rhat z^-1, as in p442. An opposite-direction Tate transporter uses the inverse coordinate. No p440 transporter symbol is copied into the left-order formula without this change of direction. The Frobenius action is Remark3.5(b)'s right multiplication in the fixed right-module convention.
+
+The full source proofs, four assertion cards, retained CM/good-reduction inputs and bounded related-use analysis remain exactly those pinned in 001. This successor makes no broader source, manuscript, or release acceptance claim. No live source is modified and no full TeX build is claimed.

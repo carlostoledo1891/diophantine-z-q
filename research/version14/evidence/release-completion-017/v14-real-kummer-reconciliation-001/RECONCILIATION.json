@@ -1,0 +1,525 @@
+{
+  "schema": "fresh-source-observation-reconciliation/v1",
+  "author": "/root/v14_gi_constructors",
+  "initial": {
+    "path": "work/source-risk-review-20261107/v14-real-kummer-review-h6-001/INITIAL-OBSERVATIONS.json",
+    "sha256": "c53b13418afacf6cb1a205892ee4b03945ee5d62641e0ea0a633d4c24c5f49c1",
+    "original_header": {
+      "reviewer": "/root/v14_h6_coverage",
+      "created_at": "2026-11-09T10:22:26.434Z",
+      "source_sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c",
+      "prior_exposure": "Read current main14247–65 before receiving proof. Extensive prior H6/RC source work and authoring elsewhere; no authorship of this new real Kummer proof. Read full proof and manifest; have not read SOURCE-APPLICATIONS or SOURCE-RELATIONSHIPS."
+    }
+  },
+  "mathematical_review": {
+    "path": "work/source-risk-review-20261107/v14-real-kummer-review-h6-001/REVIEW.json",
+    "sha256": "ae5bcc5209979aa1ad1b5fad8690b4bff481ca3f4ff06b72aa8ba884aad75b4b"
+  },
+  "source": {
+    "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+    "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+  },
+  "rows": [
+    {
+      "original_index": 0,
+      "original_observation": {
+        "line": 3,
+        "role": "actual model input",
+        "claim": "Split cubic and nonzero twist preserve rational distinct two-torsion."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 3,
+        "end_line": 3,
+        "excerpt_sha256": "1dbd7098af37ffa54a65525154f0f7e4b920d49c7cb5417177e12f05d0cbba1c"
+      },
+      "retained_source_contracts": [],
+      "source_relationships": [
+        {
+          "id": "REAL-KUMMER-ACTUAL-SPLIT-TWIST",
+          "role": "actual_object_and_local_twist_calculation",
+          "source_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 2554,
+              "end_line": 2558,
+              "excerpt_sha256": "d989bf98f21781f48b3ddf33c9f320222d3664be8616630f245011fac2bfb345"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14247,
+              "end_line": 14265,
+              "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+            }
+          ],
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 3,
+              "end_line": 3,
+              "excerpt_sha256": "1dbd7098af37ffa54a65525154f0f7e4b920d49c7cb5417177e12f05d0cbba1c"
+            }
+          ],
+          "statement": "The distinct split roots of E_l give rational two-torsion; scaling them by nonzero h gives the quadratic twist with the same property, including negative h."
+        }
+      ],
+      "prior_local_proof_inputs": [],
+      "reconciliation": "Actual nonsingular split-cubic model and nonzero twist are the inputs; the scaled-root verification is explicit local algebra."
+    },
+    {
+      "original_index": 1,
+      "original_observation": {
+        "line": 5,
+        "role": "published uniformization plus local equivariance",
+        "claim": "Real differential makes period identification conjugation-equivariant; torsion corresponds to fractional lattice."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 5,
+        "end_line": 5,
+        "excerpt_sha256": "c2c2ae72a388b75f41c1050034e253c367e8560394b28ac7721454f639df9a9a"
+      },
+      "retained_source_contracts": [
+        {
+          "id": "REAL-KUMMER-COMPLEX-PERIOD-ISOMORPHISM",
+          "role": "published_source_application",
+          "source": {
+            "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+            "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+            "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+            "locator": "VI Corollary5.1.1 and Proposition5.2, printed173–174; Proposition5.4(a), printed175"
+          },
+          "available": "For every elliptic curve over C, integration of an invariant differential identifies its complex Lie group with C/Lambda for its full rank-two period lattice. The torsion subgroup is (1/m)Lambda/Lambda.",
+          "needed": "For the actual real curve and a real invariant differential, obtain the full period lattice and finite torsion identifications before proving integral conjugation splitting.",
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 5,
+              "end_line": 7,
+              "excerpt_sha256": "38f40600a77efd3cc04b80c7e807ee3d705e6a784669d1cba641c3a5884113d0"
+            }
+          ],
+          "derivation": "Complex conjugation of paths conjugates the integral of the real differential. This proves equivariance; the trivial action on E[2] then forces (J-1)Lambda subset2Lambda and gives integral projectors. Neither equivariance nor integral splitting is attributed to a rational eigenbasis alone.",
+          "boundary": "General complex uniformization is used; no CM hypothesis or CM-specific model is imported."
+        }
+      ],
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 3,
+          "end_line": 3,
+          "excerpt_sha256": "1dbd7098af37ffa54a65525154f0f7e4b920d49c7cb5417177e12f05d0cbba1c"
+        }
+      ],
+      "reconciliation": "General complex period uniformization is imported. Conjugating integrals of the real differential proves the needed equivariance locally."
+    },
+    {
+      "original_index": 2,
+      "original_observation": {
+        "line": 7,
+        "role": "local lattice derivation",
+        "claim": "J identity modulo2 gives integral complementary projectors and rectangular rank-one eigensublattices."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 7,
+        "end_line": 7,
+        "excerpt_sha256": "121e773b6f4bb65ef5c18dc5d561d8f4f25351e3d2eea82088728eeecfe9243c"
+      },
+      "retained_source_contracts": [],
+      "source_relationships": [
+        {
+          "id": "REAL-KUMMER-INTEGRAL-PROJECTORS",
+          "role": "local_derivation",
+          "source_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 3,
+              "end_line": 5,
+              "excerpt_sha256": "08c34bbf75b29ec827a09e191dea116c705121e2e51b6c56d164f24b98088abd"
+            }
+          ],
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 7,
+              "end_line": 7,
+              "excerpt_sha256": "121e773b6f4bb65ef5c18dc5d561d8f4f25351e3d2eea82088728eeecfe9243c"
+            }
+          ],
+          "statement": "Trivial conjugation on Lambda/2Lambda gives integral projectors; real ranks then give a genuine rectangular Z-basis."
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 3,
+          "end_line": 5,
+          "excerpt_sha256": "08c34bbf75b29ec827a09e191dea116c705121e2e51b6c56d164f24b98088abd"
+        }
+      ],
+      "reconciliation": "Full rational two-torsion forces J=1 modulo2 on the integral lattice, so the two half-projectors preserve that lattice; their real spans have dimension1."
+    },
+    {
+      "original_index": 3,
+      "original_observation": {
+        "line": 9,
+        "role": "local real-point derivation",
+        "claim": "Two circles, identity circle divisible, quotient by2^n generated by half imaginary period."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "5544aadeb0d293c5ae0e61d401fcd8c0011e014189ba9a73b94bc542e99cb9cb"
+      },
+      "retained_source_contracts": [],
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 5,
+          "end_line": 7,
+          "excerpt_sha256": "38f40600a77efd3cc04b80c7e807ee3d705e6a784669d1cba641c3a5884113d0"
+        }
+      ],
+      "reconciliation": "Compute fixed points in the actual rectangular torus. The connected circle is2-divisible and the other circle gives the nonidentity component."
+    },
+    {
+      "original_index": 4,
+      "original_observation": {
+        "line": 11,
+        "role": "local cocycle computation",
+        "claim": "Minus unit cocycle gives exactly order-two minus Kummer line; plus cohomology summand is separately present."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt_sha256": "97560ab343ad5af4707623bd605c7c702257e2d9fdec7dc36ba3f7c743908fc1"
+      },
+      "retained_source_contracts": [],
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 7,
+          "end_line": 9,
+          "excerpt_sha256": "dbd9ca28baa8f5e684f972279eec9358559704a22d0a998d8fd66446d0c62ee3"
+        }
+      ],
+      "reconciliation": "The chosen2^n-division point of the half-imaginary period gives the explicit cocycle(0,-1). The cyclic cochain quotient distinguishes plus and minus components."
+    },
+    {
+      "original_index": 5,
+      "original_observation": {
+        "line": 13,
+        "role": "local complex computation",
+        "claim": "Good truncation of ordinary periodic cochains, derived reduction of free terms, full finite real torsion in degreezero and Kummerline in degreeone."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 13,
+        "end_line": 13,
+        "excerpt_sha256": "4d1ca3e27869c432a4dd903c5481f8fc582d439c0880868b09129f2a452ba1c2"
+      },
+      "retained_source_contracts": [],
+      "source_relationships": [
+        {
+          "id": "REAL-KUMMER-COMPONENT-COCYCLE",
+          "role": "local_derivation",
+          "source_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 5,
+              "end_line": 7,
+              "excerpt_sha256": "38f40600a77efd3cc04b80c7e807ee3d705e6a784669d1cba641c3a5884113d0"
+            }
+          ],
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 9,
+              "end_line": 13,
+              "excerpt_sha256": "4b678051685bad297851f568fb6eeb96583b954a191cf9194375c2a4b66c2bcd"
+            }
+          ],
+          "statement": "The fixed points are two real circles; the half-imaginary period represents the nonidentity component and has cocycle(0,-1). The explicit ordinary cochains give U_R and its full degreezero reduction."
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 7,
+          "end_line": 11,
+          "excerpt_sha256": "bd93dbe369405b9a49196c580c277eb148ccc5f3cf6b35b12a0c0b58c4a69a7a"
+        }
+      ],
+      "reconciliation": "The explicit ordinary periodic complex has good truncation U_R. Since its terms are free, its reduction keeps full degreezero and has exactly the Kummerline in degreeone."
+    },
+    {
+      "original_index": 6,
+      "original_observation": {
+        "line": 15,
+        "role": "separate finite duality input and local application",
+        "claim": "Alternating cyclic pairing gives isotropy; perfect finite pairing and group order4 give self-annihilator."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "5f4acc770ca9055384b560b8f638d9b48c6b788c7cc5301910dca7a7075f790d"
+      },
+      "retained_source_contracts": [
+        {
+          "id": "REAL-KUMMER-FINITE-TATE-INPUT",
+          "role": "retained_reviewed_source_application",
+          "source_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+          "source_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+          "source_id": "THETA-REAL-FINITE-TATE-PAIRING",
+          "review": {
+            "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+            "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+          },
+          "available": "Finite real Tate cup duality for E[2^n] is perfect after Weil self-duality.",
+          "needed": "Once the actual minus-line Kummer subgroup is computed and shown isotropic, order2 in the order4 cohomology group gives its exact annihilator.",
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 15,
+              "end_line": 15,
+              "excerpt_sha256": "5f4acc770ca9055384b560b8f638d9b48c6b788c7cc5301910dca7a7075f790d"
+            }
+          ],
+          "boundary": "The finite duality theorem supplies perfection only. The actual lattice and Kummer subgroup are constructed in preceding proof lines."
+        }
+      ],
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 7,
+          "end_line": 13,
+          "excerpt_sha256": "7368b575bd1eb15c960a2925eccbf2d028cd7f9d823dd1d8c14a7caf8fc11b14"
+        }
+      ],
+      "reconciliation": "The cyclic minus subgroup is isotropic by alternation. Perfect finite real duality is imported separately; order2 in order4 then yields self-annihilation."
+    },
+    {
+      "original_index": 7,
+      "original_observation": {
+        "line": 17,
+        "role": "scope",
+        "claim": "Only real local inputs; global limits/coranks/determinant cancellation separate."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+          "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+        },
+        "start_line": 17,
+        "end_line": 17,
+        "excerpt_sha256": "908948b6052b4fed66eaabba0a3ce9c603aeaca33391f39b61363bbb462e8110"
+      },
+      "retained_source_contracts": [],
+      "source_relationships": [
+        {
+          "id": "REAL-KUMMER-TO-MAIN",
+          "role": "new_local_proof_to_actual_consumer",
+          "source_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+                "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+              },
+              "start_line": 3,
+              "end_line": 15,
+              "excerpt_sha256": "90d67b59518c35a28e00cf16f98300793a3dc9cf3b3eb834639b61a901ec7e6a"
+            }
+          ],
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14247,
+              "end_line": 14265,
+              "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+            }
+          ],
+          "statement": "Supplies the exact integral conjugation splitting, rectangular period interpretation, real minus-line Kummer image and full ordinary degreezero local complex. Global limits and determinant lengths remain separate."
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 3,
+          "end_line": 15,
+          "excerpt_sha256": "90d67b59518c35a28e00cf16f98300793a3dc9cf3b3eb834639b61a901ec7e6a"
+        }
+      ],
+      "reconciliation": "This is the exact output scope and caller binding, not a claim to prove the global limit or determinant argument."
+    }
+  ],
+  "pending_resolution": {
+    "original": {
+      "id": "SIGN-MAIN-14247-14265",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 14247,
+        "end_line": 14265,
+        "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+      },
+      "source_role": "pending",
+      "use_ids": [],
+      "claim_ids": [
+        "V14-MAIN-POLYNOMIAL-DEFINITION"
+      ],
+      "reason": "Real Kummer complex, rectangular-period Kummer image and finite real Tate orthogonality require their actual primitive input; the integral projector and cohomology computation are explicit.",
+      "status": "pending"
+    },
+    "current_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14247,
+      "end_line": 14265,
+      "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+    },
+    "status": "accepted_real_local_input_and_application",
+    "source_output": {
+      "id": "REAL-KUMMER-TO-MAIN",
+      "role": "new_local_proof_to_actual_consumer",
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 3,
+          "end_line": 15,
+          "excerpt_sha256": "90d67b59518c35a28e00cf16f98300793a3dc9cf3b3eb834639b61a901ec7e6a"
+        }
+      ],
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14247,
+          "end_line": 14265,
+          "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+        }
+      ],
+      "statement": "Supplies the exact integral conjugation splitting, rectangular period interpretation, real minus-line Kummer image and full ordinary degreezero local complex. Global limits and determinant lengths remain separate."
+    },
+    "retained_conditions": "Nonzero twist of actual nonsingular split-cubic curve; real differential, full rational2torsion and separately accepted finite real Tate pairing. No global limiting or determinant claim."
+  },
+  "limits": "Original custom observations and chronology preserved. Any later protocol normalization is separate; source adoption, installation and cumulative coverage are not claimed."
+}

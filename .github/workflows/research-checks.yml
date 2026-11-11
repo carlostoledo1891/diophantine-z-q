@@ -13,6 +13,65 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  quartic394:
+    name: Version 13 source and quartic replay (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            python: '3.12.14'
+          - os: windows-2022
+            python: '3.12.10'
+    steps:
+      - name: Enable long paths for checkout
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B docs/manuscript-revisions/version13/portability/test_portability.py
+      - run: python -B scripts/check_quartic394_portable.py
+      - run: python -B docs/manuscript-revisions/version13/validate-applications.py --repo . --self-test
+      - run: python -B quartics/quartic-299-314/verify_lineage.py
+      - run: python -B docs/manuscript-revisions/version14/validate-applications.py --repo . --self-test
+      - run: python -B scripts/check_audit_history.py --self-test
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-394-${{ matrix.os }}
+          path: build/quartic-394/
+  quartic498:
+    name: Version 12 source and quartic replay (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            python: '3.12.14'
+          - os: windows-2022
+            python: '3.12.10'
+    steps:
+      - name: Enable long paths for checkout
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.22.1'
+      - run: python -B scripts/check_audit_history.py --self-test
+      - run: python -B scripts/check_quartic498.py
+      - run: python -B docs/manuscript-revisions/version12/inventory/validate.py --repo . --self-test
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-498-${{ matrix.os }}
+          path: build/quartic-498/
   oddproduct:
     name: Version 9 odd-product replay (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
@@ -25,6 +84,8 @@ jobs:
           - os: windows-2022
             python: '3.12.10'
     steps:
+      - name: Enable long paths for checkout
+        run: git config --global core.longpaths true
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
@@ -153,8 +214,7 @@ jobs:
       # Fetch upstream artifacts directly. Archiving the entire toolchain and
       # Mathlib tree again can exhaust the runner's disk during cache saving.
       - name: Fetch pinned dependency cache
-        working-directory: lean
-        run: lake exe cache get
+        run: python scripts/fetch_lean_cache.py
       - name: Build every helper from fresh project artifacts and audit axioms
         run: python scripts/check_lean.py --build --output build/lean-ci
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

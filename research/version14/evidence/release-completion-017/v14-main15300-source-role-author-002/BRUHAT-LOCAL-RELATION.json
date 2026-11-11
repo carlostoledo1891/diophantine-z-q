@@ -1,0 +1,39 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T09:48:51.573Z",
+  "status": "bounded local source-role proposal awaiting independent review",
+  "id": "MAIN15300-BRUHAT-NORMAL-FORM",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+    },
+    "start_line": 15384,
+    "end_line": 15393,
+    "excerpt_sha256": "f085ab552243109f3e5abb5ed79a63051f27f0519c5c0ac5cbd9a802eaf96fbf"
+  },
+  "inputs": [
+    {
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 15366,
+        "end_line": 15383,
+        "excerpt_sha256": "40c544c1acd18f7231322190685c0a02e1fa189438b1e4d9c9b09bc12db83390"
+      },
+      "scope": "The already calculated operator relations, including their central signs, are incoming. This argument does not re-prove the Weil-index identities."
+    },
+    "Central epsilon has order two; its represented action is minus identity on the nonzero characteristic-zero Schwartz space."
+  ],
+  "derivation": [
+    "Use projected matrices U(x)=[[1,x],[0,1]], M(a)=diag(a,a^-1), W=[[0,1],[-1,0]], matching the displayed WU(b)W relation. Every upper-triangular determinant-one matrix [[A,B],[0,D]] is uniquely U(AB)M(A).",
+    "For C nonzero, [[A,B],[C,D]]=U(A/C)M(-1/C)WU(D/C). Multiplication gives entries A,C,D, and the determinant-one condition forces B=(AD-1)/C. Thus these parameters are unique and the two cells are disjoint.",
+    "The displayed U/M commutation and W/M relation move every M past U or W. Two W symbols separated by U(b) reduce to one W when b is nonzero, using the displayed WU(b)W relation, and to zero W when b=0 using W². Scalar signs become a central epsilon power. Inverses of U,M,W reduce by these same relations. Induction on W count gives the two displayed word forms.",
+    "The unique projected parameters imply a word in the projection kernel reduces to 1 or epsilon. The represented epsilon is not the identity, since minus identity differs from identity on the nonzero characteristic-zero space. Therefore this kernel has exactly two elements."
+  ],
+  "scope": "Local algebraic completion of the normal-form sentence only. The incoming operator relations, their common scalar signs and representation are retained prerequisites; no independent new Weil or Hilbert reciprocity assertion."
+}

@@ -1,0 +1,35 @@
+name: Protected controller quota probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    if: >-
+      github.repository == 'elliotglazer/research-review-controller' &&
+      github.ref == 'refs/heads/main' &&
+      github.sha == vars.PROTOCOL_APPROVED_SHA
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the approved private controller
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ vars.PROTOCOL_APPROVED_SHA }}
+          persist-credentials: false
+          fetch-depth: 1
+          submodules: false
+          lfs: false
+      - name: Install reviewed controller dependencies
+        run: |
+          python3 -c 'import sys; assert sys.version_info[:2] == (3, 12)'
+          python3 -m venv "$RUNNER_TEMP/protocol-venv"
+          "$RUNNER_TEMP/protocol-venv/bin/python" -m pip install --disable-pip-version-check --require-hashes --only-binary=:all: -r controller/requirements.lock
+      - name: Read quota after the protected owner and revision checks
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROTOCOL_APPROVED_SHA: ${{ vars.PROTOCOL_APPROVED_SHA }}
+        run: '"$RUNNER_TEMP/protocol-venv/bin/python" -B controller/quota_probe.py'

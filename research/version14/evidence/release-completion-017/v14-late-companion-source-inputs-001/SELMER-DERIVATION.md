@@ -1,0 +1,11 @@
+# Rational quadratic Selmer decomposition
+
+Let E/Q be an elliptic curve, K=Q(sqrt(k)) a quadratic field, and E^k its quadratic twist. Use full discrete 2-primary Selmer groups, with the ordinary Kummer local condition at every place, including those above 2 and infinity.
+
+Over K choose the twist isomorphism i:E^k_K -> E_K satisfying i^tau=-i. The maps (P,Q) -> (P+iQ,P-iQ) and (R,S) -> (R+S,i^(-1)(R-S)) descend to Q-morphisms between E times E^k and Res_(K/Q) E. Their composites are multiplication by 2 on both sides. The descent follows because tau exchanges the two Weil-restriction factors and changes the sign of i. In characteristic zero these maps are isogenies, but only their explicit composites are needed below.
+
+On finite torsion and on the discrete union of 2-power torsion they give equivariant homomorphisms with composites [2]. Global Shapiro identifies cohomology of the induced module with cohomology over K. Semilocal Shapiro identifies its restriction at v with the product over w|v. The same identifications on points carry the Kummer connecting maps to the product of local Kummer maps: this follows directly by choosing division points and subtracting their Galois conjugates. The displayed algebraic maps preserve these local images by functoriality of that subtraction. This includes ramified places and the real place; no unramified-only condition is substituted.
+
+Thus there are maps between Sel_(2^infty)(E/Q) plus Sel_(2^infty)(E^k/Q) and Sel_(2^infty)(E/K), with composites [2]. Their kernels and cokernels are killed by 2: for a cokernel class y, 2y is the image of the opposite composite. Pontryagin duality reverses these maps and preserves their composites [2]. After tensoring the dual Z2-modules with Q2 the maps are inverse up to the invertible scalar 2. Their Q2 dimensions therefore add. This uses neither finite Sha nor an integral direct-sum assertion.
+
+For main16820–32, the separate initial premise s2(E/Q)=1 and the forward theorem applied to the separately supplied nonzero-central-value twist E^k give s2(E^k/Q)=0. The decomposition gives s2(E/K)=1. It does not construct k, prove its nonvanishing, or supply the fresh-label condition. The same algebra explains main3492–3502, without treating that earlier output as its own input.

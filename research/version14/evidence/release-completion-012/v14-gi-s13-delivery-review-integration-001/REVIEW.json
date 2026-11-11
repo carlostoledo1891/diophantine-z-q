@@ -1,0 +1,40 @@
+{
+  "reviewer": "/root/v14_integration_review",
+  "reviewed_at": "2026-11-09T07:55:00.250Z",
+  "decision": "accepted within artifact preservation and delivery-link scope",
+  "target": {
+    "path": "v14-gi-s13-delivery-root-001/MANIFEST.json",
+    "sha256": "878914002d11a1200e23724ecab5874d909737561794869976b4e7f31ad8d74a"
+  },
+  "checks": {
+    "candidate_files_verified": 22,
+    "original_pdf_pages_text_exact": 103,
+    "new_pdf_pages": 106,
+    "all_source_paragraphs_present_ignoring_pdf_whitespace": true,
+    "standalone_manifest_members_verified": 297,
+    "cumulative_retained": 289,
+    "cumulative_excluded": 8,
+    "partition_exact": true,
+    "module_page_offsets_exact": true,
+    "visual_pages_inspected": [
+      1,
+      105,
+      106
+    ],
+    "manuscript_bibliography_lines": [
+      23959,
+      23964
+    ]
+  },
+  "findings": [
+    "The unchanged main bibliography names quartic-local-gi-supplement.pdf; the candidate installs the same106-page bytes there and at GI-SUPPLEMENT.pdf. Its opening guide directs the reader to the later S13 addendum at105–106 and to the exact source/review records.",
+    "The preserved103 original pages have identical extracted text in the new PDF at offset+1. All16 source/PDF page-map entries retain their original hashes and shift by exactly one page. The original merged PDF and prior metadata remain in the history directory.",
+    "The exact e245e0eb source paragraphs appear in the addendum; the source Markdown and aafedda9 scoped review hashes are unchanged. The author-proposal text is explicitly marked as historical, with later bounded acceptance distinguished from release approval.",
+    "Visually inspected all three new pages. Text is legible, page boundaries clean, and no clipping or overlap was observed.",
+    "Independently checked all22 candidate manifest files and all297 standalone ZIP manifest members. The289 retained and8 excluded records form the exact full-manifest partition; README states reduced-copy reconstruction limits and does not claim that reduced bytes recreate every historical PDF."
+  ],
+  "limitations": [
+    "This is an independent artifact/link review, not a new proof of the S13 mathematics, full source-coverage approval, or authorization of the final release.",
+    "Earlier failed check attempts were reviewer-script/environment errors: unavailable Windows Python aliases, default-codepage reading, and an overbroad ZIP suffix match. The final checker uses the bundled interpreter, explicit UTF8, and exact ZIP paths. No candidate bytes changed during review."
+  ]
+}

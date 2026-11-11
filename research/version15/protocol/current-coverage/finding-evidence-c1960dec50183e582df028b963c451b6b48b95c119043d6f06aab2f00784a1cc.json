@@ -1,0 +1,27 @@
+{
+  "schema": "v15-bounded-application-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "f8a1fb8191053d176f85b3823e16a564fc0000a84dc0d088cfb2600f11c24882",
+  "scope": "Exact application003 transformation and current file bindings; not completed contributor eligibility or authenticated packet acceptance.",
+  "checks": {
+    "current_applications": 25,
+    "retained_applications_exact": 162,
+    "manifest_members": 6,
+    "unique_transported_pins_checked_in_placement002": 26,
+    "full_expected_application_objects_equal": true,
+    "recursive_targets_equal": true,
+    "only_dependency_change": "HEIGHT-MODULAR -> SF11 replaces SF11 -> HEIGHT-MODULAR",
+    "authors_preserved": true
+  },
+  "mathematical_repair_review": {
+    "path": "work/v15-sourcefirst-review-001/HEIGHT-MODULAR-REPAIR-DECISION.json",
+    "sha256": "c2c12db5af4f4631ed0f0c4ed9d16cc7fe29e7db7634de31e25981f172078884"
+  },
+  "limitations": [
+    "Final placement packaging has separate review obligations; these application file pins match placement002 bytes.",
+    "Current author arrays remain explicitly incomplete.",
+    "Per-target independent reports, genuine current acknowledgments and actual Git binding remain pending.",
+    "No renewed approval of own ancestral finite transformations."
+  ],
+  "test_note": "Initial reviewer checker compared Python tuples directly to JSON lists and failed. Corrected checker compares serialized JSON values, preserving initial output; exact recursive targets pass."
+}

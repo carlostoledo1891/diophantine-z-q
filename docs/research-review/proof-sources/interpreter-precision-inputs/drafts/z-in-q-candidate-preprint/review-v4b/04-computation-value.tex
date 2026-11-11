@@ -1,0 +1,488 @@
+\section{Exact precision computation and polynomial compilation}\label{sec:compiler}
+Encode a signed integer by
+\[
+ \operatorname{enc}(n)=\begin{cases}2n,&n\ge0,\\-2n-1,&n<0.\end{cases}
+\]
+The five natural inputs decode in the fixed order $(n,\kappa,a,l,j)$.
+The decision predicate rejects unless
+$n\notin\Cset$, $\kappa\ne0$, $a,l\ge1$, and $j=na$.
+For nonzero multiples of $P_0$, $z=-x/y$ is well-defined. Set
+\[
+ z([l]P_0)=u_l+v_ls,\qquad\epsilon_l=|u_l|+|v_l|,
+ \qquad r(a,j)=\tfrac12\Tr_{K_0/\Q}\frac{z([j]P_0)}{z([a]P_0)}.
+\]
+With the fixed constant $A_{\rm ht}^{(0)}=H_6(S_{\rm ht})$, its final
+tests are
+\[
+ |r(a,j)-n|<\epsilon_l,\qquad
+ 4\epsilon_l<4^{-A_{\rm ht}^{(0)}|\kappa F(n)|^{24}}.
+\]
+These are strict tests on exactly computable rationals and integers.
+
+The reference program S21 uses exact quadratic-field arithmetic and capped
+integer operations. The ideal register intermediate representation S22
+computes the same predicate on every five-natural tuple. Its independent
+all-input argument covers normalized signed arithmetic, origin and
+zero-ordinate cases, equal-abscissa addition, and every early rejection.
+Nine exact polynomial identities verify the nonexceptional projective
+formulas and preservation of $Y^2=X^3+AXZ^4$. Scalar loops decrease by
+halving; the precision loop divides by four; factorial iteration is bounded.
+This is a proof about the ideal intermediate representation, rather than
+an assertion that a budgeted simulator always finishes.
+
+For example, if $\epsilon=U/V>0$ with natural $U,V$ and integer $B\ge0$,
+\[
+ 4\epsilon<4^{-B}\quad\Longleftrightarrow\quad
+ 4^B\le\left\lfloor\frac{V-1}{4U}\right\rfloor.
+\]
+This permits a finite cap. For positive $L$, $\sigma(x)=\min(x,L+1)$
+commutes with saturated addition and multiplication. Powers and factorials
+can be computed with this saturation. Capping an exponent is safe for
+base at least two because an exponent above $L$ already makes the value
+exceed $L$. Base zero, base one and exponent zero are separate cases.
+This proves equality with the fixed-height expression without requiring
+its full evaluation when the available precision is too small.
+
+\subsection{The natural polynomial and the power interface}
+The saved precision polynomial has $1\,305\,811$ natural variables,
+the first five being inputs. Its SHA256 is
+\begin{center}\small\ttfamily
+f3e163f5c60b972c98b48647274f956dd7d78428e27ddc0543574a5f18120b8c.
+\end{center}
+Source S23 specializes a fixed universal natural halting polynomial at
+the code of a wrapper. The wrapper inverts four Cantor pairs and then
+runs the unchanged precision machine. Its pairing equations are
+\[
+ 2t_i=(c_i+t_{i+1})(c_i+t_{i+1}+1)+2t_{i+1}\quad(0\le i<4),
+ \qquad t_4=c_4.
+\]
+Their triangular intervals prove unique natural unpairing. The new
+polynomial sums the square of the old halting polynomial and the four
+squared differences above.
+
+The universal compiler packs a finite run of a fixed $m$-state
+increment/decrement/branch program into base-$B$ integers. Acceptance
+means reaching the unique final halt with all registers zero; the fixed
+interpreter includes a finite cleanup stage. Choose
+\[
+ c>0,\quad K=2^c,\quad B=4K>m,\quad T=B^q,\quad
+ F_q=1+B+\cdots+B^q,\quad D=(K-1)F_q,
+\]
+and require every input to be below $K$. For natural integers, say
+$X$ is masked by $Y$ when every set binary bit of $X$ occurs in $Y$.
+Require each register history $R_j$ to be masked by $D$ and satisfy
+$R_j<T$. Each state history $S_i$ is masked by $F_q$, and
+\[
+ \sum_{i=0}^{m-1}S_i=F_q,\qquad S_{\rm halt}=T.
+\]
+Thus register digits are below $K$, terminal register digits are zero,
+and state digits are zero or one. Since $B>m$, the state sum has no
+carries and selects exactly one state at each time.
+
+The nonzero mask $N_j$ is determined by
+\[
+ K N_j=(R_j+D)\mathbin{\mathrm{AND}}(K F_q).
+\]
+Indeed each digit $r+K-1<2K<B$ has its $K$-bit set exactly when
+$r>0$. For a decrement/branch instruction at state $i$ testing
+register $j$, impose
+\[
+ V_i=S_i\mathbin{\mathrm{AND}}N_j,\qquad S_i=V_i+W_i.
+\]
+These are the nonzero and zero branch histories. Form the packed
+increment indicator $A_j$ from states incrementing $j$, the decrement
+indicator $C_j$ from the appropriate $V_i$, and each incoming-state
+indicator $I_i$ from the states or branches directed to $i$.
+They have zero-one digits, since there is just one active instruction
+and branch at each time. The transition equations are
+\[
+ R_j+BC_j=\operatorname{initial}_j+BR_j+BA_j,\qquad
+ S_i=\mathbf1_{i=0}+BI_i.
+\]
+Every register coefficient on either side is at most $K<B$;
+uniqueness of base-$B$ digits gives the initial conditions and each
+exact transition. The possible extra final slot vanishes because
+halt has no outgoing instruction and the terminal registers are zero.
+For $q=0$ the same equations require the initial state already to be
+halt and the inputs to vanish. Conversely, any finite accepting run
+fits after choosing $c$ sufficiently large, and supplies all these
+masks and equations.
+
+\subsection{The literal alpha and power formulas}
+Define $U_n=\alpha_b(n)$ by
+\[
+ U_0=0,\qquad U_1=1,\qquad U_{n+2}=bU_{n+1}-U_n\quad(n\ge0).
+\]
+For $b\ge3$ this recurrence gives
+$0\le U_n<U_{n+1}$ and $U_n\ge n$. For $n\ge1$, the matrix
+\[
+ M=\begin{pmatrix}b&-1\\1&0\end{pmatrix},\qquad
+ M^n=\begin{pmatrix}U_{n+1}&-U_n\\U_n&-U_{n-1}\end{pmatrix}
+\]
+has determinant one. Thus adjacent terms are coprime and
+$U_n^2-bU_nU_{n-1}+U_{n-1}^2=1$.
+Parameter congruence follows directly from the recurrence:
+$b\equiv b'\pmod d$ implies
+$\alpha_b(n)\equiv\alpha_{b'}(n)\pmod d$.
+In particular $\alpha_2(n)=n$. This is parameter congruence,
+not merely congruence between indices.
+
+Every natural solution of $x^2+y^2=1+bxy$, $b>2$, is an unordered
+adjacent pair. To prove this, order it as $X>Y$. If $Y=0$, $X=1$.
+Otherwise $Z=bY-X$ satisfies $XZ=Y^2-1$, hence $0\le Z<Y$,
+and $(Y,Z)$ satisfies the same equation. Descent reaches $(1,0)$;
+reversing the steps generates exactly the adjacent pairs.
+No ordering assumption on the original pair is needed.
+
+For $k>0$, reduction of $M^k$ modulo $U_k$ is the invertible scalar
+$U_{k+1}I$. Dividing an index by $k$ and using strict growth proves
+$U_k\mid U_m$ if and only if $k\mid m$. More precisely, for $m>0$,
+\[
+                    U_k^2\mid U_m\quad\Longleftrightarrow\quad
+                         kU_k\mid m.                           \tag{C.1}
+\]
+For $k=0$ both sides are false. For $k>0$ write $m=kq$ and expand
+$M^{kq}=(U_kM-U_{k-1}I)^q$ modulo $U_k^2$. Its lower-left entry is
+$qU_k(-U_{k-1})^{q-1}$, so coprimality proves (C.1), including $U_k=1$.
+
+For $m>0$ put $v=U_{m+1}-U_{m-1}=\operatorname{tr}(M^m)$.
+Cayley--Hamilton gives $M^{2m}\equiv-I\pmod v$.
+Extend the recurrence by $U_{-j}=-U_j$. Every $n\ge0$ has
+$n=2lm\pm j$ with $0\le j\le m$, and
+$U_n\equiv\pm U_j\pmod v$. If $b\ge4$,
+$v=bU_m-2U_{m-1}>2U_m$.
+
+The actual alpha formula has natural witnesses $r,s,t,u,v,w,x,y$
+and the following fifteen conditions:
+\[
+\begin{gathered}
+ b>3,\quad u^2+t^2=1+but,\quad s^2+r^2=1+bsr,\quad r<s,\quad
+ u^2\mid s,\quad v+2r=bs,\\
+ w\equiv b\pmod v,\quad w\equiv2\pmod u,\quad w>2,\quad
+ x^2+y^2=1+wxy,\\
+ 2X<u,\quad2X<v,\quad x\equiv X\pmod v,\quad
+ 2N<u,\quad x\equiv N\pmod u.
+\end{gathered}                                                   \tag{C.2}
+\]
+A strict inequality $a<b$ is $b=a+1+d$; divisibility is $b=ad$;
+congruence is $A+Mu=B+Mv$, with fresh natural witnesses.
+At zero modulus the last equation says equality, so there is no
+exception hidden in this replacement.
+
+For soundness, the unordered Pell result gives $u=U_k$, $k>0$,
+and $x=\alpha_w(n)$. The ordered pair gives $s=U_m,r=U_{m-1}$,
+$m>0$. By (C.1), $u\mid m$. Parameter congruence gives
+$x\equiv U_n\pmod v$ and $x\equiv n\pmod u$.
+Reflect $n$ to $j\in[0,m]$. Since $2X<v$ and $2U_j<v$,
+the congruence $X\equiv\pm U_j\pmod v$ forces $X=U_j$,
+with the negative case forcing both zero.
+Then $j\le X$, $2j<u$ and $2N<u$ force $N=j$ from
+$N\equiv\pm j\pmod u$. Thus $X=U_N$.
+
+Conversely choose an odd $u=U_k>2U_N$. Such terms are unbounded,
+since adjacent terms are coprime and the sequence grows.
+Set $t=U_{k+1}$, $m=ku$, $s=U_m$, $r=U_{m-1}$ and $v=bs-2r$.
+Equation (C.1) gives $u^2\mid s$, and the required strict bounds hold.
+The moduli $u,v$ are coprime: a common divisor is odd, divides $s$
+and $2r$, hence divides both adjacent terms. CRT gives
+$w\equiv2\pmod u$, $w\equiv b\pmod v$ with $w>2$.
+Take $x=\alpha_w(N)$, $y=\alpha_w(N+1)$.
+Parameter congruence verifies every remaining condition.
+This includes $N=X=0$.
+
+The literal power formula separates $Q=0,R=0,P=1$ and
+$Q=0,R>0,P=0$. For $Q\ge1$ it imposes
+\[
+ a_0=\alpha_{Q+4}(R+1),\quad b=a_0+Q^2+2,\quad
+ m+Q^2+1=bQ,\quad P<m,
+\]
+\[
+ a_1=\alpha_b(R),\quad a_2=\alpha_b(R+1),\quad
+ P+ba_1\equiv Qa_1+a_2\pmod m.                                  \tag{C.3}
+\]
+Induction gives $a_0\ge(Q+3)^R$, so $m>Q^R$ and $m>0$.
+Let $E_R=Q U_R-bU_R+U_{R+1}$. The recurrence and
+$bQ\equiv Q^2+1\pmod m$ give $E_0=1$ and
+$E_{R+1}\equiv QE_R\pmod m$. Thus (C.3) says $P\equiv Q^R\pmod m$.
+Both values lie in $[0,m)$, forcing equality. Conversely equality
+supplies every witness. This includes $R=0$, $Q=1$ and $0^0=1$.
+
+These formulas make the binomial and bit operations polynomial.
+For $B=2^{n+1}$, the equation
+\[
+ (1+B)^n=B^k(Bq+C)+r,\quad C<B,\quad r<B^k
+\]
+selects exactly $\binom nk$, since all its base-$B$ coefficients
+are below $B$, including zero for $k>n$.
+The identity
+$(1+t)^n=\prod_{i:\,\text{bit}_i(n)=1}(1+t^{2^i})$ over $\F_2$
+makes odd binomial coefficients equivalent to bit inclusion.
+Bit disjointness of $a,b$ is equivalent to inclusion of $a$ in $a+b$:
+at the least shared bit there is no incoming carry and that bit
+is cleared. Finally $x=z+a,y=z+b$ with $z,a,b$ pairwise bit-disjoint
+says exactly $z=x\mathbin{\rm AND}y$.
+
+\subsection{Interpreter, lowering and five-input specialization}
+The universal program numbering is $e+1=2^w(2D+1)$.
+At $w=0$ it halts. Otherwise the four base-$2^w$ digits at positions
+$4p,\ldots,4p+3$ give the opcode, register and two targets at state $p$.
+Opcode one increments, opcode two decrements or takes its zero branch;
+every other opcode halts. Missing digits are zero, so decoding is total.
+
+The interpreter stores a finite tape as
+$0$ or $\operatorname{cons}(h,t)=2^h(2t+1)$.
+Repeated halving decodes a nonempty head and tail; the tail is smaller
+than the code. To update a register, save the finite reversed prefix,
+replace the entry and restore the prefix. Absent entries are zero.
+The reserved jump register remains zero. Copies restore their source;
+aliased addition snapshots its operand before overwriting it.
+Division maintains $x=qy+r$ and subtracts only when $r\ge y$;
+the interpreter's divisors are at least two.
+These invariants prove that one interpreter loop executes exactly one
+decoded instruction, with finite work. A simulated halt enters cleanup
+and clears all registers. An infinite simulation never enters cleanup.
+Thus its all-zero halt is equivalent to virtual halting, without
+requiring the virtual final tape itself to be zero.
+
+The precision IR uses normalized signed pairs for integer arithmetic
+and pairs over the basis $1,\sqrt2$ for field arithmetic.
+Norm zero implies the field element is zero: after clearing
+denominators, a primitive solution of $a^2=2b^2$ would have both
+entries even. Every division is guarded by that exact test.
+The Jacobian point formulas satisfy the curve equation and the affine
+chord or tangent formulas after multiplying denominators.
+Equal abscissas split into doubling and opposite-point branches;
+zero ordinate doubles to the identity. The fixed projective point
+is the same affine $P_0$. These are polynomial identities, independent
+of the generator theorem.
+
+The scalar loop halves its remaining count. The precision loop divides
+its remainder by four. The capped arithmetic computes exactly
+$\min(x,L+1)$; zero bases, unit bases and zero exponents are separate.
+For bases at least two an exponent exceeding $L$ already exceeds the
+cap. Thus the ideal IR terminates and agrees with the stated rational
+predicate on all five natural inputs, including every early rejection.
+
+Each primitive lowering uses fresh auxiliary registers, snapshots
+overlapping sources, and preserves the live-register map at the end
+of each finite block. Saturating decrement gives natural subtraction,
+and repeated addition gives multiplication. All variable divisions
+are guarded. Induction on completed loop iterations proves the same
+claim for loops. Acceptance enters cleanup; rejection enters a
+permanent self-loop. Hence the primitive machine halts exactly on
+acceptance, although the ideal decision program is total.
+
+For $\operatorname{pair}(a,b)=(a+b)(a+b+1)/2+b$, unpairing maintains
+$\text{remainder}=\text{input}-s(s+1)/2$ and subtracts $s+1$
+while $s<\text{remainder}$. At exit
+$0\le\text{remainder}\le s$, so $b=\text{remainder}$, $a=s-b$.
+Four repetitions put the five codes into registers zero through four.
+Fresh scratch lies above the old register range and is cleared;
+old work registers remain zero. Relocating every target by the prefix
+length therefore preserves the precision machine.
+
+The polynomial specialization fixes the universal program input to
+this wrapper code, maps the old packed input to variable five, and
+maps every old variable $i\ge2$ and private-block start by $i\mapsto i+7$.
+The four pairing variables occupy five through eight, disjoint from
+the five inputs. The appended four squared equations force their
+unique Cantor values. Thus, for the exact saved polynomial $C$,
+\[
+ \forall\mathbf c\in\N^5,\qquad
+ \exists\mathbf z\in\N^{1305806}\ C(\mathbf c,\mathbf z)=0
+ \quad\Longleftrightarrow\quad
+        \operatorname{accepts\_naturals}(\mathbf c)=\mathrm{True}. \tag{C.4}
+\]
+The natural compiler proof has no height, restricted-converse or
+rational-model premise. Its use of the height expression concerns
+only computation of that fixed integer expression.
+
+\subsection{Translation to point codes}
+Apply (C.4) using the exact signed index model. Induction on the actual
+source DAG gives each node the code of its signed integer value.
+Natural guards constrain source variables, not intermediate sums or
+products. Raw addition receives canonical codes; globally typed
+multiplication justifies the natural guards. Fixed generator equations
+and scalar templates supply constants.
+
+The power-value recipe has three signed code inputs, seventy-nine
+private natural witnesses, and an output code for the value of the
+power-template polynomial. That value is not independently required
+to vanish. Its saved root equality is $[17751579,15]$.
+The precision parent has $54056$ explicit variables and $15845$
+disjoint private blocks of seventy-nine variables. No parent variable
+node accesses a private coordinate. Replacing each block by its
+private power-value call therefore preserves the full existential
+assignment. Only the final parent root is equated to the identity.
+
+At each primitive formula, equality is a difference, conjunction is
+a sum of squares, and disjunction is a product. A topological induction,
+including the globally conjoined fixed equations, proves equality of
+polynomial values under substitution, not merely equisatisfiability
+of an unrelated formula. This is the required link to the saved AST.
+
+\section{A variable-shift relation for ordinary values}\label{sec:bridge}
+We prove the central conditional deduction in full. Assume the exact
+index model, the compiled precision relation, the height theorem and
+$\mathsf{PC}$. Capital letters below denote five-coordinate point codes;
+their lower-case indices are ordinary integers. The external variable
+$t$ is any rational number.
+
+\subsection{Approximation for every fixed shift}
+Define $\Close(N,\mathcal K,t)$ by choosing $A,L,J$, linking all five
+signed codes to precision inputs in the order $(n,\kappa,a,l,j)$, and
+imposing $|t-r(a,j)|<\epsilon_l$ on those same coordinates. Put
+\[
+ B(n,\kappa)=H_6(S_{\rm ht})|\kappa F(n)|^{24}.
+\]
+The precision contract gives
+\begin{align}
+ \Close(\iota(n),\iota(\kappa),t)&\Longrightarrow
+                  |t-n|<e^{-B(n,\kappa)},\label{eq:close-sound}\\
+ \Close(\iota(n),\iota(\kappa),n)&\quad\text{for every }
+                  n\notin\Cset,\ \kappa\ne0.\label{eq:close-complete}
+\end{align}
+The first follows from $|t-n|<2\epsilon_l<4^{-B}/2<e^{-B}$.
+For the second, positive multiples of $P_0$ approach the identity
+simultaneously in the compact group $E(\mathbf R)\times E(\mathbf R)$.
+This follows, for instance, by partitioning the compact closure of the
+cyclic subgroup into arbitrarily small neighborhoods and subtracting
+two sufficiently close multiples. If the resulting positive differences
+were bounded, a fixed nonzero multiple would be the identity; infinite
+order excludes this. Choose $l$ first to make the positive $\epsilon_l$
+small enough. Since the derivative of $[n]$ at the identity is $n$,
+$r(a,na)\to n$ along positive multiples $a$ approaching it. Choose such
+an $a$ and put $j=na$. This works for every already fixed nonzero shift
+$\kappa$, regardless of its size.
+
+\subsection{The six local tests}
+For $N=\iota(n)$, $\mathcal K=\iota(\kappa)$, form the code for
+$\kappa n$, choose $H=\iota(h)$, $U=\iota(s_0)$, and put
+$V_0=H-\mathcal K$, $V_1=U-\iota(\kappa n)$.
+Require $\kappa\ne0$, $H,V_0\ne O$. Define $w(Q)=1/x(Q)$ for
+$Q\ne O$, $w(O)=0$. For $t\notin\Cset$ use
+\begin{align*}
+ D_1&=w(H),&D_2&=w(U),&D_3&=\sigma w(V_0),&D_4&=\sigma w(V_1),\\
+ D_5&=z(U)/z(H)-t,&D_6&=\sigma(z(V_1)/z(V_0))-t.
+\end{align*}
+Here $\sigma$ is conjugation in $K_0$. Choose $\eta,q\in\Q$ and impose
+\begin{align*}
+ \eta^2&=1,&R_0&=\eta2730^6F(t),&a_0&=1-R_0q^2\ne0,\\
+ R&=R_0a_0^2,&C_j&=D_j/F(t),&W&=\prod_{j=1}^6(1+RC_j^2)\ne0,\\
+ \Theta&=\Tr_{K_0/\Q}(W^{-1})\ne0,&B_{\rm pole}&=R/\Theta^2,
+ &\Phi(B_{\rm pole})&.
+\end{align*}
+Call this relation $\Test(N,\mathcal K,t)$. All quotients are guarded
+polynomially. There is one common denominator $F(t)$, one product $W$,
+one trace and one pole instance.
+
+\begin{lemma}[Divisibility]\label{lem:test}
+If $\Test(\iota(n),\iota(\kappa),t)$ holds, then
+$M_{S_{\rm ht}}(t)\mid\kappa F(n)$.
+\end{lemma}
+\begin{proof}
+Let $p\mid M_{S_{\rm ht}}(t)$. Exactly one $c\in\Cset$ has
+$\delta=v_p(t-c)>0$ odd. The contact differences are units, so
+$v_p(F(t))=\delta$; the field is unramified at $p$. Put $b=v_p(a_0)$.
+If $q=0$, then $b=0$. Otherwise $\delta+2v_p(q)$ is odd and
+nonzero, so $b=\min(0,\delta+2v_p(q))\le0$. In either case
+$\alpha=v_p(R)=\delta+2b$ is odd. At each place above $p$,
+\[
+ v(1+RC_j^2)=\min(0,\alpha+2(v(D_j)-\delta)).
+\]
+Let $\lambda=\max_{v\mid p}v(W)\le0$. Then
+$v_p(\Theta)\ge-\lambda\ge0$. The pole input has odd valuation
+$\alpha-2v_p(\Theta)$, which is positive by Lemma~\ref{lem:pole}.
+Therefore $\alpha>0$ and $\lambda> -\alpha/2$.
+
+At a place attaining $\lambda$, each nonpositive factor valuation is
+at least $\lambda$. Consequently
+\[
+ v(D_j)\ge\delta-3\alpha/4=\delta/4-3b/2>0
+ \quad(1\le j\le6).
+\]
+Integral valuations are at least one, at the same place for all tests.
+The first four put $H,U$ in one formal group and $V_0,V_1$ in the
+conjugate formal group. At the identity we set both $z(O)=0$ and
+$\log(O)=0$; thus the cases $U=O$ and $V_1=O$ obey the same ratio
+identities below. Their denominators are nonzero by the guards on
+$H$ and $V_0$. For a nonzero point in either formal group,
+\[
+ \log(Q)=z(Q)(1+e_Q),\qquad v(e_Q)\ge1.
+\]
+The invariant differential is integral, and integration loses at most
+$v_p(r)$ in degree $r$; for $r\ge2$,
+$(r-1)v(z)-v_p(r)\ge1$.
+The relation $[s_0]H=[h]U$ gives
+$\log(U)/\log(H)=s_0/h$. The fifth test makes this integral and
+congruent to $t$ modulo $p$. Likewise the sixth gives
+$(s_0-\kappa n)/(h-\kappa)\equiv t$.
+Multiplying by the integer denominators and subtracting yields
+$v_p(\kappa(n-t))\ge1$. Since $t\equiv c$, we get
+$p\mid\kappa(n-c)$, hence $p\mid\kappa F(n)$. The squarefree
+product divides as asserted. No unit assumption on $\kappa$ was used.
+\end{proof}
+
+\begin{lemma}[One suitable shift]\label{lem:test-complete}
+Assume $\mathsf{PC}$. For every $n\in\Z\setminus\Cset$ there is
+$\kappa\ne0$ with $\Test(\iota(n),\iota(\kappa),n)$.
+\end{lemma}
+\begin{proof}
+Choose the sign so $R_0=\eta2730^6F(n)>0$ and let $S'$ be its finite
+prime support. Each sufficiently small local formal neighborhood has
+finite index in the compact local group. A positive common multiple
+of the quotient orders gives $\kappa$ with $[\kappa]P_0$ in every
+chosen neighborhood. Take
+\[
+ H=[2\kappa]P_0,\quad U=[2\kappa n]P_0,\quad
+ V_0=[\kappa]P_0,\quad V_1=[\kappa n]P_0.
+\]
+The formal parameter and the derivative of $[n]$ make each $C_j$
+integral above $S'$ after sufficiently shrinking the neighborhoods.
+Infinite order preserves the nonzero guards.
+
+Choose rational $q$ integral at $S'$ and arbitrarily close to
+$1/\sqrt{R_0}$ in $\mathbf R$, without equality. Denominators
+$R_0m+1$ with nearest integer numerators give such choices, adjusting
+by one if equality occurs. At $S'$, $a_0$ is a unit and
+$W\equiv1$, $\Theta\equiv2$ modulo $p^{v_p(R_0)}$.
+Integral trace justifies this also at the ramified place two.
+The pole input has valuation at least four at two and at least six
+at the other primes of $S_0$. Outside $S'$, its valuation is
+$2v_p(a_0)-2v_p(\Theta)$ and is even, so its reduced denominator is
+a square. In both real embeddings, $R$ tends to zero positively,
+$W\to1$ and $\Theta\to2$. All guards hold and
+$0<B_{\rm pole}<1/2$ for a sufficiently close choice.
+Hypothesis~\ref{hyp:PC} supplies the pole witnesses.
+\end{proof}
+
+\subsection{Exact ordinary value}
+Define $\Val(N,t)$ by membership of $N$ and the disjunction
+\[
+ \bigvee_{c\in\Cset}(N=\iota(c)\wedge t=c)
+ \quad\vee\quad
+ \exists\mathcal K\,
+ (\Close(N,\mathcal K,t)\wedge\Test(N,\mathcal K,t)).
+\]
+The same five coordinates $\mathcal K$ are used in both calls.
+In an accepting main branch $n\notin\Cset$, $\kappa\ne0$, and
+Lemma~\ref{lem:test} and the height estimate imply
+\[
+ h(t)\le H_6(S_{\rm ht})|\kappa F(n)|^{24}=B(n,\kappa).
+\]
+For $t=a/b\ne n$ in reduced form, $|a-nb|\ge1$, hence
+\[
+ |t-n|\ge1/b\ge e^{-h(t)}\ge e^{-B(n,\kappa)},
+\]
+contradicting~\eqref{eq:close-sound}. Thus $t=n$.
+Conversely choose $\kappa$ by Lemma~\ref{lem:test-complete}, then use
+\eqref{eq:close-complete} for that same shift. Private witness blocks
+are disjoint, so the two calls can be satisfied simultaneously.
+The six remaining integers have exactly their displayed branches.
+
+Therefore $\Val(\iota(n),t)$ is exactly the graph $t=n$.
+Existentially quantifying $N$ gives ordinary $\Z$ in $\Q$.
+S01 and S16 multiply the exception and main-branch polynomials and
+conjoin membership by a sum of squares. Under $\mathsf B$ this is
+the saved root $P_*$. This proves the zero-set part of
+Theorem~\ref{thm:conditional}.

@@ -1,0 +1,21 @@
+{
+  "schema": "v15-author-event-serialization-review/v1",
+  "decision": "accepted_unsigned_serialization_scope",
+  "subject_sha256": "4bc9c51ed0edda852059e1d40b9c2c09b3184f3c64f6520280ef0504f366a265",
+  "checks": {
+    "members": 12,
+    "required_author_runs": 37,
+    "retained_exact_events": 14,
+    "new_original_observations": 23,
+    "original_record_ranges_rehashed": 103,
+    "context_session_model_fields_match": true,
+    "operator_apply_event_exit": 0,
+    "no_freezes_or_reports": true
+  },
+  "scope": "Mechanical event serialization and original-record binding only. My own ancestral operations retain the disjoint arithmetic provenance review c4a18213; this is not self-review of their mathematics.",
+  "conditions": [
+    "Actual destination state must be read before selecting retained versus new events; never append duplicate run IDs blindly.",
+    "These are unsigned host-configured observations, not provider model attestations or current target acknowledgments.",
+    "Final contributor arrays, target hashes, reviewer eligibility and actual capture remain separate."
+  ]
+}

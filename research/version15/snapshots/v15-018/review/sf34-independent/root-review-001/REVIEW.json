@@ -1,0 +1,47 @@
+{
+  "schema": "bounded-root-chart-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "f404e61a5dcfa435fb25263fafc530fe7812de575db2ffafd54c451d07fb2358",
+  "typing_sha256": "6076e9190c054f12d6614e557997d6f6a54ac86b9fe05cb51e4a8ad73aab407b",
+  "reviewer": {
+    "agent": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "task": "/root/v14_arithmetic_review",
+    "authorship_disclosure": "Not author of original Jose circuit or this dictionary/proof. Earlier V15 integration was reviewer-authored; its transcription remains reserved to sourcefirst."
+  },
+  "scope": "Root/common-H/biquadratic component identities and rational chart equivalence, with explicit fixed-subtraction and global arithmetic prerequisites retained.",
+  "verification": {
+    "all_file_source_and_six_excerpt_pins_match": true,
+    "independent_checker_exit": 0,
+    "exact_component_rows": 78,
+    "generic_polynomial_identities": 3,
+    "separate_reviewer_root_H_component_checks": 18
+  },
+  "reasoning": [
+    "All four root charts use ordinary a,b components; c has doubled imaginary component and root3 additionally doubled real component. Reverse storage divides only by fixed rational constants.",
+    "a=0 contradicts b²=-D at real places. b=0 would imply Norm(a)^2=7. Thus a,c are nonzero, and c,D,d,e are totally positive where required.",
+    "The three polynomial identities prove both directions between the five-field biquadratic system and original reciprocal chart; W=rg follows by division by c=a². No division by r,g or any test value occurs.",
+    "J=0 or k=0 would give a rational fourth power equal1/49 under norm, impossible. This supports regular parameter interpretation without discarding r=0 or g=0.",
+    "The r=0 and g=0 substitutions agree with the displayed O/±Q cases. The original dense-domain group-law equality and regularity are explicitly retained for the point interpretation.",
+    "H has chi*f=1 and S_H²=chi-D*f. H may have S_H=0 at this stage; the later forced149 exclusion is needed before dividing by z(H).",
+    "The alternate-ratio component checks verify the exact cleared equation. N_H,D_H nonvanishing and the function-field fixed-subtraction identity remain separate prerequisites, not consequences of clearing denominators."
+  ],
+  "remaining": [
+    "Fixed-subtraction function-field certificate and excluded-H scalar argument retain distinct scopes.",
+    "Root subgroup/generator and global completeness claims are not newly proved here.",
+    "Residual scalar/contact/pole row groups still require their own exact typing reconciliation; this is not wholeSF34 acceptance."
+  ],
+  "evidence": [
+    {
+      "path": "check.py",
+      "sha256": "7511578f48eee4994a070882463224a95f6de722e4c838fdfaa56ad56f9eaee5"
+    },
+    {
+      "path": "CHECKS.json",
+      "sha256": "a147c2131c271ba58db3e0739651a226767ed164080e3ee36d108f0e93b1f5ad"
+    },
+    {
+      "path": "TEST-OUTPUT.txt",
+      "sha256": "b3d07f288d26ce1ac8ca15e7b69cb98c5325b08399f260981f195cade7cfa4a5"
+    }
+  ]
+}

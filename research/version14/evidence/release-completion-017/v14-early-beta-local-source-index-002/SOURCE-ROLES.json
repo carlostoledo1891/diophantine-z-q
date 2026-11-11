@@ -1,0 +1,312 @@
+[
+  {
+    "id": "EARLY-BETA-SOURCE-SERRE",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1483,
+      "end_line": 1499,
+      "excerpt_sha256": "83ac8d9dbb89b94110bd47c69092a04ba2ffc579b1063be30f41d47dd0eb688b"
+    },
+    "available_assertion": {
+      "statement": "Upper ramification respects quotients; local reciprocity identifies unit filtrations with upper groups; abelian conductors are last break plus one; Artin conductor is the lower-ramification weighted codimension sum.",
+      "objects": "Finite Galois extensions of nonarchimedean local fields, their ramification groups, and finite-wild-image representations.",
+      "hypotheses": "Use the stated Galois tower and continuous characteristic-zero representation with finite wild image.",
+      "quantifiers": "Every such extension and ramification index.",
+      "parameter_range": "Upper groups at nonnegative indices and the corresponding unit filtration.",
+      "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+      "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+      "normalizations": "Serre ChapterVI upper numbering; Herbrand phi and inversepsi; conductor includes tame codimension.",
+      "exceptional_cases": "Subgroup psi rule and4a² bound are derived locally, not copied from the source. Infinite tame monodromy is not included in a finite wild sum.",
+      "limit_order": "Define lowergroups, pass to uppernumbering, then change variables for conductor."
+    },
+    "source_statement": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+        "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+      },
+      "start_line": 3,
+      "end_line": 4,
+      "excerpt_sha256": "4cade7ff6ec6ee4e3194b6c0692702a28d3d6c999efa6da3393a939550a877f4"
+    },
+    "publication": {
+      "title": "Local Class Field Theory",
+      "authors": "J.-P. Serre",
+      "venue": "Cassels–Frohlich, Algebraic Number Theory(1967), ChapterVI,128–161",
+      "authoritative_version": "Inspected extract e0367b25a022eb27ec220e3c15b474a94fb96d70a6bb89b77f4a02c2231950fe",
+      "locator": "§4.1 pp155–157, §4.2 Proposition1 p157, §4.3 pp158–159",
+      "corrections": "Not Local Fields1979; derivativeproduct/subgroup formula explicitly local."
+    },
+    "derivation": "Apply the different formula and Herbrand change of numbering to the actual normal closures, retaining the degree bound a!; the displayed derivative valuation argument and integration supply the numerical4a^2 estimate.",
+    "retained_profile_id": "ACTIVE-BETA-LOCAL-SERRE",
+    "retained_profile_sha256": "91f75337717b130cdc7493169dc0f764df0d3d29aac87ff70f17c8bfb7af8692",
+    "boundary": "The existing outgoing beta bound is provenance, not an input to its own proof. Actual A/L, beta squared equals chi, field degrees, cochain and later conductor/level identification remain separate."
+  },
+  {
+    "id": "EARLY-BETA-SOURCE-TORSION",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1501,
+      "end_line": 1508,
+      "excerpt_sha256": "e5614eab403b4b3452e96c8055abb187dc486c002ecbb73fa42dfebccfffcff8"
+    },
+    "available_assertion": {
+      "statement": "Prime-to-residue-characteristic n-torsion defined over an unramified extension, n>=3, implies semistable reduction; semistable inertia acts unipotently on V_ell for ell!=p.",
+      "objects": "An abelian variety over a discretely valued field and its torsion/Tate module.",
+      "hypotheses": "n>=3, n prime to residue characteristic; unramified field of definition of all n-torsion.",
+      "quantifiers": "Every abelian variety and integern satisfying the theorem.",
+      "parameter_range": "Nonarchimedean local fields of characteristic0 here.",
+      "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+      "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+      "normalizations": "The printedn>=3 includesn3; Tate coefficientprimeell differs fromp.",
+      "exceptional_cases": "Semistable does not mean good; do not apply withn divisiblebyp.",
+      "limit_order": "Check torsion premise then semistability and inertia criterion."
+    },
+    "source_statement": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+        "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+      },
+      "start_line": 9,
+      "end_line": 10,
+      "excerpt_sha256": "e5b781a5ad48d9cab510d9848c50d8de19f15f67a004f0564dd3c3dde57b5f6b"
+    },
+    "publication": {
+      "title": "Semistable reduction and torsion subgroups of abelian varieties",
+      "authors": "A. Silverberg and Yu. G. Zarhin",
+      "venue": "Annales de l Institut Fourier45(1995),403–420",
+      "authoritative_version": "FinalPDFfc62ba1c9d1315a0c441a3dd7de46a254f379289e630c407a3336c0230d91052",
+      "locator": "Theorem3.5 p406 and Theorem3.3 p405",
+      "corrections": "Printedn>=3; text-extractionn>3 is not used."
+    },
+    "derivation": "Use prime-to-p full3-torsion, or5-torsion atp3, to obtain semistability of the original A. Its unipotent inertia action has trivial wild part on prime-to-p Tate modules; combine with the preceding absolute-break estimate.",
+    "retained_profile_id": "ACTIVE-BETA-LOCAL-TORSION",
+    "retained_profile_sha256": "128705f6bcf4fd8e678676882f4c96595118ca09f24ad941d9cd1b4d71e43615",
+    "boundary": "The existing outgoing beta bound is provenance, not an input to its own proof. Actual A/L, beta squared equals chi, field degrees, cochain and later conductor/level identification remain separate."
+  },
+  {
+    "id": "EARLY-BETA-SOURCE-NORM",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1512,
+      "end_line": 1519,
+      "excerpt_sha256": "5cea52af683574924c0c46a1ffd4904786768ba28a153cbbba4c1936f1da70db"
+    },
+    "available_assertion": {
+      "statement": "In a finite local Galois tower M/F/K, local Artin maps commute with norm F*->K* and the inclusion-induced map Gal(M/F)^ab->Gal(M/K)^ab.",
+      "objects": "Finite local Galois tower and localreciprocity.",
+      "hypotheses": "M/K finiteGalois; F intermediate.",
+      "quantifiers": "Everyx inF*.",
+      "parameter_range": "Localfields and continuous finite quotient characters.",
+      "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+      "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+      "normalizations": "Arithmetic localArtin convention on both sides; first diagram ofIII Lemma3.2.",
+      "exceptional_cases": "Authornotes; displayedproof markedTo beadded, precedingIII3.1 givesRes/Cor compatibility. GlobalV3.3 is not thislocaldiagram.",
+      "limit_order": "Fix tower and projectlocalArtin maps to itsfinitequotients."
+    },
+    "source_statement": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+        "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+      },
+      "start_line": 15,
+      "end_line": 16,
+      "excerpt_sha256": "8e5e065f022785b41d8ee9a7293fc2337da52d0ea0f9042f0c943c01150c0377"
+    },
+    "publication": {
+      "title": "Class Field Theory",
+      "authors": "J.S. Milne",
+      "venue": "Author course notesv4.03,6August2020",
+      "authoritative_version": "Pinned50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+      "locator": "ChapterIII Lemma3.2 p107, first normdiagram; precedingTheorem3.1",
+      "corrections": "Corrects localnorm citation from globalVProp3.3p157; preserves authornotes status and omittedproof annotation."
+    },
+    "derivation": "Use the actual finite character field compositum and local Artin norm compatibility. The mod4 local character has order at most two on units, so beta^4 is trivial there. The separately stated multiplicative formal logarithm gives the fourth-power depth3e+1.",
+    "retained_profile_id": "ACTIVE-BETA-LOCAL-NORM",
+    "retained_profile_sha256": "e13667744d671dbc9a15232c315849fc83e8507b89e7807f5ee27038d1811ab8",
+    "boundary": "The existing outgoing beta bound is provenance, not an input to its own proof. Actual A/L, beta squared equals chi, field degrees, cochain and later conductor/level identification remain separate."
+  },
+  {
+    "id": "BETA-MULTIPLICATIVE-FORMAL-LOG",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1515,
+      "end_line": 1518,
+      "excerpt_sha256": "e75a516c6a03e96104fccd3f77209e6f2c45cdaa5f855382de2fd95e34a3a3af"
+    },
+    "source": {
+      "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+      "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+      "locator": "ChapterIV Theorem6.4(a)–(b), printed132 (PDF150)",
+      "source_read": "Direct text and rendered published page read. The theorem is for a formal group over a complete characteristic-zero DVR; the chapter title does not restrict it to elliptic formal groups."
+    },
+    "available": {
+      "statement": "For a formal group F over the valuation ring R of a characteristic-zero complete discretely valued field K with normalized v, logarithm is a homomorphism F(M)→K; for integer r>v(p)/(p-1), log is an isomorphism F(M^r)→(M^r,+), with inverse formal exponential.",
+      "hypotheses": "v(K*)=Z; v(p)>0; R is the valuation ring and M its maximal ideal; F is the specified formal group over R.",
+      "parameter_range": "Integer r strictly greater than v(p)/(p-1).",
+      "normalizations": "The formal logarithm has linear coefficient1 and the additive target uses the same ideal M^r.",
+      "limit_order": "Choose the field, formal group and strict depth; then use the convergent mutually inverse logarithm and exponential."
+    },
+    "needed": "For the actual finite dyadic extension F/Q2, with e=v_F(2), logarithm identifies U_F^(e+1)=1+m_F^(e+1) with m_F^(e+1), and (U_F^(e+1))^4=U_F^(3e+1).",
+    "derivation": "Take the formal multiplicative law G(X,Y)=X+Y+XY over O_F; X↦1+X identifies G(m^r) with U_F^r. F/Q2 is complete of characteristic0 and normalized v_F, so p=2 gives threshold e. Both e+1 and3e+1 exceed e. The source supplies mutually inverse logarithm/exponential at both depths. The logarithm sends fourth powers to multiplication by4. Since v_F(4)=2e, multiplication by4 maps m^(e+1) bijectively onto m^(3e+1). Conversely, for y in U^(3e+1), exp(log(y)/4) lies in U^(e+1) and has fourth power y by injectivity of log. Thus the displayed equality is exact, not just an inclusion.",
+    "premises": [
+      "The same finite local field F=L_v and normalized e=v_F(2) used in the beta local proof.",
+      "No elliptic curve or good-reduction hypothesis is needed for this G_m application."
+    ],
+    "boundary": "The beta^4-on-units assertion, conductor support, e<=D and Herbrand change of numbering are separate inputs. No assertion at the excluded threshold r=e or arbitrary residue characteristic is imported into this application."
+  },
+  {
+    "id": "BETA-ABSOLUTE-SUBGROUP-TRANSFER",
+    "role": "published_inputs_with_retained_local_derivation",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1520,
+      "end_line": 1531,
+      "excerpt_sha256": "0c9bf7065515c64101c30bc6fe6d0f329332171111c2c73a96cd9739fd3e3b55"
+    },
+    "source_statement": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+        "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+      },
+      "start_line": 3,
+      "end_line": 4,
+      "excerpt_sha256": "4cade7ff6ec6ee4e3194b6c0692702a28d3d6c999efa6da3393a939550a877f4"
+    },
+    "publication": {
+      "title": "Local Class Field Theory",
+      "authors": "J.-P. Serre",
+      "venue": "Cassels–Frohlich, Algebraic Number Theory(1967), ChapterVI,128–161",
+      "authoritative_version": "Inspected extract e0367b25a022eb27ec220e3c15b474a94fb96d70a6bb89b77f4a02c2231950fe",
+      "locator": "§4.1 pp155–157, §4.2 Proposition1 p157, §4.3 pp158–159",
+      "corrections": "Not Local Fields1979; derivativeproduct/subgroup formula explicitly local."
+    },
+    "available_assertion": {
+      "statement": "Upper ramification respects quotients; local reciprocity identifies unit filtrations with upper groups; abelian conductors are last break plus one; Artin conductor is the lower-ramification weighted codimension sum.",
+      "objects": "Finite Galois extensions of nonarchimedean local fields, their ramification groups, and finite-wild-image representations.",
+      "hypotheses": "Use the stated Galois tower and continuous characteristic-zero representation with finite wild image.",
+      "quantifiers": "Every such extension and ramification index.",
+      "parameter_range": "Upper groups at nonnegative indices and the corresponding unit filtration.",
+      "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+      "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+      "normalizations": "Serre ChapterVI upper numbering; Herbrand phi and inversepsi; conductor includes tame codimension.",
+      "exceptional_cases": "Subgroup psi rule and4a² bound are derived locally, not copied from the source. Infinite tame monodromy is not included in a finite wild sum.",
+      "limit_order": "Define lowergroups, pass to uppernumbering, then change variables for conductor."
+    },
+    "needed": "Transfer beta triviality above relative break3e over F=L_v to absolute upper groups over Q2 beyond max(4D²,3e), with no factor [Lprime:Q].",
+    "derivation": "F/Q2 is Galois because L/Q is Galois. In a finite Galois tower M/F/K write G=Gal(M/K), H=Gal(M/F), Q=G/H. The lower definitions give H_t=H intersect G_t. The upper quotient theorem gives |Q^u|=|G^u|/|H intersect G^u|; differentiating psi_Q(phi_G(t)) gives |H_t|/|H_0|, the derivative of phi_H, and both vanish at0. Hence H intersect G^u=H^(psi_Q(u)); pass to finite quotients for the absolute group. Since psi_Q has derivative at least1 for u>=0, psi_Q(u)>=u. The already established normal-closure estimate bounds the last upper break of F/Q2 by4D²; thus G_Q2^u lies in G_F for u>4D². For u also>3e its subgroup index psi(u)>3e, so the previously established beta triviality applies. Since e<=D and U0=4(DG0)², max(4D²,3e)<=U0.",
+    "incoming": [
+      "L/Q Galois and [L:Q]<=D.",
+      "Relative beta upper break<=3e from local Artin norm compatibility and the separately supplied G_m logarithm.",
+      "Earlier degree/normal-closure4a² bound."
+    ],
+    "retained_derivation": {
+      "path": "work/theorem-application-audit-20261105/parallel-009/galois-height/REPORT.md",
+      "sha256": "a1189fce26bd21a7a0c474c75c1815ad7fc3822dcfb47d3107245b7841369c0f",
+      "start_line": 64,
+      "end_line": 90,
+      "excerpt_sha256": "fd1de6321deeb5b1ed443034e24e673d43850b83494fb6bc4e2aaacf5fec5482"
+    },
+    "boundary": "Not a theorem for an arbitrary non-Galois F/K; beta and actual field are fixed first. Does not establish the cochain or relative beta bound."
+  },
+  {
+    "id": "BETA-ARTIN-CONDUCTOR-BOUND",
+    "role": "published_theorem_application_with_local_integral",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1532,
+      "end_line": 1538,
+      "excerpt_sha256": "9331025a5ce00b21557d25a15aad43104ea701e6dd8bd48ce33e8f2852f1127f"
+    },
+    "source_statement": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+        "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+      },
+      "start_line": 3,
+      "end_line": 4,
+      "excerpt_sha256": "4cade7ff6ec6ee4e3194b6c0692702a28d3d6c999efa6da3393a939550a877f4"
+    },
+    "publication": {
+      "title": "Local Class Field Theory",
+      "authors": "J.-P. Serre",
+      "venue": "Cassels–Frohlich, Algebraic Number Theory(1967), ChapterVI,128–161",
+      "authoritative_version": "Inspected extract e0367b25a022eb27ec220e3c15b474a94fb96d70a6bb89b77f4a02c2231950fe",
+      "locator": "§4.1 pp155–157, §4.2 Proposition1 p157, §4.3 pp158–159",
+      "corrections": "Not Local Fields1979; derivativeproduct/subgroup formula explicitly local."
+    },
+    "available_assertion": {
+      "statement": "Upper ramification respects quotients; local reciprocity identifies unit filtrations with upper groups; abelian conductors are last break plus one; Artin conductor is the lower-ramification weighted codimension sum.",
+      "objects": "Finite Galois extensions of nonarchimedean local fields, their ramification groups, and finite-wild-image representations.",
+      "hypotheses": "Use the stated Galois tower and continuous characteristic-zero representation with finite wild image.",
+      "quantifiers": "Every such extension and ramification index.",
+      "parameter_range": "Upper groups at nonnegative indices and the corresponding unit filtration.",
+      "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+      "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+      "normalizations": "Serre ChapterVI upper numbering; Herbrand phi and inversepsi; conductor includes tame codimension.",
+      "exceptional_cases": "Subgroup psi rule and4a² bound are derived locally, not copied from the source. Infinite tame monodromy is not included in a finite wild sum.",
+      "limit_order": "Define lowergroups, pass to uppernumbering, then change variables for conductor."
+    },
+    "needed": "The actual two-dimensional r_ell has conductor exponent at most2+2U0<=E0, and at most2 at p>R.",
+    "derivation": "For ell!=p, the Artin conductor equals codim(V^I)+Swan(V). The lower weighted-codimension formula becomes the upper-numbered integral of codim(V^(G^u)) over u>0. Actual wild action vanishes aboveU0 and each codimension is at most2, so Swan<=2U0 and tame codimension<=2. With U0=4(DG0)² and E0=10(DG0)² the asserted bound follows since(DG0)²>=1. For p>R>=D the local extension degree is belowp and hence tame. On G_F the good-reduction Tate module has trivial inertia; the actual beta has trivial wild part because beta² is tame and p is odd. Absolute wild inertia is contained in G_F, so it acts trivially on r_ell and the conductor is at most2. Infinite tame unipotent action, if present, does not enter the finite wild integral.",
+    "incoming": [
+      "The already proved actual r_ell restriction and its finite wild image.",
+      "The preceding upper-break bound, good reduction at the specified p>R, and beta² tame.",
+      "ell chosen different from each residue prime."
+    ],
+    "boundary": "No dimension-four Tate-module conductor substituted for the actual two-dimensional r_ell. No contribution from [Lprime:Q]."
+  },
+  {
+    "id": "BETA-LEVEL-PRODUCT",
+    "role": "local_derivation_from_separate_conductor_identification",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1539,
+      "end_line": 1544,
+      "excerpt_sha256": "a170da73bf6e528af6f721fcfa8d930638d6b8e4f256b0cb86d4a46f353dd6e4"
+    },
+    "needed": "The same final primitive f satisfies N<=Q M² with Q=R^(R E0).",
+    "derivation": "Use the actual-family local isomorphism r_ell≅U_f,ell for each p with ell!=p and the separate Carayol conductor identity v_p(N)=a_p(U_f,ell). The preceding local bounds give exponent<=E0 for p<=R, exponent<=2 for p>R inT, and0 outsideT. Here T=S union supp(M), R>=max S, and M is squarefree by definition. Thus the large-prime contribution dividesM²; allowing all p<=R only increases the bound. There are at mostR primes<=R and each is<=R, giving product p^E0<=R^(R E0).",
+    "incoming": [
+      "Actual local isomorphisms for the same beta-family final form f; the b-family form is not substituted.",
+      "Carayol modular-side equality, separately appended below.",
+      "OutsideT unramifiedness and preceding conductor bounds.",
+      "T=S union supp(M), definitions main458–471 and1167."
+    ],
+    "boundary": "This arithmetic product does not prove any local isomorphism, cochain or good-reduction input."
+  }
+]

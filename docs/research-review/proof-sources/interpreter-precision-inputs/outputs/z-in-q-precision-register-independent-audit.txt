@@ -1,0 +1,243 @@
+Independent review of the five-input precision register construction
+
+VERDICT: PASS at the informal computational source-proof level.
+
+For five natural input codes in registers 0 through 4 and zero in every
+other register, the pinned generated machine reaches its unique final halt,
+with all registers zero, exactly when the unbounded exact-arithmetic meaning
+of accepts_naturals in variable-shift-precision.py returns True. If that
+predicate returns False, the machine reaches its absorbing nonhalting state.
+No substantive arithmetic, control-flow, or representation mismatch was found.
+
+This review is not a proof-assistant certificate. It does not establish the
+arithmetic-geometric role of the precision predicate, compile its entire
+Diophantine polynomial, or prove an ordinary-Z definition over Q. It checks
+the missing computation-to-register-program step. No rank, height theorem,
+pointwise converse, or nontorsion theorem is assumed for this computation.
+
+Sources and method
+
+I read the actual generator, original assembler, compiler validation and
+packed-history acceptance convention, Python reference, author verification
+script, and complete construction proof. I independently reconstructed the
+representation and loop invariants before reading the completed source proof.
+Tests were written in a separate directory and did not edit the author's files.
+The source-lock preamble was reviewed separately from the arithmetic code;
+it checks construction provenance before imports and is not a machine branch.
+
+1. Signed arithmetic, field arithmetic, and register mutation
+
+A signed pair (p,n) is kept canonical: p,n are natural and p*n=0. Normalizing
+by truncated subtraction preserves p-n and restores this invariant. Addition,
+multiplication, negation, and scaling by a natural preserve the represented
+integer. Thus p+n is its absolute value, including zero and negative inputs.
+The natural input decoding gives (q,0) for code 2q and (0,q+1) for code 2q+1.
+This is precisely the reference signed bijection and preserves the order
+n,kappa,a,ell,j of the five inputs.
+
+Field pairs represent a+b*sqrt(2), with signed integer coefficient pairs.
+The displayed multiplication, squaring, conjugation and norm formulas are
+literal coefficient arithmetic. The norm a^2-2*b^2 is zero exactly when both
+coefficients vanish. Consequently the field zero tests and inverse guards
+agree with the reference. There is no floating-point or approximate test.
+
+Every arithmetic result gets a fresh logical register. Where mutation is
+required, assignMany first snapshots all sources if any destination aliases
+any source. This covers sign swaps, self-negation of Y, and repeated use of
+point registers inside scalar multiplication. I checked every constructor
+branch: outputs that can be reused on a later loop iteration are completely
+assigned before they are read. There is no dependence on stale scratch data.
+
+2. Jacobian arithmetic and all exceptional branches
+
+A finite point denotes x=X/Z^2, y=Y/Z^3 with Z nonzero; the separate origin
+flag distinguishes infinity. The initial integer coordinates give exactly
+the reference rational point. An independent BigInt check verified
+  Y^2 = X^3 + A*X*Z^4
+      = 7836976378368 - 5541579141120*sqrt(2),
+and A=-(75-53*sqrt(2))^2, with the latter factor of norm 7.
+Thus the fixed starting point lies on the nonsingular stated curve.
+
+For doubling, E=3X^2+A*Z^4, D=4XY^2 and Z'=2YZ. Dividing the emitted X' and
+Y' by Z'^2 and Z'^3 gives exactly lambda^2-2x and lambda*(x-x')-y, with
+lambda=(3x^2+A)/(2y). The finite branch has Y,Z nonzero. The origin and
+zero-Y branches both return the origin, matching the reference before it
+would attempt a zero-denominator tangent.
+
+For addition, H=U2-U1 and R=S2-S1 represent the differences in affine x and
+y after multiplication by the respective Z powers. In the H-nonzero branch,
+R/(H*Z1*Z2) is the affine slope. Substitution in the emitted X',Y',Z' gives
+the reference distinct-x formulas. If H=R=0, the affine points coincide and
+the doubling routine applies. If H=0 and R is nonzero, their equal x and
+the curve equation force opposite y, so the result is infinity. Origin
+inputs are copied. These cases are exhaustive on valid inputs; the Python
+ValueError branch for invalid same-x data cannot occur. Validity and nonzero
+Z are preserved by these formulas, so the invariant holds inductively.
+
+Signed scalar multiplication negates only the base Y for negative indices,
+starts the accumulator at infinity, and follows precisely the reference
+binary loop order. Its positive count is replaced by its quotient by two.
+The proof covers zero and negative indices without using nontorsion.
+
+3. Fractions, epsilon, center, and degenerate division
+
+A computed fraction has an integral field numerator and a positive ordinary
+integer denominator. The z formula is -XZ/Y: the implementation multiplies
+-XZ by conjugate(Y), divides by norm(Y), and moves any denominator sign into
+the numerator. At infinity it gives 0/1. A zero norm rejects exactly when
+the reference raises the ZeroDivisionError caught by accepts.
+
+Division of N1/D1 by N2/D2 gives N1*conjugate(N2)*D2 over D1*norm(N2), with
+the same sign normalization and zero guard. Thus the first coefficient of
+the quotient is the reference center, which is trace divided by two.
+For z=(u+v*sqrt(2))/D, epsilon is (abs(u)+abs(v))/D. Its positivity test is
+therefore exactly the reference test, even when the fraction is unreduced.
+
+With center=c/Dc and epsilon=U/De, both denominators positive, the final
+strict comparison
+  abs(c-n*Dc)*De < U*Dc
+is equivalent to abs(center-n)<epsilon. Equality rejects. The signed
+arithmetic already handles negative n and a negative center.
+
+4. Unreduced fractions and the strict precision bound
+
+For positive integers N,D, floor((D-1)/(4N)) is exactly the largest natural
+m with 4Nm<D. Scaling N,D by any common positive factor preserves this set
+of m, so the floor itself equals the floor obtained after fraction reduction.
+This proves more than equality of the eventual logarithmic bound; no bit
+lengths of unreduced numerators or denominators are silently identified.
+
+For every natural B,
+  4*(N/D) < 4^(-B) iff 4N*4^B<D
+                         iff 4^B <= floor((D-1)/(4N)).
+Repeated integer division of the positive limit by four, while it is at
+least four, counts floor(log_4(limit)). This equals the reference
+(bit_length(limit)-1)//2. Rejecting limits zero and bounds zero is exactly
+the reference bound<1 test. Therefore every reached height calculation has
+cap at least one. The separately callable reference cap-zero branch is
+outside this internal macro's reached domain, not a missing input case.
+
+5. Saturation and the complete height expression
+
+For cap L>=1, sigma(x)=min(x,L+1) commutes with natural addition,
+multiplication and maximum in the required saturated sense. Zero factors
+are included. The emitted full product followed by clipping agrees with
+the reference quotient-based overflow test.
+
+The power loop decreases an integer counter, keeps the saturated power of
+the number of completed factors, and stops early only on saturation. Bases
+0 and 1 never create an incorrect early overflow; exponent zero returns 1,
+including 0^0. Capping an exponent also preserves the saturated answer: for
+base>=2 and exponent>L, both the original and capped exponents give a value
+above L; bases 0 and 1 depend only on whether the exponent is zero, which
+capping preserves. This includes the boundary L=1.
+
+The factorial loop covers exactly factors 2 through 324. Stopping once it
+saturates is valid since all remaining factors are positive. I checked the
+complete dependency order and constants of the H6 expression against the
+reference. More strongly, an independent symbolic execution of both height
+implementations produced identical operation trees, including every literal,
+maximum, factorial, multiplication and exponent. This check avoids relying
+on numeric height examples which all return cap+1.
+
+The guarded contact product is computed exactly as a signed integer, and
+abs(kappa*F(n)) is positive. The final saturated required bound is at most L
+exactly when the unsaturated H6*abs(kappa*F(n))^24 is at most L. This is the
+reference precision_is_sufficient condition.
+
+6. Primitive lowering, termination, acceptance, and allocation
+
+I checked the actual Assembler macros, not merely their names. copy and
+addInto preserve source operands using initialized private counters; the
+special self-add path copies its source first. Comparisons use private
+copies or restore a decremented test value before entering the body.
+Truncated subtraction, multiplication, divmod2, and positive-divisor divmod
+implement the corresponding natural operations. Alias ordering in the
+lowering saves any operand that would otherwise be overwritten. Repeated
+macro entries initialize their scratch values before reading them.
+
+All generated high-level loops have natural variants: scalar counts halve,
+precision counts divide by four, power counters decrease by one, and the
+factorial counter reaches 325 or exits on saturation. Primitive counters
+also decrease, and every general division is guarded by a positive divisor.
+Fixed constants are emitted through finitely many doublings and increments.
+Their large runtime is not a cutoff, false branch, or semantic divergence.
+Hence a true reference result cannot be lost to unintended nontermination.
+
+Allocation is deterministic and fresh. In the full program, the reserved
+zero register is primitive register 5. Logical inputs map to 0 through 4;
+all other IR registers map consecutively to 6 through 5021. Other assembler
+scratch starts after these. The generated code never increments register 5;
+outside its own cleanup instruction it is used only for unconditional
+branches with identical destinations. It therefore stays zero.
+
+The reject instruction is at PC 122828 and has both destinations equal to
+122828. The sole accepting entry goes to cleanup at PC 122829. Cleanup has
+exactly one clearing sub-loop for each of the 23,582 registers, followed by
+the unique halt at PC 146411. Assembler.clear allocates no registers, so the
+saved total register count remains the final count. Inputs, constants,
+logical temporaries, private scratch and the reserved zero register are
+all covered. Each clear terminates on a finite natural value. The false
+sink cannot reach this suffix or any halt.
+
+The exact compiler convention is final halt with every register zero, with
+only the first five registers initialized to the natural inputs. The
+machine satisfies it. The existing packed-history compiler theorem is a
+separate dependency for the subsequent Diophantine translation; this audit
+does not re-prove its alpha/power arithmetic or claim an expanded polynomial.
+
+7. Independent checks and limitations
+
+The separate checker performed 180 repeated/alias primitive cases and 70
+signed-field cases, totaling 1,253,764 primitive steps; 2,574 saturated
+arithmetic cases; 4,499 strict epsilon-boundary and common-factor scaling
+cases, including 1,988 accepting bound-subroutine cases; and 11 additional
+exact point/coordinate comparisons with the Python reference. It verified
+the initial curve identity, deterministic regeneration, all instruction
+indices, the unique final halt, the one external cleanup entry, every
+cleanup clear, reserved-zero separation, and the absorbing reject sink.
+
+Fresh generation reproduces both saved artifacts exactly. Repeating both
+generations produces the same bytes. The final source-lock version has the
+identical arithmetic and lowering tail as the independently tested source;
+its only new preamble verifies the four named source hashes before imports.
+
+No true example of the full astronomical-height predicate was found or
+claimed. Positive-direction correctness comes from the representation,
+operation, control and termination proof above, with bounded tests as
+supplementary error detection. Simulator exhaustion is never treated as
+rejection. The integer polynomial, rational model translation, and final
+ordinary-Z or universal-polynomial conclusions are outside this verdict.
+
+Pinned final evidence
+UTC 2026-11-04T04:22:14.302081+00:00
+Generator SHA256 ae4d930c83bb5ac9dd878df22d43079e1972855bff30e4e20d2a05a5989c4af9
+Tested arithmetic source SHA256 2e30425ecd82d8c74ed9175c6c10dc4f984fe74df318282f1cbca42919fe1419
+Author construction proof SHA256 27a11d20564578da32b77da562b41bc25aa659605009cb553a402a6964331ad0
+Source-lock SHA256 f1fca8bf1e56618ae7301117bee3edf365f7f5a818377748b21ca627abeb28aa
+IR SHA256 e6a67f6b27da2a60dc8eec9c0e1b363c8a0acb43a01d2fb3db2fc7477edd5aa5
+Machine SHA256 ec4fb8c7ce2e3448071fa352e94a38e427e0899328633c93d7130c5ac1da98cd
+Height expression SHA256 d89f16e17847f8c32e31bd0bf925889b12524fce5b876b9732ed683ae3858e6e
+
+Independent files
+C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\precision-register-independent\audit.js
+SHA256 20b6acdc5f77e4853f973583139754f84f6a0b1f50def6f54ff667188076feaf
+C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\precision-register-independent\results.json
+SHA256 49645502f30a8a897674723286ba5527fd87956f7ebc746278ec6f6c6d87891f
+C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\precision-register-independent\check-height-expression.js
+SHA256 cb9250e3728ab78abfd9a6ac1c8bbb6779a3f7ade44531f65b33d226cc7cc7ba
+C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\precision-register-independent\height-expression-check.json
+SHA256 0f39b3e3605aa24840569772e15c1e3d82ad8f58edddf639b09bbad9176380a0
+C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\precision-register-independent\final-binding.js
+SHA256 411d3e2d1bfe117227a538c10f5740de6df977c96dcbfdcc537ff59578433053
+C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\precision-register-independent\final-binding.json
+SHA256 04ac8f3375e7bc6d66a646734123557a02a4d5442e187a26a3a8d71f42a6b405
+
+outputs/variable-shift-precision.py
+SHA256 13d7d3249f260a4fee7ec401629ed538e98f9d6b1edea70df5c4806686432362
+
+outputs/universal-interpreter.js
+SHA256 6b5576f57ef861cff4ef088c02f4acd6c3f5369cfab991e93edbab26cc1decd5
+
+outputs/integer-diophantine-compiler.js
+SHA256 c0c7e8f738fe9b7a07c82be1429e1924b772cd360058dc14f2b331555b1dc893

@@ -1,0 +1,76 @@
+{
+  "schema": "bounded-source-review/v1",
+  "reviewed_at": "2026-11-09T08:18:47.739Z",
+  "target": {
+    "path": "v14-gi-repeated-application-locations-002/MANIFEST.json",
+    "sha256": "1821a6e487df1f9637d6b922c437b94812b4b007e67f927bf84a241dd75bbbc4"
+  },
+  "decision": "accepted seven repeated locations for six existing uses",
+  "checks": [
+    {
+      "id": "ACTIVE-GI-CONVERSE-TO-ASSEMBLY",
+      "base": true,
+      "shared": true
+    },
+    {
+      "id": "ACTIVE-GI-CONVERSE-TO-ASSEMBLY-REPEAT-301",
+      "raw": true
+    },
+    {
+      "id": "ACTIVE-GI-CONVERSE-TO-ASSEMBLY-REPEAT-553",
+      "raw": true
+    },
+    {
+      "id": "ACTIVE-GI-BASE2-TO-ASSEMBLY",
+      "base": true,
+      "shared": true
+    },
+    {
+      "id": "ACTIVE-GI-BASE2-TO-ASSEMBLY-REPEAT-568",
+      "raw": true
+    },
+    {
+      "id": "ACTIVE-GI-EXT-ASSEMBLY-COUNTABILITY",
+      "base": true,
+      "shared": true
+    },
+    {
+      "id": "ACTIVE-GI-EXT-ASSEMBLY-COUNTABILITY-REPEAT-595",
+      "raw": true
+    },
+    {
+      "id": "ACTIVE-GI-LIN-TO-ASSEMBLY",
+      "base": true,
+      "shared": true
+    },
+    {
+      "id": "ACTIVE-GI-LIN-TO-ASSEMBLY-REPEAT-615",
+      "raw": true
+    },
+    {
+      "id": "ACTIVE-GI-EXT-S911-POLYNOMIAL",
+      "base": true,
+      "shared": true
+    },
+    {
+      "id": "ACTIVE-GI-EXT-S911-POLYNOMIAL-REPEAT-254",
+      "raw": true
+    },
+    {
+      "id": "ACTIVE-GI-TAUT-TO-MF",
+      "base": true,
+      "shared": true
+    },
+    {
+      "id": "ACTIVE-GI-TAUT-TO-MF-REPEAT-278",
+      "raw": true
+    }
+  ],
+  "reasoning": [
+    "Read all seven actual spans and all six retained contracts. Converse degrees are within the stated separate ranges; degree-zero argument remains separate.",
+    "Base2, finite model enumeration/metric comparison and final same-step linearization are actual named applications, not proof of their own inputs.",
+    "S911 uses B.4 to remove one small coefficient; MF uses exact tautification retaining positive layers and vertical character.",
+    "002 adds six explicit shared-contract mutations only. Assertions, suppliers and original derivations remain unchanged."
+  ],
+  "limits": "Only these exact application appends. Caller selections, group hypotheses, local estimates and all ancestral sources remain separate."
+}

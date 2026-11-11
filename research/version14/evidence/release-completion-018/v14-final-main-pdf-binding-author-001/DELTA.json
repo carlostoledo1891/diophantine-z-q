@@ -1,0 +1,51 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "decision": "No project-PDF allowlist or tool mutation needed",
+  "unchanged": [
+    {
+      "path": "project-pdfs.json",
+      "before": "40b2fd8d9a082c32205e5bacc71c483789f2107e06a2669fd5835e7f2f884941",
+      "after": "40b2fd8d9a082c32205e5bacc71c483789f2107e06a2669fd5835e7f2f884941",
+      "bytes": 18377
+    },
+    {
+      "path": "artifact_contracts.py",
+      "before": "0a165ed9d0b6967627dbeef88e2408fe912367eeabc30a6f775770638aeac558",
+      "after": "0a165ed9d0b6967627dbeef88e2408fe912367eeabc30a6f775770638aeac558",
+      "bytes": 11600
+    },
+    {
+      "path": "package_v14.py",
+      "before": "f2893bc123c178997c74ccb12f187b1f302cb841bdff18bb501a5674f80805bb",
+      "after": "f2893bc123c178997c74ccb12f187b1f302cb841bdff18bb501a5674f80805bb",
+      "bytes": 13122
+    },
+    {
+      "path": "release_common.py",
+      "before": "339d697cab449db20496e25e444f06e8f6b2ad18c74d20af1fe0b57a32fe4f0e",
+      "after": "339d697cab449db20496e25e444f06e8f6b2ad18c74d20af1fe0b57a32fe4f0e",
+      "bytes": 2624
+    }
+  ],
+  "artifact_fragment": "FINAL-INPUT-ARTIFACT-FRAGMENT.json",
+  "evidence": [
+    {
+      "path": "v14-final-main-edit-batch-root-002/build-root/build/paper/build-report.json",
+      "sha256": "1c64b048606b90ad157902179d3c48e6d401bcabb49a67246472975bd7c64adf",
+      "bytes": 603
+    },
+    {
+      "path": "v14-final-main-edit-batch-root-002/VISUAL-QA-ROOT.json",
+      "sha256": "fcd58d0cad2cc949847d046b2551567f3f777c17853caebf792ccc5ae02d822c",
+      "bytes": 2836
+    },
+    {
+      "path": "v14-final-main-edit-batch-root-002/CANONICAL-INSTALLATION.json",
+      "sha256": "ca34ba4e4bd3d5297203575b16c99f538d50b571f5578e6f0f778c44f55e47c8",
+      "bytes": 598
+    }
+  ],
+  "reason": "The 18-entry allowlist covers GI PDFs only. package_v14.admissible explicitly permits V14_PDF separately. artifact_contracts.final_inputs checks supplied exact main and PDF pins against selected source bytes. The current PROJECT_PDFS_SHA already matches its allowlist.",
+  "impact": "Final release-input creation must use this exact artifact fragment. No derived tool hash changes are required. Complete source_commit, roles and authenticated gate_binding remain pending and are intentionally absent from the fragment.",
+  "limitations": "No build, broad visual review, packaging, publication or authenticated gate claim. Existing build and seven-page root QA evidence is referenced only at its recorded scope."
+}

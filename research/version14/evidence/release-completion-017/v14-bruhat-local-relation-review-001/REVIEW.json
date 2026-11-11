@@ -1,0 +1,39 @@
+{
+  "decision": "accept bounded Bruhat normal-form source relationship",
+  "reviewer": "/root/v14_arithmetic_author",
+  "author": "/root/v14_h6_coverage",
+  "target": {
+    "path": "v14-main15300-source-role-author-002/BRUHAT-LOCAL-RELATION.json",
+    "sha256": "e099925a665964640a1b702d9bfadeb06168e29be8799e2171c729f396a86212"
+  },
+  "read_scope": "Actual15320–15393 including explicit Weyl matrix15335–36 and inherited operator relations15366–83; raw target range independently frozen before author partition.",
+  "findings": [
+    "The sign convention is W=[[0,1],[-1,0]]. Multiplication gives U(A/C)M(-1/C)WU(D/C)=[[A,(AD-1)/C],[C,D]], and upper cell U(AB)M(A) gives [[A,B],[0,A^-1]]. These match the displayed WU(b)W relation, including negative inverses.",
+    "Move M past U and W and collapse each pair of W letters using the b=0 or b nonzero relation. Central signs are powers of epsilon. The two projected matrix cells have unique parameters, so the projection kernel has at most two elements.",
+    "The given representation on a nonzero characteristic-zero Schwartz space sends epsilon to minus identity, so epsilon is nontrivial and the kernel has exactly two elements. This does not reprove any inherited Fourier/Weil-index scalar identity."
+  ],
+  "limits": "Incoming operator identities and their common signs remain separate source inputs. No independent metaplectic/Weil theorem or global reciprocity acceptance. No new direct ordinary use is serialized.",
+  "transport": {
+    "original_main": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+    "current_main": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059",
+    "requirement": "Both excerpts unchanged; explicit whole-file pin transport required before current-head deployment."
+  },
+  "checks": [
+    {
+      "kind": "target_hash",
+      "pass": true
+    },
+    {
+      "kind": "raw_excerpt",
+      "start": 15384,
+      "pass": true,
+      "whole_pin_matches": false
+    },
+    {
+      "kind": "raw_excerpt",
+      "start": 15366,
+      "pass": true,
+      "whole_pin_matches": false
+    }
+  ]
+}

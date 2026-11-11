@@ -1,0 +1,11 @@
+# Independent Lean cache retry review
+
+Reviewer: /root, 2026-11-09T08:09:37.976Z. Accept candidate002 manifest dbe8e7354baebaf117c869e1ebea6ab2ca4c963f994697542e08dc004f1568ea. I read the full wrapper, tests, delta and exact workflow diff. The only workflow change replaces the cache step's working-directory and lake command with the Python wrapper; the wrapper executes the identical argument vector in the identical repository lean directory. All setup pins, checksums, versions, later build/axiom command and artifact collection are unchanged.
+
+The wrapper makes at most three attempts, with two- and four-second delays. It returns the successful exit immediately, preserves the last nonzero exit if attempts are exhausted, and returns unrecognized errors immediately. Exceptions such as a missing executable are not retried. It invokes subprocess without a shell. Captured output from every attempt is emitted in order. This buffers one cache command's output until that command exits; it does not stream live output.
+
+I requested the correction from001 because a prior transient diagnostic could otherwise make a subsequent checksum failure retry despite the description. Successor002 rejects integrity/hash/checksum and recognizable compiler/build failures before considering transient signatures, and rejects unknown error diagnostics. Only explicit download-related transient HTTP text is eligible. This is a conservative text classifier, not a promise to recognize every future network error format. Unrecognized forms continue to fail rather than being treated as successful. A retry never turns a nonzero final result into zero.
+
+All ten supplied unit tests pass independently. I also applied the actual observed Lean4.35 download logs from jobs129046286787 and129047278678 to the classifier; both classify as transient. Appending an actual-style Lean exit error or SHA256 verification failure suppresses retry. All six manifest members match their pinned bytes and the workflow diff is exactly the expected two-line replacement. TESTS.txt preserves those results.
+
+This is an infrastructure change only. It does not approve the mathematical manuscript, replace final CI verification, or alter any proof acceptance condition.

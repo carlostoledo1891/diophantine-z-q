@@ -1,0 +1,183 @@
+{
+  "components": [
+    {
+      "origin": "v14-rc-integral-ext-input-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-INTEGRAL-SELMER-DUALITY-EXT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-INTEGRAL-SELMER-DUALITY-EXT-P1"
+        ],
+        "assertion": {
+          "statement": "The actual integral Kummer Selmer complex C_K is identified with its Z2-derived dual shifted by minus three, once its perfect coefficient pairing and exact local orthogonality are supplied.",
+          "objects": "The bounded perfect integral Z2 complex C_K of the fixed imaginary quadratic K and the actual Tate lattice T2(E).",
+          "hypotheses": "The retained integral perfect pairing, compatible local diagrams and exact orthogonality satisfy the source hypotheses. Finite rational torsion, H0=0, the computed torsion in H1 and full Selmer corank one are separate actual inputs.",
+          "quantifiers": "The actual C_K under these stated conditions.",
+          "parameter_range": "Integral Z2 coefficients; K has no real places.",
+          "uniformity": "An exact derived comparison, without a numerical estimate.",
+          "constants": "No division by two or torsion order.",
+          "normalizations": "C_K is equivalent to RHom_Z2(C_K,Z2)[-3], with actual Kummer local conditions.",
+          "exceptional_cases": "This source use does not itself prove finite rational torsion, the H1 torsion identification, perfectness, or corank one. Ext and rank calculations are subsequent local algebra.",
+          "limit_order": "Establish the integral paired local conditions and source hypotheses, invoke duality, then use the displayed cohomology and universal coefficient calculations."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the integral duality used before the existing Ext and rank calculation.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4338,
+            "end_line": 4340,
+            "excerpt_sha256": "9654b05775a08b525534ebc22240272e7d24228ce5a3d4b1c6723b1a7bd6d6e7"
+          },
+          "statement": "Nekovar 6.3.4 gives the shift-three Selmer duality comparison, with its error triangle; exact orthogonality makes the comparison an isomorphism. The cohomology spectral sequence is described in 6.3.5.",
+          "publication": {
+            "title": "Selmer Complexes",
+            "authors": "J. Nekovář",
+            "venue": "Astérisque310(2006)",
+            "authoritative_version": "Retained2006 publishedPDF SHA61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+            "locator": "6.2.5(A),(B);6.3.4 and6.3.5, pp139–143",
+            "corrections": "Exact retained independent A038/A044/A045 source/application review reused; source constructions and limits remain separate."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 6229,
+          "end_line": 6246,
+          "excerpt_sha256": "1196d587af8b56d9843a814c7782a567b29f5b2f379e1737e1ecf9decf23f57a"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-INTEGRAL-SELMER-DUALITY-EXT",
+        "use_sha256": "1cb84649dbbe2ce71349d5a4ea6a8ba0aa144a14fb82efd69435714f50b04b3a",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "objects": "Paired complexes over a coefficient ring with dualizing complex, and orthogonal local conditions satisfying Nekovar 6.2.5(A) or (B).",
+          "hypotheses": "Retain actual perfect coefficient pairing, compatible local maps/isotropy homotopies, bounded perfect models, and the hypotheses of the stated source theorem; these constructions are separate inputs.",
+          "quantifiers": "For each pair satisfying 6.2.5(A) or (B), perfect duality and the required local orthogonality data.",
+          "parameter_range": "Prime2 included; imaginary K for the global uses here, with no omitted real correction.",
+          "uniformity": "Compatibility with the stated maps and coefficient changes, not new numerical bounds.",
+          "constants": "No new quantitative constant, field extension, or division by coefficient-group order.",
+          "normalizations": "Coefficient-valued duality, full degree-zero local torsion, and actual conjugation pullback; not an unqualified ordinary self-dual nonquadratic twist.",
+          "exceptional_cases": "No contraction, perfection, finite Sha, or derivative relation is inferred merely from citing duality.",
+          "limit_order": "Construct actual paired coefficients and local diagrams before invoking the source theorem.",
+          "statement": "Nekovar 6.3.4 gives the shift-three Selmer duality comparison, with its error triangle; exact orthogonality makes the comparison an isomorphism. The cohomology spectral sequence is described in 6.3.5."
+        },
+        "needed_assertion": {
+          "statement": "The actual integral Kummer Selmer complex C_K is identified with its Z2-derived dual shifted by minus three, once its perfect coefficient pairing and exact local orthogonality are supplied.",
+          "objects": "The bounded perfect integral Z2 complex C_K of the fixed imaginary quadratic K and the actual Tate lattice T2(E).",
+          "hypotheses": "The retained integral perfect pairing, compatible local diagrams and exact orthogonality satisfy the source hypotheses. Finite rational torsion, H0=0, the computed torsion in H1 and full Selmer corank one are separate actual inputs.",
+          "quantifiers": "The actual C_K under these stated conditions.",
+          "parameter_range": "Integral Z2 coefficients; K has no real places.",
+          "uniformity": "An exact derived comparison, without a numerical estimate.",
+          "constants": "No division by two or torsion order.",
+          "normalizations": "C_K is equivalent to RHom_Z2(C_K,Z2)[-3], with actual Kummer local conditions.",
+          "exceptional_cases": "This source use does not itself prove finite rational torsion, the H1 torsion identification, perfectness, or corank one. Ext and rank calculations are subsequent local algebra.",
+          "limit_order": "Establish the integral paired local conditions and source hypotheses, invoke duality, then use the displayed cohomology and universal coefficient calculations."
+        },
+        "required_capabilities": [
+          "The actual integral Kummer Selmer complex C_K is identified with its Z2-derived dual shifted by minus three, once its perfect coefficient pairing and exact local orthogonality are supplied."
+        ],
+        "available_capabilities": [
+          "Nekovar 6.3.4 gives the shift-three Selmer duality comparison, with its error triangle; exact orthogonality makes the comparison an isomorphism. The cohomology spectral sequence is described in 6.3.5."
+        ],
+        "derived_capabilities": [
+          "The actual integral Kummer Selmer complex C_K is identified with its Z2-derived dual shifted by minus three, once its perfect coefficient pairing and exact local orthogonality are supplied."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6229,
+            "end_line": 6246,
+            "excerpt_sha256": "1196d587af8b56d9843a814c7782a567b29f5b2f379e1737e1ecf9decf23f57a"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual integral Kummer Selmer complex C_K is identified with its Z2-derived dual shifted by minus three, once its perfect coefficient pairing and exact local orthogonality are supplied.",
+            "objects": "The bounded perfect integral Z2 complex C_K of the fixed imaginary quadratic K and the actual Tate lattice T2(E).",
+            "hypotheses": "The retained integral perfect pairing, compatible local diagrams and exact orthogonality satisfy the source hypotheses. Finite rational torsion, H0=0, the computed torsion in H1 and full Selmer corank one are separate actual inputs.",
+            "quantifiers": "The actual C_K under these stated conditions.",
+            "parameter_range": "Integral Z2 coefficients; K has no real places.",
+            "uniformity": "An exact derived comparison, without a numerical estimate.",
+            "constants": "No division by two or torsion order.",
+            "normalizations": "C_K is equivalent to RHom_Z2(C_K,Z2)[-3], with actual Kummer local conditions.",
+            "exceptional_cases": "This source use does not itself prove finite rational torsion, the H1 torsion identification, perfectness, or corank one. Ext and rank calculations are subsequent local algebra.",
+            "limit_order": "Establish the integral paired local conditions and source hypotheses, invoke duality, then use the displayed cohomology and universal coefficient calculations."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "This source use does not itself prove finite rational torsion, the H1 torsion identification, perfectness, or corank one. Ext and rank calculations are subsequent local algebra.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 6229,
+              "end_line": 6246,
+              "excerpt_sha256": "1196d587af8b56d9843a814c7782a567b29f5b2f379e1737e1ecf9decf23f57a"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6229,
+            "end_line": 6246,
+            "excerpt_sha256": "1196d587af8b56d9843a814c7782a567b29f5b2f379e1737e1ecf9decf23f57a"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 6229,
+          "end_line": 6246,
+          "excerpt_sha256": "1196d587af8b56d9843a814c7782a567b29f5b2f379e1737e1ecf9decf23f57a"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-INTEGRAL-SELMER-DUALITY-EXT-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6229,
+            "end_line": 6246,
+            "excerpt_sha256": "1196d587af8b56d9843a814c7782a567b29f5b2f379e1737e1ecf9decf23f57a"
+          }
+        }
+      ]
+    }
+  ]
+}

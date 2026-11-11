@@ -1,0 +1,7 @@
+# Ten proof-note source extension
+
+All ten exact installed notes are included as proof-bearing sources with their existing use traversal and independent mathematical reviews. The original92 remains unchanged. S13 contains a new application proof; other notes contain explicit compositions, source-to-premise derivations or expansions of frozen arguments. The Gaussian interval/relative calculation and sign calculation already occur in the frozen manuscript; their notes are not new target theorem statements. None is dismissed as metadata.
+
+SOURCE-EXTENSION.json gives exact sections, current frozen consumer anchors, concrete proof details and review scopes. EXISTING-USE-TRAVERSAL.json retains actual available/needed assertions and directions; no duplicate use is minted. Heegner uses come from accepted author002 because they postdate collection008. Attached owner maps preserve attribution. The sign receipt excludes the conditional conductor section; retaining the file does not activate that excluded claim. Historical status paragraphs remain provenance.
+
+The comparator must accept this additive reconciliation and incorporate the exact notes into the current final-source freeze. No blind chronology is invented. This102-entry candidate covers the assigned ten-note extension; published wrappers and other domains remain governed by the complete collector. No canonical source, assertion, original freeze or release policy was changed.

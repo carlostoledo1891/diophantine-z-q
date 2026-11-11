@@ -1,0 +1,121 @@
+\paragraph{The metaplectic comparison at two and the extracted character.}
+We specify how the preceding index calculation fixes the multiplier,
+including its dyadic part. Let
+\[
+ Q_0=X_1^2+X_2^2+X_3^2,\qquad
+ \phi_{0,p}=1_{\mathbb Z_p^3},\qquad
+ \theta(\tau)=\sum_{n\in\mathbb Z}e^{2\pi i n^2\tau}.
+\]
+Use the same additive character and metaplectic lifts for the
+rank-three Weil representations of $Q_B$ and $Q_0$. The latter
+theta series is literally $\theta(\tau)^3$; this fixes the meaning
+of the ordinary theta multiplier cubed, including its eighth roots
+of unity. For either representation the nontrivial central element
+of the metaplectic cover acts by $-1$. Consequently the ratio of
+two eigenvalues computed using the same lift is independent of
+that lift. In particular a central factor in multiplying the
+three lifts in the displayed triangular factorization cancels
+in this ratio. We compare eigenvalues, and do not choose a group
+section of the cover over $\Gamma_0(2^{A_2})$.
+
+Here is the comparison on the three factors. Both upper unipotents
+act trivially on the indicated vectors. Choose $A_p$ large enough
+that both lower unipotents do also. This is the Fourier-support
+argument above for $f_p$; for $\phi_{0,p}$ it requires no positive
+depth at an odd prime and depth two at two, since the bilinear dual
+of $\mathbb Z_2^3$ for $Q_0$ is $\tfrac12\mathbb Z_2^3$ and
+$4Q_0(\tfrac12\mathbb Z_2^3)\subset\mathbb Z_2$.
+The Weyl scalar cancels in conjugating an upper unipotent to a
+lower one, so it introduces no additional eigenvalue. On a
+diagonal unit $u$, the scaling part acts by $\alpha_p(u)$ on
+$f_p$ and by one on $\phi_{0,p}$. The quotient of the Weil-index
+parts, by the preceding calculation, is
+\[
+ \frac{\gamma(uQ_B)/\gamma(Q_B)}
+      {(\gamma(u)/\gamma(1))^3}
+       =(u,\det Q_B)_p.                                      \tag{O.5a}
+\]
+If the inverse Weil-index convention is used for the diagonal
+operator, both numerator and denominator are inverted; the
+quotient is unchanged because the Hilbert symbol has order two.
+Thus this computation does not leave an undetermined inverse
+or a dyadic root of unity. These operator comparisons are precisely
+the scaled pullback, Fourier conjugation and scalar relations of
+\cite[I.13--I.14 and II.25--II.28]{weil}.
+
+Here $\det Q$ means the determinant of the matrix in
+$Q(x)=x^{\mathsf T}Ax$. The associated bilinear Gram matrix is
+$2A$. If that convention is used instead, both $Q$ and $Q_0$
+acquire the same factor $2^3$ in their determinants, which cancels
+in the comparison. In particular no extra squareclass of two
+is introduced at the dyadic place.
+
+For a general ternary form $Q$ in this argument, at each prescribed
+prime take $A_p\ge1$ and increase $A_p$
+also to the conductor of $u\mapsto(u,\det Q)_p$. The eigenvalue
+relative to the ordinary theta multiplier, on a matrix whose
+upper-left entry is $a$, is then
+\[
+                    \alpha_p(a)(a,\det Q)_p.                  \tag{O.5b}
+\]
+Indeed the triangular factorization has just the two trivial
+unipotent factors and this diagonal factor, and its lift ambiguity
+cancels as explained above. This also verifies multiplication:
+the upper-left entry of a product is congruent to the product
+of the upper-left entries modulo $p^{A_p}$, so both local
+characters in (O.5b) multiply. The argument therefore applies
+to every matrix in the indicated congruence subgroup at a prescribed
+prime, not only to a choice of generators. At an unramified prime
+outside the support, the full spherical invariance established
+below treats matrices with nonunit upper-left entry as well.
+
+For $Q_B$ the determinant squareclass is one at every place,
+including two. Thus (O.5b) has no determinant factor. For the
+extracted form $Q_B'=Q_B/m$ it is $m^{-3}\equiv m$.
+At an odd prime $p\mid m$ and a unit $u$, and at two, respectively,
+the additional factors are explicitly
+\[
+ (u,m)_p=(u/p)^{v_p(m)},\qquad
+ (u,m)_2=(-1)^{((u-1)/2)((m-1)/2)}.
+\]
+Here $m$ is odd and $m\equiv3\pmod4$, so the second factor is
+$(-1)^{(u-1)/2}$. It is already trivial on $1+4\mathbb Z_2$.
+At every odd prime outside $m$ the factor on units is one. There
+is consequently no new level prime, and there is no omitted
+dyadic character.
+
+Finally take a positive integer $d$ prime to the complete level.
+The finite operator used in the classical transformation is the
+one at $\gamma^{-1}$, with upper-left entry $d$. The root-character
+factor is therefore $\prod_p\alpha_p(d)=\eta_B(d)$.
+Hilbert reciprocity gives
+\[
+ \prod_{p\mid 2m}(d,m)_p
+   =\prod_{q\mid d}(m/q)^{v_q(d)}=(m/d).                       \tag{O.5c}
+\]
+Indeed the infinite symbol is one because $m,d>0$, all other
+finite symbols are one, and at an odd $q\mid d$ the symbol is
+$(m/q)^{v_q(d)}$. This proves the displayed product without
+discarding its dyadic factor. Both sides extend to the same
+even Dirichlet character. Since $h_*=-m$, division by the genus
+character now gives
+\[
+ \frac{\eta_B(d)(m/d)}{\eta_B(d)\chi_{h_*}(d)}=(-1/d).
+\]
+Thus the characters in (O.5), with the stated inverse-idele
+convention for $\eta_B$, are exactly the characters supplied
+by these local Weil operators.
+
+Take $A_p$ also at least the conductor exponent of $\alpha_p$.
+For $\gamma=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$
+with $c\in p^{A_p}\mathbb Z_p$ and $a$ a unit, use
+\[
+ \gamma=n^-(c/a)m(a)n(b/a).
+\]
+The scalar is the diagonal theta factor times $\alpha_p(a)$.
+In passing to the classical transformation law one applies the
+finite operator at $\gamma^{-1}$, whose upper-left entry is $d$.
+Thus the classical Dirichlet character is
+$\eta_B(d)=\prod_p\alpha_p(d)$, not its inverse.  Its value at
+$-1$ is one, as required by the weight-$3/2$ theta multiplier.
+

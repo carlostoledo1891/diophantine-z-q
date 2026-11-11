@@ -1,0 +1,140 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T09:48:41.846Z",
+  "initial": {
+    "path": "v14-finite-field-halving-review-arithmetic-001/SOURCE-OBSERVATIONS.json",
+    "sha256": "67ee551be0ccbf593c27d5997593c5d824ad39444c94494ab91354e4adf3f5fc"
+  },
+  "source": {
+    "path": "work/source-risk-review-20261107/v14-finite-field-halving-inputs-001/PROOF.md",
+    "sha256": "e56cdfed6ad896391ac2543d86153ece6499c7c7789feb925ba7a89ac465f548"
+  },
+  "proposed_canonical_path": "research/version14/evidence/finite-field-halving-inputs-001/PROOF.md",
+  "rows": [
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-01",
+        "start_line": 5,
+        "end_line": 5,
+        "excerpt_sha256": "752f7f24456e86a4219083c6bf2dab08d878470293e7328687111c2edf589a25",
+        "role": "local_derivation",
+        "assertion": "Cyclicity of a finite multiplicative subgroup from an element of exponent order, polynomial root bound and Lagrange; these elementary group and field facts are incoming."
+      },
+      "role": "local_derivation",
+      "incoming": [
+        "Finite abelian group primary decomposition by powers, Lagrange and polynomial root bound."
+      ],
+      "local_output_is_not_its_own_input": true
+    },
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-02",
+        "start_line": 7,
+        "end_line": 7,
+        "excerpt_sha256": "5f3468d9e27cda9bbdbfc1f92f7b2d491bc59e08ae93e2867a28204614ca6704",
+        "role": "local_derivation",
+        "assertion": "Split product counts and nonsplit norm counts use cyclicity, Frobenius and quadratic extension; actual odd-prime caller and chi convention remain required."
+      },
+      "role": "local_derivation",
+      "incoming": [
+        "Prior local cyclicity proof; Frobenius/quadratic extension and odd characteristic."
+      ],
+      "local_output_is_not_its_own_input": true
+    },
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-03",
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "8bfcb28d1fc77833680a5491db405258237bf3bf15b8ac3957b56ed903a22ce4",
+        "role": "boundary",
+        "assertion": "Finite-field prerequisites and exclusion of later sieve/summation conclusions."
+      },
+      "role": "boundary",
+      "incoming": [
+        "Scope boundary; no downstream sieve proof."
+      ],
+      "local_output_is_not_its_own_input": true
+    },
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-04",
+        "start_line": 13,
+        "end_line": 13,
+        "excerpt_sha256": "2aa0912719cc470982bb99606e522638af4bfaf3425bfdbcea8a0c25a767dad6",
+        "role": "dependency",
+        "assertion": "The split nonsingular cubic and chord-and-tangent group law imply tangent through the nonzero two-torsion target, with v and slope nonzero."
+      },
+      "role": "dependency",
+      "incoming": [
+        "Nonsingular split cubic and chord-and-tangent group law."
+      ],
+      "local_output_is_not_its_own_input": true
+    },
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-05",
+        "start_line": 15,
+        "end_line": 19,
+        "excerpt_sha256": "189b540b9e7548f51e38ad15c5eb3f1e80c8bebb2509c24641e958b8116801db",
+        "role": "local_derivation",
+        "assertion": "Intersection multiplicities give the polynomial identity and necessary square differences only; no sufficient halving criterion."
+      },
+      "role": "local_derivation",
+      "incoming": [
+        "Previous tangent identity; elementary polynomial evaluation."
+      ],
+      "local_output_is_not_its_own_input": true
+    },
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-06",
+        "start_line": 21,
+        "end_line": 21,
+        "excerpt_sha256": "22d17526ff98ffc207e21b87cad683e99b8993cc95a9b8a9f95fe36def530249",
+        "role": "actual_application",
+        "assertion": "At roots 0,ell,-3ell, supplied prime conditions imply no nonzero two-torsion point has a half; finite two-primary group argument then gives order four."
+      },
+      "role": "actual_application",
+      "incoming": [
+        "Previous necessary condition; actual prime/model data at main17029–17036; elementary two-primary group structure."
+      ],
+      "local_output_is_not_its_own_input": true
+    },
+    {
+      "initial_observation": {
+        "id": "FFH-RAW-07",
+        "start_line": 23,
+        "end_line": 23,
+        "excerpt_sha256": "c82873b80f289036ca76e0f373b6de3f81388b5b758a27a5b654d12eaa790176",
+        "role": "boundary",
+        "assertion": "Group law, model, chosen primes and later root-number conclusions remain separate."
+      },
+      "role": "boundary",
+      "incoming": [
+        "Scope boundary; no additional root-number theorem."
+      ],
+      "local_output_is_not_its_own_input": true
+    }
+  ],
+  "structural_lines": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    11,
+    12,
+    14,
+    20,
+    22
+  ],
+  "structural_note": "Headings and blanks only; displayed equation17 belongs to the observed15–19 argument.",
+  "caller_relationships": {
+    "path": "CALLER-RELATIONSHIPS.json",
+    "sha256": "00f3209236240010237555805a32385bf0ab5e775921b00da49834c1a769bc3e"
+  },
+  "status": "Proposed source reconciliation and exact caller bindings; independent comparison pending."
+}

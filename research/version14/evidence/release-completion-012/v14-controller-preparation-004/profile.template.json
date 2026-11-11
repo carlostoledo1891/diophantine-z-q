@@ -1,0 +1,22 @@
+{
+  "schema": "protocol-coverage-policy/v2",
+  "protocol_version": "1.4",
+  "governing_protocol": {
+    "path": "docs/research-review/PROTOCOL.md",
+    "sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9"
+  },
+  "runtime_policy_sha256": {
+    "$required": "current approved runtime policy digest; NOT governing protocol digest"
+  },
+  "mode": "substantive",
+  "claim_ids": {
+    "$required": "complete independently reconciled announced claim application IDs"
+  },
+  "proof_paths": {
+    "$required": "complete independently reviewed proof source paths, not arithmetic subset"
+  },
+  "allowed_nonmath_paths": [],
+  "connection_record_path": {
+    "$required": "actual source-tree protocol-connections/v1 record path"
+  }
+}

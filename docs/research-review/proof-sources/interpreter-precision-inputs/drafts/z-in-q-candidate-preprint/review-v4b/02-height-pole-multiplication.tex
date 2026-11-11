@@ -1,0 +1,460 @@
+\section{The corrected six-contact height estimate}\label{sec:height}
+Set
+\[
+ \Cset=\{0,-15,-20,-24,-30,-60\},\qquad
+ F(u)=u(u+15)(u+20)(u+24)(u+30)(u+60),
+\]
+and $G(u)=7u^2+300u+3600$. For a finite prime set $S$ containing all
+primes at most 324 and $u\notin\Cset$, define
+\[
+ M_S(u)=\prod_{\substack{p\notin S:\ v_p(u-c)>0\text{ odd}\\
+                          \text{for some }c\in\Cset}}p.
+\]
+Negative valuations of $u$ do not enter the product. Put
+\begin{align*}
+ F_0&=324!,\qquad D=F_0\,3^{256F_0^4},\qquad G_0=116064000000,\\
+ E_0&=10(DG_0)^2,\qquad Q_R=R^{RE_0},\\
+ B_{\rm cm}&=D^2\,3^{21000D^2}+1,\\
+ C_{\rm cm}&=2B_{\rm cm}+4096(1028+5D+84000D^2),\\
+ H_6(S;R)&=2\cdot10^{13}\max(1,C_{\rm cm},Q_R^{17}),\\
+ &\hspace{1em}R\ge\max(D,\max S,10^{12}).
+\end{align*}
+When the second argument is omitted, we use
+$H_6(S)=H_6(S;\max(D,\max S,10^{12}))$.
+The proof follows the corrected geometric route in S09, with the
+constants of S08. It does not use the older alternative modularity route.
+
+\begin{theorem}[Six-contact estimate]\label{thm:height}
+For every such $S,R$ and every $u\in\Q\setminus\Cset$,
+\[
+ h(u)\le H_6(S;R)M_S(u)^{24}.
+\]
+More precisely the external arithmetic-geometric inputs below give
+$h(u)\le C(S)M_S(u)^{24}$, where
+\[
+ C(S)=10^{13}\max((8D)^{288D},6^{100})\Bigl(\prod_{p\in S}p\Bigr)^{24}.
+\]
+\end{theorem}
+\begin{proof}
+Take $B=(2,-3)$, the maximal order $\mathcal O=\Z[i,(1+j)/2]$, and
+$\mu=2j+ij$. With its positive sign choice, the form
+$\Trd(\mu^{-1}x\overline y)$ has matrix
+\[
+ \begin{pmatrix}0&0&-1&1\\0&0&1&-2\\1&-1&0&0\\-1&2&0&0\end{pmatrix}
+\]
+and determinant one. This is the principal-polarization datum whose
+normalizer quotient is $\mathbf P^1_j$, with branch values
+$0,\infty,-16/27$ and indices $4,6,2$ \cite{babagranath,linyang}.
+The full $\mathcal O$-linear level-three cover $Y_3$ has total degree
+at most $4|\mathcal O/3\mathcal O|=324$, retaining all determinant
+components. Here the normalizer quotient contributes four. Central
+ideles act trivially after multiplying by a rational scalar and choosing
+its sign to give residue one modulo three.
+
+For an integral model apply \cite[Theorem 2.1, Corollary 2.3]{buzzard}
+first at $V_1(5)$. This level has full determinant image, is maximal at
+the division primes, and uses $5\ge4$ prime to the discriminant six.
+Add full five-marking and full $\mathcal O$-linear three-marking, then
+forget five-marking by a free finite quotient. The three-marking sheaf
+is nonempty because an $\mathcal O_3$-stable lattice in the rank-one
+$B_3$-module is a principal fractional left ideal. Freeness follows
+because a polarized automorphism has finite order, while a finite-order
+element congruent to one modulo three on $T_3$ is the identity.
+The universal abelian surface descends. The auxiliary level contributes
+no factor to the final degree.
+
+Every component has genus at least two, by its negative orbifold Euler
+characteristic, so the automorphisms extend to its smooth proper model.
+At $p>324$ the action is tame. A stabilizer is cyclic and its tangent
+character is faithful; a nontrivial fixed-point equation has invertible
+linear term. Unique lifting prevents branch collisions. The three
+ordered branch sections fix the integral $j$-coordinate, so no further
+denominator prime is discarded.
+
+Pull back by $J(u)=-57600F(u)^2/G(u)^6$. If
+\[
+ H(u)=(u^2-60u-1800)(13u^2+480u+3600)(11u^2+600u+7200),
+\]
+direct calculation gives $G^6-97200F^2=H^2$. The pullback indices are
+$2,6,2$. Tame normalization replaces $e$ by $e/\gcd(e,a)$ and leaves
+$2,1,1$. The discriminants and resultants have prime support at most 13,
+so this persists at $p>324$. The normalized cover of $\mathbf P^1_u$
+has degree at most 324, not $12\cdot324$, and is branched only at the
+six contacts. Locally it has equation $u-c=z^2$ after unramified
+extension. Positive even contact valuation is unramified; negative
+valuation specializes to the unbranched point at infinity. This is
+exactly the support specified by $M_S(u)$.
+
+The splitting field of a fiber has degree at most $F_0$. The lattice
+of ordered homomorphisms among its conjugate abelian surfaces has rank
+at most $16F_0^2$. A finite subgroup of $\operatorname{GL}_r(\Z)$
+injects modulo three. Adjoining its field of definition gives a normal
+field $L$ of degree at most $D$, ramified only in
+$S\cup\operatorname{supp}M_S(u)$. It defines all endomorphisms and all
+ordered conjugacy homomorphisms.
+
+The geometric endomorphism algebra is either $B$ or $M_2(k)$ for an
+imaginary quadratic field $k$, by taking the right centralizer of the
+complex structure. In the first case Skolem--Noether corrects conjugacy
+isomorphisms to $B$-linear isogenies over $L$. These are in particular
+compatible $\Q(\sqrt2)$-linear isogenies. Thus the normal-field,
+endomorphism and compatible-isogeny hypotheses, including condition $(*)$,
+of \cite[Eq. (7.1), Section 7.1.4, Proposition 7.13]{vkk} hold.
+With $P_S=\prod_{p\in S}p$ and $M=M_S(u)$, this gives
+\[
+ h_F(A)\le(8D)^{288D}(P_SM)^{24}
+\]
+in the non-CM case.
+
+In the CM case retain the degree bound $d_L=[L:\Q]\le D$.
+The maximal-order reduction of \cite[Section 7.3.3, Eq. (7.17)]{vkk}
+constructs, over the same field, an isogenous product
+$A'=\prod A_i^{e_i}$ with maximal CM endomorphism rings. All geometric
+endomorphisms were already defined over $L$, so the reduction needs
+no further field extension. Its intermediate CM-type estimate gives
+$h_F(A_i)\le6^{96}(P_SM)^{10}$, since the CM fields are unramified
+outside the discriminant support of $L$. As $\sum e_i\le2$, put
+$H_0=2\cdot6^{96}(P_SM)^{10}$; then $h_F(A')\le H_0$.
+The isogeny estimate \cite[Eq. (7.13)]{vkk}, in dimension two, is
+\[
+ h_F(A)\le h_F(A')+\tfrac12\log\kappa(A'),\qquad
+ \kappa(A')=\bigl(14^{32}d_L
+             \max(h_F(A'),\log d_L,1)\bigr)^{16}.
+\]
+Since $\log14<3$, $D\ge2$, and $H_0\ge1$, it follows that
+\[
+ h_F(A)\le9H_0+16D+768\le(8D)^{288D}(P_SM)^{24}.
+\]
+For the last inequality use $18\cdot6^{96}<16^{64}$ and
+$16D+768\le(8D)^4$, then absorb their sum in $(8D)^{65}$.
+This argument bounds the original stable height while retaining the
+field degree. It does not use the degree-free final conclusion of
+Proposition 7.14, nor the historical alternative CM bound in S08.
+The prescribed integer $C_{\rm cm}$ remains unchanged. Its former
+degree-free interpretation is unnecessary: the corrected estimate is
+absorbed by $Q_R^{17}$. Later comparisons between those integers are
+numerical comparisons, not uses of the discarded height claim.
+
+The compatible theta normalizations in \cite{linyang,lny} give
+\[
+ j=3779136\frac{(\prod z_m)^4}{(\sum z_m^8)^5},\qquad
+ h(j)\le40h([z_m])+22,
+\]
+with ten even theta nulls; the other six vanish. The comparison in
+\cite[Corollary 1.3(2)]{pazuki} yields
+$h([z_m])\le10000\cdot2^{24}\max(1,h_F(A))$.
+The change to the Deligne metric adds $\log\pi$ in dimension two and
+has been included in this constant. A finite extension for a theta
+structure changes neither absolute height. The coefficient norms of
+$-57600F^2,G^6$ are below $4000^6$. The rational-root bound gives
+$h(u)<h(j)+74$, after removing any initial power of $X$ or dropped
+leading term. Since $40\cdot10000\cdot2^{24}+96<10^{13}$, this proves
+the bound with $C(S)$.
+
+Finally $P_S\le R^R$, $8D\le R^2$, and $6^{100}\le R^{576D}$.
+Thus
+\[
+ C(S)\le10^{13}R^{576D+24R}\le10^{13}R^{600R}
+ \le10^{13}Q_R^{17}\le H_6(S;R)/2.
+\]
+This also proves the assertion for every permitted larger $R$.
+\end{proof}
+
+The final value argument uses $S_{\rm ht}=\{p:p\le324\}$. Multiplication
+uses $S_{\rm mul}=S_{\rm ht}\cup\mathcal H\cup\operatorname{supp}(c_*)$,
+where $\mathcal H$ is the fixed catalogue. A common numerical $R$ may
+bound both sets. It does not identify them.
+
+\section{The pole predicate and its converse input}\label{sec:pole}
+Let $S_0=\{2,3,5,7,13\}$. With input $B$ and eleven witnesses
+$b_0,\ldots,b_5,e,z,r_1,r_2,w$, define
+\begin{align*}
+ m&=(1-2b_0)(1+b_1)(1+2b_2)(1+4b_3)(1+6b_4)(1+12b_5),\\
+ A&=mB,\qquad H=A(A-B^2),\\
+ T_1&=A(A-e)(A+3e),\qquad T_2=A(Az^2-eH)(Az^2+3eH),\\
+ Q_{\rm pole}&=B\Bigl(\sum_{i=0}^5(b_i^2-b_i)^2+(eHzw-1)^2\\
+ &\hspace{4em}+(r_1^2-T_1)^2+(r_2^2-T_2)^2\Bigr).
+\end{align*}
+Write $\Phi(B)$ for rational solubility. For $B\ne0$, $m$ is a signed
+divisor of 2730, and the equations give points $(A,r_1)\in E_e$ and
+$(Az^2,zr_2)\in E_{eH}$ with $eHz\ne0$, where
+$E_\ell:y^2=x(x-\ell)(x+3\ell)$. The polynomial has total degree 75.
+
+\begin{lemma}[One-sided obstruction]\label{lem:pole}
+If $B\ne0$ and $\Phi(B)$, then $v_p(B)$ is not negative and odd for
+any $p\notin S_0$.
+\end{lemma}
+\begin{proof}
+If $k=v_p(B)<0$ were odd, then $v_p(A)=k$, $v_p(H)=3k$.
+Exactly one of $e,eH$ has even valuation. Square scaling makes its
+parameter a unit, preserving the parity of the abscissa's valuation.
+For a unit parameter the cubic has valuation $v_p(x)$ if $v_p(x)>0$
+and $3v_p(x)$ if $v_p(x)<0$. Its being a square forces even valuation.
+But both points have abscissa in the squareclass $A$, a contradiction.
+\end{proof}
+
+\begin{hypothesis}[Pole completeness, $\mathsf{PC}$]\label{hyp:PC}
+For every rational $B$ with square reduced denominator,
+$0<B<1/2$ and $v_p(B)\ge4$ for every $p\in S_0$ imply $\Phi(B)$.
+\end{hypothesis}
+\begin{hypothesis}[Restricted converse, $\mathsf{RC}$]\label{hyp:RC}
+For every positive squarefree $\ell\equiv11\pmod{12}$,
+\[
+ \operatorname{corank}_{\Z_2}\Sel_{2^\infty}(E_\ell/\Q)=1
+ \quad\Longrightarrow\quad\ord_{s=1}L(E_\ell,s)=1.
+\]
+\end{hypothesis}
+Here $c_4=208\ell^2$, $\Delta=2304\ell^6$, and $j=35152/9$.
+The nonintegral rational $j$ shows these curves are non-CM. They are
+different from the CM generator curve. Non-CM alone does not prove
+Hypothesis~\ref{hyp:RC}.
+
+\subsection{The exact descent reduction}
+The signed divisors of 2730 realize all real, $2$-adic and $3$-adic
+squareclass signatures. After $-1,2,3$ fix sign and valuation parities,
+the remaining unit vectors of $5,7,13$ are
+$(0,1,1),(1,0,0),(0,1,0)$ and form a basis. Choose positive $m$ making
+$A=mB$ square at two and a nonsquare unit squareclass at three.
+Let $\beta,\theta$ be the positive squarefree representatives of $A,H$.
+Then $\beta\equiv17\pmod{24}$, $\theta\equiv1\pmod{24}$, with disjoint
+supports, $\beta>1$, and $\theta=1$ permitted. Each is a local square
+at the support of the other. At a prime of $\beta$, the relevant odd
+valuation of $B$ is positive, so $1-B/m$ is a square unit. At a prime
+of $\theta$, $v(B)$ must be zero, since otherwise $v(H)$ is even;
+there $B/m\equiv1$, so $A$ is a square.
+
+The simultaneous construction in S11--S12 gives $n,n\theta$ positive
+squarefree and congruent to eleven modulo twelve, both with two-Selmer
+dimension three and with extra Kummer class $(\beta,1)$. Its matrix
+conditions can be stated explicitly. For support primes $q_i$, set
+$s_i=[-1/q_i]$, $\lambda_i=[3/q_i]$, and
+\[
+ (Kv)_i=\sum_{j\ne i}[q_j/q_i](v_j+v_i).
+\]
+One arranges $\ker K=\langle\mathbf1,\mathbf1_{\operatorname{supp}\beta}\rangle$
+and $\lambda\notin\operatorname{im}K$ on both supports. Add $d-1$
+prime slots of type $(s,\lambda)=(0,0)$ and one slot $q_0$ of type
+$(1,1)$, where $d=\omega(\beta)$. The cross-block has columns
+$e_i+e_d$. After the rank-one correction $K^\sharp=K+\lambda a^t$,
+deleting $q_0$ leaves
+\[
+ \begin{pmatrix}D_1&C_1\\C_1^t&0\end{pmatrix},
+ \qquad\mathbf1^tD_1\mathbf1=1.
+\]
+This is nonsingular: $C_1^tx=0$ makes $x$ constant, and the first
+equation forces that constant and then $y$ to vanish. Adding the
+support of $\theta$ preserves this block. Free $q_0$-symbols toggle
+the new diagonal entries; the determinant's full-product coefficient
+is one. Thus a single Boolean assignment works on both supports.
+Reciprocity, CRT and Dirichlet realize it by distinct auxiliary primes.
+
+In Kummer coordinates $(x+3\ell,x-\ell)$, a positive-second-coordinate
+Selmer representative is $(3^\delta\prod q_i^{u_i},\prod q_i^{v_i})$.
+The necessary local equations are
+\[
+ Ku+\operatorname{diag}(\lambda)v=\delta\lambda,\quad
+ (K+\operatorname{diag}(s))v=0,\quad(\lambda+s)^tv=0.
+\]
+The final equation is the condition at three. The matrix properties
+force $v=0$, $\delta=0$, $u\in\ker K$, so there are at most eight
+classes in total. The extra class is actually local at every place,
+including two, and independent of the two torsion classes, giving
+dimension three. This sufficiency check for the particular class is
+essential; arbitrary parity conditions at two would not suffice.
+
+\begin{lemma}[Dimension three gives corank one]\label{lem:corank}
+For an elliptic curve with full rational two-torsion,
+$\dim_{\F_2}\Sel_2=3$ implies $\operatorname{corank}_{\Z_2}\Sel_{2^\infty}=1$.
+\end{lemma}
+\begin{proof}
+The finite Kummer sequence gives $r+\dim\Sha[2]=1$.
+Write $\Sha[2^\infty]=(\Q_2/\Z_2)^t\oplus F$ with $F$ finite.
+The Cassels--Tate pairing on the quotient by the maximal divisible
+subgroup is nondegenerate and alternating for an elliptic curve
+\cite{poonenstoll}. Its finite primary cyclic factors are paired,
+so $\dim F[2]$ is even. Thus $F=0$ and $r+t=1$. The restriction of
+the pairing to $F[2]$ need not be nondegenerate and is not used.
+\end{proof}
+
+Assuming $\mathsf{RC}$ for both $n$ and $n\theta$, the forward rank-one
+theorem \cite{gz,kolyvagin} gives rank one and finite $\Sha$, hence
+$\Sha[2]=0$.
+The Kummer class is then represented by actual rational points. Their
+abscissas have squareclass $\beta$, by the cubic equation. Write
+$H=\theta c^2$ and rescale the second point to $E_{nH}$. If the first
+abscissa is $Aq^2$, divide both parameters by $q^2$ and both coordinates
+by $q^2,q^3$. The abscissas become $A,Az^2$, giving precisely the
+eleven witnesses, with $w=(eHz)^{-1}$. If $\theta=1$, one can reuse
+a point on the same curve. This proves $\mathsf{RC}\Rightarrow\mathsf{PC}$
+with the stated descent input, not $\mathsf{PC}$ unconditionally.
+
+\section{Multiplication and the finite false-triple guard}\label{sec:mult}
+The actual multiplication template first forces all three input codes
+to be members of $2E(K_0)$. These membership calls are conjuncts inside
+the height certificate; they are not assumed caller preconditions.
+Thus even untyped rational inputs, if accepted, have unique indices.
+The template has 35,134 rational witnesses. Its construction is S03
+and its mathematical specification is S13.
+
+For indices $n_1,n_2,n_3$, each test group chooses $H=[h]P_0$,
+$U_i=[z_i]P_0$, and sets $V_0=H-[c_*]P_0$,
+$V_i=U_i-[c_*n_i]P_0$, where $c_*=4M_0$ is fixed. Use
+\begin{align*}
+ L(z)={}&16575z-6630d^2z^5+11050d^4z^9-25500d^6z^{13}\\
+        &+68250d^8z^{17}-198900d^{10}z^{21}+612612d^{12}z^{25}.
+\end{align*}
+This is 16575 times the degree-25 truncation of the normalized formal
+logarithm. The twelve tests are four inverse abscissas at $H,U_i$,
+their four conjugate counterparts at $V_0,V_i$, three differences of
+the corresponding $L$-ratios, and the product of the first two unprimed
+ratios minus the third. Identity inverse abscissas are zero; all
+denominators are guarded.
+
+For a slope $t\notin\Cset\cup\{1\}$, put
+\[
+ R_0=\eta F(t)/(t-1)^8,\quad\eta^2=1,\quad
+ a=1-R_0q^2\ne0,\quad R=\ell_0^2a^2R_0.
+\]
+Denote the twelve unscaled test values in group $g$ by $D_{gj}$.
+Their normalized values are
+\[
+ C_{gj}=\frac{D_{gj}}{R_0^{k_j}(t-1)^{k_j+1}},\qquad
+ k_j=\begin{cases}1,&1\le j\le8,\\25,&9\le j\le12.\end{cases}
+\]
+For six independent groups set
+$W_g=\prod_j(1+RC_{gj}^2)$ and
+$\Theta=\Tr\sum_gW_g^{-1}$, require them nonzero, and impose
+$\Phi(R/\Theta^2)$. The pole input is nonzero, so the prefactor $B$
+in $Q_{\rm pole}$ cannot make these constraints vacuous.
+
+At a positive odd contact prime outside $S_{\rm mul}$, each factor
+valuation is the minimum of zero and an odd integer. No cancellation
+occurs. The trace and Lemma~\ref{lem:pole} force one common group and
+place where the first eight tests have valuation at least one and
+the last four at least 25. The first tests put the points in the
+formal group. At least one of $h,h-c_*$ is a unit at the prime, so its full-log
+ratio is integral. The truncated logarithm is the full logarithm times
+a unit congruent to one in valuation at least 28. Its ratio is therefore
+integral. The difference test transfers integrality to the other truncated
+ratio, then to the other full-log ratio. Only now do the relative errors
+give absolute congruences modulo $p^{28}$. Multiplying the two ratio congruences
+by their integer denominators gives
+$n_i\equiv L(z(U_i))/L(z(H))\pmod{p^{25}}$.
+The product test then implies $p^{25}\mid n_1n_2-n_3$.
+
+To specify the height certificate, write the abscissa of each input as
+$x_{i0}+x_{i1}s$, using $x_{i0}=x_{i1}=0$ at the identity. Choose
+$a_{i0},a_{i1},b_i\in\Q$ with $b_i\ne0$ and
+$b_i x_{ij}=a_{ij}$. Express each of these nine rational quantities
+as a sum of three slopes. Impose the preceding slope predicate on
+all 27 slopes, with private witnesses, and impose membership on the
+three input codes. This conjunction is the height certificate.
+The multiplication predicate conjoins it with the fixed scalar
+graphs and the inverse of the finite guard below.
+
+\begin{proposition}[Finite-box deduction]\label{prop:box}
+Assuming these local test identities and the height estimate for
+$S_{\rm mul}$ with constant $A_{\rm ht}$, every false triple accepted
+by the unguarded certificate has $\max_i|n_i|<T=(48A_{\rm ht})^{13}$.
+\end{proposition}
+\begin{proof}
+Put $f=n_1n_2-n_3\ne0$. For each of the 27 slopes,
+$M_{S_{\rm mul}}(t)^{25}\mid f$, so $h(t)\le A_{\rm ht}|f|^{24/25}$.
+The nine rational homogeneous quantities for the three abscissas
+are sums of three slopes. The sum and quotient height bounds give
+$h(x_j)\le6A_{\rm ht}|f|^{24/25}+2\log3$ for each rational component.
+The fixed coordinate change and the duplication bounds yield
+\[
+ 2n_i^2\widehat h(P_0)\le12A_{\rm ht}|f|^{24/25}+B_0,
+\]
+where $2\widehat h(P_0)>1$ and
+$B_0=4\log3+\tfrac32\log2+2\log(1+\sqrt2)+\tfrac13\log676<10$.
+For $N=\max|n_i|$, $|f|\le2N^2$, so
+$N^2<24A_{\rm ht}N^{48/25}+10$.
+If $N\ge5$, this implies $N^{2/25}<48A_{\rm ht}$, hence
+$N<(48A_{\rm ht})^{25/2}\le T$. The case $N\le4$ is immediate.
+\end{proof}
+
+For each false triple $(a,b,c)\in[-T,T]^3$, write its fifteen code
+coordinates as $A_j/B_j$ with $B_j>0$, put $D_{abc}=\prod B_j$, and
+form
+\[
+ g_{abc}(X)=\sum_{j=1}^{15}
+       (D_{abc}X_j-(D_{abc}/B_j)A_j)^2.
+\]
+The guard requires the product of all these factors to have an inverse.
+A false accepted triple makes its own factor zero. At a true triple
+every factor is positive by injectivity of codes, and the inverse exists.
+Thus the sound direction uses the generator and corrected all-$S$
+height theorem but does not use pole completeness.
+
+For completeness, S14 constructs, for every integer $A$ and bound $B_0$,
+integers $u_1,u_2,v$ with $u_3=Av-u_1-u_2$ such that all 22 forms
+$v,u_j-bv$, $b\in\Cset\cup\{1\}$, are signed catalogue multiples of
+primes above $B_0$. At each such prime the conjugate reduction orders
+have gcd four and are prime to that prime. The finite-complexity prime
+asymptotic \cite{greentao,moebius,gtz} is used after fixing the catalogue
+and initial CRT data, then the sieve cutoff $L$. Twenty-two catalogue
+primes per unit class allow distinct choices for the twenty-two
+occurrences. At one catalogue prime the distinguished zero plane avoids
+at most $42p<p^2$ points; a lift modulo $p^2$ makes its divided value
+different from zero and minus one. The fixed affine system is therefore
+locally admissible. The asymptotic gives a lower count
+$c_A(\log L)^{-44}X^3/(\log X)^{22}$ for fixed sieve cutoff $L$.
+Each pair of forms has a two-by-two coefficient minor equal to
+$\pm1$ or a nonzero contact difference of absolute value at most 61.
+Thus the local conditions are nondegenerate uniformly in $A$;
+other minors may involve $A$.
+A Gaussian-pair sieve and the 21-form sieve on each nonzero fiber bound
+the loss by $C_AX^3/(L(\log X)^{22})+o_A(X^3/(\log X)^{22})$.
+Choose $L$ first and then $X$ with $A,L$ fixed. A uniform prime-asymptotic
+error as $L$ varies is neither asserted nor needed. The corrected
+all-orders inverse theorem is among the external inputs.
+
+Apply this construction to the nine integral homogeneous quantities
+of a true triple. Each slope has at most six odd-contact primes.
+At one such prime with reduction orders $d_1,d_2$, solve
+\[
+ h\equiv0\pmod{\operatorname{lcm}(M_0,d_1)},\qquad
+ h\equiv c_*\pmod{d_2}.
+\]
+Compatibility follows from
+\[
+ \gcd(\operatorname{lcm}(M_0,d_1),d_2)
+                  \mid M_0\gcd(d_1,d_2)=4M_0=c_*.
+\]
+Choose a solution larger than $c_*$. Each contact prime uses its own
+private group within its own slope. No common shift across different
+primes is imposed, and selected prime values need not be distinct.
+The saved library allocates six private groups per slope and twenty-seven
+private slope calls. Set $U_i=[n_i]H$ and assign one group to each prime. Fixed local
+clearing at the old primes can be checked as follows.
+Put $S_b=S_{\rm ht}\cup\mathcal H$, $B_p=4$ on $S_{\rm ht}$ and
+$B_p=1$ on the remaining catalogue primes, $C_p=14B_p$, and
+$D_p=51C_p$. The selected integral forms give
+$|v_p(R_0)|,|v_p(t-1)|\le C_p$, while the small formal subgroup
+in the definition of $M_0$ gives $v_p(D_{gj})\ge0$ at $S_b$.
+Consequently $v_p(C_{gj})\ge-D_p$. The fixed normalization has
+$v_p(\ell_0)=E_p=52C_p+v_p(12)+4$.
+
+Weak approximation chooses $q$ small at $S_b$, integral at the
+selected primes, and arbitrarily close to a real root of
+$1-R_0q^2$, without equality; choose $\eta$ to make $R_0>0$.
+Then $a$ is a unit at the specified finite primes. At $p\in S_b$,
+\[
+ v_p(RC_{gj}^2)\ge 2E_p-C_p-2D_p>v_p(12),\qquad
+ v_p(\Theta-12)>v_p(12),
+\]
+so $v_p(R/\Theta^2)\ge103C_p+8\ge4$.
+At a selected odd-contact prime, $v_p(R)=1$. Each of the twelve
+summands of the trace of the six $W_g^{-1}$ has residue zero or one;
+the assigned group and place contributes one. Since $p>324$, their
+sum is a unit and the pole input has valuation one. At every other
+prime outside $S_b$, its valuation is even. Thus its reduced
+denominator is square. In both real embeddings each $W_g$ is positive;
+as $a\to0$, $W_g\to1$, $\Theta\to12$, and $R/\Theta^2\to0$
+through positive values. This verifies exactly $\mathsf{PC}$'s
+hypotheses, including all nonzero guards. Negative indices, zero indices and
+coincident points are handled by the group-law branches. Therefore
+the full multiplication interface remains conditional on
+$\mathsf{PC}$, hence on the required restricted converse in this route.

@@ -1,0 +1,724 @@
+diff --git a/.gitattributes b/.gitattributes
+index 49e1a88..efcaeba 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -36,3 +36,12 @@ scripts/check_quartic394.py -text
+ scripts/build_paper.py -text
+ scripts/check_quartic394_portable.py -text
+ scripts/quartic394_path_bootstrap.py -text
++docs/manuscript-revisions/version14/** -text
++docs/research-review/proof-sources/** -text
++
++# Preserve the exact bytes bound by the protocol adoption reviews.
++AGENTS.md -text
++README.md -text
++CONTRIBUTING.md -text
++.github/pull_request_template.md -text
++docs/research-review/** -text
+diff --git a/.github/pull_request_template.md b/.github/pull_request_template.md
+index 4cbb50d..309b7f9 100644
+--- a/.github/pull_request_template.md
++++ b/.github/pull_request_template.md
+@@ -8,6 +8,9 @@ Follow the [contributor review guide](https://github.com/elliotglazer/diophantin
+ 
+ - Exact revision, file hashes, proposed edits and dependency impact:
+ - Complete proof and published-source application inventory, including the nine obligations and version/convention comparisons:
++- Source-first coverage index, frozen initial and reconciled source-use tables, direct-dependency reconciliation and separate non-author coverage decision, including prior exposure and remaining gaps, or a precise non-applicability explanation:
++- Substantive transitions: exact available and needed conclusions, connecting derivations, adverse cases and non-author decisions:
++- For substantive failures: bounded related-use review, its coverage decision and consistency of repeated current assertions, or a specific non-applicability explanation:
+ - Explicit construction or computational specification, certificates, reproduction commands and results:
+ - Non-author review decisions with exact bindings, identities and scope:
+ - All received audits and findings, reviewed resolutions and remaining objections:
+diff --git a/.github/workflows/manuscript-integration.yml b/.github/workflows/manuscript-integration.yml
+index 7db7707..82ecbfc 100644
+--- a/.github/workflows/manuscript-integration.yml
++++ b/.github/workflows/manuscript-integration.yml
+@@ -38,6 +38,8 @@ jobs:
+       - run: python -B docs/manuscript-revisions/version13/portability/test_portability.py
+       - run: python -B scripts/check_quartic394_portable.py
+       - run: python -B docs/manuscript-revisions/version13/validate-applications.py --repo . --self-test
++      - run: python -B quartics/quartic-299-314/verify_lineage.py
++      - run: python -B docs/manuscript-revisions/version14/validate-applications.py --repo . --self-test
+       - run: python -B scripts/check_audit_history.py --self-test
+       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+         if: always()
+@@ -114,18 +116,18 @@ jobs:
+         with:
+           path: .cache/tectonic
+           key: tectonic-${{ runner.os }}-0.17.0-6ffe055852f8faf66
+-      - name: Compile the exact Version 13 manuscript
++      - name: Compile the exact Version 14 manuscript
+         run: python scripts/build_paper.py
+       - name: Render changed pages for visual review
+         run: |
+           sudo apt-get update -qq
+           sudo apt-get install -y poppler-utils
+           ulimit -v 2097152
+-          python scripts/render_quartic_review.py --pdf build/paper/quartic_v13.pdf --edition v13 --pages 1,276-288 --expected-pages 296
++          python scripts/render_quartic_review.py --pdf build/paper/quartic_v14.pdf --edition v14 --pages 1-4,21,24,110-111,301-314 --expected-pages 323
+       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+         if: always()
+         with:
+-          name: quartic-v13-paper
++          name: quartic-v14-paper
+           path: |
+             build/paper/
+             build/pdf-review/
+diff --git a/.github/workflows/research-checks.yml b/.github/workflows/research-checks.yml
+index 92e761a..00a6e17 100644
+--- a/.github/workflows/research-checks.yml
++++ b/.github/workflows/research-checks.yml
+@@ -33,6 +33,8 @@ jobs:
+       - run: python -B docs/manuscript-revisions/version13/portability/test_portability.py
+       - run: python -B scripts/check_quartic394_portable.py
+       - run: python -B docs/manuscript-revisions/version13/validate-applications.py --repo . --self-test
++      - run: python -B quartics/quartic-299-314/verify_lineage.py
++      - run: python -B docs/manuscript-revisions/version14/validate-applications.py --repo . --self-test
+       - run: python -B scripts/check_audit_history.py --self-test
+       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+         if: always()
+diff --git a/AGENTS.md b/AGENTS.md
+index f9f871d..f8c28ed 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,9 +1,11 @@
+-# Research review and reporting
+-
+-Before classifying a mathematical objection, closing a review item, or claiming that a manuscript incorporates an earlier audit, follow [the audit integration protocol](docs/audit-history/PROTOCOL.md).
+-
+-Read the actual earlier argument, not only its verdict. Keep historical justification and incorporation into the current manuscript separate. Record exact sources, conventions, hypothesis checks, and the consuming passage. If the history has not been checked, say that it is unresolved rather than calling a repair new. A passing structural or computational check is not proof of the arithmetic theorem.
+-
+-For every changed theorem application, compare the source's required inputs with the objects actually constructed. Explicitly check index-set coverage, transition maps and the identity of the object consumed downstream. Review a changed route anew even when its conclusion was accepted earlier. Follow the contract and independent-acceptance requirements in the protocol; do not let a historical approval authorize a revised argument.
+-
+-Run `python -B scripts/check_audit_history.py --self-test` after changing the register, current manuscript, application contracts or their bound sources. This checks both immutable history and current acceptance. Do not refresh hashes merely to silence a failed check; review the changed application first. Never generate an independent approval on behalf of a reviewer. User instructions take precedence. This protocol introduces no additional permission requirement.
++# Research review and reporting
++
++Before classifying a mathematical objection, closing a review item, or claiming that a manuscript incorporates an earlier audit, follow [the audit integration protocol](docs/audit-history/PROTOCOL.md).
++
++Read the actual earlier argument, not only its verdict. Keep historical justification and incorporation into the current manuscript separate. Record exact sources, conventions, hypothesis checks, and the consuming passage. If the history has not been checked, say that it is unresolved rather than calling a repair new. A passing structural or computational check is not proof of the arithmetic theorem.
++
++For every changed theorem application, compare the source's required inputs with the objects actually constructed. Explicitly check index-set coverage, transition maps and the identity of the object consumed downstream. Review a changed route anew even when its conclusion was accepted earlier. Follow the contract and independent-acceptance requirements in the protocol; do not let a historical approval authorize a revised argument.
++
++Run `python -B scripts/check_audit_history.py --self-test` after changing the register, current manuscript, application contracts or their bound sources. This checks both immutable history and current acceptance. Do not refresh hashes merely to silence a failed check; review the changed application first. Never generate an independent approval on behalf of a reviewer. User instructions take precedence. This protocol introduces no additional permission requirement.
++
++The governing [mathematical research review protocol](docs/research-review/PROTOCOL.md) is version 1.4. For substantive source-to-consumer transitions, record the available result, the needed assertion and the exact derivation connecting them. After a substantive failure, review plausible related uses within a justified scope and compare all current repetitions of the corrected assertion. Preserve historical evidence. A scoped component acceptance is not final assembled-proof or release acceptance. The local audit-history checker implements only its documented subset of these requirements.
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 098e93b..46d265d 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -4,6 +4,8 @@ Mathematical corrections, dependency checks, reproducibility reports, and improv
+ 
+ For proposed changes, follow the [research review guide](docs/research-review/README.md) and the [complete mathematical research review protocol](docs/research-review/PROTOCOL.md). They specify PR evidence, non-author review, treatment of every audit objection, and closure on the exact final revision. For a research release, identify the project release profile and include the cumulative research handoff and synchronized release records. For a non-release change, explain which release duties do not apply and why. The guide links the live rulesets for current enforcement. Existing CI alone does not establish full protocol completion.
+ 
++For proof-coverage claims, include the complete coverage index, the non-author's frozen initial source-use reconstruction, its reconciliation with the declared inventory and direct dependencies, and the separate coverage decision required by protocol v1.4. Preserve differences and their reviewed dispositions. Record prior exposure, exact proof and supplier versions, and any unreviewed passage or unresolved supplier. Changes to a supplier contract or an affected proof require renewed coverage review. Existing application acceptances alone do not establish completeness. Identify every substantive source-to-consumer transition and its derivation. After a substantive failure, include the bounded review of related uses and the check that repeated current assertions incorporate the correction. Preserve prior evidence and obtain non-author acceptance of the affected scope.
++
+ ## Mathematical reports
+ 
+ [Open an issue](https://github.com/elliotglazer/diophantine-z-q/issues/new) with:
+diff --git a/README.md b/README.md
+index 2fe6969..d4d951c 100644
+--- a/README.md
++++ b/README.md
+@@ -1,23 +1,25 @@
+ # Z is Diophantine in Q
+ 
+-## Version 13
++## Version 14
+ 
+-This repository contains *Z is Diophantine in Q*, Version 13, dated November 7, 2026. It gives quartics in **394 total variables** with exact symbolic coefficients and **411 total variables** with every coefficient written out in decimal. The new section proves the reductions from the retained Version 12 construction and records separate mathematical and coefficient-table reviews. The original large construction, earlier quartic proofs and Version 11 Kato index-set and limiting-class repair remain in the manuscript. The Version 9 starting reductions were contributed by Gabriel Conant with ChatGPT.
++This repository contains *Z is Diophantine in Q*, Version 14, dated November 8, 2026. It gives quartics in **299 total variables** with exact symbolic coefficients and **314 total variables** with every coefficient written out in decimal. The original large construction, earlier quartic proofs and Version 11 Kato index-set and limiting-class repair remain in the manuscript. The Version 9 starting reductions were contributed by Gabriel Conant with ChatGPT.
+ 
+ The project uses the collective agentic notes from Stefan Baranczuk, Jose Brox, Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jennifer Park, and Caroline Terry.
+ 
+ | To | Open |
+ | --- | --- |
+-| Read Version 13 | [Manuscript PDF](manuscripts/quartic_v13.pdf), [TeX source](manuscripts/quartic_v13.tex) |
++| Read Version 14 | [Manuscript PDF](manuscripts/quartic_v14.pdf), [TeX source](manuscripts/quartic_v14.tex) |
++| Reproduce the 299/314-variable quartics | [Tables, proof inventory and review scopes](docs/manuscript-revisions/version14/GUIDE.md) |
+ | Reproduce the 394/411-variable quartics | [Tables, proof inventory and review scopes](docs/manuscript-revisions/version13/GUIDE.md) |
+ | Reproduce the 498/514-variable quartics | [Tables, proof inventory and independent reviews](docs/manuscript-revisions/version12/README.md) |
+ | Reproduce the 523/540-variable quartics | [Tables, source, dependency chain and checks](docs/quartic-523-540/README.md) |
+ | Read the fully expanded Version 4 quartic | [4,973-variable package](quartics/quartic-4973/README.md), [integer monomial table](quartics/quartic-4973/polynomial.expanded.txt) |
+-| Inspect the current repair and review protocol | [Version 11 source audit](docs/manuscript-revisions/version11/README.md), [protocol](docs/audit-history/PROTOCOL.md) |
++| Follow the current mathematical research review protocol | [Protocol v1.4](docs/research-review/PROTOCOL.md), [contributor guide](docs/research-review/README.md) |
++| Inspect the Version 11 repair and repository audit integration | [Version 11 source audit](docs/manuscript-revisions/version11/README.md), [audit integration protocol](docs/audit-history/PROTOCOL.md) |
+ | Inspect the nine earlier review corrections | [Version 10 response and inventory](docs/manuscript-revisions/version10/README.md) |
+ | Inspect theorem applications and conventions | [Version 9 extension](docs/quartic-523-540/README.md), [inherited proof inventory](docs/quartic-962/README.md) |
+ | Build the manuscript or run the checks | [Build instructions](docs/building.md) |
+-| Download the current audit supplement | [Version 13 supplement and guide](research/version13/README.md), [Version 12 archive](research/version12/README.md) |
++| Download the current audit supplement | [Version 14 cumulative supplement](research/version14/README.md), [Version 13 archive](research/version13/README.md) |
+ | Download the Version 7 research handoffs | [Full handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-962-version-7/z-in-q-version7-full-handoff.zip), [current-only handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-962-version-7/z-in-q-version7-current-handoff.zip), [contents and verification](handoff/README.md) |
+ | Read collaborator notes and the height replacement | [Research update](research/2026-11-06-collaborator-notes/README.md) |
+ | Read the October 11 manuscript | [Manuscript and provenance](October%2011%20Manuscript/README.md) |
+@@ -43,6 +45,8 @@ $$
+ | Construction | Total variables, including input | Degree | Nonzero monomials | Coefficient magnitude |
+ | --- | ---: | ---: | ---: | --- |
+ | Original | 292,890,231,905 | Less than $2\uparrow\uparrow7$ | Not expanded | Less than $2\uparrow\uparrow8$ |
++| Version 14, decimal table | 314 | 4 | 6,672 | Less than $2^{6496}$ |
++| Version 14, symbolic table | 299 | 4 | 6,630 | Maximum $186624\cdot3^{2^{26}}$ |
+ | Version 13, decimal table | 411 | 4 | 6,388 | Less than $2^{3247}$ |
+ | Version 13, symbolic table | 394 | 4 | 6,338 | Maximum $16\cdot3^{2^{26}}$ |
+ | Version 12, decimal table | 514 | 4 | 24,716 | Maximum $3^{2048}+1005072314676622<2^{3247}$ |
+@@ -52,6 +56,8 @@ $$
+ | Version 4 quartic, retained | 4,973 | 4 | 72,925 | Maximum 685,783,949,153,203,534,233,890, less than $2^{80}$ |
+ | Version 6 quartic | 962 | 4 | 55,409 | Maximum $64\cdot3^{2^{28}}$ |
+ 
++The [314-variable decimal table](quartics/quartic-314-fully-expanded.txt) contains every coefficient in decimal and occupies 264,430 bytes. The [299-variable table](quartics/quartic-299-symbolic-coefficients.json) uses the fixed integer $C=3^{2^{25}}$. See the [Version 14 guide](docs/manuscript-revisions/version14/GUIDE.md) for the construction, inventory and review scopes.
++
+ The [411-variable decimal table](quartics/quartic-411-fully-expanded.txt) contains every coefficient in decimal and occupies 214,957 bytes. The [394-variable table](quartics/quartic-394-symbolic-coefficients.json) uses the fixed integer $C=3^{2^{25}}$, not an extra variable. Both have content one. The ordinary companion adds sixteen constant-chain coordinates and one multiplication coordinate to keep its residuals quadratic. [Version 13 checks and reviews](docs/manuscript-revisions/version13/GUIDE.md) explain the construction and their separate scopes.
+ 
+ The [514-variable table](quartics/quartic-514-fully-expanded.txt) contains every coefficient in decimal and occupies 690,922 bytes. The [498-variable table](quartics/quartic-498-symbolic-coefficients.json) uses the fixed integer $C=3^{2^{25}}$, not an extra variable. [Version 12 checks and reviews](docs/manuscript-revisions/version12/README.md) cover the exact coefficient data and new mathematical transformations separately.
+@@ -68,9 +74,9 @@ The earlier 962-variable polynomial builds on an independent reconstruction of t
+ 
+ The finite checks verify the source program, algebraic coordinate changes, projection-preserving eliminations, complete sum-of-squares expansion and coefficient statistics. Independent checks and rejection tests accompany the package. These checks do not prove the source system's arithmetic characterization of the integers.
+ 
+-The manuscript supplies that arithmetic argument. The [Version 13 guide](docs/manuscript-revisions/version13/GUIDE.md) separates the new component and composition reviews, the finite table checks, and the 39-application inventory. These internal reviews retain the inherited arithmetic inputs and source qualifications. The [Version 12 application inventory and reviews](docs/manuscript-revisions/version12/README.md) cover that edition's reductions while retaining the prior arithmetic inputs and their source qualifications. The [Version 9 extension](docs/quartic-523-540/README.md) connects the new arithmetic arguments to the inherited proofs. The [Version 7 inventory](docs/quartic-962/README.md) records exact theorem applications, source versions, hypotheses, conventions and translations. Version 6 proves the needed Gaussian ray-field estimate within the manuscript, following the method of Frei–Tinková without assuming their theorem. The replacement uses Mitsui's published prime-ideal estimate, Green–Tao's one-parameter results, and ordinary-prime transference.
++The manuscript supplies that arithmetic argument. The [Version 14 guide](docs/manuscript-revisions/version14/GUIDE.md) records the exact current constructions and separates the finite checks from their mathematical review. The [Version 13 guide](docs/manuscript-revisions/version13/GUIDE.md) separates the new component and composition reviews, the finite table checks, and the 39-application inventory. These internal reviews retain the inherited arithmetic inputs and source qualifications. The [Version 12 application inventory and reviews](docs/manuscript-revisions/version12/README.md) cover that edition's reductions while retaining the prior arithmetic inputs and their source qualifications. The [Version 9 extension](docs/quartic-523-540/README.md) connects the new arithmetic arguments to the inherited proofs. The [Version 7 inventory](docs/quartic-962/README.md) records exact theorem applications, source versions, hypotheses, conventions and translations. Version 6 proves the needed Gaussian ray-field estimate within the manuscript, following the method of Frei–Tinková without assuming their theorem. The replacement uses Mitsui's published prime-ideal estimate, Green–Tao's one-parameter results, and ordinary-prime transference.
+ 
+-The inventory retains source-version qualifications. In particular, the applications of Dodos–Kanellopoulos and Kollár were checked in the stated author versions of published works; their final typeset statements were not compared. This is not a claim that every cited source's final published text has been inspected.
++Historical inventories retain their original source-version qualifications, including the earlier Dodos–Kanellopoulos and Kollár applications. Those citations are absent from the current Version 14 manuscript. Consult the Version 14 source and application records for the current dependencies; a historical acceptance is limited to its recorded source and argument.
+ 
+ The [Version 4 inventory](docs/quartic-4973/README.md) and the [earlier 82-record inventory](docs/theorem-application-audit/README.md) retain their own frozen scopes. Structural inventory checks detect stale or mismatched records; they are not proofs of mathematical theorems.
+ 
+diff --git a/docs/archiving.md b/docs/archiving.md
+index c4c5c49..ca7d33c 100644
+--- a/docs/archiving.md
++++ b/docs/archiving.md
+@@ -1,9 +1,13 @@
+ # Citation and archival release
+ 
+-Use [CITATION.bib](../CITATION.bib) for *Z is Diophantine in Q*, Version 13, dated November 7, 2026, and for the historical manuscripts and research handoffs. The current manuscript is [manuscripts/quartic_v13.pdf](../manuscripts/quartic_v13.pdf), with [TeX source](../manuscripts/quartic_v13.tex). Cite the version and commit or file hash when discussing an exact artifact.
++Use [CITATION.bib](../CITATION.bib) for *Z is Diophantine in Q*, Version 14, dated November 8, 2026, and for the historical manuscripts and research handoffs. The current manuscript is [manuscripts/quartic_v14.pdf](../manuscripts/quartic_v14.pdf), with [TeX source](../manuscripts/quartic_v14.tex). Cite the version and commit or file hash when discussing an exact artifact.
+ 
+ The manuscript author field is blank, and the BibTeX entries intentionally omit author fields. Collaboration credit appears in the [README](../README.md). There is no `CITATION.cff`: the CFF 1.2 schema requires an author record, and the repository does not invent a person or organization to fill it.
+ 
++## Version 14 cumulative supplement
++
++The [Version 14 supplement guide](../research/version14/README.md) identifies the exact manuscript, selected coefficient tables, inventory, checks and cumulative research evidence. It preserves the Version 13 supplement as a hash-verified historical layer.
++
+ ## Version 13 supplement
+ 
+ The [Version 13 supplement guide](../research/version13/README.md) identifies `z-in-q-version13-supplement.zip`, the reviewed manuscript, the 394/411-variable packet, application inventory and review records. The archive is assembled from the final checked release state. Its receipt records the exact file hash and size; the [Version 12 supplement](../research/version12/README.md) remains a separate historical reference.
+@@ -16,7 +20,7 @@ The [Version 6 release](https://github.com/elliotglazer/diophantine-z-q/releases
+ 
+ The [Version 2 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-12504-version-2) preserves the 12,504-variable quartic and its associated evidence. Its manuscript and package remain historical artifacts and are not relabeled as Version 4.
+ 
+-The [November 4 research handoff](https://github.com/elliotglazer/diophantine-z-q/releases/tag/research-handoff-2026-11-04-r2) is a dated archive. It does not contain the Version 2 or Version 4 quartic package or all later review evidence. Its release tag and checksum continue to identify that historical snapshot. The [Version 5 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-1272-version-5) preserves the 1,272-variable construction. The current quartics and their evidence are in the [394/411-variable package](../quartics/quartic-394-411/README.md) and [Version 13 guide](manuscript-revisions/version13/GUIDE.md). The [523/540-variable package](../quartics/quartic-523-540/) and its [guide](quartic-523-540/README.md) remain historical proof baselines.
++The [November 4 research handoff](https://github.com/elliotglazer/diophantine-z-q/releases/tag/research-handoff-2026-11-04-r2) is a dated archive. It does not contain the Version 2 or Version 4 quartic package or all later review evidence. Its release tag and checksum continue to identify that historical snapshot. The [Version 5 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-1272-version-5) preserves the 1,272-variable construction. The current quartics and their evidence are in the [299/314-variable package](../quartics/quartic-299-314/README.md) and [Version 14 guide](manuscript-revisions/version14/GUIDE.md). The [523/540-variable package](../quartics/quartic-523-540/) and its [guide](quartic-523-540/README.md) remain historical proof baselines.
+ 
+ ## DOI status
+ 
+diff --git a/docs/building.md b/docs/building.md
+index 653bb7e..996a473 100644
+--- a/docs/building.md
++++ b/docs/building.md
+@@ -2,7 +2,11 @@
+ 
+ Run these commands from the repository root. Python scripts use the standard library. The current quartic and the original large construction have separate checks. The Version 7 handoffs contain their own build instructions under `current/`; Version 9 adds the [odd-product constructions](quartic-523-540/README.md). See the [handoff guide](../handoff/README.md) for the archive layout and verification procedure.
+ 
+-## Current 394- and 411-variable quartics
++## Current 299- and 314-variable quartics
++
++Run the exact replay and inventory commands in the [Version 14 guide](manuscript-revisions/version14/GUIDE.md). Its finite checks, manuscript review and inherited arithmetic inputs have separate scopes.
++
++## Historical 394- and 411-variable quartics
+ 
+ ```sh
+ python -B scripts/check_quartic394_portable.py
+@@ -59,29 +63,9 @@ python -E -B /path/to/writable-copy/verify_certificate.py /path/to/writable-copy
+ 
+ This portable checker writes `verification.json` in the supplied directory. Use the copy to keep the released package's exact file inventory unchanged. The packaged original receipt is [evidence/final-verification.json](../quartics/quartic-4973/evidence/final-verification.json). The checker verifies exact projection-preserving equivalence to the pinned source and the complete integer expansion, including the variable count, degree and coefficient bound. These checks do not prove the source system's arithmetic characterization of the integers. The [Version 4 evidence](quartic-4973/README.md) records that separate argument and its review scope.
+ 
+-## Version 13 manuscript
+-
+-```sh
+-python scripts/build_paper.py
+-```
+-
+-The script downloads a SHA-256-verified Tectonic 0.17.0 binary for the host platform, then builds a copy of [manuscripts/quartic_v13.tex](../manuscripts/quartic_v13.tex) in an isolated temporary directory. It uses the fixed `tlextras-2022.0r0` bundle URL and checks the selected bundle's fingerprint. Tectonic fetches the required support files. The first run requires network access; later runs reuse the local resource cache.
++## Version 14 manuscript
+ 
+-If Tectonic 0.17.0 is already installed:
+-
+-```sh
+-python scripts/build_paper.py --tectonic /path/to/tectonic
+-```
+-
+-Results are written to `build/paper/`, including `quartic_v13.pdf`, `quartic_v13.log`, `compiler.log`, and `build-report.json`. The script fails on a compilation error, unresolved references or citations, or an unexpected bundle fingerprint. Typesetting warnings remain in the log.
+-
+-The build does not replace the checked-in PDF. Fixed engine, bundle and timestamp inputs improve reproducibility, but PDF byte identity across operating systems is not claimed. The old receipts under `docs/theorem-application-audit/` describe their frozen historical manuscript, not the Version 10 build.
+-
+-The manual manuscript workflow renders pages 1 and 276–288 of the Version 13 PDF and checks the expected total of 296 pages. To run the same visual-review preparation with Poppler installed:
+-
+-```sh
+-python scripts/render_quartic_review.py --pdf build/paper/quartic_v13.pdf --edition v13 --pages 1,276-288 --expected-pages 296
+-```
++Run `python scripts/build_paper.py` to build the current Version 14 TeX with the pinned Tectonic engine and bundle. The build writes `quartic_v14.pdf`, its logs and the build receipt under `build/paper/`; it does not replace the checked-in PDF. Review the exact rendered pages and total page count recorded in the Version 14 PDF QA receipt and reviewed workflow. Historical Version 13 receipts retain their original scope.
+ 
+ ## Manuscript inventories
+ 
+diff --git a/docs/release-policy.md b/docs/release-policy.md
+index b7ef429..587adc5 100644
+--- a/docs/release-policy.md
++++ b/docs/release-policy.md
+@@ -2,7 +2,7 @@
+ 
+ The project owner requested a new manuscript version whenever a verified quartic construction crosses below the next multiple of 100 total variables. The input variable is included in this count.
+ 
+-Version 12 records the below-500 milestone with 498 total variables. Version 13 records the below-400 milestone with 394 total variables. The next thresholds are strictly below 300, 200, then 100. A candidate exactly at a threshold has not crossed it. A single verified improvement that crosses several thresholds needs one release of that best construction, not artificial intermediate editions.
++Version 12 records the below-500 milestone with 498 total variables. Version 13 records the below-400 milestone with 394 total variables. Version 14 records the below-300 milestone with 299 total variables. The next thresholds are strictly below 200, then 100. A candidate exactly at a threshold has not crossed it. A single verified improvement that crosses several thresholds needs one release of that best construction, not artificial intermediate editions.
+ 
+ Starting with Version 13, the manuscript's version subtitle has no trailing period.
+ 
+diff --git a/docs/research-guide.md b/docs/research-guide.md
+index 0e7f66a..0890ff4 100644
+--- a/docs/research-guide.md
++++ b/docs/research-guide.md
+@@ -1,8 +1,8 @@
+ # Research guide
+ 
+-The current manuscript is [*Z is Diophantine in Q*, Version 13](../manuscripts/quartic_v13.pdf), dated November 7, 2026, with [TeX source](../manuscripts/quartic_v13.tex). It adds the [394- and 411-variable quartics](manuscript-revisions/version13/GUIDE.md), preserves the [498/514-variable construction](manuscript-revisions/version12/README.md) and retains the [523- and 540-variable proof baseline](quartic-523-540/README.md) alongside the original construction and earlier proof baselines.
++The current manuscript is [*Z is Diophantine in Q*, Version 14](../manuscripts/quartic_v14.pdf), dated November 8, 2026, with [TeX source](../manuscripts/quartic_v14.tex). Start with the [299/314-variable constructions and review scopes](manuscript-revisions/version14/GUIDE.md), [application inventory](manuscript-revisions/version14/APPLICATIONS.json) and [cumulative supplement](../research/version14/README.md). The original construction and earlier proof baselines remain in the manuscript.
+ 
+-Start with the [Version 13 guide](manuscript-revisions/version13/GUIDE.md), [application inventory](manuscript-revisions/version13/APPLICATIONS.json) and [supplement guide](../research/version13/README.md). The guide distinguishes finite verification, the new internal mathematical reviews, inherited source qualifications and full-manuscript acceptance. Continue with the [Version 12 reductions, inventory and reviews](manuscript-revisions/version12/README.md) and [supplement](../research/version12/README.md), followed by the [Version 11 repair and reviews](manuscript-revisions/version11/README.md) and [supplement](../research/version11/README.md), followed by the [Version 10 review response](manuscript-revisions/version10/README.md) and [supplement](../research/version10/README.md), followed by the [Version 9 inventory extension](quartic-523-540/README.md), then its [inherited inventory](quartic-962/README.md). It records exact source versions, hypotheses, conventions and manuscript bindings, including the new prime-pattern argument and its publication-status qualifications. The [Version 9 revision record](quartic-523-540/revision.json) binds the new section and every other edit to the exact Version 8 baseline. The finite polynomial checks and the arithmetic proof have separate scopes. The [build instructions](building.md) explain how to reproduce the artifacts.
++The [Version 13 guide](manuscript-revisions/version13/GUIDE.md) and [supplement](../research/version13/README.md) preserve the 394/411-variable edition. Continue with the [Version 12 reductions, inventory and reviews](manuscript-revisions/version12/README.md) and [supplement](../research/version12/README.md), followed by the [Version 11 repair and reviews](manuscript-revisions/version11/README.md) and [supplement](../research/version11/README.md), followed by the [Version 10 review response](manuscript-revisions/version10/README.md) and [supplement](../research/version10/README.md), followed by the [Version 9 inventory extension](quartic-523-540/README.md), then its [inherited inventory](quartic-962/README.md). It records exact source versions, hypotheses, conventions and manuscript bindings, including the new prime-pattern argument and its publication-status qualifications. The [Version 9 revision record](quartic-523-540/revision.json) binds the new section and every other edit to the exact Version 8 baseline. The finite polynomial checks and the arithmetic proof have separate scopes. The [build instructions](building.md) explain how to reproduce the artifacts.
+ 
+ The [research handoff guide](../handoff/README.md) identifies the Version 7 full and current-only archives. Both contain the public snapshot and selected research notes, with no conversational transcript. The full archive also embeds the unchanged Version 6 full archive, with its earlier historical baseline.
+ 
+@@ -34,7 +34,7 @@ The archived November 5 TeX source has descriptive labels such as `thm:target`,
+ 
+ ## Map of the argument
+ 
+-Revision 2 of the November 4 research handoff added the later audit campaigns and the reviewed height replacement. Start with `current/diophantine_zq.tex`, its matching PDF, and `current/height-review.md`. The old height routes do not supply extra premises for Section 4 of that archived manuscript. The archive's revision number is distinct from the current manuscript's title, Version 13.
++Revision 2 of the November 4 research handoff added the later audit campaigns and the reviewed height replacement. Start with `current/diophantine_zq.tex`, its matching PDF, and `current/height-review.md`. The old height routes do not supply extra premises for Section 4 of that archived manuscript. The archive's revision number is distinct from the current manuscript's title, Version 14.
+ 
+ The paths below are **original project-relative paths recorded in the archive manifest**. Search for them in `INDEX.html`, or restore them with `restore_history.py`. They are not paths in this Git checkout. Some files predate the archived November 5 manuscript; compare their scope with that revision and later audits.
+ 
+diff --git a/docs/research-review/PROTOCOL.md b/docs/research-review/PROTOCOL.md
+index 11f574a..eae4f05 100644
+--- a/docs/research-review/PROTOCOL.md
++++ b/docs/research-review/PROTOCOL.md
+@@ -1,6 +1,6 @@
+ # Mathematical research review protocol
+ 
+-Version 1.2 | November 7, 2026
++Version 1.4 | November 7, 2026
+ 
+ ## Purpose and scope
+ 
+@@ -15,7 +15,7 @@ This protocol specifies a review process and the requirements for supporting sof
+ The default goal is to verify the complete proof modulo published theorems, inventory and check every cited theorem application, make every construction and computation explicit, resolve every recorded audit objection, and repeat review and repair until the final revision is stable under the checks below. These are completion requirements, not optional aspirations.
+ 
+ 1. **Complete proof modulo published theorems.** Trace every claimed conclusion to proved internal steps and identified published external theorems. Check each external theorem's actual hypotheses, conclusion, conventions, and application. A public preprint does not qualify as a published theorem merely because it is accessible. Record the publication venue and authoritative version. An unpublished result may motivate the argument or receive attribution, but its needed content must be proved within the reviewed manuscript or a precisely linked, versioned project proof before declaring this standard met. Any unresolved conjecture, unsupported internal lemma, unverified computational assertion, or additional axiom prevents full completion under this standard. A conditional result may still be reported, with its remaining assumptions explicit.
+-2. **Complete inventory and source checks.** Inventory every cited theorem and every substantive uncited external input. Record the exact source version and theorem location. Compare the final published statement, applicable corrections, and the definitions needed for each use. Perform the nine application checks below, including the connecting maps and actual downstream object. Review the inventory itself for missing applications.
++2. **Complete inventory and source checks.** Inventory every cited theorem and every substantive uncited external input. Record the exact source version and theorem location. Compare the final published statement, applicable corrections, and the definitions needed for each use. Perform the nine application checks below, including the connecting maps and actual downstream object. Review the inventory itself for missing applications through the independent source-first reconstruction and reconciliation required below. Include substantive internal inputs, section-level appeals and unnamed estimates, not only external citations.
+ 3. **Explicit constructions and computations.** Supply unambiguous definitions, domains, parameter choices, algorithms, constants, and output representations for every construction. State and prove existence or termination where the construction requires it. For each finite computation, provide its exact inputs, procedure or certificate, checker, and reproducible result. If an object is too large to print, a finite, unambiguous specification and a justified method for recovering its entries may suffice; label that representation accurately. Do not claim a full expansion when only a generator or compressed representation is supplied. No assertion that a calculation is routine substitutes for the calculation or a complete derivation.
+ 4. **Every audit objection addressed.** Enter every substantive doubt raised in every received human or model audit into the findings ledger, regardless of the auditor's identity or reputation. Resolve it by a reviewed repair or an independently checked, evidence-based rebuttal. Duplicate objections may link to an existing resolution. A vague concern must be made precise enough to assess, or retained with an explicit explanation of what information is missing. Votes, repeated assurances, silence, and the absence of further replies do not resolve an objection. A concern outside the claimed scope may be closed only with a recorded scope explanation; an unsupported step needed by a claimed result cannot be moved out of scope to obtain completion.
+ 5. **Iterate until stable.** After every substantive repair, recheck its premises, affected consumers, and relevant computations. Repeat independent audit, repair, integration, and review until the final frozen revision meets the closure test below. A lack of new comments or agreement among several models is not, by itself, stability.
+@@ -30,18 +30,21 @@ Record whether each reviewer is human or a model. For model reviews, record the
+ 
+ Reviewers should derive the relevant inference from the primary sources and manuscript before relying on earlier verdicts. They may use earlier reports to locate evidence, then compare the actual arguments. If a reviewer supplies a substantive repair, obtain another non-author review of that repair before calling it independently accepted.
+ 
++A reviewer must distinguish a derivation they reconstructed, a derivation supplied by an identified prior review, and a statement they only checked for consistency. State these scopes explicitly. Consistency checking alone cannot accept a required connecting argument. Prior work may be reused at its exact reviewed version and scope; changes to the objects, hypotheses or consumed conclusion require a renewed comparison. Agreement among reviewers who assume the same unproved transition does not supply that transition.
++
+ These are review requirements, not permission to publish, message other people, disclose private files, or change repository access. Those actions remain subject to the project owner's authorization.
+ 
+ ## The working sequence
+ 
+ 1. Freeze the manuscript, source files, and computational artifacts being reviewed.
+ 2. Inventory the target claims, external inputs, internal dependencies, and exact application sites.
+-3. Write an application record for each substantive inference or change of proof route.
+-4. Review the required inputs against the constructed objects, including all connecting maps and exceptional cases.
+-5. Obtain a separately authored decision tied to the exact reviewed files and edits.
+-6. Integrate the argument into the manuscript and review its downstream effects.
+-7. Reproduce the relevant checks from the release files, preserve unresolved findings, and publish only the status justified by the evidence.
+-8. Repeat the audit-and-repair cycle and perform the final closure review below. Any new substantive finding or change reopens the affected obligations.
++3. Independently reconstruct the substantive inputs from the frozen proof sources, freeze the initial source-use table, then reconcile it with the declared inventory. This work may run in parallel with application review but must finish before closure.
++4. Write an application record for each substantive inference or change of proof route.
++5. Review the required inputs against the constructed objects, including all connecting maps and exceptional cases.
++6. Obtain separately authored decisions tied to the exact reviewed files and edits, including an explicit decision on inventory coverage.
++7. Integrate the argument into the manuscript and review its downstream effects.
++8. Reproduce the relevant checks from the release files, preserve unresolved findings, and publish only the status justified by the evidence.
++9. Repeat the audit-and-repair cycle and perform the final closure review below. Any new substantive finding or change reopens the affected obligations.
+ 
+ Parallel work is encouraged when applications have stable interfaces. Give workers bounded tasks, explicit source versions, permitted output files, and a named consumer for their result. A separate integration review must check that independently accepted pieces use the same objects and conventions.
+ 
+@@ -74,6 +77,50 @@ Check that the abstract and corollaries use no stronger conclusion than the prov
+ 
+ The inventory is itself subject to review. A schema can require fields in an entered record; it cannot establish that every necessary record was entered.
+ 
++## Independently reconstruct and reconcile dependencies
++
++Checking every entered application does not establish that every needed application was entered. Before final closure, require a separate source-first completeness review with the following evidence. A project may keep these records in a compact table or combine them with existing records; separate files and duplicate mathematical derivations are not required.
++
++### Reconstruct from the proof
++
++Assign a non-author reviewer to read the frozen statements and proof sources and reconstruct the substantive inputs they use. The reviewer must not use the declared dependency graph, application inventory or earlier favorable verdicts as the initial checklist. Freeze the initial reconstruction before comparing it with those records. Record prior exposure to them and any resulting limitation; do not describe a review as blind when it was not. Prior familiarity does not waive the requirement to derive the list from the proof itself.
++
++Begin with every announced result and claimed corollary. Follow the actual argument through the manuscript, appendices and linked project proofs. Include inputs stated through theorem numbers, section references, ordinary prose, diagrams, computational outputs or unstated appeals to standard facts. Look specifically for estimates, limiting arguments, uniformity, existence, measurability, conditional laws, changes of domain and normalization, and the order in which parameters or limits are taken. A search for citation syntax can help locate candidates but cannot perform this review.
++
++Create a coverage index of the frozen proof sources. It must identify the statements and proof passages reviewed, their exact locations and versions, and their associated source-use entries. Each passage must be marked reviewed, awaiting review, or outside the claimed proof with a specific reason. A reviewed passage with no substantive imported input must say so. The index must cover the complete argument supporting the announced claims, including unnumbered passages and linked proofs; a list containing only already inventoried lemmas is insufficient. The reviewer must assess the index's coverage of the sources, not merely whether every listed row has a status.
++
++### Record each substantive use
++
++For each substantive input, record:
++
++- The consuming claim and exact proof passage, with a stable identifier and excerpt hash.
++- The assertion actually required there, including its objects, hypotheses, quantifiers, parameter range and required uniformity. Record relevant constants, normalizations, exceptional cases and limit order.
++- The proposed supplier: an exact internal result, published external result, checked computation or inline derivation. Give its version and proof or statement location. Mark a missing supplier unresolved rather than filling it with a familiar theorem name.
++- The application record that checks the match, or the exact inline argument that discharges it.
++- Whether the use is a genuine dependency or only notation, background or an unused reference, with a passage-specific reason for the latter classification.
++
++Repeated uses may share one entry only when every consuming location is listed and the reviewed argument establishes that the same supplier and application contract cover them all. A reference to a section with several results must identify which result supplies the required assertion. An unnamed asymptotic or comparison estimate must receive an explicit supplier or a checked derivation. Do not omit an input because it looks standard or because the conclusion has already received favorable reviews.
++
++### Compare with the declared inventory
++
++After freezing the initial source-use table, compare it with the declared application records and dependency graph. Preserve the initial table, the differences and their reviewed dispositions.
++
++Every genuine use must map to the result or derivation that supplies it. Record a direct dependency on an invoked internal result. A transitive path through other results is insufficient evidence that this direct use was reviewed. When the proof instead invokes a reusable intermediate lemma, record that actual use and check the intermediate lemma's own dependencies. A common ancestor, similar conclusion or matching theorem name does not establish the required connection.
++
++For each difference, either add the missing application or edge, correct the proof or supplier contract, identify the precise existing derivation, or justify why the candidate is not a substantive dependency. Check extra graph entries as well, distinguishing actual uses from retained background or redundant transitive information. Preserve disputed and rejected dispositions. New substantive doubts enter the findings ledger; an omitted inventory edge alone is not proof that the mathematical inference is false.
++
++Check both supplying and consuming statements after reconciliation. In particular, verify that the supplier provides the domain, conditioning, constants, uniformity and limit order actually used. A graph edge records a claim of dependence; it does not prove that the dependence is valid.
++
++### Accept coverage separately and keep it current
++
++Inventory coverage requires an explicit non-author decision tied to the complete coverage index, source-use table, reconciliation and frozen proof sources. This decision is distinct from acceptance of the listed applications and from the final assembled-proof review. The same eligible reviewer may perform more than one of these tasks, but must state the scope and evidence for each separately.
++
++An unreviewed proof passage within the claimed argument, a genuine use without a checked supplier, or an unresolved reconciliation difference prevents full closure. Do not infer coverage from the number of accepted applications, a passing schema check or the absence of new objections.
++
++After a substantive proof, statement or supplier-contract change, update the affected source-use entries, coverage index and reconciliation, and review the affected consumers. Assess dependencies even when a consuming paragraph is textually unchanged. Editorial changes may receive a scoped acknowledgment after the reviewer verifies that the uses and contracts are unchanged. Preserve earlier versions and decisions; do not refresh their hashes to simulate a new review.
++
++The reconstruction remains an informal mathematical review unless formally verified. It can still miss an input. Report its scope and limitations, and reopen coverage when a later finding demonstrates an omission.
++
+ ## The nine application obligations
+ 
+ Each application record must address the following obligations. For every obligation, write **what is required**, **what is constructed**, **why they match**, and **where the evidence is located**. Include the derivation rather than a bare checked box.
+@@ -92,6 +139,33 @@ Each application record must address the following obligations. For every obliga
+ 
+ An obligation may be marked **not applicable** only with a reason specific to the application. The reviewer must assess that reason. For example, a finite polynomial substitution may introduce no limiting process, but its output must still be identified with the polynomial consumed downstream.
+ 
++## Verify connecting arguments
++
++A substantive transition is a step that changes the object, domain, information available, probability law, normalization, quantifier, parameter range, mode of convergence or strength of conclusion between an input and its use. Such a step requires review even if it is described as routine, negligible, standard, unchanged in the limit or a direct application. A named theorem and a plausible sentence joining it to the desired conclusion do not establish the application.
++
++Use the existing application record, source-use entry or a precisely linked project lemma. No separate form or repeated proof is required. For every substantive transition, identify:
++
++1. **What is available.** State the supplying conclusion with its actual hypotheses, objects, quantifiers, constants and version. Distinguish a theorem statement from its proof, a construction excerpt, an application site and a reviewer's assertion. A passage with the right topic or a valid hash is not necessarily the supplying statement.
++2. **What is needed.** State the exact assertion used by the next inference, including any stronger uniformity, different conditioning, endpoint, normalization or limit order.
++3. **Why the transition holds.** Give the derivation or exact reviewed lemma that supplies the difference. If there is no difference, exhibit the identification of objects and conventions. Repeating the desired conclusion or citing a proposition whose own proof uses this transition is not a derivation.
++4. **What can fail.** Check the exceptional cases relevant to this transition. For a nontrivial extension, test a simple adverse example or explain why the relevant obstruction is excluded. A failed analogy may expose a missing hypothesis without disproving the actual theorem. Passing examples does not prove the general statement.
++5. **What the reviewer accepts.** Bind the decision to this exact comparison, its derivation, and the consumed conclusion. An unproved difference remains open even when the supplier and consumer have each received favorable reviews.
++
++A collection of accepted input theorems does not automatically accept their composition. Inspect these transitions in the source-first reconstruction and again where the final assembly uses them. Elementary identities may be checked directly at their use; do not create artificial dependency nodes for every algebraic operation.
++
++### Probability, stopping and changes of law
++
++Apply the following checks when the argument uses these features; record specific reasons for nonapplicability rather than copying this list into unrelated applications.
++
++- Identify the actual filtration or other available information at each selection, entrance, exit and stopping rule. Show that each event or coefficient used as a past test is measurable there. A time selected from the continuously observed process need not be a permitted stopping index for the information at the last completed discrete state. Noncompletion of a random-duration update can itself reveal information.
++- If a time or state is rounded or replaced, prove that the replacement is permitted, bound the resulting error, and show that its endpoint remains in the domain where the estimate applies. A small time or geometric displacement alone does not preserve a martingale identity, conditional law or localization hypothesis. Include overshoots and zero-time or terminal conventions when they can occur.
++- State the law under which each identity, convergence and exceptional-event estimate holds. For a change of law, give the density or comparison result with its actual scope. A bound for localized exterior histories cannot be extended to additional revealed data or to histories outside that localization without proof.
++- On excluded events, control the quantity actually being averaged. Small probability alone does not control an unbounded variable. Identify boundedness, an integrable majorant, uniform integrability, a moment estimate or another sufficient bound. Verify the hypotheses of optional stopping and passages through expectation at the selected times.
++- Write the error bound before dividing by a small or random normalization. Check positivity, lower bounds and their parameter dependence. State the order of all limits and whether each bound is deterministic, pathwise, in probability, conditional or averaged. An error vanishing before normalization may fail to vanish afterward.
++- Do not use the limiting stochastic equation, tightness, convergence, regularity or independence being established to justify a required preliminary estimate. When a reusable lemma has several conclusions, identify the earlier conclusion or proof calculation being used and verify that its derivation does not depend on the current target.
++
++These checks also apply to analogous transitions outside probability: local to global arguments, interior to boundary extension, pointwise to uniform estimates, changes of representation, and replacement of an exact object by an approximation. Identify the relevant obstruction and sufficient connecting argument for the actual subject.
++
+ ### Common failures to test explicitly
+ 
+ - A theorem requires a family indexed by all admissible integers, while the construction supplies only a smaller subfamily.
+@@ -126,6 +200,27 @@ Also separate mathematical status from review coverage. “I have not checked th
+ 
+ Preserve prior verdicts and append corrections with dates and reasons. If earlier reporting was inaccurate, correct the reporting explicitly.
+ 
++## Review related uses after a substantive failure
++
++When a review finds an invalid inference or an unestablished connecting step, correcting that occurrence is not enough to support complete closure. Record the failure mechanism, then perform a bounded review of other plausible occurrences in the claimed proof. Examples include using information before it is available, applying a local estimate beyond its permitted region, dividing an uncontrolled error by a vanishing quantity, importing boundary behavior from an interior theorem, and confusing an exact quantity with an asymptotically equivalent one.
++
++The reviewer must:
++
++- Derive a concrete search scope from the mechanism and the actual source arguments, including linked project proofs and affected consumers. Look for equivalent reasoning even when different words or theorem names are used. Text search is a locating aid, not the completeness decision.
++- Preserve a list of candidate occurrences, exact source locations and the reason each is included. Give a reason for excluding plausible related cases or limiting the search scope. A corrected arithmetic typo may warrant checking its substitutions and consumers without reopening unrelated arguments.
++- Decide each required occurrence on its own inference: already justified by an exact derivation, corrected and reviewed, inapplicable for a stated reason, or still open. Do not copy the first repair's acceptance to a different law, domain or conclusion.
++- Obtain a non-author decision on the related-use review and its coverage before claiming the failure has been cleared from the complete proof. Preserve earlier adverse findings and the limits of the review.
++
++This review can share the source-use table and findings ledger. It does not require a new database or an indiscriminate review of unrelated mathematics. If the first repair proves a narrower assertion sufficient for one consumer, separately assess any broader proposition still claimed and any other consumers that require it. A successful substitute route does not establish the old, stronger statement.
++
++## Keep corrections consistent across records
++
++For every substantive correction, identify where the affected assertion is repeated or summarized: the manuscript, linked proofs, theorem statements, application fields, supplier contracts, source-use entries, examples, reviews, and completion summaries. Check these locations for the rejected assertion and for incompatible signs, constants, conventions or qualifications. Preserve historical versions with their status; correct the current representations or explicitly retire them.
++
++Where practical, maintain one canonical current statement and reference it from other records. When repetition is necessary, reviewers must compare its mathematical meaning, not only its text or hash. A corrected primary field does not resolve the issue if a second field still asserts the rejected inference. Derived records and copied prose receive this check as well as handwritten text.
++
++Record the scope and outcome of this consistency check in the existing correction or integration decision. It is not a new independent proof of the corrected mathematics. A final release must not simultaneously claim the rejected and corrected assertions as current.
++
+ ## Changes invalidate old acceptance
+ 
+ An acceptance applies only to its named manuscript, application record, source versions, evidence, and exact edits. A change to any bound item makes that acceptance stale for the changed version.
+@@ -174,6 +269,10 @@ The integrator must check the final manuscript after incorporation. A correct pr
+ 
+ For parallel work, check that common notation denotes the same objects across packets. Reconcile hypotheses, coefficient conventions, parameter choices, and exceptional cases before assembling the conclusions. A collection of favorable component reports is not an integration proof.
+ 
++Before accepting the composition, compare each substantive connection in both directions: does the supplier deliver everything the consumer needs, and does the consumer stay within what the supplier delivers? A broad proposition heading must not conceal a proof of only a restricted case. A repair accepted for one application does not automatically renew the proposition's other uses.
++
++Keep the following judgments distinct in records and progress reports: proposed argument; argument accepted within a stated mathematical scope; repair actually incorporated; affected uses and records reviewed at their current versions; complete assembled proof and release accepted. These need not be separate software statuses. Do not report a later judgment when only an earlier one has been established. If a required transition is found unestablished after a completion claim, correct that claim promptly and reopen the affected obligations. Do not describe the matter solely as documentation or a stricter protocol requirement.
++
+ ## Repository records and automated checks
+ 
+ The project may choose its own paths and file formats. A small installation can keep these records as Markdown plus JSON or YAML; a larger project can generate them from a database. Keep the source records portable and version controlled.
+@@ -182,6 +281,8 @@ The project may choose its own paths and file formats. A small installation can
+ | --- | --- |
+ | Claim inventory | Target statements, dependency edges, proof locations, consumers, and status. |
+ | Source inventory | Exact versions, statements used, locators, file hashes, corrections, and access limitations. |
++| Coverage index and source-use table | Frozen proof passages, review scope and status, independently reconstructed inputs, required assertions, exact suppliers or inline derivations, and application links. |
++| Inventory reconciliation | Preserved initial reconstruction, comparison with the declared graph, discrepancies, reviewed dispositions, and separate coverage decision. |
+ | Application records | The nine obligations, author identities, bound files and passages, exact edits, and dependency impact. |
+ | Reviewer decisions | Reviewer identity and type, decision, scope, application hash, manuscript hash, and report hash. |
+ | Findings ledger | Objection identity, reviewed version, history classification, manuscript incorporation, response, and remaining work. |
+@@ -191,8 +292,12 @@ An automated implementation should reject missing required fields, unsafe paths,
+ 
+ Tests should deliberately introduce a missing domain argument, a missing consumed-object identity, a changed source, an unreviewed edit, a stale approval, a mismatched build target, a missing follow-up, and a corrupted certificate. Each should fail the relevant check for the intended reason. Keep these negative controls alongside the checker.
+ 
++The implementation must also check the declared links among the coverage index, source-use table, application records and dependency graph, and reject unresolved required reconciliation entries or stale coverage decisions. Test omission detection by removing a required graph edge while leaving the independently approved use recorded. Include a named theorem use, a section-only internal use and an unnamed estimate. Also test deletion of a source-use entry referenced by the coverage index, and a changed supplier contract without a renewed affected review. Each mutation must fail for the intended reason. These tests establish consistency and change detection for recorded evidence; they cannot prove that the original source-use reconstruction found every mathematical input.
++
+ Do not imply that these structural checks establish complete source coverage, honest review, mathematical truth, or independence of thought. Name CI jobs according to what they check, and keep mathematical review status separate from execution status.
+ 
++Where an implementation records connecting arguments and related-use reviews, test rejection of a missing required connection, a connection to a supplier with a weaker recorded contract, an unresolved required related occurrence, and a stale current representation after a recorded correction. Tests may use synthetic fixtures with explicitly specified expected relationships. They demonstrate consistency of the recorded relationships, not that software can decide arbitrary implication, detect every paraphrase of an error, or prove the completeness of the search. Nonempty explanation fields and favorable status values are not substitutes for the mathematical reviews above.
++
+ ## Release and issue closure
+ 
+ ### Final closure review
+@@ -200,9 +305,13 @@ Do not imply that these structural checks establish complete source coverage, ho
+ After the last substantive repair, an independent reviewer must review the assembled proof from its stated results through its dependency chain. Accepted component reports may supply evidence, but they do not replace this check of the complete composition. Freeze the revision being assessed and verify all of the following:
+ 
+ - Every announced result has a complete reviewed argument whose external assumptions are published theorems with checked applications.
++- The source-first completeness review covers the frozen proof sources, its source-use table is reconciled with the actual dependency graph, and its separate coverage decision is current. No required passage, supplier or reconciliation difference remains unresolved.
+ - Every construction and computational claim meets the explicitness and reproducibility requirement above.
+ - Every received audit is registered, and each substantive finding has a reviewed resolution applicable to this revision.
+ - All required application records and affected downstream reviews are current; no change or dependency update remains unreviewed.
++
++- Every substantive connection between inputs and their uses has the required reviewed derivation or identification; no stronger quantifier, changed object, law, information set or normalization is supplied only by an unsupported assertion.
++- Each discovered substantive failure has a completed review of related required occurrences. Current representations of corrected assertions agree, and broader claims left unproved by a narrower repair remain open.
+ - The complete manuscript incorporates the accepted arguments, including repairs previously present only in notes or packets.
+ - The relevant computations and release checks pass on the exact frozen artifacts, and the inventories and manifests describe those same artifacts.
+ - The final assembly review introduces no unresolved substantive finding.
+@@ -275,7 +384,11 @@ Application location and excerpt hash:
+ Consumer locations and excerpt hashes:
+ Exact source versions and statements:
+ Dependencies and their mathematical status:
++Source-use entry IDs and coverage-index locations:
+ Exact proposed edits and fingerprints:
++Substantive transitions: available conclusion, needed conclusion, connecting derivation:
++Relevant adverse cases and how they are excluded:
++Related-use and repeated-assertion review, if a failure was found:
+ 
+ For EACH of the nine obligations:
+   Obligation name:
+@@ -300,6 +413,46 @@ Review report and hash:
+ Date:
+ ```
+ 
++## Reusable source-use and coverage forms
++
++These forms may be columns or linked fields in existing records. Keep the initial reconstruction separate from later reconciliation edits, with their versions preserved.
++
++```text
++Source-use ID:
++Reconstruction reviewer, type and review conditions:
++Prior exposure to inventories or earlier verdicts:
++Frozen proof source and hash:
++Consuming claim and passage, with excerpt hash:
++Assertion actually required:
++Objects, hypotheses, quantifiers and parameter range:
++Uniformity, constants, normalization and limit order:
++Supplier and exact version/location, or unresolved:
++Supplier passage role: statement / proof / construction / application / review:
++Difference between supplied and consumed conclusions, and its justification:
++Application record or checked inline derivation:
++Classification and reason:
++Initial reconstruction version/hash:
++
++Reconciliation against inventory/graph version:
++Matching application and direct dependency:
++Difference found:
++Disposition and evidence:
++Disposition reviewer and decision:
++Remaining work:
++```
++
++```text
++Coverage review ID:
++Announced claims and complete proof-source set:
++Coverage-index version/hash:
++Initial and reconciled source-use table versions/hashes:
++Declared inventory and graph versions/hashes:
++Reviewed passages and explicitly excluded passages:
++Unreviewed passages or unresolved differences:
++Non-author coverage reviewer and review conditions:
++Decision, scope, limitations and date:
++```
++
+ ## Reusable response form
+ 
+ ```text
+@@ -309,6 +462,8 @@ Earlier evidence searched and historical finding:
+ Mathematical diagnosis:
+ Repair or explanation, with source and manuscript locations:
+ Affected downstream claims:
++Failure mechanism and related occurrences reviewed:
++Current repeated assertions checked; historical versions preserved:
+ Independent review decision and scope:
+ Reproduction results and limitations:
+ Released commit or version:
+@@ -320,3 +475,7 @@ Use these records to make the reasoning inspectable. The standard for a mathemat
+ Version 1.1 makes the five completion requirements explicit and adds the final closure review. Version 1.0 remains a separate historical document.
+ 
+ Version 1.2 adds release maintenance, cumulative research handoffs, archive and artifact synchronization, publication readback, and explicit scope and coverage records. Version 1.1 remains a separate historical document.
++
++Version 1.3 adds independent source-first dependency reconstruction, passage-level coverage records, explicit source-use reconciliation, a separate coverage decision, and omission-detection tests. It preserves the completion and release requirements of version 1.2. Version 1.2 remains a separate historical document.
++
++Version 1.4 makes the review of substantive connecting arguments explicit, adds targeted checks for information, stopping rules, localization, changes of law and normalized errors, requires bounded review of related uses after a substantive failure, and checks corrections across repeated current assertions. It clarifies the limits of component acceptance and automated checks. It retains the source-first coverage, mathematical closure and release requirements of version 1.3. Version 1.3 remains a separate historical document.
+diff --git a/docs/research-review/README.md b/docs/research-review/README.md
+index 13a0553..ef54d3d 100644
+--- a/docs/research-review/README.md
++++ b/docs/research-review/README.md
+@@ -1,6 +1,8 @@
+ # Research review for contributors
+ 
+-Follow the [mathematical research review protocol](PROTOCOL.md), version 1.2, for mathematical claims, constructions, computations and repairs. This directory contains the complete standalone protocol. [Version 1.1](protocol-v1.1.md) is retained as historical policy. The [audit-history protocol](../audit-history/PROTOCOL.md) explains the repository's existing contracts, findings records and checks.
++Follow the [mathematical research review protocol](PROTOCOL.md), version 1.4, for mathematical claims, constructions, computations and repairs. This directory contains the complete standalone protocol. [Version 1.3](protocol-v1.3.md), [Version 1.2](protocol-v1.2.md) and [Version 1.1](protocol-v1.1.md) are retained as historical policy. The [audit-history protocol](../audit-history/PROTOCOL.md) explains the repository's existing contracts, findings records and checks.
++
++Version 1.4 governs research-review completion. The repository's [AGENTS.md](../../AGENTS.md) and [audit-history procedures](../audit-history/PROTOCOL.md) still apply to local checks, contracts and historical findings.
+ 
+ ## Enforcement status
+ 
+@@ -10,18 +12,47 @@ The App check must bind its decision to the reviewed repository, PR, base, head
+ 
+ The [current review record](../audit-history/current.json) states the manuscript's existing scope and inherited qualifications. Installing this protocol does not expand that scope or retroactively certify the complete proof.
+ 
++Historical research releases and reviews retain their original standard and scope. Adopting v1.4 does not recertify them. Full closure requires the source-first coverage and reconciliation retained from v1.3, plus reviewed connecting arguments, related-use checks after substantive failures, and consistency of corrected current assertions.
++
++The controller now includes independently reviewed v1.4 support at commit `582200ce3f46e8c0682eaa38a4f519f887c6a515`. Its approved-revision readback and empty-queue smoke check passed; see the [activation record](../../research/version14/evidence/protocol-v1.4/runtime/ACTIVATION.json) and [run result](../../research/version14/evidence/protocol-v1.4/runtime/DEPLOYMENT-READBACK.json). This confirms runtime deployment, not acceptance of a mathematical PR. Each candidate still needs the protected v1.4 profile and exact reviewed evidence. Historical v1.3 checks do not establish v1.4 acceptance. The [adoption record](ADOPTION-V1.4.md) distinguishes policy, runtime and release status.
++
++The protected controller must bind the governing protocol, runtime policy, permitted mode and proof-source inventory. The existing substantive mode checks linked coverage records, direct dependencies, reconciliation and authenticated non-author decisions. A narrowly reviewed non-substantive mode covers only its declared policy or editorial change; it cannot certify the complete proof. V1.4 also requires review of the available and needed conclusions at each substantive transition, related occurrences after failures, and current repeated assertions. Automated checks establish only the recorded relationships and bindings they implement. Source completeness and mathematical adequacy require the specified review.
++
+ ## Evidence to include in a PR
+ 
+ Link repository-relative evidence files and identify the exact commit and SHA-256 hashes reviewed. Include uncommitted evidence explicitly while preparing the packet, then bind the final committed revision. Keep secrets, local absolute paths and unrelated private material out of the packet.
+ 
+ 1. Trace each claimed result to internal proofs and identified published theorems. Record the publication venue, authoritative version, statement, definitions and corrections actually used. Supply project proofs for needed unpublished inputs. State unresolved assumptions instead of claiming complete verification.
+-2. Inventory every cited application and substantive uncited external input. For each, address all [nine application obligations](PROTOCOL.md#the-nine-application-obligations), including conventions, connecting maps, exceptional cases and the precise downstream object. Have a reviewer check the inventory for omissions.
++2. Inventory every cited application and substantive uncited external input. For each, address all [nine application obligations](PROTOCOL.md#the-nine-application-obligations), including conventions, connecting maps, exceptional cases and the precise downstream object. Have a non-author reviewer reconstruct the substantive uses from the frozen proof sources, freeze that initial reconstruction, then reconcile it with the declared inventory and dependency graph.
+ 3. Supply explicit constructions and computations. Record domains, simultaneous parameter choices, algorithms, constants, exact inputs, certificates, checker commands and reproducible outputs. Distinguish a generator or compressed representation from a full expansion, and a finite identity check from its arithmetic application.
+ 4. Register every received human or model audit and every substantive objection in the findings ledger, including unfavorable reports and comments on closed issues. Link each finding to a reviewed repair or an independently checked rebuttal. Preserve unresolved findings and earlier verdicts; a majority vote or silence does not resolve an objection.
+ 5. Repeat independent review, repair and integration until the final frozen revision meets the protocol's [closure test](PROTOCOL.md#final-closure-review). Recheck changed premises, affected consumers and computations after each substantive repair. Obtain an independent review of the assembled proof, rather than inferring completion from component approvals.
+ 
+ For a documentation-only or infrastructure PR, identify the unaffected mathematical claims and explain which obligations do not apply. A PR can report incomplete work honestly; it must not mark an unreviewed argument as accepted or a finding as resolved.
+ 
++## Source-first coverage and reconciliation
++
++Follow the protocol's [independent dependency reconstruction requirements](PROTOCOL.md#independently-reconstruct-and-reconcile-dependencies) before claiming full closure.
++
++- Assign a non-author reviewer to reconstruct inputs from the frozen statements and proofs, including appendices and linked proofs. Record prior exposure to inventories or verdicts. The declared graph and earlier favorable reviews must not become the initial checklist. Freeze the initial source-use table before reconciliation.
++- Supply a coverage index for the complete argument. Identify each statement and proof passage, including unnumbered passages, with its version, location, review status and associated source-use entries. Explain passages outside the claimed proof and reviewed passages with no substantive imported input.
++- For each substantive use, state the actual required assertion, objects, hypotheses, quantifiers, parameter range, uniformity, constants, normalizations, exceptional cases and limit order. Name the exact supplier or inline derivation and the application record. Include section-only internal uses and unnamed estimates.
++- Reconcile every genuine use with its actual direct supplier and application. Preserve the initial table, both inventory versions, differences, reviewed dispositions and disputed findings. A transitive path or matching theorem name does not establish a reviewed direct use. Check extra graph entries too.
++- Obtain a distinct coverage decision bound to the coverage index, initial and reconciled source-use tables, reconciliation and frozen proof sources. The eligible reviewer may also assess applications or assembly, but must record those scopes separately. An unreviewed required passage, missing checked supplier or unresolved reconciliation difference prevents full closure.
++- Recheck affected source-use entries, contracts, consumers and coverage decisions after substantive changes. Keep earlier records and decisions. An omitted edge is a review finding to assess, not by itself a proof that the mathematical inference is false.
++
++The required implementation checks are linked-record consistency, stale coverage and supplier-contract detection, and rejection of unresolved required reconciliation. Omission tests must cover a named theorem use, a section-only internal use and an unnamed estimate, deletion of a referenced source-use entry, and a changed supplier contract without renewed affected review. Record actual automated results separately from the non-author mathematical coverage decision. These tests cannot establish that every input was found.
++
++## Connecting arguments and corrections
++
++For every substantive transition, identify the exact supplying conclusion, the assertion consumed next, and the derivation or reviewed lemma connecting them. Distinguish a source statement from a proof passage, construction, application or reviewer's assertion. Check relevant adverse cases and avoid circular justification. Reviewers must say whether they reconstructed a derivation, reused an identified exact prior derivation, or only checked consistency; consistency alone cannot accept a required connection.
++
++After finding an invalid inference or an unestablished connection, define a bounded search for other plausible occurrences in the actual proof and its consumers. Preserve candidate locations, scope limits, dispositions and a non-author coverage decision. A narrow repair does not establish a broader proposition or renew its other uses.
++
++Compare every current repetition of a corrected assertion, including manuscript text, linked proofs, supplier contracts, inventory fields and summaries. Correct or explicitly retire incompatible current statements while preserving historical originals. Keep proposal, scoped acceptance, incorporation, affected-use review and final release acceptance distinct.
++
++Apply the protocol's probability and stopping checks only where those features occur. For other arguments, inspect the corresponding changes of domain, normalization, quantifier, approximation or limit order; give specific reasons for nonapplicability.
++
+ ## Research release maintenance
+ 
+ For every research release, follow the protocol's [release maintenance and research handoff requirements](PROTOCOL.md#release-maintenance-and-research-handoff). Identify the reviewed project profile that defines required artifacts, names, locations, thresholds, publication destinations and reproduction entry points.
+diff --git a/scripts/build_paper.py b/scripts/build_paper.py
+index c64951d..1b6904c 100644
+--- a/scripts/build_paper.py
++++ b/scripts/build_paper.py
+@@ -79,7 +79,7 @@ def main():
+     version = subprocess.check_output([str(executable), "--version"], text=True).strip()
+     if version != "Tectonic " + VERSION and version != "tectonic " + VERSION:
+         raise RuntimeError("Unexpected engine version: " + version)
+-    source = ROOT / "manuscripts" / "quartic_v13.tex"
++    source = ROOT / "manuscripts" / "quartic_v14.tex"
+     source_bytes = source.read_bytes()
+     output = ROOT / "build" / "paper"
+     output.mkdir(parents=True, exist_ok=True)
+@@ -95,7 +95,7 @@ def main():
+             result = subprocess.run(cmd, cwd=temporary, env=env, stdout=log, stderr=subprocess.STDOUT)
+         if result.returncode:
+             raise RuntimeError("Paper build failed; see build/paper/compiler.log")
+-        log_path = temporary / "quartic_v13.log"
++        log_path = temporary / "quartic_v14.log"
+         text = log_path.read_text(errors="replace")
+         if any(line.startswith("!") for line in text.splitlines()) or "undefined references" in text or "undefined citations" in text:
+             raise RuntimeError("TeX errors or unresolved references; see build/paper/compiler.log")
+@@ -105,15 +105,15 @@ def main():
+         bundle_hash_file = cache / "bundles" / "hashes" / bundle_key
+         if not bundle_hash_file.is_file() or bundle_hash_file.read_text().strip() != BUNDLE_DIGEST:
+             raise RuntimeError("The selected TeX bundle fingerprint does not match the pin")
+-        pdf = (temporary / "quartic_v13.pdf").read_bytes()
++        pdf = (temporary / "quartic_v14.pdf").read_bytes()
+         if not pdf.startswith(b"%PDF-"):
+             raise RuntimeError("Compiler did not produce a PDF")
+-        (output / "quartic_v13.pdf").write_bytes(pdf)
+-        shutil.copyfile(log_path, output / "quartic_v13.log")
++        (output / "quartic_v14.pdf").write_bytes(pdf)
++        shutil.copyfile(log_path, output / "quartic_v14.log")
+     if source.read_bytes() != source_bytes:
+         raise RuntimeError("Manuscript changed during build")
+     receipt = {"engine": version, "bundle_url": args.bundle, "bundle_fingerprint": BUNDLE_DIGEST,
+-               "manuscript_version": 13, "pdf": "quartic_v13.pdf",
++               "manuscript_version": 14, "pdf": "quartic_v14.pdf",
+                "source_sha256": sha(source_bytes), "pdf_sha256": sha(pdf), "pdf_bytes": len(pdf),
+                "tex_errors": 0, "unresolved_references": False,
+                "original_pdf_replaced": False, "byte_identity_to_uploaded_pdf_claimed": False}
+diff --git a/scripts/render_quartic_review.py b/scripts/render_quartic_review.py
+index b925533..bd4907d 100644
+--- a/scripts/render_quartic_review.py
++++ b/scripts/render_quartic_review.py
+@@ -19,6 +19,15 @@ def unique_heading(pages, text):
+ 
+ def automatic_selection(pages, edition):
+     last = len(pages) - 1
++    if edition == 'v14':
++        current = unique_heading(pages, 'A quartic presentation with 299 variables')
++        references = next((i for i in range(current, len(pages))
++                           if re.search(r'\bReferences\b', pages[i])), None)
++        if references is None:
++            raise ValueError('Version 14 reference boundary is missing')
++        groups = {'front_matter': list(range(min(4, len(pages)))),
++                  'quartic_299': list(range(current, references + 1))}
++        return sorted({i for group in groups.values() for i in group}), groups
+     if edition == 'v13':
+         current = unique_heading(pages, 'A quartic presentation with 394 variables')
+         references = next((i for i in range(current, len(pages))
+@@ -73,7 +82,7 @@ def explicit_selection(value, count):
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--pdf', type=Path, help='Defaults to the manuscript for the selected edition, including archived versions')
+-    parser.add_argument('--edition', choices=['v5', 'v6', 'v7', 'v8', 'v9', 'v12', 'v13'], default='v13')
++    parser.add_argument('--edition', choices=['v5', 'v6', 'v7', 'v8', 'v9', 'v12', 'v13', 'v14'], default='v13')
+     parser.add_argument('--expected-pages', type=int, help='Reject a PDF with a different page count')
+     parser.add_argument('--out', type=Path, default=ROOT / 'build/pdf-review')
+     parser.add_argument('--pages', help='Render these one-based pages/ranges instead of automatic section selection')
+@@ -85,7 +94,7 @@ def main():
+     args = parser.parse_args()
+     if args.dpi <= 0:
+         parser.error('--dpi must be positive')
+-    pdf = (args.pdf or ROOT / ('manuscripts/quartic_v13.pdf' if args.edition == 'v13' else 'manuscripts/quartic_v12.pdf' if args.edition == 'v12' else 'manuscripts/quartic_v9.pdf' if args.edition == 'v9' else 'manuscripts/archive/quartic_v8.pdf' if args.edition == 'v8' else 'manuscripts/archive/quartic_v7.pdf' if args.edition == 'v7' else 'quartic_962.pdf' if args.edition == 'v6' else 'manuscripts/archive/quartic_1272.pdf')).resolve()
++    pdf = (args.pdf or ROOT / ('manuscripts/quartic_v14.pdf' if args.edition == 'v14' else 'manuscripts/quartic_v13.pdf' if args.edition == 'v13' else 'manuscripts/quartic_v12.pdf' if args.edition == 'v12' else 'manuscripts/quartic_v9.pdf' if args.edition == 'v9' else 'manuscripts/archive/quartic_v8.pdf' if args.edition == 'v8' else 'manuscripts/archive/quartic_v7.pdf' if args.edition == 'v7' else 'quartic_962.pdf' if args.edition == 'v6' else 'manuscripts/archive/quartic_1272.pdf')).resolve()
+     out = args.out.resolve(); out.mkdir(parents=True, exist_ok=True)
+     if args.pypdf:
+         from pypdf import PdfReader

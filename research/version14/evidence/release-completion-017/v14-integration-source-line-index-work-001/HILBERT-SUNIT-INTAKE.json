@@ -1,0 +1,93 @@
+{
+  "inputs": [
+    {
+      "path": "v14-rc-hilbert-class-primes-001/MANIFEST.json",
+      "sha256": "c82eb44450e8e03a54f62d92a9e0702300bbff6a31befa1c3492f9fc2d5ca026"
+    },
+    {
+      "path": "v14-rc-sunit-kummer-inputs-001/MANIFEST.json",
+      "sha256": "360b086d594fe63fef9262f490b14113a6e51f10785707b3039b4ce1ca590ddd"
+    }
+  ],
+  "reviews": [
+    {
+      "path": "v14-rc-hilbert-class-primes-review-001/REVIEW.md",
+      "sha256": "a6d8a8aa26992020138961f0c492dadba31d4897f9d49e7f21b1d6af0b3c09ec"
+    },
+    {
+      "path": "v14-rc-sunit-kummer-review-001/REVIEW.md",
+      "sha256": "0da5dbded3838e27c03bbaa65e5aeef0b786e44fc004febc58b1af86f1814c56"
+    }
+  ],
+  "added": [
+    {
+      "input": "v14-rc-hilbert-class-primes-001",
+      "id": "ACTIVE-RC-HILBERT-CLASS-FIELD"
+    },
+    {
+      "input": "v14-rc-sunit-kummer-inputs-001",
+      "id": "ACTIVE-RC-SINTEGER-KUMMER-SEQUENCE"
+    },
+    {
+      "input": "v14-rc-sunit-kummer-inputs-001",
+      "id": "ACTIVE-RC-IMAGINARY-SUNIT-DIMENSION"
+    }
+  ],
+  "append": {
+    "use_id": "ACTIVE-RC-FINITE-CHEBOTAREV",
+    "base_use_sha256": "07464cd6a75ae52d5ace95d34656ad87d49de7e5d9a5b4c2cbf29847b48064cd",
+    "base_passages": [
+      "ACTIVE-RC-FINITE-CHEBOTAREV-P1",
+      "ACTIVE-RC-FINITE-CHEBOTAREV-P2"
+    ],
+    "base_consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4554,
+        "end_line": 4568,
+        "excerpt_sha256": "3bd3df1c72063208a8a683bc8c6f55126b9e6e095a85efef0be7ae22208c655f"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 5742,
+        "end_line": 5749,
+        "excerpt_sha256": "8babc92ddf11765b8ff91cf1ec3dec44ae3a89445cb77092f6950601f794fc30"
+      }
+    ],
+    "append": [
+      {
+        "passage_id": "ACTIVE-RC-FINITE-CHEBOTAREV-HILBERT-4414",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4414,
+          "end_line": 4418,
+          "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+        }
+      }
+    ],
+    "preserve_assertion": true,
+    "preserve_supplier": true,
+    "preserve_derivation": true,
+    "reason": "For imaginary quadratic K, its Hilbert class field H is Galois over Q because conjugation preserves the maximal unramified abelian extension. An ideal-class element of Gal(H/K) is an actual automorphism fixing K. Finite Chebotarev over Q realizes it at a chosen prime above a rational prime split in K. Excluding finitely many prior primes gives distinct conjugate pairs representing the desired finite class generators.",
+    "set_shared_contract_justification": "Both calls use finite Galois extensions over Q and actual compatible automorphisms. Here the finite extension is H/Q and the element lies in Gal(H/K); the chosen place selects the ideal-class representative. No independent component prescription or effective bound is added."
+  },
+  "base_drift": [
+    ".use.passages",
+    ".use.shared_contract_justification",
+    ".connection.use_sha256",
+    ".connection.consumer_locations",
+    ".consumer_locations"
+  ]
+}

@@ -1,0 +1,1 @@
+Adds only installed generic-conductor CM reduction note and exact identity. Read full card and both reviews; supersingularity only, with geometric prerequisites separate. README unchanged; no canonical edits or final coverage claim.

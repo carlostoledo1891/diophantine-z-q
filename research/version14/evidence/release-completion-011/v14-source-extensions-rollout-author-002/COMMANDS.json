@@ -1,0 +1,106 @@
+{
+  "schema": "reviewed-rollout-command-plan/v1",
+  "controller": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+  "baseline": "268cc244786568f4a63a02ca1108ad81c2763937",
+  "local_preparation_done": [
+    "seven-file controller overlay",
+    "thirteen exact repository evidence/freeze copies",
+    "guarded apply dry run",
+    "isolated clone application and actual-commit pin refresh",
+    "113runtime tests,9wiring tests,4live-pin tamper rejections"
+  ],
+  "after_independent_rollout_review": [
+    {
+      "cwd": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/",
+      "argv": [
+        "python",
+        "-B",
+        "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-source-extensions-rollout-author-002/apply_controller.py",
+        "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+        "--apply"
+      ]
+    },
+    {
+      "cwd": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ]
+    },
+    {
+      "cwd": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+      "argv": [
+        "git",
+        "add",
+        "--",
+        "adapter/coverage_gate.py",
+        "adapter/test_source_extensions.py",
+        "adapter/SOURCE-EXTENSIONS-V1.4.md",
+        "independent-review/source-extensions/REVIEW.md",
+        "BUNDLE-MANIFEST.json",
+        "adapter/live_protocol_context.py",
+        "adapter/live_protocol_context_forks.py"
+      ]
+    },
+    {
+      "cwd": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "Support independently frozen source extensions with live dependency pins"
+      ]
+    },
+    {
+      "cwd": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "meaning": "Capture actual new controller commit, never substitute test-clone commit."
+    },
+    {
+      "cwd": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/",
+      "argv": [
+        "python",
+        "-B",
+        "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-source-extensions-rollout-author-002/refresh_runtime_pins.py",
+        "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/protocol-ruleset-20261107/deployment-repository/",
+        "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-controller-preparation-003/",
+        "NEW_UNOCCUPIED_SUCCESSOR_DIRECTORY"
+      ],
+      "meaning": "Produce exact actual-commit binder successor for separate review."
+    }
+  ],
+  "remote_activation_by_root_only": [
+    "Push reviewed controller commit to existing private controller main through established workflow.",
+    "Read back remote main and exact source bytes.",
+    "Set PROTOCOL_APPROVED_SHA to that actual reviewed remote commit.",
+    "Dispatch existing protocol-controller.yml; inspect actual run. jobs:[] remains idle; successful idle run is not a mathematical acceptance."
+  ],
+  "dossier_wiring": {
+    "argv": [
+      "python",
+      "-B",
+      "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-source-extensions-rollout-author-002/wire_sources.py",
+      "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic-v14-release/preview-repository/",
+      "ACTUAL_REVIEWED_DOSSIER.json",
+      "NEW_DOSSIER.json",
+      "--extension",
+      "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-source-extensions-rollout-author-002/SOURCE-WIRING.json",
+      "ACTUAL_TEN_SOURCE_COMPARISON.json",
+      "--extension",
+      "ACTUAL_BETA_SUCCESSOR_WIRING.json",
+      "ACTUAL_BETA_COMPARISON.json"
+    ],
+    "pending": [
+      "Original and supplemental source freeze copies need exact canonical installation mappings.",
+      "Fresh ten-source comparison record and separately frozen/reviewed new-path beta supplement must exist.",
+      "Final profile.proof_paths, dossier.sources and protocol14_record.coverage_sources must bind the same complete final union.",
+      "Original reconstruction continuation binds original92 only; each supplemental continuation binds only its own sources.",
+      "Run authenticated complete gate and independent final coverage, not this unsigned helper, before selecting approvals."
+    ]
+  }
+}

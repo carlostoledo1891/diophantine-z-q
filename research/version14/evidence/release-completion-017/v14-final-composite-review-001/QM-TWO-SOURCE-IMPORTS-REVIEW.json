@@ -1,0 +1,71 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:04:30.472Z",
+  "target_manifest": "95403270fb7edc86751784770c25bc4a6e7148536d9abcad96deb2c38d04b793",
+  "target_components": "438cc78be6c7f1f72f736e9eb368ac655a2e6904feb8515ea49705b93606ae26",
+  "status": "accepted_bounded_source_to_consumer_imports",
+  "checks": [
+    {
+      "id": "ACTIVE-QM-CENTRAL-SIMPLE-SPLITTING",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION",
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 3,
+      "ok": true
+    },
+    {
+      "start": 5,
+      "ok": true
+    },
+    {
+      "start": 5,
+      "ok": true
+    },
+    {
+      "start": 3,
+      "ok": true
+    },
+    {
+      "start": 5,
+      "ok": true
+    },
+    {
+      "start": 5,
+      "ok": true
+    }
+  ],
+  "reasoning": [
+    "Read complete centralizer proof, SEMISIMPLE-COEFFICIENTS and all-prime matrix-unit proof. Central-simple splitting uses minimal tensor length and commutators, then minimal left ideals over an algebraically closed field; actual coefficient argument applies it to division factors after splitting separable centers.",
+    "Semisimple image algebra has semisimple regular module by faithful embedding in copies of the original module. Matrix decomposition after algebraic closure and linear equations for invariant projections preserve semisimplicity over intermediate algebraic extensions.",
+    "All-prime consumer applies this after Faltings semisimplicity and before scalar-commutant irreducibility, retaining original Tate factor and matrix units."
+  ],
+  "limits": "No Faltings, full geometric endomorphism, common field, normalized-family restriction, quantitative field/conductor or whole-coverage premise is discharged by these two algebraic imports."
+}

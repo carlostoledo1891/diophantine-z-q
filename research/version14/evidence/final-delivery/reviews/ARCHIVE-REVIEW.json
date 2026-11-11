@@ -1,0 +1,180 @@
+{
+  "schema": "independent-artifact-delivery-review/v1",
+  "decision": "accepted_within_scope",
+  "created_utc": "2026-11-09T23:48:05.941Z",
+  "reviewer": {
+    "agent": "/root/v14_final_disjoint_assembly_review",
+    "thread_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+    "run_id": "01a1c2b4-9c7c-7532-9d9d-cb67e615c236",
+    "model": "gpt-6-astra",
+    "role": "Independent archive and delivery-document reviewer; no archive or delivery-document authorship"
+  },
+  "scope": "Actual completed cumulative Version14 archive built from source S3, actual build/restoration evidence, and exact seven rendered Markdown/JSON delivery documents. Reuses accepted frozen-source, release-input and collection review; no new mathematical audit.",
+  "source_commit": "ceb028b95dd5d485586baa824badf0eb856567cb",
+  "archive": {
+    "bytes": 221978813,
+    "path": "research/version14/z-in-q-version14-supplement.zip",
+    "sha256": "6025a0af2835a239c5dcd03f4aa4f8987f16c0fb5a7deae7f49089aefaf7ec9d"
+  },
+  "archive_manifest_sha256": "af458ae20293cc24fe09f860bc5d8b518db8d7a0c2bd5395af7f894c18f88345",
+  "package_receipt_sha256": "0ab2a6970c562d9b5537d3339ed65327f7e08cfcfde0aba224f318287921898f",
+  "build": {
+    "execution": "work/v14-actual-s3-package-execution-003",
+    "run_sha256": "b7b62aecce5fe6123e0e94d09c3b2479b4fdb90deb589d36fda6e0d4760266f2",
+    "runner_sha256": "cad602dd470e7723bd2444401f4cb7d46336875c2ac930866297921bfd576709",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "completed",
+    "exit_code": 0,
+    "completed_at": "2026-11-09T23:45:09.908853+00:00",
+    "observation": "Root reported terminal completion; independently read completed RUN.json, runner and actual outputs. The reviewed runner invokes the hash-pinned packager; the packager writes final archive/logs/receipt only after all four required replay commands return zero."
+  },
+  "bindings": {
+    "selection_sha256": "3fac04801f1921f9855012f6a3ee8f53ef6863fab72fbdbad7a41f9562ef4fcf",
+    "coverage_selection_sha256": "73d2f865ce688ae5a086af19012f0a662f8ace5431b3a1870d19d94a3deff92e",
+    "release_inputs_sha256": "b976dbc06f47cf515b35ae7224116da67797a625b415fef126408776cede2adf",
+    "source_map_sha256": "4f6a4ca04cb56d1ba4bd07678a5501f8ecb8e301a541d823776bec0af7ad22f3",
+    "post_gate_manifest_sha256": "766476f2e46b1a7ab63e189bbe7abd295a76298f94653ed0350bd0be35ba12c7",
+    "historical_base_sha256": "10787487f46ebfefe931e2e7db163a2e8bd0605b3c0325534a47cd93dd43b01b"
+  },
+  "checks": [
+    {
+      "name": "Archive and frozen source identity",
+      "result": "PASS",
+      "detail": "Independently hashed all 9,894 ZIP members according to the exact manifest membership; archive size and SHA-256 match the receipt. All 9,881 current file hashes equal the selected map; each current file also independently matches its Git blob identity at source S3, not merely a working-tree file."
+    },
+    {
+      "name": "Historical preservation",
+      "result": "PASS",
+      "detail": "Recursively verified every member and manifest of the unchanged Version13, Version12, Version11, Version10 and Version9 layers. Checked safe names, duplicate/case collisions and nonregular entries. An in-memory reconstruction contains 9,889 files: all 9,881 current selected files plus seven older PDF files and the exact Version13 archive. The source map deliberately covers the selected layer; historical extras are retained, not silently counted as new selected files."
+    },
+    {
+      "name": "Release contracts",
+      "result": "PASS",
+      "detail": "The hash-matched reviewed contract code was applied to actual ZIP bytes without building or replaying. All 39 required members, 231 coverage/profile/evidence rows, three governing/historical protocol hashes, the research-annex integrity checks, exact project-PDF allowlist, source-map coverage/bytes, 237 release-input role pins, six post-gate files, package manifest, public download aliases and inventory-install members pass. The source map classifies 5,352 current and 4,529 historical files and retains 181 explicit exclusions."
+    },
+    {
+      "name": "Actual restored checks",
+      "result": "PASS",
+      "detail": "All four log SHA-256 values match the receipt. Log1 records successful restoration with historical bases; log2 passes history checks and negative controls; log3 records 39 applications, 24 assembly IRs, 351 obligations and five negative self-tests, explicitly structural-only; log4 passes the 28-stage lineage and the selected 299/314 coefficient/table checks. These are the completed build’s actual replay results, not a claim that this reviewer ran a second replay."
+    },
+    {
+      "name": "Seven delivery documents",
+      "result": "PASS_AFTER_ONE_WORDING_CORRECTION",
+      "detail": "Compared each existing document with its exact S3 predecessor, read the changed claims in context and checked the seven final hashes. Archive size, SHA-256, S3 commit and receipt agree with actual bytes. The receipt is byte-identical to PACKAGE-RECEIPT.json. The documents distinguish the archived source revision from subsequent delivery documentation, retain historical/rejected status qualifications and do not treat finite checks as proofs. Protocol_D naming remains unchanged. All 121 relative Markdown link occurrences resolve against proposed documents or the repository after URL decoding. Release-asset URLs are intended publication destinations; this review does not claim that the new asset is already uploaded."
+    }
+  ],
+  "replay_logs": [
+    {
+      "name": "restore-check-1.log",
+      "sha256": "f5f65bdca9d619c225c4bb6742d59332dcc03d1c0af3a92467d8551a2bdac3bb",
+      "bytes": 92
+    },
+    {
+      "name": "restore-check-2.log",
+      "sha256": "0936728b249691227bbac5abb1d6f020a93dfb590a0fe08f34ac86a67508b023",
+      "bytes": 290
+    },
+    {
+      "name": "restore-check-3.log",
+      "sha256": "bcc49fcbd204e7adff8da8ef878206c431106d7ccaf73505963be5341d4b5878",
+      "bytes": 211
+    },
+    {
+      "name": "restore-check-4.log",
+      "sha256": "2b8cb3e6c99ee9d1048dc9c42306b48aa58e9c4f90b9359940de007d93f63925",
+      "bytes": 2635
+    }
+  ],
+  "delivery_documents": [
+    {
+      "path": "README.md",
+      "sha256": "5961c6ce59246b287370ce950a49acccb81da7dd093cdade76130036e92a2993",
+      "bytes": 13188
+    },
+    {
+      "path": "docs/archiving.md",
+      "sha256": "0575b459fa02221ad3ba45de74d4b4c60e9abcde509be55053432b04f16e7906",
+      "bytes": 3885
+    },
+    {
+      "path": "docs/research-guide.md",
+      "sha256": "71e5430ceeea3b587443b450e81a6daff83886774171ee7ba760f7250618e1c1",
+      "bytes": 13005
+    },
+    {
+      "path": "research/version14/README.md",
+      "sha256": "c81a8910d86921d504c49c3910226a4f3e92c41005d61d054821a9568d365120",
+      "bytes": 3107
+    },
+    {
+      "path": "research/version14/ARTIFACT-INDEX.md",
+      "sha256": "f56d5febfebcbe9b1704af092081165ce6befde8b3a965dc5b5c81ad5a99e4d6",
+      "bytes": 4004
+    },
+    {
+      "path": "research/version14/CUMULATIVE-HANDOFF.md",
+      "sha256": "5f7dc1105010beca746d028b369b72895cc748acfbb49f086b661e5147dd6a1c",
+      "bytes": 6191
+    },
+    {
+      "path": "research/version14/RELEASE-RECEIPT.json",
+      "sha256": "0ab2a6970c562d9b5537d3339ed65327f7e08cfcfde0aba224f318287921898f",
+      "bytes": 1349
+    }
+  ],
+  "delivery_changes_sha256": "dad75ece9ee733a72726f05907cc1b5d983011ed83c95e07a8175752ecd947dd",
+  "objection_history": [
+    {
+      "id": "DELIVERY-FUTURE-CHECK-WORDING",
+      "classification": "Premature delivery-check wording; no archive or source-mathematics defect",
+      "original_document_sha256": "8a30b2bda45a03d3099e023fffe187988ae8e66515b3ee06e8c7c5724f0862a4",
+      "original_sentence": "Its own release check is attached to the delivery commit on GitHub; the source check does not approve a later commit.",
+      "disposition": "Author corrected the sentence; independently checked exact replacement",
+      "replacement_sentence": "The delivery commit requires its own release check on GitHub; the source check does not approve a later commit.",
+      "accepted_document_sha256": "5f7dc1105010beca746d028b369b72895cc748acfbb49f086b661e5147dd6a1c",
+      "repair_record_sha256": "13067945d26ed543d0e21a61e332a10617d22d6e9696a252e032d57ebad739ed"
+    }
+  ],
+  "reused_review_pins": [
+    {
+      "scope": "Frozen final release inputs",
+      "sha256": "b2622fe77c5f005b7aafa8f70247048f90ac8296112d6957212b51a047f03c90"
+    },
+    {
+      "scope": "Actual source-gate collection",
+      "sha256": "8f7c5b16f95c7d31aabb223227bdd70ee4e13f6988a6d9238029b091244b8c0f"
+    }
+  ],
+  "evidence": [
+    {
+      "name": "check_archive.py",
+      "sha256": "9019d3b28a014cddf7ea587e723165cc49be4216be589ea8f992da9aa5753125"
+    },
+    {
+      "name": "ARCHIVE-INTEGRITY.json",
+      "sha256": "2b01724f540b5d3b8ae9e976949eb5e4c0677907ac2e8bcdc09a6fedf49e9291"
+    },
+    {
+      "name": "IN-MEMORY-RESTORED-HASHES.json",
+      "sha256": "8126afc92561bc52dca75184c31526631c09add9cffe217ba6ece2d748109e70"
+    },
+    {
+      "name": "check_actual_contracts.py",
+      "sha256": "0e0b2a5ef1133516513cf025ada77a43291be8af2973aa3ec9be479a2e2f8402"
+    },
+    {
+      "name": "ACTUAL-ARCHIVE-CONTRACTS.json",
+      "sha256": "293c679bff97883181c535838a227a4e0e02f449a874df59b7eda52e1ad16cd7"
+    }
+  ],
+  "limits": [
+    "No package rebuild, source modification or second restore/replay was performed.",
+    "The archive review adopts actual completed build replay logs and independently verifies bytes/contracts and in-memory layer composition.",
+    "This body can be included in a future delivery commit, but it is not an acknowledgment of any future commit, packet, binding, authenticated gate or publication. Actual delivery revision R is not yet supplied.",
+    "No frozen proof or previously accepted source-gate judgment was re-audited.",
+    "The seven rendered inputs are Markdown/JSON output files; no separate PDF/HTML browser rendering was supplied or visually audited."
+  ],
+  "actual_delivery_commit": null,
+  "actual_delivery_binding": null,
+  "publication_acceptance": false
+}

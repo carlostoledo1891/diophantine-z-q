@@ -1,0 +1,93 @@
+{
+  "rows": [
+    {
+      "id": "SCHWARTZ-SPLIT-CYCLIC-PROJECTORS",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15093,
+          "end_line": 15128,
+          "excerpt_sha256": "9083c4d2490afc3fdac7b49cda71f8ba8734de659748f954fd9960854ba5935c"
+        }
+      ],
+      "source_role": "retained conditional cyclic-support inputs plus local projector and finite-character construction",
+      "accepted_source": {
+        "path": "v14-cj-split-support-author-001/SOURCE-CONNECTIONS.json",
+        "sha256": "3b2e204322e2e848c722d192484c9c6387c0261c2e2d26b179e9cb9a474f9568"
+      },
+      "source_ids": [
+        "CJ-SPLIT-ACTUAL-UNIT-FILTER",
+        "CJ-SPLIT-CYCLIC-MODEL",
+        "CJ-SPLIT-ODD-PROJECTOR-SUPPORT",
+        "CJ-SPLIT-DYADIC-PROJECTOR-SUPPORT"
+      ],
+      "review": {
+        "path": "v14-final-composite-review-001/CJ-SPLIT-SUPPORT4-REVIEW.json",
+        "sha256": "a6ae3d86edb976c46032ff4b8ada3f6f42d942d4d2633951e9d695936702997d"
+      },
+      "argument": "The actual cyclic subgroup is a rank-one Z/p^e module. The accepted lattice-pair model makes its stabilizing order the specified Eichler order. On the stipulated split unit support, odd-p spectral projectors are integral; at2 use integral (1+x)/2 and eigenvalue difference r, a unit. A cyclic module admits only the two idempotents0,1, so exactly one projector selects the root. Unit scaling fixes the projectors and scales that root. For odd p, the cyclic2-primary subgroup of F_p^* has a character nontrivial on its order-two element; inflate it. At2 the character modulo4 gives negative parity. These finite character choices are elementary local constructions, not newform existence inputs.",
+      "limits": "The source is the cyclic subgroup itself, not the complementary quotient. Support and actual admissibility are explicit; the global Atkin operation remains separate."
+    },
+    {
+      "id": "SCHWARTZ-DIVISION-RESIDUE",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15145,
+          "end_line": 15160,
+          "excerpt_sha256": "5678e9f3f52dfd1a56f5cbcda637fff899b2cfe961eabdfa4227113656f4829e"
+        }
+      ],
+      "existing_use_id": "ACTIVE-CJ-LOCAL-DIVISION-INPUT",
+      "existing_use_sha256": "4f55ca2ca57caa7d99a217f94fbd9a6eae03e640ce809c6d6c0e9aba0217b27f",
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/cj-local-structure-001/SOURCE-CONNECTION.md",
+          "sha256": "f40e1015c5d651a998856ba90dd74a15d6e01a705da7f70301b1d6ad0c149293"
+        },
+        "start_line": 18,
+        "end_line": 18,
+        "excerpt_sha256": "f94c080f07676bd376df0970571487aa7ac7d5c138d49dd9430d8fb9062da3d1"
+      },
+      "argument": "Apply the unramified quadratic cyclic division model at the actual ell0. Its maximal-order residue is F_(ell0²); conjugation by order units is trivial on that commutative residue field, while a division uniformizer acts by its nontrivial Frobenius. For a nonzero trace-zero beta, Frobenius(beta)=-beta. If beta² were a square over F_ell0, beta would lie in F_ell0, impossible since ell0 is odd. As ell0=3 mod4, both -1 and beta² are nonsquares. Thus -t² beta² is square and Legendre(t) changes by -1 under Frobenius. Compact-open support and local constancy follow from the finite residue conditions.",
+      "limits": "Uses the actual division place ell0 and ell0=3 mod4, plus (m/ell0)=1 for the final D condition; does not identify an unrelated geometric normalizer."
+    },
+    {
+      "id": "SCHWARTZ-NILPOTENT-LOCAL-ALGEBRA",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15130,
+          "end_line": 15143,
+          "excerpt_sha256": "f85c55333480977ac591ee4bc5809b99c27a7ea382ad914a0f7914a65b9192a0"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15161,
+          "end_line": 15164,
+          "excerpt_sha256": "16e3030ccaf4ba4b3c27dc042d1892380573581d7d356b88df0f4ce69a312d47"
+        }
+      ],
+      "source_role": "local calculation and fixed coefficient-field declaration",
+      "argument": "For valuation-one norm the reduction cannot vanish. Every nonzero nilpotent2x2 matrix has one Jordan block. Its invertible centralizer consists of matrices(a,b;0,a), determinant a²; therefore Legendre(det g) is independent of the conjugating matrix. diag(u,1) scales the standard nilpotent byu. The only nonquadratic weights are the finitely many previously chosen root characters at primes dividingN, so their value field is fixed independently ofM andell0.",
+      "no_imports_reason": "These are explicit two-dimensional matrix computations and definitions; no downstream theta theorem is imported."
+    }
+  ]
+}

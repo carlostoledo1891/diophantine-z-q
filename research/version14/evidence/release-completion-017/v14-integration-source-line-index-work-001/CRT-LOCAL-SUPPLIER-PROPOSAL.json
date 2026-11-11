@@ -1,0 +1,382 @@
+{
+  "before": {
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-RC-CRT-UNIT-CONDITIONS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-RC-CRT-UNIT-CONDITIONS-P1",
+        "ACTIVE-RC-CRT-UNIT-CONDITIONS-P2"
+      ],
+      "assertion": {
+        "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+        "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+        "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+        "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+        "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+        "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+        "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+      },
+      "classification": "dependency",
+      "reason": "Explicit current prime-realization input.",
+      "shared_contract_justification": "Same fixed-modulus implication at the listed concrete occurrences.",
+      "supplier": {
+        "kind": "published_external",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+            "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+          },
+          "start_line": 6,
+          "end_line": 7,
+          "excerpt_sha256": "c34633fd682d7381fa5ab46a8f55de5e715d3287e8c76763ebc715da47c8ec3a"
+        },
+        "statement": "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product.",
+        "publication": {
+          "title": "Algebraic Number Theory",
+          "authors": "J.S. Milne",
+          "venue": "Author course notes, version3.08,19July2020",
+          "authoritative_version": "Pinned author notes, not peer-reviewed publication",
+          "locator": "Classical CRT, printed19",
+          "corrections": "Full needed Bezout proof supplied locally."
+        },
+        "application_id": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+          "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+        },
+        "start_line": 9,
+        "end_line": 13,
+        "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-RC-CRT-UNIT-CONDITIONS",
+      "use_sha256": "de1b7fd2af55f43f403137b595a41a2a3e26e69bc860752aef6e83af87519052",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product.",
+        "objects": "Integers q_i,a_i and productQ.",
+        "hypotheses": "The q_i are pairwise coprime and gcd(a_i,q_i)=1.",
+        "quantifiers": "Every finite list of pairwise-coprime positive integer moduli and unit residues at those moduli.",
+        "parameter_range": "Positive pairwise-coprime integer moduli and integer residues.",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Ordinary integer congruences, with Bezout inverses ofQ/q_i.",
+        "exceptional_cases": "Overlapping support must first be consolidated into one compatible modulus.",
+        "limit_order": "Fix finite moduli, then constructa."
+      },
+      "needed_assertion": {
+        "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+        "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+        "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+        "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+        "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+        "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+        "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+      },
+      "required_capabilities": [
+        "The actual finite unit-class and forward-bit conditions combine into a reduced residue class."
+      ],
+      "available_capabilities": [
+        "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product."
+      ],
+      "derived_capabilities": [
+        "The actual finite unit-class and forward-bit conditions combine into a reduced residue class."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+            "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+          },
+          "start_line": 9,
+          "end_line": 13,
+          "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+          "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+          "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+          "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+          "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+          "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+          "constants": "No numerical bound is consumed.",
+          "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+          "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+          "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "This supplies no prime and no reverse reciprocity bit.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+              "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+            },
+            "start_line": 9,
+            "end_line": 13,
+            "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2858,
+            "end_line": 2866,
+            "excerpt_sha256": "30092421b758c58993f85db57263eb508b9d4b851397b7584ff77562f4f821e2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3036,
+            "end_line": 3049,
+            "excerpt_sha256": "70892c9ad0ccb14bde164f5dfbed7221f0e392bbf598ad7364bbb146252d9f48"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2858,
+          "end_line": 2866,
+          "excerpt_sha256": "30092421b758c58993f85db57263eb508b9d4b851397b7584ff77562f4f821e2"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3036,
+          "end_line": 3049,
+          "excerpt_sha256": "70892c9ad0ccb14bde164f5dfbed7221f0e392bbf598ad7364bbb146252d9f48"
+        }
+      ]
+    },
+    "retained_separate_inputs": [
+      "Realizable types and support-modulus representation",
+      "Quadratic reciprocity for reversebits",
+      "Graph dependence and productreplacement",
+      "HL/BFH and forward rankzero"
+    ],
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json"
+  },
+  "after": {
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-RC-CRT-UNIT-CONDITIONS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-RC-CRT-UNIT-CONDITIONS-P1",
+        "ACTIVE-RC-CRT-UNIT-CONDITIONS-P2"
+      ],
+      "assertion": {
+        "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+        "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+        "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+        "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+        "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+        "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+        "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+      },
+      "classification": "dependency",
+      "reason": "Explicit current prime-realization input.",
+      "shared_contract_justification": "Same fixed-modulus implication at the listed concrete occurrences.",
+      "supplier": {
+        "kind": "inline",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+            "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "069e06201191348e4b02645419a7b7b2663d6c2e012e95c96cce9d605273481f"
+        },
+        "statement": "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product.",
+        "publication": null,
+        "application_id": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+          "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+        },
+        "start_line": 9,
+        "end_line": 13,
+        "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-RC-CRT-UNIT-CONDITIONS",
+      "use_sha256": "5f557cb2c3148dfa0dab8c028e44d5803686fd6cbba96df24aac00377103cc2a",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product.",
+        "objects": "Integers q_i,a_i and productQ.",
+        "hypotheses": "The q_i are pairwise coprime and gcd(a_i,q_i)=1.",
+        "quantifiers": "Every finite list of pairwise-coprime positive integer moduli and unit residues at those moduli.",
+        "parameter_range": "Positive pairwise-coprime integer moduli and integer residues.",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Ordinary integer congruences, with Bezout inverses ofQ/q_i.",
+        "exceptional_cases": "Overlapping support must first be consolidated into one compatible modulus.",
+        "limit_order": "Fix finite moduli, then constructa."
+      },
+      "needed_assertion": {
+        "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+        "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+        "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+        "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+        "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+        "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+        "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+      },
+      "required_capabilities": [
+        "The actual finite unit-class and forward-bit conditions combine into a reduced residue class."
+      ],
+      "available_capabilities": [
+        "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product."
+      ],
+      "derived_capabilities": [
+        "The actual finite unit-class and forward-bit conditions combine into a reduced residue class."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+            "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+          },
+          "start_line": 9,
+          "end_line": 13,
+          "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+          "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+          "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+          "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+          "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+          "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+          "constants": "No numerical bound is consumed.",
+          "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+          "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+          "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "This supplies no prime and no reverse reciprocity bit.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+              "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+            },
+            "start_line": 9,
+            "end_line": 13,
+            "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2858,
+            "end_line": 2866,
+            "excerpt_sha256": "30092421b758c58993f85db57263eb508b9d4b851397b7584ff77562f4f821e2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3036,
+            "end_line": 3049,
+            "excerpt_sha256": "70892c9ad0ccb14bde164f5dfbed7221f0e392bbf598ad7364bbb146252d9f48"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2858,
+          "end_line": 2866,
+          "excerpt_sha256": "30092421b758c58993f85db57263eb508b9d4b851397b7584ff77562f4f821e2"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3036,
+          "end_line": 3049,
+          "excerpt_sha256": "70892c9ad0ccb14bde164f5dfbed7221f0e392bbf598ad7364bbb146252d9f48"
+        }
+      ]
+    },
+    "retained_separate_inputs": [
+      "Realizable types and support-modulus representation",
+      "Quadratic reciprocity for reversebits",
+      "Graph dependence and productreplacement",
+      "HL/BFH and forward rankzero"
+    ],
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json"
+  },
+  "changes": [
+    ".use.supplier.kind",
+    ".use.supplier.location.start_line",
+    ".use.supplier.location.excerpt_sha256",
+    ".use.supplier.publication",
+    ".connection.use_sha256",
+    ".connection.supplier_passage_role"
+  ],
+  "reason": "Exact existing line7 contains the full Bezout construction; retained course-notes attribution is not used as sole supplier."
+}

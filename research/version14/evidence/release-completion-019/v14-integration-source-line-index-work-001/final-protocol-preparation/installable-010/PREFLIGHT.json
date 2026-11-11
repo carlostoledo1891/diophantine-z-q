@@ -1,0 +1,31 @@
+{
+  "scope": "Structural preflight only. Exact existing validator data-checking sections; authenticated identity, receipt/report checks and Git provenance are deliberately not executed. No successful gate decision is asserted.",
+  "excluded": [
+    "coverage receipt and author independence",
+    "reconstruction authenticated run continuity",
+    "connection and assembly authenticated report decisions",
+    "packet Git/change/author validation"
+  ],
+  "validator_sha256": {
+    "coverage_gate.py": "34f6a740f0fed7356614374b01a09ebe565d863fca3d882047d5f836ad550b93",
+    "connections_gate.py": "6ef0d24825db8de3f21bf873728676572ec32a24427ca76ad4166afa93a1ffd4"
+  },
+  "checks": {
+    "coverage": {
+      "ok": true,
+      "result": {
+        "uses": 1042,
+        "rows": 8410,
+        "histories": 2257
+      }
+    },
+    "connections": {
+      "ok": true,
+      "result": {
+        "connections": 1042,
+        "findings": 18
+      }
+    }
+  },
+  "verified_file_count": 199
+}

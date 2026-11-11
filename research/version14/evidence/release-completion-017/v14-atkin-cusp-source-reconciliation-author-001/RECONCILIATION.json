@@ -1,0 +1,149 @@
+{
+  "initial_source_uses_sha256": "4e02e67ff990d1efec5975f70d173a63301f44ea0f93f8ef2f80333b6c3ea8df",
+  "initial_passages_sha256": "51b921bf24db3d82f951c7e5ed0749f0fb0401f5280103d19fc85e26d74b9367",
+  "rows": [
+    {
+      "initial_use_id": "ATKIN-CUSP-SUP-001",
+      "initial_use_sha256": "cbe82944f9f3261bc93762970ba7c32436e5f4421a7cce6734d9ab8c1c32f47b",
+      "classification": "background",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-cusp-input-001/PROOF.md",
+          "sha256": "f52c5697ecb22b43035bf4abd79114157917db0e07a1774889200acb3d291629"
+        },
+        "start_line": 1,
+        "end_line": 4,
+        "excerpt_sha256": "27f3e57b88c06af58e876ea1cd201a0afeb053b48bc6a92e32eec69ad2f2a5ec"
+      },
+      "source_role": "scope_boundary",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Explicit limitation, not an assertion of eigen-action or finite cusp torsion.",
+      "outgoing_provenance_use_ids": [],
+      "caller_requirements": [
+        "Differential eigen-action and a finite cuspidal annihilator must be independently supplied wherever invoked."
+      ]
+    },
+    {
+      "initial_use_id": "ATKIN-CUSP-SUP-002",
+      "initial_use_sha256": "8aed3885de38b17ca7cea95172afb1f105d3398c717c52a21d25ddb646ec7aae",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-cusp-input-001/PROOF.md",
+          "sha256": "f52c5697ecb22b43035bf4abd79114157917db0e07a1774889200acb3d291629"
+        },
+        "start_line": 5,
+        "end_line": 6,
+        "excerpt_sha256": "c9b980522d9f4b097d0b824d41acd3dedbec69119251eceacf53de41beb38e3f"
+      },
+      "source_role": "definition_and_elementary_calculation",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Use the specified matrix definition. Since gcd(e,r)=1, Bezout supplies integers d,b with e*d-r*b=1, taking a=c=1; determinant is e*(e*a*d-r*b*c)=e. This uses only integer Bezout and determinant expansion, not the conclusion about cusp permutation.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-ATKIN-CUSP-PERMUTATION"
+      ],
+      "caller_requirements": [
+        "Differential eigen-action and a finite cuspidal annihilator must be independently supplied wherever invoked."
+      ]
+    },
+    {
+      "initial_use_id": "ATKIN-CUSP-SUP-003",
+      "initial_use_sha256": "12dc991c27f37251d6142ab5f75cfeabf408262df30713803d038456473b5299",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-cusp-input-001/PROOF.md",
+          "sha256": "f52c5697ecb22b43035bf4abd79114157917db0e07a1774889200acb3d291629"
+        },
+        "start_line": 7,
+        "end_line": 10,
+        "excerpt_sha256": "1422dc194e451408a7b78b5c8bf7ac8e34076c59d70f5b6106d34b06fc6b84cb"
+      },
+      "source_role": "elementary_matrix_calculation",
+      "incoming_use_ids": [],
+      "no_imports_reason": "Direct multiplication by adj(M)/e gives the four displayed entries. The exact symbolic polynomial identity is checked independently of any eigenform theorem.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-ATKIN-CUSP-PERMUTATION"
+      ],
+      "caller_requirements": [
+        "Differential eigen-action and a finite cuspidal annihilator must be independently supplied wherever invoked."
+      ]
+    },
+    {
+      "initial_use_id": "ATKIN-CUSP-SUP-004",
+      "initial_use_sha256": "da0b38c80bea0410b4d2b139b2cffc344761e6948d4c10820efb28c552eb3f2e",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-cusp-input-001/PROOF.md",
+          "sha256": "f52c5697ecb22b43035bf4abd79114157917db0e07a1774889200acb3d291629"
+        },
+        "start_line": 11,
+        "end_line": 12,
+        "excerpt_sha256": "fde607f486c2d79dbd89fd1935a73db95c3ff53b6767832e25e72042622ea6fb"
+      },
+      "source_role": "local_group_argument",
+      "incoming_use_ids": [],
+      "no_imports_reason": "The entries and determinant show M*Gamma*M^-1 is contained in Gamma. Since M squared divided by e lies in Gamma, conjugation by M squared preserves Gamma, giving the reverse containment. Scalar e acts trivially on the upper half-plane, so the induced operator squares to the identity.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-ATKIN-CUSP-PERMUTATION"
+      ],
+      "caller_requirements": [
+        "Differential eigen-action and a finite cuspidal annihilator must be independently supplied wherever invoked."
+      ]
+    },
+    {
+      "initial_use_id": "ATKIN-CUSP-SUP-005",
+      "initial_use_sha256": "5d00f0e0e16011b3509de948b017d71f0f2193295af0f3fe62b4dc0d812f9077",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-cusp-input-001/PROOF.md",
+          "sha256": "f52c5697ecb22b43035bf4abd79114157917db0e07a1774889200acb3d291629"
+        },
+        "start_line": 13,
+        "end_line": 14,
+        "excerpt_sha256": "f8528d9a081258c9ea246a8458c2ea667eba05080f7f8aebff613049a7232c21"
+      },
+      "source_role": "definition_and_local_action_argument",
+      "incoming_use_ids": [],
+      "no_imports_reason": "The cusps of the analytic compactification are by definition the orbits Gamma0(N) backslash P1(Q). An invertible rational matrix acts bijectively on P1(Q); two-sided normalization makes its action well-defined and bijective on those orbits. No differential statement is needed.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-ATKIN-CUSP-PERMUTATION"
+      ],
+      "caller_requirements": [
+        "Differential eigen-action and a finite cuspidal annihilator must be independently supplied wherever invoked."
+      ]
+    },
+    {
+      "initial_use_id": "ATKIN-CUSP-SUP-006",
+      "initial_use_sha256": "762717e879376d9b8c50883337e560997b3ba9a4fd01f74a9b4858bbffda56c7",
+      "classification": "dependency",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-cusp-input-001/PROOF.md",
+          "sha256": "f52c5697ecb22b43035bf4abd79114157917db0e07a1774889200acb3d291629"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "8aa42909d214ff3c446ef3c7b63d9c079a1817eeb47a5efe734edd5ebc7d128f"
+      },
+      "source_role": "conditional_local_group_argument",
+      "incoming_use_ids": [],
+      "no_imports_reason": "The based quotient formula and definition of C_N as generated by cusp differences give membership in phi(C_N). If the separately supplied C_pi annihilates that group then it kills this element. No existence or numerical bound for C_pi is proved or imported here.",
+      "outgoing_provenance_use_ids": [
+        "ACTIVE-ATKIN-CUSP-PERMUTATION"
+      ],
+      "caller_requirements": [
+        "Differential eigen-action and a finite cuspidal annihilator must be independently supplied wherever invoked."
+      ]
+    }
+  ],
+  "scope": "Six source observations; elementary proof and definitions, not newform eigen-action or Manin-Drinfeld theorem."
+}

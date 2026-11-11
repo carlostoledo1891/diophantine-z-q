@@ -1,0 +1,29 @@
+{
+  "reviewer": "/root/v14_h6_coverage",
+  "reviewed_at": "2026-11-09T07:57:47.224Z",
+  "decision": "accepted four model current-use applications with retained premises",
+  "target": {
+    "path": "v14-v13-model-inputs-004",
+    "manifest": "0c55c20e77e5627823c4ddaa1dd072a4615d34e2a9f1723fe0bc8e9c6c2e6815",
+    "components": "2a02e5de9c4eba4cc295c3e9ad7f8fb4b58299be7b11897a2ce5f46c86d8962f"
+  },
+  "prior_review": {
+    "path": "v14-v13-model-height-review-h6-001/REVIEW-HEIGHT.json",
+    "sha256": "05c5ba26a3ca1d1e01c8641c81db5492d5cf422e1d5a090d6063e9663f21b820"
+  },
+  "findings": [
+    "N07 supplies scalar/root parity after both parity cases; it does not supply rank or group decomposition.",
+    "N40 restores the reciprocal cubic and oriented difference in secant, tangent and identity cases before group interpretation. The omitted finite two-torsion point is not reintroduced.",
+    "N41 is restricted to actual nonzero root charts and inherited squareclass domain, not forward completeness.",
+    "N45 now supplies only the specifically oriented scalar coordinates, with root nonzero supplied separately. Its ten fields and adverse-case note no longer claim forward witness existence."
+  ],
+  "checks": {
+    "uses": 4,
+    "raw_locations": 25,
+    "canonical_use_digests": "pass",
+    "assertion_equalities": "pass",
+    "current_consumer_dependencies": "pass",
+    "successor004_diff": "Only origin paths and requested N45 adverse-case explanation change from003"
+  },
+  "limitations": "Inherited rank, squareclass, parity coefficient, height and log inputs remain separate. Earlier37 source authorship disclosed in prior review; reuse its independent source acceptance. This is GI-authored current-application review only, not whole-wrapper or final coverage approval."
+}

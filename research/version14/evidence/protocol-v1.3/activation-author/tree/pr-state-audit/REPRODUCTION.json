@@ -1,0 +1,49 @@
+{
+  "trigger": "only mergeable_state changed blocked to clean after successful write",
+  "result": {
+    "status": "blocked",
+    "published_success": false,
+    "generation": 1,
+    "revocation_confirmed": true,
+    "diagnostic": {
+      "exception_type": "Invalid",
+      "frames": [
+        {
+          "file": "app_publisher.py",
+          "function": "run",
+          "line": 280
+        },
+        {
+          "file": "app_publisher.py",
+          "function": "<lambda>",
+          "line": 276
+        },
+        {
+          "file": "app_publisher.py",
+          "function": "_fresh",
+          "line": 248
+        },
+        {
+          "file": "live_protocol_context_forks.py",
+          "function": "recheck",
+          "line": 137
+        },
+        {
+          "file": "live_protocol_context_forks.py",
+          "function": "_reobserve",
+          "line": 106
+        },
+        {
+          "file": "offline_manifest_gate.py",
+          "function": "require",
+          "line": 34
+        }
+      ]
+    },
+    "reason": "Trusted evaluation or transport did not complete."
+  },
+  "success_writes": 1,
+  "final_conclusions": [
+    "failure"
+  ]
+}

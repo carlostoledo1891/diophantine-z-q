@@ -1,0 +1,250 @@
+{
+  "id": "V15-SF11-SURFACE-HEIGHT-PUBLISHED-PROOF",
+  "status": "author successor; obligation8 evidence adds exact actual consumer; review pending",
+  "source": {
+    "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+    "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+    "lines": [
+      30600,
+      30648
+    ],
+    "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+    "convention": "raw LF split retaining CR; no trailing LF"
+  },
+  "required_statement": "hF(A)≤H_J+8(32log14+logd-prime+logmax(1,logd-prime,H_J)); H_J=max(1,hF(J)+3g/2).",
+  "direct_sources": [
+    {
+      "title": "Gaudron–Rémond, Nouveaux théorèmes d’isogénie, Mémoires SMF176(2023)",
+      "sha256": "b1e2e32bec626cf6d27fb7d6d8702b5c707e0c3dc002d979088e62d8cda514a4",
+      "locators": [
+        "§1.2 p2",
+        "§1.5 p7",
+        "proof of Lemma16.2(1) pp97–98",
+        "Theorem1.9(1) pp7–8"
+      ]
+    },
+    {
+      "title": "Gaudron–Rémond, Théorème des périodes et degrés minimaux d’isogénies, CMH89(2014)",
+      "sha256": "5afec329530089fd62d686f5e75331c91fc97fbf775ad6c4b275fc514459f31e",
+      "locators": [
+        "§2.3 p352",
+        "Corollary8.4 p400"
+      ]
+    }
+  ],
+  "indirect_dependencies": [
+    {
+      "source": "Remond, Propriétés de la hauteur de Faltings (2022)",
+      "locator": "Corollary1.3, as invoked by final2023 proof [28]",
+      "status": "retained indirect dependency; final2022 standalone text not claimed obtained"
+    },
+    {
+      "source": "Remond, Variétés abéliennes et ordres maximaux, Rev. Mat. Iberoam.33(2017),1173–1195",
+      "locator": "Theorem1.6, as invoked by final2023 proof [25]",
+      "status": "retained indirect dependency"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Field and factor",
+      "required": "J and A defined over the same L-prime; A an L-prime-isogeny factor of J; g≥2.",
+      "constructed": "Apply the final2023 construction with K=L-prime and C=J.",
+      "match": "No splitting-field enlargement enters d-prime.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 2,
+      "topic": "Low-height product supplier",
+      "required": "A product J0 over L-prime, isogenous to J, with hF(J0)≤hF(J).",
+      "constructed": "Use the published proof of Lemma16.2(1), printed97–98, with conventions§1.2p2 and§1.5p7.",
+      "match": "The direct supplier is final2023, not an asserted verification of final2022.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 3,
+      "topic": "Surface selection",
+      "required": "Select every required simple constituent with multiplicity.",
+      "constructed": "Semisimple isogeny-factor decomposition selects subproduct B isogenous to A, dimension2, with J0=B×E.",
+      "match": "The independent factor review checks repeated elliptic factors and same-field scope.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 4,
+      "topic": "Height additivity",
+      "required": "Use original stable Faltings normalization.",
+      "constructed": "hF(B)=hF(J0)-hF(E).",
+      "match": "Final2014§2.3p352 supplies normalization and product additivity.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 5,
+      "topic": "Complement bound",
+      "required": "Bound E in dimension g-2, including0.",
+      "constructed": "Bost gives hF(E)≥-log(pi sqrt2)dimE; dimension0 has height0.",
+      "match": "Final2014Cor8.4p400 plus§2.3 yields hF(B)≤hF(J)+3(g-2)/2≤H_J.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 6,
+      "topic": "Isogeny degree",
+      "required": "Apply dimension2 theorem over L-prime.",
+      "constructed": "Final2023Theorem1.9(1) gives degree≤(14^32 d-prime max(1,logd-prime,hF(B)))^16.",
+      "match": "No field degree or exponent changed.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 7,
+      "topic": "Height transfer",
+      "required": "Move from B to A with the half-log degree cost.",
+      "constructed": "Final2014§2.3p352 supplies |hF(A)-hF(B)|≤(1/2)logdegree.",
+      "match": "The resulting multiplier8 and displayed constants are exactly preserved.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    },
+    {
+      "id": 8,
+      "topic": "Current consumer",
+      "required": "Use H_J in the already printed contact calculation.",
+      "constructed": "The surface estimate feeds the unchanged bounds d-prime≤2304R and H_J≤8D0R^3 ell, then hF(A)≤9D0R^3ell.",
+      "match": "Current-use proposal review checks the unchanged consumer; no new arithmetic estimate.",
+      "evidence": {
+        "lemma": {
+          "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+          "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+          "lines": [
+            30600,
+            30648
+          ],
+          "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+          "convention": "raw LF split retaining CR; no trailing LF"
+        },
+        "field_clarification": {
+          "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+          "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+          "lines": [
+            30650,
+            30655
+          ],
+          "excerpt_sha256": "8eef1bf936f3dfc2cc52e095d786e5a1a738f62ce9a7e0669f36a9712e8778b7",
+          "convention": "raw LF split retaining CR; no trailing LF"
+        },
+        "actual_contact_consumer": {
+          "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+          "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+          "lines": [
+            30768,
+            30787
+          ],
+          "excerpt_sha256": "bc5cc137a7f727b25bb2a97592d3ebc3cd88ffb6d5d360b1de858692e06facc7",
+          "convention": "raw LF split retaining CR; no trailing LF"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "topic": "Dependency history",
+      "required": "Preserve indirect dependencies and old source limitation.",
+      "constructed": "The final2023 proof invokes Remond2022Cor1.3 and Remond2017Theorem1.6.",
+      "match": "Old8867 direct2022 route remains superseded-route history; no claim that final2022 was obtained.",
+      "evidence": {
+        "path": "work/version15-protocold-233-20261110/consolidated-tex-proposal-032/quartic_v15.proposed.tex",
+        "sha256": "7b2c79577c0a8e478628021e019ea11a6cd3ce9dc2fc7917eb1818c6f60b9e6e",
+        "lines": [
+          30600,
+          30648
+        ],
+        "excerpt_sha256": "c7874596fdf010f1242f2f4ceccd32c45340caa53b62989d9e7117de8d56d3c0",
+        "convention": "raw LF split retaining CR; no trailing LF"
+      }
+    }
+  ],
+  "retained_reviews": [
+    {
+      "path": "work/v15-surface-source-replacement-review-h6-001/REVIEW.json",
+      "sha256": "cc55078edd8a6fdb1e0f33d9debcd606cba53a6e96b58556af6f2d4f48076d13",
+      "scope": "source, field and normalization; exact030 surface text identical032"
+    },
+    {
+      "path": "work/v15-surface-factor-review-arithmetic-001/REVIEW.json",
+      "sha256": "ab872825e746eb399557136b3409f4cb6da3f58ffe57f62bb85ddce7a2ed3beb",
+      "scope": "simple-factor multiplicity and height algebra"
+    },
+    {
+      "path": "work/v15-sourcefirst-review-001/MODULAR-TRANSCRIPTION-AND-PROPOSAL-DECISION.json",
+      "sha256": "71690e0a60e8f9479beae0b79a59f6a4d643ac7279a8543f48fb2778f8786194",
+      "scope": "exact032 proposed delta current-use review"
+    }
+  ],
+  "legacy_route": {
+    "source_sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      30601,
+      30646
+    ],
+    "status": "historical direct2022 source-version limitation preserved; proposed route replacement is not a claim of obtaining that text"
+  },
+  "installation_status": "not installed; frozen8867/015 unchanged"
+}

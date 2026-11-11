@@ -1,0 +1,384 @@
+[
+  {
+    "origin": "v14-product-height-source-inputs-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-PRODUCT-HEIGHT-FORMAL-NEIGHBORHOOD",
+      "consumer": "V13-HEIGHT",
+      "passages": [
+        "ACTIVE-PRODUCT-HEIGHT-FORMAL-NEIGHBORHOOD-P1"
+      ],
+      "assertion": {
+        "statement": "At each finite place with v(D)=0, the integral formal neighborhoodE1 is an open subgroup with finite quotientE(K_v)/E1; a finite nonidentityQ belongs toE1 exactly whenv(x(Q))<0.",
+        "objects": "The current normalized curve overK_v, parameterz=−x/y, the formal neighborhoodE1 and the image ofT0=(0,0).",
+        "hypotheses": "Complete local field; the displayed integral Weierstrass equation;v(D)=0. Use the properness of the elliptic curve for compactness and the integral formal-chart construction for openness.",
+        "quantifiers": "Every finite place withv(D)=0 and every finite nonidentity pointQ.",
+        "parameter_range": "Includes the place above2; minimality at2 is not required or asserted.",
+        "uniformity": "Exact subgroup and sign statements; no uniform bound on the finite quotient order.",
+        "constants": "The expansionx=z^(−2)(1+O(z)) identifies the formal neighborhood; translation byT0 hasx(Q+T0)=−D/x(Q).",
+        "normalizations": "Use the same normalized curve and local valuation throughout; product height is overK, not its rational norm.",
+        "exceptional_cases": "Positive valuation ofx is handled byQ+T0. The identity is treated through the formal subgroup; nox(O) is evaluated.",
+        "limit_order": "Construct the integral formal subgroup and finite quotient first, then use the order-two image ofT0 to compare signs of odd-multiple abscissa valuations."
+      },
+      "classification": "dependency",
+      "reason": "Actual input to the retained product-height proof supplying the current root-height interface.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+            "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+          },
+          "start_line": 7,
+          "end_line": 12,
+          "excerpt_sha256": "d47ab5aca19c5ee1c72fe273a95fc1025257b1caaef74b2ac13b80e0aff2a2f3"
+        },
+        "statement": "The integral Weierstrass formal chart gives a formal group; its logarithm is additive on the maximal ideal and an isomorphism on depth r>v(p)/(p-1).",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Springer, second edition, 2009",
+          "authoritative_version": "Exact published book PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "IV Proposition1.1 and pp.116–120; Example2.2.3; Proposition5.5 p.129; Lemmas6.2–6.3 and Theorem6.4 pp.130–132",
+          "corrections": "No unseen erratum is invoked. The known division-polynomial and X.4.9 typographical issues concern other formulas."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 20585,
+        "end_line": 20597,
+        "excerpt_sha256": "dd1735a568465b99e871fed9ae9e1551225bed26bc81b6f40bed7f2b556e5298"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-PRODUCT-HEIGHT-FORMAL-NEIGHBORHOOD",
+      "use_sha256": "71c343d9170c9ef3048dddabae7446c3ee901569892683f15cb15d60ee31d0a7",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "The integral Weierstrass formal chart gives a formal group; its logarithm is additive on the maximal ideal and an isomorphism on depth r>v(p)/(p-1).",
+        "objects": "An integral Weierstrass equation and its formal group over a complete characteristic-zero DVR.",
+        "hypotheses": "v(K*)=Z; integral coefficients; residue characteristic p; for the isomorphism, integral r>v(p)/(p-1).",
+        "quantifiers": "For every such equation, field, and permitted r.",
+        "parameter_range": "Only the indicated formal subgroup; no assertion on arbitrary elliptic points.",
+        "uniformity": "Exact algebraic and local statements; no varying-curve analytic uniformity.",
+        "constants": "The threshold is v(p)/(p-1); first logarithm coefficient is1.",
+        "normalizations": "z=-x/y; w=-1/y; formal chart x=z/w(z), y=-1/w(z); integer-normalized valuation.",
+        "exceptional_cases": "The integral formal chart does not require minimality. The separate E1 identification from VII.2.2 does. Identity is z=0.",
+        "limit_order": "Construct the integral formal group, then evaluate convergent series and restrict to the indicated depth."
+      },
+      "needed_assertion": {
+        "statement": "At each finite place with v(D)=0, the integral formal neighborhoodE1 is an open subgroup with finite quotientE(K_v)/E1; a finite nonidentityQ belongs toE1 exactly whenv(x(Q))<0.",
+        "objects": "The current normalized curve overK_v, parameterz=−x/y, the formal neighborhoodE1 and the image ofT0=(0,0).",
+        "hypotheses": "Complete local field; the displayed integral Weierstrass equation;v(D)=0. Use the properness of the elliptic curve for compactness and the integral formal-chart construction for openness.",
+        "quantifiers": "Every finite place withv(D)=0 and every finite nonidentity pointQ.",
+        "parameter_range": "Includes the place above2; minimality at2 is not required or asserted.",
+        "uniformity": "Exact subgroup and sign statements; no uniform bound on the finite quotient order.",
+        "constants": "The expansionx=z^(−2)(1+O(z)) identifies the formal neighborhood; translation byT0 hasx(Q+T0)=−D/x(Q).",
+        "normalizations": "Use the same normalized curve and local valuation throughout; product height is overK, not its rational norm.",
+        "exceptional_cases": "Positive valuation ofx is handled byQ+T0. The identity is treated through the formal subgroup; nox(O) is evaluated.",
+        "limit_order": "Construct the integral formal subgroup and finite quotient first, then use the order-two image ofT0 to compare signs of odd-multiple abscissa valuations."
+      },
+      "required_capabilities": [
+        "At each finite place with v(D)=0, the integral formal neighborhoodE1 is an open subgroup with finite quotientE(K_v)/E1; a finite nonidentityQ belongs toE1 exactly whenv(x(Q))<0."
+      ],
+      "available_capabilities": [
+        "The integral Weierstrass formal chart gives a formal group; its logarithm is additive on the maximal ideal and an isomorphism on depth r>v(p)/(p-1)."
+      ],
+      "derived_capabilities": [
+        "At each finite place with v(D)=0, the integral formal neighborhoodE1 is an open subgroup with finite quotientE(K_v)/E1; a finite nonidentityQ belongs toE1 exactly whenv(x(Q))<0."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 20585,
+          "end_line": 20597,
+          "excerpt_sha256": "dd1735a568465b99e871fed9ae9e1551225bed26bc81b6f40bed7f2b556e5298"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "At each finite place with v(D)=0, the integral formal neighborhoodE1 is an open subgroup with finite quotientE(K_v)/E1; a finite nonidentityQ belongs toE1 exactly whenv(x(Q))<0.",
+          "objects": "The current normalized curve overK_v, parameterz=−x/y, the formal neighborhoodE1 and the image ofT0=(0,0).",
+          "hypotheses": "Complete local field; the displayed integral Weierstrass equation;v(D)=0. Use the properness of the elliptic curve for compactness and the integral formal-chart construction for openness.",
+          "quantifiers": "Every finite place withv(D)=0 and every finite nonidentity pointQ.",
+          "parameter_range": "Includes the place above2; minimality at2 is not required or asserted.",
+          "uniformity": "Exact subgroup and sign statements; no uniform bound on the finite quotient order.",
+          "constants": "The expansionx=z^(−2)(1+O(z)) identifies the formal neighborhood; translation byT0 hasx(Q+T0)=−D/x(Q).",
+          "normalizations": "Use the same normalized curve and local valuation throughout; product height is overK, not its rational norm.",
+          "exceptional_cases": "Positive valuation ofx is handled byQ+T0. The identity is treated through the formal subgroup; nox(O) is evaluated.",
+          "limit_order": "Construct the integral formal subgroup and finite quotient first, then use the order-two image ofT0 to compare signs of odd-multiple abscissa valuations."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Positive valuation ofx is handled byQ+T0. The identity is treated through the formal subgroup; nox(O) is evaluated.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20585,
+            "end_line": 20597,
+            "excerpt_sha256": "dd1735a568465b99e871fed9ae9e1551225bed26bc81b6f40bed7f2b556e5298"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 20585,
+          "end_line": 20597,
+          "excerpt_sha256": "dd1735a568465b99e871fed9ae9e1551225bed26bc81b6f40bed7f2b556e5298"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 20585,
+        "end_line": 20597,
+        "excerpt_sha256": "dd1735a568465b99e871fed9ae9e1551225bed26bc81b6f40bed7f2b556e5298"
+      }
+    ],
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+        "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+      }
+    ],
+    "retained_separate_inputs": [
+      "The exact current normalized curve and point, supplied by the generator-model transport.",
+      "The elementary local height sum and real-embedding arguments are separate from these two published local-group inputs."
+    ],
+    "scope": "Retained product-height proof input only; the global height comparison and scalar-anchor contradiction remain separate.",
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-PRODUCT-HEIGHT-FORMAL-NEIGHBORHOOD-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 20585,
+          "end_line": 20597,
+          "excerpt_sha256": "dd1735a568465b99e871fed9ae9e1551225bed26bc81b6f40bed7f2b556e5298"
+        }
+      }
+    ]
+  },
+  {
+    "origin": "v14-product-height-source-inputs-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-PRODUCT-HEIGHT-NONSINGULAR-REDUCTION",
+      "consumer": "V13-HEIGHT",
+      "passages": [
+        "ACTIVE-PRODUCT-HEIGHT-NONSINGULAR-REDUCTION-P1"
+      ],
+      "assertion": {
+        "statement": "At the place above7, the current pointP and all its multiples have nonsingular reduction, so no multiple has positive x-valuation.",
+        "objects": "The minimal modely²=x³−Dx overK_d withd=(3−rho), its subgroupE0 andP reducing to(1,6).",
+        "hypotheses": "v_d(−D)=2<4 certifies minimality; substitutionrho=3 gives reductiony²=x³ andP=(1,6), which is nonsingular.",
+        "quantifiers": "Every multiple ofP at this specific place.",
+        "parameter_range": "Only the place above7 withv(D)>0.",
+        "uniformity": "Exact subgroup membership and valuation exclusion; no bound depending on the multiple.",
+        "constants": "Residue fieldF7;v_d(D)=2;P reduces to(1,6).",
+        "normalizations": "Use the nonsingular reduction groupE0 of the minimal equation, not all reductions of integral points.",
+        "exceptional_cases": "Ifv(x)>0 the curve equation forcesv(y)>0, hence singular reduction(0,0), excluded byE0 membership. Multiples reducing to the identity are allowed.",
+        "limit_order": "Check minimality and the actual nonsingular reduction ofP, useE0 subgroup closure, then exclude positive x-valuation."
+      },
+      "classification": "dependency",
+      "reason": "Actual input to the retained product-height proof supplying the current root-height interface.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+            "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+          },
+          "start_line": 13,
+          "end_line": 16,
+          "excerpt_sha256": "151b6c3e65bcc0821cb05f0a557b154f452a898757a6110b60919673f39c3c59"
+        },
+        "statement": "For a minimal integral model, reduction has exact kernel E1 in E0, and the formal group on the maximal ideal identifies with E1.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Springer, second edition, 2009",
+          "authoritative_version": "Exact published book PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "VII Propositions2.1 and2.2, pp.188–191",
+          "corrections": "No unseen erratum is invoked. The known division-polynomial and X.4.9 typographical issues concern other formulas."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 20599,
+        "end_line": 20599,
+        "excerpt_sha256": "b59434a899d043827aabc08a674484cff49ff06bb1d68f56b83035c50cb7c585"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-PRODUCT-HEIGHT-NONSINGULAR-REDUCTION",
+      "use_sha256": "aae0766ab2003e137e215d9ffb368ffb730e16693e93ebe7362bbf2d8f54844a",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a minimal integral model, reduction has exact kernel E1 in E0, and the formal group on the maximal ideal identifies with E1.",
+        "objects": "An elliptic curve over a complete discretely valued field, its minimal model and nonsingular special-fibre group.",
+        "hypotheses": "Minimal integral Weierstrass equation and completeness. Points consumed by reduction lie in E0.",
+        "quantifiers": "For every such field/model; every point of E0.",
+        "parameter_range": "Nonsingular reduction subgroup, not all integral points without checking nonsingularity.",
+        "uniformity": "Exact group maps, with no quantitative estimate.",
+        "constants": "No numerical constant.",
+        "normalizations": "Reduction kernel E1, formal parameter z=-x/y; integral minimal coordinates.",
+        "exceptional_cases": "Singular reductions require checking the point is nonsingular. Identity maps to identity.",
+        "limit_order": "Check the minimal model and E0 membership before taking the finite reduction order."
+      },
+      "needed_assertion": {
+        "statement": "At the place above7, the current pointP and all its multiples have nonsingular reduction, so no multiple has positive x-valuation.",
+        "objects": "The minimal modely²=x³−Dx overK_d withd=(3−rho), its subgroupE0 andP reducing to(1,6).",
+        "hypotheses": "v_d(−D)=2<4 certifies minimality; substitutionrho=3 gives reductiony²=x³ andP=(1,6), which is nonsingular.",
+        "quantifiers": "Every multiple ofP at this specific place.",
+        "parameter_range": "Only the place above7 withv(D)>0.",
+        "uniformity": "Exact subgroup membership and valuation exclusion; no bound depending on the multiple.",
+        "constants": "Residue fieldF7;v_d(D)=2;P reduces to(1,6).",
+        "normalizations": "Use the nonsingular reduction groupE0 of the minimal equation, not all reductions of integral points.",
+        "exceptional_cases": "Ifv(x)>0 the curve equation forcesv(y)>0, hence singular reduction(0,0), excluded byE0 membership. Multiples reducing to the identity are allowed.",
+        "limit_order": "Check minimality and the actual nonsingular reduction ofP, useE0 subgroup closure, then exclude positive x-valuation."
+      },
+      "required_capabilities": [
+        "At the place above7, the current pointP and all its multiples have nonsingular reduction, so no multiple has positive x-valuation."
+      ],
+      "available_capabilities": [
+        "For a minimal integral model, reduction has exact kernel E1 in E0, and the formal group on the maximal ideal identifies with E1."
+      ],
+      "derived_capabilities": [
+        "At the place above7, the current pointP and all its multiples have nonsingular reduction, so no multiple has positive x-valuation."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 20599,
+          "end_line": 20599,
+          "excerpt_sha256": "b59434a899d043827aabc08a674484cff49ff06bb1d68f56b83035c50cb7c585"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "At the place above7, the current pointP and all its multiples have nonsingular reduction, so no multiple has positive x-valuation.",
+          "objects": "The minimal modely²=x³−Dx overK_d withd=(3−rho), its subgroupE0 andP reducing to(1,6).",
+          "hypotheses": "v_d(−D)=2<4 certifies minimality; substitutionrho=3 gives reductiony²=x³ andP=(1,6), which is nonsingular.",
+          "quantifiers": "Every multiple ofP at this specific place.",
+          "parameter_range": "Only the place above7 withv(D)>0.",
+          "uniformity": "Exact subgroup membership and valuation exclusion; no bound depending on the multiple.",
+          "constants": "Residue fieldF7;v_d(D)=2;P reduces to(1,6).",
+          "normalizations": "Use the nonsingular reduction groupE0 of the minimal equation, not all reductions of integral points.",
+          "exceptional_cases": "Ifv(x)>0 the curve equation forcesv(y)>0, hence singular reduction(0,0), excluded byE0 membership. Multiples reducing to the identity are allowed.",
+          "limit_order": "Check minimality and the actual nonsingular reduction ofP, useE0 subgroup closure, then exclude positive x-valuation."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Ifv(x)>0 the curve equation forcesv(y)>0, hence singular reduction(0,0), excluded byE0 membership. Multiples reducing to the identity are allowed.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20599,
+            "end_line": 20599,
+            "excerpt_sha256": "b59434a899d043827aabc08a674484cff49ff06bb1d68f56b83035c50cb7c585"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 20599,
+          "end_line": 20599,
+          "excerpt_sha256": "b59434a899d043827aabc08a674484cff49ff06bb1d68f56b83035c50cb7c585"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 20599,
+        "end_line": 20599,
+        "excerpt_sha256": "b59434a899d043827aabc08a674484cff49ff06bb1d68f56b83035c50cb7c585"
+      }
+    ],
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+        "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+      }
+    ],
+    "retained_separate_inputs": [
+      "The exact current normalized curve and point, supplied by the generator-model transport.",
+      "The elementary local height sum and real-embedding arguments are separate from these two published local-group inputs."
+    ],
+    "scope": "Retained product-height proof input only; the global height comparison and scalar-anchor contradiction remain separate.",
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-PRODUCT-HEIGHT-NONSINGULAR-REDUCTION-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 20599,
+          "end_line": 20599,
+          "excerpt_sha256": "b59434a899d043827aabc08a674484cff49ff06bb1d68f56b83035c50cb7c585"
+        }
+      }
+    ]
+  }
+]

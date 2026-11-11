@@ -1,0 +1,1 @@
+TAUT geometry now cites the actual standalone LP13 Section2 lemma, alongside the consumer normalization and explicit reference. This is not the whole LP13 theorem and does not create a mathematical cycle. LP02 quantifiers now describe the actual homogeneous model rather than the generic source real-hull statement.

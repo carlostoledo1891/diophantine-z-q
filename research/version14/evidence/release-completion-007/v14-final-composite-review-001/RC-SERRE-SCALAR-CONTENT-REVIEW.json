@@ -1,0 +1,33 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "created_utc": "2026-11-09T07:20:23.964Z",
+  "decision": "accept uniform scalar/span connection; accept Serre content pending supplier-role metadata correction",
+  "targets": [
+    "RC-SERRE-OPEN-IMAGE-COMPONENT.json",
+    "RC-UNIFORM-SCALAR-COMPONENT.json"
+  ],
+  "checks": [
+    {
+      "id": "ACTIVE-RC-SERRE-OPEN-IMAGE",
+      "locations": true,
+      "digest": true
+    },
+    {
+      "id": "ACTIVE-RC-UNIFORM-SCALAR-AND-SPAN",
+      "locations": true,
+      "digest": true
+    }
+  ],
+  "source_review": {
+    "path": "work/theorem-application-audit-20261105/parallel-009/geometry/ACCEPTANCE-REPORT.md",
+    "sha256": "8dc54da3b386b8f00ab81274a4d981e0626075a7bc5b4c62be6fc4f37d986e24",
+    "read": "Full report read; only A033 scope reused."
+  },
+  "reading": "Read current3765–3796 and both use profiles. The old independent report directly inspected Serre printed259–260 and the same scalar/matrix deductions. This is exact-scope reuse, not a new primary source audit.",
+  "reason": [
+    "Qualitative openness for this fixed non-CM E gives a congruence depth n; it does not assert residual surjectivity or uniformity in E.",
+    "g squared fixes each quadratic K; actual ring-class inversion makes z=g squared tau g squared tau inverse fix every permitted ring-class field and their composita. Its scalar image u to the fourth gives v2(u^4-1)=n+2.",
+    "Squared elementary preimages lie in each quadratic subgroup. Subtracting I and using the odd factor1+2^(n-1) yields the claimed full2^(n+1) matrix lattice. The argument is in characteristic zero and does not assert residual rank two."
+  ],
+  "pending": "Change only the Serre component supplier_passage_role from inline_derivation to application: its cited main lines are the application of the external theorem. The connecting derivation remains the local specialization. All ring-class reciprocity and non-CM inputs remain separate."
+}

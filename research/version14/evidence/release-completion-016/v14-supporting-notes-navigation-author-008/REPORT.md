@@ -1,0 +1,1 @@
+Adds one scoped CJ local-algebra link and exact source identity. Full source and both reviews read. Retains geometric, analytic and support prerequisites separately. No canonical edit or final coverage claim.

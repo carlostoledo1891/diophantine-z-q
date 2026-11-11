@@ -1,0 +1,172 @@
+{
+  "state": "author_proposal_pending_review",
+  "use": {
+    "id": "ACTIVE-GENERATOR-HEIGHT-SATURATION",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "ACTIVE-GENERATOR-HEIGHT-P1"
+    ],
+    "assertion": {
+      "statement": "For the actual rank-one curve C and point R, the stated duplication estimates and finite certificate exclude every odd free index |m|>=3 in R=mS+T; hence R is a free generator and the inverse coordinate change sends2R to the generator P0 of2E(K0).",
+      "objects": "C:y^2=x^3-(3-sqrt2)^2x, R=(1+sqrt2,2sqrt2), torsion T, canonical height and both real embeddings of K0.",
+      "hypotheses": "Rank one and torsion are supplied separately; R has odd free index. The displayed local duplication inequalities, exact x(2R) height and exhaustive small-height certificate are separate inputs to this height argument.",
+      "quantifiers": "Every possible odd index m and corresponding S,T in C(K0); exclude all |m|>=3.",
+      "parameter_range": "The fixed curve over Q(sqrt2); both embeddings and every finite place enter h_x.",
+      "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+      "constants": "h_x(S)<=log(41^3*676)/108+log392/3<log9; use the exact integer inequality and seven-coordinate enumeration.",
+      "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+      "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+      "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+    },
+    "classification": "dependency",
+    "reason": "The retained A060 canonical-height interface is applied to the actual saturation argument, with local bounds and finite arithmetic kept separate.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "docs/theorem-application-audit/applications.json",
+          "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+        },
+        "start_line": 6978,
+        "end_line": 7020,
+        "excerpt_sha256": "b1c7dba6c093bc3aa66c50d931d631926e211b4ac0819755749d73bfe8568b63"
+      },
+      "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+      "publication": {
+        "title": "The Arithmetic of Elliptic Curves",
+        "authors": "Joseph H. Silverman",
+        "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+        "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "locator": "VIII Theorem9.1, following definition, Remark9.2 and Theorem9.3, pp247–249",
+        "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this canonical-height assertion."
+      }
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 370,
+      "end_line": 418,
+      "excerpt_sha256": "97f7ceb7e8ae3e617ecd59e0ec6e6d4d9307dd5ddcd1cd8a6652b3edd2ba37dd"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-GENERATOR-HEIGHT-SATURATION",
+    "use_sha256": "c8c18dfa083deacd99f507032e519c6186d2dd5d9aedb66c0f0f9397b99ee712",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+      "objects": "An elliptic curve over a number field and its canonical height.",
+      "hypotheses": "An elliptic curve over a number field; nontorsion where strict positivity is used.",
+      "quantifiers": "Every rational point over that number field and every integer multiple.",
+      "parameter_range": "The source canonical-height setting; current application is C/K0.",
+      "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+      "constants": "No numerical duplication error or finite candidate count is supplied by this theorem.",
+      "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+      "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+      "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+    },
+    "needed_assertion": {
+      "statement": "For the actual rank-one curve C and point R, the stated duplication estimates and finite certificate exclude every odd free index |m|>=3 in R=mS+T; hence R is a free generator and the inverse coordinate change sends2R to the generator P0 of2E(K0).",
+      "objects": "C:y^2=x^3-(3-sqrt2)^2x, R=(1+sqrt2,2sqrt2), torsion T, canonical height and both real embeddings of K0.",
+      "hypotheses": "Rank one and torsion are supplied separately; R has odd free index. The displayed local duplication inequalities, exact x(2R) height and exhaustive small-height certificate are separate inputs to this height argument.",
+      "quantifiers": "Every possible odd index m and corresponding S,T in C(K0); exclude all |m|>=3.",
+      "parameter_range": "The fixed curve over Q(sqrt2); both embeddings and every finite place enter h_x.",
+      "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+      "constants": "h_x(S)<=log(41^3*676)/108+log392/3<log9; use the exact integer inequality and seven-coordinate enumeration.",
+      "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+      "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+      "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+    },
+    "required_capabilities": [
+      "canonical-height quadraticity and positivity",
+      "actual saturation from the bounded enumeration"
+    ],
+    "available_capabilities": [
+      "canonical-height quadraticity and positivity"
+    ],
+    "derived_capabilities": [
+      "actual saturation from the bounded enumeration"
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 370,
+        "end_line": 418,
+        "excerpt_sha256": "97f7ceb7e8ae3e617ecd59e0ec6e6d4d9307dd5ddcd1cd8a6652b3edd2ba37dd"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "For the actual rank-one curve C and point R, the stated duplication estimates and finite certificate exclude every odd free index |m|>=3 in R=mS+T; hence R is a free generator and the inverse coordinate change sends2R to the generator P0 of2E(K0).",
+        "objects": "C:y^2=x^3-(3-sqrt2)^2x, R=(1+sqrt2,2sqrt2), torsion T, canonical height and both real embeddings of K0.",
+        "hypotheses": "Rank one and torsion are supplied separately; R has odd free index. The displayed local duplication inequalities, exact x(2R) height and exhaustive small-height certificate are separate inputs to this height argument.",
+        "quantifiers": "Every possible odd index m and corresponding S,T in C(K0); exclude all |m|>=3.",
+        "parameter_range": "The fixed curve over Q(sqrt2); both embeddings and every finite place enter h_x.",
+        "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+        "constants": "h_x(S)<=log(41^3*676)/108+log392/3<log9; use the exact integer inequality and seven-coordinate enumeration.",
+        "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+        "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+        "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 370,
+          "end_line": 418,
+          "excerpt_sha256": "97f7ceb7e8ae3e617ecd59e0ec6e6d4d9307dd5ddcd1cd8a6652b3edd2ba37dd"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 385,
+        "end_line": 418,
+        "excerpt_sha256": "90a480def47fed778a58147cae5f80f9093c119d08c6001e61c91c93edf6349e"
+      }
+    ]
+  },
+  "additional_file_pins": [
+    {
+      "side": "head",
+      "path": "docs/theorem-application-audit/applications.json",
+      "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+    }
+  ],
+  "initial_mapping": [
+    {
+      "id": "HIST-arithmetic-AR-U013",
+      "part": "Canonical-height convention and saturation deduction, using separately retained local duplication inequalities and finite certificate."
+    }
+  ],
+  "retained_separate_inputs": [
+    "ACTIVE-GENERATOR-RANK-AND-TORSION",
+    "ACTIVE-GENERATOR-FINITE-CERTIFICATE",
+    "Local archimedean and finite-place duplication bounds",
+    "Odd free index from real signs"
+  ],
+  "scope": "The source wrapper preserves A060 scope. This connection is the actual deduction; it does not assert the canonical-height source proves the local duplication bounds or enumerates the candidates."
+}

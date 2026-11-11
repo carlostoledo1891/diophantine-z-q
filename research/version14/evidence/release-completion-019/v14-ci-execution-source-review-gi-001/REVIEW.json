@@ -1,0 +1,48 @@
+{
+  "reviewer": "/root/v14_gi_constructors",
+  "reviewed_at": "2026-11-09T11:05:58.756Z",
+  "decision": "accepted as bounded source-map and transition preparation with explicit failing-CI blocker; not executable configuration approval",
+  "target": {
+    "path": "v14-ci-execution-source-preparation-001/MANIFEST.json",
+    "sha256": "9bbbff219a7a5a2755e2943fe8f6d4c85a49f83d25a5b7610fdcb44c92ff375d"
+  },
+  "reviewed_scope": [
+    "Read required_sources, validate_source_transition, check_transition_packet and source blob verification in deployed github_read_context.py.",
+    "Read current workflow execution entrypoints, new lineage package checking/dispatch, and V14 inventory validator pin/content checks.",
+    "Reused prior bounded code reviews and old-policy closure; no mathematical or complete historical code re-audit."
+  ],
+  "checks": {
+    "manifest_members": 11,
+    "input_pins": 6,
+    "required_paths": 260,
+    "inherited_paths": 157,
+    "new_paths": 103,
+    "changed_existing_paths": 6,
+    "all_base_hashes_and_absences_checked": true,
+    "all_prospective_head_hashes_checked": true,
+    "head_merge_maps_identical": true,
+    "all_required_source_map_keys_equal": true,
+    "governing_policy_hash_unchanged": true,
+    "workflow_identity_job_names_and_references_unchanged": true,
+    "normalized_git_blobs_checked": 6,
+    "package_members_verified": 519,
+    "all_packaged_python_javascript_members_explicitly_pinned": true,
+    "independent_transition_tests": 26,
+    "independent_test_exit": 0
+  },
+  "test": {
+    "command": "python -E -B -m unittest discover -s adapter -p test_source_transition.py",
+    "cwd": "work/protocol-ruleset-20261107/deployment-repository",
+    "result": "Ran 26 tests in 1.508s; OK"
+  },
+  "blocking_finding": {
+    "status": "retained, not waived",
+    "detail": "The saved read-only validator probe rejects stale main pin. The validator additionally requires the exact addition, labels and 39 baseline applications. The author is preparing separate semantics-preserving transport; this review does not approve that unreviewed repair."
+  },
+  "limits": [
+    "No final source S or GitHub merge commit is supplied. Maps must be checked against actual committed Git blobs before protected configuration adoption.",
+    "The proposed merge map is a requirement, not an observation of a merge commit.",
+    "Changed inventory/source pins after validator repair require a bounded successor.",
+    "No failure bypass, source closure weakening, new workflow execution, lineage replay, deployment, authentication, mathematical acceptance or final gate approval."
+  ]
+}

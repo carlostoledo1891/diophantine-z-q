@@ -1,0 +1,114 @@
+--- BASE.tex
++++ quartic_v14.candidate.tex
+@@ -38,7 +38,7 @@
+ \makeatother
+ \title{$\mathbb{Z}$ is Diophantine in $\mathbb{Q}$\\[4pt]\large Version 14}
+ \author{}
+-\date{November 8, 2026}
++\date{November 9, 2026}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+@@ -203,7 +203,7 @@
+ variables remain natural before that translation. Sections~\ref{sec:syntax}
+ and~\ref{sec:size} and Appendix~\ref{app:literal} prove $\mathsf B$, including
+ the fixed scalars and private witness substitutions. All six statements
+-therefore hold, and Lemma~\ref{lem:assembly} applies to the specified $P_*$.
++therefore hold, and Lemma~\ref{lem:assembly} applies to the specified $P_*$. The versioned supporting arguments, their source identities and their stated hypotheses are indexed in \href{https://github.com/elliotglazer/diophantine-z-q/blob/main/research/version14/SUPPORTING-NOTES.md}{\texttt{research/version14/SUPPORTING-NOTES.md}}.
+ \end{proof}
+ 
+ \section{A finite specification of the polynomial}\label{sec:syntax}
+@@ -3290,6 +3290,32 @@
+ They are different points in different native lattices.
+ Write $j_{\rm gen}(h)$ and $j_{\rm rc}(h,k')$ for their index valuations.
+ 
++\paragraph{The native genus lattice.}
++For the genus point specifically, put
++$K_h=\Q(\sqrt{hh_*})$ and $F_h=\Q(\sqrt h,\sqrt{h_*})$.
++If $h>1$ and $\tau$ generates $\operatorname{Gal}(F_h/K_h)$, set
++\[
++ \Gamma_h=\{P\in E(F_h):\tau P=-P\},\qquad
++ \Lambda_h=\Gamma_h/\Gamma_{h,\mathrm{tors}}.
++\]
++For $h=1$, set $\Gamma_1=E(K_1)$ and take its torsion-free quotient.
++The native genus index is the divisibility index of the class of
++$P_h^{\rm gen}$ in $\Lambda_h$, at the known simple-zero parameters
++where this lattice has rank one. The CM reciprocity action and
++reindexing the unaveraged genus-character sum give exact membership
++$P_h^{\rm gen}\in\Gamma_h$, before multiplication by the later fixed
++multiplier. The standard $h$-twist isomorphism identifies $\Gamma_h$
++with $E^{(h)}(K_h)$. The remaining involution of $K_h/\Q$ fixes its
++free quotient: the only other rational character component is the
++$h_*$-component, whose rank is zero by the supplied forward theorem.
++Thus $Q+\sigma Q\in E^{(h)}(\Q)$ represents twice the free class of
++$Q\in E^{(h)}(K_h)$. The rational subgroup consequently contains
++$2\Lambda_h$ and has index at most two. For $h=1$ this is ordinary
++quadratic conjugation and the same norm argument. This calculation
++uses the stated rank and CM inputs; it does not infer rank from
++nonvanishing height, nor apply to the whole group $E(F_h)$.
++
++
+ \begin{proposition}[The genus bound before odd normalization]\label{ex:sec7-genus-lower}
+ Use $h_*,h,k'$ and the two native index valuations defined in the
+ preceding paragraph, with $h$ a known simple-zero parameter and $k'$
+@@ -12968,12 +12994,12 @@
+ same expression $P_*$.
+ 
+ \section{Source identities and scope}\label{app:sources}
+-The companion \texttt{SOURCE\_MAP.json} records exact paths, hashes and
+-locators, distinguishing mathematical and construction sources, artifacts,
+-and version records. The base collection contains 83 sources; parity, construction
+-and uniformity supplements are in separate addenda. The principal local
+-sources are listed below; full paths
+-are in the source map.
++The following catalogue records the base collection of 83 source
++identifiers; parity, construction and uniformity supplements appear
++separately. The released construction files and their exact identities
++are recorded in \nolinkurl{construction/SOURCE_MANIFEST.json}.
++Current proof-source selection and versioned supporting arguments are
++indexed in \nolinkurl{research/version14/SUPPORTING-NOTES.md}.
+ \begin{longtable}{p{.07\textwidth}p{.58\textwidth}p{.25\textwidth}}
+ \toprule ID & Source basename & Use\\\midrule\endhead
+ S01 & \texttt{ordinary-integer-polynomial.js.txt} & Outer construction\\
+@@ -13276,10 +13302,10 @@
+ after fixing sieve cutoff, and the unconditional explicit progression
+ estimate.\\\bottomrule
+ \end{longtable}
+-The source package includes the specification, natural precision polynomial
+-and construction sources in \nolinkurl{SUPPLEMENT_MANIFEST.json}.
+-The larger proof corpus is identified by hashes and stable locators in
+-\nolinkurl{SOURCE_MAP.json}. A source identity is not a proof verdict.
++The released specification, natural precision polynomial and construction
++files are identified in \nolinkurl{construction/SOURCE_MANIFEST.json}.
++For the selected supporting proof arguments, see
++\nolinkurl{research/version14/SUPPORTING-NOTES.md}. A source identity is not a proof verdict.
+ 
+ % End 06-literal-construction.tex
+ 
+@@ -13810,8 +13836,12 @@
+ 
+ We also account for the difference between the two published
+ cohomology conventions. Write $C_j$ for the $j_*$ Iwasawa complex of
+-\cite[Section 12.1]{kato}, and $C_S$ for full cochains on the open
+-scheme with the odd support inverted, as in \cite[Section 0.5]{kato1999}.
++\cite[Sections 8.2 and 12.2]{kato}, and $C_S$ for \emph{étale}
++cochains on the open arithmetic scheme obtained by inverting $2$
++and every odd prime in the actual ramification support $S$,
++including the fixed twist, as in \cite[Sections 0.1 and 0.5]{kato1999}.
++The support modulus called $N$ in that source is taken to contain
++these primes; it is not merely the conductor of the untwisted curve.
+ Work in one rational sign component and localize at $\mathfrak p$.
+ Their quotient is the direct sum of the odd local complexes (K16).
+ Each differential has nonzero determinant, so its degree-one
+@@ -15968,8 +15998,9 @@
+ rank-one free lattice. The same $L$ kills $T$.
+ An integral finite-field Kummer map cannot decrease
+ $v_2(m_D)$, so (O.7) gives the lower bound by the native index.
+-The rational free line has index at most two in that native
+-lattice, by conjugation and norm. Absorb this and the fixed
++The rational $D$-twist subgroup has index at most two in the native
++genus lattice by the calculation preceding
++Proposition~\ref{ex:sec7-genus-lower}. Absorb this and the fixed
+ initial convention in $C_{\rm det}$. The first inequality below
+ holds for a known simple-zero $D$; the visibility implication holds
+ for every admissible $D$:

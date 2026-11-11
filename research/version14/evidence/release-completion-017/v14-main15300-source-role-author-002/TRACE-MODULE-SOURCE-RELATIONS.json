@@ -1,0 +1,126 @@
+{
+  "schema": "v14-source-input-work/1",
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T10:00:40.737Z",
+  "group": "H6-LATE-PREMISE-06",
+  "status": "frozen author proposal for independent source/caller review",
+  "consumer_ranges": [
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 16183,
+      "end_line": 16214,
+      "excerpt_sha256": "90ee5e6c61307515396eeed0557687ae1d6f6a02e4a71b787c726ac5d1d12b64"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 16257,
+      "end_line": 16284,
+      "excerpt_sha256": "90349edb8edb10d068513d9ced5b17a5d68359188aa7410845436cc8fd4214ec"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 16299,
+      "end_line": 16317,
+      "excerpt_sha256": "e25dff14b96f47d8213d704abfaed78bc48f7ff4dbd836ef0936416abe8debd0"
+    }
+  ],
+  "sources_read": [
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/diamond-im-download-root-001/local-only/diamond-im.pdf",
+      "sha256": "31cc7ff62c6d9177d2f02f93bb333ac97a1eacc79eb14fed9eee20b6c5292411",
+      "publication": "Diamond–Im, Modular forms and modular curves, CMS Conference Proceedings17(1995)",
+      "locators": "12.5.1–12.5.2 and Remarks12.5.1–12.5.3, printed119–120",
+      "read": "Both complete pages visually read from retained final PDF.",
+      "scope": "For each cuspidal normalized eigenform of weight2, continuous compatible representations exist, unramified outside N ell, arithmetic Frobenius polynomial X²-a_pX+p epsilon(p). This is the generic published assertion, distinct from D210-only profile fields."
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/sw01-p3-entry-review-compiler-001/local-only/deligne-serre1974-final.pdf",
+      "sha256": "65b390f6d33e827e30c6c66bbc15421eca51db3180bdf5996dcee19047be97fc",
+      "publication": "Deligne–Serre, Formes modulaires de poids1, Ann.ENS7(1974)",
+      "locators": "1.5–1.9 pp509–510;2.7 p512",
+      "read": "Retained selected text read; earlier independent visual source review reused.",
+      "scope": "Character decomposition, exact good Hecke Fourier formula and primitive/Eisenstein oldform decomposition. No claim that weight-one Artin theorem supplies weight-two representations."
+    },
+    {
+      "publication": "William Stein, Modular Forms: A Computational Approach, AMS Graduate Studies in Mathematics79(2007)",
+      "url": "https://wstein.org/books/modform/stein-modform.pdf",
+      "publication_identity": "https://wstein.org/books/modform/README.html explicitly identifies the freely available book and thanks AMS",
+      "locators": "printed88, equation5.3.1 and Theorems5.8–5.9",
+      "status": "Author-hosted authorized full text of the published book; exact bytes captured and printed88 visually read",
+      "scope": "Use the explicit Eisenstein basis and Fourier coefficients; do not use the unnecessarily broad all-Hecke assertion in5.10 for composite t.",
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-stein-published-root-001/local-only/stein-modform.pdf",
+      "sha256": "b50e81d48d2fb794948414fee625d1d3ca19c191a87430ca38c8713c8f466b75",
+      "bytes": 2546615,
+      "version_boundary": "The file title matches the published AMS book and the author README identifies this as the free book. Its front matter does not reproduce the AMS imprint; no byte identity with an AMS typeset edition or complete errata reconciliation is claimed.",
+      "publisher_metadata": "https://www.ams.org/books/gsm/079/gsm079-endmatter.pdf: GSM79(2007),ISBN978-0-8218-3960-7"
+    }
+  ],
+  "local_derivations": [
+    {
+      "name": "Finite Fourier separation and closure",
+      "argument": "Fix the stage U and a finite coefficient field containing the finite constituent data. In the finite-dimensional characteristic-zero modular-form space, all Fourier coefficient functionals jointly separate points. Their kernels therefore have a finite subfamily with zero intersection (successively lower dimension until zero). If every member of the Hecke/diamond-generated O-module has integral coefficients, this finite coordinate map embeds the module into O^r. A submodule of O^r is finitely generated since O is a DVR. In its finite-dimensional ambient space it is closed: a finite generating map O^s to that space has compact image. No saturation, integral constituent projector, or identification with every reduced expansion follows or is needed.",
+      "premises": "Actual modularity of all blocks, finite-dimensionality and q-expansion uniqueness, complete finite coefficient field, and integrality of all good Hecke/diamond translates established in the caller."
+    },
+    {
+      "name": "Finite-quotient approximation",
+      "source_id": "ACTIVE-THETA-FINITE-CHEBOTAREV",
+      "argument": "For a fixed Galois element and fixed finite set of constituent representations, use stable lattices and finite mod-uniformizer^a quotients. Chebotarev supplies a good Frobenius conjugacy class matching the simultaneous quotient, outside the fixed bad set. As a increases, its scalar traces and determinants converge to those of the chosen element. At good primes these are the actual Hecke and cyclotomic-times-diamond operators. The preceding closed module is therefore preserved by their limits. Equal good eigensystems have equal continuous scalar trace/determinant functions by the same approximation, so old multiplicity spaces do not require individual projectors. The scalar attached to one two-dimensional constituent acts identically on each of its old multiplicity copies; it is not the trace or determinant of the direct sum of all copies. Congruent residual constituents are not separated by idempotents.",
+      "premises": "Both cuspidal and Eisenstein representations and their good trace/determinant comparisons must first be supplied; no infinite-level Chebotarev theorem or uniform prime bound is asserted."
+    },
+    {
+      "name": "Actual Eisenstein two-character realization",
+      "argument": "For a basis series E_(2,alpha,beta), equation5.3.1 gives a_n=sum_(d|n) beta(d)alpha(n/d)d. At p not dividing the final level, the divisor sum satisfies a_(pn)+p*alpha(p)beta(p)*a_(n/p)=(alpha(p)+p*beta(p))*a_n. This follows on p-powers by the two-root geometric-sum recurrence and then multiplicativity for n prime to p. The constant coefficient is zero when alpha is nontrivial; when alpha=1 its good Hecke equation has the same multiplier1+p*beta(p). Substitution q->q^t commutes with good T_p when p does not divide t, preserving all old multiplicities. For the exceptional weight2 trivial-character basis E2(q)-tE2(q^t), the same formal divisor-sum computation gives good eigenvalue1+p, including composite t. Associate to alpha,beta the finite Galois characters via their cyclotomic residue action. The direct sum alpha plus beta*chi_cyc then has arithmetic-Frobenius trace alpha(p)+p*beta(p) and determinant p*alpha(p)beta(p). These are the actual good Hecke and cyclotomic-diamond values. No irreducibility or cuspidality is claimed for this representation.",
+      "premises": "Stein5.8–5.9 basis theorem, stated parity/level conditions, actual good prime p outside N and2, and cyclotomic character with arithmetic Frobenius p. The p|level operators and arbitrary composite-t all-Hecke eigenform assertions are not used."
+    }
+  ],
+  "outstanding": [
+    {
+      "id": "INDEPENDENT-SOURCE-CALLER-REVIEW",
+      "required": "Independent review of the exact grouped06 source relations and the stated source-version boundary."
+    }
+  ],
+  "not_used_as_source": [
+    "ACTIVE-THETA-T049",
+    "ACTIVE-THETA-SOURCE-FOURIER-FROBENIUS-SCALAR"
+  ],
+  "incoming_existing_source": {
+    "id": "ACTIVE-THETA-FINITE-CHEBOTAREV",
+    "use_sha256": "83cea53fc85e1a723958b7d734d6d172917b521497a5ab38c3433d2ba1553828",
+    "source": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 13,
+        "end_line": 13,
+        "excerpt_sha256": "ba4bb18f17fd39c73c7f57402a645800152ef2336a18baf059401cad500d1ee0"
+      },
+      "statement": "For a finite Galois extension L/K and conjugacy class C in its Galois group, the unramified primes with Frobenius class C have Dirichlet density |C|/[L:K]. Frobenius elements at the places over such a prime run through C.",
+      "publication": {
+        "title": "Primes of the Form x²+ny²: Fermat, Class Field Theory, and Complex Multiplication",
+        "authors": "David A. Cox",
+        "venue": "John Wiley & Sons, Wiley-Interscience, 1989",
+        "authoritative_version": "Published first edition, second printing; exact scanned PDF SHA256 f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34. Official first-edition errata typos2 and typos3 checked.",
+        "corrections": "Use corrected P_(K,Z)(f) at p146 and kernel wording in the proof of Corollary8.7 p163. Corrections to class-number formula7.29 and later CM formulas are not used. Full disposition in SOURCE-PINS.json.",
+        "locator": "Theorem8.17 p170 and density discussion p169; Lemma5.19/Corollary5.21 pp106–107."
+      }
+    }
+  },
+  "scope": "This binds source inputs to the existing current trace-module proof. It does not replace previously accepted theta modularity, integer divisibility, coefficient-model, finite-field, or later nilpotence arguments. No new canonical file or source-freeze mutation."
+}

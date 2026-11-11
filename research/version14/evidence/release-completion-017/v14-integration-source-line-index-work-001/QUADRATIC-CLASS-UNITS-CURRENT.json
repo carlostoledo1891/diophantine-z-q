@@ -1,0 +1,241 @@
+{
+  "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+  "state": "author_proposal_pending_independent_review",
+  "use": {
+    "id": "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS-P1",
+      "SRC-ARITH-095",
+      "SRC-ARITH-101",
+      "SRC-ARITH-103",
+      "SRC-ARITH-105",
+      "SRC-ARITH-218"
+    ],
+    "assertion": {
+      "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+      "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+      "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+      "quantifiers": "Every ideal class and every unit of this fixed field.",
+      "parameter_range": "Only K0; no varying quadratic-field claim.",
+      "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+      "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+      "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+      "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+    },
+    "classification": "dependency",
+    "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+    "shared_contract_justification": "The source-side occurrence uses the same K0, its integer ring Z[s], s^2=2, unit epsilon=1+s. Retained hypotheses: Integral basis1,s and discriminant8; two real embeddings. The location additions expose that exact input inside its consuming proof; they do not broaden the assertion, replace its objects, or use an outward result as its own premise. Exact already-present locations are aliases rather than additional occurrences.",
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 27,
+        "end_line": 29,
+        "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+      },
+      "statement": "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity.",
+      "publication": {
+        "title": "Algebraic Number Theory",
+        "authors": "J. S. Milne",
+        "venue": "Author course notes",
+        "authoritative_version": "v3.08, July19,2020; PDFde2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b",
+        "locator": "Theorem4.3 p.70 and Theorem5.1 p.85",
+        "corrections": "No claim that the unit theorem selects a fundamental unit; only rank, roots of unity and the independent sign calculation are used."
+      }
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+        "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+      },
+      "start_line": 27,
+      "end_line": 29,
+      "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+    "use_sha256": "e7d50244ddffa5be94c16058d18be4a4a5ac7ec14bee7c8364af1facd51d9644",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity.",
+      "objects": "A number field, its ideal class group and unit group.",
+      "hypotheses": "Ring of integers of a number field; r1 real places and r2 pairs of complex places.",
+      "quantifiers": "Every ideal class and every number field in the theorem scope.",
+      "parameter_range": "Positive degree n=r1+2r2.",
+      "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+      "constants": "Stated Minkowski constant and unit rank formula.",
+      "normalizations": "Integral ideal norm; multiplicative unit group.",
+      "exceptional_cases": "Unit generators are not selected by the rank formula.",
+      "limit_order": "Use the field invariants in the bound and rank formula before drawing field-specific conclusions."
+    },
+    "needed_assertion": {
+      "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+      "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+      "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+      "quantifiers": "Every ideal class and every unit of this fixed field.",
+      "parameter_range": "Only K0; no varying quadratic-field claim.",
+      "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+      "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+      "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+      "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+    },
+    "required_capabilities": [
+      "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares."
+    ],
+    "available_capabilities": [
+      "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity."
+    ],
+    "derived_capabilities": [
+      "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 27,
+        "end_line": 29,
+        "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+        "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+        "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+        "quantifiers": "Every ideal class and every unit of this fixed field.",
+        "parameter_range": "Only K0; no varying quadratic-field claim.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+        "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+        "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+        "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 27,
+          "end_line": 29,
+          "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 344,
+          "end_line": 346,
+          "excerpt_sha256": "c0fb5f4b75630ad52061f218a3a35d27a408b231f76db82b5db964d56565c907"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 344,
+        "end_line": 346,
+        "excerpt_sha256": "c0fb5f4b75630ad52061f218a3a35d27a408b231f76db82b5db964d56565c907"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 28,
+        "end_line": 28,
+        "excerpt_sha256": "95449b9db543142bcfa5378ec61dcf955e362da158153e8b2c64725f57f6f30f"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 37,
+        "end_line": 37,
+        "excerpt_sha256": "dae22e420d824e9bb251455bfdd0fcb08f591f93185e2bf860d961cd2e34bc03"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 40,
+        "end_line": 40,
+        "excerpt_sha256": "6bd387207600a55d4b7f1812af82da7c7a1603912c1510e99f41516273b7e950"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 43,
+        "end_line": 43,
+        "excerpt_sha256": "fcc7e759e1f54b4f3cf83a4952cc934a1d1aa27a68f09a1e2cff4b0397d33c40"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+          "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+        },
+        "start_line": 47,
+        "end_line": 47,
+        "excerpt_sha256": "d8b43a9d5db7770045135f2e43fc49432dfcab9e19a474e08a6fd2d94bfdffd0"
+      }
+    ]
+  },
+  "initial_mapping": {
+    "use_id": "HIST-arithmetic-AR-U012",
+    "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+  },
+  "retained_separate_inputs": [
+    "The explicit integer ring and discriminant of Q(sqrt2), also directly retained in the fixed-field computation."
+  ],
+  "source_record": {
+    "id": "milne-ant",
+    "bibliography": null,
+    "urls": [],
+    "files": [
+      {
+        "workspace_relative_path": "work/theorem-application-audit-20261105/primary/milne-ant.pdf",
+        "sha256": "de2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b",
+        "bytes": 1287434,
+        "retrieval_url": "https://www.jmilne.org/math/CourseNotes/ANTc.pdf",
+        "retrieved_date": "2026-11-05"
+      }
+    ],
+    "version_notes": "Algebraic Number Theory v3.08, July 19, 2020, author course notes. Supplementary source, not a manuscript bibliography entry.",
+    "source_status": "bytes_pinned"
+  },
+  "scope": "Bounded current connection, not whole-proof acceptance."
+}

@@ -1,0 +1,166 @@
+{
+  "schema": "independent-height-audit/v1",
+  "created_utc": "2026-11-09T23:45:17.980Z",
+  "reviewer": {
+    "agent": "/root/v14_final_disjoint_assembly_review",
+    "model": "gpt-6-astra",
+    "thread_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+    "run_id": "01a1c2b1-fb91-7c72-a245-2f8d386018b1",
+    "role": "Independent review only; no candidate authorship or repair"
+  },
+  "repository": {
+    "url": "https://github.com/JoseBrox/diophantine-z-q_improvements",
+    "commit": "d25e0aa6046662d9a878755aca8ed742821d3e61"
+  },
+  "sources": [
+    {
+      "path": "papers/contact_heights/evaluation_of_differentials_20261109_v17.tex",
+      "sha256": "2ba5dd497276073d92db95f0119bede82d182997c66375e5be294157de6d9f7c",
+      "scope": "Entire argument, sections 1–8"
+    },
+    {
+      "path": "papers/quartic_existence/quartic248_20261109_v17.tex",
+      "sha256": "fd17f65e9bab3536e7b737f8346b886d2a1ca520d4c4398fc59576cc42b5d4da",
+      "scope": "Height assumptions, amplification, height transfer, scalar-height consumer, and final soundness inequalities; not the full local/combinatorial construction"
+    },
+    {
+      "path": "manuscripts/quartic_v14.tex",
+      "repository": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic-v14-release/preview-repository",
+      "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac",
+      "scope": "LR2–LR5 and quartic-height19 modular inputs, especially lines 8237–8275 and 9994–10092"
+    },
+    {
+      "path": "manuscripts/quartic_v9.tex",
+      "commit": "14e8f601fe0d9173d4a5f084aedc3e07066a7688",
+      "sha256": "6619f4d150e84815f26b78d41c30070ea9564345861b2808312bcb80aabb19b5",
+      "scope": "Cited historical LR2–LR3 product and field bounds; no fresh acceptance of all historical V9 foundations"
+    }
+  ],
+  "decision": "accepted_within_height_scope",
+  "summary": "No mathematical gap found in the new evaluation-to-modular-height argument or the reviewed height consumers. The M^3(1+log M) estimate follows from the explicitly stated modular realization input. This is not standalone acceptance of the entire 248-variable construction.",
+  "findings": [],
+  "checks": [
+    {
+      "id": "EVALUATION-INTEGRAL",
+      "lines": "Height 163–211",
+      "result": "accepted",
+      "reason": "The normalization is a finite normal surface over a regular arithmetic surface: normality gives Cohen–Macaulay in dimension two, and the finite equidimensional map satisfies miracle flatness. A common regular model transports sections of the relative canonical sheaf by the effective exceptional divisor formula. Over codimension one of the normal target the birational map is an isomorphism. Its canonical module is torsion-free and S2, hence reflexive; extension across codimension two is valid. Finite duality then gives Hom(B,O_K[t]) dt, and projectivity permits specialization. On the split generic fibre the trace identification gives exactly omega/dt(P), not an unrelated functional or trace average. Invertibility of the target canonical module is not assumed."
+    },
+    {
+      "id": "TRACE-LATTICE-AND-NORMS",
+      "lines": "Height 122–161, 214–250",
+      "result": "accepted",
+      "reason": "Locally, O_K^d is self-dual for the split trace pairing. A basis matrix U gives discriminant det(U)^2 and equal lengths for O/C and C-dual/O. Coordinate projection only decreases the quotient length. The projected lattice with the standard Euclidean metric has arithmetic degree equal to this index. Riemann–Hurwitz gives d>2g−2, so a single choice of g fibre coordinates is injective over K and remains so at each embedding. Radius-1/2 unramified discs give each evaluation row norm at most 2/sqrt(pi); Hadamard bounds the determinant. The sign of the degree inequality is correct. The published L2 determinant convention is the same original stable Faltings normalization; no hidden factor of g!, 2pi, or [K:Q] is needed."
+    },
+    {
+      "id": "FIBRE-DISCRIMINANT",
+      "lines": "Height 254–341",
+      "result": "accepted",
+      "reason": "The discriminant is the determinant section of the finite locally free trace pairing, so restriction to t=2 is the fibre-order discriminant even at non-normal fibres. On the regular base its divisor has only horizontal branch components 0,1,infinity and vertical components. The section t=2 intersects only the horizontal component 0, at primes above 2. At a vertical prime the local different bound applies to the full residue degree, including inseparable residue extensions. Summing f_j e_j=d and then summing base ramification/residue degrees removes the auxiliary number-field degree. The claimed finite-etale good open survives extension by normality, so splitting the fibre creates no extra bad rational primes. Javanpeykar Proposition 4.1.3 explicitly allows the imperfect-residue situation; the unrelated incomplete complete-intersection theorem is not an objection to this application."
+    },
+    {
+      "id": "MODULAR-MODEL",
+      "lines": "Height 343–401",
+      "result": "accepted",
+      "reason": "The displayed elliptic family has discriminant 1728 t^2/(t−1)^3 and j=1728t. Over the stated open, exact-order-N torsion is finite etale. H acts freely, and its constant-group quotient is finite etale even where the residue characteristic divides |H|. Generic elliptic automorphisms are plus/minus one and −1 belongs to H, so quadratic twisting does not change the orbit moduli problem. The generic cover is the intended X_1(N)/H, not a different twist or full-level curve. Counting primitive torsion vectors modulo H gives d_H=N t_H product(1+1/p); there is no extra factor two."
+    },
+    {
+      "id": "TORSION-DIFFERENT",
+      "lines": "Height 403–450",
+      "result": "accepted",
+      "reason": "For an elliptic scheme over an excellent characteristic-zero DVR, the kernel of [n] is finite flat and locally complete intersection. The cotangent sequence in invariant differentials has differential multiplication by n, so its zeroth Fitting ideal is nA. The lci different formula identifies this with the Dedekind different, and invertibility of the relative dualizing module yields A-dual=n^(-1)A. Passing to the normalization reverses the trace-dual inclusion and gives normalized-trace-dual contained in n^(-1) normalization. Thus each point-field different contains n. The tower formula for differents passes the same upper valuation bound to the orbit intermediate field; the inequality direction is correct. No separability of the residue field is inserted in this step."
+    },
+    {
+      "id": "MODULAR-HEIGHT",
+      "lines": "Height 453–488",
+      "result": "accepted",
+      "reason": "At the generic vertical point for p>3, t and t−1 are units and the same elliptic family has good reduction even if p divides N. The preceding torsion estimate bounds the coefficient by d_H v_p(N). At 2 and 3 the general different estimate is sufficient. Adding the horizontal contribution gives d_H(log12+log N+2log d_H), before the one-half factor in the evaluation theorem. These are valuations on the exact normalization used in the fibre calculation."
+    },
+    {
+      "id": "SURFACE-HEIGHT-TRANSFER",
+      "lines": "Height 492–537",
+      "result": "accepted",
+      "reason": "The isogeny factor over L-prime supplies a subvariety A0 of the Jacobian over that same field. Remond Corollary 1.2, explicitly valid for stable height, bounds hF(A0) using the Jacobian and the lower bound for its quotient; log(pi sqrt(2))<3/2 permits H_J. Gaudron–Remond Theorem 1.9(1) applies with source A0, target A, base and extension both L-prime. At dimension two its bound is exactly (14^32 d-prime max(1,log d-prime,hF(A0)))^16. Half its logarithm gives the displayed factor 8. Neither a principal polarization on A0 nor semistability over L-prime is a hypothesis. The separate field used to split the evaluation fibre does not enter this isogeny degree bound."
+    },
+    {
+      "id": "MODULAR-INPUT-AND-CUBIC-BOUND",
+      "lines": "Height 562–694; V14 LR2–LR5 and quartic-height19",
+      "result": "accepted_relative_to_retained_modular_input",
+      "reason": "Definition 6.1 states the arithmetic realization explicitly. Its totient refinement is justified by the actual earlier bound m<=2 product_{p in T,p odd}(p−1) and [L-prime:Q]<=2m[L:Q], with [L:Q]<=576 and T contained in primes dividing squarefree R. Thus 2304 phi(R) is available despite the earlier displayed weakening to 2304R. The character whose image order divides [L-prime:Q] is epsilon squared; hence ord(epsilon)<=2[L-prime:Q]. The current V14 argument constructs the factor of J_H over L-prime and does not posit a small coefficient field. Multiplying phi(R) by product(1+1/p) cancels to R product(1−1/p^2), giving d_H<D0 R^3. All subsequent logarithmic bounds have ample margin and yield 19D0 R^3 log R. This verifies the new consumer relative to the retained modular construction; it does not independently reprove every modularity foundation."
+    },
+    {
+      "id": "HEIGHT-CONSUMERS-248",
+      "lines": "Application 83–90, 109–187, 344–361, 548–604",
+      "result": "accepted_within_scope",
+      "reason": "The two reflected contact blocks have disjoint prime support outside the stated fixed exceptional set. Applying the 7/2 bound to both and multiplying gives the 7/4 radical bound used by height transfer. For divisibility to order k, the exponent is 7/(4k). With k=4 and |Delta|<=14B^4 this gives B^(7/4), strictly below B^2. The sharper cubic-log estimate is genuinely used separately: from ell^L M5(beta)^3 dividing positive c, one gets h(beta)<=C3 ell^(-L)c(1+log(c)/3). The later k=1 inequality rearranges to log B<=4log(2C)+7log2+7h(beta), agreeing with the manuscript. For sufficiently large N, its coefficient of c log c is below that of the Lucas lower bound. This comparison uses the already-stated divisibility and Lucas inputs; their complete local construction is assigned to the other reviewer."
+    }
+  ],
+  "numeric_check": {
+    "prime_count": 7499,
+    "last_prime": 76163,
+    "B_bits": 109445,
+    "D0_bits": 2327,
+    "D0_squared_below_B": true,
+    "B_below_2_109445": true,
+    "D0_below_2_2413": true,
+    "constant_upper_below_2_330770": true,
+    "method": "Independent JavaScript Eratosthenes sieve and BigInt inequalities; no repository script executed."
+  },
+  "effectivity": {
+    "height": "The constants in the new height estimate are effective conditional on the explicit modular realization input, with C3<2^330770 and the convenient pure-power constant 2^330789.",
+    "family": "The sufficient N0 in the 248-variable family remains ineffective because the retained aggregate trace bound has an ineffective additive constant M2. N>=53 is a coefficient-height formula range, not a proved sufficient defining threshold. No specific member of the family is certified here solely by giving a numerical N."
+  },
+  "published_sources": [
+    {
+      "url": "https://msp.org/ant/2014/8-1/ant-v8-n1-p04-s.pdf",
+      "locations": "Sections 2.1/2.3; Lemma 2.3.1; Proposition 4.1.3 and Remark 4.1.2",
+      "use": "Metric, birational canonical transport, and local different bound"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00R4",
+      "locations": "Lemma 10.128.1",
+      "use": "Miracle flatness"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0AWQ",
+      "locations": "Lemma 48.23.1",
+      "use": "Cohen–Macaulay canonical module"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0AVT",
+      "locations": "Section 31.13",
+      "use": "Reflexive extension"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0C0I",
+      "locations": "Lemma 49.2.12",
+      "use": "Finite duality as Hom"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BW0",
+      "locations": "Lemmas 49.8.2–3",
+      "use": "Trace dual and Dedekind different"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BWB",
+      "locations": "Section 49.12, especially Lemma 49.12.3",
+      "use": "Lci/Kahler different formula"
+    },
+    {
+      "url": "https://www-fourier.univ-grenoble-alpes.fr/~remond/2476.pdf",
+      "locations": "Corollary 1.2, paragraph after Corollary 1.3, Proposition 2.1",
+      "use": "Author text for published 2022 height paper: stable subvariety bound and isogeny height change"
+    },
+    {
+      "url": "https://lmbp.uca.fr/~gaudron/art20.pdf",
+      "locations": "Section 1.5, Xi definition and Theorem 1.9(1)",
+      "use": "Author text linked to published Memoires SMF 176; explicit same-field surface isogeny bound"
+    }
+  ],
+  "limits": [
+    "No new proof or candidate correction was authored.",
+    "No complete acceptance of the 248-variable local encoding, finite tables, analytic prime-pattern inputs, or polynomial support is supplied by this scoped report.",
+    "Historical V9 foundations are not silently substituted for the currently accepted V14 foundations.",
+    "This is a separate Jose height audit, not a Version14 source-gate, archive, release, or future-R acknowledgment."
+  ]
+}

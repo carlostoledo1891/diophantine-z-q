@@ -1,0 +1,18 @@
+# Source-first adoption review: forward/Hodge author002
+
+Reviewer /root/astra_picard_independent_001. Scope is the exact adoption packet and its distinctions among published statement, current application and local proof, not a fresh proof of the whole forward-rank or Hodge argument. I reuse my earlier bounded Picard20d3 acceptance only on its original quotient interface.
+
+Before reading ROLE-AUDIT, CAPABILITY-DELTA, COVERAGE-DELTA, PICARD-REVIEW-DELTA or the author's checker, I directly read the current manuscript1427–1440 and1954–2010; the eight application IDs/dependencies, sixteen supplier role records, source paraphrases, CONNECTIONS.md and Milne projection; and neutral INPUTS/TRANSPORT/SOURCE-PROVENANCE. Earlier messages disclosed that five roles were corrected, one Hodge requirement deduplicated and72 statuses retained. That is prior exposure to task scope, not an independently derived count.
+
+Required distinctions independently derived:
+- Silverman's modularity theorem supplies the actual curve at conductor N. Its application then supplies modularity to Kolyvagin and the parametrization to Picard.
+- Kolyvagin rank/finiteness and finite all-place Kummer sequences are different published statements. Filtered direct limits, Mordell–Weil torsion disappearance and corank additivity are local deductions, not verbatim finite-sequence statements.
+- Picard divisor-class facts must not be promoted silently to the Picard-scheme norm morphism. III.3.4 alone is a class/group statement; representability, norm functoriality/base change and the algebraic identification need the named standard inputs covered by my earlier review. The source paraphrase's phrase 'Picard variety' needs inspection against how the packet assigns this distinction.
+- Optional Kato consumes the actual surjective Q-homomorphism and rank-zero nonvanishing. It does not supply rank one or a converse. Picard acceptance does not itself accept Kato's full application.
+- Milne supplies complex algebraization/Hodge full faithfulness after clearing denominators. It supplies no Qbar descent. Torsion invariance and graph descent are local proof. Quaternionic centralizer and maximal-subfield splitting are separate algebra inputs/deductions.
+- The main text's 'these endomorphisms' connects Hodge algebraization to descent of the resulting maps; the stand-alone statement that all complex endomorphisms descend does not require Milne as a theorem. Check the recorded internal edge describes actual application flow rather than falsely claiming Milne proves descent.
+- The centralizer uses both complex Hodge comparison and Qbar descent. Shared passages may carry both imports; a duplicate assertion should not create a second capability.
+- The local Picard paragraph still says 'pending application' and denies independent acceptance by the separate root review. Those statements can remain historical boundaries only if an explicit delta supplies the new20d3 acceptance without widening it.
+- Every source location, use/index/connection back-reference, current/old span and proposed-repository path must resolve to pinned bytes. Author-'reviewed' passages must not be mistaken for independent acceptance; the72 unresolved application fields must remain unresolved in this adoption.
+
+No disposition yet. Next: compare the frozen role/delta records, inspect complete assertions/connections, and machine-check every pin and incidence relation.

@@ -1,0 +1,31 @@
+\section{De Rham comparison and finite descent in the height argument}
+\label{app:de-rham-descent}
+
+\begin{lemma}\label{lem:de-rham-descent}
+Let $K/\mathbb Q_\ell$ and $F/K$ be finite extensions, let $A/F$
+be an abelian surface, and let $C_\ell/\mathbb Q_\ell$ be a finite
+coefficient field. Suppose a continuous representation
+$r:G_K\longrightarrow\mathrm{GL}_2(C_\ell)$ satisfies
+\[
+ V_\ell(A)\otimes_{\mathbb Q_\ell}C_\ell
+       \simeq r|_{G_F}\oplus r|_{G_F}.
+\]
+Then $r$ is de Rham. At every coefficient embedding its
+Hodge--Tate weights are $0,-1$, with
+$\mathbb Q_\ell(1)$ assigned weight $-1$.
+\end{lemma}
+
+\begin{proof}
+The smooth proper variety $A$ has a smooth proper rigid
+analytification. Apply \cite[Corollary 1.8]{scholze2013}, with the
+corrections in \cite{scholze-erratum}. The passage from algebraic
+to analytic cohomology uses \cite[Theorems 9.1 and 9.3]{scholze2013}:
+Theorem 9.1 identifies coherent cohomology, and hence the filtered
+de Rham hypercohomology, while Theorem 9.3 identifies the
+$\mathbb Z/\ell^n\mathbb Z$-cohomology, compatibly in $n$.
+Its invertibility condition holds because $F$ has characteristic
+zero. Taking inverse limits and then inverting $\ell$ identifies
+the algebraic and analytic $\ell$-adic cohomology, compatibly with
+the action of $G_F$. Thus
+$H^1_{\mathrm{et}}(A_{\overline F},\mathbb Q_\ell)$ is de Rham.
+

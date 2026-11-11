@@ -1,0 +1,42 @@
+{
+  "reviewer": "/root/v14_h6_coverage",
+  "reviewed_at": "2026-11-09T09:46:31.396Z",
+  "decision": "accepted within the stated local argument and conditional caller scope",
+  "source": {
+    "path": "v14-cyclotomic-zero-local-001/PROOF.md",
+    "sha256": "5b13d9cdf4d8194e4808b9722c92d7c508a6f8b83c6b3de69e0f9486f1e1cb99"
+  },
+  "initial": {
+    "path": "INITIAL-OBSERVATIONS.json",
+    "sha256": "bf1a6c2d44b265d87ecbb20501bdfea2820d5d30faa3fc98860f70a9cd356e2a"
+  },
+  "main": {
+    "path": "manuscripts/quartic_v14.tex",
+    "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+    "coefficient_definition": [
+      13301,
+      13304
+    ],
+    "caller": [
+      13682,
+      13693
+    ]
+  },
+  "findings": [
+    "The minimum coefficient valuation exists because valuations are integral and bounded below. The least index attaining it exists, and the finitely many earlier terms admit the stated positive epsilon.",
+    "For fixed z of positive valuation less than epsilon, every later term has valuation at least mu+(d+1)v(z), while the finitely many earlier terms have strictly larger valuation than the dth term. The convergent tail therefore cannot cancel it.",
+    "The cyclotomic polynomial (1+t)^(2^(n-1))+1 is Eisenstein including n=1. Its roots have valuation 1/2^(n-1); only finitely many n remain outside the zero-free punctured annulus.",
+    "Evaluation is defined for bounded-denominator series at positive-valuation parameters. An annihilator evaluates to an invertible scalar at all other characters, forcing the specialized module element to vanish. This does not require a cohomology base-change isomorphism.",
+    "Main13301–13304 explicitly defines the same Lambda=Z_2[[t]] and A=Lambda[1/2]. Main13682–13693 invokes exactly this finite-zero implication for each sign, with reciprocity, smoothing and finite exceptional L-values separately supplied."
+  ],
+  "retained_inputs": [
+    "Actual specialization is compatible with the A-module action.",
+    "The nonzero-specialization assertion from reciprocity/Kato and nonzero smoothing factors is retained, not re-proved here.",
+    "Infinitely many finite-order characters of each sign and the rational sign decomposition remain the caller setup."
+  ],
+  "limits": [
+    "No acceptance of an application mapping not yet submitted.",
+    "No global Kato-source re-audit or full source-set adoption is inferred.",
+    "Prior exposure is recorded in the initial observations; no claim of historical blindness."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "comparisons": [
+    {
+      "id": "C1",
+      "available": "Eme final2.3.1 and2.5.1 include the Galois-defined p-place and actual cohomological multiplicity space.",
+      "needed": "The selected auxiliary eigenpoint must have the correct local p parameter, not merely matching away-from-p eigenvalues.",
+      "derivation": "Section4 identifies the Galois representation by geometric Frobenius eigenvalues and absolute irreducibility, then applies the p-place theorem.",
+      "source_ids": [
+        "Eme-classical",
+        "Eme-Hecke"
+      ],
+      "application": "O2-PUBLISHED-CLASSICAL-LG"
+    },
+    {
+      "id": "C2",
+      "available": "Final HT p1384 detects only inertia for infinite-dimensional smooth irreducibles.",
+      "needed": "Irreducible full WD parameter equal up to one unramified twist.",
+      "derivation": "Section3 excludes a K-character type, proves N=0 in both inertia cases, and gives the scalar or explicit off-diagonal Frobenius conjugacy.",
+      "source_ids": [
+        "HT-type",
+        "Eme-LL"
+      ],
+      "application": "O2-SUPERCUSPIDAL-TYPE"
+    },
+    {
+      "id": "C3",
+      "available": "Eme7.4.2 has algebraic dual and a diagonal E(n) action.",
+      "needed": "The same point has prescribed W and smooth pi_p(r_x), with no missing determinant twist.",
+      "derivation": "Section4 solves highest weights k=v-u+1,n=-u, separates epsilon=|.|x and computes WD(epsilon)=|.|.",
+      "source_ids": [
+        "Eme-lalg"
+      ],
+      "application": "O2-SAME-POINT-TATE"
+    },
+    {
+      "id": "C4",
+      "available": "CEGGPS7.4 and consolidated003 identify the precise homology envelope/fiber, while classical cohomology may have multiplicities.",
+      "needed": "The actual B_C(r_x), not just a related Galois functor image, has the asserted lalg representation.",
+      "derivation": "Section5 uses quotient-dual annihilator, finite global factor, shape/nonvanishing and a nonzero coordinate projection.",
+      "source_ids": [
+        "CEG-level",
+        "Colmez2010"
+      ],
+      "application": "O2-SAME-BANACH-FIBER"
+    },
+    {
+      "id": "C5",
+      "available": "Inertia alignment gives an algebraic unramified WD twist; Colmez VI.6.42 compares filtrations of a fixed module.",
+      "needed": "A continuous unitary Galois twist and identical full WD before applying VI.6.42.",
+      "derivation": "Section6 compares total Newton and Hodge numbers, proves the Frobenius scalar a unit, extends its powers continuously, normalizes weights and applies fixed-module independence.",
+      "source_ids": [
+        "Colmez-admissible",
+        "Colmez-filtration"
+      ],
+      "application": "O2-UNITARY-TWIST-TRANSFER"
+    }
+  ],
+  "related_use_audit": "Bounded to the two current63db modularity repetitions and compiler002 supercuspidal M1/M2 uses. Scalar types, special/ordinary cases, RED, full general-type BM and global residual branches retain separate contracts."
+}

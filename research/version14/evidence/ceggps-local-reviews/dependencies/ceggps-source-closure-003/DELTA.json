@@ -1,0 +1,32 @@
+{
+  "predecessor_manifest": {
+    "path": "work/quartic-v14-prep/independent-source-review/ceggps-source-closure-002/MANIFEST.json",
+    "sha256": "e59ff8ccba673f722593977220d1bfb4fdca08b1ef9b9f1b9495d434a551b2b4",
+    "bytes": 2156
+  },
+  "changes": [
+    {
+      "path": "REPORT.md",
+      "old": "Nonzero locally algebraic vectors imply the required distinct-weight almost-de-Rham condition through the preceding local analysis, and the nonvanishing theorem VI.6.18 applies in the de-Rham direction.",
+      "new": "Nonzero locally algebraic vectors first imply the distinct-weight almost-de-Rham condition by VI.5.1. Theorem VI.6.13, printed p450, then gives the stronger implication that D is de Rham: its contrapositive says Pi_lalg is zero when D is not de Rham. Its local proof uses VI.6.12 and VI.4.9. This forward step is required before applying VI.6.30 and VI.6.50 in their de-Rham domain. Conversely, VI.6.18 supplies nonvanishing for the de-Rham representation with distinct weights."
+    },
+    {
+      "path": "REPORT.md",
+      "old": "These comments are incorporated before this freeze.",
+      "new": "The later successor also records Gaussian's request to make the forward de-Rham implication VI.6.13 explicit. The author read its published p450 statement and local proof before adding that edge. Snapshots 001 and 002 remain unchanged. These comments are incorporated before this freeze."
+    },
+    {
+      "path": "SOURCES.json",
+      "change": "S05 adds printed p450 / PDF171 and exact extracted-page hash."
+    },
+    {
+      "path": "APPLICATIONS.json",
+      "change": "SC06 derivation and supplier fields explicitly consume VI6.13; no other card changed."
+    }
+  ],
+  "unchanged_files": [
+    "EDGES.json",
+    "CHECKS.json"
+  ],
+  "scope": "Explicit existing local forward implication; no independent acceptance, source-version closure or live-source transport."
+}

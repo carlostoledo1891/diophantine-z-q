@@ -1,0 +1,11 @@
+# Poonen–Stoll published-source comparison
+
+Accepted for the Cassels–Tate application in manuscript b8421edc569a832c9c4271e3592b10df58e75d25f4dc5619c2b4a6766157044d, lines 1157–1169. This closes that application's final-publication comparison, with the correction below retained. It does not close Lin–Yang or Berger.
+
+I verified every member of the author's manifest f5ace20aca1d0db242cf7998cd86dedf0cadccdd3f7743c4339196d135a4561f and all five source pins. I read the comparison and the actual current consumer. I directly inspected the final pages 1120 and 1122 and read the extracted final pages 1110 and 1112 and corrected author pages 3, 9 and 11. The final PDF is bfea7cc33da490dad136355d4423437916e441f77f89c0921995adf2bfea0936; the corrected author PDF is 3b9a619423358bc877fd2123b73a759157a728ec11e0f7b0aa48bd0333d7149a. A preserved copy of the author's metadata is in ly-berger-ps-review-001.
+
+For an elliptic curve, its canonical principal polarization has zero Picard obstruction: Corollary 4 identifies it with Picard degree zero, which has the identity rational point. Corollary 7 therefore gives an alternating pairing. The pairing's nondegeneracy after quotienting by the maximal divisible subgroup is stated on final page 1110. Theorem 8(3) on page 1122 gives square order of the two-torsion of the nondivisible quotient. The corrected author's corresponding statements agree in this scope.
+
+Final page 1112 incorrectly equates the maximal divisible subgroup of an arbitrary abelian group with its infinitely divisible elements. Corrected author page 3 imposes finite p-torsion for every prime on that equivalence. The manuscript does not need the unrestricted assertion. Its 2-primary group is explicitly a finite direct sum of Q2/Z2 and a finite group F. Its maximal divisible subgroup is exactly the displayed divisible summand. The quotient is F, and its two-torsion has even dimension. The finite Kummer equation then forces F=0 and r+t=1. No finiteness of the original Sha and no nondegeneracy of the pairing restricted to F[2] are assumed.
+
+This is a bounded statement and definition comparison with an explicit correction, not textual equivalence of editions or a fresh proof of the entire Cassels–Tate theory. Full third-party source files and renders remain local-only.

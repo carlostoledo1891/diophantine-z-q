@@ -1,0 +1,52 @@
+Precision arithmetic verification
+Date: 2026-11-03
+
+Source: formalization/z-in-q/ZInQ/PrecisionArithmetic.lean
+SHA256: 082597F7A3014B7092BCB40DC3526FFA24CFE9134BC934FAEA3EFB3703031E6C
+Compiler: Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+Imports: Std only; no Mathlib or dependency rebuild.
+
+Source bindings:
+- outputs/z-in-q-exact-value-bridge-audit.txt, Section 2, equation (4) and saturation paragraph.
+- outputs/variable-shift-precision.py, class Capped and maximum_precision_exponent.
+
+Verified scope:
+- For natural a,x,D with a>0 and D>0, a*x<D iff x<=(D-1)/a.
+- For natural U,D,B with U>0 and D>0, 4*U*4^B<D iff 4^B<=(D-1)/(4*U).
+- saturate L x = min x (L+1), its bounds, idempotence, and threshold comparisons.
+- Saturated addition, multiplication, maximum, and every fixed natural power agree with saturation of the ordinary result.
+- Saturating an exponent, or both inputs of a power, agrees with ordinary evaluation under the source condition 1<=L. The proof treats bases 0 and 1 explicitly.
+
+Validation:
+- Compiled the actual source with the installed Lean executable, writing its olean only to a fresh system temporary directory.
+- Command from formalization/z-in-q: lean.exe -o TEMP/ZInQ/PrecisionArithmetic.olean ZInQ/PrecisionArithmetic.lean
+- Source compiler exit: 0; no warnings or errors.
+- A separate temporary probe imported that compiled module and ran #print axioms on all 20 public definitions/theorems.
+- Export audit exit: 0.
+- Source hash was unchanged before and after compilation and audit.
+- Text scan found no sorry, admit, custom axiom, unsafe declaration, or native_decide.
+
+Export axiom results:
+'ZInQ.PrecisionArithmetic.mul_lt_iff_le_div_pred' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZInQ.PrecisionArithmetic.four_mul_pow_lt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate' does not depend on any axioms
+'ZInQ.PrecisionArithmetic.saturate_eq_self' does not depend on any axioms
+'ZInQ.PrecisionArithmetic.saturate_eq_cap' depends on axioms: [propext]
+'ZInQ.PrecisionArithmetic.saturate_le_cap' depends on axioms: [propext]
+'ZInQ.PrecisionArithmetic.saturate_le_self' depends on axioms: [propext]
+'ZInQ.PrecisionArithmetic.saturate_zero' does not depend on any axioms
+'ZInQ.PrecisionArithmetic.saturate_one' depends on axioms: [propext, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_saturate' depends on axioms: [propext]
+'ZInQ.PrecisionArithmetic.saturate_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_le_iff_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZInQ.PrecisionArithmetic.le_saturate_iff_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_lt_iff_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_add' depends on axioms: [propext, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_max' depends on axioms: [propext, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_mul' depends on axioms: [propext, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_pow' depends on axioms: [propext, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_pow_saturate_exponent' depends on axioms: [propext, Quot.sound]
+'ZInQ.PrecisionArithmetic.saturate_pow_saturate' depends on axioms: [propext, Quot.sound]
+
+Limits:
+This certifies the listed natural-arithmetic helpers. It does not certify the full Python program, the exact H6 expression, the rational/elliptic arithmetic, the logarithm implementation, or the larger Diophantine bridge. No G, H, L, RC, or DPRM statement is assumed by this module.

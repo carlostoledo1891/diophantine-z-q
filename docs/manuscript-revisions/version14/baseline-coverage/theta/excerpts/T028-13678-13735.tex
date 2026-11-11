@@ -1,0 +1,58 @@
+\paragraph{Recurrence, later exclusions, and valuations.}
+Only now impose the extra finite coprimality sieve $B$.
+The zero-or-retain Fourier sieve is a finite additive translation
+operator. It preserves cuspidality, keeps every coefficient whose
+index is prime to $B$, and commutes with good $T(p^2)$ for
+$p\notin S_1=S_0\cup B$. In particular it keeps $a(D_0)=1$.
+The squarefree comparison (E.11) was proved before this enlargement,
+so it requires no extra squareclass hypotheses at the primes of $B$.
+After the sieve it is asserted at the retained indices.
+The standard good $T(p^2)$ formula, with $\psi^2=\eta^2$, gives
+\[
+ a(p^2n)=\{\eta(p)a_p(E)-\psi(p)(-n/p)\}a(n)
+                       -p\eta(p)^2a(n/p^2),\qquad p\notin S_1.
+                                                        \tag{E.12}
+\]
+For squarefree $D$, write $a(Dp^{2r})=\eta(p)^r b_r$.
+The first multiplier is
+$a_p(E)-(\psi/\eta)(p)(-D/p)$; subsequent multipliers satisfy
+$b_{r+1}=a_p(E)b_r-pb_{r-1}$. All are integers, including when
+$p\mid D$. Iteration over the good primes gives the same assertion
+for every retained square shell after removal of the $\eta$ phase.
+More explicitly, for $p\notin S_1$ set
+$A_{p,0}(D)=1$, $A_{p,1}(D)=a_p(E)-(\psi/\eta)(p)(-D/p)$,
+and
+$A_{p,r+1}(D)=a_p(E)A_{p,r}(D)-pA_{p,r-1}(D)$ for $r\ge1$.
+Then, for every retained index $Dm^2$ with $D$ squarefree,
+\[
+ a(Dm^2)=z_D\eta(m)r_D
+              \prod_{p^r\Vert m}A_{p,r}(D).
+\]
+The formula includes $p\mid D$, when the initial Legendre symbol
+is zero. When applying the recurrence at one prime, the other
+prime-square factors do not alter that Legendre symbol. This proves
+the formula by induction on the prime factors of $m$, with
+$a(n/p^2)=0$ when $p^2\nmid n$. All factors $A_{p,r}(D)$ are
+integers. Thus every coefficient used by the extraction and shell
+operators of Proposition~\ref{ex:app-coefficient-rules} is a rational
+number times a two-power root of unity, including coefficients with
+non-squarefree index. In the chosen residue field such a root reduces
+to one. A rational coefficient of valuation zero reduces to the
+element $1$ of its prime field $\F_2$. Consequently the fresh
+coefficient-one reading of that proposition detects precisely equality
+in the fixed minimum-depth bound. It uses the same $g$, $D_0$ and
+normalization throughout.
+
+
+Combining (E.9) and (E.11) makes the values
+$v_2a(D)-\omega(D)$ at nonzero retained squarefree coefficients a
+bounded-below subset of $\Z$. It is nonempty because $D_0$ is retained,
+and therefore has an attained finite minimum. The form and the initial
+finite sieve are fixed before this minimum is chosen. Restricting
+later fresh primes by further exclusions does not authorize choosing
+another minimum.
+\end{proof}
+
+% End 07-even-source.tex
+
+

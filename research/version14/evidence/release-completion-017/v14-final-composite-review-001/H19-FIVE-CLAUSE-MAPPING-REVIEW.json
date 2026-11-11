@@ -1,0 +1,46 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "created_utc": "2026-11-09T07:16:41.690Z",
+  "target_sha256": "eae437df5bb3850a48e81d3b20fe25e67c6cfc99426b22d7b18fd946dbd810e1",
+  "decision": "accepted bounded five-row clause mapping",
+  "checks": [
+    {
+      "id": "HIST-compiler-COMP-035",
+      "initial": true,
+      "component": true,
+      "final": true
+    },
+    {
+      "id": "HIST-compiler-COMP-047",
+      "initial": true,
+      "component": true,
+      "final": true
+    },
+    {
+      "id": "HIST-compiler-COMP-048",
+      "initial": true,
+      "component": true,
+      "final": true
+    },
+    {
+      "id": "HIST-compiler-COMP-034",
+      "initial": true,
+      "component": true,
+      "final": true
+    },
+    {
+      "id": "HIST-compiler-COMP-037",
+      "initial": true,
+      "component": true,
+      "final": true
+    }
+  ],
+  "reasoning": [
+    "COMP035 maps the same-L Hom and ramification-support conditional result, including infinity; source prerequisites remain separately active.",
+    "COMP047 maps actual CM decomposition, same-L rational images, CM-field embedding and maximal-order quotient; COMP048 maps individual-embedding height and same-L isogeny bound. The corrected CM002 preliminary dimension argument is essential.",
+    "COMP034 and COMP037 remain partial: arithmetic family, comparisons, fine-cover and metric/source clauses are not erased by their field/geometric-height mappings."
+  ],
+  "limits": [
+    "Full frozen assertions remain immutable. The mapping does not by itself discharge the remaining initial clauses or all imported source assumptions."
+  ]
+}

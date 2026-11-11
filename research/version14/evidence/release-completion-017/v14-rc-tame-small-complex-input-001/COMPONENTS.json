@@ -1,0 +1,182 @@
+{
+  "components": [
+    {
+      "origin": "v14-rc-tame-small-complex-input-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-TAME-SMALL-COMPLEX",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-TAME-SMALL-COMPLEX-P1"
+        ],
+        "assertion": {
+          "statement": "The actual unramified coefficient module at a derivative place has the displayed arithmetic-Frobenius small complex [M -> M plus M -> M], with maps (Phi-1,0) and (0,Phi-q); H12 makes its differentials vanish at the retained precision.",
+          "objects": "The actual derivative-place module M, q=ell^2 and arithmetic Frobenius Phi.",
+          "hypotheses": "ell is odd and distinct from coefficient prime2; M is unramified at this good derivative place, with trivial local coefficient character. H12 supplies Phi=1 and q=1 at the retained exponent.",
+          "quantifiers": "Each retained derivative place and finite exponent m<=a.",
+          "parameter_range": "Exactly the actual good derivative places and finite coefficient modules.",
+          "uniformity": "Compatible with coefficient reductions because the change of basis is given by the invertible Frobenius operator.",
+          "constants": "No divisions by q-1,2,or a group order.",
+          "normalizations": "Put f=Phi^-1. With t=1 the source maps are (Phi^-1-1,0) and (0,q Phi^-1-1). The change of basis is identity in degree0, diag(-Phi,1) in degree1 and -Phi in degree2.",
+          "exceptional_cases": "Formal comparison of the small complex does not establish the later cup self-products, transfer shear cancellation, or all local-condition homotopies.",
+          "limit_order": "Apply the published tame complex, change the geometric Frobenius convention by the explicit chain isomorphism, then apply H12 at retained precision."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the actual local small model with explicit geometric-to-arithmetic Frobenius conversion.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/rc-tame-small-complex.md",
+              "sha256": "66f7506f1ce3767ee4aeedcd19885cdb98c7df49514875e17f86f6ffaac70b81"
+            },
+            "start_line": 5,
+            "end_line": 9,
+            "excerpt_sha256": "9c9f75bb9791bae374b63e35e2a983c68225cd82d3a5a70d4e448549dab1bac3"
+          },
+          "statement": "The tame local three-term small complex computes continuous cohomology, with functorial comparison maps whose composite on the small complex is the identity.",
+          "publication": {
+            "title": "Selmer Complexes",
+            "authors": "J. Nekovar",
+            "venue": "Asterisque310(2006)",
+            "authoritative_version": "Retained PDF SHA25661c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+            "locator": "7.1.1;7.2.1–7.2.4, pp155–160"
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4181,
+          "end_line": 4192,
+          "excerpt_sha256": "68bfe98eb1e673e523cac08d256341c4ca9a1449bedadba1757da2579407a855"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-TAME-SMALL-COMPLEX",
+        "use_sha256": "0176b08228761a3511aae16299f7d403a1ee94c7a2f2c5ee81a88fe13e3e3c14",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "The tame local three-term small complex computes continuous cohomology, with functorial comparison maps whose composite on the small complex is the identity.",
+          "objects": "Continuous coefficient modules with coefficient prime distinct from residue characteristic, tame quotient generators t and geometric Frobenius f.",
+          "hypotheses": "Use the source admissible coefficient category and wild-inertia invariants; q is the residue field cardinality.",
+          "quantifiers": "Every such coefficient module and the fixed choices of generators.",
+          "parameter_range": "Residue characteristic different from the coefficient prime.",
+          "uniformity": "Functorial in the coefficient module.",
+          "constants": "No numerical estimate.",
+          "normalizations": "t f=f t^q; theta=f(1+t+...+t^(q-1)); differentials (f-1,t-1) and (1-t,theta-1).",
+          "exceptional_cases": "No assertion about the manuscript transfer matrices or cup products is included here.",
+          "limit_order": "Take wild invariants, fix generators, form the small complex and its continuous-cochain comparison maps."
+        },
+        "needed_assertion": {
+          "statement": "The actual unramified coefficient module at a derivative place has the displayed arithmetic-Frobenius small complex [M -> M plus M -> M], with maps (Phi-1,0) and (0,Phi-q); H12 makes its differentials vanish at the retained precision.",
+          "objects": "The actual derivative-place module M, q=ell^2 and arithmetic Frobenius Phi.",
+          "hypotheses": "ell is odd and distinct from coefficient prime2; M is unramified at this good derivative place, with trivial local coefficient character. H12 supplies Phi=1 and q=1 at the retained exponent.",
+          "quantifiers": "Each retained derivative place and finite exponent m<=a.",
+          "parameter_range": "Exactly the actual good derivative places and finite coefficient modules.",
+          "uniformity": "Compatible with coefficient reductions because the change of basis is given by the invertible Frobenius operator.",
+          "constants": "No divisions by q-1,2,or a group order.",
+          "normalizations": "Put f=Phi^-1. With t=1 the source maps are (Phi^-1-1,0) and (0,q Phi^-1-1). The change of basis is identity in degree0, diag(-Phi,1) in degree1 and -Phi in degree2.",
+          "exceptional_cases": "Formal comparison of the small complex does not establish the later cup self-products, transfer shear cancellation, or all local-condition homotopies.",
+          "limit_order": "Apply the published tame complex, change the geometric Frobenius convention by the explicit chain isomorphism, then apply H12 at retained precision."
+        },
+        "required_capabilities": [
+          "The actual unramified coefficient module at a derivative place has the displayed arithmetic-Frobenius small complex [M -> M plus M -> M], with maps (Phi-1,0) and (0,Phi-q); H12 makes its differentials vanish at the retained precision."
+        ],
+        "available_capabilities": [
+          "The tame local three-term small complex computes continuous cohomology, with functorial comparison maps whose composite on the small complex is the identity."
+        ],
+        "derived_capabilities": [
+          "The actual unramified coefficient module at a derivative place has the displayed arithmetic-Frobenius small complex [M -> M plus M -> M], with maps (Phi-1,0) and (0,Phi-q); H12 makes its differentials vanish at the retained precision."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4181,
+            "end_line": 4192,
+            "excerpt_sha256": "68bfe98eb1e673e523cac08d256341c4ca9a1449bedadba1757da2579407a855"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual unramified coefficient module at a derivative place has the displayed arithmetic-Frobenius small complex [M -> M plus M -> M], with maps (Phi-1,0) and (0,Phi-q); H12 makes its differentials vanish at the retained precision.",
+            "objects": "The actual derivative-place module M, q=ell^2 and arithmetic Frobenius Phi.",
+            "hypotheses": "ell is odd and distinct from coefficient prime2; M is unramified at this good derivative place, with trivial local coefficient character. H12 supplies Phi=1 and q=1 at the retained exponent.",
+            "quantifiers": "Each retained derivative place and finite exponent m<=a.",
+            "parameter_range": "Exactly the actual good derivative places and finite coefficient modules.",
+            "uniformity": "Compatible with coefficient reductions because the change of basis is given by the invertible Frobenius operator.",
+            "constants": "No divisions by q-1,2,or a group order.",
+            "normalizations": "Put f=Phi^-1. With t=1 the source maps are (Phi^-1-1,0) and (0,q Phi^-1-1). The change of basis is identity in degree0, diag(-Phi,1) in degree1 and -Phi in degree2.",
+            "exceptional_cases": "Formal comparison of the small complex does not establish the later cup self-products, transfer shear cancellation, or all local-condition homotopies.",
+            "limit_order": "Apply the published tame complex, change the geometric Frobenius convention by the explicit chain isomorphism, then apply H12 at retained precision."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Formal comparison of the small complex does not establish the later cup self-products, transfer shear cancellation, or all local-condition homotopies.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 4181,
+              "end_line": 4192,
+              "excerpt_sha256": "68bfe98eb1e673e523cac08d256341c4ca9a1449bedadba1757da2579407a855"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4181,
+            "end_line": 4192,
+            "excerpt_sha256": "68bfe98eb1e673e523cac08d256341c4ca9a1449bedadba1757da2579407a855"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4181,
+          "end_line": 4192,
+          "excerpt_sha256": "68bfe98eb1e673e523cac08d256341c4ca9a1449bedadba1757da2579407a855"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-TAME-SMALL-COMPLEX-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4181,
+            "end_line": 4192,
+            "excerpt_sha256": "68bfe98eb1e673e523cac08d256341c4ca9a1449bedadba1757da2579407a855"
+          }
+        }
+      ]
+    }
+  ]
+}

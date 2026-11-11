@@ -1,0 +1,139 @@
+{
+  "status": "ACCEPTED_WITH_EXPLICIT_REUSED_PREMISE",
+  "scope": "Independent current-edition review of the new 237-to-235 and 235-to-233 algebraic transfer and manuscript integration only.",
+  "authorship_boundary": "Reviewer authored the earlier 238-to-237 scalar/parity criterion and contributed its exceptional-domain application. This review does not independently reprove or approve that arithmetic. It reuses the separately accepted 237 premise and reviews the disjoint new algebraic transfer. Fresh source-first acceptance of the 237 arithmetic remains outside this receipt.",
+  "source": {
+    "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2"
+  },
+  "transfer_manifest_sha256": "f610d1449efc85a8c32123370efd9334d0f72cb0bc82d412f5335addb443da78",
+  "applications": [
+    {
+      "path": "V15-237-TO-235.json",
+      "sha256": "48dfd3ee90f62327023b194dbbeda769e3b88e0649782022cb740888720ab4f1",
+      "obligations": [
+        {
+          "id": 1,
+          "topic": "Available premise",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 2,
+          "topic": "Constructed equations",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 3,
+          "topic": "Fixed constants and carrier",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 4,
+          "topic": "New-to-old order",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 5,
+          "topic": "Old-to-new exception",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 6,
+          "topic": "Rational inverse and zero cases",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 7,
+          "topic": "Index and consumer identity",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 8,
+          "topic": "Uniformity",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 9,
+          "topic": "Review and remaining dependencies",
+          "status": "PASS within stated scope"
+        }
+      ]
+    },
+    {
+      "path": "V15-235-TO-233.json",
+      "sha256": "ea49d791dfd8944485aef26e87f7ef0f6a921dc92d3500dab202a69a46472098",
+      "obligations": [
+        {
+          "id": 1,
+          "topic": "Available premise",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 2,
+          "topic": "Constructed equations",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 3,
+          "topic": "Quadratic degree",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 4,
+          "topic": "Old-to-new identity",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 5,
+          "topic": "New-to-old noncircular order",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 6,
+          "topic": "Recover every deleted row",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 7,
+          "topic": "Explicit inverse and all component-zero strata",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 8,
+          "topic": "Consumer and fixed-input projection",
+          "status": "PASS within stated scope"
+        },
+        {
+          "id": 9,
+          "topic": "Uniformity and review",
+          "status": "PASS within stated scope"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "EXCERPT-CONVENTION",
+      "status": "RESOLVED",
+      "detail": "Initial raw-line comparison included the terminal LF. The author convention splits only on LF, joins selected lines by LF, retains CR and omits terminal LF. All seven windows match; no source bytes differ.",
+      "descriptor_path": "work/version15-protocold-233-20261110/excerpt-convention-015/CONVENTION.json",
+      "descriptor_sha256": "9a81697ca38c0bad374dfcf0e6cb534f6e36dd3a0b8e9984b1ad96b1b5194002"
+    }
+  ],
+  "conclusions": [
+    "The three constant identities ac=b0^2 D, a^2-8c=d^2 and 8a=b0^2 hold exactly in Q(sqrt(2)). They prove the displayed H-curve recovery identity.",
+    "For 235, F=E=0 recovers H and f nonzero without dividing by A, S, g or a component. The reverse direction uses only the explicitly reused 149 exclusion to infer A nonzero.",
+    "For 233, the order is H recovery, reused scalar/149 exclusion, then v=T/A. This does not interpret v or w before the exclusion. The identities R1=Q+E and Fg-AG=fR1 recover every deleted relation.",
+    "Zero components of f,A,S,g,T,w are allowed. Field inversion uses nonzero field norms, not an individual component. The exceptional A=0 value has norm (41/56)^2 and is excluded only on the admitted parameter family.",
+    "The deleted v pair occurs only in four removed rows. All 205 retained rows agree exactly after compaction. Stored B=f^2 keeps the two new residuals quadratic. Fixed input and parameter declarations agree.",
+    "The corrected raw233 numbering is the input to the stated sparse stages. Reused exact sparse and displayed-equation receipts cover their full transformations and SOS. The current text retains 233 variables, 207 residuals, 2514 coordinate monomials, and fixes the first coordinate.",
+    "The family threshold remains ineffective. N>=53 establishes the coefficient height only, not a defining member."
+  ],
+  "limits": [
+    "Not a new independent acceptance of reviewer-authored 237 arithmetic.",
+    "Not a whole-foundation, whole-manuscript or Protocol D closure decision.",
+    "No arbitrary symbolic-A projection equivalence asserted; the domain exclusion uses the admitted A_N family.",
+    "Full SOS expansion and unchanged sparse maps are reused from pinned independent receipts, not recomputed in this bounded review."
+  ],
+  "checks": "CHECK-RESULT.json"
+}

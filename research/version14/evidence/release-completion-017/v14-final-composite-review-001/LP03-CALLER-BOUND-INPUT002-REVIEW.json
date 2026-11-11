@@ -1,0 +1,76 @@
+{
+  "schema": "bounded-binding-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:29:27.079Z",
+  "target": {
+    "path": "v14-lp03-caller-bound-input-002/MANIFEST.json",
+    "sha256": "89f96150beae216c18188732a5fa423ea834e1529f8e66a0b892f3eaeadfeea0"
+  },
+  "decision": "accepted exact new-proof binding to unchanged conditional LP03 application",
+  "checks": {
+    "use_unchanged": true,
+    "assertions_unchanged": true,
+    "consumers_unchanged": true,
+    "new_excerpt": true
+  },
+  "delta": [
+    {
+      "p": "/origin",
+      "a": "v14-gi-lp03-selection-input-001/COMPONENTS.json",
+      "b": "v14-lp03-caller-bound-input-002/COMPONENTS.json"
+    },
+    {
+      "p": "/connection/connecting_derivation/location/pin/path",
+      "a": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+      "b": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md"
+    },
+    {
+      "p": "/connection/connecting_derivation/location/pin/sha256",
+      "a": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b",
+      "b": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+    },
+    {
+      "p": "/connection/connecting_derivation/location/start_line",
+      "a": 166,
+      "b": 5
+    },
+    {
+      "p": "/connection/connecting_derivation/location/end_line",
+      "a": 189,
+      "b": 17
+    },
+    {
+      "p": "/connection/connecting_derivation/location/excerpt_sha256",
+      "a": "6ee8e3a55f55013a0c2a69fd170c2ae92a60caadc727e081d53a6cb9e81985bc",
+      "b": "a8be18204592442b8b644c33b45e9e84b2580947f5479e686eb9a8e9eaa63e2e"
+    },
+    {
+      "p": "/connection/adverse_cases/evidence/1",
+      "b": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 5,
+        "end_line": 17,
+        "excerpt_sha256": "a8be18204592442b8b644c33b45e9e84b2580947f5479e686eb9a8e9eaa63e2e"
+      }
+    },
+    {
+      "p": "/additional_file_pins",
+      "b": [
+        {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Mathematical bridge and fresh seven-observation reconciliation are separately accepted, with explicit prior familiarity and chronology.",
+    "Source adoption/delivery and source-to-source S13 input relationships remain explicit separate records; no original source hash is overwritten.",
+    "The actual constructor invariant and pointwise correlation remain required; no whole GI closure."
+  ]
+}

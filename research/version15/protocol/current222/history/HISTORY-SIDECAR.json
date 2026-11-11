@@ -1,0 +1,470 @@
+{
+  "schema": "v15-222-preserved-correction-history-author-input/v1",
+  "status": "Author-supplied normalization; independent readback and final serialization pending",
+  "scope": "Three preserved manuscript correction histories only. No new mathematical review, collector event, signature or inferred rejected-source identity.",
+  "inputs": [
+    {
+      "path": "work/v15-222-manuscript-author-001/quartic_v15.tex",
+      "sha256": "43c873d9bcf84ee231061bcb9b3b1ffa8a9b6c6b43957d203a49faa3f47138f2",
+      "bytes": 1924175
+    },
+    {
+      "path": "work/v15-222-manuscript-author-001/successor-002/quartic_v15.tex",
+      "sha256": "b379fef539ed1481754e770d683577754198d491d4b883323469be4ba16cefb5",
+      "bytes": 1924435
+    },
+    {
+      "path": "work/v15-222-manuscript-author-001/successor-004/quartic_v15.tex",
+      "sha256": "44ba3a8ec8521c29b81b26cfb9981cd6d5f3c76d54e7782438614842edb52c74",
+      "bytes": 1924438
+    },
+    {
+      "path": "work/v15-222-manuscript-author-001/successor-002/CHANGES.json",
+      "sha256": "2ba5a7d0407645d23bea9dc2abd9c06603998969e52dbbeb34e2f30db3dbc1d1",
+      "bytes": 1161
+    },
+    {
+      "path": "work/v15-222-manuscript-review-001/REVIEW.json",
+      "sha256": "d10aa4624306b17996ee53cdb630cfa1cacb72ac6e5f35e09eb1d7cd89f1fae9",
+      "bytes": 5638
+    },
+    {
+      "path": "work/v15-222-manuscript-review-001/FROZEN-DRAFT-FINDINGS.json",
+      "sha256": "20c4faee08f82719947b3b0f4bfe4d7886950e99e2795a627b0939a8494b6495",
+      "bytes": 1439
+    },
+    {
+      "path": "work/v15-222-manuscript-review-001/PRELIMINARY-EQUATION-CHECK.json",
+      "sha256": "b170c09d6fe7f4bd1a67b238a4001c5aa9a1329f25c748c1bfebf823dde72228",
+      "bytes": 2193
+    },
+    {
+      "path": "work/v15-222-sourcefirst-review-001/INITIAL-RECONSTRUCTION.json",
+      "sha256": "54a029c2412028099382c76992b951bc84dce6c51cf336798edb4a44e33e20e0",
+      "bytes": 75271
+    },
+    {
+      "path": "work/v15-222-ledger-author-001/public-author-summary-002/SUMMARY.json",
+      "sha256": "e62a6e7937d7fd73afe65a04b72edef06ebc522970c79d80a1d31965c81a1fe5",
+      "bytes": 15590
+    }
+  ],
+  "records": [
+    {
+      "id": "N-GREATER-THAN-ZERO",
+      "classification": "parameter-range clarification before draft delivery",
+      "original": {
+        "source_sha256": null,
+        "exact_full_source_available": false,
+        "reported_issue": "Positive odd valuation claim 2N+1 or 2N-1 lacked an explicit N>=1 qualifier.",
+        "evidence": "work/v15-222-manuscript-review-001/REVIEW.json"
+      },
+      "current": {
+        "source": {
+          "path": "work/v15-222-manuscript-author-001/successor-004/quartic_v15.tex",
+          "sha256": "44ba3a8ec8521c29b81b26cfb9981cd6d5f3c76d54e7782438614842edb52c74",
+          "bytes": 1924438
+        },
+        "excerpt": {
+          "start_line": 37116,
+          "end_line": 37117,
+          "text": "$v_{149}(1+149^2r_4)=2+8v_{149}(x)$. Thus for $N\\ge1$, $v_{149}(R)$ is respectively\n$2N+1$ or $2N-1$, positive and odd. The unchanged scalar argument of",
+          "utf8_sha256": "d4c4cf05cddc5fafdb39a5017204433b0a6102380f00dd6e95f390bae9880266"
+        }
+      },
+      "resolution": "Explicit N>=1 qualifier precedes the positive odd claim. Defining threshold remains ineffective and may be enlarged; no effective threshold is supplied.",
+      "author_binding": {
+        "specific_correction_operation": null,
+        "related_observed_source_authorship": {
+          "stage": "initial222-full-source-generation",
+          "run_id": "01a1c4f5-3f3a-75a0-aa5b-894c6f035a6f",
+          "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+          "reported_model": "gpt-6-astra",
+          "scope": "Actual initial source authoring; not a claim these bytes equal the later final manuscript.",
+          "independent_review": {
+            "path": "work/v15-222-current-author-review-integration-001/REVIEW.json",
+            "sha256": "06a70b214736f501ce0bc18901861d3effa472f34c2004e408663c22519cf900"
+          }
+        },
+        "limit": "Initial source authorship is not evidence of the exact qualifier-repair operation."
+      },
+      "limits": [
+        "No frozen pre-correction full manuscript hash is asserted.",
+        "No adverse arithmetic theorem or new arithmetic premise is inferred."
+      ]
+    },
+    {
+      "id": "PRINTED-EQUATION-TAGS",
+      "classification": "TeX equation-tag generation correction before draft delivery",
+      "original": {
+        "source_sha256": null,
+        "exact_full_source_available": false,
+        "reported_pattern_codepoints": [
+          9,
+          97,
+          103,
+          123
+        ],
+        "reported_pattern_description": "Literal TAB followed by ag{Q_i}, instead of backslash tag{Q_i}.",
+        "evidence": "work/v15-222-manuscript-review-001/REVIEW.json"
+      },
+      "current": {
+        "source": {
+          "path": "work/v15-222-manuscript-author-001/successor-004/quartic_v15.tex",
+          "sha256": "44ba3a8ec8521c29b81b26cfb9981cd6d5f3c76d54e7782438614842edb52c74",
+          "bytes": 1924438
+        },
+        "verified_ordered_tags": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196
+        ],
+        "proper_tag_example": "\\tag{Q1}",
+        "tab_ag_remnants": false
+      },
+      "resolution": "All 196 proper tags occur in order in current source. GLOBAL records correction before delivered43c873. Post-repair preliminary RHS check binds06c635 but expressly excludes tags; it is not the original defect snapshot.",
+      "author_binding": {
+        "specific_correction_operation": null,
+        "related_observed_source_authorship": {
+          "stage": "initial222-full-source-generation",
+          "run_id": "01a1c4f5-3f3a-75a0-aa5b-894c6f035a6f",
+          "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+          "reported_model": "gpt-6-astra",
+          "scope": "Actual initial source authoring; not a claim these bytes equal the later final manuscript.",
+          "independent_review": {
+            "path": "work/v15-222-current-author-review-integration-001/REVIEW.json",
+            "sha256": "06a70b214736f501ce0bc18901861d3effa472f34c2004e408663c22519cf900"
+          }
+        },
+        "limit": "No exact repair operation is fabricated from the later source pin."
+      },
+      "limits": [
+        "No frozen rejected full-source bytes are available in this sidecar.",
+        "RHS comparison and rendering review remain distinct scopes."
+      ]
+    },
+    {
+      "id": "V222-REF-01",
+      "aliases": [
+        "V222-PREDECESSOR-THEOREM-REFERENCES"
+      ],
+      "classification": "predecessor-to-current theorem reference and assembly correction",
+      "original_source": {
+        "path": "work/v15-222-manuscript-author-001/quartic_v15.tex",
+        "sha256": "43c873d9bcf84ee231061bcb9b3b1ffa8a9b6c6b43957d203a49faa3f47138f2",
+        "bytes": 1924175
+      },
+      "corrected_source": {
+        "path": "work/v15-222-manuscript-author-001/successor-002/quartic_v15.tex",
+        "sha256": "b379fef539ed1481754e770d683577754198d491d4b883323469be4ba16cefb5",
+        "bytes": 1924435
+      },
+      "current_source": {
+        "path": "work/v15-222-manuscript-author-001/successor-004/quartic_v15.tex",
+        "sha256": "44ba3a8ec8521c29b81b26cfb9981cd6d5f3c76d54e7782438614842edb52c74",
+        "bytes": 1924438
+      },
+      "passages": [
+        {
+          "original": {
+            "start_line": 33775,
+            "end_line": 33775,
+            "text": "The further reductions proving Theorem~\\ref{thm:v15-main} are given in Section~\\ref{v15x:reductions}.",
+            "utf8_sha256": "770559efe16edc1bc50c1173596857d4671d3999eaca67832b9f9656a95177d7"
+          },
+          "corrected": {
+            "start_line": 33775,
+            "end_line": 33775,
+            "text": "The further reductions pass through the 233-variable predecessor in Section~\\ref{v15x:reductions} and culminate in the 222-variable family in Sections~\\ref{v222:construction}--\\ref{v222:height}.",
+            "utf8_sha256": "633fc1d81b43cb9e6d8f00a0ef37b7b44a62e9170a37bc13f8ee437b32b3b0d4"
+          },
+          "current": {
+            "start_line": 33775,
+            "end_line": 33775,
+            "text": "The further reductions pass through the 233-variable predecessor in Section~\\ref{v15x:reductions} and culminate in the 222-variable family in Sections~\\ref{v222:construction}--\\ref{v222:height}.",
+            "utf8_sha256": "633fc1d81b43cb9e6d8f00a0ef37b7b44a62e9170a37bc13f8ee437b32b3b0d4"
+          }
+        },
+        {
+          "original": {
+            "start_line": 35022,
+            "end_line": 35023,
+            "text": "This section constructs the final family of\r\nTheorem~\\ref{thm:v15-main}.",
+            "utf8_sha256": "f562b6d2408d0ecc0a01da3ea9fdede4cf847691b8d51bc043aac51a8b8c901f"
+          },
+          "corrected": {
+            "start_line": 35022,
+            "end_line": 35023,
+            "text": "This section constructs the 233-variable predecessor used in\r\nSections~\\ref{v222:construction}--\\ref{v222:height}.",
+            "utf8_sha256": "fed3d0e7f8fc63f95ff3c29238cbe8aa3b45c1ed6c1c1aa785373b951f4fd939"
+          },
+          "current": {
+            "start_line": 35022,
+            "end_line": 35023,
+            "text": "This section constructs the 233-variable predecessor used in\r\nSections~\\ref{v222:construction}--\\ref{v222:height}.",
+            "utf8_sha256": "fed3d0e7f8fc63f95ff3c29238cbe8aa3b45c1ed6c1c1aa785373b951f4fd939"
+          }
+        },
+        {
+          "original": {
+            "start_line": 35797,
+            "end_line": 35798,
+            "text": "Consequently they prove the defining equivalence of\r\nTheorem~\\ref{thm:v15-main}. The coefficient calculation below proves",
+            "utf8_sha256": "03073e337afedec72815d3b082c274b7b920e70ab50a13e0a2e664a79e83739e"
+          },
+          "corrected": {
+            "start_line": 35797,
+            "end_line": 35799,
+            "text": "Consequently they prove the defining equivalence for this 233-variable\r\npredecessor. The additional reduction to Theorem~\\ref{thm:v15-main} is\r\ngiven in Sections~\\ref{v222:construction}--\\ref{v222:height}. The coefficient calculation below proves",
+            "utf8_sha256": "93ba42d6ad431bc0e509cb2d7346ce0f11b31d6f86ef89c3ccce77e74d77dd1b"
+          },
+          "current": {
+            "start_line": 35797,
+            "end_line": 35799,
+            "text": "Consequently they prove the defining equivalence for this 233-variable\r\npredecessor. The additional reduction to Theorem~\\ref{thm:v15-main} is\r\ngiven in Sections~\\ref{v222:construction}--\\ref{v222:height}. The coefficient calculation below proves",
+            "utf8_sha256": "93ba42d6ad431bc0e509cb2d7346ce0f11b31d6f86ef89c3ccce77e74d77dd1b"
+          }
+        }
+      ],
+      "observations": [
+        {
+          "source": "work/v15-222-manuscript-review-001/FROZEN-DRAFT-FINDINGS.json",
+          "lines": [
+            33775,
+            35023,
+            35798
+          ]
+        },
+        {
+          "source": "work/v15-222-sourcefirst-review-001/INITIAL-RECONSTRUCTION.json",
+          "lines": [
+            33775,
+            35022,
+            35797
+          ]
+        }
+      ],
+      "line_note": "The two reports select different lines within the same three passages; exact extracted ranges above are authoritative.",
+      "resolution": "233-variable passages now state predecessor scope and point onward to the new222 construction and height sections.",
+      "author_binding": {
+        "stage": "final-successor002-source-write",
+        "run_id": "01a1c4f5-3f3a-75a0-aa5b-894c6f035a6f",
+        "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+        "reported_model": "gpt-6-astra",
+        "scope": "Exact three reference repairs applied to predecessor and b379 source written; completion pins final source.",
+        "independent_review": {
+          "path": "work/v15-222-current-author-review-integration-001/REVIEW.json",
+          "sha256": "06a70b214736f501ce0bc18901861d3effa472f34c2004e408663c22519cf900"
+        }
+      },
+      "limits": [
+        "This was a reference/assembly defect, not a demonstrated arithmetic counterexample.",
+        "Abstract004 changes no body text in these passages."
+      ]
+    }
+  ],
+  "author_binding_source": {
+    "path": "work/v15-222-ledger-author-001/public-author-summary-002/SUMMARY.json",
+    "sha256": "e62a6e7937d7fd73afe65a04b72edef06ebc522970c79d80a1d31965c81a1fe5",
+    "bytes": 15590
+  },
+  "privacy": "Relative workspace evidence references and public-safe observed operation summary only. No raw host transcript or call payload is copied.",
+  "predecessor": {
+    "path": "work/v15-222-history-sidecar-author-001/HISTORY-SIDECAR.json",
+    "sha256": "3c934bf547719e3e811420defaa27162714714b4d821ca346e25e4b11dc697eb"
+  },
+  "excerpt_convention": "Each excerpt text is an exact selected quotation, which may be a substring of its enclosing source line range. start_line/end_line locate the quotation, not a claim that text contains every byte of those lines. utf8_sha256 hashes only the selected text encoded as UTF-8, preserving internal CR/LF and omitting anything outside the quotation; it is not a raw full-range excerpt hash."
+}

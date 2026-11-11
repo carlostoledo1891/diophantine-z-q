@@ -1,0 +1,21 @@
+{
+  "schema": "bounded-source-review/v1",
+  "reviewed_at": "2026-11-09T08:15:28.943Z",
+  "target": {
+    "path": "v14-opening-claim-caller-repair-002/MANIFEST.json",
+    "sha256": "9590127284de3bac9f77ed80a7d65f20adeb7892fcf9e138cd75b3f603f7e054"
+  },
+  "decision": "accepted bounded caller-location repair",
+  "checks": {
+    "all": true,
+    "count": 22,
+    "uses_unchanged": true,
+    "passage_alignment": true
+  },
+  "reasoning": [
+    "Read actual main122–156: current quartics122–124 and explicit lower-bound/optimality inference154–156 provide the two actual theorem-output invocations. These are references to separately proved results, not replacement proofs of them.",
+    "Read main183–187: assembly invokes the size proof for the same expression P*, retaining literal substitution and all other assembly premises.",
+    "002 aligns all three passage_bindings with corrected consumer locations; all assertions, suppliers and use hashes are unchanged. Old abstract evidence remains historical context, not the consumer."
+  ],
+  "limits": "No new proof, source theorem reapproval, or final coverage closure."
+}

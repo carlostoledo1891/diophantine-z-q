@@ -1,0 +1,175 @@
+[
+  {
+    "key": "SIGN",
+    "needed": "The actual normalized finite b-family has a continuous sign cocycle epsilon, with nu_sigma sigma(nu_tau)=epsilon nu_sigma_tau.",
+    "source_keys": [
+      "scalar",
+      "sign"
+    ],
+    "current": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8176,
+        "end_line": 8212,
+        "excerpt_sha256": "1875b7e59ef9ee6a5b4ba97b43fb131242cf708b87d3646297f7e7d90f6f8734"
+      }
+    ],
+    "derivation": "The actual finite B-linear isogenies give c in Q*. Apply D(cu)=c^4D(u) and positive fourth roots to obtain a_sigma a_tau/a_sigma_tau=1/|c|, hence epsilon=c/|c|. Finite inflation of mu makes all scalars and epsilon factor through the original finite Galois quotient. Coefficients have trivial Galois action. This step does not split epsilon.",
+    "dependencies": [
+      "H5-B-SCALAR-DISCREPANCIES"
+    ],
+    "exceptions": "A sign-valued cocycle is not thereby a coboundary on the same finite quotient; C2 supplies the separate cochain.",
+    "id": "H5-CURRENT-SIGN-COCYCLE"
+  },
+  {
+    "key": "TATE",
+    "needed": "For every ell the actual normalized b-family rho_ell is a B-commuting G_Q representation, equals V_ell(A) on G_L-prime, and has the original two-copy matrix-unit decomposition.",
+    "source_keys": [
+      "scalar",
+      "sign",
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "current": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8111,
+        "end_line": 8122,
+        "excerpt_sha256": "b15c8727177811230535f87db2f0e2ca30b7854e21c685f9684334de7fd9eda1"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8176,
+        "end_line": 8212,
+        "excerpt_sha256": "1875b7e59ef9ee6a5b4ba97b43fb131242cf708b87d3646297f7e7d90f6f8734"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8213,
+        "end_line": 8248,
+        "excerpt_sha256": "572c8f26bfbd4bce4ad601b45113cc3837d1a0df372293ded1eb384e12c1264a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8251,
+        "end_line": 8260,
+        "excerpt_sha256": "6838f608f78b4e9cac6832a3f39d948c5247333e05e917544c5c172d3cb056a3"
+      }
+    ],
+    "derivation": "C2 constructs b with b squared=chi and delta b=epsilon. C3 preserves both identities under the outside-T quadratic adjustment and defines the same L-prime as the kernel on G_L. Thus (b_sigma inverse nu_sigma sigma)(b_tau inverse nu_tau tau) equals b_sigma_tau inverse nu_sigma_tau sigma_tau, because epsilon/(b_sigma b_tau)=1/b_sigma_tau. B-linearity gives commutation. On G_L-prime the inflated mu is1, a=1 and b=1, giving the actual Tate restriction. Original matrix units then give rho_ell=r_ell direct-sum r_ell. This proof uses no compatibility or irreducibility conclusion.",
+    "dependencies": [
+      "H5-CURRENT-SIGN-COCYCLE",
+      "H5-B-SCALAR-DISCREPANCIES",
+      "CURRENT-A007-SQUARE-BOUNDARY",
+      "CURRENT-A007-GLOBAL-SPLITTING",
+      "CURRENT-A007-RAMIFICATION"
+    ],
+    "exceptions": "Only b is root-of-unity valued; positive a_sigma need not be. No claim that b is a character on all G_Q.",
+    "id": "H5-CURRENT-TATE-REALIZATION"
+  },
+  {
+    "key": "IRR",
+    "needed": "Every original multiplicity representation r_ell of this same b-family is absolutely irreducible.",
+    "source_keys": [
+      "BIRR"
+    ],
+    "current": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8111,
+        "end_line": 8122,
+        "excerpt_sha256": "b15c8727177811230535f87db2f0e2ca30b7854e21c685f9684334de7fd9eda1"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8251,
+        "end_line": 8260,
+        "excerpt_sha256": "6838f608f78b4e9cac6832a3f39d948c5247333e05e917544c5c172d3cb056a3"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8261,
+        "end_line": 8269,
+        "excerpt_sha256": "1066a80800166f5e4402ef2e068a449644e29c854e52b015c778db0cc08e4a89"
+      }
+    ],
+    "derivation": "The normalized restriction just established is the Tate action of the same A. The B005 application separately binds full geometric End=B and definition over L-prime. Its accepted Faltings/matrix-unit proof applies to every ell and every finite coefficient extension, so the conclusion concerns these original factors. No r3-only receipt is promoted to an all-prime theorem.",
+    "dependencies": [
+      "H5-CURRENT-TATE-REALIZATION",
+      "COV-B-ALL-PRIME-IRREDUCIBILITY"
+    ],
+    "exceptions": "Non-CM full-End hypothesis remains essential; all coefficient primes including2 are characteristic-zero coefficient fields.",
+    "id": "H5-CURRENT-ABSOLUTE-IRREDUCIBILITY"
+  },
+  {
+    "key": "COMP",
+    "needed": "The same original r_ell and same primitive form f satisfy actual local comparison at every p with ell different from p, and a_p(r_ell)=v_p(N).",
+    "source_keys": [
+      "BCOMP",
+      "Carayol"
+    ],
+    "current": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8277,
+        "end_line": 8351,
+        "excerpt_sha256": "6ec19a3460f63ed41789c5aa38eeec6c53c7b46ecc0ea653e8d6a540ac78e471"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 8380,
+        "end_line": 8395,
+        "excerpt_sha256": "e7d34cc8016af695c493a6426d2ed817c61e8509242f1e13cd73fc544c8feafa"
+      }
+    ],
+    "derivation": "The accepted long COV proof keeps the original fields and cochain, denominator Tr(e_p)/m, common coefficient embedding, and actual length-one conclusion. Restrict its global isomorphism to the same decomposition group. The separate current Carayol application identifies the corresponding modular conductor with v_p(N); compose these equalities. The numerical conductor bounds are downstream and are not proved by this join.",
+    "dependencies": [
+      "H5-CURRENT-ABSOLUTE-IRREDUCIBILITY",
+      "COV-B-ALL-PRIME-COMPATIBILITY",
+      "CURRENT-B-DIRECT-CARAYOL-CONDUCTOR"
+    ],
+    "exceptions": "Choose ell different from p, including at2,3,5. No semisimplification on inertia; no Casselman intermediate is reintroduced into the current direct-Carayol route.",
+    "id": "H5-CURRENT-COMPARISON-CONDUCTOR"
+  }
+]

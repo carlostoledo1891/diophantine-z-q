@@ -1,0 +1,533 @@
+{
+  "components": [
+    {
+      "origin": "v14-rc-witness-kummer-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-WITNESS-MORDELL-WEIL",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-WITNESS-MORDELL-WEIL-P1"
+        ],
+        "assertion": {
+          "statement": "The actual group E^(D_w)(Q) is finitely generated, so its rational completion detects the separately established nontorsion point Q.",
+          "objects": "The fixed quadratic twist E^(D_w)/Q and its rational nontorsion point Q.",
+          "hypotheses": "The preceding actual witness construction gives Q rational and nontorsion. The finite Kummer injections are a separate input.",
+          "quantifiers": "Every such E.",
+          "parameter_range": "All ranks and rational torsion groups.",
+          "uniformity": "Qualitative finite generation.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "The full abelian group, including torsion.",
+          "exceptional_cases": "Does not prove Q nontorsion or choose the witness. Rational Kummer detection also uses the separate finite injections.",
+          "limit_order": "Use finite generation and finite Kummer injections before the local scalar-cocycle contradiction."
+        },
+        "classification": "dependency",
+        "reason": "Supplies finite generation for the actual rational Kummer detection.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/rc-rational-mordell-weil.md",
+              "sha256": "dbccf264cb85c8d56bb5f7db53866b5b40e96db0e9db2c548ff982364cb315c8"
+            },
+            "start_line": 5,
+            "end_line": 7,
+            "excerpt_sha256": "e1a90899fe8fd0c4498d6f0d1b87842df7516007dbd2a3ede37adb2df66444da"
+          },
+          "statement": "For every elliptic curve E/Q, E(Q) is finitely generated.",
+          "publication": {
+            "title": "The Arithmetic of Elliptic Curves",
+            "authors": "J. H. Silverman",
+            "venue": "Second edition,2009",
+            "authoritative_version": "Retained PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+            "locator": "VIII Theorem4.1,p220"
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3344,
+          "end_line": 3352,
+          "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-WITNESS-MORDELL-WEIL",
+        "use_sha256": "d26373df1b474acaf0d1e029b796c9e79a3dad0e8c01ccc78464261697de18ff",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For every elliptic curve E/Q, E(Q) is finitely generated.",
+          "objects": "An elliptic curve over Q and its full rational point group.",
+          "hypotheses": "E is an elliptic curve defined over Q.",
+          "quantifiers": "Every such E.",
+          "parameter_range": "All ranks and rational torsion groups.",
+          "uniformity": "Qualitative finite generation.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "The full abelian group, including torsion.",
+          "exceptional_cases": "Does not give analytic rank or finite Sha.",
+          "limit_order": "Fix E/Q before applying finite generation."
+        },
+        "needed_assertion": {
+          "statement": "The actual group E^(D_w)(Q) is finitely generated, so its rational completion detects the separately established nontorsion point Q.",
+          "objects": "The fixed quadratic twist E^(D_w)/Q and its rational nontorsion point Q.",
+          "hypotheses": "The preceding actual witness construction gives Q rational and nontorsion. The finite Kummer injections are a separate input.",
+          "quantifiers": "Every such E.",
+          "parameter_range": "All ranks and rational torsion groups.",
+          "uniformity": "Qualitative finite generation.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "The full abelian group, including torsion.",
+          "exceptional_cases": "Does not prove Q nontorsion or choose the witness. Rational Kummer detection also uses the separate finite injections.",
+          "limit_order": "Use finite generation and finite Kummer injections before the local scalar-cocycle contradiction."
+        },
+        "required_capabilities": [
+          "The actual group E^(D_w)(Q) is finitely generated, so its rational completion detects the separately established nontorsion point Q."
+        ],
+        "available_capabilities": [
+          "For every elliptic curve E/Q, E(Q) is finitely generated."
+        ],
+        "derived_capabilities": [
+          "The actual group E^(D_w)(Q) is finitely generated, so its rational completion detects the separately established nontorsion point Q."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3352,
+            "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual group E^(D_w)(Q) is finitely generated, so its rational completion detects the separately established nontorsion point Q.",
+            "objects": "The fixed quadratic twist E^(D_w)/Q and its rational nontorsion point Q.",
+            "hypotheses": "The preceding actual witness construction gives Q rational and nontorsion. The finite Kummer injections are a separate input.",
+            "quantifiers": "Every such E.",
+            "parameter_range": "All ranks and rational torsion groups.",
+            "uniformity": "Qualitative finite generation.",
+            "constants": "No effective bound or generators.",
+            "normalizations": "The full abelian group, including torsion.",
+            "exceptional_cases": "Does not prove Q nontorsion or choose the witness. Rational Kummer detection also uses the separate finite injections.",
+            "limit_order": "Use finite generation and finite Kummer injections before the local scalar-cocycle contradiction."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Does not prove Q nontorsion or choose the witness. Rational Kummer detection also uses the separate finite injections.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3344,
+              "end_line": 3352,
+              "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3352,
+            "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3344,
+          "end_line": 3352,
+          "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-WITNESS-MORDELL-WEIL-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3352,
+            "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-rc-witness-kummer-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-WITNESS-FINITE-KUMMER",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-WITNESS-FINITE-KUMMER-P1"
+        ],
+        "assertion": {
+          "statement": "The finite Kummer injections for the actual E^(D_w)/Q, together with finite generation, imply the rational Tate Kummer class of Q is nonzero.",
+          "objects": "The fixed quadratic twist E^(D_w)/Q and its rational nontorsion point Q.",
+          "hypotheses": "The preceding actual witness construction gives Q rational and nontorsion. The finite Kummer injections are a separate input.",
+          "quantifiers": "Every such field,curve and a.",
+          "parameter_range": "Characteristic zero; finite powers of2.",
+          "uniformity": "Natural finite-stage construction.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "delta(P)(g)=gQ-Q with nQ=P.",
+          "exceptional_cases": "No claim of finite Sha or nonzero rational Kummer image without further finite-generation/nontorsion premises.",
+          "limit_order": "Apply every finite injection, pass to the compatible Tate cocycle, then use finite generation and nontorsion to exclude a zero rational class."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the actual finite Kummer injections before the scalar-cocycle argument.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 13,
+            "end_line": 21,
+            "excerpt_sha256": "d95c35acd5d08c2dc817941c15ee0413ecaedb65bdbfb4d49e658e5060c07f4a"
+          },
+          "statement": "For a characteristic-zero field F and n=2^a, the division-point cocycle gives an injection E(F)/nE(F) into H1(F,E[n]), natural in field extensions and elliptic homomorphisms.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3344,
+          "end_line": 3352,
+          "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-WITNESS-FINITE-KUMMER",
+        "use_sha256": "4cf59cfa74d1a3859afc9a8339a1d4a3571b36ff292774cdc42fb6e9287a7349",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For a characteristic-zero field F and n=2^a, the division-point cocycle gives an injection E(F)/nE(F) into H1(F,E[n]), natural in field extensions and elliptic homomorphisms.",
+          "objects": "Characteristic-zero field F, elliptic E/F, finite multiplication-by-2^a sequence.",
+          "hypotheses": "a>=1 and E/F an elliptic curve.",
+          "quantifiers": "Every such field,curve and a.",
+          "parameter_range": "Characteristic zero; finite powers of2.",
+          "uniformity": "Natural finite-stage construction.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "delta(P)(g)=gQ-Q with nQ=P.",
+          "exceptional_cases": "No claim of finite Sha or nonzero rational Kummer image without further finite-generation/nontorsion premises.",
+          "limit_order": "Choose finite division point, form cocycle and identify its kernel."
+        },
+        "needed_assertion": {
+          "statement": "The finite Kummer injections for the actual E^(D_w)/Q, together with finite generation, imply the rational Tate Kummer class of Q is nonzero.",
+          "objects": "The fixed quadratic twist E^(D_w)/Q and its rational nontorsion point Q.",
+          "hypotheses": "The preceding actual witness construction gives Q rational and nontorsion. The finite Kummer injections are a separate input.",
+          "quantifiers": "Every such field,curve and a.",
+          "parameter_range": "Characteristic zero; finite powers of2.",
+          "uniformity": "Natural finite-stage construction.",
+          "constants": "No effective bound or generators.",
+          "normalizations": "delta(P)(g)=gQ-Q with nQ=P.",
+          "exceptional_cases": "No claim of finite Sha or nonzero rational Kummer image without further finite-generation/nontorsion premises.",
+          "limit_order": "Apply every finite injection, pass to the compatible Tate cocycle, then use finite generation and nontorsion to exclude a zero rational class."
+        },
+        "required_capabilities": [
+          "The finite Kummer injections for the actual E^(D_w)/Q, together with finite generation, imply the rational Tate Kummer class of Q is nonzero."
+        ],
+        "available_capabilities": [
+          "For a characteristic-zero field F and n=2^a, the division-point cocycle gives an injection E(F)/nE(F) into H1(F,E[n]), natural in field extensions and elliptic homomorphisms."
+        ],
+        "derived_capabilities": [
+          "The finite Kummer injections for the actual E^(D_w)/Q, together with finite generation, imply the rational Tate Kummer class of Q is nonzero."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3352,
+            "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The finite Kummer injections for the actual E^(D_w)/Q, together with finite generation, imply the rational Tate Kummer class of Q is nonzero.",
+            "objects": "The fixed quadratic twist E^(D_w)/Q and its rational nontorsion point Q.",
+            "hypotheses": "The preceding actual witness construction gives Q rational and nontorsion. The finite Kummer injections are a separate input.",
+            "quantifiers": "Every such field,curve and a.",
+            "parameter_range": "Characteristic zero; finite powers of2.",
+            "uniformity": "Natural finite-stage construction.",
+            "constants": "No effective bound or generators.",
+            "normalizations": "delta(P)(g)=gQ-Q with nQ=P.",
+            "exceptional_cases": "No claim of finite Sha or nonzero rational Kummer image without further finite-generation/nontorsion premises.",
+            "limit_order": "Apply every finite injection, pass to the compatible Tate cocycle, then use finite generation and nontorsion to exclude a zero rational class."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No claim of finite Sha or nonzero rational Kummer image without further finite-generation/nontorsion premises.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3344,
+              "end_line": 3352,
+              "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3352,
+            "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3344,
+          "end_line": 3352,
+          "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-WITNESS-FINITE-KUMMER-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3352,
+            "excerpt_sha256": "5e8477606c320156bbddbb5687528304bb78d05bfaaa8859a3bbec44a752beae"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-rc-witness-kummer-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-WITNESS-OPEN-IMAGE",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-WITNESS-OPEN-IMAGE-P1"
+        ],
+        "assertion": {
+          "statement": "The actual quadratic twist has open two-adic image; consequently its rational Tate representation is irreducible and its image contains a nonidentity central scalar.",
+          "objects": "The actual non-CM quadratic twist E^(D_w)/Q and its two-adic Tate module.",
+          "hypotheses": "The fixed original elliptic curve is non-CM, and quadratic twisting preserves that property.",
+          "quantifiers": "Every such elliptic curve over a number field.",
+          "parameter_range": "The characteristic-zero2-adic representation, despite full rational2-torsion.",
+          "uniformity": "Qualitative openness for each curve; no uniform index bound is asserted.",
+          "constants": "No numerical index or congruence depth bound is asserted.",
+          "normalizations": "Irreducibility is over Q2, not mod2; a principal congruence subgroup supplies the scalar.",
+          "exceptional_cases": "Does not by itself prove the Kummer translation subgroup is nonzero; that uses the separate rational Kummer class and scalar-cocycle identity.",
+          "limit_order": "Apply openness to the actual twist, then use the contained congruence subgroup for rational irreducibility and a scalar."
+        },
+        "classification": "dependency",
+        "reason": "Supplies openness for the local irreducibility/scalar argument, not its Kummer conclusion.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3765,
+            "end_line": 3768,
+            "excerpt_sha256": "85af27d1d0234a601e2491b7a0857e2d04976260ca0fc3825a3ad8e0e23eee34"
+          },
+          "statement": "For a non-CM elliptic curve over a number field, its2-adic Galois image is open in GL2(Z2).",
+          "publication": {
+            "title": "Propriétés galoisiennes des points d’ordre fini des courbes elliptiques",
+            "authors": "J.-P. Serre",
+            "venue": "Inventiones Mathematicae15(1972),259–331",
+            "authoritative_version": "Published1972 article; retainedPDF SHA93970ed93730194af8bed0f1f59d29cbed061d20f34f4bcffc079ad8aedf01d5",
+            "locator": "Opening theorem and reformulation, pp259–260",
+            "corrections": "Exact retained A033 independent source review reused; no residual-surjectivity assertion or new whole-source audit."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3344,
+          "end_line": 3355,
+          "excerpt_sha256": "f30e81d456a20340164a7a2f150bd71130cad389f907e5d360451ebab13d0dc2"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-WITNESS-OPEN-IMAGE",
+        "use_sha256": "af4c5e6aedb887d12af941f27128cdb6652b7424c585b0d10cc8dd9c03e76a35",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For a non-CM elliptic curve over a number field, its2-adic Galois image is open in GL2(Z2).",
+          "objects": "The2-adic Tate module of a non-CM elliptic curve over a number field.",
+          "hypotheses": "The elliptic curve has no geometric complex multiplication.",
+          "quantifiers": "Every such elliptic curve over a number field.",
+          "parameter_range": "The characteristic-zero2-adic representation, despite full rational2-torsion.",
+          "uniformity": "Qualitative openness for each curve; no uniform index bound is asserted.",
+          "constants": "No numerical index or congruence depth bound is asserted.",
+          "normalizations": "A congruence subgroup in GL2(Z2), not residual mod2 surjectivity.",
+          "exceptional_cases": "Does not itself prove the ring-class annihilator, radical-fixing commutator subgroup, or Kummer translation lattice; those are separate deductions.",
+          "limit_order": "Fix the curve and field, then form its2-adic Galois representation."
+        },
+        "needed_assertion": {
+          "statement": "The actual quadratic twist has open two-adic image; consequently its rational Tate representation is irreducible and its image contains a nonidentity central scalar.",
+          "objects": "The actual non-CM quadratic twist E^(D_w)/Q and its two-adic Tate module.",
+          "hypotheses": "The fixed original elliptic curve is non-CM, and quadratic twisting preserves that property.",
+          "quantifiers": "Every such elliptic curve over a number field.",
+          "parameter_range": "The characteristic-zero2-adic representation, despite full rational2-torsion.",
+          "uniformity": "Qualitative openness for each curve; no uniform index bound is asserted.",
+          "constants": "No numerical index or congruence depth bound is asserted.",
+          "normalizations": "Irreducibility is over Q2, not mod2; a principal congruence subgroup supplies the scalar.",
+          "exceptional_cases": "Does not by itself prove the Kummer translation subgroup is nonzero; that uses the separate rational Kummer class and scalar-cocycle identity.",
+          "limit_order": "Apply openness to the actual twist, then use the contained congruence subgroup for rational irreducibility and a scalar."
+        },
+        "required_capabilities": [
+          "The actual quadratic twist has open two-adic image; consequently its rational Tate representation is irreducible and its image contains a nonidentity central scalar."
+        ],
+        "available_capabilities": [
+          "For a non-CM elliptic curve over a number field, its2-adic Galois image is open in GL2(Z2)."
+        ],
+        "derived_capabilities": [
+          "The actual quadratic twist has open two-adic image; consequently its rational Tate representation is irreducible and its image contains a nonidentity central scalar."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3355,
+            "excerpt_sha256": "f30e81d456a20340164a7a2f150bd71130cad389f907e5d360451ebab13d0dc2"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual quadratic twist has open two-adic image; consequently its rational Tate representation is irreducible and its image contains a nonidentity central scalar.",
+            "objects": "The actual non-CM quadratic twist E^(D_w)/Q and its two-adic Tate module.",
+            "hypotheses": "The fixed original elliptic curve is non-CM, and quadratic twisting preserves that property.",
+            "quantifiers": "Every such elliptic curve over a number field.",
+            "parameter_range": "The characteristic-zero2-adic representation, despite full rational2-torsion.",
+            "uniformity": "Qualitative openness for each curve; no uniform index bound is asserted.",
+            "constants": "No numerical index or congruence depth bound is asserted.",
+            "normalizations": "Irreducibility is over Q2, not mod2; a principal congruence subgroup supplies the scalar.",
+            "exceptional_cases": "Does not by itself prove the Kummer translation subgroup is nonzero; that uses the separate rational Kummer class and scalar-cocycle identity.",
+            "limit_order": "Apply openness to the actual twist, then use the contained congruence subgroup for rational irreducibility and a scalar."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Does not by itself prove the Kummer translation subgroup is nonzero; that uses the separate rational Kummer class and scalar-cocycle identity.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3344,
+              "end_line": 3355,
+              "excerpt_sha256": "f30e81d456a20340164a7a2f150bd71130cad389f907e5d360451ebab13d0dc2"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3355,
+            "excerpt_sha256": "f30e81d456a20340164a7a2f150bd71130cad389f907e5d360451ebab13d0dc2"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3344,
+          "end_line": 3355,
+          "excerpt_sha256": "f30e81d456a20340164a7a2f150bd71130cad389f907e5d360451ebab13d0dc2"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-WITNESS-OPEN-IMAGE-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3344,
+            "end_line": 3355,
+            "excerpt_sha256": "f30e81d456a20340164a7a2f150bd71130cad389f907e5d360451ebab13d0dc2"
+          }
+        }
+      ]
+    }
+  ]
+}

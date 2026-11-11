@@ -1,0 +1,9 @@
+# GTZ symbol law: bounded source statement
+
+This is a project paraphrase, not a copy of the publication. Source: Ben Green, Terence Tao and Tamar Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm, Annals of Mathematics 176 (2012), 1231–1372. Final PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1. Locators: Lemma E.7 and Lemma E.8(i)–(iii), p.1354; proof continuation p.1355. Definitions and tensor conventions are those of Section6 and AppendixE. The existing LP05-U01 source contract retains the exact source pin and page hashes. This card imports none of E.8(iv)–(vii).
+
+For the stated filtered abelian domain and limit subset, nilcharacter equivalence is an equivalence relation. A bounded componentwise linear representation of one nilcharacter by another tensored with a lower-degree nilsequence implies equivalence; conversely, equivalence supplies such a representation. Tensor product induces an abelian group of symbols.
+
+The proof uses unit-vector contraction, tensor products and conjugation. Reflexivity descends the top-invariant tensor test through the central top subgroup; transitivity contracts the middle unit-vector pair. The current application first uses the separately proved bounded tautification, so its actual top group is central and its represented tests have the required global vertical identities. This does not infer stronger quantifiers from the literal published definition. For a unit vector v, sum_j |v_j|^2=1 gives the contraction without dividing by any component.
+
+The current consumer is local LP05, whose group-law conventions occur at lines38–43 and are used throughout the subsequent finite tensor constructions. Rational generated-subgroup and central-quotient geometry is separately supplied by local LP13; it is not the source of the published group-law statement. The local shift, dilation, division and symmetrization proofs retain their own source obligations.

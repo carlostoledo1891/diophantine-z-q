@@ -1,0 +1,29 @@
+{
+  "reviewer": "/root/v14_h6_coverage",
+  "time_utc": "2026-11-09T07:40:55.311Z",
+  "decision": "accept_exact_schema_successor",
+  "target_manifest": {
+    "path": "v14-isogeny-components-root-002/MANIFEST.json",
+    "sha256": "348624e939b2755f57a63fb44a1634fd1fca4facf810ce24ee0db1a308a8eb0f"
+  },
+  "components_sha256": "ac344e5b7cdab6c09fffd7d7cad72d02fb93fc612fe103a3ac97fa2893c13f5c",
+  "diff": [
+    {
+      "path": "/0/connection/connecting_derivation/kind",
+      "old": "identification",
+      "new": "derivation"
+    },
+    {
+      "path": "/1/connection/connecting_derivation/kind",
+      "old": "identification",
+      "new": "derivation"
+    }
+  ],
+  "member_errors": [],
+  "reason": "Both connections specialize a generic published input through a local argument. Their available and needed assertions differ, so derivation is the correct kind. Exact recursive comparison found only these two kind changes; all mathematical profiles, source bindings and use hashes remain identical.",
+  "prior_review": {
+    "path": "v14-isogeny-components-review-h6-001/REVIEW.json",
+    "sha256": "265951aef26d5d5c304671e252e0003e2b70babb1338b829b2a1321317dfef13"
+  },
+  "limits": "Preserves the prior bounded mathematical decision only; no whole RC, source coverage or release approval."
+}

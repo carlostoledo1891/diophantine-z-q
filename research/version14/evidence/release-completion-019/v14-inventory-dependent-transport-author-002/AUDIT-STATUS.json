@@ -1,0 +1,13 @@
+{
+  "command": "python -X utf8 -B scripts/check_application_reviews.py --self-test",
+  "working_directory": "work/quartic-v14-release/preview-repository",
+  "exit_code": 1,
+  "failure": "ValueError: Changed bound file: docs/manuscript-revisions/version14/APPLICATIONS.json",
+  "scope": "Observed after inventory installation, before contract/approval renewal. Expected live blocker, not a pass.",
+  "required_next": [
+    "Independent review of one-leaf contract transport",
+    "Reviewer-authored renewed approval for contract d88c42ee08db63646a8476f4a959f742510270c3c4063f34c1e57c52ee6a1eaf",
+    "Root registry contract and approval pin transport",
+    "New audit-history run and subsequent source/classification registry pin transport"
+  ]
+}

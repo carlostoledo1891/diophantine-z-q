@@ -1,0 +1,47 @@
+{
+  "roles": [
+    {
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3357,
+        "end_line": 3373,
+        "excerpt_sha256": "a1deca271f3e953ab844b25fa003af3cb30bfb33b130737766f4413343074ebd"
+      },
+      "role": "local_cocycle_evaluation_after_source_inputs",
+      "inputs": [
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3357,
+            "end_line": 3362,
+            "excerpt_sha256": "13c8cd48b8b10a5873611ee58c63b9ec1f70862bef25eafb09efbb49390206df"
+          },
+          "role": "actual square translation and compatible Galois element"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3363,
+            "end_line": 3368,
+            "excerpt_sha256": "474cdf620cddd25d88ef0097eb55257c08ca276dddf5151829a9955151a88a35"
+          },
+          "role": "actual finite Chebotarev choice"
+        }
+      ],
+      "derivation": "At finite precision the chosen Frobenius acts as C on torsion, so its square acts as identity. Its squared affine action has translation (1+C)v. Reduction of a chosen division point commutes with this action, hence the finite-field Kummer cocycle evaluated on the residue Frobenius is this same translation. Applying b with bC=b gives2b(v), retaining its fixed valuation once M exceeds that valuation.",
+      "boundary": "This is a fixed-point, fixed-place statement. Division-point existence, the finite torsion cocycle computation and actual good reduction are retained inputs, not consequences of Chebotarev alone."
+    }
+  ]
+}

@@ -1,0 +1,1321 @@
+{
+  "schema": "portable-application-inventory-v1",
+  "status": "Author application inventory; independent acceptance is recorded separately.",
+  "text": {
+    "path": "docs/manuscript-revisions/version12/addition.tex",
+    "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+    "lineCount": 971
+  },
+  "baselineManuscript": {
+    "path": "manuscripts/quartic_v11.tex",
+    "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662"
+  },
+  "candidate": {
+    "path": "quartics/quartic-498-514/candidate498-ir.json",
+    "sha256": "7682a1229149c75e27322e86dec424449b55321b06c48e468f90fa78bcebb61a"
+  },
+  "polynomial": {
+    "path": "quartics/quartic-498-514/polynomial498.json",
+    "sha256": "817fec936dee3b358fc8b5b0b9a5570694adf009b134432467ef0be914aeedc4"
+  },
+  "ordinaryPolynomial": {
+    "path": "quartics/quartic-498-514/polynomial514.json",
+    "sha256": "d247a27709afda5f2be626390cffa1a175c3dfcbee1a5c832a1c457b32629bd5"
+  },
+  "existingSourceCatalog": {
+    "path": "docs/theorem-application-audit/sources.json",
+    "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+    "reuse": "Exact source records copied above; existing corrected-online and errata qualifications retained."
+  },
+  "existingDependencyClosure": [
+    {
+      "path": "docs/quartic-523-540/inventory.json",
+      "sha256": "33986b1c0ce61e2ca2f4f2cac3e7352dd195e4d92c0b8868f8d968764a252321"
+    },
+    {
+      "path": "docs/quartic-523-540/new-applications.json",
+      "sha256": "35e0512c5cb0e6a352e0d60c3a12252740f043aa27f5715c6c4903d5c1060f52"
+    },
+    {
+      "path": "docs/quartic-523-540/README.md",
+      "sha256": "242707d35bc09027e21e355566b6eae8d2942f1ce3910e48379b52e535918be0"
+    }
+  ],
+  "externalSources": {
+    "silverman": {
+      "id": "silverman",
+      "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+      "urls": [],
+      "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+      "source_status": "bytes_pinned",
+      "sourceCatalog": {
+        "path": "docs/theorem-application-audit/sources.json",
+        "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+        "recordId": "silverman",
+        "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+      },
+      "files": [
+        {
+          "sourceFilename": "silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "bytes": 3658085
+        }
+      ],
+      "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+    },
+    "voight-quaternion": {
+      "id": "voight-quaternion",
+      "bibliography": "J. Voight, \\emph{Quaternion algebras}, corrected online edition\nv1.0.7u, August 5, 2026, Main Theorem 14.6.1 and Proposition 14.6.7,\npp. 223--224.\n\\url{https://jvoight.github.io/quat-book.pdf}.",
+      "urls": [
+        "https://jvoight.github.io/quat-book.pdf"
+      ],
+      "version_notes": "v1.0.7u, August 5, 2026, corrected online edition. Corrected online edition, not printed Springer pagination.",
+      "source_status": "bytes_pinned",
+      "sourceCatalog": {
+        "path": "docs/theorem-application-audit/sources.json",
+        "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+        "recordId": "voight-quaternion",
+        "recordSha256": "22aa7969b4847454a41a3580775c9c42c40daab1258a463d161274ee77960ab0"
+      },
+      "files": [
+        {
+          "sourceFilename": "voight-quaternion.pdf",
+          "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+          "bytes": 10663776
+        }
+      ],
+      "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+    }
+  },
+  "applications": [
+    {
+      "id": "V12-EXT-FORMAL3",
+      "kind": "external",
+      "source": {
+        "id": "silverman",
+        "location": "IV \u00a71; Example IV.2.2.3; Proposition IV.2.3(a)",
+        "pinned_source": {
+          "id": "silverman",
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+          "source_status": "bytes_pinned",
+          "sourceCatalog": {
+            "path": "docs/theorem-application-audit/sources.json",
+            "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+            "recordId": "silverman",
+            "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+          },
+          "files": [
+            {
+              "sourceFilename": "silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "bytes": 3658085
+            }
+          ],
+          "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+        }
+      },
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-anchor-coefficient",
+          "line": 316
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Integral Weierstrass equation over the local integer ring; parameter z=-x/y; multiplication by an integer has that integer as linear coefficient.",
+        "constructed_inputs": "Literal short curve over the unramified quadratic extension of Q3. Exact rational z(2P)/3 reduces to 2+rho.",
+        "domain_and_index_coverage": "Every nonzero even s=2*3^k*u, k>=0, u any signed 3-unit integer is treated.",
+        "transition_maps_and_scalars": "Curve negation gives inverse -z, hence odd multiplication series. [3]z=3z+O(z^3) preserves leading residue after dividing by3^(r+1); [u]z multiplies it by u mod3.",
+        "identity_of_consumed_object": "f([s]P)/3^(2k+2) is rho mod3, so the actual rho coefficient has exact valuation2+2v3(s).",
+        "exceptional_cases": "Negative u handled by negation; f0 may vanish, f1 cannot. Depth r>=1 makes 3r-(r+1)>=1.",
+        "affected_downstream_claims": "Single-coefficient anchor, exact allowed index subgroup, exceptional S=-P rejection.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. No minimal-model theorem is invoked.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-EXT-FORMAL2",
+      "kind": "external",
+      "source": {
+        "id": "silverman",
+        "location": "IV \u00a71; Example IV.2.2.3; Proposition IV.2.3(a)",
+        "pinned_source": {
+          "id": "silverman",
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+          "source_status": "bytes_pinned",
+          "sourceCatalog": {
+            "path": "docs/theorem-application-audit/sources.json",
+            "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+            "recordId": "silverman",
+            "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+          },
+          "files": [
+            {
+              "sourceFilename": "silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "bytes": 3658085
+            }
+          ],
+          "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+        }
+      },
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-anchor-coefficient",
+          "line": 316
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Integral formal group and closure of the positive-depth subgroup under integral multiplication.",
+        "constructed_inputs": "At the ramified place over2 use v(2)=1, v(rho)=1/2 and literal v(z(P))=3/2. Construct branch via w=z^3-D*z*w^2.",
+        "domain_and_index_coverage": "All integral multiples of P, including all nonzero even scalar indices.",
+        "transition_maps_and_scalars": "v(f)>=0 and v(a+b*rho)=min(v2(a),v2(b)+1/2) force both rational coefficients 2-integral.",
+        "identity_of_consumed_object": "Actual coefficients f0,f1 of f([s]P), divided by C which is a2-unit.",
+        "exceptional_cases": "Bad reduction at 2 is permitted; no assertion of minimality or good reduction is used.",
+        "affected_downstream_claims": "Equivalence of old two-coefficient and new one-coefficient anchors.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. This is the direct integral formal-group construction, not VII.2.2 for minimal equations.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-EXT-LOG-MIX",
+      "kind": "external",
+      "source": {
+        "id": "silverman",
+        "location": "Proposition IV.5.5, Lemma IV.6.3, Theorem IV.6.4, pp.129-132",
+        "pinned_source": {
+          "id": "silverman",
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+          "source_status": "bytes_pinned",
+          "sourceCatalog": {
+            "path": "docs/theorem-application-audit/sources.json",
+            "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+            "recordId": "silverman",
+            "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+          },
+          "files": [
+            {
+              "sourceFilename": "silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "bytes": 3658085
+            }
+          ],
+          "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+        }
+      },
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-mixed-local",
+          "line": 141
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Complete local field, integral formal group, normalized logarithm; r>v(p)/(p-1) for isometry.",
+        "constructed_inputs": "Every consumed place has K_v/Qp unramified,p > 76176,v(p)=1 and formal depth >= 1.",
+        "domain_and_index_coverage": "All primary and conjugate alternate places; inert places use their single conjugation-stable valuation.",
+        "transition_maps_and_scalars": "Exact full ratios are u_i/h and (u_i-n_i)/(h-1); unit truncating factors preserve these valuations before depth is deduced.",
+        "identity_of_consumed_object": "The literal L_i,L_i-prime of eq:v12-ratios, with numerator ell12 only for i=1 and denominator ell40 for all.",
+        "exceptional_cases": "One of h,h-1 is a unit; cross congruence transfers integrality first. No division by a possibly nonunit h or h-1 in the congruence subtraction.",
+        "affected_downstream_claims": "Local input order12, Lucas order40.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. Tail error comes from the manuscript recurrence, not a stronger unstated Silverman conclusion.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-EXT-LOG-SCALAR",
+      "kind": "external",
+      "source": {
+        "id": "silverman",
+        "location": "Proposition IV.5.5, Lemma IV.6.3, Theorem IV.6.4, pp.129-132",
+        "pinned_source": {
+          "id": "silverman",
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+          "source_status": "bytes_pinned",
+          "sourceCatalog": {
+            "path": "docs/theorem-application-audit/sources.json",
+            "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+            "recordId": "silverman",
+            "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+          },
+          "files": [
+            {
+              "sourceFilename": "silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "bytes": 3658085
+            }
+          ],
+          "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+        }
+      },
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-scalar-sound",
+          "line": 465
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The same normalized homomorphic/isometric formal logarithm on positive depth.",
+        "constructed_inputs": "Norm(f(H)) positive valuation supplies one unramified place where H is formal. Exact duplication puts [2]R in its formal group, even if R reduces to(0,0).",
+        "domain_and_index_coverage": "Every consumed rational prime; only one place above each prime is needed. Both signs of v(x(R)) are proved.",
+        "transition_maps_and_scalars": "[h]([2]R)=[2s]H gives v_p(h)+v(z([2]R))=v_p(s)+v(z(H));2 is a p-unit.",
+        "identity_of_consumed_object": "s=a-1, the scalar index actually consumed by the anchor and height theorem, not a.",
+        "exceptional_cases": "H and[2]R nontorsion and nonidentity; s,h nonzero; duplication numerator/denominator nonzero when v(x(R))!=0.",
+        "affected_downstream_claims": "M5(beta)^32 divides s and h(beta)<=H|s|^(19/32).",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. The one-place norm implication is weaker than simultaneous local integrality and is used only here.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-EXT-LOG-DEPTH",
+      "kind": "external",
+      "source": {
+        "id": "silverman",
+        "location": "Theorem IV.6.4, p.132, with Proposition IV.5.5 and Lemma IV.6.3",
+        "pinned_source": {
+          "id": "silverman",
+          "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "urls": [],
+          "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+          "source_status": "bytes_pinned",
+          "sourceCatalog": {
+            "path": "docs/theorem-application-audit/sources.json",
+            "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+            "recordId": "silverman",
+            "recordSha256": "c87a7b4a170ae55018f1ad7eac0d4e0cfea0706ece843a1e8673562bb7f020e3"
+          },
+          "files": [
+            {
+              "sourceFilename": "silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "bytes": 3658085
+            }
+          ],
+          "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+        }
+      },
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Formal logarithm isometry at unramified odd p and starting depth >= 1.",
+        "constructed_inputs": "Multiplication by primary doubling-image order puts P into formal group; h has extra factor p^19.",
+        "domain_and_index_coverage": "All selected primary primes and all U_i=[h*n_i]P, with fixed integral root labels.",
+        "transition_maps_and_scalars": "Multiplication by p^19 adds19 to logarithm valuation and hence parameter valuation.",
+        "identity_of_consumed_object": "H,U_i have depth>=20; relative parameter error>=80.",
+        "exceptional_cases": "Opposite points need only depth1; no simultaneous p divisibility of h and h-1 is assumed.",
+        "affected_downstream_claims": "Completeness of mixed test list.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. Exact same map as V9-LOG-DEPTH, applied to the unchanged CRT output.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-EXT-QUATERNION",
+      "kind": "external",
+      "source": {
+        "id": "voight-quaternion",
+        "location": "Corrected online edition v1.0.7u, August5,2026; Proposition14.6.7, pp.223-224; ramification classification Main Theorem14.6.1",
+        "pinned_source": {
+          "id": "voight-quaternion",
+          "bibliography": "J. Voight, \\emph{Quaternion algebras}, corrected online edition\nv1.0.7u, August 5, 2026, Main Theorem 14.6.1 and Proposition 14.6.7,\npp. 223--224.\n\\url{https://jvoight.github.io/quat-book.pdf}.",
+          "urls": [
+            "https://jvoight.github.io/quat-book.pdf"
+          ],
+          "version_notes": "v1.0.7u, August 5, 2026, corrected online edition. Corrected online edition, not printed Springer pagination.",
+          "source_status": "bytes_pinned",
+          "sourceCatalog": {
+            "path": "docs/theorem-application-audit/sources.json",
+            "sha256": "6e8732d40657374f58e148cfdbf830b72426eafbc92fd3bd969e4e8a3f9802cf",
+            "recordId": "voight-quaternion",
+            "recordSha256": "22aa7969b4847454a41a3580775c9c42c40daab1258a463d161274ee77960ab0"
+          },
+          "files": [
+            {
+              "sourceFilename": "voight-quaternion.pdf",
+              "sha256": "a9316b834dbd500c52cd3a981c3205c9f4145b217042b213d23f696aee84b0f0",
+              "bytes": 10663776
+            }
+          ],
+          "availability": "External source bytes are not asserted to be distributed in this repository. These exact pins and qualifications are verified against its frozen public source catalog."
+        }
+      },
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-quaternion-criterion",
+          "line": 381
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-anchor",
+          "line": 402
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Quadratic embedding into quaternion algebra(2,3)_Q, which ramifies exactly at 2 and 3; nonzero quadratic radicand.",
+        "constructed_inputs": "t=f1/C; radicand1-2/(3*t^2) when t != 0; local square tests explicitly made at 2 and 3.",
+        "domain_and_index_coverage": "All rational t: t=0 is separately solved by(0,0,1); a rational-square radicand is excluded by the division-algebra criterion.",
+        "transition_maps_and_scalars": "Multiply representation by 3*t^2, then scale three witnesses by C and translate w_old=w+C.",
+        "identity_of_consumed_object": "Exactly f1/C in Z_(2) intersect Z_(3), encoded by u^2+6v^2-2w^2-4Cw-3f1^2=0.",
+        "exceptional_cases": "t^2=2/3 impossible overQ; local unit/positive/negative valuation cases listed. No further primes added.",
+        "affected_downstream_claims": "New anchor and unchanged scalar subgroup.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. New text cites the existing precise key voight-quaternion, not the different Chapter43 locator in voight2021. Existing corrected online version qualification retained; no equivalence to printed pagination asserted.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-POINTS",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:v5-point-source",
+          "line": 10726
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v5-point-domains",
+          "line": 10773
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v9:prop:odd-chart",
+          "line": 19532
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-inputs",
+          "line": 38
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-reciprocal",
+          "line": 565
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Literal normalized curve/generator; point charts and odd-coset equations.",
+        "constructed_inputs": "All nine old chart points retained; root labels n,a,t,b odd; scalar R is the literal difference S-P.",
+        "domain_and_index_coverage": "All four roots and five comparison points covered; signs of chart h,j retained.",
+        "transition_maps_and_scalars": "Identity on retained charts; reciprocal chart separately checked for R.",
+        "identity_of_consumed_object": "2E(K)=ZP; nonidentity labels; x,y nonzero on retained charts.",
+        "exceptional_cases": "S=P excluded by g guard; S=-P treated and then excluded by anchor; not assumed away.",
+        "affected_downstream_claims": "Every arithmetic step using integer labels and nonzero coordinates.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. No new Mordell-Weil or generator assertion.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-TRUNCATION",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:quartic-reciprocal-log",
+          "line": 9202
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v5-unramified-log",
+          "line": 10813
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-mixed",
+          "line": 104
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-mixed-local",
+          "line": 141
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Formal point at unramified p > 76176; recurrence a0=1,a1=-2/5,a_j=(4j-5)/(4j+1)*a_(j-1).",
+        "constructed_inputs": "G2 for V1 and G9 for V0,V2,V3,V4; all primary factors replaced by1 at eventual depth20.",
+        "domain_and_index_coverage": "First omitted index3 or 10; small coefficient denominators and large-index factorial bounds explicitly controlled.",
+        "transition_maps_and_scalars": "Unit G factors preserve valuations; integrality converts relative12/40 errors to absolute ones; primary error80.",
+        "identity_of_consumed_object": "Exact mixed ratios, not a common-order approximation substituted silently.",
+        "exceptional_cases": "Integrality is transferred before requiring depth20 on U_i. Denominator ell40(V0) and original nonzero guard remain.",
+        "affected_downstream_claims": "Lemma:v12-mixed-local and both final height contradictions.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. The unramified proof is applied at 12/40; source statement values alone are not mechanically relabelled.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-DETECTOR",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "eq:v5-detector-data",
+          "line": 10894
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v5-one-place",
+          "line": 11031
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "hyp:o8-pole",
+          "line": 7713
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-mixed",
+          "line": 104
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-soundness",
+          "line": 725
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Sixteen field tests with positive integral orders and original weight/pole domains; five-contact detector.",
+        "constructed_inputs": "Orders are nine tests at 1, two at 12, and five at 40; scales unchanged; product equals grouped degree9,2,5 polynomials.",
+        "domain_and_index_coverage": "Every test listed exactly once; scalar pole retained separately.",
+        "transition_maps_and_scalars": "q_m=e^(2m-2)q1 follows from original R=e^-1/delta and test normalization. Grouping uses polynomial distributivity.",
+        "identity_of_consumed_object": "Original product W and detector pole input preserved as functions for these new orders.",
+        "exceptional_cases": "All original w0,weight and pole guards remain; zero pole witness values are allowed.",
+        "affected_downstream_claims": "Contact radical divisibility and existence of detector pole witnesses.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. Pole realization estimates remain lambda^-3 and3nu+(10m-8)eta-2c for fixed m=1,12,40.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-PRODUCTHEIGHT",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v9:cor:scales",
+          "line": 19486
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v9:eq:height-transfer",
+          "line": 19515
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-height-input",
+          "line": 84
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-soundness",
+          "line": 725
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Four odd root labels; three original positive rational square scales; nonzero integer N divisible by kth powers of all three radicals.",
+        "constructed_inputs": "Odd charts retained; tests give k=40 forF andk=12 for numerator(n-beta).",
+        "domain_and_index_coverage": "Four root heights and both distinct nonzero-integer applications checked.",
+        "transition_maps_and_scalars": "Identity on productC and scales; retain B^2-6<7H|N|^(19/k).",
+        "identity_of_consumed_object": "Maximum of actual labels n,a,t,b with sameH19.",
+        "exceptional_cases": "No field norm replaces the product height; F=0 and N=0 treated by stopping the respective contradiction.",
+        "affected_downstream_claims": "Forces Lucas equation and n=beta.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. H<2^2093966 and unchanged normalization of absolute height.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-HALFTRACE",
+      "kind": "new bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v5-two-reductions",
+          "line": 11138
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:v9-completeness",
+          "line": 19641
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:v9-deep-completeness",
+          "line": 19720
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-guards",
+          "line": 217
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Split contact primes with oriented primary/opposite reductions; roots fixed before prime cutoff.",
+        "constructed_inputs": "U0=[h]P,Q0=P;Ui=[h*n_i]P,Qi=[n_i]P for i=1,...,4. Cutoff additionally excludes root denominator primes.",
+        "domain_and_index_coverage": "All five differences at the same selected split prime, including i=0.",
+        "transition_maps_and_scalars": "v(d_i)<0 and barv(d_i)>=0; conjugation exchanges places, so 2A_i=d_i+bar(d_i)!=0.",
+        "identity_of_consumed_object": "A_i is the actual rational coefficient of the same subtraction denominator d_i.",
+        "exceptional_cases": "Trace-zero old assignments intentionally excluded; integer completeness supplies nonzero traces; soundness restores full inverse(A,-B)/(A^2-2B^2).",
+        "affected_downstream_claims": "Five-variable saving, retained subtraction domains.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. This is arithmetic guard strengthening, not equality of all old assignments.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-ANCHOROLD",
+      "kind": "new bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:o8-anchor-subgroup",
+          "line": 8132
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v5-three-witness-anchor",
+          "line": 10972
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v9-bridge",
+          "line": 19260
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-anchor-coefficient",
+          "line": 316
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-anchor-subgroup",
+          "line": 415
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Nonzero even scalar index and exact normalized P; old anchor means both f0/C,f1/C semilocally integral.",
+        "constructed_inputs": "s=a-1 even from odd chart; C=3^(2^25); actual R=S-P.",
+        "domain_and_index_coverage": "Every signed even index via 2*3^k*u; exact leading direction rho handled.",
+        "transition_maps_and_scalars": "f1 has minimal 3-valuation and both coefficients 2-integral; replace pair condition by f1/C alone.",
+        "identity_of_consumed_object": "Exactly s in 2*3^(2^24-1)Z excluding 0, with same large height margin.",
+        "exceptional_cases": "f0 may vanish; f1 cannot. Private quaternion witnesses may change and are not claimed unique.",
+        "affected_downstream_claims": "Anchor equivalence, scalar reciprocal exceptional rejection, height constants.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. Source exponent is recalculated at 2^25, not copied from older 2^26 anchor.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-SCALARCONTACT",
+      "kind": "new bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v5:scalar32-bridge",
+          "line": 10422
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v9-bridge",
+          "line": 19260
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "hyp:o8-pole",
+          "line": 7713
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-scalar",
+          "line": 423
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-scalar-sound",
+          "line": 465
+        }
+      ],
+      "obligations": {
+        "required_inputs": "r nonzero; consumed primes have odd v_p(r); finite correction is a unit at p > 76176; nonzero pole input crW^2.",
+        "constructed_inputs": "Same beta=2X^2+3 and contact polynomial r; new constant-left four-leaf tree; original inverse and pole preparation retained.",
+        "domain_and_index_coverage": "Every consumed rational prime; rho<0 excluded before positive descent; zero summands assigned infinity.",
+        "transition_maps_and_scalars": "Opposite-parity valuations yield v_p(q)>0 and ratio coefficients>=32; norm supplies one suitable place; duplication/log then gives p^32|s.",
+        "identity_of_consumed_object": "Exactly M5(beta)^32|a-1, the old scalar conclusion.",
+        "exceptional_cases": "beta=2401 would force X^2=1199; R near T0 handled by doubling; no false inference that R itself formal.",
+        "affected_downstream_claims": "Same scalar height estimate, five-variable scalar saving.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. The new tree is not claimed algebraically equal to the old W.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-SCALARHEIGHT",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "thm:quartic-height19",
+          "line": 8915
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v9-bridge",
+          "line": 19260
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-scalar-sound",
+          "line": 465
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-soundness",
+          "line": 725
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Original H19 five-contact height theorem and M5(beta)^32|s with s nonzero.",
+        "constructed_inputs": "The preceding new lemma supplies that exact divisibility; beta remains same input label.",
+        "domain_and_index_coverage": "All rational X allowed until final integer conclusion.",
+        "transition_maps_and_scalars": "h(beta)<=H*M5(beta)^19<=H|s|^(19/32).",
+        "identity_of_consumed_object": "h(beta) is the absolute logarithmic height of 2X^2+3.",
+        "exceptional_cases": "No reduction of order 32 or replacement by a new height conjecture.",
+        "affected_downstream_claims": "Inequalities h(beta)<|a|/40 and final N contradiction.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. Inherited theorem and its qualifications remain unchanged.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-SCALARCOMPLETE",
+      "kind": "new bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v5:scalar32-bridge",
+          "line": 10422
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:original-seven-simultaneous-realization",
+          "line": 7781
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-scalar",
+          "line": 423
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Integral X, choice of finite correction c, arbitrarily divisible h0 then s; old leaves integral on the support of r and divisible on the support of c outside r.",
+        "constructed_inputs": "Use those stronger old choices; q=Norm(fH) then q/r integral, new ratio leaves unchanged.",
+        "domain_and_index_coverage": "All finite support of cr, including 2, 3, and 17; whole nonconstant scalar function controlled by continuity.",
+        "transition_maps_and_scalars": "New W congruent to 1 on support of cr; new b=crW^2 has original local squareclasses and square reduced denominator; invoke fresh pole witnesses.",
+        "identity_of_consumed_object": "Pole predicate applied to actual new b, not old scalar b.",
+        "exceptional_cases": "r may be negative but cr positive; W nonzero by the unit calculation; old pole witnesses not blindly retained.",
+        "affected_downstream_claims": "Scalar completeness compatible with the anchor and global CRT.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. Uses same seven-prime squareclass basis and finite support.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-PRIMES",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "thm:v5-simultaneous-primes",
+          "line": 16559
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:v5-two-reductions",
+          "line": 11138
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v9:lem:separation",
+          "line": 19700
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:v9-deep-completeness",
+          "line": 19720
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "v5:real-progression-bridge",
+          "line": 10632
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Roots, scales, and a continuity modulus are fixed before the prime choice. The inherited prime theorem allows finite exclusions and supplies oriented orders and prime separation.",
+        "constructed_inputs": "The roots and scales are unchanged. The finite cutoff also excludes the five fixed abscissa denominators. The new scalar and mixed logarithm functions give a finite modulus L with 64 dividing L.",
+        "domain_and_index_coverage": "All contact forms and prescribed ray classes are retained. Every selected prime exceeds the fixed cutoff.",
+        "transition_maps_and_scalars": "Use h=0 modulo Pi^19*M_minus, h=1 modulo M_plus, and h=h0 modulo L. The displayed gcd conditions prove compatibility, and the real progression argument supplies a sufficiently large positive h.",
+        "identity_of_consumed_object": "One common integer h supplies every module. The proof does not combine independently constructed witness sets.",
+        "exceptional_cases": "No selected prime divides an opposite order; Pi is coprime to L. Split places are required for the guard-completeness argument only. The large h avoids every finite forbidden locus.",
+        "affected_downstream_claims": "Simultaneous completeness of all replacements.",
+        "source_version_and_conventions": "The literal field, generator, orientations, and normalized valuations are unchanged. Hasse is not newly applied: the existing separation lemma, with its pinned V9-HASSE-SEPARATION application, is reused.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-INT-LUCAS",
+      "kind": "internal",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "lem:o8-lucas",
+          "line": 8742
+        },
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:v9-completeness",
+          "line": 19641
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-soundness",
+          "line": 725
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "obligations": {
+        "required_inputs": "For the lower bound, integer labels satisfy F(a,t,b)=0, b is nonzero, and |a| is sufficiently large. Completeness uses the displayed integer recurrence.",
+        "constructed_inputs": "Soundness forces F=0. The nonidentity point Q4 gives b nonzero. Completeness chooses a=s+1 with s positive and divisible by six.",
+        "domain_and_index_coverage": "The argument treats signed soundness labels and positive completeness labels separately.",
+        "transition_maps_and_scalars": "The inherited bound gives log B>|a|-3. The recurrence modulo a-2 and modulo two supplies integral odd b and t.",
+        "identity_of_consumed_object": "The same actual labels n,a,t,b enter F, the height maximum B, and the four root points.",
+        "exceptional_cases": "The denominator a-2 is positive in completeness. The label b is nonzero in soundness.",
+        "affected_downstream_claims": "The final height contradiction and witnesses for every integer input.",
+        "source_version_and_conventions": "Use pinned sources and literal K=Q(sqrt(2)), P, coefficient basis, and valuations in subsec:v12-inputs. No new recurrence or exponential-growth theorem is assumed.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-POLE",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "eq:v5-zero-pole",
+          "line": 10902
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-poles",
+          "line": 260
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The original seven pole equations and unchanged w0, nu, and pole-input guard rows.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "The displayed powers of the nonzero pole input identify each old row with its new row multiplied by its square or fourth power. Restore u2 as the square of the pole input.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "The pole input is nonzero by the w0 inverse and irrationality of sqrt(2). Every other pole witness may vanish.",
+        "affected_downstream_claims": "Three variables are removed; each pole input is unchanged.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-RECIPROCAL",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-anchor",
+          "line": 402
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "lem:v12-anchor-coefficient",
+          "line": 316
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-reciprocal",
+          "line": 565
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The incoming chart x=h^2, j^2=x^2-D and the literal fixed point P.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Set g=N/d, k=M/d^2, f=g^2, z=-g/k. The ordinary difference identities and both branches with x=c are proved in the text.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "The denominator d is positive at both real embeddings. The norm-seven obstruction gives k nonzero. The f0 guard gives g nonzero. S=P is excluded; S=-P gives the actual R=-2P and contradicts the anchor.",
+        "affected_downstream_claims": "The actual f(R),z(R) are preserved, initially saving one variable.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-DCANCEL",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-reciprocal-identities",
+          "line": 601
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-dcancel",
+          "line": 595
+        }
+      ],
+      "obligations": {
+        "required_inputs": "a_*^2=c_*, b_*^2=c_*^2-D, and d nonzero.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Use dL=a_*K0-2Db_*G. Divide by d in the forward direction and by a_* in reverse, reinserting the unique d2=d^2.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "a_* has nonzero norm -41/8, and d is already nonzero on the incoming chart.",
+        "affected_downstream_claims": "Two further private coordinates are removed.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-TORIC",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "eq:v5-detector-data",
+          "line": 10894
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-toric",
+          "line": 659
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The retained Q=q^3 and T=q12^2 equations and every outside consumer; the e and q domains.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Seven quadratics force the displayed Laurent monomials. Restore the six old powers. The actual q12 and q40 outputs remain unchanged.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "e*alpha=1 and e=q*delta^3 force e and q nonzero. Gamma, Q, and v are nonzero before each division.",
+        "affected_downstream_claims": "Three private power coordinates are removed.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-NORMSQUARE",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-scalar-eight",
+          "line": 452
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-norm-elim",
+          "line": 698
+        }
+      ],
+      "obligations": {
+        "required_inputs": "Retained t=h0^2+2h1^2 and u=h0*h1. The norm q is consumed only through its square.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Use q^2=t^2-8u^2; delete q and restore its unique value h0^2-2h1^2 in reverse.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "No division or added domain restriction. The factor eight uses the actual half-coefficient normalization of u.",
+        "affected_downstream_claims": "One coordinate is removed; reinsertion permits the arithmetic norm proof.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-COMPILE",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "manuscripts/quartic_v11.tex",
+          "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+          "label": "subsec:v9-finite",
+          "line": 19741
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-finite",
+          "line": 879
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The quadratic raw system and exact constant-pivot and shear certificates.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Each constant-pivot substitution has its unique polynomial inverse lift. Each linear shear is invertible. All deleted-coordinate incidences are checked.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "The compiler introduces no variable division. The input coordinate is protected.",
+        "affected_downstream_claims": "The exact 519-variable mixed precursor and combined 498-variable count.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-SOS",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-soundness",
+          "line": 725
+        },
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-completeness",
+          "line": 795
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-finite",
+          "line": 879
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The 467 rational quadratic residuals in 498 coordinates.",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Clear denominators and divide integer contents separately. Their rational squares sum to zero exactly when all residuals vanish.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "All normalization factors are nonzero rationals. Every coordinate is verified active.",
+        "affected_downstream_claims": "The exact Z-in-Q projection of P498, and its degree, count, content, and coefficients.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    },
+    {
+      "id": "V12-ALG-LIFT",
+      "kind": "exact algebra bridge",
+      "source": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "eq:v12-anchor",
+          "line": 402
+        }
+      ],
+      "consumers": [
+        {
+          "path": "docs/manuscript-revisions/version12/addition.tex",
+          "sha256": "d229ea5c501fd2b61a281172dc8b038b49c2a8838abe6ae7afc92b766cdee800",
+          "label": "subsec:v12-finite",
+          "line": 879
+        }
+      ],
+      "obligations": {
+        "required_inputs": "The only term involving C is -4*C*w in the anchor, with C=3^(2^25).",
+        "constructed_inputs": "The literal frozen 498-variable data and equations displayed in the TeX.",
+        "domain_and_index_coverage": "The complete private-coordinate incidence is checked by the frozen chain certificates.",
+        "transition_maps_and_scalars": "Start with c0=3^1024 and use fifteen successive squarings to obtain c15=C; substitute into the bilinear term.",
+        "identity_of_consumed_object": "Every retained outside coordinate and the input remain fixed unless the text explicitly states otherwise.",
+        "exceptional_cases": "The rational chain is unique. Equations c_next=c_prev^2 impose no choice of a square-root sign.",
+        "affected_downstream_claims": "P514 has the same input projection, 483 residuals, and 24,716 monomials.",
+        "source_version_and_conventions": "The identities are proved in the TeX. Finite checks verify the literal normalizations and counts against the pinned source systems.",
+        "validation_and_acceptance_scope": "This inventory is authored with the TeX. Mathematical arguments are in the indicated consumers. Existing finite verifiers check stated polynomial identities/counts only. Independent review of this final text is pending."
+      }
+    }
+  ],
+  "allExplicitInheritedReferences": [
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "eq:v5-detector-data",
+      "line": 10894
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "hyp:o8-pole",
+      "line": 7713
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:o8-lucas",
+      "line": 8742
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:original-seven-simultaneous-realization",
+      "line": 7781
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:quartic-reciprocal-log",
+      "line": 9202
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:v5-one-place",
+      "line": 11031
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:v5-point-domains",
+      "line": 10773
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:v5-three-witness-anchor",
+      "line": 10972
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:v5-two-reductions",
+      "line": 11138
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:v5-unramified-log",
+      "line": 10813
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "lem:v9-bridge",
+      "line": 19260
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "sec:v9",
+      "line": 19169
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "subsec:o8-anchor-subgroup",
+      "line": 8132
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "subsec:v5-point-source",
+      "line": 10726
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "subsec:v9-completeness",
+      "line": 19641
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "subsec:v9-inputs",
+      "line": 19196
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "thm:v9-quartics",
+      "line": 19176
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v5:scalar32-bridge",
+      "line": 10422
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v9:cor:scales",
+      "line": 19486
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v9:eq:height-transfer",
+      "line": 19515
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v9:lem:separation",
+      "line": 19700
+    },
+    {
+      "path": "manuscripts/quartic_v11.tex",
+      "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662",
+      "label": "v9:prop:odd-chart",
+      "line": 19532
+    }
+  ],
+  "scopeReferences": {
+    "thm:v9-quartics": "Baseline theorem, not a substitute for proving the changedcertificate.",
+    "sec:v9": "Inheritedconstruction scope.",
+    "subsec:v9-inputs": "Transitive arithmetic dependencies and qualificationclosure."
+  },
+  "portability": {
+    "authorRecordSha256": "3e89a24d3027749c9f22c5dcda640747de473bb4d499e19d4181bff43b81cda4",
+    "mappingVersion": 1,
+    "authorArchive": "AUTHOR-APPLICATIONS.json",
+    "changes": "Only path bindings, external-source metadata representation, schema/status metadata and this provenance object changed. Application IDs, obligations, consumer labels/lines, source labels/lines and mathematical prose are preserved.",
+    "sourceAvailability": "All active path bindings refer to repository files. External publications are identified by exact existing catalog pins, not claimed as included files."
+  }
+}

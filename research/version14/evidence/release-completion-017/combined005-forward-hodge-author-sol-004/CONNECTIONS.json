@@ -1,0 +1,1615 @@
+[
+  {
+    "use_id": "FR-MODULARITY-SILVERMAN",
+    "use_sha256": "89d64679a48ec4287b5b5e189516e11c6087b962f175dd7cc08f306b9da9f22b",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "Every elliptic curve over Q has a finite surjective Q-morphism from X0(N), with N its arithmetic conductor.",
+      "objects": "The elliptic curve over Q, its arithmetic conductor and X0(N).",
+      "hypotheses": "A is an elliptic curve over Q.",
+      "quantifiers": "Every elliptic curve over Q, with no residual-image or reduction restriction.",
+      "parameter_range": "Every elliptic curve over Q, with no residual-image or reduction restriction.",
+      "uniformity": "Only the stated published domain is used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Finite surjective morphism over Q at its arithmetic conductor.",
+      "exceptional_cases": "No analytic-rank hypothesis is required.",
+      "limit_order": "Apply the selected source statement before the application-specific deductions."
+    },
+    "needed_assertion": {
+      "statement": "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor.",
+      "objects": "The elliptic curve A and its arithmetic conductor N.",
+      "hypotheses": "A is an elliptic curve over Q.",
+      "quantifiers": "Every elliptic curve A over Q at its conductor.",
+      "parameter_range": "Every elliptic curve A over Q at its conductor.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Finite surjective Q-parametrization.",
+      "exceptional_cases": "No residual-image, reduction-type or non-CM restriction.",
+      "limit_order": "Apply modularity before Kolyvagin."
+    },
+    "required_capabilities": [
+      "Every elliptic curve over Q has a finite surjective Q-morphism from X0(N), with N its arithmetic conductor.",
+      "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor."
+    ],
+    "available_capabilities": [
+      "Every elliptic curve over Q has a finite surjective Q-morphism from X0(N), with N its arithmetic conductor."
+    ],
+    "derived_capabilities": [
+      "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1961,
+        "end_line": 1963,
+        "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+      },
+      "application_id": "CURRENT-FORWARD-MODULARITY",
+      "output_assertion": {
+        "statement": "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor.",
+        "objects": "The elliptic curve A and its arithmetic conductor N.",
+        "hypotheses": "A is an elliptic curve over Q.",
+        "quantifiers": "Every elliptic curve A over Q at its conductor.",
+        "parameter_range": "Every elliptic curve A over Q at its conductor.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Finite surjective Q-parametrization.",
+        "exceptional_cases": "No residual-image, reduction-type or non-CM restriction.",
+        "limit_order": "Apply modularity before Kolyvagin."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No residual-image, reduction-type or non-CM restriction.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "8764f0824fc31efb416a89df65bbb796507bdccad7f16effe7448587187465f3"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1961,
+          "end_line": 1963,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1961,
+        "end_line": 1963,
+        "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+      }
+    ]
+  },
+  {
+    "use_id": "FR-KOLYVAGIN-PUBLISHED",
+    "use_sha256": "7d96506e809dde46d51123d8ad9c979da65e8d077dc4d344e50b6442a16c6946",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "For a modular elliptic curve over Q with analytic rank zero or one, the algebraic rank equals the analytic rank and the full Tate–Shafarevich group is finite.",
+      "objects": "The modular elliptic curve over Q, its Mordell-Weil rank and full Sha.",
+      "hypotheses": "A is a modular elliptic curve over Q with analytic rank at most one.",
+      "quantifiers": "The inclusive analytic ranks zero and one.",
+      "parameter_range": "The inclusive analytic ranks zero and one.",
+      "uniformity": "Only the stated published domain is used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Full Sha is defined by localization at all places.",
+      "exceptional_cases": "No reverse implication from rank or corank is supplied.",
+      "limit_order": "Apply the selected source statement before the application-specific deductions."
+    },
+    "needed_assertion": {
+      "statement": "The same A has rank r and finite full Sha(A/Q) for r in {0,1}.",
+      "objects": "A over Q with its actual analytic rank r.",
+      "hypotheses": "A is modular and its analytic rank is zero or one.",
+      "quantifiers": "The inclusive analytic-rank range 0 and 1.",
+      "parameter_range": "The inclusive analytic-rank range 0 and 1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Full Sha is the kernel of localization at all places.",
+      "exceptional_cases": "No converse from algebraic rank or Selmer corank is asserted.",
+      "limit_order": "Supply modularity, then apply the forward theorem."
+    },
+    "required_capabilities": [
+      "For a modular elliptic curve over Q with analytic rank zero or one, the algebraic rank equals the analytic rank and the full Tate–Shafarevich group is finite.",
+      "The same A has rank r and finite full Sha(A/Q) for r in {0,1}."
+    ],
+    "available_capabilities": [
+      "For a modular elliptic curve over Q with analytic rank zero or one, the algebraic rank equals the analytic rank and the full Tate–Shafarevich group is finite."
+    ],
+    "derived_capabilities": [
+      "The same A has rank r and finite full Sha(A/Q) for r in {0,1}."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1964,
+        "end_line": 1968,
+        "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+      },
+      "application_id": "CURRENT-FORWARD-KOLYVAGIN",
+      "output_assertion": {
+        "statement": "The same A has rank r and finite full Sha(A/Q) for r in {0,1}.",
+        "objects": "A over Q with its actual analytic rank r.",
+        "hypotheses": "A is modular and its analytic rank is zero or one.",
+        "quantifiers": "The inclusive analytic-rank range 0 and 1.",
+        "parameter_range": "The inclusive analytic-rank range 0 and 1.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Full Sha is the kernel of localization at all places.",
+        "exceptional_cases": "No converse from algebraic rank or Selmer corank is asserted.",
+        "limit_order": "Supply modularity, then apply the forward theorem."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No converse from algebraic rank or Selmer corank is asserted.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 11,
+          "end_line": 11,
+          "excerpt_sha256": "7fc4a5b1d3c2322526b5159c62b42eda3087bd45e9168e1acebc0d2d2636cdf4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1964,
+          "end_line": 1968,
+          "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1964,
+        "end_line": 1968,
+        "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+      }
+    ]
+  },
+  {
+    "use_id": "FR-KUMMER-FINITE",
+    "use_sha256": "627cfa41c56153c2b09aed8bab50c8c0f1b5de0ac9235f48f03f18aa0f19bb00",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "The finite Kummer and Selmer sequences relate rational points modulo powers, the Selmer group defined using all local conditions, and the corresponding torsion subgroup of Sha.",
+      "objects": "Rational points modulo 2^n, the Selmer group of A[2^n] and Sha(A/Q)[2^n].",
+      "hypotheses": "An elliptic curve over Q and its finite torsion Kummer sequence with local Selmer conditions.",
+      "quantifiers": "Every positive integer n before the direct limit.",
+      "parameter_range": "Every positive integer n before the direct limit.",
+      "uniformity": "Only the stated published domain is used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Finite Kummer sequences with all-place Selmer conditions.",
+      "exceptional_cases": "The finite sequence does not itself assert a rank or finite Sha.",
+      "limit_order": "Apply the selected source statement before the application-specific deductions."
+    },
+    "needed_assertion": {
+      "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+      "objects": "The full 2-primary Selmer group of the same A.",
+      "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+      "quantifiers": "The two established cases r=0 and r=1.",
+      "parameter_range": "The two established cases r=0 and r=1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+      "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+      "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+    },
+    "required_capabilities": [
+      "The finite Kummer and Selmer sequences relate rational points modulo powers, the Selmer group defined using all local conditions, and the corresponding torsion subgroup of Sha.",
+      "The 2-primary Selmer group of A has Z2-corank r."
+    ],
+    "available_capabilities": [
+      "The finite Kummer and Selmer sequences relate rational points modulo powers, the Selmer group defined using all local conditions, and the corresponding torsion subgroup of Sha."
+    ],
+    "derived_capabilities": [
+      "The 2-primary Selmer group of A has Z2-corank r."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 3,
+        "end_line": 8,
+        "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+      },
+      "application_id": "CURRENT-FORWARD-KUMMER-CORANK",
+      "output_assertion": {
+        "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+        "objects": "The full 2-primary Selmer group of the same A.",
+        "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+        "quantifiers": "The two established cases r=0 and r=1.",
+        "parameter_range": "The two established cases r=0 and r=1.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+        "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+        "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "Finiteness of Sha alone does not determine r.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "24e255cce9cb17af3e8d24ea4abac6d05b2d0d0ace289fbf79008cb61db83710"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 3,
+          "end_line": 8,
+          "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1969,
+        "end_line": 1975,
+        "excerpt_sha256": "4bd0ea0a127c7909e68bcf93600f7f4ab5fcc721ac76e47d7ea544104eea863a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 3,
+        "end_line": 8,
+        "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+      }
+    ]
+  },
+  {
+    "use_id": "FR-PICARD-DIVISOR",
+    "use_sha256": "e89698ef638925b60223d910e710e9d1bd91d3044387884cc6c589dcb914551a",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve.",
+      "objects": "Degree-zero divisor classes under finite maps of smooth projective curves and the elliptic identity.",
+      "hypotheses": "The stated finite morphism of smooth projective curves, followed by the elliptic identity-point identification.",
+      "quantifiers": "The finite curve-map divisor identity and the elliptic degree-zero divisor-class group identification.",
+      "parameter_range": "The finite curve-map divisor identity and the elliptic degree-zero divisor-class group identification.",
+      "uniformity": "Only the stated published domain is used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Degree-zero classes modulo principal divisors.",
+      "exceptional_cases": "The divisor statement alone does not construct a relative Picard scheme or its norm.",
+      "limit_order": "Apply the selected source statement before the application-specific deductions."
+    },
+    "needed_assertion": {
+      "statement": "The actual A is a quotient of J1(N) by a surjective homomorphism over Q.",
+      "objects": "X1(N), X0(N), J1(N), the same A and its identity point.",
+      "hypotheses": "The finite modular parametrization, finite forgetful map and compatible norm/Picard formalism.",
+      "quantifiers": "The actual arithmetic-conductor level N and A/Q.",
+      "parameter_range": "The actual arithmetic-conductor level N and A/Q.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Degree-zero divisor classes and geometric base point.",
+      "exceptional_cases": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+      "limit_order": "Compose finite curve maps, descend norm on Picard and check geometric surjectivity."
+    },
+    "required_capabilities": [
+      "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve.",
+      "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+    ],
+    "available_capabilities": [
+      "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+    ],
+    "derived_capabilities": [
+      "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 25,
+        "end_line": 28,
+        "excerpt_sha256": "ab1a98670e5e0f9fdffc96761e5febf8d9d5c30ece49d72b2ff28dccdf534f4a"
+      },
+      "application_id": "CURRENT-FORWARD-PICARD-QUOTIENT",
+      "output_assertion": {
+        "statement": "The actual A is a quotient of J1(N) by a surjective homomorphism over Q.",
+        "objects": "X1(N), X0(N), J1(N), the same A and its identity point.",
+        "hypotheses": "The finite modular parametrization, finite forgetful map and compatible norm/Picard formalism.",
+        "quantifiers": "The actual arithmetic-conductor level N and A/Q.",
+        "parameter_range": "The actual arithmetic-conductor level N and A/Q.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Degree-zero divisor classes and geometric base point.",
+        "exceptional_cases": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+        "limit_order": "Compose finite curve maps, descend norm on Picard and check geometric surjectivity."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "a63c45c31169280d99768745cd24e225e9af1a87002ac6f9a871e0d1bc9581ad"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 25,
+          "end_line": 28,
+          "excerpt_sha256": "ab1a98670e5e0f9fdffc96761e5febf8d9d5c30ece49d72b2ff28dccdf534f4a"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1976,
+        "end_line": 2000,
+        "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 25,
+        "end_line": 28,
+        "excerpt_sha256": "ab1a98670e5e0f9fdffc96761e5febf8d9d5c30ece49d72b2ff28dccdf534f4a"
+      }
+    ]
+  },
+  {
+    "use_id": "FR-KATO-COR14.3",
+    "use_sha256": "fd97375154d6dc73c12d0bf12071800fd1431650c789ce4349b633454b32714a",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "Under Corollary 14.3's quotient, finite abelian extension, character and nonvanishing hypotheses, the specified character components of rational points and the full Selmer group are finite.",
+      "objects": "An abelian quotient of J1(N), the finite abelian extension, character components and full Selmer group.",
+      "hypotheses": "The actual quotient, finite abelian field extension, character and central nonvanishing in the corollary.",
+      "quantifiers": "The quotient and nonvanishing cases specified in Corollary 14.3.",
+      "parameter_range": "The quotient and nonvanishing cases specified in Corollary 14.3.",
+      "uniformity": "Only the stated published domain is used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Full Selmer uses the local condition at the coefficient prime as well.",
+      "exceptional_cases": "The actual J1 quotient is a hypothesis of the source.",
+      "limit_order": "Apply the selected source statement before the application-specific deductions."
+    },
+    "needed_assertion": {
+      "statement": "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence.",
+      "objects": "The actual quotient A of J1(N), K=Q and the trivial character.",
+      "hypotheses": "The quotient and nonzero central L-value are supplied.",
+      "quantifiers": "Only the optional rank-zero branch, with the 2-primary place included.",
+      "parameter_range": "Only the optional rank-zero branch, with the 2-primary place included.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Kato's full all-prime Selmer convention.",
+      "exceptional_cases": "Does not supply analytic rank one or the restricted converse.",
+      "limit_order": "Establish the quotient and central nonvanishing before applying Corollary 14.3."
+    },
+    "required_capabilities": [
+      "Under Corollary 14.3's quotient, finite abelian extension, character and nonvanishing hypotheses, the specified character components of rational points and the full Selmer group are finite.",
+      "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence."
+    ],
+    "available_capabilities": [
+      "Under Corollary 14.3's quotient, finite abelian extension, character and nonvanishing hypotheses, the specified character components of rational points and the full Selmer group are finite."
+    ],
+    "derived_capabilities": [
+      "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 29,
+        "end_line": 32,
+        "excerpt_sha256": "3a2be1b0e7b53266500dba2afcdd9a4f31248a7791bbd3ad4a690904b165fd02"
+      },
+      "application_id": "CURRENT-FORWARD-KATO-OPTIONAL",
+      "output_assertion": {
+        "statement": "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence.",
+        "objects": "The actual quotient A of J1(N), K=Q and the trivial character.",
+        "hypotheses": "The quotient and nonzero central L-value are supplied.",
+        "quantifiers": "Only the optional rank-zero branch, with the 2-primary place included.",
+        "parameter_range": "Only the optional rank-zero branch, with the 2-primary place included.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Kato's full all-prime Selmer convention.",
+        "exceptional_cases": "Does not supply analytic rank one or the restricted converse.",
+        "limit_order": "Establish the quotient and central nonvanishing before applying Corollary 14.3."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "Does not supply analytic rank one or the restricted converse.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "b901cdd8e980340adf4270baf8883a77d49cef04c05ce82a32cf034316def8ee"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 29,
+          "end_line": 32,
+          "excerpt_sha256": "3a2be1b0e7b53266500dba2afcdd9a4f31248a7791bbd3ad4a690904b165fd02"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 2001,
+        "end_line": 2005,
+        "excerpt_sha256": "80b4f4aa12c276c43038cee6838af57ea5e5a67ba9f147ab757c29a83f875356"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 29,
+        "end_line": 32,
+        "excerpt_sha256": "3a2be1b0e7b53266500dba2afcdd9a4f31248a7791bbd3ad4a690904b165fd02"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "use_sha256": "c9c8b3ab403710ccb738201252ed203d99098e6f6c97f17ba242179517bef867",
+    "supplier_passage_role": "application",
+    "available_assertion": {
+      "statement": "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor.",
+      "objects": "The elliptic curve A and its arithmetic conductor N.",
+      "hypotheses": "A is an elliptic curve over Q.",
+      "quantifiers": "Every elliptic curve A over Q at its conductor.",
+      "parameter_range": "Every elliptic curve A over Q at its conductor.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Finite surjective Q-parametrization.",
+      "exceptional_cases": "No residual-image, reduction-type or non-CM restriction.",
+      "limit_order": "Apply modularity before Kolyvagin."
+    },
+    "needed_assertion": {
+      "statement": "The same A has rank r and finite full Sha(A/Q) for r in {0,1}.",
+      "objects": "A over Q with its actual analytic rank r.",
+      "hypotheses": "A is modular and its analytic rank is zero or one.",
+      "quantifiers": "The inclusive analytic-rank range 0 and 1.",
+      "parameter_range": "The inclusive analytic-rank range 0 and 1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Full Sha is the kernel of localization at all places.",
+      "exceptional_cases": "No converse from algebraic rank or Selmer corank is asserted.",
+      "limit_order": "Supply modularity, then apply the forward theorem."
+    },
+    "required_capabilities": [
+      "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor.",
+      "The same A has rank r and finite full Sha(A/Q) for r in {0,1}."
+    ],
+    "available_capabilities": [
+      "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor."
+    ],
+    "derived_capabilities": [
+      "The same A has rank r and finite full Sha(A/Q) for r in {0,1}."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1964,
+        "end_line": 1968,
+        "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+      },
+      "application_id": "CURRENT-FORWARD-KOLYVAGIN",
+      "output_assertion": {
+        "statement": "The same A has rank r and finite full Sha(A/Q) for r in {0,1}.",
+        "objects": "A over Q with its actual analytic rank r.",
+        "hypotheses": "A is modular and its analytic rank is zero or one.",
+        "quantifiers": "The inclusive analytic-rank range 0 and 1.",
+        "parameter_range": "The inclusive analytic-rank range 0 and 1.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Full Sha is the kernel of localization at all places.",
+        "exceptional_cases": "No converse from algebraic rank or Selmer corank is asserted.",
+        "limit_order": "Supply modularity, then apply the forward theorem."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No converse from algebraic rank or Selmer corank is asserted.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1961,
+          "end_line": 1963,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1964,
+          "end_line": 1968,
+          "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1964,
+        "end_line": 1968,
+        "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "use_sha256": "a7796a5299db019fc25cadd6425fffd679a5999497dfca156e88cf7882c56336",
+    "supplier_passage_role": "application",
+    "available_assertion": {
+      "statement": "The same A has rank r and finite full Sha(A/Q) for r in {0,1}.",
+      "objects": "A over Q with its actual analytic rank r.",
+      "hypotheses": "A is modular and its analytic rank is zero or one.",
+      "quantifiers": "The inclusive analytic-rank range 0 and 1.",
+      "parameter_range": "The inclusive analytic-rank range 0 and 1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Full Sha is the kernel of localization at all places.",
+      "exceptional_cases": "No converse from algebraic rank or Selmer corank is asserted.",
+      "limit_order": "Supply modularity, then apply the forward theorem."
+    },
+    "needed_assertion": {
+      "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+      "objects": "The full 2-primary Selmer group of the same A.",
+      "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+      "quantifiers": "The two established cases r=0 and r=1.",
+      "parameter_range": "The two established cases r=0 and r=1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+      "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+      "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+    },
+    "required_capabilities": [
+      "The same A has rank r and finite full Sha(A/Q) for r in {0,1}.",
+      "The 2-primary Selmer group of A has Z2-corank r."
+    ],
+    "available_capabilities": [
+      "The same A has rank r and finite full Sha(A/Q) for r in {0,1}."
+    ],
+    "derived_capabilities": [
+      "The 2-primary Selmer group of A has Z2-corank r."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1969,
+        "end_line": 1975,
+        "excerpt_sha256": "4bd0ea0a127c7909e68bcf93600f7f4ab5fcc721ac76e47d7ea544104eea863a"
+      },
+      "application_id": "CURRENT-FORWARD-KUMMER-CORANK",
+      "output_assertion": {
+        "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+        "objects": "The full 2-primary Selmer group of the same A.",
+        "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+        "quantifiers": "The two established cases r=0 and r=1.",
+        "parameter_range": "The two established cases r=0 and r=1.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+        "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+        "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "Finiteness of Sha alone does not determine r.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1964,
+          "end_line": 1968,
+          "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1969,
+          "end_line": 1975,
+          "excerpt_sha256": "4bd0ea0a127c7909e68bcf93600f7f4ab5fcc721ac76e47d7ea544104eea863a"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1969,
+        "end_line": 1975,
+        "excerpt_sha256": "4bd0ea0a127c7909e68bcf93600f7f4ab5fcc721ac76e47d7ea544104eea863a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 3,
+        "end_line": 8,
+        "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "use_sha256": "a7a30ae599fa47dbbd67227f8e2f7c57ea2d64a2ee1dcaa97279169d19e0431d",
+    "supplier_passage_role": "application",
+    "available_assertion": {
+      "statement": "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor.",
+      "objects": "The elliptic curve A and its arithmetic conductor N.",
+      "hypotheses": "A is an elliptic curve over Q.",
+      "quantifiers": "Every elliptic curve A over Q at its conductor.",
+      "parameter_range": "Every elliptic curve A over Q at its conductor.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Finite surjective Q-parametrization.",
+      "exceptional_cases": "No residual-image, reduction-type or non-CM restriction.",
+      "limit_order": "Apply modularity before Kolyvagin."
+    },
+    "needed_assertion": {
+      "statement": "The actual A is a quotient of J1(N) by a surjective homomorphism over Q.",
+      "objects": "X1(N), X0(N), J1(N), the same A and its identity point.",
+      "hypotheses": "The finite modular parametrization, finite forgetful map and compatible norm/Picard formalism.",
+      "quantifiers": "The actual arithmetic-conductor level N and A/Q.",
+      "parameter_range": "The actual arithmetic-conductor level N and A/Q.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Degree-zero divisor classes and geometric base point.",
+      "exceptional_cases": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+      "limit_order": "Compose finite curve maps, descend norm on Picard and check geometric surjectivity."
+    },
+    "required_capabilities": [
+      "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor.",
+      "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+    ],
+    "available_capabilities": [
+      "The actual elliptic curve A over Q is modular via X0(N) at its arithmetic conductor."
+    ],
+    "derived_capabilities": [
+      "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1976,
+        "end_line": 2000,
+        "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+      },
+      "application_id": "CURRENT-FORWARD-PICARD-QUOTIENT",
+      "output_assertion": {
+        "statement": "The actual A is a quotient of J1(N) by a surjective homomorphism over Q.",
+        "objects": "X1(N), X0(N), J1(N), the same A and its identity point.",
+        "hypotheses": "The finite modular parametrization, finite forgetful map and compatible norm/Picard formalism.",
+        "quantifiers": "The actual arithmetic-conductor level N and A/Q.",
+        "parameter_range": "The actual arithmetic-conductor level N and A/Q.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Degree-zero divisor classes and geometric base point.",
+        "exceptional_cases": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+        "limit_order": "Compose finite curve maps, descend norm on Picard and check geometric surjectivity."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1961,
+          "end_line": 1963,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1976,
+          "end_line": 2000,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1976,
+        "end_line": 2000,
+        "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 25,
+        "end_line": 28,
+        "excerpt_sha256": "ab1a98670e5e0f9fdffc96761e5febf8d9d5c30ece49d72b2ff28dccdf534f4a"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "use_sha256": "fa03f74cec3c047e6f510e7ca333898bdad17e66bcd50f523552f8dbdc587b91",
+    "supplier_passage_role": "proof",
+    "available_assertion": {
+      "statement": "The actual A is a quotient of J1(N) by a surjective homomorphism over Q.",
+      "objects": "X1(N), X0(N), J1(N), the same A and its identity point.",
+      "hypotheses": "The finite modular parametrization, finite forgetful map and compatible norm/Picard formalism.",
+      "quantifiers": "The actual arithmetic-conductor level N and A/Q.",
+      "parameter_range": "The actual arithmetic-conductor level N and A/Q.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Degree-zero divisor classes and geometric base point.",
+      "exceptional_cases": "No rational cusp, rational preimage, optimality or Hecke-equivariance assertion.",
+      "limit_order": "Compose finite curve maps, descend norm on Picard and check geometric surjectivity."
+    },
+    "needed_assertion": {
+      "statement": "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence.",
+      "objects": "The actual quotient A of J1(N), K=Q and the trivial character.",
+      "hypotheses": "The quotient and nonzero central L-value are supplied.",
+      "quantifiers": "Only the optional rank-zero branch, with the 2-primary place included.",
+      "parameter_range": "Only the optional rank-zero branch, with the 2-primary place included.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Kato's full all-prime Selmer convention.",
+      "exceptional_cases": "Does not supply analytic rank one or the restricted converse.",
+      "limit_order": "Establish the quotient and central nonvanishing before applying Corollary 14.3."
+    },
+    "required_capabilities": [
+      "The actual A is a quotient of J1(N) by a surjective homomorphism over Q.",
+      "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence."
+    ],
+    "available_capabilities": [
+      "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+    ],
+    "derived_capabilities": [
+      "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 2001,
+        "end_line": 2005,
+        "excerpt_sha256": "80b4f4aa12c276c43038cee6838af57ea5e5a67ba9f147ab757c29a83f875356"
+      },
+      "application_id": "CURRENT-FORWARD-KATO-OPTIONAL",
+      "output_assertion": {
+        "statement": "In the analytic-rank-zero case the optional Kato route gives the stated finite full Selmer consequence.",
+        "objects": "The actual quotient A of J1(N), K=Q and the trivial character.",
+        "hypotheses": "The quotient and nonzero central L-value are supplied.",
+        "quantifiers": "Only the optional rank-zero branch, with the 2-primary place included.",
+        "parameter_range": "Only the optional rank-zero branch, with the 2-primary place included.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Kato's full all-prime Selmer convention.",
+        "exceptional_cases": "Does not supply analytic rank one or the restricted converse.",
+        "limit_order": "Establish the quotient and central nonvanishing before applying Corollary 14.3."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "Does not supply analytic rank one or the restricted converse.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1976,
+          "end_line": 2000,
+          "excerpt_sha256": "f452316e2d4d8cecfe2457a98efde16a9f41c47a3c1f67e3ee07d97429be76a6"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 2001,
+          "end_line": 2005,
+          "excerpt_sha256": "80b4f4aa12c276c43038cee6838af57ea5e5a67ba9f147ab757c29a83f875356"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 2001,
+        "end_line": 2005,
+        "excerpt_sha256": "80b4f4aa12c276c43038cee6838af57ea5e5a67ba9f147ab757c29a83f875356"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 29,
+        "end_line": 32,
+        "excerpt_sha256": "3a2be1b0e7b53266500dba2afcdd9a4f31248a7791bbd3ad4a690904b165fd02"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "use_sha256": "3641fb1148cbd0fc89a7e19bfdc1242eafa22d8a6882d40b312c9214c643636a",
+    "supplier_passage_role": "proof",
+    "available_assertion": {
+      "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+      "objects": "The full 2-primary Selmer group of the same A.",
+      "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+      "quantifiers": "The two established cases r=0 and r=1.",
+      "parameter_range": "The two established cases r=0 and r=1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+      "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+      "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+    },
+    "needed_assertion": {
+      "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+      "objects": "The full 2-primary Selmer group of the same A.",
+      "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+      "quantifiers": "The two established cases r=0 and r=1.",
+      "parameter_range": "The two established cases r=0 and r=1.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+      "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+      "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+    },
+    "required_capabilities": [
+      "The 2-primary Selmer group of A has Z2-corank r."
+    ],
+    "available_capabilities": [
+      "The 2-primary Selmer group of A has Z2-corank r."
+    ],
+    "derived_capabilities": [],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 3,
+        "end_line": 8,
+        "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+      },
+      "application_id": "CURRENT-FORWARD-KUMMER-CORANK",
+      "output_assertion": {
+        "statement": "The 2-primary Selmer group of A has Z2-corank r.",
+        "objects": "The full 2-primary Selmer group of the same A.",
+        "hypotheses": "Rank A(Q)=r, A(Q) is finitely generated, and full Sha(A/Q) is finite.",
+        "quantifiers": "The two established cases r=0 and r=1.",
+        "parameter_range": "The two established cases r=0 and r=1.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Direct limit of finite Kummer sequences; tensor Q2/Z2.",
+        "exceptional_cases": "Finiteness of Sha alone does not determine r.",
+        "limit_order": "Use the rank and finite Sha, then the exact Kummer limit."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "Finiteness of Sha alone does not determine r.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 3,
+          "end_line": 8,
+          "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1969,
+        "end_line": 1975,
+        "excerpt_sha256": "4bd0ea0a127c7909e68bcf93600f7f4ab5fcc721ac76e47d7ea544104eea863a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 3,
+        "end_line": 8,
+        "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "use_sha256": "d66a604a01416ce9fa89fd4b3fae0f9eeb4de4c7655cbb0860d7b83379e83269",
+    "supplier_passage_role": "proof",
+    "available_assertion": {
+      "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+      "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+      "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+      "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+      "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+      "exceptional_cases": "This is separate from the published Hodge equivalence.",
+      "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+    },
+    "needed_assertion": {
+      "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+      "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+      "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+      "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+      "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+      "exceptional_cases": "This is separate from the published Hodge equivalence.",
+      "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+    },
+    "required_capabilities": [
+      "Every rational complex endomorphism of the actual surface A descends to Qbar."
+    ],
+    "available_capabilities": [
+      "Every rational complex endomorphism of the actual surface A descends to Qbar."
+    ],
+    "derived_capabilities": [],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 9,
+        "end_line": 14,
+        "excerpt_sha256": "803e19d2f170d649e891691a9b1e772d99cbc3b14662711b3fce446568bcdc84"
+      },
+      "application_id": "CURRENT-HODGE-TORSION-DESCENT",
+      "output_assertion": {
+        "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+        "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+        "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+        "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+        "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+        "exceptional_cases": "This is separate from the published Hodge equivalence.",
+        "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "This is separate from the published Hodge equivalence.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 9,
+          "end_line": 14,
+          "excerpt_sha256": "803e19d2f170d649e891691a9b1e772d99cbc3b14662711b3fce446568bcdc84"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1431,
+        "end_line": 1433,
+        "excerpt_sha256": "e352eedb362642adde395dab55250a1b41e37fa668097de0f8cf46f7ba300ebb"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 9,
+        "end_line": 14,
+        "excerpt_sha256": "803e19d2f170d649e891691a9b1e772d99cbc3b14662711b3fce446568bcdc84"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "use_sha256": "340bc0b9da7e2bd09a2129ef90f98afd2636c2f9dee2445d879b246f205b10c5",
+    "supplier_passage_role": "proof",
+    "available_assertion": {
+      "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+      "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+      "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+      "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+      "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+      "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+      "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+    },
+    "needed_assertion": {
+      "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+      "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+      "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+      "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+      "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+      "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+      "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+    },
+    "required_capabilities": [
+      "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k."
+    ],
+    "available_capabilities": [
+      "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k."
+    ],
+    "derived_capabilities": [],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 15,
+        "end_line": 24,
+        "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+      },
+      "application_id": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+      "output_assertion": {
+        "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+        "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+        "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+        "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+        "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+        "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+        "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No polarization-preserving restriction and no unrelated height parameters.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 15,
+          "end_line": 24,
+          "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1434,
+        "end_line": 1440,
+        "excerpt_sha256": "5e7c0890a4b546971676f1bc0954108ad51b31b1199dce85470535c5924f0c16"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 15,
+        "end_line": 24,
+        "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "use_sha256": "c9a04a6caca8751822f242857205c0aabbbcddcbee345ee0a9b004c868ba145f",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+      "objects": "Complex abelian varieties, integral H1 lattices and their rational Hodge morphisms.",
+      "hypotheses": "Polarizable objects of the specified homology types; morphisms preserve the Hodge decomposition.",
+      "quantifiers": "For every pair of such objects and every rational Hodge morphism.",
+      "parameter_range": "Over C; rational Hom groups obtained by tensoring integral Hom with Q.",
+      "uniformity": "The assertion applies to each object satisfying the stated hypotheses; no uniform effective bound is used.",
+      "constants": "No quantitative constant is supplied or changed.",
+      "normalizations": "H1 is covariant and has weight -1. Morphisms need not preserve a chosen polarization.",
+      "exceptional_cases": "No assertion of Qbar or Q descent, higher-weight Hodge conjecture, or family algebraization is supplied.",
+      "limit_order": "No limiting operation is used."
+    },
+    "needed_assertion": {
+      "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+      "objects": "Complex abelian varieties, integral H1 lattices and their rational Hodge morphisms.",
+      "hypotheses": "Polarizable objects of the specified homology types; morphisms preserve the Hodge decomposition.",
+      "quantifiers": "For every pair of such objects and every rational Hodge morphism.",
+      "parameter_range": "Over C; rational Hom groups obtained by tensoring integral Hom with Q.",
+      "uniformity": "The assertion applies to each object satisfying the stated hypotheses; no uniform effective bound is used.",
+      "constants": "No quantitative constant is supplied or changed.",
+      "normalizations": "H1 is covariant and has weight -1. Morphisms need not preserve a chosen polarization.",
+      "exceptional_cases": "No assertion of Qbar or Q descent, higher-weight Hodge conjecture, or family algebraization is supplied.",
+      "limit_order": "No limiting operation is used."
+    },
+    "required_capabilities": [
+      "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1)."
+    ],
+    "available_capabilities": [
+      "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1)."
+    ],
+    "derived_capabilities": [],
+    "connecting_derivation": {
+      "kind": "identification",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+          "sha256": "2c35465cd4cac7468eea1793e25a8b450486a034eb5009a13431c8dca9aad293"
+        },
+        "start_line": 1,
+        "end_line": 21,
+        "excerpt_sha256": "2c35465cd4cac7468eea1793e25a8b450486a034eb5009a13431c8dca9aad293"
+      },
+      "application_id": "CURRENT-MILNE-CAV-HODGE",
+      "output_assertion": {
+        "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+        "objects": "Complex abelian varieties, integral H1 lattices and their rational Hodge morphisms.",
+        "hypotheses": "Polarizable objects of the specified homology types; morphisms preserve the Hodge decomposition.",
+        "quantifiers": "For every pair of such objects and every rational Hodge morphism.",
+        "parameter_range": "Over C; rational Hom groups obtained by tensoring integral Hom with Q.",
+        "uniformity": "The assertion applies to each object satisfying the stated hypotheses; no uniform effective bound is used.",
+        "constants": "No quantitative constant is supplied or changed.",
+        "normalizations": "H1 is covariant and has weight -1. Morphisms need not preserve a chosen polarization.",
+        "exceptional_cases": "No assertion of Qbar or Q descent, higher-weight Hodge conjecture, or family algebraization is supplied.",
+        "limit_order": "No limiting operation is used."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "This connection identifies only the selected imported assertion. No assertion of Qbar or Q descent, higher-weight Hodge conjecture, or family algebraization is supplied. The separate nine-obligation application comparison checks its use by the constructed consumer; this identification does not assert the complete consumer conclusion follows without those checks.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+            "sha256": "2c35465cd4cac7468eea1793e25a8b450486a034eb5009a13431c8dca9aad293"
+          },
+          "start_line": 1,
+          "end_line": 21,
+          "excerpt_sha256": "2c35465cd4cac7468eea1793e25a8b450486a034eb5009a13431c8dca9aad293"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1427,
+          "end_line": 1430,
+          "excerpt_sha256": "7ba7c4459c99b9a8c880049de3e8c5bdd7228ab7ee0e0b7199418b3cd0000b0c"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1427,
+        "end_line": 1430,
+        "excerpt_sha256": "7ba7c4459c99b9a8c880049de3e8c5bdd7228ab7ee0e0b7199418b3cd0000b0c"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "use_sha256": "111deead444d0295c730d6edd14aa33b08a7467d4b501a96d5acbf6652277297",
+    "supplier_passage_role": "application",
+    "available_assertion": {
+      "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+      "objects": "Complex abelian varieties, integral H1 lattices and their rational Hodge morphisms.",
+      "hypotheses": "Polarizable objects of the specified homology types; morphisms preserve the Hodge decomposition.",
+      "quantifiers": "For every pair of such objects and every rational Hodge morphism.",
+      "parameter_range": "Over C; rational Hom groups obtained by tensoring integral Hom with Q.",
+      "uniformity": "The assertion applies to each object satisfying the stated hypotheses; no uniform effective bound is used.",
+      "constants": "No quantitative constant is supplied or changed.",
+      "normalizations": "H1 is covariant and has weight -1. Morphisms need not preserve a chosen polarization.",
+      "exceptional_cases": "No assertion of Qbar or Q descent, higher-weight Hodge conjecture, or family algebraization is supplied.",
+      "limit_order": "No limiting operation is used."
+    },
+    "needed_assertion": {
+      "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+      "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+      "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+      "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+      "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+      "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+      "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+    },
+    "required_capabilities": [
+      "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+      "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k."
+    ],
+    "available_capabilities": [
+      "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1)."
+    ],
+    "derived_capabilities": [
+      "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 15,
+        "end_line": 24,
+        "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+      },
+      "application_id": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+      "output_assertion": {
+        "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+        "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+        "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+        "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+        "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+        "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+        "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No polarization-preserving restriction and no unrelated height parameters.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1427,
+          "end_line": 1430,
+          "excerpt_sha256": "7ba7c4459c99b9a8c880049de3e8c5bdd7228ab7ee0e0b7199418b3cd0000b0c"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 15,
+          "end_line": 24,
+          "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1434,
+        "end_line": 1440,
+        "excerpt_sha256": "5e7c0890a4b546971676f1bc0954108ad51b31b1199dce85470535c5924f0c16"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 15,
+        "end_line": 24,
+        "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+      }
+    ]
+  },
+  {
+    "use_id": "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "use_sha256": "b670fc9199e0caba38bb8106c2f10c69aa3d4ec4873292cc2b59d779a4dac84e",
+    "supplier_passage_role": "proof",
+    "available_assertion": {
+      "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+      "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+      "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+      "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+      "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+      "exceptional_cases": "This is separate from the published Hodge equivalence.",
+      "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+    },
+    "needed_assertion": {
+      "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+      "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+      "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+      "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+      "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+      "uniformity": "Only the exact stated objects and domain are used.",
+      "constants": "No effective quantitative bound is asserted.",
+      "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+      "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+      "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+    },
+    "required_capabilities": [
+      "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+      "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k."
+    ],
+    "available_capabilities": [
+      "Every rational complex endomorphism of the actual surface A descends to Qbar."
+    ],
+    "derived_capabilities": [
+      "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k."
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 15,
+        "end_line": 24,
+        "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+      },
+      "application_id": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+      "output_assertion": {
+        "statement": "The full geometric rational endomorphism algebra is B or M2(k) for an imaginary quadratic field k.",
+        "objects": "The actual rank-one left B homology module, complex structure J and full geometric endomorphisms.",
+        "hypotheses": "The Hodge comparison, torsion descent, indefinite quaternion division B and stated central-simple identities.",
+        "quantifiers": "The actual quaternionic surface and its fixed B-action.",
+        "parameter_range": "The actual quaternionic surface and its fixed B-action.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Covariant homology, left B-action and right multiplication by J.",
+        "exceptional_cases": "No polarization-preserving restriction and no unrelated height parameters.",
+        "limit_order": "Compute the Hodge centralizer, identify its commutative right factor, then use Hodge comparison and descent."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "No polarization-preserving restriction and no unrelated height parameters.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1431,
+          "end_line": 1433,
+          "excerpt_sha256": "e352eedb362642adde395dab55250a1b41e37fa668097de0f8cf46f7ba300ebb"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 15,
+          "end_line": 24,
+          "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        "start_line": 1434,
+        "end_line": 1440,
+        "excerpt_sha256": "5e7c0890a4b546971676f1bc0954108ad51b31b1199dce85470535c5924f0c16"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        },
+        "start_line": 15,
+        "end_line": 24,
+        "excerpt_sha256": "489d60c336c4329f11666d98217e1c27a398790a27cdf12ef3ba60dc739dc2f8"
+      }
+    ]
+  }
+]

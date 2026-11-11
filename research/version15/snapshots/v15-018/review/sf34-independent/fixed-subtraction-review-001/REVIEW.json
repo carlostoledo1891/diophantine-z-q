@@ -1,0 +1,30 @@
+{
+  "schema": "bounded-fixed-subtraction-binding-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "681900fc46198ad6fed78c5af190efe3772f432235cbf82ff0c7bfa1a9ff218a",
+  "container_manifest_sha256": "224e71dbeab542c1a97b59f69507b49d89111c55fcf7ebcaefed97f083b44023",
+  "reviewer": {
+    "agent": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "task": "/root/v14_arithmetic_review",
+    "authorship_disclosure": "Reviewer authored earlier manuscript integration, not this original function-field checker or new binding. Current manuscript transcription remains sourcefirst-owned."
+  },
+  "scope": "Exact original checker/result to H and S source-use substitutions; denominator exclusions retained. No new PARI execution claimed.",
+  "checks": {
+    "all_source_and_window_pins_match": true,
+    "original_script_and_nine_identity_result_read": true,
+    "H_substitution_and_reciprocal_abscissa_formula_match": true,
+    "S_substitution_and_cleared_equation_match": true,
+    "common_unit_numerator_denominator_match": true
+  },
+  "reasoning": [
+    "The checker uses E:y²=x³-Dx and H=(x,xS), reducing by S²=x-D/x. Its reciprocal-abscissa identity yields f(H-P)=x*g². With x=chi=1/f this is g_H²/f, exactly the checked V0 rows.",
+    "The unit3+2rho multiplies both N and D0; the reduced pair is exactly the alternate-ratio pair already checked in025.",
+    "Substitution x=h_S²,S=j_S/h_S,g=g_S/h_S is valid because the root chart proves h_S nonzero. Multiplication by h_S gives exactly the scalar g_S relation and N_S,D_S used in026.",
+    "The recorded N-zero factorization includes H=-P+(0,0). All E[2],P+E[2],-P+E[2] exclusions remain explicit. They are not proved merely by the function-field identity."
+  ],
+  "limitations": [
+    "No current manuscript transcription selfapproval.",
+    "No new computation or authentication of historical execution beyond its exact retained file.",
+    "The scalar subgroup/guard and forced149 argument must discharge the stated exceptional cases separately."
+  ]
+}

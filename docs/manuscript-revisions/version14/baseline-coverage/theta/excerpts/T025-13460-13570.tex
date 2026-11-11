@@ -1,0 +1,111 @@
+Apply the finite additive Fourier idempotent for the prescribed
+unit-squareclass subset modulo a sufficiently high power of $p$.
+This idempotent keeps the $D_0$ coefficient. Its support condition
+is stable under multiplication by unit squares, so it commutes
+with the unit action and retains a scalar type, at a possibly
+deeper level. At every prime outside $S_0$ take the spherical vector.
+The packet there is unramified; its standard squarefree coefficient
+$c_p^0$ is $1$ at both valuations zero and one
+\cite[Section~I.3, pp.~377--378]{waldspurger}.
+This includes the primes dividing $D_0$. Local Whittaker uniqueness
+and the tensor-product factorization show that the resulting
+global reference coefficient is still nonzero.
+
+\paragraph{The exact full-space comparison.}
+Let the resulting scalar character be $\psi$ and put
+$\eta=\psi\chi_{-\sigma}$. Both have two-power order.
+Let $V$ be the full good-Hecke eigenspace of this scalar character,
+at the level just constructed. Keep all old multiplicities. In
+Waldspurger's notation its integral-weight eigenform and character are
+\[
+ \phi_0=f_E\otimes\eta,\qquad
+ \chi_0=\psi\chi_{-1},\qquad
+ \phi_0\otimes\chi_0^{-1}=f_E\otimes\chi_\sigma .
+\]
+This also fixes the signs in the packet convention: Waldspurger's
+positive index $D$ twists the last representation by $\chi_D$.
+The Hecke eigenvalues in $V$ are $\eta(p)a_p(E)$.
+
+The nonzero space implies hypothesis (H1) by Waldspurger's
+Proposition~2 \cite[Section~I.2, p.~377]{waldspurger}. In explicit terms, at a principal-series
+place its two inducing characters take value $1$ at $-1$.
+Corollary~2 \cite[pp.~483--484]{waldspurger} applies to every $f\in V$ and any
+positive squarefree pair whose ratio is a square in every
+$\Q_p$ at a prime dividing the level. Our $D,D_0$ satisfy
+this condition because the level has prime support $S_0$.
+The final paragraph of that proof removes (H2) for this
+same-$\Q_2$-squareclass comparison. No assumption of
+non-supercuspidality at two is required.
+
+\paragraph{The printed coefficient identity and its dyadic hypothesis.}
+For clarity, write $\mathcal L_D=L(E^{(\sigma D)},1)$ and let
+$N_{\rm W}$ denote the level in Waldspurger's notation, not the
+conductor of $E$. In \cite[Corollary~2, pp.~483--484]{waldspurger}
+take
+\[
+ k=3,\quad \chi=\psi,\quad \chi_0=\psi\chi_{-1},\quad
+ \rho_0=\rho_E\otimes\eta,\quad n_1=D_0,\quad n_2=D.
+\]
+Then $\rho_0\otimes\chi_0^{-1}=\rho_E\otimes\chi_\sigma$.
+The corollary, in its printed order, is
+\[
+ a_f(D_0)^2\mathcal L_D\,\psi(D/D_0)D^{1/2}
+   =a_f(D)^2\mathcal L_{D_0}D_0^{1/2}.
+\]
+The passage from the automorphic central argument $1/2$ to the
+classical argument $1$ is the same for both terms. Dividing only
+by the nonzero reference value gives (E.10). In particular this
+is a literal square identity, with neither complex conjugation
+nor an unspecified absolute-value normalization.
+
+Every prime of $N_{\rm W}$ belongs to $S_0$ at this point of the
+construction. The prescribed local classes make $D/D_0$ a square
+in $\mathbb Q_p^\times$ at each such prime, including $p=2$.
+In the proof of the corollary, the local coefficient functions
+at these primes have equal values at $D,D_0$. Outside the level,
+the squarefree arguments have valuation zero or one and the
+unramified coefficient function has value one in both cases.
+The real coefficient contributes exactly the power
+$(D/D_0)^{(k-2)/4}$ before squaring. The quotient of epsilon
+factors is computed on pp.~483--484: its Hilbert-symbol product
+disappears by reciprocity and its remaining character is
+$\chi(D/D_0)=\psi(D/D_0)$. Thus these local terms do not leave
+an additional prime-dependent factor in the displayed identity.
+
+The final paragraph on p.~484 explicitly explains the use of
+(H2): it is needed in that argument only to compare Fourier
+indices in different squareclasses of $\mathbb Q_2^\times$.
+Our pair is in one squareclass. Hence the corollary as stated
+requires (H1) here, but does not impose (H2), a nonsupercuspidal
+condition at two, or a new dyadic conductor restriction. The
+nonzero scalar eigenspace supplies (H1) by
+\cite[Proposition~2, p.~377]{waldspurger}. Moreover the proof on
+p.~483 extends its linear relation to every vector in the full
+eigenspace before squaring. The resulting identity therefore
+applies simultaneously to old multiplicities, and later to both
+Galois-conjugated and character-twisted vectors at a common level.
+At that later level the same squareclass test is repeated; its
+prime support is still $S_0$.
+Putting $n_1=D_0,n_2=D$ in the corollary, with weight $3/2$, gives
+\[
+ a_f(D)^2=
+ \psi(D/D_0)\,
+ \frac{\sqrt D\,L(E^{(\sigma D)},1)}
+      {\sqrt{D_0}\,L(E^{(\sigma D_0)},1)}
+ a_f(D_0)^2.                                      \tag{E.10}
+\]
+The period cancels, so the quotient in this formula is the quotient
+of the specified $L_*$-values. No product over the primes dividing
+$D$ or $D_0$ is missing: the unramified factors at squarefree
+valuations are exactly those checked above.
+
+For clarity, (E.10) gives proportional coefficient functionals on
+the whole space. If $\ell_0(f)=a_f(D_0)$ and $\ell_D(f)=a_f(D)$,
+then $\ell_D^2=C\ell_0^2$ as a polynomial identity on $V$.
+If $C=0$, then $\ell_D=0$. Otherwise, choose a square root $c$ of
+$C$. The polynomial ring on the finite-dimensional vector space
+$V$ is an integral domain, so
+$(\ell_D-c\ell_0)(\ell_D+c\ell_0)=0$ implies
+$\ell_D=c\ell_0$ or $\ell_D=-c\ell_0$.
+The scalar is common to every vector. This argument does not
+assume that $V$ is one-dimensional.

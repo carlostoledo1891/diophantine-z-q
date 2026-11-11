@@ -1,0 +1,268 @@
+% Preparatory outline only. No production manuscript or theorem numbering changes.
+% Author of this outline: /root/astra_quartic_opt05_anchor, 2026-11-07.
+% Exact source and review bindings: APPLICATION-DELTA.json and INTEGRATION-MAP.json.
+% The proposed labels below are local to this draft and are not accepted exposition.
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\title{Proof integration outline for the accepted 315-variable construction}
+\author{Preparatory notes}
+\date{November 7, 2026}
+\maketitle
+
+\section{Scope and fixed conventions}\label{outline:scope}
+The selected object is \texttt{combined315}, identified by its full IR hash
+in \texttt{CANDIDATES.json}. A variable count is not a candidate identifier.
+This document plans the proof exposition; it is neither a new proof audit
+nor a release manuscript. The strict publication threshold of fewer than
+300 total variables is unmet.
+
+Keep the pinned Version 13 source editions, errata qualifications, restricted
+converses, field basis and valuation normalizations. Write
+\[
+ K=\mathbb Q(\rho),\quad \rho^2=2,\quad D=(3-\rho)^2,
+ \quad C=3^{2^{25}}.
+\]
+The scalar coefficient is $F_s=2g_0g_1$. The root abscissa coefficients
+are $X_A=2v_{83}$, $X_T=2v_{87}$ and $X_Z=2v_{89}$.
+These are different functions. Do not replace $F_s$ by $g_1^2$.
+All notation for point indices, contact primes and scales must first be
+identified with the retained Version 13 definitions.
+
+\section{Exact chart changes and their exceptional branches}
+\label{outline:charts}
+\paragraph{Entries N01 and N02.}
+State the exact Kummer affine substitution and its reverse with all named
+divisors. Then state squared-H reconstruction only on $UQ\ne0$.
+For the latter, the recovered quantities are
+\[
+ f=(U+W)/Q,\qquad F=(V+W)/Q.
+\]
+Give the literal identities proving the former curve and subtraction
+equations, including each physical affine normalization. The source
+reports bound to N01 and N02 supply these identities. The construction
+passage must name every altered scalar, primary and logarithm consumer.
+
+\paragraph{Entry N03.}
+Make a separate lemma for the newly admitted $U=0$ and $Q=0$ cases.
+It must classify their fixed values, prove they are units at every
+consumed prime, and obtain contact radical one at all three scales.
+Use the restored scalar anchor and root-height inequality to exclude
+them before giving H a group-index interpretation. No logarithm ratio
+or H-dependent denominator may be used to prove this exclusion.
+The precise branch constants and their source spans are bound in N03;
+they must be transcribed with the source's meanings of $U,V,v,c$.
+
+\section{Contact parameter and conditional guards}
+\label{outline:contact}
+\paragraph{Entries N04, N05 and N06.}
+Replace the former weighted contact parameter by
+\[
+ R=F_5(A\lambda),\qquad E=R^{-1},\qquad
+ B=\frac{R}{T^2(1+R)^2}.
+\]
+Here $A$ is the detector scale, not the unrelated Lucas field input
+used later. State soundness at a required positive odd valuation
+$\alpha=v_p(R)$, where $1+R$ is a unit. Prove every retained pole and
+norm valuation using the actual square denominator.
+
+The guard-removal statement is conditional at required contact primes.
+Do not promote it to a global trace inverse when a contact radical is one.
+The completeness lemma must separately order finite support, small-prime
+depths, initial real choices, root choices, compact neighborhoods and final
+CRT progression. Quote the original open-set and density hypotheses,
+not independent local and real choices made after the same point is fixed.
+
+\section{Root parity and the shifted quaternion application}
+\label{outline:anchor}
+\paragraph{Entries N15, N16 and N17.}
+First obtain integral root indices from the retained square-abscissa charts.
+Do not assume oddness. State and prove the coefficient formulas used by
+the 359 component at both 3 and 2. In particular, the 3-adic valuation
+of $X_n$ is zero for odd $n$, while for nonzero even $n$ it is
+$-2-2v_3(n)$; at 2 an odd root has valuation $-1$.
+State separately every zero-index exclusion supplied by the chart.
+
+Define
+\[
+ q=12(X_A^2+X_T^2)+108X_Z^2
+   =48v_{83}^2+48v_{87}^2+432v_{89}^2.
+\]
+The changed application of the inherited quaternion criterion has
+parameter $F_s/C+q$. Its source must cover zero as well as nonzero
+parameters. The three competing negative valuation types lie in
+$2\mathbb Z$, $1+4\mathbb Z$ and $3+4\mathbb Z$.
+Use the unique-minimum argument to recover root oddness and the old
+scalar anchor. At 2 use the integral formal subgroup, without claiming
+good reduction there.
+
+Then give the three full A,T,Z sign actions. Check them on the final
+detector equations, not only on the original point blocks. They restore
+the old half-charts while fixing actual root points, root abscissae,
+detector outputs and the distinguished input.
+
+\paragraph{Entries N07 and N08.}
+Only after restoring the 326 source may its inherited 366 argument prove
+S oddness and apply the S sign normalization and half-point restoration.
+The S action is not asserted directly on the shifted private B equation.
+Retain the full coordinate lists and the existential half-point argument
+from their pinned source and review passages.
+
+\section{Valuations before H and the three common-place groups}
+\label{outline:detectors}
+\paragraph{Entries N09, N10, N13 and N14.}
+State the unconditional Kummer-to-curve and primary fourth-power
+identities before interpreting H. Prove the generic valuation classes
+from those identities and handle the fixed-unit exceptional leaves
+separately. Record the earlier 354 reviewer's valuation-only repair
+as an input to this later application.
+
+For the selected three-group construction, use exactly
+\begin{align*}
+ G_0&=1+E^{158}H_1^4+E^{157}H_4^4+E^{39}M_0^4+E^8T_0+E^4T_4,\\
+ G_1&=1+E^{158}H_2^4+E^{79}H_0^2+E^8T_2+E^4Z_1+EP_1,\\
+ G_2&=1+E^{158}H_3^4+E^{39}M_1^4+E^8T_3+E^{157}P_2^2+E^4P_3^2+EP_4^2.
+\end{align*}
+Bind every letter to its actual cached field or rational expression.
+For each group, tabulate all possible negative valuations modulo 16,
+including the actual powers and weights. Explain why the minimum cannot
+cancel. A zero leaf has infinite valuation and must be handled explicitly.
+Then derive all leaf conditions at the same place selected by the
+combined norm argument; separately successful places are insufficient.
+
+For completeness retain the original $\Pi^{19}$ progression, primary
+formal depth 20 and reciprocal depth 40. The shallow G2 ratio has actual
+precision 12, not merely the required order 10. The other high ratios
+have precision 40 and primary comparisons have precision 80.
+The actual positive-margin lists, in the source term order, are
+\[
+ (2,3,9,8,12),\qquad (2,1,8,4,79),\qquad
+ (2,281,8,3,156,159).
+\]
+In particular, the $E^{157}P_2^2$ term consumes the stronger U2 depth.
+Do not import the separate strong-H330 branch's $\Pi^{39}$ choice into
+this proof. N11 documents that unselected branch, not an extra premise
+of the selected construction.
+
+\section{Exact private anchor unscaling}
+\label{outline:unscale}
+\paragraph{Entry N18.}
+State a full solution-set equivalence under the retained guard
+$g_0\tau=1$. Starting from
+\[
+ Q=q,\quad B=2g_1+CQ\tau,\quad
+ U^2+6V^2-2W^2-4C\tau W-3B^2=0,
+\]
+put $u=g_0U$, $v=g_0V$, $w=g_0W$, $T=g_0B$. The new equations are
+\[
+ T=2g_0g_1+Cq,\qquad u^2+6v^2-2w^2-4Cw-3T^2=0.
+\]
+The inverse sets $Q=q$, $B=\tau T$, $U=\tau u$, $V=\tau v$,
+$W=\tau w$. Both maps fix every nonprivate coordinate, and the guard
+makes their compositions the identity. The old anchor is $\tau^2$
+times the new anchor. Include all five unconditional residual identities
+from the accepted exact319 map to certify the literal row normalizations.
+No private witness is assumed nonzero. This changes no quaternion parameter.
+
+In the three-group composition the anchor row labels 903 and 904 become
+1903 and 1904. Only row labels change. The detector rows 903 and 904
+remain present. Unscaling deletes anchor row 1904 and coordinate 904,
+retaining coordinate 903 as T. Keep these namespaces explicit.
+
+\section{The shorter exact Laurent chain}
+\label{outline:chain}
+\paragraph{Entries N12 and N20.}
+For each detector retain $ER=1$ and write the new equations as
+\begin{align*}
+ EJ&=R^2,&E_4J&=E,&E_8&=E_4^2,&E_{19}J&=E_8^2,\\
+ RE_{39}&=E_{19}^2,&RE_{79}&=E_{39}^2,&
+ E_{158}&=E_{79}^2,&E_{157}&=RE_{158}.
+\end{align*}
+Since $ER=1$, both factors are nonzero before any arithmetic
+interpretation. The first equation gives $J=R^3=E^{-3}\ne0$.
+Successive substitution therefore gives $E_i=E^i$ for every displayed
+index. All squarings assign new values; none is inverted by choosing a root.
+
+The forward map deletes the old $E_2$ and replaces the old $E_{11}$
+helper by $R^3$. The inverse restores $E_2=E^2$ and $E_{11}=E^{11}$.
+Both maps fix all consumed outputs and all other coordinates, including
+the private anchor. Hence the common-place and completeness arguments
+receive exactly their old inputs. The literal three copies delete
+coordinates 361,409,457 and rows 313,363,413; they repurpose coordinates
+355,403,451. Only rows 544,546,550,552,556,558,745,760,775 change.
+The frozen 315 composition checks all these consumers and the three root
+sign actions again. No new local condition is introduced.
+
+\section{Order of the complete argument}
+\label{outline:composition}
+For soundness, invert the chain map to obtain 318, invert private
+unscaling to obtain the three-anchor319 system, prove root parity and
+restore the 326 source, then apply the inherited S normalization.
+Next prove pre-H valuation claims and exclude the exceptional branches.
+Only then use the retained logarithm, integrality-transfer, scalar24,
+height and input arguments.
+
+For completeness, construct the 326 witnesses with its ordered
+$\Pi^{19}$ finite and real choices. Apply the 359 private quaternion
+extension after roots and scalar data are fixed. Apply exact unscaling,
+then assign the unique shortened-chain helpers. These last steps leave
+all earlier choices unchanged.
+
+\section{Separately accepted variants}
+\label{outline:variants}
+\paragraph{Entry N19, unselected.}
+The squared-$g_1$ alternative has parameter $g_1^2/C+q$ and requires its
+own orbit-specific valuation and 2-integrality lemmas. It is not used in
+315 and must not be combined additively with N18.
+
+\paragraph{Entry N21, only on exact319.}
+Add $Q=q$ and an output-linear weighted constant chain
+\[
+ c_0=3^{a_0},\qquad c_i=3^{a_i}c_{i-1}^2.
+\]
+The recurrence $e_i=2e_{i-1}+a_i$ forces unique rational values
+$c_i=3^{e_i}$ and final exponent $2^{25}$. Replace fixed C in the two
+anchor consumers by $c_{\rm last}$ and write $T=2g_0g_1+c_{\rm last}Q$.
+The separate Q gate is essential for quadratic degree in this lift.
+Forgetting the unique new values is the inverse. Record three different
+IRs, with 334,335 and336 variables, rather than calling them one ordinary319.
+Their exact maximum coefficients include the inherited constant K:
+$3^{4098}+K$, $3^{2050}+K$ and $3^{1026}+K$ respectively.
+These accepted artifacts have not been transported to 315 by this outline.
+
+\paragraph{Entry N22, only on combined320.}
+For the Lucas field inputs, rename the old private product $\mathcal C=AZ$
+as $S=\mathcal C-2Z$. With $V=AT$ the identity is
+\[
+ F+1=T^2+4Z^2-4Z\mathcal C+2ZV+\mathcal C^2-\mathcal CV
+     =T^2+S^2-SV.
+\]
+The inverse adds $2Z$; no divisor or exceptional case occurs. Retain
+physical output components $v_{253}$ and $2v_{254}$. Only coordinates
+249,250 and their four rows change. This saves 61 monomials and no
+variables on the reviewed source. A transport to 315 needs a separate
+full consumer and coefficient check.
+
+\paragraph{Entry N23, optional appendix only.}
+The bound $A(2^n-1)$ applies only to the stated isolated acyclic monomial
+constant-chain model with counted seeds and the separate Q gate. Its
+coefficient-cap argument must retain those restrictions. It supplies no
+unrestricted optimality result and is not a premise of integer projection.
+
+\section{Finite encoding and inventory closure}
+\label{outline:finite}
+For the frozen selected 315 IR, distinguish 5732 coefficient-power entries
+from 5729 ordinary monomials after fixing C. The three collisions are
+at the fourth powers of coordinates 83,87,89. The exact maximum is
+$186624C^2+64$. Preserve the complete primitive-residual SOS certificate,
+active-coordinate count, degree four and integer-content-one checks.
+The rational SOS equivalence must be stated separately from the arithmetic
+integer-defining argument.
+
+Before any manuscript integration, write full application contracts for
+each changed use, with the original source qualifications and all nine
+required obligations. Bind construction and consumer spans to the final
+text. The machine-readable integration map assigns each N-entry to the
+specific Version 13 applications and source consumer spans. Acceptance
+of the component packets does not approve this draft exposition.
+\end{document}

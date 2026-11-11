@@ -1,0 +1,33 @@
+{
+  "author": "/root/v14_arithmetic_author",
+  "created_at": "2026-11-09T10:08:45.270Z",
+  "exposure": "Prior review of Kato1999 primitive input and retained Kato definition imports; read current main and accepted local-cone review before this targeted comparison. No claim of new independent source-first reconstruction.",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+    },
+    "start_line": 13811,
+    "end_line": 13838,
+    "excerpt_sha256": "920d77866eecbd9f60fb3be700bc95343ca6cb7b455443f57c55791a9d8af7c6"
+  },
+  "observations": [
+    "Kato1999 §0.1 p314 defines etale cohomology on O_K[1/N] by finite coefficient inverse limits. §0.5 p316 takes norm inverse limits and defines subscript-zero by all local H2 restrictions at primes dividing N. There is no G_S cochain definition to substitute.",
+    "Kato2004 §8.2 pp180–181 defines Hq(R,M) using ordinary j_* of the generic-point sheaf, then finite coefficient inverse limits. The Iwasawa definition is §12.2 p220, not §12.1 (which describes the algebra).",
+    "The finite-coefficient adjunction map i_*M→Ri_*M on X=Spec O_K[1/2], i:U=X minus odd support→X, has cone supported at those odd points. Derived stalk theorem identifies its stalks with positive inertia cohomology.",
+    "The source-local cone is accepted separately. Its degree-one vanishing after rational sign localization is needed; a finite H1 injection alone cannot establish the H2 kernel comparison."
+  ],
+  "primary_pins": [
+    {
+      "path": "work/astra-kato-primary-001/kato-1999.pdf",
+      "sha256": "483dc18c56b2fe9cfac4e37f2e6594399625c3f0ea98a05bb69116377c67fc06",
+      "pages": "314,316 (PDF2,4)"
+    },
+    {
+      "path": "work/kato-2004.pdf",
+      "sha256": "3c6e14b11fa60262db8aff782ce3cf4d83e9100c0be83621a7e4ce502cec605d",
+      "pages": "180–181,219–220 (PDF65–66,104–105)"
+    }
+  ]
+}

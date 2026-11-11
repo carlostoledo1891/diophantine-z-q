@@ -1,0 +1,44 @@
+{
+  "decision": "accepted",
+  "subject_sha256": "685970401b4d277ce69eba3cf7f771dd19bfef73cffe943a4ce32133a27205c1",
+  "scope": "Exact abstract-label lemma, counterexample, source order and current raw223 consumer census only.",
+  "checks": {
+    "member_pins": true,
+    "source_pin": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b",
+    "windows": 3,
+    "window_note": "CRLF and terminal whitespace normalized for line-window comparison; exact source SHA checked separately.",
+    "ir_pin": "0839eb623c76ba462eec8842dc5b8c85fef85cc924c9daa98f35a83ae61948e0",
+    "root3_consumers": [
+      100,
+      101,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      197
+    ]
+  },
+  "reasoning": [
+    "The monic polynomial in rational t has integer coefficients when a,b are integers. In lowest terms the denominator divides u^2 and is coprime to u; it is1. This includes zero and sign cases.",
+    "For every integer a>=4, t=a and b=1/(a-2) satisfy Delta=0 exactly, while b is nonintegral. B=a contradicts the exponential bound for largea, so b integrality cannot simply be omitted.",
+    "Pinned source uses all four nonzero integer labels for B^2<=M1 h(T)+M2 before proving Delta=0. Post-Delta integrality alone cannot justify removal of Q3 at that earlier step.",
+    "A rational index function would imply f(Q+P)-f(Q)=1 identically from infinitely many zeros. Its finite pole set is invariant under nontorsion translation, impossible unless empty; on the complete curve f is then constant."
+  ],
+  "limits": [
+    "No root block deletion accepted.",
+    "No global impossibility or new arithmetic premise.",
+    "Existing parent arithmetic is reused; this reviewer contributed to older parent constructions but not this new abstract-label proposal."
+  ]
+}

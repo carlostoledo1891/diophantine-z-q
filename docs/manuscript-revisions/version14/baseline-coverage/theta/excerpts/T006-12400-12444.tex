@@ -1,0 +1,45 @@
+\paragraph{4. Primitive twisting is an actual Euler system.}
+Fix a constituent $\chi=\chi_h$ of primitive conductor
+$D=|\Delta_h|=2^a d$, $d$ odd, and a basis $e_\chi$ of
+$\mathbf Z_2(\chi)$. Put
+$\Sigma=\operatorname{prime}(2Ndcd_s)$.
+For every positive integer $m$ with $(m,cd_s)=1$, set
+\[
+ K_m=\mathbf Q(\zeta_m),\quad
+ L_m=\mathbf Q(\zeta_{Dm}),\quad
+ y_m=\operatorname{cor}_{L_m/K_m}
+             (z_{Dm}\otimes e_\chi).                      \tag{K8}
+\]
+The character is trivial over $L_m$, so tensoring is an integral
+map there. Formula (K7) places (K8) in the precise $j_*$ group
+required by Kato~13.1 on its index set
+$\operatorname{prime}(m)\cap\Sigma=\{2\}$. The larger definition is
+permitted by (8.1.3), Sections~8.9--8.11 and Proposition~8.12:
+$S_{Dm}=\operatorname{prime}(2NDm)$ is disjoint from
+$\operatorname{prime}(cd_s)$, since $d\mid F$ and (K5) holds.
+Each class uses the original $f,\xi,c,d_s$. We will also use this
+same construction on the different index set required by
+\cite[Section 0.1]{kato1999}, as checked below.
+
+For $m\mid m'$, transitivity of corestriction reduces the norm
+of (K8) to Proposition~8.12, p.~186. For a deck automorphism $g$,
+equivariance gives
+\[
+ \operatorname{cor}((gz)\otimes e_\chi)
+       =\chi(g)^{-1}g\operatorname{cor}(z\otimes e_\chi).
+\]
+Consequently the factor at a newly introduced good prime $q$ is
+\[
+ E_q(\chi)=1-\frac{a_q\chi(q)}q\sigma_q^{-1}
+                         +\frac1q\sigma_q^{-2}.           \tag{K9}
+\]
+In Kato~13.1, pp.~224--225, the polynomial is
+$P_q(X)=\det(1-\operatorname{Fr}_qX\mid T\chi)$ and the norm
+factor is $P_q(q^{-1}\sigma_q^{-1})$, exactly (K9).
+Repeated prime powers introduce no factor because Proposition~8.12
+has a product over newly added support primes. Thus the subfamily
+on Kato~13.1's index set is an Euler system of the stated lattice,
+not a class inferred from proportionality of rank-one Iwasawa
+modules. The required norm relations on the 1999 index set are
+verified separately below.
+

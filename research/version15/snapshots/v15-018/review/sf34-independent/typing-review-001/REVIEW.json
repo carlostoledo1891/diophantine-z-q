@@ -1,0 +1,41 @@
+{
+  "schema": "bounded-coefficient-identity-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "43fc6b85913dda946b276b9f44d30ded173ed785d96fbbaba7f830d2b38d7267",
+  "identities_sha256": "ccfa72b7eab7c39c125f7ce9573fd36ca1eec62180dd5bfdcb70bb657787e5e1",
+  "reviewer": {
+    "agent": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "task": "/root/v14_arithmetic_review",
+    "authorship_disclosure": "Reviewer authored earlier V15 integration but not the Jose table or this GI supplement. Acceptance concerns original coefficient identities; no independent reapproval of reviewer-authored transcription."
+  },
+  "scope": "Four named coefficient identities and conditional semantic typing, with exact current consumer match. Not full SF34 closure.",
+  "checks": {
+    "manifest": true,
+    "identities": true,
+    "table": true,
+    "literal_rows": true,
+    "consumers": true
+  },
+  "independent_symbolic_checks": 20,
+  "details": [
+    "Rows66–71 give C=L2*L4, AT=L2*L3 and x134+2rho*x135=G+1. No division or nonzero assumption is used.",
+    "Rows82–83 give (I+3)^2=x146+2rho*x147; rows183–184 reconstruct I^4 from that pair and I+3. This remains an identity at zero.",
+    "Rows31–34 give f(V0)^2=x95+2rho*x96 and D^2*f(V0)^4=193*x97−132rho*x98. Coefficients193 and33 are nonzero rationals; no variable division is introduced.",
+    "Rows185–186 give (x99−2rho*x100)^2=x215+rho*x216. Rows35–36 give X−D*X*Y−g^2=0 with X=x47+2rho*x48,Y=x99+2rho*x100,g=x61+rho*x62; identifying Y=f(V1)^2 retains the nonzero root/biquadratic antecedent from021."
+  ],
+  "retained_limitations": [
+    "No certification of all195 inherited coordinate types.",
+    "Conjugating the V0 output and assembling downstream factor rows is a separate exact typing/consumer obligation; a D-scaled stored pair is not itself B0^4.",
+    "This supplement does not establish a 259-to248 witness bijection or remove arithmetic-redesign assumptions."
+  ],
+  "evidence": [
+    {
+      "path": "check.mjs",
+      "sha256": "dcf088e1f9eeb97174297777d4c5a65955a6765079d7dd05aeacf0adc92f6d55"
+    },
+    {
+      "path": "CHECK-OUTPUT.txt",
+      "sha256": "6e469ae5a958ce7cc90cf307f6f1d2367f51ff50e83a52116f855e9fa18beeea"
+    }
+  ]
+}

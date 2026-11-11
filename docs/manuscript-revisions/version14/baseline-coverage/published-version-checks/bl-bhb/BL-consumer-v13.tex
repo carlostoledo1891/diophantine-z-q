@@ -1,0 +1,45 @@
+\begin{lemma}[Primitive congruence count]\label{lem:v5-primitive-count}
+Let $\psi$ be a smooth nonnegative compactly supported function away from
+the origin, and let $m$ be squarefree and prime to $2\kappa$.
+For each $\ell\mid m$ prescribe an arbitrary subset $\Omega_\ell$ of the
+nonzero zeros of $Q_\kappa$ over $\mathbb F_\ell$. The weighted number of
+primitive integral vectors on $Q_\kappa=0$ with these reductions equals
+\begin{equation}\label{eq:v5-primitive-count}
+ C_\kappa\sigma_\infty(\psi)B^3
+ \prod_{\ell\mid m}\frac{|\Omega_\ell|}{\ell^4-1}
+ +O_{\kappa,\psi,\varepsilon}
+       (B^{5/2+\varepsilon}m^{5/2+\varepsilon}).
+\end{equation}
+The constant $C_\kappa$ is positive and independent of $m$ and the subsets.
+\end{lemma}
+\begin{proof}
+Apply Browning--Loughran~\cite{v5bl}, Theorem~4.1, to $Q_\kappa$ in five
+variables. It is isotropic, since $(1,0,1,0,0)$ is a zero, and nonsingular,
+since $\kappa\ne0$. Its discriminant has no prime divisor outside
+$2\kappa$. The theorem permits $n=5$ and arbitrary nonzero residue subsets;
+its error is uniform in the modulus and in these subsets.
+Impose primitivity by $\sum_{h\mid(a,b,c,d,w)}\mu(h)$.
+If $(h,m)>1$ there are no permitted vectors. Otherwise the subsets become
+$h^{-1}\Omega_\ell$, of the same cardinalities, and the scale becomes $B/h$.
+The sum of the error terms is convergent. Extending the main-term sum to
+infinity costs $O(B)$.
+At a good prime the unrestricted local density is
+\[
+ \sigma_\ell=\frac{1-\ell^{-4}}{1-\ell^{-3}}.
+\]
+Indeed, nonsingular primitive zeros lift with four free coordinates, and
+the vectors divisible by $\ell$ contribute the geometric factor
+$\ell^{-3}$. The primitive density is therefore $1-\ell^{-4}$.
+This turns the factor $|\Omega_\ell|/\ell^4$ of the unprimitive count into
+$|\Omega_\ell|/(\ell^4-1)$ in \eqref{eq:v5-primitive-count}.
+The remaining finitely many local factors are positive because the form
+has a nonsingular rational zero. Empty subsets give the assertion directly.
+\end{proof}
+
+In using this count, the two norms lie between fixed positive multiples of
+$B^2$, and $|w|\leq\tau B$, where $0<\tau\leq\tau_0$.
+A smooth majorant can be chosen with
+$\sigma_\infty(\psi)\ll\tau$ uniformly in $\tau$: integrate first in the
+two radial norm variables, on which the derivative of their difference is
+bounded away from zero. The constants in error terms may depend on
+derivatives of this majorant, and hence on $\tau$.

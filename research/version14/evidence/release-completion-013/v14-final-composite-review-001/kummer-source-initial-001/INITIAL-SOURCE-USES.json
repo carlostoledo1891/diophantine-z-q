@@ -1,0 +1,212 @@
+{
+  "schema": "protocol-source-first/v1",
+  "sources": [
+    {
+      "side": "head",
+      "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+      "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+    }
+  ],
+  "uses": [
+    {
+      "id": "KUMMER-SUP-001",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-001-P"
+      ],
+      "assertion": {
+        "statement": "Multiplication by n=2^a on an elliptic curve over characteristic-zero F is surjective on E(Fsep), with finite kernel E[n], and its point groups are discrete continuous G_F modules.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Silverman III.4 pp66–68: nonconstant multiplication is a finite surjective isogeny; Fsep algebraically closed.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Fix F,E,a; obtain the multiplication exact sequence before constructing cocycles."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-002",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-002-P"
+      ],
+      "assertion": {
+        "statement": "The division-point cocycle defines an additive well-defined injection E(F)/nE(F) into H1(F,E[n]).",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Surjectivity of multiplication and continuous Galois action; cocycle and coboundary definitions.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Choose Q with nQ=P; compare choices and sums; vanishing is equivalent to a rational division point."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-003",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-003-P"
+      ],
+      "assertion": {
+        "statement": "The image of the Kummer injection is the kernel of H1(F,E[n]) to H1(F,E).",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "The previous division-point construction and the inclusion E[n] into E(Fsep).",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "A cobounding Q has rational nQ, and conversely the Kummer cocycle becomes a coboundary."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-004",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-004-P"
+      ],
+      "assertion": {
+        "statement": "The Kummer sequence ends surjectively in H1(F,E)[n], giving the displayed short exact sequence.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "For a class killed by n choose a representative c with nc(g)=gP-P and a division point Q of P.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Subtract the coboundary gQ-Q so the resulting cocycle is E[n]-valued."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-005",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-005-P"
+      ],
+      "assertion": {
+        "statement": "Kummer maps commute with restriction, field-isomorphism transport and elliptic-curve homomorphisms, are additive and kill n-multiples.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Compatible maps of fields, points and elliptic curves; preceding cocycle construction.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Apply the compatible map to chosen division points; compare resulting cocycles."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-006",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-006-P"
+      ],
+      "assertion": {
+        "statement": "For the actual number field M_I, an actual n-multiple point relation gives zero Kummer class and, with the separate ring-class generators/norm identity, derivative invariance.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Actual main3882–3886 point identity, relative generators and norm relation are supplied separately; n=2^a.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "First establish the point relation and group description, then apply natural Kummer annihilation."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-007",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-007-P"
+      ],
+      "assertion": {
+        "statement": "If v becomes Kummer over finite unramified Fprime/F and the separate local cohomology bound kills its H1(F,E) image by c_E, then c_E v is Kummer over F.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "F finite over Q_p; actual restriction kernel annihilation by c_E; Kummer exactness.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Pass v to H1(F,E), use restriction kernel bound, then exactness over F."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "KUMMER-SUP-008",
+      "consumer": "KUMMER-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "KUMMER-SUP-008-P"
+      ],
+      "assertion": {
+        "statement": "The proof applies to permitted number fields and all their nonarchimedean completions including residue characteristic2, without good reduction, finite Sha, rank or rational E[n].",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Characteristic-zero field and elliptic curve; stated hypotheses of each preceding application.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Retain field-specific inputs and exclusions; do not silently broaden the older Q-only record."
+      },
+      "classification": "dependency",
+      "reason": "Independent current raw-source reconstruction before fresh declared-use comparison; prior familiarity disclosed.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    }
+  ]
+}

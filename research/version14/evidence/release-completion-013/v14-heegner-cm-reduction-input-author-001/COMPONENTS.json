@@ -1,0 +1,187 @@
+[
+  {
+    "origin": "v14-heegner-cm-reduction-input-author-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-HEEGNER-GENERIC-CM-SUPERSINGULAR",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-HEEGNER-GENERIC-CM-SUPERSINGULAR-P1",
+        "ACTIVE-HEEGNER-GENERIC-CM-SUPERSINGULAR-P2"
+      ],
+      "assertion": {
+        "statement": "The actual CM elliptic curve of every permitted old conductor d has supersingular geometric reduction at the new inert prime ell, including every old ideal-class translate.",
+        "objects": "The proper O_d ideal CM curves in the finite Heegner construction; Delta=d^2 D_K.",
+        "hypotheses": "ell lies outside6dND_K and is inert in K; the actual curve has CM by O_d as supplied by the compatible CM construction.",
+        "quantifiers": "Every such CM invariant and every prime above ell.",
+        "parameter_range": "All permitted old d, including nonmaximal orders.",
+        "uniformity": "All primes above ell and all ideal classes with that order discriminant.",
+        "constants": "No quantitative bound.",
+        "normalizations": "(Delta/ell)=(D_K/ell)=-1 because ell does not divide d.",
+        "exceptional_cases": "Only supersingularity is supplied, not the smooth modular model, raising-kernel specialization or extension of pi.",
+        "limit_order": "Fix the CM order and prime, verify its discriminant symbol, then apply the reduction criterion."
+      },
+      "classification": "dependency",
+      "reason": "Verifies the order-discriminant symbol for arbitrary old conductor before applying the exact general published reduction statement.",
+      "shared_contract_justification": "Main3840–3842 and note33–37 refer to the same CM order and inert new prime; only their supersingularity clause is supplied.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md",
+            "sha256": "5a8f69fef00fc38d9bf01e5c0edb722e99e8810e74f027f6ea31841873e2ee8f"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "25e5dc67b6e32fbe16f5c811281d9faae9e97c20ef2adffeab572d907d38d289"
+        },
+        "statement": "For an imaginary quadratic argument with order discriminant Delta, if (Delta/ell)=-1, its CM elliptic curve has supersingular reduction at every prime above ell in K(j).",
+        "publication": {
+          "title": "On singular moduli",
+          "authors": "B. Gross and D. Zagier",
+          "venue": "Journal fuer die reine und angewandte Mathematik355(1985),191–220",
+          "authoritative_version": "Published PDF SHA256 24c0742860b4a27c14e0db7c7e67391acebc9df54d337c72eec5f363ed92cfbf",
+          "locator": "Order setup printed198; general forward supersingular-reduction sentence at top of199.",
+          "corrections": "No extension of the later fundamental-discriminant lifting theorem or small-prime congruence range is made."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md",
+          "sha256": "5a8f69fef00fc38d9bf01e5c0edb722e99e8810e74f027f6ea31841873e2ee8f"
+        },
+        "start_line": 11,
+        "end_line": 13,
+        "excerpt_sha256": "5b2ab51f04c2d0f15a1e9fea26c9da475e7b0e41deb9a0d4466d6025708d6710"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-HEEGNER-GENERIC-CM-SUPERSINGULAR",
+      "use_sha256": "dee1c5cdd0df3b84655b5a7e4a4181dc23d7b4dbbbf29c16833103770097116c",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For an imaginary quadratic argument with order discriminant Delta, if (Delta/ell)=-1, its CM elliptic curve has supersingular reduction at every prime above ell in K(j).",
+        "objects": "Imaginary quadratic argument tau, j(tau), its order O and order discriminant Delta.",
+        "hypotheses": "The quadratic residue symbol (Delta/ell) equals -1; reduction is the geometric CM reduction.",
+        "quantifiers": "Every such CM invariant and every prime above ell.",
+        "parameter_range": "The general forward reduction sentence; no restriction to fundamental Delta or the subsequent small-prime congruences.",
+        "uniformity": "All primes above ell and all ideal classes with that order discriminant.",
+        "constants": "No quantitative bound.",
+        "normalizations": "Delta denotes the order discriminant, not necessarily the field discriminant.",
+        "exceptional_cases": "No ramified or split reduction assertion is used; the later fundamental-discriminant lifting statement is separate.",
+        "limit_order": "Fix the CM order and prime, verify its discriminant symbol, then apply the reduction criterion."
+      },
+      "needed_assertion": {
+        "statement": "The actual CM elliptic curve of every permitted old conductor d has supersingular geometric reduction at the new inert prime ell, including every old ideal-class translate.",
+        "objects": "The proper O_d ideal CM curves in the finite Heegner construction; Delta=d^2 D_K.",
+        "hypotheses": "ell lies outside6dND_K and is inert in K; the actual curve has CM by O_d as supplied by the compatible CM construction.",
+        "quantifiers": "Every such CM invariant and every prime above ell.",
+        "parameter_range": "All permitted old d, including nonmaximal orders.",
+        "uniformity": "All primes above ell and all ideal classes with that order discriminant.",
+        "constants": "No quantitative bound.",
+        "normalizations": "(Delta/ell)=(D_K/ell)=-1 because ell does not divide d.",
+        "exceptional_cases": "Only supersingularity is supplied, not the smooth modular model, raising-kernel specialization or extension of pi.",
+        "limit_order": "Fix the CM order and prime, verify its discriminant symbol, then apply the reduction criterion."
+      },
+      "required_capabilities": [
+        "The actual CM elliptic curve of every permitted old conductor d has supersingular geometric reduction at the new inert prime ell, including every old ideal-class translate."
+      ],
+      "available_capabilities": [
+        "For an imaginary quadratic argument with order discriminant Delta, if (Delta/ell)=-1, its CM elliptic curve has supersingular reduction at every prime above ell in K(j)."
+      ],
+      "derived_capabilities": [
+        "The actual CM elliptic curve of every permitted old conductor d has supersingular geometric reduction at the new inert prime ell, including every old ideal-class translate."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md",
+            "sha256": "5a8f69fef00fc38d9bf01e5c0edb722e99e8810e74f027f6ea31841873e2ee8f"
+          },
+          "start_line": 11,
+          "end_line": 13,
+          "excerpt_sha256": "5b2ab51f04c2d0f15a1e9fea26c9da475e7b0e41deb9a0d4466d6025708d6710"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual CM elliptic curve of every permitted old conductor d has supersingular geometric reduction at the new inert prime ell, including every old ideal-class translate.",
+          "objects": "The proper O_d ideal CM curves in the finite Heegner construction; Delta=d^2 D_K.",
+          "hypotheses": "ell lies outside6dND_K and is inert in K; the actual curve has CM by O_d as supplied by the compatible CM construction.",
+          "quantifiers": "Every such CM invariant and every prime above ell.",
+          "parameter_range": "All permitted old d, including nonmaximal orders.",
+          "uniformity": "All primes above ell and all ideal classes with that order discriminant.",
+          "constants": "No quantitative bound.",
+          "normalizations": "(Delta/ell)=(D_K/ell)=-1 because ell does not divide d.",
+          "exceptional_cases": "Only supersingularity is supplied, not the smooth modular model, raising-kernel specialization or extension of pi.",
+          "limit_order": "Fix the CM order and prime, verify its discriminant symbol, then apply the reduction criterion."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Only supersingularity is supplied, not the smooth modular model, raising-kernel specialization or extension of pi.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md",
+              "sha256": "5a8f69fef00fc38d9bf01e5c0edb722e99e8810e74f027f6ea31841873e2ee8f"
+            },
+            "start_line": 11,
+            "end_line": 17,
+            "excerpt_sha256": "223e82326fb3f2fb31cc874e1ec88eb01c78585ed3765316dd365fa2a5cc4c0d"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 3840,
+          "end_line": 3842,
+          "excerpt_sha256": "b959a328e64dd5b7d403ae0a15f124af4c32d8c2b921df026ba5e1c40afe57ec"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 33,
+          "end_line": 37,
+          "excerpt_sha256": "14d2f8f2be2d01df5ebd87c0c73d434bbec4cd78b1e9999f2dd1bec7857222b3"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3840,
+        "end_line": 3842,
+        "excerpt_sha256": "b959a328e64dd5b7d403ae0a15f124af4c32d8c2b921df026ba5e1c40afe57ec"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 33,
+        "end_line": 37,
+        "excerpt_sha256": "14d2f8f2be2d01df5ebd87c0c73d434bbec4cd78b1e9999f2dd1bec7857222b3"
+      }
+    ]
+  }
+]

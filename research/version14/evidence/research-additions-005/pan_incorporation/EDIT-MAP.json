@@ -1,0 +1,43 @@
+{
+  "base": {
+    "path": "work/quartic-v14-release/preview-repository/manuscripts/quartic_v14.tex",
+    "sha256": "63db4260c5d918c91935461a814e1296378f051f12c61b12c6f3d896df8a3503",
+    "bytes": 1117006
+  },
+  "candidate": {
+    "path": "work/source-risk-review-20261107/pan-thorne15-incorporation-001/candidate/quartic_v14.tex",
+    "sha256": "0f7d25090f7b0d91597628c4071afd385bcfd132e6770a007e2019650c9d3368",
+    "bytes": 1118100
+  },
+  "edits": [
+    {
+      "id": "first-local-ring-reference",
+      "operation": "insert_before_exact_unique_anchor",
+      "anchor_utf8": "It gives a cuspidal eigenform up to character twist.",
+      "base_line": 863,
+      "inserted_utf8_lf": "For the local-ring comparisons in its Lemma 4.2.10 and Proposition 4.2.4,\n\\cite{pan-local-rings-project} supplies the fixed-determinant and\nnilpotent-quotient connections and an integral matrix proof of flatness\nfor the nontrivial-character ring at five. The trivial-character branch\nuses Taylor's componentwise statement; generic reducedness of the\nunreduced whole special fiber is not asserted. The supplement retains\nthe other local branches and the stated completion hypotheses.\n",
+      "inserted_raw_sha256": "4020b2b383c50ead3c03cbbb77ba44807a9dbe66f4a64bff93c26547e12c34ef",
+      "anchor_sha256": "f5b533b27afc1bc85c9ff6c933ab72229ecfb7e64daaf4b3e413af37c84ff567"
+    },
+    {
+      "id": "repeated-local-ring-reference",
+      "operation": "insert_before_exact_unique_anchor",
+      "anchor_utf8": "The twist can be taken finite and the weight is two, without invoking",
+      "base_line": 7411,
+      "inserted_utf8_lf": "The same local-ring connections and integral flatness proof are supplied\nby \\cite{pan-local-rings-project}, with the source-version qualifications\nand other local branches retained as in the first application.\n\n",
+      "inserted_raw_sha256": "27ba81ececdd9e842967f0a067b18f39f4958f81dfde17b881b9b5fc10e8f05c",
+      "anchor_sha256": "c0c9c7d42fadd15337713d2f8ac62709a129a313fc971db6706c94721a0220e5"
+    },
+    {
+      "id": "bibliography",
+      "operation": "insert_before_exact_unique_anchor",
+      "anchor_utf8": "\\bibitem{pan-utility-project}",
+      "base_line": 23369,
+      "inserted_utf8_lf": "\\bibitem{pan-local-rings-project}\nVersioned project proof, \\emph{Local matrix connections for Pan at prime five},\nversion 1. Exact source qualifications, integral proof and bounded\nindependent review at\n\\href{https://github.com/elliotglazer/diophantine-z-q/blob/main/research/version14/proofs/pan-local-rings-v1/README.md}\n{\\texttt{research/version14/proofs/pan-local-rings-v1/}}.\n\n",
+      "inserted_raw_sha256": "a1bd73cc6e07d3095bc713c027eb7666c67b260c0f2a7ac20b9a328911c20b59",
+      "anchor_sha256": "7179cb8554a9bb7cd516da3ff64a8198ad5aef934c8734ae5ba5eb4c50baaf5b"
+    }
+  ],
+  "coordination": "Source-reviewer adds after base7409; that insertion precedes the existing blank and this proposal at7411. Its first anchor at976 and bibliography before serre-ladic-published are disjoint. All edits are additive.",
+  "build": "Not built independently; root combines this source-only proposal and runs combined build. No compiled-output claim."
+}

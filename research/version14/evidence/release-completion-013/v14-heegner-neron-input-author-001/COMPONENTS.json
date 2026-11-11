@@ -1,0 +1,238 @@
+[
+  {
+    "origin": "v14-heegner-neron-input-author-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-HEEGNER-NERON-GEOMETRY",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-HEEGNER-NERON-GEOMETRY-P1",
+        "ACTIVE-HEEGNER-NERON-GEOMETRY-P2",
+        "ACTIVE-HEEGNER-NERON-GEOMETRY-P3"
+      ],
+      "assertion": {
+        "statement": "For the actual B/F and every finite unramified Fprime/F, B0 has smooth geometrically connected residue fibre with surjective smooth reduction, and B(Fprime)/B0(Fprime) embeds in the fixed finite geometric component group, hence is killed by c_B.",
+        "objects": "Actual fixed local elliptic curves B/F in the Heegner descent argument, B0 and Phi_B over the geometric residue field.",
+        "hypotheses": "F is a nonarchimedean characteristic-zero local field and Fprime/F is finite unramified; the local curves range over the stated finite fixed list.",
+        "quantifiers": "Every such local curve and unramified extension, including even extension degrees.",
+        "parameter_range": "All residue characteristics; arbitrary reduction type.",
+        "uniformity": "For each fixed B, the same geometric c_B; take a common multiple for the finite fixed list.",
+        "constants": "c_B=order of Phi_B(kbar); no asserted numerical estimate.",
+        "normalizations": "B0(Fprime) means integral points of the Neron identity open subgroup.",
+        "exceptional_cases": "No assertion for arbitrary ramified base change; no cohomology vanishing supplied by this geometry-only input.",
+        "limit_order": "Fix each local curve before forming c_B and varying the unramified extension."
+      },
+      "classification": "dependency",
+      "reason": "Supplies the actual geometric prerequisites for the existing Lang, formal-cohomology and fixed-local arguments without using their outgoing cohomological conclusions as premises.",
+      "shared_contract_justification": "The three note paragraphs refer to the same B/F, Neron identity subgroup and unramified Fprime/F. The identical geometric input is used first for smooth Lang lifting, then the component quotient, then invariance of geometric component order.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-neron-current/SOURCE-CONNECTION.md",
+            "sha256": "ac5c73e55a0580b0f11166969f6a2c6109833fe9de3e9ba3fef42ebc1f570ba9"
+          },
+          "start_line": 7,
+          "end_line": 9,
+          "excerpt_sha256": "9bcaaa61b10f0f7a49d617b725e5313167d959b2f85f538e00e25db670567f5e"
+        },
+        "statement": "The Neron model is smooth separated and finite type, with connected identity subgroup and finite geometric component group; its formation commutes with etale base change, and smooth residue points lift over Henselian discrete valuation rings.",
+        "publication": {
+          "title": "Arithmetic Duality Theorems",
+          "authors": "J. S. Milne",
+          "venue": "BookSurge, second edition, 2006",
+          "authoritative_version": "Pinned author-hosted second edition PDF SHA256 2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+          "locator": "Appendix C, Theorem C.6 and following paragraph, printed319–320; I Proposition3.8 proof, printed46–47.",
+          "corrections": "Only model structure, etale base change and smooth lifting are imported; not the proposition’s cohomological conclusion."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-neron-current/SOURCE-CONNECTION.md",
+          "sha256": "ac5c73e55a0580b0f11166969f6a2c6109833fe9de3e9ba3fef42ebc1f570ba9"
+        },
+        "start_line": 13,
+        "end_line": 17,
+        "excerpt_sha256": "ce2db5fd7b228235ee49d0036a7e1a49544c0d9a09e66fb6cf839225d7965f11"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-HEEGNER-NERON-GEOMETRY",
+      "use_sha256": "fd00f901d05acb434486837fb51c638995faba1042172dfb932de6a20365bb84",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "The Neron model is smooth separated and finite type, with connected identity subgroup and finite geometric component group; its formation commutes with etale base change, and smooth residue points lift over Henselian discrete valuation rings.",
+        "objects": "Abelian variety over the fraction field of a Noetherian normal one-dimensional integral base with perfect residue fields; its Neron model and identity open subgroup.",
+        "hypotheses": "The stated base hypotheses; Henselian local base for residue lifting and etale base change for the base-change assertion.",
+        "quantifiers": "Every abelian variety and every such base; every applicable etale base change.",
+        "parameter_range": "No semistability or good-reduction restriction.",
+        "uniformity": "The same geometric component group after etale base change.",
+        "constants": "The geometric component group is finite; no universal numerical order bound.",
+        "normalizations": "Identity component of the geometric special fibre; component group is geometric, not only rational points.",
+        "exceptional_cases": "No assertion for arbitrary ramified base change; no cohomology vanishing supplied by this geometry-only input.",
+        "limit_order": "Form the Neron model, its identity subgroup and geometric component group before considering point reduction or base change."
+      },
+      "needed_assertion": {
+        "statement": "For the actual B/F and every finite unramified Fprime/F, B0 has smooth geometrically connected residue fibre with surjective smooth reduction, and B(Fprime)/B0(Fprime) embeds in the fixed finite geometric component group, hence is killed by c_B.",
+        "objects": "Actual fixed local elliptic curves B/F in the Heegner descent argument, B0 and Phi_B over the geometric residue field.",
+        "hypotheses": "F is a nonarchimedean characteristic-zero local field and Fprime/F is finite unramified; the local curves range over the stated finite fixed list.",
+        "quantifiers": "Every such local curve and unramified extension, including even extension degrees.",
+        "parameter_range": "All residue characteristics; arbitrary reduction type.",
+        "uniformity": "For each fixed B, the same geometric c_B; take a common multiple for the finite fixed list.",
+        "constants": "c_B=order of Phi_B(kbar); no asserted numerical estimate.",
+        "normalizations": "B0(Fprime) means integral points of the Neron identity open subgroup.",
+        "exceptional_cases": "No assertion for arbitrary ramified base change; no cohomology vanishing supplied by this geometry-only input.",
+        "limit_order": "Fix each local curve before forming c_B and varying the unramified extension."
+      },
+      "required_capabilities": [
+        "For the actual B/F and every finite unramified Fprime/F, B0 has smooth geometrically connected residue fibre with surjective smooth reduction, and B(Fprime)/B0(Fprime) embeds in the fixed finite geometric component group, hence is killed by c_B."
+      ],
+      "available_capabilities": [
+        "The Neron model is smooth separated and finite type, with connected identity subgroup and finite geometric component group; its formation commutes with etale base change, and smooth residue points lift over Henselian discrete valuation rings."
+      ],
+      "derived_capabilities": [
+        "For the actual B/F and every finite unramified Fprime/F, B0 has smooth geometrically connected residue fibre with surjective smooth reduction, and B(Fprime)/B0(Fprime) embeds in the fixed finite geometric component group, hence is killed by c_B."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-neron-current/SOURCE-CONNECTION.md",
+            "sha256": "ac5c73e55a0580b0f11166969f6a2c6109833fe9de3e9ba3fef42ebc1f570ba9"
+          },
+          "start_line": 13,
+          "end_line": 17,
+          "excerpt_sha256": "ce2db5fd7b228235ee49d0036a7e1a49544c0d9a09e66fb6cf839225d7965f11"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual B/F and every finite unramified Fprime/F, B0 has smooth geometrically connected residue fibre with surjective smooth reduction, and B(Fprime)/B0(Fprime) embeds in the fixed finite geometric component group, hence is killed by c_B.",
+          "objects": "Actual fixed local elliptic curves B/F in the Heegner descent argument, B0 and Phi_B over the geometric residue field.",
+          "hypotheses": "F is a nonarchimedean characteristic-zero local field and Fprime/F is finite unramified; the local curves range over the stated finite fixed list.",
+          "quantifiers": "Every such local curve and unramified extension, including even extension degrees.",
+          "parameter_range": "All residue characteristics; arbitrary reduction type.",
+          "uniformity": "For each fixed B, the same geometric c_B; take a common multiple for the finite fixed list.",
+          "constants": "c_B=order of Phi_B(kbar); no asserted numerical estimate.",
+          "normalizations": "B0(Fprime) means integral points of the Neron identity open subgroup.",
+          "exceptional_cases": "No assertion for arbitrary ramified base change; no cohomology vanishing supplied by this geometry-only input.",
+          "limit_order": "Fix each local curve before forming c_B and varying the unramified extension."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The Lang theorem, additive normal-basis argument, formal-group filtration and limiting correction, and the resulting H1 annihilation are separate inputs or local deductions in the existing proof. No good-reduction assumption, semistability assumption, division by the extension degree, or bound uniform over arbitrary varying elliptic curves is asserted. CM point reduction, extension of a modular parametrization, and Atkin–Lehner actions are not supplied.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-neron-current/SOURCE-CONNECTION.md",
+              "sha256": "ac5c73e55a0580b0f11166969f6a2c6109833fe9de3e9ba3fef42ebc1f570ba9"
+            },
+            "start_line": 13,
+            "end_line": 21,
+            "excerpt_sha256": "fae0fc3c385a5229b13551bdfa1bff7aaa546d7e7a05f7c3ea2cfd93d2eda82d"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 69,
+            "end_line": 75,
+            "excerpt_sha256": "2383fe02ff1ae8cc2769cdd91d4e46b3c0c5f1add704948074bcbe1ffef0d5c3"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 81,
+            "end_line": 87,
+            "excerpt_sha256": "87c09408caef899ce2a817013101f71cc97eafded6187dbe8b9c0be2a0751b78"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 93,
+            "end_line": 97,
+            "excerpt_sha256": "15e7de0ee2cb543ff5548b32aff29ea1f0daaffa71a10f65af506068aea19ae1"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 69,
+          "end_line": 75,
+          "excerpt_sha256": "2383fe02ff1ae8cc2769cdd91d4e46b3c0c5f1add704948074bcbe1ffef0d5c3"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 81,
+          "end_line": 87,
+          "excerpt_sha256": "87c09408caef899ce2a817013101f71cc97eafded6187dbe8b9c0be2a0751b78"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 93,
+          "end_line": 97,
+          "excerpt_sha256": "15e7de0ee2cb543ff5548b32aff29ea1f0daaffa71a10f65af506068aea19ae1"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 69,
+        "end_line": 75,
+        "excerpt_sha256": "2383fe02ff1ae8cc2769cdd91d4e46b3c0c5f1add704948074bcbe1ffef0d5c3"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 81,
+        "end_line": 87,
+        "excerpt_sha256": "87c09408caef899ce2a817013101f71cc97eafded6187dbe8b9c0be2a0751b78"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 93,
+        "end_line": 97,
+        "excerpt_sha256": "15e7de0ee2cb543ff5548b32aff29ea1f0daaffa71a10f65af506068aea19ae1"
+      }
+    ]
+  }
+]

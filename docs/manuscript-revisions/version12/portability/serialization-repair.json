@@ -1,0 +1,80 @@
+{
+  "issue": "Linux default LF output failed the existing byte-exact Windows-CRLF intermediate pin at build504.py. The same issue would affect later pinned intermediates.",
+  "changes": [
+    {
+      "path": "quartics/quartic-498-514/work/10-combination/build.py",
+      "before": "ac108c27369e931f9d47e602a6b7280c10b5fbf1ca6355ed6c542d34ff262140",
+      "after": "1b637aec702961a70f2e5adafe5a034f76850c8d0d434648c5a05dbfc714c37f",
+      "change": "Set UTF-8 and CRLF explicitly for frozen JSON serialization."
+    },
+    {
+      "path": "quartics/quartic-498-514/work/10-combination/build498.py",
+      "before": "8827ec3a8704f61618ac5f65c8a2108688645b29394d9e1145c4c233a4bc28bc",
+      "after": "0c6f1a0b36a20fb79d598d5a81579a3eeee30824598934b66cedbc29a1f2648e",
+      "change": "Set UTF-8 and CRLF explicitly for frozen JSON serialization."
+    },
+    {
+      "path": "quartics/quartic-498-514/work/10-combination/build499.py",
+      "before": "0d6c99deb3ba75abddbab78c71fdccb4ed46e7b02a10e9415ae976fa56235937",
+      "after": "aa368188947975166eebd801a569f0f918be33557021d59e8fc95005751765ef",
+      "change": "Set UTF-8 and CRLF explicitly for frozen JSON serialization."
+    },
+    {
+      "path": "quartics/quartic-498-514/work/10-combination/build501.py",
+      "before": "c57cedab838f0812d3b6ff017a7d8e288f502defbbc8c1fe798b105fc7d5150b",
+      "after": "2e65c6b6a7fd9b4d33f286c4556039712df566a5a36b143a5666bfac7c938ea6",
+      "change": "Set UTF-8 and CRLF explicitly for frozen JSON serialization."
+    },
+    {
+      "path": "quartics/quartic-498-514/work/10-combination/build504.py",
+      "before": "1cc2205503b98c67d9e4c5b94fd682b43f73c421a1b21f0a9863fb877a27e665",
+      "after": "da881f549cf4e182cf07cef574394d1b5432fe0f4e353553454d5bed5a9bb7bb",
+      "change": "Set UTF-8 and CRLF explicitly for frozen JSON serialization."
+    },
+    {
+      "path": "quartics/quartic-498-514/work/10-combination/ordinary514.py",
+      "before": "c8a79370accf5579ad7f7f804108961fc157d4decfe5f14d199fd95dbb578986",
+      "after": "533b0cce995e928c50b14e8ae2bde9b23a09a588f530533ef4c31d1d58ad6a96",
+      "change": "Set UTF-8 and CRLF explicitly for frozen JSON serialization."
+    },
+    {
+      "path": "quartics/quartic-498-514/make_tables.py",
+      "before": "6b9f33e21fe4aef79df86b74631ff64b303b1797b7fa2baf43cb74f561c8380d",
+      "after": "d154b8c1ac7868723b12a9098a56cd76e933b4d4995b6b660861fc510a7f93be",
+      "change": "Use same explicit encoding/newlines when regenerating download tables."
+    }
+  ],
+  "diagnostic": [
+    {
+      "name": "candidate505-ir.json",
+      "expected": "bd9aca7a4a31476e426660d1a33de33552f2a5019bec06104b45938d59f4b966",
+      "lf": "736b35a4e4697167d3a38ba0982203958b6a5c6f03778ac5f1a5892fdae5dd47",
+      "crlf": "bd9aca7a4a31476e426660d1a33de33552f2a5019bec06104b45938d59f4b966"
+    },
+    {
+      "name": "candidate504-ir.json",
+      "expected": "7c17debaff9a726562be6b7ef843dbc6ca6a0a9d17556158c54ffe5c49ddb0cd",
+      "lf": "19009e7cf4f2aa199b3356d1da0abd196581e38de55684be85bdc8decfae45e3",
+      "crlf": "7c17debaff9a726562be6b7ef843dbc6ca6a0a9d17556158c54ffe5c49ddb0cd"
+    }
+  ],
+  "unchanged": [
+    {
+      "path": "quartics/quartic-498-514/candidate498-ir.json",
+      "sha256": "7682a1229149c75e27322e86dec424449b55321b06c48e468f90fa78bcebb61a"
+    },
+    {
+      "path": "quartics/quartic-498-514/candidate514-ir.json",
+      "sha256": "5d7ed675b3ee255d9c09dec4ee4f80ea94d6dac747c8f255bac68e81b73484ba"
+    },
+    {
+      "path": "quartics/quartic-498-514/polynomial498.json",
+      "sha256": "817fec936dee3b358fc8b5b0b9a5570694adf009b134432467ef0be914aeedc4"
+    },
+    {
+      "path": "quartics/quartic-498-514/polynomial514.json",
+      "sha256": "d247a27709afda5f2be626390cffa1a175c3dfcbee1a5c832a1c457b32629bd5"
+    }
+  ],
+  "scope": "Serialization only. Mathematical JSON values, residuals, source transformations, pin assertions, verification conditions and manuscript bytes are unchanged. Re-review required because a bound package manifest changed."
+}

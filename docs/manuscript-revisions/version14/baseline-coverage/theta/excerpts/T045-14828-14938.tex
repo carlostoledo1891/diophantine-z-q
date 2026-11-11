@@ -1,0 +1,111 @@
+The weights are constant on each embedding orbit used in the
+following count. Indeed a unit of the definite order $R_z$ has
+positive integral reduced norm with integral inverse, so its norm
+is one. The conjugation law for $f$ therefore gives weight one
+for its action. Along the class-group torsor the Schwartz factor
+is constant because $a$ centralizes $x_0$, and the remaining
+norm factor is exactly $\chi_F([a])$. Hence the finite-sum identity
+just proved applies with the single phase
+$\chi_{h_*}(\operatorname{Nrd}z_0)f(z_0^{-1}x_0z_0)$.
+
+
+For each fixed $z$, the stabilizer of an embedding in $R_z^\times$
+is $\mathcal O_F^\times=\{\pm1\}$. Each embedding orbit thus
+has $|R_z^\times|/2$ elements. The denominator $|R_z^\times|$
+in (O.4) leaves the factor $1/2$ per embedding class. The
+vectors $x$ and $-x$ are not identified by this stabilizer:
+at $\ell_0$ their residues define the two different embeddings
+of the residue field, whereas conjugation by an order unit acts
+trivially on that field. They already lie in the two different
+$\ell_0$ orientation tuples counted above. The
+contribution of the reference orientation tuple is
+\[
+ \frac{c_0}{2}\,\zeta_M(D)
+                         \lambda_M(\overline{LP_D}),\qquad
+ \zeta_M(D)=\chi_{h_*}(\operatorname{Nrd}z_0)
+                               f(z_0^{-1}x_0z_0),
+\]
+up to the harmless quadratic reference-class factor just described.
+All nonzero factors in this displayed phase are fixed-character
+values or signs. Thus it is a $2$-power root of unity; its field
+does not grow with $D$, $M$, or $\ell_0$.
+
+It remains to account for the other orientations; they are not
+all in the image of the one sign component of the reduction map.
+At $p^e\Vert N$, use the local Atkin--Lehner normalizer. It
+reverses the selected root, so multiplies the Schwartz weight by
+\[
+              \alpha_p(-1)=w_{p^e}\chi_{h_*}(p)^e.
+\]
+It multiplies the norm-weighted parametrization value by the same
+sign: its reduced norm has valuation $e$, and the actual
+parametrization transforms by $w_{p^e}$ after $L$ kills the fixed
+cuspidal translation. The two signs multiply to one. This
+normalizer has trivial components at the other primes, so it
+changes no other orientation or local weight.
+
+At $\ell_0$, a division-algebra uniformizer exchanges the two
+residue embeddings. It sends the trace-zero residue $\beta$ to
+$-\beta$, multiplying its weight by $(-1/\ell_0)=-1$. Its
+reduced norm has valuation one and hence contributes
+$\chi_{h_*}(\ell_0)=-1$. Its action on supersingular pairs is
+Frobenius. Since $\lambda_M$ has Frobenius sign $+1$ and the
+parametrization is defined over $\mathbf Q$, this introduces no
+further sign. Again the two factors multiply to one.
+The uniformizer operation used here may be described with arithmetic
+or geometric Frobenius: they have the same action on the supersingular
+pairs and their parametrization values over $\mathbb F_{\ell_0^2}$.
+The identity $\lambda_M(FP)=\lambda_M(P)$ from (O.2) consequently
+applies to the very operation that exchanges the residue embeddings.
+Its norm has valuation one, and $\chi_{h_*}$ is unramified at
+$\ell_0$, so its norm-character value is exactly
+$\chi_{h_*}(\ell_0)=-1$, independently of the uniformizer's unit part.
+Likewise, at $p^e\Vert N$, the norm of the Atkin--Lehner normalizer
+has valuation $e$ and $\chi_{h_*}$ is unramified at $p$. Its
+norm-character value is exactly $\chi_{h_*}(p)^e$. These observations
+fix the norm signs in both orientation changes.
+
+
+It follows that every one of the $2^{\omega(N)+1}$ tuples has
+the same contribution as the reference tuple. Multiplying by
+their number gives precisely $c_0 2^{\omega(N)}$, as asserted.
+This counts individual embeddings with their stabilizer; a
+conjugate-pair formulation of the geometric correspondence must
+not be used to insert or remove another factor of two.
+
+Finally, $c_0/|R_z^\times|$ is an integer for every $z$. Thus a
+change of the chosen integer lift of $P_M(z)$ by $2^M$ changes
+the actual coefficient by an element of $2^M\mathcal O$.
+Every preceding equality is consequently valid at the original
+retained precision. No denominator depending on the class number,
+the discriminant, or the stage has entered.
+\paragraph{Precision in the orientation count.}
+The factor $1/2$ in the orbit count does not require dividing a
+congruence modulo $2^M$ by two. Indeed, $-1\in R_z^\times$ implies
+$2\mid |R_z^\times|$, and the chosen integer $c_0$ is divisible by
+$|R_z^\times|$. Hence $c_0/2$ is an integer. Choose lifts of all
+$P_M(z)$ before summing. Each orbit of embeddings contributes
+$(c_0/|R_z^\times|)(|R_z^\times|/2)P_M(z)=(c_0/2)P_M(z)$,
+with its prescribed unit weight. Replacing any lift by a multiple
+of $2^M$ changes this expression by a multiple of $2^M$.
+The comparison with the reduced point may therefore be made at
+precision $M$, separately for each orientation. Summing the
+$2^{\omega(N)+1}$ orientations gives the stated multiplier
+$c_0 2^{\omega(N)}$ without any loss of precision.
+In particular, write $c_\theta=9+\omega(N)$, the valuation of
+the fixed integer $c_0 2^{\omega(N)}$. At the fixed witness $D_w$,
+(O.2) and (O.7) imply
+\[
+ v_2a_M(D_w)=c_\theta+c_w
+       \qquad\text{whenever }M>c_\theta+c_w.
+\]
+The phase is a unit and the congruence error has strictly larger
+valuation, so this is an equality, not merely a lower bound.
+Discarding the finitely many earlier stages is sufficient. Thus the
+visibility used in choosing the odd minimum retains a fixed witness
+and a fixed valuation; neither the class number nor the changing
+prime $\ell_0$ introduces a new loss of precision.
+
+\end{proof}
+
+\begin{proposition}[Visibility and the native genus index]\label{ex:app-visibility}

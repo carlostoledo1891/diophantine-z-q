@@ -1,0 +1,106 @@
+{
+  "schema": "source-role-relationships/v1",
+  "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+  "rows": [
+    {
+      "id": "FINAL-RATIONAL-NONCM-FOWLER",
+      "role": "published_theorem_application",
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2570,
+        "end_line": 2572,
+        "excerpt_sha256": "e7eba37f9a60202a0d116724318eeb2aaa285d03c8b1c71a9b72786349468298"
+      },
+      "publication": {
+        "title": "Some uniform effective results on André–Oort for sums of powers in C^n",
+        "authors": "G. Fowler",
+        "venue": "Mathematical Proceedings of the Cambridge Philosophical Society180(2026),607–641",
+        "authoritative_version": "Published version; retainedPDFbc676f4d5b6a2a70fa3e6bed55a4449622d6728167d4c668068b89da6b2d55ae",
+        "locator": "Section2.1, printed612–613",
+        "corrections": "Exact published A065 scope reused from independent sieve-bounds review; no new full-source audit."
+      },
+      "available_assertion": {
+        "statement": "For an imaginary quadratic order, the singular moduli are roots of a monic integral class polynomial, hence are algebraic integers.",
+        "objects": "Classical elliptic singular moduli of imaginary quadratic orders.",
+        "hypotheses": "The elliptic curve has geometric complex multiplication by an imaginary quadratic order.",
+        "quantifiers": "Every imaginary quadratic order, including nonmaximal orders.",
+        "parameter_range": "Negative order discriminants; elliptic curves in characteristic zero.",
+        "uniformity": "Algebraic integrality for all such singular moduli.",
+        "constants": "No numerical height bound or discriminant estimate used.",
+        "normalizations": "Use the classical elliptic Weierstrass c4^3/discriminant invariant and the full CM order, including nonmaximal orders.",
+        "exceptional_cases": "No maximal-order restriction; this is not a formula for a quaternionic Hauptmodul.",
+        "limit_order": "Fix the CM order and form its class polynomial."
+      },
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2570,
+        "end_line": 2576,
+        "excerpt_sha256": "c97c00669a307d0d56a6ce718051a4ec5ebf89f76b00b7b34871d47bdbf0958f"
+      },
+      "source_statement_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2570,
+        "end_line": 2572,
+        "excerpt_sha256": "e7eba37f9a60202a0d116724318eeb2aaa285d03c8b1c71a9b72786349468298"
+      },
+      "local_derivation_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2573,
+        "end_line": 2576,
+        "excerpt_sha256": "9510ce9b8cbbaa4638b35465275c851410fc02c1f5aba854e4f942f47204e03b"
+      },
+      "needed": "The actual nonsingular E_ell with classical j=35152/9 has no geometric complex multiplication.",
+      "connecting_argument": "If E_ell had geometric CM, its endomorphism order, not necessarily maximal, would make its classical elliptic j an algebraic integer by the monic integral order class polynomial. For a reduced rational a/b, multiplying a monic equation by b^n gives b dividing a^n, hence b=1. Here35152 is not divisible by3, so35152/9 is not integral. Contradiction.",
+      "retained_inputs": [
+        {
+          "statement": "The displayed nonsingular model has the computed classical j invariant; ell is nonzero.",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2553,
+            "end_line": 2568,
+            "excerpt_sha256": "95ce0644198c6cb2a057c2238e8fbe4bc0026c3d22cc27929063e4a68ec8cbbb"
+          }
+        }
+      ],
+      "boundary": "This application does not supply open image, a uniform index, or any assertion about the distinct CM generator curve. The earlier derived non-CM output is not a premise.",
+      "prior_review": {
+        "path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/ACCEPTANCE-REPORT.md",
+        "sha256": "2788baf6db0838c681199d69449a12a1c192be6decae6cb8b5a02f917f56b4bf",
+        "scope": "A065 full order j-integrality and exact E_ell invariant calculation, including repeated RC use."
+      },
+      "historical_cross_reference": {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1730,
+          "end_line": 1733,
+          "excerpt_sha256": "7e67cb2a9ebc0116453809cd97ad99c0c53de684aa1f8108269ac486df552216"
+        },
+        "role": "earlier derived non-CM conclusion, not a source premise"
+      }
+    }
+  ]
+}

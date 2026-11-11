@@ -1,0 +1,239 @@
+INTERPRETER / PRECISION / FIVE-INPUT SPECIALIZATION: INDEPENDENT REVIEW
+4 November 2026
+
+Conclusion and scope
+
+The literal interpreter, precision IR, primitive lowering, Cantor wrapper and natural-polynomial specialization compose correctly on every five-natural input tuple. The specialized polynomial has a natural witness exactly when the five decoded integers satisfy the implemented strict precision predicate. Undefined coordinate divisions reject in both computational implementations. No new source-level gap was found.
+
+This is a source-level mathematical and finite-program review, not a Lean certificate or global theorem claim. It imports the separately sealed packed-history/zero-polynomial theorem from work/astra-final-packed-history-junction-001/REPORT.txt, SHA256 55ce89be757e9da1b43b364e8ed8ffed921efabf13c089613c40a35c5863610b. It does not infer the semantics of any producer from a PASS label. The rational index model, arithmetic/geometric existence arguments and final ordinary-integer theorem remain separate.
+
+All natural inputs are unbounded mathematical integers. Finite machine memory, JavaScript/Python runtime limits, and test step budgets are not mathematical rejection conditions. No production source, manuscript, approved declaration, prior report or running job was modified.
+
+1. Exact predicate and totality boundary
+
+The five natural codes decode in the order n,kappa,a,ell,j by
+
+ dec(2q)=q,              dec(2q+1)=-q-1.
+
+The inverse is enc(n)=2n for n>=0 and enc(n)=-2n-1 for n<0. In particular code 0 is integer 0 and code 1 is integer -1, not +1.
+
+Let C={0,-15,-20,-24,-30,-60}, F(n)=product_(c in C)(n-c), K=Q(sqrt(2)),
+
+ E: y^2=x^3+A x,          A=-11243+7950 sqrt(2),
+ P=(1641/8-145 sqrt(2), -123720/32+(87483/32)sqrt(2)).
+
+For a finite point set z=-x/y when its denominator is nonzero, and set z(O)=0. Write z([ell]P)=u+v sqrt(2), epsilon=|u|+|v|, and r(a,j) as the first coefficient of z([j]P)/z([a]P), equivalently half its trace. Let H be the exact fixed integer H6(S_ht), S_ht the primes at most 324. The predicate first requires
+
+ n not in C, kappa!=0, a>=1, ell>=1, j=n*a,
+
+then requires defined coordinate divisions, epsilon>0, and
+
+ |r(a,j)-n|<epsilon,       4 epsilon<4^(-H*|kappa F(n)|^24).       (P)
+
+This is the total computational version of V4b04:1-20 and the five-integer relation (7) in outputs/z-in-q-variable-shift-bridge.txt:96-105. Both programs reject a zero denominator. Their equivalence, including that rejection, is proved below without assuming nontorsion. On the intended fixed curve, the separately established nontorsion of P makes these divisions defined for the guarded nonzero indices: a nonzero multiple is neither O nor a 2-torsion point, and z cannot vanish there. That mathematical fixed-point fact is separate from the computation proof; it is not inferred from successful tests. Thus the computational result does not silently use a new global generator, height or converse theorem.
+
+The positivity of H as a fixed integer follows directly from its expression in section 7. Its validity as a height bound is not needed for deciding (P).
+
+2. Primitive assembler: preservation, aliases and termination
+
+I read outputs/universal-interpreter.js in full, including the actual Assembler methods. Its instructions are add-one and decrement/zero-branch on natural registers. The reserved zero register is newly allocated after the input registers. Every later temp() gives a fresh index, and labels resolve to exact instruction positions.
+
+The following invariants justify the emitted helpers:
+
+- clear(r) repeatedly decrements r until zero. take(r,body) consumes one unit before each body execution; the actual uses do not restore this same counter in the body. ifNZ and whileNZ restore the one unit consumed by the test BEFORE entering the positive body, so the body sees the original value and may intentionally change it. The zero case sees zero. Unconditional jump has identical branch destinations and does not depend on the sign of a stale test value.
+- copy(out,x) is a no-op when out=x. Otherwise it clears out and a fresh counter, consumes x into both, then consumes the counter back into x. The result copies x while preserving it. addInto(out,x) uses the same restore mechanism without clearing out; if out=x it first snapshots x, so it doubles correctly. All scratch counters are initialized on every entry, including repeated loop entries.
+- ifLt copies both operands. It consumes a unit of the copied second operand, then a unit of the copied first operand. It reaches the less branch exactly if the first copy runs out while the second still had a unit, and reaches the greater/equal branch when the second copy is exhausted. Original operands remain unchanged.
+- divmod2 copies the input before writing either output, consumes pairs into the quotient and records the final parity. Distinct quotient and remainder outputs are checked. Input/output aliasing is safe because the original input is already copied.
+- Positive-divisor divmod maintains original x=quot*y+rem. If rem>=y it subtracts y using a copied counter and increments quot; otherwise it exits. The positive divisor makes rem decrease. Outputs are assigned only after the loop. In actual IR uses they are fresh; the interpreter also safely allows the remainder output to overwrite a field destination after the raw input was copied. All actual general divisions have positive divisors, as checked below.
+
+The lowering reads and writes natural values only. For add, if the output aliases y, y is snapshotted before x is copied to the output; this covers out=x=y as well. For sub, y is copied before the output is replaced by x, then that count decrements the output with saturation at zero. For mul, a fresh accumulator and copied x-count are used; y is restored by each addInto and the output is assigned only afterward. Thus all admitted operand/output alias cases implement the intended natural operation.
+
+Simultaneous assignMany checks whether any destination occurs among the source registers. If so, it copies ALL sources before any destination assignment. This handles sign swaps, self-negation, point-register updates and repeated sources. Actual destination tuples have distinct entries. No arithmetic proof assumes that a sequential assignment is simultaneous without this check.
+
+All helpers use finite natural counters or strictly decreasing positive remainders. They introduce no timeout branch. Their reserved zero register is never incremented by the generated computation. The final cleanup may clear it, which preserves zero.
+
+3. Exact program numbering, tape and universal interpreter
+
+A natural program number e has e+1=2^w(2D+1), uniquely. The interpreter obtains (w,D) by uncons on e+1. If w=0 it enters acceptance immediately, agreeing with the stated numbering. Otherwise B=2^w>=2. Instruction p consists of the four base-B digits of D at positions 4p through 4p+3: opcode, register, nonzero/add target, zero target. Digits beyond the end are zero. Only opcodes 1 and 2 execute; every other opcode halts. The actual decrement tests distinguish exactly 0,1,2 and values above 2 without mutating the saved opcode.
+
+The tape encoding is nil=0 and cons(h,t)=2^h(2t+1). Every positive code has a unique such pair, with t<code. uncons returns (0,0) on nil and otherwise divides by two until the odd part is reached. It copies the original code before clearing any output, so a code/output alias is safe.
+
+getList copies the list and index, drops the specified number of heads, and returns the next head. At and beyond the end it returns zero. setList copies the list/index, saves the dropped prefix in reverse order, replaces the specified head, and restores the prefix. Missing heads encountered before the target are zeros, so updates beyond the old end extend the finite tape correctly. The reverse list strictly decreases when unconsumed. Outputs may alias the original list or value because no final output write occurs until the reconstruction is complete. There is no infinite-list premise.
+
+Initially the interpreter's pc is zero and tape is cons(n,0), representing register 0=n and every other virtual register zero. Each loop copies D, divides by B exactly 4pc times, and extracts four digits by positive-base division. The loop computes 4pc by copying pc and adding pc three times; the source pc is restored by addInto. It then reads the selected virtual register, performs precisely the indicated add or decrement/zero branch, updates the tape, and repeats. Each single virtual step takes finitely many primitive steps, even for a large tape code or register index.
+
+Thus every finite virtual run is simulated exactly. If virtual execution halts under the above numbering, the interpreter enters its cleanup, clears every physical register and reaches its unique halt. If virtual execution is infinite, every simulated step is finite but no accept label is reached; the primitive execution is infinite. An invalid or missing opcode is a virtual halt by DEFINITION of this numbering, not an accidental acceptance rule for the later valid precision wrapper.
+
+encodeProgram chooses w so every finite instruction field fits below 2^w, packs each instruction's four fields, orders the first instruction in the least significant block, and returns 2^w(2D+1)-1. A trailing all-zero halt block may be absent from D's written digits, but missing digits are zero, so it still decodes as halt. For the actual wrapper every decoded instruction was independently compared below.
+
+4. Signed and quadratic-field IR invariants
+
+A signed integer is represented by a canonical pair (p,n) of naturals with p*n=0 and value p-n. snormal(p,n) returns (p dotminus n,n dotminus p), preserving the value and restoring this invariant. Signed addition, subtraction, multiplication, negation and nonnegative scaling use these operations. Hence sabs=p+n is the true absolute value; it is not applied to an unnormalized signed expression. Input decoding divides a natural code by two and chooses (q,0) or (0,q+1), matching section 1.
+
+A field value is a pair of such signed integers for a+b sqrt(2). Multiplication gives (ac+2bd,ad+bc), conjugation gives (a,-b), and the norm is a^2-2b^2. If the norm is zero, a=b=0: otherwise a rational square would equal 2, contradicted by the elementary parity descent. The sum of absolute coefficient values therefore detects zero exactly. These operations maintain canonical signed components.
+
+A finite point has origin flag zero and integral field coordinates (X,Y,Z), Z!=0, representing x=X/Z^2 and y=Y/Z^3. The infinity flag is exactly one. The base coordinates are
+
+ X=13128-9280 sqrt(2),
+ Y=-1979520+1399728 sqrt(2),
+ Z=8,
+
+which give exactly the P in section 1. Direct exact arithmetic verifies Y^2=X^3+A X Z^4. Also A=-(75-53 sqrt(2))^2, and the latter factor has norm 7, so the curve is nonsingular.
+
+For doubling the finite nonzero-Y branch uses
+
+ E=3X^2+A Z^4, D=4XY^2,
+ X'=E^2-2D, Y'=E(D-X')-8Y^4, Z'=2YZ.
+
+Dividing by the powers of Z' gives the affine tangent formulas with slope (3x^2+A)/(2y). Z' is nonzero in this branch. A point at infinity or with Y=0 doubles to infinity. The formulas preserve the projective curve equation.
+
+For addition set U1=X1 Z2^2,U2=X2 Z1^2, S1=Y1 Z2^3,S2=Y2 Z1^3, H=U2-U1,R=S2-S1. If H!=0, the code uses
+
+ X'=R^2-H^3-2U1 H^2,
+ Y'=R(U1 H^2-X')-S1 H^3,
+ Z'=H Z1 Z2.
+
+The affine slope is R/(H Z1 Z2); substitution gives the chord formulas and preserves the curve equation, with Z' nonzero. If H=R=0, the inputs are the same affine point and the doubling branch applies. If H=0,R!=0, valid points with equal x have opposite y, so the result is infinity. Origin inputs are copied. These cases are exhaustive on valid inputs, so the reference Python's ValueError for invalid equal-x data is unreachable.
+
+The general doubling/addition polynomial identities were checked independently over a sparse polynomial ring, reducing by Y^2-X^3-A XZ^4 for each input. This checks the formulas for arbitrary field coordinates, not only sampled points. Fourteen additional exact fixtures compare emitted IR point computations to an independent affine implementation using repeated addition.
+
+Signed scalar multiplication starts at O, negates the base Y for a negative index, and processes the absolute value by binary halving. The odd-bit addition precedes replacing the count by its quotient by two; the base is doubled only when another bit remains. This is the same order as the reference and terminates for every integer index, including zero. It requires no nontorsion assumption.
+
+5. Fractions, zero denominators and final distance
+
+An IR fraction consists of an integral field numerator and a positive natural denominator. fractionFromSignedDen rejects if the signed denominator has zero absolute value; otherwise it moves the denominator's sign into the numerator and records its positive absolute value. It need not cancel common factors.
+
+For a finite Jacobian point, z=-XZ/Y. The code forms -XZ*conjugate(Y) over norm(Y), then normalizes the denominator sign. At O it returns 0/1. Thus a zero-Y finite point rejects exactly when Python's inverse raises ZeroDivisionError. For division of N1/D1 by N2/D2, the code forms N1*conjugate(N2)*D2 over D1*norm(N2), with the same guard and sign normalization. Since norm(N2)=0 iff N2=0, this matches reference division and its degenerate rejection exactly.
+
+If the resulting z([ell]P) is (U0+U1 sqrt(2))/D, then epsilon=(|U0|+|U1|)/D. Write U=|U0|+|U1|. The code rejects U=0. If the center's first coefficient is C0/Dc with Dc>0, its final comparison is
+
+ |C0-n Dc|*D < U*Dc.
+
+This is exactly |r(a,j)-n|<epsilon. Equality rejects. Negative n and center values are handled by normalized signed arithmetic. The second center coefficient is irrelevant because half the trace is the first coefficient. There is no missing factor two.
+
+Every zero denominator is therefore covered: norm(Y) in a non-origin z computation; norm of the denominator numerator in center division; the positive natural divisor 4U in the precision-bound calculation; and any explicit IR.divmod divisor. IR.divmod emits a positive-divisor guard before the operation. Python catches ZeroDivisionError in accepts and returns False. Invalid-point ValueError is unreachable by section 4. An origin z computation is deliberately zero, and the subsequent epsilon or center guards reject it when it would be an invalid denominator.
+
+6. Exact strict precision test, including unreduced fractions
+
+For U,D positive integers and E>=0,
+
+ 4(U/D)<4^(-E)
+ iff 4U*4^E<D
+ iff 4^E<=L, where L=floor((D-1)/(4U)).                 (Q)
+
+The subtraction D-1 is exact because D>=1. For any positive common scale c, floor((cD-1)/(4cU)) is the same L: both are the largest integer k with 4Uk<D. Thus the formula remains valid for unreduced IR fractions; it does not assume their numerator or denominator has the same bit length as Python's reduced Fraction.
+
+The reference computes the largest exponent as (bit_length(L)-1)//2 when L>=1. The IR repeatedly divides L by four while the current value exceeds three, counting the divisions. Both compute floor(log_4 L). L=0 rejects; an exponent bound of zero also rejects. On the guarded input domain the required exponent H*|kappa F(n)|^24 is a positive integer, so these rejections are exact. No satisfying exponent is discarded.
+
+Write Bmax for the positive bound that reaches the next phase. The target condition (Q) is now equivalent to H*|kappa F(n)|^24<=Bmax. This is a finite integer threshold test, and is how the program avoids expanding an astronomical power of four. It is not a numerical approximation of that power.
+
+7. Saturation and the exact fixed height expression
+
+For cap L>=1 let sigma(x)=min(x,L+1). For nonnegative integers, sigma(sigma(x)+sigma(y))=sigma(x+y), and likewise for multiplication and maximum. Multiplication includes zero factors; the code handles zero before its overflow test in Python, and the IR performs the full exact product before clipping. Hence zero times a saturated positive value remains zero.
+
+For powers, sigma(sigma(b)^sigma(e))=sigma(b^e). If e=0 both sides are 1, including b=0. For b=0 or 1 and e>0 the result is b. If b>=2 and e>L, both the original exponent and the capped exponent L+1 give a value greater than L; otherwise the exponent is unchanged. The same argument handles a base above L. These cases justify capping intermediate exponents; positivity of an exponent is not lost at the boundary L=1.
+
+The IR power routine repeats capped multiplication with a decreasing natural counter, starting at 1, and stops early only after the result exceeds L. Python uses binary powering with the same cap. Both compute sigma(b^e). For bases 0 and 1, lack of early stopping may be slow but is finite and correct. The factorial routine multiplies exactly the factors 2 through 324 and may stop at saturation, because all later factors are positive.
+
+The actual height expressions in both programs have the same operation tree and every identical literal:
+
+ f=324!, D0=f*3^(256 f^4), G0=116064000000,
+ e0=10(D0 G0)^2, R0=max(D0,317,10^12), Q0=R0^(R0 e0),
+ Bcm=D0^2*3^(21000 D0^2)+1,
+ Ccm=2 Bcm+4096(1028+5 D0+84000 D0^2),
+ H=2*10^13*max(1,Ccm,Q0^17).
+
+This is the H6(S_ht) expression in V4b02:15-23; 317 is the largest prime in S_ht. An independent symbolic execution of the actual CappedIR.height method and actual reference height_constant_capped function produced identical operation trees, saved as HEIGHT_TREE.json. This matters because small-cap numerical examples alone would all saturate and could hide a wrong literal.
+
+The signed contact product is computed exactly as kappa*product_(c in C)(n-c). Its absolute value is positive after the explicit guards. Saturating the height, power 24 and product therefore gives sigma(H*|kappa F(n)|^24). The final test rejects exactly when that saturated value exceeds L, which is equivalent to the unsaturated value exceeding L. The separate public Python height_constant_capped(0) case returns 1=sigma_0(H); it is never reached internally after the positive-bound guard. No cap-zero premise is smuggled into the exponent argument.
+
+8. Whole IR predicate, lowering and rejecting divergence
+
+The generated IR decodes all five inputs, tests every guard in section 1, obtains epsilon, computes the bound and saturated required exponent, and only then evaluates the center and strict distance. Every comparison agrees with the reference. Early rejection has the same truth value regardless of whether a later geometric calculation would also reject. All represented field values and points remain valid by induction; all reached natural divisions have positive divisors.
+
+The ideal IR terminates on every natural input: scalar counts halve, the precision remainder divides by four, power counters decrease, factorial reaches 325 or stops on saturation, and all other operations are finite natural arithmetic. It ends in exactly accept or reject. The production runIR simulation budget is not part of this ideal semantics: exhausting a test budget throws an error and is never evidence of rejection.
+
+lowerIR maps the five logical inputs to physical registers 0 through 4, reserves physical register 5 as zero, and maps the remaining logical registers injectively to physical registers 6 through 5021. Fresh assembler scratch registers are outside that map. Primitive helpers in section 2 implement every IR operation; structural induction handles if/while composition. Branch tests restore live operands before entering their chosen body. The source initializations execute before the body, and repeated loop entries reinitialize scratch data before use.
+
+An IR accept jumps directly to cleanup. An IR reject jumps to an absorbing loop, rather than returning a Boolean value and falling through. The literal saved machine has reject PC 122828, whose two destinations are both 122828. The only accepting cleanup starts at 122829; it has one clear loop for each of 23,582 registers, followed by the unique final halt at PC 146411. The cleanup does not allocate more registers after recording its total. Its finite natural counters terminate and every physical register is zero at halt.
+
+Consequently true predicate values reach final zero halt in finite time. False values reach the absorbing reject state after a finite prefix and then diverge; they can never acquire a finite accepting history. Falling through an IR body also goes to rejection, though buildPrecisionIR's final comparison explicitly chooses a result. The generated computation never increments the reserved zero register; only its own cleanup clears it.
+
+This gives the exact acceptance convention required by the previously sealed packed-history compiler. The IR is a total decision procedure; its primitive realization is a recognizer with intentional divergence on rejection. These are different claims and are not conflated.
+
+9. Cantor wrapper, aliases and untouched registers
+
+Define pair(h,t)=(h+t)(h+t+1)/2+t. The wrapper's unpair routine starts sum=0 and rem=code, and while sum<rem replaces
+
+ rem by rem-(sum+1),       sum by sum+1.
+
+The invariant is code=sum(sum+1)/2+rem with rem>=0. The loop condition guarantees that the subtraction is exact. Each iteration strictly decreases rem; at exit rem<=sum. It returns head=sum-rem and tail=rem, both natural, and their Cantor pair is code. The triangular intervals [s(s+1)/2,(s+1)(s+2)/2) are disjoint, proving uniqueness. This also handles code zero, yielding (0,0).
+
+The actual helper copies code into a fresh rem register before writing its outputs. Thus the wrapper's first call may have head alias code register 0, and later calls may have tail alias the previous rest-code register. The copied rem preserves the needed input in each case. Four calls recover codes 0,1,2,3 and a remaining tail; the tail is copied to input register 4.
+
+buildWrapper uses Assembler(main.registers), so every wrapper scratch register is outside the entire main machine's register range. The other main registers begin zero and are not changed while unpairing. The wrapper clears all its scratch registers before entering the relocated main program. Its exact prefix has 368 instructions and scratch interval [23582,23633). Main instructions preserve register numbers and shift every jump target by 368. Prefix fall-through is exactly the main entry.
+
+The main program never accesses those cleared prefix-only scratch registers. Thus final zero halt for the main is final zero halt for the wrapper too. If the main rejects, its relocated reject loop remains absorbing. There is no invalid-opcode shortcut: the entire wrapper is a valid finite add/sub/halt program with in-range jumps. Under the numbering of section 3 it halts exactly when the decoded five-input precision predicate is true.
+
+10. Exact natural-polynomial specialization
+
+The saved universal natural polynomial H has inputs e,n and has a natural zero exactly when the encoded program e virtually halts on n, by sections 2-3 and the explicitly imported packed-history theorem. The interpreter physically cleans up on a virtual halt, so it satisfies that theorem's all-zero-register convention even when the virtual program's halt convention itself allows nonzero tape entries.
+
+The specializer substitutes the fixed encoded Cantor wrapper for e. It maps the old n variable to fresh tuple variable t0 at index 5, maps every old witness index i>=2 to i+7, and shifts every private power-block start by 7. Five new input codes occupy 0,...,4 and the four tuple witnesses occupy 5,...,8. This is injective, disjoint and exhaustive; no old witness becomes an input and no private block overlaps the new tuples.
+
+It appends the four equations
+
+ 2t_i=(c_i+t_(i+1))(c_i+t_(i+1)+1)+2t_(i+1) for i=0,1,2,
+ 2t_3=(c_3+c_4)(c_3+c_4+1)+2c_4.
+
+For every five-natural tuple these uniquely set t_i to the nested Cantor pairs, and the wrapper unpairs them in exactly the order n,kappa,a,ell,j. Division by two is used only in the proof; the emitted equations have integer coefficients and the product of consecutive integers is even.
+
+The final polynomial is the square of the old specialized root plus the squares of these four equations. Over the integers it vanishes iff the old root and all four pairing equations vanish. Therefore it has natural witnesses exactly when accepts_naturals(c0,c1,c2,c3,c4) is true, with undefined coordinate divisions handled as false as in section 1. The final count is 1,305,811 natural variables, five of them inputs. The sign convention and the order of the five inputs are unchanged throughout.
+
+Private hierarchical power calls retain their polynomial VALUE throughout this substitution; their 79-witness blocks are merely shifted, not converted into independent zero constraints. The power template itself is unchanged. This uses the value-level compiler result, not only its exponentiation zero-set corollary.
+
+11. Fresh verification and exact source binding
+
+replay.js rebuilds the universal interpreter, precision IR, primitive machine, Cantor wrapper, wrapper code and entire five-input natural polynomial in memory. Every generated object matches the saved object exactly. It also verifies the unique final halt, all in-range jump targets, the absorbing reject instruction, each of the 23,582 cleanup loops, and absence of an increment of the reserved zero register. It does not write or replace any saved production object.
+
+check_data.py independently decodes the saved wrapper number using its 18-bit field width and compares all 146,780 instructions, including the final halt and relocated jumps. It checks all 54,049 original source-variable nodes, all 15,845 private-call offsets, the unchanged power template, the four tuple variable positions, and the final exact sum-of-five-squares shape of the specialization. Eighty additional small evaluations check the appended pairing expressions. Full regeneration separately binds the giant decimal wrapper-code constant, so a partial modular check is not being substituted for equality of that constant.
+
+check.js uses an independently written primitive instruction executor and independently written ideal IR evaluator, not the production simulators. Its 827 microcases cover self-addition, output/input aliases in division, cons/uncons and list updates, aliased Cantor unpairing, arithmetic lowering aliases, zero denominator rejection, and small actual interpreter executions. They total 319,606 primitive steps. Tests use explicit finite budgets, and exhaustion is an error rather than a false predicate result.
+
+check.py uses an independent quadratic-field Fraction implementation and repeated affine addition to compare 14 emitted point fixtures. It verifies the fixed point and curve identity. Its own sparse polynomial ring checks six general identities for doubling/addition and preservation of the curve equation. It uses no external computer-algebra package. Both height-source operation trees match exactly.
+
+Boundary fixtures compare 2,352 capped-power IR results with exact powers and the Python reference; 1,152 precision-bound IR cases with the strict integer formula; 4,608 common-factor scalings of unreduced fractions; 201 signed encode/decode round trips; and 15,000 saturated-exponent identities. Finally 216 full five-integer cases agree between the independent IR evaluator and the actual Python accepts function. All these full cases reject. No positive example satisfying the astronomical height threshold was found or claimed: positive-direction correctness rests on the all-input invariants, operation equivalence and termination proof above.
+
+Useful countermodels to incorrect variants, all excluded by the actual source, are:
+
+- Without snapshotting y in an assignment out=y for add(x,y), x=2,y=3 can become 4 instead of 5 after overwriting y. The actual lowerer snapshots y, and the alias cases verify the result 5.
+- Replacing floor((D-1)/(4U)) by floor(D/(4U)) loses strictness: U=1,D=16,E=1 gives equality 4epsilon=4^(-E), which must reject. The actual predecessor formula rejects it.
+- Interpreting code 1 as +1 or as zero reverses the signed convention; the actual decoder gives -1 and the Cantor wrapper preserves code positions without decoding them prematurely.
+- Treating an IR reject as ordinary return/fall-through could expose later acceptance. The actual reject instruction has both successors equal to itself; no finite rejecting execution reaches cleanup.
+
+The principal hashes are:
+
+ universal interpreter source:
+   6b5576f57ef861cff4ef088c02f4acd6c3f5369cfab991e93edbab26cc1decd5
+ precision Python specification:
+   13d7d3249f260a4fee7ec401629ed538e98f9d6b1edea70df5c4806686432362
+ precision IR generator/lowerer:
+   ae4d930c83bb5ac9dd878df22d43079e1972855bff30e4e20d2a05a5989c4af9
+ saved precision IR:
+   e6a67f6b27da2a60dc8eec9c0e1b363c8a0acb43a01d2fb3db2fc7477edd5aa5
+ saved precision primitive machine:
+   ec4fb8c7ce2e3448071fa352e94a38e427e0899328633c93d7130c5ac1da98cd
+ specialization source:
+   4b31cf8719f060ce54735737318e916be85634d6ea8f6f0d156dc7752d69d0cf
+ saved five-input natural polynomial:
+   f3e163f5c60b972c98b48647274f956dd7d78428e27ddc0543574a5f18120b8c.
+
+SOURCE_PINS.json binds the full list, and RECEIPT.json records fresh hash rechecks. Existing source reports, verification scripts, accepted Lean APIs and prior PASS labels served only as navigation where mentioned. They are not substitutes for the direct proof or the fresh checks here.
+
+12. Remaining scope
+
+The result identifies the actual saved natural polynomial with the total five-input precision predicate (P), including all signed input boundaries, undefined-denominator rejections, and intentional divergence of rejected primitive executions. It does not prove that sufficiently precise positive witnesses exist for the later geometric argument, nor that the rational elliptic model interprets this polynomial correctly. Those require their separate producers. The height theorem itself is not used to compute the fixed integer H, and no converse theorem enters this computation.
+
+The only interpretation distinction to preserve is definedness: the total program rejects a degenerate coordinate ratio, while the manuscript writes the ratios directly using the separately known fixed-point nontorsion. The arithmetic identities and branch handling here establish the same result whenever those ratios are defined and explicitly specify the remaining cases. This is not an extra finite-Sha, rank or pointwise-converse hypothesis.
+
+No source correction or further hidden premise was found in this interpreter/precision/specialization junction. No global or Lean closure is granted by this report.

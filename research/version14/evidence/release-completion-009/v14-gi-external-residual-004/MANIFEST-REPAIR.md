@@ -1,0 +1,1 @@
+The predecessor002 manifest accidentally contained an empty file list. This successor preserves all mathematical/application bytes and freezes the actual complete member list. No claim is based on the predecessor empty binding.

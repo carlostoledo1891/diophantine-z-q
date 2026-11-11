@@ -1,0 +1,570 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\emergencystretch=1em
+\newtheorem{theorem}{Theorem}\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}\newcommand{\C}{\mathbb C}
+\newcommand{\T}{\mathbb T}\newcommand{\N}{\mathbb N}
+\newcommand{\ee}{\mathrm e}\newcommand{\DR}{\mathrm{DR}}
+\newcommand{\Hor}{\operatorname{Horiz}}\newcommand{\Tay}{\operatorname{Taylor}}
+\title{Sections 9--11 at every rank step}
+\author{Author proposal: /root/astra\_v14\_baseline\_gaussian}
+\date{7 November 2026}
+\begin{document}\maketitle
+
+\noindent\textbf{Status.} This is a source-to-consumer project reconstruction,
+not independent acceptance. It separates two analytic supplier contracts,
+\textup{F} and \textup{D}, from the algebraic, selection and representation
+joins proved here. Their separate reconstruction and review remain required.
+The universal group uses the explicit fixed-rank weighted presentation below.
+No final inverse theorem is used as a premise.
+
+\section{The family at an arbitrary rank}
+Fix a standard $s\geq3$, $m=s-1$ and $1\leq R\leq m$, and an unbounded
+limit integer $N$. All groups, lattices, metrics and finite dimensions below
+are standard unless a natural ultrapower is displayed or understood.
+Braces use $(-1/2,1/2]$ throughout this packet. The Section 12 constructor
+allows either fixed half-open fundamental cube; use this same choice there.
+Let $H\subseteq[-N,N]\cap{}^*\Z$ be dense and internal. The input consists of
+a bounded function $f$ on $[N]$, a global unit-vector multidegree $(1,m)$
+nilcharacter $A(h,n)$, and an internal family of unit-vector degree--rank
+$(m,R)$ nilcharacters $\chi_h$. The latter have a fixed finite list of rational
+models and standard uniform Lipschitz bounds. For every $h\in H$,
+$\Delta_h f$ has uniformly positive degree-at-most-$m-1$ correlation with
+$A(h,\cdot)\otimes\chi_h$, with bounded internal witnessing tests.
+Every vertical identity is on the full natural extension of its group and
+compact quotient, not merely their standard points.
+
+This is exactly the new input in rank-iteration001, Section 3. In particular
+no core/petal representation or independence statement is inherited from
+the preceding rank. They will be reconstructed. The corrected LP03 gives,
+after any dense internal restriction of $H$, many additive quadruples
+$h_1+h_2=h_3+h_4$ for which
+\begin{equation}\label{eq:quad}
+ \chi_{h_1}(n)\otimes\chi_{h_2}(n+h_1-h_4)
+ \otimes\overline{\chi_{h_3}(n)}
+ \otimes\overline{\chi_{h_4}(n+h_1-h_4)}
+\end{equation}
+is $(m-1)$-biased, with standard uniform witnesses. This hereditary statement
+means reapplying LP03 to the restricted correlation hypothesis. It does not
+assert that a previously chosen dense set of quadruples survives restriction.
+
+\paragraph{Analytic contract F.}
+For internal functions $X_1,\ldots,X_4:H\to{}^*\T$ and $\epsilon=N^{-j}$,
+if $X_1(h_1)+\cdots+X_4(h_4)=O(\epsilon)$ on many additive quadruples,
+there are a dense internal $H'$, a standard finite $K$, and internal
+$\alpha_k\in{}^*\T$, $\beta_k\in{}^*\R$, $\delta\in{}^*\T$ such that
+\[
+ X_4(h)=\sum_{k=1}^K\{\alpha_k h\}\beta_k+\delta+O(\epsilon)
+ \quad(h\in H').
+\]
+The errors have a common standard bound. A permutation of the four positions
+changes which function is recovered. This is the precise Appendix F.1 input;
+the signed-graph and no-wrap argument is a separate analytic supplier.
+
+\paragraph{Analytic contract D.}
+For a polynomial sequence in one variable in a fixed rational filtered
+nilmanifold there is a factorization $g=\varepsilon g'\gamma$ with
+$\varepsilon$ bounded, Lipschitz $O(1/N)$ and positive-index Taylor
+coefficients $O(N^{-i})$; $g'$ takes values in a connected rational subgroup
+$Q$ and is totally equidistributed on every standard finite cover of
+$Q/(Q\cap\Gamma)$; and $\gamma$ takes values in a fixed discrete overgroup
+$\widehat\Gamma\supseteq\Gamma$ and is periodic modulo $\Gamma$ with standard
+period. The subgroup $Q$ is allowed to equal $G$. All factors remain adapted
+to the ordinary degree filtration. Only this one-variable contract is needed.
+Its quantitative published supplier and corrected proof are separate.
+
+\begin{theorem}\label{thm:output}
+Subject to these two analytic contracts and the stated LP03 input, a dense
+internal subfamily has the following representation. There are fixed standard
+dimension blocks $C,L,B$, fixed filtered lattice-compatible maps from a
+weighted universal group $U$, and one integral top character $\eta$ on
+$U_{(m,R)}$. Up to a fixed coordinate isometry $\iota$,
+\[
+ \iota\chi_h(n)=F_h(g_h(n)\Gamma,g_{0,h}(n)\Gamma_0)
+ \qquad(n\in[N]).
+\]
+The lower model has degree--rank at most $(m,R-1)$. The functions $F_h$ are
+unit vectors with uniform standard bounds and exact top-character law;
+they need not be equal as functions. The horizontal coefficients are fixed
+core frequencies, linear petals $\{\alpha_a h\}\beta_a$ for $a\in L$, and
+independent petals for $a\in B$. The linear petals are Freiman homomorphisms
+on the retained set. For almost every additive quadruple, the core, all four
+independent-petal blocks and any three linear-petal blocks are independent
+modulo $O(N^{-i})$ separately at each weight $i$.
+
+For every weight-$m$, length-$R$ iterated commutator $w$, the real number
+$\eta(w)$ is zero if $w$ contains two petals, or contains one letter from
+$B$. These are precisely the annihilations required by LP04. They hold for
+every new rank family satisfying the initial hypotheses, without inherited
+frequency information. The construction of the final two-variable test is
+the separate Section 12 join.
+\end{theorem}
+
+\section{Selection and the corrected universal representation}
+We use the following elementary internal-choice rule, which also makes the
+countability uses precise. For an increasing internal sequence of witness
+sets $S_k$, suppose each member of an internal parameter set has a witness
+in some standard $S_k$. The least successful index is an internal integer.
+It is uniformly bounded: otherwise the internal nonempty sets on which it
+exceeds $1,2,\ldots$ have a common element by countable saturation, contrary
+to pointwise standard boundedness. At representative indices choose the
+first witness in a fixed choice order. This gives internal choices with one
+standard bound. Countable saturation here follows by diagonalizing nested
+finite intersections: at representative index $v$, choose a witness for the
+largest $k\leq v$ whose first $k$ conditions hold there. This $k$ tends to
+infinity along the ultrafilter. The unsupported diagonal $x_{v,v}$ alone
+would not establish this conclusion.
+
+We also need the ``almost all'' form. For nested internal bad sets $B_k$
+in a hyperfinite set $X$, if every $B_k$ has infinitesimal relative size,
+the same diagonal construction chooses an unbounded $K$ for which $B_K$
+has infinitesimal relative size and contains every standard $B_k$.
+Consequently, if their countable union is not contained in a sparse internal
+set, some $B_k$ is dense. Applying finite pigeonhole inside that $B_k$ fixes
+an integer coefficient vector and a standard error bound. This is the exact
+quantifier step used for failed frequency independence below.
+
+First restrict to one of the fixed models for $\chi_h$. Bounded
+tautification and normalization use their separately proved project
+interfaces. In a fixed model, only finitely many integral vertical characters
+can occur under a common Lipschitz bound. Indeed, along a fixed unit-speed
+top-torus direction $X$, the identity
+$F(\exp(tX)x)=\ee(t\eta(X))F(x)$ and $\|F(x)\|=1$ give
+$2\pi|\eta(X)|\leq C_X\operatorname{Lip}(F)$ by taking small $t$.
+On an integral basis this bounds all integer character coordinates. Finite
+pigeonhole therefore fixes the character.
+
+For each weight $i$, choose finitely many elements of $\Gamma\cap G_{(i,0)}$
+whose logarithms generate its rational Lie algebra. Such elements are obtained
+by clearing denominators in an adapted rational Mal'cev basis; their real
+generated subgroup is $G_{(i,0)}$. Use one formal letter of weight $i$ for
+each. Define $U$ by killing all Lie words of weight greater than $m$ and all
+weight-$m$ words of length greater than $R$. Set
+\[
+ U_{(d,r)}=\exp\operatorname{span}\{\text{surviving words of weight}>d,
+ \text{ or weight}=d\text{ and length}\geq\max(r,1)\}
+\]
+for positive $d$, with $U_{(0,0)}=U$. This is the exact LP04 weighted
+presentation before the additional petal relations. Its Hall-coordinate
+lemma supplies the lattice generated by the letters and its filtered
+intersections. The upward-closed word conditions prove every bracket
+inclusion. In particular $U_{(d,0)}=U_{(d,1)}$.
+
+Mapping each letter to its chosen lattice element gives a filtered
+homomorphism $\phi:U\to G$. The killed words vanish by the degree--rank
+bracket law in $G$; the map sends the generated lattice into $\Gamma$.
+It is onto each $G_{(i,0)}$. In
+$\Hor_i(G)=G_{(i,1)}/G_{(i,2)}$ the images of the weight-$i$ letters span
+the real vector space and generate a full sublattice. Thus the induced
+map of compact horizontal tori is onto. Select internal preimages of
+$\Tay_i(g_h\Gamma)$ to get frequencies $\xi_{h,i,a}\in{}^*\T$.
+Pull the fixed top character back by $\phi$ and initially take $G_0$ trivial.
+This proves the exact Definition 9.11 representation, including lattice
+compatibility and all-limit equivariance, for every new family.
+
+Here and below horizontal Taylor coefficients are homomorphisms on the
+polynomial-sequence group, are unchanged by translating $n$, and for
+$c\in G_{(i,1)}$ the sequence $c^{\binom ni}$ has only the $i$th horizontal
+coefficient $c$ and zero others. These facts use the iterated-difference
+commutator rule B.7: all noncommutative correction terms have rank at least
+two and disappear modulo $G_{(i,2)}$; an extra difference has weight above
+$i$. Binomial differences give the last assertion. Polynomial products use
+B.4. No claim that arbitrary Taylor factors commute is used.
+
+If $\xi_{i,a}=\sum_b c_{i,a,b}\xi'_{i,b}$ with standard integers $c_{i,a,b}$,
+map the new weight-$i$ letter $e'_{i,b}$ to
+$\prod_a e_{i,a}^{c_{i,a,b}}$ in a fixed order. The universal relations and
+lattice inclusion hold, giving $\psi:U'\to U$. In the abelian horizontal
+quotient this is exactly the indicated integer matrix. Replace $\phi$ by
+$\phi\psi$ and $\eta$ by $\eta\psi$; the original orbit and test are unchanged.
+When these matrices depend on $h$, the preceding bounded-choice rule and
+finite pigeonhole fix them on a dense internal subfamily before this step.
+
+\section{Frequency regularization with the actual quantifiers}
+Fix one weight and put $\epsilon=N^{-i}$. A partial description consists of
+fixed core frequencies, independent-candidate petals $b_h$, bracket-linear
+petals $l_h$, fixed rational frequencies, and $O(\epsilon)$ errors, with all
+original frequencies standard integer combinations of them. Every list is
+standard finite, and every family is internal. Dense restriction fixes the
+integer matrices and error bounds. Put all original frequencies in $b_h$
+to obtain an initial partial description.
+
+Minimize lexicographically the numbers of $b$ petals, then $l$ petals,
+then core frequencies, among all such partial descriptions on dense
+subsets. Bracket-linear petals are required to be individually Freiman
+homomorphisms. This costs only a finite dense restriction: place each
+$\{\alpha h\}$ in one of a fixed finite collection of intervals of width
+less than $1/4$. For an additive quadruple the difference of the four
+fractional parts is an integer of absolute value less than one, hence zero.
+Multiplication by any real $\beta$ preserves that identity. The intervals
+may be anywhere in the fundamental cube; none is required to surround zero.
+
+If independence of the core, four $b$ blocks and the first three $l$ blocks
+fails on more than a sparse set of quadruples, the bad-set rule above fixes
+one nonzero standard integer relation with error $O(\epsilon)$ on many
+quadruples. There are three exhaustive cases.
+
+If it contains only core coefficients, solve for a core with nonzero
+coefficient $a$. Choose internal $a$th roots of the other core frequencies.
+Division introduces a residue in the finite group $a^{-1}\Z/\Z$ and an
+$O(\epsilon)$ error. Move them to the rational and error lists. This reduces
+the core count without changing either petal count.
+
+If the relation involves $l$ but no $b$, it is a relation on three free
+parameters. Fix two by averaging over the many triples. On a dense set of
+the remaining parameter, solve for one $l$ coefficient. Divide the remaining
+bracket-linear coefficients as real numbers $\beta/a$, and root the core
+coefficients. Freeze the finite rational carry and add the values at the
+two fixed parameters to the core. A further fixed-box restriction restores
+the Freiman laws for the divided bracket-linear terms. This reduces the
+$l$ count without changing the $b$ count.
+
+If a $b$ coefficient occurs, use a symmetry of $h_1+h_2=h_3+h_4$ to place
+a nonzero one in position four. The Freiman laws allow elimination of the
+fourth $l$ block after this permutation. Group the relation as
+$X_1(h_1)+\cdots+X_4(h_4)=O(\epsilon)$, with $X_4$ containing that $b$
+coefficient and fixed core terms. Contract F expresses $X_4$ as finitely many
+bracket-linear terms plus a constant and error. Solve for the chosen $b$
+coefficient, using roots of the other $b$ and core frequencies and dividing
+the real bracket-linear coefficients. Freeze the finite rational carry,
+enlarge the other lists, and refine into fixed boxes as above. The original
+frequencies are still integer combinations of the new lists, because the
+old frequencies are integer multiples of their chosen roots. The $b$ count
+has decreased. Each case contradicts the lexicographic minimum.
+
+Thus the required independence holds for almost all quadruples. Apply this
+argument successively for the finitely many weights $1,\ldots,m$. Dense
+restrictions preserve previously obtained independence: their bad sets
+remain $o(N^3)$, while the retained parameter set has standard positive
+density. Standard integer relations, rational carries, error constants,
+finite dimensions and fixed model choices are selected internally with
+the explicit bounded-choice rule. This proves the regularization step of
+10.5--10.7 conditional only on contract F, with its needed family uniformity.
+
+\section{Removing rational and small coordinates without losing unit norm}
+Apply the integer change-of-basis construction to the regularized frequency
+lists. We now remove each rational or small coordinate in turn. The
+remaining top character and lattice map must be updated; forgetting them
+would not give a new representation.
+
+For a small coordinate $\xi=O(N^{-i})$, choose its small real lift and put
+$c=\phi(e_{i,a})^{\xi}\in G_{(i,1)}$. Set
+$g'_h(n)=c^{-\binom ni}g_h(n)$. B.4 proves polynomiality and horizontal
+homomorphism shows that exactly the selected coordinate has been removed.
+On $[N]$, $c^{\binom ni}$ is a bounded smooth function of $u=n/(2N)$.
+Indeed its logarithm is $\binom{2Nu}{i}\xi\log\phi(e_{i,a})$; its coefficients
+and all derivatives on a fixed compact interval are bounded because
+$N^i\xi=O(1)$. Extend this logarithm to the unit circle by using its real
+formula on the lift $(-1/4,3/4)$ and multiplying by a fixed smooth cutoff
+equal to one on $[0,1/2]$ and zero near the lift's endpoints. Let $c_h(u)$
+be its exponential. Replace the test by
+\[
+ F'_h(x,x_0,u)=F_h(c_h(u)x,x_0).
+\]
+It is globally a unit vector and uniformly Lipschitz. The top image
+$\phi(U_{(m,R)})$ is central, so the same exact vertical law holds everywhere.
+Add the circle orbit $n/(2N)$ to the lower model. It has degree one, which
+is at most $(m,R-1)$ because $m\geq2$. Thus this is an exact representation,
+not an approximation to the original sequence.
+
+For a rational coordinate $q\in\Q/\Z$, put $\gamma=\phi(e_{i,a})^q$ and
+$g'_h(n)=g_h(n)\gamma^{-\binom ni}$. Again only that horizontal coordinate
+is removed. The element $\gamma$ is rational relative to $\Gamma$.
+The subgroup $\widehat\Gamma=\langle\Gamma,\gamma\rangle$ is discrete:
+in rational Mal'cev coordinates the finite nilpotent collection formulas
+express every word as a polynomial in integer exponents of a finite set
+of generators and their finitely many commutators; clearing their fixed
+rational denominators gives a discrete coordinate grid. Since $\Gamma$
+is cocompact, its index in $\widehat\Gamma$ is finite. Its normal core
+$\Gamma'=\bigcap_{\delta\in\widehat\Gamma}\delta\Gamma\delta^{-1}$ is
+therefore a finite-index subgroup, normalized by $\gamma$.
+
+Choose a standard $b$ with $\gamma^b\in\Gamma$ and a standard period $q_0$
+such that $\binom{n+q_0}{i}\equiv\binom ni\pmod b$. For example a sufficiently
+divisible multiple of $b\,i!$ works, by the integer binomial difference
+formula. Put $\gamma_r=\gamma^{\binom ri}$ for $r\pmod{q_0}$. Then
+\[
+ F_h(g_h(n)\Gamma,x_0)=F_h(g'_h(n)\gamma_r\Gamma,x_0)
+ \quad(n\equiv r\pmod{q_0}).
+\]
+The test $W_{r,h}(x\Gamma',x_0)=F_h(x\gamma_r\Gamma,x_0)$ is well-defined,
+unit, and has the same top-frequency law. Also
+$W_{0,h}(x\Gamma',x_0)=F_h(x\Gamma,x_0)$ is such a global unit test.
+
+To interpolate the finitely many residue tests, choose disjoint small arcs
+around $r/q_0$ in $\T$. In the $r$th arc choose a smooth angle $\theta_r$
+which is zero at $r/q_0$ and $\pi/2$ near its boundary. Set $a_r=\cos\theta_r$
+there and zero outside; set $b=\sin\theta_r$ there and $b=1$ outside all
+arcs. The supports of the $a_r$ are disjoint and $\sum_r a_r^2+b^2=1$.
+The test
+\[
+ \left(\sum_r a_r(u)W_{r,h}(x,x_0),\ b(u)W_{0,h}(x,x_0)\right)
+\]
+is globally Lipschitz, unit and has the same vertical character. At the orbit
+$u=n/q_0$ it is exactly $(\chi_h(n),0)$. This fixed zero padding is explicit;
+we do not assert that an arbitrary scalar interpolation stays unit or that
+the old dimension has been retained. Correlation and subsequent matrix
+comparisons recover the original family by the fixed coordinate projection.
+
+The map from the remaining universal group must now land in the covering
+lattice $\Gamma'$. Choose a standard $M$ for which every remaining lattice
+generator's $M$th power lies in $\Gamma'$. Send each new letter to that
+$M$th power, and divide its horizontal frequency by $M$. Pull back the
+character by the same map. For linear petals choose the division as
+$\{\alpha h\}(\beta/M)$; for core coordinates choose fixed roots and for
+independent coordinates choose internal roots. Repeating this finite process
+produces a common standard denominator. It is not silently dropped, as in
+the displayed conclusion of the printed proof of 10.10.
+
+Independence is preserved: multiply an alleged standard integer relation
+between divided frequencies by the common denominator to contradict the
+old independence. After dividing linear petals, refine again into the fixed
+short boxes to make their real fractional-part sums exactly additive, hence
+their divided values Freiman. This is valid at arbitrary box locations.
+All rational covers, maps, dimensions, and periods are fixed on a dense
+internal subfamily before use. Small-coordinate curve bounds are uniform
+by the internal bounded-choice rule. A finite composition of paddings is
+one fixed coordinate isometry. We have proved the precise representation
+part of Theorem~\ref{thm:output}, without replacing the varying $F_h$ by a
+single equal function through an approximation argument.
+
+\section{The horizontal consequence of factorization, with denominators}
+Here we derive the needed D.6 conclusion from contract D. View a degree--rank
+group as ordinarily filtered by $G_i=G_{(i,0)}$. We retain the finer horizontal
+spaces $\Hor_i(G)=G_{(i,1)}/G_{(i,2)}$. For a polynomial orbit $g\Gamma$ put
+\[
+ \Xi_i=\{\lambda\in\widehat{\Hor_i(G/\Gamma)}:
+                 \lambda(\Tay_i(g\Gamma))=O(N^{-i})\pmod1\}.
+\]
+Characters here have standard integer coordinates. Their real linear lifts
+define $\Xi_i^\perp$ inside the real horizontal vector space.
+
+Suppose $F$ is a bounded Lipschitz test with nonzero standard average.
+Take one scalar component if needed, and factor $g=\varepsilon g'\gamma$.
+On a progression of the standard periodic modulus, choose a bounded standard
+representative $\gamma_P\in\widehat\Gamma$ of the constant coset of $\gamma$.
+Set $Q_P=\gamma_P^{-1}Q\gamma_P$ and
+$g_P=\gamma_P^{-1}g'\gamma_P$. The finite-cover equidistribution clause in
+D, applied to the common finite-index lattice, makes $g_P$ totally
+equidistributed in $Q_P/(Q_P\cap\Gamma)$ on every retained dense progression.
+Rationality of $\gamma_P$ gives rationality of $Q_P$.
+
+Partition into those residue progressions and then into intervals of length
+$\delta N$ for a sufficiently small standard $\delta$. Averaging selects a
+piece with an average bounded below by the original fixed threshold.
+On that piece freeze $\varepsilon(n)\gamma_P$ at one point. The uniform
+Lipschitz error is $O(\delta)$, so equidistribution gives
+\begin{equation}\label{eq:coset}
+ \left|\int_{P/(P\cap\Gamma)}F(\varepsilon_0x)\,d\mu(x)\right|>c>0
+\end{equation}
+for the connected rational $P=Q_P$ and bounded $\varepsilon_0$.
+This also holds for an internal test with a standard Lipschitz bound:
+compactness gives a finite standard uniform net in that Lipschitz ball.
+Apply total equidistribution to each net entry and then let the fixed net
+error tend to zero. Thus no unjustified standardness of the selected $F_h$
+or of the frozen bounded translate is being used.
+
+We claim $\pi_i(P\cap G_i)\supseteq\Xi_i^\perp$. Let $\lambda$ be an
+integer character annihilating the rational space $\pi_i(P\cap G_i)$.
+Then $\lambda(\Tay_i(g_P))=0$. Conjugation changes no horizontal
+coefficient since $[G,G_i]\subseteq G_{(i,2)}$. Hence the horizontal
+homomorphism identity gives
+\[
+ \lambda(\Tay_i(g))=
+ \lambda(\Tay_i(\varepsilon))+
+ \lambda(\Tay_i(\gamma)) \pmod1.
+\]
+The first term is $O(N^{-i})$. The second is rational of bounded standard
+denominator: derivatives of $\gamma$ lie in $\widehat\Gamma\cap G_i$, whose
+horizontal image is a finite-index over-lattice of that of $\Gamma\cap G_i$.
+Thus for some standard positive $q$, $q\lambda\in\Xi_i$. Every annihilator
+of the rational image has this property. Taking real annihilators proves the
+claim. In particular no false assertion that $\gamma$ takes values in
+$\Gamma$ or has zero horizontal coefficient is needed.
+
+\section{Applying the coset conclusion to the actual quadruple}
+After all the preceding dense restrictions, reapply hereditary LP03.
+There are $\gg N^3$ biased quadruples. The exceptional sets for frequency
+independence have size $o(N^3)$. Permutations preserving the additive
+quadruple equation make the omitted linear-petal position any of the four;
+the union of the four exceptional sets is still sparse. Fix a biased
+quadruple with all four required independence statements.
+
+Use the representations of its four nilcharacters and the lower bias test
+to form a product group
+\[
+ \mathcal G=G^{(1)}\times G^{(2)}\times G^{(3)}\times G^{(4)}\times G^{(0)}.
+\]
+The first four groups have degree--rank at most $(m,R)$; the last has degree
+at most $(m,R-1)$, including all four lower representation models and the
+ordinary degree-at-most-$m-1$ bias witness. The stronger strict inequality
+printed for this last group is unnecessary and is not assumed.
+Translations in $n$ preserve horizontal Taylor coefficients by their
+homomorphism/difference identity. Zero extensions in \eqref{eq:quad}
+introduce only an interval-intersection mask. Approximate this mask in
+normalized $L^1$ to error $\delta$ by a bounded Lipschitz circle test in
+$n/(cN)$, with fixed large $c$ and Lipschitz constant $O(1/\delta)$.
+Its two transition strips have total length $O(\delta N)$; multiplying by
+the uniformly bounded remaining tests controls the average error. Choosing
+$\delta$ below the fixed bias threshold preserves positive bias. This circle
+has degree one and belongs in $G^{(0)}$ because $m\geq2$.
+
+The resulting product test has a nonzero scalar average and exact vertical law
+\[
+ F(\phi_1(t_1)x_1,\ldots,\phi_4(t_4)x_4,x_0)
+ =\ee(\eta(t_1)+\eta(t_2)-\eta(t_3)-\eta(t_4))F(x_1,\ldots,x_4,x_0).
+\]
+All factors, including the cutoff, are uniformly Lipschitz on a fixed
+standard product geometry. Apply the preceding factorization consequence
+to obtain a connected rational $P\subseteq\mathcal G$ and the nonzero
+coset integral \eqref{eq:coset}.
+
+\section{Rational duality and the two commutator conclusions}
+For each weight $i$, let $V_{123,i}$ be the real space spanned by the
+three-coordinate diagonal images of core letters and by each individual
+coordinate image of every petal letter in positions $1,2,3$. Define
+$V_{124,i}$ likewise. The projection of $\pi_i(P\cap\mathcal G_i)$ to
+these three factors contains the indicated $V$.
+
+Here is the exact duality argument. If containment failed, rationality gives
+a rational linear functional that vanishes on the projected space but not
+on $V$. Extend it by zero in the omitted factors and clear denominators to
+make it an integer character $\lambda$. Because the full space contains
+$\Xi_i^\perp$, this character is in the rational span of $\Xi_i$. After
+multiplication by another standard integer it belongs to $\Xi_i$ itself.
+Evaluating it on the Taylor coefficient gives a relation
+\[
+ \sum_{a\in C}(c_{1a}+c_{2a}+c_{3a})\xi_{C,a}
+       +\sum_{k=1}^3\sum_{a\in L\cup B}c_{ka}\xi_{h_k,a}
+       =O(N^{-i}).
+\]
+The selected independence forces every petal coefficient and each displayed
+core sum to vanish. That says the character vanishes on $V$, a contradiction.
+The $124$ proof is identical. This uses rational real subspaces, not an
+unjustified identification of an arbitrary real annihilator with one
+integral member of $\Xi_i$.
+
+Similarly the projection onto all four main factors contains the space
+$V_{B,i}$ generated by diagonal core images and by the individual-coordinate
+images of every letter in $B$. In the analogous integer relation eliminate
+the fourth $L$ coefficient using
+$\xi_{h_4,a}=\xi_{h_1,a}+\xi_{h_2,a}-\xi_{h_3,a}$ for $a\in L$.
+Independence makes the four $B$ coefficients vanish separately and the sum
+of core coefficients vanish. This is exactly annihilation of $V_{B,i}$.
+No numerical range for $B$ is borrowed from the conflicting printed order
+of the $L$ and $B$ blocks.
+
+Let $w$ be any bracketing of $R$ letters of weights summing to $m$.
+First suppose it has two petal occurrences. For one occurrence lift its
+first-coordinate image, with zero second and third coordinates, from
+$V_{123,i}$ to $P\cap\mathcal G_i$. For the second lift its first-coordinate
+image with zero second and fourth coordinates from $V_{124,i}$. Lift the
+remaining letters so that their first horizontal coordinate is the required
+one. Take the same iterated commutator of these lifts.
+
+In the first factor it equals $\phi_1(w)$ exactly. Replacing one lift by its
+horizontal error inserts an element of $G_{(i,2)}$ in place of
+$G_{(i,1)}$, raising the total rank to at least $R+1$ at weight $m$;
+every such term vanishes. Higher BCH terms have larger weight and vanish
+as well. In factor two, either selected petal lift has such an error;
+factor three has the first, and factor four the second. Therefore those
+coordinates are the identity. In factor zero, an $R$-fold commutator of
+the prescribed weights lies in its trivial $(m,R)$ group. We obtain
+\[
+                 (\phi_1(w),1,1,1,1)\in P.                 \tag{*}
+\]
+This reasoning applies to each position of a repeated letter and to every
+bracketing, not only a single left-nested commutator.
+
+If $w$ has a $B$ letter, use $V_{B,i}$ to lift that occurrence with all
+other main coordinates zero horizontally. Lift the remaining occurrences
+by their first coordinates and repeat the same rank-error calculation.
+This proves (*) as well. It works for $R=1$; the other top coordinates then
+already vanish, and the lower model has trivial weight-$m$ group.
+
+Finally (*) gives a real-zero conclusion. The element is central in
+$\mathcal G$. Since $P$ is a connected subgroup of a simply connected
+nilpotent group, its entire one-parameter subgroup belongs to $P$.
+Left translation by its $t$th power leaves Haar measure on $P/(P\cap\Gamma)$
+invariant and commutes with the bounded coset translate. The vertical law
+multiplies the nonzero integral by $\ee(t\eta(w))$. Hence
+$\ee(t\eta(w))=1$ for every real $t$, so $\eta(w)=0$ as a real number.
+Using only $t=1$ would give an integer condition and would be insufficient.
+This proves both annihilations in Theorem~\ref{thm:output}.
+
+\section{The LP04 and rank-family joins}
+The output has the exact LP04 hypotheses: the corrected universal weighted
+group, an integral top character with all required real-zero annihilations,
+fixed lattice-compatible $\phi$, matched horizontal Taylor tori, and a unit
+representation with a lower degree--rank factor. Its petal quotient kills
+the whole ideal generated by the bad words at every weight; the vanishing
+just proved concerns the top restriction needed to descend the character.
+These distinct roles are not identified.
+
+The Section 12 join chooses its stronger integral extension to the ordinary
+top before invoking LP04 comparison, and gives one global multidegree
+$(1,m)$ nilcharacter equal to a fixed coordinate embedding of $\zeta_h$.
+LP04 then supplies the whole matrix
+$(\iota\chi_h)\otimes\overline{\zeta_h}$ with strictly lower degree--rank.
+Projecting the first tensor factor through the fixed coordinate projection
+gives $\chi_h\otimes\overline{\zeta_h}$ with the same bound and exact values.
+Thus the unit padding used in rational removal does not weaken the actual
+matrix input required by rank-iteration001.
+
+All selections, roots, covers, maps and tests were made internally on
+representatives; each retained dimension, character and bound is standard.
+There are finitely many weights and coordinates at any one rank, so all
+density and correlation losses remain positive standard numbers. The next
+rank family from rank-iteration001 again has exactly the hypotheses of
+Section 1. Repeating the present reconstruction at that new rank uses its
+own new frequency data. No independence is transported through a
+Stone--Weierstrass approximation or assumed for the newly selected test.
+There are $m$ rank steps, so the same finite-loss conclusion holds across
+the full iteration. This is the required source-to-consumer compatibility,
+conditional on the two separately supplied analytic contracts and the
+independent acceptance of the project proof units used here.
+Representation equality is required on $[N]$. Whenever a global sequence
+is used, take the displayed polynomial model as its extension. Small-frequency
+removal need not preserve a previous extension outside $[N]$; the interval
+mask in the quadruple argument is precisely what makes that change harmless.
+
+\section{Bounded correction and consistency record}
+The source scope is final GTZ Sections 9--11, the immediate pp.~1307--1309
+consumer, the D.4--D.6 interface, B.4/B.7, and the selection statements in
+Appendix A. The attached record pins exact passages and the current project
+consumers. Concrete changes are:
+\begin{enumerate}
+\item State the fixed rank $R$ explicitly in Definition 9.1's second
+truncation relation, where the printed formula writes $r$ without the fixed
+rank subscript. The printed weight cutoff $\sum i_j\geq s$ is already
+equivalent to $\sum i_j>m$ and is not an error. Rendering the source rather
+than relying on text extraction establishes this distinction.
+\item Retain the common division from 10.9 in 10.10 and restore Freiman laws
+after real coefficient division. Fixed arbitrary-location boxes suffice.
+\item Rational removal uses a finite cover and explicit same-character unit
+completion with a fixed isometry, rather than unproved unit interpolation.
+\item Keep varying uniformly Lipschitz $F_h$; total boundedness does not make
+them literally equal as claimed in the immediate p.~1308 narrative.
+\item Use named core/linear/independent blocks, because p.~1302 reverses the
+order used in the statement of 10.10 and Theorem 11.1.
+\item Treat the repeated clauses (iii),(iv) of Theorem 11.1 as duplicates;
+there are two distinct annihilation conclusions.
+\item Use degree--rank at most $(m,R-1)$ for the lower product model, not an
+unneeded strict inequality below that index.
+\item Retain the rational Taylor term in D.5 and clear its denominator in
+the annihilator argument. The factorization subgroup may equal the ambient
+group. The separate analytic supplier addresses the D.2 total-equidistribution
+issue and F.1 signed-graph/no-wrap details.
+\item The real-zero character argument uses all real powers in the connected
+subgroup. One integral phase identity alone is insufficient.
+\item Reapply LP03 after each dense restriction; intersect many biased
+quadruples with almost-all independence, not two unrelated dense sets.
+\end{enumerate}
+These are authored repairs and scoped dependencies, not a declaration that
+all historical versions or the entire inverse theorem have been checked.
+The original published source and all earlier frozen packets are preserved.
+\end{document}

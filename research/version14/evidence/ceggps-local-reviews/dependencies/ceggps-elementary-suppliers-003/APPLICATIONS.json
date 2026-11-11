@@ -1,0 +1,155 @@
+{
+  "applications": [
+    {
+      "id": "ELEM-EXT",
+      "proof_section": 1,
+      "available": "Direct proof that Ext1_G,zeta(I(chi),I(chi)) has dimension one for distinct inducing characters over E.",
+      "needed": "The smooth fixed-central-character principal-series bound in BM4.19 on the nonexceptional crystalline dense set.",
+      "assertion": {
+        "statement": "dim_E Ext1_G,zeta(I(chi),I(chi))=1.",
+        "objects": "Smooth E-representations of GL2(Q5); normalized principal series; full center acts by fixed zeta on extensions.",
+        "parameter_range": "E a finite extension of Q5 containing square root5; chi != w chi; selected consumer also requires irreducible principal series.",
+        "hypotheses": "Smooth discrete action; same prescribed central character on entire middle term; finite coefficient extensions allowed.",
+        "conclusion": "Principal-series smooth self-extension dimension equals one.",
+        "uniformity": "Every such distinct-character principal series, including every point in the selected generic set.",
+        "exceptional_cases": "Coincident inducing characters excluded; no supercuspidal or special-series claim.",
+        "normalization": "I uses delta^(1/2), r uses delta^(-1/2), G acts by right translations; normalized induction characters are compared.",
+        "dependency_scope": "Exact Jacquet coinvariants, exact induction/adjunction, explicit Bruhat two-cell computation, abelian extension calculation, all proved in Section1.",
+        "translation": "At selected distinct-root nonexceptional crystalline points, apply to the smooth factor in BM4.19; BM4.11 and universal-completion/Galois bounds remain separate."
+      },
+      "status": "author_proposal_pending_independent_review",
+      "comparisons": [
+        {
+          "field": "objects",
+          "needed": "Smooth E-representations of GL2(Q5); normalized principal series; full center acts by fixed zeta on extensions.",
+          "provided": "The proof defines G, B, T, N and the category in which the full center acts as zeta on every middle term. This is the smooth Ext category appearing in BM4.19, before tensoring the algebraic factor.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "parameter_range",
+          "needed": "E a finite extension of Q5 containing square root5; chi != w chi; selected consumer also requires irreducible principal series.",
+          "provided": "The two inducing characters differ on T; the consumer removes repeated Frobenius roots. Finite coefficient extension supplies delta^(1/2) and does not change the direct one-dimensional calculation.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "hypotheses",
+          "needed": "Smooth discrete action; same prescribed central character on entire middle term; finite coefficient extensions allowed.",
+          "provided": "Exact Jacquet coinvariants and normalized induction are proved for smooth discrete E-actions. Compact averaging is used only in characteristic zero.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "conclusion",
+          "needed": "Principal-series smooth self-extension dimension equals one.",
+          "provided": "Derived adjunction and the two Bruhat constituents reduce Ext1 to the self-extension of chi plus the cross-extension. The cross-extension splits; the self-extension is determined by c(5).",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "uniformity",
+          "needed": "Every such distinct-character principal series, including every point in the selected generic set.",
+          "provided": "The proof does not depend on a chosen conductor, eigenvalue magnitude or filtration. Every distinct pair has a separating T-element and the same valuation computation.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "exceptional_cases",
+          "needed": "Coincident inducing characters excluded; no supercuspidal or special-series claim.",
+          "provided": "If chi equals w chi, the separating-element splitting fails; those points are explicitly excluded. No conclusion uses a supercuspidal or Steinberg extension theorem.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "normalization",
+          "needed": "I uses delta^(1/2), r uses delta^(-1/2), G acts by right translations; normalized induction characters are compared.",
+          "provided": "The open-cell integral contributes |a/d|, cancelling the induction and Jacquet half-modulus factors. Its remaining character is w chi; the closed cell gives chi.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "dependency_scope",
+          "needed": "Exact Jacquet coinvariants, exact induction/adjunction, explicit Bruhat two-cell computation, abelian extension calculation, all proved in Section1.",
+          "provided": "The proof supplies exactness, the adjunction, enough injectives, the two-cell calculation and the abelian extension computation. It retains BM4.11 for removing the algebraic factor and the earlier universal-completion argument.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "translation",
+          "needed": "At selected distinct-root nonexceptional crystalline points, apply to the smooth factor in BM4.19; BM4.11 and universal-completion/Galois bounds remain separate.",
+          "provided": "The selected generic crystalline smooth factor is an irreducible unramified principal series with unequal normalized characters. Its fixed central character is exactly the one fixed in BM4.19, so the dimension-one input is the computed group.",
+          "disposition": "pending independent review"
+        }
+      ]
+    },
+    {
+      "id": "ELEM-LIFT",
+      "proof_section": 2,
+      "available": "Direct idempotent-lifting and compact-Nakayama proof over the fixed-central-character completed group algebra.",
+      "needed": "Final integral projective-cover inference in BM5.2 after its snake-lemma calculation.",
+      "assertion": {
+        "statement": "An O-torsion-free compact R-module with finite projective reduction is finite projective; a reduction projective cover gives the corresponding integral cover.",
+        "objects": "R=O[[K]] modulo z-eta(z) for the compact central character eta; compact profinite modules and continuous maps.",
+        "parameter_range": "O coefficient DVR; K=GL2(Z5); prescribed integral central character.",
+        "hypotheses": "R pi-adically complete; M O-torsion-free; M/piM finite projective; essential reduction epimorphism for cover conclusion.",
+        "conclusion": "M is finite projective and its lifted epimorphism is a projective cover.",
+        "uniformity": "Every module satisfying these hypotheses; no uniformizer-character condition needed.",
+        "exceptional_cases": "No conclusion if O-torsion-freeness or projective reduction is omitted.",
+        "normalization": "pi is the coefficient uniformizer. For actual Coker(x), eta=zeta_BM^(-1) under Pontryagin duality; Section1 zeta is a smooth-side character.",
+        "dependency_scope": "Idempotent polynomial iteration, projectivity, Tor vanishing and compact Nakayama are proved in Section2.",
+        "translation": "BM5.2 supplies M=Coker(x), torsion-freeness and the reduction cover. Finite target generators lift to a compact closed image surjecting the target; essentiality makes that image the full cover, and projectivity splits it, establishing finite projectivity."
+      },
+      "status": "author_proposal_pending_independent_review",
+      "comparisons": [
+        {
+          "field": "objects",
+          "needed": "R=O[[K]] modulo z-eta(z) for the compact central character eta; compact profinite modules and continuous maps.",
+          "provided": "Section2 separates compact eta from smooth zeta and defines the quotient using z-eta(z). BM Pontryagin duality makes eta the inverse of its smooth central character.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "parameter_range",
+          "needed": "O coefficient DVR; K=GL2(Z5); prescribed integral central character.",
+          "provided": "The iterative idempotent correction is a polynomial in one matrix, so it works in noncommutative matrix rings over the pi-complete R. No commutativity of K is assumed.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "hypotheses",
+          "needed": "R pi-adically complete; M O-torsion-free; M/piM finite projective; essential reduction epimorphism for cover conclusion.",
+          "provided": "The finite projective reduction yields an idempotent and a finite projective lift P. O-torsion-freeness of M removes Tor1 when reducing the kernel sequence.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "conclusion",
+          "needed": "M is finite projective and its lifted epimorphism is a projective cover.",
+          "provided": "The lift P to M is surjective by compact Nakayama and injective by the reduced kernel calculation, hence is an isomorphism. Essentiality of the reduction epimorphism then lifts by applying Nakayama to M/L.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "uniformity",
+          "needed": "Every module satisfying these hypotheses; no uniformizer-character condition needed.",
+          "provided": "The calculation is independent of the rank of the finite projective reduction and of the central character, provided the specified compact quotient ring and torsion-freeness hypotheses hold.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "exceptional_cases",
+          "needed": "No conclusion if O-torsion-freeness or projective reduction is omitted.",
+          "provided": "Without torsion-freeness the kernel reduction need not be zero. Without finite projective reduction there is no finite idempotent lift. Neither excluded situation occurs after the cited BM snake-lemma calculation.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "normalization",
+          "needed": "pi is the coefficient uniformizer. For actual Coker(x), eta=zeta_BM^(-1) under Pontryagin duality; Section1 zeta is a smooth-side character.",
+          "provided": "The coefficient uniformizer pi is distinct from the group scalar5; all compact modules use eta=zeta_BM^(-1), so their maps remain in the actual BM category.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "dependency_scope",
+          "needed": "Idempotent polynomial iteration, projectivity, Tor vanishing and compact Nakayama are proved in Section2.",
+          "provided": "The new proof supplies only integral projectivity and cover essentiality. It does not construct the K-injective enlargement, the endomorphism x or its reduction exact sequence.",
+          "disposition": "pending independent review"
+        },
+        {
+          "field": "translation",
+          "needed": "BM5.2 supplies M=Coker(x), torsion-freeness and the reduction cover. Finite target generators lift to a compact closed image surjecting the target; essentiality makes that image the full cover, and projectivity splits it, establishing finite projectivity.",
+          "provided": "BM reduction is a projective cover of a finite semisimple target. Lift its finite generators; compactness gives closed image, essentiality gives surjectivity, and projectivity splits. The lemma then applies to Coker(x).",
+          "disposition": "pending independent review"
+        }
+      ]
+    }
+  ],
+  "independent_acceptance": false
+}

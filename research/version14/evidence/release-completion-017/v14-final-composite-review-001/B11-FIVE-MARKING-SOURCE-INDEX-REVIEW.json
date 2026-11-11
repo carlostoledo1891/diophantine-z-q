@@ -1,0 +1,72 @@
+{
+  "schema": "bounded-source-review/v1",
+  "reviewed_at": "2026-11-09T08:23:00.103Z",
+  "target": {
+    "path": "v14-b11-five-marking-source-index-001/MANIFEST.json",
+    "sha256": "83d89c8ed37f5f8b2f445be710ea014b57502ae023a6d59c9a5b818d7f243617"
+  },
+  "decision": "accepted bounded63-line role partition",
+  "checks": {
+    "rows": [
+      {
+        "id": "SRC-B11-FIVE-1",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-7",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-14",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-15",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-21",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-39",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-40",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-52",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-53",
+        "raw": true,
+        "uses": true
+      },
+      {
+        "id": "SRC-B11-FIVE-59",
+        "raw": true,
+        "uses": true
+      }
+    ],
+    "exact_partition": true,
+    "source_hash": true
+  },
+  "reasoning": [
+    "Full proof read with the three provider applications accepted in B11-FIVE-MARKING-INPUTS-REVIEW.json. Actual applications7–13,15–20,40–51 match their use consumers and exact locations.",
+    "Local matrix-unit derivation21–38 uses the previously indexed hypotheses; it is not a fresh outgoing full-cover input. Output and final list of prerequisites remain distinct from actual applications."
+  ],
+  "limits": [
+    "Incoming model, order and published provider prerequisites remain explicit; this line partition is not their recursive closure."
+  ]
+}

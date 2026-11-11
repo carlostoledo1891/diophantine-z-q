@@ -1,0 +1,30 @@
+{
+  "author": "/root/astra_v14_assertions_arithmetic",
+  "status": "author proposal; independent Sol review required",
+  "parent_manifest_sha256": "f92a6b5adda0cace9f68c2564e0279a79800b5f3f8d12eeb8f56999bf6408af3",
+  "inherited_file_delta": [
+    {
+      "path": "research_annex.py",
+      "before_sha256": "a0b403d4f952da1f8deb3e9cea1d034d2d3ae31345922e445b95a52c03fa48df",
+      "after_sha256": "3e2ccf097cbfb247462f1b6204fb2edb46e6408f271acea14d48b5210aded694",
+      "before_bytes": 6955,
+      "after_bytes": 6971,
+      "private_marker_replacements": 1,
+      "rsa_marker_replacements": 1,
+      "compiled_semantic_fields_identical": true
+    },
+    {
+      "path": "test_research_annex.py",
+      "before_sha256": "5534c77c48494ce31fe7fc6871739cb063a042e51c2a71cf04c0136799a2c99e",
+      "after_sha256": "79ba06b99e543bc945fd6e6aa640abfe27a9efd51448154e1f562dca659870fc",
+      "before_bytes": 3557,
+      "after_bytes": 3565,
+      "private_marker_replacements": 1,
+      "rsa_marker_replacements": 0,
+      "compiled_semantic_fields_identical": true
+    }
+  ],
+  "other_inherited_files_byte_identical": true,
+  "rationale": "Split three scanner/test byte literals into constant-folded concatenated fragments so the packaging source closure passes the unchanged default scanner. The runtime marker values, scanner logic and five-entry exact historical allowlist are unchanged.",
+  "semantic_comparison": "CPython compiled code bytes, recursive constants, names, variables, argument counts, flags, stack sizes and exception tables match; source position metadata is not compared."
+}

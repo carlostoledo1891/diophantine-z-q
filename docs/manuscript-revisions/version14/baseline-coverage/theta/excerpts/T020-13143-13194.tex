@@ -1,0 +1,52 @@
+
+\subsection{Central saturation and the numerical lower bound}
+\begin{proposition}[Central calibration of the even scalar]\label{ex:app-central-calibration}
+Use the scalar and determinant basis of
+Proposition~\ref{ex:app-even-scalar}. At a corank-zero constituent
+$E^h$ with finite $\Sha[2^\infty]$, its nonzero central value satisfies
+\[
+ v_2u_h^{\rm ev}(0)=v_2L_*(h)-2\omega(h)-s(h)+\epsilon_h,
+ \qquad |\epsilon_h|\le C_{\rm loc},
+\]
+with one constant for the fixed local types. At such a constituent
+$u_h^{\rm ev}(0)=0$ if and only if $L_*(h)=0$.
+Consequently every admissible $h$ with $L_*(h)\ne0$ satisfies
+$v_2L_*(h)\ge2\omega(h)+s(h)-c_E-C_{\rm loc}$: the forward
+rank-zero theorem in Lemma~\ref{lem:forward-rank} supplies the
+preceding corank and finiteness hypotheses in this case. The central saturation corrections are those
+in (E.6)--(E.7); no primitivity after inverting $t$ is assumed to
+survive central specialization.
+\end{proposition}
+\begin{proof}\leavevmode
+At a corank-zero constituent put
+\[
+ g=\ell_{\Z_2}E^h(\Q)[2^\infty],\quad
+ g_v=\ell_{\Z_2}E^h(\Q_v)[2^\infty],\quad
+ r_i=\ell_{\Z_2}H^i(\mathbf R,T_h)\quad(i=1,2).
+\]
+Let $i$ be the index length of the image of global $H^1$ in the
+free rank-one quotient $L_2=H^1(\Q_2,T_h)/H_f^1(\Q_2,T_h)$.
+Orthogonal Kummer duality, with its real terms, gives
+\[
+ \ell H^2_{\rm glob}=s(h)-i+\sum_v g_v+r_2-g.                     \tag{E.6}
+\]
+Write $K=\ker(H^1_{\rm glob}\to H^1_{\mathbf R})$, let $k$ be its
+torsion length and $m$ its free index. If $P=H^1(C_h^+)$, $p_0$ is
+its torsion length and $a_s$ the saturation index of the real image
+in $P/P_{\rm tors}$, exactness gives
+\[
+ \ell\operatorname{coker}(H^1_{\rm glob}\to H^1_{\mathbf R})
+       =r_1-g+k-m,\qquad k=p_0+a_s.
+\]
+For the numerical calculation suppose also $L_*(h)\ne0$.
+The wedge in (E.4) adds $a_s+1+v_{\rm free}(z)-m$.
+Conversion to the inverse determinant adds $p_0-\ell H^2(C_h^+)$.
+Substitution of these equalities cancels $m$ and $a_s$ exactly:
+\[
+ v_2u_h^{\rm ev}(0)
+ =v_2\exp^*z-s(h)-\sum_v g_v+2g+1-r_1-e_2,                      \tag{E.7}
+\]
+where $e_2$ is the valuation of $\exp^*$ on a generator of $L_2$.
+Primitivity of the real image after inverting $t$ has not been
+specialized to $t=0$.
+

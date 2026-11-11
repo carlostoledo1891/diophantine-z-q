@@ -1,0 +1,33 @@
+{
+  "decision": "accepted_at_additive_workflow_scope",
+  "subject": {
+    "path": "work/version15-protocold-222-20261110/ci-proposal-001/MANIFEST.json",
+    "sha256": "080ccc7f22cf2f03b6b912157827df0997bc1e96f4a9de788504ec8f0e7b5af1"
+  },
+  "before_sha256": "456c2401bb9e8fc20534f5366519cb31d47e20360c9d2a020fd614ae66fa82b5",
+  "after_sha256": "5570bd924f14231c8baed789b52a0bd7141b908bd7e8f359e80e1d813df0c109",
+  "checks": {
+    "old_workflow_exact_byte_prefix": true,
+    "trigger": "workflow_dispatch only, unchanged",
+    "permissions": "contents: read, unchanged",
+    "existing_retained_checks": "Exact old bytes retained, including pinned snapshot and314/233/huge matrix",
+    "new_job": "current-222",
+    "runner": "ubuntu-24.04",
+    "timeout_minutes": 10,
+    "checkout_pin": "11d5960a326750d5838078e36cf38b85af677262",
+    "python_action_pin": "a26af69be951a213d495a4c3e4e4022e16d87065",
+    "python_version": "3.12.14",
+    "command": "python -B research/version15/quartics/quartic-222/verify.py",
+    "installed_verifier_sha256": "ac499cb3b584d78ec0d15168447c26fab6a913952b54825b8b505e368b856f93",
+    "matches_accepted_artifact003": true
+  },
+  "reused_verifier_review": {
+    "path": "work/v15-222-artifact-review-integration-001/REVIEW.json",
+    "sha256": "4cd3889188081d5541f7d3eda2b9584e9f5472f0238459f02c1e0a201622cce1"
+  },
+  "limits": [
+    "No hosted workflow run claimed.",
+    "No new mathematical approval of inherited own contributions.",
+    "Review does not install the proposal or authorize publication."
+  ]
+}

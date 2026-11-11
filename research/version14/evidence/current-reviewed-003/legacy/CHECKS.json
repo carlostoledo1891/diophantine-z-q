@@ -1,0 +1,262 @@
+{
+  "baseline": {
+    "path": "manuscripts/quartic_v10.tex",
+    "sha256": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38"
+  },
+  "current": {
+    "path": "manuscripts/quartic_v14.tex",
+    "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+  },
+  "source_register": {
+    "path": "docs/audit-history/issue2/register.json",
+    "sha256": "d88946d4187c670eb8278a686726af21c4d6394325d0d417702dc85422e6bfd3"
+  },
+  "items": [
+    {
+      "number": 1,
+      "status": "attribution_or_history",
+      "assessment": "The projection deduction and 1995 source were reviewed earlier. Version 10 adds 1992 priority credit and the Conjecture 2 consequence; neither fills a missing premise of the earlier Conjecture 3 deduction.",
+      "labels": [
+        "sec:main",
+        "cor:mazur"
+      ],
+      "spans": [
+        {
+          "start_line": 6650,
+          "end_line": 6700,
+          "sha256": "33ecf0be9fbc54fc02c5a636a6be39574f59464d2079d45a8d24e4426ae6140c",
+          "actual_sha256": "33ecf0be9fbc54fc02c5a636a6be39574f59464d2079d45a8d24e4426ae6140c",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 363092,
+              "line": 7404
+            }
+          ],
+          "excerpt": "\\label{cor:mazur}\nMazur's\nfinite-connected-components conjecture for the real-topological closure\nof rational points, Conjecture~3 of \\cite{mazur1992,mazur1995}, is\nfalse. Its stronger Conjecture~2 is false as well.\n\\end{corollary}\n\\begin{proof}\nWe recall Mazur's projection argument, originating in\n\\cite{mazur1992} and repeated in \\cite[p.~166]{mazur1995}.\nConjecture~3 in \\cite[p.~165]{mazur1995} asserts that the closure\nof the rational points of any variety over $\\Q$ in its real locus has\nfinitely many connected components. In that source a variety means a\nreduced scheme of finite type; irreducibility is not required.\nPut $r=292\\,890\\,231\\,904$ and\n\\[\n V=\\bigl(\\{P_*(t,w_1,\\ldots,w_r)=0\\}\\subset\\mathbf A^{r+1}_{\\Q}\\bigr)_{\\rm red},\n \\qquad C=\\overline{V(\\Q)}\\subset V(\\mathbf R).\n\\]\nReduction changes neither the rational nor the real points. Let\n$\\pi:V(\\mathbf R)\\to\\mathbf R$ be projection to $t$.\nTheorem~\\ref{thm:target} gives $\\pi(V(\\Q))=\\Z$. Since $\\Z$ is closed in $\\mathbf R$\nand $\\pi$ is continuous, $C\\subset\\pi^{-1}(\\Z)$, so $\\pi(C)\\subset\\Z$.\nEvery integer already occurs on $V(\\Q)$, hence $\\pi(C)=\\Z$.\nThe image of any connected component of $C$ is a connected subset of\n$\\Z$, therefore a singleton. Points projecting to distinct integers\nbelong to distinct components. Thus $C$ has infinitely many connected\ncomponents, contradicting the stated conjecture. Conjecture~2 in\nthe same source would give the homotopy type of a finite simplicial\ncomplex and hence only finitely many connected components, so it\nimplies Conjecture~3 and is contradicted too.\n\\end{proof}\n\n\\begin{corollary}[A universal rational Diophantine polynomial]\n\\label{cor:rational-universal}\nThere exist $m\\ge1$ and a fixed polynomial\n$U\\in\\Z[e,n,x_1,\\ldots,x_m]$ such that, for every $e,n\\in\\N$,\n\\[\n \\exists\\mathbf x\\in\\Q^m\\ U(e,n,\\mathbf x)=0\n \\quad\\Longleftrightarrow\\quad\n \\text{machine $e$ halts on input $n$}.\n\\]\nHere $e$ and $n$ are ordinary integer parameters, with $\\N$ embedded\nin $\\Q$, and are not elliptic-curve coordinates. In particular, every\ncomputably enumerable subset of $\\N$ is represented by a suitable\nfixed value of $e$ in this one polynomial.\n\\end{corollary}\n\\begin{proof}\nFix an effective enumeration of machines. The Davis--Putnam--Robinson--Matiyasevich theorem, \\cite[Basic Theorem, p.~3]{matiyasevich1971},\napplied to the universal halting relation gives a fixed\n$D\\in\\Z[e,n,z_1,\\ldots,z_s]$, with $s\\ge1$, such that, for $e,n\\in\\N$,\n\\[\n"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "status": "prior_justification_found",
+      "assessment": "The earlier review explicitly establishes generic rank at a known simple zero, regularity of the actual functional, and base change without nonunit t-disks. Version 10 places the general lemma and its application at the calibration.",
+      "labels": [
+        "lem:v10-determinant-specialization",
+        "ex:arith-central-calibration",
+        "ex:arith-base-zero"
+      ],
+      "spans": [
+        {
+          "start_line": 4117,
+          "end_line": 4185,
+          "sha256": "ec1b2064b776012909c16ed53e43650aab3519c3f326c0a9e5b54b42edbdc16c",
+          "actual_sha256": "ec1b2064b776012909c16ed53e43650aab3519c3f326c0a9e5b54b42edbdc16c",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 239961,
+              "line": 4871
+            }
+          ],
+          "excerpt": "\\begin{lemma}[Determinant specialization with no dimension jump]\n\\label{lem:v10-determinant-specialization}\nLet $A$ be a discrete valuation ring with uniformizer $t$, fraction\nfield $F$, and residue field $k$. Let $C$ be a bounded finite free\ncomplex over $A$. If\n\\[\n \\dim_F H^i(C\\otimes_A F)=\\dim_k H^i(C\\otimes_A k)\n \\quad\\text{for every }i,\n\\]\nthen its cohomology is free and commutes with reduction modulo $t$.\nIn particular, when the only nonzero dimensions are $(1,1)$ in\ndegrees one and two, the coordinate of an actual cycle and an actual\nclosed functional in $\\det^{-1}C$ is regular at $t=0$ and specializes\nto the coordinate of their central tensor in the specialized retained\ndeterminant basis.\n\\end{lemma}\n\\begin{proof}\nSmith reduction splits the bounded free complex into free summands with\nzero differential and two-term summands $[A\\xrightarrow{t^r u}A]$,\nwhere $u$ is a unit and $r\\ge0$. A summand with $r>0$ contributes\none extra residue-field cohomology dimension in each of two adjacent\ndegrees and contributes none over $F$. The dimension equalities\ntherefore exclude every such summand. The remaining two-term summands\nare contractible over $A$. On the zero-differential summands both\ncohomology and the class-functional tensor commute with base change.\nThe determinant identifications include the same contractible\nsummands before and after reduction, with their unit differentials;\nthere is no independent rescaling of the retained basis.\n\\end{proof}\n\n\\begin{proposition}[Arithmetic calibration at known simple zeros]\\label{ex:arith-central-calibration}\nLet $K=\\Q(\\sqrt{k})$ and $h$ satisfy the ring-class hypotheses\nabove, with every prime dividing $h$ split in $K$. Suppose\n$L(E^{(h)},s)$ has a simple zero at $1$ and\n$L(E^{(hk)},1)\\ne0$. Then the specialization at $t=0$ of the generic coordinate in\nDefinition~\\ref{ex:arith-coordinate} is regular and satisfies\n\\[\n v_2u_{\\rm prim}(0)\n =2j_{\\rm rc}(h,k)-4\\omega(h)-s(h)-s(hk)\n       -\\sum_{p\\mid k}t_p+O_{E,\\pi}(1).\n\\]\nThe error depends on the fixed old local types and fixed multiplier,\nbut not on $h$ or $k$. Here $0\\leq t_p\\leq2$, and $t_p=2$ in the\npresent full rational two-torsion setting. Only after a bound on\n$\\omega(k)$ is imposed may the companion sum be absorbed.\nThe finite-Sha assertion in this calibration is supplied by the\ntwo stated analytic hypotheses.\n\\end{proposition}\n\\begin{proof}\\leavevmode\nFirst we justify the specialization of the generic coordinate.\nThe forward theorem, Lemma~\\ref{lem:forward-rank}, gives rank one\nand finite $\\Sha$ for the first twist and rank zero and finite $\\Sha$\nfor its companion. Hence the central rational primitive complex has\ncohomology dimensions $(1,1)$ in degrees one and two and zero\nelsewhere. Over $A=\\Lambda_{(t)}$, cancel the unit disks outside\nthese two degrees; Nakayama's lemma permits these cancellations\nbecause the other central cohomology groups vanish. The retained\ncycle has nonzero central class by (4.5), the height formula at the\nknown simple zero, and its specified nonzero multipliers. In the\nremaining two-term free complex this forces a nonzero generic kernel.\nSemicontinuity bounds its dimension by one. The Euler characteristic\nis zero, so the generic dimensions are also $(1,1)$.\nLemma~\\ref{lem:v10-determinant-specialization} now identifies the\nspecialization of the generic coordinate with the central tensor\ncomputed in Lemma~\\ref{ex:arith-central-specialization}, in the same\nretained determinant basis. This step uses neither the numerical\ncalibration (4.6) nor the later uniform determinant bound.\n\nFor the ordinary compact Kummer complex $C_K$, universal coefficients\n"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "status": "attribution_or_history",
+      "assessment": "The earlier audit constructs both many-one reductions. The correction identifies OpenAI's prior Turing-completeness result and specifies the stronger direction claimed here.",
+      "labels": [
+        "cor:htp-degree"
+      ],
+      "spans": [
+        {
+          "start_line": 6733,
+          "end_line": 6785,
+          "sha256": "26a5c6ae40507578b4fb3a0bcc8a35a20f0b58abae9a27be5bec880865945439",
+          "actual_sha256": "26a5c6ae40507578b4fb3a0bcc8a35a20f0b58abae9a27be5bec880865945439",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 367128,
+              "line": 7487
+            }
+          ],
+          "excerpt": "\\begin{corollary}[The many-one degree of $\\operatorname{HTP}(\\Q)$]\n\\label{cor:htp-degree}\n\\[\n \\operatorname{HTP}(\\Q)\\equiv_m 0',\n \\qquad 0'=\\{e\\in\\N:\\text{machine $e$ halts on input $e$}\\}.\n\\]\nHere $\\operatorname{HTP}(\\Q)$ is the set of codes of integer-coefficient\npolynomials, of arbitrary finite arity, having a rational zero, under a\nfixed effective coding.\n\\end{corollary}\n\\begin{proof}\nGiven $e$, specialize the fixed polynomial of\nCorollary~\\ref{cor:rational-universal} at its ordinary integer parameters\nto obtain $U(e,e,\\mathbf x)$. Computing its coefficient list and code is\neffective, and\n\\[\n e\\in0'\\quad\\Longleftrightarrow\\quad\n \\ulcorner U(e,e,\\mathbf x)\\urcorner\\in\\operatorname{HTP}(\\Q).\n\\]\nThis proves $0'\\le_m\\operatorname{HTP}(\\Q)$.\n\nConversely, from the code of a polynomial $f$ construct a machine that\nignores its input and enumerates all rational tuples of the appropriate\narity. It evaluates $f$ using exact rational arithmetic and halts as soon\nas it finds a zero. Its index $j(f)$ is computable from the finite code\nof $f$, and\n\\[\n f\\in\\operatorname{HTP}(\\Q)\\quad\\Longleftrightarrow\\quad j(f)\\in0',\n\\]\nwhere the left side uses the code of $f$. Thus\n$\\operatorname{HTP}(\\Q)\\le_m0'$. Invalid polynomial codes, if present in\nthe coding convention, are sent to a fixed nonhalting index. Using\nrational-coefficient polynomial codes gives the same result, since\nclearing their finitely many denominators is effective and preserves\nrational zeros. The two reductions prove the assertion.\n\\end{proof}\n\nMore generally, an integer Diophantine problem translates to a rational\none by adjoining $P_*$ for every integer witness, with private witness\nblocks. Natural witnesses can first be expressed as sums of four integer\nsquares. Bounds for the resulting polynomial require their own composition\ncalculation; the bounds for $P_*$ do not automatically transfer.\n\nFor example, a machine that enumerates ZFC proofs and halts upon finding\na contradiction has a rational Diophantine halting condition by\nCorollary~\\ref{cor:rational-universal}. This equivalence does not assert\nthat a contradiction exists, and no additional explicit polynomial is\nspecified here.\n\n% Begin degree-eight construction\n\\section{The base residual compiler}\n\\label{sec:degree8-original}\n\n"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "status": "prior_inputs_found_route_expanded",
+      "assessment": "Earlier applications.md explicitly records the stronger abelian-kernel condition and open commutator image, as well as the away-two supplied-class ideal and local cones. Version 10 expands and assembles the direct 1999 route and its precise comparison with the 2004 convention. This does not establish that every earlier audit repeated that complete assembly independently.",
+      "labels": [
+        "sec:rc",
+        "ex:app-kato-system"
+      ],
+      "spans": [
+        {
+          "start_line": 12251,
+          "end_line": 12390,
+          "sha256": "cf0b3f3208c79059c77fe581704a79ccf64469b073c59026411c267bfa0f0016",
+          "actual_sha256": "cf0b3f3208c79059c77fe581704a79ccf64469b073c59026411c267bfa0f0016",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 636446,
+              "line": 13310
+            }
+          ],
+          "excerpt": "\\label{ex:app-kato-system}\nUse the fixed curve, lattice and cyclotomic convention just specified.\nFix $e\\ge\\max\\{3,v_2(N)\\}$ large enough for the fixed initial local data;\nthe smoothing choice is (K5).\nLet $G$ be a finite elementary abelian two-group, let\n$\\psi:G_{\\mathbf Q}\\to G$ be a continuous homomorphism, and let\n$\\chi_x=\\chi_0(x\\circ\\psi)$, for $x\\in\\widehat G$, be a finite\nfamily of quadratic characters with one fixed real sign and fixed\nlocal squareclasses at the primes dividing $2N$.\nSince the characters of $G$ separate\nits elements, $\\psi(c)=1$ for complex conjugation $c$, and\n$\\psi|_{G_{\\mathbf Q_v}}=1$ at every $v\\mid2N$. All varying conductor primes\nare good odd primes for $E$. Let $F$ be the squarefree least common\nmultiple of the odd parts of the primitive conductors. There is a\nsingle retained-smoothed class\n\\[\n Z_F\\in 2^{-c_E}H^1\\bigl(G_{\\mathbf Q,S},\n        T\\otimes\\Lambda[G](\\chi_0\\psi\\kappa^{-1})\\bigr),\n \\qquad S=\\operatorname{prime}(2NF),                         \\tag{K1}\n\\]\nwhere $c_E$ is fixed before $F$ and $G$.\nThere is also one $F_E\\in\\Lambda$ with $F_E(0)\\ne0$, fixed before\n$F,G$, such that at every height-one prime $\\mathfrak p$ of $A$,\n\\[\n \\ell_{A_{\\mathfrak p}}H^2(C_{S,x})_{\\mathfrak p}\n \\leq\n \\ell_{A_{\\mathfrak p}}\n \\left(H^1(C_{S,x})/A F_E(Z_F)_x\\right)_{\\mathfrak p}.       \\tag{K2}\n\\]\nHere $C_{S,x}$ is the full rational global Iwasawa complex of the\nconstituent. For an odd squarefree signed parameter $h$ giving\n$\\chi_x=\\chi_h$, central reciprocity for this same class gives\n\\[\n v_2\\exp^*\\bigl(F_E(Z_F)_x(0)\\bigr)\n =v_2L_*(h)+\\sum_{q\\mid F,\\ q\\nmid h}\n        v_2\\#E^h(\\mathbf F_q)+2e+v_2F_E(0)+\\epsilon_h,       \\tag{K3}\n\\]\nwhen the value is nonzero. The numbers $\\epsilon_h$ belong to a\nbounded set depending only on the fixed curve, period conventions\nand local types at two. A zero central $L$-value gives zero dual\nexponential. Formula (K3) does not assert that its remaining unit is\none. No part of (K1)--(K3) compares integral lattices of varying newforms.\n\\end{proposition}\n\\begin{proof}\\leavevmode\n\\paragraph{The retained route and its comparison.}\nAll classes in this subsection retain the smoothing integers of (K5).\nThe comparison used below is the exact identity (E.1), obtained by\nintegral weighted corestriction and the norm relation of\n\\cite[Proposition 8.12]{kato}. We do not divide by the smoothing\noperators, or compare a chosen generator with a separately normalized\nzeta class for the varying newform. In particular the central factor\nis $s_F$ of (K6), whose valuation is $2e$ for every $F$.\nThe use of power-series zero finiteness in paragraph~7 establishes\nnonvanishing of the supplied Euler system in both generic sign\ncomponents; it is not a comparison of two Euler systems.\n\n\\paragraph{1. One original lattice and one symbol combination.}\nKato (8.1.3), p.~180, constructs retained-smoothed classes\n\\[\n {}_{c,d_s}z_m(f,1,1,\\xi,S_m)\n \\in H^1\\bigl(\\mathbf Z[\\zeta_m,1/2],L_f(1)\\bigr),\n \\qquad S_m=\\operatorname{prime}(2mN),                      \\tag{K4}\n\\]\nwhere $L_f=V_{\\mathcal O_\\lambda}(f)$ is the image lattice of the\nfixed form. For $\\xi\\in\\mathrm{SL}_2(\\mathbf Z)$, section~8.9,\np.~185, explicitly constructs the trace homomorphism into the\nintegral induced lattice\n\\[\n \\mathbf Z_2[\\operatorname{Gal}(\\mathbf Q(\\zeta_m)/\\mathbf Q)]\n       \\otimes V_{2,\\mathbf Z_2}(Y_1(N)).\n\\]\nSection~8.11 projects this lattice onto $L_f$. Auxiliary modular\ncurve levels used in the trace do not change its target lattice.\nChoose a rational identification $L_f(1)\\otimes\\mathbf Q_2=V$.\nOne fixed $2^{c_E}$ sends its lattice into $T$.\n\nBy Kato~13.6--13.7, p.~227, the symbol span has a nonzero projection\nto each Betti sign line. The union of the two rational kernels does\nnot contain the whole span. Choose an integral finite linear\ncombination $\\xi$ with both projections nonzero, clearing its fixed\ndenominators once. Norm relations and reciprocity are linear, so\nthe same combination works at every $m$. Although (K4) is written\nwith one symbol, it henceforth denotes this fixed combination.\n\n\\paragraph{2. Retain one smoothing choice for the whole family.}\nFix $e\\geq\\max\\{3,v_2(N)\\}$, enlarged only for fixed initial data,\nand take\n\\[\n                 c=d_s=1+2^e\\,3N_{\\rm odd}F.              \\tag{K5}\n\\]\nThese integers exceed one, are prime to $6NF$, are one modulo $N$\nand $F$, and are one modulo every dyadic quadratic conductor under\nconsideration. Distinctness or primality of $c,d_s$ is not a\nhypothesis of Kato's construction. The exponents $(u,v)$ in (4.2.4),\np.~143, are $(1,1)$ when $k=2,r=r'=1$. The retained-smoothed\nversion of Theorem~6.6, p.~163, therefore has central scalar\n\\[\n s_F=(c^2-c)(d_s^2-d_s)=c(c-1)d_s(d_s-1),\n                   \\qquad v_2(s_F)=2e.                   \\tag{K6}\n\\]\nNo smoothing factor is divided out. The prime factors of $cd_s$\nexclude some Euler-system indices in Kato~13.1; they are not added\nto the inverted arithmetic support $S$, as is explicit in (8.1.3)\nand in the definition of $H^q$ in section~8.2. In particular their\nnumber creates no local $H^2$ correction.\n\n\\paragraph{3. The integral $j_*$ condition survives ramified transfer.}\nFor a number field $K$, let $X_K=\\operatorname{Spec}\\mathcal O_K[1/2]$\nand $j_K:\\operatorname{Spec}K\\to X_K$. At finite coefficients\n$M=T/2^aT$, the low-degree Leray sequence gives an injection\n\\[\n H^1(X_K,j_{K,*}M)\\longrightarrow H^1(K,M)\n\\]\nwhose image is the kernel of all inertia restrictions outside two.\nIndeed the higher-direct-image stalk formula and Leray sequence\n\\cite[Tags 03Q9 and 03QA]{stackscohom} identify the stalks of\n$R^1j_{K,*}M$ at a finite place with $H^1(I_v,M)$;\nthe edge map is restriction to these stalks. The generic-point map\n$j_K$ is affine, hence quasi-compact and quasi-separated, as required\nby the stalk formula. Kato's section~8.2,\npp.~180--181, defines the integral groups by the inverse limit of\nthese finite-coefficient groups, so this assertion applies to the\nclasses (K4) before rationalization.\n\nLet $L/K$ be finite, with absolute Galois groups $H\\subset G_K$.\nFor a class $z\\in H^1(H,M)$ and an inertia subgroup $I\\subset G_K$,\nthe Mackey formula is\n\\[\n \\operatorname{res}_{I}^{G_K}\\operatorname{cor}_{H}^{G_K}z\n =\\sum_{g\\in I\\backslash G_K/H}\n   \\operatorname{cor}_{I\\cap gHg^{-1}}^{I}\n   \\operatorname{res}_{I\\cap gHg^{-1}}^{gHg^{-1}}(g z).    \\tag{K7}\n\\]\nThe intersection in each summand is the upper inertia subgroup\nfor the corresponding place of $L$. If all upper inertia\nrestrictions vanish, every summand is zero. This does not require\n$L/K$ to be unramified. It is a finite double-coset identity at each\nfinite coefficient precision. Uniqueness under the Leray injection\nmakes the extensions across $X_K$ compatible in $a$. Thus the\nintegral $j_*$ condition survives corestriction, including at primes\n"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "status": "prior_justification_found",
+      "assessment": "The original source writes conjugated primed ratios. The earlier audit identifies the saved pole square, shared witnesses and composition. Version 10 consolidates dispersed justifications into a printed dictionary; no earlier single complete dictionary is claimed.",
+      "labels": [
+        "sec:mult",
+        "subsec:v10-template-dictionary"
+      ],
+      "spans": [
+        {
+          "start_line": 1251,
+          "end_line": 1261,
+          "sha256": "f902e5ca03dab3145c1c3e9f07ff00f558c9140502e35560bdaef52d45947cf5",
+          "actual_sha256": "f902e5ca03dab3145c1c3e9f07ff00f558c9140502e35560bdaef52d45947cf5",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 94634,
+              "line": 1925
+            }
+          ],
+          "excerpt": "This is 16575 times the degree-25 truncation of the normalized formal\nlogarithm. The twelve tests are four inverse abscissas at $H,U_i$,\ntheir four conjugate counterparts at $V_0,V_i$, the three differences\n$A_i-\\sigma(A'_i)$, and $A_1A_2-A_3$, where\n\\[\n A_i=\\frac{L(z(U_i))}{L(z(H))},\\qquad\n A'_i=\\frac{L(z(V_i))}{L(z(V_0))}\\quad(1\\le i\\le3),\n\\]\nand $\\sigma$ is the nontrivial automorphism of $K/\\Q$. In particular\nthe primed ratio is conjugated before the difference is taken. Identity inverse abscissas are zero; all\ndenominators are guarded.\n"
+        },
+        {
+          "start_line": 12054,
+          "end_line": 12240,
+          "sha256": "b1babc509ced939fb28a6a34f43823f06f4257b1b358b8da98b1d744ea987c41",
+          "actual_sha256": "b1babc509ced939fb28a6a34f43823f06f4257b1b358b8da98b1d744ea987c41",
+          "old_hash_matches": true,
+          "current_matches": [],
+          "excerpt": "\\label{subsec:v10-template-dictionary}\nThe following dictionary identifies the relations encoded by the saved\ntemplates, in addition to the decoding rules above. Point arguments are\ncanonical five-coordinate codes. Field values have their two rational\ncomponents in the basis $(1,\\sqrt2)$; conjugation negates the second\ncomponent. An inverse equation guards each displayed quotient.\nConjunction is encoded by a sum of squares, and disjunction by a\nproduct, with the private witness blocks specified in the file.\nThe identities are identities of zero sets over $\\Q$; squaring a\ncallee polynomial can change the literal polynomial without changing\nthe relation it defines.\n\n\\begin{longtable}{p{.29\\textwidth}p{.65\\textwidth}}\n\\toprule Saved template & Relation and constraints\\\\\\midrule\\endhead\n\\nolinkurl{member} & Membership in the canonical code domain $D=2E(K)$\nof Section~\\ref{sec:model}.\\\\\n\\nolinkurl{raw_add}, \\nolinkurl{raw_z}, \\nolinkurl{raw_inverse_x} &\nThe group-law relation on typed inputs, $z=-x/y$, and $w=1/x$,\nrespectively, with $z(O)=w(O)=0$.\\\\\n\\nolinkurl{log25} & The two-component equality to the displayed\nscaled degree-25 polynomial $L$ in Section~\\ref{sec:mult}.\\\\\n\\nolinkurl{pole} & $Q_{\\rm pole}(B)^2$, where $Q_{\\rm pole}$ is the\neleven-witness polynomial of Section~\\ref{sec:pole}. The outer square\ncomes from the singleton conjunction added by the rational builder.\\\\\n\\nolinkurl{test_group} & The twelve field tests of\nSection~\\ref{sec:mult}, including $A_i-\\sigma(A'_i)$ for $i=1,2,3$.\nIts four input points are $[c_*]P_0,[c_*]P_1,[c_*]P_2,[c_*]P_3$.\nIt types the first four auxiliary points and obtains the second four\nby subtraction; its two denominator points and logarithms are nonzero.\\\\\n\\nolinkurl{slope} & The normalized twelve-test products in six private\ngroups, their traced inverses, and $\\Phi(R/\\Theta^2)$ from\nSection~\\ref{sec:mult}, with all contact and denominator guards.\\\\\n\\nolinkurl{height_certificate} & The 27 slopes summing in triples to\nthe nine homogeneous coordinate quantities in that section, together\nwith membership of the three input points.\\\\\n\\nolinkurl{multiply.scalar}, \\nolinkurl{multiply.guard},\n\\nolinkurl{multiply} & The fixed $[c_*]$ graph; the inverse of the\nfinite false-triple product; and their conjunction with the height\ncertificate at the fixed $\\ell_0$.\\\\\n\\nolinkurl{natural} & Four model squares, formed by multiplication,\nwhose sum is the input code, as in Section~\\ref{sec:compiler}.\\\\\n\\nolinkurl{value.signed_encode} & $N=\\iota(n)$ and a natural code\n$C=\\iota(c)$ with $n=c/2$ for even $c$, and $n=-(c+1)/2$ for odd\n$c$. The two branches use $c=2q$ and $c=2q+1$ with $q\\ge0$.\\\\\n\\nolinkurl{value.abs} & $a=|x|$: $a$ is a sum of four rational\nsquares and $a^2=x^2$.\\\\\n\\nolinkurl{value.close_coordinates} & The strict coordinate window\nof Section~\\ref{sec:bridge}, using the typed points $A,L,J$,\n$r=\\operatorname{Tr}(z(J)/z(A))/2$ and\n$\\epsilon=|(z(L))_0|+|(z(L))_1|>0$, with $|t-r|<\\epsilon$.\nThis template alone does not assert the precision relation.\\\\\n\\nolinkurl{value.test} & Exactly $\\Test(N,\\kappa,t)$ of\nSection~\\ref{sec:bridge}: $C_1=[\\kappa n]P_0$,\n$V_0=H-\\kappa P_0$, $V_1=U-C_1$, the six displayed raw-$z$ tests,\ntheir normalization by $F(t)$, and the single guarded pole input.\nThese ratios use $z$, not $L$.\\\\\n\\nolinkurl{value.exceptions} & The six branches\n$N=\\iota(c)$ and $t=c$, $c\\in\\Cset$, with the constant points\ncomputed by the fixed group-law chains.\\\\\n\\nolinkurl{scalar.integer_constant_}\\,$i$ & The fixed integer\nscalar graph requested by the translated precision computation.\\\\\n\\bottomrule\n\\end{longtable}\n\nThe composition recipes make the remaining identifications explicit.\n\\texttt{power\\_value} translates the source power template with its\nthree input codes and output code; \\texttt{precision} translates\nthe five-natural-input precision polynomial, in the order\n$(n,\\kappa,a,\\ell,j)$ after signed encoding. The recipe\n\\texttt{close} introduces $A,L,J$, forms those five signed encodings,\nconjoins \\texttt{precision}, and calls\n\\nolinkurl{value.close_coordinates}. Thus it is the full $\\Close$.\nThe recipe \\texttt{main} introduces one shared $\\kappa$ and conjoins\n\\texttt{close} and \\nolinkurl{value.test} at exactly that same code.\nThe product recipe \\texttt{value\\_union} joins this branch with\n\\nolinkurl{value.exceptions}; \\texttt{value} also imposes\n\\texttt{member} on $N$. Finally \\texttt{integers} existentially\nintroduces $N$ and calls \\texttt{value} with external coordinate\n$t=X_0$. These are precisely $\\Val$ and its input projection.\nThe ordered calls and private ranges are checked by\n\\nolinkurl{auditOrdinaryIntegerPolynomial} in\n\\nolinkurl{construction/ordinary-integer-polynomial.js}.\n\\nolinkurl{scripts/check_construction.py} regenerates the saved\nexpression byte for byte. The dictionary supplies the mathematical\nidentification; those finite checks verify the stored syntax and\nwiring, not the arithmetic theorems used to prove the predicates.\n\nThe following parameter and witness counts are extracted from the exact\nspecification, without expanding its polynomial.\n\\begin{longtable}{p{.47\\textwidth}rrr}\n\\toprule Template & Parameters & Witnesses & Root node\\\\\\midrule\\endhead\n\\nolinkurl{member} & 5 & 7 & 149\\\\\n\\nolinkurl{raw_add} & 15 & 6 & 308\\\\\n\\nolinkurl{raw_z} & 7 & 1 & 68\\\\\n\\nolinkurl{raw_inverse_x} & 7 & 0 & 54\\\\\n\\nolinkurl{log25} & 4 & 0 & 229\\\\\n\\nolinkurl{pole} & 1 & 11 & 106\\\\\n\\nolinkurl{test_group} & 44 & 162 & 515\\\\\n\\nolinkurl{slope} & 22 & 1,298 & 2681\\\\\n\\nolinkurl{height_certificate} & 36 & 35,106 & 260\\\\\n\\nolinkurl{multiply.scalar} & 10 & 1 & 136\\\\\n\\nolinkurl{multiply.guard} & 15 & 1 & 22\\\\\n\\nolinkurl{multiply} & 15 & 35,134 & 83\\\\\n\\nolinkurl{natural} & 5 & 140,604 & 79\\\\\n\\nolinkurl{value.signed_encode} & 10 & 140,654 & 138\\\\\n\\nolinkurl{value.abs} & 2 & 4 & 23\\\\\n\\nolinkurl{value.close_coordinates} & 16 & 53 & 271\\\\\n\\nolinkurl{value.test} & 11 & 35,282 & 775\\\\\n\\nolinkurl{value.exceptions} & 6 & 406 & 487\\\\\n\\nolinkurl{scalar.integer_constant_0} & 10 & 1 & 136\\\\\n\\nolinkurl{scalar.integer_constant_1} & 10 & 1 & 136\\\\\n\\nolinkurl{scalar.integer_constant_2} & 10 & 1 & 136\\\\\n\\nolinkurl{scalar.integer_constant_3} & 10 & 1 & 136\\\\\n\\nolinkurl{scalar.integer_constant_4} & 10 & 1 & 136\\\\\n\\bottomrule\\end{longtable}\n\n\\begin{longtable}{lrrr}\n\\toprule Recipe & Parameters & Witnesses & Total variables\\\\\\midrule\\endhead\n\\nolinkurl{power_value} & 20 & 17,786,698 & 17,786,718\\\\\n\\nolinkurl{precision} & 25 & 292,889,492,836 & 292,889,492,861\\\\\n\\nolinkurl{close} & 11 & 292,890,196,199 & 292,890,196,210\\\\\n\\nolinkurl{main} & 6 & 292,890,231,486 & 292,890,231,492\\\\\n\\nolinkurl{value_union} & 6 & 292,890,231,892 & 292,890,231,898\\\\\n\\nolinkurl{value} & 6 & 292,890,231,899 & 292,890,231,905\\\\\n\\nolinkurl{integers} & 1 & 292,890,231,904 & 292,890,231,905\\\\\n\\bottomrule\\end{longtable}\n\n\nThe five scalar-constant templates use the values in\n\\texttt{library.fixedConstants}. Large program literals are retained\nbyte-for-byte in the supplementary specification. Replacing them by\nunspecified sufficiently large constants would change this definition.\n\n\\section{Primary theorem applications}\n\\begin{longtable}{p{.26\\textwidth}p{.65\\textwidth}}\n\\toprule Input & Exact application boundary\\\\\\midrule\\endhead\nSelmer parity \\cite{dd} & Rational two-isogeny, $p=2$, full Selmer corank;\nno finite-$\\Sha$ hypothesis.\\\\\nKato \\cite{kato} & Fixed weight-two form and symbol, integral transfer and\nfixed-valuation smoothing; rational divisibility is Theorem 13.4(2),\nwith oddness, rational irreducibility and the unipotent condition.\\\\\nBFH and Hoffstein--Luo \\cite{bfh,hl} & Actual signed-prime twist with\ntrivial character and arbitrary finite splitting set. Only the\nnonvanishing clause has the four-prime bound before the extra prime.\\\\\nWaldspurger and Ramsey \\cite{waldspurger,ramsey} & Full good-Hecke\neigenspace, same dyadic squareclass, and algebraic vectors by flat\nfield extension. No arbitrary-ring base change in weight $3/2$.\\\\\nCM norms and heights \\cite{ccl,cst,cornutjetchev} & Split level,\nconductors coprime to level and the new prime, no extra units,\nunaveraged sums and one fixed parametrization.\\\\\nDuality \\cite{milne,nekovar} & Actual derived Kummer conditions and their\nhomotopies. Support change only after the coefficient representation\nis unramified at the removed place.\\\\\nForward finiteness \\cite{gz,kolyvagin} & Only at known analytic\nnonvanishing/simple zeros or a known nontorsion Heegner trace.\\\\\nIsogeny ratio \\cite[proof of I.7.3]{milne} & Finite $\\Sha$, dual\nsum/difference maps, canonical heights and pullback measures;\nno BSD leading-term assumption.\\\\\nHeight \\cite{pan2022,javanpeykar,gr2014,fowler,cmheight,pazuki} &\nOdd irreducible de Rham representation at five; explicit conductor\nand modular-Jacobian transfer. CM order class number bounded by\nthe degree of the original Hom field.\\\\\nPrimes \\cite{greentao,moebius,gtz,bmor} & Fixed finite-complexity system\nafter fixing sieve cutoff, and the unconditional explicit progression\nestimate.\\\\\\bottomrule\n\\end{longtable}\nThe source package includes the specification, natural precision polynomial\nand construction sources in \\nolinkurl{SUPPLEMENT_MANIFEST.json}.\nThe larger proof corpus is identified by hashes and stable locators in\n\\nolinkurl{SOURCE_MAP.json}. A source identity is not a proof verdict.\n\n% End 06-literal-construction.tex\n\n\n% Begin 07-even-source.tex\n\\section{Fixed-form arithmetic and the even coefficient source}\\label{app:even-source}\nThis appendix supplies the constructions used in (3.1)--(3.3).\nThroughout, $E=E_\\ell$ is fixed, with the lattice, parametrization and\nperiod convention of Section~\\ref{sec:rc}. Constants may depend on these\ndata and on the prescribed finite list of local types. They do not depend\non the number or sizes of the later good conductor primes.\n\n\\subsection{One retained class, including discriminant \\texorpdfstring{$4h$}{4h}}\nAll numbered primary references in this subsection are to Kato~\\cite{kato}.\n\nFix a non-CM elliptic curve $E/\\mathbf Q$ of conductor $N$, its weight-two newform $f$,\n$T=T_2E$, and $V=T\\otimes\\mathbf Q_2$. In the application\n"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "status": "prior_justification_found",
+      "assessment": "The November 3 source proves the common-group conclusion using the maximum product valuation. Its full hash matches the November 4 audit source pin. It does not assume every factor is a unit. Version 10 prints an alternative concise contradiction; it is not the first proof of the step.",
+      "labels": [
+        "sec:mult"
+      ],
+      "spans": [
+        {
+          "start_line": 1281,
+          "end_line": 1309,
+          "sha256": "c0fc5f47fbab53c92fb17271980b591ea7b6d66f26f2599f8412e2d82a7580ad",
+          "actual_sha256": "c0fc5f47fbab53c92fb17271980b591ea7b6d66f26f2599f8412e2d82a7580ad",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 95838,
+              "line": 1955
+            }
+          ],
+          "excerpt": "$p\\notin S_{\\rm mul}$. Normalize every $v\\mid p$ by $v(p)=1$ and\nput $\\delta=v_p(R_0)>0$. The contact roots are distinct modulo $p$,\nand $t-1$ is a unit, so $\\delta$ is the positive odd contact order.\nThe fixed $\\ell_0$ is supported on $S_{\\rm mul}$. Since\n$\\delta+2v_p(q)$ is odd, the two summands in $a=1-R_0q^2$ have\nunequal valuations. Thus $v_p(a)\\le0$ and\n\\[\n \\alpha=v_p(R)=\\delta+2v_p(a)\\le\\delta,\n \\qquad \\alpha\\text{ is odd}.\n\\]\nEvery factor has valuation\n$v(1+RC_{gj}^2)=\\min\\{0,\\alpha+2v(C_{gj})\\}\\le0$.\nIf test $j$ fails its threshold $v(D_{gj})\\ge k_j$ at $v$, then\n\\[\n v(1+RC_{gj}^2)\n \\le\\alpha+2(k_j-1)-2k_j\\delta\n \\le\\alpha-2\\delta<0.\n\\]\nConsequently $v(W_g^{-1})\\ge2\\delta-\\alpha$ for that group and\nplace. If every group fails at every place above $p$, the trace of\ntheir sum satisfies\n\\[\n v_p(\\Theta)\\ge2\\delta-\\alpha,\\qquad\n v_p(R/\\Theta^2)\\le3\\alpha-4\\delta\\le-\\delta<0.\n\\]\nThe latter valuation is odd, contradicting Lemma~\\ref{lem:pole}.\nTherefore one common group and place has its first eight tests of\nvaluation at least one and its last four of valuation at least 25.\nThis argument does not require all factors in that group to be units. The first tests put the points in the\n"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "status": "attribution_or_history",
+      "assessment": "Frozen upstream RC sources were named in earlier research. Version 10 corrects local credit and the public preprint/section map. The existence of a source pin alone would not establish mathematical validity.",
+      "labels": [
+        "sec:model",
+        "sec:height",
+        "sec:pole",
+        "sec:mult",
+        "hyp:RC",
+        "sec:rc",
+        "app:sources"
+      ],
+      "spans": [
+        {
+          "start_line": 1080,
+          "end_line": 1103,
+          "sha256": "1b589d9aaf2a4d947a79c0e6ab4423dc5d3e58d4c83a69495740f6c322abca0c",
+          "actual_sha256": "1b589d9aaf2a4d947a79c0e6ab4423dc5d3e58d4c83a69495740f6c322abca0c",
+          "old_hash_matches": true,
+          "current_matches": [],
+          "excerpt": "argument here; these preprints are cited for attribution, not assumed\nas additional converse inputs.\n\n\\begin{theorem}[Restricted converse, $\\mathsf{RC}$]\\label{hyp:RC}\nFor every positive squarefree $\\ell\\equiv11\\pmod{12}$,\n\\[\n \\operatorname{corank}_{\\Z_2}\\Sel_{2^\\infty}(E_\\ell/\\Q)=1\n \\quad\\Longrightarrow\\quad\\ord_{s=1}L(E_\\ell,s)=1.\n\\]\n\\end{theorem}\nHere $c_4=208\\ell^2$, $\\Delta=2304\\ell^6$, and $j=35152/9$.\nThe nonintegral rational $j$ shows these curves are non-CM. They are\ndifferent from the CM generator curve. Theorem~\\ref{hyp:RC} is proved in\nSections~\\ref{sec:rc}--\\ref{sec:limits}, with its coefficient and\nnormalization arguments in Appendices~\\ref{app:even-source}--\\ref{app:endpoints}.\nWe now prove Theorem~\\ref{hyp:PC} from this restricted converse.\n\n\\subsection{The exact descent reduction}\nThe signed divisors of 2730 realize all real, $2$-adic and $3$-adic\nsquareclass signatures. After $-1,2,3$ fix sign and valuation parities,\nthe remaining unit vectors of $5,7,13$ are\n$(0,1,1),(1,0,0),(0,1,0)$ and form a basis. Choose positive $m$ making\n$A=mB$ square at two and a nonsquare unit squareclass at three.\nLet $\\beta,\\theta$ be the positive squarefree representatives of $A,H$.\n"
+        },
+        {
+          "start_line": 11915,
+          "end_line": 11998,
+          "sha256": "4c6a6352b1ef62e7de12aee813bd857ce22edbbd8ef2702be6f3d313f4743542",
+          "actual_sha256": "4c6a6352b1ef62e7de12aee813bd857ce22edbbd8ef2702be6f3d313f4743542",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 617885,
+              "line": 12970
+            }
+          ],
+          "excerpt": "\\section{Source identities and scope}\\label{app:sources}\nThe companion \\texttt{SOURCE\\_MAP.json} records exact paths, hashes and\nlocators, distinguishing mathematical and construction sources, artifacts,\nand version records. The base collection contains 83 sources; parity, construction\nand uniformity supplements are in separate addenda. The principal local\nsources are listed below; full paths\nare in the source map.\n\\begin{longtable}{p{.07\\textwidth}p{.58\\textwidth}p{.25\\textwidth}}\n\\toprule ID & Source basename & Use\\\\\\midrule\\endhead\nS01 & \\texttt{ordinary-integer-polynomial.js.txt} & Outer construction\\\\\nS02 & \\texttt{rational-circuit-translator.js.txt} & Substitution semantics\\\\\nS03 & \\texttt{finite-polynomial-expressions.js.txt} & Fixed constructors\\\\\nS04 & \\texttt{variable-shift-polynomial-library.js.txt} & Close and Test\\\\\nS05 & \\texttt{elliptic-generator-proof.txt} & Generator certificate\\\\\nS06 & \\texttt{explicit-elliptic-data.txt} & Rank, torsion, codes\\\\\nS07 & \\texttt{verify-elliptic-generator.js.txt} & Exact finite algorithm\\\\\nS08 & \\texttt{six-contact-height-proof.txt} & Contacts and constants\\\\\nS09 & \\texttt{z-in-q-height-independent-audit.txt} & Height proof\\\\\nS10 & \\texttt{explicit-pole-predicate.txt} & Pole polynomial\\\\\nS11 & \\texttt{z-in-q-pole-completeness-audit.txt} & Simultaneous descent\\\\\nS12 & \\texttt{parity-frozen-4eaee875.tex} & Raw local matrices\\\\\nS13 & \\nolinkurl{multiplication-certificate-correctness-proof.txt} & Multiplication proof\\\\\nS14 & \\texttt{twenty-two-prime-pattern-proof.txt} & Selected primes\\\\\nS15 & \\texttt{z-in-q-variable-shift-bridge.txt} & Ordinary-value graph\\\\\nS16 & \\texttt{z-in-q-ordinary-integer-assembly-proof.txt} & Outer composition\\\\\nS17 & \\texttt{z-in-q-restricted-converse-assembly.txt} & RC assembly inputs\\\\\nS18 & \\texttt{ring-limits-frozen-4eaee875.tex} & Finite models and limits\\\\\nS19 & \\texttt{paired-functional-and-uniformity-proof.txt} & Paired functional\\\\\nS20 & \\texttt{determinant-transfer-audit.txt} & Clearing and transfer\\\\\nS21 & \\texttt{variable-shift-precision.py.txt} & Exact decision program\\\\\nS22 & \\texttt{precision-register.js.txt} & Ideal IR and lowering\\\\\nS23 & \\texttt{specialize-precision.js.txt} & Wrapper specialization\\\\\nS24 & \\texttt{integer-halting-correctness-proof.txt} & Natural compiler\\\\\nS25 & \\texttt{z-in-q-explicit-cutoff-bound.txt} & Literal cutoff\\\\\nS26 & \\texttt{z-in-q-polynomial-size-bound-proof.txt} & Syntax/norm argument\\\\\nS27 & \\texttt{z-in-q-numerical-polynomial-bounds.txt} & Tower comparison\\\\\nS28 & \\texttt{determinant-switch-audit.txt} & Switches and outer rank\\\\\nS29 & \\texttt{ring-determinants-frozen-4eaee875.tex} & Ring data and derivatives\\\\\nS30 & \\texttt{preliminaries-frozen-4eaee875.tex} & Selmer coranks and lengths\\\\\nS31 & \\texttt{fixed-certificate-constants.js.txt} & Exact least-multiple search\\\\\nS32 & \\texttt{pointwise-frozen-4eaee875.tex} & Distinct point indices\\\\\n\\bottomrule\n\\end{longtable}\nIn particular S30, S18, S29 and S32 are, respectively, Sections\n2, 4, 5 and 9 of OpenAI's \\emph{A pointwise 2-converse for elliptic\ncurves with rational two-torsion}~\\cite{openaipointwise}, frozen at\n\\texttt{openai/math} commit\n\\nolinkurl{4eaee87548250b2682affda7d05d947c05554bae}.\nThe source filenames are provenance labels for those sections, not\nindependent publications or independent arithmetic assumptions.\n\nThe supplement manifest also records the revised fixed-degree CM proof,\nthe complete natural compiler proof, actual arithmetic and analytic\nproducer arguments, finite-Artin and determinant-count clarifications,\nthe fixed BFH witness application, exact substitution checks, and the\nnew fixed-form, weighted-theta, operator and normalization derivations.\nFor the height estimate, the derivation in Section~\\ref{sec:height}\nsupersedes the historical arithmetic-height arguments in S08--S09 and\nthe earlier CM supplements. Those historical alternatives are not\nadditional premises. Primary theorem applications remain explicit in\nthe mathematical text.\nThe version records identify the source files used in the construction.\n\n% End 05-bounds-appendices.tex\n\n\n% Begin 06-literal-construction.tex\n\\section{Literal finite-constructor specification}\\label{app:literal}\nThe supplementary file \\nolinkurl{ordinary-integer-definition.json}\nis part of this specification. It is a finite directed acyclic description,\nnot an expanded monomial list. The following rules determine one polynomial\nfrom its bytes. Diagnostic labels and intended-theorem strings add no equations.\n\nThe root is \\texttt{integers}. Variable zero is the external input and\nvariables one through $292890231904$ are its rational witnesses.\nA nonnegative point reference $r$ means $X_r,\\ldots,X_{r+4}$.\nReferences $-1,-2,-3$ respectively mean\n\\[\n (1,0,0,0,0),\\quad(0,g_0,-145,g_1,g_2),\\quad\n                      (0,g_0,-145,-g_1,-g_2).\n\\]\nEvery model recipe conjoins\n$8g_0-1641=0$, $4g_1+15465=0$, $32g_2-87483=0$.\n\n"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "status": "attribution_or_history",
+      "assessment": "This adds historical background. The Robinson, Poonen and Koenigsmann historical assertions are not new premises of the construction. No earlier audit of the newly added historical paragraph is claimed.",
+      "labels": [
+        "sec:main"
+      ],
+      "spans": [
+        {
+          "start_line": 74,
+          "end_line": 81,
+          "sha256": "10fd53e4ef7f3331415fafd59d4965c49cdcb46512a77c8a4a02a44ea56b1fb6",
+          "actual_sha256": "10fd53e4ef7f3331415fafd59d4965c49cdcb46512a77c8a4a02a44ea56b1fb6",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 3307,
+              "line": 74
+            }
+          ],
+          "excerpt": "Earlier definability results provide the logical context. Robinson\ngave a first-order definition of $\\Z$ in $\\Q$\n\\cite[Theorem 3.1]{robinson1949}. Poonen gave a definition with\nuniversal quantifiers followed by existential quantifiers\n\\cite[Theorems 3.1 and 4.1]{poonen2009}. Koenigsmann gave a universal\ndefinition and proved that $\\Q\\setminus\\Z$ is Diophantine in $\\Q$\n\\cite[Theorem 1 and Corollary 2]{koenigsmann-defining}. These are\nhistorical context, not additional premises of our construction.\n"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "status": "prior_justification_found",
+      "assessment": "The earlier audit explicitly distinguishes total-label conditions from individual-prime filtering and records that the seed prime need not satisfy the individual filter. The appendix already supplied the scope; Version 10 makes the consuming lemma explicit.",
+      "labels": [
+        "ex:sec7-ksplit-seed",
+        "ex:app-nonempty-seeds"
+      ],
+      "spans": [
+        {
+          "start_line": 2750,
+          "end_line": 2796,
+          "sha256": "314d929996efe9b4e417e4fcdb5ed10f329676d48d54ddef93bcfae35748ec3e",
+          "actual_sha256": "314d929996efe9b4e417e4fcdb5ed10f329676d48d54ddef93bcfae35748ec3e",
+          "old_hash_matches": true,
+          "current_matches": [
+            {
+              "offset": 172764,
+              "line": 3504
+            }
+          ],
+          "excerpt": "\\begin{lemma}[The nonempty seed for the present curve]\\label{ex:sec7-ksplit-seed}\nFor $E=E_\\ell$ and the $k,K$ just chosen, the positive even source\nfor $E^{(k)}$, normalized at index one, has a nonempty unit seed\nconsisting of $K$-split primes.\n\\end{lemma}\n\\begin{proof}\\leavevmode\nThis is the specialization to the roots $0,\\ell,-3\\ell$ of the\ncoefficient calculation in Proposition~\\ref{ex:app-nonempty-seeds}.\nIf no such nonempty unit existed, its integral $p^3$ coefficient\nand a fresh trace would force\n$a_p(E^{(k)})\\equiv p+1\\pmod8$ at every fresh good $K$-split\nprime outside the support, whether or not it lies in the coefficient\nfilter. Indeed, off the filter $a(p)=0$ in (G.4a); the second fresh\nprime $p'$ matches the old labels so that $pp'$ lies in the filter,\nas used in (G.4d). The selected $p$ below need not lie in the filter.\nThe cited calculation uses positive Fourier indices and the positive\ntwist character convention; it derives this congruence inside the\nassumed absence of nonempty units.\n\nChoose such a prime with $p\\equiv1\\pmod4$, $(\\ell/p)=-1$ and\n$(k/p)=1$, avoiding the finite support. In fact this $p$ is outside\nthe square filter: quadratic reciprocity and $p\\equiv1\\pmod4$ give\n$\\prod_{r\\mid\\ell}(p/r)=(\\ell/p)=-1$, so $p$ is a nonsquare at\nsome odd $r\\mid\\ell$, and $r\\mid N$. This is why the off-filter\nscope of the preceding calculation is needed. The fresh ramification of $K$\npermits these simultaneous conditions. Because $k$ is a square modulo\n$p$, the reductions of $E^{(k)}$ and $E_\\ell$ are isomorphic over\n$\\F_p$. None of the three nonzero rational points of order two can\nbe doubled: their necessary square differences include, respectively,\n$-\\ell,\\ell,-4\\ell$. Each is a nonsquare under the chosen conditions.\nThe two-primary reduction group therefore has order exactly four,\ncontradicting the asserted congruence. This proof uses the particular\ncurve $E_\\ell$; no nonempty-seed theorem for an arbitrary elliptic\ncurve is being asserted.\n\\end{proof}\n\nWe record the finite combinatorial realization used here. Each label\nspace is a finite elementary two-group; the common alphabet projects\nonto each separately. Product surjectivity is unnecessary. Take\nsufficient repeated copies of every label, with total label zero.\nKeeping the seed anchors, contract the unused copies into the last\nanchor. Minimal positive seed size makes the internal bits irrelevant,\nso each of the two terminal polynomials is nonzero. Grounded Laplacian\nminors express the constant and pair-contraction operators, including\nsingular matrices. A cyclic singular network isolates its target\nradical and a path network isolates its selected pair coefficient.\nIn the product of the two top forms, taken in the ordinary polynomial\n"
+        }
+      ]
+    }
+  ]
+}

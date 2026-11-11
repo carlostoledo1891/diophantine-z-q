@@ -1,0 +1,43 @@
+{
+  "decision": "changes_required_before_final_application_graph",
+  "subject_sha256": "20ce47f79d05cb14e6405c11bc510c2dcd9d4f89004d9ef0e2f5658f4c8a3ee0",
+  "checks": {
+    "all23contract_bodies_exact": true,
+    "all46source_use_objects_exact": true,
+    "manifest_pins": true
+  },
+  "findings": [
+    {
+      "id": "missing-route-endpoints",
+      "detail": [
+        {
+          "use": "SF07",
+          "missing": "V15-DISCRIMINANT-TRANSFER"
+        },
+        {
+          "use": "SF08",
+          "missing": "V15-DISCRIMINANT-TRANSFER"
+        },
+        {
+          "use": "SF28",
+          "missing": "V15-REFLECTED-AMPLIFICATION-TRANSFER"
+        }
+      ],
+      "required": "Include the existing exact005 contracts or explicitly justify equivalent containing nodes; do not leave these references dangling."
+    },
+    {
+      "id": "retained-supplier-join",
+      "required": "Join162 accepted retained nodes by actual dependency IDs to current consumers. Prose preservation statement is not a graph edge; existing BOUNDARIES already marks this missing."
+    },
+    {
+      "id": "SF46-consumer-edge",
+      "required": "Bind the standalone finite logarithm coefficient supplier into its actual consuming logarithm application; present V15-LOGS dependency_ids omit SF46."
+    },
+    {
+      "id": "current-window-transport",
+      "required": "Supply exact adopted source bindings for SF11 andSF46; currently null, as disclosed in BOUNDARIES."
+    }
+  ],
+  "scope": "Routing and final-packet completeness only; no new mathematical objection or re-review of closed source claims.",
+  "author_identity_and_current_binding": "Still explicitly pending. No eligibility acceptance or authenticated targets inferred."
+}

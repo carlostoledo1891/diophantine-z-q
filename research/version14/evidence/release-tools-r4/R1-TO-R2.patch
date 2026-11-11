@@ -1,0 +1,171 @@
+--- r1/package_v14.py
++++ r2/package_v14.py
+@@ -21,7 +21,13 @@
+ AUDIT = 'scripts/check_audit_history.py'
+ INVENTORY = REVISION + '/validate-applications.py'
+ REPLAY = PACKAGE + '/verify_lineage.py'
+-REQUIRED = {V14_TEX, V14_PDF, REGISTER, 'README.md', 'CITATION.bib', 'AGENTS.md',
++PROTOCOL_DOCUMENTS = {'.github/pull_request_template.md', 'CONTRIBUTING.md', 'README.md',
++    'docs/research-review/PROTOCOL.md', 'docs/research-review/README.md',
++    'docs/research-review/protocol-v1.2.md'}
++PROTOCOL_HASHES = {
++    'docs/research-review/PROTOCOL.md': 'd3eb878bb3fb12d3b27d157e33f417f6f81bf2a873370f2758e8ccb1e5314d0a',
++    'docs/research-review/protocol-v1.2.md': 'b5365b3d9cd9a782bf7fd0b6020403d5d400eac13dc7e60875484a8769d3d925'}
++REQUIRED = PROTOCOL_DOCUMENTS | {V14_TEX, V14_PDF, REGISTER, 'README.md', 'CITATION.bib', 'AGENTS.md',
+     'manuscripts/README.md', 'quartics/README.md', 'docs/release-policy.md',
+     'docs/building.md', 'docs/archiving.md', 'docs/research-guide.md',
+     'research/version14/README.md', REVISION + '/GUIDE.md',
+@@ -44,9 +50,25 @@
+         raise ValueError('Only the current manuscript PDF is included in the new layer')
+ 
+ 
+-def collect(repo, oid, selection):
++def coverage_paths(coverage, selection):
++    if type(coverage) is not dict or set(coverage) != {'coverage', 'profiles', 'evidence'}:
++        raise ValueError('Explicit coverage, profiles and evidence path lists are required')
++    paths = set()
++    for role, names in coverage.items():
++        if type(names) is not list or not names or any(type(name) is not str for name in names) or len(set(names)) != len(names):
++            raise ValueError('Nonempty unique actual path list required: ' + role)
++        for name in names:
++            safe(name)
++            if name not in selection:
++                raise ValueError('Coverage/profile/evidence file absent from reviewed selection: ' + name)
++            paths.add(name)
++    return paths
++
++
++def collect(repo, oid, selection, coverage=None):
+     if not REQUIRED <= set(selection):
+         raise ValueError('Missing required release files: ' + repr(sorted(REQUIRED - set(selection))))
++    coverage_paths(coverage, selection)
+     current = {}
+     for name, digest in sorted(selection.items()):
+         admissible(name)
+@@ -54,6 +76,8 @@
+         if b'-----BEGIN PRIVATE KEY-----' in raw or b'-----BEGIN RSA PRIVATE KEY-----' in raw:
+             raise ValueError('Credential marker in selected bytes: ' + name)
+         current[name] = raw
++    for name, expected in PROTOCOL_HASHES.items():
++        pinned(current[name], expected, 'governing/historical protocol')
+     register = json.loads(current[REGISTER])
+     if register['manuscript'] != {'path': V14_TEX, 'sha256': sha(current[V14_TEX])}:
+         raise ValueError('Current register does not bind the selected Version 14 manuscript')
+@@ -108,19 +132,23 @@
+     p.add_argument('--commit', required=True)
+     p.add_argument('--selection', required=True, type=Path)
+     p.add_argument('--selection-sha256', required=True)
++    p.add_argument('--coverage-selection', required=True, type=Path)
++    p.add_argument('--coverage-selection-sha256', required=True)
+     p.add_argument('--date', required=True, type=date.fromisoformat)
+     p.add_argument('--output', required=True, type=Path)
+     p.add_argument('--final-state', required=True, action='store_true')
+     args = p.parse_args()
+     oid = commit(args.repo, args.commit)
+     selection = json.loads(pinned(args.selection.read_bytes(), args.selection_sha256, 'reviewed handoff selection'))
+-    current = collect(args.repo, oid, selection)
++    coverage = json.loads(pinned(args.coverage_selection.read_bytes(), args.coverage_selection_sha256, 'reviewed coverage evidence selection'))
++    current = collect(args.repo, oid, selection, coverage)
+     historical = pinned(blob(args.repo, oid, V13_ARCHIVE), V13_ARCHIVE_SHA, V13_ARCHIVE)
+     files = {'version13-base.zip': historical, 'restore.py': (HERE / 'restore.py').read_bytes(),
+         'README.txt': b'Version 14 cumulative research supplement. Verify the published SHA-256, extract, and run python -B restore.py NEW_DIRECTORY. Earlier archive layers are preserved byte for byte.\n'}
+     files.update({'current/' + name: raw for name, raw in current.items()})
+     files['MANIFEST.json'] = json_bytes({'schema': 'quartic-version14-supplement/v1', 'source_commit': oid,
+-        'selection_sha256': args.selection_sha256, 'files': {name: sha(raw) for name, raw in sorted(files.items())}})
++        'selection_sha256': args.selection_sha256, 'coverage_selection_sha256': args.coverage_selection_sha256,
++        'coverage_paths': coverage, 'files': {name: sha(raw) for name, raw in sorted(files.items())}})
+     output = output_dir(args.output)
+     with tempfile.TemporaryDirectory(prefix='v14-handoff-', dir=HERE) as tmp:
+         directory = Path(tmp)
+@@ -132,7 +160,8 @@
+     for i, log in enumerate(logs, 1):
+         put(output, f'restore-check-{i}.log', log)
+     put(output, 'PACKAGE-RECEIPT.json', json_bytes({'schema': 'quartic-v14-supplement-build/v1',
+-        'source_commit': oid, 'selection_sha256': args.selection_sha256, 'historical_base_sha256': V13_ARCHIVE_SHA,
++        'source_commit': oid, 'selection_sha256': args.selection_sha256,
++        'coverage_selection_sha256': args.coverage_selection_sha256, 'historical_base_sha256': V13_ARCHIVE_SHA,
+         'archive': {'path': V14_ARCHIVE, 'sha256': sha(raw), 'bytes': len(raw)},
+         'replay_log_sha256': [sha(log) for log in logs], 'python': sys.version,
+         'status': 'built and fresh restore verified locally; publication pending'}))
+--- r1/mirror_plan.py
++++ r2/mirror_plan.py
+@@ -20,8 +20,11 @@
+ 
+ def plan(public, private, public_base, public_head, private_base, allow):
+     commits = [commit(repo, oid) for repo, oid in ((public, public_base), (public, public_head), (private, private_base))]
+-    if git(public, 'rev-list', '--parents', '-n', '1', public_head).decode().split() != [public_head, public_base]:
+-        raise ValueError('Public head must be a single release commit on the reviewed base')
++    if git(public, 'merge-base', public_base, public_head).decode().strip() != public_base:
++        raise ValueError('Public head must descend from the reviewed base')
++    history = git(public, 'rev-list', '--parents', public_base + '..' + public_head).decode().splitlines()
++    if not history or any(len(row.split()) != 2 for row in history):
++        raise ValueError('Release history must be a nonempty linear chain without merge commits')
+     before, after, mirror = (tree(repo, oid) for repo, oid in zip((public, public, private), commits))
+     changed = {name for name in set(before) | set(after) if before.get(name) != after.get(name)}
+     if not changed or changed != set(allow):
+--- r1/test_release.py
++++ r2/test_release.py
+@@ -96,6 +96,15 @@
+             head = git('rev-parse', 'HEAD')
+             files = mirror_plan.plan(repo, repo, base, head, base, {'file.txt': common.sha(b'new\n')})
+             self.assertEqual(files, {'file.txt': b'new\n'})
++            (repo/'archive-receipt.txt').write_bytes(b'synthetic archive receipt\n')
++            git('add', '.'); git('commit', '-qm', 'fixture archive commit')
++            final_head = git('rev-parse', 'HEAD')
++            allow = {'file.txt': common.sha(b'new\n'), 'archive-receipt.txt': common.sha(b'synthetic archive receipt\n')}
++            final_files = mirror_plan.plan(repo, repo, base, final_head, base, allow)
++            self.assertEqual(set(final_files), set(allow))
++            with self.assertRaises(ValueError):
++                mirror_plan.plan(repo, repo, final_head, head, base, allow)
++
+             with self.assertRaises(ValueError):
+                 mirror_plan.plan(repo, repo, base, head, head, {'file.txt': common.sha(b'new\n')})
+             with self.assertRaises(ValueError):
+@@ -142,3 +151,17 @@
+             archive.writestr('../escape', b'x')
+         with self.assertRaises(ValueError):
+             restore.checked_zip(raw.getvalue())
++
++
++class CoverageSelectionTests(unittest.TestCase):
++    def test_all_protocol_docs_are_required(self):
++        self.assertTrue(package_v14.PROTOCOL_DOCUMENTS <= package_v14.REQUIRED)
++        self.assertEqual(len(package_v14.PROTOCOL_DOCUMENTS), 6)
++
++    def test_actual_role_paths_are_required_and_included(self):
++        roles = {'coverage': ['coverage.json'], 'profiles': ['profile.json'], 'evidence': ['review.md']}
++        selected = {name: '0'*64 for names in roles.values() for name in names}
++        self.assertEqual(package_v14.coverage_paths(roles, selected), set(selected))
++        for broken in (None, {}, {**roles, 'profiles': []}, {**roles, 'evidence': ['missing.md']}):
++            with self.assertRaises(ValueError):
++                package_v14.coverage_paths(broken, selected)
+--- r1/README.md
++++ r2/README.md
+@@ -10,15 +10,24 @@
+ - The same tool applies the five exact non-README files from accepted v1.3 docs-r3 and only its approved semantic protocol-link delta to the newly generated Version14 README. The user's latest order is combined v1.3 adoption with Version14. The tool deliberately requires the exact post-v1.2 preimages and preserves historical v1.2 bytes. Reassess the interface if any intervening change alters those preimages.
+ - `install_packet.py` requires final `--package`, reviewed `--package-sha256` and new `--output`. It verifies every PACKAGE-MANIFEST member and copies the exact package plus public table downloads. No mock package or hash is supplied. Author10 owns the package and full finite verifier.
+ - `prepare_ci.py` requires actual `--repo`, `--base`, `--date`, final reviewed `--render-pages`, `--expected-pages`, and new `--output`. It updates the pinned build script to Version14 and adds mandatory Version14 finite replay/inventory commands inside the existing required quartic matrix jobs in both workflows. Every existing job identity and historical check remains. The preserved Version13 check display name is intentional to keep required contexts stable. Root must review and update the protected source-bound workflow/step policy before these actual workflow bytes can pass. CI changes are not deployed by this tool.
+-- `package_v14.py` requires actual `--repo`, exact `--commit`, complete independently reviewed path-to-SHA256 `--selection`, `--selection-sha256`, ISO `--date`, new `--output`, and `--final-state`. Selection must include every exact package and inventory-install member, final Version14 TeX/PDF, final current registry and real approval references, reviews and guides. It retains the exact Version13 cumulative supplement as a nested immutable base. It writes deterministic ZIP metadata, validates extraction, restores into a fresh directory, runs audit/inventory/finite checks, then emits the archive and receipt only on success. Earlier research history is preserved byte for byte in the historical layer. Review selection for full current evidence completeness; the script's required-path list does not establish mathematical completeness. Actual final archive execution remains pending final reviewed inputs.
+-- `mirror_plan.py` requires real `--public`, `--private`, `--public-base`, one-parent `--public-head`, `--private-base`, exact `--allowlist`, `--allowlist-sha256` and new `--output`. It compares the complete Git diff to the allowlist and every changed private preimage to its public base, then writes only a local byte-exact payload and mirror receipt. It does not stage either repository. Deletions and mode changes fail.
++- `package_v14.py` requires actual `--repo`, exact `--commit`, complete independently reviewed path-to-SHA256 `--selection`, `--selection-sha256`, ISO `--date`, new `--output`, , required `--coverage-selection` and `--coverage-selection-sha256`, and `--final-state`. The additional reviewed JSON has exactly `coverage`, `profiles`, and `evidence`, each a nonempty unique array of actual committed paths already present in the main selection. Selection must include every exact package and inventory-install member, final Version14 TeX/PDF, final current registry and real approval references, reviews and guides. It retains the exact Version13 cumulative supplement as a nested immutable base. It writes deterministic ZIP metadata, validates extraction, restores into a fresh directory, runs audit/inventory/finite checks, then emits the archive and receipt only on success. Earlier research history is preserved byte for byte in the historical layer. Review selection for full current evidence completeness; the script's required-path list does not establish mathematical completeness. Actual final archive execution remains pending final reviewed inputs.
++- `mirror_plan.py` requires real `--public`, `--private`, `--public-base`, linear-descendant `--public-head`, `--private-base`, exact `--allowlist`, `--allowlist-sha256` and new `--output`. It compares the complete Git diff to the allowlist and every changed private preimage to its public base, then writes only a local byte-exact payload and mirror receipt. It does not stage either repository. Deletions and mode changes fail.
+ 
+ ## Review and integration order
+ 
+-Eleven tests pass with pinned CPython3.12.14. They cover actual Version13 source/navigation parsing, exact v1.3 source bytes, synthetic addition and retained edits, current table parsing, missing/extra monomials, malformed coordinates, preserved required CI names, pinned compiler constants, exact mirror preimages/allowlist rejection, deterministic archive construction and safe historical restoration. Synthetic fixtures are test evidence only.
++Thirteen tests pass with pinned CPython3.12.14. They cover actual Version13 source/navigation parsing, exact v1.3 source bytes, synthetic addition and retained edits, current table parsing, missing/extra monomials, malformed coordinates, preserved required CI names, pinned compiler constants, exact mirror preimages/allowlist rejection, deterministic archive construction and safe historical restoration. Synthetic fixtures are test evidence only.
+ 
+ An early draft incorrectly equated total text lines with monomials. Root identified the canonical table's headers and coordinate comments. The current parser ignores comment rows, validates each ordinary coefficient/zero constant exponent/sorted compact coordinate tuple, rejects duplicates and counts exactly6672data rows. Tests retain both missing and extra row controls.
+ 
+ Finish the current v1.2 merges first. Before actual combined Version14/v1.3 preparation, independently review these scripts, verify the actual post-v1.2 base/protocol preimages, then collect final package/addition/inventory/review hashes. Protocol packet author owns the generic schema2 substantive-coverage integration; this release layer does not manufacture coverage records or decisions. Merge no generated content until its exact assembled manuscript, current registry, full source inventory, workflows/source policy, cumulative archive restore and both repository checks have independent acceptance. Require eleven successful current GitHub Actions contexts plus the App-bound Protocol check and normal merge/readback. The historical Version13 completion script's eleven-check criterion is insufficient.
+ 
+ No final PDF page count, approved addition/package hash, actual release base/head, current registry acceptance or protected packet/profile is fabricated here. These frozen scripts support the latest combined-adoption order and need exact-input integration review before use.
++
++
++## R2 repair record
++
++The original candidate remains unchanged at `../quartic-v14-release`, manifest SHA-256 `1fc57c61e6dcea115a08aeebf820f663efebcc9decc11b7428bc4f2addf43eb9`.
++
++Root's independent review found that the handoff required-path set omitted the combined v1.3 protocol documents and did not require an explicit coverage/profile/evidence selection. R2 requires all six adoption documents, verifies the exact supplied normative protocol and historical v1.2 hashes, and requires a separately hash-pinned actual role-to-path selection. Every supplied role path must occur in the main hash-pinned Git selection and is therefore included in the new archive layer. No actual path or acceptance is invented. Selection completeness and the truth of the submitted coverage evidence still require independent review.
++
++Root also found a conflict between the archive's recorded source commit and the mirror tool's single-commit requirement. R2 permits a nonempty linear chain from the reviewed base to final head, allowing the reviewed source commit to remain reachable before an archive/receipt commit. It rejects heads outside the base ancestry and any merge commits in that range. The complete base-to-head tree difference must still equal the reviewed allowlist; each changed private preimage and final public blob is checked exactly. Tests include a valid two-commit source/archive chain and a non-descendant failure.

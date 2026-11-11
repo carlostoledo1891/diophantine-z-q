@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Z}{\mathbb Z}\newcommand{\C}{\mathbb C}
+\newcommand{\E}{\mathbb E}
+\title{The plain additive-quadruple implication on a finite interval}
+\author{Author proposal: /root/astra\_v14\_baseline\_theta}
+\date{7 November 2026}
+\begin{document}\maketitle
+
+\noindent\textbf{Scope.} This local proof supplies the exact plain
+correlation statement of GTZ Proposition 8.4, p.~1277, needed by the
+Section 13 join. It does not use Proposition 8.3 or infer plain bias
+from lower-degree bias. The argument is the elementary two-step
+Cauchy--Schwarz pattern; the finite domains and constants are written
+explicitly. No source error in Proposition 8.4 is asserted. This
+author packet requires independent review.
+
+\section{Precise finite assertion}
+Put $J=\{1,\ldots,N\}$, $I=\{-N,\ldots,N\}$, and suppose
+$H\subseteq I$ has $|H|\geq\alpha |I|$ for fixed $\alpha>0$.
+Let $f:J\to\C$ be $1$-bounded and extend it by zero to $\Z$.
+For each $h\in H$ let $\chi_h:\Z\to\C$ be globally bounded
+by a fixed $B>0$, and assume
+\[
+ \left|\E_{n\in J} f(n+h)\overline{f(n)}\chi_h(n)\right|
+ \geq\delta>0.
+\]
+The values outside $J$ are part of the data and are not truncated.
+
+\begin{theorem}\label{thm:plain}
+Write $a=\alpha\delta/3$ and $\eta=a^4/4$.
+There are at least
+\[
+ \frac{\eta}{2B^4}(4N+1)(2N+1)^2
+\]
+distinct additive quadruples $(h_1,h_2,h_3,h_4)\in H^4$,
+$h_1+h_2=h_3+h_4$, for which
+\[
+ \left|\E_{n\in J}
+  \chi_{h_1}(n)\chi_{h_2}(n+h_1-h_4)
+  \overline{\chi_{h_3}(n)}
+  \overline{\chi_{h_4}(n+h_1-h_4)}\right|
+ \geq\eta/2.
+\]
+In particular their number is a positive fixed multiple of $N^3$.
+\end{theorem}
+
+\section{Two exact Cauchy--Schwarz steps}
+For each $h\in H$ choose a scalar $c_h$ of modulus one so the
+given average multiplied by $c_h$ is real and at least $\delta$.
+Set $u_h=c_h\chi_h$ on $H$, and $u_h=0$ for every $h\notin H$.
+The functions remain defined on all integers. Then
+\[
+ \E_{h\in I}\E_{n\in J}
+ f(n+h)\overline{f(n)}u_h(n)\geq\alpha\delta.
+\]
+Let $M=J+I=\{1-N,\ldots,2N\}$, so $|M|=3N$.
+Set $m=n+h$. The preceding average is exactly
+\[
+ 3\E_{m\in M}f(m)
+       \E_{h\in I}\overline{f(m-h)}u_h(m-h).
+\]
+Terms with $m-h\notin J$ vanish because $f$ was zero-extended.
+Cauchy--Schwarz in $m$, using $|f|\leq1$, therefore yields
+\begin{equation}\label{eq:first}
+ \E_{m\in M}\left|\E_{h\in I}
+          \overline{f(m-h)}u_h(m-h)\right|^2\geq a^2.
+\end{equation}
+
+Expand the square and put $h'=h+k$, $n=m-h$.
+Let $K=\{-2N,\ldots,2N\}$. The expanded left side equals
+\[
+ \frac{N}{|M|}\frac{|K|}{|I|}
+ \E_{k\in K}\E_{n\in J}
+ \overline{f(n)}f(n-k)T(k,n),
+ \qquad
+ T(k,n)=\E_{h\in I}u_h(n)\overline{u_{h+k}(n-k)}.
+\]
+This is an equality with the following domain checks. The factor
+$\overline{f(n)}$ forces $n\in J$, and then $m=n+h\in M$
+automatically for $h\in I$. The condition $h+k\in I$ is supplied
+by $u_{h+k}=0$ outside $H\subseteq I$. Thus no additional cutoff
+in $n-k$ is inserted into $T$. Its values there are legitimate because
+the original functions are globally defined. The remaining factor
+$f(n-k)$ stays in the bounded weight.
+
+The prefactor is positive and at most two. By \eqref{eq:first},
+the absolute value of the displayed average without prefactor is
+at least $a^2/2$. Cauchy--Schwarz in $(k,n)$, dropping only the
+bounded weight $\overline{f(n)}f(n-k)$ by an inequality, gives
+\[
+ \E_{k\in K}\E_{n\in J}|T(k,n)|^2\geq a^4/4=\eta.
+\]
+Expand this square with independent $h,h'\in I$. It is the average
+over $(k,h,h')\in K\times I^2$ of
+\[
+ C(k,h,h')=\E_{n\in J}
+ u_h(n)u_{h'+k}(n-k)
+       \overline{u_{h'}(n)}\overline{u_{h+k}(n-k)}.
+\]
+The average is real and at least $\eta$, while $|C|\leq B^4$.
+Consequently at least a fraction $\eta/(2B^4)$ of triples have
+$|C|\geq\eta/2$. Indeed the complementary contribution to the
+average of $|C|$ is at most $\eta/2$, and the contribution of the
+selected fraction is at most that fraction times $B^4$.
+
+Such a triple has $h,h',h+k,h'+k\in H$, since otherwise $C=0$.
+Set
+\[
+ (h_1,h_2,h_3,h_4)=(h,h'+k,h',h+k).
+\]
+It is an additive quadruple and $h_1-h_4=-k$. The map is injective,
+with inverse $h=h_1$, $h'=h_3$, $k=h_4-h_1$.
+The factors $c_h$ contribute only a constant phase of modulus one
+to $C$, so they do not change its absolute value. This proves the
+theorem, including the exact unweighted average on $J$.
+
+\section{Vector families, internal limits and actual consumer}
+For vector-valued $\chi_h$ of fixed finite dimension $D$, a positive
+Euclidean correlation implies that some component has magnitude at
+least $\delta/\sqrt D$. Finite pigeonhole retains a component on
+a subfamily of density at least $\alpha/D$. Apply the scalar theorem
+there. The scalar output is a component of the full tensor product,
+so it implies plain vector bias. A finite list of dimensions can first
+be padded into one fixed dimension. For a bounded $f$ with a fixed
+bound other than one, divide it by that bound, changing $\delta$
+by a fixed factor only.
+
+Apply the finite assertion to representatives of an internal family,
+with uniform standard bounds, density and correlation. Choices of
+components and phases can be made for each finite family and then
+passed to the ultralimit. All constants above are positive standard
+numbers, so the selected quadruples have positive standard density
+on the $N^3$ scale and the correlation is positive by a standard
+amount. This is exactly the plain Proposition 8.4 output.
+
+In Section 13 the input to this theorem is the entire bounded product
+that includes the selected lower nilcharacter. Keeping it inside
+$\chi_h$ throughout the calculation preserves that lower information.
+The theorem requires no degree bound and introduces no lower-degree
+test factor. It therefore supplies the stronger plain statement that
+cannot be replaced merely by the degree-biased LP03 output.
+
+The bounded application audit checks the original $J$, the enlarged
+$M=J+I$, the parameter range $K$, the exact inverse reindexing and
+the global domain of $\chi_h$. A possible artificial cutoff
+$1_J(n-k)$ is unnecessary: $f(n-k)$ is removed by the second
+Cauchy--Schwarz inequality, not by claiming an equality after erasing
+its support. This resolves the domain question without classifying
+the published Proposition 8.4 as false or defective. The modified
+Proposition 7.3, its nilsequence-specific factorization and the
+remaining Section 13 hypotheses are outside this theorem's scope.
+
+\end{document}

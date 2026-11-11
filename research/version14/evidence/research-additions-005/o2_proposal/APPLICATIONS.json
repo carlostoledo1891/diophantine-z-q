@@ -1,0 +1,125 @@
+{
+  "applications": [
+    {
+      "id": "O2-PUBLISHED-CLASSICAL-LG",
+      "status": "author proposal pending independent review",
+      "assertion10": {
+        "statement": "The actual cuspidal classical coordinate has Galois factor V_f and smooth adelic factor pi(V_f), including the p-factor defined from Fontaine WD.",
+        "objects": "Parabolic H1 of modular curves, cuspidal newform f, V_f, and Tate-normalized pi_p(V_f).",
+        "hypotheses": "Cuspidal f of integral weight k>=2 and finite conductor; finite coefficient extension contains its eigenvalues. Non-Eisenstein localization removes boundary cohomology.",
+        "quantifiers": "Every classical coordinate selected by the fixed-level lift; no exclusion of primes dividing Np.",
+        "parameter_range": "p=5 and k=v-u+1>=2; arbitrary finite conductor with prescribed tame compact invariants.",
+        "uniformity": "One global representation supplies both the away-from-Np Hecke eigenvalues and the local p-factor.",
+        "constants": "No analytic estimates or multiplicity-one constant is required.",
+        "normalizations": "Uniformizer maps to geometric Frobenius; final Eme Section2.1 uses Tate normalization and Section2.1.2 Fontaine WD^Fss at p.",
+        "exceptional_cases": "Weight1, Eisenstein and conjectural completed-cohomology identities are not used.",
+        "limit_order": "Pass to a classical coordinate before applying the exact published theorem; no inverse-limit base-change assertion."
+      },
+      "sources": [
+        "Eme-classical",
+        "Eme-LL",
+        "Eme-lalg"
+      ],
+      "proof_sections": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "O2-SUPERCUSPIDAL-TYPE",
+      "status": "author proposal pending independent review",
+      "assertion10": {
+        "statement": "The final HT inertia criterion plus two-dimensional linear algebra identifies every parameter containing the selected type with D tensor an unramified character.",
+        "objects": "Absolutely irreducible two-dimensional WD D, its finite inertia tau, K-type sigma(tau), and any smooth irreducible pi containing sigma.",
+        "hypotheses": "D is absolutely irreducible; coefficient field is enlarged finitely to split inertia and needed square roots; pi is infinite-dimensional, proved from sigma not being a character.",
+        "quantifiers": "Every such D and pi; no hypothesis on the residual reduction of the target representation.",
+        "parameter_range": "GL2(Q5), K=GL2(Z5), nonscalar tau only.",
+        "uniformity": "Case split covers irreducible inertia and two distinct inertia characters exchanged by Frobenius.",
+        "constants": "In the two-character case c^2=a_prime*b_prime/(a*b) and d=a_prime/(c*a) give the explicit conjugacy diag(d,1)cFdiag(d,1)^-1=F_prime.",
+        "normalizations": "Both parameters use the same local Langlands and geometric Frobenius convention; only a single global unramified character is introduced.",
+        "exceptional_cases": "Scalar inertia/special series and ordinary target cases are excluded; no higher-rank type theorem is inferred.",
+        "limit_order": "No limit. Compare finite inertia, prove N=0, identify Frobenius, and only then conclude the unramified twist."
+      },
+      "sources": [
+        "HT-type",
+        "Eme-LL"
+      ],
+      "proof_sections": [
+        3
+      ]
+    },
+    {
+      "id": "O2-SAME-POINT-TATE",
+      "status": "author proposal pending independent review",
+      "assertion10": {
+        "statement": "The lifted type selects a point x in the actual minimal global deformation problem with r_x potentially crystalline, weights u,v and WD(r_x)=WD(r) tensor nu.",
+        "objects": "The same auxiliary residual representation, actual conductor N, fixed-level completed cohomology, classical coordinate f, point x and local r_x.",
+        "hypotheses": "Reviewed all-weight fixed-level type lift and CEGGPS7.4 at no-vexing auxiliary representation; non-Eisenstein localization and residual absolute irreducibility of auxiliary object.",
+        "quantifiers": "Each target type and pair of distinct integral weights; the auxiliary object can depend on the type constituent.",
+        "parameter_range": "p=5; possible tame ramification2,193; no vexing primes; exact actual N is retained.",
+        "uniformity": "No residual irreducibility is transferred to the target r; it is used only for rho_x and the auxiliary fiber theorem.",
+        "constants": "k=v-u+1 and n=-u; epsilon(x)^n=|x|^n*x^n, so the smooth twist is |det|^n.",
+        "normalizations": "CEGGPS geometric Frobenius agrees with Eme inverse arithmetic Frobenius; WD(epsilon)=|.|; Sym dual contributes det^(-(k-2)).",
+        "exceptional_cases": "No nonminimal-level variant of7.4 is assumed; no independent proof of its full patching construction is claimed.",
+        "limit_order": "Type lift, finite Hecke eigencoordinate, Galois identification, common algebraic-factor removal, then type-parameter comparison."
+      },
+      "sources": [
+        "Eme-Hecke",
+        "Eme-lalg",
+        "CEG-level",
+        "HT-type"
+      ],
+      "proof_sections": [
+        4
+      ]
+    },
+    {
+      "id": "O2-SAME-BANACH-FIBER",
+      "status": "author proposal pending independent review",
+      "assertion10": {
+        "statement": "The actual local Banach fiber at x has locally algebraic part pi_p(r_x) tensor W.",
+        "objects": "CEGGPS completed homology, its specialization at x, coefficient-field continuous dual, B_C(r_x), and the finite global Galois multiplicity factor.",
+        "hypotheses": "Exact7.4 and consolidated003 same-envelope identification; Colmez shape/nonvanishing; supercuspidal WD at x from the type argument.",
+        "quantifiers": "Every point x constructed in Section4; no statement for unrelated Banach representations with the same functor image.",
+        "parameter_range": "Finite coefficient field enlarged for x and factors; fixed tame level and algebraic weight.",
+        "uniformity": "Multiplicity of classical coordinates does not affect the conclusion; a nonzero coordinate on an irreducible lalg source suffices.",
+        "constants": "No tame multiplicity-one assumption; a finite sum of copies is enough.",
+        "normalizations": "Use homology quotient followed by continuous dual, giving cohomological annihilator of the maximal ideal.",
+        "exceptional_cases": "The special-series extension alternative is excluded by its constituents, not by ignoring Colmez exceptional case.",
+        "limit_order": "Specialize homology first, dualize, identify the annihilator, take lalg, and project to a classical coordinate."
+      },
+      "sources": [
+        "CEG-level",
+        "Eme-classical",
+        "Eme-lalg",
+        "Colmez2010"
+      ],
+      "proof_sections": [
+        5
+      ]
+    },
+    {
+      "id": "O2-UNITARY-TWIST-TRANSFER",
+      "status": "author proposal pending independent review",
+      "assertion10": {
+        "statement": "The unramified parameter twist is unitary and the fixed-WD Colmez theorem transfers the actual lalg formula from r_x to the arbitrary target r.",
+        "objects": "Actual potentially crystalline r_x and r, common weights u,v, unramified parameter character nu and its Galois extension.",
+        "hypotheses": "Same inertia and WD up to nu; equal Hodge weights; admissibility of the filtered modules of actual representations; retained Colmez VI.6.42 and twist compatibility.",
+        "quantifiers": "All absolutely irreducible potentially semistable target r with absolutely irreducible WD and distinct weights.",
+        "parameter_range": "p=5; finite coefficient extension; integral u<v; common finite field of potential crystallinity.",
+        "uniformity": "No target residual condition enters; a common integral cyclotomic twist normalizes the weights for VI.6.9.",
+        "constants": "Total Newton difference is a nonzero fixed multiple of2*v_5(nu(Frob_geo)); equal Hodge totals force valuation zero.",
+        "normalizations": "Unitarity follows from filtered admissibility, not from the false rule that WD of every unitary Galois character is unitary.",
+        "exceptional_cases": "No use of modularity-dependent Colmez VI.6.51(ii), or assertion of the full BM/HT theorem.",
+        "limit_order": "Prove valuation zero before extending nu to G_Q5; remove nu, compare filtrations of exactly the same module, undo common and unramified twists."
+      },
+      "sources": [
+        "Colmez-admissible",
+        "Colmez-filtration"
+      ],
+      "proof_sections": [
+        6
+      ]
+    }
+  ]
+}

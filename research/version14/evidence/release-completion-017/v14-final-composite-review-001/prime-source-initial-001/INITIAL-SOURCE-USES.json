@@ -1,0 +1,137 @@
+{
+  "schema": "protocol-source-first/v1",
+  "sources": [
+    {
+      "side": "head",
+      "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+      "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+    }
+  ],
+  "uses": [
+    {
+      "id": "PRIME-SUP-001",
+      "consumer": "PRIME-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "PRIME-SUP-001-P"
+      ],
+      "assertion": {
+        "statement": "For each fixed q>=3 and reduced residue a, the published theta estimate implies infinitely many positive primes in that class, avoiding every finite set.",
+        "objects": "theta(x;q,a), phi(q), c_theta(q), x_theta(q).",
+        "hypotheses": "BMOR final Theorem1.2 and definition1.5; positive constants and threshold for fixed q.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "No uniform threshold or prime-size bound in varying q; this is a sufficient replacement source for Dirichlet.",
+        "limit_order": "Fix q,a first; take x beyond its source threshold and log(x)>2c_theta(q)phi(q); deduce unbounded theta."
+      },
+      "classification": "dependency",
+      "reason": "Current raw-source reconstruction of this exact argument and its incoming premises; no final declared use ID selected.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "PRIME-SUP-002",
+      "consumer": "PRIME-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "PRIME-SUP-002-P"
+      ],
+      "assertion": {
+        "statement": "Pairwise coprime positive moduli and unit residues admit a simultaneous unit residue modulo their product by the explicit Bezout sum.",
+        "objects": "q_i,a_i,Q,Q_i,b_i and a=sum a_i b_i Q_i.",
+        "hypotheses": "Integer Bezout identity and pairwise coprimality; Milne ANT v3.08 p19 states CRT.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "CRT alone supplies no prime; author course notes are not a peer-reviewed publication.",
+        "limit_order": "Choose each inverse b_i modulo q_i, form the sum, check every congruence and gcd(a,Q)=1."
+      },
+      "classification": "dependency",
+      "reason": "Current raw-source reconstruction of this exact argument and its incoming premises; no final declared use ID selected.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "PRIME-SUP-003",
+      "consumer": "PRIME-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "PRIME-SUP-003-P"
+      ],
+      "assertion": {
+        "statement": "A signed prime q0 outside the fixed avoidance set can realize the prescribed real sign and unit squareclasses.",
+        "objects": "epsilon, positive prime r, signed prime q0=epsilon*r and local unit classes.",
+        "hypotheses": "Odd-prime unit squareclasses specified by nonzero residues, dyadic units modulo8; fixed finite S,B; CRT and fixed-modulus prime infinitude.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "No HL/BFH nonvanishing or bound on its prime factors follows.",
+        "limit_order": "Fix sign and multiply target residues by epsilon; combine by CRT; choose positive r avoiding S union B."
+      },
+      "classification": "dependency",
+      "reason": "Current raw-source reconstruction of this exact argument and its incoming premises; no final declared use ID selected.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "PRIME-SUP-004",
+      "consumer": "PRIME-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "PRIME-SUP-004-P"
+      ],
+      "assertion": {
+        "statement": "A finite succession of fresh primes realizes compatible forward quadratic bits and fixed types, also for dummy labels after h is fixed.",
+        "objects": "Finite old/new prime vertices, support modulus, forward Legendre bits, finite avoidance set, dummy labels and h.",
+        "hypotheses": "Realizable type is a unit residue modulo support containing8; distinct old primes outside support; nonzero square/nonsquare residues exist; CRT and prime infinitude.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "Reverse bits require reciprocity; product-template invariance requires a separate graph premise; no bound uniform in h.",
+        "limit_order": "At each step fix the modulus and residues, avoid prior choices, choose a prime; for dummy labels fix h first."
+      },
+      "classification": "dependency",
+      "reason": "Current raw-source reconstruction of this exact argument and its incoming premises; no final declared use ID selected.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    {
+      "id": "PRIME-SUP-005",
+      "consumer": "PRIME-SOURCE-CURRENT-APPLICATION",
+      "passages": [
+        "PRIME-SUP-005-P"
+      ],
+      "assertion": {
+        "statement": "Realizability, compatibility, representation of fixed types by unit residues, reciprocity, graph dependence and dummy-label preparation remain independent incoming requirements.",
+        "objects": "Actual finite types, quadratic symbols, graph data and prepared dummy labels.",
+        "hypotheses": "The particular main applications must establish these premises for their actual objects.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "No new analytic nonvanishing, Selmer result, or uniform prime-size bound is supplied.",
+        "limit_order": "Establish these requirements before applying the preceding finite prime construction."
+      },
+      "classification": "dependency",
+      "reason": "Current raw-source reconstruction of this exact argument and its incoming premises; no final declared use ID selected.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    }
+  ]
+}

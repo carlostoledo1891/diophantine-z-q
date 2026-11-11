@@ -1,0 +1,63 @@
+# Independent review of MF-AFFINE and MF-D4
+
+I accept the mathematical claims MF-AFFINE, MF-D4-WEAK, MF-D4 and MF-COMMON-CORE in the exact compiler proposal pinned by this packet. This decision covers proof lines 91–303, read with the definitions and factorization statement in lines 26–72. It also accepts the specific MF-AFFINE connection needed in unchanged DF002 lines 132–145. It does not accept MF-E11/E13, the later bias or reconstruction proof, the full DF002 packet, or the GI assembly.
+
+The proposal author is `/root/astra_v14_baseline_compiler`; the reviewer is `/root/astra_v14_baseline_gaussian`. I did not author this proposal or the relevant DF002 construction. My earlier Sections 9–11 packet consumes DF002 and is not independently accepted by this decision. No live manuscript was changed.
+
+## Sources actually checked
+
+I read the final GT14 equal-side theorem on printed pages 1176–1177, its definition of the product-binomial smoothness norm, and the recorded minor corrections on pages 1182–1183. I also inspected a render of page 1177. The theorem is an obstruction theorem on an equal cube. It is not a theorem of total equidistribution on arbitrary rectangles. Its quantitative bound depends on fixed dimension, degree, parameter count and error; the adapted rational Mal'cev basis is an explicit hypothesis.
+
+I read final GT12 Lemma 6.7 and Corollary 6.8 on pages 501–502, Lemma 8.4 on page 519, Proposition 9.2 and its construction on pages 522–523, the coordinate polynomial laws on pages 527–528, and the rational-subgroup and rational-point statements on pages 534–535. The coordinate-support condition is at total index size, not the separate maximum coordinate. The final source supplies both directions of that characterization. The rationality of the adapted coordinate changes is essential to the denominator arguments.
+
+I read final GTZ B.9 on pages 1337–1338 and D.3–D.5 on pages 1344–1346. I retained the printed D.5 rational-Taylor deletion problem and the A.12 left/right period problem. The proposal avoids both rather than treating them as valid inputs. The accepted project tautification convention remains an exact prior input when the later common-core test is interpreted in a taut ambient representation. No new acceptance of tautification or of the full published equidistribution proof is issued here.
+
+## Affine transfer
+
+For each coordinate, the inverse substitution expands the falling factorial in powers of n_i. Its denominators divide products of b_i powers and factorials of bounded index. The offsets A_i occur only in integer numerators. Consequently one positive standard integer r clears every coefficient denominator, uniformly over all actual internal offsets satisfying the stated bound.
+
+For a monomial index nu, its coefficient has degree at most |beta|-|nu| in the offsets. Converting n^nu to product binomials uses integer coefficients and only indices alpha at most nu componentwise. Thus the coefficient of binom(n,alpha) is O(N^(|beta|-|alpha|)). This verifies the precise estimate in equation (4). It does not require bounded heights for the offsets themselves.
+
+Separate each positive input coefficient into an integer z_beta and an error e_beta of size O(N^-|beta|). The former contributes an integer after multiplication by r. Each latter contribution is O(N^-|alpha|), and there are only a fixed number of indices. The constant input coefficient contributes to no positive output index. Negative bounded nonzero steps change signs and the fixed common denominator only. Multiplication by r cannot annihilate a nonzero real horizontal character.
+
+This establishes the stated claim for every positive index with the same r. Offsets larger than O(N), unbounded step sizes, or arbitrary real rather than integer offsets are not granted by this proof. The statement correctly does not grant them.
+
+The affected DF002 use starts from a dense progression of length at least delta N inside [N]. Its nonzero step is bounded by a standard function of delta, its integer offset is O(N), and its length is a positive standard proportion of N. The coefficient estimate obtained there therefore has exactly the MF-AFFINE hypotheses. Replacing the inadequate full-height reading of GT12 Lemma 8.4 by this connection preserves all positive-index O(N^-j) estimates and changes the horizontal character by one bounded standard integer only. DF002's remaining proof is outside this acceptance.
+
+## From failed total distribution to actual factors
+
+Failure on a dense progression product supplies bounded steps and offsets O(N). After subtracting the Haar mean and rotating one scalar phase, the real discrepancy is positive. Cubes of side floor(eta N) cover the index rectangle except a fraction at most k eta/delta plus an infinitesimal. Choosing eta after the discrepancy and the test bound leaves positive discrepancy on at least one full equal cube. This is a finite averaging argument; it does not assume the originally incorrect unequal-side theorem.
+
+Affine precomposition remains polynomial by the actual coordinate-support characterization. The equal cube has length comparable to N. Choose the source error below the surviving discrepancy and sufficiently small for the fixed rationality constant. The final GT14 theorem then provides a bounded nonzero horizontal integer character and the simultaneous product-binomial estimates. The bounded set of possible integer vectors is finite, so the selected vector in the ultrapower is standard. MF-AFFINE transfers all of these estimates to the original variables with one character. No coordinate-dependent character substitution occurs.
+
+Normalize the constant using a bounded fundamental set, g(0)=c lambda. Right multiplication by lambda^-1 leaves the nilmanifold point unchanged. Left translation by bounded c changes the test norm by a standard factor, so the argument can be applied to the normalized map. Its constant term is zero in coordinates. The final GT12 support condition places t_alpha in the coordinate subspace for G_|alpha|.
+
+The choices w_alpha and z_alpha in equation (6) preserve that subspace. If u vanishes on it, the relevant scalar coefficient is identically zero and both choices may be zero. Otherwise a fixed rational vector in that subspace with u.v_alpha=1 exists. These are polynomial maps for the actual filtration. The horizontal real homomorphism on epsilon_0^-1 c^-1 g lambda^-1 gamma_0^-1 is exactly zero, coefficient by coefficient. Its kernel is a connected proper rational subgroup: in logarithmic coordinates it is the kernel of a nonzero rational linear functional annihilating brackets. A circle-kernel alone would not suffice, but the proposal proves the stronger real zero.
+
+The original ordered factors are epsilon=c epsilon_0 and gamma=gamma_0 lambda. The rational numerators need not be bounded and are not treated as bounded. Their denominators are bounded. This distinction is preserved in the subsequent lattice argument.
+
+## Products, Taylor coefficients and right periods
+
+Replacing n by Nt turns each small-coordinate polynomial into a polynomial with bounded coefficients. Fixed group products, inverses and rational coordinate changes preserve this. On any fixed dilate the resulting derivatives are O(1/N); this assertion concerns a bounded coordinate range and therefore also the fixed group metric. Triangular conversion back to product binomials preserves the claimed bounds.
+
+I checked the group-Taylor assertion separately from these coordinate bounds. Give each logarithmic coefficient at monomial index beta formal weight |beta|, and constant coefficients weight zero. BCH operations add these weights. A term of formal weight w has polynomial degree at most w. Ordered product-binomial extraction can be performed on the finite downset of indices: evaluation at an index only sees its componentwise predecessors. After their factors have been removed, a term of weight below the current total index has no coefficient at that index. Equivalently, its polynomial of smaller total degree vanishes on the already extracted lower Newton grid. Hence each surviving monomial in the current logarithmic Taylor coefficient has weight at least that index size. With input size O(N^-|beta|), this is exactly the claimed decay. This verifies the proposal's triangular-extraction explanation; it is not an inference from separate one-variable degree bounds.
+
+The discrete-overgroup construction also checks. In a rational lower-central basis, a BCH term with t inputs and output weight w has w at least the sum of input weights. For the lattice exponents 2w-1, the output-minus-input denominator allowance is at least t-1. Choosing D to clear the finitely many rational structure and coordinate coefficients makes the displayed additive lattice BCH-closed. It contains Gamma and the bounded-denominator rational factors, is discrete, and is cocompact. Inclusion of Gamma then has finite index. Unbounded rational numerators do not affect this reasoning.
+
+For the period, tensor-grid interpolation gives a common standard denominator for the coordinate coefficients of gamma. The same holds for each R_i(n,r)=psi(gamma(n)^-1 gamma(n+r e_i)) by the rational coordinate laws. R_i(n,0) is identically zero, so every monomial has a positive power of r. A common denominator q makes R_i(n,q) integral for every internal integer vector n. Integral Mal'cev coordinates mean membership in Gamma, in the required right-coset direction. This is a new multivariable verification, not an automatic extension of the earlier root decision on DF002.
+
+## Minimum dimension and common core
+
+The set of controlled representations is nonempty, with P=G, epsilon=gamma=1. If G_1 is proper, normalizing g(0) places the remaining polynomial in G_1 because the positive groups are normal and g(0)^-1 g(n) lies in G_1. The same step applies inside a candidate P. Its induced rational positive filtration and any standard finite-index lattice have adapted rational Mal'cev coordinates by the checked subgroup statement. Thus the weak factorization's taut hypothesis is not silently assumed for a general P.
+
+Choose the minimum dimension among existing controlled rational representations. If the chosen p fails on any particular standard finite-index Delta, the weak argument inside P yields a proper smaller rational subgroup, or normalization already does so when its first group is proper. The correct new factors are epsilon epsilon_2 and gamma_2 gamma. The preceding product and denominator arguments check their required properties in the ambient group. A finite-index change in lattice does not change the rational structure. This contradicts the chosen dimension. It proves the all-cover quantifier with one fixed p, not a family of p's selected after each cover.
+
+The finite-index overgroup Lambda supplies finitely many right cosets. Every internal coset value therefore has a standard representative. The core Gamma_0 is the kernel of the action on this finite coset set and is normal of finite index in Lambda. Its intersection Delta with P has finite index in P intersect Gamma. For delta in Delta, lambda_rho^-1 delta lambda_rho lies in Gamma. It follows directly that F(z x lambda_rho Gamma) descends to P/Delta for every residue rho on the same quotient. The all-cover conclusion applies to that Delta. This verifies the exact common-core input requested by the later reconstruction.
+
+## Coverage and limits
+
+The reviewed occurrence rows are MF-U02 through MF-U05, with MF-U01 used only for the factorization conventions and statement, not its later E11/E13 conclusions. The indexed passages MF-P02 through MF-P05 cover every line 91–303 without gaps or overlap. Their mathematical descriptions agree with the actual arguments. The displayed proof, ten-field assertions and connection records were compared for scope; hashing alone was not used as mathematical validation.
+
+The related-use record correctly preserves the large-offset issue, equal-side restriction, false rational-Taylor deletion and left/right period issue. The new proof supplies the first and the needed alternative routes for the latter issues within this bounded scope. In particular it does not establish D.5's false Taylor conclusion. MF-F04 and later E11/E13 applications remain with the other reviewer. No blanket no-import classification or whole-GI acceptance is issued.
+
+Some bibliographic strings in SOURCE-USES.json contain mojibake for dash characters. They do not change the pinned paths, source locators or mathematical assertions examined here. This is a metadata cleanup item for a preserved successor, not a mathematical objection or permission to mutate this freeze.

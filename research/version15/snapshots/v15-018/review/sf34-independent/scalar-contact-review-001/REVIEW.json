@@ -1,0 +1,51 @@
+{
+  "schema": "bounded-scalar-contact-row-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "4547d61c66932d07111af7251a786ae5fd3e4689ddfba3e8d942331c1fc4bddc",
+  "typing_sha256": "162b03ce8c54b87373e8ab1805e046580c200facbdd8cdd6e9fbfa8af99ce10f",
+  "reviewer": {
+    "agent": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "task": "/root/v14_arithmetic_review",
+    "authorship_disclosure": "Reviewer authored earlier V15 manuscript integration but not the original Jose table or this GI row-typing proposal. Current manuscript transcription remains sourcefirst review scope."
+  },
+  "scope": "The remaining55 exact row identities and their conditional reverse assignments; completes the222-row coefficient-typing census, not all arithmetic premises.",
+  "checks": {
+    "test_exit": 0,
+    "checked_entries": 54,
+    "unique_rows": 55,
+    "overlap_with_prior167": 0,
+    "union_unique_rows": 222,
+    "uncovered_rows": [],
+    "all_manifest_predecessor_and_consumer_pins_match": true
+  },
+  "reasoning": [
+    "Independent exact polynomial substitution reproduces the five-factor r_s and ten-factor reflected contact polynomial, rather than trusting output names. Constant-linear gates uniquely determine all intermediate values.",
+    "beta=51X²+2504 gives r_s>0 over rational inputs; A_N>0 gives R_s>0. Thus division by its fourth power is legitimate. H reciprocal nonvanishing gives Norm(f(H))²>0, so W_s and physical b_s are positive.",
+    "The fixed constants M,K,L match the literal rows, with K=82479248M and3L=17K. The full signed rescaling of all three scalar pole equations is checked, including negative stored bar-b.",
+    "Factored-pole correspondence is existential on the positive input domain: at u=0 the old second equation forces F=q_old=0, allowing v=qprivate=0. It is not a private-witness bijection.",
+    "At q=0 the stored highest weight remains free; at delta=0 the normalization gives q=-1, so no division by delta or1+q is allowed. Reciprocal-trace interpretation requires W nonzero; arbitrary W=0 cases remain with the separate soundness argument.",
+    "The real-component g_S inverse is an actual retained constraint. Nonzero field g_S alone would not imply it, and this review does not substitute one for the other.",
+    "Rows21–22 uniquely recover the V0 reciprocal output from g_H²/f(H); the interpretation as H-P still uses the separate fixed-subtraction certificate."
+  ],
+  "remaining_arithmetic_antecedents": [
+    "Fixed-subtraction rational-function certificate and its denominator/excluded-point conditions.",
+    "Forced149 local argument excluding inadmissible H and justifying quotient interpretations.",
+    "Root subgroup/generator, prime selection, height estimates, and global completeness/existence of prepared pole witnesses.",
+    "Sourcefirst acceptance of the current reviewer-authored manuscript transcription."
+  ],
+  "evidence": [
+    {
+      "path": "check.py",
+      "sha256": "019f8f34a51d29c529a68d41c6164dbbe8781ba4db7d312fad07242cc0b197ee"
+    },
+    {
+      "path": "CHECKS.json",
+      "sha256": "4c2863f75a5d2f1ee3ef117f12538dc74977d0886d09cb8114279fdaa79e50b6"
+    },
+    {
+      "path": "TEST-OUTPUT.txt",
+      "sha256": "d1d6c87f720e8b4fc7dc6427555cdc94322ccaea79be902d540dd067d931d9e1"
+    }
+  ],
+  "no_remote_or_source_changes": true
+}

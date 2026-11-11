@@ -1,0 +1,43 @@
+{
+  "decision": "accepted",
+  "subject_sha256": "f673e732217d82bca9c6d10a4a6114155b7af75c3be92790daabc7b876eeab4f",
+  "scope": "Independent finite identities, all-consumer transport, renumbering and full SOS for raw223/110",
+  "candidate_ir_sha256": "0839eb623c76ba462eec8842dc5b8c85fef85cc924c9daa98f35a83ae61948e0",
+  "checks": {
+    "all198_parent_rows": true,
+    "six_deleted_FU_identities": true,
+    "six_paired_factor_rows": true,
+    "five_unique_quadratic_helpers": true,
+    "trace_identity": true,
+    "eleven_domain_alias_rows": true,
+    "full_SOS": true,
+    "variables": 223,
+    "residuals": 197,
+    "coordinate_monomials": 2964,
+    "formal_terms": 2965,
+    "degree": 4,
+    "primitive_content": 1,
+    "coefficient_height": "A_N²+1 for N>=53; ineffective defining threshold unchanged"
+  },
+  "method": "Independent JSON-only Laurent substitution; no import or execution of author build.py. Reconstruct old coordinates, expand the five helpers, and compare each old residual or explicit paired row combination up to a nonzero rational q/R monomial. Recompute complete SOS with independent sparse-Q arithmetic.",
+  "evidence": [
+    {
+      "path": "work/quartic223-finite-review-integration-001/check.py",
+      "sha256": "e1120901167ecb7279c48ed85550afcda7134a65688e1ec4cf033f8eac70d23b"
+    },
+    {
+      "path": "work/quartic223-finite-review-integration-001/RESULT.json",
+      "sha256": "eba99cef143c8ce0e39a3a8d4ab1707885560dbb8684684ef0636c1336de31e2"
+    },
+    {
+      "path": "work/quartic223-finite-review-integration-001/RUN-002.json",
+      "sha256": "d09c37e56b6b5172e4e1f446a635c1c4584768bf3bd91f7a73d00bd54cbaef84"
+    }
+  ],
+  "prior_fixture_failure": "RUN.json records a reviewer harness assertion on zero square-alias identities; corrected to accept only both identically zero. Candidate bytes unchanged.",
+  "limits": [
+    "Full mathematical composition/domain acceptance is separately owned by GLOBAL.",
+    "Uses accepted q/R nonzero proof9c8f7c60, not a new arithmetic premise.",
+    "No source manuscript or remote changes; no effective defining threshold claimed."
+  ]
+}

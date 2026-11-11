@@ -1,0 +1,296 @@
+{
+  "id": "V15-LOGS",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      31684,
+      32332
+    ],
+    "excerpt_sha256": "b1d8df266592dedb86217b9eb6f3db358ddf7d32653e7ca0340f6c9936102a5c"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      32659,
+      33050
+    ],
+    "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+  },
+  "dependencies": [
+    "V15-FOUNDATION",
+    "V15-GAUSSIAN"
+  ],
+  "retained_reviews": [
+    {
+      "key": "v15typing",
+      "path": "work/quartic-v15-238-20261110/premise-audit/typing-delta-review-002/REVIEW.json",
+      "sha256": "8d0492468bf531fb435d24d268a1b007f572e414692942c5f246504f667a7354",
+      "scope": "New238 argument and exact typing; inherited V14 foundation excluded.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "premise",
+      "path": "work/jose248-audit-20261109/238-premise-independent-001/REVIEW.json",
+      "sha256": "cffc7faa1fe9939f08a05c234b65b9cc1067138c083bbca4b13e122e9857cec6",
+      "scope": "Bounded V14-to-new-height/selection binding, including sign correction; aggregate application reused, not full re-audit.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Formal series",
+      "required": "Match the short Weierstrass equation and normalization",
+      "constructed": "f=1/x, z=−x/y, f=z²(1−Df²); L=zΣc_j(Df²)^j, c0=1,c1=−2/5",
+      "match": "The invariant differential determines the displayed recurrence.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31684,
+            31739
+          ],
+          "excerpt_sha256": "64d65bfcfc30d3c036aa0fe130a167d064cb5e9c3dee4906050165ac22155189"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Uniform tail",
+      "required": "Use contact primes without a new J-dependent exclusion",
+      "constructed": "At odd unramified primes, v(c_j)≥−floor(log_p(4j+1)) and tail precision≥3J",
+      "match": "No assumption p>J or p>4J is introduced.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31740,
+            31773
+          ],
+          "excerpt_sha256": "a05a44231e52901a5c86371eb9cdf5a92740a29d2c5bdb53d4b6e1e37c17312c"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Ratios",
+      "required": "Distinguish relative and absolute precision",
+      "constructed": "The truncation-ratio error has valuation at least v(n/m)+3min(J1,J2)",
+      "match": "An absolute congruence follows only after the full ratio is integral.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31774,
+            31800
+          ],
+          "excerpt_sha256": "b69d71166e7a641ec836957dd90f21b8bd3a6878ef457bc62d93881ae448e39b"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Real denominator",
+      "required": "Keep the domain of the nonvanishing assertion",
+      "constructed": "For nonzero doubles, 0<Df²<1 at real embeddings and Q_J(Df²)>0",
+      "match": "This does not claim arbitrary torsion cosets are nonzero doubles.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31801,
+            31839
+          ],
+          "excerpt_sha256": "b49f01de99b788f4fac0d28dd5f46d7d50da32bd36028b00d34d233acbd163fb"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Actual plain parameters",
+      "required": "Retain identity numerator points",
+      "constructed": "The baseline uses z(U_i)/z(H) and conjugate(z(V_i)/z(H−P)); regular f(O)=z(O)=0",
+      "match": "No logarithm-polynomial coordinate is retained in the actual248 circuit.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            32706
+          ],
+          "excerpt_sha256": "a462ac8c600b1ee569803ad1f95d1f64944dfe989a76cc4cac69773c83c9391c"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Integrality order",
+      "required": "Establish integrality before using error order four",
+      "constructed": "One of h,h−1 is a p-adic unit; the cross test transfers integrality to the other ratio before applying formal-unit errors",
+      "match": "Includes identity numerators, half-integral h and inert primes.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32806,
+            32843
+          ],
+          "excerpt_sha256": "751d4497120c17e1c365f04773b9e8ed9a602bdbead141fb8fd46153ace5ba61"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Fixed analytic data",
+      "required": "Preserve the quantifier order in prime selection",
+      "constructed": "Fix cutoff, ray data, coefficients, dilation and avoidance modulus before the large-X diagonal choice",
+      "match": "No growing-field or growing-modulus uniformity is claimed.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            31960
+          ],
+          "excerpt_sha256": "0d87cdba54a640bdcc5491cf6b8ebf595916e345f0461870847845fc07049d61"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Common progression",
+      "required": "Combine all finite congruences legally",
+      "constructed": "Opposite order norms give gcd(U,V)=1,gcd(U,L)=16,gcd(V,L)=1; h* divisible by64 makes CRT compatible",
+      "match": "The source point is a double, justifying division of reduction orders by four.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32112,
+            32229
+          ],
+          "excerpt_sha256": "d3cda1469dc2eb1095850da1df9025259596337f7e742e87af7352a277fdf63d"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Real and finite completion",
+      "required": "Preserve preparation after selecting primes",
+      "constructed": "Fix scalar point, labels, real neighborhoods, scales and L first; final common-index progression is dense in the required real component",
+      "match": "Arbitrarily large positive indices are allowed without changing the fixed-data scope.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32230,
+            32258
+          ],
+          "excerpt_sha256": "220fc3d085565a226f323d8e3148597704d58cf59a8a8be70a235abe4527ebcc"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            33050
+          ],
+          "excerpt_sha256": "05532c5a267c483fdcb5b0638314730bdaa4eb34dbf29ed480054ebfa9e02829"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

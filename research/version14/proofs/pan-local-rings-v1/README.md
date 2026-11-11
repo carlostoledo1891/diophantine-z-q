@@ -1,0 +1,9 @@
+# Pan local-ring connections at prime five
+
+The [proof](PROOF.md) supplies the fixed-determinant comparison, the precise nilpotent-quotient component argument, and an integral two-by-two matrix proof of flatness for the nontrivial-inertia-character local lifting ring used in Pan's author Lemma 4.2.10. The direct flatness proof concerns the unreduced ring.
+
+The published Allen–Newton–Thorne 2020 correction changes generic reducedness of the whole trivial-character special fiber to generic reducedness after nilreduction. Pan's actual trivial-character branch instead uses Taylor's componentwise statement. The precise final supplier is Taylor 2008 Lemma 3.2(1), with Lemma 2.7 for completion. The nontrivial-character branch uses Thorne 2015 Proposition 3.15(2) and Proposition 3.16; those read statements alone did not supply the extra integral flatness assertion, which is proved here.
+
+[REVIEW.md](REVIEW.md) and [DECISION.json](DECISION.json) record independent acceptance of the five bounded contracts at their exact source versions. Historical paths and old author-status sentences in the copied files are retained as provenance. Acceptance does not compare the entire final Pan or Thorne text, certify other residual local branches, or prove the whole global modularity theorem. Excellent-ring completion and the stated completed-tensor-product foundations remain explicit inputs.
+
+No publisher PDF, full source extract, or correspondence is included. SOURCES.json records titles, publication status, locators, public URLs, and hashes of the sources actually read. LOCATIONS.json rebases the unchanged proof to this public path; its manuscript entries explicitly identify the pre-incorporation 63db source. The substantive protected proof path is `research/version14/proofs/pan-local-rings-v1/PROOF.md`.

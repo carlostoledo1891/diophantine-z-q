@@ -1,0 +1,1706 @@
+[
+  {
+    "use_id": "ARITH-ACTIVE-BETA-MILNE-DEGREE",
+    "before_sha256": "85297daca010439fa291688d5f5be526fd2bebc59b3d6de74656e9ceac4cfebf",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-BETA-MILNE-DEGREE",
+        "consumer": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-BETA-MILNE-DEGREE",
+          "ARITH-ACTIVE-BETA-MILNE-DEGREE-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The actual reduction endomorphism used in the beta trace comparison has a rational Tate trace independent of ell for ell different from p.",
+          "objects": "The beta family reduction and the actual composite e_p of the reduced denominator-cleared isogeny with relative p-Frobenius.",
+          "hypotheses": "The chosen good-reduction comparison prime p permits specialization; the composite has the same source and target, and ell differs from p.",
+          "quantifiers": "For each good comparison prime p of this original beta family, its actual reduction endomorphism e_p, and each coefficient prime ell different from p.",
+          "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+          "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+          "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+          "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+          "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+          "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+        },
+        "classification": "dependency",
+        "reason": "Relative p-Frobenius targets the sigma twist, and composition with the reduced isogeny returns to the original reduction. Apply the degree-polynomial theorem to this actual endomorphism; the remaining two-copy and scalar factors belong to the separate trace derivation.",
+        "shared_contract_justification": "The same fixed BETA family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/direct-p5-modularity-v1/FIVE-TO-THREE-SOURCES.md",
+              "sha256": "5552cf5078213c729ddb0939152b2a0fa5cf5cc8fa2e1a96e52320681f608366"
+            },
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt_sha256": "ad21187dd56a3b5e83e3e3b4626aea0d4ab71c302c91ea5ea99adc436fb517f6"
+          },
+          "statement": "For an abelian variety and rational endomorphism, the rational degree polynomial is its covariant Tate characteristic polynomial at every coefficient prime different from the ground-field characteristic.",
+          "publication": {
+            "title": "Abelian Varieties",
+            "authors": "James S. Milne",
+            "venue": "Arithmetic Geometry (1986), chapter Abelian Varieties",
+            "authoritative_version": "Original 1986 chapter, not the differently numbered later course notes",
+            "locator": "Printed page125, Proposition12.9 and preceding degree-polynomial definition",
+            "corrections": "Use coefficient primes different from the ground-field characteristic; retain the original-version numbering."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1451,
+          "end_line": 1472,
+          "excerpt_sha256": "10c61b912d7517ae2bcaa5e72db1f327823c4e4df1857db2cbe638d8c592d307"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-BETA-MILNE-DEGREE",
+        "use_sha256": "6d189f82f469c54fd62dd0862ed863fb63318f5dedcf59db5e90190598922171",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For an abelian variety and rational endomorphism, the rational degree polynomial is its covariant Tate characteristic polynomial at every coefficient prime different from the ground-field characteristic.",
+          "objects": "An abelian variety D over a field k, a rational endomorphism alpha, and its covariant rational Tate modules.",
+          "hypotheses": "The coefficient prime ell is different from char(k).",
+          "quantifiers": "Every such D and alpha, and every permitted coefficient prime ell.",
+          "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+          "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+          "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+          "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+          "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+          "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+        },
+        "needed_assertion": {
+          "statement": "The actual reduction endomorphism used in the beta trace comparison has a rational Tate trace independent of ell for ell different from p.",
+          "objects": "The beta family reduction and the actual composite e_p of the reduced denominator-cleared isogeny with relative p-Frobenius.",
+          "hypotheses": "The chosen good-reduction comparison prime p permits specialization; the composite has the same source and target, and ell differs from p.",
+          "quantifiers": "For each good comparison prime p of this original beta family, its actual reduction endomorphism e_p, and each coefficient prime ell different from p.",
+          "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+          "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+          "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+          "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+          "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+          "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+        },
+        "required_capabilities": [
+          "rational-prime-independent-endo-trace"
+        ],
+        "available_capabilities": [
+          "degree-polynomial-theorem"
+        ],
+        "derived_capabilities": [
+          "rational-prime-independent-endo-trace"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1451,
+            "end_line": 1472,
+            "excerpt_sha256": "10c61b912d7517ae2bcaa5e72db1f327823c4e4df1857db2cbe638d8c592d307"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual reduction endomorphism used in the beta trace comparison has a rational Tate trace independent of ell for ell different from p.",
+            "objects": "The beta family reduction and the actual composite e_p of the reduced denominator-cleared isogeny with relative p-Frobenius.",
+            "hypotheses": "The chosen good-reduction comparison prime p permits specialization; the composite has the same source and target, and ell differs from p.",
+            "quantifiers": "For each good comparison prime p of this original beta family, its actual reduction endomorphism e_p, and each coefficient prime ell different from p.",
+            "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+            "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+            "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+            "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+            "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+            "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Relative Frobenius alone may have a twisted target; only the composite is used. Clear denominators before specializing and exclude ell=p.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1451,
+              "end_line": 1472,
+              "excerpt_sha256": "10c61b912d7517ae2bcaa5e72db1f327823c4e4df1857db2cbe638d8c592d307"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/direct-p5-modularity-v1/FIVE-TO-THREE-SOURCES.md",
+                "sha256": "5552cf5078213c729ddb0939152b2a0fa5cf5cc8fa2e1a96e52320681f608366"
+              },
+              "start_line": 5,
+              "end_line": 5,
+              "excerpt_sha256": "ad21187dd56a3b5e83e3e3b4626aea0d4ab71c302c91ea5ea99adc436fb517f6"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1451,
+            "end_line": 1472,
+            "excerpt_sha256": "10c61b912d7517ae2bcaa5e72db1f327823c4e4df1857db2cbe638d8c592d307"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt_sha256": "9866d1888bb5aacf3753bbbee00733f5bd267a8bf8f1fb9156ff85aa53080f85"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-B-MILNE-DEGREE",
+    "before_sha256": "dbe74835c203db71e7e0e116afd0fb6dc681de094d38e9333d1322efb1e7348c",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-B-MILNE-DEGREE",
+        "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-B-MILNE-DEGREE",
+          "ARITH-ACTIVE-B-MILNE-DEGREE-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The actual reduction endomorphism used in the b trace comparison has a rational Tate trace independent of ell for ell different from p.",
+          "objects": "The b family reduction and the actual composite e_p of the reduced denominator-cleared isogeny with relative p-Frobenius.",
+          "hypotheses": "The chosen good-reduction comparison prime p permits specialization; the composite has the same source and target, and ell differs from p.",
+          "quantifiers": "For each good comparison prime p of this original b family, its actual reduction endomorphism e_p, and each coefficient prime ell different from p.",
+          "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+          "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+          "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+          "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+          "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+          "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+        },
+        "classification": "dependency",
+        "reason": "Relative p-Frobenius targets the sigma twist, and composition with the reduced isogeny returns to the original reduction. Apply the degree-polynomial theorem to this actual endomorphism; the remaining two-copy and scalar factors belong to the separate trace derivation.",
+        "shared_contract_justification": "The same fixed B family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/direct-p5-modularity-v1/FIVE-TO-THREE-SOURCES.md",
+              "sha256": "5552cf5078213c729ddb0939152b2a0fa5cf5cc8fa2e1a96e52320681f608366"
+            },
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt_sha256": "ad21187dd56a3b5e83e3e3b4626aea0d4ab71c302c91ea5ea99adc436fb517f6"
+          },
+          "statement": "For an abelian variety and rational endomorphism, the rational degree polynomial is its covariant Tate characteristic polynomial at every coefficient prime different from the ground-field characteristic.",
+          "publication": {
+            "title": "Abelian Varieties",
+            "authors": "James S. Milne",
+            "venue": "Arithmetic Geometry (1986), chapter Abelian Varieties",
+            "authoritative_version": "Original 1986 chapter, not the differently numbered later course notes",
+            "locator": "Printed page125, Proposition12.9 and preceding degree-polynomial definition",
+            "corrections": "Use coefficient primes different from the ground-field characteristic; retain the original-version numbering."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8277,
+          "end_line": 8316,
+          "excerpt_sha256": "ef796ee7348bfbd87dd1cfb7731ad9eb45db32d0ed93b7c13e3bedc0b8ee6619"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-B-MILNE-DEGREE",
+        "use_sha256": "bac7493476e8eb89c5aadc61dea067c528c2c77d0029a7a1395a679a2620629a",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For an abelian variety and rational endomorphism, the rational degree polynomial is its covariant Tate characteristic polynomial at every coefficient prime different from the ground-field characteristic.",
+          "objects": "An abelian variety D over a field k, a rational endomorphism alpha, and its covariant rational Tate modules.",
+          "hypotheses": "The coefficient prime ell is different from char(k).",
+          "quantifiers": "Every such D and alpha, and every permitted coefficient prime ell.",
+          "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+          "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+          "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+          "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+          "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+          "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+        },
+        "needed_assertion": {
+          "statement": "The actual reduction endomorphism used in the b trace comparison has a rational Tate trace independent of ell for ell different from p.",
+          "objects": "The b family reduction and the actual composite e_p of the reduced denominator-cleared isogeny with relative p-Frobenius.",
+          "hypotheses": "The chosen good-reduction comparison prime p permits specialization; the composite has the same source and target, and ell differs from p.",
+          "quantifiers": "For each good comparison prime p of this original b family, its actual reduction endomorphism e_p, and each coefficient prime ell different from p.",
+          "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+          "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+          "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+          "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+          "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+          "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+        },
+        "required_capabilities": [
+          "rational-prime-independent-endo-trace"
+        ],
+        "available_capabilities": [
+          "degree-polynomial-theorem"
+        ],
+        "derived_capabilities": [
+          "rational-prime-independent-endo-trace"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8277,
+            "end_line": 8316,
+            "excerpt_sha256": "ef796ee7348bfbd87dd1cfb7731ad9eb45db32d0ed93b7c13e3bedc0b8ee6619"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual reduction endomorphism used in the b trace comparison has a rational Tate trace independent of ell for ell different from p.",
+            "objects": "The b family reduction and the actual composite e_p of the reduced denominator-cleared isogeny with relative p-Frobenius.",
+            "hypotheses": "The chosen good-reduction comparison prime p permits specialization; the composite has the same source and target, and ell differs from p.",
+            "quantifiers": "For each good comparison prime p of this original b family, its actual reduction endomorphism e_p, and each coefficient prime ell different from p.",
+            "parameter_range": "Arbitrary ground field and rational endomorphism; denominators may first be cleared.",
+            "uniformity": "One rational degree polynomial equals the characteristic polynomial for every permitted ell.",
+            "constants": "The polynomial is monic of degree 2 dim(D); it has integral coefficients for an integral endomorphism.",
+            "normalizations": "Covariant rational Tate modules and Milne original 1986 degree-polynomial convention.",
+            "exceptional_cases": "No Tate module at ell=char(k) is used. Relative Frobenius alone between different twists is not an endomorphism.",
+            "limit_order": "Form an actual endomorphism, then apply the degree-polynomial theorem to extract the common trace."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Relative Frobenius alone may have a twisted target; only the composite is used. Clear denominators before specializing and exclude ell=p.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8277,
+              "end_line": 8316,
+              "excerpt_sha256": "ef796ee7348bfbd87dd1cfb7731ad9eb45db32d0ed93b7c13e3bedc0b8ee6619"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/direct-p5-modularity-v1/FIVE-TO-THREE-SOURCES.md",
+                "sha256": "5552cf5078213c729ddb0939152b2a0fa5cf5cc8fa2e1a96e52320681f608366"
+              },
+              "start_line": 5,
+              "end_line": 5,
+              "excerpt_sha256": "ad21187dd56a3b5e83e3e3b4626aea0d4ab71c302c91ea5ea99adc436fb517f6"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8277,
+            "end_line": 8316,
+            "excerpt_sha256": "ef796ee7348bfbd87dd1cfb7731ad9eb45db32d0ed93b7c13e3bedc0b8ee6619"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt_sha256": "9866d1888bb5aacf3753bbbee00733f5bd267a8bf8f1fb9156ff85aa53080f85"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-BETA-MODULARITY",
+    "before_sha256": "9e144213d415c4b1923d0c9a5e60e52f7d03b0ce9273e034560eb71abc3782ec",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-BETA-MODULARITY",
+        "consumer": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-BETA-MODULARITY",
+          "ARITH-ACTIVE-BETA-MODULARITY-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The original beta r_5 is the Tate realization of the selected primitive weight-two form.",
+          "objects": "For the D6 beta family only: The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+          "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+          "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+          "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+          "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+          "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+          "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+        },
+        "classification": "dependency",
+        "reason": "Specialize the generic rational-scalar-descent proof to t=a/beta: the actual cocycle identity, finite choices, full B and original embedding satisfy its hypotheses. The generic proof gives continuity, oddness, de Rham weights and the published prime-five conclusion, then the separately reviewed primitive/weight/finite-twist argument. This is the first-caller specialization; DIRECT-SECOND-CALLER is not its supplier.",
+        "shared_contract_justification": "The same fixed BETA family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 476,
+            "end_line": 680,
+            "excerpt_sha256": "cacd505e9680323c788b9748b662d11be0b7bc9bac22e5b513922cb97061cfe3"
+          },
+          "statement": "Under the rational scalar descent lemma hypotheses, the original five-adic factor is the Tate realization of a primitive weight-two newform after finite coefficient extension.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1438,
+          "end_line": 1442,
+          "excerpt_sha256": "bc226a08684a545a621215325115059752b0cd0dde45ee018c61230103b7a470"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-BETA-MODULARITY",
+        "use_sha256": "2c716eb73e1af9f9c69224e42afb6cecbbbd602c1365e8f559938f6ac1ec7e7e",
+        "supplier_passage_role": "inline_derivation",
+        "available_assertion": {
+          "statement": "Under the rational scalar descent lemma hypotheses, the original five-adic factor is the Tate realization of a primitive weight-two newform after finite coefficient extension.",
+          "objects": "The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+          "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+          "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+          "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+          "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+          "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+          "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+        },
+        "needed_assertion": {
+          "statement": "The original beta r_5 is the Tate realization of the selected primitive weight-two form.",
+          "objects": "For the D6 beta family only: The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+          "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+          "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+          "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+          "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+          "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+          "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+        },
+        "required_capabilities": [
+          "conclusion:beta-modularity"
+        ],
+        "available_capabilities": [
+          "source:beta-modularity"
+        ],
+        "derived_capabilities": [
+          "conclusion:beta-modularity"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1438,
+            "end_line": 1442,
+            "excerpt_sha256": "bc226a08684a545a621215325115059752b0cd0dde45ee018c61230103b7a470"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The original beta r_5 is the Tate realization of the selected primitive weight-two form.",
+            "objects": "For the D6 beta family only: The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+            "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+            "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+            "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+            "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+            "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+            "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+            "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+            "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight. Specialize the generic rational-scalar-descent proof to t=a/beta: the actual cocycle identity, finite choices, full B and original embedding satisfy its hypotheses. The generic proof gives continuity, oddness, de Rham weights and the published prime-five conclusion, then the separately reviewed primitive/weight/finite-twist argument. This is the first-caller specialization; DIRECT-SECOND-CALLER is not its supplier.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1438,
+              "end_line": 1442,
+              "excerpt_sha256": "bc226a08684a545a621215325115059752b0cd0dde45ee018c61230103b7a470"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 476,
+              "end_line": 680,
+              "excerpt_sha256": "cacd505e9680323c788b9748b662d11be0b7bc9bac22e5b513922cb97061cfe3"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1438,
+            "end_line": 1442,
+            "excerpt_sha256": "bc226a08684a545a621215325115059752b0cd0dde45ee018c61230103b7a470"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "ab89626b5046d8e70aa46fa2a42e92f419b3ae4f9c4f88eb86069f857c8ac897"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-B-MODULARITY",
+    "before_sha256": "3300b68645680f7377d9c85e6316f7dccae5560ec69aca068c89d8b52465e30f",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-B-MODULARITY",
+        "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-B-MODULARITY",
+          "ARITH-ACTIVE-B-MODULARITY-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The same original b r_5 and the final primitive form f are identified before comparing other primes.",
+          "objects": "For the D210 b family only: The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+          "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+          "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+          "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+          "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+          "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+          "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+        },
+        "classification": "dependency",
+        "reason": "The direct second-caller node uses t=a/b, the original field and factor. The absorbed finite delta is distinct from chi=b^2 and changes no controlled b-family object.",
+        "shared_contract_justification": "The same fixed B family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "DIRECT-SECOND-CALLER",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8270,
+            "end_line": 8276,
+            "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+          },
+          "statement": "The final primitive form f realizes original r_5. Its level N is still unbounded at this step.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8270,
+          "end_line": 8276,
+          "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-B-MODULARITY",
+        "use_sha256": "039257fb2598f9aa3df607a75333a089d4035bafcc03bddffb942049c7725b3d",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "The final primitive form f realizes original r_5. Its level N is still unbounded at this step.",
+          "objects": "The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+          "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+          "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+          "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+          "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+          "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+          "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+        },
+        "needed_assertion": {
+          "statement": "The same original b r_5 and the final primitive form f are identified before comparing other primes.",
+          "objects": "For the D210 b family only: The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+          "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+          "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+          "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+          "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+          "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+          "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+        },
+        "required_capabilities": [
+          "conclusion:b-modularity"
+        ],
+        "available_capabilities": [
+          "source:b-modularity"
+        ],
+        "derived_capabilities": [
+          "conclusion:b-modularity"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8270,
+            "end_line": 8276,
+            "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The same original b r_5 and the final primitive form f are identified before comparing other primes.",
+            "objects": "For the D210 b family only: The original r_5 from the rational scalar descent construction and the final primitive normalized weight-two form f.",
+            "hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+            "quantifiers": "The fixed original five-adic factor and its fixed coefficient embedding.",
+            "parameter_range": "The direct published prime-five theorem with its verified geometric inputs; arbitrary final nebentypus and coefficient field.",
+            "uniformity": "The finite twist is absorbed into the final form while A, the controlled cochain, L-prime and the original representations are retained.",
+            "constants": "The final weight is 2 and Tate normalization has weights 0,-1. No numerical bound on the modular level is obtained here.",
+            "normalizations": "Use t=a/eta. Select the primitive source before forcing weight two; the final finite character is distinct from chi=eta^2.",
+            "exceptional_cases": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+            "limit_order": "Establish the direct five-adic hypotheses, apply modularity, then primitive decomposition, weight comparison and the determinant finite twist."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight. The direct second-caller node uses t=a/b, the original field and factor. The absorbed finite delta is distinct from chi=b^2 and changes no controlled b-family object.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8270,
+              "end_line": 8276,
+              "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8270,
+            "end_line": 8276,
+            "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "ab89626b5046d8e70aa46fa2a42e92f419b3ae4f9c4f88eb86069f857c8ac897"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-BETA-CHEBOTAREV",
+    "before_sha256": "dc6ee992a766199d7fa5fa5bb544ab1653eb67336b72c1df9b062dc26356dc6d",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-BETA-CHEBOTAREV",
+        "consumer": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-BETA-CHEBOTAREV",
+          "ARITH-ACTIVE-BETA-CHEBOTAREV-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The original two trace functions agree on all G_Q.",
+          "objects": "For the D6 beta family only: Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+          "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+          "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+          "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+          "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+          "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+          "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+        },
+        "classification": "dependency",
+        "reason": "At5 the equality is an algebraic equality in the common number field. Transport through the preserved ell-adic embedding, then use cofinite Frobenius equality, conjugacy invariance and continuity over a finite extension of Q_ell.",
+        "shared_contract_justification": "The same fixed BETA family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "AC-CHEBOTAREV",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+              "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+            },
+            "start_line": 39,
+            "end_line": 39,
+            "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+          },
+          "statement": "Continuous conjugacy-invariant traces equal on a cofinite Frobenius set are equal on all of G_Q.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1469,
+          "end_line": 1473,
+          "excerpt_sha256": "cbaa25abc249f8679c88b5492c36892a5c7e955d5288af64c56f81a02c3ad779"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-BETA-CHEBOTAREV",
+        "use_sha256": "62c3aa951dd2d0d98ae3129e731bf5b9b07f335c80d639e82f62aace41623ae7",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Continuous conjugacy-invariant traces equal on a cofinite Frobenius set are equal on all of G_Q.",
+          "objects": "Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+          "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+          "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+          "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+          "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+          "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+          "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+        },
+        "needed_assertion": {
+          "statement": "The original two trace functions agree on all G_Q.",
+          "objects": "For the D6 beta family only: Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+          "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+          "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+          "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+          "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+          "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+          "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+        },
+        "required_capabilities": [
+          "conclusion:beta-chebotarev"
+        ],
+        "available_capabilities": [
+          "source:beta-chebotarev"
+        ],
+        "derived_capabilities": [
+          "conclusion:beta-chebotarev"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1469,
+            "end_line": 1473,
+            "excerpt_sha256": "cbaa25abc249f8679c88b5492c36892a5c7e955d5288af64c56f81a02c3ad779"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The original two trace functions agree on all G_Q.",
+            "objects": "For the D6 beta family only: Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+            "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+            "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+            "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+            "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+            "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+            "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+            "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+            "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice. At5 the equality is an algebraic equality in the common number field. Transport through the preserved ell-adic embedding, then use cofinite Frobenius equality, conjugacy invariance and continuity over a finite extension of Q_ell.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1469,
+              "end_line": 1473,
+              "excerpt_sha256": "cbaa25abc249f8679c88b5492c36892a5c7e955d5288af64c56f81a02c3ad779"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+                "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+              },
+              "start_line": 39,
+              "end_line": 39,
+              "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1469,
+            "end_line": 1473,
+            "excerpt_sha256": "cbaa25abc249f8679c88b5492c36892a5c7e955d5288af64c56f81a02c3ad779"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "ab89626b5046d8e70aa46fa2a42e92f419b3ae4f9c4f88eb86069f857c8ac897"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-B-CHEBOTAREV",
+    "before_sha256": "ec3c7f6cbc66571f91a1ca0447e635c9b2d788c4ae47a67faf76805eb9e69dbf",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-B-CHEBOTAREV",
+        "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-B-CHEBOTAREV",
+          "ARITH-ACTIVE-B-CHEBOTAREV-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The original two trace functions agree on all G_Q.",
+          "objects": "For the D210 b family only: Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+          "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+          "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+          "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+          "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+          "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+          "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+        },
+        "classification": "dependency",
+        "reason": "At5 the equality is an algebraic equality in the common number field. Transport through the preserved ell-adic embedding, then use cofinite Frobenius equality, conjugacy invariance and continuity over a finite extension of Q_ell.",
+        "shared_contract_justification": "The same fixed B family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "AC-CHEBOTAREV",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+              "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+            },
+            "start_line": 39,
+            "end_line": 39,
+            "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+          },
+          "statement": "Continuous conjugacy-invariant traces equal on a cofinite Frobenius set are equal on all of G_Q.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8330,
+          "end_line": 8339,
+          "excerpt_sha256": "1f88e573aaf8ce341c112b38903e874d244fae0aad06b262f13dc36c058555ab"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-B-CHEBOTAREV",
+        "use_sha256": "cb14329687adb28d03de90ce07c1c26fef92bac7290583823a585a5f2ca8417f",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Continuous conjugacy-invariant traces equal on a cofinite Frobenius set are equal on all of G_Q.",
+          "objects": "Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+          "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+          "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+          "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+          "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+          "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+          "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+        },
+        "needed_assertion": {
+          "statement": "The original two trace functions agree on all G_Q.",
+          "objects": "For the D210 b family only: Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+          "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+          "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+          "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+          "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+          "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+          "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+        },
+        "required_capabilities": [
+          "conclusion:b-chebotarev"
+        ],
+        "available_capabilities": [
+          "source:b-chebotarev"
+        ],
+        "derived_capabilities": [
+          "conclusion:b-chebotarev"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8330,
+            "end_line": 8339,
+            "excerpt_sha256": "1f88e573aaf8ce341c112b38903e874d244fae0aad06b262f13dc36c058555ab"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The original two trace functions agree on all G_Q.",
+            "objects": "For the D210 b family only: Two continuous conjugacy-invariant trace functions on G_Q with values in one finite extension of Q_ell.",
+            "hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+            "quantifiers": "Every g in G_Q for each fixed pair of trace functions and each fixed coefficient prime ell.",
+            "parameter_range": "The coefficient field carries its ell-adic topology; each density statement is for a finite quotient.",
+            "uniformity": "No effective or simultaneous varying-field density bound is claimed.",
+            "constants": "Only qualitative equality is concluded; no numerical Chebotarev constant is used.",
+            "normalizations": "Conjugacy classes, continuous traces and the same arithmetic-Frobenius convention.",
+            "exceptional_cases": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+            "limit_order": "Use finite-quotient Chebotarev to get dense conjugacy classes and then extend equality by continuity."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice. At5 the equality is an algebraic equality in the common number field. Transport through the preserved ell-adic embedding, then use cofinite Frobenius equality, conjugacy invariance and continuity over a finite extension of Q_ell.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8330,
+              "end_line": 8339,
+              "excerpt_sha256": "1f88e573aaf8ce341c112b38903e874d244fae0aad06b262f13dc36c058555ab"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+                "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+              },
+              "start_line": 39,
+              "end_line": 39,
+              "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8330,
+            "end_line": 8339,
+            "excerpt_sha256": "1f88e573aaf8ce341c112b38903e874d244fae0aad06b262f13dc36c058555ab"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "ab89626b5046d8e70aa46fa2a42e92f419b3ae4f9c4f88eb86069f857c8ac897"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-BETA-BRAUER-NESBITT",
+    "before_sha256": "506e7a1354bff7b142b78763f13be3f4fc9e124411349900f8a2dfc98553d92b",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-BETA-BRAUER-NESBITT",
+        "consumer": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-BETA-BRAUER-NESBITT",
+          "ARITH-ACTIVE-BETA-BRAUER-NESBITT-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+          "objects": "For the D6 beta family only: Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+          "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+          "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+          "uniformity": "The criterion applies after the one common finite coefficient extension.",
+          "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+          "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+          "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+        },
+        "classification": "dependency",
+        "reason": "Apply the characteristic-zero trace criterion after the common finite coefficient extension. It compares these modules, not a replacement family or a different newform.",
+        "shared_contract_justification": "The same fixed BETA family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "AC-BRAUER-NESBITT",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+              "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+            },
+            "start_line": 39,
+            "end_line": 39,
+            "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+          },
+          "statement": "Finite-dimensional characteristic-zero semisimple representations with equal characters are isomorphic.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1472,
+          "end_line": 1473,
+          "excerpt_sha256": "96f688a3c94159db70bd465b329e88ee4d7622fb1d1e91dd91c924fd66109327"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-BETA-BRAUER-NESBITT",
+        "use_sha256": "4fbda06a9917b8bb921ccbfed84138e6215bb192572bbcd793507ae3adb27091",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Finite-dimensional characteristic-zero semisimple representations with equal characters are isomorphic.",
+          "objects": "Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+          "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+          "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+          "uniformity": "The criterion applies after the one common finite coefficient extension.",
+          "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+          "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+          "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+        },
+        "needed_assertion": {
+          "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+          "objects": "For the D6 beta family only: Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+          "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+          "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+          "uniformity": "The criterion applies after the one common finite coefficient extension.",
+          "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+          "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+          "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+        },
+        "required_capabilities": [
+          "conclusion:beta-brauer-nesbitt"
+        ],
+        "available_capabilities": [
+          "source:beta-brauer-nesbitt"
+        ],
+        "derived_capabilities": [
+          "conclusion:beta-brauer-nesbitt"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1472,
+            "end_line": 1473,
+            "excerpt_sha256": "96f688a3c94159db70bd465b329e88ee4d7622fb1d1e91dd91c924fd66109327"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+            "objects": "For the D6 beta family only: Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+            "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+            "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+            "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+            "uniformity": "The criterion applies after the one common finite coefficient extension.",
+            "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+            "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+            "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+            "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No actual isomorphism of nonsemisimple modules follows at this stage. Apply the characteristic-zero trace criterion after the common finite coefficient extension. It compares these modules, not a replacement family or a different newform.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1472,
+              "end_line": 1473,
+              "excerpt_sha256": "96f688a3c94159db70bd465b329e88ee4d7622fb1d1e91dd91c924fd66109327"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+                "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+              },
+              "start_line": 39,
+              "end_line": 39,
+              "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1472,
+            "end_line": 1473,
+            "excerpt_sha256": "96f688a3c94159db70bd465b329e88ee4d7622fb1d1e91dd91c924fd66109327"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "ab89626b5046d8e70aa46fa2a42e92f419b3ae4f9c4f88eb86069f857c8ac897"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-B-BRAUER-NESBITT",
+    "before_sha256": "5c6b4d08f742586e8f10951ca3bfbbb5331c76b2e147a12aceec4a825fd99863",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-B-BRAUER-NESBITT",
+        "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-B-BRAUER-NESBITT",
+          "ARITH-ACTIVE-B-BRAUER-NESBITT-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+          "objects": "For the D210 b family only: Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+          "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+          "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+          "uniformity": "The criterion applies after the one common finite coefficient extension.",
+          "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+          "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+          "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+        },
+        "classification": "dependency",
+        "reason": "Apply the characteristic-zero trace criterion after the common finite coefficient extension. It compares these modules, not a replacement family or a different newform.",
+        "shared_contract_justification": "The same fixed B family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "AC-BRAUER-NESBITT",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+              "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+            },
+            "start_line": 39,
+            "end_line": 39,
+            "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+          },
+          "statement": "Finite-dimensional characteristic-zero semisimple representations with equal characters are isomorphic.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8337,
+          "end_line": 8339,
+          "excerpt_sha256": "68908027bbbf24d1c396dc94c025adacca30b4ef4e8570f5a91f3cffffcdc8b2"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-B-BRAUER-NESBITT",
+        "use_sha256": "0c37f911b4213d8dd242248b7de3696f0f6769781e8c888d02fc0985ad8a5bd0",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Finite-dimensional characteristic-zero semisimple representations with equal characters are isomorphic.",
+          "objects": "Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+          "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+          "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+          "uniformity": "The criterion applies after the one common finite coefficient extension.",
+          "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+          "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+          "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+        },
+        "needed_assertion": {
+          "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+          "objects": "For the D210 b family only: Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+          "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+          "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+          "uniformity": "The criterion applies after the one common finite coefficient extension.",
+          "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+          "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+          "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+        },
+        "required_capabilities": [
+          "conclusion:b-brauer-nesbitt"
+        ],
+        "available_capabilities": [
+          "source:b-brauer-nesbitt"
+        ],
+        "derived_capabilities": [
+          "conclusion:b-brauer-nesbitt"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8337,
+            "end_line": 8339,
+            "excerpt_sha256": "68908027bbbf24d1c396dc94c025adacca30b4ef4e8570f5a91f3cffffcdc8b2"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+            "objects": "For the D210 b family only: Finite-dimensional representations over a common characteristic-zero coefficient field and their semisimplifications.",
+            "hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+            "quantifiers": "Every group element and the two fixed finite-dimensional modules.",
+            "parameter_range": "Characteristic zero; the statement is the standalone semisimple character criterion.",
+            "uniformity": "The criterion applies after the one common finite coefficient extension.",
+            "constants": "The original geometric factor has dimension 2; equality of characters gives equal multiplicities of simple constituents.",
+            "normalizations": "The group-algebra character criterion is used, not a theorem requiring a Q-rational compatible system.",
+            "exceptional_cases": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+            "limit_order": "Establish equality on all group elements, extend linearly to the group algebra, and compare semisimplifications."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No actual isomorphism of nonsemisimple modules follows at this stage. Apply the characteristic-zero trace criterion after the common finite coefficient extension. It compares these modules, not a replacement family or a different newform.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8337,
+              "end_line": 8339,
+              "excerpt_sha256": "68908027bbbf24d1c396dc94c025adacca30b4ef4e8570f5a91f3cffffcdc8b2"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+                "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+              },
+              "start_line": 39,
+              "end_line": 39,
+              "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8337,
+            "end_line": 8339,
+            "excerpt_sha256": "68908027bbbf24d1c396dc94c025adacca30b4ef4e8570f5a91f3cffffcdc8b2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "ab89626b5046d8e70aa46fa2a42e92f419b3ae4f9c4f88eb86069f857c8ac897"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-BETA-LENGTH-ONE",
+    "before_sha256": "25b3d8a8abd07f0d286a45434e1d23ad506c4ffcbf9b30b7a35ded1306652898",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-BETA-LENGTH-ONE",
+        "consumer": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-BETA-LENGTH-ONE",
+          "ARITH-ACTIVE-BETA-LENGTH-ONE-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The actual beta U_f,ell, not only its semisimplification, is isomorphic to the original beta r_ell.",
+          "objects": "For the D6 beta family only: The actual modular realization U_f,ell and the same original absolutely irreducible r_ell.",
+          "hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+          "quantifiers": "Each fixed rational ell after the common finite coefficient extension.",
+          "parameter_range": "Finite-dimensional representations of the full G_Q, not only of an open subgroup.",
+          "uniformity": "The same final form and original geometric factor are retained.",
+          "constants": "U_f,ell has composition length one and dimension 2.",
+          "normalizations": "Semisimplification is removed by finite-length algebra, not by assuming independent modular semisimplicity.",
+          "exceptional_cases": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+          "limit_order": "Use the established semisimplified comparison and absolute irreducibility, then conclude an actual global isomorphism."
+        },
+        "classification": "dependency",
+        "reason": "Apply the already established beta absolute irreducibility and the length-one argument. The generic QM hypothesis is checked in beta-irreducible; it is not supplied by the D210 case.",
+        "shared_contract_justification": "The same fixed BETA family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "QM-SEMISIMPLE-BASE-CHANGE",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+              "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+            },
+            "start_line": 3,
+            "end_line": 11,
+            "excerpt_sha256": "efd925027340edca788c77f6dabc7fbc190cc8d4bd6c930765140597175248e0"
+          },
+          "statement": "Under the full-End, common-field and actual normalized Tate restriction hypotheses, every original primitive matrix-unit factor r_ell is absolutely irreducible.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1474,
+          "end_line": 1476,
+          "excerpt_sha256": "17bd13c715f09bb34a6b435625e92b5b298680cd243622c72a4b5c4e9ec18f20"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-BETA-LENGTH-ONE",
+        "use_sha256": "431be35eb17130d61902df7efcc60cf852422c7a0828432adf3f31620fc3f449",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Under the full-End, common-field and actual normalized Tate restriction hypotheses, every original primitive matrix-unit factor r_ell is absolutely irreducible.",
+          "objects": "V_ell(A), the split quaternion action, and the original primitive matrix-unit factor r_ell.",
+          "hypotheses": "L-prime is a number field defining all geometric endomorphisms, End^0(A_bar)=B, the normalized G_Q action commutes with B, and its G_L-prime restriction is actual Tate.",
+          "quantifiers": "Every rational ell, and every finite extension of its original splitting coefficient field.",
+          "parameter_range": "Characteristic-zero coefficient fields; the non-CM full-End=B case.",
+          "uniformity": "The geometric A and L-prime and the original factor remain fixed across coefficient primes.",
+          "constants": "The rank-four commutant is M_2(E_lambda); the rank-two factor has commutant E_lambda.",
+          "normalizations": "Use the original e_11. A change of matrix units is by an invertible quaternion element commuting with G_Q.",
+          "exceptional_cases": "ell=2 is included. Merely knowing B is contained in the endomorphism algebra is insufficient.",
+          "limit_order": "Apply Faltings, extend the finite linear commutant equations, preserve semisimplicity, and exclude nontrivial idempotents after every finite scalar extension."
+        },
+        "needed_assertion": {
+          "statement": "The actual beta U_f,ell, not only its semisimplification, is isomorphic to the original beta r_ell.",
+          "objects": "For the D6 beta family only: The actual modular realization U_f,ell and the same original absolutely irreducible r_ell.",
+          "hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+          "quantifiers": "Each fixed rational ell after the common finite coefficient extension.",
+          "parameter_range": "Finite-dimensional representations of the full G_Q, not only of an open subgroup.",
+          "uniformity": "The same final form and original geometric factor are retained.",
+          "constants": "U_f,ell has composition length one and dimension 2.",
+          "normalizations": "Semisimplification is removed by finite-length algebra, not by assuming independent modular semisimplicity.",
+          "exceptional_cases": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+          "limit_order": "Use the established semisimplified comparison and absolute irreducibility, then conclude an actual global isomorphism."
+        },
+        "required_capabilities": [
+          "conclusion:beta-length-one"
+        ],
+        "available_capabilities": [
+          "source:beta-length-one"
+        ],
+        "derived_capabilities": [
+          "conclusion:beta-length-one"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1474,
+            "end_line": 1476,
+            "excerpt_sha256": "17bd13c715f09bb34a6b435625e92b5b298680cd243622c72a4b5c4e9ec18f20"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual beta U_f,ell, not only its semisimplification, is isomorphic to the original beta r_ell.",
+            "objects": "For the D6 beta family only: The actual modular realization U_f,ell and the same original absolutely irreducible r_ell.",
+            "hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+            "quantifiers": "Each fixed rational ell after the common finite coefficient extension.",
+            "parameter_range": "Finite-dimensional representations of the full G_Q, not only of an open subgroup.",
+            "uniformity": "The same final form and original geometric factor are retained.",
+            "constants": "U_f,ell has composition length one and dimension 2.",
+            "normalizations": "Semisimplification is removed by finite-length algebra, not by assuming independent modular semisimplicity.",
+            "exceptional_cases": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+            "limit_order": "Use the established semisimplified comparison and absolute irreducibility, then conclude an actual global isomorphism."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "A nonzero proper submodule would give at least two composition factors and is therefore impossible. Apply the already established beta absolute irreducibility and the length-one argument. The generic QM hypothesis is checked in beta-irreducible; it is not supplied by the D210 case.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1474,
+              "end_line": 1476,
+              "excerpt_sha256": "17bd13c715f09bb34a6b435625e92b5b298680cd243622c72a4b5c4e9ec18f20"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+                "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+              },
+              "start_line": 3,
+              "end_line": 11,
+              "excerpt_sha256": "efd925027340edca788c77f6dabc7fbc190cc8d4bd6c930765140597175248e0"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1474,
+            "end_line": 1476,
+            "excerpt_sha256": "17bd13c715f09bb34a6b435625e92b5b298680cd243622c72a4b5c4e9ec18f20"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt_sha256": "00408723784285194ef15430da7d8eca65f7d1804a52bba1f0d81588536c461d"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  },
+  {
+    "use_id": "ARITH-ACTIVE-B-LENGTH-ONE",
+    "before_sha256": "7056842c2476cdfe3358157476bbb760de4ef4c12dc72f6d6a1dd8f87a403210",
+    "after_component": {
+      "origin": "v14-arithmetic-active-connections-author-002",
+      "use": {
+        "id": "ARITH-ACTIVE-B-LENGTH-ONE",
+        "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+        "passages": [
+          "ARITH-PASSAGE-B-LENGTH-ONE",
+          "ARITH-ACTIVE-B-LENGTH-ONE-SOURCE-COMPATIBILITY"
+        ],
+        "assertion": {
+          "statement": "The actual U_f,ell, not only its semisimplification, is isomorphic to r_ell.",
+          "objects": "For the D210 b family only: The actual modular realization U_f,ell and the same original absolutely irreducible r_ell.",
+          "hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+          "quantifiers": "Each fixed rational ell after the common finite coefficient extension.",
+          "parameter_range": "Finite-dimensional representations of the full G_Q, not only of an open subgroup.",
+          "uniformity": "The same final form and original geometric factor are retained.",
+          "constants": "U_f,ell has composition length one and dimension 2.",
+          "normalizations": "Semisimplification is removed by finite-length algebra, not by assuming independent modular semisimplicity.",
+          "exceptional_cases": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+          "limit_order": "Use the established semisimplified comparison and absolute irreducibility, then conclude an actual global isomorphism."
+        },
+        "classification": "dependency",
+        "reason": "Its semisimplification has exactly one irreducible composition factor because the original r_ell is absolutely irreducible. A proper nonzero submodule would create two factors. Thus length one gives the actual isomorphism.",
+        "shared_contract_justification": "The same fixed B family and coefficient-prime assertion is applied in the current main proof and again in the explicit all-prime compatibility proof. The two families remain separate and all original hypotheses are retained.",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8261,
+            "end_line": 8269,
+            "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+          },
+          "statement": "The original b-family factor r_ell is absolutely irreducible for every rational coefficient prime ell.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8340,
+          "end_line": 8345,
+          "excerpt_sha256": "cad10511416598c72323cf5f1a8b3ce8904e62b5a9fd3ae10bc116385fe754cb"
+        }
+      },
+      "connection": {
+        "use_id": "ARITH-ACTIVE-B-LENGTH-ONE",
+        "use_sha256": "89cb5ef60bfec51720a811a53702d26aa5291ddcacc26558fe6ecad0558ef00f",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "The original b-family factor r_ell is absolutely irreducible for every rational coefficient prime ell.",
+          "objects": "V_ell(A), the split quaternion action, and the original primitive matrix-unit factor r_ell.",
+          "hypotheses": "L-prime is a number field defining all geometric endomorphisms, End^0(A_bar)=B, the normalized G_Q action commutes with B, and its G_L-prime restriction is actual Tate.",
+          "quantifiers": "Every rational ell, and every finite extension of its original splitting coefficient field.",
+          "parameter_range": "Characteristic-zero coefficient fields; the non-CM full-End=B case.",
+          "uniformity": "The geometric A and L-prime and the original factor remain fixed across coefficient primes.",
+          "constants": "The rank-four commutant is M_2(E_lambda); the rank-two factor has commutant E_lambda.",
+          "normalizations": "Use the original e_11. A change of matrix units is by an invertible quaternion element commuting with G_Q.",
+          "exceptional_cases": "ell=2 is included. Merely knowing B is contained in the endomorphism algebra is insufficient.",
+          "limit_order": "Apply Faltings, extend the finite linear commutant equations, preserve semisimplicity, and exclude nontrivial idempotents after every finite scalar extension."
+        },
+        "needed_assertion": {
+          "statement": "The actual U_f,ell, not only its semisimplification, is isomorphic to r_ell.",
+          "objects": "For the D210 b family only: The actual modular realization U_f,ell and the same original absolutely irreducible r_ell.",
+          "hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+          "quantifiers": "Each fixed rational ell after the common finite coefficient extension.",
+          "parameter_range": "Finite-dimensional representations of the full G_Q, not only of an open subgroup.",
+          "uniformity": "The same final form and original geometric factor are retained.",
+          "constants": "U_f,ell has composition length one and dimension 2.",
+          "normalizations": "Semisimplification is removed by finite-length algebra, not by assuming independent modular semisimplicity.",
+          "exceptional_cases": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+          "limit_order": "Use the established semisimplified comparison and absolute irreducibility, then conclude an actual global isomorphism."
+        },
+        "required_capabilities": [
+          "conclusion:b-length-one"
+        ],
+        "available_capabilities": [
+          "source:b-length-one"
+        ],
+        "derived_capabilities": [
+          "conclusion:b-length-one"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8340,
+            "end_line": 8345,
+            "excerpt_sha256": "cad10511416598c72323cf5f1a8b3ce8904e62b5a9fd3ae10bc116385fe754cb"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual U_f,ell, not only its semisimplification, is isomorphic to r_ell.",
+            "objects": "For the D210 b family only: The actual modular realization U_f,ell and the same original absolutely irreducible r_ell.",
+            "hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+            "quantifiers": "Each fixed rational ell after the common finite coefficient extension.",
+            "parameter_range": "Finite-dimensional representations of the full G_Q, not only of an open subgroup.",
+            "uniformity": "The same final form and original geometric factor are retained.",
+            "constants": "U_f,ell has composition length one and dimension 2.",
+            "normalizations": "Semisimplification is removed by finite-length algebra, not by assuming independent modular semisimplicity.",
+            "exceptional_cases": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+            "limit_order": "Use the established semisimplified comparison and absolute irreducibility, then conclude an actual global isomorphism."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "A nonzero proper submodule would give at least two composition factors and is therefore impossible. Its semisimplification has exactly one irreducible composition factor because the original r_ell is absolutely irreducible. A proper nonzero submodule would create two factors. Thus length one gives the actual isomorphism.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8340,
+              "end_line": 8345,
+              "excerpt_sha256": "cad10511416598c72323cf5f1a8b3ce8904e62b5a9fd3ae10bc116385fe754cb"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8261,
+              "end_line": 8269,
+              "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8340,
+            "end_line": 8345,
+            "excerpt_sha256": "cad10511416598c72323cf5f1a8b3ce8904e62b5a9fd3ae10bc116385fe754cb"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-compatibility-sol-001/PROOF.md",
+              "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+            },
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt_sha256": "00408723784285194ef15430da7d8eca65f7d1804a52bba1f0d81588536c461d"
+          }
+        ]
+      }
+    },
+    "reason": "Additional actual application in the independently retained compatibility proof, not a supplier-statement self-import."
+  }
+]

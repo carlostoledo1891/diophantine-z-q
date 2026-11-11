@@ -1,0 +1,133 @@
+{
+  "schema": "bounded-source-review/v1",
+  "reviewed_at": "2026-11-09T08:21:39.411Z",
+  "target": {
+    "path": "v14-atkin-source-reconciliation-author-002/MANIFEST.json",
+    "sha256": "6186e24892d146c03180ebff1888ab4da9b39ff80da59a01aa8ed52202434d9b"
+  },
+  "decision": "accepted fresh six-observation reconciliation and three narrow incoming uses",
+  "initial": {
+    "path": "v14-final-composite-review-001/atkin-source-initial-001/INITIAL-SOURCE-USES.json",
+    "sha256": "1dd7d8261699cf79fb22882217a638ae3367dd7d538485376179a8dc6316d8c9"
+  },
+  "initial_passages": {
+    "path": "v14-final-composite-review-001/atkin-source-initial-001/INITIAL-PASSAGES.json",
+    "sha256": "161c1ef618aed874eaf1992cc254d3bd2623662086463f113b16c3121fa0bfe4"
+  },
+  "frozen_at": "2026-11-09T08:19:42.547Z",
+  "prior_exposure": "The source and full retained independent Atkin review were read before this true supplemental freeze; prior author summaries were known. No blind-first-reading claim. Fresh declared reconciliation comparison followed the freeze.",
+  "checks": {
+    "initial": [
+      {
+        "id": "ATKIN-SUP-001",
+        "assertion": true,
+        "passage": true
+      },
+      {
+        "id": "ATKIN-SUP-002",
+        "assertion": true,
+        "passage": true
+      },
+      {
+        "id": "ATKIN-SUP-003",
+        "assertion": true,
+        "passage": true
+      },
+      {
+        "id": "ATKIN-SUP-004",
+        "assertion": true,
+        "passage": true
+      },
+      {
+        "id": "ATKIN-SUP-005",
+        "assertion": true,
+        "passage": true
+      },
+      {
+        "id": "ATKIN-SUP-006",
+        "assertion": true,
+        "passage": true
+      }
+    ],
+    "raw_locations": [
+      {
+        "path": "research/version14/evidence/heegner-atkin-current/SOURCE-CONNECTION.md",
+        "start": 7,
+        "end": 7,
+        "ok": true
+      },
+      {
+        "path": "research/version14/evidence/heegner-atkin-current/SOURCE-CONNECTION.md",
+        "start": 11,
+        "end": 11,
+        "ok": true
+      },
+      {
+        "path": "manuscripts/quartic_v14.tex",
+        "start": 2588,
+        "end": 2657,
+        "ok": true
+      },
+      {
+        "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+        "start": 17,
+        "end": 22,
+        "ok": true
+      },
+      {
+        "path": "research/version14/evidence/heegner-atkin-current/SOURCE-CONNECTION.md",
+        "start": 19,
+        "end": 19,
+        "ok": true
+      }
+    ],
+    "uses": [
+      {
+        "id": "ACTIVE-ATKIN-SOURCE-DIFFERENTIAL-LINE",
+        "hash": true,
+        "assertion": true
+      },
+      {
+        "id": "ACTIVE-ATKIN-SOURCE-FIXED-QUOTIENT",
+        "hash": true,
+        "assertion": true
+      },
+      {
+        "id": "ACTIVE-ATKIN-SOURCE-CUSPIDAL-TORSION",
+        "hash": true,
+        "assertion": true
+      }
+    ]
+  },
+  "reasoning": [
+    "The literal Shimura differential statement is a supplier declaration. Its actual specialization at line11 uses the existing rational eigenquotient and nonzero characteristic-zero isogeny pullback, not W equivariance or a cusp exponent.",
+    "The fixed quotient is the same pi=alpha q_f based at infinity constructed in main2588–2657, whose source inputs remain distinct.",
+    "Lines15–17 are the explicit local calculation: stipulated W action makes the difference pullback zero; a nonvanishing invariant differential gives local constancy, connectedness gives constancy, and evaluation at infinity fixes the translation.",
+    "The cuspidal source is used at line19. Finite geometric cusps and torsion degree-zero classes generate a finite subgroup; its image has one positive exponent. Successor002 now concludes C_pi rather than assuming it.",
+    "All six original assertions/passages are unchanged. The source-only profile corrections and narrowed application hypotheses remove the initial circular/common-template fields."
+  ],
+  "reused_independent_review": {
+    "path": "v14-heegner-atkin-input-review-001/REVIEW.md",
+    "sha256": "8eda9dc5f157608b7bbce8f19fcf1f4d75a69375c17a28d6bf31a6e3e0e20b52"
+  },
+  "limits": [
+    "Conditional W eigen-action remains stipulated; no universal eigenvalue existence or root-number theorem is inferred.",
+    "No integral model extension, CM reduction, uniform exponent over varying levels, or full Heegner/RC closure.",
+    "This accepts an explicit new-source reconciliation, not retroactive inclusion in original92. Installation and final source-scope serialization remain separate."
+  ],
+  "freeze_record": {
+    "reviewer": "/root/v14_gi_selection_review",
+    "frozen_at": "2026-11-09T08:19:42.547Z",
+    "initial": {
+      "path": "v14-final-composite-review-001/atkin-source-initial-001/INITIAL-SOURCE-USES.json",
+      "sha256": "1dd7d8261699cf79fb22882217a638ae3367dd7d538485376179a8dc6316d8c9"
+    },
+    "initial_passages": {
+      "path": "v14-final-composite-review-001/atkin-source-initial-001/INITIAL-PASSAGES.json",
+      "sha256": "161c1ef618aed874eaf1992cc254d3bd2623662086463f113b16c3121fa0bfe4"
+    },
+    "method": "Read full23-line source and derive six clauses before reading detailed declared component or new reconciliation.",
+    "prior_exposure": "Author summaries and full independent review8eda9dc5 read before freeze. Not blind. No detailed component or new reconciliation read before freeze.",
+    "limitations": "Only new Atkin note; all previous snapshots unchanged. Conditional eigen-action and all separate source inputs retained."
+  }
+}

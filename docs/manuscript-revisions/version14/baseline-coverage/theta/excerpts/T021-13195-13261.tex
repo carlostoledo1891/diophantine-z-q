@@ -1,0 +1,67 @@
+Here are the real local convention and the exact length sequence used
+in (E.6). Put $T=T_2(E^h)$ and $D=E^h[2^\infty]$. Since $E^h[2]$ is
+rational, complex conjugation $J$ satisfies $J\equiv1\pmod2$.
+The integral projectors $(1\pm J)/2$ give $T=T^+\oplus T^-$.
+At the real place use the bounded Kummer complex
+\[
+ U_{\mathbf R}=\tau_{\le1}R\Gamma(\mathbf R,T)
+   =[\,T^+\oplus T^-\xrightarrow{\,J-1\,}T^-\,]
+\]
+in degrees zero and one, with its map to ordinary real cochains.
+Modulo $2^n$ its degree-zero cohomology is
+$T^+/2^n\oplus(T^-/2^n)[2]=E^h(\mathbf R)[2^n]$, and its degree-one
+image is the real Kummer line $T^-/2$. The latter can also be checked
+using a rectangular period lattice: dividing the nonidentity real
+component, represented by half the imaginary period, produces the
+minus-line cocycle. Thus this line is its exact annihilator under
+finite real Tate duality. The ordinary completion
+$E^h(\mathbf R)^\wedge_2[-1]$ alone would lose the first summand of
+degree-zero cohomology.
+
+At a finite place take the derived Kummer map from
+$E^h(\Q_v)^\wedge_2[-1]$. Its reduction has full local degree-zero
+cohomology and injective Kummer degree-one map. If $C_{\rm Sel}$
+denotes the resulting ordinary global Selmer cone, these assertions
+identify
+\[
+ H^1(C_{\rm Sel}\otimes^{\mathbf L}\Z/2^n)
+       =\operatorname{Sel}_{2^n}(E^h/\Q).
+\]
+At corank zero the discrete Selmer group is finite, the Mordell--Weil
+rank is zero, and its order is that of $\Sha[2^\infty]$. The
+orthogonal-Kummer specialization of finite Poitou--Tate duality
+\cite[5.7.1.4--5.7.1.7]{nekovar}, followed by the compact/discrete
+limits, gives
+\[
+\begin{split}
+0\longrightarrow L_2/J_2
+ \longrightarrow\operatorname{Sel}_{2^\infty}(E^h/\Q)^\vee
+ \longrightarrow H^2_{\rm glob}
+ \longrightarrow \bigoplus_{v\in S_f}H^2(\Q_v,T)\oplus H^2(\mathbf R,T)
+ \longrightarrow H^0(\Q,D)^\vee\longrightarrow0 ,
+\end{split}
+\]
+where $J_2$ is the image of global $H^1$. There is no real
+degree-one quotient: the compact real Kummer image is all of
+$H^1(\mathbf R,T)$, and its discrete orthogonal Kummer group is zero.
+At finite $v\ne2$ the compact Kummer image is likewise all of local
+$H^1$, while at two its quotient is $L_2$. The real degree-two term
+is retained. The finite-level images satisfy Mittag--Leffler, and
+high-degree localization at the real place terminates the sequence.
+
+This also makes $H^2_{\rm glob}$ finite. The cone sequence then
+makes $H^2(C_{\rm Sel})$ finite, and universal coefficients give
+\[
+ 0\to E^h(\Q)/2^n
+ \to\operatorname{Sel}_{2^n}(E^h/\Q)
+ \to H^2(C_{\rm Sel})[2^n]\to0.
+\]
+Comparison with the Kummer sequence gives
+$\ell H^2(C_{\rm Sel})=s(h)$, with no extra real torsion. Equivalently
+the cone sequence is
+\[
+0\to L_2/J_2\to H^2(C_{\rm Sel})\to H^2_{\rm glob}
+ \to \bigoplus_{v\in S_f}H^2(\Q_v,T)\oplus H^2(\mathbf R,T)
+ \to H^0(\Q,D)^\vee\to0.
+\]
+Its alternating lengths are exactly (E.6).

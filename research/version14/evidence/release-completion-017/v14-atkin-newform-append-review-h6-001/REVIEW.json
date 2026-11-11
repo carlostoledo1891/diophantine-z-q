@@ -1,0 +1,106 @@
+{
+  "item": "2.8.10",
+  "decision": "accepted as exact bounded serialization",
+  "reviewer": "/root/v14_h6_coverage",
+  "time": "2026-11-09T08:59:04.793Z",
+  "manifest_sha256": "c66a2470b8cec163c00138c4cfffe7eec0a4c133610ee3466ec7b3f355ab6594",
+  "checks": [
+    {
+      "path": "BEFORE.json",
+      "ok": true
+    },
+    {
+      "path": "COMPONENTS.json",
+      "ok": true
+    },
+    {
+      "path": "v14-atkin-newform-source-reconciliation-001/USE-LOCATION-DELTAS.json",
+      "ok": true
+    },
+    {
+      "path": "v14-atkin-newform-source-review-root-001/REVIEW.md",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-RC-AMIR-HONG-NEWFORM",
+      "before_matches": true,
+      "old_hash": true
+    },
+    {
+      "id": "ACTIVE-HEEGNER-ATKIN-BASED-FORMULA",
+      "before_matches": true,
+      "old_hash": true
+    }
+  ],
+  "exact_replay": true,
+  "diff": [
+    {
+      "path": "/0/use/passages/1",
+      "after": "ACTIVE-RC-AMIR-HONG-NEWFORM-ATKIN-NOTE-1"
+    },
+    {
+      "path": "/0/use/shared_contract_justification",
+      "before": null,
+      "after": "The same already constructed primitive rational weight-two form at its conductor is used in the Atkin theorem application."
+    },
+    {
+      "path": "/0/connection/use_sha256",
+      "before": "201b7e21ee36216e3f6494b4d5e52fe264708220b928b6cd13c06a60a7a5284a",
+      "after": "a58c8ad75364126ef1240735a9286e1d9e0c5f5d0b27c97143351febd9338b84"
+    },
+    {
+      "path": "/0/connection/consumer_locations/1",
+      "after": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-newform-input-001/SOURCE-CONNECTION.md",
+          "sha256": "d80e8c4e1b8df11af13a3eb3dd6b9d27326334c8e79ac8edfd0820f12a183a1f"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "d7e028b5be8ca0be38f144238632358f48f028c2357111225d3a3f8a8e8f22c4"
+      }
+    },
+    {
+      "path": "/1/use/passages/2",
+      "after": "ACTIVE-HEEGNER-ATKIN-BASED-FORMULA-ATKIN-NOTE-1"
+    },
+    {
+      "path": "/1/use/shared_contract_justification",
+      "before": "Main3827–3830 and the supporting note23–27 assert the same based quotient formula and cusp translation.",
+      "after": "Main3827–3830 and the supporting note23–27 assert the same based quotient formula and cusp translation. This invokes the same conditional based formula after the independent eigen-action is supplied; it does not use that formula to establish the eigen-action."
+    },
+    {
+      "path": "/1/connection/use_sha256",
+      "before": "9f47258db8c3de5214d74f26847afee6293b18e452eabd84e743c8d88c0a6f2d",
+      "after": "f8b738d4d55c71de5662cbd7debbf1a05a6d374d2f0695ddb29aa4231d13f049"
+    },
+    {
+      "path": "/1/connection/consumer_locations/2",
+      "after": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-newform-input-001/SOURCE-CONNECTION.md",
+          "sha256": "d80e8c4e1b8df11af13a3eb3dd6b9d27326334c8e79ac8edfd0820f12a183a1f"
+        },
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt_sha256": "103893cf0543dcc352638d1c6b083e64614fc5d84ecf1895f2cdff3500cce941"
+      }
+    },
+    {
+      "path": "/1/consumer_locations/2",
+      "after": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/atkin-newform-input-001/SOURCE-CONNECTION.md",
+          "sha256": "d80e8c4e1b8df11af13a3eb3dd6b9d27326334c8e79ac8edfd0820f12a183a1f"
+        },
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt_sha256": "103893cf0543dcc352638d1c6b083e64614fc5d84ecf1895f2cdff3500cce941"
+      }
+    }
+  ],
+  "limits": "Implements only the two previously reviewed consumer-location appends. Original assertions, suppliers, derivations and hypotheses remain unchanged. No new mathematical, source-index or global coverage acceptance."
+}

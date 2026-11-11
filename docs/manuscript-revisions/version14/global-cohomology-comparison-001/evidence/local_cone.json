@@ -1,0 +1,36 @@
+{
+  "author": "/root/v14_sign_conductor",
+  "source": {
+    "title": "Selmer Complexes",
+    "authors": "Jan Nekovar",
+    "version": "Asterisque310(2006)",
+    "path": "work/nekovar-selmer-complexes-2006.pdf",
+    "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+    "locator": "7.1.1–7.2.4, printed155–160, especially exact triangle157 and Frobenius action159"
+  },
+  "consumer_location": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+    },
+    "start_line": 13840,
+    "end_line": 13861,
+    "excerpt_sha256": "2f8a52e9118634339cef0a1b46a728e76259cbfb7c8b990657b08858eadac7d5"
+  },
+  "available": "At a residue prime different from the coefficient prime, the explicit tame cochain complex computes local cohomology. Its unramified subcomplex has quotient quasi-isomorphic to the two-term complex on inertia H1 in degrees1 and2. Wild invariants are taken first. The Frobenius action on inertia H1 is the cohomological conjugation action, not in general the action on inertia invariants.",
+  "needed": "For each odd q, the rational unramified-to-full local cone for the actual cyclotomic Tate twist is [W_q tensor A -> W_q tensor A] in degrees1,2, with differential1-sigma_q^(-1) Fr_(W_q), where W_q=H1(I_q,V chi). At good inactive q its determinant is the retained Euler factor; at good active q the cone is zero.",
+  "argument": [
+    "Take the source tame complex after wild invariants. The cyclotomic coefficient module is unramified at q, so flat coefficient extension commutes with the inertia kernel and cokernel. The quotient is the two-term inertia H1 complex of the source.",
+    "The source chooses geometric Frobenius. Inverting that invertible action and multiplying a differential by its negative inverse gives the isomorphic arithmetic-Frobenius complex. The actual coefficient convention sends arithmetic Frobenius to sigma_q^(-1), hence the differential in the caller. This is an isomorphism of complexes, not a literal equality of the two Frobenius matrices.",
+    "At a good inactive q the Tate module and chi are unramified. Tame inertia H1 is Hom_cont(Z2(1),V chi)=V chi(-1), so arithmetic Frobenius is q^(-1) times its action on V chi. Its determinant is1-a_q chi(q) sigma_q^(-1)/q+sigma_q^(-2)/q, the exact K9 convention.",
+    "At a good active q the original Tate module is unramified and the ramified quadratic character acts as-1 on tame inertia. On rational coefficients t-1=-2 is invertible. Its invariant and coinvariant spaces vanish, so W_q=0 and the determinant is1.",
+    "For bad q retain H1(I_q,V chi) itself. There is no replacement by V^I chi(-1). Frobenius on W_q is invertible. The cyclotomic exponent of q is nonzero, since an odd positive prime is not a torsion unit in Z2^times. Thus sigma_q is a nonconstant formal power series. The nonzero polynomial det(1-X Fr_W) cannot vanish at that series, since a formal series algebraic over Q2 is constant. The determinant is nonzero; over the domain A its square matrix is injective. The adjugate identity proves injectivity after every height-one localization as well."
+  ],
+  "incoming": [
+    "The actual coefficient convention and K9 polynomial already established in the norm construction.",
+    "Good reduction implies unramified Tate representation at q different from2; the active quadratic character is ramified there.",
+    "The global comparison between j-star cohomology and cochains on the open arithmetic scheme requires the separate localization identification; this local source does not itself assert that global triangle."
+  ],
+  "limits": "This verifies the local K16 representation and its active/inactive cases. It does not by itself identify the global subscript-zero groups, prove old local central determinants nonzero, or establish local H2 vanishing."
+}

@@ -1,0 +1,24 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "saved_at": "2026-11-09T06:58:03.259Z",
+  "target_sha256": "28a1262c59fe5d218576530516cdbe245a43fc4d8b047e89e9cc6500d04fc751",
+  "decision": "accepted bounded decoding and predicate-dictionary imports",
+  "checks": [
+    {
+      "id": "ACTIVE-ORIGINAL-LITERAL-POLYNOMIAL-DECODING",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true
+    },
+    {
+      "id": "ACTIVE-ORIGINAL-LITERAL-PREDICATE-DICTIONARY",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true
+    }
+  ],
+  "reason": "Read actual13036–13241, including the full dictionary and shared-kappa composition. The fixed bytes specify constants and entire callee roots with private witnesses, while the dictionary identifies the saved root with Val. The original semantic predicate proofs and finite wiring/regeneration checks remain separate; neither supplies the other.",
+  "limits": "No new finite replay, no expanded polynomial claim, no substitution of later quartic artifacts, no whole-main coverage acceptance."
+}

@@ -1,0 +1,61 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T09:48:32.198Z",
+  "status": "proposed actual-caller relationships, awaiting independent comparison",
+  "proof": {
+    "path": "research/version14/evidence/finite-field-halving-inputs-001/PROOF.md",
+    "sha256": "e56cdfed6ad896391ac2543d86153ece6499c7c7789feb925ba7a89ac465f548"
+  },
+  "relationships": [
+    {
+      "id": "FINITE-NORM-FIBERS-TO-MAIN17572",
+      "supplier_lines": [
+        5,
+        7
+      ],
+      "consumer": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 17572,
+        "end_line": 17575,
+        "excerpt_sha256": "842faef370d90c72d4331ccc63c6006106339668381eb641f004533446596148"
+      },
+      "available": "For every odd ell, x²+y² has ell-chi(ell) representations of each nonzero value and ell+(ell-1)chi(ell) representations of zero.",
+      "needed": "The exact norm-fiber counts used in the first sentence of the finite-field-count proof.",
+      "connection": "Substitute the caller odd prime ell. The split and inert alternatives are precisely chi(ell)=1 and -1. No later summation or sieve statement is supplied.",
+      "retained_inputs": [
+        "Oddness of ell, already part of ell not dividing 2kappa.",
+        "Subsequent solution-count summations are local downstream arguments."
+      ]
+    },
+    {
+      "id": "NECESSARY-HALVING-TO-MAIN17037",
+      "supplier_lines": [
+        13,
+        21
+      ],
+      "consumer": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 17037,
+        "end_line": 17047,
+        "excerpt_sha256": "050fb91ce64e51a42f167c67b0d4035d96aeb54ad4b6dbc3a152a09ae52c4d1f"
+      },
+      "available": "On a nonsingular split cubic in characteristic not two, 2Q=(e_i,0) requires each e_i-e_j to be a square. Under actual p not dividing6ell, p=1mod4 and ell nonsquare, none of the three nonzero two-torsion points is divisible by two, so the finite two-primary subgroup has order four.",
+      "needed": "Absence of halves and v2(p+1-a_p)=2 for the identified reduction curve.",
+      "connection": "Use the preceding caller identification with roots0,ell,-3ell and its excluded finite support. Apply the necessary condition to -ell,ell,-4ell. The split cubic has exactly four rational points killed by two; elementary finite abelian group structure then gives order four.",
+      "retained_inputs": [
+        "Actual selected prime conditions and good reduction from main17029–17036.",
+        "Chord-and-tangent group law and nonsingular split model.",
+        "Identification #E(F_p)=p+1-a_p and the earlier competing mod8 congruence."
+      ]
+    }
+  ],
+  "scope": "These are source-to-caller relationships, not declarations that all upstream arithmetic premises or final roots are closed."
+}

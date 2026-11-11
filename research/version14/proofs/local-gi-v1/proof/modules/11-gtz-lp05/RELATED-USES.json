@@ -1,0 +1,78 @@
+{
+  "schema": "gtz-lp05-related-uses/v1",
+  "mechanism": "Equivariance of an orbit does not imply invariance after applying an arbitrary vertical test function. Also track factorial normalization through actual consumers.",
+  "scope": "Read E.8(v),(vii), all E.9/E.10 construction and worked example, and Section 13 pp.1316-1322 for every symmetry-based identification. Broader GTZ correction completeness is LP00, not claimed here.",
+  "sources": [
+    {
+      "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+      "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "bytes": 1300898
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "R01",
+      "locator": "E.9 statement and proof, pp.1357-1359",
+      "candidate_reason": "Raw equivariance to asserted literal symmetry",
+      "author_assessment": "Original arbitrary F-tilde does not establish invariance; proposed repair U08 covers the full one-block output.",
+      "status": "repair proposed; non-author decision pending"
+    },
+    {
+      "id": "R02",
+      "locator": "E.10 statement and omitted-proof join, pp.1363-1364",
+      "candidate_reason": "Same arbitrary-F construction with block permutations",
+      "author_assessment": "U07/U08 prove the block version explicitly, including C=product d_i! and C^2 division.",
+      "status": "repair proposed; non-author decision pending"
+    },
+    {
+      "id": "R03",
+      "locator": "E.9 worked Heisenberg example, pp.1360-1363",
+      "candidate_reason": "Schematic symmetric bracket phase and division by 2",
+      "author_assessment": "The source explicitly calls the function only piecewise Lipschitz and the sequence almost a nilcharacter. It is illustrative and supplies no exact output in this packet. U08 replaces the exact general construction.",
+      "status": "excluded as a supplier; no acceptance of the schematic example"
+    },
+    {
+      "id": "R04",
+      "locator": "(13.4), Theta and (13.5), p.1316",
+      "candidate_reason": "Literal last s-1 symmetry of the chosen output",
+      "author_assessment": "U09 supplies the exact output and multiplier on the same domain. Theta is the identical diagonal.",
+      "status": "repair proposed; independent join decision pending"
+    },
+    {
+      "id": "R05",
+      "locator": "Lemma 13.2 proof, p.1317: other variables follow from symmetry",
+      "candidate_reason": "Relabeling proof coordinates versus invariant test function",
+      "author_assessment": "This is symmetry of the theorem and construction under relabeling, not a claim that an arbitrary F(g) is invariant. The substantive Lemma 13.2 replacement is Theta lemma13-2-002, outside this packet except Section 2 geometry.",
+      "status": "mechanism inapplicable; lemma acceptance remains separate"
+    },
+    {
+      "id": "R06",
+      "locator": "Expansion before (13.7), p.1318",
+      "candidate_reason": "Collecting terms by symmetry of the last s-1 variables",
+      "author_assessment": "U09 supplies literal equality for each block permutation, so the symmetry identification itself is available. Expansion also needs Lemma 13.2; that entire derivation has not been accepted here.",
+      "status": "symmetry interface checked by author; composite inference pending"
+    },
+    {
+      "id": "R07",
+      "locator": "(13.7), p.1318 and conclusion p.1322",
+      "candidate_reason": "Symmetry exchanging first and later variables",
+      "author_assessment": "Source explicitly says it does not follow automatically and uses correlation. U08 does not supply this stronger symmetry.",
+      "status": "outside LP05 proof; remains a separate required Section 13 argument"
+    },
+    {
+      "id": "R08",
+      "locator": "Lemma 13.3 gathering terms, p.1319",
+      "candidate_reason": "Binomial grouping in last s-1 slots",
+      "author_assessment": "U09 supplies exact last-block symmetry. Printed surrounding a/b and degree statements need their own check; no blanket validation of Lemma 13.3.",
+      "status": "symmetry interface supplied; full lemma review pending"
+    },
+    {
+      "id": "R09",
+      "locator": "Lemmas 13.4-13.5 and (13.13)-(13.17), pp.1320-1322",
+      "candidate_reason": "Multilinear expansion and factorial from permutations of n slots",
+      "author_assessment": "Literal last-block equality is available from U09, but multilinearity, signs and shifts are distinct. New F03 records exact printed sign/index discrepancies.",
+      "status": "open related consumer; not repaired by symmetry alone"
+    }
+  ],
+  "coverage_decision": "Pending non-author related-use coverage decision."
+}

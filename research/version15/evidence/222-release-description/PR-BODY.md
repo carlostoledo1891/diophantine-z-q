@@ -1,0 +1,13 @@
+Version 15 adds a quartic family in **222 total rational variables**, including the input, with **2,277 nonzero coordinate monomials**. The manuscript retains the original huge construction and the 314-variable quartic with every coefficient written in decimal.
+
+The new family is a positive integer weighted sum of 196 quadratic residuals, equivalent to 428 repeated squares. Its fixed coefficient parameter is A_N = 149^(2N+1), not an extra variable. For N >= 53 its exact coefficient height is A_N² + 1. The assertion that it defines the integers requires N >= N0 for a separate **ineffective threshold N0**. No specific N, including 53, is certified as a defining member.
+
+Compared with public Version 14's 299-variable symbolic quartic and 314-variable decimal quartic, this adds the smaller parameterized family, its complete derivation, the final 196 equations, exact coordinate maps, coefficient tables, and portable finite checks. The original and 314-variable results remain separate constructions. The retained decimal table has 6,672 monomials, occupies 264,430 bytes, and has coefficients below 2^6496.
+
+The reduction chain includes a new four-contact arithmetic step, shared alternate ratios, reference-coordinate elimination, paired detector factors and root normalizations, and a final trace quotient. The four-contact step has its own arithmetic completeness argument; the entire chain is not presented as a witness bijection.
+
+- [Current 546-page manuscript](research/version15/snapshots/v15-222-004/manuscript/quartic_v15.pdf) and [matching TeX](research/version15/snapshots/v15-222-004/manuscript/quartic_v15.tex).
+- [Reproduction guide](research/version15/quartics/quartic-222/README.md), [selected sparse table](research/version15/quartics/quartic-222/tables/sparse222-polynomial.json), and [construction chain](research/version15/quartics/quartic-222/CHAIN.json).
+- [Independent rational-map/domain review](research/version15/quartics/quartic-222/provenance/trace-quotient-review-019/REVIEW.json) and [independent finite expansion review](research/version15/quartics/quartic-222/provenance/quartic222-finite-review-integration-001/REVIEW.json).
+
+The source-to-equation review matches all 196 printed residuals, coefficient abbreviations, weights and ordered affine maps to the accepted artifacts. The matching PDF compiled in three successful passes with resolved references and passed bounded visual QA. Finite checks establish the recorded algebra and coefficient data; the arithmetic argument has its separately scoped reviews. Final assembled coverage, authenticated gate results and publication binding remain pending and must be recorded from the actual release run.

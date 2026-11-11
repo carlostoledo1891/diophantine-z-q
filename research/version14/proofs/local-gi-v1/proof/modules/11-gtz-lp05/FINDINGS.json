@@ -1,0 +1,66 @@
+{
+  "schema": "gtz-lp05-findings/v1",
+  "findings": [
+    {
+      "id": "LP05-F01",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898
+      },
+      "locator": "p.1359, two function displays and (E.3)",
+      "finding": "Missing factorial powers fail to cancel the top phase on graph(X,d! X).",
+      "history": "The separate author erratum p.6 explicitly identifies these omissions; this is not a new historical discovery.",
+      "proposed_repair": "proof.tex (11)-(12) retain F^tensor C and chi^tensor C, with a direct top-phase calculation.",
+      "related_use_ids": [
+        "R01",
+        "R02",
+        "R04",
+        "R08",
+        "R09"
+      ],
+      "status": "author repair proposed, independent acceptance and manuscript incorporation pending"
+    },
+    {
+      "id": "LP05-F02",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898
+      },
+      "locator": "p.1359 arbitrary auxiliary F-tilde followed by clear symmetry; E.10 pp.1363-1364 inherits it",
+      "finding": "Equivariant g-tilde and arbitrary vertical F-tilde do not establish literal symmetric chi-tilde.",
+      "history": "New connecting argument required within the read scope. Checked final E.9/E.10 and corresponding author-v5 construction; no claim that all historical literature lacks a repair.",
+      "proposed_repair": "proof.tex (13)-(15): normalized nonvanishing symmetric tensor product; exact m-fold diagonal and C^2 division of original input.",
+      "related_use_ids": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09"
+      ],
+      "status": "author repair proposed; arbitrary-F inference remains recorded as unsupported, not a counterexample to the theorem"
+    },
+    {
+      "id": "LP05-F03",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898
+      },
+      "locator": "pp.1321-1322, (13.14)-(13.17)",
+      "finding": "The printed shifts use sum_j omega_j h_(s-2) rather than h_j. Even after correcting that index, the printed C^|omega| and (-1)^|omega| yield (-1)^(s-2)(s-2)! on an (s-2)-linear diagonal, whereas (13.16) prints +s!.",
+      "evidence": "PDF pages 91-92 visually inspected. For r=1, A(n)-A(n+h)=-A(h); in general only assignments using every shift survive the alternating sum, each with sign (-1)^r, and there are r! such assignments.",
+      "history": "Located in bounded related-use reading; no whole-history search or independent decision yet.",
+      "proposed_repair": "Section 13 author/reviewer must determine exact corrected shifts and sign, and recheck downstream zero-symbol inference. The overall sign may be immaterial to that zero consequence, but the printed exact identity still needs disposition.",
+      "related_use_ids": [
+        "R09"
+      ],
+      "status": "open follow-up outside LP05 theorem claim; reported to root and Theta"
+    }
+  ]
+}

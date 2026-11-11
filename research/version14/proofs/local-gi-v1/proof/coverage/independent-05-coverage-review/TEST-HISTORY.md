@@ -1,0 +1,3 @@
+The first reviewer-checker run stopped at the reviewer's ID-set assertion. It generated `S911-U9` but the actual author ID is `S911-U09`. Only the reviewer fixture was corrected to use two-digit IDs. No producer file was changed and this was not reported as a producer defect. The subsequent run checks the same seven author records.
+
+Second reviewer-check expectation correction: the proof-only ZIP includes PROOF-ONLY-MANIFEST.json itself in addition to its listed payload. The first exact-set assertion omitted that expected entry. Inspection showed precisely that one extra entry and no missing payload. The corrected check verifies the manifest bytes separately and every payload byte. No author artifact was changed.

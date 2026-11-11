@@ -1,0 +1,82 @@
+--- frozen-8867/quartic_v15.tex
++++ proposed-030/quartic_v15.tex
+@@ -253,8 +253,7 @@
+ both byte representations denote exactly the same integer polynomial,
+ with the same variables and bounds. The shipped
+ \nolinkurl{construction/SOURCE_MANIFEST.json} records both identities and
+-the normalization; the companion \texttt{SOURCE\_MAP.json} retains the
+-historical source references.
++the normalization; the same manifest retains the historical source references.
+ 
+ \subsection{Literal operations and witness scope}
+ A scalar node is a variable, integer constant, sum, product, or a call to
+@@ -30613,29 +30612,39 @@
+ \end{equation}
+ \end{lemma}
+ \begin{proof}
+-Choose an $L'$-homomorphism $A\to J$ with finite kernel, and
+-let $A_0\subset J$ be its image. It is an abelian surface over
+-$L'$ and is $L'$-isogenous to $A$.
+-The stable version of R\'emond's subvariety inequality
+-\cite[Corollary~1.2 and the paragraph following Corollary~1.3]{v15-height-Remond}
+-gives
+-\[
+- \hF(A_0)+\hF(J/A_0)\le\hF(J).
+-\]
+-Bost's lower bound in the original normalization is
+-$\hF(B)\ge-\log(\pi\sqrt2)\dim B>-3\dim B/2$.
+-Thus $\hF(A_0)\le H_J$.
+-
+-Apply \cite[Theorem~1.9(1)]{v15-height-GaudronRemond} with source $A_0$
++Apply the construction in the published proof of
++\cite[Lemma~16.2(1), pp.~97--98]{v15-height-GaudronRemond}
++over the fixed field $L'$ to $J$. It gives an $L'$-isogenous
++abelian variety $J_0$, a product over $L'$ of simple abelian varieties,
++with $\hF(J_0)\le\hF(J)$. Since $A$ is an $L'$-isogeny factor
++of $J_0$, uniqueness of simple factors up to $L'$-isogeny, with
++multiplicities, selects a subproduct $B$ that is $L'$-isogenous to $A$.
++Write $J_0=B\times E$; then $\dim B=2$ and $\dim E=g-2$.
++Additivity of stable Faltings height on products and Bost's lower bound
++in the original normalization give
++\[
++ \hF(B)=\hF(J_0)-\hF(E)
++ \le\hF(J)+3(g-2)/2\le H_J.
++\]
++Here the lower bound is
++$\hF(E)\ge-\log(\pi\sqrt2)\dim E>-3\dim E/2$
++when $\dim E>0$, and $\hF(E)=0$ when $\dim E=0$;
++see \cite[\S2.3 and Corollary~8.4]{gr2014}.
++The direct supplier for the product construction is the published
++2023 proof just cited; that proof in turn uses R\'emond's 2022
++height results \cite{v15-height-Remond} and his 2017 results.
++This use does not remove those underlying dependencies.
++
++Apply \cite[Theorem~1.9(1)]{v15-height-GaudronRemond} with source $B$
+ and target $A$, both over $L'$. In dimension two it supplies an
+ isogeny of degree at most
+ \[
+- \left(14^{32}d'\max(1,\log d',\hF(A_0))\right)^{16}.
++ \left(14^{32}d'\max(1,\log d',\hF(B))\right)^{16}.
+ \]
+ Stable Faltings height increases under an isogeny of degree $D$
+-by at most $\frac12\log D$; see also
+-\cite[Proposition~2.1]{v15-height-Remond}. Replacing $\hF(A_0)$ by $H_J$
+-proves \eqref{v15:height:eq:surface}.
++by at most $\frac12\log D$; see \cite[\S2.3]{gr2014}.
++Replacing $\hF(B)$ by $H_J$ proves
++\eqref{v15:height:eq:surface}.
+ \end{proof}
+ 
+ The field $L'$ in this lemma is the field on which the surface
+@@ -30722,8 +30731,9 @@
+ \begin{proof}
+ Set $M=M_5(a)$ and $R=B_*M$. In the non-CM alternative, let
+ $H=\ker\varepsilon$ and $t_H=\operatorname{ord}\varepsilon$.
+-Since $\varepsilon^2$ is trivial on $G_{L'}$, its image order
+-divides $[L':\Q]$. Hence
++Since $\varepsilon^2$ is trivial on $G_{L'}$, the image of
++$\varepsilon^2$ has order dividing $[L':\Q]$. Therefore
++$\operatorname{ord}(\varepsilon)\le2[L':\Q]$, and hence
+ \[
+  t_H\le2[L':\Q]\le4608\varphi(R).
+ \]

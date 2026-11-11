@@ -1,0 +1,58 @@
+{
+  "installed_by": "/root",
+  "requested_by": "/root/v14_gi_constructors",
+  "previous_writer": "g7:127 terminated as reported by writer; actual destinations checked before writes",
+  "files": [
+    {
+      "name": "CUMULATIVE-HANDOFF.md",
+      "sha256": "b6b0f83ef2876356a51d71ca077d056504d30299a877cc8951243905a8b6c4ca",
+      "bytes": 3339,
+      "already_present": false
+    },
+    {
+      "name": "CUMULATIVE-HANDOFF.json",
+      "sha256": "2a3681bc015e4f0ce73e18fc4ea62cefac31ed9ff9bf2f087841b4589f0e14ad",
+      "bytes": 56601,
+      "already_present": false
+    },
+    {
+      "name": "verify-handoff.py",
+      "sha256": "dc3a77b4997575e0fe4ab11a753fca9d2e5bbb884fda67da989d86319279d070",
+      "bytes": 2825,
+      "already_present": false
+    }
+  ],
+  "independent_review": {
+    "path": "v14-gi-handoff-placement-review-001/REVIEW.md",
+    "sha256": "26703f92532ca30470f9fb93797d8a831581327e798d943ca2262ecaa2ac5794"
+  },
+  "unchanged_full_manifest": "6bd2c5a0f632d908f94540622fe96ec378a6f79c983d3aca3e9ba26d350a8201",
+  "unchanged_full_zip": "d4aa92224ff373410a8e63073d0f829f80f55ad81be5dda357872a88822c0ae0",
+  "checks": [
+    {
+      "name": "full_canonical",
+      "dir": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1",
+      "script": "verify.py",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"manifest\": \"PROOF-ONLY-MANIFEST.json\",\r\n  \"files_checked\": 286,\r\n  \"failures\": []\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "name": "reduced_fixture",
+      "dir": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-gi-handoff-placement-002/reduced-fixture",
+      "script": "verify-handoff.py",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"scope\": \"reduced cumulative GI only; not full package or mathematical/gate acceptance\",\r\n  \"retained_checked\": 279,\r\n  \"excluded_full_manifest_members\": 7,\r\n  \"exact_file_set\": true,\r\n  \"failures\": []\r\n}\r\n",
+      "stderr": ""
+    },
+    {
+      "name": "full_directory_rejected_by_reduced_verifier",
+      "dir": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1",
+      "script": "verify-handoff.py",
+      "exit_code": 1,
+      "stdout": "{\"scope\": \"reduced cumulative GI\", \"failure\": \"missing/extra files: ['proof/guide/cover.pdf', 'proof/history/source-before-current/00-assembly/assembly.pdf', 'proof/history/source-before-current/03-gtz-lp13-multilinearity/proof.pdf', 'proof/history/source-before-current/04-gtz-lp02-03/proof.pdf', 'proof/history/source-before-current/06-gi-multifactor/proof.pdf', 'proof/history/source-before-current/10-gi-rank/proof.pdf', 'proof/history/source-before-current/14-gtz-lp-increment-linearization/proof.pdf']\"}\r\n",
+      "stderr": ""
+    }
+  ],
+  "final_git_derived_selection": "pending frozen source commit and actual selection"
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "v14-source-role-relationship/1",
+  "author": "/root/v14_arithmetic_author",
+  "status": "proposed for independent review",
+  "id": "REL-KATO-GLOBAL-JSTAR-OPEN-COMPARISON",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+    },
+    "start_line": 13811,
+    "end_line": 13838,
+    "excerpt_sha256": "920d77866eecbd9f60fb3be700bc95343ca6cb7b455443f57c55791a9d8af7c6"
+  },
+  "available_sources": [
+    {
+      "path": "work/astra-kato-primary-001/kato-1999.pdf",
+      "sha256": "483dc18c56b2fe9cfac4e37f2e6594399625c3f0ea98a05bb69116377c67fc06",
+      "pages": "314,316 (PDF2,4)"
+    },
+    {
+      "path": "work/kato-2004.pdf",
+      "sha256": "3c6e14b11fa60262db8aff782ce3cf4d83e9100c0be83621a7e4ce502cec605d",
+      "pages": "180–181,219–220 (PDF65–66,104–105)"
+    },
+    {
+      "tag": "03Q9",
+      "url": "https://stacks.math.columbia.edu/tag/03Q9",
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\source-risk-review-20261107\\stacks-03Q9-03QA-download-root-001\\local-only\\03Q9.html",
+      "sha256": "5821c51ab4e389b75768e7325758209859c56f7c9a29d589c8a6be3d7d375f48",
+      "bytes": 18979
+    },
+    {
+      "tag": "03QA",
+      "url": "https://stacks.math.columbia.edu/tag/03QA",
+      "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\source-risk-review-20261107\\stacks-03Q9-03QA-download-root-001\\local-only\\03QA.html",
+      "sha256": "18b9c7e277b11ffb8b921386556b24fe5131277c3f41a81aba2bdce867ddf218",
+      "bytes": 15051
+    },
+    {
+      "path": "work/source-risk-review-20261107/v14-stacks-09ej-root-001/09EJ.html",
+      "sha256": "d20df674819ef8dc3bee92b8a193ae4b38de67ccd2b0443e967cf168119bff44",
+      "url": "https://stacks.math.columbia.edu/tag/09EJ",
+      "locator": "Lemma15.115.2"
+    },
+    {
+      "path": "work/source-risk-review-20261107/stacks-early-model-download-root-001/local-only/04GE.html",
+      "sha256": "89d0ae2fc39e588308d217d5676c7960864aef11009514c68845392c02ee45e0",
+      "url": "https://stacks.math.columbia.edu/tag/04GE",
+      "locator": "10.153.2–4,10.153.7"
+    }
+  ],
+  "source_scope": [
+    "Kato1999: definitions of the actual etale groups and their coefficient/tower limits, finiteness of finite coefficient etale cohomology; subscript-zero means kernel of all local restrictions.",
+    "Kato2004: ordinary generic direct image before cohomology and coefficient limits; trace Iwasawa limits in12.2.",
+    "Stacks03Q9: derived geometric-stalk formula for qcqs maps;03QA: derived global sections compose with direct image (injective acyclicity/Leray). These supply sheaf computation, not an arithmetic K(pi,1) theorem."
+  ],
+  "actual_assertion": "After tensoring Q2, choosing the actual rational sign component and localizing at the stated height-one prime, the natural restriction map from the j_* convention to the open-etale convention is an H1 isomorphism and identifies H2 in the j_* convention with the kernel of the odd local H2 restrictions. Intersecting with restriction kernel at2 identifies the two subscript-zero groups and preserves the same retained Euler-system class and coordinate ideal.",
+  "derivation": [
+    {
+      "step": 1,
+      "text": "Fix finite cyclotomic layer K and coefficient M=T/2^aT. Put X=Spec O_K[1/2], U=Spec O_K[1/N_sup], where N_sup is divisible by2 and every prime in the actual odd ramification support (including the fixed twist); it is the support modulus N of Kato1999 and is not identified with the elliptic conductor, i:U→X and j:Spec K→X. The representation is unramified on U, so its finite locally constant sheaf there, also denoted M, satisfies i_*M=j_*M. At points of U inertia acts trivially, and at the deleted points both ordinary direct images have stalk M^I. No derived direct image is substituted for ordinary j_*."
+    },
+    {
+      "step": 2,
+      "text": "Use the adjunction triangle i_*M→Ri_*M→Q. Its first map induces the identity on degree0; its cone has no nonpositive cohomology. The cone restricts to zero on U. By03Q9, at a geometric point over a deleted odd prime its derived stalk is Cone(M^I→RΓ(I,M)). The quotient is supported on the finite closed complement; etale sheaves supported there are direct images of the residue-field sheaves (checked on geometric stalks), and these direct images are exact. Thus RΓ(X,Q) is the finite direct sum of RΓ(k_v,Cone(M^I→RΓ(I,M))). This is also the local cone Cone(RΓ(k_v,M^I)→RΓ(K_v,M)), via the inertia/residue cochain double complex. The identification is the natural restriction one. No absolute-purity identification or etale-vs-G_S comparison is being assumed."
+    },
+    {
+      "step": 3,
+      "text": "Apply derived global sections. By03QA the middle term is RΓ(U,M); the first is the actual Kato2004 finite coefficient j_* group. This gives the global localization triangle whose third term is the sum of the unramified-to-full local cones. The tame local computation, including the inertia H1 Frobenius action, is supplied by the accepted separate odd-inertia packet; no generic inertia invariants replacement is made at bad primes."
+    },
+    {
+      "step": 4,
+      "text": "Take coefficient and cyclotomic inverse limits with the actual coefficient transitions and trace maps. Work on the cofinal imaginary cyclotomic layers. The open finite-coefficient cohomology is finite as explicitly recorded by Kato1999 §0.1; local finite-coefficient cohomology is finite and the above exact sequence gives finite j_* cohomology as well. The relevant systems of finite groups have the Mittag-Leffler property; hence their first derived inverse limits vanish. Equivalently a cofinal diagonal in the two countable indices gives the same limit and no extra cohomology term. Traces along the cyclotomic tower are compatible with the triangle and local restrictions: the maps are finite etale on X (only2 ramifies), and local terms use sums over places. Thus the resulting cohomology is precisely the ordinary inverse-limit convention of both sources, rather than an unchecked replacement by a derived complex."
+    },
+    {
+      "step": 5,
+      "text": "Only now tensor Q2, take the rational sign idempotent, and localize. These operations are exact. The already accepted local-cone input identifies the odd summands with two-term complexes in degrees1,2 with injective differential at this localization. Thus H0 and H1 of their sum vanish, proving H1(C_j)→H1(C_U) is an isomorphism and H2(C_j) injects into H2(C_U) with image the kernel of the map to H2 of the local cones."
+    },
+    {
+      "step": 6,
+      "text": "For each odd place the unramified local complex RΓ(k_v,M^I) has no cohomology above1 (finite-field 2-cohomological dimension1). Its exact triangle therefore identifies H2 of the local cone with full local H2, by the natural local restriction map. The same finite-limit argument retains that identification in the Iwasawa groups. Consequently the image in step5 is exactly the kernel of all odd local H2 restrictions. Compatibility with the still separate restriction at2 identifies the two subscript-zero kernels. Infinity adds no term on the cofinal imaginary tower."
+    },
+    {
+      "step": 7,
+      "text": "All maps are natural restrictions of the very same compatible Euler-system classes, not norm-rescaled substitutes. The H1 isomorphism after localization carries the actual class to itself. Its coordinate/evaluation ideal is preserved: the finitely generated Iwasawa H1 modules are finitely presented over the Noetherian Iwasawa algebra, so Hom and its evaluation image commute with localization. This does not prove the nonvanishing, class hypotheses or Theorem0.8 anew."
+    }
+  ],
+  "retained_input": {
+    "path": "work/source-risk-review-20261107/v14-odd-inertia-cone-input-001/SOURCE-RELATIONSHIP.json",
+    "sha256": "f2d504be87a12ff819d77ba9658cd2f146b0cf3985ec740134c45056c36356a7",
+    "review": "work/source-risk-review-20261107/v14-odd-inertia-review-arithmetic-001/REVIEW.json",
+    "review_sha256": "b90dd3f00c4928e4d92b619122b629b86e38cc759bf304c3cde76d97563f2b24"
+  },
+  "limits": [
+    "Actual finite ramification support, coefficient lattice, chosen sign/prime, nonzero odd local determinants, and accepted local tame cochain computation remain explicit inputs.",
+    "C_U means etale cochains on the open arithmetic scheme. No K(pi,1) assertion equating it to G_S cochains is required or supplied.",
+    "This source-role derivation does not change any canonical manuscript or source file, nor independently accept the whole Kato application."
+  ],
+  "citation_correction": "Exact proposed caller clarification is supplied in TEX-EDITS.json; no canonical write performed.",
+  "henselian_completion_bridge": {
+    "scope": "Actual henselization F of the number field at a finite place and its completion K_v; both have characteristic0. This is a local finite-separable-category equivalence, not an arithmetic-scheme K(pi,1) claim.",
+    "argument": [
+      "For any henselian valued field F of this form, a separable algebraic root alpha in its completion belongs to F. Multiply its polynomial to integral coefficients and choose a in F sufficiently close to alpha. With s=v(fprime(a)), choose the approximation so v(f(a))>2s. The polynomial f(a+fprime(a)Y)/fprime(a)^2 has integral coefficients, constant term in the maximal ideal and linear coefficient1. Its other coefficients are integral after first taking a and alpha integral and f integral. Hensel10.153.3(2) gives a root Y in the maximal ideal; uniqueness in the small ball10.153.2 identifies the resulting root with alpha. Thus F is relatively algebraically closed in its completion in characteristic0.",
+      "Every monic factor over the completion of a separable polynomial over F has coefficients algebraic over F, since they are symmetric expressions in its roots. Therefore a separable irreducible polynomial over F remains irreducible over the completion. For finite L/F, tensoring with the completion is the completed field of L. The valued field L is henselian; applying the preceding root argument to L shows every embedding between completed finite extensions comes from the unique F-embedding between the original fields. This proves full faithfulness. In the present arithmetic situation integral closures are finite and henselian by10.153.4.",
+      "Stacks09EJ supplies essential surjectivity: each finite separable extension of the completed field is its tensor product with a finite separable F-extension. Hence the finite etale field categories, and their absolute Galois groups up to the chosen separable closures, are equivalent.",
+      "The equivalence preserves finite unramified extensions and their residue fields by10.153.7 (finite etale algebras over a henselian valuation ring are classified by residue extensions). Consequently it identifies the residue quotient and its inertia kernel, including arithmetic Frobenius. It is compatible with finite extension restriction and trace/corestriction.",
+      "Thus the strict-henselian fraction-field inertia appearing in03Q9 is the same inertia representation and cochain complex as that in completed K_v. The local endpoint and its unramified subcomplex in step2 are identified through this equivalence, not by identifying the two fields literally."
+    ]
+  }
+}

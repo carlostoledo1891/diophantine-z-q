@@ -1,0 +1,285 @@
+{
+  "schema": "source-role-relationships/v1",
+  "scope": "Five exact pending records, split into seven distinct source/derivation relationships. No blanket source ancestry closure.",
+  "rows": [
+    {
+      "id": "RC-PRINCIPAL-RING-CLASS-SPLITTING",
+      "original_pending_index": 14,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3986,
+        "end_line": 3997,
+        "excerpt_sha256": "f1c26822dfc0a4ec3a05a4f7537cb25e48f688771320c2032dc46bd6a79d5479"
+      },
+      "available": "The ring-class Artin quotient kills principal ideles and completed order units; it is unramified away from the conductor.",
+      "needed": "The inert K-prime (ell), prime to fn_I, splits completely in H_(fn_I), and its residue field is F_(ell^2).",
+      "derivation": "The invertible prime ideal equals the rational principal ideal (ell), hence has trivial class in Pic(O_(fn_I)). Unramifiedness and trivial arithmetic Frobenius give complete splitting. Since ell is inert in K/Q, its base residue degree is two; complete splitting does not turn it into an F_ell residue field. This gives F² Xbar=Xbar. The norm and CM reduction identities in H13 remain separate.",
+      "premises": [
+        "Actual imaginary K and allowed conductor fn_I; ell inert, new and prime to conductor; same class-field Artin convention.",
+        "The restriction identity H11 and point norm/reduction identities are separate inputs."
+      ],
+      "sources": [
+        {
+          "retained_use_id": "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE",
+          "source_path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+          "sections": "1–3, especially rational principal inert ideals in section2"
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    },
+    {
+      "id": "RC-ELLIPTIC-FROBENIUS-POLYNOMIAL",
+      "original_pending_index": 14,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3991,
+        "end_line": 4004,
+        "excerpt_sha256": "b8150501b97d57af205b271f26c433af1c3b5305400cf85d51e6c77acc0df5c0"
+      },
+      "available": "For E/F_q, the q-power endomorphism satisfies F²-aF+q=0 in End(E), with a=q+1-#E(F_q).",
+      "needed": "At the good rational prime ell the actual elliptic reduction satisfies F²-a_ell F+ell=0, giving the displayed old finite coordinate.",
+      "derivation": "Apply the endomorphism identity over F_ell before extending points to F_(ell²). The equation remains true on every algebraic point, including division points. It gives H14 and the polynomial manipulation H17; divisibility of its coefficients does not make the value zero on a division point.",
+      "premises": [
+        "Good reduction of the fixed E/Q at ell.",
+        "The Fourier coefficient equals the elliptic point-count trace in the retained modularity identification."
+      ],
+      "sources": [
+        {
+          "path": "work/theorem-application-audit-20261105/parallel-009/restoration-check/work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Silverman, The Arithmetic of Elliptic Curves, second edition (2009)",
+          "locator": "V Theorem2.3.1(b), printed142–143, PDF159–160",
+          "additional_consumer": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4042,
+            "end_line": 4045,
+            "excerpt_sha256": "bd2d18f823db9c3290e604bc119c8eb1cf5c28f88b2c1ac9c7ec417334493593"
+          }
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    },
+    {
+      "id": "RC-PRIME-TO-ELL-REDUCTION",
+      "original_pending_index": 15,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4034,
+        "end_line": 4049,
+        "excerpt_sha256": "c1680471d60dd2b40c566233e073b1e03496d0e1cba7a3d9f0784ec252e4367c"
+      },
+      "available": "At good reduction, reduction is injective on m-torsion when m is prime to the residue characteristic. Reduction is equivariant and inertia acts trivially on the algebraic residue field.",
+      "needed": "Reduction is injective on E[2^a] and all algebraic reductions are inertia-fixed, as used in the singular-coordinate computation.",
+      "derivation": "Any finite set of algebraic points is defined over a finite local extension. Good reduction persists there; apply VII3.1(b) with m=2^a and ell odd. Equivariance of the good model and the definition of inertia give the first sentence. The integral quotient-point comparison has already bounded epsilon by2^e; a-m>=e kills it under reduction of torsion precision.",
+      "premises": [
+        "Good model and fixed place above odd ell; inertia is for that place.",
+        "H12, the exact Kummer representative and bounded epsilon argument H15 are retained; this source alone does not give s_new=J f_old."
+      ],
+      "sources": [
+        {
+          "path": "work/theorem-application-audit-20261105/parallel-009/restoration-check/work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Silverman, The Arithmetic of Elliptic Curves, second edition (2009)",
+          "locator": "VII Proposition3.1(b), printed192, PDF208"
+        },
+        {
+          "retained_use_id": "ACTIVE-THETA-SOURCE-SILVERMAN-TORSION-REDUCTION",
+          "boundary": "Reuse the general source assertion, not its unrelated degree<=4 specialization."
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    },
+    {
+      "id": "RC-FORMAL-UNIT-INVERSE",
+      "original_pending_index": 16,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4057,
+        "end_line": 4069,
+        "excerpt_sha256": "20ed1b8fd7be66a3b311fa82d65e104047b0c3e7d6fb41048a8b3e9c250e4a93"
+      },
+      "available": "For a formal group over R, [m](T)=mT+O(T²), and if m is a unit it has an inverse over R. Over a complete local ring these series converge on the maximal ideal.",
+      "needed": "Multiplication by2^a is invertible on the actual formal kernel over the upper local field; correcting a residue lift gives an actual local division point.",
+      "derivation": "Here2 is a unit since ell is odd. IV2.3(b), proved using IV2.4, supplies the integral inverse, and IV3 evaluates it. Lift the F_(ell²)-rational division point using the smooth good model, subtract its multiple from LD_ellY, and correct the resulting formal-kernel discrepancy. This needs no unramified logarithm/isometry assertion and remains valid in the ramified upper field.",
+      "premises": [
+        "The residue division point exists by H18 and2^(a+1)|(ell+1).",
+        "The upper extension has the stated residue field; smooth lifting and the formal-kernel identification VII2.1–2.2 remain required.",
+        "The conclusion about the cocycle uses its actual restricted Kummer identity and H12, not merely existence of a formal inverse."
+      ],
+      "sources": [
+        {
+          "path": "work/theorem-application-audit-20261105/parallel-009/restoration-check/work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Silverman, The Arithmetic of Elliptic Curves, second edition (2009)",
+          "locator": "IV Proposition2.3(a,b), Lemma2.4 printed122; IV§3 printed123–124; VII2.1–2.2 printed188–191"
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    },
+    {
+      "id": "RC-ORDINARY-KUMMER-UCT",
+      "original_pending_index": 23,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4939,
+        "end_line": 4950,
+        "excerpt_sha256": "0f99705d4d92599decbfbceaa83c2765e886964abb6206bf7b78597898733406"
+      },
+      "available": "For the actual bounded finite-free ordinary compact Kummer complex, derived tensor with Q2/Z2 gives 0→H1(C)⊗Q2/Z2→H1(C⊗^LQ2/Z2)→H2(C)_tors→0. Integral shift-three Kummer self-duality identifies the corresponding torsion and free dual groups.",
+      "needed": "The displayed H1 torsion, full discrete Selmer quotient and dual free ranks, including any divisible Sha contribution.",
+      "derivation": "Use the retained proof at6218–6243: rational torsion finiteness gives H0(C)=0; the Kummer sequence identifies H1 torsion. Over Z2, tensor the two-term resolution of Q2/Z2 (or decompose a bounded free complex into Smith disks) to obtain the exact sequence, with Tor1(H2,Q2/Z2)=H2_tors. The first term is divisible and the quotient finite, so it is the maximal divisible subgroup: a divisible subgroup has zero image in a finite group. Apply the separately supplied integral self-duality, not finite-Sha, for H3 torsion and the free pairing.",
+      "premises": [
+        "Actual ordinary Kummer cone and local degree-zero identifications; bounded perfect model and coefficient-change compatibility.",
+        "Exact orthogonal Kummer local conditions and integral shift-three duality.",
+        "The full-corank assumption is separate; no finite-Sha inference is made here."
+      ],
+      "sources": [
+        {
+          "retained_use_id": "ACTIVE-RC-NEKOVAR-SELMER-DUALITY"
+        },
+        {
+          "proof_location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 6202,
+            "end_line": 6246,
+            "excerpt_sha256": "a161bb04e29ba7251c63340d80cc606f7f738398cea891588c1e0d30e63d6dca"
+          }
+        },
+        {
+          "path": "work/theorem-application-audit-20261105/parallel-009/theta-local/ACCEPTANCE-REPORT.md",
+          "section": "A045; retain A037/A038/A075/A082 dependencies"
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    },
+    {
+      "id": "RC-KNOWN-SIMPLE-ZERO-ISOGENY",
+      "original_pending_index": 23,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4952,
+        "end_line": 4962,
+        "excerpt_sha256": "a111244fb3257cf0722d436d0fb37f1629aa2789337d97ce15976b308f585d9f"
+      },
+      "available": "The retained Milne arithmetic isogeny formula applies with finite Sha and the specified canonical heights and pullback/Neron measure conventions, without assuming the BSD leading-term equality.",
+      "needed": "Use that formula for A=Res_(K/Q)E^(h) and B=E^(h)×E^(hk) at known simple-zero constituents only.",
+      "derivation": "The forward theorem and nonzero companion supply finite Sha. The dual sum/difference maps compose to[2]; on the rank-one free groups IJ=2. Use the detailed same-object orientation and differential conversion at5014–5048. This earlier invocation imports that actual formula; it does not extend finite Sha to the unknown base.",
+      "premises": [
+        "Known simple zero and nonzero companion; actual dual maps, rank-one lattices and chosen measures.",
+        "Local component evaluation remains separate."
+      ],
+      "sources": [
+        {
+          "retained_use_id": "ACTIVE-RC-MILNE-ISOGENY-RATIO"
+        },
+        {
+          "proof_location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4982,
+            "end_line": 5048,
+            "excerpt_sha256": "aebe1e1de67802d6b459f0fdba0a64d47fb4d65dee425c04ee0030353bb3e0cd"
+          }
+        },
+        {
+          "path": "work/source-risk-review-20261107/v14-isogeny-components-root-002/MANIFEST.json"
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    },
+    {
+      "id": "RC-ZERO-DERIVATIVE-CONDUCTOR-ONE-HEIGHT",
+      "original_pending_index": 25,
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 5273,
+        "end_line": 5280,
+        "excerpt_sha256": "5fda35817d637fe7f31a4b3d7c34d4a986a0a51508e733db5a9d7dbb2d803726"
+      },
+      "available": "The retained CST Theorem1.1 gives the unaveraged conductor-one point height from the Rankin derivative for the same parametrization; canonical height zero on an algebraic elliptic point is equivalent to torsion.",
+      "needed": "For the actual base point over K, Lprime(E/K,1)=0 implies torsion and thus zero rational Kummer class, with the same L and retained boundary.",
+      "derivation": "Apply the conductor-one formula at the fixed K and actual parametrization, with its nonzero normalization factors. A zero derivative gives zero canonical height. Silverman VIII9.3(d) makes the point torsion, so its rational Kummer image is zero. The actual boundary(4.5) then sends this to zero specialization of z. No rank-one or finite-Sha assumption is inferred from the vanishing derivative.",
+      "premises": [
+        "Actual imaginary K split at level, conductorone prime to level, no extra-unit case; same normalized parametrization and point.",
+        "The finite-free primitive complex, integral paired functional and boundary(4.5) are separate retained inputs.",
+        "This does not assert a new normalization or a numerical lower bound on nonzero heights."
+      ],
+      "sources": [
+        {
+          "retained_use_id": "ACTIVE-THETA-SOURCE-CST-UNAVERAGED-HEIGHT",
+          "boundary": "Use the general conductor-one theorem with the present K, not the other genus-character specialization."
+        },
+        {
+          "path": "work/theorem-application-audit-20261105/parallel-009/restoration-check/work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Silverman, The Arithmetic of Elliptic Curves, second edition (2009)",
+          "locator": "VIII Theorem9.3(d), printed248–250, PDF263–265"
+        },
+        {
+          "proof_location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4795,
+            "end_line": 4805,
+            "excerpt_sha256": "ce8da32a3d429bd5578409d342b2a5373d150a1f5df596ca3eaced8be903404d"
+          }
+        },
+        {
+          "proof_location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4640,
+            "end_line": 4658,
+            "excerpt_sha256": "c2e2928d6bef0657a8d93b73455dadc6cd43e8c85bf01bc7c6703453b004e1e5"
+          }
+        }
+      ],
+      "status": "author proposal; independent comparison required"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "origin": "v14-h6-good-reduction-tate-input-001",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-H6-GOOD-REDUCTION-TATE",
+      "consumer": "H6-FULL-ENDOMORPHISM-FIELD-HODGE",
+      "passages": [
+        "ACTIVE-H6-GOOD-REDUCTION-TATE-P1"
+      ],
+      "assertion": {
+        "statement": "For each good place of the actual A/K above p outside T and every coefficient prime ell different from p, inertia acts trivially on V_ell(A).",
+        "objects": "The original abelian surface A/K and its actual ell-adic Tate module at a good place above p.",
+        "hypotheses": "A has the established good abelian model at that place and ell differs from p. The local field has its usual strict henselization.",
+        "quantifiers": "Every such place and each coefficient prime ell different from p.",
+        "parameter_range": "Good finite places of the actual number field K; no claim at ell=p.",
+        "uniformity": "No additional exceptional primes or field replacement.",
+        "constants": "No quantitative bound.",
+        "normalizations": "Actual torsion of A with multiplication transition maps.",
+        "exceptional_cases": "Bad reduction and residue-characteristic torsion are excluded.",
+        "limit_order": "Finite-etale torsion splits over the strict henselization at every level, then pass to the inverse limit. The separate induced representation argument follows."
+      },
+      "classification": "dependency",
+      "reason": "Apply the existing prime-to-residue-characteristic finite-etale specialization argument to this actual good A/K. Torsion over the strict henselization is unramified at every ell-power level, hence inertia fixes its Tate module. This is the good-reduction implication cited in the manuscript; no assertion about the induced representation or endomorphism lattice follows without the separate arguments.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/direct-p5-modularity-v1/FIVE-TO-THREE-CONNECTION.md",
+            "sha256": "56d613891398cb485f88aedd69c53f3afdb34a8cb167b89d4527e2538920fb35"
+          },
+          "start_line": 25,
+          "end_line": 25,
+          "excerpt_sha256": "c37f2f6be4960e583881324a64fef68fd297390869bf9bb6c154bda0b4b6398f"
+        },
+        "statement": "Prime-to-residue-characteristic torsion of a good abelian scheme specializes bijectively over the strict henselian base, compatibly with transition maps and homomorphisms."
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1209,
+        "end_line": 1213,
+        "excerpt_sha256": "e3370d3b46a73b7b8b2ca444c586df17b6002c7b9f6bc918aa16a5670e52e6b0"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-H6-GOOD-REDUCTION-TATE",
+      "use_sha256": "17c90b7100bd738fad99db10d0cdbb313b9c1097c1235594a64c5ba056af58be",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "Prime-to-residue-characteristic torsion of a good abelian scheme specializes bijectively over the strict henselian base, compatibly with transition maps and homomorphisms.",
+        "objects": "The good abelian scheme, its torsion and rational Tate module.",
+        "hypotheses": "Good abelian model, invertible torsion order, finite etale torsion and henselian splitting.",
+        "quantifiers": "For every instance satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic-zero number fields and good finite places; the coefficient prime differs from the residue characteristic.",
+        "uniformity": "Qualitative finite exclusions only; no bound or replacement of either controlled field or exceptional set.",
+        "constants": "No numerical conductor, degree or height estimate is asserted.",
+        "normalizations": "Specialization uses the actual Tate module, not a substituted representation.",
+        "exceptional_cases": "No good reduction at the coefficient prime is inferred; bad or ramified places are excluded.",
+        "limit_order": "Establish finite etaleness and henselian splitting before passing to the inverse limit."
+      },
+      "needed_assertion": {
+        "statement": "For each good place of the actual A/K above p outside T and every coefficient prime ell different from p, inertia acts trivially on V_ell(A).",
+        "objects": "The original abelian surface A/K and its actual ell-adic Tate module at a good place above p.",
+        "hypotheses": "A has the established good abelian model at that place and ell differs from p. The local field has its usual strict henselization.",
+        "quantifiers": "Every such place and each coefficient prime ell different from p.",
+        "parameter_range": "Good finite places of the actual number field K; no claim at ell=p.",
+        "uniformity": "No additional exceptional primes or field replacement.",
+        "constants": "No quantitative bound.",
+        "normalizations": "Actual torsion of A with multiplication transition maps.",
+        "exceptional_cases": "Bad reduction and residue-characteristic torsion are excluded.",
+        "limit_order": "Finite-etale torsion splits over the strict henselization at every level, then pass to the inverse limit. The separate induced representation argument follows."
+      },
+      "required_capabilities": [
+        "For each good place of the actual A/K above p outside T and every coefficient prime ell different from p, inertia acts trivially on V_ell(A)."
+      ],
+      "available_capabilities": [
+        "Prime-to-residue-characteristic torsion of a good abelian scheme specializes bijectively over the strict henselian base, compatibly with transition maps and homomorphisms."
+      ],
+      "derived_capabilities": [
+        "For each good place of the actual A/K above p outside T and every coefficient prime ell different from p, inertia acts trivially on V_ell(A)."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1209,
+          "end_line": 1213,
+          "excerpt_sha256": "e3370d3b46a73b7b8b2ca444c586df17b6002c7b9f6bc918aa16a5670e52e6b0"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For each good place of the actual A/K above p outside T and every coefficient prime ell different from p, inertia acts trivially on V_ell(A).",
+          "objects": "The original abelian surface A/K and its actual ell-adic Tate module at a good place above p.",
+          "hypotheses": "A has the established good abelian model at that place and ell differs from p. The local field has its usual strict henselization.",
+          "quantifiers": "Every such place and each coefficient prime ell different from p.",
+          "parameter_range": "Good finite places of the actual number field K; no claim at ell=p.",
+          "uniformity": "No additional exceptional primes or field replacement.",
+          "constants": "No quantitative bound.",
+          "normalizations": "Actual torsion of A with multiplication transition maps.",
+          "exceptional_cases": "Bad reduction and residue-characteristic torsion are excluded.",
+          "limit_order": "Finite-etale torsion splits over the strict henselization at every level, then pass to the inverse limit. The separate induced representation argument follows."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Only actual good places and ell different from p; the fixed field and downstream induction/descent hypotheses are separate.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1209,
+            "end_line": 1245,
+            "excerpt_sha256": "b8b61e4eab40b7afca9af6c79155440d4eed2403382606befcd61cb622ef650f"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1209,
+          "end_line": 1213,
+          "excerpt_sha256": "e3370d3b46a73b7b8b2ca444c586df17b6002c7b9f6bc918aa16a5670e52e6b0"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "TAME-CUP-LOCAL",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 4193,
+      "end_line": 4200,
+      "excerpt_sha256": "f5787b65ba1a40282129e5cd99c9dacc26e5194bdbfbd351fd7675aa36926f39"
+    },
+    "role": "local_derivation_with_source_inputs",
+    "source_use_ids": [
+      "ACTIVE-RC-TAME-CUP",
+      "ACTIVE-RC-TAME-SMALL-COMPLEX"
+    ],
+    "derivation": "At retained precision t=1 and f=1. In the source7.5.1 cup formula the singular-square correction is a sum of q(q-1)/2 equal terms, hence zero because q-1 is divisible by2^(a+2). The finite square is zero, while the mixed coefficient is a unit. The singular class is chosen with Frobenius coordinate zero, as the current text requires. This independently checks the current self-cup conclusion without relying on skew symmetry alone.",
+    "boundary": "The adjustment by residue-unit Kummer characters and the same generator convention remain explicit local setup.",
+    "retained_setup_inputs": [
+      {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4194,
+          "end_line": 4196,
+          "excerpt_sha256": "4ae27640c517e6b54070cdbaa51e1bc8968f2392c22e60a98ec0289b112841ae"
+        },
+        "role": "Residue-unit Kummer adjustment supplies a singular generator with zero value on the chosen Frobenius; this packet retains this actual setup input."
+      },
+      {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4202,
+          "end_line": 4206,
+          "excerpt_sha256": "b93295fb8f26cfa67f3bce7f166ae5682d9e92ecdcb03c5a799e05629dd5d6b9"
+        },
+        "role": "Old ring-class fields split locally, new conductor extensions are totally ramified and Galois; lower Frobenius and upper inertia generators are chosen compatibly."
+      }
+    ]
+  },
+  {
+    "id": "TAME-TRANSFER-LOCAL",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 4202,
+      "end_line": 4219,
+      "excerpt_sha256": "0a22c6515698c5feff052ed299a6e39399b64acefd94e1c66cb5a11097c7084f"
+    },
+    "role": "local_derivation_with_source_inputs",
+    "source_use_ids": [
+      "ACTIVE-RC-TAME-TRANSFER",
+      "ACTIVE-RC-TAME-CUP",
+      "ACTIVE-RC-TAME-INVARIANT"
+    ],
+    "derivation": "Restriction on a cocycle evaluates on the upper Frobenius and inertia, yielding factors f and e; degree0 is identity and degree2 is ef. For the stated actual extensions f=1 or e=f=1. Corestriction is trace in degree0, hence ef. On the full Q/Z local invariant, restriction is the surjective multiplication-by-ef map; cor res=ef implies cor preserves the invariant, hence its finite-trace degree2 factor is1. The perfect mixed cup pairing and cup/trace adjunction then determine degree1 corestriction to be factors e and f, with no surviving off-diagonal term. These arguments verify the matrices and the vanishing of the possible shear at the actual retained precision. The identity cor res=[L:K] uses the already cited Nekovar coefficient trace: under Shapiro, restriction is the constant induced tuple, and trace sums its index-many equal entries. This is a local consequence of the published trace construction, not a further online theorem.",
+    "boundary": "This checks the maps at retained precision. It does not assert an arbitrary integral off-diagonal formula before reduction or independence of incompatible Frobenius choices.",
+    "retained_setup_inputs": [
+      {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4194,
+          "end_line": 4196,
+          "excerpt_sha256": "4ae27640c517e6b54070cdbaa51e1bc8968f2392c22e60a98ec0289b112841ae"
+        },
+        "role": "Residue-unit Kummer adjustment supplies a singular generator with zero value on the chosen Frobenius; this packet retains this actual setup input."
+      },
+      {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4202,
+          "end_line": 4206,
+          "excerpt_sha256": "b93295fb8f26cfa67f3bce7f166ae5682d9e92ecdcb03c5a799e05629dd5d6b9"
+        },
+        "role": "Old ring-class fields split locally, new conductor extensions are totally ramified and Galois; lower Frobenius and upper inertia generators are chosen compatibly."
+      }
+    ]
+  },
+  {
+    "id": "TAME-COHERENCE-LOCAL",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 4221,
+      "end_line": 4248,
+      "excerpt_sha256": "0a77bb77e7ee5f799bb7bbed8d1670893e0a12f0e5bb57c944d9bece862cba78"
+    },
+    "role": "local_derivation_with_source_inputs",
+    "source_use_ids": [
+      "ACTIVE-RC-TAME-COMPARISON",
+      "ACTIVE-RC-TAME-TRANSFER"
+    ],
+    "derivation": "Use the published projective comparison and its homotopy after continuous Hom. With p i=1 and1-i p=d h+h d, the displayed transferred maps pFi and homotopies hFi,pGhFi follow by expansion. The displayed degree-minus-two expression pHhGhFi is the corresponding expansion for three composable arrows. On U in degrees0,1 a degree-minus-one map lands in retained D0 and a degree-minus-two map vanishes. U tensor Uprime is in degrees0,1,2 and the target is concentrated in degree2, so negative Hom degrees vanish. These degree statements justify the restrictions and uniqueness needed for the displayed isotropy homotopies.",
+    "boundary": "Use the same comparison maps and original bar homotopies/cubes throughout. Do not replace them by independent cohomology-class representatives.",
+    "retained_setup_inputs": [
+      {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4194,
+          "end_line": 4196,
+          "excerpt_sha256": "4ae27640c517e6b54070cdbaa51e1bc8968f2392c22e60a98ec0289b112841ae"
+        },
+        "role": "Residue-unit Kummer adjustment supplies a singular generator with zero value on the chosen Frobenius; this packet retains this actual setup input."
+      },
+      {
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4202,
+          "end_line": 4206,
+          "excerpt_sha256": "b93295fb8f26cfa67f3bce7f166ae5682d9e92ecdcb03c5a799e05629dd5d6b9"
+        },
+        "role": "Old ring-class fields split locally, new conductor extensions are totally ramified and Galois; lower Frobenius and upper inertia generators are chosen compatibly."
+      }
+    ]
+  }
+]

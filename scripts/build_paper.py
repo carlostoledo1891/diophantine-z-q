@@ -10,6 +10,8 @@ import shutil
 import subprocess
 import tarfile
 import tempfile
+import time
+import urllib.error
 import urllib.request
 import zipfile
 
@@ -30,6 +32,21 @@ def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
+def download_archive(request):
+    """Retry transient download failures without changing the pinned artifact."""
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read()
+        except urllib.error.HTTPError as error:
+            if error.code not in {408, 429, 500, 502, 503, 504} or attempt == 3:
+                raise
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == 3:
+                raise
+        time.sleep(2 ** attempt)
+
+
 def install():
     key = (platform.system(), platform.machine().lower())
     if key not in ASSETS:
@@ -42,8 +59,7 @@ def install():
     if not archive.exists():
         url = "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40" + VERSION + "/" + name
         request = urllib.request.Request(url, headers={"User-Agent": "diophantine-z-q-paper-build"})
-        with urllib.request.urlopen(request, timeout=60) as response:
-            raw = response.read()
+        raw = download_archive(request)
         if sha(raw) != checksum:
             raise RuntimeError("Tectonic archive checksum mismatch")
         archive.write_bytes(raw)
@@ -79,7 +95,7 @@ def main():
     version = subprocess.check_output([str(executable), "--version"], text=True).strip()
     if version != "Tectonic " + VERSION and version != "tectonic " + VERSION:
         raise RuntimeError("Unexpected engine version: " + version)
-    source = ROOT / "manuscripts" / "quartic_v10.tex"
+    source = ROOT / "manuscripts" / "quartic_v14.tex"
     source_bytes = source.read_bytes()
     output = ROOT / "build" / "paper"
     output.mkdir(parents=True, exist_ok=True)
@@ -95,7 +111,7 @@ def main():
             result = subprocess.run(cmd, cwd=temporary, env=env, stdout=log, stderr=subprocess.STDOUT)
         if result.returncode:
             raise RuntimeError("Paper build failed; see build/paper/compiler.log")
-        log_path = temporary / "quartic_v10.log"
+        log_path = temporary / "quartic_v14.log"
         text = log_path.read_text(errors="replace")
         if any(line.startswith("!") for line in text.splitlines()) or "undefined references" in text or "undefined citations" in text:
             raise RuntimeError("TeX errors or unresolved references; see build/paper/compiler.log")
@@ -105,15 +121,15 @@ def main():
         bundle_hash_file = cache / "bundles" / "hashes" / bundle_key
         if not bundle_hash_file.is_file() or bundle_hash_file.read_text().strip() != BUNDLE_DIGEST:
             raise RuntimeError("The selected TeX bundle fingerprint does not match the pin")
-        pdf = (temporary / "quartic_v10.pdf").read_bytes()
+        pdf = (temporary / "quartic_v14.pdf").read_bytes()
         if not pdf.startswith(b"%PDF-"):
             raise RuntimeError("Compiler did not produce a PDF")
-        (output / "quartic_v10.pdf").write_bytes(pdf)
-        shutil.copyfile(log_path, output / "quartic_v10.log")
+        (output / "quartic_v14.pdf").write_bytes(pdf)
+        shutil.copyfile(log_path, output / "quartic_v14.log")
     if source.read_bytes() != source_bytes:
         raise RuntimeError("Manuscript changed during build")
     receipt = {"engine": version, "bundle_url": args.bundle, "bundle_fingerprint": BUNDLE_DIGEST,
-               "manuscript_version": 10, "pdf": "quartic_v10.pdf",
+               "manuscript_version": 14, "pdf": "quartic_v14.pdf",
                "source_sha256": sha(source_bytes), "pdf_sha256": sha(pdf), "pdf_bytes": len(pdf),
                "tex_errors": 0, "unresolved_references": False,
                "original_pdf_replaced": False, "byte_identity_to_uploaded_pdf_claimed": False}

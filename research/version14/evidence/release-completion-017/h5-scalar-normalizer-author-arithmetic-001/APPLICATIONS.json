@@ -1,0 +1,39 @@
+{
+  "status": "author_pending_independent_review_not_deployed_schema",
+  "applications": [
+    {
+      "id": "H5-FULL-B-NORMALIZER-MAP",
+      "statement": "Each actual normalizer-related fiber admits a B-linear geometric isogeny to A, respecting the labeled O-actions on every component.",
+      "supplier": "accepted_PEL_provider",
+      "consumer": "scalar_family_caller",
+      "proof_section": "2",
+      "exclusions": [
+        "No unproved H=H+- identification",
+        "No merely E-linear replacement"
+      ]
+    },
+    {
+      "id": "H5-PRIME11-B-MAP",
+      "statement": "These actual B-linear maps can be chosen over the same L with degree prime to11, including identity at the identity element.",
+      "supplier": "accepted_PEL_provider",
+      "consumer": "prime11_caller",
+      "proof_section": "3",
+      "exclusions": [
+        "No arbitrary Skolem-Noether correction",
+        "No bound on all other degree primes"
+      ]
+    },
+    {
+      "id": "H5-B-SCALAR-DISCREPANCIES",
+      "statement": "Finite normalized choices give rational scalar discrepancies, with all-prime Tate realization of the same algebraic composition identities.",
+      "supplier": "H5-FULL-B-NORMALIZER-MAP",
+      "consumer": "scalar_family_caller",
+      "proof_section": "4",
+      "exclusions": [
+        "No coherent descent datum",
+        "No sign cochain splitting proved here",
+        "No Frobenius compatibility theorem proved here"
+      ]
+    }
+  ]
+}

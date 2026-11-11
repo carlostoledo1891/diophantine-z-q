@@ -1,0 +1,56 @@
+{
+  "decision": "accepted_at_original_operation_provenance_scope",
+  "subject": {
+    "path": "work/v15-222-ledger-author-001/private-domain-author-scan-010/MANIFEST.json",
+    "sha256": "4af6fb99d898e151a371e028f73d8f3d97af7f6222a31ea1f8862d25ceb54c42"
+  },
+  "operations": [
+    {
+      "stage": "domain020-original-proof",
+      "run_id": "01a1c463-71cd-7bf1-bb41-d0748953f6e3",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "model": "gpt-6-astra",
+      "call_id": "call_8b2ae64c01ed42eab14ee7aea2d65a22"
+    },
+    {
+      "stage": "domain022-expanded-proof",
+      "run_id": "01a1c467-177b-7263-8e87-a137cc847c89",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "model": "gpt-6-astra",
+      "call_id": "call_67c81d3a228248c3ac82ff58562c7ff4"
+    }
+  ],
+  "checks": {
+    "original_record_occurrences": 8,
+    "original_unique_records": 7,
+    "matching_call_completions": 2,
+    "exact_authored_text_hashes": [
+      "42a4bb0c65ce3641ff8c93a021f39c8d516553529cab43a1116f91b453465232",
+      "5b92dbb0bf4381d517935b2d1f0993c1dab6de6614ef7f83b584c25aa121767b"
+    ],
+    "artifacts_verified": 4,
+    "context_intervals": [
+      {
+        "stage": "domain020-original-proof",
+        "bytes": 534012,
+        "records": 154,
+        "contexts": 1,
+        "sha256": "c45d4765f50e9964018df323192d10f18614818603255a737cdcca5133dcdb38"
+      },
+      {
+        "stage": "domain022-expanded-proof",
+        "bytes": 95341,
+        "records": 51,
+        "contexts": 1,
+        "sha256": "1b2a42c0de6e0543daceb4e2889001ec3947ca192e9e1084f5c661b55b142e2a"
+      }
+    ],
+    "shared226_explicitly_imports_domain022": true
+  },
+  "limits": [
+    "Original host operation attribution only, not new mathematics or target acceptance.",
+    "Current proof files match literal020 and derived022 text from the actual successful calls.",
+    "No claim that these calls authored all existing coordinate generators.",
+    "Raw host records remain private and are not copied into this review."
+  ]
+}

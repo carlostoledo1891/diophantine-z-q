@@ -1,0 +1,100 @@
+{
+  "source": "combined439-ir.json",
+  "sourceSha256": "403c4126d532fd3403ce0d87a258790d6b78c1a46cf09716aab0df3a7e84c4df",
+  "steps": [
+    {
+      "step": "scalar_f1_guard",
+      "source": "scalar443-ir.json",
+      "sourceSha256": "9002b711f5083d6cb70d1fa3ebff0f17d5be7d2e0ad85c0384f63e7814ed37b1",
+      "target": "inputs/scalar-guard442-ir.json",
+      "targetSha256": "7c8bcbb20289e92e790a0728a96428b451516842420454355731e64a950d7c3b",
+      "review": "inputs/scalar-guard-review.md",
+      "reviewSha256": "ab856fccaa0bc6c4291cbe19b50009409d532623b69c3fd48a999c83608e3f16",
+      "removedCoordinates": [
+        504
+      ],
+      "renamedCoordinates": [
+        549
+      ],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "Sscalar.f.definition.0",
+        "scalar.shiftedS.reciprocal.f0Inverse.definition"
+      ],
+      "changedRows": [],
+      "addedRows": {
+        "scalar.shiftedS.reciprocal.f1Inverse.definition": 699
+      },
+      "variablesAfter": 438,
+      "residualsAfter": 415
+    },
+    {
+      "step": "positive_scalar_correction",
+      "source": "rational453-ir.json",
+      "sourceSha256": "f90ee69b7f26d43e94f6a7bb255d3cf2e040d5a2746d79c3b13e08a35185998f",
+      "target": "inputs/scalar-shift450-ir.json",
+      "targetSha256": "31d5e21d5101f31fd47352dea36dae7eb0faa5498a22cab26ebb62799d9be7e6",
+      "review": "inputs/scalar-shift-review.md",
+      "reviewSha256": "b4f42e6c25c450680c640ce7dd3b46c000f17fd16c1bdc8744697bf7e12cdb1d",
+      "removedCoordinates": [
+        58,
+        59,
+        60
+      ],
+      "renamedCoordinates": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "correction.initialSign",
+        "correction.partialProduct1",
+        "correction.partialProduct2",
+        "correction.partialProduct3",
+        "correction.partialProduct4",
+        "correction.partialProduct5",
+        "correction.partialProduct6",
+        "correction.partialProduct7"
+      ],
+      "changedRows": [
+        "hybrid.10.group0.co2.0.definition",
+        "hybrid.10.group0.co2.1.definition",
+        "hybrid.det0.eval10.0.0.definition",
+        "hybrid.det1.eval10.0.0.definition",
+        "hybrid.det2.eval10.0.0.definition",
+        "reduced_scalar.constant_node",
+        "reduced_scalar.root",
+        "scalar.correctedR.definition",
+        "scalar.r.definition",
+        "scalar.rFour.definition",
+        "scalar.rPair1.definition",
+        "scalar.r_power_2.definition",
+        "scalar.ratio_node.consolidated_denominator",
+        "testSquare.12.1.0.definition",
+        "testSquare.12.1.1.definition"
+      ],
+      "addedRows": {
+        "correction.restrictedProduct1": 700,
+        "correction.restrictedProduct2": 701,
+        "correction.restrictedProduct3": 702,
+        "correction.restrictedProduct4": 703,
+        "correction.restrictedProduct5": 704
+      },
+      "variablesAfter": 435,
+      "residualsAfter": 412
+    }
+  ],
+  "statistics": {
+    "variables": 435,
+    "witnesses": 434,
+    "residuals": 412,
+    "degree": 4,
+    "monomials": 6572,
+    "content": 1,
+    "maximumCoefficient": "16*3^(2^26)",
+    "candidateSha256": "c4c8a0623be27e675f73363043ce2bc44956bd128257060e471abca9b53a0859",
+    "polynomialSha256": "3367f07f7045f4fac1fa41018893b344e4b0a8452e3f64586cc48a3293647173"
+  }
+}

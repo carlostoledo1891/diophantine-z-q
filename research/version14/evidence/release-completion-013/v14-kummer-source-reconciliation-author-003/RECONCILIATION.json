@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "author": "/root/v14_arithmetic_author",
+  "rows": [
+    {
+      "initial_use_id": "KUMMER-SUP-001",
+      "initial_assertion": {
+        "statement": "Multiplication by n=2^a on an elliptic curve over characteristic-zero F is surjective on E(Fsep), with finite kernel E[n], and its point groups are discrete continuous G_F modules.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Silverman III.4 pp66–68: nonconstant multiplication is a finite surjective isogeny; Fsep algebraically closed.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Fix F,E,a; obtain the multiplication exact sequence before constructing cocycles."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-001-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 1,
+          "end_line": 9,
+          "excerpt_sha256": "c3ed401189cb82fe6ce15fec6f5a79bfa7b16927e02bb59874b2d180f51f4d73"
+        },
+        "use_ids": [
+          "KUMMER-SUP-001"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "published_input_application",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+      },
+      "incoming_use_ids": [
+        "ACTIVE-KUMMER-MULTIPLICATION-INPUT"
+      ],
+      "derivation": "Apply the published finite/surjective multiplication theorem to n=2^a over the algebraically closed separable closure. Characteristic zero and open stabilizers of algebraic points give the precise continuous-module setting. Line7 is the published statement; line9 is its actual specialization. The narrow multiplication use is distinct from the outward final exact-sequence use.",
+      "remaining_premises": [],
+      "outward_use_not_used_as_own_premise": false
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-002",
+      "initial_assertion": {
+        "statement": "The division-point cocycle defines an additive well-defined injection E(F)/nE(F) into H1(F,E[n]).",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Surjectivity of multiplication and continuous Galois action; cocycle and coboundary definitions.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Choose Q with nQ=P; compare choices and sums; vanishing is equivalent to a rational division point."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-002-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 10,
+          "end_line": 13,
+          "excerpt_sha256": "0ce03685fb04262f3c417db573d0fbe72bd33060a57afb24ce0114bb4c8faec3"
+        },
+        "use_ids": [
+          "KUMMER-SUP-002"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "local_derivation",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 13,
+        "end_line": 13,
+        "excerpt_sha256": "7718e5c515be8c4470c1198463371cbd1c07d6a4340752366337b4a1c2e2a164"
+      },
+      "incoming_use_ids": [],
+      "derivation": "Using the preceding surjectivity choose a division point. Compare choices by n-torsion, sums by addition, and a vanishing cohomology class by subtracting a torsion coboundary. This is the local proof of injectivity, not a use of its own final Kummer conclusion.",
+      "remaining_premises": [],
+      "outward_use_not_used_as_own_premise": true
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-003",
+      "initial_assertion": {
+        "statement": "The image of the Kummer injection is the kernel of H1(F,E[n]) to H1(F,E).",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "The previous division-point construction and the inclusion E[n] into E(Fsep).",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "A cobounding Q has rational nQ, and conversely the Kummer cocycle becomes a coboundary."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-003-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 14,
+          "end_line": 15,
+          "excerpt_sha256": "d1405fee5e00f0611ed35078483dced3da30db1a829c3e5a97bc9ce8ae4d3296"
+        },
+        "use_ids": [
+          "KUMMER-SUP-003"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "local_derivation",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "330ec48144347e5d0bb0d0630865d741b784794dc3c23f394fce8d0847a4ff51"
+      },
+      "incoming_use_ids": [],
+      "derivation": "For an E[n]-cocycle cobounded by Q in E, nQ is fixed. Its class is delta(nQ); the reverse direction is immediate from the same chosen Q. This uses only the preceding construction.",
+      "remaining_premises": [],
+      "outward_use_not_used_as_own_premise": true
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-004",
+      "initial_assertion": {
+        "statement": "The Kummer sequence ends surjectively in H1(F,E)[n], giving the displayed short exact sequence.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "For a class killed by n choose a representative c with nc(g)=gP-P and a division point Q of P.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Subtract the coboundary gQ-Q so the resulting cocycle is E[n]-valued."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-004-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 16,
+          "end_line": 19,
+          "excerpt_sha256": "96e254dfed51011bacd69aa77bbb52b7bf987db7946d49c5342f641fc8a78948"
+        },
+        "use_ids": [
+          "KUMMER-SUP-004"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "local_derivation",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 17,
+        "end_line": 19,
+        "excerpt_sha256": "32f3c4835c25058a6f921fe245d309fb722c9f51dc626b6e421d58b17a58b690"
+      },
+      "incoming_use_ids": [],
+      "derivation": "For n[c]=0 choose P with nc=dP and Q with nQ=P; then c-dQ is E[n]-valued. Together with the earlier kernel calculation this proves exactness. No separate Kummer theorem is smuggled into its proof.",
+      "remaining_premises": [],
+      "outward_use_not_used_as_own_premise": true
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-005",
+      "initial_assertion": {
+        "statement": "Kummer maps commute with restriction, field-isomorphism transport and elliptic-curve homomorphisms, are additive and kill n-multiples.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Compatible maps of fields, points and elliptic curves; preceding cocycle construction.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Apply the compatible map to chosen division points; compare resulting cocycles."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-005-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 20,
+          "end_line": 23,
+          "excerpt_sha256": "87b9f59ae1c01b5691ada39023f1eda42dc7c9c95440ad4a80541f95f3bd8840"
+        },
+        "use_ids": [
+          "KUMMER-SUP-005"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "local_derivation",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 23,
+        "end_line": 23,
+        "excerpt_sha256": "08c3ad484bee0825de8f65809d39ea449403620a41818113ed3092932ce29c32"
+      },
+      "incoming_use_ids": [],
+      "derivation": "Apply restriction, transport or an elliptic-curve map to Q and compute gQ-Q. This proves the naturality required later and uses no division by extension degree.",
+      "remaining_premises": [],
+      "outward_use_not_used_as_own_premise": true
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-006",
+      "initial_assertion": {
+        "statement": "For the actual number field M_I, an actual n-multiple point relation gives zero Kummer class and, with the separate ring-class generators/norm identity, derivative invariance.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Actual main3882–3886 point identity, relative generators and norm relation are supplied separately; n=2^a.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "First establish the point relation and group description, then apply natural Kummer annihilation."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-006-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 24,
+          "end_line": 25,
+          "excerpt_sha256": "b01cff148142dafaef7d797b45113fd432fc40ac5d18babb5d65abaeb12f3eb5"
+        },
+        "use_ids": [
+          "KUMMER-SUP-006"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "actual_caller_application",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+      },
+      "incoming_use_ids": [
+        "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE",
+        "ACTIVE-HEEGNER-CCL-NORMS"
+      ],
+      "derivation": "The relative factors and generators come from the ring-class input; the point trace is the separate CCL norm input. The explicit group-ring identity at main3869–3874 and divisibilities at3876 make the displayed main3882–3886 point an n-multiple. Apply the already proved vanishing and equivariance. This does not use the final invariant-derivative conclusion as its own premise.",
+      "remaining_premises": [
+        "Compatible CM points and the fixed normalized elliptic quotient are inherited by the CCL norm input."
+      ],
+      "outward_use_not_used_as_own_premise": true
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-007",
+      "initial_assertion": {
+        "statement": "If v becomes Kummer over finite unramified Fprime/F and the separate local cohomology bound kills its H1(F,E) image by c_E, then c_E v is Kummer over F.",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "F finite over Q_p; actual restriction kernel annihilation by c_E; Kummer exactness.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Pass v to H1(F,E), use restriction kernel bound, then exactness over F."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-007-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 26,
+          "end_line": 27,
+          "excerpt_sha256": "8c9515fb6065474db03d93701ac6849a7e11303ff64abddbc048e260615a10e5"
+        },
+        "use_ids": [
+          "KUMMER-SUP-007"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "actual_caller_application",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "5968139803e85274df7863989b0b7a8c6c3ae3dc82496173af7ada22985828c7"
+      },
+      "incoming_use_ids": [
+        "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY"
+      ],
+      "derivation": "The existing conditional local cohomology input kills the restriction kernel in H1(F,E) by c_E. Naturality and the already proved exactness then lift c_E v to the Kummer image. Actual unramified Fprime/F, connected model, component bound and local-type premises remain requirements of that separate input.",
+      "remaining_premises": [
+        "The local cohomology input retains its Neron-model, Lang, normal-basis and geometric-component premises."
+      ],
+      "outward_use_not_used_as_own_premise": true
+    },
+    {
+      "initial_use_id": "KUMMER-SUP-008",
+      "initial_assertion": {
+        "statement": "The proof applies to permitted number fields and all their nonarchimedean completions including residue characteristic2, without good reduction, finite Sha, rank or rational E[n].",
+        "objects": "Elliptic curve E over characteristic-zero F, n=2^a, continuous Galois cohomology and actual Heegner fields where indicated.",
+        "hypotheses": "Characteristic-zero field and elliptic curve; stated hypotheses of each preceding application.",
+        "quantifiers": "Every specified field, curve and exponent a>=1 satisfying the stated hypotheses.",
+        "parameter_range": "Characteristic zero, including local residue characteristic2; actual permitted finite Heegner stages.",
+        "uniformity": "Functorial algebraic assertion; no quantitative field or conductor bound.",
+        "constants": "n=2^a; c_E only when supplied by the separate local cohomology bound.",
+        "normalizations": "Additive cocycles gQ-Q and ordinary multiplication; no division by field degree or coefficient-group n.",
+        "exceptional_cases": "No good reduction, finite Sha, rank, rational torsion or arbitrary unproved local bound is assumed; ring-class and local-model premises remain separate.",
+        "limit_order": "Retain field-specific inputs and exclusions; do not silently broaden the older Q-only record."
+      },
+      "initial_passage": {
+        "id": "KUMMER-SUP-008-P",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 28,
+          "end_line": 29,
+          "excerpt_sha256": "e77c6a0b87bc23b5ff0137761ee417e676b0d55ca2cfffb6704b7980a1e737b6"
+        },
+        "use_ids": [
+          "KUMMER-SUP-008"
+        ],
+        "reason": "Source-derived assertion and incoming-premise accounting; adjoining presentation lines included."
+      },
+      "disposition": "scope_verification",
+      "current_claim": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "proof_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 29,
+        "end_line": 29,
+        "excerpt_sha256": "214dfec4b8293ca3562f494efdacb39779f3a1762c415d0942ccc557fe94ad08"
+      },
+      "incoming_use_ids": [],
+      "derivation": "Inspect the proof: characteristic zero suffices for algebraic closedness of the separable closure and the cited isogeny statements. No good reduction or torsion rationality was used. Residue characteristic2 is allowed. This verifies the stated scope, not another imported theorem.",
+      "remaining_premises": [],
+      "outward_use_not_used_as_own_premise": true
+    }
+  ],
+  "scope": "Eight fresh observations preserved; row1 consumes narrow multiplication source, never the final Kummer sequence. Ring-class and local premises remain explicit."
+}

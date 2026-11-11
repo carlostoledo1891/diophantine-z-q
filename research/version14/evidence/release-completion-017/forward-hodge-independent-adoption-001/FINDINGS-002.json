@@ -1,0 +1,27 @@
+{
+  "target_manifest_sha256": "4f41fbbe5c6bc8285348b091509530c9801a792f07cbde7a0c8b67df7150ba90",
+  "status": "changes_required_before_adoption",
+  "source_first_sha256": "df71621e48e209107bc7bc04e7de84eb6bfe4009016fc22ee5725ad34fef79e8",
+  "findings": [
+    {
+      "id": "FH-001",
+      "affected": "FR-PICARD-DIVISOR published statement and available capability",
+      "detail": "Silverman III.3.4 supplies divisor-class/group identification, not by itself the algebraic Picard-variety identification. Narrow the projected source statement; preserve the scheme upgrade through named standard inputs and Picard20d3."
+    },
+    {
+      "id": "FH-002",
+      "affected": "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+      "detail": "The generic descent proof starts with an already algebraic complex endomorphism and does not consume Hodge equivalence. Remove this edge or explicitly supply a different Hodge-endomorphism application. Preserve the centralizer direct Milne and descent inputs."
+    }
+  ],
+  "author_response": "Sol agreed to narrow FH-001 and remove the unnecessary FH-002 edge in frozen author003. No manuscript edit.",
+  "verification_002": {
+    "checks_passed": 470,
+    "errors": [],
+    "location_occurrences_checked": 155,
+    "application_statuses": {
+      "unresolved": 72
+    }
+  },
+  "independence": "No self-authored repair. Author003 requires subsequent review."
+}

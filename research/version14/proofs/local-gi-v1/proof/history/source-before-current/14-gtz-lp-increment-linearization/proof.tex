@@ -1,0 +1,373 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\poly}{\operatorname{poly}}
+\newcommand{\fg}{\mathfrak g}
+\newcommand{\id}{\mathrm{id}}
+\title{Same-step linearization using the increment polynomial group}
+\author{Project proof draft: /root/astra\_v14\_baseline\_theta}
+\date{7 November 2026}
+\begin{document}
+\maketitle
+
+\noindent\textbf{Status.} This is a proposed local replacement for the
+same-step linearization construction in GTZ Appendix C. It is not an
+independent acceptance. It uses the bounded normalization and tautification
+proved in the separately frozen project unit \cite{Taut}, and the published
+algebraic polynomial-map results specified below. It does not assume GI($s$).
+
+\section{The required conclusion}
+
+Let $G/\Gamma$ be a connected simply connected nilpotent Lie group modulo a
+lattice, with a rational degree filtration $G_\bullet$ of degree at most
+$s\geq1$. Every $G_i$ is connected and rational. Let a scalar polynomial
+nilsequence be $F(g(n)\Gamma)$, with $F$ complex-valued, $1$-bounded and
+Lipschitz. The polynomial $g$ is adapted to $G_\bullet$ in the right-difference
+convention $\partial_u g(n)=g(n+u)g(n)^{-1}$.
+
+\begin{theorem}\label{thm:linear}
+For this fixed filtered nilmanifold there is a fixed $s$-step nilmanifold
+$\widetilde G/\widetilde\Gamma$ with a fixed smooth metric, and a constant
+$C$ depending only on the original fixed geometric data, with the following
+property. For every polynomial $g$ and every such $F$, there are
+$a\in\widetilde G$ and a $1$-bounded Lipschitz function
+$\widetilde F:\widetilde G/\widetilde\Gamma\longrightarrow\mathbb C$ such that
+\[
+ F(g(n)\Gamma)=\widetilde F(a^n\widetilde\Gamma)
+ \quad(n\in\Z),\qquad
+ \operatorname{Lip}(\widetilde F)\leq C\operatorname{Lip}(F).
+\]
+Fixed smooth metric comparisons are included in $C$.
+The same construction applies to limit polynomial maps and bounded
+Lipschitz limit functions, with fixed nilmanifold and uniform constants.
+Consequently a finite-family polynomial inverse theorem of degree $s$
+implies the finite-family linear inverse theorem of step $s$, without
+changing the input Gowers norm or losing correlation.
+\end{theorem}
+
+If $\operatorname{Lip}(F)=0$, the constant test function has a constant
+extension and the displayed bound is understood literally. A point
+nilmanifold can be used for a constant sequence. Step at most $s$ is the
+meaning of $s$-step throughout.
+
+By \cite[Theorem 1]{Taut}, restrict to a fixed taut representation with
+$G_0=G_1=G$ and replace the polynomial by $h$, where $h(0)=1$.
+The exact identity is
+\[
+ g(0)=q\gamma,\qquad h(n)=q^{-1}g(n)\gamma^{-1},\qquad
+ F_q(x\Gamma)=F(qx\Gamma),\qquad
+ F_q(h(n)\Gamma)=F(g(n)\Gamma).
+\]
+Here $q$ lies in a fixed compact set and
+$\operatorname{Lip}(F_q)$ is bounded by a fixed multiple of
+$\operatorname{Lip}(F)$. The underlying taut filtered nilmanifold is fixed
+independently of $g$. It therefore suffices to prove the theorem for this
+normalized $h$ and $F_q$. In what follows all geometric data refer to this
+fixed taut representation.
+
+\section{Polynomial groups and their Lie algebras}
+
+For $i\geq0$ put
+\[
+ P_i=\poly(\Z_\N\longrightarrow G_{\bullet+i}).
+\]
+The zeroth group of the shifted filtration is $G_i$; it need not be taut.
+The group operation is pointwise multiplication.
+By \cite[Corollary B.4 and Proposition B.6]{GTZ}, these are groups with
+\begin{equation}\label{eq:polyfiltered}
+ [P_i,P_j]\subseteq P_{i+j},\qquad P_i\triangleleft P_0.
+\end{equation}
+Those results concern abstract filtered groups and require no equality of
+the first two groups. Their conditions hold because the shifted groups
+inherit nesting and the commutator law from $G_\bullet$.
+
+Here is an explicit finite-dimensional description, including the smooth
+real shift needed below. Let $\fg_i=\log G_i$ and define
+\[
+ V_i=\left\{X(t)=\sum_{j=0}^{s-i} X_jt^j:X_j\in\fg_{j+i}\right\}
+ \quad(0\leq i\leq s),\qquad V_i=0\quad(i>s).
+\]
+Use pointwise Lie bracket. Bracketing coefficients gives
+\begin{equation}\label{eq:Vbracket}
+ [V_i,V_j]\subseteq V_{i+j}.
+\end{equation}
+For instance, a bracket of a degree-$a$ coefficient in $\fg_{a+i}$ and a
+degree-$b$ coefficient in $\fg_{b+j}$ belongs to $\fg_{a+b+i+j}$ and has
+polynomial degree $a+b$. Thus $V_i$ is a finite-dimensional nilpotent Lie
+algebra for every $i$. Its simply connected group is obtained by the
+terminating BCH formula, or equivalently by pointwise exponentiation.
+
+\begin{lemma}\label{lem:Pi}
+The pointwise exponential identifies that group with $P_i$. In particular
+$P_i$ is connected and simply connected, and its smooth topology can be
+described either by the coefficients of $\log p(t)$ or by the Taylor
+coefficients in \cite[Lemma B.9]{GTZ}.
+\end{lemma}
+\begin{proof}
+Write the Taylor expansion of $p\in P_i$ as
+\[
+ p(t)=\prod_{j=0}^{s-i} u_j^{\binom tj},\qquad u_j\in G_{j+i}.
+\]
+BCH expands $\log p(t)$ as a finite sum of products of the scalar
+polynomials $\binom tj$ times iterated brackets of their logarithmic
+coefficients. A bracket using indices $j_1,\ldots,j_r$ belongs to
+$\fg_{j_1+\cdots+j_r+ri}$. Its scalar polynomial has degree at most
+$j_1+\cdots+j_r$. Consequently its coefficient at $t^b$ lies in
+$\fg_{b+i}$, by nesting, and all coefficients above $s-i$ vanish.
+Thus $\log p\in V_i$. This also covers $i=0$.
+
+Conversely, if $X\in\fg_{j+i}$, the function
+$p(t)=\exp(t^j X)$ lies in $P_i$. Its iterated differences remain in the
+same one-parameter subgroup and are given by finite differences of $t^j$.
+At order $r\leq j$ they lie in $G_{j+i}\subseteq G_{r+i}$, and they are
+trivial at higher orders. This remains true with $X$ replaced by any real
+multiple of $X$. These one-parameter subgroups have Lie algebra spanning
+$V_i$. The subgroup they generate therefore generates the whole connected
+group with Lie algebra $V_i$. More explicitly, their connected real
+generated group has precisely that Lie algebra, by the exponential/BCH
+description in \cite[Section 3]{GTZ}. The derivative identities defining
+$P_i$ are closed conditions in this finite-dimensional group, because
+evaluation at each integer and multiplication are continuous and each
+$G_{r+i}$ is closed. Hence the generated connected group is contained in
+$P_i$. This proves equality. Finally the Taylor coefficients are obtained
+successively from the values at $0,\ldots,s-i$ by products and inverses,
+and the Taylor formula recovers every value from them. BCH makes both
+coordinate changes smooth.
+\end{proof}
+
+For real $u$, define $T^u$ on $V_i$ by $T^uX(t)=X(t+u)$.
+Coefficient expansion and nesting show that this preserves $V_i$.
+It is a smooth one-parameter group of Lie algebra automorphisms, since
+the bracket is pointwise. Exponentiating defines a smooth automorphism
+group on $P_i$, which at integer $u$ is the ordinary shift of polynomial
+sequences. Its infinitesimal action is ordinary differentiation, and
+\begin{equation}\label{eq:derivative}
+ \frac{d}{dt}V_i\subseteq V_{i+1}.
+\end{equation}
+Indeed the coefficient of $t^j$ in $X'(t)$ belongs to
+$\fg_{j+1+i}$.
+
+\section{The lattice and the same-step semidirect product}
+
+Define
+\[
+ \Lambda_i=\{p\in P_i:p(n)\in\Gamma\ \hbox{for every }n\in\Z\}.
+\]
+It is a subgroup by pointwise multiplication. We give the needed lattice
+argument to avoid relying on the disputed step estimate in Appendix C.
+
+\begin{lemma}\label{lem:lattice}
+$\Lambda_i$ is a discrete cocompact subgroup of $P_i$. Integer shifts
+preserve $\Lambda_i$.
+\end{lemma}
+\begin{proof}
+It is enough to consider $i\leq s$ and put $d=s-i$; for larger $i$ both
+groups are trivial. Discreteness follows from evaluation at
+$0,\ldots,d$. A lattice-valued polynomial close enough to the identity
+at these finitely many points equals the identity at all those points,
+since $\Gamma$ is discrete. Taylor uniqueness then makes it the identity
+polynomial.
+
+For cocompactness, use induction to write
+\[
+ p=\gamma_j h_j c_j,
+\]
+where $\gamma_j\in\Lambda_i$, $c_j$ ranges over a fixed compact subset
+of $P_i$, and $h_j$ is the identity at $0,\ldots,j-1$.
+For $j=0$ take $\gamma_0=c_0=1$ and $h_0=p$.
+Taylor expansion shows $h_j(j)\in G_{j+i}$.
+Choose a fixed compact left fundamental set for the lattice
+$G_{j+i}\cap\Gamma$ in $G_{j+i}$ and write
+$h_j(j)=\lambda_j v_j$, where $\lambda_j$ is in that lattice and $v_j$
+is in the compact set. Define
+\[
+ \ell_j(t)=\lambda_j^{\binom tj},\qquad
+ v_j^*(t)=v_j^{\binom tj}.
+\]
+Both are in $P_i$, by the same one-parameter difference check as above;
+$\ell_j\in\Lambda_i$ because $\binom nj$ is an integer for every
+$n\in\Z$. Now put
+\[
+ \gamma_{j+1}=\gamma_j\ell_j,\qquad
+ h_{j+1}=\ell_j^{-1}h_j(v_j^*)^{-1},\qquad
+ c_{j+1}=v_j^*c_j.
+\]
+These formulas preserve the factorization and make $h_{j+1}$ the identity
+at $0,\ldots,j$. The possible $v_j^*$ form a compact subset of $P_i$,
+so the possible $c_{j+1}$ remain in a fixed compact set.
+At $j=d+1$, Taylor uniqueness gives $h_{d+1}=1$.
+Thus $p=\gamma c$ with $c$ in a fixed compact set, which proves left
+cocompactness; inversion gives right cocompactness. Finally an integer
+shift preserves both polynomiality and all integer lattice values, and
+its inverse does also.
+\end{proof}
+
+Now use the \emph{increment} group $P_1$, not $P_0$, and set
+\begin{equation}\label{eq:semi}
+ \widetilde G=P_1\rtimes_T\R,
+ \qquad (p,u)(q,v)=(p\,T^u q,u+v),
+ \qquad \widetilde\Gamma=\Lambda_1\rtimes_T\Z.
+\end{equation}
+The real action just constructed makes $\widetilde G$ a connected simply
+connected Lie group, diffeomorphic to $P_1\times\R$.
+Its Lie algebra is $V_1\rtimes\R\tau$, where $[\tau,X]=X'$.
+Give this Lie algebra the filtration
+\[
+ \mathfrak l_0=\mathfrak l_1=V_1\oplus\R\tau,
+ \qquad \mathfrak l_j=V_j\quad(j\geq2).
+\]
+Equations \eqref{eq:Vbracket} and \eqref{eq:derivative} prove
+$[\mathfrak l_i,\mathfrak l_j]\subseteq\mathfrak l_{i+j}$ for all indices.
+In particular $\mathfrak l_{s+1}=0$. Thus $\widetilde G$ is nilpotent of
+step at most $s$. This explicit shifted-filtration calculation is the
+same-step bound used in the theorem.
+
+The subgroup $\widetilde\Gamma$ is discrete, because its clock coordinate
+is integral and $\Lambda_1$ is discrete. It is cocompact as well.
+Given $(p,u)$, left-multiply by $(1,-\lfloor u\rfloor)$, then left-reduce
+the resulting polynomial coordinate modulo $\Lambda_1$ using Lemma
+\ref{lem:lattice}. The resulting representative lies in the product of a
+fixed compact set in $P_1$ and $[0,1]$. This proves left cocompactness;
+inversion proves right cocompactness. The operations used for left reduction
+belong to $\widetilde\Gamma$ by the integer-shift assertion of the lemma.
+
+\section{The orbit identity and fixed compact fiber}
+
+Let $\theta:\widetilde G/\widetilde\Gamma\longrightarrow\R/\Z$ be the
+map induced by the clock coordinate, and set $K=\theta^{-1}(0)$.
+It is a fixed compact submanifold canonically identified with
+$P_1/\Lambda_1$: every element of the fiber can be written
+$(p,0)\widetilde\Gamma$, and two such representatives agree precisely when
+their polynomial coordinates differ on the right by an element of
+$\Lambda_1$.
+Evaluation at zero gives a smooth map
+\begin{equation}\label{eq:pi}
+ \pi:K\longrightarrow G/\Gamma,\qquad
+ \pi((p,0)\widetilde\Gamma)=p(0)\Gamma.
+\end{equation}
+It is well-defined because $\lambda(0)\in\Gamma$ for
+$\lambda\in\Lambda_1$. Since $K$ is compact, $\pi$ is Lipschitz for
+fixed smooth metrics.
+
+The normalized polynomial $h\in P_0$ has $h(0)=1$. Define its right
+increment by
+\[
+ b(t)=h(t)^{-1}h(t+1).
+\]
+The left increment $h(t+1)h(t)^{-1}$ lies in $P_1$ directly from the
+iterated-difference definition. Proposition B.6 gives $P_1\triangleleft
+P_0$, so conjugating that left increment by $h(t)^{-1}$ shows
+$b\in P_1$. This verifies the orientation of the increment actually
+used, rather than substituting a left increment into a right-telescoping
+product.
+
+Put $a=(b,1)\in\widetilde G$. For every integer $n$ define
+$b_n(t)=h(t)^{-1}h(t+n)$. The exact cocycle identity
+\[
+ b_{n+m}(t)=b_n(t)\,b_m(t+n)
+\]
+and $b_0=1$ prove, for positive and negative integers alike,
+\[
+ a^n=(b_n,n).
+\]
+Modulo $\widetilde\Gamma$, right multiplication by $(1,-n)$ gives
+$a^n\widetilde\Gamma=(b_n,0)\widetilde\Gamma\in K$.
+Consequently
+\begin{equation}\label{eq:orbit}
+ \pi(a^n\widetilde\Gamma)=b_n(0)\Gamma=h(n)\Gamma,
+ \qquad n\in\Z.
+\end{equation}
+The last equality uses the normalization $h(0)=1$.
+
+\section{Test functions, uniformity and the inverse-theorem join}
+
+The function $F_q\circ\pi$ is $1$-bounded on $K$ and has a Lipschitz
+constant bounded by a fixed multiple $L$ of $\operatorname{Lip}(F)$.
+Extend its real and imaginary parts separately by the explicit McShane
+formula
+\[
+ E_u(x)=\inf_{y\in K}\bigl(u(y)+L\,d(x,y)\bigr).
+\]
+This equals $u$ on $K$ and is $L$-Lipschitz: the triangle inequality
+proves the Lipschitz assertion, and the original Lipschitz inequality
+proves equality at points of $K$. Clip each extension to $[-1,1]$,
+combine them as a complex function, and apply metric projection onto
+the closed unit disk. This projection $Q$ is $1$-Lipschitz: the
+nearest-point inequalities for the disk give
+\[
+ \langle x-Qx,Qy-Qx\rangle\leq0,\qquad
+ \langle y-Qy,Qx-Qy\rangle\leq0,
+\]
+and therefore $\|Qx-Qy\|^2\leq\langle Qx-Qy,x-y\rangle
+\leq\|Qx-Qy\|\|x-y\|$. It also fixes the original values on $K$.
+Thus the result $\widetilde F$ is $1$-bounded, agrees with
+$F_q\circ\pi$ on $K$, and is at most $\sqrt2 L$-Lipschitz.
+Equation \eqref{eq:orbit} proves the exact equality in Theorem
+\ref{thm:linear}.
+
+The nilmanifold, lattice, compact fiber, evaluation map and all metric
+constants depend only on the fixed original filtered nilmanifold and $s$.
+The possibly unbounded polynomial coefficients occur only in the allowed
+translation element $a$ and in the bounded representative $q$ affecting the
+test function. They do not alter the geometry or its Lipschitz bound.
+For limit data the same algebraic formulas and one fixed bounded
+representative section give limit choices of $b$ and $a$. Apply the explicit
+extension formula to each representative test function. Its uniform bound
+and Lipschitz constant give a bounded Lipschitz limit function on the same
+standard nilmanifold. The ordinary orbit identities hold at every member
+of the defining sequences and therefore at every limit integer.
+
+Suppose now that a polynomial inverse theorem supplies, for fixed $s$ and
+$\delta$, a finite family of rational degree-$s$ filtered nilmanifolds,
+a fixed Lipschitz bound, and a positive correlation lower bound against
+$1$-bounded test functions. Apply the theorem to each member of that finite
+family, taking the maximum of its finitely many fixed metric constants.
+There is still a finite family, now of step at most $s$ with linear orbits,
+and the correlation is unchanged because the represented sequences are
+equal pointwise. No comparison of Gowers norms is involved in this join.
+This proves the final assertion of Theorem~\ref{thm:linear}.
+
+The construction also covers a point input group: $P_1$ is trivial and the
+clock group yields a circle with a constant test function, or it may be
+replaced by a point. For $s=1$ the increment group consists of constant
+polynomials in an abelian group and the shift action is trivial, so
+$\widetilde G$ is abelian, as the required bound predicts.
+
+\section{Comparison with the failed full-group construction}
+
+The original Appendix C used $P_0\rtimes\R$. For the taut abelian
+degree-$s$ filtration on $\R$, the commutator of its clock with
+$p(t)=\tfrac12\binom ts$, repeated $s$ times, is the nonzero constant
+$1/2$. That is a commutator of length $s+1$, so that group is not
+$s$-step. This adverse example is recorded in the separate finding packet.
+The present construction uses $P_1$ and its increment $b$, reducing
+the polynomial degree available in the clock action by one. Its Lie
+filtration above verifies the required step bound for all inputs, not
+only this example. It changes the construction, while retaining the
+same-step linear conclusion needed by GI($s$).
+
+The finite-family polynomial inverse theorem is still a separate premise.
+This unit does not prove its rank reduction, symmetrization, or
+ultralimit-to-finite-family extraction. Those dependencies remain explicit
+in the theorem assembly.
+
+\begin{thebibliography}{9}
+\bibitem{GTZ} B. Green, T. Tao and T. Ziegler,
+\emph{An inverse theorem for the Gowers $U^{s+1}[N]$-norm},
+Annals of Mathematics \textbf{176} (2012), 1231--1372.
+Only the specified algebraic polynomial-map and Lie-group facts are used;
+the Appendix C step claim is replaced here.
+\bibitem{Taut} Project proof, \emph{Tautification and the shifted
+nilcharacter construction}, draft 003, 7 November 2026.
+The exact author manifest and independent scope decision are pinned in
+the accompanying application record.
+\end{thebibliography}
+\end{document}

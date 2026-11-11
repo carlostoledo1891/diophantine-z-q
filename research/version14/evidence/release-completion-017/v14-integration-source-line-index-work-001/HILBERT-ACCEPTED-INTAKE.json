@@ -1,0 +1,313 @@
+{
+  "original": {
+    "use": {
+      "id": "ACTIVE-THETA-HILBERT-RECIPROCITY",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-THETA-HILBERT-RECIPROCITY-P1"
+      ],
+      "assertion": {
+        "statement": "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d).",
+        "objects": "Actual m and d of main15497–15509 and their Hilbert/Jacobi symbols.",
+        "hypotheses": "m,d positive integers, m odd; d coprime to complete level, hence gcd(d,2m)=1.",
+        "quantifiers": "Every such actual d with the fixed m.",
+        "parameter_range": "Actual finite set of primes dividing2md, with infinity included before positivity eliminates it.",
+        "uniformity": "Exact identity with finitely many nontrivial factors.",
+        "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+        "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1. The right hand side uses the ordinary Jacobi symbol for positive odd d.",
+        "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+        "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+      },
+      "classification": "dependency",
+      "reason": "This is the exact published Hilbert product input used to pass from finite local multipliers to O.5c.",
+      "shared_contract_justification": "Only the displayed actual caller is selected.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15497,
+          "end_line": 15509,
+          "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+        },
+        "statement": "For nonzero rational a,b, the product of their local Hilbert symbols over all rational places is one. At odd q the explicit valuation/unit formula applies; at infinity the symbol is one if either argument is positive.",
+        "publication": {
+          "title": "A Course in Arithmetic",
+          "authors": "J.-P. Serre",
+          "venue": "Springer, Graduate Texts in Mathematics7,1973; corrected fifth printing1996",
+          "authoritative_version": "Captured published book SHA25615cea1a59aec4541efd5e9565d03624e5e6a3e896418e70b9934de27519a21ae",
+          "locator": "ChapterIII §1.2 Theorem1, p20; §2.1 Theorem3 and proof, pp23–24",
+          "corrections": "The inspected copy is the corrected fifth printing; no claim to have audited unrelated errata."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 15497,
+        "end_line": 15509,
+        "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-THETA-HILBERT-RECIPROCITY",
+      "use_sha256": "d7365949b6f9dcf331292e19d1ecfc2f3efa9e70b6d15b13b591caadb226f9c4",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "For nonzero rational a,b, the product of their local Hilbert symbols over all rational places is one. At odd q the explicit valuation/unit formula applies; at infinity the symbol is one if either argument is positive.",
+        "objects": "Rational a,b and their images in Q_q and R; quadratic Hilbert norm-residue symbol.",
+        "hypotheses": "a,b are nonzero; the odd-prime formula uses q odd and unit parts after removing q-adic valuations.",
+        "quantifiers": "Every pair a,b in Q^times and every rational place.",
+        "parameter_range": "All rational places including2 and infinity.",
+        "uniformity": "Exact identity with finitely many nontrivial factors.",
+        "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+        "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1.",
+        "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+        "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+      },
+      "needed_assertion": {
+        "statement": "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d).",
+        "objects": "Actual m and d of main15497–15509 and their Hilbert/Jacobi symbols.",
+        "hypotheses": "m,d positive integers, m odd; d coprime to complete level, hence gcd(d,2m)=1.",
+        "quantifiers": "Every such actual d with the fixed m.",
+        "parameter_range": "Actual finite set of primes dividing2md, with infinity included before positivity eliminates it.",
+        "uniformity": "Exact identity with finitely many nontrivial factors.",
+        "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+        "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1. The right hand side uses the ordinary Jacobi symbol for positive odd d.",
+        "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+        "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+      },
+      "required_capabilities": [
+        "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d)."
+      ],
+      "available_capabilities": [
+        "For nonzero rational a,b, the product of their local Hilbert symbols over all rational places is one. At odd q the explicit valuation/unit formula applies; at infinity the symbol is one if either argument is positive."
+      ],
+      "derived_capabilities": [
+        "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d)."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15497,
+          "end_line": 15509,
+          "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d).",
+          "objects": "Actual m and d of main15497–15509 and their Hilbert/Jacobi symbols.",
+          "hypotheses": "m,d positive integers, m odd; d coprime to complete level, hence gcd(d,2m)=1.",
+          "quantifiers": "Every such actual d with the fixed m.",
+          "parameter_range": "Actual finite set of primes dividing2md, with infinity included before positivity eliminates it.",
+          "uniformity": "Exact identity with finitely many nontrivial factors.",
+          "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+          "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1. The right hand side uses the ordinary Jacobi symbol for positive odd d.",
+          "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+          "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "At infinity positivity gives1. At q dividing d, the odd-prime formula gives(m/q)^v_q(d). All other odd primes away2md give1. Move the q|d factors across the product identity, using their order2. Keep the dyadic factor. No B0 determinant cancellation or theta invariance is inferred.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15497,
+            "end_line": 15509,
+            "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15497,
+          "end_line": 15509,
+          "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+        }
+      ]
+    },
+    "state": "author proposal awaiting independent source/caller review"
+  },
+  "current": {
+    "use": {
+      "id": "ACTIVE-THETA-HILBERT-RECIPROCITY",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-THETA-HILBERT-RECIPROCITY-P1"
+      ],
+      "assertion": {
+        "statement": "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d).",
+        "objects": "Actual m and d of main15497–15509 and their Hilbert/Jacobi symbols.",
+        "hypotheses": "m,d positive integers, m odd; d coprime to complete level, hence gcd(d,2m)=1.",
+        "quantifiers": "Every such actual d with the fixed m.",
+        "parameter_range": "Actual finite set of primes dividing2md, with infinity included before positivity eliminates it.",
+        "uniformity": "Exact identity with finitely many nontrivial factors.",
+        "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+        "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1. The right hand side uses the ordinary Jacobi symbol for positive odd d.",
+        "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+        "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+      },
+      "classification": "dependency",
+      "reason": "This is the exact published Hilbert product input used to pass from finite local multipliers to O.5c.",
+      "shared_contract_justification": "Only the displayed actual caller is selected.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15497,
+          "end_line": 15509,
+          "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+        },
+        "statement": "For nonzero rational a,b, the product of their local Hilbert symbols over all rational places is one. At odd q the explicit valuation/unit formula applies; at infinity the symbol is one if either argument is positive.",
+        "publication": {
+          "title": "A Course in Arithmetic",
+          "authors": "J.-P. Serre",
+          "venue": "Springer, Graduate Texts in Mathematics7,1973; corrected fifth printing1996",
+          "authoritative_version": "Captured published book SHA25615cea1a59aec4541efd5e9565d03624e5e6a3e896418e70b9934de27519a21ae",
+          "locator": "ChapterIII §1.2 Theorem1, p20; §2.1 Theorem3 and proof, pp23–24",
+          "corrections": "The inspected copy is the corrected fifth printing; no claim to have audited unrelated errata."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 15497,
+        "end_line": 15509,
+        "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-THETA-HILBERT-RECIPROCITY",
+      "use_sha256": "5c8dc657358b20f1204af0ecf6b53830321988e8b53902ed977ab014d2a55894",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "For nonzero rational a,b, the product of their local Hilbert symbols over all rational places is one. At odd q the explicit valuation/unit formula applies; at infinity the symbol is one if either argument is positive.",
+        "objects": "Rational a,b and their images in Q_q and R; quadratic Hilbert norm-residue symbol.",
+        "hypotheses": "a,b are nonzero; the odd-prime formula uses q odd and unit parts after removing q-adic valuations.",
+        "quantifiers": "Every pair a,b in Q^times and every rational place.",
+        "parameter_range": "All rational places including2 and infinity.",
+        "uniformity": "Exact identity with finitely many nontrivial factors.",
+        "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+        "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1.",
+        "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+        "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+      },
+      "needed_assertion": {
+        "statement": "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d).",
+        "objects": "Actual m and d of main15497–15509 and their Hilbert/Jacobi symbols.",
+        "hypotheses": "m,d positive integers, m odd; d coprime to complete level, hence gcd(d,2m)=1.",
+        "quantifiers": "Every such actual d with the fixed m.",
+        "parameter_range": "Actual finite set of primes dividing2md, with infinity included before positivity eliminates it.",
+        "uniformity": "Exact identity with finitely many nontrivial factors.",
+        "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+        "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1. The right hand side uses the ordinary Jacobi symbol for positive odd d.",
+        "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+        "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+      },
+      "required_capabilities": [
+        "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d)."
+      ],
+      "available_capabilities": [
+        "For nonzero rational a,b, the product of their local Hilbert symbols over all rational places is one. At odd q the explicit valuation/unit formula applies; at infinity the symbol is one if either argument is positive."
+      ],
+      "derived_capabilities": [
+        "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d)."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15497,
+          "end_line": 15509,
+          "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual positive odd m and positive d coprime to the complete level, product over p dividing2m of(d,m)_p equals product over q dividing d of(m/q)^v_q(d), hence(m/d).",
+          "objects": "Actual m and d of main15497–15509 and their Hilbert/Jacobi symbols.",
+          "hypotheses": "m,d positive integers, m odd; d coprime to complete level, hence gcd(d,2m)=1.",
+          "quantifiers": "Every such actual d with the fixed m.",
+          "parameter_range": "Actual finite set of primes dividing2md, with infinity included before positivity eliminates it.",
+          "uniformity": "Exact identity with finitely many nontrivial factors.",
+          "constants": "Values in {1,-1}; no asymptotic or numerical estimate.",
+          "normalizations": "Serre ChapterIII Hilbert symbol equals1 for isotropic z²-ax²-by²; v_q(q)=1. The right hand side uses the ordinary Jacobi symbol for positive odd d.",
+          "exceptional_cases": "The dyadic factor is retained and evaluated by the separate formula in Theorem1, never omitted.",
+          "limit_order": "Finite product of the nontrivial local symbols; no limiting exchange."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "At infinity positivity gives1. At q dividing d, the odd-prime formula gives(m/q)^v_q(d). All other odd primes away2md give1. Move the q|d factors across the product identity, using their order2. Keep the dyadic factor. No B0 determinant cancellation or theta invariance is inferred.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 15497,
+            "end_line": 15509,
+            "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15497,
+          "end_line": 15509,
+          "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+        }
+      ]
+    },
+    "state": "author proposal awaiting independent source/caller review"
+  },
+  "review": {
+    "path": "v14-hilbert-reciprocity-review-001/REVIEW.json",
+    "sha256": "c6c251a18a16a15624644759278d451d3f32d8b02c995e07bdce1d6073532927"
+  },
+  "reconciliation_review": {
+    "path": "v14-hilbert-reciprocity-review-001/RECONCILIATION-REVIEW.json",
+    "sha256": "8a5513cadeaabb85d7a63da10dcadee8501bf93b4dad74e8436e2c73478b779a"
+  },
+  "scope": "Published-source application, no new project-proof source."
+}

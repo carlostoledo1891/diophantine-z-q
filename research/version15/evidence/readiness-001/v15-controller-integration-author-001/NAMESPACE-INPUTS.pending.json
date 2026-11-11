@@ -1,0 +1,75 @@
+{
+  "schema": "v15-namespace-preparation-inputs/v1",
+  "status": "Incomplete offline inputs; not a runtime config or cutover authorization",
+  "base_controller": {
+    "repository": "elliotglazer/research-review-controller",
+    "repository_id": 1449903511,
+    "commit": "a7016ba2c686dcd6a49be5654eda19fff31a2c51",
+    "tree": "fe33aac18e3cf30b33430d9e6d7d3bda6293208e"
+  },
+  "old_config": {
+    "path": "candidate/controller/config.json",
+    "sha256": "062926978a4b20625ebbdd56fb00f57d222fda9ac44e1f54a4ddbf4c6186e357"
+  },
+  "namespace_proposal": {
+    "retired_branch": "protocol-state",
+    "new_branch": "protocol-state-v15",
+    "retired_ledger_ids": {
+      "operator": "elliot-research-operator-20261107",
+      "intake": "elliot-research-intake-20261107"
+    },
+    "new_ledger_ids": {
+      "operator": "elliot-research-operator-v15-20261110",
+      "intake": "elliot-research-intake-v15-20261110"
+    },
+    "status": "New IDs are proposed names only; no genesis or ref created",
+    "old_ids_source": {
+      "commit": "a7016ba2c686dcd6a49be5654eda19fff31a2c51",
+      "path": "STATE-BOOTSTRAPPED.json",
+      "sha256": "8a91dbe641c6a930603ee2e01133a289de8f9576d75f30449b1ef6d8987df13e",
+      "limitation": "Historical genesis identity; recheck against authenticated final V14 export"
+    }
+  },
+  "unchanged_publication_identity": {
+    "app_id": 5663093,
+    "base_ref": "main",
+    "installation_id": 179741595,
+    "repository": "elliotglazer/diophantine-z-q",
+    "repository_id": 1446122118,
+    "required_merge_ci": [],
+    "target_mode": "head"
+  },
+  "unchanged_key_ids": {
+    "collector": "collector-20261107",
+    "intake": "intake-20261107",
+    "operator": "operator-20261107"
+  },
+  "historical_publisher_evidence": {
+    "path": "HISTORICAL-PUBLISHERS.json",
+    "sha256": "2883a3476308cbe671faabc18dc986f8dfd14c59cbe9959ec2d7361cc08156d0"
+  },
+  "required_actual_inputs": {
+    "final_v14_export_descriptor": null,
+    "final_v14_export_files": null,
+    "authenticated_export_review": null,
+    "final_v14_state_commit": null,
+    "old_ownership_registry": null,
+    "new_v15_source_head": null,
+    "new_v15_packet": null,
+    "new_v15_selected_reports": null,
+    "new_v15_job": null,
+    "old_and_new_route_review": null,
+    "no_active_writers_observation": null,
+    "finalization_complete_observation": null,
+    "fresh_controller_ref_observation": null,
+    "bootstrap_review": null,
+    "new_controller_commit": null,
+    "protected_routing_digest": null
+  },
+  "limits": [
+    "Historical publisher config identities do not by themselves establish complete old-state ownership.",
+    "Preserve every owner produced from authenticated operator freezes, intake captures, publisher generations and targets.",
+    "No actual Git or packet identifier is replaced by a placeholder hash.",
+    "Do not set the protected variable or create any ref from this incomplete file."
+  ]
+}

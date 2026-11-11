@@ -1,0 +1,509 @@
+{
+  "schema": 1,
+  "original_initial": {
+    "path": "v14-final-composite-review-001/prime-source-initial-001/INITIAL-SOURCE-USES.json",
+    "sha256": "7638cafd456ef0847b00aad03196d7c62929fc9b49aaee5886f76980790e81b3"
+  },
+  "author": "/root/v14_integration_review",
+  "rows": [
+    {
+      "initial_id": "PRIME-SUP-001",
+      "initial_use_sha256": "9fc1d68d5d8e34eb54db27090d626ecf933ee8bb76f2a21fdbf57edd436be748",
+      "initial_assertion": {
+        "statement": "For each fixed q>=3 and reduced residue a, the published theta estimate implies infinitely many positive primes in that class, avoiding every finite set.",
+        "objects": "theta(x;q,a), phi(q), c_theta(q), x_theta(q).",
+        "hypotheses": "BMOR final Theorem1.2 and definition1.5; positive constants and threshold for fixed q.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "No uniform threshold or prime-size bound in varying q; this is a sufficient replacement source for Dirichlet.",
+        "limit_order": "Fix q,a first; take x beyond its source threshold and log(x)>2c_theta(q)phi(q); deduce unbounded theta."
+      },
+      "initial_classification": "dependency",
+      "initial_passages": [
+        "PRIME-SUP-001-P"
+      ],
+      "disposition": "mapped_conditional_source_clause",
+      "explanation": "The same fixed-q estimate is the published available assertion of both callers; SOURCE line4 supplies the elementary unbounded-theta deduction, before their distinct signed and successive applications. This is a genuine added proof source, not metadata.",
+      "bindings": [
+        {
+          "use_id": "ACTIVE-RC-SIGNED-PRIME-EXISTENCE",
+          "use_sha256": "eb21e5228728c89ed1f160717c25aaa70e29c8c22d88bd82127f7d670b0257e2",
+          "available_assertion": {
+            "statement": "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx).",
+            "objects": "Positive primes p congruent a moduloq and their log-weighted sum.",
+            "hypotheses": "q>=3, gcd(a,q)=1, x above the source threshold depending onq.",
+            "quantifiers": "For every fixed q,a satisfying the hypotheses, for every x>=x_theta(q).",
+            "parameter_range": "Integer q>=3, integer a with gcd(a,q)=1, and real x>=x_theta(q).",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Definition1.5 oftheta; Theorem1.2 inequality.",
+            "exceptional_cases": "No conclusion for a nonreduced class.",
+            "limit_order": "Fixq,a before x tends to infinity."
+          },
+          "needed_assertion": {
+            "statement": "There is a signed prime q0 with the prescribed sign and all unit squareclasses, outside the finite forbidden primes.",
+            "objects": "The actual signedunitfilter,S,B and q0=epsilon*r.",
+            "hypotheses": "CRT has supplied the reduced class for positive r representing epsilon times the target classes.",
+            "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+            "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Positive progression prime r; signed parameterq0; includes ramified dyadic classes.",
+            "exceptional_cases": "Does not supply HL/BFH or a prime-count theorem.",
+            "limit_order": "Fix filter and finiteavoidance, then chooseprime."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+                "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+              },
+              "start_line": 9,
+              "end_line": 10,
+              "excerpt_sha256": "e27f4ef9a70c960a0bb526abdc30649c126725f541c39a435d7cc649360e90ea"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "There is a signed prime q0 with the prescribed sign and all unit squareclasses, outside the finite forbidden primes.",
+              "objects": "The actual signedunitfilter,S,B and q0=epsilon*r.",
+              "hypotheses": "CRT has supplied the reduced class for positive r representing epsilon times the target classes.",
+              "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+              "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+              "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+              "constants": "No numerical bound is consumed.",
+              "normalizations": "Positive progression prime r; signed parameterq0; includes ramified dyadic classes.",
+              "exceptional_cases": "Does not supply HL/BFH or a prime-count theorem.",
+              "limit_order": "Fix filter and finiteavoidance, then chooseprime."
+            }
+          }
+        },
+        {
+          "use_id": "ACTIVE-RC-CLASSICAL-PRIME-REALIZATION",
+          "use_sha256": "f6791debb4a0429a77356ccd9b414e600f312c2a205ab7c615bd5daf87109f22",
+          "available_assertion": {
+            "statement": "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx).",
+            "objects": "Positive primes p congruent a moduloq and their log-weighted sum.",
+            "hypotheses": "q>=3, gcd(a,q)=1, x above the source threshold depending onq.",
+            "quantifiers": "For every fixed q,a satisfying the hypotheses, for every x>=x_theta(q).",
+            "parameter_range": "Integer q>=3, integer a with gcd(a,q)=1, and real x>=x_theta(q).",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Definition1.5 oftheta; Theorem1.2 inequality.",
+            "exceptional_cases": "No conclusion for a nonreduced class.",
+            "limit_order": "Fixq,a before x tends to infinity."
+          },
+          "needed_assertion": {
+            "statement": "Finitely many fresh distinct primes realize the prescribed forward bits and types; dummy primes can be chosen afterh avoiding its support.",
+            "objects": "Actual finite old/newvertices, types, forwardbits and finiteavoidance.",
+            "hypotheses": "Each step has a reduced class from the realizable type and nonzero residues; compatibility andgraph inputs remain separate.",
+            "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+            "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Positiveprimes in the type class; reversebits handled separately byreciprocity.",
+            "exceptional_cases": "No prime-size bound uniform inh and no automatic symbolinvariance.",
+            "limit_order": "Choose primes successively; at eachstep fix its modulus and exclude all priorchoices."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+                "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+              },
+              "start_line": 12,
+              "end_line": 13,
+              "excerpt_sha256": "070dd5cea471a3b3d1e7c730cb22e0229ad8c028b77b9ff9d112bba4a9319ca8"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "Finitely many fresh distinct primes realize the prescribed forward bits and types; dummy primes can be chosen afterh avoiding its support.",
+              "objects": "Actual finite old/newvertices, types, forwardbits and finiteavoidance.",
+              "hypotheses": "Each step has a reduced class from the realizable type and nonzero residues; compatibility andgraph inputs remain separate.",
+              "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+              "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+              "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+              "constants": "No numerical bound is consumed.",
+              "normalizations": "Positiveprimes in the type class; reversebits handled separately byreciprocity.",
+              "exceptional_cases": "No prime-size bound uniform inh and no automatic symbolinvariance.",
+              "limit_order": "Choose primes successively; at eachstep fix its modulus and exclude all priorchoices."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "initial_id": "PRIME-SUP-002",
+      "initial_use_sha256": "4f705a47fd98060bd89fa956fb48e8bbed5b320b71b8bf9b0a055b032a7b75c2",
+      "initial_assertion": {
+        "statement": "Pairwise coprime positive moduli and unit residues admit a simultaneous unit residue modulo their product by the explicit Bezout sum.",
+        "objects": "q_i,a_i,Q,Q_i,b_i and a=sum a_i b_i Q_i.",
+        "hypotheses": "Integer Bezout identity and pairwise coprimality; Milne ANT v3.08 p19 states CRT.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "CRT alone supplies no prime; author course notes are not a peer-reviewed publication.",
+        "limit_order": "Choose each inverse b_i modulo q_i, form the sum, check every congruence and gcd(a,Q)=1."
+      },
+      "initial_classification": "dependency",
+      "initial_passages": [
+        "PRIME-SUP-002-P"
+      ],
+      "disposition": "mapped_conditional_source_clause",
+      "explanation": "The CRT available assertion and its explicit Bezout connecting proof supply exactly this finite congruence step; no prime existence follows from CRT alone.",
+      "bindings": [
+        {
+          "use_id": "ACTIVE-RC-CRT-UNIT-CONDITIONS",
+          "use_sha256": "de1b7fd2af55f43f403137b595a41a2a3e26e69bc860752aef6e83af87519052",
+          "available_assertion": {
+            "statement": "Unit residues modulo pairwise coprime positive integer moduli combine into one reduced residue class modulo their product.",
+            "objects": "Integers q_i,a_i and productQ.",
+            "hypotheses": "The q_i are pairwise coprime and gcd(a_i,q_i)=1.",
+            "quantifiers": "Every finite list of pairwise-coprime positive integer moduli and unit residues at those moduli.",
+            "parameter_range": "Positive pairwise-coprime integer moduli and integer residues.",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Ordinary integer congruences, with Bezout inverses ofQ/q_i.",
+            "exceptional_cases": "Overlapping support must first be consolidated into one compatible modulus.",
+            "limit_order": "Fix finite moduli, then constructa."
+          },
+          "needed_assertion": {
+            "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+            "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+            "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+            "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+            "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+            "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+            "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+                "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+              },
+              "start_line": 9,
+              "end_line": 13,
+              "excerpt_sha256": "3104f25b78226e99905b7484fef1fc64d1cadf4384cbcd11d9264882f390eef2"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "The actual finite unit-class and forward-bit conditions combine into a reduced residue class.",
+              "objects": "Support modulus containing8, odd old prime vertices outside its support, and unitresidues.",
+              "hypotheses": "The prescribed type is realizable; oldprimes are distinct and outside support.",
+              "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+              "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+              "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+              "constants": "No numerical bound is consumed.",
+              "normalizations": "Odd local squareclasses use residues modp; dyadic unit classes usemod8.",
+              "exceptional_cases": "This supplies no prime and no reverse reciprocity bit.",
+              "limit_order": "Choose compatible unitresidues, then apply explicitCRT."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "initial_id": "PRIME-SUP-003",
+      "initial_use_sha256": "e3a23098c818d7f1ec7012a655137a7caabc03936b6e85803e995f8e4180da32",
+      "initial_assertion": {
+        "statement": "A signed prime q0 outside the fixed avoidance set can realize the prescribed real sign and unit squareclasses.",
+        "objects": "epsilon, positive prime r, signed prime q0=epsilon*r and local unit classes.",
+        "hypotheses": "Odd-prime unit squareclasses specified by nonzero residues, dyadic units modulo8; fixed finite S,B; CRT and fixed-modulus prime infinitude.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "No HL/BFH nonvanishing or bound on its prime factors follows.",
+        "limit_order": "Fix sign and multiply target residues by epsilon; combine by CRT; choose positive r avoiding S union B."
+      },
+      "initial_classification": "dependency",
+      "initial_passages": [
+        "PRIME-SUP-003-P"
+      ],
+      "disposition": "mapped_conditional_source_clause",
+      "explanation": "The signed-prime caller supplies this conclusion after CRT and the fixed-q infinitude deduction; local squareclass realization and nonvanishing remain separate.",
+      "bindings": [
+        {
+          "use_id": "ACTIVE-RC-SIGNED-PRIME-EXISTENCE",
+          "use_sha256": "eb21e5228728c89ed1f160717c25aaa70e29c8c22d88bd82127f7d670b0257e2",
+          "available_assertion": {
+            "statement": "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx).",
+            "objects": "Positive primes p congruent a moduloq and their log-weighted sum.",
+            "hypotheses": "q>=3, gcd(a,q)=1, x above the source threshold depending onq.",
+            "quantifiers": "For every fixed q,a satisfying the hypotheses, for every x>=x_theta(q).",
+            "parameter_range": "Integer q>=3, integer a with gcd(a,q)=1, and real x>=x_theta(q).",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Definition1.5 oftheta; Theorem1.2 inequality.",
+            "exceptional_cases": "No conclusion for a nonreduced class.",
+            "limit_order": "Fixq,a before x tends to infinity."
+          },
+          "needed_assertion": {
+            "statement": "There is a signed prime q0 with the prescribed sign and all unit squareclasses, outside the finite forbidden primes.",
+            "objects": "The actual signedunitfilter,S,B and q0=epsilon*r.",
+            "hypotheses": "CRT has supplied the reduced class for positive r representing epsilon times the target classes.",
+            "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+            "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Positive progression prime r; signed parameterq0; includes ramified dyadic classes.",
+            "exceptional_cases": "Does not supply HL/BFH or a prime-count theorem.",
+            "limit_order": "Fix filter and finiteavoidance, then chooseprime."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+                "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+              },
+              "start_line": 9,
+              "end_line": 10,
+              "excerpt_sha256": "e27f4ef9a70c960a0bb526abdc30649c126725f541c39a435d7cc649360e90ea"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "There is a signed prime q0 with the prescribed sign and all unit squareclasses, outside the finite forbidden primes.",
+              "objects": "The actual signedunitfilter,S,B and q0=epsilon*r.",
+              "hypotheses": "CRT has supplied the reduced class for positive r representing epsilon times the target classes.",
+              "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+              "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+              "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+              "constants": "No numerical bound is consumed.",
+              "normalizations": "Positive progression prime r; signed parameterq0; includes ramified dyadic classes.",
+              "exceptional_cases": "Does not supply HL/BFH or a prime-count theorem.",
+              "limit_order": "Fix filter and finiteavoidance, then chooseprime."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "initial_id": "PRIME-SUP-004",
+      "initial_use_sha256": "9078ecadf14a1159e75a4a4c4278d9e8860685e1799be4d6c22672ed92a4d8ba",
+      "initial_assertion": {
+        "statement": "A finite succession of fresh primes realizes compatible forward quadratic bits and fixed types, also for dummy labels after h is fixed.",
+        "objects": "Finite old/new prime vertices, support modulus, forward Legendre bits, finite avoidance set, dummy labels and h.",
+        "hypotheses": "Realizable type is a unit residue modulo support containing8; distinct old primes outside support; nonzero square/nonsquare residues exist; CRT and prime infinitude.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "Reverse bits require reciprocity; product-template invariance requires a separate graph premise; no bound uniform in h.",
+        "limit_order": "At each step fix the modulus and residues, avoid prior choices, choose a prime; for dummy labels fix h first."
+      },
+      "initial_classification": "dependency",
+      "initial_passages": [
+        "PRIME-SUP-004-P"
+      ],
+      "disposition": "mapped_conditional_source_clause",
+      "explanation": "The classical finite-realization caller supplies the successive choices and dummy avoidance after h is fixed; reverse symbols and product-template validity remain separate.",
+      "bindings": [
+        {
+          "use_id": "ACTIVE-RC-CLASSICAL-PRIME-REALIZATION",
+          "use_sha256": "f6791debb4a0429a77356ccd9b414e600f312c2a205ab7c615bd5daf87109f22",
+          "available_assertion": {
+            "statement": "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx).",
+            "objects": "Positive primes p congruent a moduloq and their log-weighted sum.",
+            "hypotheses": "q>=3, gcd(a,q)=1, x above the source threshold depending onq.",
+            "quantifiers": "For every fixed q,a satisfying the hypotheses, for every x>=x_theta(q).",
+            "parameter_range": "Integer q>=3, integer a with gcd(a,q)=1, and real x>=x_theta(q).",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Definition1.5 oftheta; Theorem1.2 inequality.",
+            "exceptional_cases": "No conclusion for a nonreduced class.",
+            "limit_order": "Fixq,a before x tends to infinity."
+          },
+          "needed_assertion": {
+            "statement": "Finitely many fresh distinct primes realize the prescribed forward bits and types; dummy primes can be chosen afterh avoiding its support.",
+            "objects": "Actual finite old/newvertices, types, forwardbits and finiteavoidance.",
+            "hypotheses": "Each step has a reduced class from the realizable type and nonzero residues; compatibility andgraph inputs remain separate.",
+            "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+            "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+            "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+            "constants": "No numerical bound is consumed.",
+            "normalizations": "Positiveprimes in the type class; reversebits handled separately byreciprocity.",
+            "exceptional_cases": "No prime-size bound uniform inh and no automatic symbolinvariance.",
+            "limit_order": "Choose primes successively; at eachstep fix its modulus and exclude all priorchoices."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+                "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+              },
+              "start_line": 12,
+              "end_line": 13,
+              "excerpt_sha256": "070dd5cea471a3b3d1e7c730cb22e0229ad8c028b77b9ff9d112bba4a9319ca8"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "Finitely many fresh distinct primes realize the prescribed forward bits and types; dummy primes can be chosen afterh avoiding its support.",
+              "objects": "Actual finite old/newvertices, types, forwardbits and finiteavoidance.",
+              "hypotheses": "Each step has a reduced class from the realizable type and nonzero residues; compatibility andgraph inputs remain separate.",
+              "quantifiers": "For every fixed finite configuration satisfying the hypotheses.",
+              "parameter_range": "Integer moduli; current progression moduli are divisible by8 and hence>=3.",
+              "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+              "constants": "No numerical bound is consumed.",
+              "normalizations": "Positiveprimes in the type class; reversebits handled separately byreciprocity.",
+              "exceptional_cases": "No prime-size bound uniform inh and no automatic symbolinvariance.",
+              "limit_order": "Choose primes successively; at eachstep fix its modulus and exclude all priorchoices."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "initial_id": "PRIME-SUP-005",
+      "initial_use_sha256": "71d18a8b012daee43755c3ae920ef4acedc713e8990e8fef95ee1a42d5a88840",
+      "initial_assertion": {
+        "statement": "Realizability, compatibility, representation of fixed types by unit residues, reciprocity, graph dependence and dummy-label preparation remain independent incoming requirements.",
+        "objects": "Actual finite types, quadratic symbols, graph data and prepared dummy labels.",
+        "hypotheses": "The particular main applications must establish these premises for their actual objects.",
+        "quantifiers": "For every fixed finite instance satisfying the stated hypotheses.",
+        "parameter_range": "Integer moduli and finitely many rational prime conditions; progression modulus at least3.",
+        "uniformity": "Only each fixed instance; no uniformity over varying moduli or h.",
+        "constants": "Exact elementary identities; analytic constants retain their fixed-modulus dependence.",
+        "normalizations": "Positive primes before prescribed real-sign multiplication; ordinary quadratic residue conventions and dyadic modulus8.",
+        "exceptional_cases": "No new analytic nonvanishing, Selmer result, or uniform prime-size bound is supplied.",
+        "limit_order": "Establish these requirements before applying the preceding finite prime construction."
+      },
+      "initial_classification": "dependency",
+      "initial_passages": [
+        "PRIME-SUP-005-P"
+      ],
+      "disposition": "retained_incoming_requirements",
+      "explanation": "These are explicit incoming premises, not consequences of the three prime-source uses. The type-alphabet and earlier finite-realization interfaces identify their current consumers and conditional scope; reciprocity, concrete realizability and graph/product-replacement premises remain separately required.",
+      "bindings": [
+        {
+          "use_id": "ACTIVE-RC-TYPE-ALPHABET",
+          "use_sha256": "bd466dcfabb0362e4b7998479166616d77918d0ee9b4bb300b74a547cd1bbc67",
+          "available_assertion": {
+            "statement": "The actual full-two-torsion coefficient system uses one free residue bit per unordered pair, realizable types with all relations, complete external-incidence contraction and separately surjective alphabet projections; stationary label support does not change Selmer local conditions.",
+            "objects": "Actual coefficient symbol(s), realizable typed graphs, prime representatives and finite binary addresses for the fixed source.",
+            "hypotheses": "Fixed rational full two-torsion coefficient source, finite rational quadratic characters and local squareclasses; only realizable types satisfying all relations are allowed.",
+            "quantifiers": "Every finite configuration satisfying the stated premises, with original data retained.",
+            "parameter_range": "The exact finite-stage domain of current main2881–2942.",
+            "uniformity": "No uniformity beyond the displayed statement and fixed-source premises.",
+            "constants": "Preserve the fixed-source constants and finite exclusion data; no new quantitative bound is asserted.",
+            "normalizations": "F2 pair bits with quadratic reciprocity; actual retained types and signed parameter convention.",
+            "exceptional_cases": "Quadratic reciprocity for rational primes; Actual coefficient-source character and local-squareclass data; Coefficient graph-dependence and contraction identities remain separate",
+            "limit_order": "Keep the original data fixed and apply the listed construction only after its premises hold."
+          },
+          "needed_assertion": {
+            "statement": "The actual full-two-torsion coefficient system uses one free residue bit per unordered pair, realizable types with all relations, complete external-incidence contraction and separately surjective alphabet projections; stationary label support does not change Selmer local conditions.",
+            "objects": "Actual coefficient symbol(s), realizable typed graphs, prime representatives and finite binary addresses for the fixed source.",
+            "hypotheses": "Fixed rational full two-torsion coefficient source, finite rational quadratic characters and local squareclasses; only realizable types satisfying all relations are allowed.",
+            "quantifiers": "Every finite configuration satisfying the stated premises, with original data retained.",
+            "parameter_range": "The exact finite-stage domain of current main2881–2942.",
+            "uniformity": "No uniformity beyond the displayed statement and fixed-source premises.",
+            "constants": "Preserve the fixed-source constants and finite exclusion data; no new quantitative bound is asserted.",
+            "normalizations": "F2 pair bits with quadratic reciprocity; actual retained types and signed parameter convention.",
+            "exceptional_cases": "Quadratic reciprocity for rational primes; Actual coefficient-source character and local-squareclass data; Coefficient graph-dependence and contraction identities remain separate",
+            "limit_order": "Keep the original data fixed and apply the listed construction only after its premises hold."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 2881,
+              "end_line": 2942,
+              "excerpt_sha256": "928ba77102d937133e3e91ab3a497d457b655f41a093c814c15797567ab5e0f5"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "The actual full-two-torsion coefficient system uses one free residue bit per unordered pair, realizable types with all relations, complete external-incidence contraction and separately surjective alphabet projections; stationary label support does not change Selmer local conditions.",
+              "objects": "Actual coefficient symbol(s), realizable typed graphs, prime representatives and finite binary addresses for the fixed source.",
+              "hypotheses": "Fixed rational full two-torsion coefficient source, finite rational quadratic characters and local squareclasses; only realizable types satisfying all relations are allowed.",
+              "quantifiers": "Every finite configuration satisfying the stated premises, with original data retained.",
+              "parameter_range": "The exact finite-stage domain of current main2881–2942.",
+              "uniformity": "No uniformity beyond the displayed statement and fixed-source premises.",
+              "constants": "Preserve the fixed-source constants and finite exclusion data; no new quantitative bound is asserted.",
+              "normalizations": "F2 pair bits with quadratic reciprocity; actual retained types and signed parameter convention.",
+              "exceptional_cases": "Quadratic reciprocity for rational primes; Actual coefficient-source character and local-squareclass data; Coefficient graph-dependence and contraction identities remain separate",
+              "limit_order": "Keep the original data fixed and apply the listed construction only after its premises hold."
+            }
+          }
+        },
+        {
+          "use_id": "ACTIVE-RC-FINITE-PRIME-REALIZATION",
+          "use_sha256": "65fb48d61447a5199dfb0ed03f528468e9b735c25ed0bc7fd88255d33952269f",
+          "available_assertion": {
+            "statement": "Every compatible finite prescription of new types and independent pair bits can be realized by distinct fresh primes, preserving all old primes/bits; a product template can be replaced only when its output type is permitted.",
+            "objects": "Actual coefficient symbol(s), realizable typed graphs, prime representatives and finite binary addresses for the fixed source.",
+            "hypotheses": "Finitely many fixed old primes and exclusion primes; new types are actual reduced residue conditions on fixed support including8, and all requested forward bits are compatible.",
+            "quantifiers": "Every finite configuration satisfying the stated premises, with original data retained.",
+            "parameter_range": "The exact finite-stage domain of current main3026–3050.",
+            "uniformity": "No uniformity beyond the displayed statement and fixed-source premises.",
+            "constants": "Preserve the fixed-source constants and finite exclusion data; no new quantitative bound is asserted.",
+            "normalizations": "F2 pair bits with quadratic reciprocity; actual retained types and signed parameter convention.",
+            "exceptional_cases": "Chinese remainder theorem and Dirichlet theorem on primes in reduced arithmetic progressions; The actual type is expressible by these finite congruence conditions; Accepted whole-prime graph-dependence identity; no arbitrary incompatible type is licensed",
+            "limit_order": "Keep the original data fixed and apply the listed construction only after its premises hold."
+          },
+          "needed_assertion": {
+            "statement": "Every compatible finite prescription of new types and independent pair bits can be realized by distinct fresh primes, preserving all old primes/bits; a product template can be replaced only when its output type is permitted.",
+            "objects": "Actual coefficient symbol(s), realizable typed graphs, prime representatives and finite binary addresses for the fixed source.",
+            "hypotheses": "Finitely many fixed old primes and exclusion primes; new types are actual reduced residue conditions on fixed support including8, and all requested forward bits are compatible.",
+            "quantifiers": "Every finite configuration satisfying the stated premises, with original data retained.",
+            "parameter_range": "The exact finite-stage domain of current main3026–3050.",
+            "uniformity": "No uniformity beyond the displayed statement and fixed-source premises.",
+            "constants": "Preserve the fixed-source constants and finite exclusion data; no new quantitative bound is asserted.",
+            "normalizations": "F2 pair bits with quadratic reciprocity; actual retained types and signed parameter convention.",
+            "exceptional_cases": "Chinese remainder theorem and Dirichlet theorem on primes in reduced arithmetic progressions; The actual type is expressible by these finite congruence conditions; Accepted whole-prime graph-dependence identity; no arbitrary incompatible type is licensed",
+            "limit_order": "Keep the original data fixed and apply the listed construction only after its premises hold."
+          },
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3026,
+              "end_line": 3050,
+              "excerpt_sha256": "e7bf3d62ad04a013eb16c25223ca0771e2c302c7a7032dc5c10905e05e3304fa"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "Every compatible finite prescription of new types and independent pair bits can be realized by distinct fresh primes, preserving all old primes/bits; a product template can be replaced only when its output type is permitted.",
+              "objects": "Actual coefficient symbol(s), realizable typed graphs, prime representatives and finite binary addresses for the fixed source.",
+              "hypotheses": "Finitely many fixed old primes and exclusion primes; new types are actual reduced residue conditions on fixed support including8, and all requested forward bits are compatible.",
+              "quantifiers": "Every finite configuration satisfying the stated premises, with original data retained.",
+              "parameter_range": "The exact finite-stage domain of current main3026–3050.",
+              "uniformity": "No uniformity beyond the displayed statement and fixed-source premises.",
+              "constants": "Preserve the fixed-source constants and finite exclusion data; no new quantitative bound is asserted.",
+              "normalizations": "F2 pair bits with quadratic reciprocity; actual retained types and signed parameter convention.",
+              "exceptional_cases": "Chinese remainder theorem and Dirichlet theorem on primes in reduced arithmetic progressions; The actual type is expressible by these finite congruence conditions; Accepted whole-prime graph-dependence identity; no arbitrary incompatible type is licensed",
+              "limit_order": "Keep the original data fixed and apply the listed construction only after its premises hold."
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Fresh post-freeze comparison proposal. Five original dependency observations preserved. Last row retains incoming obligations and does not discharge them."
+}

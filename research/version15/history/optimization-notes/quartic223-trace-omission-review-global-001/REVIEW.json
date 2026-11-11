@@ -1,0 +1,32 @@
+{
+  "decision": "accepted",
+  "subject_sha256": "933696fa4c97fd944520153154264ec1a453d0be8961b6f620a40bef71c406c3",
+  "scope": "Existential obstruction to bounding t by the three-root trace in the exact one-row modified223 system. No smaller defining polynomial accepted.",
+  "bindings": {
+    "parent_ir": "0839eb623c76ba462eec8842dc5b8c85fef85cc924c9daa98f35a83ae61948e0",
+    "source": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b",
+    "patch": "ae91d92950b8b39d5338d31fb19cb68a028c44567f17f059c327b6587e759b68"
+  },
+  "checks": {
+    "all_member_pins": true,
+    "source_windows": 6,
+    "exact_removed_terms": 6,
+    "only_row": 197,
+    "other_rows_preserved": 196
+  },
+  "reasoning": [
+    "The six removed terms are exactly minus the rational sum of squares of the q/R-scaled third-root trace field. Thus the original trace is replaced by the positive fixed trace of Q1,Q2,Q4 when the other data are fixed.",
+    "The pinned completeness proof explicitly allows arbitrary fixed nonzero rational scales before prime selection. Choosing1 andTminus therefore supplies a base prepared witness without assuming a four-root height estimate for the modified trace. This reuses accepted completeness premises and the accepted scalar modifications.",
+    "After fixing the base witness, vary the integer t in a sufficiently deep congruence class and a compact-real recurrence neighborhood. The simultaneous point functions of tP,htP,(h-1)tP and required half-points remain close to their base values. Their forbidden rational-function zeros and poles exclude only finitely many indices unless identically forbidden, which the base witness excludes.",
+    "All variable local test and trace inequalities at the finite support are preserved by continuity. At every new denominator prime outside the fixed support of gamma and detectorR, b=gamma^2*detectorR/Tr(W^-1)^2 has even valuation. Thus its reduced denominator remains square; no unsupported openness of rational pole solvability is used.",
+    "The pole-realization theorem requires exactly square reduced denominator,0<b<17, local squares at2,3,17 and the stated valuation depths. These are preserved, so it supplies fresh pole witnesses for every selected t. Other point-function, comparison, product and helper coordinates follow their exact definitions.",
+    "The accepted223 inverse/rescaling maps require only fixed nonzero q and scalarR at this step. The altered trace remains the fixedTminus relation. Delta is a monic quadratic in t, so only two of the infinitely many selected integer t can have Delta=0."
+  ],
+  "limits": [
+    "Existential family, no computed numerical tuple.",
+    "This does not refute the unmodified223 construction.",
+    "It does not claim a noninteger-input counterexample or exclude a different height argument with extra constraints.",
+    "All deep prime-selection, recurrence, scalar and pole-realization premises are reused at their accepted scope, not independently reproved here."
+  ],
+  "authorship_disclosure": "Reviewer contributed to inherited reference constructions and reviewed223 composition. This review checks integration author's new trace-omission argument and exact patch; it does not self-approve those inherited contributions."
+}

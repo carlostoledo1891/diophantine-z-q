@@ -1,0 +1,9 @@
+# Yuan codimension-two extension input review
+
+Reviewer: /root/v14_arithmetic_review. Decision: accept ACTIVE-YUAN-CODIMENSION-TWO-EXTENSION in author001, manifest d38e86d130bfdd5db51a81b7a04fe5140b38ab8cb38958cd9a927a56c1e1c394.
+
+I directly read the pinned0AVB HTML, SHA2566f9faf4957a95a56f690bf80631fdabe7071966f7dc30ea3bf1c71d427d74327, and compared its reflexive-module implication with the exact profile and actual Yuan note13/main8043–8053. The source is the retrieved digital Stacks text, not a claim of a printed edition. It states the height-one intersection characterization for a finite reflexive module over a Noetherian normal domain.
+
+On affine connected regular etale charts of the supplied regular Noetherian Deligne–Mumford stack, the ring is a normal domain. Trivializing the supplied invertible square-dualizing line reduces to the free rank-one reflexive module R. The generic-fibre section is regular at horizontal height-one points; the separate vertical valuation calculation supplies the vertical ones. The intersection theorem therefore gives a regular section on each chart. Flatness makes the generic fibre dense, so these sections agree on etale overlaps; the sheaf descent condition glues them uniquely. These are the same sections with the same J^2, without a new scaling or coarse-model pullback.
+
+The argument retains regularity, Noetherian/DM structure, flatness, invertibility, generic-fibre regularity and the vertical estimates as explicit inputs. It does not establish those model hypotheses, extend arbitrary nonreflexive sheaves, or invoke a tame coarse quotient at bad primes. All recorded member, primary, location and use-hash checks passed. The new source declaration remains a proposed overlay until installed; no canonical file changed and no global source or release approval is supplied.

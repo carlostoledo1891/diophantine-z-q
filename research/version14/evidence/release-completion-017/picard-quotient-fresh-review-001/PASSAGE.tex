@@ -1,0 +1,25 @@
+For the modular quotient used below, let $N$ be the conductor of $A$.
+Choose the finite surjective $\Q$-morphism
+$\rho:X_0(N)\to A$ supplied by
+\cite[Theorem C.13.6]{silverman}, and compose it with the finite
+surjective forgetful morphism $u:X_1(N)\to X_0(N)$.
+Put $f=\rho\circ u$. Pushforward of divisors preserves degree
+and sends principal divisors to principal divisors by the function-field
+norm \cite[Proposition II.3.6(c),(d)]{silverman}.
+It therefore induces
+\[
+ q=f_*:J_1(N)=\operatorname{Pic}^0(X_1(N))
+       \longrightarrow\operatorname{Pic}^0(A)\simeq A,
+\]
+where the last identification uses the identity point of $A$
+\cite[Proposition III.3.4]{silverman}.
+This is a homomorphism of abelian varieties over $\Q$: for the finite
+flat map $f$, the norm on line bundles is
+$\mathcal L\mapsto\det(f_*\mathcal L)\otimes
+\det(f_*\mathcal O_{X_1(N)})^{-1}$;
+this construction is defined over $\Q$, commutes with base change,
+and induces the displayed map of Picard varieties.
+To check surjectivity, work over $\overline{\Q}$ and fix any
+$P_0\in X_1(N)(\overline{\Q})$. Given $a\in A(\overline{\Q})$,
+choose $P$ with $f(P)=a+f(P_0)$. Then
+$q([P]-[P_0])=a$. No rational point on $X_1(N)$ is required.

@@ -1,0 +1,53 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "saved_at": "2026-11-09T06:59:18.754Z",
+  "target_sha256": "c920d7c7112723b10d2d9499a184178abe46ca60ae095d29a9c690e524401b41",
+  "decision": "accepted six bounded incoming output imports",
+  "checks": [
+    {
+      "id": "ACTIVE-H6-DATUM-TO-FIELD",
+      "digest": true,
+      "edge": true,
+      "assertions": true,
+      "locations": true
+    },
+    {
+      "id": "ACTIVE-H6-DATUM-TO-THETA",
+      "digest": true,
+      "edge": true,
+      "assertions": true,
+      "locations": true
+    },
+    {
+      "id": "ACTIVE-H6-MILNE-TO-HODGE",
+      "digest": true,
+      "edge": true,
+      "assertions": true,
+      "locations": true
+    },
+    {
+      "id": "ACTIVE-H6-BETA-TO-COMMON-CONSTITUENT",
+      "digest": true,
+      "edge": true,
+      "assertions": true,
+      "locations": true
+    },
+    {
+      "id": "ACTIVE-H6-BETA-LEVEL-TO-JHEIGHT",
+      "digest": true,
+      "edge": true,
+      "assertions": true,
+      "locations": true
+    },
+    {
+      "id": "ACTIVE-H6-BETA-DEGREE-TO-ISOGENY",
+      "digest": true,
+      "edge": true,
+      "assertions": true,
+      "locations": true
+    }
+  ],
+  "reason": "The same original discriminant-six principally polarized A supplies the field and theta inputs. The Hodge import is the rational Hom statement for its actual covariant H1, with Qbar descent and centralizer separate. Beta comparison is restricted to the original Tate representation; the same kernel field degree and primitive level feed the quantitative height/isogeny uses.",
+  "basis": "Read all six assertions, verify exact current source/consumer pins and declared edges, reuse accepted original-datum, Hodge, beta quantitative and same-A current-join reviews already inspected.",
+  "limits": "A011 quotient/constituent realization remains a separate input to the common constituent. No D210 substitution, no new field enlargement, no independent source ancestry or whole H6 closure from these six edges."
+}

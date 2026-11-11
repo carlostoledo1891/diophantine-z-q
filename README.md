@@ -1,20 +1,32 @@
 # Z is Diophantine in Q
 
-## Version 10
+## Version 15
 
-This repository contains *Z is Diophantine in Q*, Version 10, dated November 7, 2026. It addresses the nine points in [Issue 2](https://github.com/elliotglazer/diophantine-z-q/issues/2), with unchanged polynomial data. Version 9 added quartics in 523 variables with exact symbolic coefficients and 540 variables with every coefficient written out in decimal. The original large construction and the earlier quartic proofs remain in the manuscript. The new reductions were contributed by Gabriel Conant with ChatGPT.
+[Read the manuscript](research/version15/snapshots/v15-222-004/manuscript/quartic_v15.pdf), [open the TeX source](research/version15/snapshots/v15-222-004/manuscript/quartic_v15.tex), or [browse the research index](research/version15/README.md). This update selects a quartic family in **222 total variables** with **2,277 nonzero coordinate monomials**, alongside the original huge construction and the retained 314-variable decimal quartic. The [published Version 15 release](https://github.com/elliotglazer/diophantine-z-q/releases/tag/quartic-222-version-15) includes the manuscript and cumulative research archive.
+
+The [222-variable package](research/version15/quartics/quartic-222/README.md) includes raw and sparse tables, a fixed-parameter generator, and finite checks. Its defining threshold N0 remains ineffective; the coefficient bound for N >= 53 does not certify that defining threshold. [Release notes](research/version15/RELEASE-NOTES.md) and the [cumulative handoff](research/version15/CUMULATIVE-HANDOFF.md) retain the construction and review history.
+
+## Version 14 history
+
+This repository also preserves *Z is Diophantine in Q*, Version 14, dated November 9, 2026. It gives quartics in **299 total variables** with exact symbolic coefficients and **314 total variables** with every coefficient written out in decimal. The original large construction, earlier quartic proofs and Version 11 Kato index-set and limiting-class repair remain in the manuscript. The Version 9 starting reductions were contributed by Gabriel Conant with ChatGPT.
 
 The project uses the collective agentic notes from Stefan Baranczuk, Jose Brox, Gabe Conant, Sohail Farhangi, James Freitag, Elliot Glazer, Jennifer Park, and Caroline Terry.
 
 | To | Open |
 | --- | --- |
-| Read Version 10 | [Manuscript PDF](manuscripts/quartic_v10.pdf), [TeX source](manuscripts/quartic_v10.tex) |
+| Read Version 14 | [Manuscript PDF](manuscripts/quartic_v14.pdf), [TeX source](manuscripts/quartic_v14.tex) |
+| Reproduce the 299/314-variable quartics | [Tables, proof inventory and review scopes](docs/manuscript-revisions/version14/GUIDE.md) |
+| Reproduce the 394/411-variable quartics | [Tables, proof inventory and review scopes](docs/manuscript-revisions/version13/GUIDE.md) |
+| Reproduce the 498/514-variable quartics | [Tables, proof inventory and independent reviews](docs/manuscript-revisions/version12/README.md) |
 | Reproduce the 523/540-variable quartics | [Tables, source, dependency chain and checks](docs/quartic-523-540/README.md) |
 | Read the fully expanded Version 4 quartic | [4,973-variable package](quartics/quartic-4973/README.md), [integer monomial table](quartics/quartic-4973/polynomial.expanded.txt) |
-| Inspect the nine review corrections | [Version 10 response and inventory](docs/manuscript-revisions/version10/README.md) |
+| Follow the current mathematical research review protocol | [Protocol_D](https://github.com/elliotglazer/protocols/blob/main/Protocol_D.md), [local copy](docs/research-review/PROTOCOL.md), [contributor guide](docs/research-review/README.md) |
+| Reuse the protocol in another project | [Starter kit: protocol, agent instructions, and project brief](docs/research-review/starter-kit/README.md) |
+| Inspect the Version 11 repair and repository audit integration | [Version 11 source audit](docs/manuscript-revisions/version11/README.md), [audit integration protocol](docs/audit-history/PROTOCOL.md) |
+| Inspect the nine earlier review corrections | [Version 10 response and inventory](docs/manuscript-revisions/version10/README.md) |
 | Inspect theorem applications and conventions | [Version 9 extension](docs/quartic-523-540/README.md), [inherited proof inventory](docs/quartic-962/README.md) |
 | Build the manuscript or run the checks | [Build instructions](docs/building.md) |
-| Download the current audit supplement | [Version 10 supplement and guide](research/version10/README.md) |
+| Download the current research handoff | [Version 15 cumulative ZIP](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-222-version-15/z-in-q-version15-cumulative.zip), [contents and verification](research/version15/CUMULATIVE-HANDOFF.md), [Version 14 archive](research/version14/CUMULATIVE-HANDOFF.md) |
 | Download the Version 7 research handoffs | [Full handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-962-version-7/z-in-q-version7-full-handoff.zip), [current-only handoff](https://github.com/elliotglazer/diophantine-z-q/releases/download/quartic-962-version-7/z-in-q-version7-current-handoff.zip), [contents and verification](handoff/README.md) |
 | Read collaborator notes and the height replacement | [Research update](research/2026-11-06-collaborator-notes/README.md) |
 | Read the October 11 manuscript | [Manuscript and provenance](October%2011%20Manuscript/README.md) |
@@ -39,11 +51,24 @@ $$
 
 | Construction | Total variables, including input | Degree | Nonzero monomials | Coefficient magnitude |
 | --- | ---: | ---: | ---: | --- |
+| Version 15, selected family | 222 | 4 | 2,277 | $A_N^2+1$ for $N\ge53$, where $A_N=149^{2N+1}$ |
 | Original | 292,890,231,905 | Less than $2\uparrow\uparrow7$ | Not expanded | Less than $2\uparrow\uparrow8$ |
+| Version 14, decimal table | 314 | 4 | 6,672 | Less than $2^{6496}$ |
+| Version 14, symbolic table | 299 | 4 | 6,630 | Maximum $186624\cdot3^{2^{26}}$ |
+| Version 13, decimal table | 411 | 4 | 6,388 | Less than $2^{3247}$ |
+| Version 13, symbolic table | 394 | 4 | 6,338 | Maximum $16\cdot3^{2^{26}}$ |
+| Version 12, decimal table | 514 | 4 | 24,716 | Maximum $3^{2048}+1005072314676622<2^{3247}$ |
+| Version 12, symbolic table | 498 | 4 | 24,669 | Maximum $16\cdot3^{2^{26}}$ |
 | Version 9, decimal table | 540 | 4 | 35,213 | Maximum $3^{2048}+1005072314631333<2^{3247}$ |
 | Version 9, symbolic table | 523 | 4 | 35,163 | Maximum $64\cdot3^{2^{27}}$ |
 | Version 4 quartic, retained | 4,973 | 4 | 72,925 | Maximum 685,783,949,153,203,534,233,890, less than $2^{80}$ |
 | Version 6 quartic | 962 | 4 | 55,409 | Maximum $64\cdot3^{2^{28}}$ |
+
+The [314-variable decimal table](quartics/quartic-314-fully-expanded.txt) contains every coefficient in decimal and occupies 264,430 bytes. The [299-variable table](quartics/quartic-299-symbolic-coefficients.json) uses the fixed integer $C=3^{2^{25}}$. See the [Version 14 guide](docs/manuscript-revisions/version14/GUIDE.md) for the construction, inventory and review scopes.
+
+The [411-variable decimal table](quartics/quartic-411-fully-expanded.txt) contains every coefficient in decimal and occupies 214,957 bytes. The [394-variable table](quartics/quartic-394-symbolic-coefficients.json) uses the fixed integer $C=3^{2^{25}}$, not an extra variable. Both have content one. The ordinary companion adds sixteen constant-chain coordinates and one multiplication coordinate to keep its residuals quadratic. [Version 13 checks and reviews](docs/manuscript-revisions/version13/GUIDE.md) explain the construction and their separate scopes.
+
+The [514-variable table](quartics/quartic-514-fully-expanded.txt) contains every coefficient in decimal and occupies 690,922 bytes. The [498-variable table](quartics/quartic-498-symbolic-coefficients.json) uses the fixed integer $C=3^{2^{25}}$, not an extra variable. [Version 12 checks and reviews](docs/manuscript-revisions/version12/README.md) cover the exact coefficient data and new mathematical transformations separately.
 
 The [540-variable table](quartics/quartic-540-fully-expanded.txt) contains all coefficients in decimal and occupies 708,848 bytes. The [523-variable table](quartics/quartic-523-symbolic-coefficients.json) uses the fixed integer $S=3^{2^{26}}$, not an extra variable. [Reproduction and convention checks](docs/quartic-523-540/README.md) cover both.
 
@@ -57,9 +82,9 @@ The earlier 962-variable polynomial builds on an independent reconstruction of t
 
 The finite checks verify the source program, algebraic coordinate changes, projection-preserving eliminations, complete sum-of-squares expansion and coefficient statistics. Independent checks and rejection tests accompany the package. These checks do not prove the source system's arithmetic characterization of the integers.
 
-The manuscript supplies that arithmetic argument. The [Version 9 extension](docs/quartic-523-540/README.md) connects the new arithmetic arguments to the inherited proofs. The [Version 7 inventory](docs/quartic-962/README.md) records exact theorem applications, source versions, hypotheses, conventions and translations. Version 6 proves the needed Gaussian ray-field estimate within the manuscript, following the method of Frei–Tinková without assuming their theorem. The replacement uses Mitsui's published prime-ideal estimate, Green–Tao's one-parameter results, and ordinary-prime transference.
+The manuscript supplies that arithmetic argument. The [Version 15 research index](research/version15/README.md) records the current selection and its review scope. The [Version 14 guide](docs/manuscript-revisions/version14/GUIDE.md) records that edition's constructions and separates the finite checks from their mathematical review. The [Version 13 guide](docs/manuscript-revisions/version13/GUIDE.md) separates the new component and composition reviews, the finite table checks, and the 39-application inventory. These internal reviews retain the inherited arithmetic inputs and source qualifications. The [Version 12 application inventory and reviews](docs/manuscript-revisions/version12/README.md) cover that edition's reductions while retaining the prior arithmetic inputs and their source qualifications. The [Version 9 extension](docs/quartic-523-540/README.md) connects the new arithmetic arguments to the inherited proofs. The [Version 7 inventory](docs/quartic-962/README.md) records exact theorem applications, source versions, hypotheses, conventions and translations. Version 6 proves the needed Gaussian ray-field estimate within the manuscript, following the method of Frei–Tinková without assuming their theorem. The replacement uses Mitsui's published prime-ideal estimate, Green–Tao's one-parameter results, and ordinary-prime transference.
 
-The inventory retains source-version qualifications. In particular, the applications of Dodos–Kanellopoulos and Kollár were checked in the stated author versions of published works; their final typeset statements were not compared. This is not a claim that every cited source's final published text has been inspected.
+Historical inventories retain their original source-version qualifications, including the earlier Dodos–Kanellopoulos and Kollár applications. Those citations are absent from the Version 14 manuscript. Consult the [Version 15 source and application records](research/version15/README.md) for the current selection; a historical acceptance is limited to its recorded source and argument.
 
 The [Version 4 inventory](docs/quartic-4973/README.md) and the [earlier 82-record inventory](docs/theorem-application-audit/README.md) retain their own frozen scopes. Structural inventory checks detect stale or mismatched records; they are not proofs of mathematical theorems.
 
@@ -67,7 +92,7 @@ The Lean formalization is incomplete. The accepted snapshot contains 48 helper m
 
 ## Earlier work and provenance
 
-The October 11, 2026 manuscript, *A conditional Diophantine definition of Z in Q from four arithmetic inputs*, was produced by Sohail Farhangi with ChatGPT 6. Its PDF is preserved without modification. Its provenance and conditional scope are distinct from Version 10.
+The October 11, 2026 manuscript, *A conditional Diophantine definition of Z in Q from four arithmetic inputs*, was produced by Sohail Farhangi with ChatGPT 6. Its PDF is preserved without modification. Its provenance and conditional scope are distinct from the November manuscript.
 
 The November manuscript was produced by Elliot Glazer with Astra 6, Sol 6.1, and Opus 5.5, with auditing from Fable 5.1. The [Version 5 manuscript](manuscripts/archive/quartic_1272.pdf), [Version 4 manuscript](manuscripts/archive/quartic_4973.pdf), [Version 3 manuscript](manuscripts/archive/quartic_9625.pdf) and [Version 2 manuscript](manuscripts/archive/quartic_12504.pdf) remain historical references, with their separate polynomial packages and inventories. Earlier research handoffs identify their own snapshots.
 

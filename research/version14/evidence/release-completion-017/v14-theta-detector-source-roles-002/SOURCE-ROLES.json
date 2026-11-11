@@ -1,0 +1,297 @@
+{
+  "schema": "source-role-relationships/v1",
+  "rows": [
+    {
+      "id": "DETECTOR-RATIONAL-KUMMER",
+      "role": "local_derivation_from_exact_sources",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14911,
+        "end_line": 14913,
+        "excerpt_sha256": "3e6df3c0bc5dbacf53fef4c6526a8f627f18eeab98f7d1bd1195ddd46b304050"
+      },
+      "needed": "A(Q) tensor Q2 injects into continuous H1(Q,V2A).",
+      "sources": [
+        {
+          "kind": "generic_available_profile",
+          "id": "ACTIVE-GENERATOR-RANK-AND-TORSION",
+          "part": "Mordell-Weil finite generation only"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 11,
+            "end_line": 21,
+            "excerpt_sha256": "a1acb190a02699394cf91f22ffb101489608a00f60b04ecfdf32aae5a0953416"
+          },
+          "part": "finite Kummer injection and cocycle construction"
+        }
+      ],
+      "argument": "Split the finitely generated group M=A(Q) as a free summand F plus its finite torsion subgroup. The natural identification F tensor Q2 = M tensor Q2 removes the torsion. Choose compatible division points for an integral basis of F. Their Kummer cocycles extend Z2-linearly to the free completion F tensor Z2, giving continuous T2A-valued cocycles. If a cocycle from this free completion becomes a coboundary in V2A, multiply its witness by a fixed power 2^s to put it in T2A. At every finite level the resulting Kummer class is zero, so finite Kummer injectivity gives that 2^s times the completed free point has zero image in M/2^nM for every n. Since F is a direct summand, its image is zero in F/2^nF for every n, hence it is zero in F tensor Z2. After tensoring Q2 this proves the claimed injection. This construction does not assert a Z2-linear lift of the torsion completion into T2A-valued cocycles and makes no finiteness assumption on Sha.",
+      "incoming": [
+        "Mordell-Weil finite generation; finite Kummer injection; compatible division points from surjectivity of multiplication."
+      ]
+    },
+    {
+      "id": "DETECTOR-OPEN-IMAGE",
+      "role": "published_source_specialization",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14903,
+        "end_line": 14915,
+        "excerpt_sha256": "a0f0f800cc45ffe86ce4a450046736d16a992bc3a8988c51afbd78edebc3cd0b"
+      },
+      "needed": "The actual non-CM twist A has an open2-adic image, a nonidentity central scalar, and an irreducible rational Tate representation.",
+      "sources": [
+        {
+          "kind": "generic_available_profile",
+          "id": "ACTIVE-RC-SERRE-OPEN-IMAGE"
+        }
+      ],
+      "argument": "A is geometrically isomorphic to the original non-CM elliptic curve, so it is non-CM. An open image contains1+2^n M2(Z2) for some n. This contains the nonidentity scalar(1+2^n)I and opposite elementary unipotents. Their only common invariant subspaces overQ2 are0 and the full plane. The displayed scalar cocycle identity then makes a descended rational cocycle a coboundary, contradicting the separately supplied rational Kummer injection and nontorsion Q.",
+      "incoming": [
+        "Actual A is a quadratic twist of the fixed non-CM curve; Q is rational and nontorsion; rational Kummer input."
+      ]
+    },
+    {
+      "id": "DETECTOR-TRANSLATION-INDEX",
+      "role": "local_topological_group_derivation",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14892,
+        "end_line": 14925,
+        "excerpt_sha256": "1bcfdca14d788a802c91b29d2b88f5a43f2bbc9b98c66ddee2553f8d15f408ad"
+      },
+      "needed": "The translation image contains2^aT2A even after imposing fixed finite Galois F0.",
+      "sources": [],
+      "argument": "On H the cocycle is a continuous homomorphism with compact image. This closed additive subgroup is a Z2-submodule, since integer multiples approximate every Z2 multiple. Conjugation invariance and irreducibility give full rational span once nonzero. Choose two independent image vectors; their integral matrix has nonzero determinant, hence its image contains a fixed power of2 times T. H0 is the kernel of restriction H to the finite Galois group ofF0, so H/H0 is finite of orderd and h^d lies inH0. Additivity gives c(h^d)=d c(h), retaining finite index with no independence assumption.",
+      "incoming": [
+        "Nonzero translation image and rational irreducibility from prior two steps; F0 finite Galois."
+      ]
+    },
+    {
+      "id": "DETECTOR-EXACT-SIGMA",
+      "role": "local_cocycle_and_linear_algebra",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14927,
+        "end_line": 14944,
+        "excerpt_sha256": "ac7263f766c8adba29e6a17e23d3dd3e7418a44863f882ecaa3fcf27a4cc0d16"
+      },
+      "needed": "One fixed sigma has b c(sigma^2)=2^(a+1) before precision varies.",
+      "sources": [],
+      "argument": "With the supplied real action C^2=1 and detC=-1, its rational +1 dual eigenspace has rank1. Intersect with the integral dual lattice and choose a primitive generator b; primitivity gives b(T)=Z2. Choose t0 with b(t0)=1 and h inH0 with c(h)=2^a t0. The cocycle identity and tau^2=1 give(1+C)c(tau)=0, so b c((h tau)^2)=2^(a+1). The actual restriction toF0 is that oftau.",
+      "incoming": [
+        "The real twist identification D_w>0; determinant/cyclotomic pairing input for C; prior translation index."
+      ]
+    },
+    {
+      "id": "DETECTOR-CHEBOTAREV",
+      "role": "existing_actual_use",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14946,
+        "end_line": 14960,
+        "excerpt_sha256": "f1ec8c14fca59d4931508f5e7144d5d4be6779a23317b3aef4e241bb96475e8e"
+      },
+      "needed": "Infinitely many permitted primes realize the same actual sigma at each finite precision.",
+      "sources": [
+        {
+          "kind": "existing_actual_use",
+          "id": "ACTIVE-THETA-FINITE-CHEBOTAREV"
+        }
+      ],
+      "argument": "Use the finite Galois compositum containing the fixedF0,torsion and division points. The accepted actual Chebotarev use already covers14945–58. Exclude the finite bad support and choose a place giving the specified representative. The determinant conclusion uses the elliptic cyclotomic determinant separately.",
+      "incoming": [
+        "Finite extension and actualsigma constructed first; determinant identity."
+      ]
+    },
+    {
+      "id": "DETECTOR-ELLIPTIC-DETERMINANT",
+      "role": "published_theorem_and_local_wedge_derivation",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14927,
+        "end_line": 14960,
+        "excerpt_sha256": "e7003991dc1c5411a8f9219b51ee9488b7e594deeec38fca875c5d994f86fd97"
+      },
+      "needed": "det rho_E is the2-adic cyclotomic character, so detC=-1 and detFr_q=q.",
+      "sources": [
+        {
+          "publication": "Silverman, The Arithmetic of Elliptic Curves, second edition2009, III.8 Proposition8.1(a)–(e), printed94; domain92–93, proof95–96",
+          "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25"
+        }
+      ],
+      "argument": "At every2^n, E[2^n] is free rank2 and the Weil pairing is bilinear, alternating, nondegenerate and Galois equivariant into mu_(2^n). On a basis its pairing value is primitive by nondegeneracy; therefore the determinant of the Galois matrix is its exponent on that root of unity. Compatibility passes to the Tate module. Complex conjugation inverts roots of unity, while arithmetic Frobenius at odd unramifiedq raises them toq. This uses the elliptic rank-two pairing, not the prior prime5 abelian-surface profile.",
+      "incoming": [
+        "Characteristic zero elliptic curveE; actual arithmetic Frobenius convention and q odd."
+      ]
+    },
+    {
+      "id": "DETECTOR-FINITE-FIELD-KUMMER",
+      "role": "local_finite_field_derivation",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14962,
+        "end_line": 14974,
+        "excerpt_sha256": "1c470a32051980c3eae2440aefa44866cbd08d32754a9d7b8be9725282b9a5f7"
+      },
+      "needed": "The exact kappa(P)=F^2R-R is additive with kernel nE(F_(q^2)), is surjective onto E[n], and is Frobenius equivariant.",
+      "sources": [
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt_sha256": "3bfc2e26e8b0c65ccf834c9eb27d66a3401460102202952233ae43992bb28b6b"
+          },
+          "part": "published nonzero isogeny and multiplication surjectivity over a field"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 15023,
+            "end_line": 15040,
+            "excerpt_sha256": "af20b780b18be5abbc8a56ad3d13f17ab75e628dc5b20a21dbc1222f9120b623"
+          },
+          "part": "independent elementary finite-group cardinality proof of surjectivity"
+        }
+      ],
+      "argument": "Here n=2^M andq is odd, and the supplied Frobenius action satisfies F^2=1 on E[n]. Choose nR=P over the algebraic closure. ChangingR byE[n] leaves F^2R-R unchanged. Sums prove additivity; zero means R rational overF_(q^2), giving exactly the stated kernel. The finite group quotient E(k)/nE(k) and E(k)[n]=E[n] have the same ordern^2, so this injection is surjective, as explicitly proved at15023–40. The alternative sentence14970 is also valid: F^2-1 has differential minus identity, so is nonconstant and separable, hence a surjective isogeny by the field theorem. Frobenius commutes with itself and[n], giving kappa(FP)=F kappa(P).",
+      "incoming": [
+        "Finite field Frobenius fixed-field characterization; E[n] rank2 sinceq odd; actual Frobenius-square identity from detector."
+      ]
+    },
+    {
+      "id": "DETECTOR-DIVISION-COCYCLE-SPECIALIZATION",
+      "role": "local_derivation_from_good_model_inputs",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14976,
+        "end_line": 14988,
+        "excerpt_sha256": "fad9a5f4773b399a83ea2f0a9290d01a932759c1705995ce0b94a0ba74181d0c"
+      },
+      "needed": "The exact global division cocycle specializes to kappa_M at the selected place; witness valuation remains c_w at all M>c_w.",
+      "sources": [
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-integral-map-current/SOURCE-CONNECTIONS.md",
+              "sha256": "c220b352d3be0ef26a3b0475b141e2b43c239095e8a0430156670f2de4adc1f6"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "4bd4b5bdec633e7baa5a19cfa57b4a9c783dc1b28d4ec3377d98a6d50933dd20"
+          },
+          "part": "general BLR mapping property for a good abelian scheme"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            "start_line": 15,
+            "end_line": 17,
+            "excerpt_sha256": "7ada7876c05ea5d077f98fba2bc724e8d564396077b28c34d01df8b29b3c565e"
+          },
+          "part": "general proof that[n] is finite etale when n is invertible"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-kernel-specialization-current/source-statements/STACKS-04GK.md",
+              "sha256": "b3da49274324f40e5ad3e3207ca330e0c4b972e5926ba0e5f8f65fb88d60be56"
+            },
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt_sha256": "cd2e461da338fa12c65c11234142c0edd08134939faa9fbfd20b1b50f5c7b568"
+          },
+          "part": "henselian finite-etale equivalence"
+        }
+      ],
+      "argument": "At a selected odd good prime extend the rational sectionQ by the Neron mapping property with smooth source SpecR. The inverse image ofQ under[n] is finite etale, since[n] is finite etale on the good elliptic scheme. Henselian equivalence identifies its generic and special geometric points, equivariantly for residue Frobenius, and identifies E[n] compatibly with subtraction. Thus sigma^2R-R specializes toF^2 Rbar-Rbar in exactly the transported torsion basis. The square condition(D_w/q)=1 makes the actual twist isomorphism defined overF_q, so the same rowb applies. Its value2^(a+1) mod2^M has exact valuationc_w forM>c_w. No rescaling of the evaluation map is introduced.",
+      "incoming": [
+        "Actual good elliptic model and finite chosen division-point field; q odd; actual place realizing sigma and transported basis; fixedQ and real twist identification."
+      ]
+    },
+    {
+      "id": "DETECTOR-EVALUATION-REPEAT",
+      "role": "same_local_derivation_repeat",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 15015,
+        "end_line": 15045,
+        "excerpt_sha256": "8ca4aa968a74ab7f290e2cdb90bb070ec3cc5830bf2ecface5cede737a622aa2"
+      },
+      "needed": "The repeated finite-field definition uses exactly the same additive map and witness valuation.",
+      "sources": [
+        {
+          "relationship_id": "DETECTOR-FINITE-FIELD-KUMMER"
+        },
+        {
+          "relationship_id": "DETECTOR-DIVISION-COCYCLE-SPECIALIZATION"
+        },
+        {
+          "relationship_id": "DETECTOR-ELLIPTIC-DETERMINANT"
+        }
+      ],
+      "argument": "F at15024 denotes arithmetic Frobenius ofk0=F_(q^2), whereas F at14963 denotesq-Frobenius. Thus the displayedF at15028 equals the earlierF^2. The finite-group proof gives the same quotient isomorphism; q-Frobenius commutes withk0-Frobenius and bC=b gives sign+1. This is not a new independently normalized map.",
+      "incoming": [
+        "Same M,q,L,b and chosen place; distinction between the two uses of the symbolF."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "v15-bounded-source-review/v1",
+  "decision": "accepted",
+  "scope": "Historical-to-current huge polynomial identity and quantitative-bound reuse; not a new proof of all arithmetic suppliers.",
+  "source_sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+  "source_ranges": [
+    [
+      7229,
+      7248
+    ],
+    [
+      7255,
+      7443
+    ],
+    [
+      13000,
+      13291
+    ]
+  ],
+  "historical_review": "work/root-size-final-review-001/REVIEW.txt",
+  "historical_review_sha256": "ee7713123dbe2ef68435e361a7c59d5fea8fea343698dec87b519f0e9a52fcc3",
+  "historical_receipt": "work/root-size-final-review-001/RECEIPT.json",
+  "historical_receipt_sha256": "d4d27d21be6e281f3029f8945e81aab89ae115158e9e8ec08e2fd567c4c78f42",
+  "findings": [
+    "All 23 historical quantitative-review source pins match current preserved originals.",
+    "Historical expression a86790bb and portable expression 4d639d4c differ only in two sourceFile path strings and one sourceHashes key rename; the referenced precision input digest is unchanged. All polynomial nodes, constants, variable scopes, recipes and root data are identical.",
+    "The current literal dictionary uses the same shared kappa, disjoint witness blocks, exception product, member conjunction and final integers projection. The saved polynomial identity is retained.",
+    "The current size argument uses the reviewed safe height-four scalar wrapper and root height 256, not the superseded height-two shortcut; weighted norm and private-variable substitution bounds apply to the same literal expression.",
+    "The strict integer cutoff bound gives T+1 at most the next stated bound. Degree (T+1)^2048 < 2^^7 and coefficient bound 2^((T+1)^2048) < 2^^8 are the same reviewed quantitative conclusions."
+  ],
+  "counts": {
+    "witnesses": 292890231904,
+    "variables": 292890231905
+  },
+  "limits": [
+    "Does not independently re-prove every arithmetic supplier or the full V15 main theorem.",
+    "Degree-at-least-four is reviewed separately by sourcefirst.",
+    "Applies to frozen source8867; later source transport requires its own exact comparison."
+  ],
+  "checks_sha256": "fb3c36d352b8400f9df243cd20fa6962b6fb08e01b7554d7422cd5317dc5b376"
+}

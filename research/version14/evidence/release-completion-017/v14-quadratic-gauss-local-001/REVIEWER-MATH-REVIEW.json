@@ -1,0 +1,32 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T09:21:09.303Z",
+  "status": "accepted finite Gauss-sum proof and bounded stated caller implication",
+  "source": {
+    "side": "head",
+    "path": "research/version14/evidence/quadratic-gauss-local-001/PROOF.md",
+    "sha256": "0ea59481f2f6bed3ddd4bf19362fee92a110ab88d3f2ee63788ebd8edb7e1f06"
+  },
+  "initial": {
+    "path": "v14-quadratic-gauss-local-001/REVIEWER-INITIAL-SOURCE-USES.json",
+    "sha256": "c15aceeb6472d56431409f6bb89e80dafb70fbed158654ec2fa264f2854f4f4e"
+  },
+  "initial_passages": {
+    "path": "v14-quadratic-gauss-local-001/REVIEWER-INITIAL-PASSAGES.json",
+    "sha256": "b9dab0b375ef4969941592b7afe0dfe4147ade87ed460ea337b2eeaeb7800e16"
+  },
+  "reading": "Read all seventeen proof lines before detailed author mapping, then actual main13610–13665. No unseen primary theorem is used for the finite-sum calculation.",
+  "mathematical_checks": [
+    "Surjectivity of reduction on unit groups follows by CRT at primes absent from m; primitivity then yields a character-nontrivial kernel element, including m=1.",
+    "For nonunit a that element fixes the additive phase, forcing S(a)=0; for units substitution gives chi(a)tau.",
+    "Expanding the finite absolute-square sum gives D phi(D), hence |tau|²=D without division by any nonunit or a varying class-group factor.",
+    "Conjugation gives bar(tau)=chi(-1)tau, so tau²=chi(-1)D; the same substitution gives the cyclotomic Galois character.",
+    "Under the supplied quadratic discriminant and square-root character convention, the ratio has square Delta_h/h in {1,4}; its four possible values give exactly the bounded dyadic basis factor used at the two caller passages.",
+    "The trivial conductor is treated separately. No assertion of the exact positive Gauss-sum sign is needed or established."
+  ],
+  "retained_inputs": [
+    "The actual primitive quadratic character associated to Q(sqrt(h)), its conductor and signed fundamental discriminant convention.",
+    "The stated Galois action on sqrt(h) and e_chi, and all surrounding period, Kato and local-generator comparisons."
+  ],
+  "limits": "This accepts the local calculation and its stated normalization consequence, not surrounding reciprocity, Euler-system, period or whole theta arguments. Author reconciliation and source-set installation remain separate."
+}

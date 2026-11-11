@@ -1,0 +1,13 @@
+# Independent current inverse-input review
+
+Accept the three bounded uses GA-CURRENT-RELATIVE, GA-CURRENT-NORM-RELATIVE and GA-CURRENT-NORM-CUTOFF in author manifest 4a8caf393c679655a6abf4f6c7d683e151977674914c9caa9c13d7c99289ac4c. USES.json is b3c353761818b12f3792d944ecaaa42e0ea5b08fb195785759fe510e67f82bae. Reviewer /root/v14_arithmetic_review is independent of this packet. This is a local review, not an authenticated gate event.
+
+I read the three complete uses and available/needed connections, the source proof, and the current theorem and norm-consumption passages. I checked the retained final Green–Tao text at Proposition10.1 and its proof, AppendixB equations B.12–B.15 and LemmaB.5, reusing the earlier independent outer-contract source review. The published PDF and extracted-text identities are the same as that review. No historical DK result is used.
+
+The relative theorem is correctly conditional on GI(k) and the full (k+2)2^(k+1) pseudorandomness conditions. It applies to the real truncated scaled function on the prime cyclic ambient group. With r=max(s,4), k=r-1 is at least3, so the separately supplied local GI input has the needed order. The source gives a finite nilmanifold family and fixed correlation/Lipschitz constants once the structural parameters and positive norm threshold are fixed. It does not give uniformity as those parameters vary. The source-use record preserves that distinction and does not manufacture GI or the measure.
+
+The norm connection is valid. The interval embeds as a Freiman copy in the sufficiently large cyclic group, so B.14 applies to the same normalized cube norm, rather than merely to a different comparable norm. Group norm monotonicity, ||1_I||_(U^s)>=|I|/Q and ||1_I||_(U^r)<=1 give ||f||_(U^r[I])>=||f||_(U^s[I]) L/Q. Since Q<=2 C_* L, the prior truncated bound alpha delta/2 yields alpha delta/(4 C_*). No constant-one interval monotonicity is assumed. The positive density and fixed orders remain essential.
+
+The relative connection's concluding contradiction is explicitly conditional on the separately supplied fixed-V nilsequence estimate and stagewise cutoff construction. It is not a claim that a fixed cutoff is itself asymptotically pseudorandom. Truncation, full-majorant construction, local GI, and the outer counting chain retain their separate owners.
+
+All four manifest members and eight distinct source/current excerpts passed independent raw-byte verification. This accepts the source-to-consumer connections, not a new proof of all cited ancestors or full S1. Proposed overlay installation and final graph reconciliation remain separate.

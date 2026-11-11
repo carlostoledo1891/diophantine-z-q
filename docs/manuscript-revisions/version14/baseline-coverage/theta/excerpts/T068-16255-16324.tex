@@ -1,0 +1,70 @@
+\paragraph{One choice for both symbols at every nonzero address.}
+For each $x\ne0$ let $P_{1,x},P_{2,x}$ be the two nonzero terminal
+polynomials, of degrees $d_{1,x},d_{2,x}$, and let $H_{s,x}$ be their
+highest homogeneous parts.  Work in the ordinary polynomial ring
+in the terminal pair variables for this address.  Since it is a
+domain, $H_{1,x}H_{2,x}\ne0$.  Choose a coefficient-one monomial
+\[
+ M_x=\prod_e X_e^{n_{x,e}},\qquad n_{x,e}\in\{0,1,2\},\qquad
+ \sum_e n_{x,e}=d_{1,x}+d_{2,x}.
+\]
+For $n_{x,e}=2$ install one singular network $S_{x,e}$; it acts on
+both symbol factors.  For $n_{x,e}=1$ install one varying network
+$V^{\varepsilon_{x,e}}_{x,e}$.  Use disjoint auxiliary sets for all
+these networks.  Let $\Gamma_y(\varepsilon)$ be the resulting graph
+at address $y$, and consider the finite sum in $\mathbf F_2$
+\[
+ \sum_{\varepsilon}
+       \prod_{y\ne0}\prod_{s=1}^2 A_s(\Gamma_y(\varepsilon)).
+                                                               \tag{G.1a}
+\]
+The total degree available to all terminal polynomials is
+$D=\sum_{y\ne0}(d_{1,y}+d_{2,y})$.
+
+Each singular network at $x$ has zero constant at $x$, so its action
+costs at least one difference in each of the two factors there, hence
+at least two in (G.1a).  For a varying network, summing over its
+$\varepsilon$ cancels the all-constant term.  Its first-degree
+terms are independent of $\varepsilon$ away from its target, and
+their difference at the target is $\partial_e$.  Thus every
+surviving term costs at least one difference, and a cost-one term
+acts at its target on exactly one of the two factors.  The sum of
+all these minimum costs is exactly $D$.  Any higher-degree action,
+or any additional action at a wrong address, exceeds $D$ and
+annihilates at least one terminal polynomial.  Hence only the
+minimum-cost terms survive.
+
+At address $x$, a variable with exponent two is therefore
+differentiated once in each factor; a variable with exponent one
+is differentiated in exactly one factor, summed over the two
+possibilities.  The resulting scalar is precisely
+$[M_x](H_{1,x}H_{2,x})=1$.  Lower-degree parts cannot contribute.
+Taking the product over all $x\ne0$ proves that (G.1a) equals one.
+At least one choice of the finitely many $\varepsilon$ consequently
+makes every factor in that product one.  This is one graph for both
+symbols at every nonzero address.  Boolean reduction of
+$H_{1,x}H_{2,x}$ before selecting $M_x$ would destroy this
+exponent-two accounting and is not used.
+Here is the stationary and one-symbol specialization, so that the
+application in Proposition~\ref{ex:app-rough-companion} uses the same
+proved construction. If all terminals are always active, attach
+each column $h_i=Qe_i$ to any one fixed terminal. Since $h_i$ is
+supported on its own group, their restricted sum is
+$Q_J\mathbf1_J$ at every address. The two additional columns $c$
+at a selected terminal pair cancel directly; no balancing terminal
+of activation $\alpha+\beta$ is needed. The same singular program
+therefore isolates that pair difference at its target address.
+For one symbol, choose a coefficient-one top monomial of each
+nonzero $P_x$ and put a separate singular program at $x$ for each
+variable in that monomial. Its own programs already spend
+$\deg P_x$ contraction degrees at $x$; any extra degree kills the
+term. Thus exactly the selected top coefficient survives, and it
+is one. A constant nonzero $P_x$ needs no program. This proves the
+stationary one-symbol case as well as the moving one-symbol case.
+In all cases the primary realization of
+Lemma~\ref{ex:sec7-realization} changes only incidences with
+the newly adjoined vertices. These are finite constructions for
+each $b$, with no assertion of one infinite prime array.
+
+\end{proof}
+

@@ -1,0 +1,38 @@
+{
+  "baseSha256": "ef8772aa4929071ab4f8e40a249b9e91f53ba5dbeaff6d7845f517ee7869f9e7",
+  "bytes": 37223123,
+  "files": 595,
+  "path": "research/version13/z-in-q-version13-supplement.zip",
+  "restoredChecks": [
+    {
+      "command": [
+        "scripts/check_audit_history.py",
+        "--self-test"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "docs/manuscript-revisions/version13/validate-applications.py",
+        "--repo",
+        ".",
+        "--self-test"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "docs/manuscript-revisions/version13/portability/test_portability.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "scripts/check_quartic394_portable.py"
+      ],
+      "returncode": 0
+    }
+  ],
+  "scope": "Selected394/411 construction, exact Version13 manuscript and records, portable39-application inventory, selected research source history, and unchanged Version12 base.",
+  "sha256": "10787487f46ebfefe931e2e7db163a2e8bd0605b3c0325534a47cd93dd43b01b"
+}

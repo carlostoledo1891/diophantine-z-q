@@ -1,0 +1,82 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewed_at": "2026-11-09T09:08:25.660Z",
+  "target": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-carayol-repeat-transport-001/MANIFEST.json",
+    "sha256": "4ea6315249e5517d7f0b5e08f03442c501d600d96951bf8dc034d7c0f7ba3178"
+  },
+  "decision": "accepted exact one-use occurrence transport",
+  "checks": {
+    "base_matches021": true,
+    "packet": [
+      {
+        "id": "ARITH-ACTIVE-BETA-LEVEL",
+        "ok": true
+      },
+      {
+        "start": 9,
+        "ok": true
+      },
+      {
+        "start": 1480,
+        "ok": true
+      },
+      {
+        "start": 1480,
+        "ok": true
+      },
+      {
+        "start": 1480,
+        "ok": true
+      },
+      {
+        "start": 9,
+        "ok": true
+      },
+      {
+        "start": 1480,
+        "ok": true
+      },
+      {
+        "start": 1539,
+        "ok": true
+      }
+    ],
+    "delta": [
+      {
+        "p": "/0/use/passages/1",
+        "b": "BETA-LEVEL-PRODUCT-CARAYOL"
+      },
+      {
+        "p": "/0/use/shared_contract_justification",
+        "a": null,
+        "b": "Both main1480–1481 and1539–1541 use the same final primitive weight-two f from the original beta family and the exact modular-side conductor identity v_p(N)=a_p(U_f,ell), with a fresh auxiliary ell!=p for each p. The second occurrence combines this equality with already established bounds; it does not enlarge the source conclusion to an upper bound."
+      },
+      {
+        "p": "/0/connection/use_sha256",
+        "a": "e606dd37383e7e1045393e115cb914b97f75a0deccb71e2354f61a49a7c57ddd",
+        "b": "b1cffd28312a5dcd3787b08297a1fc1af8797586feb3ca2b5a4bb6560c82d4c0"
+      },
+      {
+        "p": "/0/connection/consumer_locations/1",
+        "b": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1539,
+          "end_line": 1541,
+          "excerpt_sha256": "edf468ee7dac3607ae6e10f6b2cce6039602752328bc2ea7997dec6aa4994f00"
+        }
+      }
+    ]
+  },
+  "findings": [
+    "The only changes append the accepted1539–1541 occurrence, explicit same-form shared-contract reason, passage ID and refreshed use digest.",
+    "Source, needed/output assertions and original consumer remain unchanged. Previous early-beta-local index review and bounded final-local source review2cc7e851 retained."
+  ],
+  "limits": [
+    "No new Carayol semantic approval or complete conductor ancestry claim; local bounds and global identification remain separate."
+  ]
+}

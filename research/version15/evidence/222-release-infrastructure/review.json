@@ -1,0 +1,69 @@
+{
+  "schema": "v15-controller-pr-state-integration-review/v1",
+  "decision": "accepted_within_new_integration_and_isolated_readiness_scope",
+  "subject": {
+    "path": "work/v15-controller-pr-state-integration-author-002/MANIFEST.json",
+    "sha256": "69f85c4e56e7c6c87a504c40873a2080271f4b500136fd6d6fa6f7e134c1532e"
+  },
+  "reviewer_scope": {
+    "reviewer": "/root/v14_arithmetic_review",
+    "conflict": "Reviewer authored original namespace prototype. This review accepts only the new composition with committed 543f45; unchanged namespace implementation is reused under H6 independent acceptance, not self-approved.",
+    "inherited_review": {
+      "path": "work/v15-controller-integration-review-h6-001/REVIEW.json",
+      "sha256": "8efbafbd9b5617e290d5e37d521af4cc5a52498848bb53d098d9dc5bccb585dd"
+    }
+  },
+  "checks": {
+    "manifest_members": 235,
+    "committed_base_files": 210,
+    "candidate_files": 212,
+    "base_unchanged": 206,
+    "changed_existing_namespace_files": 4,
+    "new_namespace_files": 2,
+    "all_six_namespace_files_byte_identical": true,
+    "reader_dependency_pin": "84c844a5694c7b7accfebf008cfe14e4ca2198729aa7db5f814abd7ec964aa89",
+    "composition": "The unchanged ForkProtocolRunner calls the repaired fork evaluator; ingress uses the same repaired reader. Comparison projects copies only. State routing, checkpoint IDs, signed input records, raw captures, publisher ownership and caps remain unchanged.",
+    "frozen_members_rechecked_after_tests": true,
+    "original_test_command_adaptation": "Only runner candidate/tests paths and local output directory changed; candidate/test source bytes unchanged."
+  },
+  "limitations": [
+    "No deployment, live state mutation, authenticated final export, ownership census, approved config/digest installation, create-only initialization, capacity forecast or actual-input rehearsal accepted.",
+    "CUTOVER-INPUTS.pending.json is the explicitly incomplete inherited template with historical candidate/controller identity; it is not an executable current cutover plan.",
+    "Signed legacy compatibility tests use synthetic local keys. No fabricated ACK or production acceptance."
+  ],
+  "findings": [],
+  "tests": {
+    "regression": {
+      "modules": [
+        "test_namespace_lifecycle",
+        "test_state_routing",
+        "test_runtime",
+        "test_ingress",
+        "test_git_state",
+        "test_controller_blob_cache",
+        "test_large_artifact",
+        "test_pr_state_projection",
+        "test_runtime_coverage",
+        "test_runtime_idle",
+        "test_store_bridge",
+        "test_prepare"
+      ],
+      "tests": 200,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 61.562999999994645,
+      "success": true,
+      "scope": "Offline existing routing/lifecycle/controller and store-bridge suites; no production state or network operation"
+    },
+    "signed_legacy": {
+      "tests": 16,
+      "exit_code": 0,
+      "seconds": 10.058
+    },
+    "total": 216,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

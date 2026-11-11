@@ -1,0 +1,36 @@
+{
+  "decision": "accepted",
+  "subject_sha256": "8c772f6af2831f77a63a49cfa975f68b38893ffcc5d028ac7f07265224679dcc",
+  "scope": "q=x102 nonzero from exact ten raw224 retained rows; conditional inverse-guard removal",
+  "source_sha256": "6b961988414509ff6619fb674b696c745b098d00ad2af326df43e4db5aa5d39f",
+  "required_row_ids": [
+    9,
+    43,
+    44,
+    45,
+    46,
+    56,
+    57,
+    68,
+    71,
+    73
+  ],
+  "checks": {
+    "all_member_pins": true,
+    "all_ten_rows_exact": true,
+    "exact_fraction_outputs_reproduced": true,
+    "exit": 0
+  },
+  "reasoning": [
+    "Input square and positive quartic P force x114>0. Nonzero A and scalar relation force R!=0, and T=R²!=0.",
+    "Dividing the exact homogeneous detector rows by T or T² yields r=(t-1)² and (1+q)P5(r)=r5.",
+    "P5 modulo5 is (r-1)²(r-4)³. Integral t gives r in{0,1,4}, all contradict q=0.",
+    "For v5(t)<0, v5(r)=2v5(t)<0; after cancellation of leading r5, the unit r4 coefficient uniquely has minimal valuation, so P5(r)-r5 cannot vanish.",
+    "No root or trace equation enters this proof. If these ten equations survive a chart, delete guard h and restore h=1/q; q=-1 and zero values of unrelated coordinates are retained."
+  ],
+  "limits": [
+    "No full root-chart equivalence or candidate variable count certified.",
+    "Any altered row/coordinate meaning must be checked against this domain proof.",
+    "Defining threshold remains ineffective; no new effective threshold."
+  ]
+}

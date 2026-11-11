@@ -1,0 +1,38 @@
+{
+  "schema": "v15-bounded-packaging-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "35bba689055cdd3541b513d76e54de574d00243d423e40fa00cbb3abdd8bbf19",
+  "scope": "Exact local staging016 byte preservation, copy origins and navigation only.",
+  "checks": {
+    "manifest_members": 863,
+    "member_hash_and_size_failures": [],
+    "copy_origin_pairs": 737,
+    "copy_origin_failures": [],
+    "preserved_predecessors": 9,
+    "predecessor_failures": [],
+    "changed_prior_members": [
+      "ARTIFACT-INDEX.md",
+      "COPY-ORIGINS.json",
+      "CUMULATIVE-HANDOFF.md",
+      "manuscript/quartic_v15.pdf",
+      "manuscript/quartic_v15.tex",
+      "README.md",
+      "review/CURRENT-USE-MAP.json",
+      "review/FINDINGS-INTAKE.json"
+    ],
+    "removed_prior_members": [],
+    "local_navigation_links": 47,
+    "missing_navigation": []
+  },
+  "findings": [
+    "All 863 manifest members match exact SHA256 and sizes. All 737 recorded source/destination copies match original bytes.",
+    "The prior manifest has exactly the eight declared changed members and no removed members; all nine preserved predecessor files match their recorded hashes.",
+    "All 47 root navigation links resolve. Navigation explicitly retains separate source, supplier, assembly, publication and author-side visual-review limitations.",
+    "CURRENT-MANIFEST selects the exact reviewed016 manifest."
+  ],
+  "limits": [
+    "No new mathematical acceptance. Previously authored routing review is checked as a copied artifact, not independently re-reviewed here.",
+    "No independent PDF visual QA or build rerun; this receipt verifies supplied PDF bytes only.",
+    "Sourcefirst separately owns exact adopted-source semantic readback. No publication or controller action."
+  ]
+}

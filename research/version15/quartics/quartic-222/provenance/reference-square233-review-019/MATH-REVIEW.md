@@ -1,0 +1,15 @@
+# Independent mathematical review of reference-square elimination
+
+Accepted at the mathematical transformation/domain scope, pending comparison with the exact finite233 implementation. Target author proof: global/reference-square-elimination-233-018/AUTHOR-PROOF.md SHA5c408c1777417ab96106e3339b8864f9dadce5a0635c05fb10d416f62cbb74cd. The parent is accepted raw235/209 IR53b3296814c84d5a7f695829957cfbcd8829018b5799f58339f8518f2e35e395.
+
+The original raw237 conventions are important: B=x86+2*sqrt(2)*x87=f² and w=x33+2*sqrt(2)*x34=v². Thus in raw235 these are84+2*sqrt(2)*85 and31+2*sqrt(2)*32, while v uses21/22. The new coefficient a²+2ac*f+c²B equals(a+cf)² once the retained B definition is used, and is affine in the available coordinates. The numerator N=8-af-2dg is also affine. Hence their product with w and N² produce two genuine quadratic equations, not hidden quartics.
+
+The retained F/E identity already checked independently for235 gives f*S²-1+D*f²=0 without G, v or w, so f!=0. At149, inertness gives even v149(Norm(f)) directly from this nonzero field value. The retained positive scalar normalizer, scalar ratios, B=f² outputs and scalar pole equations force v149(Norm(f))>7nu/4>0 exactly as in the accepted original parity core. This argument does not use the deleted reference v or its square w. In particular the scalar ratio coordinates original128/129 and the scalar norm output are distinct from the reference coordinates deleted here.
+
+Consequently A=a+cf cannot vanish: its sole root f=-a/c has norm(41/56)², a149-adic unit. This establishes the denominator domain before reconstruction. Recover v=N/A in Q(sqrt(2)). The new equation A²w=N² implies w=v². Set Q=Av-N=0. The independently verified polynomial identity Fg-A*(g²-fv)=f*(Q+E) then gives G=g²-fv=0 because A!=0. All four deleted rational equations are recovered.
+
+Conversely, on a parent235 solution, F=E=G=0 and f!=0 imply Q=0 through the same identity. Together with w=v² this yields A²w=N². The forward map drops only the two reference coordinates. The inverse uniquely restores them, so the maps are inverse and keep the distinguished input and A_N fixed.
+
+No squareclass information is discarded: the square root is the explicitly determined field element N/A, not an independently chosen square root of w. Neither direction divides by N, w, g, S, or a rational component of A. Cases where those vanish are covered. If A=A0+sqrt(2)A1 and N=N0+sqrt(2)N1, the rational reconstruction is v0=(N0*A0-2*N1*A1)/(A0²-2*A1²), v1=(N1*A0-N0*A1)/(A0²-2*A1²). The denominator is nonzero because A!=0 in Q(sqrt(2)); its sign is irrelevant.
+
+The equivalence uses the admitted A_N=149^(2N+1) family and inherits the ineffective sufficient thresholdN0. It is not an arbitrary-symbolic-A equivalence. The reviewer did not author these replacement equations or their implementation. Earlier accepted235 identities and current supporting GI/arithmetic reviews are evidence, with the present dependency and reconstruction checks performed independently.

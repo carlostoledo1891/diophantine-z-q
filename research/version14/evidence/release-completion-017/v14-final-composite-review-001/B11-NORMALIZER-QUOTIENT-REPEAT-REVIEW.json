@@ -1,0 +1,63 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:38:44.388Z",
+  "target_manifest": {
+    "path": "v14-b11-normalizer-quotient-location-001/MANIFEST.json",
+    "sha256": "ed47109d5bdc1d550a9117974e5dc18d35d03e2b60628563c484a449cd4d3ff7"
+  },
+  "decision": "accepted bounded repeated generic-identity application",
+  "base_hash_verified": true,
+  "changes": [
+    "/origin",
+    "/use/passages/1",
+    "/use/shared_contract_justification",
+    "/connection/use_sha256",
+    "/connection/consumer_locations/1"
+  ],
+  "checks": [
+    {
+      "id": "ACTIVE-DATUM-SOURCE-GENERIC-IDENTITY",
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 19,
+      "ok": true
+    },
+    {
+      "start": 7,
+      "ok": true
+    },
+    {
+      "start": 19,
+      "ok": true
+    },
+    {
+      "start": 19,
+      "ok": true
+    },
+    {
+      "start": 74,
+      "ok": true
+    },
+    {
+      "start": 19,
+      "ok": true
+    }
+  ],
+  "findings": [
+    "Read NORMALIZER58–82: the all-component full-adelic identity is used both to absorb central ideles and to transfer the finite orbit count to the same coarse j-map.",
+    "This application retains the independent normalizer-quotient description, finite acting-group calculation and characteristic-zero separability. The identity assertion alone is not claimed to prove the orbit description.",
+    "Union this location74–78 with the separately reviewed58–63 and ASSEMBLY192–196 locations; do not replace those branches."
+  ],
+  "limits": [
+    "No full source-ancestry or degree-proof closure."
+  ]
+}

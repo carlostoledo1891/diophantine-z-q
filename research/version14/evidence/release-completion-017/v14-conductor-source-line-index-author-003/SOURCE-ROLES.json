@@ -1,0 +1,472 @@
+[
+  {
+    "id": "SRC-CONDUCTOR-001",
+    "role": "structure",
+    "text": "# Rational discrepancy and positive degree normalization",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-002",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-003",
+    "role": "historical status",
+    "text": "Author proposal. Independent review is pending. Exact published inputs and proposed manuscript insertions are recorded in SOURCE-ATTACHMENT.md. This note makes no claim that Item 2.9 or Version 14 is accepted.",
+    "source_binding_use_ids": [],
+    "qualification": "Preserved author-proposal status from the earlier source version; later scoped reviews govern adoption, not this historical sentence.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-004",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-005",
+    "role": "structure",
+    "text": "## Precise algebraic statement",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-006",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-007",
+    "role": "conditional domain",
+    "text": "Let A be an abelian surface over an algebraic closure of a characteristic-zero field. Suppose quasi-isogenies mu_sigma: sigma A -> A satisfy",
+    "source_binding_use_ids": [],
+    "qualification": "This lemma assumes a rational scalar discrepancy for an actual surface family. It does not establish that premise for either caller.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-008",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-009",
+    "role": "conditional domain",
+    "text": "mu_sigma o sigma(mu_tau) = c(sigma,tau) mu_sigma_tau,",
+    "source_binding_use_ids": [],
+    "qualification": "This lemma assumes a rational scalar discrepancy for an actual surface family. It does not establish that premise for either caller.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-010",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-011",
+    "role": "conditional domain",
+    "text": "where c(sigma,tau) belongs to Q*. The rationality of this discrepancy is an input. It does not follow from the dimension of A alone. In particular it must be checked against the actual endomorphism algebra and chosen equivariance condition.",
+    "source_binding_use_ids": [],
+    "qualification": "This lemma assumes a rational scalar discrepancy for an actual surface family. It does not establish that premise for either caller.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-012",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-013",
+    "role": "literal supplier statement",
+    "text": "Use the usual degree of a genuine isogeny. The external input is Milne, Abelian Varieties, Arithmetic Geometry, Springer, 1986, Theorem 8.2 and its preceding paragraph, printed p. 115, with proof on p. 116: deg([n]_A)=n^(2 dim A), hence n^4 here, and multiplicativity of degree. The degree is the rank of a finite locally free map, which is unchanged under field conjugation. For negative n use the degree-one automorphism [-1]. The actual published pages were visually checked; their exact image hashes are in SOURCE-ATTACHMENT.md.",
+    "source_binding_use_ids": [
+      "ACTIVE-SIGN-NOTE-INTEGRAL-DEGREE"
+    ],
+    "qualification": "The exact Milne degree statement is already the supplier location of the two current sign-degree applications.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-014",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-015",
+    "role": "local derivation",
+    "text": "For a quasi-isogeny u define D(u)=deg([m]u)/m^4, where m is any positive integer clearing its denominators. This is independent of m. Indeed, if m and n both clear the denominators, then",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-016",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-017",
+    "role": "actual integral-degree application",
+    "text": "deg([n]([m]u)) = n^4 deg([m]u)",
+    "source_binding_use_ids": [
+      "ACTIVE-SIGN-NOTE-INTEGRAL-DEGREE"
+    ],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-018",
+    "role": "actual integral-degree application",
+    "text": "deg([m]([n]u)) = m^4 deg([n]u),",
+    "source_binding_use_ids": [
+      "ACTIVE-SIGN-NOTE-INTEGRAL-DEGREE"
+    ],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-019",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-020",
+    "role": "local derivation",
+    "text": "and the two maps coincide. Thus their degrees coincide and the two quotients agree. A common denominator proves D(uv)=D(u)D(v), and conjugating an integral representative proves D(sigma u)=D(u). Also D(id)=1, so D(u^-1)=D(u)^-1.",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-021",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-022",
+    "role": "local derivation",
+    "text": "For c=a/b in Q*, with a a nonzero integer and b a positive integer, use a denominator divisible by b and the multiplication-degree theorem to obtain",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-023",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-024",
+    "role": "local derivation",
+    "text": "D(cu)=c^4 D(u).",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-025",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-026",
+    "role": "local derivation",
+    "text": "No degree is being assigned directly to a nonexistent algebraic morphism [1/b]. This formula uses the preceding definition on rational quasi-isogenies.",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-027",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-028",
+    "role": "local derivation",
+    "text": "Set d_sigma=D(mu_sigma)^(1/4), choosing the positive real fourth root. These are positive real algebraic numbers. The discrepancy identity gives",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-029",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-030",
+    "role": "local derivation",
+    "text": "d_sigma d_tau = |c(sigma,tau)| d_sigma_tau.",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-031",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-032",
+    "role": "local derivation",
+    "text": "Consequently its normalized scalar cocycle is",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-033",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-034",
+    "role": "local derivation",
+    "text": "epsilon(sigma,tau)",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-035",
+    "role": "local derivation",
+    "text": "= c(sigma,tau) d_sigma_tau / (d_sigma d_tau)",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-036",
+    "role": "local derivation",
+    "text": "= c(sigma,tau)/|c(sigma,tau)| in {+1,-1}.",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-037",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-038",
+    "role": "local derivation",
+    "text": "Equivalently nu_sigma=d_sigma^-1 mu_sigma satisfies nu_sigma sigma(nu_tau)=epsilon(sigma,tau)nu_sigma_tau after extending the rational Hom spaces by real algebraic scalar coefficients, with trivial Galois action on this auxiliary coefficient field. The normalized nu_sigma are formal scalar-extended homomorphisms; the argument does not assert that they remain algebraic quasi-isogenies. One can avoid this notation entirely and use the displayed scalar cocycle formula. The cocycle identity follows by multiplying the original cocycle by the coboundary of d^-1. Positivity removes the fourth-root ambiguity.",
+    "source_binding_use_ids": [],
+    "qualification": "Applies the integral degree law to denominator-cleared quasi-isogenies, then takes positive fourth roots with trivial action on the added scalars. The same conditional calculation is instantiated separately for beta and b.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-SIGN-DEGREE",
+      "ARITH-ACTIVE-B-SIGN-DEGREE"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-039",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-040",
+    "role": "structure",
+    "text": "## Separate finite-cochain obligation",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-041",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-042",
+    "role": "scope boundary",
+    "text": "This calculation proves that epsilon is sign-valued. It does not prove that its class is zero, produce a splitting cochain, or imply that a splitting cochain has finite image. If a later construction requires such a cochain, its domain, continuity, coefficient action and splitting theorem must be supplied separately. Sign-valued cocycles need not be coboundaries on an arbitrary fixed finite quotient. Likewise continuity or finite image of d requires the corresponding property of the chosen mu_sigma family; it is not a consequence of pointwise degree normalization.",
+    "source_binding_use_ids": [],
+    "qualification": "Explicitly excludes finite cochain splitting and continuity from the degree conclusion.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-043",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-044",
+    "role": "structure",
+    "text": "## Conductor bridge, conditional on the actual representations",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-045",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-046",
+    "role": "conditional local derivation",
+    "text": "Fix a rational prime p and choose an auxiliary prime ell different from p. Suppose the actual geometric and modular two-dimensional ell-adic representations in one specified family are isomorphic as G_Q representations. Restriction gives an isomorphism on a decomposition group at p and on every inertia and ramification subgroup. The dimensions of inertia-invariants agree, as do all terms defining the Swan conductor. Therefore their Artin conductor exponents agree. This argument works separately for each constructed family; an isomorphism or endomorphism calculation for the b-family does not supply the beta-family premise.",
+    "source_binding_use_ids": [],
+    "qualification": "Restricts each separately supplied actual global isomorphism to the local ramification groups, preserving inertia dimensions, Swan and Artin conductor. Uses ell different from p.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-LOCAL-ISOMORPHISM",
+      "ARITH-ACTIVE-B-LOCAL-ISOMORPHISM"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-047",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-048",
+    "role": "conditional source requirement",
+    "text": "An independent local compatibility/conductor theorem must identify the modular representation exponent with v_p(N_f), where N_f is the primitive newform's level. That theorem must cover p dividing N_f and the actual coefficient embedding. The Tate-module identification alone does not supply this assertion. A fixed auxiliary prime ell=3 cannot be used for this argument at p=3. To state a product conductor formula for a larger Tate module, the direct-sum multiplicities and coefficient-field degrees must also be checked explicitly.",
+    "source_binding_use_ids": [],
+    "qualification": "The two current Carayol level applications supply the separate modular conductor theorem at every p with ell different from p. The last larger-Tate-module sentence is only a warning about an additional multiplicity premise.",
+    "outgoing_family_uses_provenance_only": [
+      "ARITH-ACTIVE-BETA-LEVEL",
+      "ARITH-ACTIVE-B-LEVEL"
+    ]
+  },
+  {
+    "id": "SRC-CONDUCTOR-049",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-050",
+    "role": "structure",
+    "text": "## Pending exact attachments",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-051",
+    "role": "structure",
+    "text": "",
+    "source_binding_use_ids": [],
+    "qualification": "Heading or whitespace; no mathematical import.",
+    "outgoing_family_uses_provenance_only": []
+  },
+  {
+    "id": "SRC-CONDUCTOR-052",
+    "role": "historical status",
+    "text": "The published degree theorem and conductor provider have now been read. SOURCE-ATTACHMENT.md records exact locators and separates them from the family-specific premises. The current manuscript passage and its hash were supplied by root; this author's own full passage readback remains pending. Independent acceptance, final family-specific bindings, and final incorporated-manuscript review remain separate. No canonical manuscript was edited.",
+    "source_binding_use_ids": [],
+    "qualification": "Preserved author-proposal status from the earlier source version; later scoped reviews govern adoption, not this historical sentence.",
+    "outgoing_family_uses_provenance_only": []
+  }
+]

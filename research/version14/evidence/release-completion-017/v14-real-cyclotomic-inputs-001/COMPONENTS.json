@@ -1,0 +1,1071 @@
+{
+  "components": [
+    {
+      "origin": "v14-real-cyclotomic-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION-P1"
+        ],
+        "assertion": {
+          "statement": "L=Q(zeta_(2^m)) is unramified away from2 and has a unique dyadic prime, totally ramified with residue degree1; 1-zeta has valuation1.",
+          "objects": "m=n+2>=2, L and its maximal real subfield K_n.",
+          "hypotheses": "The explicit polynomial X^(2^(m-1))+1 and its Eisenstein translate; the local valuation calculation in the connecting proof.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Normalize valuations of prime ideals to Z; v(2)=e.",
+          "exceptional_cases": "The ramification conclusion for the dyadic prime uses the local valuation proof, not the separable-reduction clause.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "classification": "dependency",
+        "reason": "Apply the published finite-prime criteria to the explicit cyclotomic polynomial; compare valuations at2 as written in the local proof.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/real-cyclotomic-published-inputs.md",
+              "sha256": "b9473ed6c6068722221c25826ea2dd88d613808a4262b62bb9da3996d9e6399f"
+            },
+            "start_line": 3,
+            "end_line": 3,
+            "excerpt_sha256": "867d27571295b6596910a574b257a0398f413636459f24c8af3999808965e6c3"
+          },
+          "statement": "In a finite Galois extension efg equals the degree and inertia has order e; a prime at which a monic integral primitive minimal polynomial has separable reduction is unramified.",
+          "publication": {
+            "title": "Primes of the Form x^2+ny^2",
+            "authors": "David A. Cox",
+            "venue": "Wiley, 1989, first edition",
+            "authoritative_version": "Retained published first-edition scan; second printing",
+            "locator": "Theorem5.9 and Propositions5.10–5.11, pp101–102",
+            "corrections": "Retained author errata checked; no relevant correction to pp101–109."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+            "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION",
+        "use_sha256": "30d8fd5f1c4ddd997ca40d55f916c663179ff84ab5b7d09beb4ef4a1be2a32e0",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "In a finite Galois extension efg equals the degree and inertia has order e; a prime at which a monic integral primitive minimal polynomial has separable reduction is unramified.",
+          "objects": "Finite Galois extensions of number fields and their prime ideals.",
+          "hypotheses": "A finite Galois extension; for the last assertion an integral primitive element and separable reduction of its minimal polynomial.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Finite prime ramification indices and residue degrees.",
+          "exceptional_cases": "No assertion of separability at a prime with repeated reduction.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "needed_assertion": {
+          "statement": "L=Q(zeta_(2^m)) is unramified away from2 and has a unique dyadic prime, totally ramified with residue degree1; 1-zeta has valuation1.",
+          "objects": "m=n+2>=2, L and its maximal real subfield K_n.",
+          "hypotheses": "The explicit polynomial X^(2^(m-1))+1 and its Eisenstein translate; the local valuation calculation in the connecting proof.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Normalize valuations of prime ideals to Z; v(2)=e.",
+          "exceptional_cases": "The ramification conclusion for the dyadic prime uses the local valuation proof, not the separable-reduction clause.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "required_capabilities": [
+          "L=Q(zeta_(2^m)) is unramified away from2 and has a unique dyadic prime, totally ramified with residue degree1; 1-zeta has valuation1."
+        ],
+        "available_capabilities": [
+          "In a finite Galois extension efg equals the degree and inertia has order e; a prime at which a monic integral primitive minimal polynomial has separable reduction is unramified."
+        ],
+        "derived_capabilities": [
+          "L=Q(zeta_(2^m)) is unramified away from2 and has a unique dyadic prime, totally ramified with residue degree1; 1-zeta has valuation1."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 7,
+            "end_line": 9,
+            "excerpt_sha256": "b37e839eb3634ffbd40e4d5eeda08c677274a2e993de103f4f3bab71176feda6"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "L=Q(zeta_(2^m)) is unramified away from2 and has a unique dyadic prime, totally ramified with residue degree1; 1-zeta has valuation1.",
+            "objects": "m=n+2>=2, L and its maximal real subfield K_n.",
+            "hypotheses": "The explicit polynomial X^(2^(m-1))+1 and its Eisenstein translate; the local valuation calculation in the connecting proof.",
+            "quantifiers": "For every object satisfying these hypotheses.",
+            "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+            "uniformity": "Qualitative exact statements at each finite stage.",
+            "constants": "No additional numerical constants.",
+            "normalizations": "Normalize valuations of prime ideals to Z; v(2)=e.",
+            "exceptional_cases": "The ramification conclusion for the dyadic prime uses the local valuation proof, not the separable-reduction clause.",
+            "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "The ramification conclusion for the dyadic prime uses the local valuation proof, not the separable-reduction clause.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+              },
+              "start_line": 7,
+              "end_line": 9,
+              "excerpt_sha256": "b37e839eb3634ffbd40e4d5eeda08c677274a2e993de103f4f3bab71176feda6"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+            "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-real-cyclotomic-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS-P1"
+        ],
+        "assertion": {
+          "statement": "The ordinary two-class group of K_n and the two-part of its S_n-class quotient are zero.",
+          "objects": "K_n=Q(zeta_(2^(n+2)))^+ for n>=0.",
+          "hypotheses": "The preceding cyclic quadratic tower and unique totally ramified dyadic prime; Cl(Q)=0; elementary finite two-group argument in the connecting proof.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Ordinary Hilbert two-class field with real places split.",
+          "exceptional_cases": "The class-group induction is a local derivation using the generic theorem, not a theorem specifically about real cyclotomic fields asserted by Cox.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "classification": "dependency",
+        "reason": "Apply ordinary Hilbert class field theory at each finite layer; quotient abelianization by inertia, then the finite two-group argument. The explicit ramification input remains separate.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/real-cyclotomic-published-inputs.md",
+              "sha256": "b9473ed6c6068722221c25826ea2dd88d613808a4262b62bb9da3996d9e6399f"
+            },
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt_sha256": "cfcc9c81ac499eb216b1344d06b00750f35c919710b3143d54dbbc02246c62de"
+          },
+          "statement": "Every number field has an ordinary Hilbert class field: the maximal finite everywhere-unramified abelian extension, with Galois group its ordinary ideal class group.",
+          "publication": {
+            "title": "Primes of the Form x^2+ny^2",
+            "authors": "David A. Cox",
+            "venue": "Wiley, 1989, first edition",
+            "authoritative_version": "Retained published first-edition scan; second printing",
+            "locator": "§5C pp105–106, Theorems5.18/5.23 and Corollary5.24, pp106–109",
+            "corrections": "Retained author errata checked; no relevant correction to pp101–109."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14018,
+          "end_line": 14029,
+          "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS",
+        "use_sha256": "6a7fad080dcf396bc404fb9eece72b3570aaaf3d04aa7739239c14662df8cd72",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Every number field has an ordinary Hilbert class field: the maximal finite everywhere-unramified abelian extension, with Galois group its ordinary ideal class group.",
+          "objects": "A number field K and its ordinary Hilbert class field.",
+          "hypotheses": "Number field; unramified includes finite and infinite primes.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "All real places split. This is the ordinary, not narrow, class group.",
+          "exceptional_cases": "Do not replace the real-splitting condition by finite-only unramifiedness.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "needed_assertion": {
+          "statement": "The ordinary two-class group of K_n and the two-part of its S_n-class quotient are zero.",
+          "objects": "K_n=Q(zeta_(2^(n+2)))^+ for n>=0.",
+          "hypotheses": "The preceding cyclic quadratic tower and unique totally ramified dyadic prime; Cl(Q)=0; elementary finite two-group argument in the connecting proof.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Ordinary Hilbert two-class field with real places split.",
+          "exceptional_cases": "The class-group induction is a local derivation using the generic theorem, not a theorem specifically about real cyclotomic fields asserted by Cox.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "required_capabilities": [
+          "The ordinary two-class group of K_n and the two-part of its S_n-class quotient are zero."
+        ],
+        "available_capabilities": [
+          "Every number field has an ordinary Hilbert class field: the maximal finite everywhere-unramified abelian extension, with Galois group its ordinary ideal class group."
+        ],
+        "derived_capabilities": [
+          "The ordinary two-class group of K_n and the two-part of its S_n-class quotient are zero."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 11,
+            "end_line": 13,
+            "excerpt_sha256": "8c86afe663af2e36c5595adc2ba2e2374221968d04ed69e5697bfca6e3d03064"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The ordinary two-class group of K_n and the two-part of its S_n-class quotient are zero.",
+            "objects": "K_n=Q(zeta_(2^(n+2)))^+ for n>=0.",
+            "hypotheses": "The preceding cyclic quadratic tower and unique totally ramified dyadic prime; Cl(Q)=0; elementary finite two-group argument in the connecting proof.",
+            "quantifiers": "For every object satisfying these hypotheses.",
+            "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+            "uniformity": "Qualitative exact statements at each finite stage.",
+            "constants": "No additional numerical constants.",
+            "normalizations": "Ordinary Hilbert two-class field with real places split.",
+            "exceptional_cases": "The class-group induction is a local derivation using the generic theorem, not a theorem specifically about real cyclotomic fields asserted by Cox.",
+            "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "The class-group induction is a local derivation using the generic theorem, not a theorem specifically about real cyclotomic fields asserted by Cox.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+              },
+              "start_line": 11,
+              "end_line": 13,
+              "excerpt_sha256": "8c86afe663af2e36c5595adc2ba2e2374221968d04ed69e5697bfca6e3d03064"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14018,
+            "end_line": 14029,
+            "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14018,
+          "end_line": 14029,
+          "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14018,
+            "end_line": 14029,
+            "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-real-cyclotomic-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES-P1"
+        ],
+        "assertion": {
+          "statement": "The signature map O_(K_n,S_n)^* / O_(K_n,S_n)^{*2} -> F_2^(r_n) is surjective.",
+          "objects": "The explicit real cyclotomic units and their real embeddings.",
+          "hypotheses": "The unique dyadic prime calculation for conjugate generators 1-zeta and1-zeta^3; cyclic Galois group and the displayed parity count.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Negative embeddings correspond to sign1 in F_2; the group-ring augmentation is parity.",
+          "exceptional_cases": "No assertion that every norm-negative unit in an arbitrary Galois group has spanning signature. The cyclic two-group algebra is essential.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "classification": "dependency",
+        "reason": "Use the explicit integral unit and all its conjugates; their signatures are translates of an augmentation-one element in the local cyclic two-group ring.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 15,
+            "end_line": 17,
+            "excerpt_sha256": "8c847644781d558cc33bf2698a2e82ad2eff91c8303370ae51e1dd2c67c18860"
+          },
+          "statement": "Conjugates of u=1+zeta+zeta^-1 have signature spanning F_2^(2^n) for n>=1; for n=0 use -1.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14031,
+          "end_line": 14047,
+          "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES",
+        "use_sha256": "b67d621124924c5f904b8463dc60a58e23b18f62b3f7c1f36ca52ca14be5327c",
+        "supplier_passage_role": "proof",
+        "available_assertion": {
+          "statement": "Conjugates of u=1+zeta+zeta^-1 have signature spanning F_2^(2^n) for n>=1; for n=0 use -1.",
+          "objects": "The explicit real cyclotomic units and their real embeddings.",
+          "hypotheses": "The unique dyadic prime calculation for conjugate generators 1-zeta and1-zeta^3; cyclic Galois group and the displayed parity count.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Negative embeddings correspond to sign1 in F_2; the group-ring augmentation is parity.",
+          "exceptional_cases": "No assertion that every norm-negative unit in an arbitrary Galois group has spanning signature. The cyclic two-group algebra is essential.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "needed_assertion": {
+          "statement": "The signature map O_(K_n,S_n)^* / O_(K_n,S_n)^{*2} -> F_2^(r_n) is surjective.",
+          "objects": "The explicit real cyclotomic units and their real embeddings.",
+          "hypotheses": "The unique dyadic prime calculation for conjugate generators 1-zeta and1-zeta^3; cyclic Galois group and the displayed parity count.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Negative embeddings correspond to sign1 in F_2; the group-ring augmentation is parity.",
+          "exceptional_cases": "No assertion that every norm-negative unit in an arbitrary Galois group has spanning signature. The cyclic two-group algebra is essential.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "required_capabilities": [
+          "The signature map O_(K_n,S_n)^* / O_(K_n,S_n)^{*2} -> F_2^(r_n) is surjective."
+        ],
+        "available_capabilities": [
+          "Conjugates of u=1+zeta+zeta^-1 have signature spanning F_2^(2^n) for n>=1; for n=0 use -1."
+        ],
+        "derived_capabilities": [
+          "The signature map O_(K_n,S_n)^* / O_(K_n,S_n)^{*2} -> F_2^(r_n) is surjective."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 15,
+            "end_line": 17,
+            "excerpt_sha256": "8c847644781d558cc33bf2698a2e82ad2eff91c8303370ae51e1dd2c67c18860"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The signature map O_(K_n,S_n)^* / O_(K_n,S_n)^{*2} -> F_2^(r_n) is surjective.",
+            "objects": "The explicit real cyclotomic units and their real embeddings.",
+            "hypotheses": "The unique dyadic prime calculation for conjugate generators 1-zeta and1-zeta^3; cyclic Galois group and the displayed parity count.",
+            "quantifiers": "For every object satisfying these hypotheses.",
+            "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+            "uniformity": "Qualitative exact statements at each finite stage.",
+            "constants": "No additional numerical constants.",
+            "normalizations": "Negative embeddings correspond to sign1 in F_2; the group-ring augmentation is parity.",
+            "exceptional_cases": "No assertion that every norm-negative unit in an arbitrary Galois group has spanning signature. The cyclic two-group algebra is essential.",
+            "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No assertion that every norm-negative unit in an arbitrary Galois group has spanning signature. The cyclic two-group algebra is essential.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+              },
+              "start_line": 15,
+              "end_line": 17,
+              "excerpt_sha256": "8c847644781d558cc33bf2698a2e82ad2eff91c8303370ae51e1dd2c67c18860"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14031,
+            "end_line": 14047,
+            "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14031,
+          "end_line": 14047,
+          "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14031,
+            "end_line": 14047,
+            "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-real-cyclotomic-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER-P1"
+        ],
+        "assertion": {
+          "statement": "H^1(G_(K_n,S_n),F_2) is the S-unit squareclass group, and H^2 is the sum-zero subspace in F_2^(r_n+s_n). Restriction H^2 to the r_n real coordinates is onto with kernel dimension s_n-1.",
+          "objects": "The actual finite real cyclotomic field K_n and finite S_n with s_n>=1.",
+          "hypotheses": "The preceding ordinary S-class group has odd order; 2 is invertible in O_(K_n,S_n); finite and real local invariant maps.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Identify mu_2 with the trivial F_2 module in characteristic zero. S_n here counts finite places only.",
+          "exceptional_cases": "The H^1 dimension and signature surjectivity are supplied separately; this does not replace ordinary real H^0 by Tate H^0.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "classification": "dependency",
+        "reason": "Apply the Kummer exact sequence and odd-order Picard group, then take2-torsion in the exact local-invariant kernel. A finite-place coordinate absorbs the sum of any prescribed real coordinates.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/real-cyclotomic-published-inputs.md",
+              "sha256": "b9473ed6c6068722221c25826ea2dd88d613808a4262b62bb9da3996d9e6399f"
+            },
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt_sha256": "0f742fa2d65865f2592391dcb7a95c2ef94bb654ed18c9d4646c4b45912059d8"
+          },
+          "statement": "For an affine arithmetic curve U with2 invertible, the etale Kummer sequence yields the Picard and Brauer exact sequences, and H^i(U,mu_2) agrees with ordinary H^i(G_S,mu_2). H^2(U,G_m) is the kernel of the sum of local invariants over the omitted places.",
+          "publication": {
+            "title": "Arithmetic Duality Theorems",
+            "authors": "J. S. Milne",
+            "venue": "BookSurge, second edition, 2006",
+            "authoritative_version": "Retained published second-edition PDF",
+            "locator": "II2.1/2.2(a), pp163–165; II2.9 and proof pp170–171; I1.1/1.6(b), pp17,19",
+            "corrections": "Uses exact published statements and explicit ordinary/Tate distinction; no author-note substitution."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14049,
+          "end_line": 14060,
+          "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER",
+        "use_sha256": "5169edc0e2adeb8cdb425f13935acc31c7d7677b21b16ceab7550c870a372e57",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For an affine arithmetic curve U with2 invertible, the etale Kummer sequence yields the Picard and Brauer exact sequences, and H^i(U,mu_2) agrees with ordinary H^i(G_S,mu_2). H^2(U,G_m) is the kernel of the sum of local invariants over the omitted places.",
+          "objects": "A number field, its ring of S-integers, and mu_2; the local Brauer groups at finite and real places.",
+          "hypotheses": "S includes the archimedean places and all primes above2; at least one finite prime is omitted from U.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "At real places Br(R) has order2. Finite local invariants identify Br(K_v) with Q/Z. Only positive-degree real cohomology is used in these identifications.",
+          "exceptional_cases": "The source does not assert vanishing of a given Picard group or a global signature theorem. Those are independent caller inputs.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "needed_assertion": {
+          "statement": "H^1(G_(K_n,S_n),F_2) is the S-unit squareclass group, and H^2 is the sum-zero subspace in F_2^(r_n+s_n). Restriction H^2 to the r_n real coordinates is onto with kernel dimension s_n-1.",
+          "objects": "The actual finite real cyclotomic field K_n and finite S_n with s_n>=1.",
+          "hypotheses": "The preceding ordinary S-class group has odd order; 2 is invertible in O_(K_n,S_n); finite and real local invariant maps.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Identify mu_2 with the trivial F_2 module in characteristic zero. S_n here counts finite places only.",
+          "exceptional_cases": "The H^1 dimension and signature surjectivity are supplied separately; this does not replace ordinary real H^0 by Tate H^0.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "required_capabilities": [
+          "H^1(G_(K_n,S_n),F_2) is the S-unit squareclass group, and H^2 is the sum-zero subspace in F_2^(r_n+s_n). Restriction H^2 to the r_n real coordinates is onto with kernel dimension s_n-1."
+        ],
+        "available_capabilities": [
+          "For an affine arithmetic curve U with2 invertible, the etale Kummer sequence yields the Picard and Brauer exact sequences, and H^i(U,mu_2) agrees with ordinary H^i(G_S,mu_2). H^2(U,G_m) is the kernel of the sum of local invariants over the omitted places."
+        ],
+        "derived_capabilities": [
+          "H^1(G_(K_n,S_n),F_2) is the S-unit squareclass group, and H^2 is the sum-zero subspace in F_2^(r_n+s_n). Restriction H^2 to the r_n real coordinates is onto with kernel dimension s_n-1."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 19,
+            "end_line": 21,
+            "excerpt_sha256": "a79406d72c96727a8d4223d40b2cfd5345a62e55b14080deaae9923eb4ac5bd3"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "H^1(G_(K_n,S_n),F_2) is the S-unit squareclass group, and H^2 is the sum-zero subspace in F_2^(r_n+s_n). Restriction H^2 to the r_n real coordinates is onto with kernel dimension s_n-1.",
+            "objects": "The actual finite real cyclotomic field K_n and finite S_n with s_n>=1.",
+            "hypotheses": "The preceding ordinary S-class group has odd order; 2 is invertible in O_(K_n,S_n); finite and real local invariant maps.",
+            "quantifiers": "For every object satisfying these hypotheses.",
+            "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+            "uniformity": "Qualitative exact statements at each finite stage.",
+            "constants": "No additional numerical constants.",
+            "normalizations": "Identify mu_2 with the trivial F_2 module in characteristic zero. S_n here counts finite places only.",
+            "exceptional_cases": "The H^1 dimension and signature surjectivity are supplied separately; this does not replace ordinary real H^0 by Tate H^0.",
+            "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "The H^1 dimension and signature surjectivity are supplied separately; this does not replace ordinary real H^0 by Tate H^0.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+              },
+              "start_line": 19,
+              "end_line": 21,
+              "excerpt_sha256": "a79406d72c96727a8d4223d40b2cfd5345a62e55b14080deaae9923eb4ac5bd3"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14049,
+            "end_line": 14060,
+            "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14049,
+          "end_line": 14060,
+          "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14049,
+            "end_line": 14060,
+            "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-real-cyclotomic-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT-P1"
+        ],
+        "assertion": {
+          "statement": "dim_F2 H^1(G_(K_n,S_n),F_2)=r_n+s_n.",
+          "objects": "The actual totally real field K_n with trivial module F_2.",
+          "hypotheses": "The preceding Kummer/Brauer calculation gives dim H^2=r_n+s_n-1; dim H^0=1; S is finite and contains all dyadic places.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "The archimedean product is1; ordinary H^0 remains present.",
+          "exceptional_cases": "This finite count is an explicit auxiliary derivation, not an assertion that the manuscript itself cites Euler characteristic at that sentence. No inverse-limit dimension is deduced.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "classification": "dependency",
+        "reason": "Use the published Euler characteristic to supply the numerical S-unit/Kummer dimension without invoking an unbound general unit-rank theorem.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/real-cyclotomic-published-inputs.md",
+              "sha256": "b9473ed6c6068722221c25826ea2dd88d613808a4262b62bb9da3996d9e6399f"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "78153252fa847a3bd86b665cadd1b640bda8a1195cad1eb4603944c015fdc285"
+          },
+          "statement": "Finite G_S-module cohomology is finite and its truncated Euler characteristic |H^0||H^2|/|H^1| equals the archimedean product |H^0(G_v,M)|/|#M|_v.",
+          "publication": {
+            "title": "Arithmetic Duality Theorems",
+            "authors": "J. S. Milne",
+            "venue": "BookSurge, second edition, 2006",
+            "authoritative_version": "Retained published second-edition PDF",
+            "locator": "I Corollary4.15 p62; Theorem5.1 and footnote13 p67",
+            "corrections": "Uses exact published statements and explicit ordinary/Tate distinction; no author-note substitution."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+            "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT",
+        "use_sha256": "b2b9f08cb88b4295c3d717f5ea5515bc447ed25824b081742fa214bbfa587764",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Finite G_S-module cohomology is finite and its truncated Euler characteristic |H^0||H^2|/|H^1| equals the archimedean product |H^0(G_v,M)|/|#M|_v.",
+          "objects": "A number field, finite S containing all archimedean places, and finite G_S-module M.",
+          "hypotheses": "The order of M is invertible in O_(K,S).",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "H^0 is ordinary invariants, not Tate invariants. At a real place |2|_v=2 in the normalized archimedean absolute value.",
+          "exceptional_cases": "This is the truncated Euler characteristic; real fields may have nonzero cohomology in arbitrarily high degrees.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "needed_assertion": {
+          "statement": "dim_F2 H^1(G_(K_n,S_n),F_2)=r_n+s_n.",
+          "objects": "The actual totally real field K_n with trivial module F_2.",
+          "hypotheses": "The preceding Kummer/Brauer calculation gives dim H^2=r_n+s_n-1; dim H^0=1; S is finite and contains all dyadic places.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "The archimedean product is1; ordinary H^0 remains present.",
+          "exceptional_cases": "This finite count is an explicit auxiliary derivation, not an assertion that the manuscript itself cites Euler characteristic at that sentence. No inverse-limit dimension is deduced.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "required_capabilities": [
+          "dim_F2 H^1(G_(K_n,S_n),F_2)=r_n+s_n."
+        ],
+        "available_capabilities": [
+          "Finite G_S-module cohomology is finite and its truncated Euler characteristic |H^0||H^2|/|H^1| equals the archimedean product |H^0(G_v,M)|/|#M|_v."
+        ],
+        "derived_capabilities": [
+          "dim_F2 H^1(G_(K_n,S_n),F_2)=r_n+s_n."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 23,
+            "end_line": 23,
+            "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "dim_F2 H^1(G_(K_n,S_n),F_2)=r_n+s_n.",
+            "objects": "The actual totally real field K_n with trivial module F_2.",
+            "hypotheses": "The preceding Kummer/Brauer calculation gives dim H^2=r_n+s_n-1; dim H^0=1; S is finite and contains all dyadic places.",
+            "quantifiers": "For every object satisfying these hypotheses.",
+            "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+            "uniformity": "Qualitative exact statements at each finite stage.",
+            "constants": "No additional numerical constants.",
+            "normalizations": "The archimedean product is1; ordinary H^0 remains present.",
+            "exceptional_cases": "This finite count is an explicit auxiliary derivation, not an assertion that the manuscript itself cites Euler characteristic at that sentence. No inverse-limit dimension is deduced.",
+            "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "This finite count is an explicit auxiliary derivation, not an assertion that the manuscript itself cites Euler characteristic at that sentence. No inverse-limit dimension is deduced.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+              },
+              "start_line": 23,
+              "end_line": 23,
+              "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 23,
+            "end_line": 23,
+            "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+            "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 23,
+            "end_line": 23,
+            "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+          }
+        }
+      ]
+    },
+    {
+      "origin": "v14-real-cyclotomic-inputs-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON-P1"
+        ],
+        "assertion": {
+          "statement": "The ordinary positive fiber C^+ has no cohomology outside degrees1,2; their dimensions are r_n+s_n-1 and s_n-1 respectively.",
+          "objects": "Cone(global ordinary F_2 cochains -> sum of real ordinary F_2 cochains)[-1] at finite n.",
+          "hypotheses": "The preceding H^1 and H^2 restriction maps are onto; H^0 restricts diagonally and injectively; dim global H^1=r_n+s_n; high-degree comparison.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Keep all ordinary real degree-zero terms. The first dimension includes the r_n-1-dimensional cokernel of the H^0 diagonal.",
+          "exceptional_cases": "Not ADT compact support, not a complex with complete Tate resolutions at real places, and not an inverse-limit statement.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "classification": "dependency",
+        "reason": "Take the long exact sequence of the actual ordinary fiber, using the separately established signature and H^2 surjectivity before the published high-degree isomorphism.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/real-cyclotomic-published-inputs.md",
+              "sha256": "b9473ed6c6068722221c25826ea2dd88d613808a4262b62bb9da3996d9e6399f"
+            },
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt_sha256": "a983c7bb26c309f7543f7c13d36da03568722d19a320131d0d139ae6245cc7b6"
+          },
+          "statement": "For every r>=3, ordinary restriction H^r(G_S,M) -> product_(v real) H^r(K_v,M) is an isomorphism.",
+          "publication": {
+            "title": "Arithmetic Duality Theorems",
+            "authors": "J. S. Milne",
+            "venue": "BookSurge, second edition, 2006",
+            "authoritative_version": "Retained published second-edition PDF",
+            "locator": "I Theorem4.10(c), pp56–57",
+            "corrections": "Uses exact published statements and explicit ordinary/Tate distinction; no author-note substitution."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14060,
+          "end_line": 14067,
+          "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON",
+        "use_sha256": "1c4840ebc6f377f0325a68bd4e5911f301c3a99b4795ea94b168d40cd55cc85e",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For every r>=3, ordinary restriction H^r(G_S,M) -> product_(v real) H^r(K_v,M) is an isomorphism.",
+          "objects": "A number field, S containing archimedean places, and a finite G_S-module M.",
+          "hypotheses": "The order of M is invertible in O_(K,S).",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Positive-degree ordinary real cohomology; the theorem does not change the choice of real cochain complex in degree0.",
+          "exceptional_cases": "No claim of ordinary high-degree vanishing over a field with real places; the real contributions are retained.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "needed_assertion": {
+          "statement": "The ordinary positive fiber C^+ has no cohomology outside degrees1,2; their dimensions are r_n+s_n-1 and s_n-1 respectively.",
+          "objects": "Cone(global ordinary F_2 cochains -> sum of real ordinary F_2 cochains)[-1] at finite n.",
+          "hypotheses": "The preceding H^1 and H^2 restriction maps are onto; H^0 restricts diagonally and injectively; dim global H^1=r_n+s_n; high-degree comparison.",
+          "quantifiers": "For every object satisfying these hypotheses.",
+          "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+          "uniformity": "Qualitative exact statements at each finite stage.",
+          "constants": "No additional numerical constants.",
+          "normalizations": "Keep all ordinary real degree-zero terms. The first dimension includes the r_n-1-dimensional cokernel of the H^0 diagonal.",
+          "exceptional_cases": "Not ADT compact support, not a complex with complete Tate resolutions at real places, and not an inverse-limit statement.",
+          "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+        },
+        "required_capabilities": [
+          "The ordinary positive fiber C^+ has no cohomology outside degrees1,2; their dimensions are r_n+s_n-1 and s_n-1 respectively."
+        ],
+        "available_capabilities": [
+          "For every r>=3, ordinary restriction H^r(G_S,M) -> product_(v real) H^r(K_v,M) is an isomorphism."
+        ],
+        "derived_capabilities": [
+          "The ordinary positive fiber C^+ has no cohomology outside degrees1,2; their dimensions are r_n+s_n-1 and s_n-1 respectively."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+              "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+            },
+            "start_line": 23,
+            "end_line": 27,
+            "excerpt_sha256": "d64c52234b25fffbe3f95cf2439fcc9bbbce0832fdf28cbe2538c02fca387869"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The ordinary positive fiber C^+ has no cohomology outside degrees1,2; their dimensions are r_n+s_n-1 and s_n-1 respectively.",
+            "objects": "Cone(global ordinary F_2 cochains -> sum of real ordinary F_2 cochains)[-1] at finite n.",
+            "hypotheses": "The preceding H^1 and H^2 restriction maps are onto; H^0 restricts diagonally and injectively; dim global H^1=r_n+s_n; high-degree comparison.",
+            "quantifiers": "For every object satisfying these hypotheses.",
+            "parameter_range": "Finite number fields and finite coefficient modules; no inverse limit.",
+            "uniformity": "Qualitative exact statements at each finite stage.",
+            "constants": "No additional numerical constants.",
+            "normalizations": "Keep all ordinary real degree-zero terms. The first dimension includes the r_n-1-dimensional cokernel of the H^0 diagonal.",
+            "exceptional_cases": "Not ADT compact support, not a complex with complete Tate resolutions at real places, and not an inverse-limit statement.",
+            "limit_order": "Fix the finite field, support and coefficient module before applying the assertion."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Not ADT compact support, not a complex with complete Tate resolutions at real places, and not an inverse-limit statement.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+              },
+              "start_line": 23,
+              "end_line": 27,
+              "excerpt_sha256": "d64c52234b25fffbe3f95cf2439fcc9bbbce0832fdf28cbe2538c02fca387869"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14060,
+            "end_line": 14067,
+            "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14060,
+          "end_line": 14067,
+          "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14060,
+            "end_line": 14067,
+            "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+          }
+        }
+      ]
+    }
+  ]
+}

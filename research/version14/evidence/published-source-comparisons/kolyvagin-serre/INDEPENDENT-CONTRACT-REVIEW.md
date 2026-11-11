@@ -1,0 +1,7 @@
+# Root source contract annex
+
+Accepted for its stated two-application scope. I read every field of both applications and all 18 obligations in APPLICATION-CONTRACTS.json, SHA256 fa0631f0789d2efc9db4ccf32eb7ad7741a51511ae7366d1a33d18895a6aa111. I independently verified every manifest member, all three source PDF pins, and all 18 raw-byte source excerpt hashes against candidate 1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4.
+
+The obligations accurately state the mathematical application already examined in ROOT-SOURCE-PROPOSAL-DISPOSITION-001.md. Kolyvagin includes analytic ranks zero and one, modularity as a separate premise, the full Sha, and no good-reduction-at-two restriction. The local-character application correctly uses the underlying finite-dimensional Q5 representation of an E-line. Its inertia is semisimple; the algebraic map centralizes E; the local reciprocity inverse matches the cyclotomic inverse; finite ramification and local class field theory give a finite global ray-class character after division by the cyclotomic power. Negative powers are permitted. The prior de Rham and modularity inputs remain distinct.
+
+The Serre 1979 errata scope is recorded in the earlier disposition. This annex acceptance does not approve unresolved upstream sources, the entire ordinary application graph, or the complete release. The author's original pending fields remain unmodified; this file is the independent decision.

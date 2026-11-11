@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "author": "/root/v14_arithmetic_author",
+  "components": [
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-GI-LP02-RATIONAL-COORDINATES",
+        "consumer": "GI-04-LP02-03",
+        "passages": [
+          "ACTIVE-GI-LP02-RATIONAL-COORDINATES-P1"
+        ],
+        "assertion": {
+          "statement": "For the actual rational homomorphism rho:U->G, one positive integer D can be chosen so that rho(exp(D L0)) is contained in Gamma, while remaining divisible by the integer already required for BCH closure.",
+          "objects": "The fixed simply connected nilpotent U and G, rational homomorphism rho, homogeneous rational basis of Lie(U), its integer span L0, and a rational Malcev basis of G adapted to Gamma.",
+          "hypotheses": "The preceding construction supplies rational rho and the stated rational bases. BCH closure and cocompactness of exp(D L0) are supplied separately by the displayed local proof.",
+          "quantifiers": "Every x in L0 for one D chosen from the finitely many coordinate polynomials of this fixed construction.",
+          "parameter_range": "Fixed finite-dimensional nilpotent groups and fixed rational bases; no varying-family denominator estimate.",
+          "uniformity": "The same D works for all integer coordinate vectors x in L0 within this fixed construction.",
+          "constants": "D is a common positive multiple of coordinate-polynomial denominators and the prior BCH denominator requirement.",
+          "normalizations": "Second-kind Malcev coordinates identify Gamma exactly with integer vectors; rho(exp x)=exp(d rho(x)).",
+          "exceptional_cases": "Every coordinate polynomial has zero constant term because rho maps identity to identity. Thus scaling variables by D clears denominators in every nonzero-degree monomial; no assertion that an arbitrary polynomial with nonintegral constant can be so scaled.",
+          "limit_order": "Fix rho and bases; write the finite rational coordinate polynomials; choose one common multiple D; then evaluate on every integer vector. Increasing D preserves denominator divisibility."
+        },
+        "classification": "dependency",
+        "reason": "Apply the already reviewed GT12 coordinate conversion to the actual rational rho, then clear finitely many denominators in positive-degree monomials as proved in LP02.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/gt12-gt08-current-inputs/SOURCE-CONNECTIONS.md",
+              "sha256": "f229ba57cccea817816bb45fe7fb5c3d6272316f56911e0d1dec7c24cb6dfd40"
+            },
+            "start_line": 87,
+            "end_line": 89,
+            "excerpt_sha256": "23dcae605191d4f744c2fcb8954ee91ca997777c715e7963a03e9cb9e5a496b4"
+          },
+          "statement": "The ambient lattice has integer second-kind coordinates, and the change between first-kind logarithm coordinates and second-kind Malcev coordinates is a fixed rational polynomial map.",
+          "publication": {
+            "title": "Green and Tao, The quantitative behaviour of polynomial orbits on nilmanifolds",
+            "authors": "Ben Green and Terence Tao",
+            "venue": "Annals of Mathematics 175 (2012),465–540",
+            "authoritative_version": "final published PDF; SHA256 8c7ea5eced84dc5da97508f4eda39fa84c958d3e659a797ab402645c1c207c8f",
+            "locator": "Definition2.1 and remarks p478; Lemma A.2 pp526–527",
+            "corrections": "Read with final2014 erratum: one-variable results retained, multiparameter application restricted to corrected equal-side theorem. Local right-period and affine repairs are kept distinct."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+            "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+          },
+          "start_line": 90,
+          "end_line": 97,
+          "excerpt_sha256": "9bb46b227cdba600ec3b32f782473144fd2602a7e37d108480005ca0c03f0757"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-GI-LP02-RATIONAL-COORDINATES",
+        "use_sha256": "4652b0f9b6aa23f935115b8c0e2c9027fc23e57cca25ff4553c066e30bfdcd60",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "The ambient lattice has integer second-kind coordinates, and the change between first-kind logarithm coordinates and second-kind Malcev coordinates is a fixed rational polynomial map.",
+          "objects": "The fixed nilpotent group, rational Malcev basis, integer second-kind lattice coordinates and first-kind exponential coordinates.",
+          "hypotheses": "A connected simply connected nilpotent group with a rational Malcev basis relative to Gamma.",
+          "quantifiers": "Every element of the ambient lattice and every coordinate input in the fixed group.",
+          "parameter_range": "Fixed finite dimension and nilpotency step.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Rational polynomial coefficients depend on the fixed basis; no model-independent denominator bound is asserted.",
+          "normalizations": "Definition2.1 integer second-kind lattice convention and Lemma A.2 coordinate conversion.",
+          "exceptional_cases": "Coordinate conversion supplies rational polynomials; it does not construct rho, prove BCH closure or establish cocompactness of a proposed lattice.",
+          "limit_order": "Fix a rational Malcev basis and use the rational polynomial conversions between first-kind and second-kind coordinates."
+        },
+        "needed_assertion": {
+          "statement": "For the actual rational homomorphism rho:U->G, one positive integer D can be chosen so that rho(exp(D L0)) is contained in Gamma, while remaining divisible by the integer already required for BCH closure.",
+          "objects": "The fixed simply connected nilpotent U and G, rational homomorphism rho, homogeneous rational basis of Lie(U), its integer span L0, and a rational Malcev basis of G adapted to Gamma.",
+          "hypotheses": "The preceding construction supplies rational rho and the stated rational bases. BCH closure and cocompactness of exp(D L0) are supplied separately by the displayed local proof.",
+          "quantifiers": "Every x in L0 for one D chosen from the finitely many coordinate polynomials of this fixed construction.",
+          "parameter_range": "Fixed finite-dimensional nilpotent groups and fixed rational bases; no varying-family denominator estimate.",
+          "uniformity": "The same D works for all integer coordinate vectors x in L0 within this fixed construction.",
+          "constants": "D is a common positive multiple of coordinate-polynomial denominators and the prior BCH denominator requirement.",
+          "normalizations": "Second-kind Malcev coordinates identify Gamma exactly with integer vectors; rho(exp x)=exp(d rho(x)).",
+          "exceptional_cases": "Every coordinate polynomial has zero constant term because rho maps identity to identity. Thus scaling variables by D clears denominators in every nonzero-degree monomial; no assertion that an arbitrary polynomial with nonintegral constant can be so scaled.",
+          "limit_order": "Fix rho and bases; write the finite rational coordinate polynomials; choose one common multiple D; then evaluate on every integer vector. Increasing D preserves denominator divisibility."
+        },
+        "required_capabilities": [
+          "For the actual rational homomorphism rho:U->G, one positive integer D can be chosen so that rho(exp(D L0)) is contained in Gamma, while remaining divisible by the integer already required for BCH closure."
+        ],
+        "available_capabilities": [
+          "The ambient lattice has integer second-kind coordinates, and the change between first-kind logarithm coordinates and second-kind Malcev coordinates is a fixed rational polynomial map."
+        ],
+        "derived_capabilities": [
+          "For the actual rational homomorphism rho:U->G, one positive integer D can be chosen so that rho(exp(D L0)) is contained in Gamma, while remaining divisible by the integer already required for BCH closure."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+              "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+            },
+            "start_line": 90,
+            "end_line": 97,
+            "excerpt_sha256": "9bb46b227cdba600ec3b32f782473144fd2602a7e37d108480005ca0c03f0757"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual rational homomorphism rho:U->G, one positive integer D can be chosen so that rho(exp(D L0)) is contained in Gamma, while remaining divisible by the integer already required for BCH closure.",
+            "objects": "The fixed simply connected nilpotent U and G, rational homomorphism rho, homogeneous rational basis of Lie(U), its integer span L0, and a rational Malcev basis of G adapted to Gamma.",
+            "hypotheses": "The preceding construction supplies rational rho and the stated rational bases. BCH closure and cocompactness of exp(D L0) are supplied separately by the displayed local proof.",
+            "quantifiers": "Every x in L0 for one D chosen from the finitely many coordinate polynomials of this fixed construction.",
+            "parameter_range": "Fixed finite-dimensional nilpotent groups and fixed rational bases; no varying-family denominator estimate.",
+            "uniformity": "The same D works for all integer coordinate vectors x in L0 within this fixed construction.",
+            "constants": "D is a common positive multiple of coordinate-polynomial denominators and the prior BCH denominator requirement.",
+            "normalizations": "Second-kind Malcev coordinates identify Gamma exactly with integer vectors; rho(exp x)=exp(d rho(x)).",
+            "exceptional_cases": "Every coordinate polynomial has zero constant term because rho maps identity to identity. Thus scaling variables by D clears denominators in every nonzero-degree monomial; no assertion that an arbitrary polynomial with nonintegral constant can be so scaled.",
+            "limit_order": "Fix rho and bases; write the finite rational coordinate polynomials; choose one common multiple D; then evaluate on every integer vector. Increasing D preserves denominator divisibility."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Every coordinate polynomial has zero constant term because rho maps identity to identity. Thus scaling variables by D clears denominators in every nonzero-degree monomial; no assertion that an arbitrary polynomial with nonintegral constant can be so scaled. The rational map and BCH/lattice construction remain explicit incoming premises.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/gt12-gt08-current-inputs/SOURCE-CONNECTIONS.md",
+                "sha256": "f229ba57cccea817816bb45fe7fb5c3d6272316f56911e0d1dec7c24cb6dfd40"
+              },
+              "start_line": 87,
+              "end_line": 89,
+              "excerpt_sha256": "23dcae605191d4f744c2fcb8954ee91ca997777c715e7963a03e9cb9e5a496b4"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+                "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+              },
+              "start_line": 64,
+              "end_line": 69,
+              "excerpt_sha256": "0b566b75fd23e561cf10a2dda9891cbc39c70649d941edbf75232ef4c88a2ac2"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+                "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+              },
+              "start_line": 74,
+              "end_line": 97,
+              "excerpt_sha256": "59afaea08bb008e8f964d8c901dc861cefa56b641ea09e9c162e35cde2409395"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+              "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+            },
+            "start_line": 74,
+            "end_line": 97,
+            "excerpt_sha256": "59afaea08bb008e8f964d8c901dc861cefa56b641ea09e9c162e35cde2409395"
+          }
+        ]
+      },
+      "retained_separate_inputs": [
+        "Actual rational rho and rational bases, LP02 lines48–69",
+        "BCH closure, discreteness and cocompactness, LP02 lines74–89",
+        "GTZ/BCH sources and internal representative selection remain separate"
+      ],
+      "origin": {
+        "module": "04-gtz-lp02-03",
+        "source_use_id": "LP02 rational coordinate scaling lines90–97",
+        "scope": "New consumer of retained GT12 coordinate statement; no new external theorem or global GI acceptance"
+      }
+    }
+  ],
+  "scope": "One conditional coordinate-to-lattice-inclusion connection only"
+}

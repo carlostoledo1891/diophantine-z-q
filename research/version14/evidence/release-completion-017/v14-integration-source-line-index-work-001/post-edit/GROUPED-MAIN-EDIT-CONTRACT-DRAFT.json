@@ -1,0 +1,211 @@
+{
+  "id": "V14-GROUPED-SOURCE-EDITS-001",
+  "manuscript": {
+    "path": "manuscripts/quartic_v14.tex",
+    "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+  },
+  "authors": [
+    "/root",
+    "/root/v14_integration_review",
+    "/root/v14_gi_constructors",
+    "/root/v14_sign_conductor"
+  ],
+  "reviewed_edits": {
+    "v14-fixed-quadratic-field-proof": "36625fab4bfa197dbda001ce31abf0b9d319e9c88b57e10802feadca8484d8b5",
+    "v14-local-differential-convention": "752217c3ec05f887ffa10f9653e7e62d5ee730e190c447c75592ad071c3f3cc2"
+  },
+  "sources": [
+    {
+      "id": "qroot-local",
+      "url": "https://github.com/elliotglazer/diophantine-z-q/blob/main/research/version14/evidence/qroot2-class-units-current/PROOF.md",
+      "sha256": "8ec718e1000b653ca82c4697564eba2c12d7bdda2dab25a0896d2fae243dce48",
+      "version": "Exact installed project proof002; URL denotes intended repository location, not a claim of publication.",
+      "locator": "Complete fixed-field proof, including norm-Euclidean division and unit signs."
+    },
+    {
+      "id": "local-twist",
+      "url": "https://github.com/elliotglazer/diophantine-z-q/blob/main/research/version14/evidence/local-twist-factors-002/PROOF.md",
+      "sha256": "8d4775ec4b317c4077c63879518607683564c301efd986a4189d0cbaa99147d2",
+      "version": "Exact installed project proof002; URL denotes intended repository location, not a claim of publication.",
+      "locator": "Minimal invariant differential or dual convention, finite local types and Euler-factor bounds."
+    }
+  ],
+  "evidence": {
+    "qroot": {
+      "path": "research/version14/evidence/qroot2-class-units-current/PROOF.md",
+      "sha256": "8ec718e1000b653ca82c4697564eba2c12d7bdda2dab25a0896d2fae243dce48"
+    },
+    "localtwist": {
+      "path": "research/version14/evidence/local-twist-factors-002/PROOF.md",
+      "sha256": "8d4775ec4b317c4077c63879518607683564c301efd986a4189d0cbaa99147d2"
+    },
+    "elementary": {
+      "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+      "sha256": "f9ee0bbd80b41a8e9c0b32647c7d211a745bce4d51fdcefd027c6c821b044e98"
+    }
+  },
+  "manuscript_spans": [
+    {
+      "role": "construction",
+      "start_line": 344,
+      "end_line": 346,
+      "sha256": "2b6e83a50dbf83e1ccd4414a86f16b93bca93952849432c6ada4b402046268de"
+    },
+    {
+      "role": "application",
+      "start_line": 13668,
+      "end_line": 13676,
+      "sha256": "d132cb5a69f66a57b91e3bd2c2b59f8b2917873a65afaf15f52732c08e18f53c"
+    },
+    {
+      "role": "consumer",
+      "start_line": 347,
+      "end_line": 354,
+      "sha256": "c0578176e799e2d590b10ee21771c410a16beebf931ba786f7885686e9509d34"
+    },
+    {
+      "role": "consumer",
+      "start_line": 13670,
+      "end_line": 13676,
+      "sha256": "3f78a31db1e9ca7f7a0ff17364e3f83ac7491dd909692b2104811cc53ac5e949"
+    }
+  ],
+  "obligations": {
+    "source_hypotheses": {
+      "status": "checked",
+      "required": "K=Q(sqrt2) and the fixed local-twist hypotheses.",
+      "constructed": "The same field, twists and original local places remain in the manuscript.",
+      "justification": "The reviewed project proofs match these fixed objects; no varying-field theorem is claimed.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "constructed_objects": {
+      "status": "checked",
+      "required": "Principal ideals and four unit squareclasses; a normalized local differential or dual.",
+      "constructed": "Norm-Euclidean Z[sqrt2] and units ±(1+sqrt2)^k replace the prior Minkowski method; the generator convention is stated explicitly.",
+      "justification": "These are the exact two reviewed main edits, with identical line counts.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "index_domain_coverage": {
+      "status": "checked",
+      "required": "Retain all previously permitted fixed-field elements and odd-squarefree local twists.",
+      "constructed": "No index set is enlarged by either edit.",
+      "justification": "The fixed-field proof covers all elements/ideals/units; local twist bounds retain the original permitted local types.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "transition_maps": {
+      "status": "not_applicable",
+      "required": "Do not introduce new tower or specialization maps.",
+      "constructed": "Existing transition maps remain untouched.",
+      "justification": "Neither edited passage defines a transition system; this contract gives no new transition-map approval.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "limiting_object_identity": {
+      "status": "not_applicable",
+      "required": "Do not change the downstream objects or limits.",
+      "constructed": "The same class/unit consequences and local factor enter the retained argument.",
+      "justification": "No limit or Iwasawa object is substituted by these edits.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "coefficient_conventions": {
+      "status": "checked",
+      "required": "Fix the positive embedding sqrt2>0 and minimal invariant differential or dual.",
+      "constructed": "Signs of -1 and1+sqrt2 distinguish four classes; arbitrary nonunit differential rescalings are excluded.",
+      "justification": "The accepted Qroot and local-twist reviews explicitly compare these normalizations.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "local_conditions": {
+      "status": "checked",
+      "required": "Retain good/bad reduction and local-type hypotheses used by local-twist proof.",
+      "constructed": "The main sentence now names the precise generator convention required by that proof.",
+      "justification": "No local class, ramification condition or period normalization beyond the reviewed convention is inferred.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "exceptional_cases": {
+      "status": "checked",
+      "required": "Retain identity/zero handling in field proof and fixed finite local cases in twist proof.",
+      "constructed": "The Qroot proof treats zero remainder separately; local proof retains its stated nonzero and reduction conditions.",
+      "justification": "The edits introduce no unconditional bound for arbitrary generators.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    },
+    "downstream_consumption": {
+      "status": "checked",
+      "required": "Use class number one/sign-squareclasses and the bounded local valuation only.",
+      "constructed": "Main347–354 continues the same generator argument; main13670–76 continues the finite local-class bound.",
+      "justification": "No rank, torsion, Selmer, global period or full Kato conclusion is approved by this focused contract.",
+      "evidence": [
+        "qroot",
+        "localtwist",
+        "elementary"
+      ],
+      "sources": [
+        "qroot-local",
+        "local-twist"
+      ]
+    }
+  },
+  "dependency_impact": "Only the fixed Q(sqrt2) proof method and the local differential convention are changed. Class number one and four sign squareclasses retain their downstream conclusions. The local valuation assertion is now explicitly restricted to the accepted minimal differential/dual convention. This contract does not approve all antecedents or final Version14 coverage."
+}

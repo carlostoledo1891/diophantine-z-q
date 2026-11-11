@@ -1,0 +1,92 @@
+We check the Fourier normalization of the operator on this line.
+Use normalized induction, so that
+\[
+ v\left(\begin{pmatrix}a&x\\0&d\end{pmatrix}g\right)
+ =\mu_1(a)\mu_2(d)|a/d|_p^{1/2}v(g).
+\]
+Put $K_0(p)=\{g\in\mathrm{GL}_2(\Z_p):g_{21}\in p\Z_p\}$.
+Use its character $k\mapsto\mu_2(k_{22})$.
+This is the lower-right-character convention. Casselman's
+upper-left-character convention is carried to it by
+$h_p=\left(\begin{smallmatrix}0&1\\-p&0\end{smallmatrix}\right)$,
+which normalizes $K_0(p)$ and interchanges its diagonal entries
+under conjugation. We label the inducing characters so that
+$\mu_1$ is unramified, using the interchange isomorphism for
+irreducible principal series.
+Normalize Haar measure by $\operatorname{vol}(K_0(p))=1$.
+The character-weighted double-coset operator for
+$K_0(p)\operatorname{diag}(p,1)K_0(p)$, with value one at
+$\operatorname{diag}(p,1)$, is
+\[
+ H_p=\sum_{b\in\Z/p\Z}
+       \Pi_{f,p}\left(\begin{pmatrix}p&b\\0&1\end{pmatrix}\right).
+\]
+Take the newvector supported on $B K_0(p)$ with $v(1)=1$.
+Evaluating at $1$ gives
+\[
+ (H_pv)(1)=p\mu_1(p)p^{-1/2}=\sqrt p\,\mu_1(p).
+\]
+This is the Fourier operator $U_p^{(2)}$. Indeed, in the
+Whittaker model use an additive character of conductor $\Z_p$.
+Writing $a(n)=\operatorname{diag}(n,1)$ and
+$n(x)=\left(\begin{smallmatrix}1&x\\0&1\end{smallmatrix}\right)$,
+\[
+ a(n)\begin{pmatrix}p&b\\0&1\end{pmatrix}=n(nb)a(np)
+ \quad(n\in\Z_p),\qquad
+ (H_pW)(a(n))=pW(a(np)).
+\]
+Normalize the archimedean Whittaker function by
+$W_\infty(a(y))=y\exp(-2\pi y)$ for $y>0$.
+Comparison of its positive-$n$ term with $y f(iy)$ gives the
+finite Whittaker coefficient $a_n/n$. The displayed equality
+therefore sends $a_n$ to $a_{pn}$. Hence
+$U_p^{(2)}=\sqrt p\,\mu_1(p)$ on the new line, exactly the
+arithmetic-Frobenius eigenvalue on the unramified Galois line.
+This scalar is algebraic; the square roots only express the
+unitary normalization. Old multiplicities at primes other than
+$p$ carry the same scalar. Casselman's oldspace dimension formula
+\cite[Corollary, p.~306, and Theorem~4, p.~313]{casselman}
+does not introduce an additional multiplicity at this conductor-one
+prime. For Eisenstein constituents, the two Galois characters and
+the divisor-sum Fourier coefficients give the same equality directly;
+Carayol's cuspidal theorem is not applied to them.
+
+Choose an inertia element $\tau$ on which the quadratic character
+is $-1$, and a Frobenius lift $\phi$. On a ramified block, a basis
+of the two character lines gives
+\[
+ \rho(\tau)=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+ \rho(\phi)=\begin{pmatrix}\lambda&0\\0&\mu\end{pmatrix},
+ \qquad U_p^{(2)}=\lambda,\quad d(\phi)=\lambda\mu.
+\]
+For $\rho(g)=\left(\begin{smallmatrix}a&b\\c&e\end{smallmatrix}\right)$,
+the two inertia differences are
+\[
+ t(g\tau)-t(g)=-2e,\qquad
+ t(g\tau\phi)-t(g\phi)=-2e\mu.
+\]
+It follows in characteristic zero that
+\[
+ U_p^{(2)}\{t(g\tau\phi)-t(g\phi)\}
+       =d(\phi)\{t(g\tau)-t(g)\}.                       \tag{O.12}
+\]
+On a block coming from level prime to $p$, the representation is
+unramified and both differences vanish. This proves the identity
+on its entire old multiplicity space even if $U_p^{(2)}$ is not
+scalar or semisimple on that space. It therefore proves (O.12)
+on the actual sum containing $F_U$.
+
+These are identities on characteristic-zero forms before any
+reduction. To relate them to the integral trace module above, choose
+finitely many Fourier coordinates that inject its ambient space.
+Every generator of that module has integral coordinates; hence the
+module is a submodule of a finite free module over the complete
+coefficient DVR. It is finite and closed. Simultaneous Chebotarev
+approximation in the finitely many Galois representations makes
+$t(g)$ and $d(g)$ limits of good Hecke and diamond operators on this
+space. They preserve this integral module, so the identity can be
+evaluated on the integral $F_U$ and then reduced. This does not
+require integral projectors onto constituents. In particular no
+division by the two in the displayed inertia differences is used.
+
+

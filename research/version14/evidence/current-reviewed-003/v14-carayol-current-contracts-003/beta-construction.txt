@@ -1,0 +1,59 @@
+\paragraph{Modularity and a uniform conductor bound.}
+Choose one number field $C$ containing all $a_\sigma$, the values of
+$\beta$, and a splitting field of $B$. For each coefficient prime
+$\ell$ choose an embedding of $C$ into $\overline{\mathbb Q}_\ell$
+and extend scalars on $V_\ell(A)$ to a finite extension containing
+its image. With the constant-coefficient convention above, define
+\[
+ \rho_\ell(\sigma)
+   =\beta(\sigma)^{-1}a_\sigma\mu_\sigma\circ\sigma.
+\]
+The cocycle identities make this a representation of $G_\Q$.
+It commutes with $B$, so matrix units give
+$\rho_\ell\simeq r_\ell\oplus r_\ell$ with $\dim r_\ell=2$.
+On $G_{L'}$ it is the actual Tate action of $A$.
+Faltings' semisimplicity and endomorphism theorems
+\cite{faltings1983} show that $r_\ell|_{G_{L'}}$ is absolutely
+irreducible: after splitting $B$, its commutant is the scalars.
+It is unramified outside $T\cup\{\ell\}$, since there $L$ is
+unramified, $A$ has good reduction, and $\beta$ is unramified.
+
+Apply Lemma~\ref{lem:qm-modularity-descent} with
+$t_\sigma=a_\sigma/\beta(\sigma)$. It identifies this same $r_5$
+with the Tate realization of a primitive weight-two newform $f$.
+The qualitative modularity and finite-twist argument does not replace
+$A$, $L'$, $\beta$, or $r_\ell$ in the ramification and height bounds below.
+For this final newform, Li's Fricke formula
+\cite[p.~296, before Lemma 6]{li-newforms} makes the span of its
+coefficient conjugates Fricke-stable. Shimura's quotient construction
+and Euler-factor identity \cite[Theorem 1]{shimura-factors} therefore
+show that $r_5$ is a constituent of the Tate module of the modular abelian variety
+$A_f$, or equivalently $r_5^\vee$ is its cohomological constituent.
+This duality preserves the conductor.
+
+The representations at all coefficient primes belong to this same system.
+Enlarge $C$ to contain the coefficients of $f$, extending the original
+embeddings and retaining the chosen embedding at five. Fix a coefficient
+prime $\ell$. Work over a common finite extension of $\mathbb Q_\ell$ containing both coefficient images. For $p\notin T\cup\{5,\ell\}$ away also from the level of $f$,
+choose a place $v$ of $L$ and an arithmetic Frobenius lift
+$\sigma\in G_{\mathbb Q_p}$ whose residue action is $x\mapsto x^p$.
+Since $L_v/\mathbb Q_p$ is unramified and $A$ has good reduction,
+relative $p$-Frobenius maps $\overline A_v$ to the reduction of
+${}^\sigma A$ at $v$. The actual isogeny $\mu_\sigma$ extends over
+ the local abelian schemes. Composing its reduction with this Frobenius
+ gives an endomorphism $u_p$ of $\overline A_v$.
+Its rational Tate trace $t_p$ is independent of the coefficient prime
+ different from $p$. Functorial specialization and the two-copy
+ decomposition give
+\[
+ \operatorname{tr}r_\ell(\sigma)
+ =\iota_\ell\bigl(a_\sigma\beta(\sigma)^{-1}t_p/2\bigr).
+\]
+At five the algebraic number in parentheses equals $a_p(f)$.
+Injectivity of the embedding at five makes this an equality in $C$,
+so transport to $\ell$ gives the trace of the corresponding classical
+Tate realization $U_{f,\ell}$. Chebotarev and the characteristic-zero
+semisimple trace criterion identify $r_\ell$ with $U_{f,\ell}^{\rm ss}$.
+Since $r_\ell$ is absolutely irreducible, this semisimplification has
+one simple composition factor; hence $U_{f,\ell}$ itself is irreducible
+and isomorphic to $r_\ell$.

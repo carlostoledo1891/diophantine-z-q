@@ -1,0 +1,100 @@
+{
+  "schema": "v14-bounded-source-inputs/v1",
+  "scope": "Two exact early-main formal-group source applications; no new proof source or ordinary consumer node.",
+  "rows": [
+    {
+      "id": "EARLY-FORMAL-LOG-ISOMETRY",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1886,
+        "end_line": 1899,
+        "excerpt_sha256": "fdc8a3df23509488edfe384cdf5deec703f8a7c3e154685b0c16ea91f51e7189"
+      },
+      "source_id": "silverman2009",
+      "available_assertion": {
+        "statement": "The integral Weierstrass formal chart gives a formal group; its logarithm is additive on the maximal ideal and an isomorphism on depth r>v(p)/(p-1).",
+        "objects": "An integral Weierstrass equation and its formal group over a complete characteristic-zero DVR.",
+        "hypotheses": "v(K*)=Z; integral coefficients; residue characteristic p; for the isomorphism, integral r>v(p)/(p-1).",
+        "quantifiers": "For every such equation, field, and permitted r.",
+        "parameter_range": "Only the indicated formal subgroup; no assertion on arbitrary elliptic points.",
+        "uniformity": "Exact algebraic and local statements; no varying-curve analytic uniformity.",
+        "constants": "The threshold is v(p)/(p-1); first logarithm coefficient is1.",
+        "normalizations": "z=-x/y; w=-1/y; formal chart x=z/w(z), y=-1/w(z); integer-normalized valuation.",
+        "exceptional_cases": "The integral formal chart does not require minimality. The separate E1 identification from VII.2.2 does. Identity is z=0.",
+        "limit_order": "Construct the integral formal group, then evaluate convergent series and restrict to the indicated depth."
+      },
+      "source_statement": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+          "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+        },
+        "start_line": 7,
+        "end_line": 12,
+        "excerpt_sha256": "d47ab5aca19c5ee1c72fe273a95fc1025257b1caaef74b2ac13b80e0aff2a2f3"
+      },
+      "publication": {
+        "title": "The Arithmetic of Elliptic Curves",
+        "authors": "Joseph H. Silverman",
+        "venue": "Springer, second edition, 2009",
+        "authoritative_version": "Exact published book PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "locator": "IV Proposition1.1 and pp.116–120; Example2.2.3; Proposition5.5 p.129; Lemmas6.2–6.3 and Theorem6.4 pp.130–132",
+        "corrections": "No unseen erratum is invoked. The known division-polynomial and X.4.9 typographical issues concern other formulas."
+      },
+      "needed": "For the displayed integral equation, w=1/x has valuation twice that of z=-x/y; the logarithm is additive and isometric on depth v(z)>e/(p-1), giving v(z([n]Q))=v(z(Q))+v(n) for nonzero integer n and nonzero Q in that depth.",
+      "derivation": "The source auxiliary coordinate is -1/y, whereas this paragraph uses w=1/x. Its integral Laurent chart gives 1/x=z^2 times an integral unit. Integrating the integral invariant differential gives degree-r logarithm coefficient with denominator dividing r. If v(z)>e/(p-1), (r-1)v(z)-e*v_p(r)>0 for r>=2, so logarithm has leading valuation v(z). Multiplication preserves this depth for integer n; additivity and injectivity yield the displayed valuation identity.",
+      "boundary": "Completeness, integral coefficients, integer-normalized valuation, formal membership and the strict depth inequality are required. No isometry at the boundary or outside the formal subgroup; n=0 and Q=O are excluded from the valuation identity."
+    },
+    {
+      "id": "EARLY-FORMAL-MINIMAL-KERNEL",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1900,
+        "end_line": 1903,
+        "excerpt_sha256": "701954692764bd38e71379217fdaca3b6944ed74cd6a9661c40222aea9a21284"
+      },
+      "source_id": "silverman2009",
+      "available_assertion": {
+        "statement": "For a minimal integral model, reduction has exact kernel E1 in E0, and the formal group on the maximal ideal identifies with E1.",
+        "objects": "An elliptic curve over a complete discretely valued field, its minimal model and nonsingular special-fibre group.",
+        "hypotheses": "Minimal integral Weierstrass equation and completeness. Points consumed by reduction lie in E0.",
+        "quantifiers": "For every such field/model; every point of E0.",
+        "parameter_range": "Nonsingular reduction subgroup, not all integral points without checking nonsingularity.",
+        "uniformity": "Exact group maps, with no quantitative estimate.",
+        "constants": "No numerical constant.",
+        "normalizations": "Reduction kernel E1, formal parameter z=-x/y; integral minimal coordinates.",
+        "exceptional_cases": "Singular reductions require checking the point is nonsingular. Identity maps to identity.",
+        "limit_order": "Check the minimal model and E0 membership before taking the finite reduction order."
+      },
+      "source_statement": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+          "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+        },
+        "start_line": 13,
+        "end_line": 16,
+        "excerpt_sha256": "151b6c3e65bcc0821cb05f0a557b154f452a898757a6110b60919673f39c3c59"
+      },
+      "publication": {
+        "title": "The Arithmetic of Elliptic Curves",
+        "authors": "Joseph H. Silverman",
+        "venue": "Springer, second edition, 2009",
+        "authoritative_version": "Exact published book PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "locator": "VII Propositions2.1 and2.2, pp.188–191",
+        "corrections": "No unseen erratum is invoked. The known division-polynomial and X.4.9 typographical issues concern other formulas."
+      },
+      "needed": "When the displayed equation is a minimal integral model, identify its formal group with the kernel of nonsingular reduction.",
+      "derivation": "Apply VII.2.1–2.2 only to the minimal model explicitly stipulated here. The exact reduction sequence identifies the formal subgroup with E1 inside E0; it is not an identification of all integral points.",
+      "boundary": "Minimality and nonsingular reduction membership remain explicit conditions. No minimality of an arbitrary integral equation is inferred."
+    }
+  ]
+}

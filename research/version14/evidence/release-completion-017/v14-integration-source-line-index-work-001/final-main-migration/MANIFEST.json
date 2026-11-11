@@ -1,0 +1,72 @@
+{
+  "author": "/root/v14_integration_review",
+  "created_at": "2026-11-09T10:21:17.942Z",
+  "state": "immutable proposed final-main migration for independent review",
+  "files": [
+    {
+      "path": "BEFORE.json",
+      "sha256": "ff58e8b317977a5763dfc42467bea0f7463201a110f198b3ea30baaab0aa28a1"
+    },
+    {
+      "path": "AFTER.json",
+      "sha256": "f26a94f6cffb7d9c9e8f162173d974cf2e9c663f0915aae02838e85408a43d87"
+    },
+    {
+      "path": "LOCATION-TRANSPORT.json",
+      "sha256": "1185f4fb18e9bdb3be68a9239f8e12a40a1733687af0e13860195c56e7886a78"
+    },
+    {
+      "path": "ADDED-ROLE-ROWS.json",
+      "sha256": "bb76aa0d7004dcb3cde15beb69b062e336effa9a550742ff8b8ca5c45de9c92b"
+    },
+    {
+      "path": "CHECKS.json",
+      "sha256": "a3a2d6e29457f64f5895b108b70b508d3a09d1892e2959a06dd57852c1640fc9"
+    },
+    {
+      "path": "CHANGED-CONTRACTS-REVIEW-GI.json",
+      "sha256": "f1375d41bf3cfac2aaa7cafb32d9ff7fb0f0fef450066a685a85fe7dcd3d0176"
+    },
+    {
+      "path": "EQUAL-PREVIEW-REVIEW-GI.json",
+      "sha256": "4c84276e84266c460aae6230086a51c58ea559acb5309616ae31d547ca02cb49"
+    },
+    {
+      "path": "TRANSFORM.txt",
+      "sha256": "0fa5a54691583f5685a04c9bbf5a39941ecbc683c04cd76f6011d63b2072ea95"
+    }
+  ],
+  "input_main": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059",
+  "target_main": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac",
+  "line_map": {
+    "path": "v14-final-main-edit-batch-root-002/LINE-MAP.json",
+    "sha256": "d3df067d6e6961e1ac08dce9cc44867b55150b774017904ec51a89ab024c5659"
+  },
+  "proposal": {
+    "path": "v14-final-main-edit-batch-root-002/PROPOSAL.json",
+    "sha256": "9727f64a34c0263f57c16d6b0560fc53623afa5f6d7e5570b9c9a0454df0a0b1"
+  },
+  "counts": {
+    "components": 1033,
+    "source_files": 135,
+    "ordinary": 176,
+    "source_role_rows": 6872,
+    "location_or_pin_transports": 7542,
+    "changed_locations": 46,
+    "new_role_rows": 12,
+    "raw_checks": 14706
+  },
+  "operations": [
+    "Map all active location ranges through reviewed line opcodes, preserving exact old objects in BEFORE and paired transport records.",
+    "Carry byte-identical excerpt hashes; compute explicitly changed excerpt hashes only as proposed scoped edits.",
+    "Preserve original, prior and historical fields verbatim.",
+    "Update current standalone manuscript pins and recompute canonical use digests and mirrored use_sha256 fields.",
+    "Add eleven accepted Atkin transcription rows and one explicitly reviewed native-lattice insertion role."
+  ],
+  "limits": [
+    "Thirteen additional broad-role changed locations require bounded comparison in addition to the accepted thirty-three component locations.",
+    "Pending main role resolutions and new root-sign replacement are not included in this immutable baseline.",
+    "No whole-proof, source-premise closure, release or canonical manuscript installation is asserted.",
+    "Historical source extension objects retain original pins; final_main_transport states the new current-source identity."
+  ]
+}

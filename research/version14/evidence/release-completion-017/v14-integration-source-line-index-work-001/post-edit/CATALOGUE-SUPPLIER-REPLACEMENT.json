@@ -1,0 +1,398 @@
+{
+  "before": {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE-P1",
+        "SRC-ARITH-093"
+      ],
+      "assertion": {
+        "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+        "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+        "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+        "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+        "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "22 primes per class, cutoff324, modulus W.",
+        "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+        "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+        "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": "The source-side occurrence uses the same W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s. Retained hypotheses: W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests. The location additions expose that exact input inside its consuming proof; they do not broaden the assertion, replace its objects, or use an outward result as its own premise. Exact already-present locations are aliases rather than additional occurrences.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 24,
+          "end_line": 26,
+          "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+        },
+        "statement": "For every positive integer m and residue class a coprime to m, primes congruent to a modulo m have Dirichlet density1/phi(m), hence are infinite.",
+        "publication": {
+          "title": "Class Field Theory",
+          "authors": "J. S. Milne",
+          "venue": "Author course notes",
+          "authoritative_version": "v4.03, August6,2020; PDF50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+          "locator": "ChapterV Theorem2.2, printed p.155",
+          "corrections": "Qualitative infinitude via positive Dirichlet density only; no effective prime bound is extracted."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 24,
+        "end_line": 26,
+        "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE",
+      "use_sha256": "96ddddf8c9bbb93a0f726c3021d81538095a3593c8a5ad5cb1279d38036b4ba0",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For every positive integer m and residue class a coprime to m, primes congruent to a modulo m have Dirichlet density1/phi(m), hence are infinite.",
+        "objects": "Rational primes in a reduced arithmetic progression.",
+        "hypotheses": "m is a positive integer and gcd(a,m)=1.",
+        "quantifiers": "Every such modulus and class.",
+        "parameter_range": "Prime variable unbounded; fixed modulus in the density limit.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Density1/phi(m)>0.",
+        "normalizations": "Dirichlet density, not an asserted effective least-prime bound.",
+        "exceptional_cases": "Non-unit classes are excluded.",
+        "limit_order": "Fix m and a before taking the Dirichlet-density limit."
+      },
+      "needed_assertion": {
+        "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+        "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+        "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+        "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+        "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "22 primes per class, cutoff324, modulus W.",
+        "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+        "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+        "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+      },
+      "required_capabilities": [
+        "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates."
+      ],
+      "available_capabilities": [
+        "For every positive integer m and residue class a coprime to m, primes congruent to a modulo m have Dirichlet density1/phi(m), hence are infinite."
+      ],
+      "derived_capabilities": [
+        "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 24,
+          "end_line": 26,
+          "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+          "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+          "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+          "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+          "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "22 primes per class, cutoff324, modulus W.",
+          "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+          "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+          "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 24,
+            "end_line": 26,
+            "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 306,
+            "end_line": 308,
+            "excerpt_sha256": "9e839d399d00e1b85ee2e237f15298f21cbdf95dc0967b612a348dad4ac38d32"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 306,
+          "end_line": 308,
+          "excerpt_sha256": "9e839d399d00e1b85ee2e237f15298f21cbdf95dc0967b612a348dad4ac38d32"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 25,
+          "end_line": 25,
+          "excerpt_sha256": "326ac8598d950c20e638ca90c95bb0ae49beea779dbd4124ac0c28849ccc0549"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U011",
+      "scope": "Catalogue clause only; M0 and guard consequences remain separate."
+    },
+    "retained_separate_inputs": [],
+    "source_record": {
+      "id": "milne-cft",
+      "bibliography": null,
+      "urls": [],
+      "files": [
+        {
+          "workspace_relative_path": "work/astra-final-moving-character-audit-001/primary/milne-cft.pdf",
+          "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+          "bytes": 2072714
+        }
+      ],
+      "version_notes": "Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Author notes v4.03,6August2020.",
+      "source_status": "bytes_pinned"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  "after": {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE-P1",
+        "SRC-ARITH-093"
+      ],
+      "assertion": {
+        "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+        "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+        "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+        "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+        "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "22 primes per class, cutoff324, modulus W.",
+        "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+        "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+        "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": "The source-side occurrence uses the same W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s. Retained hypotheses: W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests. The location additions expose that exact input inside its consuming proof; they do not broaden the assertion, replace its objects, or use an outward result as its own premise. Exact already-present locations are aliases rather than additional occurrences.",
+      "supplier": {
+        "kind": "published_external",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+            "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+          },
+          "start_line": 3,
+          "end_line": 4,
+          "excerpt_sha256": "1ff5fa879d0cc533833e6b1acd8f429d2e13b3263aafd9440100afe20c5a7ead"
+        },
+        "statement": "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx).",
+        "publication": {
+          "title": "Explicit bounds for primes in arithmetic progressions",
+          "authors": "M.A. Bennett, G. Martin, K. O'Bryant, A. Rechnitzer",
+          "venue": "Illinois Journal of Mathematics62(2018),427–532",
+          "authoritative_version": "Final publishedPDF958b0390475236b68afdec28ce006b1a1d6ac59484eea9443e0b287e9f61a541",
+          "locator": "Definition1.5 printed429, Theorem1.2 printed431",
+          "corrections": "Only fixedq infinitude is consumed; no uniform prime-size bound."
+        },
+        "application_id": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 24,
+        "end_line": 26,
+        "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE",
+      "use_sha256": "51be8bb8def847d02ba01d497963950638c83382f35e7cbb37bf55b0857abaa0",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx).",
+        "objects": "Positive primes p congruent a moduloq and their log-weighted sum.",
+        "hypotheses": "q>=3, gcd(a,q)=1, x above the source threshold depending onq.",
+        "quantifiers": "For every fixed q,a satisfying the hypotheses, for every x>=x_theta(q).",
+        "parameter_range": "Integer q>=3, integer a with gcd(a,q)=1, and real x>=x_theta(q).",
+        "uniformity": "Within each fixed configuration only; no bound uniform over growing moduli.",
+        "constants": "No numerical bound is consumed.",
+        "normalizations": "Definition1.5 oftheta; Theorem1.2 inequality.",
+        "exceptional_cases": "No conclusion for a nonreduced class.",
+        "limit_order": "Fixq,a before x tends to infinity."
+      },
+      "needed_assertion": {
+        "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+        "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+        "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+        "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+        "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "22 primes per class, cutoff324, modulus W.",
+        "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+        "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+        "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+      },
+      "required_capabilities": [
+        "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates."
+      ],
+      "available_capabilities": [
+        "For fixed q>=3 and gcd(a,q)=1, theta(x;q,a)=x/phi(q)+O_q(x/logx)."
+      ],
+      "derived_capabilities": [
+        "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 24,
+          "end_line": 26,
+          "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+          "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+          "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+          "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+          "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "22 primes per class, cutoff324, modulus W.",
+          "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+          "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+          "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 24,
+            "end_line": 26,
+            "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 306,
+            "end_line": 308,
+            "excerpt_sha256": "9e839d399d00e1b85ee2e237f15298f21cbdf95dc0967b612a348dad4ac38d32"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 306,
+          "end_line": 308,
+          "excerpt_sha256": "9e839d399d00e1b85ee2e237f15298f21cbdf95dc0967b612a348dad4ac38d32"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 25,
+          "end_line": 25,
+          "excerpt_sha256": "326ac8598d950c20e638ca90c95bb0ae49beea779dbd4124ac0c28849ccc0549"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U011",
+      "scope": "Catalogue clause only; M0 and guard consequences remain separate."
+    },
+    "retained_separate_inputs": [],
+    "source_record": {
+      "id": "milne-cft",
+      "bibliography": null,
+      "urls": [],
+      "files": [
+        {
+          "workspace_relative_path": "work/astra-final-moving-character-audit-001/primary/milne-cft.pdf",
+          "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+          "bytes": 2072714
+        }
+      ],
+      "version_notes": "Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Author notes v4.03,6August2020.",
+      "source_status": "bytes_pinned"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  "reviews": [
+    {
+      "path": "v14-catalogue-published-replacement-review-gi-001/REVIEW.md",
+      "sha256": "f0462644c5f1e6e916f7ce5bdf84878b2fea759299a31ca6fe0387ad9ba373ce"
+    },
+    {
+      "path": "v14-grouped-source-edits-review-001/REVIEW.json",
+      "sha256": "6d43ba27746534b724ace6cadddbaed729f86a4fbefca972f9a2765b44ad27c8"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "bounded exact text search; not proof of absence of every historical treatment",
+  "searches": [
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "--glob",
+        "*.md",
+        "--glob",
+        "*.json",
+        "Tho15|3\\.15|generically reduced",
+        "work/source-risk-review-20261107/pan-route-author"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "--glob",
+        "PAN*.md",
+        "Tho15|3\\.15|generically reduced",
+        "work/quartic-v14-prep/independent-source-review"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

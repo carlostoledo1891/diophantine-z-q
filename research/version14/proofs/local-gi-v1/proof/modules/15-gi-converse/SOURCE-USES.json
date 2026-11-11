@@ -1,0 +1,155 @@
+{
+  "schema": "source-use-ten-fields/v1",
+  "uses": [
+    {
+      "id": "CON-U01",
+      "assertion": {
+        "statement": "The zero vertex of every linear-orbit (d+1)-cube is a continuous function of its other vertices on one fixed compact set.",
+        "objects": "Fixed d-step nilmanifold M, compact Sigma inside M^(2^(d+1)-1), continuous map P and all linear-orbit cubes.",
+        "hypotheses": "A fixed nilmanifold of step at most d; in this application the group is connected simply connected with a cocompact lattice.",
+        "quantifiers": "Every g,x and all integers n,h, with no bound on orbit parameters.",
+        "parameter_range": "Every fixed d>=1; actual application has d=s-2.",
+        "uniformity": "Sigma and P depend only on the fixed nilmanifold, not N,g,x.",
+        "constants": "No quantitative modulus is assumed; compactness supplies finite approximation data after epsilon is fixed.",
+        "normalizations": "Right lattice quotient and the exact nonzero-vertex cube map; no polynomial orbit is substituted until it is linearized.",
+        "exceptional_cases": "Step smaller than d is allowed. No assertion is made for a non-nilpotent or changing geometry.",
+        "limit_order": "Fix M and the cube constraint before selecting the test, orbit, averaging scale or N."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+        "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+        "bytes": 1213124,
+        "locator": "Proposition11.5 and Definition11.4 p1799; published AppendixE proof is retained as a source premise"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "start_line": 24,
+        "end_line": 52,
+        "excerpt_sha256": "2e50c93011f3bb4550c05d7a5c799450a5bf7c0652b79a63ddf94a5264cb3e33"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "CON-U02",
+      "assertion": {
+        "statement": "The composed test F(P(z)) has a finite tensor approximation with uniform bounds over the fixed bounded Lipschitz test class.",
+        "objects": "Coordinate Lipschitz functions on compact Sigma, complex coefficients c_a, one-bounded factors H_(omega,a), finite uniform test net.",
+        "hypotheses": "Published continuous cube constraint, fixed compact M, fixed norm and Lipschitz bounds, positive epsilon.",
+        "quantifiers": "Every test in the fixed class and every cube point z in Sigma.",
+        "parameter_range": "Any fixed d,M,L and epsilon; finite tensor dimension 2^(d+1)-1.",
+        "uniformity": "The finite coefficient sum, number of terms and factor bounds are uniform in F,g,x,N.",
+        "constants": "Keep sum |c_a|; allocate epsilon/2 to the net and epsilon/2 to approximation.",
+        "normalizations": "Complex Stone-Weierstrass algebra contains constants, separates points and is closed under conjugation.",
+        "exceptional_cases": "Factors are scaled to the unit disk with their magnitudes absorbed into coefficients; they are not silently normalized without compensation.",
+        "limit_order": "Choose the finite net and tensor data before the orbit and averaging parameters."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+        "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+        "bytes": 1213124,
+        "locator": "Stone-Weierstrass and Arzela-Ascoli argument in proof11.2 pp1799-1801, applied explicitly in localSection2"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "start_line": 53,
+        "end_line": 81,
+        "excerpt_sha256": "56bdbe72291b5630796c17fba4d8e70ede8b922f70747c52479a6f5ff4b66693"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "CON-U03",
+      "assertion": {
+        "statement": "Probability averaging over all integer shifts preserves the uniform cube approximation error and gives a sampled cutoff with uniformly bounded Fourier l1 norm.",
+        "objects": "Fixed smooth sigma, S_N=sum sigma(h/N), probability mu_N, centered cyclic sample w_N and its Fourier coefficients.",
+        "hypotheses": "sigma supported[-1,2], equal1 on[0,1], values in[0,1]; Q=C_d N with fixed sufficiently large C_d.",
+        "quantifiers": "Every N>=1 and every cyclic frequency, including zero.",
+        "parameter_range": "Fixed d>=1; C_d also larger than2^(d+1) when interval normalization is used.",
+        "uniformity": "Fourier l1 bound independent of N, from O(1/r_star^2) decay.",
+        "constants": "N<=S_N<=4N; keep all S_N powers and second-derivative constants.",
+        "normalizations": "Start with an all-integer probability average, not a hard [N] average widened later.",
+        "exceptional_cases": "Smooth zero extension handles support boundaries; small N satisfies the same estimates.",
+        "limit_order": "Fix sigma and C_d, normalize the integer average, then transfer its exact sum to the cyclic group."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "locator": "Local normalized smoothing and discrete second-difference proof"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "start_line": 82,
+        "end_line": 125,
+        "excerpt_sha256": "1c092b8c7cb98c531694c4427d687f7f798885ccc7e0b412c3782d82a8d558e4"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "CON-U04",
+      "assertion": {
+        "statement": "Each Fourier term of the weighted cube average is bounded by the cyclic U^(d+1) norm of the distinguished input.",
+        "objects": "Zero-extended v, bounded nonzero-vertex functions, Fourier phases in h and the full cyclic cube.",
+        "hypotheses": "d+1>=2; all nonzero-vertex factors bounded by1; exact cyclic representation with no wrapped conflicting arguments.",
+        "quantifiers": "Every Fourier frequency tuple, every bounded factor collection and every complex v.",
+        "parameter_range": "Q=C_d N with C_d>10(d+2) and sufficiently large for interval normalization.",
+        "uniformity": "Bounds depend only on d and the fixed cutoff; no orbit dependence.",
+        "constants": "Track (Q/N)(Q/S_N)^(d+1), Fourier l1 product and the finite tensor coefficient sum.",
+        "normalizations": "Absorb each h_j phase using vertices e_j+e_k and e_k, k!=j; the distinguished input is unchanged.",
+        "exceptional_cases": "Complex conjugations are placed in vertex functions to match(B.12); d=1 still has two coordinate directions.",
+        "limit_order": "Transfer exact sums, expand cutoffs, apply Gowers-CS termwise, then compare cyclic and normalized interval norms."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+        "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+        "bytes": 1213124,
+        "locator": "Gowers-Cauchy-Schwarz equation(B.12) and normalized local norm(B.14), p1817"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "start_line": 126,
+        "end_line": 178,
+        "excerpt_sha256": "84b5b4bb8d225787e7ea3fdb58557da46b0ccfef71551ebd01bb25f401afd8a1"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "CON-U05",
+      "assertion": {
+        "statement": "A fixed degree-d polynomial nilsequence can be used in this linear converse on fixed geometry of step at most d.",
+        "objects": "Exact same-step linear model, boundedly normalized test, finite family and fixed metric comparison.",
+        "hypotheses": "Rational connected polynomial model with cocompact lattice and a fixed bounded Lipschitz test.",
+        "quantifiers": "All polynomial coefficients, all interval lengths and every member of the fixed finite family.",
+        "parameter_range": "d=s-2>=1 in the assembly; no increase of step is allowed.",
+        "uniformity": "Geometry and Lipschitz multiplier independent of N and coefficients; take a finite maximum.",
+        "constants": "Sequence and correlation unchanged; retain the fixed Lipschitz multiplier and any initial norm normalization.",
+        "normalizations": "Use the accepted right-increment P1 construction, not the defective full-P0 suspension.",
+        "exceptional_cases": "Trivial and constant models covered by the accepted unit; old universal unnormalized projection clause is not claimed.",
+        "limit_order": "Linearize exactly first, then apply the proved converse with error chosen from the positive correlation."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/linearization-001/proof.tex",
+        "sha256": "0be27a44ba9d8182403d11f5ee598c3b4acbece2df905fbbc200dc9f378c74cf",
+        "bytes": 17057,
+        "locator": "Accepted increment-linearization001 exact sequence and finite-family scope"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "start_line": 179,
+        "end_line": 207,
+        "excerpt_sha256": "c8872b76505efc5fdc13b447c6c0ea65ebaae579bdd6367b6ee995a3cd1239f8"
+      },
+      "status": "author_proposed; independent review pending"
+    }
+  ]
+}

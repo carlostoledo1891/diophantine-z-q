@@ -1,0 +1,280 @@
+{
+  "id": "V15-SF46-FINITE-LOG-COEFFICIENTS",
+  "status": "author contract; independent review pending",
+  "source": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      31840,
+      31914
+    ],
+    "excerpt_sha256": "601d1019b581d9c94930ce17c4f4373313f75a9364e285252aa784a843179ee6",
+    "excerpt_convention": "raw LF split retaining CR; no final LF"
+  },
+  "coefficient_definition": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      31688,
+      31701
+    ],
+    "excerpt_sha256": "1cc95739829e2a5aa8ea3f19c5d511ceb255f07db29839dce65351bc49ea0fa6",
+    "excerpt_convention": "raw LF split retaining CR; no final LF"
+  },
+  "dependency": "V15-LOGS",
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Coefficient input",
+      "required": "Use the exact recurrence for c_j, including c1=-2/5.",
+      "constructed": "D_J=product(4i+1), i=1..J-1; G_J=D_J Q_J.",
+      "match": "The explicit product coefficients clear every recurrence denominator; J is an integer at least2.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31688,
+          31701
+        ],
+        "excerpt_sha256": "1cc95739829e2a5aa8ea3f19c5d511ceb255f07db29839dce65351bc49ea0fa6",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31856,
+          31869
+        ],
+        "excerpt_sha256": "0174bd6da672da31533893a573d215bc77dfb729636e8a35761fbe558d2e210b",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 2,
+      "topic": "Degree",
+      "required": "Establish degree J-1, not only an upper bound.",
+      "constructed": "The coefficient at j=J-1 is twice a product of nonzero integers 4i-5.",
+      "match": "No leading coefficient vanishes for positive integer i.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31862,
+          31869
+        ],
+        "excerpt_sha256": "e89b8418fc49318fbd55c1a4a22087d1c8f4086c8d972378d1b8fb20efa38eab",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31872,
+          31877
+        ],
+        "excerpt_sha256": "ffff525f2a7319acf2e40f9983dbe74ed54af5002b9dc69b3d4ea6f8bfbf3d76",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 3,
+      "topic": "Integer coefficient size",
+      "required": "Bound each absolute coefficient and the full l1 norm.",
+      "constructed": "D_J≤(4J)^(J-1); ||G_J||1≤2J(4J)^(J-1).",
+      "match": "Every factor is bounded by4J; sum J coefficient bounds.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31856,
+          31869
+        ],
+        "excerpt_sha256": "0174bd6da672da31533893a573d215bc77dfb729636e8a35761fbe558d2e210b",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31895,
+          31900
+        ],
+        "excerpt_sha256": "0045cad9fb9b587a111f997894b0778c536e65cccdf5b33e1ad4174d746c4230",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 4,
+      "topic": "Binary specialization",
+      "required": "Keep b integer≥2 and J=2^(b-1).",
+      "constructed": "D_J and ||G_J||1 are strictly below2^((b+1)J).",
+      "match": "The upper exponent simplifies to(b+1)J-1, giving strict inequality.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31878,
+          31882
+        ],
+        "excerpt_sha256": "59ad532933d2668f7bf37303f54d757bf1fd82a13bd3166755b427c0c63e6e01",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31900,
+          31904
+        ],
+        "excerpt_sha256": "d583b8e66ede5bab7138dbf594c62a769e68549b20ea341565991faba3d2ddad",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 5,
+      "topic": "Algebra carrier",
+      "required": "Use a finite free algebra with a chosen basis over Q or an integer polynomial ring.",
+      "constructed": "M_A is the multiplication matrix; its norm is the maximum column sum of coefficient l1 norms.",
+      "match": "The norm is submultiplicative, ||I||=1 and ||cI||=|c|.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31842,
+          31848
+        ],
+        "excerpt_sha256": "ce647ff52e6dbf9e5bd8c4397f4985850227629e9b7a92032aa9aac023cd55ae",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31883,
+          31888
+        ],
+        "excerpt_sha256": "cb79a25c85489a06725201a226e11d71beb5c92a23d9fe8c9ec78c95b3d75c77",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 6,
+      "topic": "Operator bound",
+      "required": "Retain B≥0 and ||M_A||≤2^B.",
+      "constructed": "||M_GJ(A)||≤||G_J||1 2^((J-1)B).",
+      "match": "Triangle inequality and submultiplicativity, without treating a matrix entry norm as the operator norm.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31842,
+          31848
+        ],
+        "excerpt_sha256": "ce647ff52e6dbf9e5bd8c4397f4985850227629e9b7a92032aa9aac023cd55ae",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31883,
+          31905
+        ],
+        "excerpt_sha256": "e0682da41e3bd2daf1a819df570d35dd1f1c5d5ea2cab9ab0c8ce9c175a76792",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 7,
+      "topic": "Weighted degree",
+      "required": "Require compatible weights and reduction by monic relations not increasing weight.",
+      "constructed": "wdeg G_J(A)≤(J-1)max(0,wdeg A).",
+      "match": "Termwise bound; zero has weight-minus-infinity, no nonzero assumption on A.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31850,
+          31854
+        ],
+        "excerpt_sha256": "a21b8ce1bb70b21c83c2fc4ad86232d4775635a4937dfe23a942668f374ca416",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31889,
+          31905
+        ],
+        "excerpt_sha256": "0976b585e6c5f0984833229f5326ad599c00c20298a397020ed075e2edae24f9",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 8,
+      "topic": "Homogeneous numerator",
+      "required": "State B≠0 for rational evaluation A/B.",
+      "constructed": "Ghom(A,B)=sum g_j A^j B^(J-1-j); Q_J(A/B)=Ghom/(D_J B^(J-1)).",
+      "match": "Polynomial definition is valid at B=0 but quotient identity is asserted only when B≠0.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31907,
+          31911
+        ],
+        "excerpt_sha256": "2b9870c80271dc23053a82fc0a6e479809b8fad807ecb707bebebead7058d4bf",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31912,
+          31914
+        ],
+        "excerpt_sha256": "0752f7b2c5ee7c1d077efaaa88ed94852ca81cbb405a5bc5c839e5161553a3e6",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    },
+    {
+      "id": 9,
+      "topic": "Current-use scope",
+      "required": "Do not infer an effective defining cutoff from finite coefficient bounds.",
+      "constructed": "This is the retained finite-coefficient specification following the log approximation results.",
+      "match": "No new claim about the ineffective N0 or final233 coefficients; sourcefirst SF46 is the independent current-use review.",
+      "source": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31840,
+          31914
+        ],
+        "excerpt_sha256": "601d1019b581d9c94930ce17c4f4373313f75a9364e285252aa784a843179ee6",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "consumer": {
+        "path": "manuscript/quartic_v15.tex",
+        "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+        "lines": [
+          31840,
+          31914
+        ],
+        "excerpt_sha256": "601d1019b581d9c94930ce17c4f4373313f75a9364e285252aa784a843179ee6",
+        "excerpt_convention": "raw LF split retaining CR; no final LF"
+      },
+      "review_status": "pending current record comparison"
+    }
+  ],
+  "limits": "Finite arithmetic and matrix/filtration consequences only; no global source closure."
+}

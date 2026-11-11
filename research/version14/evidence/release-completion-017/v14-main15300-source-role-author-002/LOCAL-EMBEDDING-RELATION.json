@@ -1,0 +1,57 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T09:54:18.248Z",
+  "status": "expanded local proof relationship proposal; independent review required",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+    },
+    "start_line": 15739,
+    "end_line": 15751,
+    "excerpt_sha256": "dc61c3ac3c0334894c7330817d4c06d1384ea92e78c7b15c2a1e9f319348ee0a"
+  },
+  "claims": [
+    {
+      "range": [
+        15739,
+        15742
+      ],
+      "assertion": "One maximal-order local embedding orbit away from N ell0.",
+      "argument": "For a quadratic field L/Q_p, an O_L-stable Z_p lattice inside L is a fractional O_L ideal: multiplying by a common denominator puts it in O_L, and stability makes it an ideal. O_L is a DVR, so it is principal. For L=Q_p×Q_p, integral idempotents split the lattice as two rank-one Z_p lattices, also a principal fractional ideal of Z_p×Z_p. Changing the fractional ideal generator identifies the lattices; with the usual regular representation of L, this gives one GL_2(Z_p)-conjugacy class of integral embeddings into the maximal matrix order.",
+      "inputs": [
+        "Integers of a finite extension of Q_p form a DVR; Z_p lattices admit a common denominator.",
+        "Every faithful two-dimensional representation of the quadratic etale algebra is its rank-one regular module.",
+        "Conjugating the lattice model identifies embeddings into End_Zp(lattice)."
+      ]
+    },
+    {
+      "range": [
+        15742,
+        15747
+      ],
+      "assertion": "Exactly two oriented split Eichler lattice-pair types.",
+      "argument": "The integral split idempotents decompose each of the two stable lattices. Scale the larger lattice to Z_p⊕Z_p. The smaller is p^a Z_p⊕p^b Z_p with a,b nonnegative. Its index is p^(a+b)=p^e, while cyclicity of the quotient forces min(a,b)=0. As e>=1, the only types are (e,0) and (0,e). A conjugacy respecting the labelled quadratic embedding acts through its centralizer and cannot swap the two labelled idempotents. The same argument works at two because the actual integral projectors are assumed.",
+      "inputs": [
+        "The actual local quadratic algebra is split at p|N.",
+        "The actual Eichler order is End(L) intersect End(Lprime) for a cyclic index-p^e lattice pair.",
+        "The spectral idempotents are integral at two, as constructed in the caller."
+      ]
+    },
+    {
+      "range": [
+        15748,
+        15751
+      ],
+      "assertion": "Two residue orientations in the division case.",
+      "argument": "The retained generic division theorem gives D=(L/Q_p,pi), L unramified quadratic, with O_D=O_L⊕O_L Pi, Pi^2=pi and Pi a=Frob(a) Pi. Its residue field is F_(p^2). Inner conjugation by an O_D unit acts trivially on that commutative residue field, while Pi induces its nontrivial Frobenius. By Skolem–Noether any two embeddings of L in D are D^times-conjugate. Every nonzero conjugating element is Pi^n times a unit; parity of n is its residue orientation, and even powers are central powers of pi. Thus exactly the two residue embeddings classify the O_D-unit orbits.",
+      "inputs": [
+        "Generic unramified-quadratic division model and unique maximal order, supplied by ACTIVE-CJ-LOCAL-PRIMITIVE-LOCAL-DIVISION.",
+        "Skolem–Noether for the quadratic field in the central simple quaternion algebra.",
+        "Actual local field F_p is unramified quadratic at ell0."
+      ]
+    }
+  ],
+  "scope": "This explicitly displays the elementary local reasoning and its remaining foundational inputs. It is not an assertion that every listed source input already has an accepted occurrence in the final graph."
+}

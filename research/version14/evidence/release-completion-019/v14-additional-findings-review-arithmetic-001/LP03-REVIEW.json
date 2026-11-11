@@ -1,0 +1,31 @@
+{
+  "reviewer": "/root/v14_arithmetic_review",
+  "target": {
+    "path": "work/source-risk-review-20261107/v14-finding-dispositions-lp03-001/MANIFEST.json",
+    "sha256": "5123bf4b000ad5d910d9286e6d33271987325bcbc7cab1805d794232e4d48b12"
+  },
+  "finding_id": "GTZ-LP-VECTOR-SCALAR-SHIFT",
+  "decision": "accepted repaired at stated bounded scope",
+  "basis": "Read actual proof208–226 and both retained detailed reviews. The full sum uses unit-vector norm; no coordinate division or scalar-unit assumption. Finite summation preserves surviving correlation and the shift theorem controls the bracket degree. Zero coordinates remain permitted.",
+  "checks": [
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+      "ok": true
+    },
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-source-review/GTZ-LP02-03-DISPOSITION-R3.md",
+      "ok": true
+    },
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/reviews/v14-gi-integration-review-001/REVIEW.md",
+      "ok": true
+    },
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/FINDINGS.json",
+      "ok": true
+    }
+  ],
+  "original_objection_preserved": true,
+  "own_authorship": "No authorship of underlying LP03 proof or cited independent reviews; prior review/normalization exposure disclosed.",
+  "limits": "Only the disputed high-factor shift in LP03; the separately accepted shift theorem and LP02 decomposition remain inputs. No whole-GI acceptance."
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "origin": "v14-rc-tate-image-inputs-001",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-RC-TATE-DETERMINANT-CYCLOTOMIC",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-RC-TATE-DETERMINANT-CYCLOTOMIC-P1"
+      ],
+      "assertion": {
+        "objects": "The actual rank-two Tate lattice T2(E), its perfect alternating Weil pairing and its Galois action.",
+        "hypotheses": "E/Q is the fixed characteristic-zero elliptic curve; the integral cyclotomic Weil pairing is perfect.",
+        "quantifiers": "Every finite coefficient stage i and all vectors in the stated modules.",
+        "parameter_range": "Includes l=2 in characteristic zero.",
+        "uniformity": "Compatible with the multiplication maps defining the Tate inverse limit.",
+        "constants": "No numerical bound or denominator.",
+        "normalizations": "Cyclotomic character on Z2(1); determinant of the original Tate action, before any scalar twist.",
+        "exceptional_cases": "No assertion for torsion order divisible by positive characteristic; no generic-isogeny pairing remark is used.",
+        "limit_order": "Fix the perfect alternating Tate pairing, then compare its Galois transformation with the rank-two determinant.",
+        "statement": "The determinant of the actual Tate representation is the2-adic cyclotomic character."
+      },
+      "classification": "dependency",
+      "reason": "The rank-two pairing identity determines the determinant character used in the cyclotomic-kernel argument.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-statements/rc-finite-weil-pairing.md",
+            "sha256": "f9eb4109c3632fe823ac99169494c03209d193d34b588f4c46e26d1badd0d0b8"
+          },
+          "start_line": 3,
+          "end_line": 7,
+          "excerpt_sha256": "4e0206d3ae4e997c132b0eb8cd83f0a14545e23bdffe7e672f9b0a798fcd11ee"
+        },
+        "statement": "Finite Weil pairings are bilinear, alternating, nondegenerate and Galois equivariant; their compatible inverse limit gives the corresponding Tate-module pairing.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "J. H. Silverman",
+          "venue": "Springer GTM106, second edition,2009",
+          "authoritative_version": "Retained published PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "III Section8 Proposition8.1(a)–(e),p94; compatible inverse limit and Proposition8.3,pp97–98",
+          "corrections": "Published8.1(b) proof correction G^m=F composed with[m] retained; generalized-isogeny remark unused."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4481,
+        "end_line": 4483,
+        "excerpt_sha256": "e4380be8ee39cc18d9d631a05b26623af9f53bd714a8d3bc3765369aaca56866"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-RC-TATE-DETERMINANT-CYCLOTOMIC",
+      "use_sha256": "5acd578c75ccce0a7cb3e2ca787eae3e80fab8850c07274280c7a5c9b85af747",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "objects": "An elliptic curve E/K, its finite m-torsion and l-adic Tate module, with roots of unity as pairing target.",
+        "hypotheses": "m>=2 is prime to char(K); l is a prime distinct from char(K).",
+        "quantifiers": "Every such elliptic curve, every such finite m and prime l; all torsion or Tate-module vectors and all Galois elements.",
+        "parameter_range": "Includes l=2 in characteristic zero.",
+        "uniformity": "Compatible with the multiplication maps defining the Tate inverse limit.",
+        "constants": "No numerical bound or denominator.",
+        "normalizations": "Cyclotomic Galois action on roots of unity and Z_l(1); alternating pairing, not an untwisted scalar-valued Galois invariant form.",
+        "exceptional_cases": "No assertion for torsion order divisible by positive characteristic; no generic-isogeny pairing remark is used.",
+        "limit_order": "Form compatible finite torsion pairings before passing to the Tate module.",
+        "statement": "Finite Weil pairings are bilinear, alternating, nondegenerate and Galois equivariant; their compatible inverse limit gives the corresponding Tate-module pairing."
+      },
+      "needed_assertion": {
+        "objects": "The actual rank-two Tate lattice T2(E), its perfect alternating Weil pairing and its Galois action.",
+        "hypotheses": "E/Q is the fixed characteristic-zero elliptic curve; the integral cyclotomic Weil pairing is perfect.",
+        "quantifiers": "Every finite coefficient stage i and all vectors in the stated modules.",
+        "parameter_range": "Includes l=2 in characteristic zero.",
+        "uniformity": "Compatible with the multiplication maps defining the Tate inverse limit.",
+        "constants": "No numerical bound or denominator.",
+        "normalizations": "Cyclotomic character on Z2(1); determinant of the original Tate action, before any scalar twist.",
+        "exceptional_cases": "No assertion for torsion order divisible by positive characteristic; no generic-isogeny pairing remark is used.",
+        "limit_order": "Fix the perfect alternating Tate pairing, then compare its Galois transformation with the rank-two determinant.",
+        "statement": "The determinant of the actual Tate representation is the2-adic cyclotomic character."
+      },
+      "required_capabilities": [
+        "The determinant of the actual Tate representation is the2-adic cyclotomic character."
+      ],
+      "available_capabilities": [
+        "Finite Weil pairings are bilinear, alternating, nondegenerate and Galois equivariant; their compatible inverse limit gives the corresponding Tate-module pairing."
+      ],
+      "derived_capabilities": [
+        "The determinant of the actual Tate representation is the2-adic cyclotomic character."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4481,
+          "end_line": 4483,
+          "excerpt_sha256": "e4380be8ee39cc18d9d631a05b26623af9f53bd714a8d3bc3765369aaca56866"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "objects": "The actual rank-two Tate lattice T2(E), its perfect alternating Weil pairing and its Galois action.",
+          "hypotheses": "E/Q is the fixed characteristic-zero elliptic curve; the integral cyclotomic Weil pairing is perfect.",
+          "quantifiers": "Every finite coefficient stage i and all vectors in the stated modules.",
+          "parameter_range": "Includes l=2 in characteristic zero.",
+          "uniformity": "Compatible with the multiplication maps defining the Tate inverse limit.",
+          "constants": "No numerical bound or denominator.",
+          "normalizations": "Cyclotomic character on Z2(1); determinant of the original Tate action, before any scalar twist.",
+          "exceptional_cases": "No assertion for torsion order divisible by positive characteristic; no generic-isogeny pairing remark is used.",
+          "limit_order": "Fix the perfect alternating Tate pairing, then compare its Galois transformation with the rank-two determinant.",
+          "statement": "The determinant of the actual Tate representation is the2-adic cyclotomic character."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "For a basis with unit pairing value, e(gv,gw)=det(g)e(v,w), while Galois equivariance gives chi_cyc(g)e(v,w). Cancel the unit. This uses the original two-dimensional Tate lattice and gives no statement about arbitrary twisted determinants.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4481,
+            "end_line": 4483,
+            "excerpt_sha256": "e4380be8ee39cc18d9d631a05b26623af9f53bd714a8d3bc3765369aaca56866"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-statements/rc-finite-weil-pairing.md",
+              "sha256": "f9eb4109c3632fe823ac99169494c03209d193d34b588f4c46e26d1badd0d0b8"
+            },
+            "start_line": 3,
+            "end_line": 7,
+            "excerpt_sha256": "4e0206d3ae4e997c132b0eb8cd83f0a14545e23bdffe7e672f9b0a798fcd11ee"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4481,
+          "end_line": 4483,
+          "excerpt_sha256": "e4380be8ee39cc18d9d631a05b26623af9f53bd714a8d3bc3765369aaca56866"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 4481,
+        "end_line": 4483,
+        "excerpt_sha256": "e4380be8ee39cc18d9d631a05b26623af9f53bd714a8d3bc3765369aaca56866"
+      }
+    ],
+    "passage_bindings": [
+      {
+        "passage_id": "ACTIVE-RC-TATE-DETERMINANT-CYCLOTOMIC-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4481,
+          "end_line": 4483,
+          "excerpt_sha256": "e4380be8ee39cc18d9d631a05b26623af9f53bd714a8d3bc3765369aaca56866"
+        }
+      }
+    ]
+  }
+]

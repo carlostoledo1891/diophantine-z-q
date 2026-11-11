@@ -1,0 +1,899 @@
+{
+  "schema": "proposed-source-contracts/v1",
+  "author": "/root/astra_v14_baseline_theta",
+  "status": "Author successor proposal; exact current review pending.",
+  "base": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/current-fa53.tex",
+    "sha256": "fa53dcc19ad2d9efb43aa8e44fcbd514479ea216838dcbb64a4ab39fe12a67fd",
+    "bytes": 1108177
+  },
+  "candidate": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+    "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+    "bytes": 1116786
+  },
+  "sources": {
+    "GT": {
+      "pin": {
+        "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+        "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001"
+      },
+      "title": "Linear equations in primes",
+      "authors": "B. Green and T. Tao",
+      "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n3-p08-p.pdf",
+      "version": "Final publisher-hosted typeset PDF",
+      "corrections": "Bounded publisher/author erratum search found no applicable notice. The p.1839 cutoff normalization defect is separately recorded and not copied."
+    }
+  },
+  "uses": [
+    {
+      "id": "LOCAL-GI-USE",
+      "consumer": "V14-GAU-LOCAL-GI",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18639,
+          "end_line": 18661,
+          "excerpt_sha256": "633f1dd0621cf3513fa43f6ddd7b1d168c515fa8e57ecbc42d3321de62f41d7c"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        }
+      ],
+      "assertion": {
+        "statement": "The local normalized finite-family same-step GI(k) target supplies the bounded premise of GT Proposition10.1.",
+        "objects": "Complex 1-bounded interval functions and a finite family of connected simply connected k-step nilmanifolds with discrete cocompact lattices.",
+        "hypotheses": "Fixed k>=3 and positive threshold at most one; one-bounded complex interval input. The local proof retains its exact published source inputs.",
+        "quantifiers": "For every k and threshold there exist a finite family, Lipschitz bound and positive correlation constant valid for every length and admissible bounded function.",
+        "parameter_range": "Use k=max(s,4)−1≥3 for every required s≥2.",
+        "uniformity": "Family and constants depend only on k and threshold; not on length, orbit or function.",
+        "constants": "No numerical rate is needed. Replacing a complex test by a real or imaginary part costs at most √2 in correlation.",
+        "normalizations": "Interval norm is zero-extension group norm divided by indicator norm; smooth Riemannian metrics and linear orbit g^n x.",
+        "exceptional_cases": "This application uses k>=3. The separate low-order base and local correction units belong to the proof of the target.",
+        "limit_order": "Fix k and threshold before N; then use the supplied bounded theorem as the premise of the relative theorem."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "local_proof",
+        "id": "GI-ASSEMBLY-003",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+          "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+          "bytes": 34061,
+          "start_line": 39,
+          "end_line": 83,
+          "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+        },
+        "manifest": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/MANIFEST.json",
+          "sha256": "d9ac667ddf1b19d226a9760a69c5c7571c77bcbd9cd504124c4a0c6448ce4f3e",
+          "bytes": 21247
+        },
+        "scoped_decision": {
+          "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-003.md",
+          "sha256": "ad84be98d9db3aa6e24f8c4d5797c783665708f5e6a44b746348ca189336f4db",
+          "bytes": 5560
+        }
+      },
+      "application_id": "V14-GAU-LOCAL-GI",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "GT-RELATIVE-USE",
+      "consumer": "V14-GAU-GT-RELATIVE-INVERSE",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18639,
+          "end_line": 18661,
+          "excerpt_sha256": "633f1dd0621cf3513fa43f6ddd7b1d168c515fa8e57ecbc42d3321de62f41d7c"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        }
+      ],
+      "assertion": {
+        "statement": "A real interval function dominated by an S-pseudorandom measure and with U^(k+1) norm above a fixed threshold correlates with a fixed-complexity linear nilsequence.",
+        "objects": "f:[L]→R; nonnegative ν on the entire prime cyclic group Z/QZ; finite nilmanifold family with fixed smooth metrics.",
+        "hypotheses": "GI(k); Q prime in[C_*L,2C_*L], C_*≥20; S≥(k+2)2^(k+1); normalized mass, full S-linear-forms and S-correlation conditions; |f|≤ν.",
+        "quantifiers": "For every k,C_*,threshold there are a finite family and positive constants; every sufficiently large member of each qualifying pseudorandom family satisfies the implication.",
+        "parameter_range": "k=r−1, r=max(s,4); threshold min(αδ/(4C_*),1/2).",
+        "uniformity": "Family and correlation constants depend only on k,C_*,threshold; pseudorandomness must hold uniformly along the actual family selected by residues.",
+        "constants": "Required pseudorandom complexity (r+1)2^r; no DK norm-tolerance η or quantitative inverse bound is claimed.",
+        "normalizations": "Use GT Appendix B normalized interval norms; real test supplied by GI after fixed-factor real/imaginary reduction if needed.",
+        "exceptional_cases": "A single centered 2s-cube estimate is insufficient. The full repeated-shift correlation condition is mandatory.",
+        "limit_order": "Fix parameters and threshold, then let the complete pseudorandom family tend to its limit before applying the asymptotic implication."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "published_external",
+        "source": "GT",
+        "locators": {
+          "label": "Proposition 10.1; Definitions 6.1–6.3",
+          "printed_pages": [
+            1779,
+            1780,
+            1791
+          ],
+          "pdf_pages_1_based": [
+            29,
+            30,
+            41
+          ]
+        },
+        "publication": {
+          "pin": {
+            "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+            "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001"
+          },
+          "title": "Linear equations in primes",
+          "authors": "B. Green and T. Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n3-p08-p.pdf",
+          "version": "Final publisher-hosted typeset PDF",
+          "corrections": "Bounded publisher/author erratum search found no applicable notice. The p.1839 cutoff normalization defect is separately recorded and not copied."
+        }
+      },
+      "application_id": "V14-GAU-GT-RELATIVE-INVERSE",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "GT-CUTOFF-FACTOR-USE",
+      "consumer": "V14-GAU-FULL-MAJORANT",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18694,
+          "end_line": 18714,
+          "excerpt_sha256": "6efc0d3f906f1f3b36be2fece7d51dc84ff5818a3eb79c3dc5b1bd81ec5ad734"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18742,
+          "end_line": 18757,
+          "excerpt_sha256": "e476deaae72be703b58676b26acb87bd0d015c137c195bc2cb801087e485c15d"
+        }
+      ],
+      "assertion": {
+        "statement": "The divisor-square sieve has factor cχ=∫₀¹|χ′|²; dividing each weight by cχ makes every m-fold main sieve factor equal1.",
+        "objects": "Explicit smooth even bump χ with χ(0)=1; positive finite cχ; Λχ,R,2 and normalized average tildeν.",
+        "hypotheses": "χ smooth and supported[-1,1], R=L^γ; retain actual cχ rather than simultaneously impose impossible unit derivative integral.",
+        "quantifiers": "For every product of m≤S normalized squares, the factor cχ^m cancels cχ^(−m).",
+        "parameter_range": "γ=1/(32S); T fixed; α=γ/(8Tcχ)>0.",
+        "uniformity": "χ,cχ,γ,T and α are independent of L,z,residues and δ.",
+        "constants": "At a prime Vn+b>R, Λχ,R,2=log R; log(Vn+b)≤4log L eventually gives the stated α.",
+        "normalizations": "ν=(1+tildeν)/2 inside[L] and1 outside; tildeν includes φ(V)/(VTcχ).",
+        "exceptional_cases": "The source p.1839 incompatible double normalization is not used. The finite initial range is excluded only by an explicit sufficiently-large-L threshold.",
+        "limit_order": "Choose S,T,χ,γ,α before δ,z and L."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "published_external",
+        "source": "GT",
+        "locators": {
+          "label": "Definition D.1 and Lemma D.2",
+          "printed_pages": [
+            1828,
+            1829
+          ],
+          "pdf_pages_1_based": [
+            78,
+            79
+          ]
+        },
+        "publication": {
+          "pin": {
+            "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+            "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001"
+          },
+          "title": "Linear equations in primes",
+          "authors": "B. Green and T. Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n3-p08-p.pdf",
+          "version": "Final publisher-hosted typeset PDF",
+          "corrections": "Bounded publisher/author erratum search found no applicable notice. The p.1839 cutoff normalization defect is separately recorded and not copied."
+        }
+      },
+      "application_id": "V14-GAU-FULL-MAJORANT",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "GT-DIVISOR-UNIFORMITY-USE",
+      "consumer": "V14-GAU-FULL-MAJORANT",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18716,
+          "end_line": 18740,
+          "excerpt_sha256": "caade2c32485eb854e8de99068dc46042a05d9cc35f52619e12fcf460d72570b"
+        }
+      ],
+      "assertion": {
+        "statement": "The divisor expansion and Euler-product estimates apply uniformly to Vψ+b with fixed bounded linear coefficients and arbitrary constant terms in the required ranges.",
+        "objects": "Products of at most S divisor squares on convex regions; 2m divisors bounded by R; local divisibility densities.",
+        "hypotheses": "Unit b modV, V=E times primorial; every prime divisor of E lies below z; linear coefficients bounded byS; z≤logloglog L.",
+        "quantifiers": "For every m,d≤S and bounded linear-coefficient type obtain the stated estimate uniformly over residues and normalized affine constants.",
+        "parameter_range": "R=L^(1/(32S)); lattice error O(R^(4m)L^(d−1)(logR)^m)=o(L^d).",
+        "uniformity": "Lattice error has no coefficient dependence; local one-equation densities are0 or1/p, rank-two densities O(p^(−2)), with constants depending onS.",
+        "constants": "Exceptional-prime error exp(O_S(Σp≤z p^(−1/2)))(logR)^(−1/20)=o(1); γ does not shrink with V.",
+        "normalizations": "Enlarge the exceptional set by all p≤z, even for one-form products; preserve actual cχ.",
+        "exceptional_cases": "Affine constant terms do not affect linear rank. Distinct correlation shifts are handled separately by their exceptional differences.",
+        "limit_order": "Fix S,γ first, then z slowly with L; do not apply a fixed-coefficient theorem while silently allowing its sieve exponent to vary."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "published_external",
+        "source": "GT",
+        "locators": {
+          "label": "Theorem D.3 proof, Proposition D.4, equations D.4–D.23",
+          "printed_pages": [
+            1829,
+            1830,
+            1831,
+            1832,
+            1833,
+            1834,
+            1835,
+            1836,
+            1837,
+            1838,
+            1839
+          ],
+          "pdf_pages_1_based": [
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ]
+        },
+        "publication": {
+          "pin": {
+            "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+            "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001"
+          },
+          "title": "Linear equations in primes",
+          "authors": "B. Green and T. Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n3-p08-p.pdf",
+          "version": "Final publisher-hosted typeset PDF",
+          "corrections": "Bounded publisher/author erratum search found no applicable notice. The p.1839 cutoff normalization defect is separately recorded and not copied."
+        }
+      },
+      "application_id": "V14-GAU-FULL-MAJORANT",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "FULL-LINEAR-FORMS-USE",
+      "consumer": "V14-GAU-FULL-MAJORANT",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18742,
+          "end_line": 18757,
+          "excerpt_sha256": "e476deaae72be703b58676b26acb87bd0d015c137c195bc2cb801087e485c15d"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18663,
+          "end_line": 18690,
+          "excerpt_sha256": "0e54233ff66b431e990b08298d68bf619f72910bb8265713e1c826f6800cd664"
+        }
+      ],
+      "assertion": {
+        "statement": "The constructed cyclic ν has mean1+o(1) and the full(S,S,S) linear-forms property, uniformly in constant terms.",
+        "objects": "ν onZ/QZ and systems of at mostS nonconstant finite-complexity affine forms in at mostS variables.",
+        "hypotheses": "Bounded integer linear coefficients, unit residues, sufficiently large z>2S² and all p|E belowz.",
+        "quantifiers": "Every admissible system and every constant term moduloQ is covered, not just cube subproducts.",
+        "parameter_range": "Q∈[C_*L,2C_*L], fixed C_*; all cyclic wrap regions and active subsets.",
+        "uniformity": "Number of regions depends only onS,C_*; errors uniform in affine constants and residue list.",
+        "constants": "Local normalization φ(V)/V=Πp≤z(1−1/p); small-prime factors cancel exactly.",
+        "normalizations": "Expand ν=1+1_[L](tildeν−1)/2; every nonempty centered product is o(1).",
+        "exceptional_cases": "Finite complexity excludes proportional linear parts; arbitrary constant terms and wraparound do not alter linear rank.",
+        "limit_order": "S fixed; choose z large for local tail, then L large for divisor errors; z(L)→∞ slowly."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "inline",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18742,
+          "end_line": 18757,
+          "excerpt_sha256": "e476deaae72be703b58676b26acb87bd0d015c137c195bc2cb801087e485c15d"
+        },
+        "acceptance": "pending independent review"
+      },
+      "application_id": "V14-GAU-FULL-MAJORANT",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "FULL-CORRELATION-USE",
+      "consumer": "V14-GAU-FULL-MAJORANT",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18759,
+          "end_line": 18778,
+          "excerpt_sha256": "732de968752551d4730226d5cf053dae9ffd149c2816eaff491e6fa673246426"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18781,
+          "end_line": 18806,
+          "excerpt_sha256": "6b5bcdedbb2c05e01eb590130b8375a362d9c28db00f08b06613a645786dbbee"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18663,
+          "end_line": 18690,
+          "excerpt_sha256": "0e54233ff66b431e990b08298d68bf619f72910bb8265713e1c826f6800cd664"
+        }
+      ],
+      "assertion": {
+        "statement": "The same ν satisfies the S-correlation condition, including every fixed moment and all repeated cyclic shifts.",
+        "objects": "Pair weights formed from H_A(u;a,b), finite residue pairs and integer lifts u,u−Q,u+Q; τm(0)=(1+||ν||∞)^S.",
+        "hypotheses": "2≤m≤S; unit residues in[0,V); E fixed; z≤logloglogL; arbitrary shifts.",
+        "quantifiers": "For every m there existsτm with product average≤Σi<jτm(hi−hj); for every fixed realq≥1 its qth moment is bounded.",
+        "parameter_range": "Integer lifts O_C*(L); nonzero differences Vu+a−b; zero cyclic differences handled separately.",
+        "uniformity": "Bounds depend onS,T,C_*,E,q andχ, not onL,z,residues or shifts.",
+        "constants": "CRT gives L/d+1; resulting sums Σd^(−5/4)+L^(−1)Σd≪VL d^(−1/4)=O(1)+O(V^(3/4)L^(−1/4)).",
+        "normalizations": "Use actual cχ factors in the upper bounds; AM–GM reduces products over pairs to sums with fixed larger exponentA.",
+        "exceptional_cases": "Vu+a−b=0 forcesu=0,a=b. ||ν||∞=L^o(1) makes the atom at0 contributeL^(−1+o(1)) to every fixed moment.",
+        "limit_order": "Moment exponent is fixed before L; no uniform bound over unboundedq is claimed or required."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "inline",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18759,
+          "end_line": 18778,
+          "excerpt_sha256": "732de968752551d4730226d5cf053dae9ffd149c2816eaff491e6fa673246426"
+        },
+        "acceptance": "pending independent review"
+      },
+      "application_id": "V14-GAU-FULL-MAJORANT",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "NORMALIZED-NORM-RAISING-USE",
+      "consumer": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        }
+      ],
+      "assertion": {
+        "statement": "A lower bound ||f||Us[L]≥αδ/2 yields ||f||Ur[L]≥αδ/(4C_*), r=max(s,4).",
+        "objects": "Zero extension f~ toZ/QZ and the interval indicator1_I.",
+        "hypotheses": "C_*>2^r; Qprime∈[C_*L,2C_*L]; s≥2; finite-group Gowers Cauchy–Schwarz.",
+        "quantifiers": "For every actual truncated f and every L in the allowed range the displayed norm comparison holds.",
+        "parameter_range": "r fixed beforeL; δ>0 fixed; supplier threshold min(αδ/(4C_*),1/2).",
+        "uniformity": "Factor1/(2C_*) is uniform in f,L,z,b.",
+        "constants": "||1_I||Ur≤1 and||1_I||Us≥L/Q; group norms are monotone.",
+        "normalizations": "No assertion of constant-one monotonicity for normalized interval norms. GT(B.14) identifies the ratio with the interval norm.",
+        "exceptional_cases": "Indicator norm is positive sinceI nonempty; no division byzero; low orders s=2,3 are raised tor=4.",
+        "limit_order": "Choose r,C_* first, then δ and L."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "inline",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        },
+        "acceptance": "pending independent review"
+      },
+      "application_id": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "FIXED-NILSEQUENCE-CONSUMPTION",
+      "consumer": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18610,
+          "end_line": 18630,
+          "excerpt_sha256": "dabf32180d1a597dbc682c8a9bea98fee2055492971aa888316a371d3b421e41"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18876,
+          "end_line": 18906,
+          "excerpt_sha256": "d3528cba45c4d17fcb0bb06f6a8b0d1190e57ca7001aa9a682a051646fe1d664"
+        }
+      ],
+      "assertion": {
+        "statement": "For each fixed V, the actual centered ray-prime weight has arbitrary logarithmic cancellation against all fixed-complexity supplied nilsequences.",
+        "objects": "h_C,V,b=φ(V)/V(Λ′_C(Vn+b)−μ_C(b)Λ′(Vn+b)); bounded linear nilsequence from the relative inverse theorem.",
+        "hypotheses": "Fixed field and ray modulus; V a fixed multiple of conductorD; bunit; finite family of fixed nilmanifolds and smooth metrics.",
+        "quantifiers": "Every supplied orbit and bounded Lipschitz test is covered after metric comparison and the linear-to-polynomial orbit identification.",
+        "parameter_range": "At each stage V=V_zj is fixed while L grows; nilstep may be r−1≥s−1.",
+        "uniformity": "Uniform in orbit, test and finite residues at fixedV; no uniform growing-V rate is assumed.",
+        "constants": "Take maximum of finite-family thresholds; truncation correlation erroro(1); αfixed.",
+        "normalizations": "Same h and μ_C(b) as the existing input; arbitrary basepoint preserved.",
+        "exceptional_cases": "Dimensionzero causes no issue; any constant test is included in the fixed-complexity input.",
+        "limit_order": "Choose inverse families for fixedδ, then cutoffzj, then sizeLj for each fixedV_zj."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "internal",
+        "application_id": "V14-GAU-CONTRACT-033-S1",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18610,
+          "end_line": 18630,
+          "excerpt_sha256": "dabf32180d1a597dbc682c8a9bea98fee2055492971aa888316a371d3b421e41"
+        }
+      },
+      "application_id": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "FULL-PSEUDORANDOM-DIAGONAL",
+      "consumer": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18825,
+          "end_line": 18842,
+          "excerpt_sha256": "53eb697791409fdce35f6fc637552cc40f95f78b7e763d399b5e5be0a95e365e"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18844,
+          "end_line": 18850,
+          "excerpt_sha256": "079a9dff050822eddf0f593b1019a40ae957c74de2e05101df469d26cf3c37fa"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18876,
+          "end_line": 18906,
+          "excerpt_sha256": "d3528cba45c4d17fcb0bb06f6a8b0d1190e57ca7001aa9a682a051646fe1d664"
+        }
+      ],
+      "assertion": {
+        "statement": "A single slow cutoff gives max_C,b ||h_C,Vz,b||Us[L]=o(1) for every required finite list of norm orders.",
+        "objects": "Stage cutoffs zj, size thresholdsLj, physical thresholdsNj and the actual uniformly pseudorandom familyν.",
+        "hypotheses": "Full majorant lemma, relative inverse implication, fixed-V nilsequence input and explicit truncation estimate.",
+        "quantifiers": "Enumerate δ=1/j for each required order, all finite inverse families and all residues at each stage; take their maximum threshold.",
+        "parameter_range": "zj≤logloglogL and every normal-form refined scaleL≍N/V_zj exceedsLj.",
+        "uniformity": "Uniformity of majorant errors over residues/constant terms persists under choosing a norm-violating subsequence; nilsequence constants only need fixedV.",
+        "constants": "γ,α,S,C_*,T chosen beforeδ; thresholds allowed depend onfinite stage.",
+        "normalizations": "Use complete S-pseudorandomness and its uniform moment constants; do not replace it by a finite cube estimate.",
+        "exceptional_cases": "No circular equationz=z(N/Vz); fixed stageV is used to select the physical threshold.",
+        "limit_order": "Finite complexities→δ families→zj→Lj→Nj, then stage limitj→∞."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "inline",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18876,
+          "end_line": 18906,
+          "excerpt_sha256": "d3528cba45c4d17fcb0bb06f6a8b0d1190e57ca7001aa9a682a051646fe1d664"
+        },
+        "acceptance": "pending independent review"
+      },
+      "application_id": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "LOCAL-GI-TO-RELATIVE-INVERSE",
+      "consumer": "V14-GAU-GT-RELATIVE-INVERSE",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18639,
+          "end_line": 18661,
+          "excerpt_sha256": "633f1dd0621cf3513fa43f6ddd7b1d168c515fa8e57ecbc42d3321de62f41d7c"
+        }
+      ],
+      "assertion": {
+        "statement": "Specialize the local GI target and supply the bounded premise of the relative inverse theorem.",
+        "objects": "The same GI(k) implication for real bounded interval functions, k=r−1≥3.",
+        "hypotheses": "The accepted local target, with its retained published inputs, and the full remaining hypotheses of GT Proposition10.1.",
+        "quantifiers": "For every fixed k and threshold, use the universal bounded inverse implication.",
+        "parameter_range": "k≥3; thresholds in(0,1].",
+        "uniformity": "Constants depend only on k and threshold.",
+        "constants": "A fixed real/imaginary-part loss is absorbed in the positive correlation constant.",
+        "normalizations": "Same normalized interval norm, smooth metrics and linear nilsequences as GT Proposition10.1.",
+        "exceptional_cases": "No published-correction authentication is used to replace the local proof. Historical GTZ correction findings remain preserved.",
+        "limit_order": "Fix inverse order and norm threshold, use the finite family, then take the asymptotic limit for the concrete pseudorandom family."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "internal",
+        "application_id": "V14-GAU-LOCAL-GI",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18639,
+          "end_line": 18661,
+          "excerpt_sha256": "633f1dd0621cf3513fa43f6ddd7b1d168c515fa8e57ecbc42d3321de62f41d7c"
+        }
+      },
+      "application_id": "V14-GAU-GT-RELATIVE-INVERSE",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "FULL-MAJORANT-TO-GOWERS-BRIDGE",
+      "consumer": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18825,
+          "end_line": 18842,
+          "excerpt_sha256": "53eb697791409fdce35f6fc637552cc40f95f78b7e763d399b5e5be0a95e365e"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        }
+      ],
+      "assertion": {
+        "statement": "Supply one nonnegative S-pseudorandom measure dominating the actual scaled truncated centered function.",
+        "objects": "ν from the full-majorant lemma, f=α1_[L^(3/5),L]h_C,V,b, α=γ/(8Tcχ).",
+        "hypotheses": "S≥(r+1)2^r and the fixed von Neumann requirement; E,T,C_* fixed; b a unit; z slowly increasing.",
+        "quantifiers": "For every sufficiently large L and relevant residue the same fixed α works; ν may depend on the residue list.",
+        "parameter_range": "Q prime in[C_*L,2C_*L]; V=E times primorial; T=1 allowed for inversion.",
+        "uniformity": "All pseudorandom errors and fixed-moment bounds are uniform in the residue list, so a norm-violating subsequence is still admissible.",
+        "constants": "γ=1/(32S); cχ is retained; α independent of δ,L,z,b.",
+        "normalizations": "ν is defined on the whole cyclic group and normalized to mass1+o(1).",
+        "exceptional_cases": "The initial interval is removed before domination; its contribution is estimated separately.",
+        "limit_order": "Choose S,T,C_*,χ,γ,α before δ, then choose z and size thresholds."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "internal",
+        "application_id": "V14-GAU-FULL-MAJORANT",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18663,
+          "end_line": 18690,
+          "excerpt_sha256": "0e54233ff66b431e990b08298d68bf619f72910bb8265713e1c826f6800cd664"
+        }
+      },
+      "application_id": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "RELATIVE-INVERSE-TO-GOWERS-BRIDGE",
+      "consumer": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18876,
+          "end_line": 18906,
+          "excerpt_sha256": "d3528cba45c4d17fcb0bb06f6a8b0d1190e57ca7001aa9a682a051646fe1d664"
+        }
+      ],
+      "assertion": {
+        "statement": "A fixed norm failure gives a fixed positive correlation with one member of a fixed finite nilsequence family.",
+        "objects": "The actual real f and ν supplied by the majorant lemma; linear orbit on a fixed nilmanifold.",
+        "hypotheses": "The local GI target, full pseudorandomness, real domination and the normalized norm lower bound hold in the proposed composition.",
+        "quantifiers": "For every fixed δ failure and every sufficiently large admissible length, obtain a supplied correlation.",
+        "parameter_range": "k=r−1; threshold min(αδ/(4C_*),1/2).",
+        "uniformity": "Family and correlation threshold independent of length, cutoff and residue.",
+        "constants": "Only fixed constants are lost to α, norm raising and finite-family maxima.",
+        "normalizations": "The next argument uses correlation divided by L, with the same f.",
+        "exceptional_cases": "Higher nilstep r−1 is permitted by the existing all-fixed-complexities nilsequence input.",
+        "limit_order": "Fix δ and inverse family before selecting the fixed-modulus size threshold."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "internal",
+        "application_id": "V14-GAU-GT-RELATIVE-INVERSE",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18639,
+          "end_line": 18661,
+          "excerpt_sha256": "633f1dd0621cf3513fa43f6ddd7b1d168c515fa8e57ecbc42d3321de62f41d7c"
+        }
+      },
+      "application_id": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "GOWERS-CS-NORM-COMPARISON",
+      "consumer": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 18852,
+          "end_line": 18874,
+          "excerpt_sha256": "1482ccc63740d275be7f4e2da51c35600e05597294a3fc17448100482950ebe8"
+        }
+      ],
+      "assertion": {
+        "statement": "Finite-group Gowers Cauchy–Schwarz supplies group-norm monotonicity and bounds the indicator norm below by its mean.",
+        "objects": "Zero-extended f and indicator of I=[L] inside Z/QZ.",
+        "hypotheses": "Finite additive group, s≥2 and r≥s; I nonempty; Q>2^rL.",
+        "quantifiers": "For every such f, ||f~||Ur≥||f~||Us and ||1_I||Us≥L/Q.",
+        "parameter_range": "s,r fixed and Q∈[C_*L,2C_*L].",
+        "uniformity": "Comparison factor1/(2C_*) independent of f and all arithmetic parameters.",
+        "constants": "Combine these inequalities with ||1_I||Ur≤1.",
+        "normalizations": "Use exact normalized interval identity B.14, not unnormalized cyclic norms.",
+        "exceptional_cases": "The denominator is strictly positive. No constant-one monotonicity of interval norms is claimed.",
+        "limit_order": "This algebraic comparison precedes the inverse-theorem application and contains no asymptotic interchange."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "published_external",
+        "source": "GT",
+        "locators": {
+          "label": "Appendix B, equation B.12 and B.14; Lemma B.5",
+          "printed_pages": [
+            1817,
+            1818
+          ],
+          "pdf_pages_1_based": [
+            67,
+            68
+          ]
+        },
+        "publication": {
+          "pin": {
+            "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+            "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001"
+          },
+          "title": "Linear equations in primes",
+          "authors": "B. Green and T. Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n3-p08-p.pdf",
+          "version": "Final publisher-hosted typeset PDF",
+          "corrections": "Bounded publisher/author erratum search found no applicable notice. The p.1839 cutoff normalization defect is separately recorded and not copied."
+        }
+      },
+      "application_id": "V14-GAU-CONTRACT-034-GT-SUCCESSOR",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "LOCAL-GI20-USE",
+      "consumer": "V14-LOCAL-GI20-APPLICATION",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 1598,
+          "end_line": 1612,
+          "excerpt_sha256": "563aada3fa7715fb69429f1560eaf73a2e29a0fc68a228f979f98fc82f3621c3"
+        }
+      ],
+      "assertion": {
+        "statement": "The local target specialized at k=20 supplies the inverse premise of the fixed-complexity prime asymptotic.",
+        "objects": "Complex 1-bounded interval functions and a finite family of connected simply connected k-step nilmanifolds with discrete cocompact lattices.",
+        "hypotheses": "Fixed k>=3 and positive threshold at most one; one-bounded complex interval input. The local proof retains its exact published source inputs.",
+        "quantifiers": "For every k and threshold there exist a finite family, Lipschitz bound and positive correlation constant valid for every length and admissible bounded function.",
+        "parameter_range": "k=20, every fixed threshold in (0,1].",
+        "uniformity": "Family and constants depend only on k and threshold; not on length, orbit or function.",
+        "constants": "No numerical rate is needed. Replacing a complex test by a real or imaginary part costs at most √2 in correlation.",
+        "normalizations": "Interval norm is zero-extension group norm divided by indicator norm; smooth Riemannian metrics and linear orbit g^n x.",
+        "exceptional_cases": "20>=3; the separate Mobius and prime-system applications are retained.",
+        "limit_order": "Fix the cutoff, coefficients and modulus, then the inverse threshold and its family, before X tends to infinity."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "local_proof",
+        "id": "GI-ASSEMBLY-003",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+          "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+          "bytes": 34061,
+          "start_line": 39,
+          "end_line": 83,
+          "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+        },
+        "manifest": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/MANIFEST.json",
+          "sha256": "d9ac667ddf1b19d226a9760a69c5c7571c77bcbd9cd504124c4a0c6448ce4f3e",
+          "bytes": 21247
+        },
+        "scoped_decision": {
+          "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-003.md",
+          "sha256": "ad84be98d9db3aa6e24f8c4d5797c783665708f5e6a44b746348ca189336f4db",
+          "bytes": 5560
+        }
+      },
+      "application_id": "V14-LOCAL-GI20-APPLICATION",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    },
+    {
+      "id": "LOCAL-GI39-USE",
+      "consumer": "V14-LOCAL-GI39-APPLICATION",
+      "locations": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/manuscript-proposal-002/quartic_v14.proposed.tex",
+          "sha256": "2fdfcfa83fd3d9221e405b67f03706968b58f907b26d7baa21674f100707b8f9",
+          "bytes": 1116786,
+          "start_line": 8641,
+          "end_line": 8645,
+          "excerpt_sha256": "97f914ef71c55da6d496f591b1b0f679727eea8afad1bd8742a0bf7fc622139a"
+        }
+      ],
+      "assertion": {
+        "statement": "The local target specialized at k=39 supplies the inverse premise of the fixed-complexity prime asymptotic.",
+        "objects": "Complex 1-bounded interval functions and a finite family of connected simply connected k-step nilmanifolds with discrete cocompact lattices.",
+        "hypotheses": "Fixed k>=3 and positive threshold at most one; one-bounded complex interval input. The local proof retains its exact published source inputs.",
+        "quantifiers": "For every k and threshold there exist a finite family, Lipschitz bound and positive correlation constant valid for every length and admissible bounded function.",
+        "parameter_range": "k=39, every fixed threshold in (0,1].",
+        "uniformity": "Family and constants depend only on k and threshold; not on length, orbit or function.",
+        "constants": "No numerical rate is needed. Replacing a complex test by a real or imaginary part costs at most √2 in correlation.",
+        "normalizations": "Interval norm is zero-extension group norm divided by indicator norm; smooth Riemannian metrics and linear orbit g^n x.",
+        "exceptional_cases": "39>=3; the separate Mobius and prime-system applications are retained.",
+        "limit_order": "Fix the cutoff, coefficients and modulus, then the inverse threshold and its family, before X tends to infinity."
+      },
+      "classification": "dependency",
+      "supplier": {
+        "kind": "local_proof",
+        "id": "GI-ASSEMBLY-003",
+        "location": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+          "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+          "bytes": 34061,
+          "start_line": 39,
+          "end_line": 83,
+          "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+        },
+        "manifest": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/MANIFEST.json",
+          "sha256": "d9ac667ddf1b19d226a9760a69c5c7571c77bcbd9cd504124c4a0c6448ce4f3e",
+          "bytes": 21247
+        },
+        "scoped_decision": {
+          "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-003.md",
+          "sha256": "ad84be98d9db3aa6e24f8c4d5797c783665708f5e6a44b746348ca189336f4db",
+          "bytes": 5560
+        }
+      },
+      "application_id": "V14-LOCAL-GI39-APPLICATION",
+      "author": "/root/astra_v14_baseline_theta",
+      "status": "author successor; independent exact candidate review pending"
+    }
+  ],
+  "historical_sources_note": "The preserved predecessor source register includes GTZ correction provenance. The active GI assertion here is supplied by the local assembly, not the GTZ black box. Other published assertions retain their exact predecessor source locators.",
+  "historical_sources": {
+    "GTZ": {
+      "pin": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1"
+      },
+      "title": "An inverse theorem for the Gowers U^(s+1)[N]-norm",
+      "authors": "B. Green, T. Tao and T. Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v176-n2-p11-p.pdf",
+      "version": "Final publisher-hosted typeset PDF",
+      "corrections": "OPEN: the theorem must be read with arXiv v5 and the separate 2024 author erratum. Publication of the corrections or a reviewed project proof has not been established. The earlier bounded search missed this existing correction record and is superseded.",
+      "correction_review": {
+        "path": "work/quartic-v14-prep/final-source-gtz/REVIEW.md",
+        "sha256": "2ded75ae23b0fa121f75656cf358267f1866c26ed91beaf261a8012f606f493b"
+      },
+      "correction_source": {
+        "path": "work/astra-final-height-producers-001/primary/gtz-erratum.pdf",
+        "sha256": "9d66017c15fc99bbae83726ef27bcc16d73128c13166916f00714c84c8523383"
+      },
+      "corrected_v5": {
+        "path": "work/astra-final-height-producers-001/primary/gtz-inverse-v5.pdf",
+        "sha256": "24b5b74b1c4f31986bfc75955f8528e81753efc0c45bd99bc23fee58171a4711"
+      },
+      "premise_status": "unresolved published-correction/project-proof qualification; mathematical transference proposal is conditional on corrected GI(k)"
+    }
+  },
+  "local_source": {
+    "assembly": {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/MANIFEST.json",
+      "sha256": "d9ac667ddf1b19d226a9760a69c5c7571c77bcbd9cd504124c4a0c6448ce4f3e",
+      "bytes": 21247
+    },
+    "decision": {
+      "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-003.md",
+      "sha256": "ad84be98d9db3aa6e24f8c4d5797c783665708f5e6a44b746348ca189336f4db",
+      "bytes": 5560
+    }
+  }
+}

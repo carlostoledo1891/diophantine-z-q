@@ -1,0 +1,24 @@
+# Consolidated bounded review of fourteen RC source occurrences
+
+Reviewer: /root/v14_arithmetic_review. These are independent source-to-consumer decisions, not authenticated gate events or full-source closure.
+
+Accepted targets:
+
+- Residue one: v14-rc-residue-repeat-001, manifest f200864b4e0d403b0e5bbd74d377e10fef5d3a25fd21f3e90af87b663c82976c.
+- Early theta four: v14-rc-early-theta-inputs-003, manifest 890ce58fc17f322b607d507addaee231d2f7575a978de263c23b6aaa24338454. Earlier 001 and intermediate 002 are not selected.
+- Operator/network four: v14-rc-operator-network-role-repair-001, manifest 0c32d490e085494e0aa20e5f38ea87b03a0e64b04331817ed1364fcc0f4ad3cc.
+- Euler/excision five: v14-rc-euler-excision-repeats-001, manifest 61e7b8774d6a817c96d2ec3a2eff401bc184f02d24ab3fed1fe274d7d79da67e.
+
+All decisions concern manuscript 1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8. I reused the retained bounded theorem reviews and my independent full reading of 2588–6674, then read the exact new consumers and the operator/network derivations at 16015–16519 and 17135–17335. No unaffected publication was reopened.
+
+The additive residue application at 3932–3936 uses the same base-defined parameter and uniformizer in a finite unramified extension. The retained regular-module proof covers all extension degrees, including residue characteristic dividing the degree. This supplies inducedness and positive cohomology vanishing. The formal-quotient identification, lifting and convergence remain separate inputs.
+
+The four early theta inputs preserve distinct conclusions. Kato supplies rational subscript-zero H2 divisibility away from two, with the published 1999 bridge and its stronger hypothesis retained for the two-adic application. It does not supply full H2 without the local cone. Hoffstein–Luo applies after choosing the signed prime twist and supplies the four-prime discriminant; the fifth prime and original local classes come from the separate construction. BFH supplies the applicable simple-zero clause, with no four-prime bound. CST supplies each unaveraged height formula with the same parametrization, split level, permitted conductor and excluded extra-unit cases. The native-lattice index comparison and resulting valuation identity remain local deductions. Version 003 corrects the available profiles to source scope instead of restricting them to unrelated later callers; all four use objects, needed assertions and derivations are unchanged.
+
+The operator bindings now cite actual intermediate proofs rather than proposition statements. At 3013–3024 and 3445–3458, the source computes the level, integer shell divisibility, unary subtraction, trace identities, local representation normalization, omission and fresh-copy comparison. Integer division occurs before residue reduction, with the same source, minimum and valid finite-stage budget. At 3135–3147 and 3540–3556, the source constructs the forest/network operators, singular and varying programs, and ordinary top-form product before Boolean reduction. Separate projection surjectivity is sufficient; an initially common nonzero evaluation is not assumed. CRT/Dirichlet realization and the published inputs inside these proofs remain separately owned.
+
+The five Euler/excision repeats have the same retained hypotheses. Finite Chebotarev at 3360–3372 consumes an already compatible element of a finite compositum and a chosen place; it does not prove that element exists, the translation lattice, or finite-field Kummer properties. Excision at 5545–5550 consumes the mod-two unramified coefficient system and the actual old conditions; later limits and inversion remain separate. Global Euler at 5458–5464 uses imaginary quadratic K, trivial F2-squared coefficients and dyadic support, not the independent h1 estimate. Local Euler at 5477–5483 uses each actual local degree and the full finite module, not the later elliptic completion bound. Duality at 4713–4719 uses the actual perfect coefficient pairing and compatible orthogonal diagrams; no finite-Sha or closed-functional conclusion is imported. This last append is cumulative with the previously accepted local-duality appends, not their replacement.
+
+CHECKS.json records 58 successful member/raw-location checks for the initial four packets. THETA003-CHECKS.json records the selected successor's three member checks and unchanged-use/needed/derivation comparisons. The unchanged theta locations inherit the earlier exact checks. These checks support binding, not mathematical acceptance by themselves.
+
+This receipt resolves only the stated occurrence bindings and four role replacements. It does not erase unrelated entries of the 33-item pending list or claim that all prerequisites of these source proofs have been independently closed. It makes no canonical edits, final coverage approval or release claim.

@@ -1,0 +1,113 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:39:29.836Z",
+  "target_manifest": {
+    "path": "v14-b11-assembly-a001-locations-001/MANIFEST.json",
+    "sha256": "1d7a9a748ebe5ba92e16030538f0c1ce385babec970ed2deea5c22818550e81b"
+  },
+  "decision": "accepted two incoming geometry repetitions",
+  "checks": [
+    {
+      "id": "ACTIVE-DATUM-SOURCE-PRINCIPAL",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-DATUM-SOURCE-COARSE",
+      "ok": true
+    },
+    {
+      "start": 25,
+      "ok": true
+    },
+    {
+      "start": 25,
+      "ok": true
+    },
+    {
+      "start": 9,
+      "ok": true
+    },
+    {
+      "start": 25,
+      "ok": true
+    },
+    {
+      "start": 9,
+      "ok": true
+    },
+    {
+      "start": 9,
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    },
+    {
+      "start": 9,
+      "ok": true
+    },
+    {
+      "start": 33,
+      "ok": true
+    },
+    {
+      "start": 33,
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    },
+    {
+      "start": 33,
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    },
+    {
+      "start": 18,
+      "ok": true
+    },
+    {
+      "start": 11,
+      "ok": true
+    }
+  ],
+  "base_checks": [
+    {
+      "id": "ACTIVE-DATUM-SOURCE-PRINCIPAL",
+      "ok": true,
+      "changes": [
+        "/use/passages/1",
+        "/use/shared_contract_justification",
+        "/connection/use_sha256",
+        "/connection/consumer_locations/1"
+      ]
+    },
+    {
+      "id": "ACTIVE-DATUM-SOURCE-COARSE",
+      "ok": true,
+      "changes": [
+        "/use/passages/1",
+        "/use/shared_contract_justification",
+        "/connection/use_sha256",
+        "/connection/consumer_locations/1"
+      ]
+    }
+  ],
+  "findings": [
+    "Read ASSEMBLY1–25: the fixed positive principal datum and identified coarse coordinate are explicit incoming objects before construction.",
+    "The coarse input does not discharge the separately named identification of the full level-three generic moduli problem; that is covered by the distinct generic-functor proof.",
+    "Statements, supplier profiles and connecting arguments unchanged; only two exact consumer locations, passage IDs, sharing and use hashes change."
+  ],
+  "limits": [
+    "Generic identity, local construction and all A001 upstream source obligations remain separate."
+  ]
+}

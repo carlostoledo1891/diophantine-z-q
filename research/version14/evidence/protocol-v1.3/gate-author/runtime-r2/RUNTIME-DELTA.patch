@@ -1,0 +1,88 @@
+--- baseline/controller/runtime.py
++++ candidate/controller/runtime.py
+@@ -33,6 +33,7 @@
+ import live_protocol_context_forks
+ import operator_ledger
+ import audit_intake
++import coverage_gate
+ from immutable_git_cache import CachingAPI
+ 
+ MAX_INPUT = 40 * 1024 * 1024
+@@ -332,14 +333,16 @@
+ 
+ class ForkProtocolRunner:
+     """Fixed approved fork profile; never chooses a module from packet data."""
+-    def __init__(self, input_provider):
++    def __init__(self, input_provider, coverage_profile=None):
+         self.input_provider = input_provider
++        self.coverage_profile = copy.deepcopy(coverage_profile)
+ 
+     def evaluate(self, context):
+         inputs = self.input_provider(context)
+         require(type(inputs) is publisher.EvaluationInputs, 'trusted evaluation inputs required')
+         return live_protocol_context_forks.evaluate_session(copy.deepcopy(inputs.packet),
+-            inputs.recorder, inputs.live_reader, copy.deepcopy(inputs.selected_reports), inputs.blob_reader)
++            inputs.recorder, inputs.live_reader, copy.deepcopy(inputs.selected_reports), inputs.blob_reader,
++            copy.deepcopy(self.coverage_profile))
+ 
+     def validate(self, session):
+         require(type(session) is live_protocol_context_forks.LiveEvaluation,
+@@ -347,11 +350,15 @@
+ 
+ 
+ def evaluate(remote, workdir, candidate_roots, keys, config, app_transport, packet,
+-             selected_reports, read_policy, collector_sha, blob_reader=None):
++             selected_reports, read_policy, collector_sha, blob_reader=None, coverage_profile=None):
+     """One real evaluation, with injected transports only for offline testing."""
+     require(type(config) is publisher.Config, 'publisher configuration required')
+     require(type(packet) is dict and packet.get('repository_id') == config.repository_id,
+             'packet repository differs from configuration')
++    packet = copy.deepcopy(packet)
++    # Selection comes only from protected controller configuration. This early
++    # check blocks missing/unknown governance before any publisher operation.
++    coverage_profile = copy.deepcopy(coverage_gate.select_profile(packet, copy.deepcopy(coverage_profile)))
+     workdir = Path(workdir).resolve()
+     require(workdir.is_dir(), 'ephemeral directory missing')
+     op_entries, op_cp = remote.entries('operator', operator_ledger, keys['operator'])
+@@ -369,7 +376,8 @@
+     inputs = publisher.EvaluationInputs(packet, recorder, reader, selected_reports,
+         blob_reader if blob_reader is not None else GitBlobReader(app_transport, config.repository))
+     authority = RemoteGenerationAuthority(remote)
+-    pub = publisher.Publisher(config, state, app_transport, ForkProtocolRunner(lambda _: inputs), authority)
++    pub = publisher.Publisher(config, state, app_transport,
++        ForkProtocolRunner(lambda _: inputs, coverage_profile), authority)
+     expected = state.read(pub.key(packet['head']['commit']))['generation']
+     result = pub.run(packet['head']['commit'], expected)
+     if authority.active is not None:
+@@ -415,7 +423,9 @@
+ 
+ 
+ def load_job(root, job):
+-    exact(job, 'id publisher policy packet selected_reports collector_sha256', 'invalid job configuration')
++    extra = ' coverage_profile' if type(job) is dict and 'coverage_profile' in job else ''
++    exact(job, 'id publisher policy packet selected_reports collector_sha256' + extra, 'invalid job configuration')
++    require(not extra or type(job['coverage_profile']) is dict, 'coverage profile must be an inline protected object')
+     require(type(job['id']) is str and re.fullmatch('[a-z0-9-]{1,80}', job['id']), 'invalid job ID')
+     c = copy.deepcopy(job['publisher'])
+     exact(c, 'repository repository_id app_id installation_id base_ref target_mode required_merge_ci', 'invalid publisher fields')
+@@ -431,7 +441,9 @@
+     require((policy.repository, policy.repository_id, policy.base_ref) ==
+             (config.repository, config.repository_id, config.base_ref), 'policy/publisher origin differs')
+     require(type(job['collector_sha256']) is str and re.fullmatch('[0-9a-f]{64}', job['collector_sha256']), 'invalid collector pin')
+-    return config, policy, read_protected_json(root, job['packet']), read_protected_json(root, job['selected_reports'])
++    packet = read_protected_json(root, job['packet'])
++    coverage_gate.select_profile(packet, copy.deepcopy(job.get('coverage_profile')))
++    return config, policy, packet, read_protected_json(root, job['selected_reports'])
+ 
+ 
+ def main(environment=None):
+@@ -468,7 +480,8 @@
+                 # the separate, forbidden candidate execution area for store APIs.
+                 candidate_roots = (workdir/'candidate-forbidden',)
+                 result = evaluate(remote, workdir, candidate_roots, keys, pub_config, transport,
+-                    packet, selected, policy, job['collector_sha256'])
++                    packet, selected, policy, job['collector_sha256'],
++                    coverage_profile=copy.deepcopy(job.get('coverage_profile')))
+                 results.append({'job': job['id'], **result})
+         print(json.dumps(results, sort_keys=True))
+         return 0 if all(r['published_success'] for r in results) else 1

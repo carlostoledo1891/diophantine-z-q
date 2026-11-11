@@ -1,0 +1,62 @@
+\paragraph{All-index recurrence and its phases.}
+Let $p$ avoid the full support and put $s=\eta_B(p)$.
+Locally use $R_p=M_2(\mathbb Z_p)$ and $V_p=\mathfrak{sl}_2$.
+The $p+1$ neighbors are indexed by lines of $\mathbb F_p^2$.
+For integral $x$ with nonzero reduction and $Q_B(x)=n$, the number
+of preserved lines is $1+(-n/p)$, including the nilpotent case.
+If $x\in pR_p^0$, all $p+1$ lines are preserved; the excess
+over the preceding formula is $p$.
+
+A nonintegral $x$ in a neighbor lies in $p^{-1}R_p^0$.
+Write $x=y/p$ with $y$ primitive and $Q_B(y)=p^2n$.
+Then $\bar y$ is nonzero nilpotent.  In a basis with
+$\bar y=X_0$, write
+$y=\left(\begin{smallmatrix}a&b\\c&-a\end{smallmatrix}\right)$.
+Here $p\mid a,c$, $b$ is a unit, and
+$p^2\mid-a^2-bc$ forces $p^2\mid c$.  Exactly the neighbor
+belonging to the kernel line makes $y/p$ integral.  The integral
+and nonintegral parts therefore exhaust the sum with no genericity
+assumption on $n$.
+
+Scaling by $p$ at all other places multiplies the weight by $s$.
+Thus the primitive nonintegral contribution is
+$s^{-1}H_M(p^2n)-H_M(n)$, and the integral contribution is
+$(1+(-n/p))H_M(n)+psH_M(n/p^2)$.  Their sum is
+\[
+ s^{-1}H_M(p^2n)+(-n/p)H_M(n)+psH_M(n/p^2).
+\]
+Here and below a coefficient at a nonintegral index is zero.
+For completeness, if $N_{ij}$ counts neighbor kernels from
+$i$ to $j$ and $w_i=|\operatorname{Aut}(i)|$, counting actual
+isogenies and dualizing gives
+$N_{ij}w_j=N_{ji}w_i$, or $N_{ij}/w_i=N_{ji}/w_j$.
+This proves the self-adjointness with the mass $1/w_i$ appearing
+in $H_M$.  A neighbor changes the norm character by
+$\chi_{h_*}(p)$.  Moving the neighbor operator onto $P_M$ and
+using its actual modular-parametrization identity consequently
+gives
+\[
+ H_M(p^2n)+s(-n/p)H_M(n)+ps^2H_M(n/p^2)
+     =s\chi_{h_*}(p)a_p(E)H_M(n)\pmod {2^M\mathcal O}.
+\]
+This computation explains both powers of $s$ even when $s$ is
+not quadratic.
+
+Put $a_M(n)=H_M(mn)$ and
+$\eta=\eta_B\chi_{h_*}$.  Since
+$(-mn/p)=(m/p)(-n/p)$ and $\eta(p)^2=s^2$, one obtains
+\[
+ a_M(p^2n)=
+ \{\eta(p)a_p(E)-\psi(p)(-n/p)\}a_M(n)
+        -p\eta(p)^2a_M(n/p^2)\pmod {2^M\mathcal O}. \tag{O.6}
+\]
+The proof covers $p\mid n$ and $p^2\mid n$ explicitly.
+At zero the coefficients vanish by the local support, and negative
+indices vanish by positive definiteness.
+An added finite coprimality or unit-squareclass sieve is realized
+by the corresponding local characteristic function for $Q_B'$;
+the same modularity proof applies.  At primes outside the enlarged
+support the three indices $p^2n,n,n/p^2$ have the same retain-or-zero
+status.  Hence these sieves preserve the displayed recurrence.
+\end{proof}
+

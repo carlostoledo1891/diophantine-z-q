@@ -1,0 +1,31 @@
+{
+  "id": "GI-BASE-BERTRAND",
+  "supplier": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/bertrand-source-001/ramanujan-collected-1927.pdf",
+    "sha256": "858af6247df93916a2ef7cedfe774782e95acbb9c06fe40a876c06ff0add41a7",
+    "bytes": 9617944
+  },
+  "consumer": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+    "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+    "bytes": 13937,
+    "start_line": 257,
+    "end_line": 259,
+    "excerpt_sha256": "a6092ebff7889a1ea5634f403a5c2592b6b06fc934e74170f72869ffcf76c0b5"
+  },
+  "available": "Prime p in (x,2x] for x>=1.",
+  "needed": "Prime P in (CN,2CN) for each positive N and fixed integer C>16.",
+  "derivation": "Set x=CN; apply the stated theorem; exclude P=2CN since2CN is composite. This preserves all fixed ambient-ratio bounds.",
+  "obligations": {
+    "source_hypotheses": "CN>=1 verified by fixed C>16 and N>=1.",
+    "constructed_objects": "Same ordinary prime; no new field or arithmetic progression.",
+    "index_set_coverage": "Every positive N, including bounded N, is inside the published domain.",
+    "transition_maps": "Direct substitution x=CN; no change of norm or group here.",
+    "uniformity": "C fixed independently of N; P may vary.",
+    "normalizations": "Strict upper endpoint follows from compositeness of2CN.",
+    "exceptional_cases": "N=1 valid; no exceptional modulus or prime exclusion.",
+    "quantitative_strength": "Exact fixed factor2 interval; no prime-number asymptotic imported.",
+    "downstream_consumption": "Consumer uses only the prime and bounded ratio to zero-extend onto Z/PZ; its later norm calculations are unchanged."
+  },
+  "status": "Author comparison, not an independent decision."
+}

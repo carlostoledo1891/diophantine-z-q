@@ -1,0 +1,111 @@
+{
+  "status": "pass",
+  "scope": "Changed current222 workflow command, source-copy verification, generator and negative controls; static historical path checks only",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "runs": [
+    {
+      "name": "installed-verifier",
+      "command": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-2876-0_26.1104.2876.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+        "-B",
+        "research/version15/quartics/quartic-222/verify.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "seconds": 0.375
+    },
+    {
+      "name": "generator-N53",
+      "command": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-2876-0_26.1104.2876.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+        "-B",
+        "research/version15/quartics/quartic-222/generate.py",
+        "--N",
+        "53",
+        "--output",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\v15-ci-local-author-001\\polynomial-N53.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "seconds": 0.297
+    },
+    {
+      "name": "generator-refuses-overwrite",
+      "command": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-2876-0_26.1104.2876.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+        "-B",
+        "research/version15/quartics/quartic-222/generate.py",
+        "--N",
+        "53",
+        "--output",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\v15-ci-local-author-001\\polynomial-N53.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "seconds": 0.281
+    },
+    {
+      "name": "generator-refuses-negative-N",
+      "command": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-2876-0_26.1104.2876.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+        "-B",
+        "research/version15/quartics/quartic-222/generate.py",
+        "--N",
+        "-1",
+        "--output",
+        "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\v15-ci-local-author-001\\negative-must-not-exist.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "seconds": 0.234
+    }
+  ],
+  "verifier": {
+    "ok": true,
+    "source_files": 215,
+    "results": [
+      {
+        "kind": "raw",
+        "variables": 222,
+        "residuals": 196,
+        "coordinate_monomials": 2961,
+        "parameter_terms": 2962,
+        "degree": 4,
+        "content": 1,
+        "height": "A_N^2+1 for N>=53",
+        "height_attaining_monomial": [
+          108,
+          108
+        ],
+        "defining_threshold": "ineffective, not certified by this check"
+      },
+      {
+        "kind": "sparse",
+        "variables": 222,
+        "residuals": 196,
+        "coordinate_monomials": 2277,
+        "parameter_terms": 2278,
+        "degree": 4,
+        "content": 1,
+        "height": "A_N^2+1 for N>=53",
+        "height_attaining_monomial": [
+          108,
+          108
+        ],
+        "defining_threshold": "ineffective, not certified by this check"
+      }
+    ]
+  },
+  "generation": {
+    "N": 53,
+    "terms": 2277,
+    "height": "149^214+1",
+    "defining_threshold_certified": false
+  },
+  "inputs_unchanged": true,
+  "limits": [
+    "No hosted CI result",
+    "No full Lean rebuild or unchanged historical finite replay",
+    "Integration tree final D/C serialization remains pending; exact selected source/package/workflow pins are recorded"
+  ]
+}

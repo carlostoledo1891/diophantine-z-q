@@ -1,0 +1,166 @@
+[
+  {
+    "origin": "v14-kummer-source-reconciliation-author-002/SOURCE-INPUT.json",
+    "state": "author_proposal_pending_independent_review_and_source_adoption",
+    "use": {
+      "id": "ACTIVE-KUMMER-MULTIPLICATION-INPUT",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "KUMMER-SOURCE-MULTIPLICATION-P"
+      ],
+      "assertion": {
+        "statement": "For the specified characteristic-zero field F and elliptic curve E/F, multiplication by n=2^a is surjective on E(Fsep) with finite kernel E[n]; algebraic-point groups have their discrete continuous G_F action.",
+        "objects": "E/F, Fsep and its algebraic point groups.",
+        "hypotheses": "F has characteristic zero, E/F is an elliptic curve and a is an integer at least1.",
+        "quantifiers": "Every such F,E,a and every point of E(Fsep).",
+        "parameter_range": "Characteristic-zero fields, including number fields and finite extensions of Q_p for any p.",
+        "uniformity": "No field-degree or residue-characteristic restriction within this domain.",
+        "constants": "n=2^a; no quantitative bound.",
+        "normalizations": "Ordinary multiplication morphism over F; discrete Galois module topology.",
+        "exceptional_cases": "No claim of surjectivity on E(F), rationality of torsion, good reduction, or Kummer exactness from this input alone.",
+        "limit_order": "Apply the finite surjective multiplication isogeny over algebraically closed Fsep, then construct division-point cocycles."
+      },
+      "classification": "dependency",
+      "reason": "This is the actual narrow multiplication input consumed before proving Kummer exactness.",
+      "shared_contract_justification": "One exact source-level specialization at line9.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "3bfc2e26e8b0c65ccf834c9eb27d66a3401460102202952233ae43992bb28b6b"
+        },
+        "statement": "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "J. H. Silverman",
+          "venue": "Second edition, Springer,2009",
+          "authoritative_version": "Exact retained PDF SHA256 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25.",
+          "locator": "SectionIII.4 opening p66; Example4.1 p67; Proposition4.2(a) p68.",
+          "corrections": "Original pages66–68 directly rendered and read. No uninspected erratum is used; this source claim is separate from known division-polynomial and two-isogeny display corrections elsewhere."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-KUMMER-MULTIPLICATION-INPUT",
+      "use_sha256": "8632d58f301d3f815591e2ad5fbad695e8f72dad7044b43cfd903e4d124861fb",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective.",
+        "objects": "Elliptic curves and their multiplication maps.",
+        "hypotheses": "Elliptic curve over the source field; nonzero integer multiplication.",
+        "quantifiers": "Every such elliptic curve and nonzero integer.",
+        "parameter_range": "Used here only in characteristic0 with positive powers of2.",
+        "uniformity": "Exact algebraic assertion independent of the arithmetic field or conductor.",
+        "constants": "No numerical degree formula is required.",
+        "normalizations": "Usual group-law multiplication, identity mapped to identity.",
+        "exceptional_cases": "Zero multiplication is excluded; this assertion does not itself state the Kummer cohomology sequence.",
+        "limit_order": "Construct multiplication as a field-defined morphism, establish nonconstancy, then use surjectivity of a nonzero isogeny."
+      },
+      "needed_assertion": {
+        "statement": "For the specified characteristic-zero field F and elliptic curve E/F, multiplication by n=2^a is surjective on E(Fsep) with finite kernel E[n]; algebraic-point groups have their discrete continuous G_F action.",
+        "objects": "E/F, Fsep and its algebraic point groups.",
+        "hypotheses": "F has characteristic zero, E/F is an elliptic curve and a is an integer at least1.",
+        "quantifiers": "Every such F,E,a and every point of E(Fsep).",
+        "parameter_range": "Characteristic-zero fields, including number fields and finite extensions of Q_p for any p.",
+        "uniformity": "No field-degree or residue-characteristic restriction within this domain.",
+        "constants": "n=2^a; no quantitative bound.",
+        "normalizations": "Ordinary multiplication morphism over F; discrete Galois module topology.",
+        "exceptional_cases": "No claim of surjectivity on E(F), rationality of torsion, good reduction, or Kummer exactness from this input alone.",
+        "limit_order": "Apply the finite surjective multiplication isogeny over algebraically closed Fsep, then construct division-point cocycles."
+      },
+      "required_capabilities": [
+        "For the specified characteristic-zero field F and elliptic curve E/F, multiplication by n=2^a is surjective on E(Fsep) with finite kernel E[n]; algebraic-point groups have their discrete continuous G_F action."
+      ],
+      "available_capabilities": [
+        "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective."
+      ],
+      "derived_capabilities": [
+        "For the specified characteristic-zero field F and elliptic curve E/F, multiplication by n=2^a is surjective on E(Fsep) with finite kernel E[n]; algebraic-point groups have their discrete continuous G_F action."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the specified characteristic-zero field F and elliptic curve E/F, multiplication by n=2^a is surjective on E(Fsep) with finite kernel E[n]; algebraic-point groups have their discrete continuous G_F action.",
+          "objects": "E/F, Fsep and its algebraic point groups.",
+          "hypotheses": "F has characteristic zero, E/F is an elliptic curve and a is an integer at least1.",
+          "quantifiers": "Every such F,E,a and every point of E(Fsep).",
+          "parameter_range": "Characteristic-zero fields, including number fields and finite extensions of Q_p for any p.",
+          "uniformity": "No field-degree or residue-characteristic restriction within this domain.",
+          "constants": "n=2^a; no quantitative bound.",
+          "normalizations": "Ordinary multiplication morphism over F; discrete Galois module topology.",
+          "exceptional_cases": "No claim of surjectivity on E(F), rationality of torsion, good reduction, or Kummer exactness from this input alone.",
+          "limit_order": "Apply the finite surjective multiplication isogeny over algebraically closed Fsep, then construct division-point cocycles."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No claim of surjectivity on E(F), rationality of torsion, good reduction, or Kummer exactness from this input alone.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 7,
+            "end_line": 9,
+            "excerpt_sha256": "6307ece0239969d693a718d2863cf977078646f31086562ae7dee21f9cb72113"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+            "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+      }
+    ]
+  }
+]

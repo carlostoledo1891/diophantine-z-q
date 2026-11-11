@@ -1,0 +1,29 @@
+# Independent source-extension rollout review
+
+Reviewer: /root/v14_arithmetic_review. Accepted for the bounded local rollout candidate, not as a record of deployment, activation or mathematical coverage approval.
+
+Selected packet: v14-source-extensions-rollout-author-002/MANIFEST.json SHA8e3eef0307f5f5695f6e5d35238c072366f7c7e6af645bad1bb97e1d708c0451. Its predecessor001 remains preserved. The accepted coverage gate34f6a740f0fed7356614374b01a09ebe565d863fca3d882047d5f836ad550b93 and test4f46967fd0b2e8d2707f6e9d92ecc62924a66103f2325cfecd90a58515f943e5 are unchanged from my earlier independent gate review.
+
+## Deployment targets and synchronization
+
+I read the current controller workflow, operation notes, prior continuation installation, runtime preparation003 and its binder. The actual baseline is controller268cc244786568f4a63a02ca1108ad81c2763937. The workflow requires its main SHA to equal PROTOCOL_APPROVED_SHA and checks out that approved SHA. A local file copy or successful synthetic test cannot activate a different remote revision.
+
+The seven proposed controller targets consist of the accepted gate/test, source-extension documentation, exact independent review copy, bundle manifest, and the two live-context modules. Both live modules retain all code except replacing their obsolete coverage-gate hash with the accepted one and adding the unchanged connections_gate.py hash6ef0d24825db8de3f21bf873728676572ec32a24427ca76ad4166afa93a1ffd4. Exact string transformation reproduces both files. Their verification function is not bypassed. The resulting live module hashes are b8787b06dc3f4602028eaab23cb70cb4fb2c9f28b40c67f10b94e5fe0f04b520 and e90160641466fcc070fdb397b92cb438f360025582265cb3001e2fe7b604444d.
+
+I verified every proposed before/after target, all177 resulting bundle member hashes and sizes, and all13 repository evidence/snapshot copies against their original bytes. The bundle preserves production edges and adds the new test metadata; its updated source fields do not claim the old generator produced the changed live modules. Config, workflows, requirements and governing protocol are separately pinned unchanged. Snapshot installation is an exact copy operation and conveys no new source-first or mathematical acceptance.
+
+## Scripts and controls
+
+apply_controller.py checks baseline commit, each target's old and new hash, path containment and unchanged protected inputs before writing only the listed files. My independent dry run verified seven targets, applied false, network operations zero.
+
+I requested correction of the first draft runtime refresher before freeze. The accepted script now pins the exact predecessor manifest and49-file runtime list, verifies predecessor members, requires a new descendant commit, compares Git blobs with working files, rejects unreviewed runtime changes and duplicate paths, and creates a new50-file runtime list and regenerated manifest. It retains predecessor manifest/README as history and explicitly marks prior generators historical. Actual future commit execution and resulting successor still require readback. The author exercised it in an isolated unpushed clone; the test commit565c268... is not a production target.
+
+wire_sources.py preserves the original initial and reconstruction, requires each supplement's frozen source/use/passage files and recorded method/exposure/limitations to match, requires comparison after freeze, rejects source/use collisions and replacement of an existing extension, and checks the exact final concatenated source union. It takes actual comparison records as inputs and does not manufacture them, authenticate their identities or select receipts. The protected gate remains responsible for the full source-line, reconciliation, connection and authenticated identity checks. Original continuation source scope remains92; each supplement binds only its own source list.
+
+The beta locator correction is not in the original92; it changes a source in the first added10. The selected plan correctly retains that first frozen source and requires a distinct corrected proof path and a genuinely frozen second supplement. SOURCE-WIRING.json presently binds only the existing92+10. It must not be mistaken for the future complete source profile. The final profile, dossier and connection record must agree on the complete selected union, after actual comparisons. I requested and verified the002 documentation replacement removing the stale fixed102 count. Its only other changes are resulting manifest/target hashes and command paths; every Python file and snapshot is unchanged.
+
+## Validation and remaining operation
+
+Independent tests: the prior164 gate tests passed; this review additionally ran all9 wiring tests, seven-target apply dry run, and four deliberate live dependency tamper checks. Both live modules accept correct local pins and reject changed coverage_gate.py or connections_gate.py. TESTS.json records actual tool chunks. The author's113 runtime test log and isolated refresh positive/negative results were read and retained; I did not present those as my own execution. The initial stale-pin failure remains preserved as evidence of rejection, not relabeled success. CANDIDATE001-CHECKS.json and SUCCESSOR002-CHECKS.json record my pin/copy/delta checks.
+
+No implementation defect remains held in this bounded candidate. Root must still execute authorized installation, capture the actual controller commit, verify committed and remote bytes, refresh and review the real binder successor, and activate only the reviewed revision through the established workflow. An idle jobs-empty controller run is not mathematical approval. Complete source-derived comparison, author-distinct authenticated reports, exact final proof profile, CI/source-transition checks and final gate evaluation remain required. No credential, active controller, remote configuration, or canonical manuscript was changed by this review.

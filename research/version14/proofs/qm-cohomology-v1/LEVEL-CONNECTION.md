@@ -1,0 +1,15 @@
+# The actual finite levels in the cohomology comparison
+
+Use Emerton's classical open modular curves Y(K_f) over Q and their forgetful maps under refinement, with the regular curve structure of these levels. His Section 2.4 gives the Q-defined level system, the criterion for a fine level, and the direct limit defining parabolic cohomology. At weight two the coefficient system is constant because it is the zeroth symmetric power.
+
+The open curve Y_1(N) is the level for the subgroup of GL_2(Zhat) that fixes the first standard vector modulo N. An orbit of full torsion identifications under this stabilizer remembers exactly the image of the first standard point of order N. The group acts transitively on primitive vectors modulo N, and the stabilizer on integral determinant-one matrices is Gamma_1(N). Thus this choice uses the actual initial modular curve, with its given Q-model.
+
+To pass to a fine level, keep its tame level and shrink the 5-component into the kernel of reduction modulo 5. Any finite-order element of SL_2(Z) in this subgroup has trace congruent to 2 modulo 5. The trace of a finite-order determinant-one integral matrix is one of -2,-1,0,1,2, so its trace is 2. A finite-order characteristic-zero matrix with both eigenvalues 1 is the identity. This verifies the torsion-free criterion for the chosen fine level without a prime-to-5 assumption on N.
+
+Each regular open curve has a smooth projective compactification over the perfect field Q, componentwise, with finite complement. The compactification at the initial level is the given X_1(N), since the identification on the open curve extends uniquely in both directions. [Stacks Project, Remark 33.43.9](https://stacks.math.columbia.edu/tag/0H1F)
+
+For each inclusion K'_f in K_f, the forgetful map on open curves is surjective. Its fibers are finite because a fixed K_f-level orbit has only finitely many refinements under a finite-index subgroup. It is therefore nonconstant on every one-dimensional component. The rational maps of smooth compactifications extend uniquely to morphisms, since the sources are normal curves and the targets are proper. [Stacks Project, Lemma 53.2.2](https://stacks.math.columbia.edu/tag/0BXX)
+
+These compactified maps are finite by the nonconstant-component criterion for proper curves and separated targets. They have positive degree over the target components. The DVR calculation in the cohomology proof then makes them locally free, so the norm argument applies. The maps and the cusp complements are the actual Q-defined maps and boundaries. [Stacks Project, Lemma 53.2.4](https://stacks.math.columbia.edu/tag/0CCL)
+
+The first refinement can be made at 5 as above. All further finite-level refinements give injective rational parabolic pullbacks by the same degree argument. Thus the class at the fixed level injects into the full direct limit in Emerton's Section 2.4. This connection supplies the finite compactified maps used in the cohomology proof. It retains the published construction of the open modular-curve system.

@@ -1,0 +1,83 @@
+{
+  "schema": "v15-bounded-supplier-review/v1",
+  "decision": "accepted_within_scope",
+  "reviewer": {
+    "agent": "/root/v14_arithmetic_review",
+    "thread_id": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "role": "Independent review of original supplier argument and use requirements; not independent acceptance of own later manuscript transcription"
+  },
+  "subject": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/version15-protocold-233-20261110/repository/review/application-transfer-009/V15-HEIGHT-MODULAR.json",
+    "sha256": "5c5d379c5dab805dd1d5f04d8a2fda45c1f206eadef643e82857e95ff04ce190"
+  },
+  "original": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/jose248-audit-20261109/repository/papers/contact_heights/evaluation_of_differentials_20261109_v17.tex",
+    "sha256": "2ba5dd497276073d92db95f0119bede82d182997c66375e5be294157de6d9f7c"
+  },
+  "current": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2"
+  },
+  "current_supplier_lines": [
+    30452,
+    30597
+  ],
+  "current_consumer_lines": [
+    30722,
+    30786
+  ],
+  "prior_reviews": [
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/jose248-audit-20261109/height-review/REVIEW.json",
+      "sha256": "2f63b6695a3d473d6a05ff9222fcd516723d89bdb4061b42723c43f2dd50073a"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/jose248-audit-20261109/238-premise-independent-001/REVIEW.json",
+      "sha256": "cffc7faa1fe9939f08a05c234b65b9cc1067138c083bbca4b13e122e9857cec6"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/v15-application-transfer-review-h6-001/REVIEW.json",
+      "sha256": "0bb6c2734fcfb0e7e486884dababed59df1b1b185174973c56db1abd96c6ef2e"
+    }
+  ],
+  "comparison": {
+    "original_lines": [
+      343,
+      488
+    ],
+    "normalized_text_equal": true,
+    "normalization": "CR removal, v15:height: label prefix and v15-height- citation prefix removal, first subsection changed to original section; trim outer whitespace only"
+  },
+  "decisions": [
+    {
+      "id": "SF08",
+      "topic": "Integral modular cover",
+      "decision": "accepted",
+      "reason": "Exact-order N points of E_t are finite etale on the stated open because N and its discriminant are units. H acts freely on primitive points. Orbit descent is finite etale; no invertibility of |H| is needed for finite locally constant sets. Away from j=0,1728, automorphisms are +/-1; since -1 belongs to H, twist choices disappear in H-orbits. Thus this is the intended coarse X1(N)/H generic cover, not an additional twist cover. Primitive vector count divided by |H| gives exactly Nt_H product(1+1/p). Positive genus excludes the degenerate small-level cases irrelevant to the consumer."
+    },
+    {
+      "id": "SF09",
+      "topic": "Torsion different",
+      "decision": "accepted",
+      "reason": "The retained lci/trace-dual source applies to the finite flat kernel of [n]. The invariant differential derivative is n, hence the Fitting different after zero-section base change is nA. Its inverse in the generic etale algebra is precisely n^-1 A under trace, not merely an abstract isomorphic module. Finite normalization reverses trace dual inclusion. In each normal DVR component, n times its trace dual contained in the ring means the different contains n. The nonnegative relative different exponent in a tower gives the same bound in the orbit intermediate field. No perfect residue field or tame assumption is inserted."
+    },
+    {
+      "id": "SF10",
+      "topic": "Jacobian bound from the same modular cover",
+      "decision": "accepted",
+      "reason": "At generic vertical points over p>3, t and t-1 are units, including when p divides N; E_t is an elliptic scheme there. Each H-orbit field embeds in a point field, so the preceding bound applies without using full splitting-field degree. Sum f_j r_j <= sum f_j e_j v_p(N)=d_H v_p(N), then normalize over K. At 2 and 3 use the separately reviewed general different bound; horizontal t=2 contributes d_H log2. Total is d_H(log12+logN+2logd_H), and the already reviewed integral evaluation theorem supplies the half factor and g_H log(2/sqrt(pi))."
+    }
+  ],
+  "consumer_match": [
+    "H=ker epsilon contains -1 because epsilon is even. The retained modular realization supplies the factor in J_H over L-prime, so g_H>=2.",
+    "The sharper totient bound and rad(N)|R are preserved; d_H<D0 R^3 is the intended input, with no coefficient-field or full torsion-field degree substituted.",
+    "The Jacobian bound gives hF(J_H)<=6d_H logR under the separately reviewed numerical inequalities. Auxiliary splitting/semistability field K is not L-prime and cancels only in the evaluation/discriminant step."
+  ],
+  "remaining_boundaries": [
+    "Sourcefirst must independently bind/accept current transcription and this result; reviewer authored the integrated manuscript text. This receipt does not self-approve that text.",
+    "Evaluation and general discriminant deductions are reused from the exact H6 accepted scope, not re-audited here. Tate/marking joins not reopened.",
+    "Same-field surface-isogeny estimate at30599 onward, upstream modularity/realization foundations and aggregate estimates retain their separate source acceptances; this receipt does not broaden SF08-10 to all nine obligations of V15-HEIGHT-MODULAR.",
+    "The order used downstream is ord(epsilon^2) dividing [L-prime:Q], hence ord(epsilon)<=2[L-prime:Q]. Retain H6 editorial clarification of the pronoun; no stronger divisibility claim for epsilon itself.",
+    "No full Protocol D closure, specific effective N0, or N0=53 claim."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "author metadata clarification; independent review pending",
+  "inputs": [
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-fine-cover-compiler-002/MANIFEST.json",
+      "sha256": "7fbade87456834c71468f384e97c237a718aa24b141b117618f1bd8beba9ac69",
+      "bytes": 12703
+    },
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-fine-cover-compiler-002/EFFECTIVE-PARENT-APPLICATIONS.json",
+      "sha256": "cc324287a8b1b5cd16cab335c2ff80a7f08a2149a3971184cbaf2853e367cb3a",
+      "bytes": 17712
+    },
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-fine-cover-compiler-002/EFFECTIVE-PARENT-OBLIGATION-COMPARISONS.json",
+      "sha256": "aea60512814a7dd1b1c5492e07e27a68ad9a859d487d94a1352a8a2b46afe823",
+      "bytes": 62427
+    },
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-connections-compiler-001/PROOF.md",
+      "sha256": "cb24b176eb62e3c2c379aaddacd1a8d655724ffe34faf436dd7b1015dbe47e7a",
+      "bytes": 20814
+    }
+  ],
+  "changes": [
+    {
+      "file": "EFFECTIVE-PARENT-APPLICATIONS.json",
+      "record": "H5-D210-VERTICAL-SECTIONS",
+      "field": "required_conclusion",
+      "before": "J=2^10*3²*5³*7^4 clears all vertical poles; two generic sections have no common zero.",
+      "after": "For J=2^10*3²*5³*7^4, J²q0 and J²q1 extend as regular sections on the maximal stack; their generic fibers have no common zero."
+    },
+    {
+      "file": "EFFECTIVE-PARENT-OBLIGATION-COMPARISONS.json",
+      "record": "H5-D210-VERTICAL-SECTIONS::statement",
+      "field": "needed",
+      "before": "J=2^10*3²*5³*7^4 clears all vertical poles; two generic sections have no common zero.",
+      "after": "For J=2^10*3²*5³*7^4, J²q0 and J²q1 extend as regular sections on the maximal stack; their generic fibers have no common zero."
+    }
+  ],
+  "output_files": [
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-vertical-record-compiler-003/CURRENT-PARENT-APPLICATIONS.json",
+      "sha256": "236b775d65b19ba61c329cdfea98724f57951e2b0491514038c66ca12e3532d8",
+      "bytes": 17755
+    },
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-vertical-record-compiler-003/CURRENT-PARENT-OBLIGATION-COMPARISONS.json",
+      "sha256": "5a777ce9efedeaa7107e5d5ec806235c9206eae4c81d970110f702071ad070d5",
+      "bytes": 62470
+    }
+  ],
+  "proof_locations": [
+    {
+      "path": "work/source-risk-review-20261107/h5-d210-connections-compiler-001/PROOF.md",
+      "sha256": "cb24b176eb62e3c2c379aaddacd1a8d655724ffe34faf436dd7b1015dbe47e7a",
+      "bytes": 20814,
+      "lines": [
+        70,
+        77
+      ],
+      "excerpt_sha256": "01fb63d8890b36e0393414deb84ff61cfe049728edf06becabd63ca2defe904b"
+    }
+  ],
+  "consumer": {
+    "path": "work/quartic-v14-combined-20261108-004/candidate/manuscripts/quartic_v14.tex",
+    "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f",
+    "bytes": 1129724,
+    "lines": [
+      7369,
+      7392
+    ],
+    "excerpt_sha256": "c7ed2e8dd86c92cc1b2bc9a10bd4bf0b7ae2b800c3368ec0ca9c4d68ae8a954a"
+  },
+  "scope": "Corrects only the shorthand conclusion in two source/application fields. Parent proof and current TeX already use J²q0,J²q1. The constant J, all estimates, source assumptions and historical acceptance remain unchanged.",
+  "authorship": "Compiler authors this record correction after SourceReview identified the shorthand; no new mathematical proof is supplied."
+}

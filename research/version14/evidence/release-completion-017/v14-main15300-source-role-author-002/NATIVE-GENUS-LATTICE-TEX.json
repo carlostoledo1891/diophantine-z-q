@@ -1,0 +1,31 @@
+{
+  "schema": "v14-exact-text-edits/1",
+  "author": "/root/v14_h6_coverage",
+  "status": "proposed only; no canonical edits",
+  "base": {
+    "path": "manuscripts/quartic_v14.tex",
+    "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+  },
+  "proof_note": {
+    "path": "NATIVE-GENUS-LATTICE.md",
+    "sha256": "c45235a3e44730299b4eb1baab314a311cd03381100957d6d4fc26ce8b8ebbe4",
+    "intended_repository_path": "research/version14/evidence/native-genus-lattice-current/PROOF.md"
+  },
+  "mathematical_review": {
+    "path": "v14-native-genus-lattice-review-arithmetic-001/REVIEW.json",
+    "sha256": "9423bc8ca44c75116b0e4ff6f1412db42828d94a8ca5081778627d81fcfff45e"
+  },
+  "edits": [
+    {
+      "kind": "replace_exact",
+      "old": "For a known simple-zero $h$, let $P_h^{\\rm gen}$ be the unaveraged\nconductor-one genus sum over $\\Q(\\sqrt{hh_*})$.\nLet $P_{h,k'}^{\\rm rc}$ be the unaveraged conductor-$|h|$ ring-class\nsum over $\\Q(\\sqrt{k'})$, weighted by $\\chi_h$.\nThey are different points in different native lattices.\nWrite $j_{\\rm gen}(h)$ and $j_{\\rm rc}(h,k')$ for their index valuations.",
+      "new": "For a known simple-zero $h$, let $P_h^{\\rm gen}$ be the unaveraged\nconductor-one genus sum over $\\Q(\\sqrt{hh_*})$.\nLet $P_{h,k'}^{\\rm rc}$ be the unaveraged conductor-$|h|$ ring-class\nsum over $\\Q(\\sqrt{k'})$, weighted by $\\chi_h$.\nThey are different points in different native lattices.\nWrite $j_{\\rm gen}(h)$ and $j_{\\rm rc}(h,k')$ for their index valuations.\n\n\\paragraph{The native genus lattice.}\nFor the genus point specifically, put\n$K_h=\\Q(\\sqrt{hh_*})$ and $F_h=\\Q(\\sqrt h,\\sqrt{h_*})$.\nIf $h>1$ and $\\tau$ generates $\\operatorname{Gal}(F_h/K_h)$, set\n\\[\n \\Gamma_h=\\{P\\in E(F_h):\\tau P=-P\\},\\qquad\n \\Lambda_h=\\Gamma_h/\\Gamma_{h,\\mathrm{tors}}.\n\\]\nFor $h=1$, set $\\Gamma_1=E(K_1)$ and take its torsion-free quotient.\nThe native genus index is the divisibility index of the class of\n$P_h^{\\rm gen}$ in $\\Lambda_h$, at the known simple-zero parameters\nwhere this lattice has rank one. The CM reciprocity action and\nreindexing the unaveraged genus-character sum give exact membership\n$P_h^{\\rm gen}\\in\\Gamma_h$, before multiplication by the later fixed\nmultiplier. The standard $h$-twist isomorphism identifies $\\Gamma_h$\nwith $E^{(h)}(K_h)$. The remaining involution of $K_h/\\Q$ fixes its\nfree quotient: the only other rational character component is the\n$h_*$-component, whose rank is zero by the supplied forward theorem.\nThus $Q+\\sigma Q\\in E^{(h)}(\\Q)$ represents twice the free class of\n$Q\\in E^{(h)}(K_h)$. The rational subgroup consequently contains\n$2\\Lambda_h$ and has index at most two. For $h=1$ this is ordinary\nquadratic conjugation and the same norm argument. This calculation\nuses the stated rank and CM inputs; it does not infer rank from\nnonvanishing height, nor apply to the whole group $E(F_h)$.\n"
+    },
+    {
+      "kind": "replace_exact",
+      "old": "The rational free line has index at most two in that native\nlattice, by conjugation and norm. Absorb this and the fixed\ninitial convention in $C_{\\rm det}$. The first inequality below",
+      "new": "The rational $D$-twist subgroup has index at most two in the native\ngenus lattice by the calculation preceding\nProposition~\\ref{ex:sec7-genus-lower}. Absorb this and the fixed\ninitial convention in $C_{\\rm det}$. The first inequality below"
+    }
+  ],
+  "scope": "Genus subgroup/index clarification only. Ring-class lattice, all constants, source hypotheses and remaining proof text unchanged. New proof-note source adoption remains separate."
+}

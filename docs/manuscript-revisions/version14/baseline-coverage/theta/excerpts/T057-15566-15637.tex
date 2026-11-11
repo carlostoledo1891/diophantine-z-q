@@ -1,0 +1,72 @@
+Here $h$ is restricted to the prepared positive odd-sign unit
+filter containing one, as in (3.3), so $h\equiv1\pmod8$.
+The multiset of dummy labels and its size are fixed before $h$;
+its realizing primes are chosen after $h$ and avoid its support.
+
+For the rough companion the curve itself varies:
+write $a$ for the bounded dummy product and take $A=E^{ha}$.
+Choose $q_0$ so $k_0=aq_0$ is negative, $1$ modulo eight and
+a square at every prime of $2Nh$, with the required exclusions.
+Then $k_0$ is odd fundamental, prime to $N_{E^h}$, and
+\[
+          w(E^{hk_0})=w(E^h)\chi_{k_0}(-N_{E^h})=+1.
+\]
+This proves the sign directly for the actual application.
+Apply Hoffstein--Luo to $E^{hk_0}$ with every conductor,
+old, $h$, dummy and forbidden prime in its splitting set.
+The resulting $k'=k_0d$ adds at most five new primes.
+The constants and sizes in the analytic theorem may depend on
+this varying curve and the whole finite set; the bound five does not.
+
+\subsection{The even upper transfer}
+\begin{proposition}[A uniformly bounded partitionable companion]\label{ex:app-rough-companion}
+Fix $E$ and the finitely many prepared even sources, local types and
+unit seeds used for (3.3). There are constants $A,C_E$, fixed before
+$h$ and before any additional finite prime exclusion set, with the
+following property. Let $h$ be positive squarefree in the prepared
+odd-sign unit filter containing $1$, prime to its fixed support; in
+particular $h\equiv1\pmod8$. There is a negative odd fundamental
+discriminant $k'$, prime to $2Nh$ and the additional exclusions,
+square at every place dividing $2Nh$, for which $hk'$ is partitionable
+in the sense of Definition~\ref{ex:sec7-seed-partition},
+$L_*(hk')\ne0$, and
+\[
+ \omega(k')\le A,\qquad
+ v_2L_*(hk')\le2\omega(h)+2\omega(k')+s(hk')+C_E.
+\]
+Here $A$ is the fixed dummy-label count plus five. Dummy types and
+their number are fixed first, but their distinct prime realizations
+are selected after $h$ and the exclusions. The proof uses the
+one-symbol stationary-address conclusion of
+Lemma~\ref{ex:sec7-one-symbol-address}, whose proof is given in
+Proposition~\ref{ex:app-simultaneous-address}.
+\end{proposition}
+\begin{proof}\leavevmode
+For one fixed even source write (E.11) as
+\[
+             v_2L_*(\sigma D)=2v_2a(D)+\kappa_e.
+\]
+The lower bound (E.9) and a nonzero reference coefficient imply
+that the nonempty set of integers
+$v_2a(D)-\omega(D)$ has a finite attained minimum $\delta_e$.
+A unit of the normalized symbol means precisely equality to this
+minimum. It therefore gives
+\[
+ L_*(\sigma D)\ne0,\qquad
+ v_2L_*(\sigma D)=2\omega(D)+C_{e,\rm unit},
+ \quad C_{e,\rm unit}=2\delta_e+\kappa_e.                         \tag{F.1}
+\]
+This constant belongs to the fixed source, not to a curve later
+introduced solely to obtain nonvanishing.
+
+For the negative types used in the rough companion, the unsigned
+index is $7$ modulo eight. Its total $(-1/D)$ label is nonzero, so
+every unit seed is nonempty. A seed of least positive size has no
+dependence on internal edge bits: a nonzero edge derivative
+would be a smaller nonempty unit. Its labels therefore suffice.
+If a list with the same total label contains the first $r-1$
+seed anchors and a nonempty remainder, contract that remainder
+into the last anchor. Its total label is forced to be the
+remaining seed label. This proves partitionability regardless
+of how many old $h$-primes are in the remainder.
+

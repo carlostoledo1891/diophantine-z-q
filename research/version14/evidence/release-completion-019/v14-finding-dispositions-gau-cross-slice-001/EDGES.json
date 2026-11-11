@@ -1,0 +1,2465 @@
+{
+  "original_edges": {
+    "path": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/RECONCILIATION.json",
+    "sha256": "3bfa9f9f5567b16160db0568fa85625017060649187de4f55222a52a61068d3a"
+  },
+  "current_main": {
+    "path": "work/quartic-v14-release/preview-repository/manuscripts/quartic_v14.tex",
+    "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+  },
+  "edges": [
+    {
+      "edge_index": 0,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19206,
+        "supplier_label": "subsec:v5-point-source",
+        "supplier_label_line": 10733,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19206,
+        "text": "Section~\\ref{subsec:v5-point-source}, with $P=P_*$, not a new generator."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20357,
+        "end_line": 20357,
+        "excerpt_sha256": "173c4613bb0b439b07f8f5e426ab4b5ea124514e1850b5f740da0291bae46322"
+      },
+      "current_consumer_text": "Section~\\ref{subsec:v5-point-source}, with $P=P_*$, not a new generator.",
+      "consumer_role_records": [
+        {
+          "index": 5156,
+          "row": {
+            "id": "ROLE-SRC-GI-00300",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20356,
+              "end_line": 20363,
+              "excerpt_sha256": "77a34cb42cab7f3005d6029c2274d7424747e4446732ef87fd3d81d25ab3fb6b"
+            },
+            "status": "covered",
+            "reason": "Retains the same normalized generator, coefficient/valuation conventions and exact height-19 constant. The model identification is an actual incoming requirement.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:v5-point-source",
+      "connection": "The literal normalized E/K, unit transport of P0 to P*, and nonidentity doubled-point domains. No new generator or changed field.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 1,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19212,
+        "supplier_label": "thm:quartic-height19",
+        "supplier_label_line": 8922,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19212,
+        "text": "$\\mathcal H=H_{19}$ of Theorem~\\ref{thm:quartic-height19}."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20363,
+        "end_line": 20363,
+        "excerpt_sha256": "316d6659005b3b7523e79734a7ab5a7d0c121d7372d803ad94e0b026a96d6d41"
+      },
+      "current_consumer_text": "$\\mathcal H=H_{19}$ of Theorem~\\ref{thm:quartic-height19}.",
+      "consumer_role_records": [
+        {
+          "index": 5156,
+          "row": {
+            "id": "ROLE-SRC-GI-00300",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20356,
+              "end_line": 20363,
+              "excerpt_sha256": "77a34cb42cab7f3005d6029c2274d7424747e4446732ef87fd3d81d25ab3fb6b"
+            },
+            "status": "covered",
+            "reason": "Retains the same normalized generator, coefficient/valuation conventions and exact height-19 constant. The model identification is an actual incoming requirement.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "thm:quartic-height19",
+      "connection": "The five-contact logarithmic height bound with H19 and exponent19, under the same geometric/representation inputs. The downstream source explicitly replaces the old exponent24; it does not read19 from the old transfer lemma.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 2,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19214,
+        "supplier_label": "subsec:v5-complete-source",
+        "supplier_label_line": 10861,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19214,
+        "text": "The source is the system in Section~\\ref{subsec:v5-complete-source},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20365,
+        "end_line": 20365,
+        "excerpt_sha256": "936a257f6826198fc01b3d6bfea445c630f1a0097dfb6d071625d82fe55f0eb3"
+      },
+      "current_consumer_text": "The source is the system in Section~\\ref{subsec:v5-complete-source},",
+      "consumer_role_records": [
+        {
+          "index": 5158,
+          "row": {
+            "id": "ROLE-SRC-GI-00302",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20365,
+              "end_line": 20378,
+              "excerpt_sha256": "222e37a2c978e09e794c6351f7d1e1844d9dac38c18ce7f154873856bd53c526"
+            },
+            "status": "covered",
+            "reason": "Defines which parts of the earlier source system are retained and which targets, orders, scalar input and anchor are changed. This is an interface declaration, not a proof that the changes preserve it.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:v5-complete-source",
+      "connection": "The actual sixteen-test source, five contacts, norm tree, guards and permitted zero pole witnesses. The caller20365-78 lists its changes explicitly; source identity is not an assertion that old and new polynomial coefficients coincide.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 3,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19233,
+        "supplier_label": "subsec:v5-point-source",
+        "supplier_label_line": 10733,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19233,
+        "text": "Elliptic labels and domains & Section~\\ref{subsec:v5-point-source},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20384,
+        "end_line": 20384,
+        "excerpt_sha256": "a993fe3d7b33c30c5de431000f734f4b600127f258c4eeb7b22456320fad4c42"
+      },
+      "current_consumer_text": "Elliptic labels and domains & Section~\\ref{subsec:v5-point-source},",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:v5-point-source",
+      "connection": "The literal normalized E/K, unit transport of P0 to P*, and nonidentity doubled-point domains. No new generator or changed field.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 4,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19234,
+        "supplier_label": "lem:v5-point-domains",
+        "supplier_label_line": 10780,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19234,
+        "text": "Lemma~\\ref{lem:v5-point-domains}, and \\eqref{eq:o8-indexheight}:"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20385,
+        "end_line": 20385,
+        "excerpt_sha256": "ec17b024366e1b803fe91fbb6fc0087f77fa04d370fac3caf71ef635c8a9fa89"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-point-domains}, and \\eqref{eq:o8-indexheight}:",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-point-domains",
+      "connection": "Nonidentity doubled points and guarded differences have nonzero x/y; all rational quotients retain those domains.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 5,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19234,
+        "supplier_label": "eq:o8-indexheight",
+        "supplier_label_line": 8063,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19234,
+        "text": "Lemma~\\ref{lem:v5-point-domains}, and \\eqref{eq:o8-indexheight}:"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20385,
+        "end_line": 20385,
+        "excerpt_sha256": "ec17b024366e1b803fe91fbb6fc0087f77fa04d370fac3caf71ef635c8a9fa89"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-point-domains}, and \\eqref{eq:o8-indexheight}:",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "eq:o8-indexheight",
+      "connection": "The displayed duplication estimates and canonical-height calculation give h(x(nP*))>=n^2-6 for n nonzero.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 6,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19237,
+        "supplier_label": "thm:quartic-height19",
+        "supplier_label_line": 8922,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19237,
+        "text": "Height of rational contacts & Theorem~\\ref{thm:quartic-height19},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20388,
+        "end_line": 20388,
+        "excerpt_sha256": "494245e63a03ec6a0ba9921600bf81a4b377bf254025c0b4c9ca308a3117cc3d"
+      },
+      "current_consumer_text": "Height of rational contacts & Theorem~\\ref{thm:quartic-height19},",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "thm:quartic-height19",
+      "connection": "The five-contact logarithmic height bound with H19 and exponent19, under the same geometric/representation inputs. The downstream source explicitly replaces the old exponent24; it does not read19 from the old transfer lemma.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 7,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19239,
+        "supplier_label": "lem:v5-height-transfer",
+        "supplier_label_line": 11102,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19239,
+        "text": "map and contact calculation of Lemma~\\ref{lem:v5-height-transfer}."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20390,
+        "end_line": 20390,
+        "excerpt_sha256": "9adfd6231ec6c97663f878142b972e664e98c1fafd87e187aaa51803636a9d50"
+      },
+      "current_consumer_text": "map and contact calculation of Lemma~\\ref{lem:v5-height-transfer}.",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-height-transfer",
+      "connection": "Reuse the contact fractional-linear map and coordinate height calculation. Its old24 exponent is replaced only through the separately supplied H19 theorem and current explicit argument.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 8,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19241,
+        "supplier_label": "hyp:o8-pole",
+        "supplier_label_line": 7720,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19241,
+        "text": "Pole obstruction and realization & Lemmas~\\ref{hyp:o8-pole},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20392,
+        "end_line": 20392,
+        "excerpt_sha256": "118800bb2406012afb91a8e1967781ff5f5339446bf3f7db8b6c1012ee347a0d"
+      },
+      "current_consumer_text": "Pole obstruction and realization & Lemmas~\\ref{hyp:o8-pole},",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "hyp:o8-pole",
+      "connection": "Pole soundness outside2,3,17 and restricted completeness with positivity, square denominator and local squares. Restricted converse and corank inputs remain the stated dependencies.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 9,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19242,
+        "supplier_label": "lem:original-seven-simultaneous-realization",
+        "supplier_label_line": 7788,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19242,
+        "text": "\\ref{lem:original-seven-simultaneous-realization}, and"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20393,
+        "end_line": 20393,
+        "excerpt_sha256": "825a2d52d640bbdfa1092422eccb187ddfea19a2e0c910936097f12bafb780df"
+      },
+      "current_consumer_text": "\\ref{lem:original-seven-simultaneous-realization}, and",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:original-seven-simultaneous-realization",
+      "connection": "Actual two-twist realization via finite descent, RC, corank and forward rank-one. Retain squarefree/disjoint/local-square conditions, including theta=1.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 10,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19243,
+        "supplier_label": "lem:v5-one-place",
+        "supplier_label_line": 11038,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19243,
+        "text": "\\ref{lem:v5-one-place}. These include the restricted-converse dependency"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20394,
+        "end_line": 20394,
+        "excerpt_sha256": "fdbf0b0b229f97d4fcb29c01108da97c9b2901ff7c6fa8188844f1d75158ecaa"
+      },
+      "current_consumer_text": "\\ref{lem:v5-one-place}. These include the restricted-converse dependency",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-one-place",
+      "connection": "One place simultaneously meets all test orders from the actual trace-product/pole certificate; W,T nonzero, R rational nonzero and odd valuation at p>76176 remain required.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 11,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19245,
+        "supplier_label": "v5:scalar32-bridge",
+        "supplier_label_line": 10429,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19245,
+        "text": "Scalar and anchor & Lemma~\\ref{v5:scalar32-bridge}, with its proof"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20396,
+        "end_line": 20396,
+        "excerpt_sha256": "d3ffb51fe2bbc60b98c83038d536fcf7eb384d7a2ee8264d38d09bd8aab4a219"
+      },
+      "current_consumer_text": "Scalar and anchor & Lemma~\\ref{v5:scalar32-bridge}, with its proof",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "v5:scalar32-bridge",
+      "connection": "Order32 scalar norm-tree divisibility and the constructive six-leaf preparation. The later direct-target proof20459-79 checks beta=2X^2+3, S-P and new height separately; the later reduced tree21415-21510 proves its own changes.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 12,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19247,
+        "supplier_label": "lem:v5-three-witness-anchor",
+        "supplier_label_line": 10979,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19247,
+        "text": "Lemma~\\ref{lem:v5-three-witness-anchor} with the smaller exponent"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20398,
+        "end_line": 20398,
+        "excerpt_sha256": "56fc6e9959572527141b4322c97145a58a97b334e7a25c87745ca3fa50603c33"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-three-witness-anchor} with the smaller exponent",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-three-witness-anchor",
+      "connection": "Quaternion semilocal criterion and anisotropic binary form, including t=0, with exact local subgroup calculation. New C exponents are recalculated in the caller rather than copied.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 13,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19249,
+        "supplier_label": "lem:v5-unramified-log",
+        "supplier_label_line": 10820,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19249,
+        "text": "Local comparisons & Lemma~\\ref{lem:v5-unramified-log} and the"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20400,
+        "end_line": 20400,
+        "excerpt_sha256": "e9bb510276fd6ab40a0dadb00c9e0574c6e08b7769155b5f2a5c54c5a08ac105"
+      },
+      "current_consumer_text": "Local comparisons & Lemma~\\ref{lem:v5-unramified-log} and the",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-unramified-log",
+      "connection": "Unramified formal logarithm identity and entire-tail estimate, including inert places. The new orders12/40 use the underlying recurrence and current direct-target calculation, not a false literal specialization of the old16/52 statement.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 14,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19250,
+        "supplier_label": "lem:quartic-reciprocal-log",
+        "supplier_label_line": 9209,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19250,
+        "text": "recurrence of Lemma~\\ref{lem:quartic-reciprocal-log}; orders and"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20401,
+        "end_line": 20401,
+        "excerpt_sha256": "a7525018eafd78e392b2e6d02e8a2342a5ab251b07ccfee9b2953de7c0521fbb"
+      },
+      "current_consumer_text": "recurrence of Lemma~\\ref{lem:quartic-reciprocal-log}; orders and",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:quartic-reciprocal-log",
+      "connection": "Formal reciprocal recurrence, denominator bound and convergent tail for integer10<=e<=64 with ceiling(e/4); nonidentity formal point at stated large split prime.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 15,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19253,
+        "supplier_label": "lem:v5-two-reductions",
+        "supplier_label_line": 11145,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19253,
+        "text": "Lemma~\\ref{lem:v5-two-reductions}, Proposition~\\ref{prop:v5-artin-patterns},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20404,
+        "end_line": 20404,
+        "excerpt_sha256": "7deafd5fcc3b136ca218332df7d85dac42284f392e5fd7d5706491ebbe7f541a"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-two-reductions}, Proposition~\\ref{prop:v5-artin-patterns},",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-two-reductions",
+      "connection": "Specified Gaussian prime congruences yield the unordered pair Norm(pi-1),Norm(pi+1). Actual later CRT/division-by-four or half-trace applications preserve prime cutoff, fixed points and full rational2-torsion.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 16,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19255,
+        "supplier_label": "v5:real-progression-bridge",
+        "supplier_label_line": 10639,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19255,
+        "text": "Lemma~\\ref{v5:real-progression-bridge}. All fixed data precede the"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20406,
+        "end_line": 20406,
+        "excerpt_sha256": "241f671e183a6a6d96fff8c227c74353c8555c7452003bd54b910847c2f6b6c6"
+      },
+      "current_consumer_text": "Lemma~\\ref{v5:real-progression-bridge}. All fixed data precede the",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "v5:real-progression-bridge",
+      "connection": "Compact orbit argument supplies positive progression indices avoiding fixed poles with bounds fixed before later moduli. It does not claim arbitrary prescribed residues are compatible.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 17,
+      "original_edge": {
+        "source_use_id": "GAU-044",
+        "consumer_line": 19257,
+        "supplier_label": "lem:o8-lucas",
+        "supplier_label_line": 8749,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19257,
+        "text": "Final contradictions & Lemma~\\ref{lem:o8-lucas} and the explicit"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20408,
+        "end_line": 20408,
+        "excerpt_sha256": "bb9240a0ac4ce0a0c5200b32c6127e0712db3877ce316649a84ad54e78bfb1a8"
+      },
+      "current_consumer_text": "Final contradictions & Lemma~\\ref{lem:o8-lucas} and the explicit",
+      "consumer_role_records": [
+        {
+          "index": 5160,
+          "row": {
+            "id": "ROLE-SRC-GI-00304",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20380,
+              "end_line": 20411,
+              "excerpt_sha256": "7ec9f24cbd0df7e00d8dd5012e65edce65d93bb8df143e273038f7f3ea1dbeac"
+            },
+            "status": "covered",
+            "reason": "Lists the separate incoming arithmetic assertions and their specified translations. The table preserves the restricted converse, height, local, anchor and quantitative prime/diagonal inputs rather than deriving them.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:o8-lucas",
+      "connection": "Integer Lucas equation with abs(s)>=7 and nonzero z gives exponential growth, and constructive positive solutions. Later callers first prove F=0 and b nonzero; they do not apply it to approximate solutions.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 18,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19283,
+        "supplier_label": "lem:v5-two-anchors",
+        "supplier_label_line": 11069,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19283,
+        "text": "As in Lemma~\\ref{lem:v5-two-anchors}, the cross congruence first makes"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20434,
+        "end_line": 20434,
+        "excerpt_sha256": "9b2da5728978f5e8c30a455147020905f628032fe598f39d3a80abb04dc834d5"
+      },
+      "current_consumer_text": "As in Lemma~\\ref{lem:v5-two-anchors}, the cross congruence first makes",
+      "consumer_role_records": [
+        {
+          "index": 5164,
+          "row": {
+            "id": "ROLE-SRC-GI-00308",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20418,
+              "end_line": 20440,
+              "excerpt_sha256": "6880279c03e16c73ee90a9c30b8aebebee189387c38022b089b654c6c62e60cf"
+            },
+            "status": "covered",
+            "reason": "Applies the two-anchor integral-congruence argument to direct targets, and the existing reciprocal-log recurrence at orders12/40. Unit choice precedes subtraction; no division by four.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-two-anchors",
+      "connection": "Old two-anchor proof makes both ratios integral before subtraction. Current direct targets use h,h-1 and subtraction without division by4, explicitly proved at20429-40.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 19,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19287,
+        "supplier_label": "lem:quartic-reciprocal-log",
+        "supplier_label_line": 9209,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19287,
+        "text": "and denominator bound in Lemma~\\ref{lem:quartic-reciprocal-log} give"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20438,
+        "end_line": 20438,
+        "excerpt_sha256": "6fe9a0bf3f553e1bcbf55e5ed727ce9ee4454d4702c3e99418002a4746b1c446"
+      },
+      "current_consumer_text": "and denominator bound in Lemma~\\ref{lem:quartic-reciprocal-log} give",
+      "consumer_role_records": [
+        {
+          "index": 5164,
+          "row": {
+            "id": "ROLE-SRC-GI-00308",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20418,
+              "end_line": 20440,
+              "excerpt_sha256": "6880279c03e16c73ee90a9c30b8aebebee189387c38022b089b654c6c62e60cf"
+            },
+            "status": "covered",
+            "reason": "Applies the two-anchor integral-congruence argument to direct targets, and the existing reciprocal-log recurrence at orders12/40. Unit choice precedes subtraction; no division by four.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:quartic-reciprocal-log",
+      "connection": "Formal reciprocal recurrence, denominator bound and convergent tail for integer10<=e<=64 with ceiling(e/4); nonidentity formal point at stated large split prime.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 20,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19295,
+        "supplier_label": "lem:v5-two-reductions",
+        "supplier_label_line": 11145,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19295,
+        "text": "reductions. The prime theorem and Lemma~\\ref{lem:v5-two-reductions}"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20446,
+        "end_line": 20446,
+        "excerpt_sha256": "9607855f1c364a0084ca0f332cfde2fca19b9ba32dfd832dbbfe91199051765e"
+      },
+      "current_consumer_text": "reductions. The prime theorem and Lemma~\\ref{lem:v5-two-reductions}",
+      "consumer_role_records": [
+        {
+          "index": 5166,
+          "row": {
+            "id": "ROLE-SRC-GI-00310",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20442,
+              "end_line": 20457,
+              "excerpt_sha256": "c157a56f4af4026b5a41eafea4799759f03f2db1ebd7122f34f099801c6b1759"
+            },
+            "status": "covered",
+            "reason": "Uses the two-reductions conclusion and existing prime selection to divide group orders by four and establish compatible CRT data. Real progression and later separation remain separate.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-two-reductions",
+      "connection": "Specified Gaussian prime congruences yield the unordered pair Norm(pi-1),Norm(pi+1). Actual later CRT/division-by-four or half-trace applications preserve prime cutoff, fixed points and full rational2-torsion.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 21,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19309,
+        "supplier_label": "lem:v5-three-witness-anchor",
+        "supplier_label_line": 10979,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19309,
+        "text": "Lemma~\\ref{lem:v5-three-witness-anchor} with $C=3^{2^{25}}$ and"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20460,
+        "end_line": 20460,
+        "excerpt_sha256": "07005e49404bde37c889b4b17db49da5660912095803ca4af34ac5f44e577a69"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-three-witness-anchor} with $C=3^{2^{25}}$ and",
+      "consumer_role_records": [
+        {
+          "index": 5168,
+          "row": {
+            "id": "ROLE-SRC-GI-00312",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20459,
+              "end_line": 20480,
+              "excerpt_sha256": "6892f6d14240aa62808e3d51cd83caf454453d4e324a2fa4c705f8a9f1fea0b7"
+            },
+            "status": "covered",
+            "reason": "Reuses the quaternion-anchor calculation with the new constant and the scalar proof for the explicitly checked label. The height theorem supplies exponent19 only after radical divisibility.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-three-witness-anchor",
+      "connection": "Quaternion semilocal criterion and anisotropic binary form, including t=0, with exact local subgroup calculation. New C exponents are recalculated in the caller rather than copied.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 22,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19313,
+        "supplier_label": "subsec:o8-anchor-subgroup",
+        "supplier_label_line": 8139,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19313,
+        "text": "of Section~\\ref{subsec:o8-anchor-subgroup} now gives"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20464,
+        "end_line": 20464,
+        "excerpt_sha256": "5e3b2155b8c2d66c7974edd5dc19922db08318676b2960e707135b534cfa855f"
+      },
+      "current_consumer_text": "of Section~\\ref{subsec:o8-anchor-subgroup} now gives",
+      "consumer_role_records": [
+        {
+          "index": 5168,
+          "row": {
+            "id": "ROLE-SRC-GI-00312",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20459,
+              "end_line": 20480,
+              "excerpt_sha256": "6892f6d14240aa62808e3d51cd83caf454453d4e324a2fa4c705f8a9f1fea0b7"
+            },
+            "status": "covered",
+            "reason": "Reuses the quaternion-anchor calculation with the new constant and the scalar proof for the explicitly checked label. The height theorem supplies exponent19 only after radical divisibility.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:o8-anchor-subgroup",
+      "connection": "Exact original normalized point, reduction at3, formal multiplication valuations and integral branch at2. Later callers use the same start and recalculate exponent or leading coefficient; no minimal-model assertion at2.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 23,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19322,
+        "supplier_label": "v5:scalar32-bridge",
+        "supplier_label_line": 10429,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19322,
+        "text": "$X^2+2$ used in Lemma~\\ref{v5:scalar32-bridge}; they hold for"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20473,
+        "end_line": 20473,
+        "excerpt_sha256": "8960a15858e243463ace45b988e58adce2b124046966767c021ba541ad3ceaa2"
+      },
+      "current_consumer_text": "$X^2+2$ used in Lemma~\\ref{v5:scalar32-bridge}; they hold for",
+      "consumer_role_records": [
+        {
+          "index": 5168,
+          "row": {
+            "id": "ROLE-SRC-GI-00312",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20459,
+              "end_line": 20480,
+              "excerpt_sha256": "6892f6d14240aa62808e3d51cd83caf454453d4e324a2fa4c705f8a9f1fea0b7"
+            },
+            "status": "covered",
+            "reason": "Reuses the quaternion-anchor calculation with the new constant and the scalar proof for the explicitly checked label. The height theorem supplies exponent19 only after radical divisibility.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "v5:scalar32-bridge",
+      "connection": "Order32 scalar norm-tree divisibility and the constructive six-leaf preparation. The later direct-target proof20459-79 checks beta=2X^2+3, S-P and new height separately; the later reduced tree21415-21510 proves its own changes.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 24,
+      "original_edge": {
+        "source_use_id": "GAU-045",
+        "consumer_line": 19325,
+        "supplier_label": "thm:quartic-height19",
+        "supplier_label_line": 8922,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19325,
+        "text": "Theorem~\\ref{thm:quartic-height19} gives the asserted exponent $19/32$."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20476,
+        "end_line": 20476,
+        "excerpt_sha256": "554f182355aa8494d1c5cb2697ea5e5c28d18e7309f0a491746e0a6f939371f5"
+      },
+      "current_consumer_text": "Theorem~\\ref{thm:quartic-height19} gives the asserted exponent $19/32$.",
+      "consumer_role_records": [
+        {
+          "index": 5168,
+          "row": {
+            "id": "ROLE-SRC-GI-00312",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20459,
+              "end_line": 20480,
+              "excerpt_sha256": "6892f6d14240aa62808e3d51cd83caf454453d4e324a2fa4c705f8a9f1fea0b7"
+            },
+            "status": "covered",
+            "reason": "Reuses the quaternion-anchor calculation with the new constant and the scalar proof for the explicitly checked label. The height theorem supplies exponent19 only after radical divisibility.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "thm:quartic-height19",
+      "connection": "The five-contact logarithmic height bound with H19 and exponent19, under the same geometric/representation inputs. The downstream source explicitly replaces the old exponent24; it does not read19 from the old transfer lemma.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 25,
+      "original_edge": {
+        "source_use_id": "GAU-049",
+        "consumer_line": 19455,
+        "supplier_label": "sec:degree8-original",
+        "supplier_label_line": 6791,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19455,
+        "text": "The model calculation in Section~\\ref{sec:degree8-original} proves that $P=P_*$ has infinite order and $2E(K)=\\Z P_*$; this is the same normalized curve and generator, not the earlier model of Proposition~\\ref{prop:generator}. Write $\\operatorname{h}$ for the absolute logarithmic Weil height. The following lemma uses the displayed coordinates and doubling identity, together with the infinite order of $P$."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20606,
+        "end_line": 20606,
+        "excerpt_sha256": "8c8ad9fa781987da938e34aa37e95d020f22df7fde5c4b3af1541fa2dbbdb7a3"
+      },
+      "current_consumer_text": "The model calculation in Section~\\ref{sec:degree8-original} proves that $P=P_*$ has infinite order and $2E(K)=\\Z P_*$; this is the same normalized curve and generator, not the earlier model of Proposition~\\ref{prop:generator}. Write $\\operatorname{h}$ for the absolute logarithmic Weil height. The following lemma uses the displayed coordinates and doubling identity, together with the infinite order of $P$.",
+      "consumer_role_records": [
+        {
+          "index": 5200,
+          "row": {
+            "id": "ROLE-SRC-GI-00344",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20595,
+              "end_line": 20606,
+              "excerpt_sha256": "4fec5824964b245c9af1e493a60c691a345ba1dc6c505af605fc5605118126f9"
+            },
+            "status": "covered",
+            "reason": "Identifies the normalized curve and doubled generator through the explicit unit-scaling model calculation; the old generator proposition is a distinct-model reference, not a direct identification.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "sec:degree8-original",
+      "connection": "The actual normalized curve/generator calculation in the base compiler, not its archived polynomial count. Caller20606 explicitly distinguishes the earlier model and its transported generator.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 26,
+      "original_edge": {
+        "source_use_id": "GAU-049",
+        "consumer_line": 19455,
+        "supplier_label": "prop:generator",
+        "supplier_label_line": 339,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19455,
+        "text": "The model calculation in Section~\\ref{sec:degree8-original} proves that $P=P_*$ has infinite order and $2E(K)=\\Z P_*$; this is the same normalized curve and generator, not the earlier model of Proposition~\\ref{prop:generator}. Write $\\operatorname{h}$ for the absolute logarithmic Weil height. The following lemma uses the displayed coordinates and doubling identity, together with the infinite order of $P$."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20606,
+        "end_line": 20606,
+        "excerpt_sha256": "8c8ad9fa781987da938e34aa37e95d020f22df7fde5c4b3af1541fa2dbbdb7a3"
+      },
+      "current_consumer_text": "The model calculation in Section~\\ref{sec:degree8-original} proves that $P=P_*$ has infinite order and $2E(K)=\\Z P_*$; this is the same normalized curve and generator, not the earlier model of Proposition~\\ref{prop:generator}. Write $\\operatorname{h}$ for the absolute logarithmic Weil height. The following lemma uses the displayed coordinates and doubling identity, together with the infinite order of $P$.",
+      "consumer_role_records": [
+        {
+          "index": 5200,
+          "row": {
+            "id": "ROLE-SRC-GI-00344",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20595,
+              "end_line": 20606,
+              "excerpt_sha256": "4fec5824964b245c9af1e493a60c691a345ba1dc6c505af605fc5605118126f9"
+            },
+            "status": "covered",
+            "reason": "Identifies the normalized curve and doubled generator through the explicit unit-scaling model calculation; the old generator proposition is a distinct-model reference, not a direct identification.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "prop:generator",
+      "connection": "Full rank/torsion/generator certificate and explicit unit-coordinate transport; finite generator certificate remains an input, not replaced by label existence.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 27,
+      "original_edge": {
+        "source_use_id": "GAU-052",
+        "consumer_line": 19635,
+        "supplier_label": "lem:o8-lucas",
+        "supplier_label_line": 8749,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19635,
+        "text": "This contradicts the anchor. Thus $F=0$. Since the point $Z$ is finite and nonidentity, $b\\ne0$. Lemma~\\ref{lem:o8-lucas} now gives $\\log B>|a|-3$."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20786,
+        "end_line": 20786,
+        "excerpt_sha256": "1ca2298b3c3a190137cc5d67280151be9fec9ad04f5973d819011abf21235b36"
+      },
+      "current_consumer_text": "This contradicts the anchor. Thus $F=0$. Since the point $Z$ is finite and nonidentity, $b\\ne0$. Lemma~\\ref{lem:o8-lucas} now gives $\\log B>|a|-3$.",
+      "consumer_role_records": [
+        {
+          "index": 5237,
+          "row": {
+            "id": "ROLE-SRC-GI-00380",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20777,
+              "end_line": 20786,
+              "excerpt_sha256": "a3d745c97a7c20147ffdba809ec8d96016a7a23e5593551e00a0719c1cd6e9e0"
+            },
+            "status": "covered",
+            "reason": "Uses product-height transfer after radical divisibility, then the Lucas lemma only once the exact equation and nonzero label are established.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:o8-lucas",
+      "connection": "Integer Lucas equation with abs(s)>=7 and nonzero z gives exponential growth, and constructive positive solutions. Later callers first prove F=0 and b nonzero; they do not apply it to approximate solutions.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 28,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19846,
+        "supplier_label": "subsec:v5-point-source",
+        "supplier_label_line": 10733,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19846,
+        "text": "Section~\\ref{subsec:v5-point-source} and Section~\\ref{sec:v9}:"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 20997,
+        "end_line": 20997,
+        "excerpt_sha256": "fea3c66d2d054c39e5e518682b78a09b91bb788be481762509fbfc86751b7c84"
+      },
+      "current_consumer_text": "Section~\\ref{subsec:v5-point-source} and Section~\\ref{sec:v9}:",
+      "consumer_role_records": [
+        {
+          "index": 5297,
+          "row": {
+            "id": "ROLE-SRC-GI-00440",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20990,
+              "end_line": 21010,
+              "excerpt_sha256": "b537679cf47fd664110c485372f95d8ca9d0b006ca349ff91370bf106890e376"
+            },
+            "status": "covered",
+            "reason": "Retains normalized generator, point domains and index-height estimate under the same coordinate/valuation convention; exact model transport remains required.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:v5-point-source",
+      "connection": "The literal normalized E/K, unit transport of P0 to P*, and nonidentity doubled-point domains. No new generator or changed field.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 29,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19855,
+        "supplier_label": "lem:v5-point-domains",
+        "supplier_label_line": 10780,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19855,
+        "text": "of Lemma~\\ref{lem:v5-point-domains}, and the inherited estimate"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21006,
+        "end_line": 21006,
+        "excerpt_sha256": "4ce4a37ecee727acd65a917d9c28dd3dfac9977b2988fec670e77a4359d225bb"
+      },
+      "current_consumer_text": "of Lemma~\\ref{lem:v5-point-domains}, and the inherited estimate",
+      "consumer_role_records": [
+        {
+          "index": 5297,
+          "row": {
+            "id": "ROLE-SRC-GI-00440",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 20990,
+              "end_line": 21010,
+              "excerpt_sha256": "b537679cf47fd664110c485372f95d8ca9d0b006ca349ff91370bf106890e376"
+            },
+            "status": "covered",
+            "reason": "Retains normalized generator, point domains and index-height estimate under the same coordinate/valuation convention; exact model transport remains required.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-point-domains",
+      "connection": "Nonidentity doubled points and guarded differences have nonzero x/y; all rational quotients retain those domains.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 30,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19879,
+        "supplier_label": "hyp:o8-pole",
+        "supplier_label_line": 7720,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19879,
+        "text": "Lemmas~\\ref{hyp:o8-pole}, \\ref{lem:original-seven-simultaneous-realization},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21030,
+        "end_line": 21030,
+        "excerpt_sha256": "7c62fd52947494a76bf182220e5d1628ec8964607cc38f9a7f539357a12f1aa8"
+      },
+      "current_consumer_text": "Lemmas~\\ref{hyp:o8-pole}, \\ref{lem:original-seven-simultaneous-realization},",
+      "consumer_role_records": [
+        {
+          "index": 5301,
+          "row": {
+            "id": "ROLE-SRC-GI-00444",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21028,
+              "end_line": 21041,
+              "excerpt_sha256": "7a6090f3d35512ada95c32f3c558137a75d884e65d8ff69c05de169928ed0693"
+            },
+            "status": "covered",
+            "reason": "Retains pole obstruction, realization, one-place detector and unchanged product-height scales. Field norms are explicitly not substituted for these scales.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "hyp:o8-pole",
+      "connection": "Pole soundness outside2,3,17 and restricted completeness with positivity, square denominator and local squares. Restricted converse and corank inputs remain the stated dependencies.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 31,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19879,
+        "supplier_label": "lem:original-seven-simultaneous-realization",
+        "supplier_label_line": 7788,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19879,
+        "text": "Lemmas~\\ref{hyp:o8-pole}, \\ref{lem:original-seven-simultaneous-realization},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21030,
+        "end_line": 21030,
+        "excerpt_sha256": "7c62fd52947494a76bf182220e5d1628ec8964607cc38f9a7f539357a12f1aa8"
+      },
+      "current_consumer_text": "Lemmas~\\ref{hyp:o8-pole}, \\ref{lem:original-seven-simultaneous-realization},",
+      "consumer_role_records": [
+        {
+          "index": 5301,
+          "row": {
+            "id": "ROLE-SRC-GI-00444",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21028,
+              "end_line": 21041,
+              "excerpt_sha256": "7a6090f3d35512ada95c32f3c558137a75d884e65d8ff69c05de169928ed0693"
+            },
+            "status": "covered",
+            "reason": "Retains pole obstruction, realization, one-place detector and unchanged product-height scales. Field norms are explicitly not substituted for these scales.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:original-seven-simultaneous-realization",
+      "connection": "Actual two-twist realization via finite descent, RC, corank and forward rank-one. Retain squarefree/disjoint/local-square conditions, including theta=1.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 32,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19880,
+        "supplier_label": "lem:v5-one-place",
+        "supplier_label_line": 11038,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19880,
+        "text": "and \\ref{lem:v5-one-place}, including their existing source dependencies."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21031,
+        "end_line": 21031,
+        "excerpt_sha256": "1c05ac49f677ce39d9d459606cddfe9f43dd48969fade806fa2cd9db08a0b6f9"
+      },
+      "current_consumer_text": "and \\ref{lem:v5-one-place}, including their existing source dependencies.",
+      "consumer_role_records": [
+        {
+          "index": 5301,
+          "row": {
+            "id": "ROLE-SRC-GI-00444",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21028,
+              "end_line": 21041,
+              "excerpt_sha256": "7a6090f3d35512ada95c32f3c558137a75d884e65d8ff69c05de169928ed0693"
+            },
+            "status": "covered",
+            "reason": "Retains pole obstruction, realization, one-place detector and unchanged product-height scales. Field norms are explicitly not substituted for these scales.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-one-place",
+      "connection": "One place simultaneously meets all test orders from the actual trace-product/pole certificate; W,T nonzero, R rational nonzero and odd valuation at p>76176 remain required.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 33,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19899,
+        "supplier_label": "lem:quartic-reciprocal-log",
+        "supplier_label_line": 9209,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19899,
+        "text": "Lemma~\\ref{lem:quartic-reciprocal-log} and its unramified extension in"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21050,
+        "end_line": 21050,
+        "excerpt_sha256": "18ef43a51a4ec254501b0c067a0442a0300918fee65ab650cfae7e2090d25e94"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:quartic-reciprocal-log} and its unramified extension in",
+      "consumer_role_records": [
+        {
+          "index": 5303,
+          "row": {
+            "id": "ROLE-SRC-GI-00446",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21043,
+              "end_line": 21052,
+              "excerpt_sha256": "146dbb8b7f40db7603f9b43d026cacc211cf59e234eb8e06797d91396677331d"
+            },
+            "status": "covered",
+            "reason": "Imports integral formal-group construction and logarithm isometry together with the local recurrence/truncation bounds. Large unramified prime hypotheses are explicit; minimality at2 is not asserted.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:quartic-reciprocal-log",
+      "connection": "Formal reciprocal recurrence, denominator bound and convergent tail for integer10<=e<=64 with ceiling(e/4); nonidentity formal point at stated large split prime.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 34,
+      "original_edge": {
+        "source_use_id": "GAU-058",
+        "consumer_line": 19900,
+        "supplier_label": "lem:v5-unramified-log",
+        "supplier_label_line": 10820,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 19900,
+        "text": "Lemma~\\ref{lem:v5-unramified-log}.  We spell out their new applications"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21051,
+        "end_line": 21051,
+        "excerpt_sha256": "05348013df3e2a5cdde7ccfcec5f049720ae2a68049920646cae6b5c6a1693a8"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-unramified-log}.  We spell out their new applications",
+      "consumer_role_records": [
+        {
+          "index": 5303,
+          "row": {
+            "id": "ROLE-SRC-GI-00446",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21043,
+              "end_line": 21052,
+              "excerpt_sha256": "146dbb8b7f40db7603f9b43d026cacc211cf59e234eb8e06797d91396677331d"
+            },
+            "status": "covered",
+            "reason": "Imports integral formal-group construction and logarithm isometry together with the local recurrence/truncation bounds. Large unramified prime hypotheses are explicit; minimality at2 is not asserted.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-unramified-log",
+      "connection": "Unramified formal logarithm identity and entire-tail estimate, including inert places. The new orders12/40 use the underlying recurrence and current direct-target calculation, not a false literal specialization of the old16/52 statement.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 35,
+      "original_edge": {
+        "source_use_id": "GAU-059",
+        "consumer_line": 20000,
+        "supplier_label": "eq:v5-detector-data",
+        "supplier_label_line": 10901,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20000,
+        "text": "with the same $\\Theta$ as \\eqref{eq:v5-detector-data}.  On writing"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21151,
+        "end_line": 21151,
+        "excerpt_sha256": "23dcfb7b9998c7356cf873a54ec6097d906d0833f32f6b6d391a403cdc25d55c"
+      },
+      "current_consumer_text": "with the same $\\Theta$ as \\eqref{eq:v5-detector-data}.  On writing",
+      "consumer_role_records": [
+        {
+          "index": 5317,
+          "row": {
+            "id": "ROLE-SRC-GI-00460",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21142,
+              "end_line": 21165,
+              "excerpt_sha256": "ab13d2de52cf4f6c59e93713ac6f9135018083bf0c6f519e13cef72446684c08"
+            },
+            "status": "covered",
+            "reason": "Uses the unchanged detector contact data to identify a regrouped product algebraically; the old finite circuit incidence remains a separate certificate.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "eq:v5-detector-data",
+      "connection": "Same five contacts and guarded sixteen-factor detector. Current grouping is a distributive reassociation with stated orders and no new witness domain; this is a definition/algebra use rather than a new external theorem.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 36,
+      "original_edge": {
+        "source_use_id": "GAU-060",
+        "consumer_line": 20044,
+        "supplier_label": "lem:v5-two-reductions",
+        "supplier_label_line": 11145,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20044,
+        "text": "split contact primes supplied by Lemma~\\ref{lem:v5-two-reductions},"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21195,
+        "end_line": 21195,
+        "excerpt_sha256": "d82aaa936da758ca1cb016df48b3518702077ebc97775603ff43b018188d9266"
+      },
+      "current_consumer_text": "split contact primes supplied by Lemma~\\ref{lem:v5-two-reductions},",
+      "consumer_role_records": [
+        {
+          "index": 5325,
+          "row": {
+            "id": "ROLE-SRC-GI-00468",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21190,
+              "end_line": 21208,
+              "excerpt_sha256": "6702b93ffc87eef558c2c1c03ec3e01a52f767194e9db86902d6b6ee81c67462"
+            },
+            "status": "covered",
+            "reason": "Reuses ordered fixed-root/prime construction and the two-reductions places to prove all five half-traces nonzero by unequal valuations; zero pole witnesses remain permitted.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-two-reductions",
+      "connection": "Specified Gaussian prime congruences yield the unordered pair Norm(pi-1),Norm(pi+1). Actual later CRT/division-by-four or half-trace applications preserve prime cutoff, fixed points and full rational2-torsion.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 37,
+      "original_edge": {
+        "source_use_id": "GAU-062",
+        "consumer_line": 20132,
+        "supplier_label": "subsec:o8-anchor-subgroup",
+        "supplier_label_line": 8139,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20132,
+        "text": "Section~\\ref{subsec:o8-anchor-subgroup} is"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21283,
+        "end_line": 21283,
+        "excerpt_sha256": "6e9b95660ae991fec2311f800640da4ea2daa867c42eadd7ce25e92bd498a64c"
+      },
+      "current_consumer_text": "Section~\\ref{subsec:o8-anchor-subgroup} is",
+      "consumer_role_records": [
+        {
+          "index": 5339,
+          "row": {
+            "id": "ROLE-SRC-GI-00482",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21266,
+              "end_line": 21311,
+              "excerpt_sha256": "1c32bbcf2864c0e36b808d30bc47b4a5108f54475a5d33798a02001008c01ff3"
+            },
+            "status": "covered",
+            "reason": "Uses the exact starting formal parameter from the earlier anchor calculation, then derives leading residues and both coefficient valuations with integral odd multiplication series.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:o8-anchor-subgroup",
+      "connection": "Exact original normalized point, reduction at3, formal multiplication valuations and integral branch at2. Later callers use the same start and recalculate exponent or leading coefficient; no minimal-model assertion at2.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 38,
+      "original_edge": {
+        "source_use_id": "GAU-062",
+        "consumer_line": 20167,
+        "supplier_label": "subsec:o8-anchor-subgroup",
+        "supplier_label_line": 8139,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20167,
+        "text": "Section~\\ref{subsec:o8-anchor-subgroup}; this uses no assertion that"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21318,
+        "end_line": 21318,
+        "excerpt_sha256": "46748449a730c68feb79f85d32416f14751ca1598c6ad250315588aa5f9b1fa5"
+      },
+      "current_consumer_text": "Section~\\ref{subsec:o8-anchor-subgroup}; this uses no assertion that",
+      "consumer_role_records": [
+        {
+          "index": 5341,
+          "row": {
+            "id": "ROLE-SRC-GI-00484",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21313,
+              "end_line": 21327,
+              "excerpt_sha256": "28fd91395d9b922ddf3b626348b3da92bf70672c34a92a26919870587f83e32b"
+            },
+            "status": "covered",
+            "reason": "Uses the integral formal chart and the literal depth at2, without minimality, then coefficient valuation separation to finish the local integrality claim.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "subsec:o8-anchor-subgroup",
+      "connection": "Exact original normalized point, reduction at3, formal multiplication valuations and integral branch at2. Later callers use the same start and recalculate exponent or leading coefficient; no minimal-model assertion at2.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 39,
+      "original_edge": {
+        "source_use_id": "GAU-062",
+        "consumer_line": 20179,
+        "supplier_label": "lem:v5-three-witness-anchor",
+        "supplier_label_line": 10979,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20179,
+        "text": "Lemma~\\ref{lem:v5-three-witness-anchor} applies to every rational $t$:"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21330,
+        "end_line": 21330,
+        "excerpt_sha256": "22de6df3570d3088733cbcfde3f05149e35a3d3840a571769356e543554cbb15"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:v5-three-witness-anchor} applies to every rational $t$:",
+      "consumer_role_records": [
+        {
+          "index": 5343,
+          "row": {
+            "id": "ROLE-SRC-GI-00486",
+            "claim_ids": [
+              "CURRENT-VOIGHT-SCALAR"
+            ],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21329,
+              "end_line": 21348,
+              "excerpt_sha256": "772dc14edf5930d169c84a96fe85c6364416cc5a61e83e64052d34f1a12b52c7"
+            },
+            "status": "source_role_proposed",
+            "reason": "Applies the stated Voight field embedding criterion at2 and3, with the explicit t=0 case; local valuations and homogeneous scaling are then checked here.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:v5-three-witness-anchor",
+      "connection": "Quaternion semilocal criterion and anisotropic binary form, including t=0, with exact local subgroup calculation. New C exponents are recalculated in the caller rather than copied.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 40,
+      "original_edge": {
+        "source_use_id": "GAU-063",
+        "consumer_line": 20271,
+        "supplier_label": "v5:scalar32-bridge",
+        "supplier_label_line": 10429,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20271,
+        "text": "Lemma~\\ref{v5:scalar32-bridge}, and put $\\eta=v_p(r)$."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21422,
+        "end_line": 21422,
+        "excerpt_sha256": "e66fda58fd8b99bc7d79b546e79ab4bb358af861012a367ab297f0522faa6396"
+      },
+      "current_consumer_text": "Lemma~\\ref{v5:scalar32-bridge}, and put $\\eta=v_p(r)$.",
+      "consumer_role_records": [
+        {
+          "index": 5357,
+          "row": {
+            "id": "ROLE-SRC-GI-00500",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21415,
+              "end_line": 21449,
+              "excerpt_sha256": "e0beabedc23d24de95b24bd90775087738e929eed4d50c20ce5023f64727267f"
+            },
+            "status": "covered",
+            "reason": "Uses unchanged odd contact valuation and pole obstruction; the scalar-tree equation supplies the expression for the local no-cancellation proof.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "v5:scalar32-bridge",
+      "connection": "Order32 scalar norm-tree divisibility and the constructive six-leaf preparation. The later direct-target proof20459-79 checks beta=2X^2+3, S-P and new height separately; the later reduced tree21415-21510 proves its own changes.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 41,
+      "original_edge": {
+        "source_use_id": "GAU-064",
+        "consumer_line": 20350,
+        "supplier_label": "v5:scalar32-bridge",
+        "supplier_label_line": 10429,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20350,
+        "text": "Lemma~\\ref{v5:scalar32-bridge}.  At primes dividing $r$, both"
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21501,
+        "end_line": 21501,
+        "excerpt_sha256": "ab090faf4d7bf85bdd954e6136e926b6cfc43b86935f84e9e6c9a7cf9b133cc3"
+      },
+      "current_consumer_text": "Lemma~\\ref{v5:scalar32-bridge}.  At primes dividing $r$, both",
+      "consumer_role_records": [
+        {
+          "index": 5365,
+          "row": {
+            "id": "ROLE-SRC-GI-00508",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21497,
+              "end_line": 21512,
+              "excerpt_sha256": "03e6f30de44936230ead42ab72850d3ea56cf98bb97f456a0a5e1d20683cffad"
+            },
+            "status": "covered",
+            "reason": "Uses old scalar preparation in its stated choice order and pole-completeness after checking support, positivity, denominator and local squareclasses.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "v5:scalar32-bridge",
+      "connection": "Order32 scalar norm-tree divisibility and the constructive six-leaf preparation. The later direct-target proof20459-79 checks beta=2X^2+3, S-P and new height separately; the later reduced tree21415-21510 proves its own changes.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    },
+    {
+      "edge_index": 42,
+      "original_edge": {
+        "source_use_id": "GAU-068",
+        "consumer_line": 20573,
+        "supplier_label": "lem:o8-lucas",
+        "supplier_label_line": 8749,
+        "edge_scope": "cross_slice",
+        "supplier_review": "other slice must bind supplier; not a mathematical gap by itself"
+      },
+      "original_consumer": {
+        "pin": {
+          "path": "work/quartic-version6-release/repository/manuscripts/quartic_v13.tex",
+          "sha256": "9db71bbfcefb37db56eabcf40a5f9dd85de9ed58294635da3dbf6d4f5caa8fcd"
+        },
+        "line": 20573,
+        "text": "Lemma~\\ref{lem:o8-lucas} therefore gives $\\log B>|a|-3$."
+      },
+      "current_consumer": {
+        "pin": {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+        },
+        "start_line": 21724,
+        "end_line": 21724,
+        "excerpt_sha256": "43e460b4bcaf99c5159617742ec327e2a69e58f98f8a93f4fc76c5b4828fa53d"
+      },
+      "current_consumer_text": "Lemma~\\ref{lem:o8-lucas} therefore gives $\\log B>|a|-3$.",
+      "consumer_role_records": [
+        {
+          "index": 5399,
+          "row": {
+            "id": "ROLE-SRC-GI-00542",
+            "claim_ids": [],
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+              },
+              "start_line": 21710,
+              "end_line": 21724,
+              "excerpt_sha256": "1d885256810674f0ab20403d5851a7c96c2e1222ef6709f41b8ddc64f03681d2"
+            },
+            "status": "covered",
+            "reason": "Uses actual mixed local tests plus detector implication and product-height bound to force the Lucas equation; invokes Lucas only with nonzero b.",
+            "use_ids": [],
+            "no_imports_reason": null
+          },
+          "provenance": "post-edit/BROAD-ROLE-NORMALIZATION-DRAFT.json"
+        }
+      ],
+      "supplier_label": "lem:o8-lucas",
+      "connection": "Integer Lucas equation with abs(s)>=7 and nonzero z gives exponential growth, and constructive positive solutions. Later callers first prove F=0 and b nonzero; they do not apply it to approximate solutions.",
+      "classification": "explicit retained source application or definition reuse; see exact consumer role",
+      "history_scope": "The current manuscript retains earlier compiler stages as history and proofs of reused interfaces. This row does not relabel a historical polynomial as the current final polynomial."
+    }
+  ]
+}

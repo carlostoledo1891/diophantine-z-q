@@ -1,0 +1,481 @@
+# Mathematical research review protocol
+
+Version 1.4 | November 7, 2026
+
+## Purpose and scope
+
+Use this protocol to review mathematical research maintained in a Git repository, including informal manuscripts, computational constructions, and partial or complete formalizations. It connects each claimed result to its actual inputs, the argument applying them, and the later arguments that use its conclusion.
+
+The governing rule is simple: review the inference actually written, using the objects actually constructed. An accepted conclusion, a familiar theorem name, a successful computation, or an earlier favorable report does not establish that a changed argument works.
+
+This protocol specifies a review process and the requirements for supporting software. It does not include an executable checker. Automated record checks establish only the properties they implement. They cannot decide the correctness of arbitrary mathematics or guarantee that the dependency inventory is complete.
+
+## Required completion standard
+
+The default goal is to verify the complete proof modulo published theorems, inventory and check every cited theorem application, make every construction and computation explicit, resolve every recorded audit objection, and repeat review and repair until the final revision is stable under the checks below. These are completion requirements, not optional aspirations.
+
+1. **Complete proof modulo published theorems.** Trace every claimed conclusion to proved internal steps and identified published external theorems. Check each external theorem's actual hypotheses, conclusion, conventions, and application. A public preprint does not qualify as a published theorem merely because it is accessible. Record the publication venue and authoritative version. An unpublished result may motivate the argument or receive attribution, but its needed content must be proved within the reviewed manuscript or a precisely linked, versioned project proof before declaring this standard met. Any unresolved conjecture, unsupported internal lemma, unverified computational assertion, or additional axiom prevents full completion under this standard. A conditional result may still be reported, with its remaining assumptions explicit.
+2. **Complete inventory and source checks.** Inventory every cited theorem and every substantive uncited external input. Record the exact source version and theorem location. Compare the final published statement, applicable corrections, and the definitions needed for each use. Perform the nine application checks below, including the connecting maps and actual downstream object. Review the inventory itself for missing applications through the independent source-first reconstruction and reconciliation required below. Include substantive internal inputs, section-level appeals and unnamed estimates, not only external citations.
+3. **Explicit constructions and computations.** Supply unambiguous definitions, domains, parameter choices, algorithms, constants, and output representations for every construction. State and prove existence or termination where the construction requires it. For each finite computation, provide its exact inputs, procedure or certificate, checker, and reproducible result. If an object is too large to print, a finite, unambiguous specification and a justified method for recovering its entries may suffice; label that representation accurately. Do not claim a full expansion when only a generator or compressed representation is supplied. No assertion that a calculation is routine substitutes for the calculation or a complete derivation.
+4. **Every audit objection addressed.** Enter every substantive doubt raised in every received human or model audit into the findings ledger, regardless of the auditor's identity or reputation. Resolve it by a reviewed repair or an independently checked, evidence-based rebuttal. Duplicate objections may link to an existing resolution. A vague concern must be made precise enough to assess, or retained with an explicit explanation of what information is missing. Votes, repeated assurances, silence, and the absence of further replies do not resolve an objection. A concern outside the claimed scope may be closed only with a recorded scope explanation; an unsupported step needed by a claimed result cannot be moved out of scope to obtain completion.
+5. **Iterate until stable.** After every substantive repair, recheck its premises, affected consumers, and relevant computations. Repeat independent audit, repair, integration, and review until the final frozen revision meets the closure test below. A lack of new comments or agreement among several models is not, by itself, stability.
+
+If a project intentionally adopts a broader trust base or leaves work unfinished, state that departure explicitly. It must not describe the result as fully verified modulo published theorems under this protocol.
+
+## Roles and independence
+
+An **author** proposes a statement, proof, construction, or repair. A **reviewer** assesses a specified version against its sources. An **integrator** incorporates accepted changes, checks their effects elsewhere, and prepares the release. One person may fill different roles for different applications, but an author must not supply the independent acceptance of their own application.
+
+Record whether each reviewer is human or a model. For model reviews, record the model, task identity, reviewed files, available tools, and scope. A second run by the same agent is a repeat check, not an independent review. A distinct agent can supply a non-author review, but distinct identities do not establish independent reasoning or eliminate correlated errors.
+
+Reviewers should derive the relevant inference from the primary sources and manuscript before relying on earlier verdicts. They may use earlier reports to locate evidence, then compare the actual arguments. If a reviewer supplies a substantive repair, obtain another non-author review of that repair before calling it independently accepted.
+
+A reviewer must distinguish a derivation they reconstructed, a derivation supplied by an identified prior review, and a statement they only checked for consistency. State these scopes explicitly. Consistency checking alone cannot accept a required connecting argument. Prior work may be reused at its exact reviewed version and scope; changes to the objects, hypotheses or consumed conclusion require a renewed comparison. Agreement among reviewers who assume the same unproved transition does not supply that transition.
+
+These are review requirements, not permission to publish, message other people, disclose private files, or change repository access. Those actions remain subject to the project owner's authorization.
+
+## The working sequence
+
+1. Freeze the manuscript, source files, and computational artifacts being reviewed.
+2. Inventory the target claims, external inputs, internal dependencies, and exact application sites.
+3. Independently reconstruct the substantive inputs from the frozen proof sources, freeze the initial source-use table, then reconcile it with the declared inventory. This work may run in parallel with application review but must finish before closure.
+4. Write an application record for each substantive inference or change of proof route.
+5. Review the required inputs against the constructed objects, including all connecting maps and exceptional cases.
+6. Obtain separately authored decisions tied to the exact reviewed files and edits, including an explicit decision on inventory coverage.
+7. Integrate the argument into the manuscript and review its downstream effects.
+8. Reproduce the relevant checks from the release files, preserve unresolved findings, and publish only the status justified by the evidence.
+9. Repeat the audit-and-repair cycle and perform the final closure review below. Any new substantive finding or change reopens the affected obligations.
+
+Parallel work is encouraged when applications have stable interfaces. Give workers bounded tasks, explicit source versions, permitted output files, and a named consumer for their result. A separate integration review must check that independently accepted pieces use the same objects and conventions.
+
+## Freeze the evidence
+
+Identify each review target by an immutable Git commit and by hashes of the files actually examined. Include uncommitted files explicitly. Record paths relative to the repository so another researcher can reconstruct the same packet.
+
+Use a declared hash algorithm, such as SHA-256. Specify text encoding and line endings for generated files. If a check compares canonical JSON or another normalized representation, version the canonicalization rule and preserve the original bytes as well. Do not silently normalize mathematical content to make a hash match.
+
+For a manuscript passage, record its theorem or section label, line or page range, and excerpt hash. Bind the application record to the whole manuscript as well as the construction, application, and consumer passages. Whole-file hashes detect changes; passage references explain what was reviewed.
+
+A PDF build record should identify the source tree, main file, engine and dependency versions, build command, diagnostics, and output hash. A successfully rendered PDF establishes neither reference accuracy nor mathematical correctness.
+
+## Inventory claims and dependencies
+
+Start from the results announced in the title, abstract, main theorems, and claimed corollaries. Trace their dependencies through the manuscript. Include computational facts, existence statements, uniformity claims, effectivity claims, parameter bounds, and translations between representations.
+
+For every external input, record:
+
+- The exact statement used, including quantifiers and hypotheses.
+- The work's title, authors, edition or revision, publication status, stable locator, and an accessible source location where available.
+- The hash of the source file actually read, with access date when useful.
+- Relevant definitions, proof passages, corrections, and errata.
+- Whether the final published version, an author manuscript, or another version was checked.
+- Every consuming application, or a precise reusable lemma that supplies those applications.
+
+For internal results, record the exact statement, its proof location, its dependencies, and its consumers. A source with a similar conclusion is not a substitute for the required statement. A diagram or citation does not supply an omitted connecting argument.
+
+Check that the abstract and corollaries use no stronger conclusion than the proved statement. In particular, pointwise existence does not automatically supply a uniform construction, and existence does not automatically supply an effective bound.
+
+The inventory is itself subject to review. A schema can require fields in an entered record; it cannot establish that every necessary record was entered.
+
+## Independently reconstruct and reconcile dependencies
+
+Checking every entered application does not establish that every needed application was entered. Before final closure, require a separate source-first completeness review with the following evidence. A project may keep these records in a compact table or combine them with existing records; separate files and duplicate mathematical derivations are not required.
+
+### Reconstruct from the proof
+
+Assign a non-author reviewer to read the frozen statements and proof sources and reconstruct the substantive inputs they use. The reviewer must not use the declared dependency graph, application inventory or earlier favorable verdicts as the initial checklist. Freeze the initial reconstruction before comparing it with those records. Record prior exposure to them and any resulting limitation; do not describe a review as blind when it was not. Prior familiarity does not waive the requirement to derive the list from the proof itself.
+
+Begin with every announced result and claimed corollary. Follow the actual argument through the manuscript, appendices and linked project proofs. Include inputs stated through theorem numbers, section references, ordinary prose, diagrams, computational outputs or unstated appeals to standard facts. Look specifically for estimates, limiting arguments, uniformity, existence, measurability, conditional laws, changes of domain and normalization, and the order in which parameters or limits are taken. A search for citation syntax can help locate candidates but cannot perform this review.
+
+Create a coverage index of the frozen proof sources. It must identify the statements and proof passages reviewed, their exact locations and versions, and their associated source-use entries. Each passage must be marked reviewed, awaiting review, or outside the claimed proof with a specific reason. A reviewed passage with no substantive imported input must say so. The index must cover the complete argument supporting the announced claims, including unnumbered passages and linked proofs; a list containing only already inventoried lemmas is insufficient. The reviewer must assess the index's coverage of the sources, not merely whether every listed row has a status.
+
+### Record each substantive use
+
+For each substantive input, record:
+
+- The consuming claim and exact proof passage, with a stable identifier and excerpt hash.
+- The assertion actually required there, including its objects, hypotheses, quantifiers, parameter range and required uniformity. Record relevant constants, normalizations, exceptional cases and limit order.
+- The proposed supplier: an exact internal result, published external result, checked computation or inline derivation. Give its version and proof or statement location. Mark a missing supplier unresolved rather than filling it with a familiar theorem name.
+- The application record that checks the match, or the exact inline argument that discharges it.
+- Whether the use is a genuine dependency or only notation, background or an unused reference, with a passage-specific reason for the latter classification.
+
+Repeated uses may share one entry only when every consuming location is listed and the reviewed argument establishes that the same supplier and application contract cover them all. A reference to a section with several results must identify which result supplies the required assertion. An unnamed asymptotic or comparison estimate must receive an explicit supplier or a checked derivation. Do not omit an input because it looks standard or because the conclusion has already received favorable reviews.
+
+### Compare with the declared inventory
+
+After freezing the initial source-use table, compare it with the declared application records and dependency graph. Preserve the initial table, the differences and their reviewed dispositions.
+
+Every genuine use must map to the result or derivation that supplies it. Record a direct dependency on an invoked internal result. A transitive path through other results is insufficient evidence that this direct use was reviewed. When the proof instead invokes a reusable intermediate lemma, record that actual use and check the intermediate lemma's own dependencies. A common ancestor, similar conclusion or matching theorem name does not establish the required connection.
+
+For each difference, either add the missing application or edge, correct the proof or supplier contract, identify the precise existing derivation, or justify why the candidate is not a substantive dependency. Check extra graph entries as well, distinguishing actual uses from retained background or redundant transitive information. Preserve disputed and rejected dispositions. New substantive doubts enter the findings ledger; an omitted inventory edge alone is not proof that the mathematical inference is false.
+
+Check both supplying and consuming statements after reconciliation. In particular, verify that the supplier provides the domain, conditioning, constants, uniformity and limit order actually used. A graph edge records a claim of dependence; it does not prove that the dependence is valid.
+
+### Accept coverage separately and keep it current
+
+Inventory coverage requires an explicit non-author decision tied to the complete coverage index, source-use table, reconciliation and frozen proof sources. This decision is distinct from acceptance of the listed applications and from the final assembled-proof review. The same eligible reviewer may perform more than one of these tasks, but must state the scope and evidence for each separately.
+
+An unreviewed proof passage within the claimed argument, a genuine use without a checked supplier, or an unresolved reconciliation difference prevents full closure. Do not infer coverage from the number of accepted applications, a passing schema check or the absence of new objections.
+
+After a substantive proof, statement or supplier-contract change, update the affected source-use entries, coverage index and reconciliation, and review the affected consumers. Assess dependencies even when a consuming paragraph is textually unchanged. Editorial changes may receive a scoped acknowledgment after the reviewer verifies that the uses and contracts are unchanged. Preserve earlier versions and decisions; do not refresh their hashes to simulate a new review.
+
+The reconstruction remains an informal mathematical review unless formally verified. It can still miss an input. Report its scope and limitations, and reopen coverage when a later finding demonstrates an omission.
+
+## The nine application obligations
+
+Each application record must address the following obligations. For every obligation, write **what is required**, **what is constructed**, **why they match**, and **where the evidence is located**. Include the derivation rather than a bare checked box.
+
+| Obligation | Required comparison |
+| --- | --- |
+| Source hypotheses | Match every source hypothesis and quantified parameter to the application. Read the relevant definitions and resolve material ambiguity from the proof. |
+| Constructed objects | Identify the actual fields, rings, spaces, modules, schemes, functions, classes, witnesses, or algorithms supplied by the manuscript. |
+| Domain and index coverage | Show that the construction covers the source's entire required domain, family, or index set. Prove any extension, restriction, or cofinality argument. |
+| Transition and comparison maps | State the maps, their directions, and their compatibility. Account explicitly for signs, scalars, normalizations, degree factors, and Euler factors. |
+| Identity of the consumed object | Show that the conclusion concerns the object used in the next step. Identify limits, specializations, images, ideals, or normalizations precisely. |
+| Coefficient and normalization conventions | Match coefficient rings, integral versus rational structures, embeddings, bases, valuations, Frobenius conventions, duals, and twists wherever relevant. |
+| Local conditions | Check localizations, completions, supports, ramification, boundary conditions, and local or global compatibility requirements. |
+| Exceptional cases | Treat excluded characteristics, small primes, zero denominators, degenerate parameters, torsion, singular loci, and endpoint cases that can occur. |
+| Downstream consumption | Identify every affected consumer and show that the output has the precise strength and form needed there. |
+
+An obligation may be marked **not applicable** only with a reason specific to the application. The reviewer must assess that reason. For example, a finite polynomial substitution may introduce no limiting process, but its output must still be identified with the polynomial consumed downstream.
+
+## Verify connecting arguments
+
+A substantive transition is a step that changes the object, domain, information available, probability law, normalization, quantifier, parameter range, mode of convergence or strength of conclusion between an input and its use. Such a step requires review even if it is described as routine, negligible, standard, unchanged in the limit or a direct application. A named theorem and a plausible sentence joining it to the desired conclusion do not establish the application.
+
+Use the existing application record, source-use entry or a precisely linked project lemma. No separate form or repeated proof is required. For every substantive transition, identify:
+
+1. **What is available.** State the supplying conclusion with its actual hypotheses, objects, quantifiers, constants and version. Distinguish a theorem statement from its proof, a construction excerpt, an application site and a reviewer's assertion. A passage with the right topic or a valid hash is not necessarily the supplying statement.
+2. **What is needed.** State the exact assertion used by the next inference, including any stronger uniformity, different conditioning, endpoint, normalization or limit order.
+3. **Why the transition holds.** Give the derivation or exact reviewed lemma that supplies the difference. If there is no difference, exhibit the identification of objects and conventions. Repeating the desired conclusion or citing a proposition whose own proof uses this transition is not a derivation.
+4. **What can fail.** Check the exceptional cases relevant to this transition. For a nontrivial extension, test a simple adverse example or explain why the relevant obstruction is excluded. A failed analogy may expose a missing hypothesis without disproving the actual theorem. Passing examples does not prove the general statement.
+5. **What the reviewer accepts.** Bind the decision to this exact comparison, its derivation, and the consumed conclusion. An unproved difference remains open even when the supplier and consumer have each received favorable reviews.
+
+A collection of accepted input theorems does not automatically accept their composition. Inspect these transitions in the source-first reconstruction and again where the final assembly uses them. Elementary identities may be checked directly at their use; do not create artificial dependency nodes for every algebraic operation.
+
+### Probability, stopping and changes of law
+
+Apply the following checks when the argument uses these features; record specific reasons for nonapplicability rather than copying this list into unrelated applications.
+
+- Identify the actual filtration or other available information at each selection, entrance, exit and stopping rule. Show that each event or coefficient used as a past test is measurable there. A time selected from the continuously observed process need not be a permitted stopping index for the information at the last completed discrete state. Noncompletion of a random-duration update can itself reveal information.
+- If a time or state is rounded or replaced, prove that the replacement is permitted, bound the resulting error, and show that its endpoint remains in the domain where the estimate applies. A small time or geometric displacement alone does not preserve a martingale identity, conditional law or localization hypothesis. Include overshoots and zero-time or terminal conventions when they can occur.
+- State the law under which each identity, convergence and exceptional-event estimate holds. For a change of law, give the density or comparison result with its actual scope. A bound for localized exterior histories cannot be extended to additional revealed data or to histories outside that localization without proof.
+- On excluded events, control the quantity actually being averaged. Small probability alone does not control an unbounded variable. Identify boundedness, an integrable majorant, uniform integrability, a moment estimate or another sufficient bound. Verify the hypotheses of optional stopping and passages through expectation at the selected times.
+- Write the error bound before dividing by a small or random normalization. Check positivity, lower bounds and their parameter dependence. State the order of all limits and whether each bound is deterministic, pathwise, in probability, conditional or averaged. An error vanishing before normalization may fail to vanish afterward.
+- Do not use the limiting stochastic equation, tightness, convergence, regularity or independence being established to justify a required preliminary estimate. When a reusable lemma has several conclusions, identify the earlier conclusion or proof calculation being used and verify that its derivation does not depend on the current target.
+
+These checks also apply to analogous transitions outside probability: local to global arguments, interior to boundary extension, pointwise to uniform estimates, changes of representation, and replacement of an exact object by an approximation. Identify the relevant obstruction and sufficient connecting argument for the actual subject.
+
+### Common failures to test explicitly
+
+- A theorem requires a family indexed by all admissible integers, while the construction supplies only a smaller subfamily.
+- A source proves an exact sequence, but the application uses an isomorphism of one of its maps.
+- Two constructions produce proportional classes, but a later step needs equality or equality of integral ideals.
+- A relation holds after tensoring with a field, while the conclusion requires an integral statement.
+- A generic formula divides by a quantity that may vanish on an allowed solution.
+- A cited rank, nonvanishing, or existence statement has a different prime, twist, local condition, or quantifier.
+- Separately valid choices of witnesses, auxiliary primes, or parameters cannot be made simultaneously in the order the proof requires.
+
+These are diagnostic patterns, not an exhaustive list.
+
+## Review objections without rewriting the history
+
+Freeze the objection and the version it concerns. Search earlier manuscripts, source inventories, proof packets, correction notes, and reviews. Read the relevant earlier arguments rather than relying on their titles or verdicts.
+
+Register every received audit and reconcile its individual findings with ledger entries. Do not select only favorable reports or omit a finding because another model declared the same section correct. Track the disposition of each finding separately. A repair must address the stated inference; a rebuttal must explain why that inference is justified or why the objection does not apply to the frozen claim.
+
+Record historical justification separately from incorporation into the current manuscript.
+
+| Historical finding | Meaning |
+| --- | --- |
+| Prior justification located | An earlier argument supplies the inference, with its stated hypotheses. |
+| Prior components located | Relevant inputs exist, but their connecting argument still requires work. |
+| New argument required | The available route does not establish the needed inference; a substantive repair is required. |
+| Attribution or presentation issue | The finding concerns credit or exposition rather than an identified invalid inference. |
+| Unresolved | The search or analysis is insufficient to classify the issue. |
+
+Separately mark manuscript incorporation as **incorporated**, **partly incorporated**, or **pending**, with exact locations. Record the search scope and its limits. Failure to locate an argument is not proof that no argument existed. Finding one earlier justification is not evidence that every prior reviewer checked it.
+
+Also separate mathematical status from review coverage. “I have not checked this cited theorem” differs from “this theorem is an unproved premise” and from “this application is invalid.” A claim is conditional on an unproved mathematical input, not merely on the fact that a particular reviewer has yet to read part of its proof. State which situation applies.
+
+Preserve prior verdicts and append corrections with dates and reasons. If earlier reporting was inaccurate, correct the reporting explicitly.
+
+## Review related uses after a substantive failure
+
+When a review finds an invalid inference or an unestablished connecting step, correcting that occurrence is not enough to support complete closure. Record the failure mechanism, then perform a bounded review of other plausible occurrences in the claimed proof. Examples include using information before it is available, applying a local estimate beyond its permitted region, dividing an uncontrolled error by a vanishing quantity, importing boundary behavior from an interior theorem, and confusing an exact quantity with an asymptotically equivalent one.
+
+The reviewer must:
+
+- Derive a concrete search scope from the mechanism and the actual source arguments, including linked project proofs and affected consumers. Look for equivalent reasoning even when different words or theorem names are used. Text search is a locating aid, not the completeness decision.
+- Preserve a list of candidate occurrences, exact source locations and the reason each is included. Give a reason for excluding plausible related cases or limiting the search scope. A corrected arithmetic typo may warrant checking its substitutions and consumers without reopening unrelated arguments.
+- Decide each required occurrence on its own inference: already justified by an exact derivation, corrected and reviewed, inapplicable for a stated reason, or still open. Do not copy the first repair's acceptance to a different law, domain or conclusion.
+- Obtain a non-author decision on the related-use review and its coverage before claiming the failure has been cleared from the complete proof. Preserve earlier adverse findings and the limits of the review.
+
+This review can share the source-use table and findings ledger. It does not require a new database or an indiscriminate review of unrelated mathematics. If the first repair proves a narrower assertion sufficient for one consumer, separately assess any broader proposition still claimed and any other consumers that require it. A successful substitute route does not establish the old, stronger statement.
+
+## Keep corrections consistent across records
+
+For every substantive correction, identify where the affected assertion is repeated or summarized: the manuscript, linked proofs, theorem statements, application fields, supplier contracts, source-use entries, examples, reviews, and completion summaries. Check these locations for the rejected assertion and for incompatible signs, constants, conventions or qualifications. Preserve historical versions with their status; correct the current representations or explicitly retire them.
+
+Where practical, maintain one canonical current statement and reference it from other records. When repetition is necessary, reviewers must compare its mathematical meaning, not only its text or hash. A corrected primary field does not resolve the issue if a second field still asserts the rejected inference. Derived records and copied prose receive this check as well as handwritten text.
+
+Record the scope and outcome of this consistency check in the existing correction or integration decision. It is not a new independent proof of the corrected mathematics. A final release must not simultaneously claim the rejected and corrected assertions as current.
+
+## Changes invalidate old acceptance
+
+An acceptance applies only to its named manuscript, application record, source versions, evidence, and exact edits. A change to any bound item makes that acceptance stale for the changed version.
+
+Classify the change and assess its effects before refreshing any binding:
+
+- **Substantive argument or statement change:** review the changed inference and affected consumers anew, even if its conclusion was accepted previously.
+- **Source or convention change:** compare the exact versions and recheck every application affected by the difference.
+- **Computational change:** recheck the specification, implementation or certificate affected, plus the connection to the mathematics.
+- **Editorial or unrelated change:** verify that the relevant mathematics and dependencies are unchanged, then obtain an explicit reviewer acknowledgment of the new binding. A full mathematical re-audit is unnecessary when this comparison establishes that it is unaffected.
+
+The new decision must be authored by the reviewer. An integrator must not copy an old favorable verdict and replace its hashes to manufacture fresh acceptance. Record the exact edit fingerprints that the reviewer accepted, not just the final file hash.
+
+Changed dependencies can invalidate an unchanged passage. A dependency review must therefore accompany textual comparison. Do not infer safety solely from a byte-identical theorem application.
+
+## Computations and certificates
+
+Distinguish **finding** an object from **checking** it. A search program may use heuristics or substantial resources. Its output becomes evidence only through a check that addresses the required mathematical specification.
+
+For a computational claim, record the input specification, source and executable versions, dependencies, invocation, resource limits, outputs, exit status, and artifact hashes. Preserve enough information for a fresh checkout to reproduce the relevant check. Use deterministic serialization for files whose exact bytes are part of the certificate.
+
+State exactly what the checker establishes. For a polynomial construction, relevant questions include:
+
+- Does the checked source system express the intended arithmetic predicate?
+- Does every transformation preserve the required projection over the stated field, in both directions?
+- Are divisions, exceptional branches, signs, and simultaneous witness choices justified?
+- Are fixed constants distinguished from quantified variables and free parameters?
+- Are coordinate maps, full expansions, cancellations, coefficient bounds, degrees, and variable counts checked in the representation actually published?
+
+An algebraic identity check does not establish a separate arithmetic existence theorem. A tested sample does not establish a universal assertion. A successful program exit does not establish that the program checks the intended property.
+
+Where practical, separate the certificate producer from the checker and test rejection of deliberately corrupted certificates. Document the checker's own mathematical justification and trusted software dependencies. Report a platform-specific replay as such until portability has been tested.
+
+For formalization, bind the exact formal statement to the mathematical claim and list admitted assumptions and axioms. An externally attested computation recorded as an axiom remains an additional assumption of the formal proof. It is discharged only by an appropriate verified argument or explicitly included in the stated trust base. Distinguish kernel-checked certificate verification from unverified external checking.
+
+## Independent decisions and integration
+
+The reviewer must inspect the application, its sources, and its consumers. The decision must identify the exact reviewed versions, remaining dependencies, and one of these outcomes:
+
+- **Accepted within stated scope:** the specified inference passes review relative to the listed inputs.
+- **Changes required:** identify the unsupported step and the needed correction or evidence.
+- **Incomplete review:** identify what was and was not checked without implying a mathematical counterexample.
+- **Rejected:** give the precise contradiction, counterexample, or invalid inference found.
+
+The integrator must check the final manuscript after incorporation. A correct proof left in a private note is not an incorporated repair. Include the argument at its application site or link to an exact lemma that supplies it. Review both the supplying and consuming passages after editing.
+
+For parallel work, check that common notation denotes the same objects across packets. Reconcile hypotheses, coefficient conventions, parameter choices, and exceptional cases before assembling the conclusions. A collection of favorable component reports is not an integration proof.
+
+Before accepting the composition, compare each substantive connection in both directions: does the supplier deliver everything the consumer needs, and does the consumer stay within what the supplier delivers? A broad proposition heading must not conceal a proof of only a restricted case. A repair accepted for one application does not automatically renew the proposition's other uses.
+
+Keep the following judgments distinct in records and progress reports: proposed argument; argument accepted within a stated mathematical scope; repair actually incorporated; affected uses and records reviewed at their current versions; complete assembled proof and release accepted. These need not be separate software statuses. Do not report a later judgment when only an earlier one has been established. If a required transition is found unestablished after a completion claim, correct that claim promptly and reopen the affected obligations. Do not describe the matter solely as documentation or a stricter protocol requirement.
+
+## Repository records and automated checks
+
+The project may choose its own paths and file formats. A small installation can keep these records as Markdown plus JSON or YAML; a larger project can generate them from a database. Keep the source records portable and version controlled.
+
+| Record | Minimum contents |
+| --- | --- |
+| Claim inventory | Target statements, dependency edges, proof locations, consumers, and status. |
+| Source inventory | Exact versions, statements used, locators, file hashes, corrections, and access limitations. |
+| Coverage index and source-use table | Frozen proof passages, review scope and status, independently reconstructed inputs, required assertions, exact suppliers or inline derivations, and application links. |
+| Inventory reconciliation | Preserved initial reconstruction, comparison with the declared graph, discrepancies, reviewed dispositions, and separate coverage decision. |
+| Application records | The nine obligations, author identities, bound files and passages, exact edits, and dependency impact. |
+| Reviewer decisions | Reviewer identity and type, decision, scope, application hash, manuscript hash, and report hash. |
+| Findings ledger | Objection identity, reviewed version, history classification, manuscript incorporation, response, and remaining work. |
+| Release manifest | Manuscript and artifact hashes, accepted record set, unresolved findings, reproduction instructions, and check results. |
+
+An automated implementation should reject missing required fields, unsafe paths, changed bound files, unresolved required obligations, missing consumers, self-approval, stale decisions, unexplained edits, and omitted tracked findings. It should verify that the files selected by the build are the files selected by the current review record.
+
+Tests should deliberately introduce a missing domain argument, a missing consumed-object identity, a changed source, an unreviewed edit, a stale approval, a mismatched build target, a missing follow-up, and a corrupted certificate. Each should fail the relevant check for the intended reason. Keep these negative controls alongside the checker.
+
+The implementation must also check the declared links among the coverage index, source-use table, application records and dependency graph, and reject unresolved required reconciliation entries or stale coverage decisions. Test omission detection by removing a required graph edge while leaving the independently approved use recorded. Include a named theorem use, a section-only internal use and an unnamed estimate. Also test deletion of a source-use entry referenced by the coverage index, and a changed supplier contract without a renewed affected review. Each mutation must fail for the intended reason. These tests establish consistency and change detection for recorded evidence; they cannot prove that the original source-use reconstruction found every mathematical input.
+
+Do not imply that these structural checks establish complete source coverage, honest review, mathematical truth, or independence of thought. Name CI jobs according to what they check, and keep mathematical review status separate from execution status.
+
+Where an implementation records connecting arguments and related-use reviews, test rejection of a missing required connection, a connection to a supplier with a weaker recorded contract, an unresolved required related occurrence, and a stale current representation after a recorded correction. Tests may use synthetic fixtures with explicitly specified expected relationships. They demonstrate consistency of the recorded relationships, not that software can decide arbitrary implication, detect every paraphrase of an error, or prove the completeness of the search. Nonempty explanation fields and favorable status values are not substitutes for the mathematical reviews above.
+
+## Release and issue closure
+
+### Final closure review
+
+After the last substantive repair, an independent reviewer must review the assembled proof from its stated results through its dependency chain. Accepted component reports may supply evidence, but they do not replace this check of the complete composition. Freeze the revision being assessed and verify all of the following:
+
+- Every announced result has a complete reviewed argument whose external assumptions are published theorems with checked applications.
+- The source-first completeness review covers the frozen proof sources, its source-use table is reconciled with the actual dependency graph, and its separate coverage decision is current. No required passage, supplier or reconciliation difference remains unresolved.
+- Every construction and computational claim meets the explicitness and reproducibility requirement above.
+- Every received audit is registered, and each substantive finding has a reviewed resolution applicable to this revision.
+- All required application records and affected downstream reviews are current; no change or dependency update remains unreviewed.
+
+- Every substantive connection between inputs and their uses has the required reviewed derivation or identification; no stronger quantifier, changed object, law, information set or normalization is supplied only by an unsupported assertion.
+- Each discovered substantive failure has a completed review of related required occurrences. Current representations of corrected assertions agree, and broader claims left unproved by a narrower repair remain open.
+- The complete manuscript incorporates the accepted arguments, including repairs previously present only in notes or packets.
+- The relevant computations and release checks pass on the exact frozen artifacts, and the inventories and manifests describe those same artifacts.
+- The final assembly review introduces no unresolved substantive finding.
+
+If any condition fails, continue the cycle. If the final review produces a repair, integrate it and repeat the affected reviews and closure assessment. Record the reviewers, review scope, findings, resolutions, and frozen revision for every round. Stability means these explicit obligations are closed on the final revision; it does not guarantee that no future reviewer will discover an error. A later substantive objection reopens the relevant finding and completion claim.
+
+### Release and issue decisions
+
+Before describing a revision as resolving a finding, confirm that:
+
+- The exact revised argument is present in the released manuscript.
+- Its application and affected consumers have current review decisions.
+- Relevant computations have been reproduced from the release files.
+- The source inventory and findings ledger match the release.
+- Unresolved inputs and review limits are stated where they affect the claim.
+- Public links identify the actual release, rather than a moving or obsolete draft.
+
+A GitHub issue's closed state does not establish that a later comment has been addressed. Keep new substantive follow-ups in the ledger. If an issue is closed for administrative reasons while a mathematical question remains open, say so. A release may contain an explicitly marked open argument, but must not describe that argument as resolved or bypass its incomplete review status.
+
+Preserve historical releases and review evidence. Do not silently overwrite an earlier verdict, change a bound source, or present an old review as acceptance of a new proof route.
+
+## Release maintenance and research handoff
+
+Maintain a reviewed project profile that identifies the required release artifacts, their names and locations, edition and date conventions, publication destinations, reproducibility entry points, and any size or inclusion thresholds. Make these requirements specific enough to check against the actual release. A profile may require additional evidence for the project's constructions or publication process. It must preserve this protocol's proof, source-application, objection and independence requirements. Changes to the profile require an explicit review of their effect on release coverage.
+
+### Cumulative research handoff
+
+Update a cumulative research handoff for every research release. Include the current research and the relevant prior research, derivations, computational evidence and reviews needed to understand or reproduce the released work. Retain relevant negative results, rejected approaches and superseded reviews with their status and the reason for supersession. Link a corrected claim to the earlier claim and the correction. Preserve the originals so a later reader can reconstruct the reasoning and review history.
+
+The handoff must contain the actual research evidence or identify its exact versioned location. A summary cannot replace a needed derivation, certificate or review. Record known missing evidence and open work explicitly. Include the provenance of contributed research and computational artifacts, including authors, reviewers, source versions, generating tools and any stated limitations. Attribute earlier work and later repairs accurately.
+
+Keep conversational transcripts, credentials and unrelated private files out of release handoffs. Extract the relevant mathematical arguments, decisions and objections into reviewable records while preserving their meaning and attribution. Preserve any original conversation evidence needed for an audit in the appropriate restricted record, with an access limitation recorded where it affects review. A publication access restriction does not resolve a mathematical objection or excuse omission from the findings ledger.
+
+### Archive index and release manifest
+
+Maintain an archive index and a manifest for the handoff and release artifacts. Identify each release's source commit, version, date, authorship and provenance, review status, remaining assumptions and open work, reproduction entry points, and the required files with their declared hash algorithm and hashes. Identify which entries are current, historical, superseded or incomplete. Record the relationship between generated artifacts and their source inputs, commands and tool versions. State the coverage of the archive and any unavailable material.
+
+Preserve old editions and their manifests at stable versioned locations. A new release may update a current-version pointer, but it must retain the earlier edition and its review status. Avoid a manifest self-reference by recording its own digest in a separate release record or other external versioned binding. Bind final review to the completed release manifest and actual artifact bytes.
+
+### Synchronize the release
+
+Before final acceptance of each research release, compare the assembled files and verify all applicable items below.
+
+- Update the repository README and current-paper links, the current TeX or other manuscript source, the built PDF, the artifact catalog, the cumulative handoff, the source and application inventories, and the findings ledger together. Their statements about the current result, proof status, assumptions and unresolved work must agree.
+- Verify that the PDF was built from the identified source revision and declared build inputs. Compare the source edition, selected build target, output identity and release manifest. Check title, version and date agreement across the manuscript, README, archive index and release metadata. Preserve prior editions in the archive rather than relabeling them as current.
+- Describe each construction artifact by the representation actually supplied. Distinguish a full explicit expansion from a symbolic expression, compressed encoding, generator, certificate or sampled output. Ensure the artifact catalog and manuscript make the same claims about recoverability, verification and reproduction. Check the project's required artifact names and inclusion thresholds against the actual files.
+- Review citation and credit changes, including the provenance of reused research, independent reviews, computational discoveries and substantive repairs. Keep source-version references and application records synchronized with changes to citations or mathematical inputs.
+- Validate release links and their intended targets, including README links, archive entries, source locations, evidence and reproduction entry points. Check immutable identifiers where a link is used as review evidence. Distinguish a current-version navigation link from an immutable release binding, and record access restrictions or unavailable targets.
+- If the project maintains public and private mirrors, identify the intended contents and permitted differences for each. Review the selected files for publication scope, publish only with the owner's authorization, and read back each configured destination. Compare the published revision and artifact hashes with the reviewed release manifest. Record the readback results and any outstanding difference. A successful local build, push command or acceptance of one mirror does not establish the contents of the other.
+
+Record who performed these comparisons, the exact files and destinations checked, the results, and any remaining discrepancy. A discrepancy in a required artifact or its stated status prevents declaring the release-maintenance requirements complete. After a correction, recheck the affected files and obtain the corresponding reviewer-authored updated binding under the existing change rules.
+
+### Scope and automated coverage
+
+For a small non-release PR, state explicitly which release-maintenance duties do not apply and why. Identify the artifacts and claims left unaffected, and have the reviewer assess that scope. A documentation, infrastructure or metadata label does not itself establish nonapplicability. A later research release must still perform the complete applicable maintenance and handoff review.
+
+Automated checks must report their actual coverage. A path check, hash comparison, successful build or link check establishes only the property tested. It cannot establish that an archive contains all relevant prior research, that citations and credit are complete, that a representation supports its mathematical claim, or that all objections received review. Record the human or model review of these coverage questions separately from machine-check results.
+
+## Reusable application form
+
+Copy this form for each substantive application. Replace every placeholder; do not interpret an empty field as acceptance.
+
+```text
+Application ID:
+Claim being justified:
+Authors:
+Manuscript commit and file hash:
+Construction location and excerpt hash:
+Application location and excerpt hash:
+Consumer locations and excerpt hashes:
+Exact source versions and statements:
+Dependencies and their mathematical status:
+Source-use entry IDs and coverage-index locations:
+Exact proposed edits and fingerprints:
+Substantive transitions: available conclusion, needed conclusion, connecting derivation:
+Relevant adverse cases and how they are excluded:
+Related-use and repeated-assertion review, if a failure was found:
+
+For EACH of the nine obligations:
+  Obligation name:
+  Status: addressed / unresolved / not applicable
+  Required input:
+  Constructed input:
+  Derivation or reason not applicable:
+  Source locator:
+  Evidence file and hash:
+
+Effects on downstream statements:
+Exceptional cases checked:
+Computational checks and their precise scope:
+Remaining questions:
+
+Independent reviewer:
+Reviewer type and review conditions:
+Decision and exact scope:
+Application record hash:
+Manuscript hash:
+Review report and hash:
+Date:
+```
+
+## Reusable source-use and coverage forms
+
+These forms may be columns or linked fields in existing records. Keep the initial reconstruction separate from later reconciliation edits, with their versions preserved.
+
+```text
+Source-use ID:
+Reconstruction reviewer, type and review conditions:
+Prior exposure to inventories or earlier verdicts:
+Frozen proof source and hash:
+Consuming claim and passage, with excerpt hash:
+Assertion actually required:
+Objects, hypotheses, quantifiers and parameter range:
+Uniformity, constants, normalization and limit order:
+Supplier and exact version/location, or unresolved:
+Supplier passage role: statement / proof / construction / application / review:
+Difference between supplied and consumed conclusions, and its justification:
+Application record or checked inline derivation:
+Classification and reason:
+Initial reconstruction version/hash:
+
+Reconciliation against inventory/graph version:
+Matching application and direct dependency:
+Difference found:
+Disposition and evidence:
+Disposition reviewer and decision:
+Remaining work:
+```
+
+```text
+Coverage review ID:
+Announced claims and complete proof-source set:
+Coverage-index version/hash:
+Initial and reconciled source-use table versions/hashes:
+Declared inventory and graph versions/hashes:
+Reviewed passages and explicitly excluded passages:
+Unreviewed passages or unresolved differences:
+Non-author coverage reviewer and review conditions:
+Decision, scope, limitations and date:
+```
+
+## Reusable response form
+
+```text
+Finding and version reviewed:
+Exact inference questioned:
+Earlier evidence searched and historical finding:
+Mathematical diagnosis:
+Repair or explanation, with source and manuscript locations:
+Affected downstream claims:
+Failure mechanism and related occurrences reviewed:
+Current repeated assertions checked; historical versions preserved:
+Independent review decision and scope:
+Reproduction results and limitations:
+Released commit or version:
+What remains open:
+```
+
+Use these records to make the reasoning inspectable. The standard for a mathematical conclusion remains a valid argument from its stated inputs; the standard for a review claim is evidence that the specified argument was actually reviewed.
+
+Version 1.1 makes the five completion requirements explicit and adds the final closure review. Version 1.0 remains a separate historical document.
+
+Version 1.2 adds release maintenance, cumulative research handoffs, archive and artifact synchronization, publication readback, and explicit scope and coverage records. Version 1.1 remains a separate historical document.
+
+Version 1.3 adds independent source-first dependency reconstruction, passage-level coverage records, explicit source-use reconciliation, a separate coverage decision, and omission-detection tests. It preserves the completion and release requirements of version 1.2. Version 1.2 remains a separate historical document.
+
+Version 1.4 makes the review of substantive connecting arguments explicit, adds targeted checks for information, stopping rules, localization, changes of law and normalized errors, requires bounded review of related uses after a substantive failure, and checks corrections across repeated current assertions. It clarifies the limits of component acceptance and automated checks. It retains the source-first coverage, mathematical closure and release requirements of version 1.3. Version 1.3 remains a separate historical document.

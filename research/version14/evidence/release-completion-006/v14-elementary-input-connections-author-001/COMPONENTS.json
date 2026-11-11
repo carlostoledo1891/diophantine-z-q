@@ -1,0 +1,1435 @@
+{
+  "schema": 1,
+  "author": "/root/v14_arithmetic_author",
+  "components": [
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-RATIONAL-FOUR-SQUARES",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-RATIONAL-FOUR-SQUARES-P1"
+        ],
+        "assertion": {
+          "statement": "The displayed rational equations define strict positivity and absolute value exactly over Q.",
+          "objects": "s,x,a and four rational z_i in current258–269.",
+          "hypotheses": "All variables are rational with the usual order.",
+          "quantifiers": "For every rational s, s>0 iff exists z_i with s sum z_i^2=1; for every rational a,x, a=|x| iff exists z_i with a=sum z_i^2 and a^2=x^2.",
+          "parameter_range": "All rational inputs; zero allowed for absolute value but excluded by the positivity equation.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Four rational squares and right-hand side1.",
+          "normalizations": "For 1/s=a/b>0 use integer representation of ab and divide each coordinate by b.",
+          "exceptional_cases": "No integrality assertion on z_i; zero handled without division.",
+          "limit_order": "Clear a positive rational denominator, apply integer four squares, then specialize equations."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 6,
+            "end_line": 8,
+            "excerpt_sha256": "c3dde1dfc96a30a6e8028895fa02907648df12054a15fa1feae8b47a19385f3e"
+          },
+          "statement": "Every nonnegative integer is a sum of four integer squares.",
+          "publication": {
+            "title": "Diophantine representation of enumerable predicates",
+            "authors": "Yu. V. Matiyasevich",
+            "venue": "Mathematics of the USSR-Izvestiya 5 (1971), 1–28",
+            "authoritative_version": "Published English translation; PDF18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+            "locator": "Printed p.2, explicit Lagrange four-square assertion",
+            "corrections": "The source later uses positive naturals via +1; only its nonnegative-integer four-square assertion is used here."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 9,
+          "end_line": 11,
+          "excerpt_sha256": "f7e7c2060c15eb72c2868a54426c970bf940caaf9e16bc6382cc6b1029900faf"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-RATIONAL-FOUR-SQUARES",
+        "use_sha256": "87a1a50a0c27776359ab9bdeffdc7175e00b0e4489df0eefb34d5c373738b9d4",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Every nonnegative integer is a sum of four integer squares.",
+          "objects": "Nonnegative integers and four integer summands.",
+          "hypotheses": "The input integer is nonnegative.",
+          "quantifiers": "For every integer n>=0 there exist u1,u2,u3,u4 in Z with n=sum ui^2.",
+          "parameter_range": "Nonnegative integers, including zero.",
+          "uniformity": "One representation theorem for every nonnegative integer.",
+          "constants": "Four summands.",
+          "normalizations": "Ordinary integer squares; no assertion that arbitrary rational witnesses are integers.",
+          "exceptional_cases": "Zero is represented by four zeroes; positive-natural convention in the following source application is separate.",
+          "limit_order": "No limit or asymptotic operation."
+        },
+        "needed_assertion": {
+          "statement": "The displayed rational equations define strict positivity and absolute value exactly over Q.",
+          "objects": "s,x,a and four rational z_i in current258–269.",
+          "hypotheses": "All variables are rational with the usual order.",
+          "quantifiers": "For every rational s, s>0 iff exists z_i with s sum z_i^2=1; for every rational a,x, a=|x| iff exists z_i with a=sum z_i^2 and a^2=x^2.",
+          "parameter_range": "All rational inputs; zero allowed for absolute value but excluded by the positivity equation.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Four rational squares and right-hand side1.",
+          "normalizations": "For 1/s=a/b>0 use integer representation of ab and divide each coordinate by b.",
+          "exceptional_cases": "No integrality assertion on z_i; zero handled without division.",
+          "limit_order": "Clear a positive rational denominator, apply integer four squares, then specialize equations."
+        },
+        "required_capabilities": [
+          "The displayed rational equations define strict positivity and absolute value exactly over Q."
+        ],
+        "available_capabilities": [
+          "Every nonnegative integer is a sum of four integer squares."
+        ],
+        "derived_capabilities": [
+          "The displayed rational equations define strict positivity and absolute value exactly over Q."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 9,
+            "end_line": 11,
+            "excerpt_sha256": "f7e7c2060c15eb72c2868a54426c970bf940caaf9e16bc6382cc6b1029900faf"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The displayed rational equations define strict positivity and absolute value exactly over Q.",
+            "objects": "s,x,a and four rational z_i in current258–269.",
+            "hypotheses": "All variables are rational with the usual order.",
+            "quantifiers": "For every rational s, s>0 iff exists z_i with s sum z_i^2=1; for every rational a,x, a=|x| iff exists z_i with a=sum z_i^2 and a^2=x^2.",
+            "parameter_range": "All rational inputs; zero allowed for absolute value but excluded by the positivity equation.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "Four rational squares and right-hand side1.",
+            "normalizations": "For 1/s=a/b>0 use integer representation of ab and divide each coordinate by b.",
+            "exceptional_cases": "No integrality assertion on z_i; zero handled without division.",
+            "limit_order": "Clear a positive rational denominator, apply integer four squares, then specialize equations."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No integrality assertion on z_i; zero handled without division.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 9,
+              "end_line": 11,
+              "excerpt_sha256": "f7e7c2060c15eb72c2868a54426c970bf940caaf9e16bc6382cc6b1029900faf"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 258,
+              "end_line": 269,
+              "excerpt_sha256": "0837573723c97004dfce250a77236816a06f1a99ac89593cd5a2097298f9c287"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 258,
+            "end_line": 269,
+            "excerpt_sha256": "0837573723c97004dfce250a77236816a06f1a99ac89593cd5a2097298f9c287"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U009",
+        "scope": "Exact stated clause."
+      },
+      "retained_separate_inputs": [],
+      "source_record": {
+        "id": "matiyasevich1971",
+        "bibliography": "Yu. V. Matiyasevich,\n\\emph{Diophantine representation of enumerable predicates},\nMathematics of the USSR-Izvestiya 5 (1971), 1--28,\nBasic Theorem, p.~3; integer-witness conversion, p.~2.\n\\url{https://doi.org/10.1070/IM1971v005n01ABEH001004}.",
+        "urls": [
+          "https://doi.org/10.1070/IM1971v005n01ABEH001004"
+        ],
+        "files": [
+          {
+            "workspace_relative_path": "work/astra-mazur-corollary-001/primary/matiyasevich-1971.pdf",
+            "sha256": "18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+            "bytes": 1030147
+          }
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename.",
+        "source_status": "bytes_pinned"
+      },
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-NATURAL-INDEX-FOUR-SQUARES",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-NATURAL-INDEX-FOUR-SQUARES-P1"
+        ],
+        "assertion": {
+          "statement": "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0}).",
+          "objects": "The actual point-code carrier iota(Z), four initially untyped root tuples, multiplication square calls and canonical additions.",
+          "hypotheses": "All-input multiplication soundness types each root and computes the product index; multiplication completeness and canonical-input addition soundness/completeness hold; iota identifies integer indices.",
+          "quantifiers": "For every input point-code tuple, predicate satisfaction implies it is iota(n) for n>=0; every n>=0 has witnesses.",
+          "parameter_range": "Arbitrary rational tuples on entry, integer indices only after typing.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Four integer squares; index0 included.",
+          "normalizations": "Squares are products of integer indices under iota, not coordinate-wise rational squares.",
+          "exceptional_cases": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+          "limit_order": "Establish multiplication independently of Nat, type roots, apply square/addition contracts, then invoke Lagrange for completeness."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 6,
+            "end_line": 8,
+            "excerpt_sha256": "c3dde1dfc96a30a6e8028895fa02907648df12054a15fa1feae8b47a19385f3e"
+          },
+          "statement": "Every nonnegative integer is a sum of four integer squares.",
+          "publication": {
+            "title": "Diophantine representation of enumerable predicates",
+            "authors": "Yu. V. Matiyasevich",
+            "venue": "Mathematics of the USSR-Izvestiya 5 (1971), 1–28",
+            "authoritative_version": "Published English translation; PDF18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+            "locator": "Printed p.2, explicit Lagrange four-square assertion",
+            "corrections": "The source later uses positive naturals via +1; only its nonnegative-integer four-square assertion is used here."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 12,
+          "end_line": 14,
+          "excerpt_sha256": "2fa13973792ba37fa944ffe656399b8e201d6ec74a6fc70214aaaace19b72f76"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-NATURAL-INDEX-FOUR-SQUARES",
+        "use_sha256": "d717b6f5d3db8e5b18b52f7787cfed99481fee81e40f6d165448cefde786941e",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Every nonnegative integer is a sum of four integer squares.",
+          "objects": "Nonnegative integers and four integer summands.",
+          "hypotheses": "The input integer is nonnegative.",
+          "quantifiers": "For every integer n>=0 there exist u1,u2,u3,u4 in Z with n=sum ui^2.",
+          "parameter_range": "Nonnegative integers, including zero.",
+          "uniformity": "One representation theorem for every nonnegative integer.",
+          "constants": "Four summands.",
+          "normalizations": "Ordinary integer squares; no assertion that arbitrary rational witnesses are integers.",
+          "exceptional_cases": "Zero is represented by four zeroes; positive-natural convention in the following source application is separate.",
+          "limit_order": "No limit or asymptotic operation."
+        },
+        "needed_assertion": {
+          "statement": "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0}).",
+          "objects": "The actual point-code carrier iota(Z), four initially untyped root tuples, multiplication square calls and canonical additions.",
+          "hypotheses": "All-input multiplication soundness types each root and computes the product index; multiplication completeness and canonical-input addition soundness/completeness hold; iota identifies integer indices.",
+          "quantifiers": "For every input point-code tuple, predicate satisfaction implies it is iota(n) for n>=0; every n>=0 has witnesses.",
+          "parameter_range": "Arbitrary rational tuples on entry, integer indices only after typing.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Four integer squares; index0 included.",
+          "normalizations": "Squares are products of integer indices under iota, not coordinate-wise rational squares.",
+          "exceptional_cases": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+          "limit_order": "Establish multiplication independently of Nat, type roots, apply square/addition contracts, then invoke Lagrange for completeness."
+        },
+        "required_capabilities": [
+          "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0})."
+        ],
+        "available_capabilities": [
+          "Every nonnegative integer is a sum of four integer squares."
+        ],
+        "derived_capabilities": [
+          "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0})."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 12,
+            "end_line": 14,
+            "excerpt_sha256": "2fa13973792ba37fa944ffe656399b8e201d6ec74a6fc70214aaaace19b72f76"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0}).",
+            "objects": "The actual point-code carrier iota(Z), four initially untyped root tuples, multiplication square calls and canonical additions.",
+            "hypotheses": "All-input multiplication soundness types each root and computes the product index; multiplication completeness and canonical-input addition soundness/completeness hold; iota identifies integer indices.",
+            "quantifiers": "For every input point-code tuple, predicate satisfaction implies it is iota(n) for n>=0; every n>=0 has witnesses.",
+            "parameter_range": "Arbitrary rational tuples on entry, integer indices only after typing.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "Four integer squares; index0 included.",
+            "normalizations": "Squares are products of integer indices under iota, not coordinate-wise rational squares.",
+            "exceptional_cases": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+            "limit_order": "Establish multiplication independently of Nat, type roots, apply square/addition contracts, then invoke Lagrange for completeness."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 12,
+              "end_line": 14,
+              "excerpt_sha256": "2fa13973792ba37fa944ffe656399b8e201d6ec74a6fc70214aaaace19b72f76"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 437,
+              "end_line": 442,
+              "excerpt_sha256": "4ea1338a97d7a87434fbe1dff5f06997f84885a9b13b6aebf17cc34023baca5c"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 437,
+            "end_line": 442,
+            "excerpt_sha256": "4ea1338a97d7a87434fbe1dff5f06997f84885a9b13b6aebf17cc34023baca5c"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U014",
+        "scope": "Natural-index clause only; membership and addition correctness remain separate."
+      },
+      "retained_separate_inputs": [
+        "Actual membership and multiplication contracts, including all-input soundness and completeness; canonical-input addition contract."
+      ],
+      "source_record": {
+        "id": "matiyasevich1971",
+        "bibliography": "Yu. V. Matiyasevich,\n\\emph{Diophantine representation of enumerable predicates},\nMathematics of the USSR-Izvestiya 5 (1971), 1--28,\nBasic Theorem, p.~3; integer-witness conversion, p.~2.\n\\url{https://doi.org/10.1070/IM1971v005n01ABEH001004}.",
+        "urls": [
+          "https://doi.org/10.1070/IM1971v005n01ABEH001004"
+        ],
+        "files": [
+          {
+            "workspace_relative_path": "work/astra-mazur-corollary-001/primary/matiyasevich-1971.pdf",
+            "sha256": "18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+            "bytes": 1030147
+          }
+        ],
+        "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename.",
+        "source_status": "bytes_pinned"
+      },
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS-P1"
+        ],
+        "assertion": {
+          "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+          "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+          "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+          "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+          "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+          "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+          "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+          "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 15,
+            "end_line": 17,
+            "excerpt_sha256": "af77645888885933ac768871e962c7cc9b4867d43f41659e834c719bd42dd24a"
+          },
+          "statement": "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2.",
+          "publication": {
+            "title": "Isogeny kernels and division polynomials",
+            "authors": "Andrew V. Sutherland",
+            "venue": "MIT18.783, Fall2025, Lecture5, September18,2025",
+            "authoritative_version": "Author lecture notes, not peer-reviewed article; PDF4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7",
+            "locator": "Sections5.5–5.6, definitions p.10, Lemma5.20 and Theorem5.21 p.11, recurrence verification p.12, Lemma5.24 p.14",
+            "corrections": "Uses the displayed minus-sign omega formula; no reliance on uninspected Silverman errata. The notes refer to Washington Theorem9.33 for a complete proof."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 18,
+          "end_line": 23,
+          "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS",
+        "use_sha256": "6a8bb1854151c5c7d7f4bd0270793831dd6ffcd7df9773954a06520f08e9faef",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2.",
+          "objects": "Short Weierstrass curve, integer-indexed division polynomials and scalar multiplication.",
+          "hypotheses": "The short model is nonsingular over characteristic0 for this use; rational-map interpretation at poles.",
+          "quantifiers": "Every nonzero integer n and every point where the affine formulas are defined.",
+          "parameter_range": "Positive n recurrences and negative n by negation.",
+          "uniformity": "Same formulas for each nonzero integer scalar on a nonsingular characteristic0 short model.",
+          "constants": "Denominators psi_n^2 and psi_n^3; omega numerator divided by4y in the generic polynomial identity.",
+          "normalizations": "Sutherland sections5.5–5.6 conventions, psi_-n=-psi_n.",
+          "exceptional_cases": "At zeros of psi_n the scalar image is the identity; polynomial identities are formed before specializing y=0.",
+          "limit_order": "Define polynomials first, establish the scalar map, then evaluate at points."
+        },
+        "needed_assertion": {
+          "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+          "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+          "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+          "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+          "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+          "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+          "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+          "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+        },
+        "required_capabilities": [
+          "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch."
+        ],
+        "available_capabilities": [
+          "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2."
+        ],
+        "derived_capabilities": [
+          "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 18,
+            "end_line": 23,
+            "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+            "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+            "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+            "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+            "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+            "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+            "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+            "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 18,
+              "end_line": 23,
+              "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 278,
+              "end_line": 304,
+              "excerpt_sha256": "8873975e105b4fe046ebc73db6b02e5a0a2fbe754b578c00a4e058b886187123"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 278,
+            "end_line": 304,
+            "excerpt_sha256": "8873975e105b4fe046ebc73db6b02e5a0a2fbe754b578c00a4e058b886187123"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U010",
+        "scope": "Exact stated clause."
+      },
+      "retained_separate_inputs": [
+        "Established torsion-free carrier and exact inverse-norm field encoding."
+      ],
+      "source_record": {
+        "id": "sutherland",
+        "bibliography": "A. V. Sutherland,\n\\emph{Isogeny kernels and division polynomials}, MIT 18.783,\nFall 2025, Lecture 5, September 18, 2025, \\S\\S5.5--5.6.\n\\url{https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf}.",
+        "urls": [
+          "https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf"
+        ],
+        "files": [
+          {
+            "workspace_relative_path": "work/theorem-application-audit-20261105/closure/primary/sutherland-2025-lecture05.pdf",
+            "sha256": "4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7",
+            "bytes": 556484
+          }
+        ],
+        "version_notes": "MIT 18.783 Fall 2025 Lecture 5; September 18 2025; lecture notes, not peer-reviewed article",
+        "source_status": "bytes_pinned"
+      },
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE-P1"
+        ],
+        "assertion": {
+          "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+          "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+          "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+          "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+          "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "22 primes per class, cutoff324, modulus W.",
+          "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+          "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+          "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 24,
+            "end_line": 26,
+            "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+          },
+          "statement": "For every positive integer m and residue class a coprime to m, primes congruent to a modulo m have Dirichlet density1/phi(m), hence are infinite.",
+          "publication": {
+            "title": "Class Field Theory",
+            "authors": "J. S. Milne",
+            "venue": "Author course notes",
+            "authoritative_version": "v4.03, August6,2020; PDF50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+            "locator": "ChapterV Theorem2.2, printed p.155",
+            "corrections": "Qualitative infinitude via positive Dirichlet density only; no effective prime bound is extracted."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 24,
+          "end_line": 26,
+          "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-FIXED-PRIME-CATALOGUE",
+        "use_sha256": "2ea18d5036e4eac3287d7923bc5419014e7e41d2ea0db03207275933e1530a9d",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For every positive integer m and residue class a coprime to m, primes congruent to a modulo m have Dirichlet density1/phi(m), hence are infinite.",
+          "objects": "Rational primes in a reduced arithmetic progression.",
+          "hypotheses": "m is a positive integer and gcd(a,m)=1.",
+          "quantifiers": "Every such modulus and class.",
+          "parameter_range": "Prime variable unbounded; fixed modulus in the density limit.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Density1/phi(m)>0.",
+          "normalizations": "Dirichlet density, not an asserted effective least-prime bound.",
+          "exceptional_cases": "Non-unit classes are excluded.",
+          "limit_order": "Fix m and a before taking the Dirichlet-density limit."
+        },
+        "needed_assertion": {
+          "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+          "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+          "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+          "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+          "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "22 primes per class, cutoff324, modulus W.",
+          "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+          "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+          "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+        },
+        "required_capabilities": [
+          "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates."
+        ],
+        "available_capabilities": [
+          "For every positive integer m and residue class a coprime to m, primes congruent to a modulo m have Dirichlet density1/phi(m), hence are infinite."
+        ],
+        "derived_capabilities": [
+          "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 24,
+            "end_line": 26,
+            "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The fixed catalogue containing the first22 primes greater than324 in every unit class modulo W exists and its ascending finite-search definition terminates.",
+            "objects": "W=4 product_{p<=324}p; unit residue classes modulo W; the fixed prime catalogue and N_s.",
+            "hypotheses": "W is this fixed positive integer; search is in ascending integer order with exact finite primality and congruence tests.",
+            "quantifiers": "For every unit class modulo this W, the first22 qualifying primes exist.",
+            "parameter_range": "Primes strictly greater than324; finitely many unit classes.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "22 primes per class, cutoff324, modulus W.",
+            "normalizations": "Discard primes<=324; take the first qualifying primes rather than an arbitrary choice.",
+            "exceptional_cases": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+            "limit_order": "Fix W, enumerate its finitely many unit classes, terminate each search by infinitude, then form the fixed product."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No assertion about non-unit classes, effective largest-prime size, all later prime searches or the M0 index.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 24,
+              "end_line": 26,
+              "excerpt_sha256": "df2de4e327e106adeee51498e0956de255aa1411dd64870c29e9a560d682eaf8"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 306,
+              "end_line": 308,
+              "excerpt_sha256": "9e839d399d00e1b85ee2e237f15298f21cbdf95dc0967b612a348dad4ac38d32"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 306,
+            "end_line": 308,
+            "excerpt_sha256": "9e839d399d00e1b85ee2e237f15298f21cbdf95dc0967b612a348dad4ac38d32"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U011",
+        "scope": "Catalogue clause only; M0 and guard consequences remain separate."
+      },
+      "retained_separate_inputs": [],
+      "source_record": {
+        "id": "milne-cft",
+        "bibliography": null,
+        "urls": [],
+        "files": [
+          {
+            "workspace_relative_path": "work/astra-final-moving-character-audit-001/primary/milne-cft.pdf",
+            "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+            "bytes": 2072714
+          }
+        ],
+        "version_notes": "Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Author notes v4.03,6August2020.",
+        "source_status": "bytes_pinned"
+      },
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS-P1"
+        ],
+        "assertion": {
+          "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+          "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+          "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+          "quantifiers": "Every ideal class and every unit of this fixed field.",
+          "parameter_range": "Only K0; no varying quadratic-field claim.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+          "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+          "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+          "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 27,
+            "end_line": 29,
+            "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+          },
+          "statement": "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity.",
+          "publication": {
+            "title": "Algebraic Number Theory",
+            "authors": "J. S. Milne",
+            "venue": "Author course notes",
+            "authoritative_version": "v3.08, July19,2020; PDFde2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b",
+            "locator": "Theorem4.3 p.70 and Theorem5.1 p.85",
+            "corrections": "No claim that the unit theorem selects a fundamental unit; only rank, roots of unity and the independent sign calculation are used."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 27,
+          "end_line": 29,
+          "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+        "use_sha256": "45278cda43812c92bfb5d51a0253b280cca2ac7d1fd9572320f33f083320a74f",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity.",
+          "objects": "A number field, its ideal class group and unit group.",
+          "hypotheses": "Ring of integers of a number field; r1 real places and r2 pairs of complex places.",
+          "quantifiers": "Every ideal class and every number field in the theorem scope.",
+          "parameter_range": "Positive degree n=r1+2r2.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Stated Minkowski constant and unit rank formula.",
+          "normalizations": "Integral ideal norm; multiplicative unit group.",
+          "exceptional_cases": "Unit generators are not selected by the rank formula.",
+          "limit_order": "Use the field invariants in the bound and rank formula before drawing field-specific conclusions."
+        },
+        "needed_assertion": {
+          "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+          "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+          "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+          "quantifiers": "Every ideal class and every unit of this fixed field.",
+          "parameter_range": "Only K0; no varying quadratic-field claim.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+          "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+          "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+          "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+        },
+        "required_capabilities": [
+          "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares."
+        ],
+        "available_capabilities": [
+          "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity."
+        ],
+        "derived_capabilities": [
+          "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 27,
+            "end_line": 29,
+            "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+            "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+            "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+            "quantifiers": "Every ideal class and every unit of this fixed field.",
+            "parameter_range": "Only K0; no varying quadratic-field claim.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+            "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+            "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+            "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 27,
+              "end_line": 29,
+              "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 344,
+              "end_line": 346,
+              "excerpt_sha256": "c0fb5f4b75630ad52061f218a3a35d27a408b231f76db82b5db964d56565c907"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 344,
+            "end_line": 346,
+            "excerpt_sha256": "c0fb5f4b75630ad52061f218a3a35d27a408b231f76db82b5db964d56565c907"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U012",
+        "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+      },
+      "retained_separate_inputs": [
+        "The explicit integer ring and discriminant of Q(sqrt2), also directly retained in the fixed-field computation."
+      ],
+      "source_record": {
+        "id": "milne-ant",
+        "bibliography": null,
+        "urls": [],
+        "files": [
+          {
+            "workspace_relative_path": "work/theorem-application-audit-20261105/primary/milne-ant.pdf",
+            "sha256": "de2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b",
+            "bytes": 1287434,
+            "retrieval_url": "https://www.jmilne.org/math/CourseNotes/ANTc.pdf",
+            "retrieved_date": "2026-11-05"
+          }
+        ],
+        "version_notes": "Algebraic Number Theory v3.08, July 19, 2020, author course notes. Supplementary source, not a manuscript bibliography entry.",
+        "source_status": "bytes_pinned"
+      },
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL-P1"
+        ],
+        "assertion": {
+          "statement": "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points.",
+          "objects": "E_b:y^2=x^3+bx and the exact plus-sign phi/hatphi maps in the new proof.",
+          "hypotheses": "Characteristic0 and b!=0.",
+          "quantifiers": "Every rational point, including O and(0,0), on both curves.",
+          "parameter_range": "Specialized later to b=-d^2 over K0.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Degree2 maps and composition[2].",
+          "normalizations": "alpha_b(O)=1, alpha_b((0,0))=b, alpha_b(P)=x(P) modulo squares; normalized target -4b.",
+          "exceptional_cases": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+          "limit_order": "Verify maps and group-law convention, establish exact kernels, then apply local squareclass computation."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 30,
+            "end_line": 32,
+            "excerpt_sha256": "7fb7db212a2f1b56fa1273fa625d6bf0f0fd58e3b93366cafca7693290b95818"
+          },
+          "statement": "For the rational two-isogeny on y^2=x^3+a x^2+b x, the target is y^2=x^3-2a x^2+(a^2-4b)x and its connecting homomorphism to K*/K*^2 is the x-squareclass, with identity value1 and kernel-point value a^2-4b.",
+          "publication": {
+            "title": "The Arithmetic of Elliptic Curves",
+            "authors": "Joseph H. Silverman",
+            "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+            "authoritative_version": "Published second edition; PDF72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+            "locator": "ChapterX Example4.8 pp.336–337 and its connecting homomorphism calculation",
+            "corrections": "Proposition4.9 misprints a^2-b instead of a^2-4b. Exact maps are rederived here; opposite isogeny ordinate convention preserves image and kernel. Full official errata not retrieved."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 33,
+          "end_line": 35,
+          "excerpt_sha256": "24dcf7024b89d73d7fc12201a1d5b5975e20a599c55ea0a564081d30bfcfff36"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL",
+        "use_sha256": "d28fee301de3936df740016ca53d6e8d2ddb12346f6b3e695de8e66e9ef9aef0",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For the rational two-isogeny on y^2=x^3+a x^2+b x, the target is y^2=x^3-2a x^2+(a^2-4b)x and its connecting homomorphism to K*/K*^2 is the x-squareclass, with identity value1 and kernel-point value a^2-4b.",
+          "objects": "The two-isogeny, its rational-point image and squareclass connecting map.",
+          "hypotheses": "Characteristic0 field and nonsingular source/target equations with the indicated rational order2 kernel.",
+          "quantifiers": "Every rational point on the target curve, including identity and the order2 kernel point.",
+          "parameter_range": "The exact Example4.8 target coefficient a^2-4b.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Degree2; squareclasses modulo K*^2.",
+          "normalizations": "The source displayed ordinate has the negative sign convention; replacing the isogeny by its negative preserves image and kernel.",
+          "exceptional_cases": "The misprinted a^2-b in Proposition4.9 is not imported.",
+          "limit_order": "Fix the curve and isogeny, then use the connecting-map kernel/image interpretation."
+        },
+        "needed_assertion": {
+          "statement": "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points.",
+          "objects": "E_b:y^2=x^3+bx and the exact plus-sign phi/hatphi maps in the new proof.",
+          "hypotheses": "Characteristic0 and b!=0.",
+          "quantifiers": "Every rational point, including O and(0,0), on both curves.",
+          "parameter_range": "Specialized later to b=-d^2 over K0.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Degree2 maps and composition[2].",
+          "normalizations": "alpha_b(O)=1, alpha_b((0,0))=b, alpha_b(P)=x(P) modulo squares; normalized target -4b.",
+          "exceptional_cases": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+          "limit_order": "Verify maps and group-law convention, establish exact kernels, then apply local squareclass computation."
+        },
+        "required_capabilities": [
+          "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points."
+        ],
+        "available_capabilities": [
+          "For the rational two-isogeny on y^2=x^3+a x^2+b x, the target is y^2=x^3-2a x^2+(a^2-4b)x and its connecting homomorphism to K*/K*^2 is the x-squareclass, with identity value1 and kernel-point value a^2-4b."
+        ],
+        "derived_capabilities": [
+          "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 33,
+            "end_line": 35,
+            "excerpt_sha256": "24dcf7024b89d73d7fc12201a1d5b5975e20a599c55ea0a564081d30bfcfff36"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points.",
+            "objects": "E_b:y^2=x^3+bx and the exact plus-sign phi/hatphi maps in the new proof.",
+            "hypotheses": "Characteristic0 and b!=0.",
+            "quantifiers": "Every rational point, including O and(0,0), on both curves.",
+            "parameter_range": "Specialized later to b=-d^2 over K0.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "Degree2 maps and composition[2].",
+            "normalizations": "alpha_b(O)=1, alpha_b((0,0))=b, alpha_b(P)=x(P) modulo squares; normalized target -4b.",
+            "exceptional_cases": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+            "limit_order": "Verify maps and group-law convention, establish exact kernels, then apply local squareclass computation."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 33,
+              "end_line": 35,
+              "excerpt_sha256": "24dcf7024b89d73d7fc12201a1d5b5975e20a599c55ea0a564081d30bfcfff36"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 348,
+              "end_line": 362,
+              "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 348,
+            "end_line": 362,
+            "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U012",
+        "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+      },
+      "retained_separate_inputs": [],
+      "source_record": {
+        "id": "silverman",
+        "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+        "urls": [],
+        "files": [
+          {
+            "workspace_relative_path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+            "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+            "bytes": 3658085
+          }
+        ],
+        "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+        "source_status": "bytes_pinned"
+      },
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT-P1"
+        ],
+        "assertion": {
+          "statement": "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8.",
+          "objects": "E:y^2=x^3-d^2x, d=75-53s, K0=Q(sqrt2); dual E_4d^2 and scaled point R.",
+          "hypotheses": "K0 is the PID with unit squareclasses given above; the preceding exact isogeny kernels hold.",
+          "quantifiers": "Every rational point on both fixed curves.",
+          "parameter_range": "All finite primes and both real embeddings.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Eight first-image classes; dual-image order1; quotient8.",
+          "normalizations": "Exceptional alpha(O)=1 and alpha((0,0))=b; target coefficient4d^2.",
+          "exceptional_cases": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+          "limit_order": "Establish squareclass containment and attained classes, then dual triviality, then quotient size; full torsion and saturation remain separate."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 36,
+            "end_line": 38,
+            "excerpt_sha256": "8ca3dc6779616457113ab8cce040db97b0862638066a937bca95ffdc85b21ea3"
+          },
+          "statement": "The explicit valuation and squareclass computation for E_-d^2 gives image size8 and trivial dual image, hence E(K0)/2E(K0) has size8.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 36,
+          "end_line": 41,
+          "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT",
+        "use_sha256": "5ba9591953a8365acd82812a5a9b4302867bf3e2861b211ebb6e403696c20139",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "The explicit valuation and squareclass computation for E_-d^2 gives image size8 and trivial dual image, hence E(K0)/2E(K0) has size8.",
+          "objects": "The exact E,K0,d,epsilon,delta,R,phi and hatphi of current348–362.",
+          "hypotheses": "The separately exposed class/unit and exact kernel inputs of this packet.",
+          "quantifiers": "All K0-rational points in the two squareclass maps.",
+          "parameter_range": "Fixed K0 and curve, including zero/identity exceptions.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Norm(d)=7; eight classes; squares in F7 are0,1,2,4.",
+          "normalizations": "epsilon^4 d=delta and scaling by(epsilon^4,epsilon^6).",
+          "exceptional_cases": "Dyadic prime(s) and prime(d) treated individually; no skipped odd-valuation cancellation case.",
+          "limit_order": "Compute both rational images, use exact kernels and composition[2]."
+        },
+        "needed_assertion": {
+          "statement": "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8.",
+          "objects": "E:y^2=x^3-d^2x, d=75-53s, K0=Q(sqrt2); dual E_4d^2 and scaled point R.",
+          "hypotheses": "K0 is the PID with unit squareclasses given above; the preceding exact isogeny kernels hold.",
+          "quantifiers": "Every rational point on both fixed curves.",
+          "parameter_range": "All finite primes and both real embeddings.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Eight first-image classes; dual-image order1; quotient8.",
+          "normalizations": "Exceptional alpha(O)=1 and alpha((0,0))=b; target coefficient4d^2.",
+          "exceptional_cases": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+          "limit_order": "Establish squareclass containment and attained classes, then dual triviality, then quotient size; full torsion and saturation remain separate."
+        },
+        "required_capabilities": [
+          "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8."
+        ],
+        "available_capabilities": [
+          "The explicit valuation and squareclass computation for E_-d^2 gives image size8 and trivial dual image, hence E(K0)/2E(K0) has size8."
+        ],
+        "derived_capabilities": [
+          "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 36,
+            "end_line": 41,
+            "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8.",
+            "objects": "E:y^2=x^3-d^2x, d=75-53s, K0=Q(sqrt2); dual E_4d^2 and scaled point R.",
+            "hypotheses": "K0 is the PID with unit squareclasses given above; the preceding exact isogeny kernels hold.",
+            "quantifiers": "Every rational point on both fixed curves.",
+            "parameter_range": "All finite primes and both real embeddings.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "Eight first-image classes; dual-image order1; quotient8.",
+            "normalizations": "Exceptional alpha(O)=1 and alpha((0,0))=b; target coefficient4d^2.",
+            "exceptional_cases": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+            "limit_order": "Establish squareclass containment and attained classes, then dual triviality, then quotient size; full torsion and saturation remain separate."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 36,
+              "end_line": 41,
+              "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 348,
+              "end_line": 362,
+              "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 348,
+            "end_line": 362,
+            "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U012",
+        "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+      },
+      "retained_separate_inputs": [
+        "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+        "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL"
+      ],
+      "source_record": null,
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-ELEMENTARY-ODD-FREE-INDEX",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-ELEMENTARY-ODD-FREE-INDEX-P1"
+        ],
+        "assertion": {
+          "statement": "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result.",
+          "objects": "R on C:y^2=x^3-(3-s)^2x and its pullback to E by the displayed isomorphism.",
+          "hypotheses": "ACTIVE-GENERATOR-RANK-AND-TORSION supplies rank1 and full two-torsion; exact squareclass map and scaling above.",
+          "quantifiers": "Every expression of the pulled-back R in a free generator plus torsion.",
+          "parameter_range": "This point and this rank-one group only.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Odd nonzero index; no index upper bound.",
+          "normalizations": "Scaling x by epsilon^4 preserves squareclass; d and its conjugate are positive.",
+          "exceptional_cases": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+          "limit_order": "Use rank/torsion, then opposite signs of epsilon versus equal signs of all torsion classes; only later apply height/saturation."
+        },
+        "classification": "dependency",
+        "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 42,
+            "end_line": 43,
+            "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+          },
+          "statement": "With rank1 and full two-torsion, a point whose x-squareclass has mixed real signs has odd nonzero free index when every torsion squareclass has equal signs.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 42,
+          "end_line": 43,
+          "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-ELEMENTARY-ODD-FREE-INDEX",
+        "use_sha256": "c80020f5bd0038f0083cb970fc2a06dc4d79276cd76a7c80ed3699648e7e6571",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "With rank1 and full two-torsion, a point whose x-squareclass has mixed real signs has odd nonzero free index when every torsion squareclass has equal signs.",
+          "objects": "Free quotient of E(K0), rational two-torsion and x-squareclass homomorphism.",
+          "hypotheses": "Rank1, all torsion of order2, alpha(2P)=1; displayed sign conditions.",
+          "quantifiers": "Every expression R=mG+T for a generator G of the free quotient and torsion T.",
+          "parameter_range": "The fixed rational-point group and sign map.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "m is odd and nonzero; no assertion |m|=1.",
+          "normalizations": "Free index is |m|; changing the generator changes its sign only.",
+          "exceptional_cases": "An even m would make alpha(R)=alpha(T); mixed signs exclude this including m=0.",
+          "limit_order": "Use previously established rank/torsion and sign map before reasoning about free index."
+        },
+        "needed_assertion": {
+          "statement": "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result.",
+          "objects": "R on C:y^2=x^3-(3-s)^2x and its pullback to E by the displayed isomorphism.",
+          "hypotheses": "ACTIVE-GENERATOR-RANK-AND-TORSION supplies rank1 and full two-torsion; exact squareclass map and scaling above.",
+          "quantifiers": "Every expression of the pulled-back R in a free generator plus torsion.",
+          "parameter_range": "This point and this rank-one group only.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Odd nonzero index; no index upper bound.",
+          "normalizations": "Scaling x by epsilon^4 preserves squareclass; d and its conjugate are positive.",
+          "exceptional_cases": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+          "limit_order": "Use rank/torsion, then opposite signs of epsilon versus equal signs of all torsion classes; only later apply height/saturation."
+        },
+        "required_capabilities": [
+          "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result."
+        ],
+        "available_capabilities": [
+          "With rank1 and full two-torsion, a point whose x-squareclass has mixed real signs has odd nonzero free index when every torsion squareclass has equal signs."
+        ],
+        "derived_capabilities": [
+          "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 42,
+            "end_line": 43,
+            "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result.",
+            "objects": "R on C:y^2=x^3-(3-s)^2x and its pullback to E by the displayed isomorphism.",
+            "hypotheses": "ACTIVE-GENERATOR-RANK-AND-TORSION supplies rank1 and full two-torsion; exact squareclass map and scaling above.",
+            "quantifiers": "Every expression of the pulled-back R in a free generator plus torsion.",
+            "parameter_range": "This point and this rank-one group only.",
+            "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+            "constants": "Odd nonzero index; no index upper bound.",
+            "normalizations": "Scaling x by epsilon^4 preserves squareclass; d and its conjugate are positive.",
+            "exceptional_cases": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+            "limit_order": "Use rank/torsion, then opposite signs of epsilon versus equal signs of all torsion classes; only later apply height/saturation."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+                "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+              },
+              "start_line": 42,
+              "end_line": 43,
+              "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 364,
+              "end_line": 368,
+              "excerpt_sha256": "92faed0d793d8e7d7d125e3548c79f82d6e63112cf08ca826e5d8cec954acae9"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 364,
+            "end_line": 368,
+            "excerpt_sha256": "92faed0d793d8e7d7d125e3548c79f82d6e63112cf08ca826e5d8cec954acae9"
+          }
+        ]
+      },
+      "initial_mapping": {
+        "use_id": "HIST-arithmetic-AR-U012",
+        "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+      },
+      "retained_separate_inputs": [
+        "ACTIVE-GENERATOR-RANK-AND-TORSION",
+        "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT"
+      ],
+      "source_record": null,
+      "scope": "Bounded current connection, not whole-proof acceptance."
+    }
+  ],
+  "scope": "Eight source/application connections for A055–A058 only."
+}

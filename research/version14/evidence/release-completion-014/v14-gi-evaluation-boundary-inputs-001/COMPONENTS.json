@@ -1,0 +1,386 @@
+[
+  {
+    "origin": "v14-gi-evaluation-boundary-inputs-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-GI-EXT-MF-CONVEX-BOUNDARY",
+      "consumer": "GI-06-MF",
+      "passages": [
+        "ACTIVE-GI-EXT-MF-CONVEX-BOUNDARY-P1"
+      ],
+      "assertion": {
+        "statement": "In the actual index-coordinate rectangle, integer points in mesh cubes meeting the convex boundary number O_k(eta N^k)+O_k(N^(k-1)), with fixed step-bound dependence.",
+        "objects": "Inverse image of the actual convex cutoff under the fixed progression parametrization, intersected with its index rectangle; mesh side floor(eta N).",
+        "hypotheses": "Dimension and progression step bounds are standard fixed; the convex set lies in a box of side O(N); choose standard eta>0 after the positive correlation lower bound.",
+        "quantifiers": "Every actual convex cutoff and progression product under these fixed hypotheses, including an empty-interior set through the local thickening argument.",
+        "parameter_range": "N unbounded, eta standard small and positive.",
+        "uniformity": "Uniform in cutoff shape and translate with fixed dimension/step bounds.",
+        "constants": "O_k(eta N^k)+O_k(N^(k-1)), with the stated fixed step-bound dependence.",
+        "normalizations": "Place disjoint unit cubes at lattice points and enclose them in the O_k(eta N+1) boundary neighborhood.",
+        "exceptional_cases": "An empty-interior convex set is handled by positive thickening and decreasing neighborhoods, not by silently quoting a stronger source theorem. Positive discrepancy and later frozen-test equidistribution remain separate.",
+        "limit_order": "Fix positive discrepancy first; apply the volume bound to the unit-cube enclosure, then choose eta to discard less than one quarter of it. Subsequent selection/freezing remains local."
+      },
+      "classification": "dependency",
+      "reason": "Exact explicit published input in the frozen local proof; local conclusions are derived separately.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-CONVEX-BOUNDARY.md",
+            "sha256": "410779025e5123ff8838c6a864539494696635d302069c7397b2dc0732101c55"
+          },
+          "start_line": 5,
+          "end_line": 23,
+          "excerpt_sha256": "b231a482e611f230f4d58fabaebe515622be846d34ae8ceb19413edfb81992c0"
+        },
+        "statement": "For a convex body K contained in [-N,N]^d and 0<epsilon<1, the epsilon N neighborhood of its boundary has volume O_d(epsilon N^d).",
+        "publication": {
+          "title": "Linear equations in primes",
+          "authors": "Benjamin Green and Terence Tao",
+          "venue": "Annals of Mathematics171 (2010),1753–1850",
+          "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+          "locator": "Corollary A.2, printed p.1810",
+          "corrections": "No correction assumed. Empty-interior and lattice-count conclusions are separate local arguments."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+        },
+        "start_line": 329,
+        "end_line": 343,
+        "excerpt_sha256": "504526f80ab67f3a56d49c03c1528c322fcfc16b7760494b57d41c96dc931b11"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-MF-CONVEX-BOUNDARY",
+      "use_sha256": "baf54a3925e2c7e41d0ac5d2edb1f03924c300f4cd1f9a8201c08469e612e1fe",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a convex body K contained in [-N,N]^d and 0<epsilon<1, the epsilon N neighborhood of its boundary has volume O_d(epsilon N^d).",
+        "objects": "Bounded convex body in Euclidean d-space and its boundary neighborhood.",
+        "hypotheses": "K is a convex body in the stated box; N>0 and 0<epsilon<1.",
+        "quantifiers": "Every such body and epsilon, for each fixed dimension d.",
+        "parameter_range": "Euclidean dimension d is fixed.",
+        "uniformity": "The implicit constant depends only on d, not on the shape of K.",
+        "constants": "O_d(epsilon N^d).",
+        "normalizations": "Ordinary Euclidean distance and Lebesgue volume.",
+        "exceptional_cases": "The cited corollary does not itself state lattice counts or the empty-interior extension; these are local consumer deductions.",
+        "limit_order": "Fix dimension and bounding box, then apply the boundary-volume estimate at the chosen positive thickness."
+      },
+      "needed_assertion": {
+        "statement": "In the actual index-coordinate rectangle, integer points in mesh cubes meeting the convex boundary number O_k(eta N^k)+O_k(N^(k-1)), with fixed step-bound dependence.",
+        "objects": "Inverse image of the actual convex cutoff under the fixed progression parametrization, intersected with its index rectangle; mesh side floor(eta N).",
+        "hypotheses": "Dimension and progression step bounds are standard fixed; the convex set lies in a box of side O(N); choose standard eta>0 after the positive correlation lower bound.",
+        "quantifiers": "Every actual convex cutoff and progression product under these fixed hypotheses, including an empty-interior set through the local thickening argument.",
+        "parameter_range": "N unbounded, eta standard small and positive.",
+        "uniformity": "Uniform in cutoff shape and translate with fixed dimension/step bounds.",
+        "constants": "O_k(eta N^k)+O_k(N^(k-1)), with the stated fixed step-bound dependence.",
+        "normalizations": "Place disjoint unit cubes at lattice points and enclose them in the O_k(eta N+1) boundary neighborhood.",
+        "exceptional_cases": "An empty-interior convex set is handled by positive thickening and decreasing neighborhoods, not by silently quoting a stronger source theorem. Positive discrepancy and later frozen-test equidistribution remain separate.",
+        "limit_order": "Fix positive discrepancy first; apply the volume bound to the unit-cube enclosure, then choose eta to discard less than one quarter of it. Subsequent selection/freezing remains local."
+      },
+      "required_capabilities": [
+        "In the actual index-coordinate rectangle, integer points in mesh cubes meeting the convex boundary number O_k(eta N^k)+O_k(N^(k-1)), with fixed step-bound dependence."
+      ],
+      "available_capabilities": [
+        "For a convex body K contained in [-N,N]^d and 0<epsilon<1, the epsilon N neighborhood of its boundary has volume O_d(epsilon N^d)."
+      ],
+      "derived_capabilities": [
+        "In the actual index-coordinate rectangle, integer points in mesh cubes meeting the convex boundary number O_k(eta N^k)+O_k(N^(k-1)), with fixed step-bound dependence."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 329,
+          "end_line": 343,
+          "excerpt_sha256": "504526f80ab67f3a56d49c03c1528c322fcfc16b7760494b57d41c96dc931b11"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "In the actual index-coordinate rectangle, integer points in mesh cubes meeting the convex boundary number O_k(eta N^k)+O_k(N^(k-1)), with fixed step-bound dependence.",
+          "objects": "Inverse image of the actual convex cutoff under the fixed progression parametrization, intersected with its index rectangle; mesh side floor(eta N).",
+          "hypotheses": "Dimension and progression step bounds are standard fixed; the convex set lies in a box of side O(N); choose standard eta>0 after the positive correlation lower bound.",
+          "quantifiers": "Every actual convex cutoff and progression product under these fixed hypotheses, including an empty-interior set through the local thickening argument.",
+          "parameter_range": "N unbounded, eta standard small and positive.",
+          "uniformity": "Uniform in cutoff shape and translate with fixed dimension/step bounds.",
+          "constants": "O_k(eta N^k)+O_k(N^(k-1)), with the stated fixed step-bound dependence.",
+          "normalizations": "Place disjoint unit cubes at lattice points and enclose them in the O_k(eta N+1) boundary neighborhood.",
+          "exceptional_cases": "An empty-interior convex set is handled by positive thickening and decreasing neighborhoods, not by silently quoting a stronger source theorem. Positive discrepancy and later frozen-test equidistribution remain separate.",
+          "limit_order": "Fix positive discrepancy first; apply the volume bound to the unit-cube enclosure, then choose eta to discard less than one quarter of it. Subsequent selection/freezing remains local."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "An empty-interior convex set is handled by positive thickening and decreasing neighborhoods, not by silently quoting a stronger source theorem. Positive discrepancy and later frozen-test equidistribution remain separate.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+              "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+            },
+            "start_line": 329,
+            "end_line": 343,
+            "excerpt_sha256": "504526f80ab67f3a56d49c03c1528c322fcfc16b7760494b57d41c96dc931b11"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 329,
+          "end_line": 343,
+          "excerpt_sha256": "504526f80ab67f3a56d49c03c1528c322fcfc16b7760494b57d41c96dc931b11"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+        },
+        "start_line": 329,
+        "end_line": 343,
+        "excerpt_sha256": "504526f80ab67f3a56d49c03c1528c322fcfc16b7760494b57d41c96dc931b11"
+      }
+    ],
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-CONVEX-BOUNDARY.md",
+        "sha256": "410779025e5123ff8838c6a864539494696635d302069c7397b2dc0732101c55"
+      }
+    ],
+    "retained_separate_inputs": [
+      "Actual progression parametrization and positive discrepancy",
+      "Fixed step bounds",
+      "Later smooth-factor freezing and total equidistribution"
+    ],
+    "scope": "This component is conditional on every stated incoming input. It is not whole-proof or release acceptance.",
+    "passage_bindings": [
+      {
+        "passage_id": "ACTIVE-GI-EXT-MF-CONVEX-BOUNDARY-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 329,
+          "end_line": 343,
+          "excerpt_sha256": "504526f80ab67f3a56d49c03c1528c322fcfc16b7760494b57d41c96dc931b11"
+        }
+      }
+    ]
+  },
+  {
+    "origin": "v14-gi-evaluation-boundary-inputs-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-GI-EXT-LP13-LIMIT-EVALUATION",
+      "consumer": "GI-03-LP13",
+      "passages": [
+        "ACTIVE-GI-EXT-LP13-LIMIT-EVALUATION-P1"
+      ],
+      "assertion": {
+        "statement": "For the actual strongly represented limit test, its representative tests satisfy the exact unit and vertical-character identities globally on an ultrafilter-large set of indices.",
+        "objects": "Fixed nilmanifold/metric and standard vertical character, represented test functions, all quotient points and all top-group elements.",
+        "hypotheses": "The unit and equivariance identities already hold at every limit point and limit top-group element. The test has representatives with the stated standard Lipschitz bound.",
+        "quantifiers": "All standard points and top-group elements simultaneously at each retained representative index; the premise quantifies over the entire ultraproduct domains.",
+        "parameter_range": "One fixed geometry and character, with bounded representative test norms.",
+        "uniformity": "One ultrafilter-large set of good indices supports both global identities; geometry and bounds remain fixed.",
+        "constants": "No new effective constant. The existing representative Lipschitz bound is retained.",
+        "normalizations": "Exact equality in the ultraproduct. A violating point or pair is chosen at each bad index; its ultralimit contradicts the all-limit premise.",
+        "exceptional_cases": "Standard-point-only equivariance would not suffice. This step does not construct the strong input or prescribe its symbol.",
+        "limit_order": "Start from represented strong data; if bad indices formed an ultrafilter-large set choose violations, apply A3 evaluation and A2 equality, obtain contradiction, then discard bad indices before the local formulas."
+      },
+      "classification": "dependency",
+      "reason": "Exact explicit published input in the frozen local proof; local conclusions are derived separately.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-LIMIT-EVALUATION.md",
+            "sha256": "add3aeaa2357c623c9d9f9f6324c5750d78b81ad4aa47f627857ec46edcec2a7"
+          },
+          "start_line": 5,
+          "end_line": 23,
+          "excerpt_sha256": "bcf67f42a01453f85f7f8ed48ab3f0fb8285ab649d691fafba908511a887df8b"
+        },
+        "statement": "Ultralimit objects are equivalent when their representatives agree on an ultrafilter-large set; a limit function evaluates by f(lim x_n)=lim f_n(x_n).",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics176 (2012),1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Definitions A.2 and A.3, printed p.1324",
+          "corrections": "No A.5 diagonal argument is used. Strong all-limit identities are explicit premises, not consequences of these definitions."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+          "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860"
+        },
+        "start_line": 347,
+        "end_line": 365,
+        "excerpt_sha256": "5c890d0ee442310db7bce09b3bc81bcf111d7f2c1a5758fa865cba3de34792e9"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-LP13-LIMIT-EVALUATION",
+      "use_sha256": "3fc9cb6227ff2fa48061b46c876b9cc19b51623b1f5c6fe2e1764125e216858f",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Ultralimit objects are equivalent when their representatives agree on an ultrafilter-large set; a limit function evaluates by f(lim x_n)=lim f_n(x_n).",
+        "objects": "Sequences of standard objects, spaces and functions, their ultraproducts, and equality of their classes.",
+        "hypotheses": "The functions and points are represented on the stated domains for ultrafilter-almost all indices.",
+        "quantifiers": "Every represented internal function and every represented point of its ultraproduct domain.",
+        "parameter_range": "The fixed nonprincipal ultrafilter framework of Appendix A.",
+        "uniformity": "The evaluation rule holds at all limit points, including nonstandard ones; it does not upgrade a standard-point-only identity.",
+        "constants": "No analytic estimate is part of this rule.",
+        "normalizations": "Equality is exact ultrafilter equality, not equality up to an infinitesimal or standard part.",
+        "exceptional_cases": "External functions need not have representatives. The rule alone supplies neither global equivariance nor a bounded-complexity family.",
+        "limit_order": "Choose representatives of the internal objects, then evaluate and compare their equivalence classes."
+      },
+      "needed_assertion": {
+        "statement": "For the actual strongly represented limit test, its representative tests satisfy the exact unit and vertical-character identities globally on an ultrafilter-large set of indices.",
+        "objects": "Fixed nilmanifold/metric and standard vertical character, represented test functions, all quotient points and all top-group elements.",
+        "hypotheses": "The unit and equivariance identities already hold at every limit point and limit top-group element. The test has representatives with the stated standard Lipschitz bound.",
+        "quantifiers": "All standard points and top-group elements simultaneously at each retained representative index; the premise quantifies over the entire ultraproduct domains.",
+        "parameter_range": "One fixed geometry and character, with bounded representative test norms.",
+        "uniformity": "One ultrafilter-large set of good indices supports both global identities; geometry and bounds remain fixed.",
+        "constants": "No new effective constant. The existing representative Lipschitz bound is retained.",
+        "normalizations": "Exact equality in the ultraproduct. A violating point or pair is chosen at each bad index; its ultralimit contradicts the all-limit premise.",
+        "exceptional_cases": "Standard-point-only equivariance would not suffice. This step does not construct the strong input or prescribe its symbol.",
+        "limit_order": "Start from represented strong data; if bad indices formed an ultrafilter-large set choose violations, apply A3 evaluation and A2 equality, obtain contradiction, then discard bad indices before the local formulas."
+      },
+      "required_capabilities": [
+        "For the actual strongly represented limit test, its representative tests satisfy the exact unit and vertical-character identities globally on an ultrafilter-large set of indices."
+      ],
+      "available_capabilities": [
+        "Ultralimit objects are equivalent when their representatives agree on an ultrafilter-large set; a limit function evaluates by f(lim x_n)=lim f_n(x_n)."
+      ],
+      "derived_capabilities": [
+        "For the actual strongly represented limit test, its representative tests satisfy the exact unit and vertical-character identities globally on an ultrafilter-large set of indices."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+            "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860"
+          },
+          "start_line": 347,
+          "end_line": 365,
+          "excerpt_sha256": "5c890d0ee442310db7bce09b3bc81bcf111d7f2c1a5758fa865cba3de34792e9"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual strongly represented limit test, its representative tests satisfy the exact unit and vertical-character identities globally on an ultrafilter-large set of indices.",
+          "objects": "Fixed nilmanifold/metric and standard vertical character, represented test functions, all quotient points and all top-group elements.",
+          "hypotheses": "The unit and equivariance identities already hold at every limit point and limit top-group element. The test has representatives with the stated standard Lipschitz bound.",
+          "quantifiers": "All standard points and top-group elements simultaneously at each retained representative index; the premise quantifies over the entire ultraproduct domains.",
+          "parameter_range": "One fixed geometry and character, with bounded representative test norms.",
+          "uniformity": "One ultrafilter-large set of good indices supports both global identities; geometry and bounds remain fixed.",
+          "constants": "No new effective constant. The existing representative Lipschitz bound is retained.",
+          "normalizations": "Exact equality in the ultraproduct. A violating point or pair is chosen at each bad index; its ultralimit contradicts the all-limit premise.",
+          "exceptional_cases": "Standard-point-only equivariance would not suffice. This step does not construct the strong input or prescribe its symbol.",
+          "limit_order": "Start from represented strong data; if bad indices formed an ultrafilter-large set choose violations, apply A3 evaluation and A2 equality, obtain contradiction, then discard bad indices before the local formulas."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Standard-point-only equivariance would not suffice. This step does not construct the strong input or prescribe its symbol.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+              "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860"
+            },
+            "start_line": 347,
+            "end_line": 365,
+            "excerpt_sha256": "5c890d0ee442310db7bce09b3bc81bcf111d7f2c1a5758fa865cba3de34792e9"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+            "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860"
+          },
+          "start_line": 347,
+          "end_line": 365,
+          "excerpt_sha256": "5c890d0ee442310db7bce09b3bc81bcf111d7f2c1a5758fa865cba3de34792e9"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+          "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860"
+        },
+        "start_line": 347,
+        "end_line": 365,
+        "excerpt_sha256": "5c890d0ee442310db7bce09b3bc81bcf111d7f2c1a5758fa865cba3de34792e9"
+      }
+    ],
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-LIMIT-EVALUATION.md",
+        "sha256": "add3aeaa2357c623c9d9f9f6324c5750d78b81ad4aa47f627857ec46edcec2a7"
+      }
+    ],
+    "retained_separate_inputs": [
+      "Actual strongly represented test on the full ultraproduct domain",
+      "Fixed geometry/character and bounded Lipschitz representatives",
+      "Earlier local quotient and compact representative construction"
+    ],
+    "scope": "This component is conditional on every stated incoming input. It is not whole-proof or release acceptance.",
+    "passage_bindings": [
+      {
+        "passage_id": "ACTIVE-GI-EXT-LP13-LIMIT-EVALUATION-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+            "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860"
+          },
+          "start_line": 347,
+          "end_line": 365,
+          "excerpt_sha256": "5c890d0ee442310db7bce09b3bc81bcf111d7f2c1a5758fa865cba3de34792e9"
+        }
+      }
+    ]
+  }
+]

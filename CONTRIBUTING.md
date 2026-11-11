@@ -2,6 +2,10 @@
 
 Mathematical corrections, dependency checks, reproducibility reports, and improvements to the formalization are useful contributions. Please make each report specific enough that another reader can reproduce the issue.
 
+For proposed changes, follow the [research review guide](docs/research-review/README.md) and the [complete mathematical research review protocol](docs/research-review/PROTOCOL.md). They specify PR evidence, non-author review, treatment of every audit objection, and closure on the exact final revision. For a research release, identify the project release profile and include the cumulative research handoff and synchronized release records. For a non-release change, explain which release duties do not apply and why. The guide links the live rulesets for current enforcement. Existing CI alone does not establish full protocol completion.
+
+For proof-coverage claims, include the complete coverage index, the non-author's frozen initial source-use reconstruction, its reconciliation with the declared inventory and direct dependencies, and the separate coverage decision required by protocol v1.4. Preserve differences and their reviewed dispositions. Record prior exposure, exact proof and supplier versions, and any unreviewed passage or unresolved supplier. Changes to a supplier contract or an affected proof require renewed coverage review. Existing application acceptances alone do not establish completeness. Identify every substantive source-to-consumer transition and its derivation. After a substantive failure, include the bounded review of related uses and the check that repeated current assertions incorporate the correction. Preserve prior evidence and obtain non-author acceptance of the affected scope.
+
 ## Mathematical reports
 
 [Open an issue](https://github.com/elliotglazer/diophantine-z-q/issues/new) with:

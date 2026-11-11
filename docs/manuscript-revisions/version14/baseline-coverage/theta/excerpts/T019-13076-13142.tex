@@ -1,0 +1,67 @@
+\paragraph{From the full cohomology bound to the same determinant scalar.}
+Here is the rational divisibility step explicitly. Fix a character
+$x$ of $G$, a height-one prime $\mathfrak p$ of $A$, and
+$R=A_{\mathfrak p}$. Put $z=F_E(Z_F)_x$, without changing its
+normalization. The full global degree-one module is free of rank one
+over $R$ by the argument following (K15) and the injectivity of the
+maps in (K16). Write it as $Re$, and write $z=\alpha e$.
+The higher real cohomology vanishes over $R$, since two is invertible.
+Global degree-zero cohomology is zero: an invariant would restrict
+to an invariant of the open nonabelian subgroup on the elliptic
+representation, on which the scalar coefficient character is trivial.
+Thus the positive-cone exact sequence gives
+\[
+ 0\longrightarrow R a\longrightarrow
+ H^1(C^+_x\otimes R)\longrightarrow Re\longrightarrow0,
+ \qquad
+ H^2(C^+_x\otimes R)=H^2(C_{S,x}\otimes R).
+\]
+The element $a$ here is the image of the fixed real invariant generator
+in (E.4), and it is primitive in this positive degree-one module,
+because the quotient $Re$ is free. Choose a lift $\widetilde e$ of $e$;
+then $(a,\widetilde e)$ is a basis. The equality already proved from
+(E.4) becomes
+\[
+                 u_x^{\rm ev}\theta_x
+                  =2\alpha\,a\wedge\widetilde e.
+\]
+Let $d_1,\ldots,d_r$ be the nonzero Smith entries of a finite free
+model of $C^+_x\otimes R$. All its cohomology outside degrees one and
+two is zero, its degree-one cohomology is free, and its degree-two
+cohomology is torsion. Its inverse determinant lattice, under the
+rational identification with $\bigwedge^2H^1$, is therefore generated,
+up to an $R$-unit, by
+$(\prod_i d_i)a\wedge\widetilde e$. It follows that
+\[
+ \begin{split}
+ v_{\mathfrak p}(u_x^{\rm ev})
+ &=v_{\mathfrak p}(\alpha)-\sum_i v_{\mathfrak p}(d_i)\\
+ &=\ell_R(H^1(C_{S,x}\otimes R)/Rz)
+       -\ell_R H^2(C_{S,x}\otimes R)\ \geq\ 0,
+ \end{split}                                                   \tag{E.4a}
+\]
+where two is a unit and the inequality is exactly (K2).
+This uses the full $H^2$ corrected in (K16), rather than only Kato's
+$\mathbf H^2_0$.
+
+The intersection of the height-one valuation rings of the normal
+domain $A$ gives $u_x^{\rm ev}\in A$ for every $x$. Since $|G|$ is
+a power of two, the character idempotents belong to $A[G]$ and these
+memberships give $u^{\rm ev}\in A[G]$. This establishes membership
+only; it is not a bound for the denominator from character inversion.
+The uniform bound comes separately from (E.3): in its free rank-two
+$\mathscr O[G]$-module the integral vectors $a,b$ of (E.4) have integral
+wedge, so $2^{c_E}u^{\rm ev}\in\mathscr O[G]$ with the fixed exponent
+already used for the original lattice. Coefficientwise intersection
+in the original group basis gives
+
+
+\[
+              A\cap\mathscr O=\Lambda,\qquad
+                  2^{c_E}u^{\rm ev}\in\Lambda[G].                 \tag{E.5}
+\]
+Indeed an element of $A$ has bounded powers of two as denominators
+in its power-series coefficients; membership in $\mathscr O$ makes
+their minimum valuation nonnegative. The coefficientwise intersection
+retains $c_E$, without a term $v_2|G|$.
+\end{proof}

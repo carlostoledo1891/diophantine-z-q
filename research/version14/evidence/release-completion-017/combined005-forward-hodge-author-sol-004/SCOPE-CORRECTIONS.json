@@ -1,0 +1,88 @@
+{
+  "predecessor_sha256": "4f41fbbe5c6bc8285348b091509530c9801a792f07cbde7a0c8b67df7150ba90",
+  "source_statement": {
+    "before": "the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+    "after": "the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve.",
+    "before_file_sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+    "after_file_sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+  },
+  "removed_dependency": {
+    "use": {
+      "id": "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+      "consumer": "CURRENT-HODGE-TORSION-DESCENT",
+      "passages": [
+        "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE-P"
+      ],
+      "assertion": {
+        "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+        "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+        "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+        "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+        "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+        "uniformity": "Only the exact stated objects and domain are used.",
+        "constants": "No effective quantitative bound is asserted.",
+        "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+        "exceptional_cases": "This is separate from the published Hodge equivalence.",
+        "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+      },
+      "classification": "dependency",
+      "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "internal",
+        "application_id": "CURRENT-MILNE-CAV-HODGE",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1427,
+          "end_line": 1430,
+          "excerpt_sha256": "7ba7c4459c99b9a8c880049de3e8c5bdd7228ab7ee0e0b7199418b3cd0000b0c"
+        },
+        "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+        "publication": null
+      },
+      "application_id": "CURRENT-HODGE-TORSION-DESCENT",
+      "inline_argument": null
+    },
+    "edge": {
+      "consumer": "CURRENT-HODGE-TORSION-DESCENT",
+      "supplier": "CURRENT-MILNE-CAV-HODGE",
+      "use_ids": [
+        "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE"
+      ],
+      "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+    },
+    "reason": "Generic descent starts with an already algebraic complex endomorphism. The centralizer application separately consumes both Hodge algebraization and descent."
+  },
+  "changed_use_hashes": [
+    {
+      "use_id": "FR-MODULARITY-SILVERMAN",
+      "before": "3b264c599cbfb17983bbd42be5fd4270917bb78611bc4ba750dcdab7a34cc8fa",
+      "after": "89d64679a48ec4287b5b5e189516e11c6087b962f175dd7cc08f306b9da9f22b"
+    },
+    {
+      "use_id": "FR-KOLYVAGIN-PUBLISHED",
+      "before": "4a339346fea3563fe7801ef636df26a64b61c11116f12afd35cced288a6d3a0a",
+      "after": "7d96506e809dde46d51123d8ad9c979da65e8d077dc4d344e50b6442a16c6946"
+    },
+    {
+      "use_id": "FR-KUMMER-FINITE",
+      "before": "d864d86343f10d66838a0bd8252ecc5fb7c2f7ffb7e3d4dbdbd365705392e4e9",
+      "after": "627cfa41c56153c2b09aed8bab50c8c0f1b5de0ac9235f48f03f18aa0f19bb00"
+    },
+    {
+      "use_id": "FR-PICARD-DIVISOR",
+      "before": "d32644d1012a3d86e1e7286351ff675e55d82c3ab972748936187487dd381d7c",
+      "after": "e89698ef638925b60223d910e710e9d1bd91d3044387884cc6c589dcb914551a"
+    },
+    {
+      "use_id": "FR-KATO-COR14.3",
+      "before": "02882f2ef70d1c6eeda86cb94214a82c7f40a85fb2597d7f90e8d97d06458e0a",
+      "after": "fd97375154d6dc73c12d0bf12071800fd1431650c789ce4349b633454b32714a"
+    }
+  ],
+  "mathematical_manuscript_changed": false
+}

@@ -1,0 +1,72 @@
+{
+  "id": "BP-FIXED-CENTER-BRIDGE",
+  "assertion": {
+    "statement": "The BP9.11 diagram construction supplies the fixed-center admissible K-envelope with G-socle pi required in BM5.2 after the stated twists and eigenspace operation.",
+    "objects": "G=GL2(Q5), K=GL2(Z5), absolutely irreducible supersingular pi with central zeta.",
+    "parameter_range": "Finite residual coefficient field extended finitely to contain square root of inverse zeta(5); p=5.",
+    "hypotheses": "BPSection9construction and symmetry/gluing inputs; finiteK-socle; all relevant GL2(F5) and tameHcharacters split overk.",
+    "conclusion": "G-stable admissible enlargement containing pi whose K-restriction is the fixed-zeta injective envelope and whose G-socle equals pi.",
+    "uniformity": "For each auxiliary supersingular pi used in the restricted route; no new assumption on originalr5.",
+    "exceptional_cases": "p2property(S)notused; scalarrestrictionfromkbarisnotused; finalpublicationcomparisonremainsopen.",
+    "normalization": "Unramified determinant twist with mu(5)^2=zeta(5)^-1; twist is trivial onK; take fullZ-eigensubspace before untwisting.",
+    "dependency_scope": "RetainsBP9.6symmetry/9.8gluing; proves central-category, admissibility,socle and finitefield connections only.",
+    "translation": "Matches the exact initial enlargement in BM5.2; does not prove the later homological regular-element construction or integral lift."
+  },
+  "comparisons": [
+    {
+      "field": "objects",
+      "needed": "G=GL2(Q5), K=GL2(Z5), absolutely irreducible supersingular pi with central zeta.",
+      "provided": "The full-envelope conclusion is converted by the central eigenspace right adjoint; its injectivity follows from exact inclusion and essentiality from the unchanged socle.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "parameter_range",
+      "needed": "Finite residual coefficient field extended finitely to contain square root of inverse zeta(5); p=5.",
+      "provided": "The square root is obtained by one finite coefficient extension; all tameHcharacters and GL2(F5)weights already split overthatfield.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "hypotheses",
+      "needed": "BPSection9construction and symmetry/gluing inputs; finiteK-socle; all relevant GL2(F5) and tameHcharacters split overk.",
+      "provided": "The proof retains the actual source symmetry and gluing results; finiteK-socle gives finite invariant spaces, not an assumption of G-admissibility without proof.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "conclusion",
+      "needed": "G-stable admissible enlargement containing pi whose K-restriction is the fixed-zeta injective envelope and whose G-socle equals pi.",
+      "provided": "The central eigenspace contains pi; every nonzeroGsubmodule intersects its K-socle and therefore contains pi.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "uniformity",
+      "needed": "For each auxiliary supersingular pi used in the restricted route; no new assumption on originalr5.",
+      "provided": "The operations depend only on central scalar and finite socle; no targetlocaltype restriction is added.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "exceptional_cases",
+      "needed": "p2property(S)notused; scalarrestrictionfromkbarisnotused; finalpublicationcomparisonremainsopen.",
+      "provided": "p5 makes the finite reflection group order32 invertible; coefficient descent proceeds through the construction, not arbitrary restrictionofscalars.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "normalization",
+      "needed": "Unramified determinant twist with mu(5)^2=zeta(5)^-1; twist is trivial onK; take fullZ-eigensubspace before untwisting.",
+      "provided": "The central scalar5acts by zeta(5)mu(25)=1; Kdeterminants are units soKrestriction unchanged; untwisting restoreszeta.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "dependency_scope",
+      "needed": "RetainsBP9.6symmetry/9.8gluing; proves central-category, admissibility,socle and finitefield connections only.",
+      "provided": "Only application connections are proposed; BPfinite-group symmetry/treegluing and finaledition remain explicitlyqualified.",
+      "status": "pending independent review"
+    },
+    {
+      "field": "translation",
+      "needed": "Matches the exact initial enlargement in BM5.2; does not prove the later homological regular-element construction or integral lift.",
+      "provided": "BMneeds fixedcentralcharacter, admissibility, K-envelope andGsocle; each is separately derived before its Ext/xargument.",
+      "status": "pending independent review"
+    }
+  ],
+  "status": "author_proposal_pending_independent_review"
+}

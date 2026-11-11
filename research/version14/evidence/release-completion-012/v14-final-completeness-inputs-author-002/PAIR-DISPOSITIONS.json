@@ -1,0 +1,502 @@
+{
+  "schema": 1,
+  "author": "/root/v14_arithmetic_author",
+  "state": "proposed_for_independent_review",
+  "active": [
+    {
+      "supplier": "N05-CONTACT-POLE-COMPLETE",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N05"
+    },
+    {
+      "supplier": "N14-THREE326-COMPLETE",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N14"
+    },
+    {
+      "supplier": "N16-SHIFTED-ANCHOR359",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N16"
+    },
+    {
+      "supplier": "N18-EXACT-UNSCALING",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N18"
+    },
+    {
+      "supplier": "N21-ORDINARY-WEIGHTED-CHAIN",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N21"
+    },
+    {
+      "supplier": "N26-COMMON-SCALE-COMPLETE",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N26"
+    },
+    {
+      "supplier": "N27-SPARSE-SHARED314",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N27"
+    },
+    {
+      "supplier": "N30-ANCHOR-SMALL-LOCAL",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N30"
+    },
+    {
+      "supplier": "N31-ANCHOR-CONTACT-LOCAL",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N31"
+    },
+    {
+      "supplier": "N32-ANCHOR-RATIONAL-APPROXIMATION",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N32"
+    },
+    {
+      "supplier": "N33-ANCHOR-COMPLETE-ORDER",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N33"
+    },
+    {
+      "supplier": "N41-ROOT-RESTORATION-AND-COMPLETENESS",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N41"
+    },
+    {
+      "supplier": "N44-RAW-RATIO-GLOBAL-REDUNDANCY",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N44"
+    },
+    {
+      "supplier": "N45-S-ORIENTED-RECIPROCAL-EXTENSION",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N45"
+    },
+    {
+      "supplier": "N48-ORDINARY-CORRECTED299",
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "use_id": "ACTIVE-FINAL-COMPLETENESS-N48"
+    }
+  ],
+  "inline_forward_projection": {
+    "use_id": "ACTIVE-FINAL-COMPLETENESS-HALF-CHART-PROJECTION",
+    "source": {
+      "pin": {
+        "side": "head",
+        "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/01-elimination/s-odd366/REPORT.md",
+        "sha256": "e2a482e2f08712c6375bfaca4fea78bea35034727946c582ce7b3dde02608c7b"
+      },
+      "start_line": 92,
+      "end_line": 108,
+      "excerpt_sha256": "20c1b66545abe551e16e6c4fe9fe80c74507644c6301aa3afa42be5268a00dcd"
+    }
+  },
+  "no_direct_use": [
+    {
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "supplier": "N17-ROOT-SIGN-RESTORATION",
+      "disposition": "no_direct_dependency_for_this_forward_consumer",
+      "reason_kind": "reverse-soundness-only",
+      "reason": "The source root-sign involutions restore deleted half charts from arbitrary new solutions. Forward completeness begins with the old odd-root charts and retains their physical points; no reverse sign selection is required. The actual reciprocal forward maps are supplied by N41 and N45.",
+      "mathematical_source_retained": true,
+      "source_edge": {
+        "applicationId": "V13-FINAL-COMPLETENESS",
+        "entryId": "N17-ROOT-SIGN-RESTORATION",
+        "role": "current_consumer",
+        "justification": "The A,T,Z sign actions restore actual half charts and preserve the biquadratic point rows; the full solution reconstruction is used in the completion proof. The exact current derivation is bound here; the application consumer is bound separately. An actual rational zero of P299 and the uniquely extended zero of P314 for every integer input.",
+        "sourceSpans": [
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/resume-elimination-20261107/abscissa359/REPORT.md",
+            "sha256": "23f95faa9d5cafbbf571f67c6050b0d86bd17f778f74737372b76e0aff9ffebe",
+            "start_line": 75,
+            "end_line": 99,
+            "sha256_raw_utf8_span": "1c36c35f1ccf917acaf6018a49d698f31429e6eee86465ad967b761ab732a3fb"
+          }
+        ],
+        "consumerSpans": [
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 22957,
+            "end_line": 22978,
+            "sha256_raw_utf8_span": "1cc41f87140d70c13b145c98ba48bf28cd3026d7a6452cf8536035020ef5f4c4"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23639,
+            "end_line": 23707,
+            "sha256_raw_utf8_span": "396aadf2a1eb3eb5c2ea5829fbf56ade30b1e95cbfffc711e01a460d6da2d50a"
+          }
+        ],
+        "sourceRelationship": "historical proof evidence, not a new external theorem"
+      },
+      "current_evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 22957,
+          "end_line": 22978,
+          "excerpt_sha256": "1cc41f87140d70c13b145c98ba48bf28cd3026d7a6452cf8536035020ef5f4c4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23554,
+          "end_line": 23587,
+          "excerpt_sha256": "bb097967cf6c18e0f767b82c23490ecb7cefd83fffb3ab2f2405d98e9cd89ad7"
+        }
+      ],
+      "not_metadata": true
+    },
+    {
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "supplier": "N22-SPARSE-LUCAS",
+      "disposition": "no_direct_dependency_for_this_forward_consumer",
+      "reason_kind": "transitive-specialization",
+      "reason": "The generic private recentering is the ancestor of N27, whose shared314 statement preserves the actual physical Lucas value, common gamma and all external consumers. Current23607–23617 uses that same specialized map. Do not count a second direct import of the generic ancestor.",
+      "mathematical_source_retained": true,
+      "source_edge": {
+        "applicationId": "V13-FINAL-COMPLETENESS",
+        "entryId": "N22-SPARSE-LUCAS",
+        "role": "supporting_derivation",
+        "justification": "The affine Lucas recentering preserves the physical polynomial F fed by the logarithm comparisons and consumed by grouped tests; the exact witness map and finite table change, but the input parity lemma does not. The exact current derivation is bound here; the application consumer is bound separately. An actual rational zero of P299 and the uniquely extended zero of P314 for every integer input.",
+        "sourceSpans": [
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/10-combination/sparse-lucas320/REPORT.md",
+            "sha256": "3b8b25f51a2058ba1f31fe2e78b67be7e4337aa59877f8d9423bde1f0da8cf63",
+            "start_line": 1,
+            "end_line": 23,
+            "sha256_raw_utf8_span": "3b8b25f51a2058ba1f31fe2e78b67be7e4337aa59877f8d9423bde1f0da8cf63"
+          }
+        ],
+        "consumerSpans": [
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23607,
+            "end_line": 23617,
+            "sha256_raw_utf8_span": "aff5372093da76ce9c7d3d491f0fda09efc8575ec5cc7207ad230bc9c9b625fa"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23639,
+            "end_line": 23707,
+            "sha256_raw_utf8_span": "396aadf2a1eb3eb5c2ea5829fbf56ade30b1e95cbfffc711e01a460d6da2d50a"
+          }
+        ],
+        "sourceRelationship": "historical proof evidence, not a new external theorem"
+      },
+      "current_evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23607,
+          "end_line": 23617,
+          "excerpt_sha256": "aff5372093da76ce9c7d3d491f0fda09efc8575ec5cc7207ad230bc9c9b625fa"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23554,
+          "end_line": 23587,
+          "excerpt_sha256": "bb097967cf6c18e0f767b82c23490ecb7cefd83fffb3ab2f2405d98e9cd89ad7"
+        }
+      ],
+      "not_metadata": true
+    },
+    {
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "supplier": "N38-AUXILIARY-TORSION-LOG-TRANSFER",
+      "disposition": "no_direct_dependency_for_this_forward_consumer",
+      "reason_kind": "reverse-soundness-only",
+      "reason": "The doubled torsion-killing identities and half-integral free-index argument prove soundness for arbitrary new E(K) auxiliary points. The forward construction uses the old points in2E(K) and the explicit substitutions from N41/N45; it does not need to recover integer labels from arbitrary new points.",
+      "mathematical_source_retained": true,
+      "source_edge": {
+        "applicationId": "V13-FINAL-COMPLETENESS",
+        "entryId": "N38-AUXILIARY-TORSION-LOG-TRANSFER",
+        "role": "current_consumer",
+        "justification": "The same physical F+1=(253,2*254), F^2=(319-2*253+1,4*320-4*254), H4 groups and order10/40 label tests are retained. Scalar S, depth24 and its oriented scalar point are unchanged. Full307 review supplies exact Ui-Vi=Qi and root restoration before this step. The exact current derivation is bound here; the application consumer is bound separately. An actual rational zero of P299 and the uniquely extended zero of P314 for every integer input.",
+        "sourceSpans": [
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+            "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+            "start_line": 56,
+            "end_line": 73,
+            "sha256_raw_utf8_span": "e3b04aad6fb415d8b9f9e269a97e7e6dc990bcc0d58fc80563012a9f643fc878"
+          },
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+            "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+            "start_line": 74,
+            "end_line": 79,
+            "sha256_raw_utf8_span": "ea3c3d8c5ad4ede365fcafb0ec7055954a0796f552c7ce2f79917cc65bc735f0"
+          }
+        ],
+        "consumerSpans": [
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23292,
+            "end_line": 23338,
+            "sha256_raw_utf8_span": "e9f5e0aab9c4d0fd1057150b74d84a90adb6bdc7bbe45120d5851be8fd2e3bf5"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23639,
+            "end_line": 23707,
+            "sha256_raw_utf8_span": "396aadf2a1eb3eb5c2ea5829fbf56ade30b1e95cbfffc711e01a460d6da2d50a"
+          }
+        ],
+        "sourceRelationship": "historical proof evidence, not a new external theorem"
+      },
+      "current_evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23292,
+          "end_line": 23338,
+          "excerpt_sha256": "e9f5e0aab9c4d0fd1057150b74d84a90adb6bdc7bbe45120d5851be8fd2e3bf5"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23554,
+          "end_line": 23587,
+          "excerpt_sha256": "bb097967cf6c18e0f767b82c23490ecb7cefd83fffb3ab2f2405d98e9cd89ad7"
+        }
+      ],
+      "not_metadata": true
+    },
+    {
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "supplier": "N39-GLOBAL-APPROXIMANT-DOMAIN",
+      "disposition": "no_direct_dependency_for_this_forward_consumer",
+      "reason_kind": "stronger-domain-not-needed-in-forward-map",
+      "reason": "The global all-K numerator/denominator certificates support arbitrary new auxiliary cosets in soundness. The original complete witness already supplies defined old normalized approximants on its fixed neighborhoods; forward maps retain their values. This does not retire the all-K domain input for the separate soundness proof.",
+      "mathematical_source_retained": true,
+      "source_edge": {
+        "applicationId": "V13-FINAL-COMPLETENESS",
+        "entryId": "N39-GLOBAL-APPROXIMANT-DOMAIN",
+        "role": "current_consumer",
+        "justification": "Unchanged rational-log circuits V0,V2,V3,V4 and ell0 denominator. The S-pair V2 remains unchanged but uses the same certificate. At V1 the G2 polynomial has no variable denominator. The old real interval is not assumed on arbitrary cosets. The exact current derivation is bound here; the application consumer is bound separately. An actual rational zero of P299 and the uniquely extended zero of P314 for every integer input.",
+        "sourceSpans": [
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/resume-auxiliary-domain-20261107/PROPOSAL.md",
+            "sha256": "b4641d8f2d6c50824956de216ff7055e31b9c9ab79249d41ee5567300a3ee750",
+            "start_line": 74,
+            "end_line": 79,
+            "sha256_raw_utf8_span": "ea3c3d8c5ad4ede365fcafb0ec7055954a0796f552c7ce2f79917cc65bc735f0"
+          },
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/reciprocal307-20261107/REPORT.md",
+            "sha256": "e665b24b174be4ddc4933293c6843a2a897c41b5982728e63a197e47b4f38d20",
+            "start_line": 95,
+            "end_line": 113,
+            "sha256_raw_utf8_span": "0d238900aca8f9703a52d7407f3a475b31515e527a41632b43b2e113c04ae6c6"
+          }
+        ],
+        "consumerSpans": [
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23340,
+            "end_line": 23358,
+            "sha256_raw_utf8_span": "cd78ea22ea188b04ddf7b054cfe6d2ab08517d4724196a72103cac70b235a56f"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23639,
+            "end_line": 23707,
+            "sha256_raw_utf8_span": "396aadf2a1eb3eb5c2ea5829fbf56ade30b1e95cbfffc711e01a460d6da2d50a"
+          }
+        ],
+        "sourceRelationship": "historical proof evidence, not a new external theorem"
+      },
+      "current_evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23340,
+          "end_line": 23358,
+          "excerpt_sha256": "cd78ea22ea188b04ddf7b054cfe6d2ab08517d4724196a72103cac70b235a56f"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23554,
+          "end_line": 23587,
+          "excerpt_sha256": "bb097967cf6c18e0f767b82c23490ecb7cefd83fffb3ab2f2405d98e9cd89ad7"
+        }
+      ],
+      "not_metadata": true
+    },
+    {
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "supplier": "N46-S-ALL-E-DOMAIN-APPLICATION",
+      "disposition": "no_direct_dependency_for_this_forward_consumer",
+      "reason_kind": "reverse-soundness-only",
+      "reason": "The all-four-pair domain extension and cancellation ordering prove that every new S witness has integer input. Forward completeness is supplied by N45 using the old oriented S point and regular ratio identities, including identity/tangent branches. No assertion that every new S fiber has an old square-root lift is used.",
+      "mathematical_source_retained": true,
+      "source_edge": {
+        "applicationId": "V13-FINAL-COMPLETENESS",
+        "entryId": "N46-S-ALL-E-DOMAIN-APPLICATION",
+        "role": "current_consumer",
+        "justification": "The actual S alternate-square cache is196+2*rho*197, used by unchanged rational V2 logarithm and detector powers. The scalar point, f coefficient, anchor and depth24 tests are unchanged. All four Ui/Vi now satisfy the conditional domain lemma; all four root labels remain integer and retain their original parity. The exact current derivation is bound here; the application consumer is bound separately. An actual rational zero of P299 and the uniquely extended zero of P314 for every integer input.",
+        "sourceSpans": [
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/resume-elimination-20261107/reciprocal299-r2/REPORT.md",
+            "sha256": "ae5d127cb34de3b0f318f6faff3736738748286279012d3db3f9b46151b95b8b",
+            "start_line": 63,
+            "end_line": 78,
+            "sha256_raw_utf8_span": "cd2969b59fc3b49d8fe9e1d99f209924943ebde68309bbeee63bd391e0ad51b4"
+          },
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/resume-elimination-20261107/reciprocal299-r2/REPORT.md",
+            "sha256": "ae5d127cb34de3b0f318f6faff3736738748286279012d3db3f9b46151b95b8b",
+            "start_line": 79,
+            "end_line": 89,
+            "sha256_raw_utf8_span": "79c8ac2bf90bffd1f97eb21fbe0e83d6c5832781447ce6ba0d89446b9a74904f"
+          }
+        ],
+        "consumerSpans": [
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23269,
+            "end_line": 23338,
+            "sha256_raw_utf8_span": "0e3588f3d7d632096a8523b071b8af35f8cd6e4c51ff54578d9105aa8e575730"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23360,
+            "end_line": 23367,
+            "sha256_raw_utf8_span": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23639,
+            "end_line": 23707,
+            "sha256_raw_utf8_span": "396aadf2a1eb3eb5c2ea5829fbf56ade30b1e95cbfffc711e01a460d6da2d50a"
+          }
+        ],
+        "sourceRelationship": "historical proof evidence, not a new external theorem"
+      },
+      "current_evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23269,
+          "end_line": 23367,
+          "excerpt_sha256": "a2c98103d06ca1f516de48dd49c50232075b6ac9cb81b4c725e1e8eb83b993a7"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23554,
+          "end_line": 23587,
+          "excerpt_sha256": "bb097967cf6c18e0f767b82c23490ecb7cefd83fffb3ab2f2405d98e9cd89ad7"
+        }
+      ],
+      "not_metadata": true
+    },
+    {
+      "consumer": "V13-FINAL-COMPLETENESS",
+      "supplier": "N08-S-HALF-RESTORATION",
+      "disposition": "no_direct_dependency_for_this_forward_consumer",
+      "reason_kind": "reverse-owner-not-forward-proof",
+      "reason": "Ordinary N08 declares reverse half-chart restoration. The source also contains the elementary forward forgetting proof at line108, but that different clause is now bound explicitly as inline ACTIVE-FINAL-COMPLETENESS-HALF-CHART-PROJECTION, without enlarging N08.",
+      "replacement_inline_use": "ACTIVE-FINAL-COMPLETENESS-HALF-CHART-PROJECTION",
+      "mathematical_source_retained": true,
+      "source_edge": {
+        "applicationId": "V13-FINAL-COMPLETENESS",
+        "entryId": "N08-S-HALF-RESTORATION",
+        "role": "current_consumer",
+        "justification": "The global S sign action and half point restore the odd chart and private anchor with the same physical input; both directions belong to whole-witness reconstruction. The exact current derivation is bound here; the application consumer is bound separately. An actual rational zero of P299 and the uniquely extended zero of P314 for every integer input.",
+        "sourceSpans": [
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/01-elimination/s-odd366/REPORT.md",
+            "sha256": "e2a482e2f08712c6375bfaca4fea78bea35034727946c582ce7b3dde02608c7b",
+            "start_line": 80,
+            "end_line": 91,
+            "sha256_raw_utf8_span": "645430fc699e05894695c09f908fd29840c9a0edbb67f12e8ef4398c04f0b667"
+          },
+          {
+            "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/01-elimination/s-odd366/REPORT.md",
+            "sha256": "e2a482e2f08712c6375bfaca4fea78bea35034727946c582ce7b3dde02608c7b",
+            "start_line": 92,
+            "end_line": 109,
+            "sha256_raw_utf8_span": "85a5285c2207cfe3d7a3150ba8e5f5a35734e3db58bf74af629c7fcfbc070d4b"
+          }
+        ],
+        "consumerSpans": [
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 22957,
+            "end_line": 22978,
+            "sha256_raw_utf8_span": "1cc41f87140d70c13b145c98ba48bf28cd3026d7a6452cf8536035020ef5f4c4"
+          },
+          {
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+            "start_line": 23639,
+            "end_line": 23707,
+            "sha256_raw_utf8_span": "396aadf2a1eb3eb5c2ea5829fbf56ade30b1e95cbfffc711e01a460d6da2d50a"
+          }
+        ],
+        "sourceRelationship": "historical proof evidence, not a new external theorem"
+      },
+      "current_evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 22957,
+          "end_line": 22978,
+          "excerpt_sha256": "1cc41f87140d70c13b145c98ba48bf28cd3026d7a6452cf8536035020ef5f4c4"
+        }
+      ],
+      "not_metadata": true
+    }
+  ],
+  "scope": "All21 assigned ordinary pairs:15direct imports,6no-direct-owner dispositions, plus one actual inline forward projection. GA-SIMULTANEOUS-PRIMES remains outside scope."
+}

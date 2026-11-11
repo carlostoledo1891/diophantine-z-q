@@ -1,0 +1,173 @@
+{
+  "state": "author_proposal_pending_review",
+  "use": {
+    "id": "ACTIVE-GENERATOR-RANK-AND-TORSION",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "ACTIVE-GENERATOR-RANK-P1"
+    ],
+    "assertion": {
+      "statement": "For the actual E over K0=Q(sqrt2), the torsion subgroup is the displayed full group of order4 and the Mordell-Weil rank is1.",
+      "objects": "The fixed curve E, its full rational two-torsion, descent quotient E(K0)/2E(K0), and good reductions at(17,s-6) and(23,s-5).",
+      "hypotheses": "The separate two-isogeny calculation supplies quotient size8; the separately certified good reduction counts are20 and24; E is an elliptic curve over the number field K0.",
+      "quantifiers": "For this fixed E/K0 and both stated good places.",
+      "parameter_range": "The17-primary and23-primary torsion cases use the other good place; no claim of injection of residue-characteristic torsion at its own place.",
+      "uniformity": "No varying-curve bound is asserted.",
+      "constants": "Torsion order4, quotient size8, rank1.",
+      "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+      "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+      "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+    },
+    "classification": "dependency",
+    "reason": "The current generator argument uses the retained Silverman source interfaces plus its separately verified finite counts and descent quotient. The supplied location is the preserved project source-application wrapper, not the original book.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "docs/theorem-application-audit/applications.json",
+          "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+        },
+        "start_line": 6934,
+        "end_line": 6976,
+        "excerpt_sha256": "ff3842e87b7597593402b707eff8d62496919635852084a5afea868bb5165600"
+      },
+      "statement": "The rational-point group of an elliptic curve over a number field is finitely generated; at a good reduction place its torsion subgroup of order prime to the residue characteristic injects into the residue-curve group.",
+      "publication": {
+        "title": "The Arithmetic of Elliptic Curves",
+        "authors": "Joseph H. Silverman",
+        "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+        "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "locator": "VIII Theorem6.7 p239; VII Proposition3.1 p192",
+        "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this finite-generation/torsion assertion."
+      }
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 360,
+      "end_line": 368,
+      "excerpt_sha256": "85b27d03ceec79a4ea93f4e1418397266ba8aec8c24d3592f9378660f5952485"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-GENERATOR-RANK-AND-TORSION",
+    "use_sha256": "15812004e3a68e56944e7344381f1240c3ccf9a14f7016074c89cb2e74d872dc",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "The rational-point group of an elliptic curve over a number field is finitely generated; at a good reduction place its torsion subgroup of order prime to the residue characteristic injects into the residue-curve group.",
+      "objects": "An elliptic curve over a number field, its rational-point group and its good reductions.",
+      "hypotheses": "A number field and elliptic curve; good reduction at the selected place for the torsion-injection assertion.",
+      "quantifiers": "For every such elliptic curve and good place.",
+      "parameter_range": "Only prime-to-residue-characteristic torsion injects at a given place.",
+      "uniformity": "No varying-curve bound is asserted.",
+      "constants": "These theorems supply no numerical point count or saturation index.",
+      "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+      "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+      "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+    },
+    "needed_assertion": {
+      "statement": "For the actual E over K0=Q(sqrt2), the torsion subgroup is the displayed full group of order4 and the Mordell-Weil rank is1.",
+      "objects": "The fixed curve E, its full rational two-torsion, descent quotient E(K0)/2E(K0), and good reductions at(17,s-6) and(23,s-5).",
+      "hypotheses": "The separate two-isogeny calculation supplies quotient size8; the separately certified good reduction counts are20 and24; E is an elliptic curve over the number field K0.",
+      "quantifiers": "For this fixed E/K0 and both stated good places.",
+      "parameter_range": "The17-primary and23-primary torsion cases use the other good place; no claim of injection of residue-characteristic torsion at its own place.",
+      "uniformity": "No varying-curve bound is asserted.",
+      "constants": "Torsion order4, quotient size8, rank1.",
+      "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+      "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+      "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+    },
+    "required_capabilities": [
+      "finite generation",
+      "prime-to-characteristic torsion injection",
+      "actual torsion4 and rank1"
+    ],
+    "available_capabilities": [
+      "finite generation",
+      "prime-to-characteristic torsion injection"
+    ],
+    "derived_capabilities": [
+      "actual torsion4 and rank1"
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 360,
+        "end_line": 368,
+        "excerpt_sha256": "85b27d03ceec79a4ea93f4e1418397266ba8aec8c24d3592f9378660f5952485"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "For the actual E over K0=Q(sqrt2), the torsion subgroup is the displayed full group of order4 and the Mordell-Weil rank is1.",
+        "objects": "The fixed curve E, its full rational two-torsion, descent quotient E(K0)/2E(K0), and good reductions at(17,s-6) and(23,s-5).",
+        "hypotheses": "The separate two-isogeny calculation supplies quotient size8; the separately certified good reduction counts are20 and24; E is an elliptic curve over the number field K0.",
+        "quantifiers": "For this fixed E/K0 and both stated good places.",
+        "parameter_range": "The17-primary and23-primary torsion cases use the other good place; no claim of injection of residue-characteristic torsion at its own place.",
+        "uniformity": "No varying-curve bound is asserted.",
+        "constants": "Torsion order4, quotient size8, rank1.",
+        "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+        "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+        "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 360,
+          "end_line": 368,
+          "excerpt_sha256": "85b27d03ceec79a4ea93f4e1418397266ba8aec8c24d3592f9378660f5952485"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 364,
+        "end_line": 368,
+        "excerpt_sha256": "92faed0d793d8e7d7d125e3548c79f82d6e63112cf08ca826e5d8cec954acae9"
+      }
+    ]
+  },
+  "additional_file_pins": [
+    {
+      "side": "head",
+      "path": "docs/theorem-application-audit/applications.json",
+      "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+    }
+  ],
+  "initial_mapping": [
+    {
+      "id": "HIST-arithmetic-AR-U012",
+      "part": "Finite generation/torsion-injection and resulting rank/torsion only."
+    }
+  ],
+  "retained_separate_inputs": [
+    "Two-isogeny descent quotient size8",
+    "Exact good reduction counts20/24",
+    "Height bound and finite generator saturation"
+  ],
+  "scope": "Reuses preserved A059 source interface; does not convert the wrapper's old status into a new independent approval or extend it to all generator steps."
+}

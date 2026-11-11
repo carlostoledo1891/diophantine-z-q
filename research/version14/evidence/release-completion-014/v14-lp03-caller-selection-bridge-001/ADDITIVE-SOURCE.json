@@ -1,0 +1,78 @@
+{
+  "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+  "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0",
+  "classification": "new_explicit_proof_application_specialization",
+  "preserve_frozen_sources": true,
+  "claims": [
+    {
+      "id": "LP03-CALLER-01",
+      "line": 5,
+      "text": "Fix standard s>=3, d=s-2, an internal interval J=[N], and a dense internal H. The incoming constructor invariant supplies the actual internal unit families chi(h,n) and chi_h(n), their global strong representations and fixed finite dimension bounds. Suppose Delta_h f degree-d correlates with their tensor product for every h in H. This pointwise correlation hypothesis is precisely the premise of the LP03 caller; it is not an output of selection. The earlier initial selection and each rank-step whole-matrix reconstruction supply the represented-family invariant separately.\n",
+      "excerpt_sha256": "171e9ed2ba31ae1ea4abf597e7fef052acec2994ffbc322add91fd1d43946ee3",
+      "role": "incoming_caller_premise"
+    },
+    {
+      "id": "LP03-CALLER-02",
+      "line": 7,
+      "text": "Pad the fixed finite list of dimensions once. Let u_(h,a,b)(n)=Delta_h f(n) times the conjugated coordinates of chi(h,n) and chi_h(n), with the conjugations chosen as in the correlation convention. These are bounded internal scalar weights on H times the finite index set times J. No polynomial dependence on h and no multidegree assertion about this scalar weight are needed for the following selection. The originally supplied chi families are retained unchanged.\n",
+      "excerpt_sha256": "f92db3b46272ab04a09c9776841a6ae7987145089c789eeb5dffb58ac535eacf",
+      "role": "local_application_derivation"
+    },
+    {
+      "id": "LP03-CALLER-03",
+      "line": 9,
+      "text": "For every h, the correlation premise gives some coordinate pair and a scalar degree-at-most d nilsequence with positive standard-size correlation against that weight. Apply the ordinary global-test approximation used in GTZ Lemma6.4, as already spelled out in the S13 selection proof: approximate within half the correlation divided by max(1,||u|| infinity), retain the finite coefficient sum, and select one ordinary globally equivariant unit-test component with positive standard correlation. Its model, character, target dimension and Lipschitz bound are standard; its compatible polynomial Taylor coefficients may be limit coefficients. This constructs pointwise witnesses without asserting a common model or bound yet.\n",
+      "excerpt_sha256": "51f603e6d359c343b57067f41df0e056408ac64b13e36f17373e578a9f8d555c",
+      "role": "local_application_derivation"
+    },
+    {
+      "id": "LP03-CALLER-04",
+      "line": 11,
+      "text": "Use exactly the ordinary increasing parameter sets T_M of that proof for degree-at-most d models: first M model/character/dimension tags, ordinary global unit tests of Lipschitz bound at most M, unrestricted compatible Taylor coefficients, coordinate and conjugation tags, and integer threshold denominator at most M. Their ordinary disjoint union and the natural extension of the single sequence M -> T_M provide the genuine internal exhaustion. In particular, this is not an assertion that an arbitrary countable union of internal sets is a sigma-limit presentation.\n",
+      "excerpt_sha256": "e002987fd08f6633dca664129a8ba1733de9e9df45d816e151e79b0db79f343f",
+      "role": "local_application_derivation"
+    },
+    {
+      "id": "LP03-CALLER-05",
+      "line": 13,
+      "text": "The relation R(h,t) says that the modulus of the normalized finite sum of the encoded test against the encoded weight on J is at least the encoded reciprocal threshold. It is internal because H,J, the scalar weights, evaluation and the finite sums are internal; the norm-one/global-equivariance conditions are part of the ordinary test parameter set. Each h has a witness in *T_M for some standard M by pointwise existence above. Apply the corrected decreasing-set finite-intersection bounded-stage argument already proved in the S13 note to the least-stage map. It gives one standard M0, and internal choice inside *T_M0 gives the witnesses for all h. No inverse theorem, external positive-standard predicate, or bound on orbit coefficients is used in this step.\n",
+      "excerpt_sha256": "59a85c1597481d0a0adc26eebe294b0b1e0023012e6f3f4c1eea5df33956ebe1",
+      "role": "local_application_derivation"
+    },
+    {
+      "id": "LP03-CALLER-06",
+      "line": 15,
+      "text": "Finite pigeonhole now fixes a coordinate pair on a positive-density internal subset. The selected lower tests have common standard complexity and a common positive reciprocal threshold. Multiplication by the internal unit phase of their nonzero correlations aligns the averages; set the scalar test to zero outside that subset and retain the original bounded globally defined chi_h coordinates there. This gives exactly the functions U_h,V_h,c_h and eta in module04 lines179–189, with uniform bounds. The lower tests can be taken as components of the selected ordinary global unit representations; the permitted phase factor is degree zero and does not alter their degree.\n",
+      "excerpt_sha256": "d8e37b2c28a30fffe994495585b27ea225679bfc395277b449a033f6c8c412aa",
+      "role": "local_application_derivation"
+    },
+    {
+      "id": "LP03-CALLER-07",
+      "line": 17,
+      "text": "The next shift/decomposition steps use the original strong represented families and the separately proved LP02 and taut shift theorem. This argument neither manufactures strong global representatives for arbitrary weak nilcharacters nor replaces an existing chi_h by an approximation. The only approximation selects a lower correlation witness, where a positive margin was reserved. The resulting source claim is the actual LP03 lower-test selection, conditional on the explicit caller invariant and pointwise correlation premise.\n",
+      "excerpt_sha256": "b090ea772749a6ee2f2b0eba5ff823f96120d97ebe842f3606f51a9a408a7279",
+      "role": "local_application_derivation"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+      "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf",
+      "scope": "Ordinary global lower-test witness construction, genuine increasing parameter sets, and corrected bounded-stage proof. Its original S13 caller is not silently relabeled LP03."
+    },
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+      "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b",
+      "lines": [
+        154,
+        189
+      ],
+      "scope": "Actual pointwise correlation premise and selected scalar conclusion."
+    }
+  ],
+  "not_discharged": [
+    "Actual strong represented-family invariant supplied by initial selection and every rank-step reconstruction",
+    "Pointwise degree-d correlation premise",
+    "Later LP02/shift/quadruple arguments"
+  ]
+}

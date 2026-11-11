@@ -1,0 +1,562 @@
+{
+  "schema": "source-observation-reconciliation/v1",
+  "author": "/root/v14_gi_constructors",
+  "initial": {
+    "path": "work/source-risk-review-20261107/v14-root-number-good-factor-review-arithmetic-001/SOURCE-OBSERVATIONS.json",
+    "sha256": "3c525f2270b506a761dd1b8ee82f72aff3f69c571f274dcdb5648391bf07509a",
+    "original_header": {
+      "reviewer": "/root/v14_arithmetic_review",
+      "source_sha256": "5c82c501929e90e6e546b5481070161fe9f955eddc89a1f303f2e7bccc9d528b",
+      "chronology": "Read full proof and proposed edit before detailed SOURCE-INPUTS mapping. Prior global Atkin mathematical review and missing-full-L discussion known. Custom observations, not a blind or protocol-format freeze."
+    }
+  },
+  "mathematical_review": {
+    "path": "work/source-risk-review-20261107/v14-root-number-good-factor-review-arithmetic-001/REVIEW.json",
+    "sha256": "4e59f5b3cd6387acd1984d55b6e27ba1fa1fc00d62bf4d66951eba8a33f63832"
+  },
+  "proposed_edit": {
+    "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+    "prior_sha256": "65ab8020c8124fe97eb72a03dab0c2063e004796428909d0d6f1bbb15e1422b5",
+    "line": 9,
+    "prior_line": "Changing variable t=1/u in the convergent integral yields I(s)=-lambda I(2-s). Thus the sign in the completed functional equation is -lambda. The separately established equality of the elliptic L-function with L(f,s) identifies this sign with w(E). Consequently w(E)=-product_(p^e||N)w_(p^e), as used at main15181.",
+    "replacement_line": "Changing variable t=1/u in the convergent integral yields I(s)=-lambda I(2-s), so the newform sign is -lambda. To compare it with the elliptic sign, use Atkin–Lehner Theorem3, p147, with k=1: at p|N the primitive newform coefficient a_p is0 if p^2|N and is±1 otherwise, with local factor (1-a_p p^(-s))^(-1). Silverman C.16, p449, gives elliptic bad factors (1-b_p p^(-s))^(-1) with b_p in{0,1,-1}. Equality of all good factors gives D_E(s)L(E,s)=D_f(s)L(f,s), where D_E and D_f are the respective finite products of these bad-factor denominators. Analytic continuation preserves this equality. Both products are holomorphic and nonzero at1, since each factor is1 or1±1/p. Thus the two L-series have the same central order r. The completion factors are nonzero at1, and the functional equation gives sign(-1)^r by its first nonzero Taylor coefficient. Silverman TheoremC.16.3, p451, supplies the elliptic functional equation. Hence w(E)=-lambda=-product_(p^e||N)w_(p^e), as used at main15181. The actual associated-form trace domain p not dividing2N covers every good prime because the separately checked minimal-discriminant argument gives2|N. No equality of the two full L-series or their special values is asserted.",
+    "scope": "Replace the unused full-L-equality premise by a proved equality of central orders from nonzero finite Euler-factor ratios. Preserve all other lines."
+  },
+  "proposed_source_sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+  "rows": [
+    {
+      "original_index": 0,
+      "original_observation": {
+        "lines": [
+          3,
+          3
+        ],
+        "role": "hypotheses",
+        "text": "Same E and primitive weight-two f at conductor N, good traces, and individual analytic continuations/functional equations are needed."
+      },
+      "retained_source_contracts": [
+        {
+          "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+          "state": "author proposal for independent review",
+          "use": {
+            "id": "ACTIVE-RC-AMIR-HONG-NEWFORM",
+            "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+            "passages": [
+              "PASSAGE-ACTIVE-RC-AMIR-HONG-NEWFORM",
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-ATKIN-NOTE-1"
+            ],
+            "assertion": {
+              "statement": "A normalized weight-two common eigenform of actual conductor level, with Q coefficient field and the good-prime trace used in the quotient and isogeny steps.",
+              "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+              "hypotheses": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies.",
+              "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+              "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+              "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+              "constants": "No numerical bound imported.",
+              "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+              "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+            },
+            "classification": "dependency",
+            "reason": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies. Take the theorem's associated form, with its stated integral Fourier coefficients and trivial nebentypus. The trace comparison ranges over q not dividing 2N. Shimura needs eigenform status at all operators, not trace comparison at all primes. The p.1007 normalized convention and the p.1010 Euler series with constant term one identify the association's a_1=1. No rescaling is inferred from prime traces. The same f, level N, and integer coefficients enter both subsequent cards. Normalized Fourier T_q gives a_q as eigenvalue by its n=1 coefficient. At level primes use the U_p coefficient rule, not a good-prime Euler factor. Good trace comparison uses the actual reductions of E_l. Since v_2(Delta)=8 for odd l and model change alters it by multiples of 12, 2 divides N for this curve. No equality at excluded primes is extracted. The theorem-heading attribution does not change the stated hypothesis. Shimura gets a common normalized eigenform with coefficient field Q; Faltings gets the stated comparison only outside a finite set.",
+            "shared_contract_justification": "The same already constructed primitive rational weight-two form at its conductor is used in the Atkin theorem application.",
+            "supplier": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 2593,
+                "end_line": 2597,
+                "excerpt_sha256": "46ba686acfe6c1d754edd55e85982730d8b9050cee23504111a9cc66e7afb9e4"
+              },
+              "statement": "Final Theorem 3.1 supplies an associated integral newform in S2(Gamma0(N)) for an elliptic curve over Q of conductor N, with the stated trace at q not dividing 2N.",
+              "publication": {
+                "title": "On L-functions of modular elliptic curves and certain K3 surfaces",
+                "authors": "M. Amir; L. Hong",
+                "venue": "Ramanujan Journal 57 (2022),1001–1019",
+                "authoritative_version": "Published version with corrections as recorded; main location is its current application, not the external PDF.",
+                "locator": "Theorem3.1p1010/PDF10; normalized convention Proposition2.4p1007/PDF7",
+                "corrections": "Bounded published correction search in the retained independent disposition found no relevant correction."
+              }
+            },
+            "application_id": null,
+            "inline_argument": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 2593,
+              "end_line": 2632,
+              "excerpt_sha256": "a364bca78537ae089732725385ff27375bf31d7730bb25b62f9ad6ba0133764c"
+            }
+          },
+          "connection": {
+            "use_id": "ACTIVE-RC-AMIR-HONG-NEWFORM",
+            "use_sha256": "a58c8ad75364126ef1240735a9286e1d9e0c5f5d0b27c97143351febd9338b84",
+            "supplier_passage_role": "application",
+            "available_assertion": {
+              "statement": "Final Theorem 3.1 supplies an associated integral newform in S2(Gamma0(N)) for an elliptic curve over Q of conductor N, with the stated trace at q not dividing 2N.",
+              "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+              "hypotheses": "An elliptic curve E over Q with conductor N.",
+              "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+              "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+              "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+              "constants": "No numerical bound imported.",
+              "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+              "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+            },
+            "needed_assertion": {
+              "statement": "A normalized weight-two common eigenform of actual conductor level, with Q coefficient field and the good-prime trace used in the quotient and isogeny steps.",
+              "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+              "hypotheses": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies.",
+              "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+              "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+              "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+              "constants": "No numerical bound imported.",
+              "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+              "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+            },
+            "required_capabilities": [
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-actual-input"
+            ],
+            "available_capabilities": [
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-published-statement"
+            ],
+            "derived_capabilities": [
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-actual-input"
+            ],
+            "connecting_derivation": {
+              "kind": "derivation",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 2593,
+                "end_line": 2632,
+                "excerpt_sha256": "a364bca78537ae089732725385ff27375bf31d7730bb25b62f9ad6ba0133764c"
+              },
+              "application_id": null,
+              "output_assertion": {
+                "statement": "A normalized weight-two common eigenform of actual conductor level, with Q coefficient field and the good-prime trace used in the quotient and isogeny steps.",
+                "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+                "hypotheses": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies.",
+                "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+                "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+                "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+                "constants": "No numerical bound imported.",
+                "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+                "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+                "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+              }
+            },
+            "adverse_cases": {
+              "status": "checked",
+              "reason": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "evidence": [
+                {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                }
+              ]
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 2593,
+                "end_line": 2597,
+                "excerpt_sha256": "46ba686acfe6c1d754edd55e85982730d8b9050cee23504111a9cc66e7afb9e4"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/atkin-newform-input-001/SOURCE-CONNECTION.md",
+                  "sha256": "d80e8c4e1b8df11af13a3eb3dd6b9d27326334c8e79ac8edfd0820f12a183a1f"
+                },
+                "start_line": 9,
+                "end_line": 9,
+                "excerpt_sha256": "d7e028b5be8ca0be38f144238632358f48f028c2357111225d3a3f8a8e8f22c4"
+              }
+            ]
+          },
+          "initial_mapping": [],
+          "historical_source_card": "V14-PUB-NEWFORM-AMIR-HONG",
+          "external_source_pins": [
+            {
+              "id": "amir-hong",
+              "path": "work/quartic-v14-prep/bcdt-published-alternative/local-only/amir-hong-final.pdf",
+              "sha256": "0d93a90a3fbafee06a74fcfa64972e6d7dc94f1e7f2f3289c4ba6f783051aaef",
+              "bytes": 348864,
+              "locator": "Theorem3.1p1010/PDF10; normalized convention Proposition2.4p1007/PDF7",
+              "url_or_publication": "https://doi.org/10.1007/s11139-021-00388-w",
+              "redistribution": "excluded; metadata only"
+            }
+          ],
+          "scope": "Reuses the exact independently reviewed source and application; current raw main locations bind its surviving application. Other RC source imports and constructions remain separate."
+        },
+        {
+          "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+          "locator": "C.16, printed449–450 local factors/conductor/completion; TheoremC.16.3, printed451",
+          "available": "Elliptic bad factors have coefficients1,-1,0 according to multiplicative split/nonsplit or additive reduction. For E/Q its completed L-series is entire with functional equation Xi_E(s)=w(E)Xi_E(2-s).",
+          "needed": "Every elliptic bad denominator is nonzero at1, and its sign equals parity of the central vanishing order.",
+          "boundary": "The unnormalized W formula in TheoremC.16.4(b) is not used."
+        }
+      ],
+      "local_inputs": [
+        {
+          "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+          "sha256": "65ab8020c8124fe97eb72a03dab0c2063e004796428909d0d6f1bbb15e1422b5",
+          "start_line": 3,
+          "end_line": 7,
+          "excerpt_sha256": "403e859ba959d2b20f9602633e66d21585f1ca951e04f67e50bbfa07b1b3eafc"
+        }
+      ],
+      "derivation": "The actual E, normalized primitive f and good-trace domain are retained as hypotheses. The existing normalized Mellin derivation supplies f's functional equation; SilvermanC16.3 supplies E's. No equality of signs is an input.",
+      "actual_proposed_consumer": {
+        "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+        "sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "9cdda147270779b9f48b9d43d53ec9359f3310512e4c686179a8e99990d027f3"
+      }
+    },
+    {
+      "original_index": 1,
+      "original_observation": {
+        "lines": [
+          5,
+          5
+        ],
+        "role": "published local factors",
+        "text": "AL k=1 bad coefficients0,+/-1 and all prime coefficient recurrences; Silverman elliptic bad coefficients0,+/-1."
+      },
+      "retained_source_contracts": [
+        {
+          "path": "work/source-risk-review-20261107/atkin-lehner-download-root-001/local-only/atkin-lehner-1970.pdf",
+          "sha256": "18ca10d80324eeba53190fe06ebbfcd0a3d981e9a643e0e1b753b416b0ee1c91",
+          "publication": "A. O. L. Atkin and J. Lehner, Hecke operators on Gamma0(m), Mathematische Annalen185 (1970),134–160",
+          "locator": "Theorem3, printed147, with weight2k and k=1",
+          "available": "For a normalized primitive form of weight2k and trivial character on Gamma0(N), the good-prime Hecke recurrence and bad-prime U recurrence hold. For p^e||N, a_p=0 if e>=2 and a_p=-p^(k-1)lambda_p if e=1, where lambda_p=±1.",
+          "needed": "For k=1, every bad newform denominator is1,1-p^-s or1+p^-s and is nonzero at1."
+        },
+        {
+          "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+          "locator": "C.16, printed449–450 local factors/conductor/completion; TheoremC.16.3, printed451",
+          "available": "Elliptic bad factors have coefficients1,-1,0 according to multiplicative split/nonsplit or additive reduction. For E/Q its completed L-series is entire with functional equation Xi_E(s)=w(E)Xi_E(2-s).",
+          "needed": "Every elliptic bad denominator is nonzero at1, and its sign equals parity of the central vanishing order.",
+          "boundary": "The unnormalized W formula in TheoremC.16.4(b) is not used."
+        }
+      ],
+      "local_inputs": [],
+      "derivation": "Use AL Theorem3 at k=1 for the newform coefficients and recurrences; use SilvermanC16p449 for all elliptic bad factors. The factors are not asserted equal.",
+      "actual_proposed_consumer": {
+        "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+        "sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "9cdda147270779b9f48b9d43d53ec9359f3310512e4c686179a8e99990d027f3"
+      }
+    },
+    {
+      "original_index": 2,
+      "original_observation": {
+        "lines": [
+          7,
+          7
+        ],
+        "role": "finite analytic deduction",
+        "text": "Remove bad denominators to equate good Euler products in a right half-plane. Analytic continuation and nonzero factors at1 give equal vanishing orders."
+      },
+      "retained_source_contracts": [],
+      "local_inputs": [
+        {
+          "source": "PROOF.md",
+          "lines": [
+            3,
+            5
+          ]
+        }
+      ],
+      "derivation": "Multiply by the finite bad denominators; the good products agree on a half-plane. Analytic continuation and a nonzero finite ratio near1 give only equal central orders.",
+      "actual_proposed_consumer": {
+        "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+        "sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "9cdda147270779b9f48b9d43d53ec9359f3310512e4c686179a8e99990d027f3"
+      }
+    },
+    {
+      "original_index": 3,
+      "original_observation": {
+        "lines": [
+          9,
+          9
+        ],
+        "role": "functional equation deduction",
+        "text": "Nonzero completion factors and first nonzero Taylor coefficients identify sign as parity of central vanishing order."
+      },
+      "retained_source_contracts": [
+        {
+          "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+          "locator": "C.16, printed449–450 local factors/conductor/completion; TheoremC.16.3, printed451",
+          "available": "Elliptic bad factors have coefficients1,-1,0 according to multiplicative split/nonsplit or additive reduction. For E/Q its completed L-series is entire with functional equation Xi_E(s)=w(E)Xi_E(2-s).",
+          "needed": "Every elliptic bad denominator is nonzero at1, and its sign equals parity of the central vanishing order.",
+          "boundary": "The unnormalized W formula in TheoremC.16.4(b) is not used."
+        }
+      ],
+      "local_inputs": [
+        {
+          "source": "PROOF.md",
+          "lines": [
+            3,
+            7
+          ]
+        },
+        {
+          "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+          "sha256": "65ab8020c8124fe97eb72a03dab0c2063e004796428909d0d6f1bbb15e1422b5",
+          "start_line": 3,
+          "end_line": 7,
+          "excerpt_sha256": "403e859ba959d2b20f9602633e66d21585f1ca951e04f67e50bbfa07b1b3eafc"
+        }
+      ],
+      "derivation": "The completion factors are nonzero at1. For finite central order r, comparison of leading Taylor terms in each self-dual functional equation gives its sign(-1)^r. Equal orders give equal signs.",
+      "actual_proposed_consumer": {
+        "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+        "sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "9cdda147270779b9f48b9d43d53ec9359f3310512e4c686179a8e99990d027f3"
+      }
+    },
+    {
+      "original_index": 4,
+      "original_observation": {
+        "lines": [
+          11,
+          11
+        ],
+        "role": "actual caller bridge",
+        "text": "Previously supplied2|N upgrades p outside2N trace domain to all good primes of this actual E; no full-L equality asserted."
+      },
+      "retained_source_contracts": [
+        {
+          "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+          "state": "author proposal for independent review",
+          "use": {
+            "id": "ACTIVE-RC-AMIR-HONG-NEWFORM",
+            "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+            "passages": [
+              "PASSAGE-ACTIVE-RC-AMIR-HONG-NEWFORM",
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-ATKIN-NOTE-1"
+            ],
+            "assertion": {
+              "statement": "A normalized weight-two common eigenform of actual conductor level, with Q coefficient field and the good-prime trace used in the quotient and isogeny steps.",
+              "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+              "hypotheses": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies.",
+              "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+              "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+              "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+              "constants": "No numerical bound imported.",
+              "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+              "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+            },
+            "classification": "dependency",
+            "reason": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies. Take the theorem's associated form, with its stated integral Fourier coefficients and trivial nebentypus. The trace comparison ranges over q not dividing 2N. Shimura needs eigenform status at all operators, not trace comparison at all primes. The p.1007 normalized convention and the p.1010 Euler series with constant term one identify the association's a_1=1. No rescaling is inferred from prime traces. The same f, level N, and integer coefficients enter both subsequent cards. Normalized Fourier T_q gives a_q as eigenvalue by its n=1 coefficient. At level primes use the U_p coefficient rule, not a good-prime Euler factor. Good trace comparison uses the actual reductions of E_l. Since v_2(Delta)=8 for odd l and model change alters it by multiples of 12, 2 divides N for this curve. No equality at excluded primes is extracted. The theorem-heading attribution does not change the stated hypothesis. Shimura gets a common normalized eigenform with coefficient field Q; Faltings gets the stated comparison only outside a finite set.",
+            "shared_contract_justification": "The same already constructed primitive rational weight-two form at its conductor is used in the Atkin theorem application.",
+            "supplier": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 2593,
+                "end_line": 2597,
+                "excerpt_sha256": "46ba686acfe6c1d754edd55e85982730d8b9050cee23504111a9cc66e7afb9e4"
+              },
+              "statement": "Final Theorem 3.1 supplies an associated integral newform in S2(Gamma0(N)) for an elliptic curve over Q of conductor N, with the stated trace at q not dividing 2N.",
+              "publication": {
+                "title": "On L-functions of modular elliptic curves and certain K3 surfaces",
+                "authors": "M. Amir; L. Hong",
+                "venue": "Ramanujan Journal 57 (2022),1001–1019",
+                "authoritative_version": "Published version with corrections as recorded; main location is its current application, not the external PDF.",
+                "locator": "Theorem3.1p1010/PDF10; normalized convention Proposition2.4p1007/PDF7",
+                "corrections": "Bounded published correction search in the retained independent disposition found no relevant correction."
+              }
+            },
+            "application_id": null,
+            "inline_argument": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 2593,
+              "end_line": 2632,
+              "excerpt_sha256": "a364bca78537ae089732725385ff27375bf31d7730bb25b62f9ad6ba0133764c"
+            }
+          },
+          "connection": {
+            "use_id": "ACTIVE-RC-AMIR-HONG-NEWFORM",
+            "use_sha256": "a58c8ad75364126ef1240735a9286e1d9e0c5f5d0b27c97143351febd9338b84",
+            "supplier_passage_role": "application",
+            "available_assertion": {
+              "statement": "Final Theorem 3.1 supplies an associated integral newform in S2(Gamma0(N)) for an elliptic curve over Q of conductor N, with the stated trace at q not dividing 2N.",
+              "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+              "hypotheses": "An elliptic curve E over Q with conductor N.",
+              "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+              "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+              "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+              "constants": "No numerical bound imported.",
+              "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+              "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+            },
+            "needed_assertion": {
+              "statement": "A normalized weight-two common eigenform of actual conductor level, with Q coefficient field and the good-prime trace used in the quotient and isogeny steps.",
+              "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+              "hypotheses": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies.",
+              "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+              "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+              "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+              "constants": "No numerical bound imported.",
+              "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+              "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+            },
+            "required_capabilities": [
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-actual-input"
+            ],
+            "available_capabilities": [
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-published-statement"
+            ],
+            "derived_capabilities": [
+              "ACTIVE-RC-AMIR-HONG-NEWFORM-actual-input"
+            ],
+            "connecting_derivation": {
+              "kind": "derivation",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 2593,
+                "end_line": 2632,
+                "excerpt_sha256": "a364bca78537ae089732725385ff27375bf31d7730bb25b62f9ad6ba0133764c"
+              },
+              "application_id": null,
+              "output_assertion": {
+                "statement": "A normalized weight-two common eigenform of actual conductor level, with Q coefficient field and the good-prime trace used in the quotient and isogeny steps.",
+                "objects": "The associated normalized integral weight-two newform in S2(Gamma0(N)).",
+                "hypotheses": "The actual E_l is a nonsingular elliptic curve over Q with conductor N; the theorem's explicit curve quantifier applies.",
+                "quantifiers": "Every elliptic curve E/Q and every prime q not dividing 2N for the trace assertion.",
+                "parameter_range": "The precise published statement and branch recorded in the retained source card.",
+                "uniformity": "Qualitative fixed-data existence; no effective bound uniform in the conductor is asserted.",
+                "constants": "No numerical bound imported.",
+                "normalizations": "a1=1 is the association convention, not an arbitrary rescaling of a form with prescribed traces.",
+                "exceptional_cases": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+                "limit_order": "Apply this source only after its named hypotheses are supplied; retain later construction and normalization separately."
+              }
+            },
+            "adverse_cases": {
+              "status": "checked",
+              "reason": "No trace statement at primes dividing2N; all-operator eigenform status is distinct from that trace domain.",
+              "evidence": [
+                {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                }
+              ]
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 2593,
+                "end_line": 2597,
+                "excerpt_sha256": "46ba686acfe6c1d754edd55e85982730d8b9050cee23504111a9cc66e7afb9e4"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/atkin-newform-input-001/SOURCE-CONNECTION.md",
+                  "sha256": "d80e8c4e1b8df11af13a3eb3dd6b9d27326334c8e79ac8edfd0820f12a183a1f"
+                },
+                "start_line": 9,
+                "end_line": 9,
+                "excerpt_sha256": "d7e028b5be8ca0be38f144238632358f48f028c2357111225d3a3f8a8e8f22c4"
+              }
+            ]
+          },
+          "initial_mapping": [],
+          "historical_source_card": "V14-PUB-NEWFORM-AMIR-HONG",
+          "external_source_pins": [
+            {
+              "id": "amir-hong",
+              "path": "work/quartic-v14-prep/bcdt-published-alternative/local-only/amir-hong-final.pdf",
+              "sha256": "0d93a90a3fbafee06a74fcfa64972e6d7dc94f1e7f2f3289c4ba6f783051aaef",
+              "bytes": 348864,
+              "locator": "Theorem3.1p1010/PDF10; normalized convention Proposition2.4p1007/PDF7",
+              "url_or_publication": "https://doi.org/10.1007/s11139-021-00388-w",
+              "redistribution": "excluded; metadata only"
+            }
+          ],
+          "scope": "Reuses the exact independently reviewed source and application; current raw main locations bind its surviving application. Other RC source imports and constructions remain separate."
+        }
+      ],
+      "local_inputs": [
+        {
+          "source": "PROOF.md",
+          "lines": [
+            7,
+            9
+          ]
+        }
+      ],
+      "derivation": "The retained actual newform derivation proves2|N and already fixes f. Thus its good-trace domain includes all good primes. Apply the equal-order argument to this f and replace only the sign-premise sentence; full-L and special-value callers remain separate.",
+      "actual_proposed_consumer": {
+        "path": "research/version14/evidence/global-atkin-root-sign-001/PROOF.md",
+        "sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "9cdda147270779b9f48b9d43d53ec9359f3310512e4c686179a8e99990d027f3"
+      }
+    }
+  ],
+  "limits": [
+    "Original custom observation chronology preserved; no blind or earlier protocol initial is claimed.",
+    "The proposed canonical line9 contains the full local argument; separate11-line author proof is explanatory evidence, not an additional mandatory canonical source.",
+    "The unchanged lines3–7 supply normalized newform Mellin theory; no use of unnormalized SilvermanC16.4(b).",
+    "No full L-function equality, equality of bad factors or special-value identity is asserted.",
+    "Source edit and final source-observation transport are separate from this author mapping."
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "scope": "Seven exact existing-use premise bindings; retained A068 source proof located for three further groups; unmatched clauses remain explicit, no new source theorem accepted.",
+  "groups": [
+    {
+      "id": "HG1",
+      "line": 15,
+      "resolved": [
+        {
+          "use_id": "ACTIVE-RC-NEWFORM-HECKE-CONNECTION",
+          "why": "Same fixed based Hecke quotient; no conductor-dependent choice.",
+          "source": {
+            "kind": "inline",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 2588,
+              "end_line": 2657,
+              "excerpt_sha256": "1e0b0fba5a16a60c1cb5c2a3f3f98795f35ace903af833bf7b624bcada42eb7a"
+            },
+            "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+            "publication": null
+          },
+          "assertion": {
+            "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+            "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+            "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+            "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+            "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+            "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+            "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+            "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+            "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+            "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+          }
+        }
+      ],
+      "retained_source": [
+        "A068 sections1–2 supply arithmetic Artin and principal-ideal conventions."
+      ],
+      "unmatched": [
+        "Construction and reciprocity of the compatible oriented CM points: A034 assumes this input; its norm relation is not a proof of that premise."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "a3763f16a4d562e025d97949b8a314ff0d72f65f9ace42bc386466b45469af9f"
+      },
+      "source_evidence": {
+        "proof": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+            "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+          },
+          "start_line": 7,
+          "end_line": 62,
+          "excerpt_sha256": "3ff4472612d81c8602698a74a4e17ff79acc19fe8c39dfebb9f8586f1f2d83a1"
+        },
+        "review": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/evidence/parallel-a068-independent.md",
+            "sha256": "99918c8e9d89b9835a43bfc3e27fe570a50ce62948ea2da3dcdfa36e86d0f5d1"
+          },
+          "start_line": 1,
+          "end_line": 28,
+          "excerpt_sha256": "631b156ff94a96d8f6d006e5830cd386617cad8f2f0c4b737d266e5cb2dc81ed"
+        }
+      }
+    },
+    {
+      "id": "HG2",
+      "line": 27,
+      "resolved": [
+        {
+          "use_id": "ACTIVE-RC-NEWFORM-HECKE-CONNECTION",
+          "why": "Fixed based f-eigenquotient.",
+          "source": {
+            "kind": "inline",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 2588,
+              "end_line": 2657,
+              "excerpt_sha256": "1e0b0fba5a16a60c1cb5c2a3f3f98795f35ace903af833bf7b624bcada42eb7a"
+            },
+            "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+            "publication": null
+          },
+          "assertion": {
+            "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+            "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+            "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+            "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+            "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+            "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+            "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+            "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+            "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+            "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+          }
+        }
+      ],
+      "unmatched": [
+        "Atkin–Lehner eigenvalue/intertwining identity: the current quotient use explicitly excludes it. Cusp torsion alone does not supply that identity."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "af8879575b6d52be87053b16466fcb1d59d4242106d7c4c64239382abb2d9627"
+      }
+    },
+    {
+      "id": "HG3",
+      "line": 39,
+      "resolved": [],
+      "unmatched": [
+        "Classical CM/supersingular subgroup input and good integral extension of the fixed parametrization remain the explicit premises of accepted A035/local congruence. Howard is only corroboration for a restricted conductor family."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 39,
+        "end_line": 39,
+        "excerpt_sha256": "0354409a288399f4ddffe5f577b25f54e970e9ed0c5837068a0f0aba728893a2"
+      }
+    },
+    {
+      "id": "HG4",
+      "line": 51,
+      "resolved": [
+        {
+          "use_id": "ACTIVE-HEEGNER-CCL-NORMS",
+          "why": "The same actual inert norm relation.",
+          "source": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 5,
+              "end_line": 10,
+              "excerpt_sha256": "eebb20473b8e302e84f310a0ae32d87f4c26180fef84ba515a2b0501db30e5d6"
+            },
+            "statement": "For compatible CM points on the source modular curve, the unaveraged conductor-raising trace is the Hecke operator at an inert new prime, and the Hecke operator minus the two prime Artin actions at a split new prime, with the stated unit factor.",
+            "publication": {
+              "title": "L. Cai, Y. Chen and Y. Liu, \\emph{Heegner points on modular\ncurves}, Transactions of the American Mathematical Society 370 (2018),\n3721--3743. \\url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.",
+              "authors": "L. Cai, Y. Chen and Y. Liu",
+              "venue": "L. Cai, Y. Chen and Y. Liu, \\emph{Heegner points on modular\ncurves}, Transactions of the American Mathematical Society 370 (2018),\n3721--3743. \\url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.",
+              "authoritative_version": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename. Exact pinned PDF fd19f0588bf3cee285f731812ae058dc3f8527d30d26eac7c2b6a21bfa847522",
+              "locator": "Theorem2.15, printed p3730, condition(*) p3722",
+              "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+            }
+          },
+          "assertion": {
+            "statement": "For every actual old conductor d and permitted new prime, Tr(y_dell)=a_ell y_d when inert and Tr(y_dq)=(a_q-sigma_q-sigma_q^-1)y_d when split, with no conductor-dependent multiplier.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Source split-Heegner specialization N1=1; base conductor d prime to N; new prime outside6dND_K; O_K units exactly plus/minus1.",
+            "quantifiers": "Every permitted old conductor and new prime, with compatible points and places.",
+            "parameter_range": "Exactly current main 3798–3820 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Unaveraged traces, rational principal Artin product, pi(infinity)=0.",
+            "exceptional_cases": "Compatible CM points and orientations; Fixed normalized Hecke-equivariant elliptic quotient; Ordinary Artin reciprocity conventions",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          }
+        }
+      ],
+      "retained_source": [
+        "A068 sections1 and3 give the ring-class idelic quotient and full product relative kernel; old proof and independent review retained."
+      ],
+      "unmatched": [
+        "Generic Kummer functoriality at these number fields: forward finite-Kummer application is scoped to Q and is not silently extended."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 51,
+        "end_line": 51,
+        "excerpt_sha256": "f75401b2e8e1c748b5c400dca9adcb3b2bff61896d6318dce8e3b5998ed35312"
+      },
+      "source_evidence": {
+        "proof": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+            "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+          },
+          "start_line": 7,
+          "end_line": 62,
+          "excerpt_sha256": "3ff4472612d81c8602698a74a4e17ff79acc19fe8c39dfebb9f8586f1f2d83a1"
+        },
+        "review": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/evidence/parallel-a068-independent.md",
+            "sha256": "99918c8e9d89b9835a43bfc3e27fe570a50ce62948ea2da3dcdfa36e86d0f5d1"
+          },
+          "start_line": 1,
+          "end_line": 28,
+          "excerpt_sha256": "631b156ff94a96d8f6d006e5830cd386617cad8f2f0c4b737d266e5cb2dc81ed"
+        }
+      }
+    },
+    {
+      "id": "HG5",
+      "line": 63,
+      "resolved": [
+        {
+          "use_id": "ACTIVE-RC-UNIFORM-SCALAR-AND-SPAN",
+          "why": "One fixed untwisted torsion exponent for all permitted ring-class fields/composita.",
+          "source": {
+            "kind": "inline",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3765,
+              "end_line": 3796,
+              "excerpt_sha256": "d69ef4884cfbef3838a139cbd3e977184c4b5d17be914d9095b1fc12081e53b5"
+            },
+            "statement": "One scalar element fixes every permitted ring-class field and their finite composita while acting as u^4 on T2(E); hence one2^e, e=n+2, kills all their invariant2-primary torsion. Fixed squared matrix preimages also span a full2-power multiple of M2(Z2) in every quadratic subgroup.",
+            "publication": null
+          },
+          "assertion": {
+            "statement": "One scalar element fixes every permitted ring-class field and their finite composita while acting as u^4 on T2(E); hence one2^e, e=n+2, kills all their invariant2-primary torsion. Fixed squared matrix preimages also span a full2-power multiple of M2(Z2) in every quadratic subgroup.",
+            "objects": "The fixed non-CM curve, scalar preimage g with u=1+2^n, actual complex conjugation tau, z=g² tau g² tau inverse, and fixed elementary matrix preimages.",
+            "hypotheses": "The fixed open-image congruence subgroup with n≥2 is supplied; ring-class reciprocity gives abelian Galois groups over each imaginary quadratic K and conjugation inversion.",
+            "quantifiers": "Every permitted imaginary quadratic K, ring-class conductor and finite compositum used in a construction; every quadratic subgroup for the matrix-span assertion.",
+            "parameter_range": "The fixed E and its2-adic Tate module; no restriction on number of conductor primes.",
+            "uniformity": "The same e and the same finite matrix-span witness depend only on E, not K, conductors or finite family size.",
+            "constants": "u=1+2^n; v2(u^4−1)=n+2; squared matrix span contains2^(n+1)M2(Z2).",
+            "normalizations": "g² fixes every quadratic field; conjugation inverts the ring-class image, so z fixes it. The matrix witness uses squares, not assumed residual irreducibility.",
+            "exceptional_cases": "This proves invariant torsion annihilation and characteristic-zero matrix span, not residual rank-two localization or a bound on arbitrary non-ring-class extensions.",
+            "limit_order": "Choose one open-image depth and preimages for E; form the scalar commutator and matrix squares; use actual ring-class inversion; deduce uniform torsion and span bounds."
+          }
+        },
+        {
+          "use_id": "ACTIVE-HEEGNER-RELATIVE-DERIVATIVE",
+          "why": "Invariant class under the actual whole relative group.",
+          "source": {
+            "kind": "inline",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 41,
+              "end_line": 46,
+              "excerpt_sha256": "9530484cf16207aad036e95fe5da3c7720fca1883f1bcf60ae21b274fac08b13"
+            },
+            "statement": "The ring-class Picard group is the finite-idelic double quotient by K* and the completed order units. For squarefree inert new primes, the relative local unit quotient is the product of F_(ell^2)^*/F_ell^*; the derivative operator satisfies (sigma_ell-1)D_ell=(ell+1)-Tr_ell.",
+            "publication": null
+          },
+          "assertion": {
+            "statement": "The relative group Gal(H_fnI/H_f) is the product C_(ell+1), without an extra unit quotient, and delta_a(C_pi D_I y_fnI) is invariant under that whole relative group.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Imaginary quadratic K with units plus/minus1; f prime to the distinct new inert primes; compatible ring-class reciprocity; 2^a divides ell+1 and a_ell for each ell.",
+            "quantifiers": "Every permitted finite stage satisfying these hypotheses; fixed curve and fixed local types are retained.",
+            "parameter_range": "Exactly current main 3853–3886 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Use the actual untwisted Tate torsion, based quotient and unaveraged operations; no inverse field degree is introduced.",
+            "exceptional_cases": "Ring-class reciprocity/idelic class-group description; Accepted actual inert norm relation and Kummer functoriality",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          }
+        }
+      ],
+      "unmatched": [],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 63,
+        "end_line": 63,
+        "excerpt_sha256": "00f528cad0664aa61eea5104b53a542df79c37ba221162947b5cc5eafc955a96"
+      }
+    },
+    {
+      "id": "HG6",
+      "line": 75,
+      "resolved": [],
+      "unmatched": [
+        "Connected smooth Neron identity fibre and surjectivity of smooth reduction are premises in the Lang application, not outputs of Lang vanishing. Need explicit source binding for their use."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 75,
+        "end_line": 75,
+        "excerpt_sha256": "484b42093b0065e5e5a2470e7945509b57ca43504c219f1fc77fb598dbfc2e15"
+      }
+    },
+    {
+      "id": "HG7",
+      "line": 87,
+      "resolved": [
+        {
+          "use_id": "ACTIVE-HEEGNER-LANG-RESIDUE",
+          "why": "Actual residue cocycle vanishing/lift before formal filtration.",
+          "source": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 65,
+              "end_line": 70,
+              "excerpt_sha256": "6b0fac1ad33b49a2d34cfd2df6707f43c80ee7120b7887579e1a2c9f3eab1014"
+            },
+            "statement": "For a connected algebraic group over a finite field, the Lang map is surjective; its first Galois cohomology over the finite field vanishes.",
+            "publication": {
+              "title": "S. Lang, \\emph{Algebraic groups over finite fields},\nAmerican Journal of Mathematics 78 (1956), 555--563.",
+              "authors": "S. Lang",
+              "venue": "S. Lang, \\emph{Algebraic groups over finite fields},\nAmerican Journal of Mathematics 78 (1956), 555--563.",
+              "authoritative_version": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename. Exact pinned PDF 665286caefaa894cf789f3b4ce3027accdf4d583836e8b13aafeab744373b44d",
+              "locator": "Theorem1 and corollary, printed p557; Theorem2 identifies torsors",
+              "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+            }
+          },
+          "assertion": {
+            "statement": "H1(Gal(kprime/k), Bbar0(kprime))=0, so the residue of a cocycle in B0(Fprime) is a coboundary that can be lifted smoothly.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "The connected smooth special fiber of the Neron identity component over the finite residue field; finite unramified Fprime/F.",
+            "quantifiers": "Every permitted finite stage satisfying these hypotheses; fixed curve and fixed local types are retained.",
+            "parameter_range": "Exactly current main 3918–3931 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Use the actual untwisted Tate torsion, based quotient and unaveraged operations; no inverse field degree is introduced.",
+            "exceptional_cases": "Connected smooth Neron special fiber and surjectivity of smooth reduction",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          }
+        }
+      ],
+      "unmatched": [
+        "Normal-basis induced-module identification and component-group embedding remain explicit in A036; its bounded review does not constitute a new independent foundational source theorem. Completeness is part of the fixed local-field setup."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 87,
+        "end_line": 87,
+        "excerpt_sha256": "eb70886cc81f3b4033b82cabc0643758021c6d98c9459c2a168f846b8c8d2b91"
+      }
+    },
+    {
+      "id": "HG8",
+      "line": 99,
+      "resolved": [
+        {
+          "use_id": "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY",
+          "why": "Same unramified extension and geometric component-order annihilator.",
+          "source": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 77,
+              "end_line": 82,
+              "excerpt_sha256": "d146e3476a313932eea17785726680969a52ee657476c5317526c4821f2a689a"
+            },
+            "statement": "The formal group filtration has successive quotients identified additively with the corresponding residue-field ideal quotients; the kernel of reduction is the formal group, and reduction to nonsingular points gives the standard exact sequence.",
+            "publication": {
+              "title": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+              "authors": "J. H. Silverman",
+              "venue": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+              "authoritative_version": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file. Exact pinned PDF 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "locator": "IV Proposition3.2(a), printed p124; VII Propositions2.1–2.2, pp188–191",
+              "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+            }
+          },
+          "assertion": {
+            "statement": "H1(Gal(Fprime/F),B0(Fprime))=0 and the geometric component order c_B kills H1(Gal(Fprime/F),B(Fprime)), including even extension degree.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Finite unramified Fprime/F of nonarchimedean local fields; base uniformizer fixed by its finite Galois group; actual elliptic Neron/formal group.",
+            "quantifiers": "Every permitted finite stage satisfying these hypotheses; fixed curve and fixed local types are retained.",
+            "parameter_range": "Exactly current main 3931–3940 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Use the actual untwisted Tate torsion, based quotient and unaveraged operations; no inverse field degree is introduced.",
+            "exceptional_cases": "Previous Lang residue step; Normal-basis theorem and completeness; Geometric component group, not merely rational component count",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          }
+        }
+      ],
+      "retained_source": [
+        "A068 section1 supplies unramifiedness outside f, including2N under the actual conductor condition and splitting of K."
+      ],
+      "unmatched": [
+        "The generic local Kummer exact sequence still needs its actual field-level source binding; a Q-only finite Selmer statement is not substituted."
+      ],
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 99,
+        "end_line": 99,
+        "excerpt_sha256": "a1faebb8807193de27cd4e432f6a36aeb9e297a6145d2a6141bc55b1fed328d8"
+      },
+      "source_evidence": {
+        "proof": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+            "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+          },
+          "start_line": 7,
+          "end_line": 62,
+          "excerpt_sha256": "3ff4472612d81c8602698a74a4e17ff79acc19fe8c39dfebb9f8586f1f2d83a1"
+        },
+        "review": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/evidence/parallel-a068-independent.md",
+            "sha256": "99918c8e9d89b9835a43bfc3e27fe570a50ce62948ea2da3dcdfa36e86d0f5d1"
+          },
+          "start_line": 1,
+          "end_line": 28,
+          "excerpt_sha256": "631b156ff94a96d8f6d006e5830cd386617cad8f2f0c4b737d266e5cb2dc81ed"
+        }
+      }
+    }
+  ]
+}

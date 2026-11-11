@@ -1,4 +1,4 @@
-name: Version 9 manuscript and quartic verification
+name: Current manuscript and quartic verification
 
 on:
   workflow_dispatch:
@@ -13,10 +13,39 @@ permissions:
   contents: read
 
 concurrency:
-  group: quartic-962-release-${{ github.ref }}
+  group: manuscript-integration-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
+  quartic394:
+    if: inputs.mode == 'all' || inputs.mode == 'reproduction' || inputs.mode == 'metadata'
+    name: Version 13 source and quartic replay (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            python: '3.12.14'
+          - os: windows-2022
+            python: '3.12.10'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B docs/manuscript-revisions/version13/portability/test_portability.py
+      - run: python -B scripts/check_quartic394_portable.py
+      - run: python -B docs/manuscript-revisions/version13/validate-applications.py --repo . --self-test
+      - run: python -B quartics/quartic-299-314/verify_lineage.py
+      - run: python -B docs/manuscript-revisions/version14/validate-applications.py --repo . --self-test
+      - run: python -B scripts/check_audit_history.py --self-test
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: quartic-394-${{ matrix.os }}
+          path: build/quartic-394/
   reconstruction:
     if: inputs.mode == 'all' || inputs.mode == 'reproduction'
     runs-on: ubuntu-24.04
@@ -87,18 +116,18 @@ jobs:
         with:
           path: .cache/tectonic
           key: tectonic-${{ runner.os }}-0.17.0-6ffe055852f8faf66
-      - name: Compile the exact Version 9 manuscript
+      - name: Compile the exact Version 14 manuscript
         run: python scripts/build_paper.py
       - name: Render changed pages for visual review
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y poppler-utils
           ulimit -v 2097152
-          python scripts/render_quartic_review.py --pdf build/paper/quartic_v9.pdf --edition v9 --pages 1-2,245-259,265 --expected-pages 265
+          python scripts/render_quartic_review.py --pdf build/paper/quartic_v14.pdf --edition v14 --pages 1-4,21,24,110-111,301-314 --expected-pages 323
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: quartic-962-paper
+          name: quartic-v14-paper
           path: |
             build/paper/
             build/pdf-review/

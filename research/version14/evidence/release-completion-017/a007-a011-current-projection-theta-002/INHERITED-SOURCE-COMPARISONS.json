@@ -1,0 +1,642 @@
+[
+  {
+    "id": "CURRENT-A007-SQUARE-BOUNDARY-FROM-MILNE-LOCAL",
+    "consumer": "CURRENT-A007-SQUARE-BOUNDARY",
+    "source": {
+      "id": "MILNE-LOCAL",
+      "primary": {
+        "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+        "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+        "bytes": 2136045
+      },
+      "locator": "I.1.6(b),p19; I.2 introduction,p26",
+      "version": "Second edition2006 publisher-production text; original addendum retained.",
+      "available_statement": "Local reciprocity identifies finite characters with characters of completed K^*, and Br(K) has invariant Q/Z for nonarchimedean local K.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "For K=Q_p, identify finite characters through reciprocity and identify Br(Q_p)[2] as the two classes0,1/2. The square-root criterion itself is derived in C1.",
+    "application_output": {
+      "statement": "The constant square-sequence boundary of a finite character of G_Qp is zero exactly when chi(-1)=1, and otherwise has invariant1/2.",
+      "objects": "chi:G_Qp->mu_infinity; Br(Q_p)[2].",
+      "hypotheses": "Continuous finite-order chi; constant coefficient modules.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Every finite rational prime, including2.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "Two local Brauer classes.",
+      "normalizations": "Reciprocity inversion does not change the order-two test.",
+      "exceptional_cases": "No assertion that squaring is surjective on the sign factor at2.",
+      "limit_order": "Local comparison precedes global Brauer injection."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 5,
+      "end_line": 12,
+      "excerpt_sha256": "72e5f81f2934aa9ae53e2f10b8b86a7f4848929f942ba1c47c002e3892eec758"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1000,
+        "end_line": 1013,
+        "excerpt_sha256": "d0e8d9a5b0ee07095d959a622096d22a968eb83be3a9275f44f8a92c8a546f24"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7534,
+        "end_line": 7542,
+        "excerpt_sha256": "5532ce61ccb9d6ee7be3ab29949aace456aae4fa6bf4258537e88b54f9e40364"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A007-GLOBAL-SPLITTING-FROM-MILNE-LOCAL",
+    "consumer": "CURRENT-A007-GLOBAL-SPLITTING",
+    "source": {
+      "id": "MILNE-LOCAL",
+      "primary": {
+        "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+        "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+        "bytes": 2136045
+      },
+      "locator": "I.1.6(b),p19; I.2 introduction,p26",
+      "version": "Second edition2006 publisher-production text; original addendum retained.",
+      "available_statement": "Local reciprocity identifies finite characters with characters of completed K^*, and Br(K) has invariant Q/Z for nonarchimedean local K.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "Use the local invariant maps for the same rational completions in the finite-place comparison; the character-square-root conclusion is supplied by C1.",
+    "application_output": {
+      "statement": "The parity-selected Dirichlet character chi admits a continuous cochain beta in mu_(2m) with beta^2=chi and delta(beta)=epsilon.",
+      "objects": "Normalized inflated sign cocycle epsilon, finite T, finite character chi of order m.",
+      "hypotheses": "L/Q finite Galois unramified outside T;2 in T; local signs chosen as in C2.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "G_Q and every finite and real place.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "m<=2 product_(p in T,p odd)(p-1); no conflation of the two later product bounds.",
+      "normalizations": "Constant roots of unity; beta is generally a cochain, not a global character.",
+      "exceptional_cases": "Empty sign set allowed; real invariant determined, not omitted.",
+      "limit_order": "Match local classes, then global class, then correct the pointwise square root."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 13,
+      "end_line": 20,
+      "excerpt_sha256": "4553fbd44eed4dfebcfe396c0f6d84fc659cd81e3838442822698434c71aae8d"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 984,
+        "end_line": 1020,
+        "excerpt_sha256": "e8bc66f562fba71b9b0ecadf13d276797da9d8c325793f91a28f420feeb48cb1"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7526,
+        "end_line": 7547,
+        "excerpt_sha256": "f5d97baa83230d60569a0e471947b0dc3d5e8ab6d849995feb187d1c9d8f9a72"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A007-GLOBAL-SPLITTING-FROM-MILNE-BRAUER",
+    "consumer": "CURRENT-A007-GLOBAL-SPLITTING",
+    "source": {
+      "id": "MILNE-BRAUER",
+      "primary": {
+        "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+        "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+        "bytes": 2136045
+      },
+      "locator": "Proof of II.2.1,p164",
+      "version": "Same2006 edition.",
+      "available_statement": "For a global field, Br(K) injects into the sum of all local Brauer groups, and the invariant sum has kernel equal to that image.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "For K=Q, equality at finite places forces equality at the real place by the invariant sum, and then equality globally by injectivity.",
+    "application_output": {
+      "statement": "The parity-selected Dirichlet character chi admits a continuous cochain beta in mu_(2m) with beta^2=chi and delta(beta)=epsilon.",
+      "objects": "Normalized inflated sign cocycle epsilon, finite T, finite character chi of order m.",
+      "hypotheses": "L/Q finite Galois unramified outside T;2 in T; local signs chosen as in C2.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "G_Q and every finite and real place.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "m<=2 product_(p in T,p odd)(p-1); no conflation of the two later product bounds.",
+      "normalizations": "Constant roots of unity; beta is generally a cochain, not a global character.",
+      "exceptional_cases": "Empty sign set allowed; real invariant determined, not omitted.",
+      "limit_order": "Match local classes, then global class, then correct the pointwise square root."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 13,
+      "end_line": 20,
+      "excerpt_sha256": "4553fbd44eed4dfebcfe396c0f6d84fc659cd81e3838442822698434c71aae8d"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 984,
+        "end_line": 1020,
+        "excerpt_sha256": "e8bc66f562fba71b9b0ecadf13d276797da9d8c325793f91a28f420feeb48cb1"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7526,
+        "end_line": 7547,
+        "excerpt_sha256": "f5d97baa83230d60569a0e471947b0dc3d5e8ab6d849995feb187d1c9d8f9a72"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-FRICKE-SPAN-FROM-LI",
+    "consumer": "CURRENT-A011-FRICKE-SPAN",
+    "source": {
+      "id": "LI",
+      "primary": {
+        "path": "work/theorem-application-audit-20261105/parallel-009/geometry/li1975-scan-304.jpg",
+        "sha256": "07530575e712b4ded14ce64f877ca4f9383bbc7a020cb7dbd70fe88e6ab3ccb2",
+        "bytes": 321274
+      },
+      "locator": "Printed285 slash;294 primitive decomposition;296 paragraph beforeLemma6;298 Theorem5",
+      "version": "Original published1975 page scans; companion pages separately pinned.",
+      "available_statement": "The determinant-normalized Fricke operator sends a normalized newform of arbitrary character to a nonzero scalar times its coefficient conjugate; primitive sources and their level are determined by the cited newform results.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "At weight2 and arbitrary character, use old/new primitive decomposition, primitive-level uniqueness and the Fricke/coefficient-conjugation relation with the printed slash normalization.",
+    "application_output": {
+      "statement": "The full coefficient-conjugate span of the same primitive weight-two f is stable under h(z)->h(-1/(Nz))/z^2.",
+      "objects": "f, full coefficient field K, every embedding sigma:K->C, V=sum C f^sigma.",
+      "hypotheses": "Normalized primitive weight-two cusp form of level N; exact r5/f identity is a separate input.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "All N and nebentypus, arbitrary coefficient field.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "Shimura map=N times Li weight-two slash.",
+      "normalizations": "Li K_op is coefficient conjugation; c composes with each embedding.",
+      "exceptional_cases": "No single-form Fricke eigenvector or rational-character assumption.",
+      "limit_order": "Unconditional conjugate existence and primitivity first; Fricke condition second."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 27,
+      "end_line": 34,
+      "excerpt_sha256": "f39fef400f41a8b8faf49d171a30dad75a798eb318557a895fc909a9792a7073"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1065,
+        "end_line": 1067,
+        "excerpt_sha256": "c81acebe31b067efd8db6a1c30c44f5655d7c360a6042d9dc3e572609352c07b"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-FRICKE-SPAN-FROM-SHIMURA",
+    "consumer": "CURRENT-A011-FRICKE-SPAN",
+    "source": {
+      "id": "SHIMURA",
+      "primary": {
+        "path": "work/theorem-application-audit-20261105/parallel-009/galois-height/shimura1973.pdf",
+        "sha256": "6a34cc46d06c0f5d4e7d380ddcbc45ec3143b19359bfebba5b1c8f00976f3308",
+        "bytes": 1646652
+      },
+      "locator": "Definition of group of levelN,p523; Theorem1 and proof,pp526–527",
+      "version": "Original published JMSJ25(1973)523–544.",
+      "available_statement": "A normalized common weight-two Hecke eigenform for Gamma1(N)⊂Gamma⊂Gamma0(N) has the Q-quotient, coefficient action, dimension and conjugate differential span of Theorem1; the product Euler formula requires Gamma0 or the stated Fricke stability.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "Use only unconditional coefficient-conjugate eigenform existence, also at the hypothesized smaller divisor level. Do not use the conditional Euler formula here.",
+    "application_output": {
+      "statement": "The full coefficient-conjugate span of the same primitive weight-two f is stable under h(z)->h(-1/(Nz))/z^2.",
+      "objects": "f, full coefficient field K, every embedding sigma:K->C, V=sum C f^sigma.",
+      "hypotheses": "Normalized primitive weight-two cusp form of level N; exact r5/f identity is a separate input.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "All N and nebentypus, arbitrary coefficient field.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "Shimura map=N times Li weight-two slash.",
+      "normalizations": "Li K_op is coefficient conjugation; c composes with each embedding.",
+      "exceptional_cases": "No single-form Fricke eigenvector or rational-character assumption.",
+      "limit_order": "Unconditional conjugate existence and primitivity first; Fricke condition second."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 27,
+      "end_line": 34,
+      "excerpt_sha256": "f39fef400f41a8b8faf49d171a30dad75a798eb318557a895fc909a9792a7073"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1065,
+        "end_line": 1067,
+        "excerpt_sha256": "c81acebe31b067efd8db6a1c30c44f5655d7c360a6042d9dc3e572609352c07b"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-SHIMURA-QUOTIENT-FROM-SHIMURA",
+    "consumer": "CURRENT-A011-SHIMURA-QUOTIENT",
+    "source": {
+      "id": "SHIMURA",
+      "primary": {
+        "path": "work/theorem-application-audit-20261105/parallel-009/galois-height/shimura1973.pdf",
+        "sha256": "6a34cc46d06c0f5d4e7d380ddcbc45ec3143b19359bfebba5b1c8f00976f3308",
+        "bytes": 1646652
+      },
+      "locator": "Definition of group of levelN,p523; Theorem1 and proof,pp526–527",
+      "version": "Original published JMSJ25(1973)523–544.",
+      "available_statement": "A normalized common weight-two Hecke eigenform for Gamma1(N)⊂Gamma⊂Gamma0(N) has the Q-quotient, coefficient action, dimension and conjugate differential span of Theorem1; the product Euler formula requires Gamma0 or the stated Fricke stability.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "For the same f and Gamma1(N), use the unconditional Q-quotient, K-action, dimension and differential span; then use the Euler clause after C4 supplies its extra premise.",
+    "application_output": {
+      "statement": "For the same f, Shimura gives q:J1(N)->A_f over Q, K-action, dimension[K:Q], conjugate differential span and the product Euler identity outside finitely many primes.",
+      "objects": "A_f,q,K and the coefficient-conjugate span.",
+      "hypotheses": "f normalized Hecke eigenform; C4 supplies Fricke stability for Gamma1(N).",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Q-quotient at the original final primitive level N.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "dim A_f=[K:Q].",
+      "normalizations": "The quotient and differential assertions precede the conditional Euler formula.",
+      "exceptional_cases": "The separate Gamma0 occurrence uses the source alternative clause; its isogeny to E is not proved here.",
+      "limit_order": "Construct quotient unconditionally; apply the verified Fricke premise for Euler factors."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 35,
+      "end_line": 42,
+      "excerpt_sha256": "766bee209f2e7e08332109bc2e3acae4bf18d3f79cae720fbc4f24c9aff76537"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1067,
+        "end_line": 1070,
+        "excerpt_sha256": "44876fdb1874245cad9a18137666d558dd09d42033a6150a90e32eda09e6795a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-TATE-CONDUCTOR-FROM-EMERTON-CLASSICAL",
+    "consumer": "CURRENT-A011-TATE-CONDUCTOR",
+    "source": {
+      "id": "EMERTON-CLASSICAL",
+      "primary": {
+        "path": "work/source-risk-review-20261107/emerton-weak-map-gaussian-001/local-only/emerton2006-publisher.pdf",
+        "sha256": "5b2042b8863162f06ba822c4e463bf4290163ad2b57baca05f5ecb71693243fb",
+        "bytes": 724826
+      },
+      "locator": "Section2.3,p292, equation4",
+      "version": "Final PAMQ2(2006)279–393, classical attachment only.",
+      "available_statement": "Every cuspidal newform has the stated irreducible cohomological representation and good geometric-Frobenius polynomial; at weight2 the polynomial is X^2-a_l X+chi(l)l.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "For each coefficient-conjugate primitive weight-two form at p=5, use the irreducible cohomological representation and its geometric-Frobenius polynomial; take its dual for the Tate arithmetic convention.",
+    "application_output": {
+      "statement": "The same r5 occurs in V5(A_f) and V5(J1(N)); its dual occurs in H1_et(A_f), and local Artin/WD conductor is unchanged by duality.",
+      "objects": "Chosen r5, all conjugate modular realizations, A_f and J1(N).",
+      "hypotheses": "C5 Euler identity; modular attachments, Faltings semisimplicity and Serre density/trace lemma.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Common finite5-adic coefficient extension; all local dual conductor comparisons.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "No extra field-degree, Tate-twist or conductor factor.",
+      "normalizations": "Tate arithmetic Frobenius versus geometric Frobenius on cohomology; duality has no Tate twist.",
+      "exceptional_cases": "No conclusion that arbitrary labelled factors follow directly from an unlabelled product; level=conductor is retained separately.",
+      "limit_order": "Compare total semisimple representations, select chosen constituent, then dualize."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 39,
+      "end_line": 48,
+      "excerpt_sha256": "f5f44f413c6773ccb69c1ea6e0a01864b3b770324702f2e6fbd1ef9d2689c0a6"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1069,
+        "end_line": 1071,
+        "excerpt_sha256": "aac878218696a1ba0270cb9998deb404f44cb0286d66de12585f9454d7b05e5c"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-TATE-CONDUCTOR-FROM-FALTINGS",
+    "consumer": "CURRENT-A011-TATE-CONDUCTOR",
+    "source": {
+      "id": "FALTINGS",
+      "primary": {
+        "path": "work/theorem-application-audit-20261105/primary/faltings1983.pdf",
+        "sha256": "738d6b5f716e05b8180066f665e52170576061c1ba75802d1e4f3c4cc1d69614",
+        "bytes": 2488206
+      },
+      "locator": "Section5 Satz3,p360, retaining1984erratum p381",
+      "version": "Original published1983 article plus original published1984 correction.",
+      "available_statement": "The rational Tate module of an abelian variety over a number field is semisimple.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "Apply Satz3 to A_f/Q and J1(N)/Q at l=5; retain semisimplicity after the finite coefficient extension by the separable-algebra argument.",
+    "application_output": {
+      "statement": "The same r5 occurs in V5(A_f) and V5(J1(N)); its dual occurs in H1_et(A_f), and local Artin/WD conductor is unchanged by duality.",
+      "objects": "Chosen r5, all conjugate modular realizations, A_f and J1(N).",
+      "hypotheses": "C5 Euler identity; modular attachments, Faltings semisimplicity and Serre density/trace lemma.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Common finite5-adic coefficient extension; all local dual conductor comparisons.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "No extra field-degree, Tate-twist or conductor factor.",
+      "normalizations": "Tate arithmetic Frobenius versus geometric Frobenius on cohomology; duality has no Tate twist.",
+      "exceptional_cases": "No conclusion that arbitrary labelled factors follow directly from an unlabelled product; level=conductor is retained separately.",
+      "limit_order": "Compare total semisimple representations, select chosen constituent, then dualize."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 39,
+      "end_line": 48,
+      "excerpt_sha256": "f5f44f413c6773ccb69c1ea6e0a01864b3b770324702f2e6fbd1ef9d2689c0a6"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1069,
+        "end_line": 1071,
+        "excerpt_sha256": "aac878218696a1ba0270cb9998deb404f44cb0286d66de12585f9454d7b05e5c"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-TATE-CONDUCTOR-FROM-SERRE-TRACE",
+    "consumer": "CURRENT-A011-TATE-CONDUCTOR",
+    "source": {
+      "id": "SERRE-TRACE",
+      "primary": {
+        "path": "work/quartic-v14-prep/final-source-root/serre-published.pdf",
+        "sha256": "971dbfdd4414d99ea21d7d0af63dbb790d7b1188e9aec37f422181a2b543dec4",
+        "bytes": 5563667
+      },
+      "locator": "I.2.2,ppI-7–I-8; standalone lemma I.2.3,pI-11",
+      "version": "Published book; surrounding Q-rational compatible-system theorem is not used.",
+      "available_statement": "Chebotarev gives density after finite exclusions; over any characteristic-zero field, finite-dimensional semisimple representations of an algebra with equal trace are isomorphic.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "Apply finite-quotient Chebotarev to extend equality of continuous traces from common good Frobenius elements; apply the standalone algebra lemma over the actual finite5-adic field to E[G_Q].",
+    "application_output": {
+      "statement": "The same r5 occurs in V5(A_f) and V5(J1(N)); its dual occurs in H1_et(A_f), and local Artin/WD conductor is unchanged by duality.",
+      "objects": "Chosen r5, all conjugate modular realizations, A_f and J1(N).",
+      "hypotheses": "C5 Euler identity; modular attachments, Faltings semisimplicity and Serre density/trace lemma.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Common finite5-adic coefficient extension; all local dual conductor comparisons.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "No extra field-degree, Tate-twist or conductor factor.",
+      "normalizations": "Tate arithmetic Frobenius versus geometric Frobenius on cohomology; duality has no Tate twist.",
+      "exceptional_cases": "No conclusion that arbitrary labelled factors follow directly from an unlabelled product; level=conductor is retained separately.",
+      "limit_order": "Compare total semisimple representations, select chosen constituent, then dualize."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 39,
+      "end_line": 48,
+      "excerpt_sha256": "f5f44f413c6773ccb69c1ea6e0a01864b3b770324702f2e6fbd1ef9d2689c0a6"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1069,
+        "end_line": 1071,
+        "excerpt_sha256": "aac878218696a1ba0270cb9998deb404f44cb0286d66de12585f9454d7b05e5c"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  },
+  {
+    "id": "CURRENT-A011-TATE-CONDUCTOR-FROM-MILNE-H1",
+    "consumer": "CURRENT-A011-TATE-CONDUCTOR",
+    "source": {
+      "id": "MILNE-H1",
+      "primary": {
+        "path": "work/quartic-v14-prep/independent-source-review/gl2-background-sources-001/local-only/milne1986-original.pdf",
+        "sha256": "86259344a576e4ef75a9d81e9bf43143f872a72b14cf8fcc2703f3aea6349136",
+        "bytes": 3833583
+      },
+      "locator": "Theorem15.1(a),p129; Remark15.5,p131",
+      "version": "Original Arithmetic Geometry(1986) chapter, not the later course-note numbering.",
+      "available_statement": "H1_et(A,Z_l) is canonically Hom(T_l A,Z_l), compatible with the natural Galois action for an abelian variety over a base field, l different from its characteristic.",
+      "scope": "Published theorem input; no recursive reproof or newly broadened edition comparison claimed."
+    },
+    "needed_source_input": "Apply Theorem15.1(a) and Remark15.5 to A_f/Q and l=5, then rationalize; obtain the G_Q-equivariant dual with no Tate twist.",
+    "application_output": {
+      "statement": "The same r5 occurs in V5(A_f) and V5(J1(N)); its dual occurs in H1_et(A_f), and local Artin/WD conductor is unchanged by duality.",
+      "objects": "Chosen r5, all conjugate modular realizations, A_f and J1(N).",
+      "hypotheses": "C5 Euler identity; modular attachments, Faltings semisimplicity and Serre density/trace lemma.",
+      "quantifiers": "For every listed object satisfying the stated hypotheses.",
+      "parameter_range": "Common finite5-adic coefficient extension; all local dual conductor comparisons.",
+      "uniformity": "Only this domain and conclusion; no enlargement of a retained source premise.",
+      "constants": "No extra field-degree, Tate-twist or conductor factor.",
+      "normalizations": "Tate arithmetic Frobenius versus geometric Frobenius on cohomology; duality has no Tate twist.",
+      "exceptional_cases": "No conclusion that arbitrary labelled factors follow directly from an unlabelled product; level=conductor is retained separately.",
+      "limit_order": "Compare total semisimple representations, select chosen constituent, then dualize."
+    },
+    "connecting_derivation": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/proofs/character-jacobian-current-v1/CONNECTION.md",
+        "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+      },
+      "start_line": 39,
+      "end_line": 48,
+      "excerpt_sha256": "f5f44f413c6773ccb69c1ea6e0a01864b3b770324702f2e6fbd1ef9d2689c0a6"
+    },
+    "other_inputs": "The other named source inputs and internal dependencies of this application remain explicit; this source alone is not claimed to imply the whole application output.",
+    "current_consumers": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 1069,
+        "end_line": 1071,
+        "excerpt_sha256": "aac878218696a1ba0270cb9998deb404f44cb0286d66de12585f9454d7b05e5c"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "ed992fd5876ad89383dc58848bab378045820cf411535dbd6045e3bea0b3a68f"
+        },
+        "start_line": 7607,
+        "end_line": 7609,
+        "excerpt_sha256": "fca60f67a33eb52c9ca6ed287ed636f1b12ede7467d01b34b8d7eb738e68cb0d"
+      }
+    ],
+    "role": "statement",
+    "status": "Author source-to-application comparison awaiting independent review; not a canonical runtime connection receipt."
+  }
+]

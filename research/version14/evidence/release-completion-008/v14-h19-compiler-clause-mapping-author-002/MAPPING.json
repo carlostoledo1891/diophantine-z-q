@@ -1,0 +1,3012 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "timestamp_utc": "2026-11-09T07:29:36.096Z",
+  "status": "author proposal for independent clause comparison",
+  "initial": {
+    "path": "work/source-risk-review-20261107/v14-final-composite-review-001/frozen-initial-001/INITIAL-SOURCE-USES.json",
+    "sha256": "42ba6262e6da0d73a206e5603b6bc45feadf776795ac37487f39cc71d2de15c5"
+  },
+  "collection": {
+    "path": "work/source-risk-review-20261107/v14-active-connection-collection-007/COMPONENTS.json",
+    "sha256": "d44e7783a218d6ed8a40ba80f245244c044df57cfb30ae8f17f46b17711af91b"
+  },
+  "collection_review": {
+    "path": "work/source-risk-review-20261107/v14-final-composite-review-001/COLLECTION007-TRANSPORT-REVIEW.json",
+    "sha256": "c0f17a021cf5517f255a067a432a76d96ab7eff66b03a22242c366a47156d3e7"
+  },
+  "hash_convention": "SHA256 of UTF8 JSON with recursively sorted object keys for initial_use_sha256; existing accepted connection use hashes are copied verbatim.",
+  "rows": [
+    {
+      "initial_use_id": "HIST-compiler-COMP-031",
+      "initial_use_sha256": "c0534f7d436b5c088bd27065cc5283f7e066305b5004834d0287bb4fc3f7287c",
+      "initial_assertion": {
+        "statement": "Homogeneous normalized contact radical includes infinity; claim h(a)<=H*M^24 uses original stable Faltings height.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-031",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-D210-FIBER-FIELD",
+          "use_sha256": "53868258f3d56faeabace87adb18656cfd85f3608ca0fde1fd5a4ff117bbe8d1",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the unbranched rational contact-line point s, the entire principal-level-three D210 fiber has a normal splitting field L/Q with [L:Q] dividing576. Its abelian surfaces and all geometric homomorphisms between them are defined over L, and rad(D_L N_bad) divides B_* M_5(s).",
+          "retained_hypotheses": "The full fine-cover construction, canonical rational normalizer action and five-section contact-line identification are supplied. The selected rational s avoids the branch/contact set. The smooth tame quotient models away from210 and their local equations are supplied.",
+          "retained_exceptions": "No application of a prime-to-discriminant level theorem at3. The height calculation at bad primes uses the maximal stack separately. This does not construct Lprime, normalize the modular representation, or prove a numerical Faltings-height bound.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7930,
+            "end_line": 7976,
+            "excerpt_sha256": "6769b28a2a552881fd5e871a9dd3d890e85d15c7e0149420de4a8b782d278fc9"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9969,
+              "end_line": 9971,
+              "excerpt_sha256": "5d8e2e80de9a9978bb7781c468a2d0d8dd9dc45f30a51ed593d3b84077f0c543"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-GEOMETRIC-HEIGHT-COMPARISON",
+          "use_sha256": "1767d181d62d971a75926e78a3f61ce9589009f53ed41ec2bd9d3b9d623609cf",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual D210 fiber A_y over the chosen point y above rational s, the same integral and archimedean comparison gives h(s)<=2max(0,hF(A_y))+128 in the original stable Faltings metric.",
+          "retained_hypotheses": "The preceding full marked fiber construction and maximal-stack geometry are supplied. Yuan gives the canonical metric isometry at this same point, and the universal abelian scheme computes stable height after an extension where y extends.",
+          "retained_exceptions": "Treat finite branch points and infinity by local coordinates; vertical extension uses valuations plus regularity, not coarse pullback from YuanLemma2.1 orTheorem2.2. Replace negativehF bymax(0,hF) only at the final inequality.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8030,
+            "end_line": 8099,
+            "excerpt_sha256": "f168fa3e7509447607b086ff363b837681a12113d9c3b08313973a278704b9d9"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9971,
+              "end_line": 9976,
+              "excerpt_sha256": "02793a574b458c0d794f04aab8ca1f6a21ec8786c2a498ad4bb0dd6651e8c73b"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-FINAL-CONSTANT-ARITHMETIC",
+          "use_sha256": "a83a1c7738c1603f1bca8d1e4662acc7deb937ad2ee07ddbb18ba0d1f745de39",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The stated non-CM transfer inputs and CM bound yield h_F(A)<A19 R^19 and H19<2^2093966, with A19=2^109*210^1800 and H19=2 A19 Bstar^19+128.",
+          "retained_hypotheses": "g<T, dprime<=2304R, h_F(J_H)<2^24 T^6, the displayed isogeny variation V, h_F(Z)>-3g/2, CM h_F(A)<854R, geometric comparison h(a)<=2max(0,h_F(A))+128, and the retained primorial bound.",
+          "retained_exceptions": "Zero-dimensional complement is allowed; M5(a)>=1 permits the additive128 absorption. The numeric primorial result is a separate input, not a consequence of the height theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10090,
+            "end_line": 10109,
+            "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10090,
+              "end_line": 10109,
+              "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-HEIGHT19-ROOT-TRANSFER",
+          "use_sha256": "8125fea92fb20194e73ec91f5c01e7ef66f745407596eea72fae043312a60b6d",
+          "consumer": "V13-HEIGHT",
+          "statement": "For restored elliptic labels n_i and B=max|n_i|, if the kth powers of the three required contact radicals divide a nonzero integerN, then B^2-6<7*H19*|N|^(19/k).",
+          "retained_hypotheses": "The roots and nonzero odd integral labels have already been restored; both real embeddings ofC are positive. The retained contact detector and fractional-linear comparison apply, and root heights are bounded byh(C), while h(x([n_i]P))>=n_i^2-6.",
+          "retained_exceptions": "N=0 is excluded. No circular use of auxiliaryH or logarithms before restoring labels and the scalar anchor; positivity is used forC0>0.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20624,
+            "end_line": 20645,
+            "excerpt_sha256": "5ccf297688e170828035fffd18521178ee6135fe4f8c6ef225f0b6d9e5dc7faf"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 22812,
+              "end_line": 22820,
+              "excerpt_sha256": "0eb20a1b3ba6b052b94f885040bd1929671f7efb11f0ea74e7b73f18ec493a33"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 7585,
+          "end_line": 7614,
+          "excerpt_sha256": "dca965e18229d8c4a7f18da671bc5ecc0b3f1b1d53c7a91026b79ac7107b5f16"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 9955,
+          "end_line": 9977,
+          "excerpt_sha256": "82f138d1abbd76df8d6aa2ca71fe20bc3164f25a35512f633c14c5dae1253c38"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 10100,
+          "end_line": 10109,
+          "excerpt_sha256": "751d051142e5dc65fcd22b5018ff80aed1b91c4420940d387697d33f8048d4c9"
+        }
+      ],
+      "semantic_comparison": "The normalized homogeneous contact radical, including infinity, and original stable Faltings convention are unchanged. The selected theorem uses H19*M5^19, not the old Hstar*M5^24. Current main explicitly invokes the old construction, not its exponent24 conclusion.",
+      "scope_boundary": "The old exponent24 theorem and Hstar remain historical statements in the manuscript; they are not relabelled as exponent19.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-032",
+      "initial_use_sha256": "9544107b9dda87f58bbd040e7b9e66986bb14f16519c2bf06053200e35af0ffd",
+      "initial_assertion": {
+        "statement": "Genus5 discriminant210 curve and four published genus-one quotients determine W branch labels via RH and tame cyclic stabilizers.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-032",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-CONTACT-LINE",
+          "use_sha256": "0882783b08a8a592c730fa2c4cae0d4f38aff0de8f09d56e6857c8fdf4c92bb9",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The D210 maximal Shimura curve quotient X/W is the rational contact line with precisely five index-two branch points, labelled210,105,70,42,30 at infinity,0,1,2401,−343/32 respectively.",
+          "retained_hypotheses": "The published GR2006 quotient equations, genus and Atkin-Lehner group law are supplied; use characteristic-zero cyclic stabilizers and Riemann-Hurwitz. The exact rational quartic-invariant and cross-ratio computation is retained separately.",
+          "retained_exceptions": "This characteristic-zero branch identification does not itself prove the integral tame model or the level-three fine cover. The exact coordinate computation remains a separate finite input.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7643,
+            "end_line": 7685,
+            "excerpt_sha256": "4e2ba21be45e081d1af5e223b8f4bce0220773da45a7bfea805e287411d09a3a"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 7922,
+              "end_line": 7928,
+              "excerpt_sha256": "443252a1d2e512e496deb0b9e89e266767b50573f7256acc6b7bc3b634a4cbc5"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 7615,
+          "end_line": 7659,
+          "excerpt_sha256": "6ec9b1afcdb2e7aa6760c075dd76e3705caf11717ab4d87593d5e6c271de4402"
+        }
+      ],
+      "semantic_comparison": "The actual genus5, four genus-one quotients and tame characteristic-zero stabilizer/Riemann–Hurwitz argument yield the five labelled branch orbits.",
+      "scope_boundary": "Published quotient equations and group/genus facts remain the explicit incoming inputs of the accepted contact-line component; no new source audit.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-033",
+      "initial_use_sha256": "6978ec32af821105f63fcfbadf2ca347f4aec0f798ea79dec3558fa0052cec40",
+      "initial_assertion": {
+        "statement": "Translation-by-two subgroup and quartic invariants determine cross-ratios lambda=2401,mu=-343/32 uniquely.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-033",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-CONTACT-LINE",
+          "use_sha256": "0882783b08a8a592c730fa2c4cae0d4f38aff0de8f09d56e6857c8fdf4c92bb9",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The D210 maximal Shimura curve quotient X/W is the rational contact line with precisely five index-two branch points, labelled210,105,70,42,30 at infinity,0,1,2401,−343/32 respectively.",
+          "retained_hypotheses": "The published GR2006 quotient equations, genus and Atkin-Lehner group law are supplied; use characteristic-zero cyclic stabilizers and Riemann-Hurwitz. The exact rational quartic-invariant and cross-ratio computation is retained separately.",
+          "retained_exceptions": "This characteristic-zero branch identification does not itself prove the integral tame model or the level-three fine cover. The exact coordinate computation remains a separate finite input.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7643,
+            "end_line": 7685,
+            "excerpt_sha256": "4e2ba21be45e081d1af5e223b8f4bce0220773da45a7bfea805e287411d09a3a"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 7922,
+              "end_line": 7928,
+              "excerpt_sha256": "443252a1d2e512e496deb0b9e89e266767b50573f7256acc6b7bc3b634a4cbc5"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 7661,
+          "end_line": 7685,
+          "excerpt_sha256": "3cb281336f2243134851e7aa6a42574bcc36b0a865e96b36c1ce65a6b3feb77c"
+        }
+      ],
+      "semantic_comparison": "The translation subgroup is full two-torsion; the quotient preserves the Jacobian j invariant, and the stated quartic/cross-ratio computation yields lambda2401 and mu−343/32.",
+      "scope_boundary": "The exact rational computation is an expressly retained finite input, not discharged anew by this mapping.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-036",
+      "initial_use_sha256": "59a8047b9302db3183894be998a1f7341bce86f863bea6cd6abbf0cdbbb0361a",
+      "initial_assertion": {
+        "statement": "Historical incoming scope, not adopted for removed fragments: Normalizer isogenies and Skolem-Noether give compatible quadratic action over same L, without asserting bounded rational descent. Current changed-interface qualifications: Actual normalizer fibers are geometrically isogenous over same field; original normalized family restricts to ordinary Tate on G_L-prime; common form and conductor bound connect to height19. Tate irreducibility does not depend circularly on later compatibility; auxiliary comparison fields and finite form twist do not alter controlled-field bounds.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-036",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-D210-GEOMETRIC-ISOGENIES",
+          "use_sha256": "ce3be713333faf37a883b032788bd53fb87360655e01c725a80305c991b76a49",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual non-CM conjugate D210 fiber surfaces A and A_sigma, the normalizer action gives a geometric isogeny; the full geometric endomorphism algebra is B. For prescribed embeddings of the same quadratic field F, an isogeny intertwining those embeddings exists over the same fiber field L.",
+          "retained_hypotheses": "The full PEL/normalizer comparison and same-L Hom descent are supplied. A is non-CM. The rational Hodge equivalence and Skolem-Noether for the simple subalgebra embeddings are retained at their actual scopes.",
+          "retained_exceptions": "The F-linear isogenies need not be chosen coherently. This does not construct the later B-linear scalar-normalizer maps, sign splitting, compatible family, or bounded descent to a rational GL2-type variety.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7980,
+            "end_line": 8016,
+            "excerpt_sha256": "167bce0df9addcbf1a672fabb19ed470f58a8b1b62348c0c27612b5180a94e97"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8111,
+              "end_line": 8122,
+              "excerpt_sha256": "ed7711802a7e3c28e5b1e00e930ad52cd6c26abc5dd1848e7bb0431398a6b08b"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-GEOMETRIC-HODGE-EQUIVALENCE",
+          "use_sha256": "1392c43d2c22703b64713d447ba13cc1878d3146afe00775a4aadc5aa18cd8f6",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The covariant rational Hodge equivalence identifies the full rational Hodge endomorphisms of the actual complex surface with its full complex algebraic endomorphisms; with the separately supplied centralizer calculation and geometric descent this yields End^0_Qbar(A)=B in the non-CM branch.",
+          "retained_hypotheses": "A is a complex abelian surface with polarizable weight-minus-one homology. The rank-one B centralizer calculation, the non-CM choice K0=Q, and descent of complex homomorphisms to Qbar are separate retained inputs.",
+          "retained_exceptions": "The imaginary-quadratic centralizer is the CM branch and is excluded here. Hodge equivalence alone supplies neither Qbar descent nor End=B without the centralizer calculation.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7995,
+            "end_line": 8002,
+            "excerpt_sha256": "a6c7384ab70e8b22314d2fff28c645f0827bc5e94263ae21d35092500e7fc178"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 7995,
+              "end_line": 8002,
+              "excerpt_sha256": "a6c7384ab70e8b22314d2fff28c645f0827bc5e94263ae21d35092500e7fc178"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-SPECIFIED-QUADRATIC-CONJUGATION",
+          "use_sha256": "2bfd71347dad77f60c872bb770e4b4884303816a52c8b1626ddb3a0846bf8535",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the two specified embeddings i,j of the same quadratic field F into B, inner conjugation gives b in B^times with j(x)=b^-1 i(x)b for every x in F; applied to j=f^-1 i_sigma f, the quasi-isogeny f b^-1 intertwines the specified F actions.",
+          "retained_hypotheses": "B is the full non-CM endomorphism algebra; f:A→A_sigma is an independently supplied geometric quasi-isogeny, and i,i_sigma are the actual specified actions. The induced map i(x)→j(x) is a Q-algebra isomorphism of quadratic subfields.",
+          "retained_exceptions": "An unspecified conjugacy of unlabelled subfields is insufficient. b need not be integral. The official erratum corrects unit-group notation after separable extension; no inseparable case or deleted optional splitting-field parenthesis is used.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8004,
+            "end_line": 8027,
+            "excerpt_sha256": "5f7778b6abb5fb82746bcb835bae71901936778c5df653fd0a2af958ccc50001"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8004,
+              "end_line": 8027,
+              "excerpt_sha256": "5f7778b6abb5fb82746bcb835bae71901936778c5df653fd0a2af958ccc50001"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-TATE-RESTRICTION",
+          "use_sha256": "f36992518af3d885e65059983ccb23a3d86e83b77644a8aa3764823c08bb236c",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual b-family restricts to the ordinary Tate representation on its own G_L-prime.",
+          "retained_hypotheses": "The actual cocycle identity holds, all maps are inflated from L, mu_1=1, and L-prime is the kernel field of the same scalar cochain on G_L.",
+          "retained_exceptions": "Changing a coefficient extension does not change the geometric field. A qualitative modularity twist does not replace eta.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8251,
+            "end_line": 8269,
+            "excerpt_sha256": "0641d330c95ba72ad9be87a3166f0485b539a3168c9d9c5e88585f8598246913"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9987,
+              "end_line": 9991,
+              "excerpt_sha256": "87b6aabddb53d3fe56201efeb448558e771dc8854bb7e1ff0985650397a8daa3"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-CONDUCTOR-COMPARISON",
+          "use_sha256": "babb340faf18391b63161ec5b8eb31770d1eac3642172b1a5a31b42b9f5a91e5",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the same final primitive newform f, actual original D210 r_ell and corresponding U_f,ell are isomorphic over a common coefficient extension, and for every p with ell different from p their full local Artin conductors equal v_p(N).",
+          "retained_hypotheses": "The original family irreducibility and all-prime compatibility, fixed coefficient embeddings and full published Carayol conductor equality are supplied by the current comparison application.",
+          "retained_exceptions": "No trivial-character, squarefree-level, or extraordinary-cuspidal exclusion. The numerical bound N≤210^300 R^2 is a separate local deduction.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8380,
+            "end_line": 8394,
+            "excerpt_sha256": "9e8dda78a7a020fda445e45321c1b0b8a0515922cd8dd04ea224013b10727f4f"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8434,
+              "end_line": 8441,
+              "excerpt_sha256": "8bd7a0ed1e8a3aad6d4486f2029be3d014f702284c7814f6f2a2a61110a8200f"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-IRREDUCIBLE",
+          "use_sha256": "868eec395eb43784710a2f7ecaa6dc8537f4442f6859c52ffa0e2fb5181798a3",
+          "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+          "statement": "The original b-family factor is absolutely irreducible for all ell.",
+          "retained_hypotheses": "L-prime is a number field defining all geometric endomorphisms, End^0(A_bar)=B, the normalized G_Q action commutes with B, and its G_L-prime restriction is actual Tate.",
+          "retained_exceptions": "ell=2 is included. Merely knowing B is contained in the endomorphism algebra is insufficient.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8261,
+            "end_line": 8269,
+            "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8261,
+              "end_line": 8269,
+              "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 7980,
+          "end_line": 8027,
+          "excerpt_sha256": "635b3918137f506a8eaf17f2cac9f539d4afc8bb1c1cd68d73883001e95fe2b2"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8251,
+          "end_line": 8286,
+          "excerpt_sha256": "449006519d81a4d18b20bce0514e8782be67fdf59aa3ebdbe5f66d25410cd26e"
+        }
+      ],
+      "semantic_comparison": "Same-L geometric isogenies, full non-CM End=B and specified quadratic embeddings match the current conditional geometric argument. Its output is distinct from coherent B-linear maps and the subsequent compatible representation. The changed-interface arithmetic qualifiers are mapped separately.",
+      "scope_boundary": "No bounded rational descent is inferred from pairwise F-linear isogenies; auxiliary comparison fields and finite form twists do not change controlled Lprime.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-038",
+      "initial_use_sha256": "35ad681cdd9b3c6c86c01e26f6d1072bd44b8048f0663ec9e843705129c57251",
+      "initial_assertion": {
+        "statement": "Historical incoming scope, not adopted for removed fragments: Division B action forbids nonzero toric rank after semistable extension; full11 torsion gives good reduction away11. Current changed-interface qualifications: Actual normalizer fibers are geometrically isogenous over same field; original normalized family restricts to ordinary Tate on G_L-prime; common form and conductor bound connect to height19. Tate irreducibility does not depend circularly on later compatibility; auxiliary comparison fields and finite form twist do not alter controlled-field bounds. Canonical model and positive discriminant isometry apply to chosen stack; height extension uses regularity and integrality there. No coarse metric formula or false separability inference.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-038",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-TORSION-GOOD-REDUCTION",
+          "use_sha256": "82ee500fe3db3292f55e031e0960d4316d750f0d1b86a185ccaa80a31565f3b9",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual D210 quaternionic surface has potentially good reduction everywhere, and E=L(A[11]) is Galois over Q with [E:Q]<2^66; A has good reduction over E at every residue characteristic different from11.",
+          "retained_hypotheses": "The D210 normalizer and same-L Hom construction are supplied. The published semistable reduction and full-torsion criteria, Neron extension property and torus structure are retained. The normalizer maps can be scaled prime to11 using the split maximal order at11.",
+          "retained_exceptions": "The full-torsion reduction criterion is not applied at residue characteristic11. Potential good reduction alone does not imply the explicit field E is Galois; that uses normalizer maps prime to11.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8124,
+            "end_line": 8174,
+            "excerpt_sha256": "505626fca1bcf315c4274e47d3c18f7a40f65ae2bc3fd11277a75b970a3c378e"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8397,
+              "end_line": 8429,
+              "excerpt_sha256": "9607b658f11d1f904eec4520a8a790e06314c91b5c0410542c41fb9cd63ff013"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-SEMISTABLE-EXTENSION",
+          "use_sha256": "621f8126a808b9c9ea92672101d2f2c24666e4e599051df3d1fea31ff324d7e8",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "Apply semistable reduction to the actual QM surface; the subsequent unital division-algebra action on the torus character space excludes positive torus rank.",
+          "retained_hypotheses": "After a finite extension an abelian variety has semistable reduction. All field, endomorphism and local-triviality hypotheses used in the connecting calculation remain separate.",
+          "retained_exceptions": "The source supplies semistability, not the no-torus argument or the explicit degree of a torsion field.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8125,
+            "end_line": 8143,
+            "excerpt_sha256": "7835be046079793a70225df1440569358b26cfabec35929849a59e7115a4a3ad"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8125,
+              "end_line": 8143,
+              "excerpt_sha256": "7835be046079793a70225df1440569358b26cfabec35929849a59e7115a4a3ad"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ELEVEN-TORSION-SEMISTABILITY",
+          "use_sha256": "b3f49e3a05e7425af3ad4ac2aeb00cae0026225ba07b8d057d0026d29436ccc4",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "Apply Theorem3.5 with n=11 to A over E=L(A[11]) at every residue characteristic other than11; combine with the separately proved torus obstruction to obtain good reduction at2,3,5,7.",
+          "retained_hypotheses": "Full rational n-torsion with n>=3 prime to the residue characteristic implies semistable reduction. All field, endomorphism and local-triviality hypotheses used in the connecting calculation remain separate.",
+          "retained_exceptions": "This is the explicit n=11 occurrence; earlier n=3 or5 uses alone do not supply it. No good-reduction claim at11 and no torsion-field normality or degree conclusion comes from this theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8170,
+            "end_line": 8174,
+            "excerpt_sha256": "6c4c24b704c2296470de1e2981bfa9bc6095d411383b53dbdcbd92e497cfc0d9"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8170,
+              "end_line": 8174,
+              "excerpt_sha256": "6c4c24b704c2296470de1e2981bfa9bc6095d411383b53dbdcbd92e497cfc0d9"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-TATE-RESTRICTION",
+          "use_sha256": "f36992518af3d885e65059983ccb23a3d86e83b77644a8aa3764823c08bb236c",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual b-family restricts to the ordinary Tate representation on its own G_L-prime.",
+          "retained_hypotheses": "The actual cocycle identity holds, all maps are inflated from L, mu_1=1, and L-prime is the kernel field of the same scalar cochain on G_L.",
+          "retained_exceptions": "Changing a coefficient extension does not change the geometric field. A qualitative modularity twist does not replace eta.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8251,
+            "end_line": 8269,
+            "excerpt_sha256": "0641d330c95ba72ad9be87a3166f0485b539a3168c9d9c5e88585f8598246913"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9987,
+              "end_line": 9991,
+              "excerpt_sha256": "87b6aabddb53d3fe56201efeb448558e771dc8854bb7e1ff0985650397a8daa3"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-CONDUCTOR-COMPARISON",
+          "use_sha256": "babb340faf18391b63161ec5b8eb31770d1eac3642172b1a5a31b42b9f5a91e5",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the same final primitive newform f, actual original D210 r_ell and corresponding U_f,ell are isomorphic over a common coefficient extension, and for every p with ell different from p their full local Artin conductors equal v_p(N).",
+          "retained_hypotheses": "The original family irreducibility and all-prime compatibility, fixed coefficient embeddings and full published Carayol conductor equality are supplied by the current comparison application.",
+          "retained_exceptions": "No trivial-character, squarefree-level, or extraordinary-cuspidal exclusion. The numerical bound N≤210^300 R^2 is a separate local deduction.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8380,
+            "end_line": 8394,
+            "excerpt_sha256": "9e8dda78a7a020fda445e45321c1b0b8a0515922cd8dd04ea224013b10727f4f"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8434,
+              "end_line": 8441,
+              "excerpt_sha256": "8bd7a0ed1e8a3aad6d4486f2029be3d014f702284c7814f6f2a2a61110a8200f"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-IRREDUCIBLE",
+          "use_sha256": "868eec395eb43784710a2f7ecaa6dc8537f4442f6859c52ffa0e2fb5181798a3",
+          "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+          "statement": "The original b-family factor is absolutely irreducible for all ell.",
+          "retained_hypotheses": "L-prime is a number field defining all geometric endomorphisms, End^0(A_bar)=B, the normalized G_Q action commutes with B, and its G_L-prime restriction is actual Tate.",
+          "retained_exceptions": "ell=2 is included. Merely knowing B is contained in the endomorphism algebra is insufficient.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8261,
+            "end_line": 8269,
+            "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8261,
+              "end_line": 8269,
+              "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-GEOMETRIC-HEIGHT-COMPARISON",
+          "use_sha256": "1767d181d62d971a75926e78a3f61ce9589009f53ed41ec2bd9d3b9d623609cf",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual D210 fiber A_y over the chosen point y above rational s, the same integral and archimedean comparison gives h(s)<=2max(0,hF(A_y))+128 in the original stable Faltings metric.",
+          "retained_hypotheses": "The preceding full marked fiber construction and maximal-stack geometry are supplied. Yuan gives the canonical metric isometry at this same point, and the universal abelian scheme computes stable height after an extension where y extends.",
+          "retained_exceptions": "Treat finite branch points and infinity by local coordinates; vertical extension uses valuations plus regularity, not coarse pullback from YuanLemma2.1 orTheorem2.2. Replace negativehF bymax(0,hF) only at the final inequality.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8030,
+            "end_line": 8099,
+            "excerpt_sha256": "f168fa3e7509447607b086ff363b837681a12113d9c3b08313973a278704b9d9"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9971,
+              "end_line": 9976,
+              "excerpt_sha256": "02793a574b458c0d794f04aab8ca1f6a21ec8786c2a498ad4bb0dd6651e8c73b"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-YUAN-METRIC",
+          "use_sha256": "355ff70ed0e687287e498d6a4db833fa739151f625bfa8ca4e72e070219f1951",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual maximal-stack D210 point y, the canonical Kodaira-Spencer image and specified metrics give h_(omega squared)(y)=2h_F(A_y)+2log(pi)+log210 in the original stable Faltings convention.",
+          "retained_hypotheses": "The maximal-stack model, integral injection and Yuan isometry are supplied with their specified norms.",
+          "retained_exceptions": "No coarse intersection theorem or asserted smooth fine model at bad primes. This equality alone does not prove vertical section regularity or the final128 bound.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8071,
+            "end_line": 8089,
+            "excerpt_sha256": "935242ca288dfcf9c0d6399fa29818e2da42babaea8af8fa5a992794c488ca2e"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8090,
+              "end_line": 8100,
+              "excerpt_sha256": "def62c47bb7b2fb88da3c2e60dd98bc1378b7ae01344567a1f7da80afd162f5d"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8124,
+          "end_line": 8143,
+          "excerpt_sha256": "02facf3ac19f9500d869831db7376e1349fe69639c38f1915a51d4d42e31f954"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8170,
+          "end_line": 8174,
+          "excerpt_sha256": "6c4c24b704c2296470de1e2981bfa9bc6095d411383b53dbdcbd92e497cfc0d9"
+        }
+      ],
+      "semantic_comparison": "A unital division-B action on a positive-rank torus character space is impossible for rank1 or2; full11 torsion over E then gives good reduction away11. Repeated arithmetic/metric qualifiers retain their separate accepted component scope.",
+      "scope_boundary": "The current maximal-stack metric, regularity and integral extension requirements remain premises of the geometric comparison; torsion does not prove them.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-039",
+      "initial_use_sha256": "bf76610b380f3772eaa6e4949d37b7a99b5bf98702526890df6955243c7ac94a",
+      "initial_assertion": {
+        "statement": "Compatible normalizer isogenies can be prime-to11, hence conjugate torsion fields equal and [E:Q]<2^66.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-039",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-TORSION-GOOD-REDUCTION",
+          "use_sha256": "82ee500fe3db3292f55e031e0960d4316d750f0d1b86a185ccaa80a31565f3b9",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual D210 quaternionic surface has potentially good reduction everywhere, and E=L(A[11]) is Galois over Q with [E:Q]<2^66; A has good reduction over E at every residue characteristic different from11.",
+          "retained_hypotheses": "The D210 normalizer and same-L Hom construction are supplied. The published semistable reduction and full-torsion criteria, Neron extension property and torus structure are retained. The normalizer maps can be scaled prime to11 using the split maximal order at11.",
+          "retained_exceptions": "The full-torsion reduction criterion is not applied at residue characteristic11. Potential good reduction alone does not imply the explicit field E is Galois; that uses normalizer maps prime to11.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8124,
+            "end_line": 8174,
+            "excerpt_sha256": "505626fca1bcf315c4274e47d3c18f7a40f65ae2bc3fd11277a75b970a3c378e"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8397,
+              "end_line": 8429,
+              "excerpt_sha256": "9607b658f11d1f904eec4520a8a790e06314c91b5c0410542c41fb9cd63ff013"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8145,
+          "end_line": 8169,
+          "excerpt_sha256": "8f0e99a2835a1f777fa35ca7c5a783dc9da5ba15535d0cb5aa3e94d3f47194ae"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8177,
+          "end_line": 8200,
+          "excerpt_sha256": "860afc74dc8f673216a957544916f1e64411dc03e9c7606c36e37277e4181e72"
+        }
+      ],
+      "semantic_comparison": "The prime-to11 scalar normalizer map gives equal conjugate torsion kernels over the same L, hence E/Q is Galois and degree<2^66.",
+      "scope_boundary": "The full B-linearity and marking labels come from the retained PEL input, not just the earlier F-linear isogeny assertion.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-040",
+      "initial_use_sha256": "03dfbda7af4eac3b7789db78a319c05721e81d7d8bfc4f8f9f23795df4c3acae",
+      "initial_assertion": {
+        "statement": "Historical incoming scope, not adopted for removed fragments: Degree-normalized compatible maps give sign cocycle; local reciprocity/Brauer injection produce finite b with b²=chi,delta b=epsilon, controlled support and [L':Q]<=2304R. Current changed-interface qualifications: Actual normalizer fibers are geometrically isogenous over same field; original normalized family restricts to ordinary Tate on G_L-prime; common form and conductor bound connect to height19. Tate irreducibility does not depend circularly on later compatibility; auxiliary comparison fields and finite form twist do not alter controlled-field bounds.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-040",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ARITH-ACTIVE-B-SIGN",
+          "use_sha256": "85d6492dbeb03330a7ebf68701d2cf69ffe96ae0a973396cd6d5e9f2e28ac9ca",
+          "consumer": "H5-CURRENT-SIGN-COCYCLE",
+          "statement": "The actual b-family rational discrepancy gives the normalized sign cocycle.",
+          "retained_hypotheses": "All geometric endomorphisms and the chosen isogenies are defined over the original finite Galois field L; End^0(A_bar)=B and mu_1=1.",
+          "retained_exceptions": "The full-End=B assumption excludes the CM matrix-algebra case. Degree normalization is valid also for rational denominators.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8177,
+            "end_line": 8209,
+            "excerpt_sha256": "112706ece70fe161cb0345753ce7f0bfae0be9204a3541ede6b9f6844df76d58"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8177,
+              "end_line": 8209,
+              "excerpt_sha256": "112706ece70fe161cb0345753ce7f0bfae0be9204a3541ede6b9f6844df76d58"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-SIGN-DEGREE",
+          "use_sha256": "6c8476f85e555bcdde235b1282a9d055a655ead39ae148106ff65555d16ad6b0",
+          "consumer": "H5-CURRENT-SIGN-COCYCLE",
+          "statement": "For this b family, D(u)=deg([m]u)/m^4 is denominator-independent and satisfies D(cu)=c^4D(u), giving the positive normalized sign c/abs(c).",
+          "retained_hypotheses": "The rationality of c and the actual finite isogeny choices have been supplied separately.",
+          "retained_exceptions": "No degree is assigned directly to a nonexistent morphism [1/b]. Denominators are cleared before using the source theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8177,
+            "end_line": 8209,
+            "excerpt_sha256": "112706ece70fe161cb0345753ce7f0bfae0be9204a3541ede6b9f6844df76d58"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8177,
+              "end_line": 8209,
+              "excerpt_sha256": "112706ece70fe161cb0345753ce7f0bfae0be9204a3541ede6b9f6844df76d58"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-GLOBAL",
+          "use_sha256": "d74e35e357f4e298ce4df58ca191531bab2aa03e428a2366b711887117bbe262",
+          "consumer": "H5-CURRENT-TATE-REALIZATION",
+          "statement": "For this family, the actual epsilon is split by its finite sign cochain, preserving its own chi and m.",
+          "retained_hypotheses": "L/Q is finite Galois and unramified outside the finite set T containing 2; the prescribed local order-two invariants determine chi.",
+          "retained_exceptions": "The real invariant is forced by the global Brauer sequence. A nontrivial sign class is not discarded.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8213,
+            "end_line": 8240,
+            "excerpt_sha256": "67dad0f321191346392f2c828ce55871a637f9df675264227b4c2360e08dfaf1"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8213,
+              "end_line": 8240,
+              "excerpt_sha256": "67dad0f321191346392f2c828ce55871a637f9df675264227b4c2360e08dfaf1"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-RAMIFICATION",
+          "use_sha256": "86de981f22f7b09aa46d4003f9fbc4c9c16e714ed2f16bed07eafc286080a069",
+          "consumer": "H5-CURRENT-TATE-REALIZATION",
+          "statement": "The same sign cochain restricts to a conjugation-invariant character on G_L, with controlled kernel field L-prime.",
+          "retained_hypotheses": "delta(eta)=epsilon with epsilon normalized and inflated from Gal(L/Q), eta^2=chi, and L unramified outside T with 2 in T.",
+          "retained_exceptions": "Any new quadratic discriminant ramification is at 2, already in T. Empty correction product equals 1.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8241,
+            "end_line": 8248,
+            "excerpt_sha256": "891a926827445d04474244ec55077fb3055ddc91c10d4f82ca586473cd0a06e4"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8241,
+              "end_line": 8248,
+              "excerpt_sha256": "891a926827445d04474244ec55077fb3055ddc91c10d4f82ca586473cd0a06e4"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-KERNEL-FIELD-BOUND",
+          "use_sha256": "b4b1c18bbfadf918359dd601dac08a7b98bb8e8a8d3356b2e31bc3760e546867",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual sign-split D210 family, the same kernel field Lprime is normal over Q and has [Lprime:Q]≤2304R; the twisting adjustment does not increase this bound.",
+          "retained_hypotheses": "The actual finite sign splitting and support-removal constructions are supplied; [L:Q]≤576 and m≤2 product_{odd p|R}(p−1)≤2R.",
+          "retained_exceptions": "The full scalar splitting need not be root-of-unity valued; only b is. Quadratic adjustment remains inside mu_(2m).",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8466,
+            "end_line": 8487,
+            "excerpt_sha256": "d88fbbd1a6a3d2950eb120377f243d8cfa5d5b3070a62f11a2a1089f93b19adf"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9984,
+              "end_line": 9985,
+              "excerpt_sha256": "345b1c06660b05a1bf113bf0cabf78f9e0a26d4a2256023690fe3950ffb179a2"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-TATE-RESTRICTION",
+          "use_sha256": "f36992518af3d885e65059983ccb23a3d86e83b77644a8aa3764823c08bb236c",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual b-family restricts to the ordinary Tate representation on its own G_L-prime.",
+          "retained_hypotheses": "The actual cocycle identity holds, all maps are inflated from L, mu_1=1, and L-prime is the kernel field of the same scalar cochain on G_L.",
+          "retained_exceptions": "Changing a coefficient extension does not change the geometric field. A qualitative modularity twist does not replace eta.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8251,
+            "end_line": 8269,
+            "excerpt_sha256": "0641d330c95ba72ad9be87a3166f0485b539a3168c9d9c5e88585f8598246913"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9987,
+              "end_line": 9991,
+              "excerpt_sha256": "87b6aabddb53d3fe56201efeb448558e771dc8854bb7e1ff0985650397a8daa3"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8177,
+          "end_line": 8248,
+          "excerpt_sha256": "60bfdf03c96a74812ae42386be324bfeca25d0f720e78b77a378ed7f02026719"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8466,
+          "end_line": 8487,
+          "excerpt_sha256": "d88fbbd1a6a3d2950eb120377f243d8cfa5d5b3070a62f11a2a1089f93b19adf"
+        }
+      ],
+      "semantic_comparison": "Degree normalization gives the actual sign cocycle; local/global splitting supplies b²=chi and delta b=epsilon. Its own kernel field remains normal and has degree<=2304R.",
+      "scope_boundary": "Only the sign cochain is root-of-unity valued. The full scalar includes positive degree factors; form twisting is not the controlled chi.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-041",
+      "initial_use_sha256": "9506fd1486a06017997d35c70d056657cabc67b1036caac35c56977119c2469c",
+      "initial_assertion": {
+        "statement": "Historical incoming scope, not adopted for removed fragments: Two-dimensional absolutely irreducible odd de Rham multiplicity representation with weights0,-1 modular at5; determinant forces finite twist and weight2. Current changed-interface qualifications: Actual normalizer fibers are geometrically isogenous over same field; original normalized family restricts to ordinary Tate on G_L-prime; common form and conductor bound connect to height19. Tate irreducibility does not depend circularly on later compatibility; auxiliary comparison fields and finite form twist do not alter controlled-field bounds.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-041",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ARITH-ACTIVE-B-IRREDUCIBLE",
+          "use_sha256": "868eec395eb43784710a2f7ecaa6dc8537f4442f6859c52ffa0e2fb5181798a3",
+          "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+          "statement": "The original b-family factor is absolutely irreducible for all ell.",
+          "retained_hypotheses": "L-prime is a number field defining all geometric endomorphisms, End^0(A_bar)=B, the normalized G_Q action commutes with B, and its G_L-prime restriction is actual Tate.",
+          "retained_exceptions": "ell=2 is included. Merely knowing B is contained in the endomorphism algebra is insufficient.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8261,
+            "end_line": 8269,
+            "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8261,
+              "end_line": 8269,
+              "excerpt_sha256": "305e777bf8d474fb85ebb3183193caa27070ed9b3a6fd4b5706a30f18f0a6a66"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-MODULARITY",
+          "use_sha256": "3300b68645680f7377d9c85e6316f7dccae5560ec69aca068c89d8b52465e30f",
+          "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+          "statement": "The same original b r_5 and the final primitive form f are identified before comparing other primes.",
+          "retained_hypotheses": "The finite B-linear isogeny choices and scalar cochain satisfy the exact descent identity; full End=B and the actual Tate restriction supply irreducibility, de Rham weights and oddness.",
+          "retained_exceptions": "No good reduction at 5 or residual small-image condition is inserted. Weight-one finite image is excluded by the nonzero Hodge-Tate weight.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8270,
+            "end_line": 8276,
+            "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8270,
+              "end_line": 8276,
+              "excerpt_sha256": "5858c5e1a7a37052d04acf6cac9667fb4b3f1fe10bfaed4ad99af2d477855d3b"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-CALEGARI",
+          "use_sha256": "bca96d439e5cbfd79a118800902ca1fee342e09ea37b03c5f380a874ff592c37",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "The original r_5 has a classical cuspidal eigenform realization up to a character twist.",
+          "retained_hypotheses": "Continuity, absolute irreducibility, oddness, finite ramification and de Rhamness with distinct weights are verified for this same r_5.",
+          "retained_exceptions": "The source does not itself select a primitive weight-two representative; those are later deductions.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 505,
+            "end_line": 563,
+            "excerpt_sha256": "cc0ed65869e2940e3d3bd7c65eb6465fce96e9d1b0b117ad7b6a7f5ea5dd81a7"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 505,
+              "end_line": 563,
+              "excerpt_sha256": "cc0ed65869e2940e3d3bd7c65eb6465fce96e9d1b0b117ad7b6a7f5ea5dd81a7"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-SCHOLZE",
+          "use_sha256": "ccd3bf411149d00ee3edb79308a156f704ada5f4f42c9b8c76de915fbdcbd22b",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "The degree-one etale representation of A at each place above5 is de Rham.",
+          "retained_hypotheses": "A is smooth and proper; the chosen place of the number field F lies above5.",
+          "retained_exceptions": "Crystallinity is not asserted or required.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 532,
+            "end_line": 535,
+            "excerpt_sha256": "21a487d121014da39db8abbe8bfcc8c9400e3e98a9d2d0b79ba2e08cd1b63baa"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 532,
+              "end_line": 535,
+              "excerpt_sha256": "21a487d121014da39db8abbe8bfcc8c9400e3e98a9d2d0b79ba2e08cd1b63baa"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-MILNE-DUAL",
+          "use_sha256": "c22ae241cec36d1f1bf594f14e6a2c8dbb6f903656cf2000895ea2aca4e5cad7",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "V_5(A) is the covariant dual of H^1_et(A,Q_5), with Hodge-Tate weights0,0,-1,-1.",
+          "retained_hypotheses": "The proper-smooth comparison and the canonical functorial duality refer to this same A.",
+          "retained_exceptions": "Do not replace the original1986 theorem number by a later-course numbering.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 535,
+            "end_line": 538,
+            "excerpt_sha256": "89de4e7b71ec13ea2f766872d43667f890a0390347c20ac377b6c2eb4b970a74"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 535,
+              "end_line": 538,
+              "excerpt_sha256": "89de4e7b71ec13ea2f766872d43667f890a0390347c20ac377b6c2eb4b970a74"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-FONTAINE",
+          "use_sha256": "902b1f055561585de3520c9dfcc78aa1c0cd432626455136761e5429d5940d28",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "Each original rank-two Tate summand is de Rham with weights0,-1; the stable character line used later is de Rham as well.",
+          "retained_hypotheses": "The ambient representations have already been shown de Rham, and the subspaces in question are Galois stable.",
+          "retained_exceptions": "Weight zero alone does not imply that a character has finite image.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 538,
+            "end_line": 547,
+            "excerpt_sha256": "9d8bbb6accac67159e843e80cf99b178f1e477b65da8d43424b03f35c73ca388"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 538,
+              "end_line": 547,
+              "excerpt_sha256": "9d8bbb6accac67159e843e80cf99b178f1e477b65da8d43424b03f35c73ca388"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 627,
+              "end_line": 634,
+              "excerpt_sha256": "15c0d71e9e812b7dbe38d60ce3bf2f41d89444c2f6254e67277b4cae5488df15"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-MILNE-LATTICE",
+          "use_sha256": "24f0d73994a690345a29666d80c782af4982426b91e4ea36893c6b7b60733b1e",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "The same normalized descent operator has zero trace on Betti homology and on V_5(A), so r_5 is odd.",
+          "retained_hypotheses": "Complex conjugation interchanges the Hodge summands while the holomorphic quasi-isogeny preserves them; the original descent identity gives r_5(c)^2=1.",
+          "retained_exceptions": "Conjugation is not discarded, and a different descent operator is not substituted.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 549,
+            "end_line": 560,
+            "excerpt_sha256": "c4395bb8d52c16bcb7e2aa4dc38db3ee06e985456f82ff7ffed91e17cc8c763c"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 549,
+              "end_line": 560,
+              "excerpt_sha256": "c4395bb8d52c16bcb7e2aa4dc38db3ee06e985456f82ff7ffed91e17cc8c763c"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-KATO-CLASSICAL",
+          "use_sha256": "2f7e45f2ca53a71e73b6f3dcdb917dc6685adb23c05a83f32bd749a62f04ef68",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "The actual U_f is V^vee, with HT(U_f)={0,1-k} and determinant epsilon_f times cyclotomic^(k-1); the de Rham character line then forces k=2 and the determinant identity proves delta finite.",
+          "retained_hypotheses": "The weight-one case has been excluded before applying the filtration for k>=2; coefficient embeddings agree; r_5 is absolutely irreducible and de Rham. The finiteness of alpha=det(r_5)/cyclotomic is supplied by the separate polarization-determinant inline use, not by Kato.",
+          "retained_exceptions": "No non-CM or crystalline condition; finiteness of delta follows from its square having finite image, not weight0 alone.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 579,
+            "end_line": 641,
+            "excerpt_sha256": "e7481a79fae07255460dea6f48363e3e6cf43d0cd7f250f9d46a645ea5c529cd"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 579,
+              "end_line": 641,
+              "excerpt_sha256": "e7481a79fae07255460dea6f48363e3e6cf43d0cd7f250f9d46a645ea5c529cd"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-DELIGNE-SERRE-WEIGHT1",
+          "use_sha256": "c1a3c367c4625522d2ea6c1ef508f27a2c77b039ff4b0aeb7e9210e83a4b49d8",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "If k=1 then U_f has finite image after coefficient extension; killing that image would force the two Hodge-Tate weights of r_5 to coincide, a contradiction.",
+          "retained_hypotheses": "The chosen primitive f has weight1; transformation under -I makes its nebentypus odd; r_5 has already distinct weights0,-1.",
+          "retained_exceptions": "Finite image is not inferred merely from complex continuity with the usual topology.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 579,
+            "end_line": 591,
+            "excerpt_sha256": "06cdc0e2e9cef88b7a8999ed248db4aab496bf4a28e1e1dd4c6d2e2213270de2"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 579,
+              "end_line": 591,
+              "excerpt_sha256": "06cdc0e2e9cef88b7a8999ed248db4aab496bf4a28e1e1dd4c6d2e2213270de2"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-IMPORT-B-LI-TWIST-PRIMITIVE",
+          "use_sha256": "3996c01d9ff69a7faefc2e0324845bae432020b17832f390119e2f18ae5599b9",
+          "consumer": "DIRECT-SECOND-CALLER",
+          "statement": "The weight-two twist has a primitive weight-two source whose Tate realization is the original r_5.",
+          "retained_hypotheses": "The twist h is nonzero and has the good-prime eigenvalues chi(ell)a_ell(f); comparison representations are semisimple.",
+          "retained_exceptions": "This weight-two extraction occurs after k=2, not at the initial positive-weight primitive selection.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 661,
+            "end_line": 666,
+            "excerpt_sha256": "492aa22851a71d263ca33cc2a3c0ac82081527e8e831f93c272331c2ae30ff42"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 661,
+              "end_line": 666,
+              "excerpt_sha256": "492aa22851a71d263ca33cc2a3c0ac82081527e8e831f93c272331c2ae30ff42"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8251,
+          "end_line": 8278,
+          "excerpt_sha256": "d4975d96395691efd0602c2d18fcb96390be9d2355de51c31bd85c6a4504ac74"
+        }
+      ],
+      "semantic_comparison": "The same original rank-two factor is absolutely irreducible before cross-prime compatibility. The accepted classical modularity chain supplies oddness, de Rham weights0,−1, weight2 and the absorbed finite twist.",
+      "scope_boundary": "The named modularity sources retain their exact caller hypotheses; no replacement A or enlargement of controlled Lprime.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-042",
+      "initial_use_sha256": "975b9068a10c48074929fd91aafc24d47631b3ff9f15b666ec32c1fe4652e9f7",
+      "initial_assertion": {
+        "statement": "Historical incoming scope, not adopted for removed fragments: Good trace algebraic independence of ell yields r3 matching same newform; Carayol/Casselman identify full conductor at every p using ell3 at5; Li/Shimura realize Jacobian factor. Current changed-interface qualifications: Actual normalizer fibers are geometrically isogenous over same field; original normalized family restricts to ordinary Tate on G_L-prime; common form and conductor bound connect to height19. Tate irreducibility does not depend circularly on later compatibility; auxiliary comparison fields and finite form twist do not alter controlled-field bounds.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-042",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ARITH-ACTIVE-B-TRACE",
+          "use_sha256": "1c625745def714b56c3c6cb449d675a36f802547c2afaf1b69bb480887844573",
+          "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+          "statement": "One algebraic Frobenius trace specializes through the original embeddings at5 and at ell, for ell different from the residue prime.",
+          "retained_hypotheses": "At the selected p the model has good reduction and the maps specialize; p is outside the finite comparison exceptions and ell differs from p.",
+          "retained_exceptions": "The comparison exceptions include denominators, spreading primes, 5, ell and the unbounded form level. They do not enlarge T or L-prime.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8277,
+            "end_line": 8316,
+            "excerpt_sha256": "ef796ee7348bfbd87dd1cfb7731ad9eb45db32d0ed93b7c13e3bedc0b8ee6619"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8277,
+              "end_line": 8316,
+              "excerpt_sha256": "ef796ee7348bfbd87dd1cfb7731ad9eb45db32d0ed93b7c13e3bedc0b8ee6619"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-CHEBOTAREV",
+          "use_sha256": "ec3c7f6cbc66571f91a1ca0447e635c9b2d788c4ae47a67faf76805eb9e69dbf",
+          "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+          "statement": "The original two trace functions agree on all G_Q.",
+          "retained_hypotheses": "The functions agree on arithmetic Frobenius classes outside a finite set.",
+          "retained_exceptions": "A finite comparison set may be omitted. Equality on a restricted subgroup alone would not suffice.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8330,
+            "end_line": 8339,
+            "excerpt_sha256": "1f88e573aaf8ce341c112b38903e874d244fae0aad06b262f13dc36c058555ab"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8330,
+              "end_line": 8339,
+              "excerpt_sha256": "1f88e573aaf8ce341c112b38903e874d244fae0aad06b262f13dc36c058555ab"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-BRAUER-NESBITT",
+          "use_sha256": "5c6b4d08f742586e8f10951ca3bfbbb5331c76b2e147a12aceec4a825fd99863",
+          "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+          "statement": "The original r_ell is isomorphic to the semisimplification of the corresponding U_f,ell.",
+          "retained_hypotheses": "The characters agree on every group element; the compared semisimplifications have finite length.",
+          "retained_exceptions": "No actual isomorphism of nonsemisimple modules follows at this stage.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8337,
+            "end_line": 8339,
+            "excerpt_sha256": "68908027bbbf24d1c396dc94c025adacca30b4ef4e8570f5a91f3cffffcdc8b2"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8337,
+              "end_line": 8339,
+              "excerpt_sha256": "68908027bbbf24d1c396dc94c025adacca30b4ef4e8570f5a91f3cffffcdc8b2"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-LENGTH-ONE",
+          "use_sha256": "7056842c2476cdfe3358157476bbb760de4ef4c12dc72f6d6a1dd8f87a403210",
+          "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+          "statement": "The actual U_f,ell, not only its semisimplification, is isomorphic to r_ell.",
+          "retained_hypotheses": "U_f,ell semisimplified is isomorphic to r_ell, and r_ell is absolutely irreducible.",
+          "retained_exceptions": "A nonzero proper submodule would give at least two composition factors and is therefore impossible.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8340,
+            "end_line": 8345,
+            "excerpt_sha256": "cad10511416598c72323cf5f1a8b3ce8904e62b5a9fd3ae10bc116385fe754cb"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8340,
+              "end_line": 8345,
+              "excerpt_sha256": "cad10511416598c72323cf5f1a8b3ce8904e62b5a9fd3ae10bc116385fe754cb"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-LOCAL-ISOMORPHISM",
+          "use_sha256": "eda696377539021785fd041fb956b82adab97d8ca6e48b52341b5345fa28d3b7",
+          "consumer": "CURRENT-B-DIRECT-CARAYOL-CONDUCTOR",
+          "statement": "For every p choose ell not equal to p; the actual local Galois representations have equal Artin/Swan conductor.",
+          "retained_hypotheses": "An actual global isomorphism has already been established for this original family and final form over a common finite coefficient extension.",
+          "retained_exceptions": "Semisimplified local trace equality alone is insufficient; this step does not identify the exponent with v_p(N).",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8368,
+            "end_line": 8395,
+            "excerpt_sha256": "46c43a95e69e7935de1d2077166bc214af5cd6c4f63d67c734c0c2f6dfdd5d35"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8368,
+              "end_line": 8395,
+              "excerpt_sha256": "46c43a95e69e7935de1d2077166bc214af5cd6c4f63d67c734c0c2f6dfdd5d35"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-LEVEL",
+          "use_sha256": "0608360f53f32c45dbb83d6cdc0317eb307fe993cedc0d4e485684761b642e94",
+          "consumer": "CURRENT-B-DIRECT-CARAYOL-CONDUCTOR",
+          "statement": "The conductor of the modular realization of the same final f equals v_p(N), including bad and dyadic primes.",
+          "retained_hypotheses": "f has its actual arbitrary coefficient field and nebentypus, with the same selected coefficient embedding as the comparison.",
+          "retained_exceptions": "The theorem does not apply at p=ell. A different auxiliary ell handles each p; no extraordinary-cuspidal exclusion remains in the final theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8357,
+            "end_line": 8395,
+            "excerpt_sha256": "6dc7cfc29c2a845278171638138ab7f002d760c71309386c5e9a3925af1dece6"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8357,
+              "end_line": 8395,
+              "excerpt_sha256": "6dc7cfc29c2a845278171638138ab7f002d760c71309386c5e9a3925af1dece6"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-CONDUCTOR-COMPARISON",
+          "use_sha256": "babb340faf18391b63161ec5b8eb31770d1eac3642172b1a5a31b42b9f5a91e5",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the same final primitive newform f, actual original D210 r_ell and corresponding U_f,ell are isomorphic over a common coefficient extension, and for every p with ell different from p their full local Artin conductors equal v_p(N).",
+          "retained_hypotheses": "The original family irreducibility and all-prime compatibility, fixed coefficient embeddings and full published Carayol conductor equality are supplied by the current comparison application.",
+          "retained_exceptions": "No trivial-character, squarefree-level, or extraordinary-cuspidal exclusion. The numerical bound N≤210^300 R^2 is a separate local deduction.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8380,
+            "end_line": 8394,
+            "excerpt_sha256": "9e8dda78a7a020fda445e45321c1b0b8a0515922cd8dd04ea224013b10727f4f"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8434,
+              "end_line": 8441,
+              "excerpt_sha256": "8bd7a0ed1e8a3aad6d4486f2029be3d014f702284c7814f6f2a2a61110a8200f"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-EFFECTIVE-JACOBIAN-FACTOR",
+          "use_sha256": "85946a4cd5da6921a15998217b079ef74b09e7b3a7c17005a01f0477d6686718",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual final primitive form f and H=ker(epsilon), the rational diamond quotient Jacobian J_H has A_f as a Q-isogeny factor. Over the same Lprime it has the actual non-CM surface A as an isogeny factor, so A times Z is Lprime-isogenous to J_H and dim J_H≥2.",
+          "retained_hypotheses": "The rational Gamma_H model, newform-quotient differential description, actual realization of r_ell in A_f and Tate restriction for A are supplied. A is absolutely simple. Faltings Hom comparison, rational scalar extension and Poincare reducibility are retained.",
+          "retained_exceptions": "No bounded polarization degree for A or Z is assumed. No use of an ineffective H sum as the quotient degree. The actual representation inclusion and Faltings theorem remain separate inputs.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10023,
+            "end_line": 10056,
+            "excerpt_sha256": "4ad279206a3632ecd6b7b622fd321a9d389502a497309d708085a7646a92746a"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10082,
+              "end_line": 10088,
+              "excerpt_sha256": "eda7e2d405c792b424c2539a7fe25f85727da8af7a1d1225acff0709b9534df9"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8279,
+          "end_line": 8325,
+          "excerpt_sha256": "5faa2b67c279579adf3ca3d83b5211f96a59f272c1a2f81e0962ce57368cb2a2"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8380,
+          "end_line": 8395,
+          "excerpt_sha256": "9bb64f39c5f8016ea0d0f37de4c385790f3292af8187163a12a2ef976711b76a"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 10023,
+          "end_line": 10056,
+          "excerpt_sha256": "4ad279206a3632ecd6b7b622fd321a9d389502a497309d708085a7646a92746a"
+        }
+      ],
+      "semantic_comparison": "Current all-prime comparison replaces the old r3-only description: fixed algebraic traces and common embeddings give the actual same-form representation, then ell!=p controls every full conductor. The current rational diamond quotient J_H carries the form and actual A factor over Lprime.",
+      "scope_boundary": "Old Casselman/Li wording is not a new source premise: current direct Carayol and current twist/quotient suppliers are used at their accepted scopes.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-043",
+      "initial_use_sha256": "ac7c1ae69e7d468786c6c6a37a9442229dfc8e5a00a9a5697fdc9caddfef2b0e",
+      "initial_assertion": {
+        "statement": "Historical incoming scope, not adopted for removed fragments: Arbitrary nebentypus, full WD monodromy, Tate dual/unramified normalization preserve exponent; primitive minimal level equals conductor including p² Current changed-interface qualifications: Actual normalizer fibers are geometrically isogenous over same field; original normalized family restricts to ordinary Tate on G_L-prime; common form and conductor bound connect to height19. Tate irreducibility does not depend circularly on later compatibility; auxiliary comparison fields and finite form twist do not alter controlled-field bounds.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-043",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-ACTUAL-CONDUCTOR-COMPARISON",
+          "use_sha256": "babb340faf18391b63161ec5b8eb31770d1eac3642172b1a5a31b42b9f5a91e5",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the same final primitive newform f, actual original D210 r_ell and corresponding U_f,ell are isomorphic over a common coefficient extension, and for every p with ell different from p their full local Artin conductors equal v_p(N).",
+          "retained_hypotheses": "The original family irreducibility and all-prime compatibility, fixed coefficient embeddings and full published Carayol conductor equality are supplied by the current comparison application.",
+          "retained_exceptions": "No trivial-character, squarefree-level, or extraordinary-cuspidal exclusion. The numerical bound N≤210^300 R^2 is a separate local deduction.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8380,
+            "end_line": 8394,
+            "excerpt_sha256": "9e8dda78a7a020fda445e45321c1b0b8a0515922cd8dd04ea224013b10727f4f"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8434,
+              "end_line": 8441,
+              "excerpt_sha256": "8bd7a0ed1e8a3aad6d4486f2029be3d014f702284c7814f6f2a2a61110a8200f"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-LEVEL",
+          "use_sha256": "0608360f53f32c45dbb83d6cdc0317eb307fe993cedc0d4e485684761b642e94",
+          "consumer": "CURRENT-B-DIRECT-CARAYOL-CONDUCTOR",
+          "statement": "The conductor of the modular realization of the same final f equals v_p(N), including bad and dyadic primes.",
+          "retained_hypotheses": "f has its actual arbitrary coefficient field and nebentypus, with the same selected coefficient embedding as the comparison.",
+          "retained_exceptions": "The theorem does not apply at p=ell. A different auxiliary ell handles each p; no extraordinary-cuspidal exclusion remains in the final theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8357,
+            "end_line": 8395,
+            "excerpt_sha256": "6dc7cfc29c2a845278171638138ab7f002d760c71309386c5e9a3925af1dece6"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8357,
+              "end_line": 8395,
+              "excerpt_sha256": "6dc7cfc29c2a845278171638138ab7f002d760c71309386c5e9a3925af1dece6"
+            }
+          ]
+        },
+        {
+          "use_id": "ARITH-ACTIVE-B-LOCAL-ISOMORPHISM",
+          "use_sha256": "eda696377539021785fd041fb956b82adab97d8ca6e48b52341b5345fa28d3b7",
+          "consumer": "CURRENT-B-DIRECT-CARAYOL-CONDUCTOR",
+          "statement": "For every p choose ell not equal to p; the actual local Galois representations have equal Artin/Swan conductor.",
+          "retained_hypotheses": "An actual global isomorphism has already been established for this original family and final form over a common finite coefficient extension.",
+          "retained_exceptions": "Semisimplified local trace equality alone is insufficient; this step does not identify the exponent with v_p(N).",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8368,
+            "end_line": 8395,
+            "excerpt_sha256": "46c43a95e69e7935de1d2077166bc214af5cd6c4f63d67c734c0c2f6dfdd5d35"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8368,
+              "end_line": 8395,
+              "excerpt_sha256": "46c43a95e69e7935de1d2077166bc214af5cd6c4f63d67c734c0c2f6dfdd5d35"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8380,
+          "end_line": 8395,
+          "excerpt_sha256": "9bb64f39c5f8016ea0d0f37de4c385790f3292af8187163a12a2ef976711b76a"
+        }
+      ],
+      "semantic_comparison": "The actual local isomorphism preserves full tame and Swan terms, including monodromy, with arbitrary nebentypus and nonsquarefree levels.",
+      "scope_boundary": "No semisimplification of inertia and no p=ell compatibility assertion is used; choose auxiliary ell separately for each p.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-044",
+      "initial_use_sha256": "02954c6fb2f3d7e316d7d44c328dc2462e9db6a790d60a2aef9a16f4d53ba647",
+      "initial_assertion": {
+        "statement": "Wild break bounded by different formula and v_p(e)<=67, giving a_p<=274 at2,3,5,7; tame elsewhere gives N<=210^300 R².",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-044",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-NUMERICAL-CONDUCTOR",
+          "use_sha256": "285990f28e3ee02da1ded28fd277bbd0781010f81ddba0cb44d13cd1f867c717",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual final primitive D210 form and R, its level satisfies N≤210^300 R^2 and rad(N) divides R.",
+          "retained_hypotheses": "E/Q is Galois with degree<2^66 and A has good reduction over E at2,3,5,7; chi is tame at odd primes with2-part conductor at most4; b restricts quadratically and normally as stated; actual local conductor equals v_p(N). Ramification/different and Artin conductor conventions are supplied.",
+          "retained_exceptions": "Unbounded tame ramification is allowed. Separate torsion good reduction and prime-to11 isogeny argument establish the required Galois E; this connection does not assume them proved merely from the degree estimate.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8397,
+            "end_line": 8441,
+            "excerpt_sha256": "23c7a0d6f6fa15391b42a501384adb40eaa386cacdffc6a7c67977d71489e928"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9984,
+              "end_line": 9985,
+              "excerpt_sha256": "345b1c06660b05a1bf113bf0cabf78f9e0a26d4a2256023690fe3950ffb179a2"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-RAMIFICATION-NUMBERING",
+          "use_sha256": "bb3aeacf10527c70160db63fdde71543ee04550c6b118637b37da774242cf2b3",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The inline Eisenstein derivative calculation bounds delta/e by1-1/e+v_p(e). Comparing with the upper-numbering integral bounds the last positive break by2v_p(e), hence at most136 under LR4; a two-dimensional representation trivial above136 has Swan at most272 and tame conductor at most2.",
+          "retained_hypotheses": "Upper numbering is compatible with quotients; the different and conductor formulas express their exponents by the ramification filtration. All field, endomorphism and local-triviality hypotheses used in the connecting calculation remain separate.",
+          "retained_exceptions": "The derivative estimate, LR4 valuations and actual triviality after the controlled extension are separate inputs. Tame or unramified extensions have no positive break. The cited work is the1967 chapter, not Local Fields1979; the precise extract retrieval URL is not asserted.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8411,
+            "end_line": 8432,
+            "excerpt_sha256": "074fa33ee3fbcbc396042adaf192b5d5cf4e7ac125bf6224809df968ba844774"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8411,
+              "end_line": 8432,
+              "excerpt_sha256": "074fa33ee3fbcbc396042adaf192b5d5cf4e7ac125bf6224809df968ba844774"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-TORSION-GOOD-REDUCTION",
+          "use_sha256": "82ee500fe3db3292f55e031e0960d4316d750f0d1b86a185ccaa80a31565f3b9",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual D210 quaternionic surface has potentially good reduction everywhere, and E=L(A[11]) is Galois over Q with [E:Q]<2^66; A has good reduction over E at every residue characteristic different from11.",
+          "retained_hypotheses": "The D210 normalizer and same-L Hom construction are supplied. The published semistable reduction and full-torsion criteria, Neron extension property and torus structure are retained. The normalizer maps can be scaled prime to11 using the split maximal order at11.",
+          "retained_exceptions": "The full-torsion reduction criterion is not applied at residue characteristic11. Potential good reduction alone does not imply the explicit field E is Galois; that uses normalizer maps prime to11.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8124,
+            "end_line": 8174,
+            "excerpt_sha256": "505626fca1bcf315c4274e47d3c18f7a40f65ae2bc3fd11277a75b970a3c378e"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8397,
+              "end_line": 8429,
+              "excerpt_sha256": "9607b658f11d1f904eec4520a8a790e06314c91b5c0410542c41fb9cd63ff013"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8397,
+          "end_line": 8441,
+          "excerpt_sha256": "23c7a0d6f6fa15391b42a501384adb40eaa386cacdffc6a7c67977d71489e928"
+        }
+      ],
+      "semantic_comparison": "The current proof retains v2(e)<=67 and odd-prime<=65, uses the safe last-break bound136 and Swan<=272, hence exponent<=274 at2,3,5,7. Elsewhere exponent<=2 and support dividesR, giving N<=210^300 R².",
+      "scope_boundary": "The historical summary did not state the intermediate break; current136 is the actual safe bound, not an inferred exact value.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-045",
+      "initial_use_sha256": "40ad56bbaa40f221ae3e4665a009b920986ffc893cdcf14aa0fd23408de92be3",
+      "initial_assertion": {
+        "statement": "Level transfer with C=210^300 and CM estimate fit old 4608^165888 allowance; no contact or radical change.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-045",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-NUMERICAL-CONDUCTOR",
+          "use_sha256": "285990f28e3ee02da1ded28fd277bbd0781010f81ddba0cb44d13cd1f867c717",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual final primitive D210 form and R, its level satisfies N≤210^300 R^2 and rad(N) divides R.",
+          "retained_hypotheses": "E/Q is Galois with degree<2^66 and A has good reduction over E at2,3,5,7; chi is tame at odd primes with2-part conductor at most4; b restricts quadratically and normally as stated; actual local conductor equals v_p(N). Ramification/different and Artin conductor conventions are supplied.",
+          "retained_exceptions": "Unbounded tame ramification is allowed. Separate torsion good reduction and prime-to11 isogeny argument establish the required Galois E; this connection does not assume them proved merely from the degree estimate.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8397,
+            "end_line": 8441,
+            "excerpt_sha256": "23c7a0d6f6fa15391b42a501384adb40eaa386cacdffc6a7c67977d71489e928"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9984,
+              "end_line": 9985,
+              "excerpt_sha256": "345b1c06660b05a1bf113bf0cabf78f9e0a26d4a2256023690fe3950ffb179a2"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-CM-HEIGHT",
+          "use_sha256": "34fc70c45de6f630effd884fb6b4d59628450f65cf34ae26f3f78096379cf701",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual abelian surface A/L of CM type with a quaternion division algebra acting and all geometric endomorphisms over L, [L:Q]≤576 and rad|D_L|≤R, R≥1, the original stable Faltings height satisfies h_F(A)<854R.",
+          "retained_hypotheses": "A is an abelian surface of CM type with a quaternion division algebra embedded in its geometric rational endomorphism algebra; all geometric endomorphisms are defined over L; [L:Q]≤576 and rad|D_L|≤R with R≥1. The individual CM embedding height formula, potential good reduction, and GR2023 Theorem1.9(1) are supplied separately.",
+          "retained_exceptions": "Does not construct A or L, prove the full endomorphism-field property, or handle the non-CM branch. No enlargement of the field-degree576 budget. Uses an individual complex-embedding formula, not a class average or a Q(j) Weierstrass assumption.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8568,
+            "end_line": 8703,
+            "excerpt_sha256": "9abb3c65609362383a43ccbb463b2fc7dd4a6487c38be4c413f20bb1ed1fb02b"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9976,
+              "end_line": 9977,
+              "excerpt_sha256": "71b2a6538eb47dfc03b7ab9e2ab8a58fb284873fb47bc6f3fa025835b3a25ab8"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-FINAL-CONSTANT-ARITHMETIC",
+          "use_sha256": "a83a1c7738c1603f1bca8d1e4662acc7deb937ad2ee07ddbb18ba0d1f745de39",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The stated non-CM transfer inputs and CM bound yield h_F(A)<A19 R^19 and H19<2^2093966, with A19=2^109*210^1800 and H19=2 A19 Bstar^19+128.",
+          "retained_hypotheses": "g<T, dprime<=2304R, h_F(J_H)<2^24 T^6, the displayed isogeny variation V, h_F(Z)>-3g/2, CM h_F(A)<854R, geometric comparison h(a)<=2max(0,h_F(A))+128, and the retained primorial bound.",
+          "retained_exceptions": "Zero-dimensional complement is allowed; M5(a)>=1 permits the additive128 absorption. The numeric primorial result is a separate input, not a consequence of the height theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10090,
+            "end_line": 10109,
+            "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10090,
+              "end_line": 10109,
+              "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8444,
+          "end_line": 8459,
+          "excerpt_sha256": "1070c6aec7c2e29879f6179eba4278d809c73d3aa1e08ba8fd9350a2bab10e8c"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8554,
+          "end_line": 8564,
+          "excerpt_sha256": "aec5dad47954a1bbc4fb1de1a7143fd40f62793f6e37fba4953a494c59af3ead"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 9955,
+          "end_line": 9977,
+          "excerpt_sha256": "82f138d1abbd76df8d6aa2ca71fe20bc3164f25a35512f633c14c5dae1253c38"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 10100,
+          "end_line": 10109,
+          "excerpt_sha256": "751d051142e5dc65fcd22b5018ff80aed1b91c4420940d387697d33f8048d4c9"
+        }
+      ],
+      "semantic_comparison": "The old budget is preserved in its own theorem: 2^24*210^3600<2^28824<4608^165888, followed by the CM term and Bstar^24. The selected sharper theorem instead uses A19=2^109*210^1800 and Bstar^19, without changing contacts.",
+      "scope_boundary": "Do not identify old4608^165888 with A19 or use the old allowance as the source of exponent19. Old constant proof is retained history, current final constant has its own accepted component.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-046",
+      "initial_use_sha256": "2117aabc41e25088ebd3991269df2bf4499b0363c05226bdcaab3b0075bba93f",
+      "initial_assertion": {
+        "statement": "Common constituent yields A factor of J1(N) over L'; Belyi/g genus bounds plus Gaudron-Remond and Bost produce hF(A)<2^24 C^12 R^24 without coefficient-degree bound.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-046",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-EFFECTIVE-JACOBIAN-FACTOR",
+          "use_sha256": "85946a4cd5da6921a15998217b079ef74b09e7b3a7c17005a01f0477d6686718",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual final primitive form f and H=ker(epsilon), the rational diamond quotient Jacobian J_H has A_f as a Q-isogeny factor. Over the same Lprime it has the actual non-CM surface A as an isogeny factor, so A times Z is Lprime-isogenous to J_H and dim J_H≥2.",
+          "retained_hypotheses": "The rational Gamma_H model, newform-quotient differential description, actual realization of r_ell in A_f and Tate restriction for A are supplied. A is absolutely simple. Faltings Hom comparison, rational scalar extension and Poincare reducibility are retained.",
+          "retained_exceptions": "No bounded polarization degree for A or Z is assumed. No use of an ineffective H sum as the quotient degree. The actual representation inclusion and Faltings theorem remain separate inputs.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10023,
+            "end_line": 10056,
+            "excerpt_sha256": "4ad279206a3632ecd6b7b622fd321a9d389502a497309d708085a7646a92746a"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10082,
+              "end_line": 10088,
+              "excerpt_sha256": "eda7e2d405c792b424c2539a7fe25f85727da8af7a1d1225acff0709b9534df9"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-INDEX-AND-JACOBIAN-HEIGHT",
+          "use_sha256": "bfe7ab79d5f202968f830a219679066fe3513a72d66d4b315dfeda86d910f717",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual rational diamond quotient X_H and J_H, the nebentypus order satisfies t≤4608R, the index d_H satisfies d_H< T=2^14 C R^(19/6), and g=dim J_H<T with h_F(J_H)<2^24 T^6, where C=210^300.",
+          "retained_hypotheses": "The actual determinant square is cyclotomic squared on G_Lprime; the weight-two determinant convention is supplied. [Lprime:Q]≤2304R, N≤CR², radN dividesR and the effective quotient has g≥2. Published modular index/genus and general Belyi Jacobian height estimates are supplied.",
+          "retained_exceptions": "The Belyi estimate is general, with no squarefree-level or trivial-character hypothesis. The source factors and actual determinant restriction are required; bounds do not construct them.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 9997,
+            "end_line": 10080,
+            "excerpt_sha256": "cc9315806dd2c48c3d063ccf9abbae0f28b43e0f54f5668865bf07c7f63385aa"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10082,
+              "end_line": 10094,
+              "excerpt_sha256": "126e2e66e6eab2be695ab1b0ab41b6c43e6da7defd7ead458fbe146e65e54802"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-IMPORT-FALTINGS-HOM",
+          "use_sha256": "f82db94ef4fda7c6b8b04cc39bd94df5b9040fdf0358b08528a215d2610d68a5",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The actual common constituent over Lprime gives a nonzero Lprime-homomorphism A→J_H.",
+          "retained_hypotheses": "A and J_H are defined over the same Lprime; the actual common constituent and semisimplicity have already been established.",
+          "retained_exceptions": "Do not infer a homomorphism solely from a coefficient-extension vector without descent, or replace A by an unrelated fiber.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10051,
+            "end_line": 10056,
+            "excerpt_sha256": "9577d23ac1e069664e4fe3bf5d01b656e892de2ea8af726f5948c64d719327dc"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10051,
+              "end_line": 10056,
+              "excerpt_sha256": "9577d23ac1e069664e4fe3bf5d01b656e892de2ea8af726f5948c64d719327dc"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-IMPORT-POINCARE",
+          "use_sha256": "2ba4fab2025894d4c27f58552237b795eb093129e2717faa20ee90fb4c65bcf6",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "There is Z/Lprime with A×Z isogenous over Lprime to J_H, and g=dim J_H>=2.",
+          "retained_hypotheses": "The image of the nonzero A→J_H map is isogenous to the absolutely simple A; J_H has its canonical principal polarization.",
+          "retained_exceptions": "No bound on this preliminary isogeny degree, and no principal polarization on A or Z, is asserted.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10047,
+            "end_line": 10056,
+            "excerpt_sha256": "2c24225cc9ec555b9ddbac30217ab779519b73e384caaf56a5f5e80b4f75c83f"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10047,
+              "end_line": 10056,
+              "excerpt_sha256": "2c24225cc9ec555b9ddbac30217ab779519b73e384caaf56a5f5e80b4f75c83f"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-IMPORT-JAVANPEYKAR",
+          "use_sha256": "18317726e1327e848d9c750aa9d96770a62751a3d7c3985bda2afead5358467e",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "h_F(J_H)<=13000000 d_H^5 g<2^24 T^6.",
+          "retained_hypotheses": "The actual smooth modular curve X_H, genus g and Belyi map of degree at most d_H; g,d_H<T.",
+          "retained_exceptions": "Original stable Faltings metric; no squarefree level, trivial character or field-degree penalty.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10075,
+            "end_line": 10080,
+            "excerpt_sha256": "51b8fa88724357fbd3de02076924d949c71aad24f18715322111b08aa65ff8da"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10075,
+              "end_line": 10080,
+              "excerpt_sha256": "51b8fa88724357fbd3de02076924d949c71aad24f18715322111b08aa65ff8da"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-IMPORT-GR2023",
+          "use_sha256": "9d29d9cacdf57773bfb5a7d5c7cd4adbd378b60ebcf11906326153827fb040b3",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "An isogeny with source (J_H)_Lprime and target A×Z has half-log degree at most V=2g²[8g²log(7g)+log dprime+log max(1,log dprime,h_F(J_H))].",
+          "retained_hypotheses": "The same A×Z and J_H are Lprime-isogenous; dprime=[Lprime:Q], g=dim J_H.",
+          "retained_exceptions": "No H6 GR2014 specialization, auxiliary field change or bounded polarization-degree assumption.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10082,
+            "end_line": 10088,
+            "excerpt_sha256": "eda7e2d405c792b424c2539a7fe25f85727da8af7a1d1225acff0709b9534df9"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10082,
+              "end_line": 10088,
+              "excerpt_sha256": "eda7e2d405c792b424c2539a7fe25f85727da8af7a1d1225acff0709b9534df9"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-IMPORT-BOST-LOWER",
+          "use_sha256": "f784c0cc0423646c52803c7e3e4c444d0c38ed1ed3477c2515238dfa73313386",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "h_F(Z)>-3g/2, where dim Z=g−2; subtract this lower bound in the estimate for h_F(A).",
+          "retained_hypotheses": "Z is the same complement over Lprime, with g>=2; height normalization agrees with the other transfer terms.",
+          "retained_exceptions": "No polarization degree or coefficient-field bound is introduced.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10090,
+            "end_line": 10103,
+            "excerpt_sha256": "3b5c5d822e454ee85f47b457203a4deb3707f975f03b6aa0bc6db9b831e4b99f"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10090,
+              "end_line": 10103,
+              "excerpt_sha256": "3b5c5d822e454ee85f47b457203a4deb3707f975f03b6aa0bc6db9b831e4b99f"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-FINAL-CONSTANT-ARITHMETIC",
+          "use_sha256": "a83a1c7738c1603f1bca8d1e4662acc7deb937ad2ee07ddbb18ba0d1f745de39",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The stated non-CM transfer inputs and CM bound yield h_F(A)<A19 R^19 and H19<2^2093966, with A19=2^109*210^1800 and H19=2 A19 Bstar^19+128.",
+          "retained_hypotheses": "g<T, dprime<=2304R, h_F(J_H)<2^24 T^6, the displayed isogeny variation V, h_F(Z)>-3g/2, CM h_F(A)<854R, geometric comparison h(a)<=2max(0,h_F(A))+128, and the retained primorial bound.",
+          "retained_exceptions": "Zero-dimensional complement is allowed; M5(a)>=1 permits the additive128 absorption. The numeric primorial result is a separate input, not a consequence of the height theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10090,
+            "end_line": 10109,
+            "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10090,
+              "end_line": 10109,
+              "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8489,
+          "end_line": 8552,
+          "excerpt_sha256": "d8d50b9e0dd8beace7b218dbfd74d26262a7e4ce3dc83a751221837d8e06df3b"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 10010,
+          "end_line": 10104,
+          "excerpt_sha256": "ef9a9ad8e46d86f8ba09c3c7f298b26e7e666e9f1ca1252c30c5549e73dac0ef"
+        }
+      ],
+      "semantic_comparison": "Old J1(N) transfer gives 2^24 C^12 R^24 without a coefficient-degree bound. Current proof uses the rational quotient J_H with t<=4608R, d_H<T=2^14 C R^(19/6), so source-height and isogeny estimates give A19 R^19 over the same Lprime.",
+      "scope_boundary": "Old J1(N) numerical genus/height instance is not copied onto J_H. The stronger construction and its separate index/height inputs supply the selected bound.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    },
+    {
+      "initial_use_id": "HIST-compiler-COMP-049",
+      "initial_use_sha256": "453b57f5730fa07d2dd559d75f5f85ede27f39360847c41cd84bb5074e877d97",
+      "initial_assertion": {
+        "statement": "Sieve7499 primes/product bit109445 proves log2H<4783227; scalar polynomial detects every odd contact and height follows if M^48",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/compiler/INITIAL-SOURCE-USES.json @ 930862328bc6b9ab15ed12e0006348189e9c7705a4c5d8bcce70b664fc995445 row COMP-049",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_explicit_changed_scalar_interface",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-PRIMORIAL-BOUND",
+          "use_sha256": "7e9cd06344fe0098b4847c81b4b261fc1d8779b10a70d4f34fb4dc2ffbe18969",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For Bstar=product of all primes p<=76176, Bstar<2^109445.",
+          "retained_hypotheses": "The retained sieve marks composites from p² through the inclusive cutoff; the retained exact integer product has the recorded bit length.",
+          "retained_exceptions": "This finite check proves no height theorem, geometric input, modularity statement or point existence.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10105,
+            "end_line": 10109,
+            "excerpt_sha256": "85f8019d98f39767b471a422b63230c59e8588cf1f2ab03e564588734b76e6c5"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10105,
+              "end_line": 10109,
+              "excerpt_sha256": "85f8019d98f39767b471a422b63230c59e8588cf1f2ab03e564588734b76e6c5"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-FINAL-CONSTANT-ARITHMETIC",
+          "use_sha256": "a83a1c7738c1603f1bca8d1e4662acc7deb937ad2ee07ddbb18ba0d1f745de39",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The stated non-CM transfer inputs and CM bound yield h_F(A)<A19 R^19 and H19<2^2093966, with A19=2^109*210^1800 and H19=2 A19 Bstar^19+128.",
+          "retained_hypotheses": "g<T, dprime<=2304R, h_F(J_H)<2^24 T^6, the displayed isogeny variation V, h_F(Z)>-3g/2, CM h_F(A)<854R, geometric comparison h(a)<=2max(0,h_F(A))+128, and the retained primorial bound.",
+          "retained_exceptions": "Zero-dimensional complement is allowed; M5(a)>=1 permits the additive128 absorption. The numeric primorial result is a separate input, not a consequence of the height theorem.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 10090,
+            "end_line": 10109,
+            "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 10090,
+              "end_line": 10109,
+              "excerpt_sha256": "04ca410da183181154d7f8327e9022c201afd9165acad35d88a12a5a221e5b8d"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-HEIGHT19-ROOT-TRANSFER",
+          "use_sha256": "8125fea92fb20194e73ec91f5c01e7ef66f745407596eea72fae043312a60b6d",
+          "consumer": "V13-HEIGHT",
+          "statement": "For restored elliptic labels n_i and B=max|n_i|, if the kth powers of the three required contact radicals divide a nonzero integerN, then B^2-6<7*H19*|N|^(19/k).",
+          "retained_hypotheses": "The roots and nonzero odd integral labels have already been restored; both real embeddings ofC are positive. The retained contact detector and fractional-linear comparison apply, and root heights are bounded byh(C), while h(x([n_i]P))>=n_i^2-6.",
+          "retained_exceptions": "N=0 is excluded. No circular use of auxiliaryH or logarithms before restoring labels and the scalar anchor; positivity is used forC0>0.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20624,
+            "end_line": 20645,
+            "excerpt_sha256": "5ccf297688e170828035fffd18521178ee6135fe4f8c6ef225f0b6d9e5dc7faf"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 22812,
+              "end_line": 22820,
+              "excerpt_sha256": "0eb20a1b3ba6b052b94f885040bd1929671f7efb11f0ea74e7b73f18ec493a33"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-RETAINED-V13-SCALAR-NORM24",
+          "use_sha256": "4cc69c4b06b0b4244d2606c8e39f3a5e190c8e1cddb691c297ddfc587cd621d6",
+          "consumer": "QUARTIC-299-COMPOSITION",
+          "statement": "Under its explicit incoming hypotheses, the retained current application supplies: The scalar depth24 logarithm/height inequality and the finite support conditions used for simultaneous completeness.",
+          "retained_hypotheses": "Odd positive eta=v_p(r), c a unit at the consumed prime, and the actual pole input crW^2. Local scope: Use only the indicated consumed good, unramified places above p>76176, with v_p(p)=1 and D a unit. The required contact has positive odd alpha=v_p(R); split and inert places and zero leaves are treated as stated. Do not infer integrality at another detector or another place.",
+          "retained_exceptions": "The scalar comparison is not passed through an obsolete auxiliary square-root assumption. Its depth24 transfer remains the earlier direct scalar argument.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 23360,
+            "end_line": 23367,
+            "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 23360,
+              "end_line": 23367,
+              "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 23393,
+              "end_line": 23437,
+              "excerpt_sha256": "12dac49eca299dbf39cdc65413e8ce87951e08a34be61ce39b2b474d782d8bd1"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-RETAINED-V13-SCALAR-TORSION-LOG",
+          "use_sha256": "d39638a9d818f85eaa647bcfedcff7a9a3ad7815f3598a8775af8c38bc012046",
+          "consumer": "QUARTIC-299-COMPOSITION",
+          "statement": "Under its explicit incoming hypotheses, the retained current application supplies: The unchanged depth24 scalar congruence and its19/24 height estimate.",
+          "retained_hypotheses": "A place where H is formal and the actual scalar ratio has depth24; odd good residue characteristic. Local scope: Use only the indicated consumed good, unramified places above p>76176, with v_p(p)=1 and D a unit. The required contact has positive odd alpha=v_p(R); split and inert places and zero leaves are treated as stated. Do not infer integrality at another detector or another place.",
+          "retained_exceptions": "The new all-E auxiliary S pair neither chooses a new scalar point nor removes the old scalar exceptional-case proof.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 23360,
+            "end_line": 23367,
+            "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 23360,
+              "end_line": 23367,
+              "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-RETAINED-V13-SCALAR-HEIGHT",
+          "use_sha256": "0f2a97e564f56d731a0df651587ca594a3259b20bbd1a94a6f877140a5d26408",
+          "consumer": "QUARTIC-299-COMPOSITION",
+          "statement": "Under its explicit incoming hypotheses, the retained current application supplies: The pre-H lower bound excluding empty contact support and the final scalar/input height contradiction.",
+          "retained_hypotheses": "The established contact divisibility to depth24 and the inherited scalar height theorem and anchor size. Local scope: Use only the indicated consumed good, unramified places above p>76176, with v_p(p)=1 and D a unit. The required contact has positive odd alpha=v_p(R); split and inert places and zero leaves are treated as stated. Do not infer integrality at another detector or another place.",
+          "retained_exceptions": "The scalar endpoint Q2=P is excluded by g0*tau=1; Q2=-P is interpreted as the actual nonzero doubled point.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 22804,
+            "end_line": 22826,
+            "excerpt_sha256": "52f6a9f1384735c428f1de0b15c16507de291e8979814e6eaab3ac058e8bd862"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 22804,
+              "end_line": 22826,
+              "excerpt_sha256": "52f6a9f1384735c428f1de0b15c16507de291e8979814e6eaab3ac058e8bd862"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 23360,
+              "end_line": 23367,
+              "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-RETAINED-V13-NORMALIZED-SCALAR-POLE",
+          "use_sha256": "b68254bd6b71a0acbb34ee043eb096ba9a1b7b7e8a4b9e962c06a2df7d2634ef",
+          "consumer": "QUARTIC-299-COMPOSITION",
+          "statement": "Under its explicit incoming hypotheses, the retained current application supplies: The scalar preparation-zero certificate and depth24 soundness/completeness within the final299 system.",
+          "retained_hypotheses": "Preparation already specialized to n=x^2 and semantic b=-Kx>0 proved outside the private pole. Local scope: Preparation is at2,3,17, the finitely selected contact primes p>76176, and the real embeddings, in the stated order with one final H and common gamma. Finite depths are enlarged before contacts; extra denominator primes remain permissible because pole denominators are squares.",
+          "retained_exceptions": "Do not infer a new nonzero or positive semantic scalar input from the reduced private pole alone; use the inherited scalar proof and simultaneous construction.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 23360,
+            "end_line": 23367,
+            "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 23360,
+              "end_line": 23367,
+              "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 23393,
+              "end_line": 23437,
+              "excerpt_sha256": "12dac49eca299dbf39cdc65413e8ce87951e08a34be61ce39b2b474d782d8bd1"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 8705,
+          "end_line": 8740,
+          "excerpt_sha256": "37d2ff07d040581d29dc5c28485133f5ee34d06373adeb30f150bc06ad9d442c"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 10100,
+          "end_line": 10109,
+          "excerpt_sha256": "751d051142e5dc65fcd22b5018ff80aed1b91c4420940d387697d33f8048d4c9"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 10128,
+          "end_line": 10149,
+          "excerpt_sha256": "0eb324676a55586c6a710ae3de3c0915890d1b7d939851ec28cd8cc17e779e63"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 9720,
+          "end_line": 9745,
+          "excerpt_sha256": "dd084731df4aa58ef99487f982cf288562c8bb3e81ac9d545c90b304cf468a89"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 22264,
+          "end_line": 22296,
+          "excerpt_sha256": "587500909c1e8d1027782971c74d56701535280045f3a4cb952bcf1e1ea7b207"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 22313,
+          "end_line": 22407,
+          "excerpt_sha256": "829a2320b8b102ea6df85af2fa9931b3abf5d599acca3272366c40123d7198be"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23001,
+          "end_line": 23033,
+          "excerpt_sha256": "e92765dda459704376f8ed29188b8d2c10de5d73f40c3c269831fa1205bbeb9e"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23360,
+          "end_line": 23367,
+          "excerpt_sha256": "3e477f2e22567848fd6437ef5b04a9732d5516c4a3d327d19ad1733585400e10"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 23619,
+          "end_line": 23637,
+          "excerpt_sha256": "92044e6b0b39b7d67bfab6bfa9ce0d7cf2f93cac6b503302897edab599f48c29"
+        }
+      ],
+      "semantic_comparison": "The identical finite primorial result7499 primes and bit length109445 is reused. Old log2Hstar<4783227 and M^48⇒sqrt(|s|) belong to the exponent24 scalar application. Current selected transfer uses the exponent19 theorem and the actual kth-power contact divisibility. The scalar contact polynomial itself is retained literally at22280–22281, with the new input beta=51(2X+1)^2+2504. Its old finite-contact odd-valuation argument still applies because the five factors have no common large-prime collision. Infinity contacts are absent for this beta: at p>76176 a negative valuation is2v_p(tau), hence even. Thus every prime of M5(beta) has positive odd valuation in the same r. At such a prime c=r+4896 is a unit. The current nested scalar norm proof22368–22389, with zero terms allowed, gives depth24 and v_p(s)>=24. Consequently M5(beta)^24 divides the nonzero scalar label s and H19 gives h(beta)<=H19|s|^(19/24). This is the explicitly changed interface, not the old M^48/exponent24 square-root bound. The final299 proof23360–23367 invokes this exact retained scalar-depth argument after H and oriented scalar-point restoration. The three grouped contact detectors23001–23033 concern the other contact-scale tests; they do not replace this scalar polynomial or nested scalar norm block.",
+      "scope_boundary": "Old M^48 and Hstar*sqrt(|s|) remain valid historical-stage assertions at9720–9745 and are not used as the selected depth24 result. The selected proof retains the pole obstruction, actual scalar orientation, restored H, formal logarithm and nonzero scalar-label/anchor hypotheses of the existing accepted scalar components. Extra support of c is prepared before continuity choices. This comparison creates no new uniformity or source approval.",
+      "remaining_clause": "No additional unmatched scalar-detector clause remains in this observation at the stated conditional interface scope. The named upstream pole, formal logarithm, H19 and restoration premises remain separate accepted components; no ancestry closure is asserted.",
+      "supporting_source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/REPORT392t.md",
+            "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd"
+          },
+          "start_line": 15,
+          "end_line": 43,
+          "excerpt_sha256": "ad264a5fbd5449be3e02d7e0d04082686be7e41d62365b2112733763870ecb0b"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/REPORT392t.md",
+            "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd"
+          },
+          "start_line": 50,
+          "end_line": 67,
+          "excerpt_sha256": "1970d6f51504089b907160c0153a23f6823ce5d32d9ed832a0415818912734a4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/REPORT392t.md",
+            "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd"
+          },
+          "start_line": 68,
+          "end_line": 79,
+          "excerpt_sha256": "be1c3987472325fe3812f9668af6e59594fa9d5bc463eb2c9b1ac37d9e8f6ecf"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "quartics/quartic-299-314/sources/work/quartic-optimization-20261107/root-ordinate299/PROOF.md",
+            "sha256": "69ddd3063b571c19a481272a31268ce093411c0c5519d62aef65878d52a4a7d0"
+          },
+          "start_line": 43,
+          "end_line": 57,
+          "excerpt_sha256": "aaef060a81290e09362f76b770f0acfd4ccd480eae82b3211f56883359925efb"
+        }
+      ]
+    },
+    {
+      "initial_use_id": "TRAVERSAL-H5-1",
+      "initial_use_sha256": "1ffbe73ee7042abb1ad66592fb41ac3dc6bd37e078d1d01aecd0840400a1b343",
+      "initial_assertion": {
+        "statement": "Same D210 normalizer fiber surfaces have commensurable rational PEL lattices; clear denominators to geometric isogenies. Complex homomorphisms descend to Qbar by torsion density and invariant graph. Full Hodge End=B in non-CM case; corrected Voight Skolem-Noether respects specified quadratic embeddings. Clear rational inverse and use existing simultaneous Hom descent to same L. Chosen integral datum, normalizer orbit and full Hodge calculation remain inputs; no degree bound or coherent cocycle.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: Direct original source read and exact portable-byte comparison work/source-risk-review-20261107/five-to-three-ordinary-sol-002/candidate/proposed-repository/research/version14/proofs/h5-full-three-v1/GEOMETRIC-ISOGENY.md",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "disposition": "conditional_clause_mapping_with_historical_scope",
+      "current_links": [
+        {
+          "use_id": "ACTIVE-H19-D210-GEOMETRIC-ISOGENIES",
+          "use_sha256": "ce3be713333faf37a883b032788bd53fb87360655e01c725a80305c991b76a49",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the actual non-CM conjugate D210 fiber surfaces A and A_sigma, the normalizer action gives a geometric isogeny; the full geometric endomorphism algebra is B. For prescribed embeddings of the same quadratic field F, an isogeny intertwining those embeddings exists over the same fiber field L.",
+          "retained_hypotheses": "The full PEL/normalizer comparison and same-L Hom descent are supplied. A is non-CM. The rational Hodge equivalence and Skolem-Noether for the simple subalgebra embeddings are retained at their actual scopes.",
+          "retained_exceptions": "The F-linear isogenies need not be chosen coherently. This does not construct the later B-linear scalar-normalizer maps, sign splitting, compatible family, or bounded descent to a rational GL2-type variety.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7980,
+            "end_line": 8016,
+            "excerpt_sha256": "167bce0df9addcbf1a672fabb19ed470f58a8b1b62348c0c27612b5180a94e97"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8111,
+              "end_line": 8122,
+              "excerpt_sha256": "ed7711802a7e3c28e5b1e00e930ad52cd6c26abc5dd1848e7bb0431398a6b08b"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-GEOMETRIC-HODGE-EQUIVALENCE",
+          "use_sha256": "1392c43d2c22703b64713d447ba13cc1878d3146afe00775a4aadc5aa18cd8f6",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "The covariant rational Hodge equivalence identifies the full rational Hodge endomorphisms of the actual complex surface with its full complex algebraic endomorphisms; with the separately supplied centralizer calculation and geometric descent this yields End^0_Qbar(A)=B in the non-CM branch.",
+          "retained_hypotheses": "A is a complex abelian surface with polarizable weight-minus-one homology. The rank-one B centralizer calculation, the non-CM choice K0=Q, and descent of complex homomorphisms to Qbar are separate retained inputs.",
+          "retained_exceptions": "The imaginary-quadratic centralizer is the CM branch and is excluded here. Hodge equivalence alone supplies neither Qbar descent nor End=B without the centralizer calculation.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7995,
+            "end_line": 8002,
+            "excerpt_sha256": "a6c7384ab70e8b22314d2fff28c645f0827bc5e94263ae21d35092500e7fc178"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 7995,
+              "end_line": 8002,
+              "excerpt_sha256": "a6c7384ab70e8b22314d2fff28c645f0827bc5e94263ae21d35092500e7fc178"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-SPECIFIED-QUADRATIC-CONJUGATION",
+          "use_sha256": "2bfd71347dad77f60c872bb770e4b4884303816a52c8b1626ddb3a0846bf8535",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the two specified embeddings i,j of the same quadratic field F into B, inner conjugation gives b in B^times with j(x)=b^-1 i(x)b for every x in F; applied to j=f^-1 i_sigma f, the quasi-isogeny f b^-1 intertwines the specified F actions.",
+          "retained_hypotheses": "B is the full non-CM endomorphism algebra; f:A→A_sigma is an independently supplied geometric quasi-isogeny, and i,i_sigma are the actual specified actions. The induced map i(x)→j(x) is a Q-algebra isomorphism of quadratic subfields.",
+          "retained_exceptions": "An unspecified conjugacy of unlabelled subfields is insufficient. b need not be integral. The official erratum corrects unit-group notation after separable extension; no inseparable case or deleted optional splitting-field parenthesis is used.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 8004,
+            "end_line": 8027,
+            "excerpt_sha256": "5f7778b6abb5fb82746bcb835bae71901936778c5df653fd0a2af958ccc50001"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 8004,
+              "end_line": 8027,
+              "excerpt_sha256": "5f7778b6abb5fb82746bcb835bae71901936778c5df653fd0a2af958ccc50001"
+            }
+          ]
+        },
+        {
+          "use_id": "ACTIVE-H19-D210-FIBER-FIELD",
+          "use_sha256": "53868258f3d56faeabace87adb18656cfd85f3608ca0fde1fd5a4ff117bbe8d1",
+          "consumer": "CURRENT-FIVE-CONTACT-HEIGHT-NINETEEN",
+          "statement": "For the unbranched rational contact-line point s, the entire principal-level-three D210 fiber has a normal splitting field L/Q with [L:Q] dividing576. Its abelian surfaces and all geometric homomorphisms between them are defined over L, and rad(D_L N_bad) divides B_* M_5(s).",
+          "retained_hypotheses": "The full fine-cover construction, canonical rational normalizer action and five-section contact-line identification are supplied. The selected rational s avoids the branch/contact set. The smooth tame quotient models away from210 and their local equations are supplied.",
+          "retained_exceptions": "No application of a prime-to-discriminant level theorem at3. The height calculation at bad primes uses the maximal stack separately. This does not construct Lprime, normalize the modular representation, or prove a numerical Faltings-height bound.",
+          "connecting_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 7930,
+            "end_line": 7976,
+            "excerpt_sha256": "6769b28a2a552881fd5e871a9dd3d890e85d15c7e0149420de4a8b782d278fc9"
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 9969,
+              "end_line": 9971,
+              "excerpt_sha256": "5d8e2e80de9a9978bb7781c468a2d0d8dd9dc45f30a51ed593d3b84077f0c543"
+            }
+          ]
+        }
+      ],
+      "current_passages": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 7980,
+          "end_line": 8027,
+          "excerpt_sha256": "635b3918137f506a8eaf17f2cac9f539d4afc8bb1c1cd68d73883001e95fe2b2"
+        }
+      ],
+      "semantic_comparison": "The same rational PEL Hodge object with commensurable lattices gives a complex isogeny, torsion-density graph descent makes it geometric, full non-CM End=B allows the specified Skolem conjugation, and simultaneous Hom descent places the result over the same L.",
+      "scope_boundary": "This does not give a degree bound or coherent cocycle. Those later constructions remain separate; no bounded rational descent is inferred.",
+      "remaining_clause": "All imported source and construction premises retain their separate records; this mapping adds no ancestry closure."
+    }
+  ],
+  "limits": [
+    "This is attributed author reconciliation, not independent approval. It changes neither frozen92 sources nor676 uses nor784 passages.",
+    "The rows preserve the exact frozen assertion, including historical qualifications; their mapped claims are conditional on the original accepted component inputs.",
+    "The historical Hstar, exponent24, J1(N) genus-height instance and scalar detector are not silently promoted or renamed. Current H19 uses the stronger J_H route; main9969–9971 expressly retains the original geometric and compatible-representation construction."
+  ],
+  "supersedes": {
+    "path": "work/source-risk-review-20261107/v14-h19-compiler-clause-mapping-author-001/MAPPING.json",
+    "sha256": "48c15f1d63e6c93ca5ce640a719ea138b233067f85ba87c4d5f73ff6fdd792f4"
+  },
+  "delta": "Only COMP049 scalar-interface resolution is added; other fourteen rows and frozen initial assertions are unchanged."
+}

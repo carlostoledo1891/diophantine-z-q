@@ -1,0 +1,26 @@
+{
+  "schema": 2,
+  "repository_id": 1446122118,
+  "pull_request": {
+    "$required": "actual public PR number"
+  },
+  "git_hash": "sha1",
+  "policy_sha256": {
+    "$required": "actual runtime policy digest"
+  },
+  "base": {
+    "$required": "full verified Git manifest of current PR base"
+  },
+  "head": {
+    "$required": "full verified Git manifest of reviewed PR head"
+  },
+  "changes": {
+    "$required": "complete exact changed-path classifications and application IDs"
+  },
+  "applications": {
+    "$required": "actual schema2 applications including stable protocol-v1.3-coverage ID"
+  },
+  "findings": {
+    "$required": "all actual findings with reviewed dispositions; do not default empty"
+  }
+}

@@ -1,0 +1,51 @@
+name: Isolated protocol controller
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Cold runs verify hundreds of immutable Git objects in both repositories.
+    # Use bounded polling; dispatch immediately after owner intake/review work.
+    - cron: '17 * * * *'
+
+# One writer for the entire authoritative state ref. A newer evaluation must not
+# cancel an older process during its remote mutation boundary.
+concurrency:
+  group: protocol-controller-state
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  evaluate:
+    if: >-
+      github.repository == 'elliotglazer/research-review-controller' &&
+      github.ref == 'refs/heads/main' &&
+      github.sha == vars.PROTOCOL_APPROVED_SHA
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out the approved private controller
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ vars.PROTOCOL_APPROVED_SHA }}
+          persist-credentials: false
+          fetch-depth: 1
+          submodules: false
+          lfs: false
+      - name: Install reviewed controller dependencies
+        # The lock targets CPython3.12 on Ubuntu24.04 x86-64. No candidate
+        # requirements or setup code is read or run; package hooks are excluded.
+        run: |
+          python3 -c 'import sys; assert sys.version_info[:2] == (3, 12)'
+          python3 -m venv "$RUNNER_TEMP/protocol-venv"
+          "$RUNNER_TEMP/protocol-venv/bin/python" -m pip install --disable-pip-version-check --require-hashes --only-binary=:all: -r controller/requirements.lock
+      - name: Evaluate protected packets and publish the App check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROTOCOL_APPROVED_SHA: ${{ vars.PROTOCOL_APPROVED_SHA }}
+          PROTOCOL_APP_PRIVATE_KEY: ${{ secrets.PROTOCOL_APP_PRIVATE_KEY }}
+          PROTOCOL_OPERATOR_KEYS: ${{ secrets.PROTOCOL_OPERATOR_KEYS }}
+          PROTOCOL_INTAKE_KEYS: ${{ secrets.PROTOCOL_INTAKE_KEYS }}
+          PROTOCOL_COLLECTOR_KEYS: ${{ secrets.PROTOCOL_COLLECTOR_KEYS }}
+        run: '"$RUNNER_TEMP/protocol-venv/bin/python" -B controller/runtime.py'

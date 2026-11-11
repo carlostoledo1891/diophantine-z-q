@@ -1,0 +1,21 @@
+{
+  "schema": "brox-fixed-specialization-v1",
+  "fixedParameter": "S = 3^(2^26)",
+  "method": "For every comparison, leading term dominates when S > 1 + sum(abs(lower/leading)).",
+  "universalParameterLowerBound": "S > 2^(2^27)",
+  "requiredPowerOfTwoLowerBound": 1514,
+  "allComparisonBoundsSatisfied": true,
+  "maximumAbsoluteCoefficient": [
+    {
+      "sPower": 2,
+      "coefficient": "64"
+    }
+  ],
+  "attainedAtMonomial": [
+    55,
+    55
+  ],
+  "maximumSIndependentCoefficientBits": 1520,
+  "integralityProof": "Every displayed scalar coefficient is an integer and S is an integer.",
+  "specializationProof": "Evaluation Z[S] -> Z is a ring homomorphism; all replayed identities remain identities at this fixed S."
+}

@@ -1,0 +1,208 @@
+{
+  "schema": "source-role-relationships/v1",
+  "scope": "Actual split cyclic support only; no global CJ closure",
+  "rows": [
+    {
+      "id": "CJ-SPLIT-ACTUAL-UNIT-FILTER",
+      "role": "source_to_source_actual_application",
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 14790,
+          "end_line": 14795,
+          "excerpt_sha256": "3e326911e05f32fe7160337dbe8ccd88db7ff219bcb2e9692e15abb1e469bdb5"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 14830,
+          "end_line": 14842,
+          "excerpt_sha256": "ed8b4eae74b10ecb3d8b5f4767d4fdfe1287da6c5b773bd26b84dc6ea76a6417"
+        }
+      ],
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15723,
+          "end_line": 15737,
+          "excerpt_sha256": "c7ac8da74173d79e7171795a7345f82755feea5eaa9935521f6fd8d55e8e8ba4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15093,
+          "end_line": 15128,
+          "excerpt_sha256": "9083c4d2490afc3fdac7b49cda71f8ba8734de659748f954fd9960854ba5935c"
+        }
+      ],
+      "available": "The chosen h_star is a negative odd fundamental discriminant split at every old prime, including2N. Admissible D is positive squarefree, prime to the fixed support and locally in the class of1 there.",
+      "needed": "Dh_star is a unit square in Q_p for every p dividing2N, and is odd squarefree congruent1 modulo4 globally.",
+      "derivation": "The fixed support contains2N and the primes of h_star before D is chosen. Thus gcd(D,h_star)=1, both factors are local units and local squares at2N, and their product is a local unit square. At2 both odd factors lie in1+8Z_2. The negative squarefree product is therefore a fundamental discriminant, with O_F=Z[(1+sqrt(Dh_star))/2]. These are the actual admissible coefficient parameters, not arbitrary D.",
+      "boundary": "Existence of the initial h_star and filter is the retained BFH application; no new nonvanishing or arbitrary-filter claim. Inert-prime and character-sign checks are assigned separately."
+    },
+    {
+      "id": "CJ-SPLIT-CYCLIC-MODEL",
+      "role": "published_geometric_input_with_local_basis_identification",
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15046,
+          "end_line": 15060,
+          "excerpt_sha256": "02434e7619c02e30f0c993b2093c7491c2fa65c9bc4d5d39b4fc1e20036c9d18"
+        }
+      ],
+      "publication": {
+        "authors": "Kenneth A. Ribet",
+        "title": "On modular representations of Gal(Qbar/Q) arising from modular forms",
+        "version": "Inventiones Mathematicae100(1990),431–476",
+        "locator": "Section3, especially printed442 in proof of Proposition3.6",
+        "sha256": "08f8ebfda40855d0f6d9e90e1dc352eb6576ecc44cc7c6e6ca3d448d724503b4"
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15739,
+          "end_line": 15747,
+          "excerpt_sha256": "ddfe20c3dc63bd781a9e5f94c8bd5ce962f77f9dbd6ca526bc7090836217d0af"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15874,
+          "end_line": 15886,
+          "excerpt_sha256": "6355e3ba29ca305a83f46ccb0f9aa3b3ce369e50855b23cc864dc97b7e9f4353"
+        }
+      ],
+      "needed": "The actual cyclic p^e enhancement gives the split local Eichler model and its specified cyclic level line.",
+      "derivation": "Since p dividesN and p!=ell0, B_p=M2(Q_p). Ribet identifies the endomorphism order of the enhanced curve with the intersection for the actual cyclic-isogeny lattice pair. A cyclic subgroup C ofT/p^eT has a primitive generator; lift it to e1 and complete to a Z_p basis(e1,e2). Its preimage is T_C=Z_p e1+p^e Z_p e2. End(T) intersect End(T_C) is [[Z_p,Z_p],[p^e Z_p,Z_p]]. The actual subgroup C=T_C/p^eT is the first coordinate line; the complementary quotient T/T_C is not silently substituted. Thus the convention agrees with the accepted normalizer note’s selected first line. The primitive generator/basis argument works also at2 and for every e>=1.",
+      "boundary": "This binds the geometric cyclic enhancement to the local model only. It does not identify a global correspondence or prove its action on the modular parametrization."
+    },
+    {
+      "id": "CJ-SPLIT-ODD-PROJECTOR-SUPPORT",
+      "role": "local_algebra_application",
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15723,
+          "end_line": 15737,
+          "excerpt_sha256": "c7ac8da74173d79e7171795a7345f82755feea5eaa9935521f6fd8d55e8e8ba4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15093,
+          "end_line": 15109,
+          "excerpt_sha256": "0c59eaa78aa673a4e67a66bdf244e6800669abd9dc22b8e7181cded9b12307de"
+        }
+      ],
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15742,
+          "end_line": 15747,
+          "excerpt_sha256": "effcae3cea8d1708e32e453e521e0199892cec604a053ce796bd65ec735533fe"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15874,
+          "end_line": 15880,
+          "excerpt_sha256": "9b3025be6dc96cdf3869a575f4a4fb11ecfe688b416b0e0f84c61860605bff37"
+        }
+      ],
+      "needed": "At odd p dividingN the actual x has integral complementary spectral projectors and the cyclic line selects exactly one root.",
+      "derivation": "The coefficient embedding sends sqrt(Dh_star) to x in R_z,p and x²=Dh_star=r² with r a unit. Since2r is a unit, P=(x+r)/(2r) and1-P belong toR_z,p. They are complementary idempotents. They preserve the actual cyclic C; End(C)=Z/p^e, whose only idempotents are0 and1. Exactly one projector acts identically, defining the selected sign. Choosing either initial square root gives the same selected eigenvalue after exchanging projector labels. This supplies the support hypotheses of the accepted local normalizer; its matrix calculation is not re-proved here.",
+      "boundary": "Existence/parity of alpha_p and its global character compatibility are separate. No arbitrary nonsplit vector is included."
+    },
+    {
+      "id": "CJ-SPLIT-DYADIC-PROJECTOR-SUPPORT",
+      "role": "local_algebra_application",
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15723,
+          "end_line": 15737,
+          "excerpt_sha256": "c7ac8da74173d79e7171795a7345f82755feea5eaa9935521f6fd8d55e8e8ba4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15111,
+          "end_line": 15128,
+          "excerpt_sha256": "668d5a43541b9f1cde6c14ddc0b60ce21b1ca8dfa09f5b9266578d4ba05964a9"
+        }
+      ],
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15742,
+          "end_line": 15747,
+          "excerpt_sha256": "effcae3cea8d1708e32e453e521e0199892cec604a053ce796bd65ec735533fe"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15874,
+          "end_line": 15880,
+          "excerpt_sha256": "9b3025be6dc96cdf3869a575f4a4fb11ecfe688b416b0e0f84c61860605bff37"
+        }
+      ],
+      "needed": "For2^e dividingN, the actual integral order embedding supplies e_x=(1+x)/2 and integral distinct projectors selecting the cyclic level line.",
+      "derivation": "The actual maximal order is Z[(1+sqrt(Dh_star))/2], so its embedding gives e_x inR_z,2. Local splitting at2 gives an odd r with r²=Dh_star. Let a=(1+r)/2 and a_prime=(1-r)/2; both are integral and a-a_prime=r is a unit. Therefore P=(e_x-a_prime)/r and1-P are integral complementary idempotents inR_z,2. They preserve C and exactly one acts as1 on the cyclic Z/2^e module. This distinction uses the projectors, not distinct residues of r and-r modulo2. For odd scaling u, e_ux=u e_x+(1-u)/2 leaves the eigenprojectors unchanged and sends the selected root to u r. If2 does not divideN no dyadic root character or selected level line is claimed.",
+      "boundary": "The accepted local normalizer then applies. Global quotient/dual realization and character parity are not supplied by this support argument."
+    }
+  ]
+}

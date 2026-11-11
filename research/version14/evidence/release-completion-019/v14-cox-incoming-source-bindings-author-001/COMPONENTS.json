@@ -1,0 +1,726 @@
+[
+  {
+    "origin": "v14-cox-incoming-source-bindings-author-001/COMPONENTS.json",
+    "author": "/root/v14_arithmetic_review",
+    "status": "proposed_pending_independent_review",
+    "retained_profile_from": "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE",
+    "use": {
+      "id": "ACTIVE-SOURCE-COX-RING-CLASS-STRUCTURE",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-SOURCE-COX-RING-CLASS-STRUCTURE-P1"
+      ],
+      "assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Apply the retained ideal-theoretic Cox statements. The ideal/idele equivalence at line21 is a separate retained local-to-global argument. The nested quotient and inert/split residue computations at line23 are local deductions; at line25 triviality of the rational principal ideal gives splitting and preserves the inert residue field.",
+        "statement": "The order-ideal quotient in the source note is the ring-class Galois group, with the stated conductor ramification and residue-unit kernel under the actual unit restriction.",
+        "objects": "Actual imaginary quadratic orders and proper invertible ideals used in the source note.",
+        "hypotheses": "f is a positive integer; use ideals prime to f. For the simplified residue-unit kernel assume O_K*=±1; otherwise retain the unit quotient.",
+        "quantifiers": "Every imaginary quadratic order with these restrictions.",
+        "parameter_range": "Finite ring class fields and finite ideal class groups.",
+        "normalizations": "Arithmetic Frobenius, proper invertible ideal classes; P_(K,Z)(f) uses principal generators congruent to a rational integer coprime to f."
+      },
+      "classification": "dependency",
+      "reason": "Apply the retained ideal-theoretic Cox statements. The ideal/idele equivalence at line21 is a separate retained local-to-global argument. The nested quotient and inert/split residue computations at line23 are local deductions; at line25 triviality of the rational principal ideal gives splitting and preserves the inert residue field.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "b1b69b5707c4b44348c14fe02843d81f9e81575e5398dbf06d64cdd7cdb68876"
+        },
+        "statement": "For an imaginary quadratic order O_f, its proper invertible ideal class group is I_K(f)/P_(K,Z)(f), and arithmetic Artin identifies this with the Galois group of its ring class field, unramified outside f. Conjugation acts by inversion. The map to the maximal-order class group has the residue-unit kernel described by (7.25)–(7.27) when O_K*=±1.",
+        "publication": {
+          "title": "Primes of the Form x²+ny²: Fermat, Class Field Theory, and Complex Multiplication",
+          "authors": "David A. Cox",
+          "venue": "John Wiley & Sons, Wiley-Interscience, 1989",
+          "authoritative_version": "Published first edition, second printing; exact scanned PDF SHA256 f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34. Official first-edition errata typos2 and typos3 checked.",
+          "corrections": "Use corrected P_(K,Z)(f) at p146 and kernel wording in the proof of Corollary8.7 p163. Corrections to class-number formula7.29 and later CM formulas are not used. Full disposition in SOURCE-PINS.json.",
+          "locator": "Proposition7.22 pp145–146; (7.25)–(7.27) p147; Theorems8.2,8.5,8.6 pp161–162; ring class definition and Lemma9.3 pp180–181; Lemma5.19/Corollary5.21 pp106–107."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 21,
+        "end_line": 25,
+        "excerpt_sha256": "e10de055835b9481a10fec7c5ca54cc676d28903129cfda587d239e886a2794e"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-SOURCE-COX-RING-CLASS-STRUCTURE",
+      "use_sha256": "cf220146bc4dc729ace6a45e2bbd4bed24762baad755c65e164d4d0c6e8b9ec8",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Fix the field and conductor or finite extension before applying the theorem.",
+        "statement": "For an imaginary quadratic order O_f, its proper invertible ideal class group is I_K(f)/P_(K,Z)(f), and arithmetic Artin identifies this with the Galois group of its ring class field, unramified outside f. Conjugation acts by inversion. The map to the maximal-order class group has the residue-unit kernel described by (7.25)–(7.27) when O_K*=±1.",
+        "objects": "Imaginary quadratic K, order Z+fO_K, proper invertible ideals, ring class field.",
+        "hypotheses": "f is a positive integer; use ideals prime to f. For the simplified residue-unit kernel assume O_K*=±1; otherwise retain the unit quotient.",
+        "quantifiers": "Every imaginary quadratic order with these restrictions.",
+        "parameter_range": "Finite ring class fields and finite ideal class groups.",
+        "normalizations": "Arithmetic Frobenius, proper invertible ideal classes; P_(K,Z)(f) uses principal generators congruent to a rational integer coprime to f."
+      },
+      "needed_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Apply the retained ideal-theoretic Cox statements. The ideal/idele equivalence at line21 is a separate retained local-to-global argument. The nested quotient and inert/split residue computations at line23 are local deductions; at line25 triviality of the rational principal ideal gives splitting and preserves the inert residue field.",
+        "statement": "The order-ideal quotient in the source note is the ring-class Galois group, with the stated conductor ramification and residue-unit kernel under the actual unit restriction.",
+        "objects": "Actual imaginary quadratic orders and proper invertible ideals used in the source note.",
+        "hypotheses": "f is a positive integer; use ideals prime to f. For the simplified residue-unit kernel assume O_K*=±1; otherwise retain the unit quotient.",
+        "quantifiers": "Every imaginary quadratic order with these restrictions.",
+        "parameter_range": "Finite ring class fields and finite ideal class groups.",
+        "normalizations": "Arithmetic Frobenius, proper invertible ideal classes; P_(K,Z)(f) uses principal generators congruent to a rational integer coprime to f."
+      },
+      "required_capabilities": [
+        "The order-ideal quotient in the source note is the ring-class Galois group, with the stated conductor ramification and residue-unit kernel under the actual unit restriction."
+      ],
+      "available_capabilities": [
+        "For an imaginary quadratic order O_f, its proper invertible ideal class group is I_K(f)/P_(K,Z)(f), and arithmetic Artin identifies this with the Galois group of its ring class field, unramified outside f. Conjugation acts by inversion. The map to the maximal-order class group has the residue-unit kernel described by (7.25)–(7.27) when O_K*=±1."
+      ],
+      "derived_capabilities": [
+        "The order-ideal quotient in the source note is the ring-class Galois group, with the stated conductor ramification and residue-unit kernel under the actual unit restriction."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 21,
+          "end_line": 25,
+          "excerpt_sha256": "e10de055835b9481a10fec7c5ca54cc676d28903129cfda587d239e886a2794e"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+          "constants": "No numerical bound is asserted unless stated explicitly.",
+          "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+          "limit_order": "Apply the retained ideal-theoretic Cox statements. The ideal/idele equivalence at line21 is a separate retained local-to-global argument. The nested quotient and inert/split residue computations at line23 are local deductions; at line25 triviality of the rational principal ideal gives splitting and preserves the inert residue field.",
+          "statement": "The order-ideal quotient in the source note is the ring-class Galois group, with the stated conductor ramification and residue-unit kernel under the actual unit restriction.",
+          "objects": "Actual imaginary quadratic orders and proper invertible ideals used in the source note.",
+          "hypotheses": "f is a positive integer; use ideals prime to f. For the simplified residue-unit kernel assume O_K*=±1; otherwise retain the unit quotient.",
+          "quantifiers": "Every imaginary quadratic order with these restrictions.",
+          "parameter_range": "Finite ring class fields and finite ideal class groups.",
+          "normalizations": "Arithmetic Frobenius, proper invertible ideal classes; P_(K,Z)(f) uses principal generators congruent to a rational integer coprime to f."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+              "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+            },
+            "start_line": 21,
+            "end_line": 25,
+            "excerpt_sha256": "e10de055835b9481a10fec7c5ca54cc676d28903129cfda587d239e886a2794e"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 21,
+          "end_line": 25,
+          "excerpt_sha256": "e10de055835b9481a10fec7c5ca54cc676d28903129cfda587d239e886a2794e"
+        }
+      ]
+    },
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-SOURCE-COX-RING-CLASS-STRUCTURE-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 21,
+          "end_line": 25,
+          "excerpt_sha256": "e10de055835b9481a10fec7c5ca54cc676d28903129cfda587d239e886a2794e"
+        }
+      }
+    ],
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 21,
+        "end_line": 25,
+        "excerpt_sha256": "e10de055835b9481a10fec7c5ca54cc676d28903129cfda587d239e886a2794e"
+      }
+    ]
+  },
+  {
+    "origin": "v14-cox-incoming-source-bindings-author-001/COMPONENTS.json",
+    "author": "/root/v14_arithmetic_review",
+    "status": "proposed_pending_independent_review",
+    "retained_profile_from": "ACTIVE-RC-FINITE-CHEBOTAREV",
+    "use": {
+      "id": "ACTIVE-SOURCE-COX-FINITE-CHEBOTAREV",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-SOURCE-COX-FINITE-CHEBOTAREV-P1"
+      ],
+      "assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "Exact density |C|/[L:K]>0.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Apply the density statement to its conjugacy class; delete the finite exclusions and conjugate the place to obtain the prescribed representative. Compatibility and the finite Galois extension are incoming, not consequences of density.",
+        "statement": "For the already constructed compatible element of a finite Galois group over Q, there are primes outside the fixed finite exclusions and a place whose arithmetic Frobenius is that exact element.",
+        "objects": "The actual fixed finite Galois extension over Q and its already compatible element.",
+        "hypotheses": "L/K is finite Galois; omit ramified primes; prescribe a nonempty conjugacy class.",
+        "quantifiers": "Every finite Galois extension and each conjugacy class.",
+        "parameter_range": "Finite extensions only; any fixed finite exceptional set may be removed.",
+        "normalizations": "Arithmetic Frobenius acts by the residue norm power. Conjugating the place realizes any chosen representative."
+      },
+      "classification": "dependency",
+      "reason": "Apply the density statement to its conjugacy class; delete the finite exclusions and conjugate the place to obtain the prescribed representative. Compatibility and the finite Galois extension are incoming, not consequences of density.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 13,
+          "end_line": 13,
+          "excerpt_sha256": "ba4bb18f17fd39c73c7f57402a645800152ef2336a18baf059401cad500d1ee0"
+        },
+        "statement": "For a finite Galois extension L/K and conjugacy class C in its Galois group, the unramified primes with Frobenius class C have Dirichlet density |C|/[L:K]. Frobenius elements at the places over such a prime run through C.",
+        "publication": {
+          "title": "Primes of the Form x²+ny²: Fermat, Class Field Theory, and Complex Multiplication",
+          "authors": "David A. Cox",
+          "venue": "John Wiley & Sons, Wiley-Interscience, 1989",
+          "authoritative_version": "Published first edition, second printing; exact scanned PDF SHA256 f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34. Official first-edition errata typos2 and typos3 checked.",
+          "corrections": "Use corrected P_(K,Z)(f) at p146 and kernel wording in the proof of Corollary8.7 p163. Corrections to class-number formula7.29 and later CM formulas are not used. Full disposition in SOURCE-PINS.json.",
+          "locator": "Theorem8.17 p170 and density discussion p169; Lemma5.19/Corollary5.21 pp106–107."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-SOURCE-COX-FINITE-CHEBOTAREV",
+      "use_sha256": "0f5d3124c2adcbf0d180fe8e111a3c8690a5fb5389d2c79e20dbf8eb0cb30af5",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "Exact density |C|/[L:K]>0.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Fix the field and conductor or finite extension before applying the theorem.",
+        "statement": "For a finite Galois extension L/K and conjugacy class C in its Galois group, the unramified primes with Frobenius class C have Dirichlet density |C|/[L:K]. Frobenius elements at the places over such a prime run through C.",
+        "objects": "Number fields L/K, finite Galois group and nonempty conjugacy class.",
+        "hypotheses": "L/K is finite Galois; omit ramified primes; prescribe a nonempty conjugacy class.",
+        "quantifiers": "Every finite Galois extension and each conjugacy class.",
+        "parameter_range": "Finite extensions only; any fixed finite exceptional set may be removed.",
+        "normalizations": "Arithmetic Frobenius acts by the residue norm power. Conjugating the place realizes any chosen representative."
+      },
+      "needed_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "Exact density |C|/[L:K]>0.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Apply the density statement to its conjugacy class; delete the finite exclusions and conjugate the place to obtain the prescribed representative. Compatibility and the finite Galois extension are incoming, not consequences of density.",
+        "statement": "For the already constructed compatible element of a finite Galois group over Q, there are primes outside the fixed finite exclusions and a place whose arithmetic Frobenius is that exact element.",
+        "objects": "The actual fixed finite Galois extension over Q and its already compatible element.",
+        "hypotheses": "L/K is finite Galois; omit ramified primes; prescribe a nonempty conjugacy class.",
+        "quantifiers": "Every finite Galois extension and each conjugacy class.",
+        "parameter_range": "Finite extensions only; any fixed finite exceptional set may be removed.",
+        "normalizations": "Arithmetic Frobenius acts by the residue norm power. Conjugating the place realizes any chosen representative."
+      },
+      "required_capabilities": [
+        "For the already constructed compatible element of a finite Galois group over Q, there are primes outside the fixed finite exclusions and a place whose arithmetic Frobenius is that exact element."
+      ],
+      "available_capabilities": [
+        "For a finite Galois extension L/K and conjugacy class C in its Galois group, the unramified primes with Frobenius class C have Dirichlet density |C|/[L:K]. Frobenius elements at the places over such a prime run through C."
+      ],
+      "derived_capabilities": [
+        "For the already constructed compatible element of a finite Galois group over Q, there are primes outside the fixed finite exclusions and a place whose arithmetic Frobenius is that exact element."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 27,
+          "end_line": 27,
+          "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+          "constants": "Exact density |C|/[L:K]>0.",
+          "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+          "limit_order": "Apply the density statement to its conjugacy class; delete the finite exclusions and conjugate the place to obtain the prescribed representative. Compatibility and the finite Galois extension are incoming, not consequences of density.",
+          "statement": "For the already constructed compatible element of a finite Galois group over Q, there are primes outside the fixed finite exclusions and a place whose arithmetic Frobenius is that exact element.",
+          "objects": "The actual fixed finite Galois extension over Q and its already compatible element.",
+          "hypotheses": "L/K is finite Galois; omit ramified primes; prescribe a nonempty conjugacy class.",
+          "quantifiers": "Every finite Galois extension and each conjugacy class.",
+          "parameter_range": "Finite extensions only; any fixed finite exceptional set may be removed.",
+          "normalizations": "Arithmetic Frobenius acts by the residue norm power. Conjugating the place realizes any chosen representative."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+              "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+            },
+            "start_line": 27,
+            "end_line": 27,
+            "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 27,
+          "end_line": 27,
+          "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+        }
+      ]
+    },
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-SOURCE-COX-FINITE-CHEBOTAREV-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 27,
+          "end_line": 27,
+          "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+        }
+      }
+    ],
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+      }
+    ]
+  },
+  {
+    "origin": "v14-cox-incoming-source-bindings-author-001/COMPONENTS.json",
+    "author": "/root/v14_arithmetic_review",
+    "status": "proposed_pending_independent_review",
+    "retained_profile_from": "ACTIVE-RC-HILBERT-CLASS-FIELD",
+    "use": {
+      "id": "ACTIVE-SOURCE-COX-HILBERT-CLASS-FIELD",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-SOURCE-COX-HILBERT-CLASS-FIELD-P1"
+      ],
+      "assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Specialize the retained Hilbert class-field statement to the fixed imaginary quadratic field. This does not assert an effective bound or an infinite-level Chebotarev theorem.",
+        "statement": "Taking conductor one gives the ordinary Hilbert class field and its ideal-class Artin description for the imaginary quadratic caller.",
+        "objects": "Fixed imaginary quadratic K and its conductor-one class field.",
+        "hypotheses": "Finite primes and the Hilbert class field with the stated unramified convention; the applications are imaginary quadratic.",
+        "quantifiers": "For every such field and unramified prime.",
+        "parameter_range": "Finite Hilbert class extension.",
+        "normalizations": "Prime-ideal arithmetic Frobenius; the Frobenius of a conjugate place is conjugated."
+      },
+      "classification": "dependency",
+      "reason": "Specialize the retained Hilbert class-field statement to the fixed imaginary quadratic field. This does not assert an effective bound or an infinite-level Chebotarev theorem.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 5,
+          "end_line": 5,
+          "excerpt_sha256": "62a4d0e6549400eadbcf55cf9ef8681a37dcbea9598ad15dada7a94621b7716d"
+        },
+        "statement": "The Hilbert class field is the finite maximal unramified abelian extension of a number field. Arithmetic Artin induces an isomorphism from its ideal class group to the Galois group; a prime splits completely exactly when its ideal class is principal.",
+        "publication": {
+          "title": "Primes of the Form x²+ny²: Fermat, Class Field Theory, and Complex Multiplication",
+          "authors": "David A. Cox",
+          "venue": "John Wiley & Sons, Wiley-Interscience, 1989",
+          "authoritative_version": "Published first edition, second printing; exact scanned PDF SHA256 f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34. Official first-edition errata typos2 and typos3 checked.",
+          "corrections": "Use corrected P_(K,Z)(f) at p146 and kernel wording in the proof of Corollary8.7 p163. Corrections to class-number formula7.29 and later CM formulas are not used. Full disposition in SOURCE-PINS.json.",
+          "locator": "Theorems5.18 and5.23 pp106,109; Theorem8.10 p164; Lemma5.19 andCorollary5.21 pp106–107."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-SOURCE-COX-HILBERT-CLASS-FIELD",
+      "use_sha256": "36c4f0d0b21af6afe722592481e314b5e528a6456a7a664d7841ffc58dff18d9",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Fix the field and conductor or finite extension before applying the theorem.",
+        "statement": "The Hilbert class field is the finite maximal unramified abelian extension of a number field. Arithmetic Artin induces an isomorphism from its ideal class group to the Galois group; a prime splits completely exactly when its ideal class is principal.",
+        "objects": "Number field, ideal class group and Hilbert class field.",
+        "hypotheses": "Finite primes and the Hilbert class field with the stated unramified convention; the applications are imaginary quadratic.",
+        "quantifiers": "For every such field and unramified prime.",
+        "parameter_range": "Finite Hilbert class extension.",
+        "normalizations": "Prime-ideal arithmetic Frobenius; the Frobenius of a conjugate place is conjugated."
+      },
+      "needed_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "limit_order": "Specialize the retained Hilbert class-field statement to the fixed imaginary quadratic field. This does not assert an effective bound or an infinite-level Chebotarev theorem.",
+        "statement": "Taking conductor one gives the ordinary Hilbert class field and its ideal-class Artin description for the imaginary quadratic caller.",
+        "objects": "Fixed imaginary quadratic K and its conductor-one class field.",
+        "hypotheses": "Finite primes and the Hilbert class field with the stated unramified convention; the applications are imaginary quadratic.",
+        "quantifiers": "For every such field and unramified prime.",
+        "parameter_range": "Finite Hilbert class extension.",
+        "normalizations": "Prime-ideal arithmetic Frobenius; the Frobenius of a conjugate place is conjugated."
+      },
+      "required_capabilities": [
+        "Taking conductor one gives the ordinary Hilbert class field and its ideal-class Artin description for the imaginary quadratic caller."
+      ],
+      "available_capabilities": [
+        "The Hilbert class field is the finite maximal unramified abelian extension of a number field. Arithmetic Artin induces an isomorphism from its ideal class group to the Galois group; a prime splits completely exactly when its ideal class is principal."
+      ],
+      "derived_capabilities": [
+        "Taking conductor one gives the ordinary Hilbert class field and its ideal-class Artin description for the imaginary quadratic caller."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 27,
+          "end_line": 27,
+          "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+          "constants": "No numerical bound is asserted unless stated explicitly.",
+          "exceptional_cases": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+          "limit_order": "Specialize the retained Hilbert class-field statement to the fixed imaginary quadratic field. This does not assert an effective bound or an infinite-level Chebotarev theorem.",
+          "statement": "Taking conductor one gives the ordinary Hilbert class field and its ideal-class Artin description for the imaginary quadratic caller.",
+          "objects": "Fixed imaginary quadratic K and its conductor-one class field.",
+          "hypotheses": "Finite primes and the Hilbert class field with the stated unramified convention; the applications are imaginary quadratic.",
+          "quantifiers": "For every such field and unramified prime.",
+          "parameter_range": "Finite Hilbert class extension.",
+          "normalizations": "Prime-ideal arithmetic Frobenius; the Frobenius of a conjugate place is conjugated."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Only the stated finite extensions and ideal classes; no CM-point relation, local norm-compatibility theorem, or infinite-level Chebotarev conclusion.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+              "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+            },
+            "start_line": 27,
+            "end_line": 27,
+            "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 27,
+          "end_line": 27,
+          "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+        }
+      ]
+    },
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-SOURCE-COX-HILBERT-CLASS-FIELD-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 27,
+          "end_line": 27,
+          "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+        }
+      }
+    ],
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "fd2aa0767b1bc48806a7c430db28323695ab6a0abb976c8d68ad6cdcb045b4f4"
+      }
+    ]
+  },
+  {
+    "origin": "v14-cox-incoming-source-bindings-author-001/COMPONENTS.json",
+    "author": "/root/v14_arithmetic_review",
+    "status": "proposed_pending_independent_review",
+    "retained_profile_from": "ACTIVE-RC-IMAGINARY-SUNIT-DIMENSION",
+    "use": {
+      "id": "ACTIVE-SOURCE-COX-IMAGINARY-CLASS-UNIT-FINITENESS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-SOURCE-COX-IMAGINARY-CLASS-UNIT-FINITENESS-P1"
+      ],
+      "assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "No general real-quadratic unit theorem or S-class-group 2-rank bound is asserted.",
+        "limit_order": "Each prime-ideal class has finite order, so a positive power is principal. The valuation image is free of rank |S| and its extension by the unit group splits as abelian groups. A finite subgroup of C* is cyclic; containing -1 gives one-dimensional quotient by squares, including both exceptional imaginary quadratic fields. No S-class-group two-rank bound follows.",
+        "statement": "For the fixed imaginary quadratic K and finite set S, class finiteness gives a finite-index valuation image in Z^S; finite cyclic units then give squareclass dimension 1+|S|.",
+        "objects": "Fixed imaginary quadratic K, its maximal order and finite set S.",
+        "hypotheses": "K is imaginary quadratic; ideal classes are proper invertible classes.",
+        "quantifiers": "Every imaginary quadratic field, including Q(i) and Q(sqrt(-3)).",
+        "parameter_range": "Imaginary quadratic fields only.",
+        "normalizations": "Ordinary integral ideals and ordinary units; exceptional roots of unity are retained."
+      },
+      "classification": "dependency",
+      "reason": "Each prime-ideal class has finite order, so a positive power is principal. The valuation image is free of rank |S| and its extension by the unit group splits as abelian groups. A finite subgroup of C* is cyclic; containing -1 gives one-dimensional quotient by squares, including both exceptional imaginary quadratic fields. No S-class-group two-rank bound follows.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 17,
+          "end_line": 17,
+          "excerpt_sha256": "a2ee273fa7e5e8570c57ac4aa97b747f7a5b71ccd3a557be9c75f65ebf8b12b8"
+        },
+        "statement": "An imaginary quadratic order has finitely many proper invertible ideal classes. The units of an imaginary quadratic maximal order form a finite group.",
+        "publication": {
+          "title": "Primes of the Form x²+ny²: Fermat, Class Field Theory, and Complex Multiplication",
+          "authors": "David A. Cox",
+          "venue": "John Wiley & Sons, Wiley-Interscience, 1989",
+          "authoritative_version": "Published first edition, second printing; exact scanned PDF SHA256 f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34. Official first-edition errata typos2 and typos3 checked.",
+          "corrections": "Use corrected P_(K,Z)(f) at p146 and kernel wording in the proof of Corollary8.7 p163. Corrections to class-number formula7.29 and later CM formulas are not used. Full disposition in SOURCE-PINS.json.",
+          "locator": "Theorem2.13 p29 andTheorem7.7 p137; imaginary quadratic units p103."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 29,
+        "end_line": 29,
+        "excerpt_sha256": "ce244c9757fb9a254e8c8d490a61b2ed4a90b80b82a67fc08ce269c51faadaa0"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-SOURCE-COX-IMAGINARY-CLASS-UNIT-FINITENESS",
+      "use_sha256": "92d3be67057bd5917072ae9a4a7186c8ee3ef68a78add8fe47a3c664ab5bbbba",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "No general real-quadratic unit theorem or S-class-group 2-rank bound is asserted.",
+        "limit_order": "Fix the field and conductor or finite extension before applying the theorem.",
+        "statement": "An imaginary quadratic order has finitely many proper invertible ideal classes. The units of an imaginary quadratic maximal order form a finite group.",
+        "objects": "Imaginary quadratic maximal order, ideal classes and units.",
+        "hypotheses": "K is imaginary quadratic; ideal classes are proper invertible classes.",
+        "quantifiers": "Every imaginary quadratic field, including Q(i) and Q(sqrt(-3)).",
+        "parameter_range": "Imaginary quadratic fields only.",
+        "normalizations": "Ordinary integral ideals and ordinary units; exceptional roots of unity are retained."
+      },
+      "needed_assertion": {
+        "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+        "constants": "No numerical bound is asserted unless stated explicitly.",
+        "exceptional_cases": "No general real-quadratic unit theorem or S-class-group 2-rank bound is asserted.",
+        "limit_order": "Each prime-ideal class has finite order, so a positive power is principal. The valuation image is free of rank |S| and its extension by the unit group splits as abelian groups. A finite subgroup of C* is cyclic; containing -1 gives one-dimensional quotient by squares, including both exceptional imaginary quadratic fields. No S-class-group two-rank bound follows.",
+        "statement": "For the fixed imaginary quadratic K and finite set S, class finiteness gives a finite-index valuation image in Z^S; finite cyclic units then give squareclass dimension 1+|S|.",
+        "objects": "Fixed imaginary quadratic K, its maximal order and finite set S.",
+        "hypotheses": "K is imaginary quadratic; ideal classes are proper invertible classes.",
+        "quantifiers": "Every imaginary quadratic field, including Q(i) and Q(sqrt(-3)).",
+        "parameter_range": "Imaginary quadratic fields only.",
+        "normalizations": "Ordinary integral ideals and ordinary units; exceptional roots of unity are retained."
+      },
+      "required_capabilities": [
+        "For the fixed imaginary quadratic K and finite set S, class finiteness gives a finite-index valuation image in Z^S; finite cyclic units then give squareclass dimension 1+|S|."
+      ],
+      "available_capabilities": [
+        "An imaginary quadratic order has finitely many proper invertible ideal classes. The units of an imaginary quadratic maximal order form a finite group."
+      ],
+      "derived_capabilities": [
+        "For the fixed imaginary quadratic K and finite set S, class finiteness gives a finite-index valuation image in Z^S; finite cyclic units then give squareclass dimension 1+|S|."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 29,
+          "end_line": 29,
+          "excerpt_sha256": "ce244c9757fb9a254e8c8d490a61b2ed4a90b80b82a67fc08ce269c51faadaa0"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "uniformity": "Exact algebraic statements for each stated input; no effective size bound.",
+          "constants": "No numerical bound is asserted unless stated explicitly.",
+          "exceptional_cases": "No general real-quadratic unit theorem or S-class-group 2-rank bound is asserted.",
+          "limit_order": "Each prime-ideal class has finite order, so a positive power is principal. The valuation image is free of rank |S| and its extension by the unit group splits as abelian groups. A finite subgroup of C* is cyclic; containing -1 gives one-dimensional quotient by squares, including both exceptional imaginary quadratic fields. No S-class-group two-rank bound follows.",
+          "statement": "For the fixed imaginary quadratic K and finite set S, class finiteness gives a finite-index valuation image in Z^S; finite cyclic units then give squareclass dimension 1+|S|.",
+          "objects": "Fixed imaginary quadratic K, its maximal order and finite set S.",
+          "hypotheses": "K is imaginary quadratic; ideal classes are proper invertible classes.",
+          "quantifiers": "Every imaginary quadratic field, including Q(i) and Q(sqrt(-3)).",
+          "parameter_range": "Imaginary quadratic fields only.",
+          "normalizations": "Ordinary integral ideals and ordinary units; exceptional roots of unity are retained."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No general real-quadratic unit theorem or S-class-group 2-rank bound is asserted.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+              "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+            },
+            "start_line": 29,
+            "end_line": 29,
+            "excerpt_sha256": "ce244c9757fb9a254e8c8d490a61b2ed4a90b80b82a67fc08ce269c51faadaa0"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 29,
+          "end_line": 29,
+          "excerpt_sha256": "ce244c9757fb9a254e8c8d490a61b2ed4a90b80b82a67fc08ce269c51faadaa0"
+        }
+      ]
+    },
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-SOURCE-COX-IMAGINARY-CLASS-UNIT-FINITENESS-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+            "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+          },
+          "start_line": 29,
+          "end_line": 29,
+          "excerpt_sha256": "ce244c9757fb9a254e8c8d490a61b2ed4a90b80b82a67fc08ce269c51faadaa0"
+        }
+      }
+    ],
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/global-class-field-published-001/SOURCE-CONNECTIONS.md",
+          "sha256": "5d147cd6e9da9cecf9bd16963a3bd611ffac3e1e6189a4e82a15341a3b1eac16"
+        },
+        "start_line": 29,
+        "end_line": 29,
+        "excerpt_sha256": "ce244c9757fb9a254e8c8d490a61b2ed4a90b80b82a67fc08ce269c51faadaa0"
+      }
+    ]
+  }
+]

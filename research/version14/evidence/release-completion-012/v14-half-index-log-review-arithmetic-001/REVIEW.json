@@ -1,0 +1,39 @@
+{
+  "schema": "bounded-independent-review-1",
+  "decision": "accept",
+  "reviewer": "/root/v14_arithmetic_author",
+  "author": "/root/v14_gi_constructors",
+  "independence": "Reviewer did not author these six components. Prior overlapping arithmetic/source and completeness work is disclosed; this is an independent comparison of the submitted interfaces to their actual source and consumer passages, not a new primary-source audit.",
+  "target": {
+    "path": "work/source-risk-review-20261107/v14-v13-half-index-log-inputs-004/MANIFEST.json",
+    "sha256": "9b87ada2fdfce2c206358bae02f6e80a4de5d4afde1d4840ad3eb0db2313be4b",
+    "bytes": 171
+  },
+  "components": {
+    "path": "work/source-risk-review-20261107/v14-v13-half-index-log-inputs-004/COMPONENTS.json",
+    "sha256": "6a70a408718e44414af6cf838e6cfc3b3a03238f54ecc628a7ccc0d775f01b87",
+    "bytes": 78418
+  },
+  "current_manuscript": {
+    "path": "manuscripts/quartic_v14.tex",
+    "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+  },
+  "findings": [
+    "N02 generic squared-H reconstruction consumes UQ nonzero and preserves the same raw affine chart and normalizer. It does not itself establish exclusion of the exceptional branches.",
+    "Both N03 uses now assert only exclusion of U=0 and Q=0 and consequent UQ nonzero. Current lines23130–23135 supply the unit-versus-strict-group-bound contradiction; actual H/V0 fixed-point exclusions and nontorsion remain separate inputs.",
+    "N13 supplies the same-place local comparison. Formality, final coefficients and further valuation estimates remain their own premises; a good valuation at a different place is not substituted.",
+    "Both N38 uses are restricted to doubled group identities, half-indices and the logarithm-to-parameter unit at O. They do not supply later depth10 bootstrap, order40 error estimates or global integer labels for auxiliary points.",
+    "Read the six full assertion profiles and actual source/consumer passages, including current22855–22883,23055–23143 and23292–23338. The earlier and later logarithm stages remain distinct.",
+    "Successor003 to004 changes exactly six origin labels, four capability statements narrowed to the already-correct use assertion, and two adverse-evidence locations. The six use assertions and digests are unchanged."
+  ],
+  "checks": {
+    "file": "CHECKS.json",
+    "count": 41,
+    "all_pass": true
+  },
+  "limits": [
+    "Acceptance is conditional on the expressly retained incoming hypotheses.",
+    "No acceptance of the entire manuscript, all dependencies, final source coverage, release or controller gate is asserted.",
+    "Historical002 and003 remain preserved;004 is the selected reviewed packet."
+  ]
+}

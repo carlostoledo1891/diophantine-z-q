@@ -1,0 +1,708 @@
+{
+  "schema": "v14-baseline-adaptation-v1",
+  "applications": [
+    {
+      "applicationId": "V13-MODEL",
+      "priorRecordSha256": "17366ed7dc9c556b8860e19bef9e4dada7b1309ddae025a725fa8edcd20d0602",
+      "retainedDependencyJustification": "The field, curve, generator, full Mordell-Weil decomposition and root squareclass calculation are unchanged.",
+      "currentConstructionAndConsumerChanges": "Root labels remain odd integers after anchor restoration. Auxiliary U and V now range over all E(K); their free indices can be half-integral and their torsion must be retained until killed.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-HEIGHT",
+      "priorRecordSha256": "f142d16aeee2420611da629477d6baf62f83b43e6db3077b0e163e37984e2a3e",
+      "retainedDependencyJustification": "The three root-abscissa scales and the inherited height inequalities remain the same.",
+      "currentConstructionAndConsumerChanges": "The anchor restores nonzero odd root labels before product-height use. The all-E auxiliary extension is not an extension of the root domain.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-LOG-APPROX",
+      "priorRecordSha256": "4c1d538f2f6a7a5d2ba79d0c505409f5eaf7cd8185b28cb9609788af5cc67836",
+      "retainedDependencyJustification": "The same z=-x/y, f=1/x, N8/Q2 identity and coefficient denominators are retained.",
+      "currentConstructionAndConsumerChanges": "Global nonvanishing of N and Q is used on all-E alternate points; a real-interval argument restricted to old square charts is insufficient.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-LOG-TRANSFER",
+      "priorRecordSha256": "ecb99556ac947f2d6c6a7b36364c283d5284b777369ef80ad107983a53b74070",
+      "retainedDependencyJustification": "Formal logarithm additivity/isometry at odd good places and the same orders are retained.",
+      "currentConstructionAndConsumerChanges": "Both auxiliary and H torsion are killed in the doubled group identities. Zero points use analytic unit A(O)=1, never division by z(O).",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-ODD-NORM",
+      "priorRecordSha256": "b0864f150926a0ae95be442eecf5c34932b894d9a2d66fb1e0a8e48f01a653ca",
+      "retainedDependencyJustification": "The old squareclass/norm criterion is retained as a source lemma.",
+      "currentConstructionAndConsumerChanges": "Private root odd charts are absent. The anchor valuation proof restores root oddness before invoking old root consumers.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-SHARED-RECIPROCAL",
+      "priorRecordSha256": "230659a14a1e24d6e652ac56f92691b98abffd53a6cd70862e23b622b301e33a",
+      "retainedDependencyJustification": "The common semantic normalizer remains -1/z(H).",
+      "currentConstructionAndConsumerChanges": "Its Kummer/squared-H presentation changes. Final primary ratios include hL+fS=0 and the regular relation (1-Df²)L+hS=0; identity branches need the latter.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-IDENTITY-CHARTS",
+      "priorRecordSha256": "2f9f65384772790a13ad02eec0842f3226e4acc980e63e719cc9652d68cdcd62",
+      "retainedDependencyJustification": "The identity point is permitted for auxiliary points, and actual oriented subtraction is still required.",
+      "currentConstructionAndConsumerChanges": "The chart is now h²=f-Df³. Its identity and finite two-torsion branches differ from the previous doubled-point chart and require the new all-E analysis.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-V0-EXCLUSION",
+      "priorRecordSha256": "6b30700403af9cdfcb110739e0f009b6560a2321965345ad9e00943ff63a09c4",
+      "retainedDependencyJustification": "The root-height contradiction and explicit small exceptional points are retained.",
+      "currentConstructionAndConsumerChanges": "The contradiction excluding all empty contact radicals precedes logs and omitted-ratio recovery. At the successful place the retained detector then supplies the unit denominator.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-BIQUADRATIC",
+      "priorRecordSha256": "64d0143f60c8ce6ba16b9db53ff185714a304260cebb58f42bdf9054f5ec5b01",
+      "retainedDependencyJustification": "The old exact substitutions remain historical derivations.",
+      "currentConstructionAndConsumerChanges": "The final U,V chart is no longer the biquadratic square chart. Record it as a replaced construction, not a preserved all-E parametrization.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-H-HALF-INDEX",
+      "priorRecordSha256": "55df1f487ccee681e0f7b19755223b03959b8c158422772e35a3c190ef2466ea",
+      "retainedDependencyJustification": "E(K)=Z R0+E[2] and 2R0=P are unchanged.",
+      "currentConstructionAndConsumerChanges": "The Kummer H chart is reconstructed first. Its half-integral free index is handled together with the new half-integral auxiliary indices.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-H-TORSION-EXCLUSION",
+      "priorRecordSha256": "c9d6af586011620235d12ceca0bad653485c0197d42390573ff2190d218ce0f9",
+      "retainedDependencyJustification": "The finite exceptional-set and height-anchor exclusions remain the source mechanism.",
+      "currentConstructionAndConsumerChanges": "Bind them to the actual Kummer/squared-H variables and common-scale tests before using S=-1/z(H).",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-H-SUBTRACTION",
+      "priorRecordSha256": "9bca35cc324f2c26f868624ff7608a50752e4e45716ab3539cb147b2d27236cb",
+      "retainedDependencyJustification": "The fixed P and V0=H-P are unchanged.",
+      "currentConstructionAndConsumerChanges": "The squared-H/Kummer substitutions must reconstruct the same oriented V0, with all exceptional denominators handled before formal-log consumers.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-H-NO-ROOT",
+      "priorRecordSha256": "31c5173ff4299efbb245ebd37680f342c4d996d81c1933cdaaaa765355a2ee53",
+      "retainedDependencyJustification": "The mod71 numerator and mod7 denominator nonroot certificates with split primes are unchanged.",
+      "currentConstructionAndConsumerChanges": "Their consumption expands to all four alternate V_i in E(K), including the S block. Keep this new domain use explicit.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-H-LOG-IDENTITIES",
+      "priorRecordSha256": "c316901e42811a3f1ccdb7a75a019dafedb85111064747598c83a33039e8635d",
+      "retainedDependencyJustification": "The H/scalar group laws and torsion exponent two are retained.",
+      "currentConstructionAndConsumerChanges": "Use [2m]U_i=[2k_i]H and [2(m-2)]V_i=[2(k_i-2n_i)]V0 with k_i integral in the R0 basis. Do not copy the old torsion-free auxiliary identities.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-INPUT-PARITY",
+      "priorRecordSha256": "2afbfe25f0786f17e72293de13e7e93dd448f06b661c785e6505fb7bab18ac4a",
+      "retainedDependencyJustification": "The actual input polynomial beta=51(2X+1)^2+2504 and odd integral root label are unchanged.",
+      "currentConstructionAndConsumerChanges": "After height equality n=beta, the same denominator/parity proof returns X integral. No half-index input polynomial is selected.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-INPUT-LOCAL-ONE-CHOICE",
+      "priorRecordSha256": "cc9e922523ccf170a977459a644d5a9813a8f1b335006b7cba92249fceb9f6b8",
+      "retainedDependencyJustification": "The Q2,Q3,Q17 unit-square criteria and integer-X local values of r are unchanged.",
+      "currentConstructionAndConsumerChanges": "Apply them to the retained input polynomial and same deterministic correction, not the archived 51X²+2504 alternative.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-DETERMINISTIC-CORRECTION",
+      "priorRecordSha256": "3c815dc0956c8414762c824f42f0b8b4094111f7f954dcb300053c5048504830",
+      "retainedDependencyJustification": "The selected deterministic correction is c=r+4896 with the same normalization.",
+      "currentConstructionAndConsumerChanges": "The newer reciprocal and anchor changes do not alter the scalar correction row or its support. The exploratory 9792 correction is not selected.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-SCALAR-NORM24",
+      "priorRecordSha256": "afa4ebc2cc4f70b1b5fbb4868ca3926111b71560ce184916c6a04c6813e76547",
+      "retainedDependencyJustification": "The norm identity, coefficient8 and scalar order24 are retained.",
+      "currentConstructionAndConsumerChanges": "The H point is reconstructed from its final chart before q=Norm(fH) and the pole ratio are interpreted. Bind actual unchanged scalar rows.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-SCALAR-TORSION-LOG",
+      "priorRecordSha256": "843dfea10e47ca9b0a2d67aab1161a9e4507e938d5c942fd7ff1e71de0445002",
+      "retainedDependencyJustification": "The duplication argument covering scalar R near O or (0,0) is retained.",
+      "currentConstructionAndConsumerChanges": "The new S-root oriented row fixes the same scalar point, and the same depth24 conclusion is used after H reconstruction.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-SCALAR-HEIGHT",
+      "priorRecordSha256": "1ae4833c81565cf6b5ee6fdcb966c873ae791829d6fbbc9739ff20bf3a0d2c60",
+      "retainedDependencyJustification": "The exponent19/24 and the inherited scalar-height theorem remain unchanged.",
+      "currentConstructionAndConsumerChanges": "The final anchor first forces sufficient scalar coefficient divisibility. Do not use the old separate scalar anchor without the new root terms.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-ANCHOR-COEFFICIENT",
+      "priorRecordSha256": "2bc654063b34dfc82fcdb69abd556ee81eda20edfff3cbda2234be7d056810e5",
+      "retainedDependencyJustification": "The coefficient lemma for nonzero even scalar index remains a retained input.",
+      "currentConstructionAndConsumerChanges": "The selected numerator is exactly2g0g1, not the alternate g1² route. Root-parity restoration precedes the old even-index coefficient consumer.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-HEIGHT-CONTRADICTIONS",
+      "priorRecordSha256": "46c455513206ca45ff5bd102c78fcf0869437beeda4f95879589a9159089e721",
+      "retainedDependencyJustification": "The Lucas/root height inequalities and all three scales remain unchanged.",
+      "currentConstructionAndConsumerChanges": "Bind the current common-scale detector conclusions, root-parity restoration and half-index log transfer before each order40/order10 divisibility use.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-GROUPED-POLYNOMIALS",
+      "priorRecordSha256": "145689f1204e8a2009cbcad4c3e1622c8777eb9121af912d93ab0d9c05c8af39",
+      "retainedDependencyJustification": "The underlying test values and same-place valuation principle remain the source inputs.",
+      "currentConstructionAndConsumerChanges": "The final three groups use gamma from the anchor witness, promoted first inputs and the current residue classes. Old four-group or V13 formulas are not current.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-TORIC-POWERS",
+      "priorRecordSha256": "1246eaf11cda41e8f04449d18f14b6e58d7bb1fbd80bec6a7af41a42379a28ce",
+      "retainedDependencyJustification": "Exact quadratic witness substitution is the retained algebraic principle.",
+      "currentConstructionAndConsumerChanges": "Current powers are the shared314 chain with the anchor-gamma313 identification. Earlier toric chain coordinates are historical ancestors only.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-CONSTANT-PIVOT",
+      "priorRecordSha256": "1f26504e23defe0ee2828c38c14128a8b55ac5d6c4cf8a94a2ea5a24ecd4cb54",
+      "retainedDependencyJustification": "Elimination by a nonzero rational constant pivot remains valid.",
+      "currentConstructionAndConsumerChanges": "Only the selected finite assembly transformations and their exact current consumers are claimed; bind their actual source/target residuals.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-FACTORED-POLES",
+      "priorRecordSha256": "903032aef3fe10a155d1f8226a5ef18a53e47dc725ce3daa37cbebf88f4db615",
+      "retainedDependencyJustification": "The pole conic equivalence and positive semantic input are retained.",
+      "currentConstructionAndConsumerChanges": "The contact-root normalization changed earlier in the selected lineage. Bind the final positive W/B interface, including zero branches and retained scalar pole.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-PREPARATION-CONIC",
+      "priorRecordSha256": "ff203b881cb7445b27c61f53314c2cd5983e1a562a7064d0162851b3ef4a8a4f",
+      "retainedDependencyJustification": "The preparation-zero lemma and the old conic are retained as source facts.",
+      "currentConstructionAndConsumerChanges": "The final scalar preparation is already specialized and normalized. No deleted private conic coordinate is asserted to survive.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-REAL-INITIAL",
+      "priorRecordSha256": "191a5928a835cf5d986621de379241104f1e2fafa9bfbc7378242ce1da6118f0",
+      "retainedDependencyJustification": "The source real-progression open-set theorem and finite-index formal subgroups are unchanged.",
+      "currentConstructionAndConsumerChanges": "Initial H0 and scalar R choices must precede fixed root data, contact primes, lambda and the final anchor witness. The later choice cannot change the anchor quadric.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-FINITE-SUPPORT",
+      "priorRecordSha256": "c7083564e245963989158ffefa4cf32aa2c1b5f99c850bdb55721cef16111e9c",
+      "retainedDependencyJustification": "The finite scalar support supp(cr) union {2,3,17} and scalar depth requirements remain.",
+      "currentConstructionAndConsumerChanges": "The common gamma has additional fixed local approximation requirements at those small primes and at selected contacts. Its new support must be accounted for by the unchanged valuation argument.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-REAL-FINAL-CRT",
+      "priorRecordSha256": "ead207c1b686f45d7dc88f91242e9ed819f4e0b9736835df0d049d177edcfb25",
+      "retainedDependencyJustification": "The arbitrary sufficiently divisible modulus and real open-set progression result are unchanged.",
+      "currentConstructionAndConsumerChanges": "After fixed scalar/roots/anchor quadric, choose contacts and lambda, then anchor witnesses, then final H. The constructive quadric approximation is a new internal lemma, not an unproved generic weak-approximation premise.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-PREPARATION-ZERO",
+      "priorRecordSha256": "34de659e9edd3f576da2d8f106d39168c878c73a23119ca60e6f3a26f9e7d645",
+      "retainedDependencyJustification": "The positive input below17, square denominator and Q2,Q3,Q17 square/depth hypotheses remain required.",
+      "currentConstructionAndConsumerChanges": "The final real neighborhood and finite modulus still supply them simultaneously for the same final H. Auxiliary chart extension does not license independent local and real choices.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-NORMALIZED-SCALAR-POLE",
+      "priorRecordSha256": "a8813f2d7bf046a562d7835a5746421332aba7bb1f5d45734442e164d91f9ab4",
+      "retainedDependencyJustification": "The existing normalization map and independently established positive semantic input remain unchanged.",
+      "currentConstructionAndConsumerChanges": "Bind the exact final unchanged pole rows after scalar/H reconstruction; no self-contained positivity claim is made from the private pole alone.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-ANCHOR-RESCALING",
+      "priorRecordSha256": "d61b9250067060ba33e3842dbda2921f0945a7ce3dbab4ad1182544d922b3a8e",
+      "retainedDependencyJustification": "The earlier Laurent rescaling remains a historical exact step.",
+      "currentConstructionAndConsumerChanges": "The final quadric is u²+6v²-2w²-4Cw-3T²=0, with T=2g0g1+C Q. The common scale is identified with the selected nonzero anchor witness. New local/real construction replaces the earlier private-witness choice.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-ORDINARY-GATE",
+      "priorRecordSha256": "194aeac53c692018a4e2a9949ba11f60d7cf86024f8a93984fd4629f83116a4c",
+      "retainedDependencyJustification": "Repeated squaring and unique rational extension remain the algebraic mechanism.",
+      "currentConstructionAndConsumerChanges": "Use14 weighted constant gates with exponents[2049]+[2048]*11+[0,0] plus one Q gate. The selected314 bound is below2^6496; the old411 chain and below2^3247 claim are not copied.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-FINAL-COMPLETENESS",
+      "priorRecordSha256": "5e9f9613cb2d3bb55fb39e9fc5e4c69453c222534ebd85640c537ded37891757",
+      "retainedDependencyJustification": "The same integer input construction, root labels and source simultaneous-prime/real-progression theorems remain.",
+      "currentConstructionAndConsumerChanges": "The final ordering includes the fixed anchor quadric, contact/lambda choice, constructive anchor approximation and one final H. Reciprocal/oriented witnesses are then supplied for those same points, with no extra arithmetic choices.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-SOS-FINITE",
+      "priorRecordSha256": "1e2860e281f8a04003e8f85caee3b54db25745f4ff59e1c217601d780e15f358",
+      "retainedDependencyJustification": "An unweighted sum of squares over Q vanishes exactly when all integer-normalized rows vanish.",
+      "currentConstructionAndConsumerChanges": "Use the selected corrected299 and ordinary314 residuals and the explicit consecutive-coordinate bijections. A private-witness bijection is not claimed for the all-E enlargement.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-FINITE-COUNTS",
+      "priorRecordSha256": "067b6c049e0cbccd8c96119eb980867d5ba5b3aa6ecac62d79b2ced7f3ff1aaf",
+      "retainedDependencyJustification": "Exact finite expansion and coordinate bijection verification remain the method.",
+      "currentConstructionAndConsumerChanges": "Selected299 has279rows/6630terms; ordinary314 has294rows/6672terms. Distinguish source-ID text222890bytes from consecutive ordinary text264430bytes and use the exact6496-bit maximum.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-RECIPROCAL-IDENTITY",
+      "priorRecordSha256": "ec4237e6d6467190a070d63bdfed712d651e73862d2b5fa6e125e4daa3ef7145",
+      "retainedDependencyJustification": "The old reciprocal identity is retained for the unchanged fixed-root/scalar interfaces.",
+      "currentConstructionAndConsumerChanges": "The four U/V blocks now use three oriented-slope relations; alternate k is reconstructed as s(f-F)-h. Global raw-ratio recovery follows successful-place unit evidence, not bare polynomial cancellation.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    },
+    {
+      "applicationId": "V13-H-EXACT-RESCALING",
+      "priorRecordSha256": "1b0c42c7cea956a0a61dffb0fa0ad0d6555134fe7f5cef4b9d654ca984319256",
+      "retainedDependencyJustification": "The interpretation of the common H normalizer and fixed V0 remains unchanged.",
+      "currentConstructionAndConsumerChanges": "The final Kummer/squared-H presentation replaces private H square witnesses. Include the H bootstrap and nonzero/exception exclusions before the reconstruction is consumed.",
+      "obligationKeysRequiringFinalDecision": [
+        "required_inputs",
+        "constructed_inputs",
+        "domain_and_index_coverage",
+        "transition_maps_and_scalars",
+        "identity_of_consumed_object",
+        "exceptional_cases",
+        "affected_downstream_claims",
+        "source_version_and_conventions",
+        "validation_and_acceptance_scope"
+      ],
+      "status": "Author comparison notes; final 9 statements and exact spans required"
+    }
+  ],
+  "scope": "No automatic carry-forward approval. Every obligation requires an explicit current disposition; final text and independent review are not yet bound."
+}

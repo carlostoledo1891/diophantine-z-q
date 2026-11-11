@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ORIGINAL",
+    "p": "any odd coefficient prime of the actual induction",
+    "r": "original S-type representation",
+    "required": "globally absolutely irreducible and solvable",
+    "output": "weak classical residual modularity only"
+  },
+  {
+    "id": "FIRST",
+    "p": "ell odd, ell != oldP",
+    "r": "same actual first-family stable-lattice reduction in caller13",
+    "required": "globally absolutely irreducible and solvable; ramification at oldP allowed",
+    "small_cases": [
+      [
+        7,
+        3
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        19,
+        3
+      ],
+      [
+        29,
+        7
+      ],
+      [
+        31,
+        5
+      ]
+    ],
+    "output": "only the residual-modularity premise of FIRST"
+  },
+  {
+    "id": "RETURN",
+    "p": "odd oldP",
+    "r": "actual returned globally irreducible solvable residual representation",
+    "required": "all other RETURN lifting/local hypotheses retained",
+    "output": "weak residual modularity, not lower-weight induction or optimal-level realization"
+  }
+]

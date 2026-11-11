@@ -1,0 +1,417 @@
+{
+  "cards": [
+    {
+      "id": "CEGGPS-LOCAL-C01",
+      "title": "Auxiliary domain and convention transport",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 26,
+        "line_end": 41,
+        "excerpt_sha256": "29ad27b07696405f39fc38afc2cfdaa650a83e51890637b2de5112365c18deda"
+      },
+      "available": "The auxiliary residual representation is absolutely irreducible; all its characteristic-zero lifts are absolutely irreducible.",
+      "needed": "All coefficient extensions, invariant lines and central characters belong to this auxiliary block.",
+      "derivation": "A stable line would reduce to a proper invariant line after saturation. Use V_P=r_C tensor epsilon once.",
+      "direct_internal_dependencies": [],
+      "retained_inputs": [
+        "R14-CONSTRUCTION"
+      ],
+      "assertion": {
+        "statement": "The auxiliary residual representation is absolutely irreducible; all its characteristic-zero lifts are absolutely irreducible.",
+        "objects": "Auxiliary domain and convention transport",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "All coefficient extensions, invariant lines and central characters belong to this auxiliary block.",
+        "conclusion": "The auxiliary residual representation is absolutely irreducible; all its characteristic-zero lifts are absolutely irreducible.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "No irreducibility condition is added to the manuscript target.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R14-CONSTRUCTION"
+        ],
+        "translation": "A stable line would reduce to a proper invariant line after saturation. Use V_P=r_C tensor epsilon once."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C02",
+      "title": "Exact Banach fiber",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 42,
+        "line_end": 69,
+        "excerpt_sha256": "924f39e7445243090b033f05475b401419820194fe32183f698bf28966664cf6"
+      },
+      "available": "The exact Kisin lattice and supersingular category equivalence identify the envelope fiber with the actual Colmez Pi(D(V_P)).",
+      "needed": "The fiber has the same deformation point and central character as the Kisin lattice.",
+      "derivation": "Use unique irreducible block object, then the beta map with inverse central character, bounded natural module, and dual pairing.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C01"
+      ],
+      "retained_inputs": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "assertion": {
+        "statement": "The exact Kisin lattice and supersingular category equivalence identify the envelope fiber with the actual Colmez Pi(D(V_P)).",
+        "objects": "Exact Banach fiber",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "The fiber has the same deformation point and central character as the Kisin lattice.",
+        "conclusion": "The exact Kisin lattice and supersingular category equivalence identify the envelope fiber with the actual Colmez Pi(D(V_P)).",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "Equality of Galois images alone is not a classification theorem.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R01",
+          "R02",
+          "R03",
+          "R04",
+          "R05",
+          "CEGGPS-LOCAL-C01"
+        ],
+        "translation": "Use unique irreducible block object, then the beta map with inverse central character, bounded natural module, and dual pairing."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C03",
+      "title": "Fixed-center enlargement and projective lift",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 70,
+        "line_end": 115,
+        "excerpt_sha256": "57da3d409df2134323b9d976d697cbdac25c81634b3106ea741199f1aad2d0a0"
+      },
+      "available": "The BP construction supplies an admissible fixed-center K-injective enlargement, and Coker(x) is the integral projective cover required in BM5.2.",
+      "needed": "Scalar-uniformizer normalization and finite residual field are allowed; Coker(x) is O-torsion-free with the stated reduction.",
+      "derivation": "Take the central eigensubspace, descend finite choices, prove admissibility from the finite socle, then use finite projective reduction, idempotent lifting and compact Nakayama.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C01"
+      ],
+      "retained_inputs": [
+        "R07",
+        "R08"
+      ],
+      "assertion": {
+        "statement": "The BP construction supplies an admissible fixed-center K-injective enlargement, and Coker(x) is the integral projective cover required in BM5.2.",
+        "objects": "Fixed-center enlargement and projective lift",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "Scalar-uniformizer normalization and finite residual field are allowed; Coker(x) is O-torsion-free with the stated reduction.",
+        "conclusion": "The BP construction supplies an admissible fixed-center K-injective enlargement, and Coker(x) is the integral projective cover required in BM5.2.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "The BM construction of x and its exact sequence remain source inputs.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R07",
+          "R08",
+          "CEGGPS-LOCAL-C01"
+        ],
+        "translation": "Take the central eigensubspace, descend finite choices, prove admissibility from the finite socle, then use finite projective reduction, idempotent lifting and compact Nakayama."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C04",
+      "title": "Spherical support at every point",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 116,
+        "line_end": 134,
+        "excerpt_sha256": "9aa644f3f68bdf09f183a27c94b38db94461eaaaa9f02bafbf93563c137787dd"
+      },
+      "available": "For the pure algebraic sigma, Hom_K(sigma,B_x) has dimension one exactly on the corresponding crystalline locus and zero elsewhere.",
+      "needed": "B_x is the actual Colmez object of C02 and all its Galois lifts are irreducible.",
+      "derivation": "Use nonzero locally algebraic vectors implies de Rham, the local shape theorem, normalized smooth J0 and D_crab; exclude nonspherical smooth factors.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C02"
+      ],
+      "retained_inputs": [
+        "R06"
+      ],
+      "assertion": {
+        "statement": "For the pure algebraic sigma, Hom_K(sigma,B_x) has dimension one exactly on the corresponding crystalline locus and zero elsewhere.",
+        "objects": "Spherical support at every point",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "B_x is the actual Colmez object of C02 and all its Galois lifts are irreducible.",
+        "conclusion": "For the pure algebraic sigma, Hom_K(sigma,B_x) has dimension one exactly on the corresponding crystalline locus and zero elsewhere.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "Repeated and nonsemisimple Frobenius and reducible smooth principal-series exception are retained.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R06",
+          "CEGGPS-LOCAL-C02"
+        ],
+        "translation": "Use nonzero locally algebraic vectors implies de Rham, the local shape theorem, normalized smooth J0 and D_crab; exclude nonspherical smooth factors."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C05",
+      "title": "Generic principal-series extension estimate",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 135,
+        "line_end": 184,
+        "excerpt_sha256": "031f9b5708c7e04f89c5de4a79788428b73f662d1d46f1ceb2fd7060c59e39b8"
+      },
+      "available": "On the dense set of distinct nonexceptional Frobenius roots, the relevant fixed-center smooth self-extension space has dimension one and the Banach RED estimate applies.",
+      "needed": "Unframed fixed-determinant crystalline support; fixed distinct weights; normalized inducing characters are distinct and principal series is irreducible.",
+      "derivation": "The bad root ratios give finitely many filtered-module isomorphism classes. Use exact Jacquet adjunction and valuation cocycles for Ext dimension one, then the local universal completion.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C02",
+        "CEGGPS-LOCAL-C04"
+      ],
+      "retained_inputs": [
+        "R09",
+        "R10",
+        "R08"
+      ],
+      "assertion": {
+        "statement": "On the dense set of distinct nonexceptional Frobenius roots, the relevant fixed-center smooth self-extension space has dimension one and the Banach RED estimate applies.",
+        "objects": "Generic principal-series extension estimate",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "Unframed fixed-determinant crystalline support; fixed distinct weights; normalized inducing characters are distinct and principal series is irreducible.",
+        "conclusion": "On the dense set of distinct nonexceptional Frobenius roots, the relevant fixed-center smooth self-extension space has dimension one and the Banach RED estimate applies.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "No assertion of the same Ext estimate at the excluded points or in a supercuspidal block.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R09",
+          "R10",
+          "R08",
+          "CEGGPS-LOCAL-C02",
+          "CEGGPS-LOCAL-C04"
+        ],
+        "translation": "The bad root ratios give finitely many filtered-module isomorphism classes. Use exact Jacquet adjunction and valuation cocycles for Ext dimension one, then the local universal completion."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C06",
+      "title": "Reduced crystalline annihilator quotient",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 167,
+        "line_end": 184,
+        "excerpt_sha256": "0914c3e2f46a582edf9370cf8ac2f81b8f4b1e895bed5a25fc5ad16a21311b0a"
+      },
+      "available": "The type module has the crystalline annihilator quotient with no nilpotent thickening, and is maximal Cohen–Macaulay.",
+      "needed": "BM homological CM construction and fiber duality; all-point support and generic first-order bound.",
+      "derivation": "The no-embedded-prime criterion and dense fiber rank one/first-order rank at most two give reducedness; identify support with the crystalline quotient.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C03",
+        "CEGGPS-LOCAL-C04",
+        "CEGGPS-LOCAL-C05"
+      ],
+      "retained_inputs": [
+        "R08",
+        "R10",
+        "R11",
+        "R02"
+      ],
+      "assertion": {
+        "statement": "The type module has the crystalline annihilator quotient with no nilpotent thickening, and is maximal Cohen–Macaulay.",
+        "objects": "Reduced crystalline annihilator quotient",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "BM homological CM construction and fiber duality; all-point support and generic first-order bound.",
+        "conclusion": "The type module has the crystalline annihilator quotient with no nilpotent thickening, and is maximal Cohen–Macaulay.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "The zero module is separate; full general-type BM6.6 is not asserted.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R08",
+          "R10",
+          "R11",
+          "R02",
+          "CEGGPS-LOCAL-C03",
+          "CEGGPS-LOCAL-C04",
+          "CEGGPS-LOCAL-C05"
+        ],
+        "translation": "The no-embedded-prime criterion and dense fiber rank one/first-order rank at most two give reducedness; identify support with the crystalline quotient."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C07",
+      "title": "Unframed eta and equality with the natural Hecke action",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 185,
+        "line_end": 237,
+        "excerpt_sha256": "a4325be8ac094865e1cde850a9f097e7663af0e58e07784d664bc5f53b4ab927"
+      },
+      "available": "The descended map eta has eta(T)=5^(a+b)t, eta(S)=5^(2a+b-1)d and equals the natural Hecke character on the type module.",
+      "needed": "Residual scalar endomorphisms; framed crystalline regular/reduced Jacobson ring; rank-one type module and selected dense crystalline points.",
+      "derivation": "Choose a universal-frame section and compare all framed closed points. Compare the rank-one action with BB at dense points; reducedness gives equality.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C02",
+        "CEGGPS-LOCAL-C05",
+        "CEGGPS-LOCAL-C06"
+      ],
+      "retained_inputs": [
+        "R09",
+        "R11",
+        "R13",
+        "R12"
+      ],
+      "assertion": {
+        "statement": "The descended map eta has eta(T)=5^(a+b)t, eta(S)=5^(2a+b-1)d and equals the natural Hecke character on the type module.",
+        "objects": "Unframed eta and equality with the natural Hecke action",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "Residual scalar endomorphisms; framed crystalline regular/reduced Jacobson ring; rank-one type module and selected dense crystalline points.",
+        "conclusion": "The descended map eta has eta(T)=5^(a+b)t, eta(S)=5^(2a+b-1)d and equals the natural Hecke character on the type module.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "No assertion that t,d are integral in R; no arbitrary reducible-residual frame descent claimed.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R09",
+          "R11",
+          "R13",
+          "R12",
+          "CEGGPS-LOCAL-C02",
+          "CEGGPS-LOCAL-C05",
+          "CEGGPS-LOCAL-C06"
+        ],
+        "translation": "Choose a universal-frame section and compare all framed closed points. Compare the rank-one action with BB at dense points; reducedness gives equality."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C08",
+      "title": "The four arithmetic-action axioms",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 238,
+        "line_end": 252,
+        "excerpt_sha256": "18bdfde4fdc9a10db8d7c8abde5a8c77ae4d012a7b9a7e0d42edfb2866eb5fe6"
+      },
+      "available": "The same Ptilde^psi completed-tensor universal character satisfies AA1–AA4 in CEGGPS body conventions.",
+      "needed": "Exact compact envelope and R_p action; pure algebraic sigma and its K-lattice.",
+      "derivation": "Finite generation by compact Nakayama; pro-Iwahori projectivity; unramified-character tensor of the CM type module; regularity gives rank-one local freeness; C07 gives AA4.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C03",
+        "CEGGPS-LOCAL-C04",
+        "CEGGPS-LOCAL-C06",
+        "CEGGPS-LOCAL-C07"
+      ],
+      "retained_inputs": [
+        "R08",
+        "R11",
+        "R12"
+      ],
+      "assertion": {
+        "statement": "The same Ptilde^psi completed-tensor universal character satisfies AA1–AA4 in CEGGPS body conventions.",
+        "objects": "The four arithmetic-action axioms",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "Exact compact envelope and R_p action; pure algebraic sigma and its K-lattice.",
+        "conclusion": "The same Ptilde^psi completed-tensor universal character satisfies AA1–AA4 in CEGGPS body conventions.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "An incompatible central character gives zero type module; no introductory weight convention used.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R08",
+          "R11",
+          "R12",
+          "CEGGPS-LOCAL-C03",
+          "CEGGPS-LOCAL-C04",
+          "CEGGPS-LOCAL-C06",
+          "CEGGPS-LOCAL-C07"
+        ],
+        "translation": "Finite generation by compact Nakayama; pro-Iwahori projectivity; unramified-character tensor of the CM type module; regularity gives rank-one local freeness; C07 gives AA4."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C09",
+      "title": "Common envelope and all-point specialization",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 238,
+        "line_end": 252,
+        "excerpt_sha256": "18bdfde4fdc9a10db8d7c8abde5a8c77ae4d012a7b9a7e0d42edfb2866eb5fe6"
+      },
+      "available": "The module is the unique arithmetic projective envelope, and each continuous dual fiber is B_C(r_x).",
+      "needed": "The same universal R_p action as C08; a characteristic-zero point with residue field finite over E and its continuous integral specialization.",
+      "derivation": "Use the selected uniqueness theorem, then C02 and universal character twisting, retaining the actual Banach map rather than only check-V.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C02",
+        "CEGGPS-LOCAL-C08"
+      ],
+      "retained_inputs": [
+        "R02",
+        "R12"
+      ],
+      "assertion": {
+        "statement": "The module is the unique arithmetic projective envelope, and each continuous dual fiber is B_C(r_x).",
+        "objects": "Common envelope and all-point specialization",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "The same universal R_p action as C08; a characteristic-zero point with residue field finite over E and its continuous integral specialization.",
+        "conclusion": "The module is the unique arithmetic projective envelope, and each continuous dual fiber is B_C(r_x).",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "The statement is restricted to this auxiliary residual block; no general target-block theorem follows.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R02",
+          "R12",
+          "CEGGPS-LOCAL-C02",
+          "CEGGPS-LOCAL-C08"
+        ],
+        "translation": "Use the selected uniqueness theorem, then C02 and universal character twisting, retaining the actual Banach map rather than only check-V."
+      }
+    },
+    {
+      "id": "CEGGPS-LOCAL-C10",
+      "title": "Conditional auxiliary global consumer",
+      "status": "Proposed current application; component decisions retained, incorporation pending independent review.",
+      "proof": {
+        "path": "docs/research-review/proof-sources/restricted-ceggps/proof-v1.md",
+        "sha256": "4583783fd90e16a40d8882744c7ed18af13c5297a9f4fb8e4c3afb00777eb607",
+        "line_start": 253,
+        "line_end": 262,
+        "excerpt_sha256": "db1ead03a44e89e6468ebe3b6df9da185889ff2506a1c4cb5e6715a15be92f33"
+      },
+      "available": "At the auxiliary eigenpoint, the exact envelope theorem supplies the local Banach object needed by the fixed-conductor reconstruction.",
+      "needed": "Retain the precise modular-curve7.4 import, minimal level, type criterion, classical local-global theorem and original route conventions.",
+      "derivation": "Use the homology identity with global dual, dualize, apply C09 at its same R_p point, and retain the conditional filtration-independence transfer of the predecessor.",
+      "direct_internal_dependencies": [
+        "CEGGPS-LOCAL-C09"
+      ],
+      "retained_inputs": [
+        "R15",
+        "R16",
+        "R14-LIFT",
+        "R14-TRANSFER"
+      ],
+      "assertion": {
+        "statement": "At the auxiliary eigenpoint, the exact envelope theorem supplies the local Banach object needed by the fixed-conductor reconstruction.",
+        "objects": "Conditional auxiliary global consumer",
+        "parameter_range": "p=5; finite coefficient extensions; auxiliary absolutely irreducible residual block unless C10 explicitly returns to the conditional target.",
+        "hypotheses": "Retain the precise modular-curve7.4 import, minimal level, type criterion, classical local-global theorem and original route conventions.",
+        "conclusion": "At the auxiliary eigenpoint, the exact envelope theorem supplies the local Banach object needed by the fixed-conductor reconstruction.",
+        "uniformity": "All stated characteristic-zero points or the explicitly selected dense set, as specified in the statement.",
+        "exceptional_cases": "Current Pan/Calegari text is unchanged; full target BM/HT and complementary residual branches remain separate.",
+        "normalization": "epsilon has weight -1; V_P=r_C tensor epsilon; sigma=det^a Sym^b corresponds to r_C weights(-a-b,1-a); compact central character is inverse of the smooth central character.",
+        "dependency_scope": [
+          "R15",
+          "R16",
+          "R14-LIFT",
+          "R14-TRANSFER",
+          "CEGGPS-LOCAL-C09"
+        ],
+        "translation": "Use the homology identity with global dual, dualize, apply C09 at its same R_p point, and retain the conditional filtration-independence transfer of the predecessor."
+      }
+    }
+  ]
+}

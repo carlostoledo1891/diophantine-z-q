@@ -1,0 +1,39 @@
+{
+  "schema": "v15-local-handoff-review/v1",
+  "reviewer": "/root/v14_arithmetic_review",
+  "decision": "accepted",
+  "subject_sha256": "2e86f34e5d902924ea757460064cd553d1aaf2150f93baa7890455d778f21ba3",
+  "subjects": {
+    "snapshot": "a29b94fb4f1083b42ee297d4590965b5b629d201752559d35b8472f75b08010b",
+    "tooling": "87f0c1330e285bff0960be1dd4a30ddd82b9ee9f9f2e5cb5e2fa83b395808675",
+    "zip": "e76d91d7f920c85d2830094bad3ce12eff4390a869be1ac3f9828c4d5829a136"
+  },
+  "scope": "Local packaging, metadata continuity, verifier behavior and exact ZIP correspondence only.",
+  "independence": "Reviewer authored some contained mathematics and routing work. Those contributions and their correctness are excluded. This review does not approve their content or replace disjoint source/assembly decisions.",
+  "findings": [],
+  "checks": [
+    "All886 handoff manifest members match exact SHA256 and size. Snapshot checker passes878 members and743 destination copy-origin checks.",
+    "All016 members retained; exactly5 metadata members changed, with exact predecessor bytes preserved. Current source/PDF unchanged. Six scoped review receipts added; old pending records remain historical rather than rewritten as new acceptance.",
+    "Snapshot checker rejects unsafe paths, symlinks, duplicate/missing/extra files, wrong selector/hash/size and mismatched destination origins. Historical origin source files are not reopened; no broader provenance validation is claimed.",
+    "Existing compound negative test passes. Independent run_finite executions for233,314 and huge all exit0 in separate fresh scratch directories and recheck source inventory afterward.233 generated verification and inverse maps match byte-for-byte.",
+    "Workflow is manual-only, read-only contents permission, with pinned actions and separate finite-check matrix. No remote mutation or hosted CI success is inferred from local runs.",
+    "Full selected filename/content scan found no raw session transcripts, private-key markers or token patterns. The only two PDFs are current and preserved predecessor manuscripts, not paid supplier PDFs. This is a bounded selected-content review, not proof that arbitrary prose never contains private information.",
+    "ZIP CRC and all888 member bytes checked:887 exact handoff files plus explicit draft-status JSON, under one version15-local-draft prefix. No extra payload."
+  ],
+  "limitations": [
+    "Not a complete V14-history bundle or publication-ready cumulative release; retained navigation discloses selected historical scope.",
+    "No fresh mathematical, Protocol D, routing deployment, PDF layout or final assembly approval.",
+    "Hosted Ubuntu action availability/execution not tested. Root navigation wrapper candidate90c688 is outside this exact receipt.",
+    "First archive test assumed no top-level directory and failed; corrected test explicitly verifies the actual common prefix before full comparison. No archive defect resulted."
+  ],
+  "evidence": [
+    "CHECKS.json",
+    "SNAPSHOT-CHECK.txt",
+    "TEST-SNAPSHOT.txt",
+    "PATH-PROBE.json",
+    "WRAPPER-233.json",
+    "WRAPPER-314.json",
+    "WRAPPER-huge.json",
+    "ARCHIVE-CHECK-002.txt"
+  ]
+}

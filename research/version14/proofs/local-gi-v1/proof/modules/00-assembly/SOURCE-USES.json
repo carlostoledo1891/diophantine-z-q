@@ -1,0 +1,486 @@
+{
+  "schema": "source-use-ten-fields/v1",
+  "author": "/root/astra_v14_baseline_theta",
+  "uses": [
+    {
+      "id": "ASM-U01",
+      "assertion": {
+        "statement": "The required result is GI(k) with a finite family of linear nilsequences of step at most k.",
+        "objects": "Complex one-bounded functions on [N], connected simply connected nilpotent groups, lattices and fixed smooth metrics.",
+        "hypotheses": "k>=3 fixed and normalized interval U^(k+1) norm at least delta>0.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "k=20,39 and each fixed r-1>=3 in the proposed Gaussian consumer.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "Zero extension divided by interval-indicator Gowers norm; complex conjugation may be moved to the test.",
+        "exceptional_cases": "Strict published thresholds use delta/2. Bounded N is handled by finite circle interpolation.",
+        "limit_order": "Fix k,delta and all resulting data before N. The target is still open until all premises are accepted."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Definition on p1232, Conjecture1.2 p1233, Theorem1.3 p1235"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 39,
+        "end_line": 83,
+        "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U02",
+      "assertion": {
+        "statement": "A nilsequence supported on J1 union J2 admits fixed finite uniform approximation by products supported on the two downsets.",
+        "objects": "Positive-weight free cover U/Lambda, monomial ideal kernels I1,I2, two lattice quotients and lifted polynomial orbit.",
+        "hypotheses": "Finite downsets, rational connected filtration, fixed compact test Lipschitz/norm bound; accepted Hall-coordinate lemma.",
+        "quantifiers": "Every input polynomial and every fixed positive approximation tolerance.",
+        "parameter_range": "Actual A={(0,j):j<=s-1}, B={(i,j):j<=s-2,i+j<=s}, with J=A union B.",
+        "uniformity": "Fixed finite geometries and approximation bounds before coefficients and interval lengths vary.",
+        "constants": "Choose error below epsilon0/(2M), where M includes all fixed component and test bounds.",
+        "normalizations": "Quotient lattice coordinates are deleted exactly; joint point separation is proved modulo Lambda, not inferred from Lie-kernel intersection.",
+        "exceptional_cases": "Point nilmanifold/constant sequences use one constant product; zero-weight generators are removed by tautification first.",
+        "limit_order": "Normalize, lift, prove both quotient/lattice maps, approximate, then pigeonhole correlation."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Lemma E.4 p1352 and multivariate Taylor Lemma B.9 pp1337-1338; local LP04 Hall lemma and taut003"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 273,
+        "end_line": 392,
+        "excerpt_sha256": "dfd30a7f923c6c30613c16ba5d12b0e7e4bdd2927e42fe8a293ce52995b1099c"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U03",
+      "assertion": {
+        "statement": "The preceding finite-family inverse output supplies an internal uniformly bounded family of unit-vector nilcharacters with positive scalar-component correlation.",
+        "objects": "Central top torus, finite local sections, rho_j with sum rho_j^2=1, exact-character unit-vector maps and finite test nets.",
+        "hypotheses": "Fixed finite rational geometries and positive inverse correlation at the preceding order.",
+        "quantifiers": "All good shifts in each finite interval; every limit parameter in the resulting internal family.",
+        "parameter_range": "Degree d=s-1 and all fixed s>=3 in the induction.",
+        "uniformity": "Finite dimensions, standard characters, fixed geometry/Lipschitz bounds and positive correlation are uniform in h,N.",
+        "constants": "Finite approximation error smaller than a fixed fraction of the prior correlation; finite coefficient/component losses retained.",
+        "normalizations": "The vector is unit, scalar components need not be; vertical identities hold on all representatives and all limit elements.",
+        "exceptional_cases": "Frequency zero is permitted. Top-trivial case reduces to ordinary compact test approximation.",
+        "limit_order": "Complete finite-family extraction at order s-1, choose finite approximants, choose finite assignments, then take ultralimits."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Lemma6.4 and Corollary6.5 pp1255-1256; Definition5.1 p1248; local tautification and quotient geometry"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 393,
+        "end_line": 462,
+        "excerpt_sha256": "dd72dfdbf5946540847e923d75e9d8634926e38e90b59de659b0c833a094315e"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U04",
+      "assertion": {
+        "statement": "The fixed rational filtered lattice models form a countable set up to isomorphism, and fixed smooth compact metrics are equivalent.",
+        "objects": "Finite-dimensional rational Lie structure constants, rational filtration matrices, rational lattice generators and compact quotient metrics.",
+        "hypotheses": "Rational Malcev-coordinate description for connected simply connected nilpotent groups with lattices.",
+        "quantifiers": "Every fixed finite rational filtration constructed in the local units.",
+        "parameter_range": "Each fixed degree s; dimensions may range through the natural numbers.",
+        "uniformity": "One standard metric per model; a standard comparison factor for each fixed isomorphism.",
+        "constants": "No uniform comparison across all models is needed, only a fixed factor for the eventual selected model.",
+        "normalizations": "Filtered group and lattice isomorphism, not merely Lie-algebra isomorphism without lattice.",
+        "exceptional_cases": "Trivial model is included; dimensions are finite but not globally bounded before fixing the inverse threshold.",
+        "limit_order": "Enumerate fixed models, negate finite-family quantifiers, take an ultralimit, then select one fixed model and its metric comparison."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Section3 pp1242-1243 and countability/metric argument p1250"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 393,
+        "end_line": 462,
+        "excerpt_sha256": "dd72dfdbf5946540847e923d75e9d8634926e38e90b59de659b0c833a094315e"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U05",
+      "assertion": {
+        "statement": "The averaged U^d power of a shifted product is bounded by the product of U^(d+1) powers.",
+        "objects": "Finite cyclic group Q, bounded complex a,b, full cube averages and zero-extended interval products.",
+        "hypotheses": "d>=1; Q has fixed size ratio to N and is large enough for every interval norm used.",
+        "quantifiers": "All bounded a,b and all group shifts; the dense good interval shifts contribute a fixed fraction.",
+        "parameter_range": "d=s-1 for the final inverse step; ambient ratio chosen above 2^(s+1) and4.",
+        "uniformity": "Only fixed degree and ambient-ratio constants; no parameter-dependent family is introduced.",
+        "constants": "Interval indicator norm is between N/|Q| and1; all component norm bounds are retained.",
+        "normalizations": "Expand cubes, use (x,h)->(x,x+h), apply ordinary Cauchy-Schwarz and identify squared means as one-higher cubes.",
+        "exceptional_cases": "Negative shifts are represented in Q; zero extensions eliminate wrapped overlap at this ambient size.",
+        "limit_order": "Obtain uniform positive lower-degree norms first, average over h, apply the inequality, then invoke the preceding inverse order."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/assembly.tex",
+        "sha256": "193809d41aa75046c6190cd8904d7d0c27f61d5b103d888bcda2fdbf7fcf105a",
+        "bytes": 25395,
+        "locator": "Local cube-expansion proof and normalization comparison in the bound section"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 463,
+        "end_line": 517,
+        "excerpt_sha256": "58ab9d1d2f528b5a5974899fd880a982e56f18de353e455386d1e73a62eed0c0"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U06",
+      "assertion": {
+        "statement": "The published forward bracket theorem with the locally proved H={0} specialization and direct periodic connected polynomial construction supplies the normalized interval GI(2) base.",
+        "objects": "Prime cyclic zero extension, regular Bohr cutoff, exact periodic bracket product on connected torus/Heisenberg polynomial models.",
+        "hypotheses": "Published forward10.11 and Bohr8.1-8.2; proper trivial-subgroup specialization proved locally; no12.9 skew realization premise.",
+        "quantifiers": "Every fixed positive delta, all N and all complex one-bounded interval functions above threshold.",
+        "parameter_range": "Order2 base only; small eta restriction satisfied by taking a smaller fixed threshold.",
+        "uniformity": "Finite product types and finite Lipschitz bounds depend only on delta, not N or selected shifts.",
+        "constants": "Fixed eta from delta/(2C); all cutoff derivative factors retained; fixed positive correlation and finite bounds.",
+        "normalizations": "Exact product periodicity allows cyclic shift removal; interval mean differs by P/N. No signed-truncation branch split.",
+        "exceptional_cases": "Small N is covered by Bertrand at CN>1; empty frequency set, short box sides and diagonal pairs are explicit.",
+        "limit_order": "Fix delta,eta and all finite model/test data before N; choose prime and orbit coefficients afterward."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "locator": "Sections1-5; exact application and source-use contracts in gi-base-002"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U07",
+      "assertion": {
+        "statement": "Positive correlation with a fixed degree-d polynomial nilsequence gives a positive normalized U^(d+1) norm via exact same-step linearization and a local cube/Fourier proof.",
+        "objects": "Published compact cube constraint, finite tensor approximation, probability weights sigma(h/N)/S_N, full cyclic cube and Fourier expansion.",
+        "hypotheses": "Published11.5 cube constraint on the exact fixed linear model, accepted P1 conversion and Gowers-CS; no11.2 averaging-domain transition imported.",
+        "quantifiers": "Every fixed positive correlation threshold, all bounded inputs and all orbit parameters/N.",
+        "parameter_range": "d=s-2>=1 at final induction; d=s-3>=1 in Section13 for s>=4. The s=3 Section13 boundary is separately proved by the constant/mean identity in ASM-J10.",
+        "uniformity": "Dual-norm bound depends on fixed geometry, Lipschitz bound and chosen error, uniformly in orbit and N.",
+        "constants": "N<=S_N<=4N; exact prefactor (Q/N)(Q/S_N)^(d+1), bounded Fourier l1 and finite coefficient sum retained; choose epsilon<kappa/2.",
+        "normalizations": "All-integer smooth average starts normalized; full cyclic transfer is an exact identity, with no dropped hard interval indicator.",
+        "exceptional_cases": "Complex proof applies directly; d>=1 provides two nonzero vertices for phase absorption; all small N and support boundaries included.",
+        "limit_order": "Fix geometry, test bounds and error; choose finite tensor data and smooth cutoff before N; then estimate all orbit parameters uniformly."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+        "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+        "bytes": 9326,
+        "locator": "Theorem1 and Sections2-5; source11.5 retained, local normalized smoothing proof"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U08",
+      "assertion": {
+        "statement": "Each fixed finite polynomial family yields a fixed finite family of linear models of the same step with exactly equal sequences.",
+        "objects": "P1=poly(Z->G_{bullet+1}), real clock semidirect product, lattice Lambda1 semidirect Z, compact zero-clock fiber and extended test.",
+        "hypotheses": "Rational finite degree filtration, connected simply connected nilpotent group and lattice, fixed bounded Lipschitz test.",
+        "quantifiers": "All polynomial coefficients, all integer inputs including negative, all members of the fixed finite family.",
+        "parameter_range": "Every fixed s>=1; used after extracting finite-family polynomial GI(s).",
+        "uniformity": "Geometry and Lipschitz constants fixed before N; finite maximum taken over the input family.",
+        "constants": "Fixed geometric Lipschitz multiplier, norm bound preserved by disk projection, correlation unchanged.",
+        "normalizations": "Right increment orientation and clock removal exactly as accepted linearization001. Normalization shifts enter F_q.",
+        "exceptional_cases": "Does not assert oldC.2 universal unnormalized projection. Trivial/constant models handled by the accepted unit.",
+        "limit_order": "Extract finite polynomial family first, then apply accepted exact representation and finite maxima."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/linearization-001/proof.tex",
+        "sha256": "0be27a44ba9d8182403d11f5ee598c3b4acbece2df905fbbc200dc9f378c74cf",
+        "bytes": 17057,
+        "locator": "Accepted exact sequence representation and finite-family join, sections1-5"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 518,
+        "end_line": 573,
+        "excerpt_sha256": "81057d5c5acf5f808f49448783fceeea6840a07ffb9013b362b32a407d6c9fad"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-U09",
+      "assertion": {
+        "statement": "The required linearization endpoint is a single multidegree(1,s-1) nilcharacter giving degree-at-most s-2 correlation with Delta_h f on dense h.",
+        "objects": "Internal family chi_h, rank-decreasing family, sunflower core/linear/independent frequencies and final semidirect orbit.",
+        "hypotheses": "Actual biased additive quadruple supplied with all shifts/conjugations; full10.10 and11.1 hypotheses; integral full-top character at final orbit.",
+        "quantifiers": "Each fixed s>=3, every dense internal family in the stated hypothesis, every rank step down to zero.",
+        "parameter_range": "Ranks1 through s-1; actual rank-zero endpoint cannot be replaced by an unsupported degree drop.",
+        "uniformity": "Dense sets and all complexity/correlation bounds remain standard through finitely many steps.",
+        "constants": "All finite losses retained; no effective estimates claimed.",
+        "normalizations": "All-limit unit-vector character convention and ordinary-top extension in final semidirect model.",
+        "exceptional_cases": "LP04 only supplies conditional rank-drop and top restriction. General semidirect top may be larger than degree-rank top.",
+        "limit_order": "At every rank use fresh Sections9-11 reconstruction with exact D/F contracts, now including MF-AFFINE; then LP04, the Section12 successor, fixed projection and rank recovery. Each of the finitely many steps retains standard positive bounds."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/rank-iteration-001/proof.tex",
+        "sha256": "a572fb4dcbfe669d42611527539c026bb285e61003c698b10d609c3bf505e2b9",
+        "bytes": 14173,
+        "locator": "Sections1-5, conditional on actual one-step premise Section3 and current Section12 successor"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      },
+      "additional_suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-sections9-11-gaussian/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a",
+          "bytes": 33309,
+          "locator": "Section1 theorem and Section8 exact rank-family join"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section12-join-gaussian/successor-001/proof.tex",
+          "sha256": "23f16a5fa80935d0888404ac61f1a69792a5543e265a392782fbd5558a5cecbb",
+          "bytes": 27401,
+          "locator": "Complete geometric join, with full ordinary-top character chosen before LP04 comparison"
+        }
+      ]
+    },
+    {
+      "id": "ASM-U10",
+      "assertion": {
+        "statement": "Required output expresses chi(h,n) through Theta(n+h) tensor conjugateTheta(n) tensor Psi(h,n), Psi supported on J.",
+        "objects": "Unit degree-s Theta, internal multidegree chi, exact J and globally represented remainder factors restricted to [[N]]x[N].",
+        "hypotheses": "Actual degree-at-most s-2 correlation input from7.1, stronger8.4 plain-correlation application and retained lower phi information.",
+        "quantifiers": "Every fixed s>=3 and the exact family supplied by the prior interface.",
+        "parameter_range": "All h in the relevant dense set and n in[N]; exact product identity on the required box.",
+        "uniformity": "Fixed finite component coefficients, geometry and standard limits; full permutation symmetry supplied rather than presumed.",
+        "constants": "Factorial-square predivision fromLP05; later leading coefficient is sign-dependent but nonzero.",
+        "normalizations": "Use independent h_j, actual signed coefficient (-1)^(s-1)s!, positive-orthant E11 domain and symmetric-box E13 pullback; all-limit convention retained.",
+        "exceptional_cases": "LP13 multilinearity and LP05 through13.4 do not alone prove7.4. Printed hypothesis comparison remains part of post13.4 review.",
+        "limit_order": "Use the separately accepted multifactor E11 at scale8N on the reflected sigma, then diagonal pullback and E13 on the symmetric box, and only then restrict n positive. New explicit composition is submitted for review."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+        "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+        "bytes": 22893,
+        "locator": "Complete local post13.4 proof with exact at-most(s-2) hypothesis, relative to its pinned inputs"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "author successor comparison; exact current acceptance pending",
+      "prior_scoped_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      },
+      "additional_suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/plain-quadruples-001/proof.tex",
+          "sha256": "b6198cf55c000086c0adffa332ed3dde8ce14413088a2c58045de905c839a453",
+          "bytes": 6577,
+          "locator": "Complete theorem and proof: exact plain additive quadruples, preserving the lower factor"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/proof.tex",
+          "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b",
+          "bytes": 9326,
+          "locator": "Exact normalized converse used for fixed lower-degree bias"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "locator": "MF-E11/E13 theorem73-90 and application proof433-480"
+        }
+      ]
+    },
+    {
+      "id": "ASM-U11",
+      "assertion": {
+        "statement": "Positive binomial coefficient estimates transfer through a bounded-step integer affine map with an O(N) offset after one standard denominator multiplier.",
+        "objects": "Real horizontal polynomial f, transformed polynomial f(A+bm), positive binomial coefficients and their circle norms.",
+        "hypotheses": "One variable, fixed degree, nonzero bounded integer b, |A|=O(N), transformed positive degree-j coefficient O(N^-j) modulo integers.",
+        "quantifiers": "Every such internal polynomial and progression, with one standard multiplier for all positive coefficients.",
+        "parameter_range": "k=1 in the general MF-AFFINE lemma; dense progression length comparable to N in DF002.",
+        "uniformity": "Denominator depends on fixed degree and bounded step, not the offset or integer parts of coefficients.",
+        "constants": "Inverse coefficient from degree j to positive degree i is O(N^(j-i)); residual O(N^-j) therefore gives O(N^-i).",
+        "normalizations": "Clear the common rational denominator before reducing modulo integers; no bound is required for degree zero.",
+        "exceptional_cases": "Negative nonzero b is allowed; multiplying the nonzero horizontal character by a positive standard integer preserves nonzeroness.",
+        "limit_order": "Fix geometry, degree and progression step bound; choose the standard denominator multiplier; transfer all positive estimates simultaneously."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+        "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+        "bytes": 27330,
+        "start_line": 91,
+        "end_line": 138,
+        "excerpt_sha256": "e20f5d0b0d32b38f0889638769b7350af37e6e4055a09bbe9d9bd01c8a87002f"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "New exact composition card submitted for independent review."
+    },
+    {
+      "id": "ASM-U12",
+      "assertion": {
+        "statement": "The actual reflected biased nilcharacter has a globally represented lower-degree restriction on the entire symmetric box.",
+        "objects": "Unit sigma_epsilon on Z^(s+1), reflected convex Omega, full positive progressions [8N], and the constant auxiliary test.",
+        "hypotheses": "Standard s>=3, all-limit vertical identity, fixed geometry and bounds, positive standard scalar-coordinate average on the convex cutoff.",
+        "quantifiers": "The lower-degree representation agrees at every point of [-8N,8N]^(s+1), not just the selected positive orthant.",
+        "parameter_range": "MF-E11 with k=s+1,d=s,N_here=8N_original.",
+        "uniformity": "One fixed rational quotient, common lattice core and global time/residue torus models give standard finite geometry and Lipschitz bounds.",
+        "constants": "Orthant selection loses only a fixed finite factor; coordinate-zero hyperplanes have vanishing normalized mass.",
+        "normalizations": "Use reflected positive box for bias; inverse reflection is a fixed integer linear substitution after full-box reconstruction.",
+        "exceptional_cases": "Degree at least two is required by the time/residue torus construction and is met by s>=3.",
+        "limit_order": "Choose the biased orthant and fixed geometry, apply the exact all-box theorem, reflect back, and then perform diagonal pullback."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+        "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+        "bytes": 27330,
+        "start_line": 73,
+        "end_line": 90,
+        "excerpt_sha256": "a0e7d9146453758fb56cb633822d67188535b79d4c7392b0d490f376e2f648ed"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "New exact composition card submitted for independent review."
+    },
+    {
+      "id": "ASM-U13",
+      "assertion": {
+        "statement": "The actual antisymmetric symbol is zero on the symmetric two-variable box because its s!-fold tensor power is lower-degree there.",
+        "objects": "Unit tensor-product representative xi(h,n), its tensor power xi^(tensor s!), and a finite common lower-degree model for that power.",
+        "hypotheses": "The preceding diagonal pullback gives s![xi]=0 on [-8N,8N]^2; use the definition of symbol equivalence to obtain the tensor-power representation.",
+        "quantifiers": "The original vector xi agrees with a lower-degree nilsequence at every point of the same symmetric box.",
+        "parameter_range": "MF-E13 with k=2,d=s>=3,a=s!,scale8N.",
+        "uniformity": "Tensor dimension, positive integer a, quotient and torus geometries are standard; no parameter-dependent degree increase.",
+        "constants": "The fixed tensor power is positive; real-character vanishing a*eta=0 implies eta=0 without a loss of degree.",
+        "normalizations": "Reconstruct the original vector, not merely a scalar coordinate or its power. Apply on the symmetric box before restricting to [-N,N] times[N].",
+        "exceptional_cases": "No degree-one torsion statement is used; s>=3 meets the supplier d>=2 condition.",
+        "limit_order": "First full-box bias conclusion and diagonal pullback; then tensor-power identification and torsion theorem; finally positive-n restriction."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+        "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+        "bytes": 27330,
+        "start_line": 73,
+        "end_line": 90,
+        "excerpt_sha256": "a0e7d9146453758fb56cb633822d67188535b79d4c7392b0d490f376e2f648ed"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-003/assembly.tex",
+        "sha256": "69cc574b7bb224860ba6ee36d8b54b77a6935a2a6075951fec4af53364ff67a2",
+        "bytes": 34061,
+        "start_line": 84,
+        "end_line": 272,
+        "excerpt_sha256": "e0f585f1366446b74f456a27ec39e387bcb3133ea4c3b7e89918c6cead3e34ee"
+      },
+      "status": "New exact composition card submitted for independent review."
+    }
+  ]
+}

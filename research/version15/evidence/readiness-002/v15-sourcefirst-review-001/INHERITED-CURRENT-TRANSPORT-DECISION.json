@@ -1,0 +1,125 @@
+{
+  "schema": "v15-bounded-source-review/v1",
+  "decision": "accepted_at_current_use_transport_scope",
+  "context": {
+    "reviewer_agent": "01a1c426-ce3c-73b2-bc1f-18da903ebf63",
+    "written_utc": "2026-11-10T08:42:14.8346684Z",
+    "current_source_sha256": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b",
+    "scope": "Independent semantic matching to already accepted exact source/application scopes; no new whole-proof audit, author-eligibility substitution, or authenticated ACK."
+  },
+  "subject": {
+    "path": "work/v15-coverage-candidate-author-007/overlay/research/version15/protocol/current-coverage/INHERITED-TRANSPORT-PROPOSALS.json",
+    "sha256": "e9d209cbbecf3c0048cb7d5fb17ff4b428de23c8263659b84b2be8097816e9ec"
+  },
+  "evidence": [
+    {
+      "path": "work/v15-inherited-current-transport-review-001/APPLICATION-MATCH-CHECKS.json",
+      "sha256": "d9abcaa9d6d6d3c7780dc7844467e1c081d13787a74b2f41b09e327649251a33"
+    },
+    {
+      "path": "work/v15-inherited-current-transport-review-001/CONSUMER-TEXT-CHECKS.json",
+      "sha256": "783c180be75102ed4ba4f05c7cdbed121a7dd5e5ec49700439e5d17e1c085af7"
+    },
+    {
+      "path": "work/v15-inherited-current-transport-review-001/PRIOR-WINDOW-CHECKS.json",
+      "sha256": "ae63e9cddaac4665f0117e1fb0f71768d62c0ab6b4c27323721f9fccfe8e35ef"
+    },
+    {
+      "path": "work/v15-inherited-indirect-closure-author-001/CLOSURE.json",
+      "sha256": "b1b43bbaf2f8460b68abf87f093943213fff2a1303cd41130a41884df912b8b1"
+    },
+    {
+      "path": "work/v15-inherited-indirect-closure-review-001/REVIEW.json",
+      "sha256": "08c17f48427b35c6c67193fcd98feb00523d63932d18e37382e8d44fc1d74d47"
+    },
+    {
+      "path": "work/v15-sourcefirst-review-001/INHERITED-CURRENT-EDGES-020-DECISION.json",
+      "sha256": "2c08cb3f9ae07ee23b1e8d52f2465d50b86f07ac68d242d470b1cf872fde226e"
+    },
+    {
+      "path": "work/v15-sourcefirst-review-001/GAUSSIAN-CURRENT-AND-ADOPTION-DECISION.json",
+      "sha256": "180ddb3dc4dc16f293bf16d7f0cc288c8a6272a046bb2a85eaacec38f2023e5a"
+    }
+  ],
+  "counts": {
+    "internal_routes": 211,
+    "original_consumer_text_matches": 309,
+    "exact_normalized_identifications": 51,
+    "remaining_previous_V15_window_matches": 93,
+    "retained_internal_uses": 74,
+    "internal_edge_steps": 391,
+    "original_application_identifications": 59,
+    "current_endpoint_transports": 404,
+    "new_GI_current_locations": 2,
+    "narrowed_identifications": 8
+  },
+  "narrowed_contexts": [
+    {
+      "current_windows": [
+        "1588-1596",
+        "1598-1609",
+        "1610-1615"
+      ],
+      "reason": "The existing Jacobian/complement setup remains the antecedent. The three windows expose its height, same-L-prime isogeny, and lower-height consumers separately. These are narrowed invocation contexts, not three newly authored proofs or an assertion that the complement is constructed inside every window.",
+      "ids": [
+        "ACTIVE-H6-COMPLEMENT-TO-HEIGHT",
+        "ACTIVE-H6-COMPLEMENT-TO-ISOGENY",
+        "ACTIVE-H6-COMPLEMENT-TO-LOWER"
+      ]
+    },
+    {
+      "current_windows": [
+        "1287-1293",
+        "1571-1577"
+      ],
+      "reason": "The CM paragraph explicitly uses all geometric endomorphisms being defined over L to construct E/L and E-squared to A. The non-CM paragraph uses the common constituent over L-prime and Hom descent to the isogenous image. The respective field-of-definition prerequisites remain in the retained proof; they are not inferred solely from a short invocation.",
+      "ids": [
+        "ACTIVE-H6-FIELD-TO-CM-FACTOR",
+        "ACTIVE-H6-FIELD-TO-NONCM-FACTOR"
+      ]
+    },
+    {
+      "current_windows": [
+        "147-181"
+      ],
+      "reason": "The current introduction states the retained 299/314 quartic upper constructions and the degree-at-least-four lower theorem, hence optimal degree. This is the same mathematical identification in an updated historical introduction, not a proof of either bound from the introduction itself.",
+      "ids": [
+        "ACTIVE-LOWER-TO-MINIMUM",
+        "ACTIVE-UPPER-TO-MINIMUM"
+      ]
+    },
+    {
+      "current_windows": [
+        "215-231"
+      ],
+      "reason": "The actual target proof expressly invokes the height theorem for both constant choices as input H and then the six-input assembly. This replaces a broad original source range by the explicit use of that same result; it does not replace the retained height proof.",
+      "ids": [
+        "ACTIVE-PSTAR-INPUT-H"
+      ]
+    }
+  ],
+  "new_GI_contexts": [
+    {
+      "id": "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20",
+      "window": "2213-2229",
+      "reason": "The current text fixes L first, uses integral affine forms with pairwise independent linear parts, singleton complexity at most20, the normalized finite-family linear-nilsequence GI20 and MN20 inputs, and fixes coefficients/moduli before X. These are exactly the accepted original-prime assembly requirements."
+    },
+    {
+      "id": "ACTIVE-SOURCE-OLD41-GI39",
+      "window": "9560-9569",
+      "reason": "The current text fixes L and surviving lattice residues, uses singleton complexity m-2 at most39 with GI39/MN39, then the positive local product and a finite sum before removing prime powers. It preserves the accepted fixed-data order and does not claim uniform asymptotics with growing L."
+    }
+  ],
+  "reasons": [
+    "The 309 original-text matches and 93 exact prior-V15-window transports reuse the independently accepted retained/current proof scopes. Their equality is supplied by the pinned independent comparison, not a claim of 402 fresh proof audits.",
+    "The eight narrowed contexts and two GI invocation windows were read directly in the current source for this decision. No changed hypothesis or stronger conclusion was found at those uses.",
+    "The 74 other original fine-grained uses remain inside their retained consumer proofs. Their 211 paths through existing supplier-to-consumer edges reach the accepted current endpoints. They are imported-proof support, not 74 new direct manuscript occurrences.",
+    "Original identification/derivation distinctions must be preserved. An identification may use a verified current invocation location with no application identifier when available equals needed and no new capability is derived; the original accepted application remains evidence. An old derivation is not made current merely by relabeling its source range."
+  ],
+  "limitations": [
+    "This does not accept the obsolete005 unconditional conversion of every connection to a derivation.",
+    "This does not repin or mutate the retained162 applications.",
+    "Final exact dossier/connection schema, author unions, and target hashes remain separate checks.",
+    "No new mathematical source gap is identified by these transports."
+  ]
+}

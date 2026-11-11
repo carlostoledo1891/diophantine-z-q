@@ -1,0 +1,1424 @@
+[
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS-P1"
+      ],
+      "assertion": {
+        "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+        "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+        "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+        "quantifiers": "Every ideal class and every unit of this fixed field.",
+        "parameter_range": "Only K0; no varying quadratic-field claim.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+        "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+        "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+        "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 27,
+          "end_line": 29,
+          "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+        },
+        "statement": "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity.",
+        "publication": {
+          "title": "Algebraic Number Theory",
+          "authors": "J. S. Milne",
+          "venue": "Author course notes",
+          "authoritative_version": "v3.08, July19,2020; PDFde2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b",
+          "locator": "Theorem4.3 p.70 and Theorem5.1 p.85",
+          "corrections": "No claim that the unit theorem selects a fundamental unit; only rank, roots of unity and the independent sign calculation are used."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 27,
+        "end_line": 29,
+        "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+      "use_sha256": "45278cda43812c92bfb5d51a0253b280cca2ac7d1fd9572320f33f083320a74f",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity.",
+        "objects": "A number field, its ideal class group and unit group.",
+        "hypotheses": "Ring of integers of a number field; r1 real places and r2 pairs of complex places.",
+        "quantifiers": "Every ideal class and every number field in the theorem scope.",
+        "parameter_range": "Positive degree n=r1+2r2.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Stated Minkowski constant and unit rank formula.",
+        "normalizations": "Integral ideal norm; multiplicative unit group.",
+        "exceptional_cases": "Unit generators are not selected by the rank formula.",
+        "limit_order": "Use the field invariants in the bound and rank formula before drawing field-specific conclusions."
+      },
+      "needed_assertion": {
+        "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+        "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+        "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+        "quantifiers": "Every ideal class and every unit of this fixed field.",
+        "parameter_range": "Only K0; no varying quadratic-field claim.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+        "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+        "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+        "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+      },
+      "required_capabilities": [
+        "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares."
+      ],
+      "available_capabilities": [
+        "Minkowski bounds an integral representative of each ideal class by (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group has rank r1+r2-1 with torsion the roots of unity."
+      ],
+      "derived_capabilities": [
+        "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 27,
+          "end_line": 29,
+          "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For K0=Q(sqrt2), Z[sqrt2] has class number1; units modulo squares have four classes distinguished by real signs, and totally positive units are squares.",
+          "objects": "K0, its integer ring Z[s], s^2=2, unit epsilon=1+s.",
+          "hypotheses": "Integral basis1,s and discriminant8; two real embeddings.",
+          "quantifiers": "Every ideal class and every unit of this fixed field.",
+          "parameter_range": "Only K0; no varying quadratic-field claim.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Minkowski bound sqrt2<2; four unit squareclasses.",
+          "normalizations": "Use norm of integral ideals and sign pair of the two real embeddings.",
+          "exceptional_cases": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+          "limit_order": "Apply norm bound to obtain PID; rank and roots of unity give four squareclasses; independent signs of -1,epsilon identify them."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 27,
+            "end_line": 29,
+            "excerpt_sha256": "69ed629a39259cfb1b8998d541a74ff07a3663990b19e85e462415f3eb97b7d5"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 344,
+            "end_line": 346,
+            "excerpt_sha256": "c0fb5f4b75630ad52061f218a3a35d27a408b231f76db82b5db964d56565c907"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 344,
+          "end_line": 346,
+          "excerpt_sha256": "c0fb5f4b75630ad52061f218a3a35d27a408b231f76db82b5db964d56565c907"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U012",
+      "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+    },
+    "retained_separate_inputs": [
+      "The explicit integer ring and discriminant of Q(sqrt2), also directly retained in the fixed-field computation."
+    ],
+    "source_record": {
+      "id": "milne-ant",
+      "bibliography": null,
+      "urls": [],
+      "files": [
+        {
+          "workspace_relative_path": "work/theorem-application-audit-20261105/primary/milne-ant.pdf",
+          "sha256": "de2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b",
+          "bytes": 1287434,
+          "retrieval_url": "https://www.jmilne.org/math/CourseNotes/ANTc.pdf",
+          "retrieved_date": "2026-11-05"
+        }
+      ],
+      "version_notes": "Algebraic Number Theory v3.08, July 19, 2020, author course notes. Supplementary source, not a manuscript bibliography entry.",
+      "source_status": "bytes_pinned"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT-P1"
+      ],
+      "assertion": {
+        "statement": "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8.",
+        "objects": "E:y^2=x^3-d^2x, d=75-53s, K0=Q(sqrt2); dual E_4d^2 and scaled point R.",
+        "hypotheses": "K0 is the PID with unit squareclasses given above; the preceding exact isogeny kernels hold.",
+        "quantifiers": "Every rational point on both fixed curves.",
+        "parameter_range": "All finite primes and both real embeddings.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Eight first-image classes; dual-image order1; quotient8.",
+        "normalizations": "Exceptional alpha(O)=1 and alpha((0,0))=b; target coefficient4d^2.",
+        "exceptional_cases": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+        "limit_order": "Establish squareclass containment and attained classes, then dual triviality, then quotient size; full torsion and saturation remain separate."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 36,
+          "end_line": 41,
+          "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+        },
+        "statement": "The explicit valuation and squareclass computation for E_-d^2 gives image size8 and trivial dual image, hence E(K0)/2E(K0) has size8.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 36,
+        "end_line": 41,
+        "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT",
+      "use_sha256": "07b91d56562a553f6e7c0def670e56cdbf3b492129619627cbd02a852089b019",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "The explicit valuation and squareclass computation for E_-d^2 gives image size8 and trivial dual image, hence E(K0)/2E(K0) has size8.",
+        "objects": "The exact E,K0,d,epsilon,delta,R,phi and hatphi of current348–362.",
+        "hypotheses": "The separately exposed class/unit and exact kernel inputs of this packet.",
+        "quantifiers": "All K0-rational points in the two squareclass maps.",
+        "parameter_range": "Fixed K0 and curve, including zero/identity exceptions.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Norm(d)=7; eight classes; squares in F7 are0,1,2,4.",
+        "normalizations": "epsilon^4 d=delta and scaling by(epsilon^4,epsilon^6).",
+        "exceptional_cases": "Dyadic prime(s) and prime(d) treated individually; no skipped odd-valuation cancellation case.",
+        "limit_order": "Compute both rational images, use exact kernels and composition[2]."
+      },
+      "needed_assertion": {
+        "statement": "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8.",
+        "objects": "E:y^2=x^3-d^2x, d=75-53s, K0=Q(sqrt2); dual E_4d^2 and scaled point R.",
+        "hypotheses": "K0 is the PID with unit squareclasses given above; the preceding exact isogeny kernels hold.",
+        "quantifiers": "Every rational point on both fixed curves.",
+        "parameter_range": "All finite primes and both real embeddings.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Eight first-image classes; dual-image order1; quotient8.",
+        "normalizations": "Exceptional alpha(O)=1 and alpha((0,0))=b; target coefficient4d^2.",
+        "exceptional_cases": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+        "limit_order": "Establish squareclass containment and attained classes, then dual triviality, then quotient size; full torsion and saturation remain separate."
+      },
+      "required_capabilities": [
+        "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8."
+      ],
+      "available_capabilities": [
+        "The explicit valuation and squareclass computation for E_-d^2 gives image size8 and trivial dual image, hence E(K0)/2E(K0) has size8."
+      ],
+      "derived_capabilities": [
+        "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 36,
+          "end_line": 41,
+          "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual current E/K0 the first x-squareclass image has eight elements, the dual image is trivial, and [E(K0):2E(K0)]=8.",
+          "objects": "E:y^2=x^3-d^2x, d=75-53s, K0=Q(sqrt2); dual E_4d^2 and scaled point R.",
+          "hypotheses": "K0 is the PID with unit squareclasses given above; the preceding exact isogeny kernels hold.",
+          "quantifiers": "Every rational point on both fixed curves.",
+          "parameter_range": "All finite primes and both real embeddings.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Eight first-image classes; dual-image order1; quotient8.",
+          "normalizations": "Exceptional alpha(O)=1 and alpha((0,0))=b; target coefficient4d^2.",
+          "exceptional_cases": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+          "limit_order": "Establish squareclass containment and attained classes, then dual triviality, then quotient size; full torsion and saturation remain separate."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "At(s), equality only v(x)=2; at(d), odd equality v(x)=1 would force u^2=-4 in F7; nonkernel2torsion removes extra quotient term.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 36,
+            "end_line": 41,
+            "excerpt_sha256": "94e1b0ccc6d509026352166fe1330ebbbe29c2954fc0e83aaa8bb7bad5aabe71"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 348,
+            "end_line": 362,
+            "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 348,
+          "end_line": 362,
+          "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U012",
+      "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+    },
+    "retained_separate_inputs": [
+      "ACTIVE-ELEMENTARY-QUADRATIC-CLASS-UNITS",
+      "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL"
+    ],
+    "source_record": null,
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL-P1"
+      ],
+      "assertion": {
+        "statement": "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points.",
+        "objects": "E_b:y^2=x^3+bx and the exact plus-sign phi/hatphi maps in the new proof.",
+        "hypotheses": "Characteristic0 and b!=0.",
+        "quantifiers": "Every rational point, including O and(0,0), on both curves.",
+        "parameter_range": "Specialized later to b=-d^2 over K0.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Degree2 maps and composition[2].",
+        "normalizations": "alpha_b(O)=1, alpha_b((0,0))=b, alpha_b(P)=x(P) modulo squares; normalized target -4b.",
+        "exceptional_cases": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+        "limit_order": "Verify maps and group-law convention, establish exact kernels, then apply local squareclass computation."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 30,
+          "end_line": 32,
+          "excerpt_sha256": "7fb7db212a2f1b56fa1273fa625d6bf0f0fd58e3b93366cafca7693290b95818"
+        },
+        "statement": "For the rational two-isogeny on y^2=x^3+a x^2+b x, the target is y^2=x^3-2a x^2+(a^2-4b)x and its connecting homomorphism to K*/K*^2 is the x-squareclass, with identity value1 and kernel-point value a^2-4b.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Published second edition; PDF72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "ChapterX Example4.8 pp.336–337 and its connecting homomorphism calculation",
+          "corrections": "Proposition4.9 misprints a^2-b instead of a^2-4b. Exact maps are rederived here; opposite isogeny ordinate convention preserves image and kernel. Full official errata not retrieved."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 33,
+        "end_line": 35,
+        "excerpt_sha256": "24dcf7024b89d73d7fc12201a1d5b5975e20a599c55ea0a564081d30bfcfff36"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-TWO-ISOGENY-KERNEL",
+      "use_sha256": "d28fee301de3936df740016ca53d6e8d2ddb12346f6b3e695de8e66e9ef9aef0",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For the rational two-isogeny on y^2=x^3+a x^2+b x, the target is y^2=x^3-2a x^2+(a^2-4b)x and its connecting homomorphism to K*/K*^2 is the x-squareclass, with identity value1 and kernel-point value a^2-4b.",
+        "objects": "The two-isogeny, its rational-point image and squareclass connecting map.",
+        "hypotheses": "Characteristic0 field and nonsingular source/target equations with the indicated rational order2 kernel.",
+        "quantifiers": "Every rational point on the target curve, including identity and the order2 kernel point.",
+        "parameter_range": "The exact Example4.8 target coefficient a^2-4b.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Degree2; squareclasses modulo K*^2.",
+        "normalizations": "The source displayed ordinate has the negative sign convention; replacing the isogeny by its negative preserves image and kernel.",
+        "exceptional_cases": "The misprinted a^2-b in Proposition4.9 is not imported.",
+        "limit_order": "Fix the curve and isogeny, then use the connecting-map kernel/image interpretation."
+      },
+      "needed_assertion": {
+        "statement": "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points.",
+        "objects": "E_b:y^2=x^3+bx and the exact plus-sign phi/hatphi maps in the new proof.",
+        "hypotheses": "Characteristic0 and b!=0.",
+        "quantifiers": "Every rational point, including O and(0,0), on both curves.",
+        "parameter_range": "Specialized later to b=-d^2 over K0.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Degree2 maps and composition[2].",
+        "normalizations": "alpha_b(O)=1, alpha_b((0,0))=b, alpha_b(P)=x(P) modulo squares; normalized target -4b.",
+        "exceptional_cases": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+        "limit_order": "Verify maps and group-law convention, establish exact kernels, then apply local squareclass computation."
+      },
+      "required_capabilities": [
+        "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points."
+      ],
+      "available_capabilities": [
+        "For the rational two-isogeny on y^2=x^3+a x^2+b x, the target is y^2=x^3-2a x^2+(a^2-4b)x and its connecting homomorphism to K*/K*^2 is the x-squareclass, with identity value1 and kernel-point value a^2-4b."
+      ],
+      "derived_capabilities": [
+        "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 33,
+          "end_line": 35,
+          "excerpt_sha256": "24dcf7024b89d73d7fc12201a1d5b5975e20a599c55ea0a564081d30bfcfff36"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The explicit phi:E_b->E_-4b and hatphi:E_-4b->E_b satisfy hatphi phi=[2], with ker alpha_b=hatphi E_-4b and ker alpha_-4b=phi E_b on rational points.",
+          "objects": "E_b:y^2=x^3+bx and the exact plus-sign phi/hatphi maps in the new proof.",
+          "hypotheses": "Characteristic0 and b!=0.",
+          "quantifiers": "Every rational point, including O and(0,0), on both curves.",
+          "parameter_range": "Specialized later to b=-d^2 over K0.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Degree2 maps and composition[2].",
+          "normalizations": "alpha_b(O)=1, alpha_b((0,0))=b, alpha_b(P)=x(P) modulo squares; normalized target -4b.",
+          "exceptional_cases": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+          "limit_order": "Verify maps and group-law convention, establish exact kernels, then apply local squareclass computation."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Poles extend to identity; explicit lift covers x a nonzero square and the special kernel point; do not identify a Selmer group with the rational image.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 33,
+            "end_line": 35,
+            "excerpt_sha256": "24dcf7024b89d73d7fc12201a1d5b5975e20a599c55ea0a564081d30bfcfff36"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 348,
+            "end_line": 362,
+            "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 348,
+          "end_line": 362,
+          "excerpt_sha256": "b6d1ac3238d823d2bf4dac92e85e0590febd51157cd4dbec85216b836d251f79"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U012",
+      "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+    },
+    "retained_separate_inputs": [],
+    "source_record": {
+      "id": "silverman",
+      "bibliography": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+      "urls": [],
+      "files": [
+        {
+          "workspace_relative_path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "bytes": 3658085
+        }
+      ],
+      "version_notes": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file.",
+      "source_status": "bytes_pinned"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_review",
+    "use": {
+      "id": "ACTIVE-GENERATOR-RANK-AND-TORSION",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-GENERATOR-RANK-P1"
+      ],
+      "assertion": {
+        "statement": "For the actual E over K0=Q(sqrt2), the torsion subgroup is the displayed full group of order4 and the Mordell-Weil rank is1.",
+        "objects": "The fixed curve E, its full rational two-torsion, descent quotient E(K0)/2E(K0), and good reductions at(17,s-6) and(23,s-5).",
+        "hypotheses": "The separate two-isogeny calculation supplies quotient size8; the separately certified good reduction counts are20 and24; E is an elliptic curve over the number field K0.",
+        "quantifiers": "For this fixed E/K0 and both stated good places.",
+        "parameter_range": "The17-primary and23-primary torsion cases use the other good place; no claim of injection of residue-characteristic torsion at its own place.",
+        "uniformity": "No varying-curve bound is asserted.",
+        "constants": "Torsion order4, quotient size8, rank1.",
+        "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+        "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+        "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+      },
+      "classification": "dependency",
+      "reason": "The current generator argument uses the retained Silverman source interfaces plus its separately verified finite counts and descent quotient. The supplied location is the preserved project source-application wrapper, not the original book.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/applications.json",
+            "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+          },
+          "start_line": 6934,
+          "end_line": 6976,
+          "excerpt_sha256": "ff3842e87b7597593402b707eff8d62496919635852084a5afea868bb5165600"
+        },
+        "statement": "The rational-point group of an elliptic curve over a number field is finitely generated; at a good reduction place its torsion subgroup of order prime to the residue characteristic injects into the residue-curve group.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "VIII Theorem6.7 p239; VII Proposition3.1 p192",
+          "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this finite-generation/torsion assertion."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 360,
+        "end_line": 368,
+        "excerpt_sha256": "85b27d03ceec79a4ea93f4e1418397266ba8aec8c24d3592f9378660f5952485"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GENERATOR-RANK-AND-TORSION",
+      "use_sha256": "15812004e3a68e56944e7344381f1240c3ccf9a14f7016074c89cb2e74d872dc",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "The rational-point group of an elliptic curve over a number field is finitely generated; at a good reduction place its torsion subgroup of order prime to the residue characteristic injects into the residue-curve group.",
+        "objects": "An elliptic curve over a number field, its rational-point group and its good reductions.",
+        "hypotheses": "A number field and elliptic curve; good reduction at the selected place for the torsion-injection assertion.",
+        "quantifiers": "For every such elliptic curve and good place.",
+        "parameter_range": "Only prime-to-residue-characteristic torsion injects at a given place.",
+        "uniformity": "No varying-curve bound is asserted.",
+        "constants": "These theorems supply no numerical point count or saturation index.",
+        "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+        "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+        "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+      },
+      "needed_assertion": {
+        "statement": "For the actual E over K0=Q(sqrt2), the torsion subgroup is the displayed full group of order4 and the Mordell-Weil rank is1.",
+        "objects": "The fixed curve E, its full rational two-torsion, descent quotient E(K0)/2E(K0), and good reductions at(17,s-6) and(23,s-5).",
+        "hypotheses": "The separate two-isogeny calculation supplies quotient size8; the separately certified good reduction counts are20 and24; E is an elliptic curve over the number field K0.",
+        "quantifiers": "For this fixed E/K0 and both stated good places.",
+        "parameter_range": "The17-primary and23-primary torsion cases use the other good place; no claim of injection of residue-characteristic torsion at its own place.",
+        "uniformity": "No varying-curve bound is asserted.",
+        "constants": "Torsion order4, quotient size8, rank1.",
+        "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+        "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+        "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+      },
+      "required_capabilities": [
+        "finite generation",
+        "prime-to-characteristic torsion injection",
+        "actual torsion4 and rank1"
+      ],
+      "available_capabilities": [
+        "finite generation",
+        "prime-to-characteristic torsion injection"
+      ],
+      "derived_capabilities": [
+        "actual torsion4 and rank1"
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 360,
+          "end_line": 368,
+          "excerpt_sha256": "85b27d03ceec79a4ea93f4e1418397266ba8aec8c24d3592f9378660f5952485"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual E over K0=Q(sqrt2), the torsion subgroup is the displayed full group of order4 and the Mordell-Weil rank is1.",
+          "objects": "The fixed curve E, its full rational two-torsion, descent quotient E(K0)/2E(K0), and good reductions at(17,s-6) and(23,s-5).",
+          "hypotheses": "The separate two-isogeny calculation supplies quotient size8; the separately certified good reduction counts are20 and24; E is an elliptic curve over the number field K0.",
+          "quantifiers": "For this fixed E/K0 and both stated good places.",
+          "parameter_range": "The17-primary and23-primary torsion cases use the other good place; no claim of injection of residue-characteristic torsion at its own place.",
+          "uniformity": "No varying-curve bound is asserted.",
+          "constants": "Torsion order4, quotient size8, rank1.",
+          "normalizations": "Mordell-Weil rank is the free Z-rank; it is not a Selmer corank or a generator-saturation statement.",
+          "exceptional_cases": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+          "limit_order": "Establish good reduction/counts and descent quotient, apply torsion injections and finite generation, then separately address saturation."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The two residue characteristics are handled separately. Rank1 does not prove the displayed point is a generator; saturation still requires the height and finite enumeration arguments.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 360,
+            "end_line": 368,
+            "excerpt_sha256": "85b27d03ceec79a4ea93f4e1418397266ba8aec8c24d3592f9378660f5952485"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 364,
+          "end_line": 368,
+          "excerpt_sha256": "92faed0d793d8e7d7d125e3548c79f82d6e63112cf08ca826e5d8cec954acae9"
+        }
+      ]
+    },
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "docs/theorem-application-audit/applications.json",
+        "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+      }
+    ],
+    "initial_mapping": [
+      {
+        "id": "HIST-arithmetic-AR-U012",
+        "part": "Finite generation/torsion-injection and resulting rank/torsion only."
+      }
+    ],
+    "retained_separate_inputs": [
+      "Two-isogeny descent quotient size8",
+      "Exact good reduction counts20/24",
+      "Height bound and finite generator saturation"
+    ],
+    "scope": "Reuses preserved A059 source interface; does not convert the wrapper's old status into a new independent approval or extend it to all generator steps."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_review",
+    "use": {
+      "id": "ACTIVE-GENERATOR-FINITE-CERTIFICATE",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-GENERATOR-FINITE-P1",
+        "ACTIVE-GENERATOR-FINITE-P2"
+      ],
+      "assertion": {
+        "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+        "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+        "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+        "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+        "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+        "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+        "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+        "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+        "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+        "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+      },
+      "classification": "dependency",
+      "reason": "The retained exact checker and its saved result provide only the finite arithmetic consumed by the generator proof. The saved result names the exact checker SHA.",
+      "shared_contract_justification": "Both locations consume components of the same fixed finite certificate; no arbitrary-curve or height theorem is inferred.",
+      "supplier": {
+        "kind": "computation",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+            "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+          },
+          "start_line": 1,
+          "end_line": 282,
+          "excerpt_sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+        },
+        "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+          "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+        },
+        "start_line": 1,
+        "end_line": 104,
+        "excerpt_sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GENERATOR-FINITE-CERTIFICATE",
+      "use_sha256": "5573684483d9efe5935979fb3303681a7b55140ca0c338ad3bc4297d8e233884",
+      "supplier_passage_role": "computation_certificate",
+      "available_assertion": {
+        "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+        "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+        "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+        "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+        "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+        "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+        "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+        "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+        "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+        "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+      },
+      "needed_assertion": {
+        "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+        "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+        "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+        "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+        "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+        "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+        "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+        "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+        "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+        "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+      },
+      "required_capabilities": [
+        "exact finite generator arithmetic"
+      ],
+      "available_capabilities": [
+        "exact finite generator arithmetic"
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "identification",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+            "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+          },
+          "start_line": 1,
+          "end_line": 104,
+          "excerpt_sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+          "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+          "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+          "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+          "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+          "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+          "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+          "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+          "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+          "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+              "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+            },
+            "start_line": 1,
+            "end_line": 104,
+            "excerpt_sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+              "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+            },
+            "start_line": 1,
+            "end_line": 282,
+            "excerpt_sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 364,
+          "end_line": 364,
+          "excerpt_sha256": "adfe4cd46c3a94cf1158eee9e66379fd1694baf73c018e34aa12a7a382c2eb3a"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 387,
+          "end_line": 418,
+          "excerpt_sha256": "0b1febc69b59979e8b036125fca2efc288f419ce8d2b843d157c0f9987e646f1"
+        }
+      ]
+    },
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+        "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+      },
+      {
+        "side": "head",
+        "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+        "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+      }
+    ],
+    "initial_mapping": [
+      {
+        "id": "HIST-arithmetic-AR-U012",
+        "part": "Reduction counts only; descent and torsion inference remain separate."
+      },
+      {
+        "id": "HIST-arithmetic-AR-U013",
+        "part": "Finite enumeration and exact arithmetic only; canonical-height identities and duplication inequalities remain separate."
+      }
+    ],
+    "checks": {
+      "saved_source_sha256_matches_actual_checker": true,
+      "no_new_execution_claimed": true
+    },
+    "scope": "Uses the retained computation certificate and its exact checker; this turn verified their binding and current consumer correspondence, not a fresh independent replay."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-ODD-FREE-INDEX",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-ODD-FREE-INDEX-P1"
+      ],
+      "assertion": {
+        "statement": "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result.",
+        "objects": "R on C:y^2=x^3-(3-s)^2x and its pullback to E by the displayed isomorphism.",
+        "hypotheses": "ACTIVE-GENERATOR-RANK-AND-TORSION supplies rank1 and full two-torsion; exact squareclass map and scaling above.",
+        "quantifiers": "Every expression of the pulled-back R in a free generator plus torsion.",
+        "parameter_range": "This point and this rank-one group only.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Odd nonzero index; no index upper bound.",
+        "normalizations": "Scaling x by epsilon^4 preserves squareclass; d and its conjugate are positive.",
+        "exceptional_cases": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+        "limit_order": "Use rank/torsion, then opposite signs of epsilon versus equal signs of all torsion classes; only later apply height/saturation."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 42,
+          "end_line": 43,
+          "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+        },
+        "statement": "With rank1 and full two-torsion, a point whose x-squareclass has mixed real signs has odd nonzero free index when every torsion squareclass has equal signs.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 42,
+        "end_line": 43,
+        "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-ODD-FREE-INDEX",
+      "use_sha256": "c80020f5bd0038f0083cb970fc2a06dc4d79276cd76a7c80ed3699648e7e6571",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "With rank1 and full two-torsion, a point whose x-squareclass has mixed real signs has odd nonzero free index when every torsion squareclass has equal signs.",
+        "objects": "Free quotient of E(K0), rational two-torsion and x-squareclass homomorphism.",
+        "hypotheses": "Rank1, all torsion of order2, alpha(2P)=1; displayed sign conditions.",
+        "quantifiers": "Every expression R=mG+T for a generator G of the free quotient and torsion T.",
+        "parameter_range": "The fixed rational-point group and sign map.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "m is odd and nonzero; no assertion |m|=1.",
+        "normalizations": "Free index is |m|; changing the generator changes its sign only.",
+        "exceptional_cases": "An even m would make alpha(R)=alpha(T); mixed signs exclude this including m=0.",
+        "limit_order": "Use previously established rank/torsion and sign map before reasoning about free index."
+      },
+      "needed_assertion": {
+        "statement": "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result.",
+        "objects": "R on C:y^2=x^3-(3-s)^2x and its pullback to E by the displayed isomorphism.",
+        "hypotheses": "ACTIVE-GENERATOR-RANK-AND-TORSION supplies rank1 and full two-torsion; exact squareclass map and scaling above.",
+        "quantifiers": "Every expression of the pulled-back R in a free generator plus torsion.",
+        "parameter_range": "This point and this rank-one group only.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Odd nonzero index; no index upper bound.",
+        "normalizations": "Scaling x by epsilon^4 preserves squareclass; d and its conjugate are positive.",
+        "exceptional_cases": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+        "limit_order": "Use rank/torsion, then opposite signs of epsilon versus equal signs of all torsion classes; only later apply height/saturation."
+      },
+      "required_capabilities": [
+        "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result."
+      ],
+      "available_capabilities": [
+        "With rank1 and full two-torsion, a point whose x-squareclass has mixed real signs has odd nonzero free index when every torsion squareclass has equal signs."
+      ],
+      "derived_capabilities": [
+        "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 42,
+          "end_line": 43,
+          "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The displayed R=(1+s,2s) on C has odd nonzero free index, under the separately proved current rank1 and torsion4 result.",
+          "objects": "R on C:y^2=x^3-(3-s)^2x and its pullback to E by the displayed isomorphism.",
+          "hypotheses": "ACTIVE-GENERATOR-RANK-AND-TORSION supplies rank1 and full two-torsion; exact squareclass map and scaling above.",
+          "quantifiers": "Every expression of the pulled-back R in a free generator plus torsion.",
+          "parameter_range": "This point and this rank-one group only.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Odd nonzero index; no index upper bound.",
+          "normalizations": "Scaling x by epsilon^4 preserves squareclass; d and its conjugate are positive.",
+          "exceptional_cases": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+          "limit_order": "Use rank/torsion, then opposite signs of epsilon versus equal signs of all torsion classes; only later apply height/saturation."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Cannot conclude generation or saturation; height estimate and exhaustive finite computation remain necessary.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 42,
+            "end_line": 43,
+            "excerpt_sha256": "12b5df423ba4586da5682a38cceba6a4f129d5864361f3ce17cc5bf21bad05f2"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 364,
+            "end_line": 368,
+            "excerpt_sha256": "92faed0d793d8e7d7d125e3548c79f82d6e63112cf08ca826e5d8cec954acae9"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 364,
+          "end_line": 368,
+          "excerpt_sha256": "92faed0d793d8e7d7d125e3548c79f82d6e63112cf08ca826e5d8cec954acae9"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U012",
+      "scope": "Only the displayed local arithmetic clause; rank/torsion, finite enumeration and saturation retain separate inputs."
+    },
+    "retained_separate_inputs": [
+      "ACTIVE-GENERATOR-RANK-AND-TORSION",
+      "ACTIVE-ELEMENTARY-LOCAL-DESCENT-QUOTIENT"
+    ],
+    "source_record": null,
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_review",
+    "use": {
+      "id": "ACTIVE-GENERATOR-HEIGHT-SATURATION",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-GENERATOR-HEIGHT-P1"
+      ],
+      "assertion": {
+        "statement": "For the actual rank-one curve C and point R, the stated duplication estimates and finite certificate exclude every odd free index |m|>=3 in R=mS+T; hence R is a free generator and the inverse coordinate change sends2R to the generator P0 of2E(K0).",
+        "objects": "C:y^2=x^3-(3-sqrt2)^2x, R=(1+sqrt2,2sqrt2), torsion T, canonical height and both real embeddings of K0.",
+        "hypotheses": "Rank one and torsion are supplied separately; R has odd free index. The displayed local duplication inequalities, exact x(2R) height and exhaustive small-height certificate are separate inputs to this height argument.",
+        "quantifiers": "Every possible odd index m and corresponding S,T in C(K0); exclude all |m|>=3.",
+        "parameter_range": "The fixed curve over Q(sqrt2); both embeddings and every finite place enter h_x.",
+        "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+        "constants": "h_x(S)<=log(41^3*676)/108+log392/3<log9; use the exact integer inequality and seven-coordinate enumeration.",
+        "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+        "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+        "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+      },
+      "classification": "dependency",
+      "reason": "The retained A060 canonical-height interface is applied to the actual saturation argument, with local bounds and finite arithmetic kept separate.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/applications.json",
+            "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+          },
+          "start_line": 6978,
+          "end_line": 7020,
+          "excerpt_sha256": "b1c7dba6c093bc3aa66c50d931d631926e211b4ac0819755749d73bfe8568b63"
+        },
+        "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "VIII Theorem9.1, following definition, Remark9.2 and Theorem9.3, pp247–249",
+          "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this canonical-height assertion."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 370,
+        "end_line": 418,
+        "excerpt_sha256": "97f7ceb7e8ae3e617ecd59e0ec6e6d4d9307dd5ddcd1cd8a6652b3edd2ba37dd"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GENERATOR-HEIGHT-SATURATION",
+      "use_sha256": "c8c18dfa083deacd99f507032e519c6186d2dd5d9aedb66c0f0f9397b99ee712",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+        "objects": "An elliptic curve over a number field and its canonical height.",
+        "hypotheses": "An elliptic curve over a number field; nontorsion where strict positivity is used.",
+        "quantifiers": "Every rational point over that number field and every integer multiple.",
+        "parameter_range": "The source canonical-height setting; current application is C/K0.",
+        "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+        "constants": "No numerical duplication error or finite candidate count is supplied by this theorem.",
+        "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+        "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+        "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+      },
+      "needed_assertion": {
+        "statement": "For the actual rank-one curve C and point R, the stated duplication estimates and finite certificate exclude every odd free index |m|>=3 in R=mS+T; hence R is a free generator and the inverse coordinate change sends2R to the generator P0 of2E(K0).",
+        "objects": "C:y^2=x^3-(3-sqrt2)^2x, R=(1+sqrt2,2sqrt2), torsion T, canonical height and both real embeddings of K0.",
+        "hypotheses": "Rank one and torsion are supplied separately; R has odd free index. The displayed local duplication inequalities, exact x(2R) height and exhaustive small-height certificate are separate inputs to this height argument.",
+        "quantifiers": "Every possible odd index m and corresponding S,T in C(K0); exclude all |m|>=3.",
+        "parameter_range": "The fixed curve over Q(sqrt2); both embeddings and every finite place enter h_x.",
+        "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+        "constants": "h_x(S)<=log(41^3*676)/108+log392/3<log9; use the exact integer inequality and seven-coordinate enumeration.",
+        "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+        "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+        "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+      },
+      "required_capabilities": [
+        "canonical-height quadraticity and positivity",
+        "actual saturation from the bounded enumeration"
+      ],
+      "available_capabilities": [
+        "canonical-height quadraticity and positivity"
+      ],
+      "derived_capabilities": [
+        "actual saturation from the bounded enumeration"
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 370,
+          "end_line": 418,
+          "excerpt_sha256": "97f7ceb7e8ae3e617ecd59e0ec6e6d4d9307dd5ddcd1cd8a6652b3edd2ba37dd"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual rank-one curve C and point R, the stated duplication estimates and finite certificate exclude every odd free index |m|>=3 in R=mS+T; hence R is a free generator and the inverse coordinate change sends2R to the generator P0 of2E(K0).",
+          "objects": "C:y^2=x^3-(3-sqrt2)^2x, R=(1+sqrt2,2sqrt2), torsion T, canonical height and both real embeddings of K0.",
+          "hypotheses": "Rank one and torsion are supplied separately; R has odd free index. The displayed local duplication inequalities, exact x(2R) height and exhaustive small-height certificate are separate inputs to this height argument.",
+          "quantifiers": "Every possible odd index m and corresponding S,T in C(K0); exclude all |m|>=3.",
+          "parameter_range": "The fixed curve over Q(sqrt2); both embeddings and every finite place enter h_x.",
+          "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+          "constants": "h_x(S)<=log(41^3*676)/108+log392/3<log9; use the exact integer inequality and seven-coordinate enumeration.",
+          "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+          "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+          "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 370,
+            "end_line": 418,
+            "excerpt_sha256": "97f7ceb7e8ae3e617ecd59e0ec6e6d4d9307dd5ddcd1cd8a6652b3edd2ba37dd"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 385,
+          "end_line": 418,
+          "excerpt_sha256": "90a480def47fed778a58147cae5f80f9093c119d08c6001e61c91c93edf6349e"
+        }
+      ]
+    },
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "docs/theorem-application-audit/applications.json",
+        "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+      }
+    ],
+    "initial_mapping": [
+      {
+        "id": "HIST-arithmetic-AR-U013",
+        "part": "Canonical-height convention and saturation deduction, using separately retained local duplication inequalities and finite certificate."
+      }
+    ],
+    "retained_separate_inputs": [
+      "ACTIVE-GENERATOR-RANK-AND-TORSION",
+      "ACTIVE-GENERATOR-FINITE-CERTIFICATE",
+      "Local archimedean and finite-place duplication bounds",
+      "Odd free index from real signs"
+    ],
+    "scope": "The source wrapper preserves A060 scope. This connection is the actual deduction; it does not assert the canonical-height source proves the local duplication bounds or enumerates the candidates."
+  },
+  {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-NATURAL-INDEX-FOUR-SQUARES",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-NATURAL-INDEX-FOUR-SQUARES-P1"
+      ],
+      "assertion": {
+        "statement": "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0}).",
+        "objects": "The actual point-code carrier iota(Z), four initially untyped root tuples, multiplication square calls and canonical additions.",
+        "hypotheses": "All-input multiplication soundness types each root and computes the product index; multiplication completeness and canonical-input addition soundness/completeness hold; iota identifies integer indices.",
+        "quantifiers": "For every input point-code tuple, predicate satisfaction implies it is iota(n) for n>=0; every n>=0 has witnesses.",
+        "parameter_range": "Arbitrary rational tuples on entry, integer indices only after typing.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Four integer squares; index0 included.",
+        "normalizations": "Squares are products of integer indices under iota, not coordinate-wise rational squares.",
+        "exceptional_cases": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+        "limit_order": "Establish multiplication independently of Nat, type roots, apply square/addition contracts, then invoke Lagrange for completeness."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 6,
+          "end_line": 8,
+          "excerpt_sha256": "c3dde1dfc96a30a6e8028895fa02907648df12054a15fa1feae8b47a19385f3e"
+        },
+        "statement": "Every nonnegative integer is a sum of four integer squares.",
+        "publication": {
+          "title": "Diophantine representation of enumerable predicates",
+          "authors": "Yu. V. Matiyasevich",
+          "venue": "Mathematics of the USSR-Izvestiya 5 (1971), 1–28",
+          "authoritative_version": "Published English translation; PDF18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+          "locator": "Printed p.2, explicit Lagrange four-square assertion",
+          "corrections": "The source later uses positive naturals via +1; only its nonnegative-integer four-square assertion is used here."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 12,
+        "end_line": 14,
+        "excerpt_sha256": "2fa13973792ba37fa944ffe656399b8e201d6ec74a6fc70214aaaace19b72f76"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-NATURAL-INDEX-FOUR-SQUARES",
+      "use_sha256": "d717b6f5d3db8e5b18b52f7787cfed99481fee81e40f6d165448cefde786941e",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Every nonnegative integer is a sum of four integer squares.",
+        "objects": "Nonnegative integers and four integer summands.",
+        "hypotheses": "The input integer is nonnegative.",
+        "quantifiers": "For every integer n>=0 there exist u1,u2,u3,u4 in Z with n=sum ui^2.",
+        "parameter_range": "Nonnegative integers, including zero.",
+        "uniformity": "One representation theorem for every nonnegative integer.",
+        "constants": "Four summands.",
+        "normalizations": "Ordinary integer squares; no assertion that arbitrary rational witnesses are integers.",
+        "exceptional_cases": "Zero is represented by four zeroes; positive-natural convention in the following source application is separate.",
+        "limit_order": "No limit or asymptotic operation."
+      },
+      "needed_assertion": {
+        "statement": "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0}).",
+        "objects": "The actual point-code carrier iota(Z), four initially untyped root tuples, multiplication square calls and canonical additions.",
+        "hypotheses": "All-input multiplication soundness types each root and computes the product index; multiplication completeness and canonical-input addition soundness/completeness hold; iota identifies integer indices.",
+        "quantifiers": "For every input point-code tuple, predicate satisfaction implies it is iota(n) for n>=0; every n>=0 has witnesses.",
+        "parameter_range": "Arbitrary rational tuples on entry, integer indices only after typing.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "Four integer squares; index0 included.",
+        "normalizations": "Squares are products of integer indices under iota, not coordinate-wise rational squares.",
+        "exceptional_cases": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+        "limit_order": "Establish multiplication independently of Nat, type roots, apply square/addition contracts, then invoke Lagrange for completeness."
+      },
+      "required_capabilities": [
+        "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0})."
+      ],
+      "available_capabilities": [
+        "Every nonnegative integer is a sum of four integer squares."
+      ],
+      "derived_capabilities": [
+        "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0})."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 12,
+          "end_line": 14,
+          "excerpt_sha256": "2fa13973792ba37fa944ffe656399b8e201d6ec74a6fc70214aaaace19b72f76"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "Once the separate multiplication and canonical-addition contracts hold, the current four-square natural predicate defines exactly iota(Z_{>=0}).",
+          "objects": "The actual point-code carrier iota(Z), four initially untyped root tuples, multiplication square calls and canonical additions.",
+          "hypotheses": "All-input multiplication soundness types each root and computes the product index; multiplication completeness and canonical-input addition soundness/completeness hold; iota identifies integer indices.",
+          "quantifiers": "For every input point-code tuple, predicate satisfaction implies it is iota(n) for n>=0; every n>=0 has witnesses.",
+          "parameter_range": "Arbitrary rational tuples on entry, integer indices only after typing.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "Four integer squares; index0 included.",
+          "normalizations": "Squares are products of integer indices under iota, not coordinate-wise rational squares.",
+          "exceptional_cases": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+          "limit_order": "Establish multiplication independently of Nat, type roots, apply square/addition contracts, then invoke Lagrange for completeness."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The generator proposition alone does not supply multiplication completeness; untyped rational roots cannot bypass membership.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 12,
+            "end_line": 14,
+            "excerpt_sha256": "2fa13973792ba37fa944ffe656399b8e201d6ec74a6fc70214aaaace19b72f76"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 437,
+            "end_line": 442,
+            "excerpt_sha256": "4ea1338a97d7a87434fbe1dff5f06997f84885a9b13b6aebf17cc34023baca5c"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 437,
+          "end_line": 442,
+          "excerpt_sha256": "4ea1338a97d7a87434fbe1dff5f06997f84885a9b13b6aebf17cc34023baca5c"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U014",
+      "scope": "Natural-index clause only; membership and addition correctness remain separate."
+    },
+    "retained_separate_inputs": [
+      "Actual membership and multiplication contracts, including all-input soundness and completeness; canonical-input addition contract."
+    ],
+    "source_record": {
+      "id": "matiyasevich1971",
+      "bibliography": "Yu. V. Matiyasevich,\n\\emph{Diophantine representation of enumerable predicates},\nMathematics of the USSR-Izvestiya 5 (1971), 1--28,\nBasic Theorem, p.~3; integer-witness conversion, p.~2.\n\\url{https://doi.org/10.1070/IM1971v005n01ABEH001004}.",
+      "urls": [
+        "https://doi.org/10.1070/IM1971v005n01ABEH001004"
+      ],
+      "files": [
+        {
+          "workspace_relative_path": "work/astra-mazur-corollary-001/primary/matiyasevich-1971.pdf",
+          "sha256": "18e824c01046ad49b079f91b567b27a928e737c598eb347c8a4f42128081ec83",
+          "bytes": 1030147
+        }
+      ],
+      "version_notes": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename.",
+      "source_status": "bytes_pinned"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  }
+]

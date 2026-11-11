@@ -1,0 +1,217 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:40:48.223Z",
+  "target_manifest": {
+    "path": "v14-b11-assembly-normalizer-source-index-001/MANIFEST.json",
+    "sha256": "d477deb0b7273d54a3355cb61c463987aaabb852731a1e63b4d115b0f3321450"
+  },
+  "decision": "accepted bounded 300-line role partition with explicit incoming geometry retained",
+  "checks": [
+    {
+      "id": "SRC-B11-ASSEMBLY-1",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-11",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-25",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-46",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-69",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-86",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-113",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-128",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-135",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-148",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-172",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-191",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-ASSEMBLY-197",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-1",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-10",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-19",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-24",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-35",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-41",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-49",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-65",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-80",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    },
+    {
+      "id": "SRC-B11-NORMALIZER-85",
+      "pin": true,
+      "excerpt": true,
+      "contiguous": true,
+      "uses": true
+    }
+  ],
+  "covered_files": [
+    [
+      "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+      206
+    ],
+    [
+      "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+      94
+    ]
+  ],
+  "findings": [
+    "Read both complete proofs. Provider declarations at ASSEMBLY25–45 are not represented as self-consuming applications; actual phase uses are separately located.",
+    "The finite group action, arbitrary-base rigidity, effective descent and generic identity retain their separate order. Norm of an ample sheaf is used only for quotient projectivity, not to replace the polarization.",
+    "Normalizer local computations precede central-idele absorption and degree. The actual quotient and same j-map remain incoming requirements, not consequences of the number324.",
+    "All listed actual uses have their finer reviewed consumer location contained in the corresponding block and retain their exact range. The block partition does not replace these locations."
+  ],
+  "pending": [
+    {
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/ASSEMBLY.md",
+          "sha256": "308ffe3adc3238a64c450d0b1cce61462ebed4b8e9cc97b2eb16860aeefb4ada"
+        },
+        "start_line": 11,
+        "end_line": 24,
+        "excerpt_sha256": "22fa15464e65d5f1665dbd895a0eff66b427c04778bb4e21ac11786a75ffb749"
+      },
+      "requirement": "Declared full-three adelic geometry and same normalizer coordinate are retained conditional inputs; actual later invocation binds generic identity. No claim this declaration proves the geometry."
+    },
+    {
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/b11-integral-model-v1/NORMALIZER.md",
+          "sha256": "4ef53848d2cd7f602d5eb1bf5889c1b97e9a54f5f04ed80766b806b06224758e"
+        },
+        "start_line": 10,
+        "end_line": 18,
+        "excerpt_sha256": "71dbc39cf0557093d3c3443429d403d1cc499a85c2193e3077f5e365b16869ef"
+      },
+      "requirement": "Stipulated principal datum and same quotient/j-map must agree with the separately reviewed generic construction; no local finite group count proves that identification."
+    }
+  ],
+  "limits": "This is a role/connection index decision, not independent approval of all stated geometric antecedents or global coverage."
+}

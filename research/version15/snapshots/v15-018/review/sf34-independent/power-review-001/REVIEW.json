@@ -1,0 +1,48 @@
+{
+  "schema": "bounded-power-assembly-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "b12047493726f22a2dbc695fa86bdfa64e0d383eb4daec0bcdf48b1411156230",
+  "typing_sha256": "8a9b956aa6a613c9935883715f9fccb91dd635891088264990a2cfa1d3ebb0ed",
+  "reviewer": {
+    "agent": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "task": "/root/v14_arithmetic_review",
+    "conflict_boundary": "Not author of original Jose table or this GI dictionary. Earlier V15 transcription authored by reviewer remains independently assessed by sourcefirst."
+  },
+  "scope": "Exact test-power/factor/product identities and reverse component filling conditional on stated root/ratio meanings. Not full SF34 closure.",
+  "verification": {
+    "row_checks": 72,
+    "D_inverse_conjugation_checks": 4,
+    "author_checker_read_in_full": true,
+    "independent_execution_exit_code": 0,
+    "all_023_input_and_consumer_pins_checked": true,
+    "all_024_file_pins_match": true,
+    "checker_bytes_unchanged_from_tested_023": true,
+    "delta": "Only zero-weight branch scope and predecessor metadata changed."
+  },
+  "reasoning": [
+    "All tested rows equal nonzero rational multiples of the stated field-component polynomials; this preserves both directions over Q.",
+    "D norm49 makes its inverse defined; ordinary/doubled/quadrupled imaginary components and D-scaled fourth powers have explicit inverse constant scalings.",
+    "For any retained root/ratio values satisfying the prerequisite chart equations, actual field powers and successive products fill the tested rows; zero tests and components need no division.",
+    "The conditional square identities divide by D*c only to identify them with reciprocal abscissas, so c!=0 and the retained chart interpretation remain explicit incoming obligations.",
+    "On q!=0 the separate power-chain relation implies h=q^7. On q=0 arbitrary existing solutions retain their actual stored h; no literal q^7 or contact extraction is asserted. Reverse construction may choose h=0 when selecting a new weight, or preserve an already specified h and compute factors from it."
+  ],
+  "remaining": [
+    "Root/biquadratic/primary and alternate ratio semantics and complete reverse filling remain separate.",
+    "No whole-table or whole-manuscript arithmetic acceptance inferred.",
+    "The current manuscript transcription is not self-approved by this receipt."
+  ],
+  "evidence": [
+    {
+      "path": "check.py",
+      "sha256": "f024eda6b546391253376872918bf3902ae9fbc3c4224bffc8bc1c7e18dfc0d1"
+    },
+    {
+      "path": "CHECKS.json",
+      "sha256": "906d086e55b1741c8d43dcf0969ed8d62c22ce46e7f8b5ebd478c6421c1cbbcf"
+    },
+    {
+      "path": "TEST-OUTPUT.txt",
+      "sha256": "4ba0ada83a81636027e3d0fbb5286f133cb39831e8dfe25c0c17ba2405ad09a3"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "schema": "gtz-local-proof-source-uses/v1",
+  "uses": [
+    {
+      "id": "LIN-U01",
+      "consumer": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+        "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+        "bytes": 19732,
+        "start_line": 27,
+        "end_line": 76,
+        "excerpt_sha256": "963bb60aef8c0e95548c07f0b9ef8c1516b4e999c6e7341fbd0b4786fc19b238"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+        "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+        "bytes": 13507,
+        "locator": "Theorem1, normalization and uniformity proof; accepted scope pinned separately"
+      },
+      "assertion": {
+        "statement": "Replace the original polynomial nilsequence by an exactly equal sequence on fixed taut geometry, with h(0)=1 and a boundedly translated test function.",
+        "objects": "G0=G1 after restriction, g0=q gamma, h=q^-1 g gamma^-1, F_q(x)=F(qx).",
+        "hypotheses": "Rational finite degree filtration; bounded Lipschitz complex test function; q from one fixed compact representative set.",
+        "quantifiers": "Every adapted polynomial g and every such F.",
+        "parameter_range": "Fixed s>=1; all integer inputs and arbitrary polynomial coefficients.",
+        "uniformity": "Geometry and metric constants fixed independently of g and N.",
+        "constants": "Lip(F_q) at most a fixed geometric multiple of Lip(F); norm bound unchanged.",
+        "normalizations": "Exact value identity and exact lattice intersections; no quotient of the original function by a scalar.",
+        "exceptional_cases": "Trivial positive groups and constant sequences are permitted; actual support may shrink but not enlarge.",
+        "limit_order": "Fix original filtered data, choose bounded q, then use the increment construction."
+      },
+      "status": "author_proposed; independent acceptance pending"
+    },
+    {
+      "id": "LIN-U02",
+      "consumer": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+        "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+        "bytes": 19732,
+        "start_line": 76,
+        "end_line": 218,
+        "excerpt_sha256": "d360673e463c53c5c54c4c5d661202565e1c0e63142ff4d5a3e31c1c79a00c32"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Corollary B.4 and Proposition B.6, pp.1334-1336; polynomial derivative convention Definition6.18"
+      },
+      "assertion": {
+        "statement": "The groups P_i=poly(Z->G_{bullet+i}) form a filtered group; P1 is normal in P0.",
+        "objects": "Shifted filtrations G_(j+i), left and right increments, pointwise polynomial group operation.",
+        "hypotheses": "Every shifted filtration has nesting and [G_(a+i),G_(b+j)] subset G_(a+b+i+j); degree finite.",
+        "quantifiers": "All i,j>=0 and all polynomial maps in the stated groups.",
+        "parameter_range": "Integer domain with degree filtration; no tautness required for a shifted target.",
+        "uniformity": "Algebraic identities independent of coefficients and interval length.",
+        "constants": "No constants or approximation loss.",
+        "normalizations": "Left difference is h(t+1)h(t)^-1; normality converts it to h(t)^-1h(t+1).",
+        "exceptional_cases": "P_i is trivial for i>s; index zero is included.",
+        "limit_order": "Verify the shifted target axioms before applying B.4/B.6; do not assume the target GI."
+      },
+      "status": "author_proposed; independent acceptance pending"
+    },
+    {
+      "id": "LIN-U03",
+      "consumer": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+        "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+        "bytes": 19732,
+        "start_line": 76,
+        "end_line": 218,
+        "excerpt_sha256": "d360673e463c53c5c54c4c5d661202565e1c0e63142ff4d5a3e31c1c79a00c32"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Lemma B.9 pp.1337-1338; exponential/BCH facts Section3 pp.1242-1243"
+      },
+      "assertion": {
+        "statement": "Taylor coefficients in G_(j+i) give exactly the Lie polynomial space V_i={sum X_j t^j:X_j in g_(j+i)}, with smooth finite-dimensional group structure.",
+        "objects": "P_i, Taylor factors u_j^(binom(t,j)), V_i, pointwise exponential and BCH.",
+        "hypotheses": "Connected simply connected nilpotent group, closed filtration subgroups and finite degree s.",
+        "quantifiers": "Every i and every polynomial in P_i or Lie polynomial in V_i.",
+        "parameter_range": "0<=i<=s, arbitrary real coefficients; all integer inputs.",
+        "uniformity": "Coordinate spaces and changes depend only on fixed filtration.",
+        "constants": "At most s-i+1 Taylor coefficients; BCH terminates.",
+        "normalizations": "Binomial and monomial bases are compared through BCH, retaining the weight j+i.",
+        "exceptional_cases": "i=0 is used only to identify h and its normal subgroup; the suspension uses i=1.",
+        "limit_order": "Construct P_i/V_i before defining the smooth real-clock action."
+      },
+      "status": "author_proposed; independent acceptance pending"
+    },
+    {
+      "id": "LIN-U04",
+      "consumer": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+        "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+        "bytes": 19732,
+        "start_line": 218,
+        "end_line": 302,
+        "excerpt_sha256": "d015adf509ca45ca50911e168eb84867e413d1b1d9653cac78b5024e4576acca"
+      },
+      "supplier": {
+        "local_result": "Lattice lemma and explicit Lie filtration in proof sections2-3",
+        "spans": [
+          {
+            "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+            "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+            "bytes": 19732,
+            "start_line": 76,
+            "end_line": 218,
+            "excerpt_sha256": "d360673e463c53c5c54c4c5d661202565e1c0e63142ff4d5a3e31c1c79a00c32"
+          },
+          {
+            "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+            "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+            "bytes": 19732,
+            "start_line": 218,
+            "end_line": 302,
+            "excerpt_sha256": "d015adf509ca45ca50911e168eb84867e413d1b1d9653cac78b5024e4576acca"
+          }
+        ]
+      },
+      "assertion": {
+        "statement": "Lambda1 is a lattice invariant under integer shifts, and P1 semidirect R is connected simply connected and step at most s with lattice Lambda1 semidirect Z.",
+        "objects": "V_i, differentiation, clock tau, Lambda_i of integer-lattice-valued polynomials, successive Taylor reduction.",
+        "hypotheses": "G_i intersect Gamma cocompact in every G_i; coefficient bracket law and differentiation increase proved in section2.",
+        "quantifiers": "Every group element and every filtration index, including zero.",
+        "parameter_range": "s>=1; real clock for the Lie group and integer clock for the lattice.",
+        "uniformity": "Compact reduction sets and group geometry are fixed independently of the orbit polynomial.",
+        "constants": "Lie lower-central series terminates at s+1; no larger finite-step substitute.",
+        "normalizations": "Semidirect product (p,u)(q,v)=(p T^u q,u+v); use P1, never P0.",
+        "exceptional_cases": "s=1 gives an abelian extension; trivial P_i and point input handled.",
+        "limit_order": "Prove real action and lattice separately, then construct the quotient nilmanifold."
+      },
+      "status": "author_proposed; independent acceptance pending"
+    },
+    {
+      "id": "LIN-U05",
+      "consumer": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+        "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+        "bytes": 19732,
+        "start_line": 302,
+        "end_line": 350,
+        "excerpt_sha256": "04883fc19af1c83c70f134ab11d5d6721dc15499a3b9dd7b8c1a3dfd56571d65"
+      },
+      "supplier": {
+        "local_result": "Exact cocycle, compact fiber and evaluation proof in section4",
+        "span": {
+          "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+          "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+          "bytes": 19732,
+          "start_line": 302,
+          "end_line": 350,
+          "excerpt_sha256": "04883fc19af1c83c70f134ab11d5d6721dc15499a3b9dd7b8c1a3dfd56571d65"
+        }
+      },
+      "assertion": {
+        "statement": "The linear orbit generated by (b,1), b=h^-1 T h, lies in the fixed clock-zero fiber and evaluates to h(n) at every integer n.",
+        "objects": "K=P1/Lambda1 embedded in the clock fiber, pi(p)=p(0)Gamma, b_n(t)=h(t)^-1h(t+n).",
+        "hypotheses": "h(0)=1; b in P1 by normality; integer clock elements lie in the lattice.",
+        "quantifiers": "Every normalized h and every integer n, positive, zero or negative.",
+        "parameter_range": "All allowed polynomial coefficients; no bounded interval restriction.",
+        "uniformity": "K and pi are fixed and smooth, hence pi has a fixed Lipschitz bound.",
+        "constants": "Exact identity, no multiplicative scalar or error.",
+        "normalizations": "Right increment and right clock removal are used in the stated product convention.",
+        "exceptional_cases": "Negative powers follow from the same cocycle identity; non-normal Gamma causes no ambiguity in evaluation.",
+        "limit_order": "Identify the actual orbit first, then compose and extend the test function."
+      },
+      "status": "author_proposed; independent acceptance pending"
+    },
+    {
+      "id": "LIN-U06",
+      "consumer": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+        "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+        "bytes": 19732,
+        "start_line": 350,
+        "end_line": 404,
+        "excerpt_sha256": "27478614504b1bee153af595484b4790c5d319452f65031e549ebe52b2f8e553"
+      },
+      "supplier": {
+        "local_result": "Explicit extension and finite-family join in section5",
+        "span": {
+          "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+          "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+          "bytes": 19732,
+          "start_line": 350,
+          "end_line": 404,
+          "excerpt_sha256": "27478614504b1bee153af595484b4790c5d319452f65031e549ebe52b2f8e553"
+        }
+      },
+      "assertion": {
+        "statement": "A fixed polynomial finite-family inverse conclusion gives the same-step linear finite-family conclusion with the same correlation and normalized Gowers input.",
+        "objects": "F_q composed pi on K, McShane real/imaginary extensions, unit-disk metric projection, finite collection of lifted nilmanifolds.",
+        "hypotheses": "Each polynomial supplier manifold is fixed; F is1-bounded with fixed Lipschitz bound; target correlation bound is positive and fixed.",
+        "quantifiers": "Every member of the finite family, every polynomial orbit and every admissible test function.",
+        "parameter_range": "Fixed s and delta before N; no claim of a supplied polynomial inverse theorem within this unit.",
+        "uniformity": "Take a finite maximum of geometric constants; the family and bounds are independent of N and orbit coefficients.",
+        "constants": "Complex extension Lipschitz bound at most sqrt(2) times the bound on K, followed by a nonexpansive projection.",
+        "normalizations": "Pointwise equality preserves correlation; no Gowers-norm rescaling.",
+        "exceptional_cases": "Constant F has a constant extension and zero Lipschitz seminorm; point input and s=1 covered.",
+        "limit_order": "Fix the polynomial finite family, lift each fixed geometry, then take the finite maximum and allow N to vary."
+      },
+      "status": "author_proposed; independent acceptance pending"
+    }
+  ]
+}

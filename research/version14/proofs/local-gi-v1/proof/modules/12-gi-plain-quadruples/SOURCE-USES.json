@@ -1,0 +1,41 @@
+{
+  "schema": "source-use-ten-fields/v1",
+  "uses": [
+    {
+      "id": "PLAIN-U01",
+      "assertion": {
+        "statement": "Plain correlation of Delta_h f with a globally bounded internal family gives plain bias for a positive N^3 number of the exact shifted additive quadruples.",
+        "objects": "Finite J=[N], I=[-N,N], M=J+I, K=[-2N,2N], zero-extended f and globally defined chi_h.",
+        "hypotheses": "Positive density alpha, uniformly positive correlation delta, fixed global bound B and finite component dimension.",
+        "quantifiers": "Every positive N, every such family and all integer arguments of chi_h; the conclusion selects distinct quadruples.",
+        "parameter_range": "No nilsequence or degree hypothesis is required. Section13 applies it to a full scalar component retaining its lower nilcharacter factor.",
+        "uniformity": "Threshold and count constants depend only on alpha,delta,B and the fixed finite vector dimension, never N.",
+        "constants": "a=alpha delta/3, eta=a^4/4; at least eta/(2B^4) of K times I squared have correlation at least eta/2.",
+        "normalizations": "Both displayed domain transfers are exact; the second Cauchy-Schwarz removes the bounded weight f(n-k) by inequality, not by dropping a support factor in an equality.",
+        "exceptional_cases": "Complex phases preserve absolute correlation; vector reduction uses finite pigeonhole and no division by components; all N>=1 covered.",
+        "limit_order": "Fix uniform bounds and finite assignments, prove the finite inequality, then take ultralimits. No inverse or factorization theorem is used."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/plain-quadruples-001/proof.tex",
+        "sha256": "b6198cf55c000086c0adffa332ed3dde8ce14413088a2c58045de905c839a453",
+        "bytes": 6577,
+        "locator": "Theorem1 and its full local proof"
+      },
+      "historical_comparison": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Proposition8.4 p1277, exact plain-bias statement; not imported as a black box"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+        "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+        "bytes": 22893,
+        "start_line": 88,
+        "end_line": 125,
+        "excerpt_sha256": "146147f7375889a610242c49a3b3f1478b150f411bfe2c942c20d38f415ae8f0"
+      },
+      "status": "author local proof and application comparison; independent review pending"
+    }
+  ]
+}

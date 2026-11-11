@@ -1,0 +1,1701 @@
+{
+  "local_control": {
+    "original": {
+      "use": {
+        "id": "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-P1",
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-P2"
+        ],
+        "assertion": {
+          "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+          "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+          "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+          "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+          "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+          "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+          "constants": "No numerical constant or scalar rescaling.",
+          "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+          "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+        },
+        "classification": "dependency",
+        "reason": "This supplies the derived local-control step used to compare central local H2 with finite-level H2. It does not supply its vanishing.",
+        "shared_contract_justification": "Both occurrences use the identical fixed local Tate twist, cyclotomic tower and central augmentation in the F2 correction argument.",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13863,
+            "end_line": 13872,
+            "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+          },
+          "statement": "For an admissible finite-type coefficient complex and a quotient Gamma isomorphic to Z_p, derived Iwasawa cohomology tensored over the Iwasawa algebra with its augmentation is continuous cohomology. If cd_p(G)=e and the complex is concentrated in degrees at most n, the degree e+n Iwasawa coinvariants identify with degree e+n continuous cohomology.",
+          "publication": {
+            "title": "Selmer Complexes",
+            "authors": "Jan Nekovar",
+            "venue": "Asterisque310(2006)",
+            "authoritative_version": "Published2006 volume; retained PDF SHA61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f.",
+            "locator": "8.3.5(ii),p203;8.4.8.1(ii) and8.4.8.2,pp214–215",
+            "corrections": "No inverse-limit or real-place conclusion outside the stated admissibility and cohomological-dimension hypotheses."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13919,
+          "end_line": 13926,
+          "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT",
+        "use_sha256": "81e58a54e33896059a9013d8a41f5e65a28def7ec436333de7f8a60438f41ca9",
+        "supplier_passage_role": "application",
+        "available_assertion": {
+          "statement": "For an admissible finite-type coefficient complex and a quotient Gamma isomorphic to Z_p, derived Iwasawa cohomology tensored over the Iwasawa algebra with its augmentation is continuous cohomology. If cd_p(G)=e and the complex is concentrated in degrees at most n, the degree e+n Iwasawa coinvariants identify with degree e+n continuous cohomology.",
+          "objects": "A profinite group G, closed normal H, Gamma=G/H, complete coefficient ring R, and an admissible finite-type R[G] coefficient complex T.",
+          "hypotheses": "Gamma is Z_p for the one-variable conclusion; T is bounded below and finite-type admissible. The top-degree conclusion assumes cd_p(G)=e finite and T has no terms above n. The separate inverse-limit identification in8.3.5(ii) assumes condition(F).",
+          "quantifiers": "Every group, coefficient complex and quotient satisfying these hypotheses.",
+          "parameter_range": "The published definitions8.3.1–8.3.5 and hypotheses8.4.8.1–8.4.8.2.",
+          "uniformity": "Functorial algebraic identification, not a quantitative bound.",
+          "constants": "No numerical constants.",
+          "normalizations": "Augmentation Gamma to1; projective transition maps are corestriction, with the induced coefficient convention of8.3.",
+          "exceptional_cases": "No real-place assertion when p=2 and cd_p is infinite. No vanishing of finite-level H2 follows from this theorem.",
+          "limit_order": "The source defines derived Iwasawa cohomology before applying derived augmentation; its spectral sequence supplies the top-degree identification."
+        },
+        "needed_assertion": {
+          "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+          "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+          "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+          "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+          "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+          "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+          "constants": "No numerical constant or scalar rescaling.",
+          "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+          "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+        },
+        "required_capabilities": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-needed"
+        ],
+        "available_capabilities": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-published"
+        ],
+        "derived_capabilities": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-needed"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13919,
+            "end_line": 13926,
+            "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+            "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+            "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+            "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+            "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+            "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+            "constants": "No numerical constant or scalar rescaling.",
+            "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+            "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+            "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 13863,
+              "end_line": 13872,
+              "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 13919,
+              "end_line": 13926,
+              "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13863,
+            "end_line": 13872,
+            "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13919,
+            "end_line": 13926,
+            "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+          }
+        ]
+      }
+    },
+    "current": {
+      "use": {
+        "id": "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-P1",
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-P2"
+        ],
+        "assertion": {
+          "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+          "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+          "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+          "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+          "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+          "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+          "constants": "No numerical constant or scalar rescaling.",
+          "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+          "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+        },
+        "classification": "dependency",
+        "reason": "This supplies the derived local-control step used to compare central local H2 with finite-level H2. It does not supply its vanishing.",
+        "shared_contract_justification": "Both occurrences use the identical fixed local Tate twist, cyclotomic tower and central augmentation in the F2 correction argument.",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13863,
+            "end_line": 13872,
+            "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+          },
+          "statement": "For an admissible finite-type coefficient complex and a quotient Gamma isomorphic to Z_p, derived Iwasawa cohomology tensored over the Iwasawa algebra with its augmentation is continuous cohomology. If cd_p(G)=e and the complex is concentrated in degrees at most n, the degree e+n Iwasawa coinvariants identify with degree e+n continuous cohomology.",
+          "publication": {
+            "title": "Selmer Complexes",
+            "authors": "Jan Nekovar",
+            "venue": "Asterisque310(2006)",
+            "authoritative_version": "Published2006 volume; retained PDF SHA61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f.",
+            "locator": "8.3.5(ii),p203;8.4.8.1(ii) and8.4.8.2,pp214–215",
+            "corrections": "No inverse-limit or real-place conclusion outside the stated admissibility and cohomological-dimension hypotheses."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13919,
+          "end_line": 13926,
+          "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT",
+        "use_sha256": "81e58a54e33896059a9013d8a41f5e65a28def7ec436333de7f8a60438f41ca9",
+        "supplier_passage_role": "application",
+        "available_assertion": {
+          "statement": "For an admissible finite-type coefficient complex and a quotient Gamma isomorphic to Z_p, derived Iwasawa cohomology tensored over the Iwasawa algebra with its augmentation is continuous cohomology. If cd_p(G)=e and the complex is concentrated in degrees at most n, the degree e+n Iwasawa coinvariants identify with degree e+n continuous cohomology.",
+          "objects": "A profinite group G, closed normal H, Gamma=G/H, complete coefficient ring R, and an admissible finite-type R[G] coefficient complex T.",
+          "hypotheses": "Gamma is Z_p for the one-variable conclusion; T is bounded below and finite-type admissible. The top-degree conclusion assumes cd_p(G)=e finite and T has no terms above n. The separate inverse-limit identification in8.3.5(ii) assumes condition(F).",
+          "quantifiers": "Every group, coefficient complex and quotient satisfying these hypotheses.",
+          "parameter_range": "The published definitions8.3.1–8.3.5 and hypotheses8.4.8.1–8.4.8.2.",
+          "uniformity": "Functorial algebraic identification, not a quantitative bound.",
+          "constants": "No numerical constants.",
+          "normalizations": "Augmentation Gamma to1; projective transition maps are corestriction, with the induced coefficient convention of8.3.",
+          "exceptional_cases": "No real-place assertion when p=2 and cd_p is infinite. No vanishing of finite-level H2 follows from this theorem.",
+          "limit_order": "The source defines derived Iwasawa cohomology before applying derived augmentation; its spectral sequence supplies the top-degree identification."
+        },
+        "needed_assertion": {
+          "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+          "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+          "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+          "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+          "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+          "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+          "constants": "No numerical constant or scalar rescaling.",
+          "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+          "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+        },
+        "required_capabilities": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-needed"
+        ],
+        "available_capabilities": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-published"
+        ],
+        "derived_capabilities": [
+          "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-needed"
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13919,
+            "end_line": 13926,
+            "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+            "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+            "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+            "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+            "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+            "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+            "constants": "No numerical constant or scalar rescaling.",
+            "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+            "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+            "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 13863,
+              "end_line": 13872,
+              "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 13919,
+              "end_line": 13926,
+              "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13863,
+            "end_line": 13872,
+            "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13919,
+            "end_line": 13926,
+            "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+          }
+        ]
+      }
+    },
+    "review": {
+      "path": "v14-local-control-review-arithmetic-001/REVIEW.json",
+      "sha256": "9584a62aba77d03584ed93b61ed59a6733eeca225c32fd27054986007e794b59"
+    }
+  },
+  "source_relationships": [
+    {
+      "source": {
+        "path": "v14-unary-theta-source-bindings-001/SOURCE-ROLES002.json",
+        "sha256": "74a1e3379e66d5ae46fd1ff2fbbf072cd761480a132c3b2ca93f4b0bddd60646"
+      },
+      "review": {
+        "path": "v14-unary-theta-review-arithmetic-001/RECONCILIATION-REVIEW.json",
+        "sha256": "3b1c2b31fd6d83a3457fc377f846bace18dcf333951eb5a0836cb8161ec7568f"
+      },
+      "original": {
+        "author": "/root/v14_gi_selection_review",
+        "scope": "H6-LATE-PREMISE-05 and unary orthogonality14636–14642; proposed bounded source relationships, no canonical edits",
+        "prior_exposure": "Author previously reviewed/constructed neighboring multiplier and transport work. Existing unary report read before this mapping. No new source-first freeze or independent approval is claimed here.",
+        "rows": [
+          {
+            "id": "UNARY-CLASSICAL-MULTIPLIER-OPERATORS",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 16042,
+              "end_line": 16091,
+              "excerpt_sha256": "f9c132294d5a0edf2cc09e193d06db8da4f0fe8ec4e53a1f6511cf66d3aab2cd"
+            },
+            "published_inputs": [
+              {
+                "path": "work/ramsey-2006.pdf",
+                "sha256": "c4dbde444169f075dc77dadb67a18f0348a450a9df32d16ef049e40e348ed0f4",
+                "locator": "printed600, equation(1.1)",
+                "statement": "Classical theta transforms by epsilon_d inverse times (c/d) times (cz+d)^(1/2), with the stated signed-symbol and square-root conventions."
+              }
+            ],
+            "connecting_reason": "The displayed two matrix products in the consumer give the dilation and normalized U_p² action. For c nonzero divisible by4, the character d -> (c/d) has conductor dividing |c|: write c=s²D with D the fundamental discriminant of its squareclass; the factor at2 is at most the 2-part of c. This includes c negative. Hence d-prime congruent d modulo c preserves that character, and d-prime congruent d modulo4 preserves epsilon. Since p does not divide d-prime, (p²/d-prime)=1. For V_p, multiplicativity gives (c/p /d)/(c/d)=(p/d). All square-root arguments are identically cz+d, so there is no branch comparison by squaring. If c=0, d=±1 and the same matrices give the triangular identity directly. The map r->(b+rd)/(a+rc) modulo p² is a bijection since a+rc is a unit and determinant is1. A finite set of rational translates has rational cusp images; after choosing a common cusp width, each expansion has nonnegative exponents, so the finite sum is holomorphic. Finally U_p² V_p=U_p coefficientwise. At each new p, p is prime to all previously fixed level factors, and this argument does not raise their exponents.",
+            "boundary": "Only the actual scalar weight3/2 form and level/character are used. No weight1/2 Hecke or unrelated twist assertion is substituted."
+          },
+          {
+            "id": "UNARY-IMPRIMITIVE-POISSON",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 16163,
+              "end_line": 16170,
+              "excerpt_sha256": "6245d84884d4f2adee475d7f46666da0c15c8fe2286e97ad319e77af5d136e62"
+            },
+            "additional_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 16093,
+                "end_line": 16100,
+                "excerpt_sha256": "e96a8cf1644e002999038ecc738fc48dc85f320db2c9159b2098999f1960469c"
+              }
+            ],
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "retained",
+                  "path": "work/astra-unary-chebotarev-001/REPORT.md",
+                  "sha256": "ea3ad9e7186648783f54d02eea782159c932627344f4d80c373e375b18db0a79"
+                },
+                "start_line": 19,
+                "end_line": 110,
+                "excerpt_sha256": "178cde6220bbe989907f475e0c3ee92ce40ac2d92f625883c9745a98e84245f9"
+              }
+            ],
+            "connecting_reason": "Apply retained report19–110 with C supported on the old S, divisible by the conductor of eta*chi_-4^i and every sieve prime. Its induced odd character lambda is extended by zero, so the coefficients are exactly the current coprimality-sieved series. The report proves via Gaussian Poisson and finite Fourier inversion that F_lambda has weight3/2, character lambda*chi_-4 and level4C²; its cusp calculation includes imprimitive lambda. Dilation by squarefree J gives level4C²J and character eta*chi_-4^i*(-J/.). This is an available level, not a minimal conductor equality; each fresh divisor of J has exponent1, and other fresh primes are absent. Multiplication by ordinary theta has j^4=(cz+d)² and introduces no odd prime.",
+            "boundary": "The report is a retained proof-bearing supplier, not a published unary theorem. Its explicit source adoption/delivery must be accounted for separately. Integer-two integrality at16171–81 comes from the separate shell recurrence, not Poisson."
+          },
+          {
+            "id": "UNARY-GOOD-HECKE-EIGENVALUES",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 14636,
+              "end_line": 14642,
+              "excerpt_sha256": "5bd69b29f8034b35aea8e5cd7683bc10246dd575a87a16748b7065b9e6a80f2a"
+            },
+            "published_inputs": [
+              {
+                "path": "work/ramsey-2006.pdf",
+                "sha256": "c4dbde444169f075dc77dadb67a18f0348a450a9df32d16ef049e40e348ed0f4",
+                "locator": "printed615, Theorem6.2 with k=3",
+                "statement": "Coefficient of T(p²) is a(p²n)+psi(p)(-n/p)a(n)+p psi(p²)a(n/p²), with the last term zero for nonintegral index."
+              }
+            ],
+            "connecting_reason": "For a unary generator F_lambda(tz), psi=lambda*chi_-4*(t/.). Choose a good p outside t and the character/sieve modulus. At n=t m² the first term is p lambda(p)a(n). If p does not divide m, the middle term is lambda(p)a(n), because chi_-4(p)*(t/p)*(-t/p)=1, and the last term is zero. If p divides m, the middle term is zero and the last term is lambda(p)a(n), including zero coefficients of the imprimitive character. At indices outside t times a square all three terms vanish. Thus the eigenvalue is lambda(p)(p+1), of absolute value p+1. The standard unary space is spanned by such generators: a one-variable lattice/coset theta has a periodic odd coefficient after clearing denominators; partition its finite residue set by gcd strata and expand each function on the remaining unit group in Dirichlet characters. Oddness retains only odd characters, and a gcd factor becomes a square dilation. For any fixed finite collection these presentations have a common finite bad set. Only one prime outside it is needed below.",
+            "boundary": "This uses the generic coefficient formula, not the elliptic recurrence as an input. Character values at good p have modulus1. No assertion at primes dividing a presentation modulus is used."
+          },
+          {
+            "id": "UNARY-ORTHOGONALITY-AND-ADJOINTS",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 14636,
+              "end_line": 14642,
+              "excerpt_sha256": "5bd69b29f8034b35aea8e5cd7683bc10246dd575a87a16748b7065b9e6a80f2a"
+            },
+            "published_inputs": [
+              {
+                "path": "work/waldspurger-1981.pdf",
+                "sha256": "86e054b65e0ca727d5dc45cb8f711abf61ff0b373dab32da461fb248e05751ff",
+                "locator": "printed376, I.1 first paragraph",
+                "statement": "For k=3, S_3/2(N,chi) denotes the Petersson-orthogonal complement of one-variable theta series; for p not dividing N, T(p²) acts in this space."
+              }
+            ],
+            "connecting_reason": "Let U be the unary subspace of the fixed finite-dimensional cusp space and W=U-perp. The preceding coefficient calculation gives T(U) subset U; the exact published statement gives T(W) subset W. Therefore the orthogonal decomposition is T-block-diagonal and also T-adjoint-block-diagonal, without choosing a potentially different normalization for an adjoint formula. If f is in the actual elliptic eigenspace, its U projection is an eigenvector of T with the same eigenvalue eta(p)a_p(E). Choose a prime outside the finite bad set of a unary spanning set, the actual level and E. All eigenvalues of T restricted to U have absolute value p+1, whereas the separately retained Hasse input gives absolute value at most2sqrt(p)<p+1. The U projection is zero. Thus f lies in W and both spaces are stable under the chosen common-good operator and its adjoint.",
+            "boundary": "Uses positive-definite Petersson inner product on cusp forms, finite dimensionality, the actual finite-order eta, and the separate Hasse input. It proves orthogonality before applying Waldspurger on W; it does not infer orthogonality from his full-eigenspace conclusion. The broader assertion for every operator outside the minimal level is not independently discharged by this common-good-prime argument."
+          }
+        ]
+      },
+      "current": {
+        "author": "/root/v14_gi_selection_review",
+        "scope": "H6-LATE-PREMISE-05 and unary orthogonality14636–14642; proposed bounded source relationships, no canonical edits",
+        "prior_exposure": "Author previously reviewed/constructed neighboring multiplier and transport work. Existing unary report read before this mapping. No new source-first freeze or independent approval is claimed here.",
+        "rows": [
+          {
+            "id": "UNARY-CLASSICAL-MULTIPLIER-OPERATORS",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 16042,
+              "end_line": 16091,
+              "excerpt_sha256": "f9c132294d5a0edf2cc09e193d06db8da4f0fe8ec4e53a1f6511cf66d3aab2cd"
+            },
+            "published_inputs": [
+              {
+                "path": "work/ramsey-2006.pdf",
+                "sha256": "c4dbde444169f075dc77dadb67a18f0348a450a9df32d16ef049e40e348ed0f4",
+                "locator": "printed600, equation(1.1)",
+                "statement": "Classical theta transforms by epsilon_d inverse times (c/d) times (cz+d)^(1/2), with the stated signed-symbol and square-root conventions."
+              }
+            ],
+            "connecting_reason": "The displayed two matrix products in the consumer give the dilation and normalized U_p² action. For c nonzero divisible by4, the character d -> (c/d) has conductor dividing |c|: write c=s²D with D the fundamental discriminant of its squareclass; the factor at2 is at most the 2-part of c. This includes c negative. Hence d-prime congruent d modulo c preserves that character, and d-prime congruent d modulo4 preserves epsilon. Since p does not divide d-prime, (p²/d-prime)=1. For V_p, multiplicativity gives (c/p /d)/(c/d)=(p/d). All square-root arguments are identically cz+d, so there is no branch comparison by squaring. If c=0, d=±1 and the same matrices give the triangular identity directly. The map r->(b+rd)/(a+rc) modulo p² is a bijection since a+rc is a unit and determinant is1. A finite set of rational translates has rational cusp images; after choosing a common cusp width, each expansion has nonnegative exponents, so the finite sum is holomorphic. Finally U_p² V_p=U_p coefficientwise. At each new p, p is prime to all previously fixed level factors, and this argument does not raise their exponents.",
+            "boundary": "Only the actual scalar weight3/2 form and level/character are used. No weight1/2 Hecke or unrelated twist assertion is substituted."
+          },
+          {
+            "id": "UNARY-IMPRIMITIVE-POISSON",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 16163,
+              "end_line": 16170,
+              "excerpt_sha256": "6245d84884d4f2adee475d7f46666da0c15c8fe2286e97ad319e77af5d136e62"
+            },
+            "additional_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 16093,
+                "end_line": 16100,
+                "excerpt_sha256": "e96a8cf1644e002999038ecc738fc48dc85f320db2c9159b2098999f1960469c"
+              }
+            ],
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "retained",
+                  "path": "work/astra-unary-chebotarev-001/REPORT.md",
+                  "sha256": "ea3ad9e7186648783f54d02eea782159c932627344f4d80c373e375b18db0a79"
+                },
+                "start_line": 19,
+                "end_line": 110,
+                "excerpt_sha256": "178cde6220bbe989907f475e0c3ee92ce40ac2d92f625883c9745a98e84245f9"
+              }
+            ],
+            "connecting_reason": "Apply retained report19–110 with C supported on the old S, divisible by the conductor of eta*chi_-4^i and every sieve prime. Its induced odd character lambda is extended by zero, so the coefficients are exactly the current coprimality-sieved series. The report proves via Gaussian Poisson and finite Fourier inversion that F_lambda has weight3/2, character lambda*chi_-4 and level4C²; its cusp calculation includes imprimitive lambda. Dilation by squarefree J gives level4C²J and character eta*chi_-4^i*(-J/.). This is an available level, not a minimal conductor equality; each fresh divisor of J has exponent1, and other fresh primes are absent. Multiplication by ordinary theta has j^4=(cz+d)² and introduces no odd prime.",
+            "boundary": "The report is a retained proof-bearing supplier, not a published unary theorem. Its explicit source adoption/delivery must be accounted for separately. Integer-two integrality at16171–81 comes from the separate shell recurrence, not Poisson."
+          },
+          {
+            "id": "UNARY-GOOD-HECKE-EIGENVALUES",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14636,
+              "end_line": 14642,
+              "excerpt_sha256": "5bd69b29f8034b35aea8e5cd7683bc10246dd575a87a16748b7065b9e6a80f2a"
+            },
+            "published_inputs": [
+              {
+                "path": "work/ramsey-2006.pdf",
+                "sha256": "c4dbde444169f075dc77dadb67a18f0348a450a9df32d16ef049e40e348ed0f4",
+                "locator": "printed615, Theorem6.2 with k=3",
+                "statement": "Coefficient of T(p²) is a(p²n)+psi(p)(-n/p)a(n)+p psi(p²)a(n/p²), with the last term zero for nonintegral index."
+              }
+            ],
+            "connecting_reason": "For a unary generator F_lambda(tz), psi=lambda*chi_-4*(t/.). Choose a good p outside t and the character/sieve modulus. At n=t m² the first term is p lambda(p)a(n). If p does not divide m, the middle term is lambda(p)a(n), because chi_-4(p)*(t/p)*(-t/p)=1, and the last term is zero. If p divides m, the middle term is zero and the last term is lambda(p)a(n), including zero coefficients of the imprimitive character. At indices outside t times a square all three terms vanish. Thus the eigenvalue is lambda(p)(p+1), of absolute value p+1. The standard unary space is spanned by such generators: a one-variable lattice/coset theta has a periodic odd coefficient after clearing denominators; partition its finite residue set by gcd strata and expand each function on the remaining unit group in Dirichlet characters. Oddness retains only odd characters, and a gcd factor becomes a square dilation. For any fixed finite collection these presentations have a common finite bad set. Only one prime outside it is needed below.",
+            "boundary": "This uses the generic coefficient formula, not the elliptic recurrence as an input. Character values at good p have modulus1. No assertion at primes dividing a presentation modulus is used."
+          },
+          {
+            "id": "UNARY-ORTHOGONALITY-AND-ADJOINTS",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14636,
+              "end_line": 14642,
+              "excerpt_sha256": "5bd69b29f8034b35aea8e5cd7683bc10246dd575a87a16748b7065b9e6a80f2a"
+            },
+            "published_inputs": [
+              {
+                "path": "work/waldspurger-1981.pdf",
+                "sha256": "86e054b65e0ca727d5dc45cb8f711abf61ff0b373dab32da461fb248e05751ff",
+                "locator": "printed376, I.1 first paragraph",
+                "statement": "For k=3, S_3/2(N,chi) denotes the Petersson-orthogonal complement of one-variable theta series; for p not dividing N, T(p²) acts in this space."
+              }
+            ],
+            "connecting_reason": "Let U be the unary subspace of the fixed finite-dimensional cusp space and W=U-perp. The preceding coefficient calculation gives T(U) subset U; the exact published statement gives T(W) subset W. Therefore the orthogonal decomposition is T-block-diagonal and also T-adjoint-block-diagonal, without choosing a potentially different normalization for an adjoint formula. If f is in the actual elliptic eigenspace, its U projection is an eigenvector of T with the same eigenvalue eta(p)a_p(E). Choose a prime outside the finite bad set of a unary spanning set, the actual level and E. All eigenvalues of T restricted to U have absolute value p+1, whereas the separately retained Hasse input gives absolute value at most2sqrt(p)<p+1. The U projection is zero. Thus f lies in W and both spaces are stable under the chosen common-good operator and its adjoint.",
+            "boundary": "Uses positive-definite Petersson inner product on cusp forms, finite dimensionality, the actual finite-order eta, and the separate Hasse input. It proves orthogonality before applying Waldspurger on W; it does not infer orthogonality from his full-eigenspace conclusion. The broader assertion for every operator outside the minimal level is not independently discharged by this common-good-prime argument."
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "v14-local-h2-vanishing-inputs-002/SOURCE-ROLES.json",
+        "sha256": "58260d06d02ededcadde2459513314608756f0228340c540dd1d8dd7f72b2d15"
+      },
+      "review": {
+        "path": "v14-local-h2-review-arithmetic-001/REVIEW.json",
+        "sha256": "2e6936dbcf1edea0dd02aa4b04c0024119d3d6e8c616180cdd792d9e75156cbf"
+      },
+      "original": {
+        "author": "/root/v14_sign_conductor",
+        "rows": [
+          {
+            "id": "THETA-LOCAL-FINITE-COHOMOLOGY",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006)",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.1.1–5.1.4,pp113–114"
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13863,
+                "end_line": 13872,
+                "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13919,
+                "end_line": 13926,
+                "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+              }
+            ],
+            "available": "For a nonarchimedean local field of characteristic different from p, the absolute Galois group has p-cohomological dimension2, satisfies the finite-cohomology condition, and finite p-primary modules have the stated perfect local Tate pairings.",
+            "needed": "The absolute group of Q2 has cd2=2 and finite cohomology for finite2-primary modules, as needed in the local Iwasawa descent argument.",
+            "argument": "Use the local statement with p=2 and local field Q2. The global no-real-place hypothesis in5.1 is not being applied to Q: the local field may be realized as a split completion of an imaginary quadratic field, and the assertion depends only on its absolute local Galois group. The coefficient T chi is finite free over Z2 with continuous action; its finite quotients fit these local statements.",
+            "limits": "No assertion cd2(G_Q,S)=2 is made. The real global case remains governed by5.7."
+          },
+          {
+            "id": "THETA-LOCAL-ELLIPTIC-TORSION-FINITE",
+            "source": {
+              "title": "The Arithmetic of Elliptic Curves",
+              "authors": "Joseph H. Silverman",
+              "version": "Second edition, Springer2009",
+              "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "locator": "VII Proposition6.3,p200"
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13869,
+                "end_line": 13879,
+                "excerpt_sha256": "8a91e08c0565f1c89ba0bcf0f699b3d00d600cdee1507c06b444f774b3dc691c"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13923,
+                "end_line": 13929,
+                "excerpt_sha256": "8e8e9f31bac31ae4f4154b54675e2d6abc78aaa11ded51b232c338d88f591330"
+              }
+            ],
+            "available": "For an elliptic curve over a finite extension of Qp, the local points contain a finite-index subgroup isomorphic to the additive group of the ring of integers.",
+            "needed": "For each actual local quadratic twist, local elliptic torsion is finite and H0(Qq,V2(E) tensor chi)=0.",
+            "argument": "The displayed finite-index subgroup is torsion free, so the torsion subgroup injects into the finite quotient. The Galois-invariant subgroup of the Tate module is the inverse limit of the local rational2-power torsion groups under multiplication2, which is zero for a finite2-primary group. Any invariant vector in the rational Tate module becomes an invariant integral vector after multiplying by a fixed power of2. Hence it is zero. The quadratic character twist is the Tate module of the actual local quadratic elliptic twist, so the same argument applies.",
+            "limits": "No good-reduction or odd-residue-characteristic assumption is imposed; this includes Q2. No uniform order bound is claimed."
+          },
+          {
+            "id": "THETA-LOCAL-RATIONAL-TATE-DUALITY",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006)",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.6.3(i),p130, localized local duality from5.2.4"
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13867,
+                "end_line": 13879,
+                "excerpt_sha256": "f9851313525014d2cece4409c17170f6f62f6c711d401982686c7aab87c79482"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13921,
+                "end_line": 13929,
+                "excerpt_sha256": "ddd140d9e023aebe2ab39e0fa4e4fed4b535a4f2a510ae30ad1ae2a7f7de02c7"
+              }
+            ],
+            "available": "Localized local duality identifies local cohomology of a finite-type coefficient complex with the appropriately shifted dual cohomology of its Tate dual. For a finite-dimensional Q2 representation V it gives H2(K,V) dual to H0(K,V dual(1)).",
+            "needed": "H2(Qq,V2(E) tensor chi)=0 for every fixed local quadratic type used for F2 and Fbad.",
+            "argument": "The elliptic Weil pairing identifies V2(E) with V2(E) dual(1). Since chi is quadratic, the twist has the same self-duality. Apply localized local duality to this finite-dimensional Q2 representation. The preceding local-torsion argument gives zero H0 of the dual twist, hence zero H2. This is local duality only; no global no-real-place hypothesis is imposed on Q.",
+            "limits": "The self-dual Weil pairing, quadratic nature of chi, and separate local-torsion input are retained. The Iwasawa descent identity and global localization comparison are not supplied by this statement."
+          }
+        ]
+      },
+      "current": {
+        "author": "/root/v14_sign_conductor",
+        "rows": [
+          {
+            "id": "THETA-LOCAL-FINITE-COHOMOLOGY",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006)",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.1.1–5.1.4,pp113–114"
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13863,
+                "end_line": 13872,
+                "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13919,
+                "end_line": 13926,
+                "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+              }
+            ],
+            "available": "For a nonarchimedean local field of characteristic different from p, the absolute Galois group has p-cohomological dimension2, satisfies the finite-cohomology condition, and finite p-primary modules have the stated perfect local Tate pairings.",
+            "needed": "The absolute group of Q2 has cd2=2 and finite cohomology for finite2-primary modules, as needed in the local Iwasawa descent argument.",
+            "argument": "Use the local statement with p=2 and local field Q2. The global no-real-place hypothesis in5.1 is not being applied to Q: the local field may be realized as a split completion of an imaginary quadratic field, and the assertion depends only on its absolute local Galois group. The coefficient T chi is finite free over Z2 with continuous action; its finite quotients fit these local statements.",
+            "limits": "No assertion cd2(G_Q,S)=2 is made. The real global case remains governed by5.7."
+          },
+          {
+            "id": "THETA-LOCAL-ELLIPTIC-TORSION-FINITE",
+            "source": {
+              "title": "The Arithmetic of Elliptic Curves",
+              "authors": "Joseph H. Silverman",
+              "version": "Second edition, Springer2009",
+              "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "locator": "VII Proposition6.3,p200"
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13869,
+                "end_line": 13879,
+                "excerpt_sha256": "8a91e08c0565f1c89ba0bcf0f699b3d00d600cdee1507c06b444f774b3dc691c"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13923,
+                "end_line": 13929,
+                "excerpt_sha256": "8e8e9f31bac31ae4f4154b54675e2d6abc78aaa11ded51b232c338d88f591330"
+              }
+            ],
+            "available": "For an elliptic curve over a finite extension of Qp, the local points contain a finite-index subgroup isomorphic to the additive group of the ring of integers.",
+            "needed": "For each actual local quadratic twist, local elliptic torsion is finite and H0(Qq,V2(E) tensor chi)=0.",
+            "argument": "The displayed finite-index subgroup is torsion free, so the torsion subgroup injects into the finite quotient. The Galois-invariant subgroup of the Tate module is the inverse limit of the local rational2-power torsion groups under multiplication2, which is zero for a finite2-primary group. Any invariant vector in the rational Tate module becomes an invariant integral vector after multiplying by a fixed power of2. Hence it is zero. The quadratic character twist is the Tate module of the actual local quadratic elliptic twist, so the same argument applies.",
+            "limits": "No good-reduction or odd-residue-characteristic assumption is imposed; this includes Q2. No uniform order bound is claimed."
+          },
+          {
+            "id": "THETA-LOCAL-RATIONAL-TATE-DUALITY",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006)",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.6.3(i),p130, localized local duality from5.2.4"
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13867,
+                "end_line": 13879,
+                "excerpt_sha256": "f9851313525014d2cece4409c17170f6f62f6c711d401982686c7aab87c79482"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 13921,
+                "end_line": 13929,
+                "excerpt_sha256": "ddd140d9e023aebe2ab39e0fa4e4fed4b535a4f2a510ae30ad1ae2a7f7de02c7"
+              }
+            ],
+            "available": "Localized local duality identifies local cohomology of a finite-type coefficient complex with the appropriately shifted dual cohomology of its Tate dual. For a finite-dimensional Q2 representation V it gives H2(K,V) dual to H0(K,V dual(1)).",
+            "needed": "H2(Qq,V2(E) tensor chi)=0 for every fixed local quadratic type used for F2 and Fbad.",
+            "argument": "The elliptic Weil pairing identifies V2(E) with V2(E) dual(1). Since chi is quadratic, the twist has the same self-duality. Apply localized local duality to this finite-dimensional Q2 representation. The preceding local-torsion argument gives zero H0 of the dual twist, hence zero H2. This is local duality only; no global no-real-place hypothesis is imposed on Q.",
+            "limits": "The self-dual Weil pairing, quadratic nature of chi, and separate local-torsion input are retained. The Iwasawa descent identity and global localization comparison are not supplied by this statement."
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "v14-odd-inertia-cone-input-001/SOURCE-RELATIONSHIP.json",
+        "sha256": "f2d504be87a12ff819d77ba9658cd2f146b0cf3985ec740134c45056c36356a7"
+      },
+      "review": {
+        "path": "v14-odd-inertia-review-arithmetic-001/REVIEW.json",
+        "sha256": "b90dd3f00c4928e4d92b619122b629b86e38cc759bf304c3cde76d97563f2b24"
+      },
+      "original": {
+        "author": "/root/v14_sign_conductor",
+        "source": {
+          "title": "Selmer Complexes",
+          "authors": "Jan Nekovar",
+          "version": "Asterisque310(2006)",
+          "path": "work/nekovar-selmer-complexes-2006.pdf",
+          "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+          "locator": "7.1.1–7.2.4, printed155–160, especially exact triangle157 and Frobenius action159"
+        },
+        "consumer_location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13840,
+          "end_line": 13861,
+          "excerpt_sha256": "2f8a52e9118634339cef0a1b46a728e76259cbfb7c8b990657b08858eadac7d5"
+        },
+        "available": "At a residue prime different from the coefficient prime, the explicit tame cochain complex computes local cohomology. Its unramified subcomplex has quotient quasi-isomorphic to the two-term complex on inertia H1 in degrees1 and2. Wild invariants are taken first. The Frobenius action on inertia H1 is the cohomological conjugation action, not in general the action on inertia invariants.",
+        "needed": "For each odd q, the rational unramified-to-full local cone for the actual cyclotomic Tate twist is [W_q tensor A -> W_q tensor A] in degrees1,2, with differential1-sigma_q^(-1) Fr_(W_q), where W_q=H1(I_q,V chi). At good inactive q its determinant is the retained Euler factor; at good active q the cone is zero.",
+        "argument": [
+          "Take the source tame complex after wild invariants. The cyclotomic coefficient module is unramified at q, so flat coefficient extension commutes with the inertia kernel and cokernel. The quotient is the two-term inertia H1 complex of the source.",
+          "The source chooses geometric Frobenius. Inverting that invertible action and multiplying a differential by its negative inverse gives the isomorphic arithmetic-Frobenius complex. The actual coefficient convention sends arithmetic Frobenius to sigma_q^(-1), hence the differential in the caller. This is an isomorphism of complexes, not a literal equality of the two Frobenius matrices.",
+          "At a good inactive q the Tate module and chi are unramified. Tame inertia H1 is Hom_cont(Z2(1),V chi)=V chi(-1), so arithmetic Frobenius is q^(-1) times its action on V chi. Its determinant is1-a_q chi(q) sigma_q^(-1)/q+sigma_q^(-2)/q, the exact K9 convention.",
+          "At a good active q the original Tate module is unramified and the ramified quadratic character acts as-1 on tame inertia. On rational coefficients t-1=-2 is invertible. Its invariant and coinvariant spaces vanish, so W_q=0 and the determinant is1.",
+          "For bad q retain H1(I_q,V chi) itself. There is no replacement by V^I chi(-1). Frobenius on W_q is invertible. The cyclotomic exponent of q is nonzero, since an odd positive prime is not a torsion unit in Z2^times. Thus sigma_q is a nonconstant formal power series. The nonzero polynomial det(1-X Fr_W) cannot vanish at that series, since a formal series algebraic over Q2 is constant. The determinant is nonzero; over the domain A its square matrix is injective. The adjugate identity proves injectivity after every height-one localization as well."
+        ],
+        "incoming": [
+          "The actual coefficient convention and K9 polynomial already established in the norm construction.",
+          "Good reduction implies unramified Tate representation at q different from2; the active quadratic character is ramified there.",
+          "The global comparison between j-star cohomology and cochains on the open arithmetic scheme requires the separate localization identification; this local source does not itself assert that global triangle."
+        ],
+        "limits": "This verifies the local K16 representation and its active/inactive cases. It does not by itself identify the global subscript-zero groups, prove old local central determinants nonzero, or establish local H2 vanishing."
+      },
+      "current": {
+        "author": "/root/v14_sign_conductor",
+        "source": {
+          "title": "Selmer Complexes",
+          "authors": "Jan Nekovar",
+          "version": "Asterisque310(2006)",
+          "path": "work/nekovar-selmer-complexes-2006.pdf",
+          "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+          "locator": "7.1.1–7.2.4, printed155–160, especially exact triangle157 and Frobenius action159"
+        },
+        "consumer_location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13840,
+          "end_line": 13861,
+          "excerpt_sha256": "2f8a52e9118634339cef0a1b46a728e76259cbfb7c8b990657b08858eadac7d5"
+        },
+        "available": "At a residue prime different from the coefficient prime, the explicit tame cochain complex computes local cohomology. Its unramified subcomplex has quotient quasi-isomorphic to the two-term complex on inertia H1 in degrees1 and2. Wild invariants are taken first. The Frobenius action on inertia H1 is the cohomological conjugation action, not in general the action on inertia invariants.",
+        "needed": "For each odd q, the rational unramified-to-full local cone for the actual cyclotomic Tate twist is [W_q tensor A -> W_q tensor A] in degrees1,2, with differential1-sigma_q^(-1) Fr_(W_q), where W_q=H1(I_q,V chi). At good inactive q its determinant is the retained Euler factor; at good active q the cone is zero.",
+        "argument": [
+          "Take the source tame complex after wild invariants. The cyclotomic coefficient module is unramified at q, so flat coefficient extension commutes with the inertia kernel and cokernel. The quotient is the two-term inertia H1 complex of the source.",
+          "The source chooses geometric Frobenius. Inverting that invertible action and multiplying a differential by its negative inverse gives the isomorphic arithmetic-Frobenius complex. The actual coefficient convention sends arithmetic Frobenius to sigma_q^(-1), hence the differential in the caller. This is an isomorphism of complexes, not a literal equality of the two Frobenius matrices.",
+          "At a good inactive q the Tate module and chi are unramified. Tame inertia H1 is Hom_cont(Z2(1),V chi)=V chi(-1), so arithmetic Frobenius is q^(-1) times its action on V chi. Its determinant is1-a_q chi(q) sigma_q^(-1)/q+sigma_q^(-2)/q, the exact K9 convention.",
+          "At a good active q the original Tate module is unramified and the ramified quadratic character acts as-1 on tame inertia. On rational coefficients t-1=-2 is invertible. Its invariant and coinvariant spaces vanish, so W_q=0 and the determinant is1.",
+          "For bad q retain H1(I_q,V chi) itself. There is no replacement by V^I chi(-1). Frobenius on W_q is invertible. The cyclotomic exponent of q is nonzero, since an odd positive prime is not a torsion unit in Z2^times. Thus sigma_q is a nonconstant formal power series. The nonzero polynomial det(1-X Fr_W) cannot vanish at that series, since a formal series algebraic over Q2 is constant. The determinant is nonzero; over the domain A its square matrix is injective. The adjugate identity proves injectivity after every height-one localization as well."
+        ],
+        "incoming": [
+          "The actual coefficient convention and K9 polynomial already established in the norm construction.",
+          "Good reduction implies unramified Tate representation at q different from2; the active quadratic character is ramified there.",
+          "The global comparison between j-star cohomology and cochains on the open arithmetic scheme requires the separate localization identification; this local source does not itself assert that global triangle."
+        ],
+        "limits": "This verifies the local K16 representation and its active/inactive cases. It does not by itself identify the global subscript-zero groups, prove old local central determinants nonzero, or establish local H2 vanishing."
+      }
+    },
+    {
+      "source": {
+        "path": "v14-real-finite-duality-inputs-001/SOURCE-ROLES.json",
+        "sha256": "10c4193230dde611cf3f6bb95681224863e910ac0df413c5e60c42e82fe318d8"
+      },
+      "review": {
+        "path": "v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+        "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+      },
+      "original": {
+        "author": "/root/v14_sign_conductor",
+        "rows": [
+          {
+            "id": "THETA-REAL-FINITE-TATE-PAIRING",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006), published volume",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+            },
+            "source_clause": "5.7.1.4",
+            "consumer_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14247,
+              "end_line": 14265,
+              "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+            },
+            "available": "For every finite discrete Z/2^nZ module of Gal(C/R), cup product gives perfect pairings between Tate cohomology in degrees i and2-i of the module and its Tate dual, with values Z/2Z.",
+            "needed": "For M=E^h[2^n], the real degree-one pairing is perfect. The separately computed minus-line Kummer subgroup is its own annihilator.",
+            "argument": "The Weil pairing identifies the finite module with its Tate dual. The actual rational two-torsion gives integral plus/minus eigenlattices as stated in the caller. Its explicit rectangular-lattice Kummer computation gives the minus line of order2. H1 has the two order2 summands from these eigenlattices. Pairing two cocycles valued in the same minus eigenline gives zero by the alternating Weil pairing. The line is therefore isotropic and has half the dimension of this nondegenerate two-dimensional F2 space, hence is its own annihilator.",
+            "incoming": [
+              "The actual elliptic Weil pairing and rational full two-torsion.",
+              "The explicit real Kummer calculation and integral eigenlattice decomposition in the caller."
+            ],
+            "limit": "This uses degree-one Tate cohomology, which equals ordinary H1. It does not replace ordinary H0 by Tate H0 or discard the real degree-zero summand."
+          },
+          {
+            "id": "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006), published volume",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+            },
+            "source_clause": "5.7.1.6",
+            "consumer_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14267,
+              "end_line": 14296,
+              "excerpt_sha256": "1d2552e8d6e3041398017f0e269ba5fd6315e8ed8cd3f9154d851a52e4e96678"
+            },
+            "available": "For a finite discrete Z/2^nZ[G_K,S] module, the finite Poitou–Tate sequence is exact with the displayed finite local terms, real Tate local terms, and Tate-dual global terms.",
+            "needed": "Apply the finite sequence to the actual E^h[2^n] over Q and the fixed support S before imposing the computed orthogonal Kummer conditions and passing to compact/discrete limits.",
+            "argument": "The support contains2, infinity and all ramification of this finite torsion module. The module is finite and discrete. The elliptic Weil pairing identifies its Tate dual. Thus all finite-level terms and arrows are those of the source. The real H1 and H2 terms agree with ordinary cohomology in these positive degrees. Retain the real H2 term. The preceding local Kummer calculations, the subsequent inverse/direct limit passage, and the resulting exact length identity are separate deductions, not assertions supplied by this finite theorem.",
+            "incoming": [
+              "S contains all ramification and all places above2 and infinity.",
+              "Elliptic Weil self-duality.",
+              "Local orthogonal Kummer conditions at finite and real places, and the explicit compatible limit passage."
+            ],
+            "limit": "The source alone does not identify the limiting Selmer cone or prove corank zero, finiteness of Sha, or the claimed length formula."
+          },
+          {
+            "id": "THETA-HIGH-DEGREE-REAL-LOCALIZATION",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006), published volume",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+            },
+            "source_clause": "5.7.1.7",
+            "consumer_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14290,
+              "end_line": 14296,
+              "excerpt_sha256": "aa98496ff2fd2ba6553145eafa4ac28b903b5eaa3e4402799d7ce99898c6afc9"
+            },
+            "available": "For every such finite module and i>2, restriction identifies global H^i with the sum of real local H^i; the finite local terms vanish.",
+            "needed": "At finite coefficient level the high-degree terms are exactly real local terms, supplying the termination by real localization used in the caller.",
+            "argument": "Use K=Q and the same E^h[2^n] and support. There is one real place. The source map is the actual localization map used in the cone, so it identifies the high-degree global tail with that real tail. Passing to the compatible compact/discrete system remains a separate stated step.",
+            "incoming": [
+              "Same finite module/support as in the preceding row.",
+              "Compatibility of all finite-level maps in the caller."
+            ],
+            "limit": "No finite cohomological dimension of G_Q at2 is asserted; the real tail is explicitly retained."
+          }
+        ]
+      },
+      "current": {
+        "author": "/root/v14_sign_conductor",
+        "rows": [
+          {
+            "id": "THETA-REAL-FINITE-TATE-PAIRING",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006), published volume",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+            },
+            "source_clause": "5.7.1.4",
+            "consumer_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14247,
+              "end_line": 14265,
+              "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+            },
+            "available": "For every finite discrete Z/2^nZ module of Gal(C/R), cup product gives perfect pairings between Tate cohomology in degrees i and2-i of the module and its Tate dual, with values Z/2Z.",
+            "needed": "For M=E^h[2^n], the real degree-one pairing is perfect. The separately computed minus-line Kummer subgroup is its own annihilator.",
+            "argument": "The Weil pairing identifies the finite module with its Tate dual. The actual rational two-torsion gives integral plus/minus eigenlattices as stated in the caller. Its explicit rectangular-lattice Kummer computation gives the minus line of order2. H1 has the two order2 summands from these eigenlattices. Pairing two cocycles valued in the same minus eigenline gives zero by the alternating Weil pairing. The line is therefore isotropic and has half the dimension of this nondegenerate two-dimensional F2 space, hence is its own annihilator.",
+            "incoming": [
+              "The actual elliptic Weil pairing and rational full two-torsion.",
+              "The explicit real Kummer calculation and integral eigenlattice decomposition in the caller."
+            ],
+            "limit": "This uses degree-one Tate cohomology, which equals ordinary H1. It does not replace ordinary H0 by Tate H0 or discard the real degree-zero summand."
+          },
+          {
+            "id": "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006), published volume",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+            },
+            "source_clause": "5.7.1.6",
+            "consumer_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14267,
+              "end_line": 14296,
+              "excerpt_sha256": "1d2552e8d6e3041398017f0e269ba5fd6315e8ed8cd3f9154d851a52e4e96678"
+            },
+            "available": "For a finite discrete Z/2^nZ[G_K,S] module, the finite Poitou–Tate sequence is exact with the displayed finite local terms, real Tate local terms, and Tate-dual global terms.",
+            "needed": "Apply the finite sequence to the actual E^h[2^n] over Q and the fixed support S before imposing the computed orthogonal Kummer conditions and passing to compact/discrete limits.",
+            "argument": "The support contains2, infinity and all ramification of this finite torsion module. The module is finite and discrete. The elliptic Weil pairing identifies its Tate dual. Thus all finite-level terms and arrows are those of the source. The real H1 and H2 terms agree with ordinary cohomology in these positive degrees. Retain the real H2 term. The preceding local Kummer calculations, the subsequent inverse/direct limit passage, and the resulting exact length identity are separate deductions, not assertions supplied by this finite theorem.",
+            "incoming": [
+              "S contains all ramification and all places above2 and infinity.",
+              "Elliptic Weil self-duality.",
+              "Local orthogonal Kummer conditions at finite and real places, and the explicit compatible limit passage."
+            ],
+            "limit": "The source alone does not identify the limiting Selmer cone or prove corank zero, finiteness of Sha, or the claimed length formula."
+          },
+          {
+            "id": "THETA-HIGH-DEGREE-REAL-LOCALIZATION",
+            "source": {
+              "title": "Selmer Complexes",
+              "authors": "Jan Nekovar",
+              "version": "Asterisque310(2006), published volume",
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+            },
+            "source_clause": "5.7.1.7",
+            "consumer_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14290,
+              "end_line": 14296,
+              "excerpt_sha256": "aa98496ff2fd2ba6553145eafa4ac28b903b5eaa3e4402799d7ce99898c6afc9"
+            },
+            "available": "For every such finite module and i>2, restriction identifies global H^i with the sum of real local H^i; the finite local terms vanish.",
+            "needed": "At finite coefficient level the high-degree terms are exactly real local terms, supplying the termination by real localization used in the caller.",
+            "argument": "Use K=Q and the same E^h[2^n] and support. There is one real place. The source map is the actual localization map used in the cone, so it identifies the high-degree global tail with that real tail. Passing to the compatible compact/discrete system remains a separate stated step.",
+            "incoming": [
+              "Same finite module/support as in the preceding row.",
+              "Compatibility of all finite-level maps in the caller."
+            ],
+            "limit": "No finite cohomological dimension of G_Q at2 is asserted; the real tail is explicitly retained."
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "v14-real-cyclotomic-pending-resolution-001/RESOLUTION.json",
+        "sha256": "f16f3fcc93558086fa94481df46442fceff42a956df8a9cba85f7196c3c2ea2b"
+      },
+      "review": {
+        "path": "v14-real-cyclotomic-pending-resolution-001/REVIEWER-REVIEW.json",
+        "sha256": "7ceb1af9f65c967ef647e96566ba007dac0e64a23ea6bdb72ddd973158b987ab"
+      },
+      "original": {
+        "scope": "Exact two original pending rows plus supplemental prime-ideal row; no other sign-group obligation changed.",
+        "original_packet": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-sign-main-role-partition-third-002/MANIFEST.json",
+          "sha256": "4beb3cf7d3e4bdce79dfe69d5745fa6814bf939afcce256d66745154d93bd5ce"
+        },
+        "author_packet": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-inputs-001/MANIFEST.json",
+          "sha256": "01aabdeb279c21db2bfd65ca98b6812231536b35b231d5e59eecb65029a27dcd"
+        },
+        "math_review": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-review-arithmetic-001/REVIEW.json",
+          "sha256": "738051ca95fc34d2c057903ce654cfce0b20713cc0799ac9791599ec01e232f6"
+        },
+        "fresh_source_reconciliation": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-reconciliation-002/REVIEWER-RECONCILIATION.json",
+          "sha256": "654621cd52a3184aa25beb2c4cd188aae64c3fe6ff16ba78600c2b527bf53e9a"
+        },
+        "rows": [
+          {
+            "original": {
+              "id": "SIGN-MAIN-14018-14029",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 14018,
+                "end_line": 14029,
+                "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+              },
+              "source_role": "pending",
+              "use_ids": [],
+              "claim_ids": [
+                "V14-MAIN-POLYNOMIAL-DEFINITION"
+              ],
+              "reason": "Uses the real-split Hilbert two-class field, unique dyadic ramification and finite p-group Frattini criterion. The induction is explicit; exact class-field and group-theoretic input attribution remains.",
+              "status": "pending"
+            },
+            "selected_current_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14018,
+              "end_line": 14029,
+              "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+            },
+            "unchanged_original_excerpt": true,
+            "accepted_source_uses": [
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION",
+                "use_sha256": "30d8fd5f1c4ddd997ca40d55f916c663179ff84ab5b7d09beb4ef4a1be2a32e0",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                      "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+                    },
+                    "start_line": 9,
+                    "end_line": 9,
+                    "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS",
+                "use_sha256": "6a7fad080dcf396bc404fb9eece72b3570aaaf3d04aa7739239c14662df8cd72",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14018,
+                    "end_line": 14029,
+                    "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+                  }
+                ]
+              }
+            ],
+            "source_role_ids": [
+              "REAL-CYCLOTOMIC-TOWER-INPUT",
+              "REAL-CYCLOTOMIC-CLASS-INDUCTION"
+            ],
+            "disposition": "named input binding resolved at independently reviewed finite-level scope",
+            "merge_state": "not verified by this reconciliation; root installation and cumulative collector remain separate"
+          },
+          {
+            "original": {
+              "id": "SIGN-MAIN-14048-14067",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 14048,
+                "end_line": 14067,
+                "excerpt_sha256": "c4803b3c77f08122ddbf6a2dd8f3600c514404642560784c4c91a4a9f6390b3e"
+              },
+              "source_role": "pending",
+              "use_ids": [],
+              "claim_ids": [
+                "V14-MAIN-POLYNOMIAL-DEFINITION"
+              ],
+              "reason": "Kummer/S-unit dimension, global Brauer invariant description and higher global-to-real comparison are actual incoming sources; the subsequent dimension computation is elementary.",
+              "status": "pending"
+            },
+            "selected_current_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14048,
+              "end_line": 14067,
+              "excerpt_sha256": "c4803b3c77f08122ddbf6a2dd8f3600c514404642560784c4c91a4a9f6390b3e"
+            },
+            "unchanged_original_excerpt": true,
+            "accepted_source_uses": [
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES",
+                "use_sha256": "b67d621124924c5f904b8463dc60a58e23b18f62b3f7c1f36ca52ca14be5327c",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14031,
+                    "end_line": 14047,
+                    "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER",
+                "use_sha256": "5169edc0e2adeb8cdb425f13935acc31c7d7677b21b16ceab7550c870a372e57",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14049,
+                    "end_line": 14060,
+                    "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT",
+                "use_sha256": "b2b9f08cb88b4295c3d717f5ea5515bc447ed25824b081742fa214bbfa587764",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                      "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+                    },
+                    "start_line": 23,
+                    "end_line": 23,
+                    "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON",
+                "use_sha256": "1c4840ebc6f377f0325a68bd4e5911f301c3a99b4795ea94b168d40cd55cc85e",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14060,
+                    "end_line": 14067,
+                    "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+                  }
+                ]
+              }
+            ],
+            "source_role_ids": [
+              "REAL-CYCLOTOMIC-KUMMER-BRAUER-INPUT",
+              "REAL-CYCLOTOMIC-H1-COUNT",
+              "REAL-CYCLOTOMIC-POSITIVE-FIBER"
+            ],
+            "disposition": "named input binding resolved at independently reviewed finite-level scope",
+            "merge_state": "not verified by this reconciliation; root installation and cumulative collector remain separate"
+          },
+          {
+            "original": {
+              "id": "THIRD-SUP-1",
+              "parent_row_id": "SIGN-MAIN-14030-14047",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 14037,
+                "end_line": 14038,
+                "excerpt_sha256": "46e8d4af150312b2f9dcd5ed81992424607d054d1cc10201a2e0424e85fa2fa4"
+              },
+              "required_input": "The numerator and denominator generate the same dyadic prime ideal in the cyclotomic field. Bind the cyclotomic uniformizer/ideal fact; the subsequent signature calculation remains local.",
+              "status": "pending"
+            },
+            "selected_current_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14037,
+              "end_line": 14038,
+              "excerpt_sha256": "46e8d4af150312b2f9dcd5ed81992424607d054d1cc10201a2e0424e85fa2fa4"
+            },
+            "unchanged_original_excerpt": true,
+            "accepted_source_uses": [
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION",
+                "use_sha256": "30d8fd5f1c4ddd997ca40d55f916c663179ff84ab5b7d09beb4ef4a1be2a32e0",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                      "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+                    },
+                    "start_line": 9,
+                    "end_line": 9,
+                    "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES",
+                "use_sha256": "b67d621124924c5f904b8463dc60a58e23b18f62b3f7c1f36ca52ca14be5327c",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14031,
+                    "end_line": 14047,
+                    "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+                  }
+                ]
+              }
+            ],
+            "source_role_ids": [
+              "REAL-CYCLOTOMIC-SIGNATURE-INPUT"
+            ],
+            "disposition": "named input binding resolved at independently reviewed finite-level scope",
+            "merge_state": "not verified by this reconciliation; root installation and cumulative collector remain separate"
+          }
+        ],
+        "new_proof_source": {
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853",
+          "raw_line_count": 27,
+          "normalized_initial": {
+            "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-inputs-001/NORMALIZED-INITIAL.json",
+            "sha256": "a18269801e5f61c5fbb6a9610ee3c9dffcfbbabede0a700454ebc3cc3ae43da9"
+          },
+          "normalized_passages": {
+            "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-inputs-001/NORMALIZED-PASSAGES.json",
+            "sha256": "aa7f96f95777767f9a0c8b347731d730fdfed5fcbbbc011487b246af2663437c"
+          }
+        },
+        "no_claim": "No inverse-limit, tower-compatibility, bounded s_n, rank, determinant or global source-set closure."
+      },
+      "current": {
+        "scope": "Exact two original pending rows plus supplemental prime-ideal row; no other sign-group obligation changed.",
+        "original_packet": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-sign-main-role-partition-third-002/MANIFEST.json",
+          "sha256": "4beb3cf7d3e4bdce79dfe69d5745fa6814bf939afcce256d66745154d93bd5ce"
+        },
+        "author_packet": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-inputs-001/MANIFEST.json",
+          "sha256": "01aabdeb279c21db2bfd65ca98b6812231536b35b231d5e59eecb65029a27dcd"
+        },
+        "math_review": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-review-arithmetic-001/REVIEW.json",
+          "sha256": "738051ca95fc34d2c057903ce654cfce0b20713cc0799ac9791599ec01e232f6"
+        },
+        "fresh_source_reconciliation": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-reconciliation-002/REVIEWER-RECONCILIATION.json",
+          "sha256": "654621cd52a3184aa25beb2c4cd188aae64c3fe6ff16ba78600c2b527bf53e9a"
+        },
+        "rows": [
+          {
+            "original": {
+              "id": "SIGN-MAIN-14018-14029",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14018,
+                "end_line": 14029,
+                "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+              },
+              "source_role": "pending",
+              "use_ids": [],
+              "claim_ids": [
+                "V14-MAIN-POLYNOMIAL-DEFINITION"
+              ],
+              "reason": "Uses the real-split Hilbert two-class field, unique dyadic ramification and finite p-group Frattini criterion. The induction is explicit; exact class-field and group-theoretic input attribution remains.",
+              "status": "pending"
+            },
+            "selected_current_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14018,
+              "end_line": 14029,
+              "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+            },
+            "unchanged_original_excerpt": true,
+            "accepted_source_uses": [
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION",
+                "use_sha256": "30d8fd5f1c4ddd997ca40d55f916c663179ff84ab5b7d09beb4ef4a1be2a32e0",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                      "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+                    },
+                    "start_line": 9,
+                    "end_line": 9,
+                    "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS",
+                "use_sha256": "6a7fad080dcf396bc404fb9eece72b3570aaaf3d04aa7739239c14662df8cd72",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14018,
+                    "end_line": 14029,
+                    "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+                  }
+                ]
+              }
+            ],
+            "source_role_ids": [
+              "REAL-CYCLOTOMIC-TOWER-INPUT",
+              "REAL-CYCLOTOMIC-CLASS-INDUCTION"
+            ],
+            "disposition": "named input binding resolved at independently reviewed finite-level scope",
+            "merge_state": "not verified by this reconciliation; root installation and cumulative collector remain separate"
+          },
+          {
+            "original": {
+              "id": "SIGN-MAIN-14048-14067",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14048,
+                "end_line": 14067,
+                "excerpt_sha256": "c4803b3c77f08122ddbf6a2dd8f3600c514404642560784c4c91a4a9f6390b3e"
+              },
+              "source_role": "pending",
+              "use_ids": [],
+              "claim_ids": [
+                "V14-MAIN-POLYNOMIAL-DEFINITION"
+              ],
+              "reason": "Kummer/S-unit dimension, global Brauer invariant description and higher global-to-real comparison are actual incoming sources; the subsequent dimension computation is elementary.",
+              "status": "pending"
+            },
+            "selected_current_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14048,
+              "end_line": 14067,
+              "excerpt_sha256": "c4803b3c77f08122ddbf6a2dd8f3600c514404642560784c4c91a4a9f6390b3e"
+            },
+            "unchanged_original_excerpt": true,
+            "accepted_source_uses": [
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES",
+                "use_sha256": "b67d621124924c5f904b8463dc60a58e23b18f62b3f7c1f36ca52ca14be5327c",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14031,
+                    "end_line": 14047,
+                    "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER",
+                "use_sha256": "5169edc0e2adeb8cdb425f13935acc31c7d7677b21b16ceab7550c870a372e57",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14049,
+                    "end_line": 14060,
+                    "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT",
+                "use_sha256": "b2b9f08cb88b4295c3d717f5ea5515bc447ed25824b081742fa214bbfa587764",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                      "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+                    },
+                    "start_line": 23,
+                    "end_line": 23,
+                    "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON",
+                "use_sha256": "1c4840ebc6f377f0325a68bd4e5911f301c3a99b4795ea94b168d40cd55cc85e",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14060,
+                    "end_line": 14067,
+                    "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+                  }
+                ]
+              }
+            ],
+            "source_role_ids": [
+              "REAL-CYCLOTOMIC-KUMMER-BRAUER-INPUT",
+              "REAL-CYCLOTOMIC-H1-COUNT",
+              "REAL-CYCLOTOMIC-POSITIVE-FIBER"
+            ],
+            "disposition": "named input binding resolved at independently reviewed finite-level scope",
+            "merge_state": "not verified by this reconciliation; root installation and cumulative collector remain separate"
+          },
+          {
+            "original": {
+              "id": "THIRD-SUP-1",
+              "parent_row_id": "SIGN-MAIN-14030-14047",
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14037,
+                "end_line": 14038,
+                "excerpt_sha256": "46e8d4af150312b2f9dcd5ed81992424607d054d1cc10201a2e0424e85fa2fa4"
+              },
+              "required_input": "The numerator and denominator generate the same dyadic prime ideal in the cyclotomic field. Bind the cyclotomic uniformizer/ideal fact; the subsequent signature calculation remains local.",
+              "status": "pending"
+            },
+            "selected_current_location": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 14037,
+              "end_line": 14038,
+              "excerpt_sha256": "46e8d4af150312b2f9dcd5ed81992424607d054d1cc10201a2e0424e85fa2fa4"
+            },
+            "unchanged_original_excerpt": true,
+            "accepted_source_uses": [
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION",
+                "use_sha256": "30d8fd5f1c4ddd997ca40d55f916c663179ff84ab5b7d09beb4ef4a1be2a32e0",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+                      "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+                    },
+                    "start_line": 9,
+                    "end_line": 9,
+                    "excerpt_sha256": "a286ae8d6407425f94e4b8f8032a8c2bbc170952f0326e930ea3fdfa585bd451"
+                  }
+                ]
+              },
+              {
+                "id": "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES",
+                "use_sha256": "b67d621124924c5f904b8463dc60a58e23b18f62b3f7c1f36ca52ca14be5327c",
+                "actual_consumer_locations": [
+                  {
+                    "pin": {
+                      "side": "head",
+                      "path": "manuscripts/quartic_v14.tex",
+                      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                    },
+                    "start_line": 14031,
+                    "end_line": 14047,
+                    "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+                  }
+                ]
+              }
+            ],
+            "source_role_ids": [
+              "REAL-CYCLOTOMIC-SIGNATURE-INPUT"
+            ],
+            "disposition": "named input binding resolved at independently reviewed finite-level scope",
+            "merge_state": "not verified by this reconciliation; root installation and cumulative collector remain separate"
+          }
+        ],
+        "new_proof_source": {
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853",
+          "raw_line_count": 27,
+          "normalized_initial": {
+            "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-inputs-001/NORMALIZED-INITIAL.json",
+            "sha256": "a18269801e5f61c5fbb6a9610ee3c9dffcfbbabede0a700454ebc3cc3ae43da9"
+          },
+          "normalized_passages": {
+            "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-cyclotomic-inputs-001/NORMALIZED-PASSAGES.json",
+            "sha256": "aa7f96f95777767f9a0c8b347731d730fdfed5fcbbbc011487b246af2663437c"
+          }
+        },
+        "no_claim": "No inverse-limit, tower-compatibility, bounded s_n, rank, determinant or global source-set closure."
+      }
+    }
+  ],
+  "stein_qualification": {
+    "path": "v14-stein-qualification-review-sign-001/REVIEW.json",
+    "sha256": "745193d8303e1ced0de6ad295e7a0b2127f51af119bdbaafd857dce737858f09"
+  },
+  "unary_installation": {
+    "path": "v14-integration-source-line-index-work-001/UNARY-INSTALLATION.json",
+    "sha256": "ee35986bb2af2bc810bb711898538394bdf81453fca7f5a87e26b2266c928614"
+  },
+  "scope": "Accepted bounded records after frozen aggregate22116b76. Remaining global j-star and inverse-limit relations are not inferred."
+}

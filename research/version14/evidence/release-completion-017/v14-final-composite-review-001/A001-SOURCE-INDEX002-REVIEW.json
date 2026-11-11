@@ -1,0 +1,26 @@
+{
+  "schema": "bounded-source-review/v1",
+  "reviewed_at": "2026-11-09T08:15:21.236Z",
+  "target": {
+    "path": "v14-a001-source-line-index-002/MANIFEST.json",
+    "sha256": "c423ce70cdd2683e7d76f209be653dfcd09d28cae2952b674d5b603b42d45aa8"
+  },
+  "decision": "accepted bounded source-role partition",
+  "checks": {
+    "rows": 57,
+    "source_lines": 57,
+    "raw_excerpts_match": true,
+    "source_hash_match": true,
+    "ordered_single_line_partition": true
+  },
+  "reasoning": [
+    "Read full 57-line proof. Lines17/19/21 retain available source statements rather than consume their own output.",
+    "Actual source applications27/31/35/39/41 bind the five independently accepted inputs in A001-FIVE-SOURCE-INPUTS-REVIEW.json; local quaternion/form/stabilizer calculations25/29/37 remain distinct.",
+    "Historical source qualifications and output boundaries are preserved. Empty immediate PENDING list does not erase source antecedents, the explicit Igusa/invariant connection, B11 integral/fine-model inputs, or generic moduli identification."
+  ],
+  "prior_review": {
+    "path": "A001-FIVE-SOURCE-INPUTS-REVIEW.json",
+    "sha256": "ad829ba5dc8088a7206ec1c3e2bc3162a61d5e9bfeacda80327167694220e6d6"
+  },
+  "limits": "No global source ancestry, whole-row closure, or final coverage approval."
+}

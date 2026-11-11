@@ -1,0 +1,1 @@
+The primary consumer remains22572–22595 with one passage and one coverage entry. The other two retained-consumer spans remain pinned as supporting adverse-case evidence, not extra unindexed consumer_locations. No scientific text changed.

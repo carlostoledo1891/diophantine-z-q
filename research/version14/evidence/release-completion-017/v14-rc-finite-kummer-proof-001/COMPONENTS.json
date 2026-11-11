@@ -1,0 +1,176 @@
+{
+  "components": [
+    {
+      "origin": "v14-rc-finite-kummer-proof-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-MULTIPLICATIVE-KUMMER-RELATIONS",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-MULTIPLICATIVE-KUMMER-RELATIONS-P1"
+        ],
+        "assertion": {
+          "statement": "The multiplier prescription (4.4a) defines an automorphism of the actual finite extension L_infinity/F_infinity once every multiplicative relation has the stated trivial multiplier.",
+          "objects": "F_infinity=K(mu_(2^infinity)), the finitely many alpha_a and their 2^n-th roots.",
+          "hypotheses": "The actual imaginary quadratic K and relation-basis radicands are fixed; F_infinity contains the required roots of unity. The preceding odd-prime valuation calculation proves compatibility with every relation, including unit relations.",
+          "quantifiers": "Each finite n and each actual finite relation-basis family.",
+          "parameter_range": "Finite radical extension over the possibly infinite cyclotomic field.",
+          "uniformity": "No independent-radicand or class-number-coprimality hypothesis.",
+          "constants": "Exact root-of-unity multipliers, with no scalar division.",
+          "normalizations": "The sign in (4.4a) matches the later connecting-map convention.",
+          "exceptional_cases": "Dyadic weights are zero. Descent to a finite layer and the later Chebotarev application are separate steps.",
+          "limit_order": "Check all relations by valuations, obtain a character on B, and then realize it as a radical automorphism."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the radical automorphism after the actual all-relation valuation check.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/finite-kummer-current/PROOF.md",
+              "sha256": "e215f7ac149c8915021144b4f30c9c3b3526b9102a662fc6f095cfbd405b8c4a"
+            },
+            "start_line": 7,
+            "end_line": 17,
+            "excerpt_sha256": "4df11b27caa608faac71caa5850274643e40f0429b75fd59f4d81f079f85be99"
+          },
+          "statement": "The finite radical pairing Gal(F(B^(1/n))/F) x B -> mu_n is perfect under the stated root-of-unity and characteristic hypotheses.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4429,
+          "end_line": 4447,
+          "excerpt_sha256": "d4f31783a5a046481443440b6ef44747e54b511d655579ec0b6c365371807301"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-MULTIPLICATIVE-KUMMER-RELATIONS",
+        "use_sha256": "b63bab7cc03fe6094773ba12fff445cfc6dad2c40da2064d304c844730c6e5e7",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "The finite radical pairing Gal(F(B^(1/n))/F) x B -> mu_n is perfect under the stated root-of-unity and characteristic hypotheses.",
+          "objects": "An arbitrary field F, the group of n-th roots of unity, and finite subgroups B of F*/F*^n.",
+          "hypotheses": "F contains a primitive n-th root of unity and its characteristic does not divide n.",
+          "quantifiers": "Every such F,n and finite subgroup B.",
+          "parameter_range": "Positive integer n; no number-field hypothesis on F.",
+          "uniformity": "Exact finite algebraic correspondence.",
+          "constants": "[F(B^(1/n)):F]=|B|.",
+          "normalizations": "Roots are chosen in a fixed algebraic closure; B consists of classes modulo n-th powers.",
+          "exceptional_cases": "No independence of a chosen list of radicands is assumed. This does not assert a Chebotarev theorem over an infinite base.",
+          "limit_order": "Fix F,n and B before forming the finite radical extension."
+        },
+        "needed_assertion": {
+          "statement": "The multiplier prescription (4.4a) defines an automorphism of the actual finite extension L_infinity/F_infinity once every multiplicative relation has the stated trivial multiplier.",
+          "objects": "F_infinity=K(mu_(2^infinity)), the finitely many alpha_a and their 2^n-th roots.",
+          "hypotheses": "The actual imaginary quadratic K and relation-basis radicands are fixed; F_infinity contains the required roots of unity. The preceding odd-prime valuation calculation proves compatibility with every relation, including unit relations.",
+          "quantifiers": "Each finite n and each actual finite relation-basis family.",
+          "parameter_range": "Finite radical extension over the possibly infinite cyclotomic field.",
+          "uniformity": "No independent-radicand or class-number-coprimality hypothesis.",
+          "constants": "Exact root-of-unity multipliers, with no scalar division.",
+          "normalizations": "The sign in (4.4a) matches the later connecting-map convention.",
+          "exceptional_cases": "Dyadic weights are zero. Descent to a finite layer and the later Chebotarev application are separate steps.",
+          "limit_order": "Check all relations by valuations, obtain a character on B, and then realize it as a radical automorphism."
+        },
+        "required_capabilities": [
+          "The multiplier prescription (4.4a) defines an automorphism of the actual finite extension L_infinity/F_infinity once every multiplicative relation has the stated trivial multiplier."
+        ],
+        "available_capabilities": [
+          "The finite radical pairing Gal(F(B^(1/n))/F) x B -> mu_n is perfect under the stated root-of-unity and characteristic hypotheses."
+        ],
+        "derived_capabilities": [
+          "The multiplier prescription (4.4a) defines an automorphism of the actual finite extension L_infinity/F_infinity once every multiplicative relation has the stated trivial multiplier."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4429,
+            "end_line": 4447,
+            "excerpt_sha256": "d4f31783a5a046481443440b6ef44747e54b511d655579ec0b6c365371807301"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The multiplier prescription (4.4a) defines an automorphism of the actual finite extension L_infinity/F_infinity once every multiplicative relation has the stated trivial multiplier.",
+            "objects": "F_infinity=K(mu_(2^infinity)), the finitely many alpha_a and their 2^n-th roots.",
+            "hypotheses": "The actual imaginary quadratic K and relation-basis radicands are fixed; F_infinity contains the required roots of unity. The preceding odd-prime valuation calculation proves compatibility with every relation, including unit relations.",
+            "quantifiers": "Each finite n and each actual finite relation-basis family.",
+            "parameter_range": "Finite radical extension over the possibly infinite cyclotomic field.",
+            "uniformity": "No independent-radicand or class-number-coprimality hypothesis.",
+            "constants": "Exact root-of-unity multipliers, with no scalar division.",
+            "normalizations": "The sign in (4.4a) matches the later connecting-map convention.",
+            "exceptional_cases": "Dyadic weights are zero. Descent to a finite layer and the later Chebotarev application are separate steps.",
+            "limit_order": "Check all relations by valuations, obtain a character on B, and then realize it as a radical automorphism."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Dyadic weights are zero. Descent to a finite layer and the later Chebotarev application are separate steps.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 4429,
+              "end_line": 4447,
+              "excerpt_sha256": "d4f31783a5a046481443440b6ef44747e54b511d655579ec0b6c365371807301"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4429,
+            "end_line": 4447,
+            "excerpt_sha256": "d4f31783a5a046481443440b6ef44747e54b511d655579ec0b6c365371807301"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4429,
+          "end_line": 4447,
+          "excerpt_sha256": "d4f31783a5a046481443440b6ef44747e54b511d655579ec0b6c365371807301"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-MULTIPLICATIVE-KUMMER-RELATIONS-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4429,
+            "end_line": 4447,
+            "excerpt_sha256": "d4f31783a5a046481443440b6ef44747e54b511d655579ec0b6c365371807301"
+          }
+        }
+      ]
+    }
+  ]
+}

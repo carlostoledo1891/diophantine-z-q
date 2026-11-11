@@ -1,0 +1,736 @@
+[
+  {
+    "id": "ORIGINAL22-GT-MAIN",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2190,
+      "end_line": 2206,
+      "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+    },
+    "source": {
+      "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+      "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "publication": "Green–Tao, Linear equations in primes, Annals171(2010),1753–1850",
+      "locators": [
+        "Definition1.1 and size convention p1755",
+        "Conjecture1.2 equation1.7 and local factors p1757",
+        "Definition1.5 pp1759–1760; Lemma1.6 p1761",
+        "Main Theorem p1763"
+      ]
+    },
+    "available": "Assuming GI(s) and MN(s), every fixed affine-linear integer system of complexity at most s satisfies the generalized Hardy–Littlewood von Mangoldt asymptotic on convex bodies, with bounded size at the ambient scale. Pairwise nonparallel linear parts give complexity at most t−2 by singleton classes.",
+    "needed": "The22 integral affine forms epsilon_nu F_nu(r+W_L n)/k_nu on the convex body r+W_L n in X Omega have the fixed-system von Mangoldt asymptotic as X tends to infinity.",
+    "derivation": "The actual22 homogeneous coefficient vectors are pairwise independent by2085–2097. Dividing each by its nonzero fixed k_nu and substituting the invertible scalar-linear map W_L preserves independence. The earlier CRT makes these affine forms integer-valued with integer coefficients. For each distinguished form, the other21 forms give21 singleton classes, hence complexity at most20. Fix A,catalogue,L,r,W_L and coefficients first. The translated/scaled box is convex and lies in a fixed multiple of the X-scale; GT permits noninjective systems and its size constants here may depend on the fixed data. Apply the theorem separately to each of the finitely many r.",
+    "premises": [
+      "Actual fixed CRT/integrality and positive-box construction2085–2164.",
+      "GI20 from existing ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20.",
+      "MN20 from ORIGINAL22-MN20.",
+      "The local-density estimates and removal of higher prime powers are separate."
+    ],
+    "boundary": "No X error uniform in L or arbitrary changing coefficients; the uniform-in-L lower constant is established separately by the local products."
+  },
+  {
+    "id": "ORIGINAL22-MN20",
+    "role": "published_theorem_specialization",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2190,
+      "end_line": 2204,
+      "excerpt_sha256": "563aada3fa7715fb69429f1560eaf73a2e29a0fc68a228f979f98fc82f3621c3"
+    },
+    "source": {
+      "path": "work/quartic-version5-release/sun-proof/sources/GT-mobius-published.pdf",
+      "sha256": "5259dbc9ee73df46edd765ca27c8b3c0ec466f6b78abafa5f54237b11d44a314",
+      "publication": "Green–Tao, The Möbius function is strongly orthogonal to nilsequences, Annals175(2012),541–566",
+      "locators": [
+        "Theorem1.1 pp542–543",
+        "Linear specialization and MN(s) implication p543"
+      ]
+    },
+    "available": "For a fixed Q-rational filtered nilmanifold of dimension m and degree d, every polynomial orbit and real1-bounded Lipschitz test has Möbius correlation bounded by a constant times Q to a fixed power times (1+LipF) times log(N)^(-A), uniformly in the orbit, for each fixed A>0. Constants depend on m,d,A and are ineffective.",
+    "needed": "MN20 for the fixed nilsequence models entering the complexity20 prime theorem.",
+    "derivation": "Specialize the published polynomial-nilsequence theorem to linear orbits in the degree20 filtration, as its printed p543 remark explicitly permits. Keep rational Malcev basis, dimension and Lipschitz bounds fixed; split real and imaginary parts for complex tests. The logarithmic saving is arbitrary at fixed complexity and remains ineffective.",
+    "premises": [
+      "Connected simply connected nilmanifold, lattice and fixed rational Malcev basis.",
+      "Linear orbit is a polynomial orbit of the chosen degree filtration."
+    ],
+    "boundary": "This is Möbius orthogonality only, not a direct von Mangoldt or Gaussian weight estimate; GT Main Theorem supplies the separate transference step."
+  },
+  {
+    "id": "ORIGINAL22-MERTENS-DENSITY44",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2178,
+      "end_line": 2188,
+      "excerpt_sha256": "dea9cf6abeb43db0b47b893ed59b5b6b1a8fb16f701ed0f8015d03ae6ec7d8ea"
+    },
+    "source": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/gaussian-external-source-cards-002/SOURCES.md",
+          "sha256": "e03d57e7b99f977de154be384560ad1fc589de7ca8e8629fdcc656c48d1b788b"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "2378075591a427d59bbd5c5f321f58817c332ed979b217e0cf9eadc800d3ede2"
+      },
+      "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+      "publication": {
+        "title": "Mertens’ theorem for arithmetic progressions",
+        "authors": "Kenneth S. Williams",
+        "venue": "Journal of Number Theory 6 (1974), 353–359",
+        "authoritative_version": "{\"access\":\"Author-hosted scan of published pages checked; Theorem1 on p.356.\",\"authors\":\"Kenneth S. Williams\",\"byte_verification\":\"docs/quartic-1272/evidence/sun-source-byte-verification.json\",\"file\":\"sources/Williams-published.pdf\",\"id\":\"WILLIAMS\",\"publication\":\"Journal of Number Theory 6 (1974), 353–359\",\"release_availability\":\"Hash-pinned external audit source; full text not redistributed here.\",\"sha256\":\"9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0\",\"sourceversion\":\"Published version, 1974\",\"title\":\"Mertens’ theorem for arithmetic progressions\",\"url\":\"https://doi.org/10.1016/0022-314X(74)90032-8\"}",
+        "locator": "Theorem1, p.356; ordinary formula(1.1), p.353",
+        "corrections": "Original source-version qualifications are retained in the accepted source card. Historical application status is not an independent approval of this new current use."
+      },
+      "primary": {
+        "path": "work/quartic-version5-release/sun-proof/sources/Williams-published.pdf",
+        "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0"
+      },
+      "direct_read": "Theorem1 printed356, PDF4; exact error exponent visually inspected in this task."
+    },
+    "available": "For fixed k and reduced residue l, product_{p<=x,p=l mod k}(1-1/p)=C(k,l)(log x)^(-1/phi(k))+O_k((log x)^(-1/phi(k)-1)), with C(k,l)>0. Specialization k=2,l=1 covers all odd primes; adding prime2 changes the constant only.",
+    "needed": "The surviving residue density is at least c_A(log L)^(-44), with positive c_A independent of L and X.",
+    "derivation": "All varying primes in this product exceed324. Therefore factors1-44/q are positive, and log(1-44/q)-44log(1-1/q)=O(q^-2). The difference has a uniformly bounded convergent sum. Apply the modulus2 product and absorb the fixed primes dividing W0 into a positive constant. The separate plane-counting union bound supplies the product lower bound.",
+    "premises": [
+      "The44 excluded affine planes and the fixed initial congruence conditions are already constructed."
+    ],
+    "boundary": "This does not supply the prime asymptotic or any error uniform in L."
+  },
+  {
+    "id": "ORIGINAL22-MERTENS-RECIPROCAL-ERROR",
+    "role": "published_theorem_with_local_derivation",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2299,
+      "end_line": 2310,
+      "excerpt_sha256": "0b7e25a8ff7ed07a4082ee793c4016d9e5bc1433bd3abfc63e35ea666758e3a1"
+    },
+    "source": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/gaussian-external-source-cards-002/SOURCES.md",
+          "sha256": "e03d57e7b99f977de154be384560ad1fc589de7ca8e8629fdcc656c48d1b788b"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "2378075591a427d59bbd5c5f321f58817c332ed979b217e0cf9eadc800d3ede2"
+      },
+      "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+      "publication": {
+        "title": "Mertens’ theorem for arithmetic progressions",
+        "authors": "Kenneth S. Williams",
+        "venue": "Journal of Number Theory 6 (1974), 353–359",
+        "authoritative_version": "{\"access\":\"Author-hosted scan of published pages checked; Theorem1 on p.356.\",\"authors\":\"Kenneth S. Williams\",\"byte_verification\":\"docs/quartic-1272/evidence/sun-source-byte-verification.json\",\"file\":\"sources/Williams-published.pdf\",\"id\":\"WILLIAMS\",\"publication\":\"Journal of Number Theory 6 (1974), 353–359\",\"release_availability\":\"Hash-pinned external audit source; full text not redistributed here.\",\"sha256\":\"9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0\",\"sourceversion\":\"Published version, 1974\",\"title\":\"Mertens’ theorem for arithmetic progressions\",\"url\":\"https://doi.org/10.1016/0022-314X(74)90032-8\"}",
+        "locator": "Theorem1, p.356; ordinary formula(1.1), p.353",
+        "corrections": "Original source-version qualifications are retained in the accepted source card. Historical application status is not an independent approval of this new current use."
+      },
+      "primary": {
+        "path": "work/quartic-version5-release/sun-proof/sources/Williams-published.pdf",
+        "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0"
+      },
+      "direct_read": "Theorem1 printed356, PDF4; exact error exponent visually inspected in this task."
+    },
+    "available": "For fixed k and reduced residue l, product_{p<=x,p=l mod k}(1-1/p)=C(k,l)(log x)^(-1/phi(k))+O_k((log x)^(-1/phi(k)-1)), with C(k,l)>0. Specialization k=2,l=1 covers all odd primes; adding prime2 changes the constant only.",
+    "needed": "S(x)=sum_{p<=x}1/p=loglog x+C+O(1/log x), and sum_{p<=x}log(p)/p=log x+O(loglog x).",
+    "derivation": "At k=2 the theorem gives the odd-prime product c/log x+O(log^-2 x). Its positive leading constant permits logarithms, giving minus log product=loglog x-log c+O(1/log x). The correction sum[-log(1-1/p)-1/p] converges, and its omitted tail is O(sum_{n>x}n^-2)=O(1/x). Include prime2 in the constant. Partial summation gives S(x)log x-integral_2^x S(t)dt/t: the loglog term contributes log x plus a constant, the constant terms cancel up to a constant, and the error contributes O(1)+O(integral_2^x dt/(t log t))=O(loglog x).",
+    "premises": [
+      "x tends to infinity; the bounded initial interval is absorbed in constants."
+    ],
+    "boundary": "This proves the precise error used in the expectation bound; no prime-number-theorem strengthening is assumed."
+  },
+  {
+    "id": "ORIGINAL22-MERTENS-SPLIT-PRODUCT",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2320,
+      "end_line": 2329,
+      "excerpt_sha256": "26572972a8529dc7252eda863469db182546ac1afbf4d5ce135e1a42deb3bc57"
+    },
+    "source": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/gaussian-external-source-cards-002/SOURCES.md",
+          "sha256": "e03d57e7b99f977de154be384560ad1fc589de7ca8e8629fdcc656c48d1b788b"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "2378075591a427d59bbd5c5f321f58817c332ed979b217e0cf9eadc800d3ede2"
+      },
+      "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+      "publication": {
+        "title": "Mertens’ theorem for arithmetic progressions",
+        "authors": "Kenneth S. Williams",
+        "venue": "Journal of Number Theory 6 (1974), 353–359",
+        "authoritative_version": "{\"access\":\"Author-hosted scan of published pages checked; Theorem1 on p.356.\",\"authors\":\"Kenneth S. Williams\",\"byte_verification\":\"docs/quartic-1272/evidence/sun-source-byte-verification.json\",\"file\":\"sources/Williams-published.pdf\",\"id\":\"WILLIAMS\",\"publication\":\"Journal of Number Theory 6 (1974), 353–359\",\"release_availability\":\"Hash-pinned external audit source; full text not redistributed here.\",\"sha256\":\"9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0\",\"sourceversion\":\"Published version, 1974\",\"title\":\"Mertens’ theorem for arithmetic progressions\",\"url\":\"https://doi.org/10.1016/0022-314X(74)90032-8\"}",
+        "locator": "Theorem1, p.356; ordinary formula(1.1), p.353",
+        "corrections": "Original source-version qualifications are retained in the accepted source card. Historical application status is not an independent approval of this new current use."
+      },
+      "primary": {
+        "path": "work/quartic-version5-release/sun-proof/sources/Williams-published.pdf",
+        "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0"
+      },
+      "direct_read": "Theorem1 printed356, PDF4; exact error exponent visually inspected in this task."
+    },
+    "available": "For fixed k and reduced residue l, product_{p<=x,p=l mod k}(1-1/p)=C(k,l)(log x)^(-1/phi(k))+O_k((log x)^(-1/phi(k)-1)), with C(k,l)>0. Specialization k=2,l=1 covers all odd primes; adding prime2 changes the constant only.",
+    "needed": "log H(z)=loglog z+O_Q*(1), and the truncated denominator is bounded below by a positive constant times log Z uniformly in the single omitted prime.",
+    "derivation": "For split q=1 mod4, g(q)=2/q-1/q² so1-g(q)=(1-1/q)² exactly. Since1+h=1/(1-g), apply the modulus4 product with exponent1/2 and square its inverse. Fixed exclusions alter only a constant. Omitting ell changes H by(1-1/ell)²>=1/2 on the stated support when ell<=z, and not at all otherwise. The separate Markov argument at z=Z^(1/100) retains at least half the product.",
+    "premises": [
+      "Exact g,h and the separately proved truncation inequality G(Z)>=H(Z^(1/100))/2."
+    ],
+    "boundary": "No assertion that the full Euler product alone equals the truncated sum."
+  },
+  {
+    "id": "ORIGINAL22-MERTENS-ALL-PRODUCT21",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2330,
+      "end_line": 2338,
+      "excerpt_sha256": "d5fdb94e400ca45e4856741a4d8edd0534cb3b8d9b70f0fb0b24eebd23ced2fd"
+    },
+    "source": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/gaussian-external-source-cards-002/SOURCES.md",
+          "sha256": "e03d57e7b99f977de154be384560ad1fc589de7ca8e8629fdcc656c48d1b788b"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "2378075591a427d59bbd5c5f321f58817c332ed979b217e0cf9eadc800d3ede2"
+      },
+      "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+      "publication": {
+        "title": "Mertens’ theorem for arithmetic progressions",
+        "authors": "Kenneth S. Williams",
+        "venue": "Journal of Number Theory 6 (1974), 353–359",
+        "authoritative_version": "{\"access\":\"Author-hosted scan of published pages checked; Theorem1 on p.356.\",\"authors\":\"Kenneth S. Williams\",\"byte_verification\":\"docs/quartic-1272/evidence/sun-source-byte-verification.json\",\"file\":\"sources/Williams-published.pdf\",\"id\":\"WILLIAMS\",\"publication\":\"Journal of Number Theory 6 (1974), 353–359\",\"release_availability\":\"Hash-pinned external audit source; full text not redistributed here.\",\"sha256\":\"9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0\",\"sourceversion\":\"Published version, 1974\",\"title\":\"Mertens’ theorem for arithmetic progressions\",\"url\":\"https://doi.org/10.1016/0022-314X(74)90032-8\"}",
+        "locator": "Theorem1, p.356; ordinary formula(1.1), p.353",
+        "corrections": "Original source-version qualifications are retained in the accepted source card. Historical application status is not an independent approval of this new current use."
+      },
+      "primary": {
+        "path": "work/quartic-version5-release/sun-proof/sources/Williams-published.pdf",
+        "sha256": "9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0"
+      },
+      "direct_read": "Theorem1 printed356, PDF4; exact error exponent visually inspected in this task."
+    },
+    "available": "For fixed k and reduced residue l, product_{p<=x,p=l mod k}(1-1/p)=C(k,l)(log x)^(-1/phi(k))+O_k((log x)^(-1/phi(k)-1)), with C(k,l)>0. Specialization k=2,l=1 covers all odd primes; adding prime2 changes the constant only.",
+    "needed": "log H(z)=21loglog z+O_Q*(1) uniformly in the individual excluded sets, hence G(Z) is bounded below by a constant times(log Z)^21.",
+    "derivation": "On q>Q*>=324, the bounds21/q-210/q²<=g(q)<=21/q imply -log(1-g(q))=21/q+O(q^-2), with absolute implied constant independent of the excluded sets. Sum this convergent error and use the modulus2 reciprocal-prime estimate. Apply the independently established half-mass truncation with fixed exponent1/100.",
+    "premises": [
+      "The local excluded-set bound on g and the preceding Markov truncation."
+    ],
+    "boundary": "Uniformity is only in those sets satisfying the displayed bounds; no varying-modulus Mertens estimate."
+  },
+  {
+    "id": "ORIGINAL-CONJUGATE-TATE-INJECTION",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2349,
+      "end_line": 2362,
+      "excerpt_sha256": "9f4e13340ee0048df96ac73e3662ac8c3156030967e915a755baea5598b90d67"
+    },
+    "locator": "III Theorem7.4 pp89–91",
+    "available": "For ell different from the characteristic, Hom(E1,E2) tensor Z_ell injects into Hom(T_ell E1,T_ell E2).",
+    "needed": "The rational centralizer of the defined order-four automorphism iota is exactly Q(i).",
+    "derivation": "Use ell=3, which differs from p>324. The explicit Fp-defined iota has iota²=-1, so it embeds Q(i) into the rational endomorphism algebra. Tensor the rational centralizer with Q3 and use the Tate injection: its image lies in the centralizer of iota on a two-dimensional Q3-space. Because T²+1 is irreducible over Q3, that latter centralizer is Q3(i) of dimension2. The rational centralizer has dimension at most2 and contains Q(i), hence equals Q(i). The lower inclusion is essential; this does not assert the full geometric endomorphism algebra equals Q(i).",
+    "boundary": "The actual good reduction, i in Fp and formula for iota are separate displayed local computations.",
+    "role": "published_source_application"
+  },
+  {
+    "id": "ORIGINAL-CONJUGATE-FROBENIUS-INTEGRAL",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2363,
+      "end_line": 2365,
+      "excerpt_sha256": "92fd2262ef34d8154849df03ba343b2ad0ff41a95a45c333bc14189cd4c442de"
+    },
+    "locator": "V Theorem2.3.1(b),p142",
+    "available": "The q-power Frobenius satisfies a monic integral quadratic polynomial in End(E).",
+    "needed": "The arithmetic p-power Frobenius, already in the rational centralizer Q(i), belongs to Z[i].",
+    "derivation": "Coordinate p-power Frobenius commutes with (x,y)↦(-x,iy) because i is in Fp. The previously identified centralizer therefore contains this actual Frobenius. Its monic integral polynomial makes it integral over Z; the integer ring of Q(i) is Z[i], giving a+bi with integers a,b.",
+    "boundary": "This does not assert all geometric endomorphisms belong to Q(i); only the centralizer and actual Frobenius do.",
+    "role": "published_source_application"
+  },
+  {
+    "id": "ORIGINAL-CONJUGATE-TRACE-DETERMINANT",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2366,
+      "end_line": 2373,
+      "excerpt_sha256": "7cb77a1991a31cf1124e16aa46ea3863a6f852692fe3018763365a396ea94ec2"
+    },
+    "locator": "III Proposition8.6,p99; V Theorem2.3.1 and proof,p142",
+    "available": "On a prime-to-characteristic Tate module, determinant equals isogeny degree and trace equals1+degree(phi)−degree(1−phi). For q-power Frobenius the degree isq and degree(1−phi)=#E(Fq).",
+    "needed": "Writing Frobenius as a+bi gives p=a²+b² and the two opposite-twist orders p+1±2a.",
+    "derivation": "The Tate space is a one-dimensional Q3(i)-vector space, so a+bi has Q3-trace2a and determinant a²+b². Frobenius degree p and the degree(1−phi) point count give p=a²+b² and d1=p+1−2a. The actual two reductions are opposite squareclass quadratic twists by2341–2347, which negates the trace and gives d2=p+1+2a. This twist fact is a separate local computation, not supplied by the determinant theorem.",
+    "boundary": "Opposite twists follow from product7 and the selected Legendre symbol; they are not an extra conclusion of the Tate determinant formula.",
+    "role": "published_source_application"
+  },
+  {
+    "id": "ORIGINAL-CONJUGATE-HASSE-ORDER-RANGE",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2374,
+      "end_line": 2379,
+      "excerpt_sha256": "b154976920d2a71e9247ca28eb6d35a9e305833b571996db9640b336ec3d9dab"
+    },
+    "locator": "V Theorem1.1,p138",
+    "available": "For an elliptic curve over Fp, the point count differs from p+1 by at most2sqrt(p).",
+    "needed": "For the selected p>324, both orders are positive and below2p; their divisibility by4 excludes equality to oddp, so p divides neither.",
+    "derivation": "Apply Hasse separately to each actual good reduction. For p>324, p+1−2sqrt(p)>0 and p+1+2sqrt(p)<2p. The separate rational full2-torsion gives4|d_i, so neither order equals odd p; their strict interval then excludes every positive multiple of p.",
+    "boundary": "The gcd2-part and odd-common-prime consequences are subsequent elementary arithmetic; no prime-pattern existence is supplied here.",
+    "role": "published_source_application"
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-04",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-density44",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2179,
+      "end_line": 2184,
+      "excerpt_sha256": "e94df570c452bcfd531359adc2eeea296e4ccd36dee3164438b0027504f1d989"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2224,
+      "end_line": 2238,
+      "excerpt_sha256": "1513489396567b586eaad002a7de5051d37b4b5ad4252cf11e4a12b2133e3cf7"
+    },
+    "purpose": "Insert fixed-L admissible density into prime lower bound.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-05",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-residue-error",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2253,
+      "end_line": 2256,
+      "excerpt_sha256": "11d3e0f5595138087ede01e4f2ffe399a214445a8379b5ff22b2319dc6c07905"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2278,
+      "end_line": 2289,
+      "excerpt_sha256": "c18b9cce2c82b4f4cec48af3f56aab8fb9b3fa0b557e5ed02cbc12ff18d4d6b6"
+    },
+    "purpose": "Sum lattice remainders with actual sieve weights.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-06",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-lower",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2234,
+      "end_line": 2239,
+      "excerpt_sha256": "a0b011ff0edf722f22b22f87ff9c3a2674616cd3651cf9f8d82d0255d4c585a4"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2340,
+      "end_line": 2348,
+      "excerpt_sha256": "4cb2245d60701601c510685b3bae30d82c2fd034f38a56e239b6085e9e46f3f6"
+    },
+    "purpose": "Retain congruence restrictions of counted primes.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-07",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-selberg",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2286,
+      "end_line": 2288,
+      "excerpt_sha256": "cfccc1e0eb444adaf3070022ada3c1f5a4892d29180ab0cd66085a8d9eaf3fc6"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2393,
+      "end_line": 2413,
+      "excerpt_sha256": "06fd6df2b1cc3239b347252474aa71ce05d1c98f67d4f43682c46322e9778101"
+    },
+    "purpose": "Use the two-dimensional sieve bound.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-08",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-truncated-denominator",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2314,
+      "end_line": 2338,
+      "excerpt_sha256": "ccccf7ad6d7ae4547a3f9f92bd0a021ce9c8fe50665bae4614cb687872e50b76"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2393,
+      "end_line": 2413,
+      "excerpt_sha256": "06fd6df2b1cc3239b347252474aa71ce05d1c98f67d4f43682c46322e9778101"
+    },
+    "purpose": "Use truncated denominator, not infinite Euler product.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-09",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-truncated-denominator",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2314,
+      "end_line": 2338,
+      "excerpt_sha256": "ccccf7ad6d7ae4547a3f9f92bd0a021ce9c8fe50665bae4614cb687872e50b76"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2450,
+      "end_line": 2466,
+      "excerpt_sha256": "b3babf0f5a6e31e769a884fe13bc66d47c2b650b12653efcd377b7e116180f5f"
+    },
+    "purpose": "Use the fiber denominator specialization.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-10",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-bad-values",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2425,
+      "end_line": 2428,
+      "excerpt_sha256": "1e9684b0da589c4e20fab7b9bd414c70e72546dccccf56e200d554303a17e04d"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2467,
+      "end_line": 2491,
+      "excerpt_sha256": "b03b03d15efbe44fb36706d357e52948f8790761c09947c35edf06a76512faf3"
+    },
+    "purpose": "Multiply bad-value count by the fiber bound.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-11",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-fiber",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2459,
+      "end_line": 2463,
+      "excerpt_sha256": "2af0b4a63cbf04030cd67ef33d0c0bdf3af94dad85f9683ea9b753e4562f2739"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2467,
+      "end_line": 2491,
+      "excerpt_sha256": "b03b03d15efbe44fb36706d357e52948f8790761c09947c35edf06a76512faf3"
+    },
+    "purpose": "Bound target patterns above each bad value.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-12",
+    "role": "source_to_source_actual_application",
+    "source_label": "eq:prime-lower",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2234,
+      "end_line": 2239,
+      "excerpt_sha256": "a0b011ff0edf722f22b22f87ff9c3a2674616cd3651cf9f8d82d0255d4c585a4"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2480,
+      "end_line": 2491,
+      "excerpt_sha256": "d4d941e4c812a7fb9567fc02fb9367fadab1c02023066395f527d7fb7cb60564"
+    },
+    "purpose": "Compare after fixed L, then large X.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-13",
+    "role": "source_to_source_actual_application",
+    "source_label": "hyp:PC",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1712,
+      "end_line": 1715,
+      "excerpt_sha256": "1a709101a8429a38cde90d0bf84a24fe6d015eb7eda9ff4d2a2f75e27ed9e28a"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2530,
+      "end_line": 2539,
+      "excerpt_sha256": "028e0e74f0a12ed6655f4ab4b1949f0f1343f3af9829606a7369c7ed6b66b5fe"
+    },
+    "purpose": "Apply pole completeness to constructed admissible argument.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "FINAL-RATIONAL-NONCM-FOWLER",
+    "role": "published_theorem_application",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1730,
+      "end_line": 1733,
+      "excerpt_sha256": "7e67cb2a9ebc0116453809cd97ad99c0c53de684aa1f8108269ac486df552216"
+    },
+    "publication": {
+      "title": "Some uniform effective results on André–Oort for sums of powers in C^n",
+      "authors": "G. Fowler",
+      "venue": "Mathematical Proceedings of the Cambridge Philosophical Society180(2026),607–641",
+      "authoritative_version": "Published version; retainedPDFbc676f4d5b6a2a70fa3e6bed55a4449622d6728167d4c668068b89da6b2d55ae",
+      "locator": "Section2.1, printed612–613",
+      "corrections": "Exact published A065 scope reused from independent sieve-bounds review; no new full-source audit."
+    },
+    "available_assertion": {
+      "statement": "For an imaginary quadratic order, the singular moduli are roots of a monic integral class polynomial, hence are algebraic integers.",
+      "objects": "Classical elliptic singular moduli of imaginary quadratic orders.",
+      "hypotheses": "The elliptic curve has geometric complex multiplication by an imaginary quadratic order.",
+      "quantifiers": "Every imaginary quadratic order, including nonmaximal orders.",
+      "parameter_range": "Negative order discriminants; elliptic curves in characteristic zero.",
+      "uniformity": "Algebraic integrality for all such singular moduli.",
+      "constants": "No numerical height bound or discriminant estimate used.",
+      "normalizations": "Use the classical elliptic Weierstrass c4^3/discriminant invariant and the full CM order, including nonmaximal orders.",
+      "exceptional_cases": "No maximal-order restriction; this is not a formula for a quaternionic Hauptmodul.",
+      "limit_order": "Fix the CM order and form its class polynomial."
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2570,
+      "end_line": 2576,
+      "excerpt_sha256": "c97c00669a307d0d56a6ce718051a4ec5ebf89f76b00b7b34871d47bdbf0958f"
+    },
+    "source_statement_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2570,
+      "end_line": 2572,
+      "excerpt_sha256": "e7eba37f9a60202a0d116724318eeb2aaa285d03c8b1c71a9b72786349468298"
+    },
+    "local_derivation_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2573,
+      "end_line": 2576,
+      "excerpt_sha256": "9510ce9b8cbbaa4638b35465275c851410fc02c1f5aba854e4f942f47204e03b"
+    },
+    "needed": "The actual nonsingular E_ell with classical j=35152/9 has no geometric complex multiplication.",
+    "connecting_argument": "If E_ell had geometric CM, its endomorphism order, not necessarily maximal, would make its classical elliptic j an algebraic integer by the monic integral order class polynomial. For a reduced rational a/b, multiplying a monic equation by b^n gives b dividing a^n, hence b=1. Here35152 is not divisible by3, so35152/9 is not integral. Contradiction.",
+    "retained_inputs": [
+      {
+        "statement": "The displayed nonsingular model has the computed classical j invariant; ell is nonzero.",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2553,
+          "end_line": 2568,
+          "excerpt_sha256": "95ce0644198c6cb2a057c2238e8fbe4bc0026c3d22cc27929063e4a68ec8cbbb"
+        }
+      }
+    ],
+    "boundary": "This application does not supply open image, a uniform index, or any assertion about the distinct CM generator curve. The earlier derived non-CM output is not a premise.",
+    "prior_review": {
+      "path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/ACCEPTANCE-REPORT.md",
+      "sha256": "2788baf6db0838c681199d69449a12a1c192be6decae6cb8b5a02f917f56b4bf",
+      "scope": "A065 full order j-integrality and exact E_ell invariant calculation, including repeated RC use."
+    }
+  },
+  {
+    "id": "EARLY-PRIME-CONSTRUCTION-TO-PRIVATE-CRT",
+    "role": "source_to_source_actual_application",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2064,
+      "end_line": 2082,
+      "excerpt_sha256": "13caca22bf458f7b711b1093aeb9d7d4a23c0d7f74344d5a8b7a6a0b6e0ce841"
+    },
+    "supporting_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2487,
+        "end_line": 2489,
+        "excerpt_sha256": "1ca18bf3f1306c43482a19515f7e8b523b640425177acd5e8c7b154d379b64c1"
+      }
+    ],
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2491,
+      "end_line": 2508,
+      "excerpt_sha256": "7ed40f58f7162966f6e8d1f4165b94d90b4f0adaa7e70b53756cdda91551309a"
+    },
+    "available": "For every integer A and size bound, the specified22 forms admit the common rational triple, signed fixed-multiplier prime values, good split reductions, gcd(d1,d2)=4 and prime-to-p orders, with each assertion at its own prime.",
+    "needed": "Apply the completed construction to the true triple; the reduced orders annihilate the points and gcd=4 makes the private CRT congruences compatible with c*=4M0.",
+    "boundary": "Retain the specified forms, catalogue and proved order calculation. Each selected contact prime has its own private group. No distinct-prime or common-shift assertion is added."
+  }
+]

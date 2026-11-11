@@ -1,0 +1,11 @@
+# Fixed-witness finite-field specialization review
+
+Reviewer: /root/v14_arithmetic_review. Accepted at the two stated source applications and the local cocycle evaluation. Target v14-rc-witness-reduction-inputs-002/MANIFEST.json SHA256 6f92787c8fe468c3eef92463781755dc1c5b706cd0e4db84cd2bdf7bc8a0d7a4; current manuscript1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8.
+
+I read the actual3357–3373 argument, both profiles and the proposed local derivation, and directly compared Silverman VII3.1 at printed192 and VII4.1 at printed195. Good-reduction specialization is equivariant and prime-to-residue-characteristic torsion is unramified and injects into the reduced curve. Reducing a chosen division point therefore transports the actual cocycle gR-R at the same chosen place. One may not replace this by an unrelated residue place or a bound for all points.
+
+The retained Lang theorem applies to the connected reduced elliptic curve. Combined with the finite multiplication sequence it identifies the finite-field Kummer quotient with H1 of finite torsion. Procyclic finite-field cohomology identifies this with torsion modulo Frobenius minus one. At the selected finite precision the rational-prime Frobenius acts by C, so the residue-field Frobenius over F_(ell0^2) acts trivially on that torsion. Its affine square has translation (1+C)v. Applying the actual row b with bC=b yields2b(v), whose given nonzero valuation is retained for sufficiently high precision. This uses the actual finite Galois choice and preceding translation data; Lang and good reduction do not produce them.
+
+Successor002 corrects the unrelated inherited finite-generation uniformity text, the VII3.1 page number and Lang bibliography fields. The local same-place derivation is byte-identical to001. The characteristic-zero nontorsion/translation inputs are covered separately by v14-rc-witness-kummer-review-001; no characteristic-zero-only Kummer assertion is applied to the finite field here.
+
+All three manifest members and distinct source/caller spans pass CHECKS.json. The source card remains a proposed installation; normalized merging and complete original3 ancestry are not certified by this bounded review.

@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "manuscript": {
+    "path": "manuscripts/quartic_v11.tex",
+    "sha256": "1210d2e6f409e502fc9c95afc248fac16a9df48c760a396143780c20ec80b662"
+  },
+  "baseline": {
+    "path": "manuscripts/quartic_v10.tex",
+    "sha256": "9559b22cc581346da1b3150fa9b8dfb62cfb048f6aac0b866448ae7ae879ff38"
+  },
+  "scope_limitation": "One Kato application repair, exact manuscript edits and associated follow-up only. Historical source comparisons are not new whole-proof validation. Source PDF SHA256 values identify primary files read by reviewers; this checker verifies their metadata and local evidence, not remote PDF contents or mathematical truth.",
+  "contracts": [
+    {
+      "contract": {
+        "path": "docs/manuscript-revisions/version11/kato-application.json",
+        "sha256": "bb725ef321d28b2cdfeac64fa86deb864c09590d49e5fe05b9bdb95f73986e0b"
+      },
+      "approval": {
+        "path": "docs/manuscript-revisions/version11/acceptance.json",
+        "sha256": "8c68314865576de6e22dcd0feae70004cc69233f75b01c4830aaba44233c5153"
+      }
+    }
+  ],
+  "edits": [
+    {
+      "id": "version",
+      "old": "\\large Version 10.",
+      "new": "\\large Version 11.",
+      "kind": "administrative"
+    },
+    {
+      "id": "construction-domain",
+      "old": "For $m$ with $\\operatorname{prime}(m)\\cap\\Sigma=\\{2\\}$ set",
+      "new": "For every positive integer $m$ with $(m,cd_s)=1$, set",
+      "kind": "mathematical",
+      "contract_id": "KATO-1999-INDEX-AND-CLASS"
+    },
+    {
+      "id": "construction-subfamilies",
+      "old": "required by Kato~13.1. Each class uses the original $f,\\xi,c,d_s$.",
+      "new": "required by Kato~13.1 on its index set\n$\\operatorname{prime}(m)\\cap\\Sigma=\\{2\\}$. The larger definition is\npermitted by (8.1.3), Sections~8.9--8.11 and Proposition~8.12:\n$S_{Dm}=\\operatorname{prime}(2NDm)$ is disjoint from\n$\\operatorname{prime}(cd_s)$, since $d\\mid F$ and (K5) holds.\nEach class uses the original $f,\\xi,c,d_s$. We will also use this\nsame construction on the different index set required by\n\\cite[Section 0.1]{kato1999}, as checked below.",
+      "kind": "mathematical",
+      "contract_id": "KATO-1999-INDEX-AND-CLASS"
+    },
+    {
+      "id": "specified-euler-subfamilies",
+      "old": "has a product over newly added support primes. Thus $(y_m)_m$ is\nan Euler system of the stated lattice, not a class inferred from\nproportionality of rank-one Iwasawa modules.",
+      "new": "has a product over newly added support primes. Thus the subfamily\non Kato~13.1's index set is an Euler system of the stated lattice,\nnot a class inferred from proportionality of rank-one Iwasawa\nmodules. The required norm relations on the 1999 index set are\nverified separately below.",
+      "kind": "mathematical",
+      "contract_id": "KATO-1999-INDEX-AND-CLASS"
+    },
+    {
+      "id": "index-norm-limit",
+      "old": "The retained classes (K8) satisfy the Euler-system norm relation\n0.1.1 of \\cite{kato1999}, with the same inverse-Frobenius polynomial\n(K9). Enlarge the fixed inverted support to contain $2$, the bad\nprimes, and the conductor of $\\chi$; primes excluded only by smoothing\nbelong to $N'$ in that source and need not be inverted. The preceding",
+      "new": "We check the index set and the supplied class in that theorem\nexplicitly. Put $N_K=2Nd$ and $N'_K=cd_s$. These integers are\ncoprime by (K5), since $d\\mid F$. Section~0.1 of \\cite{kato1999}\nrequires every index $m$ with $N_K\\mid m$ and $(m,N'_K)=1$.\nThe enlarged definition (K8) supplies all these classes. They\noriginate in the integral $j_*$ group over\n$\\mathbf Z[\\zeta_m,1/2]$ and map to full cohomology over\n$\\mathbf Z[\\zeta_m,1/N_K]$. The varying construction support\n$S_{Dm}$ is not an instruction to invert all its primes in this\nlast scheme. Apply the fixed lattice map $2^{c_E}$ from (K4) if\nneeded, identically at every level.\n\nFor a prime $\\ell\\nmid N'_K$, if $\\ell\\mid m$ then\n$S_{Dm\\ell}=S_{Dm}$, so Proposition~8.12 gives norm factor one.\nIf $\\ell\\nmid m$, the condition $N_K\\mid m$ implies\n$\\ell\\nmid2Nd$, and hence\n$S_{Dm\\ell}\\setminus S_{Dm}=\\{\\ell\\}$. The equivariance identity\nbefore (K9) gives the factor\n$P_\\ell(\\ell^{-1}\\sigma_\\ell^{-1})=E_\\ell(\\chi)$, with\n$P_\\ell(X)=1-a_\\ell\\chi(\\ell)X+\\ell X^2$. These are exactly the\ntwo cases of (0.1.1) in \\cite{kato1999}. Smoothing primes are\nexcluded by $N'_K$ and need not be inverted.\n\nFor the class in Section~0.7 of that source take its parameter\n$d=1$; this parameter is distinct from our odd conductor part $d$.\nFor every $n\\geq1$,\n\\[\n S_{DN_K2^n}=S_{D2^n}=\\operatorname{prime}(2Nd).\n\\]\nProposition~8.12 therefore gives\n\\[\n \\operatorname{cor}_{\\mathbf Q(\\zeta_{DN_K2^n})/\n                          \\mathbf Q(\\zeta_{D2^n})}\n             z_{DN_K2^n}=z_{D2^n}.\n\\]\nTransitivity of corestriction, through the two intermediate fields\nin the common upper field, now yields\n\\[\n \\operatorname{cor}_{\\mathbf Q(\\zeta_{N_K2^n})/\n                          \\mathbf Q(\\zeta_{2^n})}y_{N_K2^n}\n =\\operatorname{cor}_{\\mathbf Q(\\zeta_{D2^n})/\n                          \\mathbf Q(\\zeta_{2^n})}\n                         (z_{D2^n}\\otimes e_\\chi)\n =y_{2^n}.\n\\]\nNo Euler factor occurs because the supports are equal. No field\ndegree occurs because this is corestriction of the actual upper\nclass, not corestriction of a restriction. These equalities commute\nwith transition maps, and $n\\geq1$ is a cofinal tail. Write\n$\\xi_K$ for the Section~0.7 class, to distinguish it from the\nmodular-symbol combination $\\xi$. It is exactly the full-cohomology\nimage of $y_{2^\\infty}$, multiplied by $2^{c_E}$ if the fixed\nlattice map was needed. That factor is a unit at every height-one\nprime under consideration, so its coordinate ideal is precisely\n$J_{\\mathfrak p}$. The preceding",
+      "kind": "mathematical",
+      "contract_id": "KATO-1999-INDEX-AND-CLASS"
+    },
+    {
+      "id": "kato-bibliographic-locators",
+      "old": "Section 0.6, Example 0.6.2 and Theorem 0.8, pp.~317--318.",
+      "new": "Sections 0.1 and 0.4--0.7, Example 0.6.2 and Theorem 0.8,\npp.~314--318.",
+      "kind": "source",
+      "contract_id": "KATO-1999-INDEX-AND-CLASS"
+    }
+  ],
+  "legacy_register": {
+    "path": "docs/audit-history/issue2/register.json",
+    "sha256": "d88946d4187c670eb8278a686726af21c4d6394325d0d417702dc85422e6bfd3"
+  },
+  "legacy_carry_forward": {
+    "1": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "2": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "3": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "4": {
+      "mode": "re_reviewed",
+      "contract_id": "KATO-1999-INDEX-AND-CLASS",
+      "impact_assessment": "The missing index-domain and retained-class bridge in the 1999 application is repaired and freshly reviewed in the exact current text. Other unchanged Kato inputs retain their earlier scope qualifications."
+    },
+    "5": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "6": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "7": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "8": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    },
+    "9": {
+      "mode": "unchanged_historical",
+      "impact_assessment": "The application passage is unchanged. This scoped Kato extension neither changes its input statements nor re-audits its proof."
+    }
+  },
+  "issue_snapshot": {
+    "path": "docs/manuscript-revisions/version11/issue-snapshot.json",
+    "sha256": "53667ae07d2012648238d1b380a3df61a56b75ef26bb36a05d1f4cbc45af3a1a"
+  },
+  "followups": [
+    {
+      "url": "https://github.com/elliotglazer/diophantine-z-q/issues/2#issuecomment-6714388221",
+      "claim": "Kato 1999 index-set coverage and identification of its supplied class; original Mazur source supplied.",
+      "status": "addressed",
+      "contracts": [
+        "KATO-1999-INDEX-AND-CLASS"
+      ]
+    }
+  ]
+}

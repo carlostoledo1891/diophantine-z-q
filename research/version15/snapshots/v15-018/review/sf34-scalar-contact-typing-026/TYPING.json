@@ -1,0 +1,190 @@
+{
+  "status": "author proposed; independent review pending",
+  "scope": "Exact remaining55 row identities and reverse assignments. Completes a row-typing census only; arithmetic premises and historical review scopes remain distinct.",
+  "source": {
+    "path": "work/jose248-audit-20261109/repository/computation/quartic/family248_v17/quadratic-family248-v17.json",
+    "sha256": "b1bf58c470365a7b330af4a33a17a1f7e9aa10c997853c9078a9b8593f43a7ff"
+  },
+  "consumers": [
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32404,
+        32486
+      ],
+      "excerpt_sha256": "00cd7e56abd354020cbc00ecca1fac1320802524496eb5176e71edcbb44aa00c",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32487,
+        32658
+      ],
+      "excerpt_sha256": "0d2a3b6740a85f69aee1103639b7c87e14485ab7369cad02ac6805ec1e17a6ed",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32769,
+        32805
+      ],
+      "excerpt_sha256": "72f72f170594a1fcf63f32beeebcec780d7f97fb7365008eb8f06238a1e0deff",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32902,
+        33050
+      ],
+      "excerpt_sha256": "538997d28455dd8182c7d77090e25e7fcfae4933cc610b0ce82f41aa70770f2a",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        22542,
+        22559
+      ],
+      "excerpt_sha256": "cfed0b4e970decf69fbc190be3d284780b26416073f70c05bc979afb0d212439",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    }
+  ],
+  "scalar_dictionary": {
+    "X": "x1",
+    "beta": "51*x129+2504, where x129=X^2",
+    "rPair": "x187=(beta-3)^2/4",
+    "rFour": "x188 is the unique rational output of literal row122, coefficient -1525940; explicit substitution in CHECKS proves the next output equals r_s",
+    "r_s": "x189=beta*(beta-1)*(beta-2401)*(32*beta+343)*(2*beta-1)",
+    "R_s": "x208=A_N*r_s/(1+149^2*r_s)",
+    "R2": "x204=R_s^2",
+    "R4": "x205=R_s^4",
+    "Z": "x190+rho*x191",
+    "Z1square": "x197=Z1^2",
+    "F2": "x199=Norm(f(H))^2=x148^2-8*x149^2",
+    "A": "x198=(Z0^2+R_s*Z1^2)/R_s^4",
+    "W_s": "x200=(A^2+R_s*F2)/R_s^4",
+    "scaledW2": "x192=W_s^2/M",
+    "barb": "x193=-b_s/K",
+    "b_s": "R_s*(R_s+9792)*W_s^2",
+    "g_S": "x201+rho*x202",
+    "guard": "x203=1/x201; existence of this rational component inverse is an actual retained requirement, not inferred from nonzero field g_S"
+  },
+  "constants": {
+    "M": "981949949521011646279509932288013517604094669913140033589964224332595426527668691070368153600000000000000",
+    "K": "80990493410131000784375977023646274345820490095244015289194989569855772668241364832628280392076492800000000000000",
+    "L": "458946129324075671111463869800662221292982777206382753305438274229182711786701067384893588888433459200000000000000",
+    "identities": [
+      "K=82479248*M",
+      "3*L=17*K"
+    ]
+  },
+  "scalar_pole": {
+    "stored": [
+      "e=x43",
+      "u=x44",
+      "p=x45",
+      "qprivate=x46",
+      "p2=x194",
+      "v=x195",
+      "q2=x196",
+      "barb=x193"
+    ],
+    "ordinary_substitution": [
+      "eprime=-e/K",
+      "uprime=u/K",
+      "pprime=p/K",
+      "qprime=qprivate/K",
+      "vprime=-v",
+      "b_s=-K*barb"
+    ],
+    "equations": [
+      "289+34eprime-3eprime^2-17*b_s*pprime^2=0",
+      "17eprime-eprime*b_s-17uprime*vprime=0",
+      "uprime^2+34uprime*vprime-867vprime^2-17*b_s*qprime^2=0"
+    ],
+    "reverse": "Given an ordinary pole witness for b_s, set e=-K*eprime,u=K*uprime,p=K*pprime,qprivate=K*qprime,v=-vprime,barb=-b_s/K and assign the two squares. K is a fixed nonzero rational constant. No component or private-variable nonzero assumption occurs."
+  },
+  "detectors": [
+    {
+      "t": 34,
+      "delta2": 158,
+      "delta4": 159,
+      "delta6": 209,
+      "F": 160,
+      "q": 161,
+      "q2": 163,
+      "q4": 164,
+      "h": 162,
+      "W": [
+        165,
+        166
+      ],
+      "tau": 167,
+      "b": 168,
+      "pole": {
+        "e": 35,
+        "u": 36,
+        "p": 37,
+        "qprivate": 38,
+        "p2": 169,
+        "v": 170,
+        "q2": 171
+      }
+    },
+    {
+      "t": 172,
+      "delta2": 173,
+      "delta4": 174,
+      "delta6": 210,
+      "F": 175,
+      "q": 176,
+      "q2": 178,
+      "q4": 179,
+      "h": 177,
+      "W": [
+        180,
+        181
+      ],
+      "tau": 182,
+      "b": 183,
+      "pole": {
+        "e": 39,
+        "u": 40,
+        "p": 41,
+        "qprivate": 42,
+        "p2": 184,
+        "v": 185,
+        "q2": 186
+      }
+    }
+  ],
+  "detector_definitions": {
+    "T": "T=(x47+x49+2*x51+x53)/2=(1/4)Tr(sum x(Q_i)); x172=x34*T",
+    "delta": "delta=t-1",
+    "F": "F2(t)=product(t-theta) for theta in {0,-1/2,-1,1/2399,-32/407} union its reflections2-theta",
+    "weight": "delta^10=F2(t)*(1+q), q2=q^2, q4=q^4, q*h=q4^2",
+    "trace": "w0^2-2*w0*tau-2*w1^2=0; if W nonzero then w0 nonzero and tau=1/Tr(W^-1)",
+    "b": "(1+q)*b=(408/409)^2*tau^2",
+    "pole": "Same three ordinary pole equations as scalar_pole, with direct unscaled e,u,p,qprivate,v,b."
+  },
+  "directions": {
+    "readback": "Each square gate and constant-linear output is unique. The independent contact-product and scalar-product expansions identify the literal outputs with the stated F2 and r_s. Since beta>=2504 and A_N>0, r_s and R_s are positive. H reciprocal equation gives F2>0; consequently A and W_s are determined, with W_s>0 and b_s>0. Fixed-subtraction and g_S guard interpretations require their already stated arithmetic premises.",
+    "reverse": "For the prepared arithmetic witnesses, preserve X and all root/ratio values. Fill x187 then x188 using their literal linear equations and x189 with r_s. Fill R_s and its powers, Z1square,F2,A,W_s,scaledW2,barb in that order. The denominator1+149^2*r_s is positive and R_s nonzero. Fill each contact block with the true delta powers and F2. At prepared t away from contacts and1, set q=delta^10/F2-1; assign powers and h=q^7, choosing h=0 if q=0. Fill tau from nonzero W and its nonzero rational part only when the prepared factor argument supplies that nonvanishing. Fill physical b, then ordinary pole witnesses and their squares. These steps use the existing completeness choices; they are not an independent new existence theorem.",
+    "exceptional": "At arbitrary solution q=0, h can remain free as corrected024 states. At delta=0, F2(1)!=0 gives q=-1; do not divide by delta or1+q. At W=0, the trace equation alone does not define tau by reciprocal trace. Those branches remain under the separate soundness/radical arguments. No generic table-filling claim bypasses them."
+  },
+  "factored_pole_scope": "The retained factored pole uses u,v,qprivate with product u*v. It maps to the earlier un-factored chart by F=u*v and q_old=u*qprivate. For u!=0 the reverse divides by u. At u=0 and positive b the old equations force F=q_old=0 and a new witness can choose v=qprivate=0. This is equality of existential projections on the required positive input domain, not a bijection of every private witness.",
+  "V0": "Rows21/22 give f(H)*f(V0)=g_H^2. Since f(H)!=0, the field value is uniquely g_H^2/f(H), including g_H=0; interpretation as H-P retains fixed-subtraction/exclusion premises.",
+  "limits": [
+    "No new proof of point membership, prime-pattern completeness, height estimates, or fixed-subtraction function-field certificate.",
+    "No full Protocol D acceptance inferred from222 row identities.",
+    "No TeX change or historical source mutation."
+  ]
+}

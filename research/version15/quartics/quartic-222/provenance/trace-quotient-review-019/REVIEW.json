@@ -1,0 +1,39 @@
+{
+  "decision": "accepted_at_mathematical_composition_and_domain_scope",
+  "subject_sha256": "6bec2e3182a34bf009f6582c43593faeea8960d541674d7dade109dca7463211",
+  "candidate_ir_pins": {
+    "raw": "34974cb8e9c274fa7612d93603224fa02fd0fc13ceb37f55eb0be8dce91b7bce",
+    "sparse": "75a7bb901d2badcbeb22ddb8838eb877a610948fb5cdf9b2bc4b49fae90b2cff"
+  },
+  "checks": {
+    "complete_consumer_census": [
+      186,
+      196,
+      197
+    ],
+    "both_full_197_row_substitutions": true,
+    "deleted_row_identically_zero": true,
+    "all_196_retained_rows_exact": true,
+    "ten_domain_rows_and_square_definition_unchanged": true,
+    "input_parameter_and_coordinates_1_through_221_fixed": true,
+    "positive_weights_inherited": true,
+    "manifest_members_verified": 8
+  },
+  "reasoning": [
+    "The contact-domain proof independently accepted at9c8f7c60 is already transported into raw223 by ccafa474. Its ten rows and Q=q1^2 definition remain literally unchanged. The same premise holds on the new tuples without any trace or root reconstruction.",
+    "For any old solution Q!=0, define T=Z/Q; QG=R2Z gives G=R2T. For any new solution define G=R2T,Z=QT polynomially; every old residual follows by the checked exact substitution.",
+    "The two maps are inverse on all rational solutions. No division by R2,T,G,Z, a trace component, or a field component occurs. q1=-1, T=0 and all compatible component zeros are retained.",
+    "Coordinates fall223 to222 and residuals197 to196. The weighted sum of rational squares has the same zero set because all retained weights are positive; no strengthened arithmetic premise is used."
+  ],
+  "reused_receipts": {
+    "domain": "9c8f7c608a054bc835b4d2b40b8cc58a31a1c60cdccd4e723c9700c7922f42a7",
+    "domain_transport": "ccafa47405ae3a49c1fe3062b8b9603d5dfefd8eb84aa021572c28d648478bf0",
+    "parent_math": "2f71b05f730f6dd20f258b57654a946f93d7583ba0162a01964bbe5918cad542"
+  },
+  "authorship": "The new quotient map is arithmetic_author work, independently checked here. Reviewer contributed older reference transformations and parent composition review; their accepted arithmetic premises are reused, not newly independently certified. H6/GI parent contributions remain attributed.",
+  "limits": [
+    "This receipt does not independently certify full polynomial expansion, monomial count or coefficient height; integration owns that disjoint finite review.",
+    "Defining threshold remains ineffective; no manuscript/publication adoption."
+  ],
+  "harness_note": "Initial reviewer harness had a newline string syntax error before running any checks. Corrected only reviewer script; candidate bytes unchanged."
+}

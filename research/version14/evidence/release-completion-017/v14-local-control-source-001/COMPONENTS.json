@@ -1,0 +1,173 @@
+[
+  {
+    "use": {
+      "id": "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-P1",
+        "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-P2"
+      ],
+      "assertion": {
+        "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+        "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+        "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+        "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+        "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+        "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+        "constants": "No numerical constant or scalar rescaling.",
+        "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+        "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+        "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+      },
+      "classification": "dependency",
+      "reason": "This supplies the derived local-control step used to compare central local H2 with finite-level H2. It does not supply its vanishing.",
+      "shared_contract_justification": "Both occurrences use the identical fixed local Tate twist, cyclotomic tower and central augmentation in the F2 correction argument.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13863,
+          "end_line": 13872,
+          "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+        },
+        "statement": "For an admissible finite-type coefficient complex and a quotient Gamma isomorphic to Z_p, derived Iwasawa cohomology tensored over the Iwasawa algebra with its augmentation is continuous cohomology. If cd_p(G)=e and the complex is concentrated in degrees at most n, the degree e+n Iwasawa coinvariants identify with degree e+n continuous cohomology.",
+        "publication": {
+          "title": "Selmer Complexes",
+          "authors": "Jan Nekovar",
+          "venue": "Asterisque310(2006)",
+          "authoritative_version": "Published2006 volume; retained PDF SHA61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f.",
+          "locator": "8.3.5(ii),p203;8.4.8.1(ii) and8.4.8.2,pp214–215",
+          "corrections": "No inverse-limit or real-place conclusion outside the stated admissibility and cohomological-dimension hypotheses."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 13919,
+        "end_line": 13926,
+        "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT",
+      "use_sha256": "81e58a54e33896059a9013d8a41f5e65a28def7ec436333de7f8a60438f41ca9",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "For an admissible finite-type coefficient complex and a quotient Gamma isomorphic to Z_p, derived Iwasawa cohomology tensored over the Iwasawa algebra with its augmentation is continuous cohomology. If cd_p(G)=e and the complex is concentrated in degrees at most n, the degree e+n Iwasawa coinvariants identify with degree e+n continuous cohomology.",
+        "objects": "A profinite group G, closed normal H, Gamma=G/H, complete coefficient ring R, and an admissible finite-type R[G] coefficient complex T.",
+        "hypotheses": "Gamma is Z_p for the one-variable conclusion; T is bounded below and finite-type admissible. The top-degree conclusion assumes cd_p(G)=e finite and T has no terms above n. The separate inverse-limit identification in8.3.5(ii) assumes condition(F).",
+        "quantifiers": "Every group, coefficient complex and quotient satisfying these hypotheses.",
+        "parameter_range": "The published definitions8.3.1–8.3.5 and hypotheses8.4.8.1–8.4.8.2.",
+        "uniformity": "Functorial algebraic identification, not a quantitative bound.",
+        "constants": "No numerical constants.",
+        "normalizations": "Augmentation Gamma to1; projective transition maps are corestriction, with the induced coefficient convention of8.3.",
+        "exceptional_cases": "No real-place assertion when p=2 and cd_p is infinite. No vanishing of finite-level H2 follows from this theorem.",
+        "limit_order": "The source defines derived Iwasawa cohomology before applying derived augmentation; its spectral sequence supplies the top-degree identification."
+      },
+      "needed_assertion": {
+        "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+        "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+        "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+        "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+        "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+        "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+        "constants": "No numerical constant or scalar rescaling.",
+        "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+        "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+        "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+      },
+      "required_capabilities": [
+        "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-needed"
+      ],
+      "available_capabilities": [
+        "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-published"
+      ],
+      "derived_capabilities": [
+        "ACTIVE-THETA-LOCAL-IWASAWA-DESCENT-needed"
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13919,
+          "end_line": 13926,
+          "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual local cyclotomic tower at2 and fixed Tate-module twist, rational H2_Iw/(gamma-1) identifies with H2(Q2,V chi). The local Iwasawa complex has no cohomology above degree2 under the stated finite-cohomology hypotheses.",
+          "objects": "The fixed rank-two integral Tate module T chi over G_Q2 and the local cyclotomic Z2 extension; V=T tensor Q2.",
+          "hypotheses": "The finite local Galois cohomology theorem gives cd2(G_Q2)=2 and finite cohomology for finite2-primary coefficients. T chi is finite free over Z2 with continuous action. The same convention of corestriction and inverse cyclotomic action is used.",
+          "quantifiers": "Each of the finitely many fixed local twists and sign components used for F2.",
+          "parameter_range": "The nonarchimedean place2; finite twists of the same elliptic Tate module.",
+          "uniformity": "One identification for each fixed local type; no numerical bound on characteristic elements.",
+          "constants": "No numerical constant or scalar rescaling.",
+          "normalizations": "t=gamma-1 at the central character; tensor with Q2 only after the integral descent identity.",
+          "exceptional_cases": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+          "limit_order": "Fix the local twist and tower, form Iwasawa cohomology with corestriction, descend by augmentation, and then rationalize."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "This does not prove H2(Q2,V chi)=0, local elliptic torsion finiteness, or the finite list of twisting types. Those are separate inputs to F2(0) nonzero.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13863,
+            "end_line": 13872,
+            "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 13919,
+            "end_line": 13926,
+            "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13863,
+          "end_line": 13872,
+          "excerpt_sha256": "4e2fb9c4b64b091ecf31ee8978e62f0e4d451d0e780210bf696993faadc7e076"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13919,
+          "end_line": 13926,
+          "excerpt_sha256": "c2de05d58681e325f67fdc9d121eb0c9720b0d53ac5da975908998b6aac3bcd4"
+        }
+      ]
+    }
+  }
+]

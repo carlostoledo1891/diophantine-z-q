@@ -1,0 +1,11 @@
+# Independent canonical-height normalization review
+
+Accepted within the one stated source-to-consumer scope. Reviewer: /root/v14_arithmetic_review, independent of root's proposal. Selected manifest v14-canonical-height-normalization-author-root-001/MANIFEST.json SHA256 0d0552b0b4a5db6e13dd4ced8d7258ca5edbe38dac59b115be0b7ce014d3ed44; COMPONENTS.json SHA256 8a8f3eafcf8853edfa109ded360800a4edd014ad5e588a77bc92239faf0c4f52.
+
+I independently extracted and read the pinned Silverman second-edition printed pages247–249 (PDF pages262–264), and read the actual D5 consumer at local-generator-and-index-inputs-001/PROOF.md line51 with its surrounding duplication calculation. Proposition9.1 is the correct label, not Theorem9.1. It gives existence and independence of the normalized limit for every algebraic point and every nonconstant even function. The following definition and Remark9.2 explicitly fix the convention and distinguish the doubled convention.
+
+ACTIVE-GENERATOR-CANONICAL-HEIGHT-NORMALIZATION is a valid specialization: delta=3-sqrt2 is nonzero, hence y^2=x^3-delta^2*x is nonsingular in characteristic zero. The x-map is even and has degree two. With the absolute logarithmic projective height used by the consumer, the definition therefore gives 2*hhat(P)=lim_j 4^(-j)*h_x([2^j]P). The map is projective at its poles, so the identity and a point whose doubling becomes the identity are included. Neither nontorsion nor rationality of torsion is needed.
+
+The source supplies this limit identity, not the separate constants392 or676. Given the separately established duplication inequalities, summing the geometric series of increments yields the stated log392/3 and log676/3 offsets. This observation checks direction and normalization only; the local inequalities, global absolute-height normalization, finite enumeration and saturation proofs remain separate inputs.
+
+Seven independent binding checks pass, including both manifest members, the two exact source/consumer locations, use digest/assertion identities and the retained book hash. CHECKS.json records them. The source register's historical label is left unchanged and the current proposal explicitly corrects it. No new proof source or canonical edit is made; no broader generator proof, coverage or authenticated gate approval follows.

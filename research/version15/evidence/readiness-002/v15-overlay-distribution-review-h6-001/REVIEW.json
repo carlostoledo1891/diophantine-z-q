@@ -1,0 +1,49 @@
+{
+  "schema": "v15-overlay-distribution-review/v1",
+  "decision": "accepted_at_exact_additive_distribution_scope",
+  "subject": {
+    "path": "work/v15-final-evidence-overlay-author-001/MANIFEST.json",
+    "sha256": "64d9315217bb436c63a5b270152fdff9721ad4c334e96da15d3732ed04820d67"
+  },
+  "scope": "97 exact source copies plus overlay navigation/status additions. No re-approval of mathematics, full predecessor tree, future additions or final Git/ACK state.",
+  "checks": {
+    "source_destination_hash_equal": 97,
+    "overlay_members_verified": 101,
+    "source_types": {
+      "json": 91,
+      "diff": 1,
+      "md": 4,
+      "py": 1
+    },
+    "embedded_raw_observation_or_message_record_hits": 0,
+    "credential_signature_hits": 0,
+    "new_third_party_pdf_or_archive_files": 0
+  },
+  "findings": [
+    "No conversational transcript contents or encoded raw observation payloads found in exact additions.",
+    "The contributor matrix contains attribution and evidence metadata, not copied conversations.",
+    "Original manifests refer to omitted private artifacts; README explicitly states that they are selection manifests, not complete public bundles.",
+    "Only absolute local paths found by scan are in author payload CHECKS and contributor INPUT-PINS; these are artifact references, not copied logs or credentials. They may remain as original evidence metadata; do not rewrite hash-pinned originals.",
+    "Pending namespace templates and tests contain identifiers, empty/pending trusted fields and synthetic fixture values, not actual signing keys or protected state exports.",
+    "No new third-party PDF, source scan, archive, or unrelated binary is present. Literature metadata and scoped mathematical assertions are not copies of paywalled source files."
+  ],
+  "required_exclusions_for_later_assembly": [
+    "work/v15-author-operator-payload-h6-001/AUTHOR-RUN-EVENTS.json",
+    "work/v15-author-operator-payload-h6-001/NEW-ORIGINAL-RUN-EVENTS.json",
+    "work/v15-author-operator-payload-h6-001/RETAINED-RUN-EVENTS.json",
+    "work/v15-author-operator-payload-h6-001/READINESS.json",
+    "work/v15-author-operator-payload-h6-001/ORIGINAL-RECORD-INDEX.json",
+    "work/v15-review-chronology-host-h6-001/REVIEW-RUN-EVENTS.json",
+    "work/v15-review-chronology-host-h6-001/ORIGINAL-RECORD-INDEX.json",
+    "work/v15-review-chronology-host-h6-001/CANDIDATES-PRIVATE.json",
+    "work/v15-review-chronology-host-h6-001/completion-scan/CANDIDATES-PRIVATE.json",
+    "work/v15-identity-event-plan-h6-001/RUN-EVENTS.proposed.json"
+  ],
+  "category_exclusions": [
+    "Any original rollout*.jsonl or copied raw session records",
+    "Any CANDIDATES-PRIVATE.json, raw scan output, or original-record payload copied from private provenance working directories",
+    "Actual key files, tokens, protected state exports and private/paywalled source PDFs"
+  ],
+  "safe_reference_policy": "Publish compact receipt/manifest hashes and scope summaries for omitted private evidence. Do not publish event payload files merely because their base64 is machine-readable; decode before distribution review. Any new public sanitized derivative must have its own path/hash and preserve original privately.",
+  "remaining": "GI final combined overlay and final D/C/author adoption are not this exact reviewed snapshot; review their actual delta before claiming distribution acceptance."
+}

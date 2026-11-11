@@ -1,0 +1,245 @@
+{
+  "status": "author proposal; independent review pending",
+  "scope": "Remaining test-power and packed-factor component semantics, with conditional root antecedents. Not full SF34 closure.",
+  "field": "K=Q(rho), rho^2=2; D=11-6rho; sigma(rho)=-rho",
+  "prior_accepted": {
+    "record": {
+      "path": "work/version15-protocold-233-20261110/sf34-typing-supplement-022/IDENTITIES.json",
+      "sha256": "ccfa72b7eab7c39c125f7ce9573fd36ca1eec62180dd5bfdcb70bb657787e5e1"
+    },
+    "review": {
+      "path": "work/v15-sf34-review-arithmetic-001/typing-review-001/REVIEW.json",
+      "sha256": "795365f054029f8987fa4c63cb1497556aba7fb3b7617e673414f35e4fa202dd"
+    }
+  },
+  "sources": [
+    {
+      "path": "work/jose248-audit-20261109/repository/computation/quartic/family248_v17/quadratic-family248-v17.json",
+      "sha256": "b1bf58c470365a7b330af4a33a17a1f7e9aa10c997853c9078a9b8593f43a7ff"
+    },
+    {
+      "path": "work/jose248-audit-20261109/repository/computation/quartic/build_quartic273.py",
+      "sha256": "e6198563c1436eec644a3201ce14ecc22ed501a4922f95f44c2530249b9b7bbd"
+    },
+    {
+      "path": "work/jose248-audit-20261109/repository/computation/quartic/build_quartic249_v17.py",
+      "sha256": "05bfdf176630bdff2190f7a24969d63f7b198c774344a87131abe1ae41d31495"
+    },
+    {
+      "path": "work/jose248-audit-20261109/repository/computation/quartic/build_quartic248_v17.py",
+      "sha256": "36ac23d5a211257e6d4b73c0f76fa4724800771e707c3c654b376b9457786a7b"
+    }
+  ],
+  "current_consumers": [
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32659,
+        32726
+      ],
+      "excerpt_sha256": "15ccc25f06ad4dc8eaa96e86517384e71e18103e1d44e5101c82071957dc6d78",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32727,
+        32805
+      ],
+      "excerpt_sha256": "52c36810f5a59cce199644906212e66806dff4bdbeeb384c74aafa143499e53b",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32949,
+        33050
+      ],
+      "excerpt_sha256": "ff4e633c70f2eef82917a1b72eff1511d716bb073e1a9610872e4790ffc0acbc",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    }
+  ],
+  "dictionary": {
+    "L": "L_i=x[113+4(i-1)]+rho*x[114+4(i-1)]",
+    "Lprime": "Lprime_i=x[115+4(i-1)]-rho*x[116+4(i-1)]; conjugation is essential",
+    "C": "C_i=L_i-Lprime_i",
+    "C_squares": {
+      "1": "x144+2rho*x145",
+      "2": "x150+2rho*x151",
+      "3": "x152+2rho*x153",
+      "4": "x154+2rho*x155"
+    },
+    "H_square": "f(H)^2=x148+2rho*x149",
+    "G_square": "G^2=(x156-2x134+1)+rho*(4x157-4x135), since x134+2rho*x135=G+1",
+    "C1_fourth": "x211+rho*x212",
+    "I_fourth": "x213+rho*x214; accepted022",
+    "B1_fourth": "x215+rho*x216; accepted022",
+    "A_squares": {
+      "1": "x136+2rho*x137",
+      "2": "x138+2rho*x139",
+      "3": "x140+2rho*x141",
+      "4": "x142+2rho*x143"
+    },
+    "V_squares": {
+      "0": "x95+2rho*x96",
+      "1": "x99+2rho*x100",
+      "2": "x101+2rho*x102",
+      "3": "x105+2rho*x106",
+      "4": "x109+2rho*x110"
+    },
+    "scaled_V_fourths": {
+      "0": [
+        97,
+        98
+      ],
+      "2": [
+        103,
+        104
+      ],
+      "3": [
+        107,
+        108
+      ],
+      "4": [
+        111,
+        112
+      ]
+    },
+    "scaled_V_rule": "For pair (r,s), D^2*f(V_i)^4=193*xr-132rho*xs, and B_i^4=((37249*xr-34848*xs)-25476rho*(xr-xs))/2401."
+  },
+  "root_antecedent": {
+    "c": [
+      "x47+2rho*x48",
+      "x49+2rho*x50",
+      "2x51+2rho*x52",
+      "x53+2rho*x54"
+    ],
+    "I": [
+      "x20+rho*x21",
+      "x24+rho*x25",
+      "x28+rho*x29",
+      "x32+rho*x33"
+    ],
+    "K": [
+      "x61+rho*x62",
+      "x67+rho*x68",
+      "x73+rho*x74",
+      "x79+rho*x80"
+    ],
+    "identities": [
+      "I_i^2-c_i+D*c_i*A_i^2=0",
+      "c_i-K_i^2-D*c_i*f(V_i)^2=0"
+    ],
+    "limit": "Exact row identities verified here. Their interpretation as reciprocal abscissas requires the retained biquadratic chart, c_i nonzero, and its point interpretation; that separate antecedent is not proved by the row names."
+  },
+  "factors": [
+    "1+q^7*C2^2+q^2*f(H)^2+q^4*B1^4",
+    "1+q^7*G^2+q^2*A3^2+q^4*B0^4",
+    "1+q^7*I^4+q*A2^2+q^2*A4^2+q^4*B3^4",
+    "1+q^7*C3^2+q^2*C1^4+q^4*B4^4",
+    "1+q^7*C4^2+q^2*A1^2+q^4*B2^4"
+  ],
+  "detectors": [
+    {
+      "q": 161,
+      "q2": 163,
+      "q4": 164,
+      "q7": 162,
+      "T_pairs": [
+        [
+          217,
+          218
+        ],
+        [
+          219,
+          220
+        ],
+        [
+          221,
+          222
+        ],
+        [
+          223,
+          224
+        ],
+        [
+          225,
+          226
+        ]
+      ],
+      "partial_products": [
+        [
+          227,
+          228
+        ],
+        [
+          229,
+          230
+        ],
+        [
+          231,
+          232
+        ]
+      ],
+      "W": [
+        165,
+        166
+      ]
+    },
+    {
+      "q": 176,
+      "q2": 178,
+      "q4": 179,
+      "q7": 177,
+      "T_pairs": [
+        [
+          233,
+          234
+        ],
+        [
+          235,
+          236
+        ],
+        [
+          237,
+          238
+        ],
+        [
+          239,
+          240
+        ],
+        [
+          241,
+          242
+        ]
+      ],
+      "partial_products": [
+        [
+          243,
+          244
+        ],
+        [
+          245,
+          246
+        ],
+        [
+          247,
+          248
+        ]
+      ],
+      "W": [
+        180,
+        181
+      ]
+    }
+  ],
+  "directions": {
+    "readback": "Given root/ratio meanings and accepted022, uniqueness of each coefficient in basis (1,rho), the checked identities, and D!=0 force every displayed power and factor. Multiplication rows force W=T1*T2*T3*T4*T5. No division by any test, factor, q or W occurs in this algebraic readback.",
+    "reverse": "Given semantic root/ratio witnesses satisfying their chart equations, assign each square to its actual field value. For ordinary imaginary convention assign the rho coefficient directly; for double convention divide that coefficient by 2; for x156+4rho*x157=(G+1)^2 divide by 4. For scaled fourth pair assign Re(D^2*f(V_i)^4)/193 and Im(D^2*f(V_i)^4)/(-132). Assign each T and successive product to its ordinary components. These rational assignments satisfy all checked rows. They preserve x1 and all existing root/ratio/weight coordinates.",
+    "zero_strata": "Every zero test and zero individual component is permitted. q=0 and zero factors also satisfy the polynomial construction where their semantic inputs do; arithmetic contact nonvanishing is a later theorem, not an assumption used to fill these rows. The only inverse constants are 2,4,193,-132,2401; D has norm49."
+  },
+  "remaining": "Root/biquadratic/ratio semantics and their full reverse assignments remain to be checked separately. This packet does not claim the other 150 rows are all unreviewed: overlaps with prior accepted scopes are recorded, but no global closure is inferred."
+}

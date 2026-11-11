@@ -1,0 +1,292 @@
+{
+  "id": "V15-SCALE239",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33188,
+      33194
+    ],
+    "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33195,
+      33214
+    ],
+    "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+  },
+  "retained_reviews": [
+    {
+      "key": "reciprocal-scale-independent",
+      "path": "work/quartic248-optimization-20261109/valuation-packing/reciprocal-scale-independent/REVIEW.json",
+      "sha256": "fe149cdc18e8d31a2a8240e073fad8dd7205eddb5897eb5afc3ecd86475ee0cb",
+      "scope": "Exact named coordinate/proof-chain scope; preserve source qualifications.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "final238-chain-review-001",
+      "path": "work/quartic248-optimization-20261109/valuation-packing/final238-chain-review-001/REVIEW.json",
+      "sha256": "12aef646e50d9a702b8cd5b1ebdc2375e0fa7179120e8f24b11f13848bb46ff2",
+      "scope": "Exact named coordinate/proof-chain scope; preserve source qualifications.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Supplier",
+      "required": "240system withpositiveaggregateT",
+      "constructed": "T=quartertrace sumh_l²,t1=lambda*T",
+      "match": "Rootdomains makeTpositive beforeinversion",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Construction",
+      "required": "Replace lambda withrho anddeleteT",
+      "constructed": "rho*t1=quartertrace sumh_l²",
+      "match": "RHSpositive forcesrho≠0 withoutnewguard",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Olddomain",
+      "required": "Exclude lambda0 fromoldcontactequation",
+      "constructed": "F(0)=0 whileclearedRHS atlambda0 nonzero",
+      "match": "Reciprocalmap isdefined onalloldsolutions",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Polynomial",
+      "required": "Preserveexactphysicalcontactinput",
+      "constructed": "G(rho)=rho^10F(1/rho)",
+      "match": "WeightrelationG(rho)(1+q)=(1−rho)^10 isexactclearance",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Powernodes",
+      "required": "Keepquadraticdegree",
+      "constructed": "Repurposeexistingthreecoordinates torho²,rho⁴,rho⁵",
+      "match": "Everydegree0–10representedquadratically;noextraauxiliary",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Forward",
+      "required": "Oldtonew",
+      "constructed": "rho=1/lambda andt1retained;deleteT",
+      "match": "Newaggregateandcontactrelations followsubstitution",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Inverse",
+      "required": "Newtoold",
+      "constructed": "lambda=1/rho,T=rho*t1",
+      "match": "Dividecontactrelation byrho^10;restoresoldpowernodesuniquely",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Zeros",
+      "required": "Keepallowedexceptionalstrata",
+      "constructed": "rho1 andq0 allowed",
+      "match": "Onlyrho0/lambda0 excluded byactualequations",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Scope",
+      "required": "Countandparameters",
+      "constructed": "239coordinates213rows;inputandA_Nfixed",
+      "match": "Exactcoefficientsfrompinned239IR;notarbitrarycontactreplacement",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33194
+          ],
+          "excerpt_sha256": "dc3bf2093c4beccb1943dcf668a7f59bfa6fbb52649173eeb7dbf66ea25c2ab7"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33195,
+            33214
+          ],
+          "excerpt_sha256": "ff541cdd3c10797911ca2e8a3a0f7332e58a06afb6b75947616f11d2ae03394b"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

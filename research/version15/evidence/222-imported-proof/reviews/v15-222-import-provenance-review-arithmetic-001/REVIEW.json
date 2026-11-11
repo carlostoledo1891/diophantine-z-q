@@ -1,0 +1,88 @@
+{
+  "schema": "bounded-original-operation-review/v1",
+  "decision": "accepted_within_recorded_operation_scope",
+  "subject": {
+    "path": "work/v15-222-ledger-author-001/private-import-closure-scan-011/MANIFEST.json",
+    "sha256": "b205d84e726f33e772d2575b666ac1f6d96e8bb99abe26ee094c774a18e4fffb"
+  },
+  "operations": [
+    {
+      "stage": "scalar232-sparse-repair",
+      "run_id": "01a1c43e-bc3a-7ae3-b727-4830203f79e8",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "context_gap_bytes": 572282,
+      "gap_sha256": "0d2c836f9bfe32706ca6813942aa08d96e3ed6c76eab6aa04ab1919f2bfb4d23",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    },
+    {
+      "stage": "scalar232-sparse-seal",
+      "run_id": "01a1c43e-bc3a-7ae3-b727-4830203f79e8",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "context_gap_bytes": 593244,
+      "gap_sha256": "a1a51211e556135c68793da1c842427a797b71fe4f0689c8a84ed2183e4705bc",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    },
+    {
+      "stage": "shared226-sparse-build",
+      "run_id": "01a1c4c4-8627-71e3-b2d8-d9683f3afd67",
+      "agent_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+      "context_gap_bytes": 53329,
+      "gap_sha256": "84310ef1170314d0ffd2d87d48dd3c1a9697486281cafc574a872791c8978c71",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    },
+    {
+      "stage": "shared224-field-copy-and-build",
+      "run_id": "01a1c4c4-8627-71e3-b2d8-d9683f3afd67",
+      "agent_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+      "context_gap_bytes": 411678,
+      "gap_sha256": "ba05d060c0b047c52ffa95799102d5c9af87a2cbd28e48893d55c55515e8b83e",
+      "scope": "Copies existing field certificates and authors full assembly builder; not original generation of copied certificates"
+    },
+    {
+      "stage": "shared224-sparse-build",
+      "run_id": "01a1c4c4-8627-71e3-b2d8-d9683f3afd67",
+      "agent_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+      "context_gap_bytes": 572910,
+      "gap_sha256": "e4a08259b5ba6c96edd0970e3d1f0c0a61eda9de396ac9cbcaa394d7134491b9",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    },
+    {
+      "stage": "shared224-sparse-seal",
+      "run_id": "01a1c4c4-8627-71e3-b2d8-d9683f3afd67",
+      "agent_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+      "context_gap_bytes": 653699,
+      "gap_sha256": "c4408fd6ebb862092ae08691bad520902ef74c41f1cab92cea0ee3b2ea7e14e1",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    },
+    {
+      "stage": "root223-sparse-build",
+      "run_id": "01a1c4c8-250a-7fc3-b2dd-1c340dcdf009",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "context_gap_bytes": 197817,
+      "gap_sha256": "95f99953c5e4c2a558ac759a3c1a0ab7b05e342179ca706a18320beef2cb7fa1",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    },
+    {
+      "stage": "first-root-trace004-map",
+      "run_id": "01a1c4c7-fef8-7762-9218-8f0bd2d05731",
+      "agent_id": "01a1be26-cd38-7f40-81f1-898862820498",
+      "context_gap_bytes": 684872,
+      "gap_sha256": "3460adcc79aff379251af0abed5dcae79f24176f0c1cfc88884b56fb365908ae",
+      "scope": "Actual stated write/build/seal only; no claim of all antecedent file authorship"
+    }
+  ],
+  "checks": {
+    "original_pointer_occurrences": 32,
+    "artifact_pins": 9,
+    "successful_recorded_operations": 8,
+    "failed_initial_scalar_build_preserved": true,
+    "aborted_initial_111_dispatch_preserved": true
+  },
+  "limits": [
+    "No mathematics or final target approval.",
+    "The shared224 operation copies existing field certificates and constructs the assembly; it is not evidence of original certificate authorship.",
+    "Sparse builders import earlier helpers/stages; this review does not erase those antecedent authors.",
+    "Successful build outputs and later pinned artifacts are distinguished from final seal operations; only the named calls are attributed.",
+    "Raw host records remain private."
+  ]
+}

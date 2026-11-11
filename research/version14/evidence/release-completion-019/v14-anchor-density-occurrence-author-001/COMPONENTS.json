@@ -1,0 +1,182 @@
+[
+  {
+    "origin": "v14-anchor-density-occurrence-author-001/COMPONENTS.json",
+    "author": "/root/v14_arithmetic_review",
+    "status": "pending_independent_review",
+    "use": {
+      "id": "ACTIVE-SOURCE-ANCHOR-DENSITY-NEBENTYPE",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-SOURCE-ANCHOR-DENSITY-NEBENTYPE-P1"
+      ],
+      "assertion": {
+        "statement": "The two induced Dirichlet characters in C4 are equal if their values agree at every common good prime.",
+        "objects": "The two finite-order Dirichlet characters compared in the coefficient-conjugate newform argument at anchor line31.",
+        "hypotheses": "Both characters factor through a common finite abelian quotient; their values at every prime outside the finite bad set agree, as supplied by the displayed coefficient formula.",
+        "quantifiers": "For the two actual characters and all elements of their common finite quotient.",
+        "parameter_range": "The fixed levels and character moduli in C4; primes outside their finite bad set.",
+        "uniformity": "Only equality for this pair; no field, level or coefficient enlargement is inferred.",
+        "constants": "No effective prime bound or quantitative estimate.",
+        "normalizations": "Character value at a good prime equals its value on arithmetic Frobenius.",
+        "exceptional_cases": "The coefficient identity and same-form/primitive-source hypotheses are retained inputs. The Euler-factor formula and semisimple trace lemma are not premises.",
+        "limit_order": "Fix the common finite abelian quotient; apply density outside the bad set; deduce equality on every quotient element."
+      },
+      "classification": "dependency",
+      "reason": "Factor both Dirichlet characters through the Galois group of a common cyclotomic extension. For each element choose a good prime with that Frobenius using finite-abelian density. The already established equality at that prime gives equality on the chosen element. This proves character equality without using the conditional Euler formula or semisimple representation theory.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+            "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+          },
+          "start_line": 39,
+          "end_line": 39,
+          "excerpt_sha256": "3a59588350aaaac394acef2d90865f8e8ac5a0556971b46581de584d14f74a2f"
+        },
+        "statement": "For a finite abelian extension of number fields, every element of its Galois group occurs as Frobenius at unramified primes outside any fixed finite excluded set.",
+        "publication": {
+          "title": "Abelian l-adic representations and elliptic curves",
+          "authors": "J.-P. Serre",
+          "venue": "Published book, exact pinned edition retained",
+          "authoritative_version": "Published book; surrounding Q-rational compatible-system theorem is not used. Original SHA256 971dbfdd4414d99ea21d7d0af63dbb790d7b1188e9aec37f422181a2b543dec4",
+          "locator": "I.2.2, ppI-7–I-8 (density only; I.2.3 semisimple lemma not used here)",
+          "corrections": "All original source qualifications and separately pinned correction files are retained in SOURCE-PINS.json."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+          "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+        },
+        "start_line": 31,
+        "end_line": 31,
+        "excerpt_sha256": "db4c596eb3920a7dd25a021f6e93804ba167f9561132e672b69d984da8fc12aa"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-SOURCE-ANCHOR-DENSITY-NEBENTYPE",
+      "use_sha256": "bdb96308a1725e8a65a62a4d7a8056b8f733a0f16c9efca3835f755ee047a1a7",
+      "supplier_passage_role": "application",
+      "available_assertion": {
+        "statement": "For a finite abelian extension of number fields, every element of its Galois group occurs as Frobenius at unramified primes outside any fixed finite excluded set.",
+        "objects": "A finite abelian extension and its finite Galois group.",
+        "hypotheses": "The extension is finite and abelian; exclude ramified primes and an arbitrary fixed finite set.",
+        "quantifiers": "Every group element and every such finite exclusion set.",
+        "parameter_range": "Finite abelian extensions only.",
+        "uniformity": "Existence outside each fixed finite set; no effective bound on the prime is asserted.",
+        "constants": "No numerical prime bound is supplied.",
+        "normalizations": "Arithmetic Frobenius; inversion of the convention preserves the resulting character-equality implication.",
+        "exceptional_cases": "No semisimple trace determination or rational compatible-system theorem is imported.",
+        "limit_order": "Fix the finite extension, element and finite exclusions before choosing the prime."
+      },
+      "needed_assertion": {
+        "statement": "The two induced Dirichlet characters in C4 are equal if their values agree at every common good prime.",
+        "objects": "The two finite-order Dirichlet characters compared in the coefficient-conjugate newform argument at anchor line31.",
+        "hypotheses": "Both characters factor through a common finite abelian quotient; their values at every prime outside the finite bad set agree, as supplied by the displayed coefficient formula.",
+        "quantifiers": "For the two actual characters and all elements of their common finite quotient.",
+        "parameter_range": "The fixed levels and character moduli in C4; primes outside their finite bad set.",
+        "uniformity": "Only equality for this pair; no field, level or coefficient enlargement is inferred.",
+        "constants": "No effective prime bound or quantitative estimate.",
+        "normalizations": "Character value at a good prime equals its value on arithmetic Frobenius.",
+        "exceptional_cases": "The coefficient identity and same-form/primitive-source hypotheses are retained inputs. The Euler-factor formula and semisimple trace lemma are not premises.",
+        "limit_order": "Fix the common finite abelian quotient; apply density outside the bad set; deduce equality on every quotient element."
+      },
+      "required_capabilities": [
+        "The two induced Dirichlet characters in C4 are equal if their values agree at every common good prime."
+      ],
+      "available_capabilities": [
+        "For a finite abelian extension of number fields, every element of its Galois group occurs as Frobenius at unramified primes outside any fixed finite excluded set."
+      ],
+      "derived_capabilities": [
+        "The two induced Dirichlet characters in C4 are equal if their values agree at every common good prime."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+            "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+          },
+          "start_line": 31,
+          "end_line": 31,
+          "excerpt_sha256": "db4c596eb3920a7dd25a021f6e93804ba167f9561132e672b69d984da8fc12aa"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The two induced Dirichlet characters in C4 are equal if their values agree at every common good prime.",
+          "objects": "The two finite-order Dirichlet characters compared in the coefficient-conjugate newform argument at anchor line31.",
+          "hypotheses": "Both characters factor through a common finite abelian quotient; their values at every prime outside the finite bad set agree, as supplied by the displayed coefficient formula.",
+          "quantifiers": "For the two actual characters and all elements of their common finite quotient.",
+          "parameter_range": "The fixed levels and character moduli in C4; primes outside their finite bad set.",
+          "uniformity": "Only equality for this pair; no field, level or coefficient enlargement is inferred.",
+          "constants": "No effective prime bound or quantitative estimate.",
+          "normalizations": "Character value at a good prime equals its value on arithmetic Frobenius.",
+          "exceptional_cases": "The coefficient identity and same-form/primitive-source hypotheses are retained inputs. The Euler-factor formula and semisimple trace lemma are not premises.",
+          "limit_order": "Fix the common finite abelian quotient; apply density outside the bad set; deduce equality on every quotient element."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The coefficient identity and same-form/primitive-source hypotheses are retained inputs. The Euler-factor formula and semisimple trace lemma are not premises.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+              "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+            },
+            "start_line": 31,
+            "end_line": 31,
+            "excerpt_sha256": "db4c596eb3920a7dd25a021f6e93804ba167f9561132e672b69d984da8fc12aa"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+            "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+          },
+          "start_line": 31,
+          "end_line": 31,
+          "excerpt_sha256": "db4c596eb3920a7dd25a021f6e93804ba167f9561132e672b69d984da8fc12aa"
+        }
+      ]
+    },
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-SOURCE-ANCHOR-DENSITY-NEBENTYPE-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+            "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+          },
+          "start_line": 31,
+          "end_line": 31,
+          "excerpt_sha256": "db4c596eb3920a7dd25a021f6e93804ba167f9561132e672b69d984da8fc12aa"
+        }
+      }
+    ],
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/current-reviewed-003/suppliers/a007-a011-current-anchor-001/CONNECTION.md",
+          "sha256": "4fd5cbac764d12ce16d943bac23854bd78a42c824473209966e34b6af9280889"
+        },
+        "start_line": 31,
+        "end_line": 31,
+        "excerpt_sha256": "db4c596eb3920a7dd25a021f6e93804ba167f9561132e672b69d984da8fc12aa"
+      }
+    ]
+  }
+]

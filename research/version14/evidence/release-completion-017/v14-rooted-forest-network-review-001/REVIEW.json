@@ -1,0 +1,31 @@
+{
+  "reviewer": "/root/v14_arithmetic_review",
+  "decision": "accept bounded conditional forest-coefficient proof",
+  "manifest_sha256": "ec6f6a671b790124dbcc59ca22c296f85de020304c2086d2b6bf4a4ab588ba11",
+  "proof_sha256": "f8cc63225e1d98f16ed31c01ea425565ef76ce1e174e516ed77e0ecbb7fabe64",
+  "checks": [
+    {
+      "path": "PROOF.md",
+      "pass": true
+    },
+    {
+      "path": "SCOPE.json",
+      "pass": true
+    },
+    {
+      "label": "actual caller",
+      "pass": true
+    }
+  ],
+  "reasoning": [
+    "The incidence-minor criterion follows from cycle dependence, per-component row and column counts, and leaf deletion. Isolated vertices obey the same criterion.",
+    "Cauchy–Binet applied to B_I W B_J^t gives the weighted product of two square incidence minors. In characteristic two every surviving sign is1.",
+    "For R=C=T the surviving forests have exactly one terminal in every component, giving det Q.",
+    "For R=T minus a and C=T minus b, any other terminal belongs to both root sets and exhausts both counts in its component. Thus a and b must form the unique two-terminal component. The block minor has determinant minus c_a^t adj(Q)c_b, whose sign disappears modulo2.",
+    "This determinant expansion does not divide by det Q and remains valid for singular Q.",
+    "Under the explicitly assumed contraction/isolation rules, terminal degree equals the sum of k-1 over components; all other surviving forests have degree at least2.",
+    "Independent network edge subsets multiply their operators; terminal cycles vanish by the retained rule. Equality for the two projected symbols is conditional on their sharing these exact rules."
+  ],
+  "limits": "Does not prove arithmetic contraction/isolation rules, activation realization, coefficient selection, or general network closure. No generic Cauchy–Binet citation alone is treated as the application proof. New source adoption and any final normalized use remain separate.",
+  "prior_exposure": "Previously reviewed related Gaussian/network source applications and actual manuscript clauses; this is an independent check of H6 newly authored finite-forest argument."
+}

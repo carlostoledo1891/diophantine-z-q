@@ -1,0 +1,13 @@
+# Independent review of the bounded build-download retry
+
+Reviewer: `/root/v14_arithmetic_review`. Author: `/root`. Decision: accept this bounded CI repair. Reviewed `scripts/build_paper.py` SHA256 `850ff9b315504a009773823d1ce1f9ec3c10e3d75b2ec5ad2df35496e0cd8a7f` against the saved before-file SHA256 `14a9d1c3d2770b4a58e16e4b2567281915cf3f15e957dc300784a9dbb2a0a635`.
+
+I read the complete changed script and six mocked tests. An exact inverse check removes only the two imports, the new helper, and its single call-site replacement and recovers the saved before-file byte for byte. Tectonic version, platform asset URLs and checksums, bundle fingerprint, untrusted compilation, manuscript selection, output validation and source-stability checks are unchanged.
+
+The helper makes at most four attempts against the same request with the same 60-second urllib timeout. It retries HTTP408/429/500/502/503/504, URL errors and TimeoutError, waiting1,2,4 seconds between attempts. HTTPError is caught before its URLError superclass, so a permanent status such as404 is raised immediately. The final failed attempt is raised without another sleep; no failure is converted to successful bytes or an alternate download source. The timeout remains urllib's timeout, not a new absolute wall-clock deadline for the entire response.
+
+Checksum validation remains outside the retry helper. A successful HTTP response with incorrect bytes raises before caching or extraction; an incorrect existing cache raises without downloading or producing an executable. A read that raises within the response context cannot return its partial bytes. This repair does not claim to retry every possible network exception or to change Tectonic's later bundle-download behavior.
+
+I independently ran the exact six tests with the bundled Python, `-X utf8 -E -B`; exit status0. They cover504 recovery, immediate404 rejection, bounded503 exhaustion and delays, URL/timeout recovery, bad downloaded checksum without cache/executable creation, and bad cached checksum without network use. All passed. The saved CHECKS.json binds the test file, command, exact inverse result and output. Tests mock networking and sleep; no live download, compilation, CI dispatch or deployment was performed by this review.
+
+This accepts only the script repair and its preserved failure behavior. The changed script hash must replace the old execution-source pin in any later reviewed policy closure, with the usual exact Git binding. The earlier closure tied to the old script does not automatically approve a different commit, remote CI result, protected transition, merge or release.

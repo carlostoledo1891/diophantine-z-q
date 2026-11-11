@@ -1,0 +1,83 @@
+{
+  "schema": "research-release-requirements/v1",
+  "version": 14,
+  "date": "2026-11-09",
+  "subtitle": "Version 14",
+  "destinations": [
+    "elliotglazer/diophantine-z-q",
+    "elliotglazer/private-diophantine"
+  ],
+  "manuscript": {
+    "tex": "manuscripts/quartic_v14.tex",
+    "pdf": "manuscripts/quartic_v14.pdf",
+    "author_field": "blank"
+  },
+  "governing_protocol": {
+    "path": "docs/research-review/PROTOCOL.md",
+    "version": "1.4",
+    "sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9"
+  },
+  "constructions": [
+    {
+      "role": "original",
+      "total_variables": 292890231905,
+      "degree_strict_upper_bound": "2^^7",
+      "coefficient_magnitude_strict_upper_bound": "2^^8"
+    },
+    {
+      "role": "current symbolic quartic",
+      "total_variables": 299,
+      "witnesses": 298,
+      "degree": 4,
+      "monomials": 6630,
+      "maximum_coefficient_magnitude": "186624*3^(2^26)",
+      "fixed_coefficient_parameter": "C=3^(2^25)",
+      "table": "quartics/quartic-299-symbolic-coefficients.txt"
+    },
+    {
+      "role": "current ordinary quartic",
+      "total_variables": 314,
+      "witnesses": 313,
+      "degree": 4,
+      "monomials": 6672,
+      "maximum_coefficient_bit_length": 6496,
+      "coefficient_magnitude_strict_upper_bound": "2^6496",
+      "table": "quartics/quartic-314-fully-expanded.txt",
+      "table_bytes": 264430
+    }
+  ],
+  "historical_policy": "Retain prior manuscripts, coefficient artifacts, initial source reconstructions, rejected candidates and dated review evidence. Identify current and superseded results explicitly.",
+  "handoff": {
+    "mode": "cumulative supplement over exact Version 13 archive",
+    "exclude": [
+      "conversational transcript",
+      "account credentials",
+      "unrelated files"
+    ],
+    "required": [
+      "current TeX and PDF",
+      "coefficient tables and finite replay",
+      "current application inventory and actual independent decisions",
+      "source-first reconstruction and reconciliation",
+      "new research and negative results",
+      "protocol 1.4 and release requirements",
+      "source and review version qualifications",
+      "README and artifact navigation",
+      "fresh restoration and replay evidence",
+      "connecting derivations, related-use audits and current-assertion consistency decisions"
+    ]
+  },
+  "validation": [
+    "exact source and table hashes",
+    "independent arithmetic and finite-construction acceptance",
+    "source-first coverage acceptance",
+    "v1.4 connecting-argument, related-use and correction-consistency reviews",
+    "audit-history and application checkers",
+    "current manuscript compilation and changed-page visual review",
+    "all eleven existing required Actions checks",
+    "App-bound Protocol / independent agent audit",
+    "normal merges with immutable readback in both repositories"
+  ],
+  "search": "paused at user request",
+  "status": "requirements proposal; not a release acceptance"
+}

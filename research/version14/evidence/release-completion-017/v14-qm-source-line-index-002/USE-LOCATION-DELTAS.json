@@ -1,0 +1,176 @@
+[
+  {
+    "use_id": "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION",
+    "before_sha256": "f15533eedb3bb611a541d026da8c17aa70303ab61e30bef76552392c8c504c6f",
+    "after_component": {
+      "use": {
+        "id": "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION",
+        "consumer": "QM-SEMISIMPLE-BASE-CHANGE",
+        "passages": [
+          "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION-P1",
+          "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION-SOURCE-APPLICATION"
+        ],
+        "assertion": {
+          "statement": "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension.",
+          "objects": "The actual rational Tate representation and its original matrix-unit summand over finite splitting coefficient fields.",
+          "hypotheses": "The representation is finite-dimensional and semisimple over its original characteristic-zero coefficient field.",
+          "quantifiers": "Every object and algebraic scalar extension satisfying the stated hypotheses.",
+          "parameter_range": "Characteristic zero; finite-dimensional algebras and representations.",
+          "uniformity": "Algebraic statement for each specified object; no quantitative field bound.",
+          "constants": "No numerical constants.",
+          "normalizations": "Ordinary extension of scalars; the original representation is retained.",
+          "exceptional_cases": "No positive-characteristic or inseparable extension claim. This does not supply Faltings semisimplicity, full endomorphism algebra, or the original-family restriction.",
+          "limit_order": "Obtain Faltings semisimplicity for the original Tate module; apply coefficient extension before the scalar-commutant irreducibility deduction."
+        },
+        "classification": "dependency",
+        "reason": "The irreducibility argument invokes semisimplicity after finite coefficient extensions; scalar commutant and original-family inputs remain separate.",
+        "shared_contract_justification": "The same coefficient-extension assertion is applied to the actual semisimple Tate module in the all-prime argument and in the provider's explicit application paragraph; both retain their original coefficient field and separate Faltings/full-endomorphism hypotheses.",
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/qm-lemma-inventory-v1/SEMISIMPLE-COEFFICIENTS.md",
+              "sha256": "7dec48331eaa5098ddf1be281148b6f5f2e5aaf1e5e2a389e1b7ec935e7b5d07"
+            },
+            "start_line": 3,
+            "end_line": 9,
+            "excerpt_sha256": "f58ca9fd04e82bba8a49ce1c7271ba371bb220dee8c148f72c8380163aac7e7c"
+          },
+          "statement": "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+            "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+          },
+          "start_line": 5,
+          "end_line": 9,
+          "excerpt_sha256": "3f47753e53e5433ada69a65c1e99c1a75f39ab4242ae3d7949cbe7ef27b4d550"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION",
+        "use_sha256": "7a6c90b06be89b9825cf9ec6b12a228ee8e7538d800441641559b1fe8312a7fc",
+        "supplier_passage_role": "inline_derivation",
+        "available_assertion": {
+          "statement": "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension.",
+          "objects": "A finite-dimensional semisimple representation of an arbitrary group over a characteristic-zero field.",
+          "hypotheses": "The representation is finite-dimensional and semisimple over its original characteristic-zero coefficient field.",
+          "quantifiers": "Every object and algebraic scalar extension satisfying the stated hypotheses.",
+          "parameter_range": "Characteristic zero; finite-dimensional algebras and representations.",
+          "uniformity": "Algebraic statement for each specified object; no quantitative field bound.",
+          "constants": "No numerical constants.",
+          "normalizations": "Ordinary extension of scalars; the original representation is retained.",
+          "exceptional_cases": "No positive-characteristic or inseparable extension claim. This does not supply Faltings semisimplicity, full endomorphism algebra, or the original-family restriction.",
+          "limit_order": "Fix the original semisimple representation, split its image algebra over an algebraic closure, and descend equivariant projections by linear equations."
+        },
+        "needed_assertion": {
+          "statement": "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension.",
+          "objects": "The actual rational Tate representation and its original matrix-unit summand over finite splitting coefficient fields.",
+          "hypotheses": "The representation is finite-dimensional and semisimple over its original characteristic-zero coefficient field.",
+          "quantifiers": "Every object and algebraic scalar extension satisfying the stated hypotheses.",
+          "parameter_range": "Characteristic zero; finite-dimensional algebras and representations.",
+          "uniformity": "Algebraic statement for each specified object; no quantitative field bound.",
+          "constants": "No numerical constants.",
+          "normalizations": "Ordinary extension of scalars; the original representation is retained.",
+          "exceptional_cases": "No positive-characteristic or inseparable extension claim. This does not supply Faltings semisimplicity, full endomorphism algebra, or the original-family restriction.",
+          "limit_order": "Obtain Faltings semisimplicity for the original Tate module; apply coefficient extension before the scalar-commutant irreducibility deduction."
+        },
+        "required_capabilities": [
+          "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension."
+        ],
+        "available_capabilities": [
+          "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension."
+        ],
+        "derived_capabilities": [
+          "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+              "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+            },
+            "start_line": 5,
+            "end_line": 9,
+            "excerpt_sha256": "3f47753e53e5433ada69a65c1e99c1a75f39ab4242ae3d7949cbe7ef27b4d550"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "A finite-dimensional semisimple group representation over a characteristic-zero field remains semisimple after every algebraic scalar extension.",
+            "objects": "The actual rational Tate representation and its original matrix-unit summand over finite splitting coefficient fields.",
+            "hypotheses": "The representation is finite-dimensional and semisimple over its original characteristic-zero coefficient field.",
+            "quantifiers": "Every object and algebraic scalar extension satisfying the stated hypotheses.",
+            "parameter_range": "Characteristic zero; finite-dimensional algebras and representations.",
+            "uniformity": "Algebraic statement for each specified object; no quantitative field bound.",
+            "constants": "No numerical constants.",
+            "normalizations": "Ordinary extension of scalars; the original representation is retained.",
+            "exceptional_cases": "No positive-characteristic or inseparable extension claim. This does not supply Faltings semisimplicity, full endomorphism algebra, or the original-family restriction.",
+            "limit_order": "Obtain Faltings semisimplicity for the original Tate module; apply coefficient extension before the scalar-commutant irreducibility deduction."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No positive-characteristic or inseparable extension claim. This does not supply Faltings semisimplicity, full endomorphism algebra, or the original-family restriction.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/qm-lemma-inventory-v1/SEMISIMPLE-COEFFICIENTS.md",
+                "sha256": "7dec48331eaa5098ddf1be281148b6f5f2e5aaf1e5e2a389e1b7ec935e7b5d07"
+              },
+              "start_line": 3,
+              "end_line": 9,
+              "excerpt_sha256": "f58ca9fd04e82bba8a49ce1c7271ba371bb220dee8c148f72c8380163aac7e7c"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+                "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+              },
+              "start_line": 5,
+              "end_line": 9,
+              "excerpt_sha256": "3f47753e53e5433ada69a65c1e99c1a75f39ab4242ae3d7949cbe7ef27b4d550"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+              "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+            },
+            "start_line": 5,
+            "end_line": 9,
+            "excerpt_sha256": "3f47753e53e5433ada69a65c1e99c1a75f39ab4242ae3d7949cbe7ef27b4d550"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/current-reviewed-003/suppliers/qm-lemma-inventory-v1/SEMISIMPLE-COEFFICIENTS.md",
+              "sha256": "7dec48331eaa5098ddf1be281148b6f5f2e5aaf1e5e2a389e1b7ec935e7b5d07"
+            },
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt_sha256": "4c0791bd81da39cdf84cdf20c4e8ff0f7b121ecd8194146c27c2e4e955d04ccc"
+          }
+        ]
+      },
+      "retained_separate_inputs": [
+        "Faltings semisimplicity and full endomorphism comparison",
+        "Original A/L and normalized-family restriction",
+        "Scalar commutant calculation and matrix-unit identity"
+      ]
+    },
+    "reason": "Source paragraph11 explicitly applies coefficient extension to the actual semisimple Tate module; it is an application, not the earlier supplier theorem declaration."
+  }
+]

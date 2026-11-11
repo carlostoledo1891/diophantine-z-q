@@ -1,0 +1,191 @@
+PACKED REGISTER HISTORIES: INDEPENDENT EXACT-SOURCE REVIEW
+4 November 2026
+
+Conclusion and scope
+
+The actual binomial, bitwise and packed-history clauses give a natural-witness zero of the emitted polynomial exactly when the fixed register machine reaches its unique final halt with every register zero. The implication holds for all natural input values and all natural time witnesses, including zero. I found no missing no-carry, branch-disjointness, terminal-zero or hierarchical-value premise in this junction.
+
+The imported arithmetic macro theorem is the exact alpha/power result in work/astra-final-alpha-power-junction-001/REPORT.txt, SHA256 40b3afe50003ffbc2511ef859fcd9e1d003d9cff8813a596597e3658da19e92a. It proves that the actual power polynomial has natural witnesses exactly for P=Q^R, including 0^0=1, and separately proves preservation of its polynomial VALUE under the hierarchy. This report does not infer that theorem from a PASS label; its exact interface is used explicitly. The remaining bit and history deductions are reconstructed below from the current source.
+
+This is not a proof of the interpreter's universal-machine semantics, precision program, rational index model, RC, or final ordinary-integer theorem. No Lean proof or global closure is claimed. Opus retains formalization ownership. No implementation, frozen declaration or manuscript was edited.
+
+Direct sources: outputs/integer-diophantine-compiler.js:97-135 and 144-204; outputs/hierarchical-integer-compiler.js:3-45; current V4b04:63-109, 210-223 and 300-322. The prior final-polynomial and compiler reports were navigation, not premises for the new deductions. Exact hashes are in SOURCE_PINS.json.
+
+1. Exact binomial and bit clauses
+
+All input and witness variables at this stage range over N, including zero. Arithmetic node values are in Z. The emitted binomial(C,N,K) introduces natural base,total,place,u,r and imposes
+
+ power(base,2,N+1),
+ power(total,base+1,N),
+ power(place,base,K),
+ C<base, r<place,
+ total=place*(base*u+C)+r.                              (B)
+
+The imported power theorem gives base=2^(N+1)>=2, total=(1+base)^N and place=base^K>=1. Expand the binomial theorem:
+
+ (1+base)^N=sum_(j=0)^N binom(N,j)*base^j.
+
+Every coefficient is nonnegative and at most 2^N, strictly below base. Therefore this is the carry-free base expansion. The bounds in (B) make r the unique remainder modulo place, and C the unique remainder modulo base of the quotient by place. Hence C is exactly binom(N,K), interpreted as zero for K>N. Conversely take these remainders and quotients and use power completeness. Every witness is natural.
+
+The boundaries follow from the same equations. At K=0, place=1 and r=0, so C is the units digit. At N=K=0, base=2,total=place=1,C=1,u=r=0. At N=0,K>0 the result is C=0, with r=1<place. No positive N or K is assumed.
+
+The emitted odd(x) is x=2h+1 for a natural h. Mask(a,b) is binomial(c,b,a) AND odd(c). Orthogonal(a,b) is binomial(c,a+b,a) AND odd(c). To justify them without an external parity oracle, work in F_2[t]:
+
+ (1+t)^N=product_(i with bit_i(N)=1) (1+t^(2^i)).
+
+The identity follows by repeatedly squaring in characteristic two. Choosing terms in the product gives each binary subset sum exactly once. Thus binom(N,K) is odd iff every set bit of K is a set bit of N, also when K>N (both descriptions are false). This proves the mask relation on all naturals.
+
+If a and b have disjoint set bits, addition has no carry, and a is a bit subset of a+b. Conversely choose the lowest bit shared by a and b. Below it there is no shared bit and hence no incoming carry. At that position the sum clears a set bit of a. Thus a cannot be a bit subset of a+b. This proves orthogonal(a,b) iff a bitwise-AND b=0. At a=0 or b=0 the binomial coefficient is 1, as required.
+
+The emitted bitAnd(z,x,y) introduces natural a,b and imposes
+
+ x=z+a, y=z+b,
+ orthogonal(z,a), orthogonal(z,b), orthogonal(a,b).       (A)
+
+The first two orthogonality conditions make the displayed sums carry-free; the last says the parts outside z have no shared bit. Hence z=x bitwise-AND y. Conversely choose z=x AND y, a=x-z and b=y-z. These differences are natural and remove bits without borrowing, so all three pairs are disjoint. This includes x=0,y=0,z=0 and every partial-zero case.
+
+These proofs use the exact orientation of the binomial arguments. Swapping the two arguments of mask would change the relation. The code uses binomial(c,b,a), as required.
+
+2. Exact packed-history system and program domain
+
+The compiler validates a nonempty finite instruction list of length m, a positive register count h, and in-range register and jump indices. Only the final instruction may be halt, and the final instruction must be halt. Every other instruction is add or sub. There are d inputs, 1<=d<=h; input j initializes register j for j<d, and all other registers start at zero. A sub instruction decrements and takes its nonzero target only when the current register is positive; otherwise it takes the zero target without decrement. The two targets are allowed to coincide.
+
+The theorem concerns a successfully emitted finite program with these conditions. For the actual saved program, the artifact replay below checks all current constructor fields; no assumption about malformed JavaScript objects or unbounded machine-memory resources is needed.
+
+The exact outer witnesses are time q, digit bits c, capacity K, base B, last place T, time mask F, register mask D, histories R_j, nonzero masks N_j, state histories S_i, and V_i,W_i for sub instructions. The emitted clauses are
+
+ c>0, power(K,2,c), B=4K, m<B, power(T,B,q),
+ input_j<K for every supplied input,
+ BF+1=F+BT, D+F=KF,
+ sum_i S_i=F, S_(m-1)=T,
+ mask(S_i,F) for each i,
+ mask(R_j,D), R_j<T,
+ bitAnd(K N_j,R_j+D,KF) for each j,
+ bitAnd(V_i,S_i,N_j), S_i=V_i+W_i for each sub i on j,
+ R_j+B C_j=initial_j+B R_j+B A_j,
+ S_i=delta_(i,0)+B I_i.                                (H)
+
+Here A_j is the sum of S_i over add instructions on j, C_j is the sum of V_i over sub instructions on j, and I_i sums S_a from adds targeting i, V_a from nonzero sub edges targeting i, and W_a from zero sub edges targeting i. Empty sums are zero. The code deliberately pushes both V_a and W_a when the two targets coincide. They are disjoint, as proved below, so this is correct.
+
+The top-level root is the conjunction of exactly these constraints. Every mask, bitAnd and power appearing here is the actual expanded macro; none is left as an arithmetic oracle in the emitted polynomial.
+
+3. Masks, unique state and nonzero test
+
+The power theorem and c>0 give K=2^c>=2, B=2^(c+2)>=8, and T=B^q. Since B-1 is positive, the linear equation BF+1=F+BT forces
+
+ F=1+B+...+B^q,
+ D=(K-1)F.
+
+The proof may divide by B-1; the emitted formula does not. This remains valid for q=0, giving F=T=1 and D=K-1.
+
+Because B is a power of two, its digit positions are disjoint binary blocks of width c+2. The mask D has the bottom c bits set in each block at times 0,...,q and no other bits. Mask(R_j,D) therefore gives a unique expansion
+
+ R_j=sum_(t=0)^q r_j(t) B^t,             0<=r_j(t)<K.
+
+The explicit bound R_j<T=B^q gives r_j(q)=0, with no higher digits. This is a terminal-zero constraint, not a bound on the unquantified size of the input; K is existential and may grow with a run.
+
+Mask(S_i,F) makes each S_i have digits s_i(t) in {0,1}, with no other positions. Each coefficient in sum_i S_i is at most m<B, so that sum has no carry. Equality to F proves sum_i s_i(t)=1 for every t=0,...,q. Thus one state is active at each time. S_(m-1)=T makes the final halt active exactly at q and nowhere earlier. The proof uses the explicit m<B bound; it does not infer digit uniqueness from an equality whose coefficients might reach the base.
+
+For a register history,
+
+ R_j+D=sum_(t=0)^q (r_j(t)+K-1) B^t.
+
+These coefficients lie in [K-1,2K-2], strictly below B. Within a block, their bit at K=2^c is set exactly when r_j(t)>0. Since KF has only that bit in each block, bitAnd(KN_j,R_j+D,KF) gives
+
+ K N_j=K sum_(t=0)^q 1_(r_j(t)>0) B^t.
+
+Cancel K>0. This identifies the entire N_j, excluding hidden high digits or unwanted lower bits. No independent mask clause on N_j is necessary.
+
+4. Branch disjointness and all carry bounds
+
+For a sub instruction i on register j, bitAnd(V_i,S_i,N_j) gives digit
+
+ v_i(t)=s_i(t)*1_(r_j(t)>0).
+
+Thus V_i is a bit subset of S_i. The natural equation S_i=V_i+W_i forces W_i=S_i-V_i; removing a bit subset creates no borrow. Its digit is
+
+ w_i(t)=s_i(t)*1_(r_j(t)=0).
+
+In particular V_i and W_i have disjoint digits, including when their targets coincide. At each time one state is active; if it is a sub state exactly one of its branches contributes, and if it is an add state exactly that add contributes. Hence every coefficient of A_j,C_j,I_i is 0 or 1. Distinct incoming edges cannot create a sum of 2 in a slot: only the edge from the single active state and its single selected branch contributes. At time q the state is halt, which contributes no outgoing edge, so every such coefficient at q is zero.
+
+Write a_j(t),c_j(t),i_i(t) for these coefficients, and extend them and r_j outside the range by zero. The register equality in (H) has coefficients
+
+ at t=0: r_j(0) on the left, initial_j on the right;
+ at 1<=t<=q: r_j(t)+c_j(t-1), and r_j(t-1)+a_j(t-1);
+ at t=q+1: c_j(q)=0, and r_j(q)+a_j(q)=0.
+
+The initial coefficient is <K by its explicit bound (or is zero for an unsupplied register). Every internal coefficient is at most K, strictly below B=4K. The last coefficients are zero. All coefficients are nonnegative, so the exact integer equality has no hidden carry or borrow. Base-B uniqueness gives
+
+ r_j(0)=initial_j,
+ r_j(t+1)+c_j(t)=r_j(t)+a_j(t).
+
+The branch construction makes c_j(t)=1 only for an actual positive-register sub step. Thus this equation implements decrement by one without an illicit negative register; add steps increment by one and other registers remain unchanged.
+
+The state equality has coefficient delta_(i,0) at t=0 and i_i(t-1) at later times, each at most 1<B. It gives initial state 0 and exactly the selected next-state transition. At q+1 its shifted incoming coefficient is zero, since halt has no outgoing edge. All polynomial equalities here are whole integer equalities, not congruences modulo T or a truncation which could discard terminal information.
+
+This proves soundness: any natural witness to (H) decodes an actual q-step run from the prescribed input vector to the unique final halt, with all registers zero.
+
+5. Completeness, zero time and unbounded inputs
+
+Given any finite accepting run, let q be its number of steps. Choose c>=1 large enough that K=2^c strictly exceeds every register value at every time in that run, including the input values, and 4K>m. Such c exists because the run has finitely many times and registers. There is no fixed bound on the inputs or on q in this choice.
+
+Pack its register values and one-hot states into R_j and S_i using base B=4K. Define T,F,D as in section 3, N_j from the nonzero digits, and V_i,W_i from the selected sub branches. All masks and strict bounds hold, including R_j<T because the final registers are zero. Multiplying the actual one-step equations by powers of B and summing gives the exact two history equations in (H); there is no unaccounted term at the top because the final state is halt and its registers are zero. Section 1 gives witnesses for every binomial and bit macro, and the imported power completeness gives each private power witness. Fresh allocation lets all those choices coexist. This constructs a natural zero of the actual polynomial.
+
+At q=0, T=F=1. The bounds R_j<1 force R_j=0. The register equation at the constant coefficient therefore forces every supplied input to be zero. The state equations force S_0=1 and all other S_i=0, while S_(m-1)=1 forces m-1=0. Hence the zero-step case is exactly a one-instruction halt program on an all-zero register vector. Conversely that case satisfies every equation. A program whose first instruction is a zero-test and whose second instruction is halt takes one step even on zero input; it is not mistakenly accepted with q=0.
+
+A program that reaches halt with a nonzero register is rejected by this compiler's stated convention. This is not a bug or an unstated hypothesis: acceptance was explicitly defined as final halt with all registers zero. Converting ordinary halting to this convention requires a separate cleanup-program proof, which remains outside this report.
+
+If a sub instruction has the same zero and nonzero target, both cases correctly reach it. In the concrete two-state program [sub(0,1,1),halt], inputs 0 and 1 each accept after one step; an input greater than 1 reaches halt with a nonzero register and is rejected. The exact clauses and finite tests reproduce all three cases.
+
+6. Exact zero polynomial and hierarchy VALUE
+
+All source variables are natural, but polynomial values use Z. Builder.polynomial sends an equality to its signed difference, AND to the sum of squared child values, and OR to the product of child values. The identity for the empty sum is zero and for the empty product is one. Over Z these operations preserve the intended truth-as-zero interpretation. Induction on the formula DAG gives the exact zero predicate. No intermediate signed difference is required to be a natural number.
+
+All helper variables are fresh. Moving their existential quantifiers to the outermost level is valid because each macro occurrence has a disjoint block and N is nonempty. Inactive disjuncts may use arbitrary natural values for their private witnesses. For active binomial and bit conditions the power parameters are natural expressions: variables, nonnegative constants, sums and products. Thus the imported power theorem is applied on its exact natural domain.
+
+The hierarchical compiler replaces each occurrence of the full power polynomial by a call node whose arguments include its three parameters and the start of a private 79-variable block. The returned formula node is tagged 'polynomial', and its value is passed through unchanged by Builder.polynomial. No extra equation forces that value to zero independently. The enclosing formula decides whether zero is required.
+
+For a fixed assignment, topological induction gives equality between the hierarchical call evaluation and full literal substitution of the power polynomial. The allocation counter reserves 79 positions for every call and advances monotonically; explicit source variables and other call blocks cannot capture those positions. Therefore existential assignments correspond as well. This value equality is essential when the call occurs in an inactive branch, and is stronger than an assertion that the power relation is Diophantine.
+
+A complete literal test in value-toy.json uses the formula (x=0) OR power(1,0,1), with every private witness zero. At x=0 the full parent polynomial is zero while the full 474-node power polynomial has a nonzero value; at x=1 the parent value is nonzero. Both evaluations use the actual integer nodes and every private witness, without substituting Boolean truth values. This is a concrete check that no independent 'every power call must be zero' interpretation is being used.
+
+This natural-compiler result does not alone prove its translation to rational point codes. That separate translation must preserve signed node values and natural source-variable domains. The previous sealed alpha/power/value-junction report checks the actual value-recipe interface and its private blocks. No rational-model theorem is silently imported into the elementary proofs here.
+
+7. Literal source and saved artifact verification
+
+emit.js calls the current compiler with a tracing subclass that records macro argument nodes and witness ranges without changing any returned formula, node, or variable allocation. It produces six audit-only machine artifacts: a lone halt; a decrement-to-zero loop; a sub instruction with coincident targets; an add followed by cleanup; cleanup of two input registers; and an infinite increment loop. It also emits standalone binomial, mask, orthogonal and bitAnd macros.
+
+check.py does not trust those recorded macro names as proofs. It checks every recorded macro against its actual returned formula and node expressions. In particular it independently compares the sparse integer polynomials for the two bitAnd sum equations, the exact three orthogonality calls, the binomial division equation and both bounds, each odd equation, the three power parameters, and every strict-difference helper. It checks the actual power call node and its 79-position reserved range. It then checks the entire ordered list of outer history clauses against (H), including both contributions when branch targets coincide, all input bounds, all terminal bounds, and every state/register equation. All 545 macro records and all six outer systems match.
+
+replay.js independently invokes the current generic hierarchical compiler on the fixed program embedded in outputs/universal-integer-polynomial.json. This is a 1,399-state program with 204 registers and natural inputs e,n. The rebuilt object matches all twelve fields and its full serialized structure, including nodes, formulas, metadata, variable allocation, witness blocks and the power template. The source artifact SHA256 is
+
+ 27a840c06c68bfae88da84a934d6e7f0ca2778dd3e56ec2bf3b4d4eb8171fe04.
+
+This establishes that the fixed saved object is the output of the exact compiler analyzed above on that literal program. It does not establish that the embedded program is a correct universal interpreter; that is a different semantic layer. No production artifact was regenerated on disk or altered.
+
+8. Adversarial finite checks and their limits
+
+The independent finite checks include:
+
+- 425 exact binomial digit cases, including N=0,K=0 and K>N;
+- 16,384 pairs of natural values for parity-based mask/orthogonality and the bitAnd decomposition;
+- 5,008 packed assignments for the halt, clear and coincident-target programs with q=0,1,2, capacity K=2 and inputs through 3; candidate state slots include no active state and multiple active states as well as one-hot slots;
+- eleven complete finite accepting runs, including input 31 and a two-register input (11,7), with capacity chosen from the run rather than a fixed input cutoff;
+- eleven rejected mutations that put a nonzero final register into an otherwise accepting history;
+- the full literal polynomial-value test in section 6.
+
+The packed-assignment tests evaluate the actual outer expressions but interpret power/mask/bitAnd by the all-input contracts proved here or explicitly imported. They do not construct astronomical private alpha witnesses for every large binomial arising from a packed history. The complete polynomial-value test does evaluate every literal node and private witness. These limits are explicit: finite tests supplement the proof in sections 1-6 and are not represented as a proof by exhaustive testing of all natural inputs.
+
+Concrete countermodels to weakened clauses are also checked:
+
+- If the bound C<base is omitted from binomial( C,1,0), take base=4,total=5,place=1,u=0,r=0,C=5. The division equation and remainder bound hold, but the desired coefficient is 1. The actual code includes C<4.
+- If r<place is omitted from binomial(C,1,1), take base=4,total=5,place=4,u=0,C=0,r=5. The other equation and coefficient bound hold, but the desired coefficient is 1. The actual code includes r<4.
+- If orthogonal(a,b) is omitted from bitAnd, x=y=1,z=0,a=b=1 satisfies x=z+a,y=z+b and both disjointness conditions involving z, but z is not x AND y. The actual code includes the third disjointness condition.
+
+No counterexample was found to the actual clauses. The no-carry proof does not claim that every displayed bound is logically minimal; it verifies the sufficient bounds that the compiler really emits. In particular it does not infer a missing-bound bug merely because some other equations could sometimes recover the same property.
+
+9. Remaining boundaries
+
+This report verifies the all-natural-input generic machine-acceptance compiler and its exact saved fixed-program instantiation. Its only substantive upstream arithmetic import is the separately proved exact power/alpha polynomial contract and value semantics. Elementary binomial expansion, characteristic-two polynomial algebra, binary and base-B uniqueness, and finite-run induction supply the remaining mathematics.
+
+It leaves the embedded interpreter's semantics, precision-program lowering and termination, five-input specialization, exact signed rational model, arithmetic/geometric producers, and global ordinary-integer conclusion to their own sources and reviews. Existing Lean APIs or completion labels were not used to replace any step. No global acceptance follows from this report alone.

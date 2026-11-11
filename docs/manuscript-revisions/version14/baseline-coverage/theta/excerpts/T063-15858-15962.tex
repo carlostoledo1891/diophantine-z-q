@@ -1,0 +1,105 @@
+trace identity to $f=\theta H_{\{p\}}$:
+\[
+ U_p^2t(\phi)=U_p^3+d(\phi)U_p,\qquad
+ (t(\phi)f)[p^2]=f[p^3]+(d(\phi)f)[p].
+\]
+Here and in this calculation all congruences are modulo the ideal
+$2\mathcal O_{\rm coef}$ before passage to the residue field.
+Write $a_p=a_p(E^{(k)})$.
+We check every theta convolution term in the three coefficients.
+Put
+\[
+\begin{gathered}
+ B=B_{\{p\}}=\frac{(U_p-\eta(p)V_p)g}{2},\qquad
+ b_1=B[1]=\frac{a(p)}2,\quad b_p=B[p],\\
+ H=H_{\{p\}}=\frac{B-b_1\Theta_1-b_p\Theta_{\{p\}}}{2}.
+\end{gathered}
+\]
+The inherited depth is zero, and $H$ is integral by (O.11).
+Also $H[0]=0$, since the cuspidal source and the unary series have
+zero constant term.
+The ordinary lower bound gives $b_1\in\mathcal O_{\rm coef}$.
+Under the assumed absence of a nonempty $K$-split unit seed one
+has the stronger assertion
+\[
+                         b_1\in2\mathcal O_{\rm coef}.          \tag{G.4a}
+\]
+Indeed, if $p$ lies in the coefficient filter, the improved bound is
+$v_2a(p)\ge2$; otherwise the actual filter gives $a(p)=0$.
+No condition that $p$ itself belong to that filter is imposed.
+
+Let $\delta_B,\delta_1,\delta_p$ be the scalars by which $d(\phi)$
+acts on the full weight-two blocks
+$\theta B,\theta\Theta_1,\theta\Theta_{\{p\}}$, respectively.
+They are integral units.  The determinant is the cyclotomic character
+times the weight-two nebentypus on every cuspidal constituent and
+on the Eisenstein character pair, independently of old multiplicity.
+For this positive-twist source $\psi/\eta=\chi_{-1}$ and $i=0$.
+The half-integral-weight characters of $B$ and $\Theta_{\{p\}}$
+are therefore both
+\[
+                 \psi(p/\cdot)=\eta(-p/\cdot).
+\]
+Multiplication by the same $\theta$ preserves this equality.
+Consequently $\delta_B=\delta_p$ for the actual Frobenius lift
+$\phi$, including its action on the ramified character.  The ratio
+of the characters of $\theta\Theta_{\{p\}}$ and
+$\theta\Theta_1$ is quadratic.  Their cyclotomic determinant factors
+are identical, so $\delta_p/\delta_1\in\{1,-1\}$ and
+$\delta_p-\delta_1\in2\mathcal O_{\rm coef}$.  We must not simply
+equate these two scalars.  On the actual characteristic-zero
+module the exact identity is
+\[
+ d(\phi)f=\delta_p f+
+       \frac{(\delta_p-\delta_1)b_1}{2}\,\theta\Theta_1.
+\]
+Now $H[p]=0$, since $B[p]=b_p$, $\Theta_{\{p\}}[p]=1$ and
+$\Theta_1[p]=0$.  Integrality of $H$ implies $f[p]\in2\mathcal O_{\rm coef}$.
+Also $\theta\Theta_1[p]=2\sum_{0<j^2<p}\Theta_1[p-j^2]$ is even.
+The displayed determinant identity therefore already proves
+$(d(\phi)f)[p]\in2\mathcal O_{\rm coef}$ using only the ordinary
+integrality of $b_1$.  The following direct expansion checks the
+individual cross terms under the no-seed assumption in force here.
+
+For $n_j=p-j^2>0$, one has $p\nmid n_j$ and
+$\Theta_{\{p\}}[n_j]=0$.  We claim that
+\[
+                           B[n_j]\in2\mathcal O_{\rm coef}.    \tag{G.4b}
+\]
+If $n_j$ meets the old support, the coprimality sieve makes this
+coefficient zero.  In particular $2\in S$, so every odd $j$ gives
+an even $n_j$ and vanishes in this way.  Otherwise write
+$n_j=r m^2$, with $r$ squarefree.
+Since $p\nmid n_j$, the $V_p$ term is zero and
+$B[n_j]=a(prm^2)/2$.  The integral good-prime shell recurrences
+express $a(prm^2)$ as an integral multiple, up to unit character
+factors, of $a(pr)$.  If $r>1$, the ordinary coefficient lower
+bound gives $v_2a(pr)\ge\omega(pr)=1+\omega(r)\ge2$, or the
+coefficient is zero off the filter.  This uses no assertion that
+the primes dividing $r$ split in $K$.  If $r=1$, the same shell
+recurrences express $B[m^2]$ as an integral multiple of $b_1$,
+and (G.4a) applies.  This proves (G.4b).  Also every coefficient
+of $b_1\Theta_1$ is even by (G.4a).
+
+Now expand $\theta=1+2\sum_{j>0}q^{j^2}$ before discarding any
+term.  Linearity of the determinant operator on the three actual
+blocks gives the exact expression
+\[
+\begin{split}
+ (d(\phi)f)[p]
+ ={}&\frac{\delta_B B[p]-\delta_p b_p}{2}\\
+ &+\sum_{0<j^2<p}
+ \bigl(\delta_B B[p-j^2]
+       -\delta_1 b_1\Theta_1[p-j^2]
+       -\delta_p b_p\Theta_{\{p\}}[p-j^2]\bigr).
+\end{split}                                                     \tag{G.4c}
+\]
+There is no constant-theta $\Theta_1[p]$ term since $p$ is not
+a square, and $\Theta_{\{p\}}[p]=1$.
+The first line is zero because $B[p]=b_p$ and
+$\delta_B=\delta_p$.  Every summand in the second line is even
+by (G.4a)--(G.4b) and the vanishing of its last term.  In particular
+representations $p=j^2+m^2$, which can occur when $p\equiv1\pmod4$,
+are covered by the case $r=1$ and are not omitted.  Thus
+$(d(\phi)f)[p]\in2\mathcal O_{\rm coef}$.
+

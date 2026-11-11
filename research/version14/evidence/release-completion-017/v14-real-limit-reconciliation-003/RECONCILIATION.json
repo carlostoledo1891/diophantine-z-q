@@ -1,0 +1,2512 @@
+{
+  "schema": "fresh-source-observation-reconciliation/v1",
+  "author": "/root/v14_gi_constructors",
+  "initial": {
+    "path": "work/source-risk-review-20261107/v14-real-limit-cancellation-002/SOURCE-OBSERVATIONS-GI.json",
+    "sha256": "5c334913d04cf034db98a6a607820a82be9054926eb0f171a34cc6f20e8ab07c"
+  },
+  "source": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-real-limit-cancellation-002/PROOF.md",
+    "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2",
+    "lines": 41,
+    "intended_path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md"
+  },
+  "mathematical_review": {
+    "path": "work/source-risk-review-20261107/v14-real-limit-cancellation-review-arithmetic-001/REVIEW.json",
+    "sha256": "897cac9aeadd80c1a5fb8b445bae2dabf9c6ac4034989915dbb902993a47c9b3"
+  },
+  "rows": [
+    {
+      "id": "REAL-LIMIT-OBS-001",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-001",
+        "start_line": 1,
+        "end_line": 7,
+        "excerpt_sha256": "adaf7ede7e286ed4a64f653163f761c58c2b4cdc531fdc6690fca3e55df1b8ed",
+        "role": "scope and incoming premises",
+        "statement": "The actual curve, fixed support, full rational two-torsion, integral real eigensplitting and computed real Kummer complex are assumed. Weil pairing, finite local duality and finite Poitou–Tate are incoming sources; the same selected class and reciprocity formula remain separate."
+      },
+      "classification": "scope and incoming premises",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-FINITE-REAL-PT",
+          "record": {
+            "id": "LIMIT-INPUT-FINITE-REAL-PT",
+            "role": "prior_source_input",
+            "supplier_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+            "supplier_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+            "supplier_ids": [
+              "THETA-REAL-FINITE-TATE-PAIRING",
+              "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+              "THETA-HIGH-DEGREE-REAL-LOCALIZATION"
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "Use the exact finite real pairing, finite PT maps and high-degree localization, retaining ordinary degreezero and the real H2 term.",
+            "status": "Accepted finite-source scope, separately from this limiting proof.",
+            "review": {
+              "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+              "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+            }
+          }
+        },
+        {
+          "id": "LIMIT-INPUT-REAL-KUMMER",
+          "record": {
+            "id": "LIMIT-INPUT-REAL-KUMMER",
+            "role": "prior_local_derivation",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14247,
+                "end_line": 14265,
+                "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 5,
+                "end_line": 5,
+                "excerpt_sha256": "67abcfe53d50e8507763c00ba318cc960eec6ee11b45a65398b3ce8eefdd1e9f"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "The caller fixes rational full2torsion, integral real eigensplitting, full-degreezero two-term U_R and its minus-line Kummer calculation."
+          }
+        },
+        {
+          "id": "LIMIT-INPUT-WEDGE-CLASS",
+          "record": {
+            "id": "LIMIT-INPUT-WEDGE-CLASS",
+            "role": "prior_local_derivation",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14101,
+                "end_line": 14126,
+                "excerpt_sha256": "67ee2f773afea9eb3fd129f37b176cfa89e89483055b61875b569f5d341aa776"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14215,
+                "end_line": 14245,
+                "excerpt_sha256": "43fcbe818a15e3049746ba059d122885a5abff08ea49c309ff89a0a4a670442c"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 35,
+                "end_line": 39,
+                "excerpt_sha256": "0cb1f93cfef1fe4c8a074bd9242980cff186d3e0aa77e1b5aac2474e7717c72e"
+              }
+            ],
+            "statement": "Retain the same class z, the factor2 in its rational wedge, and the stated lattice/index definitions; central primitivity is not inferred from punctured specialization. Global H1 rank one is derived under corank zero in the new proof."
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [],
+      "reconciliation": "Scope declaration retains the stated inputs; it is not an application of the eventual limiting conclusion.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-KUMMER",
+            "source": {
+              "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+              "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+              "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition (2006)",
+              "locator": "I Theorem3.2, Lemma3.3 and proof, printed41–43; Corollary3.4, printed43; compatibility Remark3.5, printed44"
+            },
+            "available": "For an abelian variety over a characteristic-zero nonarchimedean local field, the compact rational-points group is dual to H^1 of the dual abelian variety. It has an open finite-index additive integer-ring subgroup; the duality is compatible with the finite Kummer and Weil pairings.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 11,
+                "end_line": 13,
+                "excerpt_sha256": "0500fc2ef9b6b3b60ad096b50dfe4c0dcd9052364e42e90f61ced56425e2bf59"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 19,
+                "end_line": 19,
+                "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+              }
+            ],
+            "needed": "For the actual elliptic E/Q_v, derived Kummer has full degree-zero torsion and its finite Kummer image is selfannihilating. The compact quotient has rank1 at2 and vanishes at v not2.",
+            "argument": "Use the principal polarization and finite Kummer compatibility. Local analytic structure gives rank one for the 2-primary completion at v=2 and rank zero at other finite places. The dual of H1(Qv,E)[2^n] is E(Qv)/2^n; the discrete transition is multiplication by2. Thus the Tate module is dual to E(Qv) tensor Q2/Z2, giving the stated compact quotient. The full compact E(Qv) is dual to the full H1(Qv,E), not to this Tate module.",
+            "boundary": "This source applies to finite places only. The real Kummer complex and minus-line calculation are separately retained."
+          }
+        },
+        {
+          "id": "LIMIT-FINITE-LOCAL-H2",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-H2",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "5.1.3–5.1.4, printed114"
+            },
+            "available": "For a finite local Galois module, local cup product with its Tate dual is a perfect pairing in degrees i and2-i, normalized by the local invariant.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 23,
+                "excerpt_sha256": "40119e9a33f96bdba8bcdb6710e2f16b13a2c73ffd7252ec51800bf8c86ef318"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 29,
+                "end_line": 33,
+                "excerpt_sha256": "e7d3baa1a4c789e768a68379ae13d11a72fdabd1e55d97407d46436506ab107c"
+              }
+            ],
+            "needed": "Compact H2(Q_v,T) is dual to H0(Q_v,D), and the global-to-local tail map is dual to restriction.",
+            "argument": "Apply finite local duality to E[2^n], using the elliptic Weil self-duality. Pass to the adjoint compact/discrete systems by proof15. This preserves the maps and identifies each finite-place H2 length with g_v.",
+            "boundary": "No real ordinary H0 is replaced by Tate H0; the finite real source is separate."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-001",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-001-P"
+        ],
+        "assertion": {
+          "statement": "The actual curve, fixed support, full rational two-torsion, integral real eigensplitting and computed real Kummer complex are assumed. Weil pairing, finite local duality and finite Poitou–Tate are incoming sources; the same selected class and reciprocity formula remain separate.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-001.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: scope and incoming premises. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: scope and incoming premises.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-001-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 1,
+            "end_line": 7,
+            "excerpt_sha256": "adaf7ede7e286ed4a64f653163f761c58c2b4cdc531fdc6690fca3e55df1b8ed"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-001"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-002",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-002",
+        "start_line": 8,
+        "end_line": 10,
+        "excerpt_sha256": "dbb5c07325fa68b005e3a3cb9a4b8020f3fbd8f07b5bcb418acdf75f01387b71",
+        "role": "local construction",
+        "statement": "Compact multiplication-by-two and discrete inclusion transitions are identified through adjoint Weil pairings and the corresponding reduction/multiplication Kummer transitions."
+      },
+      "classification": "local construction",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-FINITE-REAL-PT",
+          "record": {
+            "id": "LIMIT-INPUT-FINITE-REAL-PT",
+            "role": "prior_source_input",
+            "supplier_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+            "supplier_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+            "supplier_ids": [
+              "THETA-REAL-FINITE-TATE-PAIRING",
+              "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+              "THETA-HIGH-DEGREE-REAL-LOCALIZATION"
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "Use the exact finite real pairing, finite PT maps and high-degree localization, retaining ordinary degreezero and the real H2 term.",
+            "status": "Accepted finite-source scope, separately from this limiting proof.",
+            "review": {
+              "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+              "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+            }
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [],
+      "reconciliation": "The coefficient and Kummer transition formulas are proved locally from multiplication and inclusion; the actual Weil pairing and its functoriality remain explicit input.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-KUMMER",
+            "source": {
+              "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+              "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+              "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition (2006)",
+              "locator": "I Theorem3.2, Lemma3.3 and proof, printed41–43; Corollary3.4, printed43; compatibility Remark3.5, printed44"
+            },
+            "available": "For an abelian variety over a characteristic-zero nonarchimedean local field, the compact rational-points group is dual to H^1 of the dual abelian variety. It has an open finite-index additive integer-ring subgroup; the duality is compatible with the finite Kummer and Weil pairings.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 11,
+                "end_line": 13,
+                "excerpt_sha256": "0500fc2ef9b6b3b60ad096b50dfe4c0dcd9052364e42e90f61ced56425e2bf59"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 19,
+                "end_line": 19,
+                "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+              }
+            ],
+            "needed": "For the actual elliptic E/Q_v, derived Kummer has full degree-zero torsion and its finite Kummer image is selfannihilating. The compact quotient has rank1 at2 and vanishes at v not2.",
+            "argument": "Use the principal polarization and finite Kummer compatibility. Local analytic structure gives rank one for the 2-primary completion at v=2 and rank zero at other finite places. The dual of H1(Qv,E)[2^n] is E(Qv)/2^n; the discrete transition is multiplication by2. Thus the Tate module is dual to E(Qv) tensor Q2/Z2, giving the stated compact quotient. The full compact E(Qv) is dual to the full H1(Qv,E), not to this Tate module.",
+            "boundary": "This source applies to finite places only. The real Kummer complex and minus-line calculation are separately retained."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-002",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-002-P"
+        ],
+        "assertion": {
+          "statement": "Compact multiplication-by-two and discrete inclusion transitions are identified through adjoint Weil pairings and the corresponding reduction/multiplication Kummer transitions.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-002.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: local construction. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: local construction.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-002-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 8,
+            "end_line": 10,
+            "excerpt_sha256": "dbb5c07325fa68b005e3a3cb9a4b8020f3fbd8f07b5bcb418acdf75f01387b71"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-002"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-003",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-003",
+        "start_line": 11,
+        "end_line": 12,
+        "excerpt_sha256": "7949b134d867ce4a39df3a620f44c1045c04a898495ae352c65400812f149cec",
+        "role": "mixed source application and construction",
+        "statement": "Local analytic finite generation supplies B_v and its rank; derived reduction with torsion retained produces the degree-zero and degree-one Kummer description."
+      },
+      "classification": "mixed source application and construction",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "2241b758338439781fa490c727e4bbc7c4acc27b38b9d6492ed3c2aa2670d837"
+        }
+      ],
+      "reconciliation": "Local analytic structure is the imported theorem; the two-term derived-reduction computation is local algebra and retains the finite torsion.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-KUMMER",
+            "source": {
+              "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+              "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+              "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition (2006)",
+              "locator": "I Theorem3.2, Lemma3.3 and proof, printed41–43; Corollary3.4, printed43; compatibility Remark3.5, printed44"
+            },
+            "available": "For an abelian variety over a characteristic-zero nonarchimedean local field, the compact rational-points group is dual to H^1 of the dual abelian variety. It has an open finite-index additive integer-ring subgroup; the duality is compatible with the finite Kummer and Weil pairings.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 11,
+                "end_line": 13,
+                "excerpt_sha256": "0500fc2ef9b6b3b60ad096b50dfe4c0dcd9052364e42e90f61ced56425e2bf59"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 19,
+                "end_line": 19,
+                "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+              }
+            ],
+            "needed": "For the actual elliptic E/Q_v, derived Kummer has full degree-zero torsion and its finite Kummer image is selfannihilating. The compact quotient has rank1 at2 and vanishes at v not2.",
+            "argument": "Use the principal polarization and finite Kummer compatibility. Local analytic structure gives rank one for the 2-primary completion at v=2 and rank zero at other finite places. The dual of H1(Qv,E)[2^n] is E(Qv)/2^n; the discrete transition is multiplication by2. Thus the Tate module is dual to E(Qv) tensor Q2/Z2, giving the stated compact quotient. The full compact E(Qv) is dual to the full H1(Qv,E), not to this Tate module.",
+            "boundary": "This source applies to finite places only. The real Kummer complex and minus-line calculation are separately retained."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-003",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-003-P"
+        ],
+        "assertion": {
+          "statement": "Local analytic finite generation supplies B_v and its rank; derived reduction with torsion retained produces the degree-zero and degree-one Kummer description.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-003.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: mixed source application and construction. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: mixed source application and construction.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-003-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 11,
+            "end_line": 12,
+            "excerpt_sha256": "7949b134d867ce4a39df3a620f44c1045c04a898495ae352c65400812f149cec"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-003"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-004",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-004",
+        "start_line": 13,
+        "end_line": 14,
+        "excerpt_sha256": "0f5043e1401f0d27013fd77563ed8a11fe38d32645636195dc4b0661c01c2b97",
+        "role": "incoming real computation and finite duality",
+        "statement": "The caller real complex and minus-line calculation supply the real local conditions. Cone exactness identifies finite Selmer H1; self-annihilation uses local duality."
+      },
+      "classification": "incoming real computation and finite duality",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-REAL-KUMMER",
+          "record": {
+            "id": "LIMIT-INPUT-REAL-KUMMER",
+            "role": "prior_local_derivation",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14247,
+                "end_line": 14265,
+                "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 5,
+                "end_line": 5,
+                "excerpt_sha256": "67abcfe53d50e8507763c00ba318cc960eec6ee11b45a65398b3ce8eefdd1e9f"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "The caller fixes rational full2torsion, integral real eigensplitting, full-degreezero two-term U_R and its minus-line Kummer calculation."
+          }
+        },
+        {
+          "id": "LIMIT-INPUT-FINITE-REAL-PT",
+          "record": {
+            "id": "LIMIT-INPUT-FINITE-REAL-PT",
+            "role": "prior_source_input",
+            "supplier_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+            "supplier_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+            "supplier_ids": [
+              "THETA-REAL-FINITE-TATE-PAIRING",
+              "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+              "THETA-HIGH-DEGREE-REAL-LOCALIZATION"
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "Use the exact finite real pairing, finite PT maps and high-degree localization, retaining ordinary degreezero and the real H2 term.",
+            "status": "Accepted finite-source scope, separately from this limiting proof.",
+            "review": {
+              "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+              "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+            }
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 9,
+          "end_line": 11,
+          "excerpt_sha256": "feb200b0e24e72c2b0d6cf97de7942fa0639311eb92027e37e97af490805c840"
+        }
+      ],
+      "reconciliation": "The earlier real model is an actual input. Cone H1 identification is the local consequence of full degreezero and the finite Kummer H1 image.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-KUMMER",
+            "source": {
+              "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+              "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+              "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition (2006)",
+              "locator": "I Theorem3.2, Lemma3.3 and proof, printed41–43; Corollary3.4, printed43; compatibility Remark3.5, printed44"
+            },
+            "available": "For an abelian variety over a characteristic-zero nonarchimedean local field, the compact rational-points group is dual to H^1 of the dual abelian variety. It has an open finite-index additive integer-ring subgroup; the duality is compatible with the finite Kummer and Weil pairings.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 11,
+                "end_line": 13,
+                "excerpt_sha256": "0500fc2ef9b6b3b60ad096b50dfe4c0dcd9052364e42e90f61ced56425e2bf59"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 19,
+                "end_line": 19,
+                "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+              }
+            ],
+            "needed": "For the actual elliptic E/Q_v, derived Kummer has full degree-zero torsion and its finite Kummer image is selfannihilating. The compact quotient has rank1 at2 and vanishes at v not2.",
+            "argument": "Use the principal polarization and finite Kummer compatibility. Local analytic structure gives rank one for the 2-primary completion at v=2 and rank zero at other finite places. The dual of H1(Qv,E)[2^n] is E(Qv)/2^n; the discrete transition is multiplication by2. Thus the Tate module is dual to E(Qv) tensor Q2/Z2, giving the stated compact quotient. The full compact E(Qv) is dual to the full H1(Qv,E), not to this Tate module.",
+            "boundary": "This source applies to finite places only. The real Kummer complex and minus-line calculation are separately retained."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-004",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-004-P"
+        ],
+        "assertion": {
+          "statement": "The caller real complex and minus-line calculation supply the real local conditions. Cone exactness identifies finite Selmer H1; self-annihilation uses local duality.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-004.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: incoming real computation and finite duality. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: incoming real computation and finite duality.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-004-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 13,
+            "end_line": 14,
+            "excerpt_sha256": "0f5043e1401f0d27013fd77563ed8a11fe38d32645636195dc4b0661c01c2b97"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-004"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-005",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-005",
+        "start_line": 15,
+        "end_line": 16,
+        "excerpt_sha256": "adff5c6dac298adc78d7ed749220adcbce6a968dd8abfb718569d54b50777554",
+        "role": "limit argument with finiteness premises",
+        "statement": "Fixed-support finite-coefficient cohomology finiteness is an input. Descending finite images give Mittag–Leffler; continuous-cohomology and exact filtered-limit facts justify kernels, images and cone limits."
+      },
+      "classification": "limit argument with finiteness premises",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 9,
+          "end_line": 13,
+          "excerpt_sha256": "b7d393bdea6bf1218b4ca7ec5b3360bd19163b96186c9b9564203ecbeb82c6ac"
+        }
+      ],
+      "reconciliation": "Finiteness and continuous-cochain comparison are imported; stabilization of each finite image system supplies ML, with fixed E and S.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-CONTINUOUS-COCHAINS",
+          "record": {
+            "id": "LIMIT-CONTINUOUS-COCHAINS",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "4.1.2–4.1.3, printed95–96; 4.2.2–4.2.3, printed96–97"
+            },
+            "available": "Continuous cochains for a compact lattice are the inverse limit of its finite quotients, and discrete torsion cochains are the filtered direct limit. Cohomology has the stated lim1 exact sequence; finite cohomology gives zero lim1 and finitely generated compact cohomology.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt_sha256": "5448c9f10466687ef2d36ed16d7b62eb0f6b7fde3288d270b018ea7eceec61ac"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 17,
+                "end_line": 19,
+                "excerpt_sha256": "fb3ae7fe34855225f0413e3a032b04826c304083d62a9f869d5f3d929ec3a736"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 25,
+                "end_line": 27,
+                "excerpt_sha256": "4218a34b993ad22b5bf1464c94371f5d7f29b097316e6481cb988f71325fbc9a"
+              }
+            ],
+            "needed": "The actual finite-coefficient cohomology and local-condition systems admit exact compact/discrete passage with no omitted lim1 term.",
+            "argument": "Use the finite-group stabilization argument in proof15 for every kernel/image system. Keep compact multiplication-by2 adjoint to discrete inclusion as fixed in proof9. Support S and E are fixed throughout.",
+            "boundary": "No inverse limit over a family of curves or growing support is taken."
+          }
+        },
+        {
+          "id": "LIMIT-GLOBAL-FINITE-COHOMOLOGY",
+          "record": {
+            "id": "LIMIT-GLOBAL-FINITE-COHOMOLOGY",
+            "source": {
+              "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+              "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+              "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition (2006)",
+              "locator": "I Corollary4.15, printed62"
+            },
+            "available": "For finite S and finite G_(K,S)-module M of order invertible in O_(K,S), all H^r(G_(K,S),M) are finite.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt_sha256": "5448c9f10466687ef2d36ed16d7b62eb0f6b7fde3288d270b018ea7eceec61ac"
+              }
+            ],
+            "needed": "Finiteness for every E[2^n] and every cohomological degree used in the limit and cone sequence.",
+            "argument": "S contains2, infinity and the bad primes; the finite module is unramified away from S. Its order is a power of2, hence invertible in the S-integer ring.",
+            "boundary": "Finiteness at each n does not assert uniform cardinality in n; only eventual stabilization of images at a fixed n is used."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-005",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-005-P"
+        ],
+        "assertion": {
+          "statement": "Fixed-support finite-coefficient cohomology finiteness is an input. Descending finite images give Mittag–Leffler; continuous-cohomology and exact filtered-limit facts justify kernels, images and cone limits.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-005.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: limit argument with finiteness premises. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: limit argument with finiteness premises.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-005-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 15,
+            "end_line": 16,
+            "excerpt_sha256": "adff5c6dac298adc78d7ed749220adcbce6a968dd8abfb718569d54b50777554"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-005"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-006",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-006",
+        "start_line": 17,
+        "end_line": 18,
+        "excerpt_sha256": "037292464d8c46ece415eb67ec7693dc5f75a0ab87bfe6ba474bfb573eaddce6",
+        "role": "finite Poitou–Tate specialization",
+        "statement": "Orthogonal Kummer conditions restrict the finite exact sequence; adjoint compact/discrete limits and Pontryagin duality give its compact counterpart."
+      },
+      "classification": "finite Poitou–Tate specialization",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-FINITE-REAL-PT",
+          "record": {
+            "id": "LIMIT-INPUT-FINITE-REAL-PT",
+            "role": "prior_source_input",
+            "supplier_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+            "supplier_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+            "supplier_ids": [
+              "THETA-REAL-FINITE-TATE-PAIRING",
+              "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+              "THETA-HIGH-DEGREE-REAL-LOCALIZATION"
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "Use the exact finite real pairing, finite PT maps and high-degree localization, retaining ordinary degreezero and the real H2 term.",
+            "status": "Accepted finite-source scope, separately from this limiting proof.",
+            "review": {
+              "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+              "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+            }
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 9,
+          "end_line": 15,
+          "excerpt_sha256": "d07118737badd5e016a3769ef11504ccc39eb5757010fd08ebacbf8cccad20b6"
+        }
+      ],
+      "reconciliation": "Finite PT with the actual pairing is restricted to the actual orthogonal local conditions before the compatible exact limits.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-CONTINUOUS-COCHAINS",
+          "record": {
+            "id": "LIMIT-CONTINUOUS-COCHAINS",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "4.1.2–4.1.3, printed95–96; 4.2.2–4.2.3, printed96–97"
+            },
+            "available": "Continuous cochains for a compact lattice are the inverse limit of its finite quotients, and discrete torsion cochains are the filtered direct limit. Cohomology has the stated lim1 exact sequence; finite cohomology gives zero lim1 and finitely generated compact cohomology.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt_sha256": "5448c9f10466687ef2d36ed16d7b62eb0f6b7fde3288d270b018ea7eceec61ac"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 17,
+                "end_line": 19,
+                "excerpt_sha256": "fb3ae7fe34855225f0413e3a032b04826c304083d62a9f869d5f3d929ec3a736"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 25,
+                "end_line": 27,
+                "excerpt_sha256": "4218a34b993ad22b5bf1464c94371f5d7f29b097316e6481cb988f71325fbc9a"
+              }
+            ],
+            "needed": "The actual finite-coefficient cohomology and local-condition systems admit exact compact/discrete passage with no omitted lim1 term.",
+            "argument": "Use the finite-group stabilization argument in proof15 for every kernel/image system. Keep compact multiplication-by2 adjoint to discrete inclusion as fixed in proof9. Support S and E are fixed throughout.",
+            "boundary": "No inverse limit over a family of curves or growing support is taken."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-006",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-006-P"
+        ],
+        "assertion": {
+          "statement": "Orthogonal Kummer conditions restrict the finite exact sequence; adjoint compact/discrete limits and Pontryagin duality give its compact counterpart.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-006.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: finite Poitou–Tate specialization. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: finite Poitou–Tate specialization.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-006-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 17,
+            "end_line": 18,
+            "excerpt_sha256": "037292464d8c46ece415eb67ec7693dc5f75a0ab87bfe6ba474bfb573eaddce6"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-006"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-007",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-007",
+        "start_line": 19,
+        "end_line": 20,
+        "excerpt_sha256": "13dc15bb88c63b1f0a1a86c9686ca41850105b60f8c2c718d5a2569468dde874",
+        "role": "local duality and exact-tail derivation",
+        "statement": "The compact quotient is dual to the divisible Kummer subgroup, not the entire local completion. Local analytic structure determines its ranks; real H2 remains and finite high-degree real localization terminates the displayed tail."
+      },
+      "classification": "local duality and exact-tail derivation",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-FINITE-REAL-PT",
+          "record": {
+            "id": "LIMIT-INPUT-FINITE-REAL-PT",
+            "role": "prior_source_input",
+            "supplier_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+            "supplier_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+            "supplier_ids": [
+              "THETA-REAL-FINITE-TATE-PAIRING",
+              "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+              "THETA-HIGH-DEGREE-REAL-LOCALIZATION"
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "Use the exact finite real pairing, finite PT maps and high-degree localization, retaining ordinary degreezero and the real H2 term.",
+            "status": "Accepted finite-source scope, separately from this limiting proof.",
+            "review": {
+              "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+              "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+            }
+          }
+        },
+        {
+          "id": "LIMIT-INPUT-REAL-KUMMER",
+          "record": {
+            "id": "LIMIT-INPUT-REAL-KUMMER",
+            "role": "prior_local_derivation",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14247,
+                "end_line": 14265,
+                "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 5,
+                "end_line": 5,
+                "excerpt_sha256": "67abcfe53d50e8507763c00ba318cc960eec6ee11b45a65398b3ce8eefdd1e9f"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 13,
+                "end_line": 19,
+                "excerpt_sha256": "3f77ddc0bac1c9e2f726e376c96ecb2f8fd5d5da196243f5ac19d3f4479c7628"
+              }
+            ],
+            "statement": "The caller fixes rational full2torsion, integral real eigensplitting, full-degreezero two-term U_R and its minus-line Kummer calculation."
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 9,
+          "end_line": 17,
+          "excerpt_sha256": "d4b014e0d2252e0dc4bca1026bfec09cb8fcdaafb47edd2a12f4b8773364862b"
+        }
+      ],
+      "reconciliation": "Uses the divisible Kummer subgroup for the dual of the Tate module. The real H2 term and the high-degree localization input remain visible.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-KUMMER",
+            "source": {
+              "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+              "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+              "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition (2006)",
+              "locator": "I Theorem3.2, Lemma3.3 and proof, printed41–43; Corollary3.4, printed43; compatibility Remark3.5, printed44"
+            },
+            "available": "For an abelian variety over a characteristic-zero nonarchimedean local field, the compact rational-points group is dual to H^1 of the dual abelian variety. It has an open finite-index additive integer-ring subgroup; the duality is compatible with the finite Kummer and Weil pairings.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 11,
+                "end_line": 13,
+                "excerpt_sha256": "0500fc2ef9b6b3b60ad096b50dfe4c0dcd9052364e42e90f61ced56425e2bf59"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 19,
+                "end_line": 19,
+                "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+              }
+            ],
+            "needed": "For the actual elliptic E/Q_v, derived Kummer has full degree-zero torsion and its finite Kummer image is selfannihilating. The compact quotient has rank1 at2 and vanishes at v not2.",
+            "argument": "Use the principal polarization and finite Kummer compatibility. Local analytic structure gives rank one for the 2-primary completion at v=2 and rank zero at other finite places. The dual of H1(Qv,E)[2^n] is E(Qv)/2^n; the discrete transition is multiplication by2. Thus the Tate module is dual to E(Qv) tensor Q2/Z2, giving the stated compact quotient. The full compact E(Qv) is dual to the full H1(Qv,E), not to this Tate module.",
+            "boundary": "This source applies to finite places only. The real Kummer complex and minus-line calculation are separately retained."
+          }
+        },
+        {
+          "id": "LIMIT-CONTINUOUS-COCHAINS",
+          "record": {
+            "id": "LIMIT-CONTINUOUS-COCHAINS",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "4.1.2–4.1.3, printed95–96; 4.2.2–4.2.3, printed96–97"
+            },
+            "available": "Continuous cochains for a compact lattice are the inverse limit of its finite quotients, and discrete torsion cochains are the filtered direct limit. Cohomology has the stated lim1 exact sequence; finite cohomology gives zero lim1 and finitely generated compact cohomology.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt_sha256": "5448c9f10466687ef2d36ed16d7b62eb0f6b7fde3288d270b018ea7eceec61ac"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 17,
+                "end_line": 19,
+                "excerpt_sha256": "fb3ae7fe34855225f0413e3a032b04826c304083d62a9f869d5f3d929ec3a736"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 25,
+                "end_line": 27,
+                "excerpt_sha256": "4218a34b993ad22b5bf1464c94371f5d7f29b097316e6481cb988f71325fbc9a"
+              }
+            ],
+            "needed": "The actual finite-coefficient cohomology and local-condition systems admit exact compact/discrete passage with no omitted lim1 term.",
+            "argument": "Use the finite-group stabilization argument in proof15 for every kernel/image system. Keep compact multiplication-by2 adjoint to discrete inclusion as fixed in proof9. Support S and E are fixed throughout.",
+            "boundary": "No inverse limit over a family of curves or growing support is taken."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-007",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-007-P"
+        ],
+        "assertion": {
+          "statement": "The compact quotient is dual to the divisible Kummer subgroup, not the entire local completion. Local analytic structure determines its ranks; real H2 remains and finite high-degree real localization terminates the displayed tail.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-007.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: local duality and exact-tail derivation. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: local duality and exact-tail derivation.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-007-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 19,
+            "end_line": 20,
+            "excerpt_sha256": "13dc15bb88c63b1f0a1a86c9686ca41850105b60f8c2c718d5a2569468dde874"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-007"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-008",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-008",
+        "start_line": 21,
+        "end_line": 24,
+        "excerpt_sha256": "e3e264ac0097dab084423662ac265e5eaae186c9ed486b9e94e4eb8ccbc1ce30",
+        "role": "conditional corank-zero argument",
+        "statement": "Corank zero and cofiniteness make Selmer finite; global Kummer and Mordell–Weil imply rank zero and finite Sha. Local duality and the preceding exact tail imply the stated finiteness."
+      },
+      "classification": "conditional corank-zero argument",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 15,
+          "end_line": 19,
+          "excerpt_sha256": "029228e9fe6f7cb2604a92340fcef51786171e5d1bdfe427a03ee1696e97c626"
+        }
+      ],
+      "reconciliation": "Corank zero is an explicit hypothesis. Cofinite generation and Kummer give finite Selmer and Sha before lengths are used.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-MORDELL-WEIL",
+          "record": {
+            "id": "LIMIT-MORDELL-WEIL",
+            "source": {
+              "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+              "locator": "VIII Theorem4.1, printed220, proof224; statement directly viewed atPDF235"
+            },
+            "available": {
+              "statement": "For every elliptic curve E/Q, the abelian group E(Q) is finitely generated.",
+              "hypotheses": "E is an elliptic curve overQ.",
+              "parameter_range": "No rank or rational-torsion restriction.",
+              "normalizations": "The full rational-points group, with its finite torsion subgroup.",
+              "limit_order": "Fix E/Q; the theorem gives finite generation, not generators or an effective rank bound."
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 27,
+                "excerpt_sha256": "858a38ae96075fc8f27face92ca4c0b6312d76bb505be2b416316a121f3f7d8e"
+              }
+            ],
+            "needed": "Under corank-zero Selmer, E(Q) has rankzero and finite2primary torsion; its compact completion and its finite quotients are the actual global Kummer terms.",
+            "argument": "Mordell–Weil finite generation and the all-place Kummer sequence show that E(Q) tensor Q2/Z2 has corank equal to rank E(Q). Its injection into the corankzero discrete Selmer group forces rankzero.",
+            "retained_source_role": "CORANK-MORDELL-WEIL-FINITE-GENERATION",
+            "boundary": "No analytic-rank theorem or unconditional finite Sha is inferred."
+          }
+        },
+        {
+          "id": "LIMIT-FINITE-GLOBAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-GLOBAL-KUMMER",
+            "source": {
+              "title": "On the Mordell–Weil group and the Shafarevich–Tate group of modular elliptic curves",
+              "authors": "V. A. Kolyvagin",
+              "venue": "Proceedings of the International Congress of Mathematicians, Kyoto 1990, Vol. I, Mathematical Society of Japan, 1991, pp.429–436",
+              "authoritative_version": "Published proceedings; locally retained PDF SHA a86ae342133e8f051752bfd26009c38b9c755e8469c46235cef2d35e8c68f75d. Not the earlier MPIM preprint.",
+              "locator": "Equations (4) and (5), p.432, finite Kummer/Selmer sequences",
+              "corrections": "Current published-version selection and bounded forward/Hodge adoption retained; no new source edition claimed."
+            },
+            "available": {
+              "statement": "The finite all-place Kummer and Selmer sequences identify the rational-points, Selmer and Sha-torsion terms.",
+              "objects": "Finite Kummer and all-place Selmer groups of A/Q at powers of two.",
+              "hypotheses": "A is an elliptic curve over Q; finite multiplication-by-2^n sequences with all local conditions.",
+              "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+              "parameter_range": "Positive integers n; finite powers of two.",
+              "uniformity": "Qualitative statement for each A; no effective bound.",
+              "constants": "No numerical constant or effective bound.",
+              "normalizations": "Finite sequences only. The filtered direct limit and corank computation are separate local deductions.",
+              "exceptional_cases": "Includes prime two; does not itself supply finite Sha, rank equality or Mordell–Weil finite generation.",
+              "limit_order": "Fix each finite power first; direct-limit passage is supplied separately."
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 27,
+                "excerpt_sha256": "858a38ae96075fc8f27face92ca4c0b6312d76bb505be2b416316a121f3f7d8e"
+              }
+            ],
+            "needed": "Finite all-place Selmer has exact rational-points and Sha[2^n] terms, with the actual Kummer maps.",
+            "argument": "Use the finite Kummer sequences before taking either limit. Finite Sha at corankzero and the specified transitions then give the compact sequence and the UCT comparison in proof25–27.",
+            "retained_source_role": "CORANK-FINITE-KUMMER-DIMENSION",
+            "boundary": "All limits and the finite-Sha implication here are local deductions, not attributed to the finite source statement."
+          }
+        },
+        {
+          "id": "LIMIT-FINITE-LOCAL-H2",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-H2",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "5.1.3–5.1.4, printed114"
+            },
+            "available": "For a finite local Galois module, local cup product with its Tate dual is a perfect pairing in degrees i and2-i, normalized by the local invariant.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 23,
+                "excerpt_sha256": "40119e9a33f96bdba8bcdb6710e2f16b13a2c73ffd7252ec51800bf8c86ef318"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 29,
+                "end_line": 33,
+                "excerpt_sha256": "e7d3baa1a4c789e768a68379ae13d11a72fdabd1e55d97407d46436506ab107c"
+              }
+            ],
+            "needed": "Compact H2(Q_v,T) is dual to H0(Q_v,D), and the global-to-local tail map is dual to restriction.",
+            "argument": "Apply finite local duality to E[2^n], using the elliptic Weil self-duality. Pass to the adjoint compact/discrete systems by proof15. This preserves the maps and identifies each finite-place H2 length with g_v.",
+            "boundary": "No real ordinary H0 is replaced by Tate H0; the finite real source is separate."
+          }
+        },
+        {
+          "id": "LIMIT-CONTINUOUS-COCHAINS",
+          "record": {
+            "id": "LIMIT-CONTINUOUS-COCHAINS",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "4.1.2–4.1.3, printed95–96; 4.2.2–4.2.3, printed96–97"
+            },
+            "available": "Continuous cochains for a compact lattice are the inverse limit of its finite quotients, and discrete torsion cochains are the filtered direct limit. Cohomology has the stated lim1 exact sequence; finite cohomology gives zero lim1 and finitely generated compact cohomology.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt_sha256": "5448c9f10466687ef2d36ed16d7b62eb0f6b7fde3288d270b018ea7eceec61ac"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 17,
+                "end_line": 19,
+                "excerpt_sha256": "fb3ae7fe34855225f0413e3a032b04826c304083d62a9f869d5f3d929ec3a736"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 25,
+                "end_line": 27,
+                "excerpt_sha256": "4218a34b993ad22b5bf1464c94371f5d7f29b097316e6481cb988f71325fbc9a"
+              }
+            ],
+            "needed": "The actual finite-coefficient cohomology and local-condition systems admit exact compact/discrete passage with no omitted lim1 term.",
+            "argument": "Use the finite-group stabilization argument in proof15 for every kernel/image system. Keep compact multiplication-by2 adjoint to discrete inclusion as fixed in proof9. Support S and E are fixed throughout.",
+            "boundary": "No inverse limit over a family of curves or growing support is taken."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-008",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-008-P"
+        ],
+        "assertion": {
+          "statement": "Corank zero and cofiniteness make Selmer finite; global Kummer and Mordell–Weil imply rank zero and finite Sha. Local duality and the preceding exact tail imply the stated finiteness.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-008.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: conditional corank-zero argument. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: conditional corank-zero argument.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-008-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 21,
+            "end_line": 24,
+            "excerpt_sha256": "e3e264ac0097dab084423662ac265e5eaae186c9ed486b9e94e4eb8ccbc1ce30"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-008"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-009",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-009",
+        "start_line": 25,
+        "end_line": 26,
+        "excerpt_sha256": "91d6838c5151b350f2d461d74757b441ea3e55dc7d2677b91240068e797be52b",
+        "role": "ordinary cone derivation",
+        "statement": "Finite Sha has zero multiplication inverse limit. Kummer limits and actual quotient-cone maps yield H1 and the H2 cone sequence without inferring a map from equal orders."
+      },
+      "classification": "ordinary cone derivation",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 11,
+          "end_line": 23,
+          "excerpt_sha256": "24f2543200a3888fb649e718092d490f2f78da8338afea9faf13930da4e6817f"
+        }
+      ],
+      "reconciliation": "The actual local quotient cones and exact inverse limits produce the ordinary cone sequence. No map is inferred solely from equal orders.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-GLOBAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-GLOBAL-KUMMER",
+            "source": {
+              "title": "On the Mordell–Weil group and the Shafarevich–Tate group of modular elliptic curves",
+              "authors": "V. A. Kolyvagin",
+              "venue": "Proceedings of the International Congress of Mathematicians, Kyoto 1990, Vol. I, Mathematical Society of Japan, 1991, pp.429–436",
+              "authoritative_version": "Published proceedings; locally retained PDF SHA a86ae342133e8f051752bfd26009c38b9c755e8469c46235cef2d35e8c68f75d. Not the earlier MPIM preprint.",
+              "locator": "Equations (4) and (5), p.432, finite Kummer/Selmer sequences",
+              "corrections": "Current published-version selection and bounded forward/Hodge adoption retained; no new source edition claimed."
+            },
+            "available": {
+              "statement": "The finite all-place Kummer and Selmer sequences identify the rational-points, Selmer and Sha-torsion terms.",
+              "objects": "Finite Kummer and all-place Selmer groups of A/Q at powers of two.",
+              "hypotheses": "A is an elliptic curve over Q; finite multiplication-by-2^n sequences with all local conditions.",
+              "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+              "parameter_range": "Positive integers n; finite powers of two.",
+              "uniformity": "Qualitative statement for each A; no effective bound.",
+              "constants": "No numerical constant or effective bound.",
+              "normalizations": "Finite sequences only. The filtered direct limit and corank computation are separate local deductions.",
+              "exceptional_cases": "Includes prime two; does not itself supply finite Sha, rank equality or Mordell–Weil finite generation.",
+              "limit_order": "Fix each finite power first; direct-limit passage is supplied separately."
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 27,
+                "excerpt_sha256": "858a38ae96075fc8f27face92ca4c0b6312d76bb505be2b416316a121f3f7d8e"
+              }
+            ],
+            "needed": "Finite all-place Selmer has exact rational-points and Sha[2^n] terms, with the actual Kummer maps.",
+            "argument": "Use the finite Kummer sequences before taking either limit. Finite Sha at corankzero and the specified transitions then give the compact sequence and the UCT comparison in proof25–27.",
+            "retained_source_role": "CORANK-FINITE-KUMMER-DIMENSION",
+            "boundary": "All limits and the finite-Sha implication here are local deductions, not attributed to the finite source statement."
+          }
+        },
+        {
+          "id": "LIMIT-CONTINUOUS-COCHAINS",
+          "record": {
+            "id": "LIMIT-CONTINUOUS-COCHAINS",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "4.1.2–4.1.3, printed95–96; 4.2.2–4.2.3, printed96–97"
+            },
+            "available": "Continuous cochains for a compact lattice are the inverse limit of its finite quotients, and discrete torsion cochains are the filtered direct limit. Cohomology has the stated lim1 exact sequence; finite cohomology gives zero lim1 and finitely generated compact cohomology.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 15,
+                "end_line": 15,
+                "excerpt_sha256": "5448c9f10466687ef2d36ed16d7b62eb0f6b7fde3288d270b018ea7eceec61ac"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 17,
+                "end_line": 19,
+                "excerpt_sha256": "fb3ae7fe34855225f0413e3a032b04826c304083d62a9f869d5f3d929ec3a736"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 25,
+                "end_line": 27,
+                "excerpt_sha256": "4218a34b993ad22b5bf1464c94371f5d7f29b097316e6481cb988f71325fbc9a"
+              }
+            ],
+            "needed": "The actual finite-coefficient cohomology and local-condition systems admit exact compact/discrete passage with no omitted lim1 term.",
+            "argument": "Use the finite-group stabilization argument in proof15 for every kernel/image system. Keep compact multiplication-by2 adjoint to discrete inclusion as fixed in proof9. Support S and E are fixed throughout.",
+            "boundary": "No inverse limit over a family of curves or growing support is taken."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-009",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-009-P"
+        ],
+        "assertion": {
+          "statement": "Finite Sha has zero multiplication inverse limit. Kummer limits and actual quotient-cone maps yield H1 and the H2 cone sequence without inferring a map from equal orders.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-009.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: ordinary cone derivation. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: ordinary cone derivation.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-009-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 25,
+            "end_line": 26,
+            "excerpt_sha256": "91d6838c5151b350f2d461d74757b441ea3e55dc7d2677b91240068e797be52b"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-009"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-010",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-010",
+        "start_line": 27,
+        "end_line": 28,
+        "excerpt_sha256": "13521b2addea8d88c6cd33719b6400ae32a0fa968518261ab52baf1c54e123b6",
+        "role": "derived reduction comparison",
+        "statement": "The two-term reduction resolution and the actual Kummer comparison identify finite H2 torsion with Sha torsion and hence their lengths, with no extra real degree-zero term."
+      },
+      "classification": "derived reduction comparison",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 13,
+          "end_line": 13,
+          "excerpt_sha256": "11674ae9a290f70f15cfa7bb93aba51382e0326808d4bfbe28863f61b1cc3c54"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 23,
+          "end_line": 25,
+          "excerpt_sha256": "d8ed4bc922db24076b66f8e45ee03ef51f0ce9e9eb6a739f5892ccd4f66aa5f3"
+        }
+      ],
+      "reconciliation": "The two-term resolution is an elementary derived-reduction calculation; its first arrow is the actual Kummer map, permitting quotient comparison.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-GLOBAL-KUMMER",
+          "record": {
+            "id": "LIMIT-FINITE-GLOBAL-KUMMER",
+            "source": {
+              "title": "On the Mordell–Weil group and the Shafarevich–Tate group of modular elliptic curves",
+              "authors": "V. A. Kolyvagin",
+              "venue": "Proceedings of the International Congress of Mathematicians, Kyoto 1990, Vol. I, Mathematical Society of Japan, 1991, pp.429–436",
+              "authoritative_version": "Published proceedings; locally retained PDF SHA a86ae342133e8f051752bfd26009c38b9c755e8469c46235cef2d35e8c68f75d. Not the earlier MPIM preprint.",
+              "locator": "Equations (4) and (5), p.432, finite Kummer/Selmer sequences",
+              "corrections": "Current published-version selection and bounded forward/Hodge adoption retained; no new source edition claimed."
+            },
+            "available": {
+              "statement": "The finite all-place Kummer and Selmer sequences identify the rational-points, Selmer and Sha-torsion terms.",
+              "objects": "Finite Kummer and all-place Selmer groups of A/Q at powers of two.",
+              "hypotheses": "A is an elliptic curve over Q; finite multiplication-by-2^n sequences with all local conditions.",
+              "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+              "parameter_range": "Positive integers n; finite powers of two.",
+              "uniformity": "Qualitative statement for each A; no effective bound.",
+              "constants": "No numerical constant or effective bound.",
+              "normalizations": "Finite sequences only. The filtered direct limit and corank computation are separate local deductions.",
+              "exceptional_cases": "Includes prime two; does not itself supply finite Sha, rank equality or Mordell–Weil finite generation.",
+              "limit_order": "Fix each finite power first; direct-limit passage is supplied separately."
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 27,
+                "excerpt_sha256": "858a38ae96075fc8f27face92ca4c0b6312d76bb505be2b416316a121f3f7d8e"
+              }
+            ],
+            "needed": "Finite all-place Selmer has exact rational-points and Sha[2^n] terms, with the actual Kummer maps.",
+            "argument": "Use the finite Kummer sequences before taking either limit. Finite Sha at corankzero and the specified transitions then give the compact sequence and the UCT comparison in proof25–27.",
+            "retained_source_role": "CORANK-FINITE-KUMMER-DIMENSION",
+            "boundary": "All limits and the finite-Sha implication here are local deductions, not attributed to the finite source statement."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-010",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-010-P"
+        ],
+        "assertion": {
+          "statement": "The two-term reduction resolution and the actual Kummer comparison identify finite H2 torsion with Sha torsion and hence their lengths, with no extra real degree-zero term.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-010.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: derived reduction comparison. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: derived reduction comparison.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-010-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 27,
+            "end_line": 28,
+            "excerpt_sha256": "13521b2addea8d88c6cd33719b6400ae32a0fa968518261ab52baf1c54e123b6"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-010"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-011",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-011",
+        "start_line": 29,
+        "end_line": 30,
+        "excerpt_sha256": "13f840511171ed7c367d30895529a93366edd9210fd7d9e255eadbb1bece453a",
+        "role": "local length calculation",
+        "statement": "Alternating lengths of the preceding cone sequence and local duality give E.6 with all finite, real and global torsion terms."
+      },
+      "classification": "local length calculation",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 19,
+          "end_line": 27,
+          "excerpt_sha256": "74e20e757048dca12927c1486d92b2cb0da5793d1598e914f3c7427783244bb4"
+        }
+      ],
+      "reconciliation": "Alternating lengths are taken only after finiteness; the finite-place and real terms and the global torsion term all remain.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-H2",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-H2",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "5.1.3–5.1.4, printed114"
+            },
+            "available": "For a finite local Galois module, local cup product with its Tate dual is a perfect pairing in degrees i and2-i, normalized by the local invariant.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 23,
+                "excerpt_sha256": "40119e9a33f96bdba8bcdb6710e2f16b13a2c73ffd7252ec51800bf8c86ef318"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 29,
+                "end_line": 33,
+                "excerpt_sha256": "e7d3baa1a4c789e768a68379ae13d11a72fdabd1e55d97407d46436506ab107c"
+              }
+            ],
+            "needed": "Compact H2(Q_v,T) is dual to H0(Q_v,D), and the global-to-local tail map is dual to restriction.",
+            "argument": "Apply finite local duality to E[2^n], using the elliptic Weil self-duality. Pass to the adjoint compact/discrete systems by proof15. This preserves the maps and identifies each finite-place H2 length with g_v.",
+            "boundary": "No real ordinary H0 is replaced by Tate H0; the finite real source is separate."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-011",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-011-P"
+        ],
+        "assertion": {
+          "statement": "Alternating lengths of the preceding cone sequence and local duality give E.6 with all finite, real and global torsion terms.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-011.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: local length calculation. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: local length calculation.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-011-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 29,
+            "end_line": 30,
+            "excerpt_sha256": "13f840511171ed7c367d30895529a93366edd9210fd7d9e255eadbb1bece453a"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-011"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-012",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-012",
+        "start_line": 31,
+        "end_line": 34,
+        "excerpt_sha256": "e53d6d673c27984295cc8bb2cd2febcc14f84f56c7b0ce008d5279ced72bd5db",
+        "role": "surjectivity derivation",
+        "statement": "Injective global-to-2-adic invariant restriction has surjective dual; an opposite 2-adic component and exactness lift every real H2 component."
+      },
+      "classification": "surjectivity derivation",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 25,
+          "end_line": 29,
+          "excerpt_sha256": "83940b6e53c3e721e46890d74aead6ae966dc03e9543ca00a0138701485f9620"
+        }
+      ],
+      "reconciliation": "Dual restriction at2 is onto because restriction of invariants is injective. Exactness then lifts a real H2 component.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-FINITE-LOCAL-H2",
+          "record": {
+            "id": "LIMIT-FINITE-LOCAL-H2",
+            "source": {
+              "path": "work/nekovar-selmer-complexes-2006.pdf",
+              "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+              "publication": "Jan Nekovar, Selmer Complexes, Asterisque 310 (2006)",
+              "locator": "5.1.3–5.1.4, printed114"
+            },
+            "available": "For a finite local Galois module, local cup product with its Tate dual is a perfect pairing in degrees i and2-i, normalized by the local invariant.",
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 23,
+                "excerpt_sha256": "40119e9a33f96bdba8bcdb6710e2f16b13a2c73ffd7252ec51800bf8c86ef318"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 29,
+                "end_line": 33,
+                "excerpt_sha256": "e7d3baa1a4c789e768a68379ae13d11a72fdabd1e55d97407d46436506ab107c"
+              }
+            ],
+            "needed": "Compact H2(Q_v,T) is dual to H0(Q_v,D), and the global-to-local tail map is dual to restriction.",
+            "argument": "Apply finite local duality to E[2^n], using the elliptic Weil self-duality. Pass to the adjoint compact/discrete systems by proof15. This preserves the maps and identifies each finite-place H2 length with g_v.",
+            "boundary": "No real ordinary H0 is replaced by Tate H0; the finite real source is separate."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-012",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-012-P"
+        ],
+        "assertion": {
+          "statement": "Injective global-to-2-adic invariant restriction has surjective dual; an opposite 2-adic component and exactness lift every real H2 component.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-012.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: surjectivity derivation. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: surjectivity derivation.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-012-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 31,
+            "end_line": 34,
+            "excerpt_sha256": "e53d6d673c27984295cc8bb2cd2febcc14f84f56c7b0ce008d5279ced72bd5db"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-012"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-013",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-013",
+        "start_line": 35,
+        "end_line": 36,
+        "excerpt_sha256": "6143a405659216e65d2a8c298bdc82e228673a5fc7283ffe30fd43ae2efe1c79",
+        "role": "positive cone and lattice accounting",
+        "statement": "Rank one of global H1 follows from the preceding finite-kernel map and rank-one image. Positive-cone exact sequences, coefficient invariants and free/torsion lattice bookkeeping give the indices, without assuming a primitive inclusion."
+      },
+      "classification": "positive cone and lattice accounting",
+      "source_relationships": [],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 23,
+          "end_line": 27,
+          "excerpt_sha256": "858a38ae96075fc8f27face92ca4c0b6312d76bb505be2b416316a121f3f7d8e"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 33,
+          "end_line": 33,
+          "excerpt_sha256": "cbdb62cb6b13a83e44e7f99f19dcee1d0b31c4a3aae0c065aade317755f697a3"
+        }
+      ],
+      "reconciliation": "Rank one is derived from the finite kernel and finite-index image, then coefficient and positive-cone sequences give torsion/index identities. No specialized primitive-line assumption.",
+      "retained_source_contracts": [
+        {
+          "id": "LIMIT-MORDELL-WEIL",
+          "record": {
+            "id": "LIMIT-MORDELL-WEIL",
+            "source": {
+              "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+              "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+              "locator": "VIII Theorem4.1, printed220, proof224; statement directly viewed atPDF235"
+            },
+            "available": {
+              "statement": "For every elliptic curve E/Q, the abelian group E(Q) is finitely generated.",
+              "hypotheses": "E is an elliptic curve overQ.",
+              "parameter_range": "No rank or rational-torsion restriction.",
+              "normalizations": "The full rational-points group, with its finite torsion subgroup.",
+              "limit_order": "Fix E/Q; the theorem gives finite generation, not generators or an effective rank bound."
+            },
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 23,
+                "end_line": 27,
+                "excerpt_sha256": "858a38ae96075fc8f27face92ca4c0b6312d76bb505be2b416316a121f3f7d8e"
+              }
+            ],
+            "needed": "Under corank-zero Selmer, E(Q) has rankzero and finite2primary torsion; its compact completion and its finite quotients are the actual global Kummer terms.",
+            "argument": "Mordell–Weil finite generation and the all-place Kummer sequence show that E(Q) tensor Q2/Z2 has corank equal to rank E(Q). Its injection into the corankzero discrete Selmer group forces rankzero.",
+            "retained_source_role": "CORANK-MORDELL-WEIL-FINITE-GENERATION",
+            "boundary": "No analytic-rank theorem or unconditional finite Sha is inferred."
+          }
+        }
+      ],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-013",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-013-P"
+        ],
+        "assertion": {
+          "statement": "Rank one of global H1 follows from the preceding finite-kernel map and rank-one image. Positive-cone exact sequences, coefficient invariants and free/torsion lattice bookkeeping give the indices, without assuming a primitive inclusion.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-013.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: positive cone and lattice accounting. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: positive cone and lattice accounting.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-013-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 35,
+            "end_line": 36,
+            "excerpt_sha256": "6143a405659216e65d2a8c298bdc82e228673a5fc7283ffe30fd43ae2efe1c79"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-013"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-014",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-014",
+        "start_line": 37,
+        "end_line": 38,
+        "excerpt_sha256": "ee8d31fffb92d3e8e8207c18e70e12d139bf6765068f69467fd711121878e731",
+        "role": "conditional determinant calculation",
+        "statement": "The caller same-class wedge identity is retained as input. Saturation indices and Smith normal form yield the determinant valuation and cancel only after all torsion terms are included."
+      },
+      "classification": "conditional determinant calculation",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-WEDGE-CLASS",
+          "record": {
+            "id": "LIMIT-INPUT-WEDGE-CLASS",
+            "role": "prior_local_derivation",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14101,
+                "end_line": 14126,
+                "excerpt_sha256": "67ee2f773afea9eb3fd129f37b176cfa89e89483055b61875b569f5d341aa776"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14215,
+                "end_line": 14245,
+                "excerpt_sha256": "43fcbe818a15e3049746ba059d122885a5abff08ea49c309ff89a0a4a670442c"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 35,
+                "end_line": 39,
+                "excerpt_sha256": "0cb1f93cfef1fe4c8a074bd9242980cff186d3e0aa77e1b5aac2474e7717c72e"
+              }
+            ],
+            "statement": "Retain the same class z, the factor2 in its rational wedge, and the stated lattice/index definitions; central primitivity is not inferred from punctured specialization. Global H1 rank one is derived under corank zero in the new proof."
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 29,
+          "end_line": 29,
+          "excerpt_sha256": "2682d962ba49dd13ba4f3708969fd1392ebd13c4614f4ffd0d236f72d6dbad69"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 33,
+          "end_line": 35,
+          "excerpt_sha256": "c2a32073cfb5695286f587a70991fb430d7bd973d93a88b42b7a63eb47d0208e"
+        }
+      ],
+      "reconciliation": "The same-class wedge remains an input. Elementary Smith normal form computes the determinant correction with both torsion lengths and the saturation index.",
+      "retained_source_contracts": [],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-014",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-014-P"
+        ],
+        "assertion": {
+          "statement": "The caller same-class wedge identity is retained as input. Saturation indices and Smith normal form yield the determinant valuation and cancel only after all torsion terms are included.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-014.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: conditional determinant calculation. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: conditional determinant calculation.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-014-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 37,
+            "end_line": 38,
+            "excerpt_sha256": "ee8d31fffb92d3e8e8207c18e70e12d139bf6765068f69467fd711121878e731"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-014"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-015",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-015",
+        "start_line": 39,
+        "end_line": 40,
+        "excerpt_sha256": "bc1362fe2c9e5d6b8e8057cb8c6a444c57e9bfd5260a48ec95ee70904323a7e3",
+        "role": "nonzero-class valuation comparison",
+        "statement": "The actual global image lattice and valuation of dual exponential convert the free-coordinate valuation to E.7. Zero-class detection is explicitly outside this finite-valuation calculation."
+      },
+      "classification": "nonzero-class valuation comparison",
+      "source_relationships": [
+        {
+          "id": "LIMIT-INPUT-WEDGE-CLASS",
+          "record": {
+            "id": "LIMIT-INPUT-WEDGE-CLASS",
+            "role": "prior_local_derivation",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14101,
+                "end_line": 14126,
+                "excerpt_sha256": "67ee2f773afea9eb3fd129f37b176cfa89e89483055b61875b569f5d341aa776"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14215,
+                "end_line": 14245,
+                "excerpt_sha256": "43fcbe818a15e3049746ba059d122885a5abff08ea49c309ff89a0a4a670442c"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 35,
+                "end_line": 39,
+                "excerpt_sha256": "0cb1f93cfef1fe4c8a074bd9242980cff186d3e0aa77e1b5aac2474e7717c72e"
+              }
+            ],
+            "statement": "Retain the same class z, the factor2 in its rational wedge, and the stated lattice/index definitions; central primitivity is not inferred from punctured specialization. Global H1 rank one is derived under corank zero in the new proof."
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "6ab52d189f4ea5834d39bb5f77143f8bbbbb78b31bd75bccb5a95d395052cc3f"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 35,
+          "end_line": 37,
+          "excerpt_sha256": "5c55ae01b95da40b939954fc7d2cb283427a87c8085e41af8d2f62fd2904f371"
+        }
+      ],
+      "reconciliation": "The dual-exponential normalization and same class are retained. This is a nonzero-class valuation identity using the actual global image lattice; zero detection remains separate.",
+      "retained_source_contracts": [],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-015",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-015-P"
+        ],
+        "assertion": {
+          "statement": "The actual global image lattice and valuation of dual exponential convert the free-coordinate valuation to E.7. Zero-class detection is explicitly outside this finite-valuation calculation.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-015.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: nonzero-class valuation comparison. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: nonzero-class valuation comparison.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-015-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 39,
+            "end_line": 40,
+            "excerpt_sha256": "bc1362fe2c9e5d6b8e8057cb8c6a444c57e9bfd5260a48ec95ee70904323a7e3"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-015"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    },
+    {
+      "id": "REAL-LIMIT-OBS-016",
+      "original_observation": {
+        "id": "REAL-LIMIT-OBS-016",
+        "start_line": 41,
+        "end_line": 41,
+        "excerpt_sha256": "c9aca4e90b58d261f85ccc40764682fe46ec4a95017d30ad52e5fde65b420982",
+        "role": "conditional downstream substitution",
+        "statement": "E.8 requires separate reciprocity, conductor trace, character basis, inertia, local-factor bounds and forward rank. This paragraph only substitutes and cancels equal unused-prime point-count terms."
+      },
+      "classification": "conditional downstream substitution",
+      "source_relationships": [
+        {
+          "id": "LIMIT-OUTPUT-ARITHMETIC-SUBSTITUTION",
+          "record": {
+            "id": "LIMIT-OUTPUT-ARITHMETIC-SUBSTITUTION",
+            "role": "conditional_local_substitution",
+            "supplier_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+                  "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+                },
+                "start_line": 41,
+                "end_line": 41,
+                "excerpt_sha256": "c9aca4e90b58d261f85ccc40764682fe46ec4a95017d30ad52e5fde65b420982"
+              }
+            ],
+            "consumer_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14338,
+                "end_line": 14364,
+                "excerpt_sha256": "e793532d3dc7ab4d8be28827e90706dd82e826ad93b5a1b79cf72c9e8334b1d0"
+              }
+            ],
+            "statement": "Substitution of the separately supplied same-class reciprocity formula cancels unused local point-count terms.",
+            "incoming_locations": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14338,
+                "end_line": 14357,
+                "excerpt_sha256": "d0884783f5b721cc7c0b55eeb3c2cc63df1636109fdc2354ba73eb40482135aa"
+              }
+            ],
+            "boundary": "The reciprocity theorem, active-prime inertia formula, remaining local bounds and forward-rank theorem remain independent inputs; this is not their proof."
+          }
+        }
+      ],
+      "prior_local_proof_inputs": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+            "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+          },
+          "start_line": 39,
+          "end_line": 39,
+          "excerpt_sha256": "b1fd869e179415bb5917246af07653174f8f371bbcc6309e47aa2e6087d5d2a5"
+        }
+      ],
+      "reconciliation": "The reciprocity/trace, character, active inertia, local bound and forward-rank inputs are retained individually. Only substitution and equal unused-prime cancellation are supplied here.",
+      "retained_source_contracts": [],
+      "binding_scope": "These are retained source contracts used directly or through the listed prior local proof inputs; the embedded record preserves its exact application locations. This row does not append new application locations.",
+      "normalized_initial_use": {
+        "id": "REAL-LIMIT-OBS-016",
+        "consumer": "REAL-LIMIT-SOURCE",
+        "passages": [
+          "REAL-LIMIT-OBS-016-P"
+        ],
+        "assertion": {
+          "statement": "E.8 requires separate reciprocity, conductor trace, character basis, inertia, local-factor bounds and forward rank. This paragraph only substitutes and cancels equal unused-prime point-count terms.",
+          "objects": "Exactly the objects named in the original frozen observation REAL-LIMIT-OBS-016.",
+          "hypotheses": "All named incoming inputs and conditional scope are retained; this transcription supplies no premise.",
+          "quantifiers": "Exactly the original observation and pinned source range; no added quantifier.",
+          "parameter_range": "The fixed curve, support and coefficient systems described in the original observation and source.",
+          "uniformity": "No additional uniformity asserted.",
+          "constants": "No additional constants asserted.",
+          "normalizations": "Original frozen role: conditional downstream substitution. Original source conventions retained.",
+          "exceptional_cases": "No original exception or separate zero-case boundary removed.",
+          "limit_order": "Exactly the original stated compact/discrete limits, fixed support and conditional corank-zero order; no added interchange."
+        },
+        "classification": "dependency",
+        "reason": "Later format transcription, not a new source reconstruction or ordinary application. Original role: conditional downstream substitution.",
+        "shared_contract_justification": null,
+        "supplier": null,
+        "application_id": null,
+        "inline_argument": null
+      },
+      "normalized_passages": [
+        {
+          "id": "REAL-LIMIT-OBS-016-P",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/real-selmer-limit-cancellation-v1/PROOF.md",
+              "sha256": "753e862ef95b08984dd3573e96ba814ffd1c82acd7a0384ce620c79cc66e8bf2"
+            },
+            "start_line": 41,
+            "end_line": 41,
+            "excerpt_sha256": "c9aca4e90b58d261f85ccc40764682fe46ec4a95017d30ad52e5fde65b420982"
+          },
+          "use_ids": [
+            "REAL-LIMIT-OBS-016"
+          ],
+          "reason": "Exact original source range; intended repository path is an explicit migration, not an installation claim."
+        }
+      ]
+    }
+  ],
+  "limits": "Exact custom observations preserved. Later ten-field normalization, canonical source installation and cumulative merge remain separate. Mathematical review is bound but not authored here. The retained_source_contracts references are not new occurrence appends.",
+  "normalization": {
+    "chronology": "Original source-first custom observations are retained exactly. These normalized ten-field objects were transcribed later by the reviewer, after mathematical review and exact mapping; no earlier protocol freeze is claimed.",
+    "files": [
+      {
+        "path": "work/source-risk-review-20261107/v14-real-limit-cancellation-002/NORMALIZED-INITIAL.json",
+        "sha256": "d42cb021a07bee2f8f8165b679a084abd4bc6aefd661c350d8d3df0adcdd2fc1"
+      },
+      {
+        "path": "work/source-risk-review-20261107/v14-real-limit-cancellation-002/NORMALIZED-PASSAGES.json",
+        "sha256": "3aadfdeb584171ce32e2ba78baa7273b214a7528dc6ff080dba23bccefab428d"
+      },
+      {
+        "path": "work/source-risk-review-20261107/v14-real-limit-cancellation-002/NORMALIZATION-EVIDENCE.json",
+        "sha256": "039125f5e857222ead99930630e7554186ca3be8b1ed1cb3d59b9e73ff933261"
+      }
+    ]
+  }
+}

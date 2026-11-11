@@ -1,0 +1,3 @@
+# Release completion history 012
+
+Exact copies of project evidence and retained source, review, delivery and controller records. Original statuses remain verbatim. Inclusion does not promote historical proposals or supply missing mathematical premises. The controller activation was an idle configuration run, not final mathematical approval. Original source-first snapshots remain immutable; supplemental reconstruction and fresh comparison retain their own scope. Current S13 source and delivery revisions are separately pinned in CURRENT-PATH-REVISIONS.json. Historical PDF and standalone proof ZIP remain excluded from cumulative selection.

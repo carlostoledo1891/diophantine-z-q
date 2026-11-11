@@ -1,0 +1,11 @@
+# Restricted logarithm-circuit obstruction
+
+The accepted rational order40 evaluator uses the input w and three field slots for w^2,w^4,R(w). A two-slot replacement is not available in the following restricted model. This observation does not rule out using other already stored point coordinates, a shared multi-point circuit, implicit algebraic branches with a separate rationality proof, or a different arithmetic detector.
+
+Consider two sequential explicit rational gates, each represented by a quadratic equation linear in its new output, using only the prior values and fixed field constants. The first output u has the form P2(w)/Q1(w), where the subscripts bound degrees. The second output y satisfies an equation with coefficient affine in w,u and right side quadratic in w,u. Clearing the two powers of Q1 shows y=P4(w)/Q3(w). This includes a first polynomial gate u=w^2, in which case the denominator degree is at most2.
+
+For order40 at formal depth one, y must agree with G(w) through w^9, because v(w)=4. Normalize Q(0)=1. A rational approximation with numerator degree at most4 and denominator degree at most3 would require the coefficients of QG at degrees5 through9 to vanish. The exact linear equations at degrees5,6,7 determine all three nonconstant denominator coefficients uniquely; the subsequent coefficient at degree8 is nonzero. Therefore no such approximation exists. `check_two_gate_bound.py` performs this rational calculation and records the coefficients in `two-gate-obstruction.json`; it also checks the more restrictive denominator-degree2 case.
+
+If a displayed rational representation has Q(0)=0 but its quotient is regular at zero, cancel the common power first. This only lowers the degree bounds, so it does not avoid the obstruction. Repeated scalar multiples or affine shifts of w in the first gate do not change the degree bounds either.
+
+This is an algebraic circuit bound, not a renewed attempt to lower the accepted order40 height requirement. The earlier high-order/height obstruction and scalar32-to24 work are unchanged. It identifies why the direct two-gate Padé search cannot save another field pair per logarithm. The fresh concrete saving in this directory instead comes from the H/V0 parameter representation, in REPORT392t.md.

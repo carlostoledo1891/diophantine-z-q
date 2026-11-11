@@ -1,0 +1,13 @@
+import json,hashlib
+from pathlib import Path
+O=Path(__file__).resolve().parent;A=O.parent/'v14-sign-main-role-partition-third-001';R=O.parent
+def sha(b):return hashlib.sha256(b).hexdigest()
+def dump(n,x):(O/n).write_text(json.dumps(x,indent=2,ensure_ascii=False)+'\n',encoding='utf8')
+for n in ['INDEX.json','PENDING.json','BINDINGS.json','SCOPE.json']:(O/n).write_bytes((A/n).read_bytes())
+M=R.parent/'quartic-v14-release/preview-repository/manuscripts/quartic_v14.tex';raw=M.read_bytes()
+def loc(a,b):return {'pin':{'side':'head','path':'manuscripts/quartic_v14.tex','sha256':sha(raw)},'start_line':a,'end_line':b,'excerpt_sha256':sha(b''.join(raw.splitlines(keepends=True)[a-1:b]))}
+rows=[(14037,14038,'SIGN-MAIN-14030-14047','The numerator and denominator generate the same dyadic prime ideal in the cyclotomic field. Bind the cyclotomic uniformizer/ideal fact; the subsequent signature calculation remains local.'),(14207,14210,'SIGN-MAIN-14195-14214','Actual invocation of the forward rank-zero theorem to obtain corank zero and finite Sha from nonzero central L-value. Append its exact occurrence; this is not merely a proposition statement.'),(14636,14642,'SIGN-MAIN-14623-14667','Unary theta good-Hecke eigenvalues of absolute value p+1 and stability under Hecke/adjoints. The Hasse input is already bound but does not supply these unary facts.'),(14866,14869,'SIGN-MAIN-14857-14891','Actual cusp annihilator C_pi includes the Atkin–Lehner translation pi(W infinity). The torsion-reduction input does not establish this cusp annihilation.')]
+dump('SUPPLEMENTAL-PENDING.json',{'scope':'Four explicit incoming obligations within otherwise classified local/source rows. These do not add duplicate line-coverage rows or change the original28 pending blocks. Classified status never discharges these named inputs.','rows':[{'id':'THIRD-SUP-'+str(i+1),'parent_row_id':p,'location':loc(a,b),'required_input':s,'status':'pending'} for i,(a,b,p,s) in enumerate(rows)]})
+dump('DELTA.json',{'predecessor_manifest_sha256':sha((A/'MANIFEST.json').read_bytes()),'unchanged':['INDEX.json','PENDING.json','BINDINGS.json','SCOPE.json'],'change':'Adds four explicit supplemental incoming-source obligations requested by independent reviewer; no local proof or source binding changed.'})
+dump('MANIFEST.json',{'author':'/root/v14_sign_conductor','files':{p.name:{'sha256':sha(p.read_bytes()),'bytes':p.stat().st_size} for p in O.iterdir() if p.is_file() and p.name!='MANIFEST.json'},'status':'Bounded classified subset proposed;28 block-level and4 supplemental incoming obligations remain explicit.'})
+print(sha((O/'MANIFEST.json').read_bytes()))

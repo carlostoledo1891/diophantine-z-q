@@ -1,0 +1,81 @@
+{
+  "decision": "accepted_within_scope",
+  "subject": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/global/resume-20261110/shared-T-elimination224-004/MANIFEST.json",
+    "sha256": "a907e6dab18305d6b0f9443578c123d854eda6643d6e6c8b83db5c8dcaef0487"
+  },
+  "scope": "Independent exact new224 transformation, complete rational witness equivalence relative to accepted226, all exceptional branches, all200 residuals and full SOS/coefficient correspondence.",
+  "authorship": "Reviewer authored older scalar/domain ingredients, explicitly reused via accepted226 rather than independently reapproved. Reviewer did not author the six new field quadrics, their discovery, certificates, or candidate224 circuit. Independent checkers reconstruct and expand the identities without invoking author scripts.",
+  "parent": {
+    "manifest": "704af5b908e8dcb12f1b0b6ea1aab0d387b428ea175225f25bdb6c805e59e367",
+    "review": "12f001c3ed4a32de7382d2ae3facb57a223ebf99788101221202a6a6eb17263c"
+  },
+  "mathematical_checks": [
+    "All six forward quadrics independently vanish after substituting the old reference functions, clearing only nonzero(a+cf)^16*(beta*S+alpha)^2, and reducing by f*S²+Dcurve*f²=1 in exact Laurent arithmetic.",
+    "All three reverse certificates independently expand exactly to oldF,oldE,and A²w−N² after the polynomial g substitution; only division by the nonzero constant delta occurs.",
+    "The old sharedT definition vanishes identically by that polynomial substitution. Thus old-domain consequences may be inherited after reconstruction without circularity.",
+    "f=0 independently contradicts two new quadrics: T=87/41−129sqrt2/164 leaves constant norm4905889/107584. This supplementary check is not required for the polynomial inverse.",
+    "Forward and reverse maps compose identically through the old sharedT equation. No numerator, component, f or T cancellation in the reverse map; all zero branches are preserved."
+  ],
+  "finite_checks": [
+    "All manifest member hashes/sizes checked.",
+    "All deleted-g consumers are exactly rows1–6,199–200.",
+    "All192 retained rows match coefficient-by-coefficient after compaction.",
+    "Eight new rows independently expanded from four exact field quadrics and primitive normalization.",
+    "B=f² and W=w² match actual retained row bases, including the nonstandard W decoding and its nonzero matrix determinant.",
+    "All200 residuals are quadratic; independent full square expansion equals every emitted polynomial coefficient.",
+    "All224 variables occur; fixed input1 and parameter unchanged; degree4/content1."
+  ],
+  "statistics": {
+    "variables": 224,
+    "residuals": 200,
+    "coordinate_monomials": 3473,
+    "parameter_terms": 3474,
+    "coefficient_height": "A_N²+1 for N>=53 (coefficient-only)",
+    "linear_parameter_max": 44402,
+    "fixed_coefficient_bound": "<149^214"
+  },
+  "limitations": [
+    "Inherited arithmetic assumptions and ineffective defining threshold remain unchanged.",
+    "No sparse224 improvement or manuscript adoption included.",
+    "No conditional square-attainment hypothesis used."
+  ],
+  "artifacts": {
+    "ir": "abd51c098e6f8de7207977beafb4319fc334e3c5c3e621cfa1f48fd3c9f9c3af",
+    "polynomial": "a4c38e56f4b5779e217c201196d6de61f34cf6967c7a617d73faf870d9c8954c"
+  },
+  "checks": [
+    {
+      "path": "check.py",
+      "sha256": "6cb3cda900339a416b4ac50c5edc3c82cd1946e45196bfb54bec1c38fa05570a"
+    },
+    {
+      "path": "CHECKS.json",
+      "sha256": "66e94f1e4a303527fb21a9809dbd5d468f50ea882b4007f866444a0b2383f5e1"
+    },
+    {
+      "path": "reverse-check.py",
+      "sha256": "fcc7d59ec7cf55c7619ae14e4c9891b0a4d7ffdb7d2c1ff06efdcd09c8986f65"
+    },
+    {
+      "path": "REVERSE-CHECKS.json",
+      "sha256": "b88bd704150881276b4a1468f8ecb116d6a00833ed9d57294ef76a2d53306369"
+    },
+    {
+      "path": "forward-check.py",
+      "sha256": "df7676c4a1628f1c55b355ae03088a845e0f78c059117bd74f4d527a775b3b2d"
+    },
+    {
+      "path": "FORWARD-CHECKS.json",
+      "sha256": "92755c3eddba4814dff0db0709bec15ab4a238c722b9f63b3e029ac9455c5c6b"
+    },
+    {
+      "path": "circuit-check.py",
+      "sha256": "422c640e0331f0de817c2d4fa19064f551f0f9e006148a3779223385f7354fa0"
+    },
+    {
+      "path": "CIRCUIT-CHECKS.json",
+      "sha256": "3f8aab2612017373f7b472fe92de1395d7973ec58c7b9c50a9884fca0d07dabb"
+    }
+  ]
+}

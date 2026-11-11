@@ -1,0 +1,19 @@
+{
+  "verdict": "accepted_exact_serialization_correction",
+  "target_manifest": {
+    "path": "v14-gi-external-residual-004/MANIFEST.json",
+    "sha256": "886b99fb67c66c6608ea5c25f999f73f0c083bad2fe31eb6951af899285c5464"
+  },
+  "checks": {
+    "only_change": "Removed connection.consumer_locations[1] from ACTIVE-GI-EXT-DF-TAYLOR; all other fields and all15 use objects are identical.",
+    "passage_alignment": "The remaining sole location exactly equals coverage_index_entry.location and its ID equals use.passages[0].",
+    "derivation_preserved": "The full181–259 location remains unchanged as connecting_derivation.location and supporting evidence.",
+    "current_bytes": "Both locations already independently checked against current DF bytes in collection008; no source bytes changed.",
+    "use_hashes": "All15 canonical use hashes unchanged; all15 passage counts equal consumer location counts."
+  },
+  "prior_semantic_review": {
+    "path": "v14-gi-external-residual-review-001/REVIEW.md",
+    "sha256": "c9ba3c81497aeed8f7f98c5120d67e3e87e019794a6effd8b6099d101677c1e1"
+  },
+  "scope": "Serialization alignment only. Does not extend prior mathematical approval or establish whole source coverage. Collection008 remains immutable and contains the old two-location defect."
+}

@@ -1,0 +1,37 @@
+{
+  "reviewer": "/root/v14_arithmetic_review",
+  "decision": "accept exact published-source application",
+  "manifest_sha256": "31ec0db6b8c7306a0a33dc8f57649294cf03c4fe8472ec59a8daf14e336b4717",
+  "initial_sha256": "7207b1142f4e239857c5f2303444c1969bfb2bf0ae480098fe8c25fbc79cc028",
+  "source": "Serre, A Course in Arithmetic, Springer1973, corrected fifth printing1996; III1.2 Theorem1 p20 and III2.1 Theorem3 pp23–24. Title/copyright and relevant printed pages visually read.",
+  "checks": [
+    {
+      "label": "COMPONENTS.json",
+      "pass": true
+    },
+    {
+      "label": "SOURCE.json",
+      "pass": true
+    },
+    {
+      "label": "use digest",
+      "pass": true
+    },
+    {
+      "label": "output",
+      "pass": true
+    },
+    {
+      "label": "raw caller",
+      "pass": true
+    }
+  ],
+  "findings": [
+    "The conic and squareclass convention matches the manuscript quadratic Hilbert symbol; no orientation or inverse-valued convention discrepancy arises for signs.",
+    "For q dividing d, gcd(d,2m)=1 makes q odd and m a unit, so Serre formula yields(m/q)^v_q(d). Odd places outside2md give1.",
+    "The real factor is1 because d,m are positive. The full product formula then gives the stated2m-product since each omitted factor equals its inverse. The dyadic factor is retained, not suppressed.",
+    "The product of Legendre factors is the Jacobi symbol for positive odd d, including d=1. No squarefreeness of d is required.",
+    "The supplied component selects only this identity; preceding root-character action, later genus division and other theta conclusions remain separate."
+  ],
+  "limits": "No new source note needed. This is source/application acceptance, not whole-source or release approval; current-main hash transport remains separate. Original observations precede component exposure with prior familiarity disclosed."
+}

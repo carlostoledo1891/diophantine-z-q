@@ -1,0 +1,376 @@
+A conditional exact-value bridge using a variable elliptic shift
+3 November 2026, research iteration 35
+
+Result and status
+
+Under the three explicit hypotheses M, H and PC below, there is a
+positive existential definition over Q of the graph
+
+                 Val(iota(n),t)  <=>  t=n,  n in Z.         (1)
+
+Consequently these hypotheses imply that Z is Diophantine in Q.
+This is a new conditional construction, not a proof that the hypotheses
+hold. In particular, the earlier arithmetic-model proof, the geometric
+and theta inputs to H, and the restricted converse behind PC remain
+unvalidated. The objective is not marked complete.
+
+The shift in this construction is a quantified integer code. Its value
+need not be extracted as a rational coordinate. Its size enters a
+computable precision requirement on integer indices. This permits a
+height argument that the earlier fixed-width bridge did not have.
+
+1. Hypotheses and fixed notation
+
+Let K=Q(sqrt(2)), with conjugation sigma, and
+
+       d=75-53*sqrt(2),       E: y^2=x^3-d^2*x,
+       P=((1641-1160*sqrt(2))/8,(-123720+87483*sqrt(2))/32).
+
+M. P has infinite order. The canonical codes iota(n) of [n]P form
+   a Diophantine set D over Q. Addition and multiplication of the
+   indices are Diophantine on D, with exactly their intended meanings.
+   Field coordinates and group operations on these codes are exposed
+   by their usual finite algebraic formulas.
+
+The earlier proposed M uses D=2E(K), but only the stated properties
+are used here. DPRM and M imply that every computably enumerable
+relation on a fixed finite tuple of integer indices is Diophantine
+on the corresponding codes. This assertion concerns indices only.
+It does not assume (1) or identify an index with a rational coordinate.
+
+Put
+
+       C={0,-15,-20,-24,-30,-60},
+       F(T)=product_(c in C)(T-c),
+       S={rational primes <=324}.
+
+For t in Q outside C let M_S(t) be the squarefree product of primes
+p outside S for which v_p(t-c)>0 is odd for some c in C.
+
+H. A fixed positive integer A is available such that
+
+                    h(t) <= A*M_S(t)^24                 (2)
+
+   for every t in Q outside C. Here h(a/b)=log max(|a|,b)
+   for coprime integers a,b with b>0.
+
+The explicit earlier choice H6(S) is an integer and would suffice.
+No effective determination of its enormous expanded decimal value is
+needed by the mathematical argument. It is a fixed constant.
+
+Let Phi(B) be the eleven-witness predicate Q_pole=0 in
+explicit-pole-predicate.txt. Its elementary, unconditional implication
+is
+
+ Phi(B), B!=0 => v_p(B) is not negative and odd
+                    for p outside {2,3,5,7,13}.          (3)
+
+PC. Phi(B) holds whenever B has square reduced denominator,
+    0<B<1/2, and v_p(B)>=4 at p=2,3,5,7,13.
+
+Only completeness uses PC. Statement (3) follows directly from the
+two displayed elliptic equations of Q_pole: an odd negative valuation
+of B forces one curve with unit twist parameter to have an x-coordinate
+of odd valuation, contrary to its square equation.
+
+All uses of M, H and PC below are conditional. None is certified by
+the finite checker accompanying this note.
+
+2. A uniform precision relation, conditional on M
+
+For nonzero kappa and n outside C define the positive integer
+
+                     B(n,kappa)=A*|kappa*F(n)|^24.        (4)
+
+There is a Diophantine relation Close(N,Kappa,t), which includes
+the guards N,Kappa in D, with both properties
+
+ Close(iota(n),iota(kappa),t) => |t-n| < exp(-B(n,kappa)),  (5)
+ Close(iota(n),iota(kappa),n) holds.                      (6)
+
+Here Close also requires kappa!=0 and n outside C. This follows
+from the shrinking-interval construction in z-in-q-mixed-order-audit.txt,
+with the precision made a computable function of both indices.
+For clarity, the complete construction is as follows.
+
+Write z(Q)=-x(Q)/y(Q) and z(O)=0. For l>=1 let
+z([l]P)=u_l+v_l*sqrt(2) and epsilon_l=|u_l|+|v_l|>0.
+For a>=1 and j in Z let
+
+             r(a,j)=Tr_K/Q(z([j]P)/z([a]P))/2.
+
+These are exactly computable rationals. The relation on integers
+
+ n outside C, kappa!=0, a>=1, l>=1, j=n*a,
+ |r(a,j)-n|<epsilon_l,  4*epsilon_l < 4^(-B(n,kappa))       (7)
+
+is decidable, hence has a DPRM definition. Interpret it through M.
+Expose r and epsilon from the point coordinates and require
+|t-r|<epsilon. These field-coordinate operations, absolute values
+and strict inequalities are Diophantine over Q. For example s>0
+means s*(w1^2+w2^2+w3^2+w4^2)=1.
+
+The compact group E(R) x E(R), at the two embeddings of K, supplies
+positive multiples of P approaching O simultaneously. Thus epsilon_l
+can be arbitrarily small. For fixed n, the derivative of [n] at O is
+n, so r(a,n*a) tends to n along such positive multiples a. Choose l
+first and a afterwards to satisfy (7). Taking t=n proves (6).
+
+Conversely |t-n|<2*epsilon_l<4^(-B)/2<exp(-B), proving (5).
+Every computation in (7) has ordinary integer indices as its inputs;
+the external rational t is used only in the final strict inequality.
+Thus this construction is not circular. Close alone is still an open
+condition in t and does not define equality.
+
+3. Six field-valued tests and one pole predicate
+
+Take valid codes N=iota(n) and Kappa=iota(kappa), with kappa!=0.
+Using M, require C1=iota(kappa*n). Quantify two more codes
+H=iota(h) and U=iota(s), and form by the group law
+
+                   V0=H-Kappa,       V1=U-C1.
+
+Require H!=O and V0!=O. Thus h and h-kappa are nonzero integers.
+For Q in D put w(Q)=1/x(Q) for Q!=O and w(O)=0. These conventions
+are algebraic finite branches: the nonzero multiples of P are not
+two-torsion, so their x and y coordinates are nonzero.
+
+For a rational input t outside C define the following elements of K:
+
+       D1=w(H),                 D2=w(U),
+       D3=sigma(w(V0)),          D4=sigma(w(V1)),
+       D5=z(U)/z(H)-t,
+       D6=sigma(z(V1)/z(V0))-t.                           (8)
+
+All denominators are nonzero by the guards and the infinite order
+of P. Let c0=2730^3. Quantify eta,q in Q and impose
+
+       eta^2=1,
+       R0=eta*c0^2*F(t),
+       a0=1-R0*q^2 !=0,           R=R0*a0^2,
+       Cj=Dj/F(t),               j=1,...,6,
+       W=product_(j=1)^6 (1+R*Cj^2) !=0,
+       Theta=Tr_K/Q(1/W) !=0,
+       Bpole=R/Theta^2,
+       Phi(Bpole).                                      (9)
+
+Call the resulting predicate Test(N,Kappa,t). Equalities of elements
+of K mean two rational coefficient equalities in the basis 1,sqrt(2).
+Each nonzero guard is existential using an inverse. Therefore (9),
+including its point-code conditions, is Diophantine under M.
+
+4. Soundness of the local tests
+
+Suppose Test(N,Kappa,t) holds. Let p outside S divide M_S(t).
+There is a unique c in C with delta=v_p(t-c)>0 odd. The differences
+between distinct contacts are p-adic units. Thus v_p(F(t))=delta,
+v_p(R0)=delta, and K/Q is unramified at p.
+
+Put b=v_p(a0). If q=0, then b=0. Otherwise delta+2*v_p(q)
+is odd and nonzero, so
+
+             b=min(0,delta+2*v_p(q)) <=0,
+             alpha=v_p(R)=delta+2*b is odd.              (10)
+
+At every place v above p, normalized by v(p)=1, the valuation of
+each factor of W is exactly
+
+                 min(0,alpha+2*(v(Dj)-delta)).           (11)
+
+The two summands of that factor have unequal valuations because
+alpha is odd and v(Dj) is integral. This includes Dj=0, when the
+factor has valuation zero. Hence v(W)<=0 at every such place.
+
+Let lambda be the maximum of these valuations of W. Conjugation
+either exchanges the two places or preserves the inert place.
+It follows in both cases that
+
+                  v_p(Theta) >= -lambda >=0.             (12)
+
+Statement (3) and the odd valuation of Bpole imply
+alpha-2*v_p(Theta)>=1. In particular alpha>0 and
+lambda >= -(alpha-1)/2 > -alpha/2.
+
+Choose a place where v(W)=lambda. Each factor valuation in (11)
+is nonpositive, so each is at least lambda. Solving (11) for v(Dj)
+gives, with the same chosen place for all six tests,
+
+       v(Dj) >= delta-3*alpha/4
+              = delta/4-3*b/2 >0.                        (13)
+
+Valuations are integral, hence all six v(Dj)>=1. Infinite valuations
+of zero entries are harmless. D1,D2 place H,U in the formal group
+at v; D3,D4 place V0,V1 in the formal group at the conjugate place.
+For this integral good Weierstrass model, v(1/x)>0 implies
+v(1/x)=2*v(z) with v(z)>=1, or the point is O.
+
+The normalized formal logarithm satisfies
+
+                       log(Q)=z(Q)*(1+e_Q),  v(e_Q)>=1   (14)
+
+on the nonzero formal points here. The invariant differential has
+integral coefficients; its degree r integral contributes a denominator
+at most r. For r>=2, (r-1)*v(z)-v_p(r)>=1 when p>2, proving (14).
+The formal logarithm respects integer multiplication.
+
+Since [s]H=[h]U, nonvanishing of log(H) in (14) gives
+
+                    log(U)/log(H)=s/h.
+
+D5>=1 says z(U)/z(H) is integral and congruent to t modulo p.
+Equation (14) therefore implies s/h=t modulo p. This also holds
+when U=O. At the conjugate place the identical argument gives
+
+                    (s-kappa*n)/(h-kappa)=t modulo p.
+
+Multiplying these two congruences by their integer denominators and
+subtracting proves
+
+                    v_p(kappa*(n-t))>=1.                 (15)
+
+The expression in (15) is rational, so the chosen unramified place
+does not change its p-adic valuation. Since v_p(t-c)>=1 and kappa
+is an integer, p divides the ordinary integer kappa*(n-c).
+As M_S(t) is squarefree, we have proved
+
+                     M_S(t) divides kappa*F(n).          (16)
+
+No assertion that kappa is a p-adic unit was used. This is the
+purpose of retaining its size in (4). When n is outside C and
+kappa!=0 the integer on the right of (16) is nonzero.
+
+5. Global completeness of Test at every integer outside C
+
+Fix n in Z outside C. Choose eta so that
+
+                     R0=eta*c0^2*F(n)>0.
+
+This is a nonzero integer. Let T be its finite set of prime divisors.
+It contains 2,3,5,7,13, and v_p(R0)>=6 at each of those five primes.
+
+Choose a positive integer kappa such that [kappa]P is sufficiently
+close to O in E(K_v) at every place above T. Such multiples exist:
+each prescribed sufficiently small formal subgroup is open, and
+the compact local group modulo it is finite. A common multiple
+of the finitely many quotient orders puts [kappa]P in every one.
+
+Take H=[2*kappa]P, U=[2*kappa*n]P. Then
+V0=[kappa]P and V1=[kappa*n]P. In the formal parameter,
+w(Q) tends to zero and z([n]Q)/z(Q) tends to n as Q tends to O.
+These facts hold also at the finitely many bad and ramified places,
+after taking a sufficiently small formal neighborhood.
+
+Consequently kappa can be chosen so that all six Cj=Dj/F(n) in (9)
+are integral at every place over T. H and V0 remain nonzero because
+P has infinite order and kappa>0. The choices here depend on n,
+as permitted by existential quantification.
+
+Now choose q in Q integral at every p in T, and arbitrarily close
+in R to a root of 1-R0*q^2, but not equal to that root. Explicitly,
+use denominators L_j=R0*j+1 and numerators approximating
+L_j/sqrt(R0) by integers; adjust by one if equality occurs. The
+error tends to zero and each denominator is a unit at T. At p in T,
+a0 is a unit and v_p(R)=v_p(R0)=r>0. Thus
+
+                     W=1 modulo p^r,
+                     Theta=2 modulo p^r.                (17)
+
+The second statement follows by trace, including at the ramified
+prime 2: trace maps the local integer algebra into Z_p. Therefore
+v_p(Bpole)=r for odd p in T, and v_2(Bpole)=r-2>=4.
+At the other four specified small primes this valuation is >=6.
+
+For p outside T, v_p(R0)=0, hence
+
+              v_p(Bpole)=2*v_p(a0)-2*v_p(Theta)
+
+is even. Thus Bpole has square reduced denominator. Both embeddings
+of K are real. As q approaches the chosen real root, R tends to
+zero through positive values, each embedded W is positive and
+tends to one, and Theta tends to two. In particular every guard in
+(9) holds and 0<Bpole<1/2 for a sufficiently close choice of q.
+
+PC now supplies Phi(Bpole). We have proved that for every integer
+n outside C there is a nonzero kappa for which Test(iota(n),
+iota(kappa),n) holds. The same kappa can be used in Close because
+(6) holds for every nonzero kappa, regardless of its size.
+
+6. Exact equality and the single-polynomial conclusion
+
+Define Val(N,t) by requiring N in D and the finite disjunction of:
+
+ a. N=iota(c) and t=c, for each c in C;
+ b. there exists Kappa in D with
+             Close(N,Kappa,t) and Test(N,Kappa,t).
+
+For branch b, write N=iota(n), Kappa=iota(kappa). Its guards ensure
+n outside C, kappa!=0 and t outside C. By (2) and (16),
+
+                         h(t)<=B(n,kappa).                (18)
+
+If t=a/b in lowest terms, b>0, and t!=n, then |a-n*b|>=1, so
+
+               |t-n|>=1/b>=exp(-h(t))>=exp(-B(n,kappa)).  (19)
+
+This contradicts Close. Hence branch b implies t=n. Conversely,
+Section 5 and (6) prove branch b for every n outside C with t=n.
+Branch a handles exactly the six excluded integer values. This
+proves (1) under M, H and PC.
+
+Every formula used is positive existential over Q after translating
+the fixed integer relation (7) through M and DPRM. The code constants
+iota(c) are fixed rational tuples. Replace K-valued operations by
+two-coordinate rational equations, inequalities by square formulas,
+and nonzero guards by inverses. Clear fixed coefficient denominators.
+Conjunctions combine by sums of squares and finite disjunctions by
+products, with separate witness blocks. Thus a single polynomial
+over Z defines Val, and existentially quantifying N defines Z.
+
+The proof establishes the existence and a finite compilation recipe
+conditional on M, H and PC. No expanded polynomial or variable count
+is claimed here; in particular the DPRM polynomial for (7) has not
+been materialized.
+
+7. Dependency and completion audit
+
+The conditional bridge does not use a rational formula that extracts
+an elliptic index. It uses additional rational witnesses for Phi.
+Nor does it rely on finitely many approximation tests alone: the
+global pole predicate supplies (16) at all relevant primes. The
+old obstructions for those narrower constructions do not apply.
+
+Dependencies of the new implication are:
+
+ M: an exact Diophantine arithmetic model, still to be validated;
+ H: the global six-contact estimate, with its geometry and theta
+    comparison still to be validated;
+ PC: the sufficient pole-completeness statement, whose restricted
+     pointwise-converse dependency is still to be validated;
+ elementary pole soundness, formal elliptic arithmetic, compactness,
+ elementary rational approximation, DPRM, and rational height arithmetic.
+
+The earlier proposed construction of M itself uses H and PC, plus
+its generator, prime-pattern and compiler arguments. This is not a
+circular use of the new bridge: none of those inputs is permitted
+to assume Val or that the actual integers are Diophantine in Q.
+
+Relevant local records:
+  multiplication-certificate-correctness-proof.txt
+  six-contact-height-proof.txt
+  z-in-q-external-height-audit.txt
+  explicit-pole-predicate.txt
+  restricted-converse-and-pole-completeness-proof.txt
+  z-in-q-mixed-order-audit.txt
+
+Standard formal-group reference: Silverman, The Arithmetic of
+Elliptic Curves, Chapter IV, Sections 5 and 6. The local congruence
+needed here is derived in (14), so no higher-order truncation bound
+or global local-logarithm extension is assumed.
+https://www.math.brown.edu/johsilve/AECHome.html
+
+The new written argument has not received independent review or
+formal verification. The accompanying finite checker checks only
+specified algebraic and valuation calculations. It does not certify
+M, H, PC, or the general Diophantine-definability conclusion. The
+active objective remains unproved until the full dependency chain
+and this construction have been validated.

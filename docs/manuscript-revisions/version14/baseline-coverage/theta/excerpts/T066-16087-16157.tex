@@ -1,0 +1,71 @@
+\begin{proposition}[Stationary and simultaneous address constructions]\label{ex:app-simultaneous-address}
+Use the definitions and realization freedoms in
+Definitions~\ref{ex:sec7-typed-graph}, \ref{ex:sec7-symbol},
+\ref{ex:sec7-address} and Lemma~\ref{ex:sec7-realization},
+and the coefficient rules of Proposition~\ref{ex:app-coefficient-rules}.
+Fix $b\ge1$. Either take one symbol on a nonempty set of always
+active terminals with a nonzero polynomial in their pair bits, or
+take one or two symbols on terminals with nonzero linear activations,
+including a terminal of every nonzero activation, such that each
+symbol separately has a nonzero terminal polynomial at every
+$x\ne0$. In the latter case the symbols may read different
+compatible projections of the common alphabet and fixed stationary
+external data. Require the active data to satisfy each prescribed
+filter at every nonzero address.
+Starting from fixed compatible typed terminal and stationary
+data, one can adjoin finitely many primary auxiliaries with nonzero
+linear activations and choose only incidences involving them so that
+all the symbols equal $1$ at every $x\ne0$. All original data stay
+fixed, no auxiliary is present at zero, and the required neutral
+external incidences and splitting conditions are retained.
+Only nonempty configurations and nonempty contraction outputs are
+used. A nonzero iterated difference, hence a partitionability
+certificate, suffices for the required nonzero terminal polynomial.
+For the two final symbols the zero-total packets below supply these
+terminal hypotheses using only separate projection surjectivity.
+For the even stationary application, the original prime representatives
+may be fixed at the outset. For a stabilized odd symbol, first fix the
+abstract data and the finite budget, then choose an actual stage
+carrying them, and only then choose prime representatives. Previously
+fixed representatives may be retained when compatible with the full
+type at that stage; arbitrary earlier primes are not asserted to
+satisfy a later moving condition.
+\end{proposition}
+\begin{proof}\leavevmode
+\paragraph{Total labels of the final seeds.}
+Both final symbols have projected total label zero. The intrinsic
+odd filter contains $1$: its fixed unit squareclasses, positive sign,
+and moving condition $(D/\ell_0)=1$ are those of $1$. The even source
+for $E^k$ is likewise normalized in the unit filter containing $1$.
+Every nonzero coefficient, and hence every unit seed, lies in its
+respective filter. Additional stationary tests at primes dividing
+$k$ refine the common alphabet but are forgotten by the intrinsic
+odd projection. They do not add conditions to that odd symbol.
+
+Take repeated packets with total zero in the common elementary
+label group, including sufficiently many copies of every label.
+For either projection separately, keep the first $r-1$ anchors of
+its unit seed and contract the nonempty remainder into the last
+anchor. Since the total projected label is zero, the remainder has
+the last seed label. This argument uses surjectivity of each
+projection separately. It does not require that a fixed old odd
+seed admit lifts whose total is zero in the common alphabet.
+The whole packet already has that total, and contractions preserve
+it. Thus the final twists satisfy the stationary tests as well as
+both coefficient filters.
+Concretely, choose a packet with an even number of copies of every
+common label, and enough copies to provide the anchors of either
+seed under its respective projection.  Its total label is zero.
+For every nonzero activation $\lambda$, take a disjoint copy of
+this whole packet and give all its vertices activation $\lambda$.
+At every $x\ne0$ there are exactly $2^{b-1}$ active packets.
+The active list is therefore nonempty, has total common label zero,
+and contains enough anchors for each projected seed separately.
+Its terminal polynomial for each symbol is nonzero by the
+contraction certificate, regardless of the initially fixed bits.
+It also contains a terminal of each required activation.  This
+constructs the terminal input of the address lemma explicitly.
+No simultaneous lifting of a prescribed pair of seed labels is
+needed.  Every added network vertex is primary, so the total
+common label remains zero at each address.
+

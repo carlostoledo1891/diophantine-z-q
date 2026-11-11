@@ -1,0 +1,15 @@
+# Fresh-capture ingress review
+
+Decision accepted for public refresh batch SHA256 3be2cdfec036405b836a2599ffc5f6e0c23329a23fd46ce7488e1ee7110ccd63, private refresh batch SHA256 9b877923f0daafa3dad068ad8427ac2565d9ca3c381158031d15d8ffc561cb6e and refresh overlay SHA256 cc8e90842a0f20e2750a05d2424e53e2b6d8ebb06e32a2ec41d2ab5193038bfd. Reviewer /root/sol_protocol_policy_review.
+
+Read the original and refreshed batches, overlay, PR metadata-difference record, PR8 observation, ingress selector and apply_batch logic, and audit-intake event semantics. Independently replayed the fetched local intake event sequence structurally, then simulated the new capture identity, external registration and classification sequence. REFRESH-CHECKS.json binds the fetched state ref and results. This structural replay did not authenticate ledger MACs and generated no signed records or remote mutations.
+
+Both batches retain the original job and key identities, use new batch/capture IDs, and have empty operator_events and findings lists. The existing operator reports and findings are preserved. Every original classification selector retains its finding-ID list. All 23 materials already archived in each scope resolve exactly and receive classifications for the new context. Report selectors match the report ID and exact decoded body SHA256. They do not select a latest report by name alone.
+
+The public batch additionally registers the exact bytes of NEW-PR-8-OBSERVATION.json and classifies the resulting exact external material ID, external/7fc924ffeb14557ae16524c0e1fca56f8ec4407dd2c714aad5b4ce6341736232. The source concerns separate conditional research on another head. Its classification explicitly leaves mathematical review separate and unaccepted, with no setup finding IDs attached. The public scope therefore has 24 classified materials. The private scope retains 23.
+
+The overlay retains all seven original mappings unchanged and adds only two refresh-batch mappings. Original mapped bytes, including packet, selected reports and controller config, match the deployed local repository. No setup head, base, source policy or selected acceptance is replaced by this refresh.
+
+Ingress still collects the complete base/head objects and compares them with the protected packet. It captures through the authenticated App reader, signs with the existing recorder, computes the new context from the actual capture and existing material/finding archive, reconciles the packet, checks exact selected receipts, and appends only new intake records and the new receipt through the existing atomic remote update. No PR comparison or identity condition is weakened.
+
+The supplied owner-credential comparison shows changes only in nested repository sizes and public issue counters. That observation is not evidence of App-authenticated state equality. The next ingress must obtain and verify its own current App capture, and any later relevant drift can still block evaluation. This acceptance is of the prepared refresh inputs and preserved review scope, not a claim that live ingress or publication has succeeded.

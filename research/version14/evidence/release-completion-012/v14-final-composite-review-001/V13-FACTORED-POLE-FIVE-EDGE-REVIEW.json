@@ -1,0 +1,57 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:59:03.744Z",
+  "target": {
+    "path": "v14-v13-factored-pole-context-003/DISPOSITION.json",
+    "sha256": "feccbc0b2fccfda545d93b5cf37f9ac8b6fdd44932d0afded001c873a00b2857"
+  },
+  "status": "accepted five corrected scoped non-direct relations",
+  "rows": [
+    {
+      "consumer": "V13-FACTORED-POLES",
+      "supplier": "N04-CONTACT-POLE-LOCAL",
+      "reason": "This is the same conditional factored-pole proof at23001–23019, not a separate input to itself: norm equation, anisotropy, trace identity and B formula. Keep that proof and its actual final-theorem import. The genuine group-valuation input N24 is separately represented."
+    },
+    {
+      "consumer": "V13-FACTORED-POLES",
+      "supplier": "N06-CONDITIONAL-GUARDS",
+      "reason": "The conditional trace/pole inverse-guard deletion is the same current norm/trace nonzero subargument at23001–23025: prove W nonzero at required contacts, then derive the trace relation without imposing a global inverse. It is not the common-scale gamma guard and supplies no independent scale estimate. Retain this explicit subconstruction within the factored-pole proof and its original source record, rather than a circular separate import."
+    },
+    {
+      "consumer": "V13-FACTORED-POLES",
+      "supplier": "N33-ANCHOR-COMPLETE-ORDER",
+      "reason": "Anchor/final-H ordering supplies the existence construction in its dedicated current consumers; it is not used to derive the conditional norm/trace identity. The required completed common-scale conclusion N26 remains a direct input to the completeness portion."
+    },
+    {
+      "consumer": "V13-FACTORED-POLES",
+      "supplier": "N36-AUXILIARY-ALL-E-VALUATIONS",
+      "reason": "All-E auxiliary valuations enter the complete group estimate N24. The conditional norm/trace algebra uses its nonzero-product conclusion; this is retained ancestry, not a second invocation of the auxiliary valuation lemma."
+    },
+    {
+      "consumer": "V13-FACTORED-POLES",
+      "supplier": "N44-RAW-RATIO-GLOBAL-REDUNDANCY",
+      "reason": "The global A nonzero/raw-ratio conclusion is established after actual cubics and literal caches yield the group low tests. It is a later input to ratio and formal-log consumers, not an input to the earlier conditional norm/trace pole algebra or to the group low-test proof. Preserve those actual later ratio/log uses; do not reverse this proof order."
+    }
+  ],
+  "corrections": [
+    {
+      "p": "/rows/1/reason",
+      "a": "The guard supplies the scale estimate inside the complete local group argument N24. The factored-pole norm/trace step consumes the resulting nonzero W and bounds, not a second standalone guard application. Retain the actual N06 input to its local valuation consumer.",
+      "b": "The conditional trace/pole inverse-guard deletion is the same current norm/trace nonzero subargument at23001–23025: prove W nonzero at required contacts, then derive the trace relation without imposing a global inverse. It is not the common-scale gamma guard and supplies no independent scale estimate. Retain this explicit subconstruction within the factored-pole proof and its original source record, rather than a circular separate import."
+    },
+    {
+      "p": "/rows/4/reason",
+      "a": "The global raw-ratio identity is needed upstream to justify local test valuations, not in the subsequent norm/trace algebra. Its actual ratio/log and group consumers remain active, and no raw-ratio conclusion is inferred from the pole formula.",
+      "b": "The global A nonzero/raw-ratio conclusion is established after actual cubics and literal caches yield the group low tests. It is a later input to ratio and formal-log consumers, not an input to the earlier conditional norm/trace pole algebra or to the group low-test proof. Preserve those actual later ratio/log uses; do not reverse this proof order."
+    }
+  ],
+  "method": "Read full required/constructed V13-FACTORED-POLES contract and actual23001–23034; compared the group-before-raw-ratio order with23244–23276. Exact successor diff contains only the two requested reasons.",
+  "retained": [
+    "N04/N06 same conditional norm/trace proof is retained rather than imported circularly.",
+    "Actual N24 group nonzero/valuation input and N05/N26 completeness inputs remain separate.",
+    "Global raw-ratio nonvanishing follows low tests and is not an input to their proof.",
+    "Finite contact scope, empty-radical vacuity, no global trace inverse, and denominator-square support remain."
+  ],
+  "limits": "No actual-input packet approval or full ancestry/coverage approval."
+}

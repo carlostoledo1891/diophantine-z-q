@@ -1,0 +1,60 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:57:02.317Z",
+  "status": "accepted six scoped non-direct relations",
+  "targets": [
+    {
+      "path": "v14-v13-identity-chart-disposition-001/DISPOSITION.json",
+      "sha256": "8c16da75e01c66454604ad5f87a6953ba4aeaf0a54e9f90d007ab11e2ded85f3"
+    },
+    {
+      "path": "v14-v13-reciprocal-context-disposition-001/DISPOSITION.json",
+      "sha256": "fd822936edab36eaf3b51d49706764c324af4bb857ecc8ddc7ea729852ae9345"
+    }
+  ],
+  "rows": [
+    {
+      "consumer": "V13-IDENTITY-CHARTS",
+      "supplier": "N25-H-DEPTH-BOOTSTRAP",
+      "reason": "The H-depth bootstrap uses the already valid chart and regular ratios. It does not prove that reciprocal cubic points represent E(K) or that the identity has its regular ratio value."
+    },
+    {
+      "consumer": "V13-IDENTITY-CHARTS",
+      "supplier": "N36-AUXILIARY-ALL-E-VALUATIONS",
+      "reason": "Valuation periods are derived from the reciprocal cubic after it has been restored. They are not an input to the algebraic inverse chart x=1/f,y=-h/f² or its O branch."
+    },
+    {
+      "consumer": "V13-IDENTITY-CHARTS",
+      "supplier": "N39-GLOBAL-APPROXIMANT-DOMAIN",
+      "reason": "Global nonvanishing of the approximant polynomials is a later logarithm-domain input. It is unrelated to inversion of the reciprocal point chart and the raw ratio denominator A=1−DB."
+    },
+    {
+      "consumer": "V13-IDENTITY-CHARTS",
+      "supplier": "N43-ALTERNATE-ORDINATE-RECONSTRUCTION",
+      "reason": "The complete N40 input restores k and both cubics before the chart is interpreted. N43 is the same alternate-ordinate deletion subconstruction, not a second application needed at this chart wrapper."
+    },
+    {
+      "consumer": "V13-IDENTITY-CHARTS",
+      "supplier": "N45-S-ORIENTED-RECIPROCAL-EXTENSION",
+      "reason": "The S orientation equation identifies the scalar root for separate old scalar consumers. The general reciprocal-chart inverse and identity-safe ratios apply without selecting that old scalar ordinate; preserve N45 for those scalar applications."
+    },
+    {
+      "consumer": "V13-RECIPROCAL-IDENTITY",
+      "supplier": "N01-KUMMER-AFFINE",
+      "reason": "The reduced pair identities r2=q−(f−F)e and alternate-cubic=r4−(f−F)q+(f−F)²e use the reciprocal pair equations and true caches. They do not use the separate fixed-difference H Kummer certificate. H normalizer meaning remains required at later primary/log consumers, but it is not a proof input for this pair reconstruction and deletion."
+    }
+  ],
+  "method": "Read complete proposed excerpts and compare each to current raw main; all four match. Read all required/constructed fields of V13-IDENTITY-CHARTS and V13-RECIPROCAL-IDENTITY.",
+  "findings": [
+    "The reciprocal cubic inversion and complete oriented closure precede valuation/logarithm use. N25/N36/N39 are downstream roles, not inputs to that inversion.",
+    "N43 is contained in the complete N40 restoration used at the identity-chart wrapper; N45 remains separately necessary for the old scalar ordinate, not the general chart inverse.",
+    "The pair polynomial identities do not use the separate H Kummer certificate. Their full-zero-set deletion nevertheless explicitly requires the independently established global A nonvanishing."
+  ],
+  "retained": [
+    "Actual N40/N37/N44 identity-chart inputs and N40/N43/N37 reciprocal inputs.",
+    "Global N44 low-test and nonempty-contact proof before cancelling A.",
+    "H normalizer/domain and scalar orientation remain at their actual separate consumers."
+  ],
+  "limits": "No assertion that pair algebra alone restores all raw ratios; no full-wrapper ancestry or final coverage acceptance."
+}

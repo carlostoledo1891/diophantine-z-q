@@ -1,0 +1,161 @@
+{
+  "state": "author proposal",
+  "use": {
+    "id": "ACTIVE-RC-ELLIPTIC-NONCM",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "PASSAGE-ACTIVE-RC-ELLIPTIC-NONCM"
+    ],
+    "assertion": {
+      "statement": "Every nonsingular curve E_ell:y^2=x(x-ell)(x+3ell) with nonzero rational ell has no geometric CM, since its classical elliptic j is35152/9, a nonintegral rational number; the same holds for its quadratic twists.",
+      "objects": "The classical elliptic j-invariant of E_ell and its quadratic twists, not the quaternionic moduli coordinate also denoted j.",
+      "hypotheses": "ell is nonzero and rational; the displayed Weierstrass equation is used.",
+      "quantifiers": "Every nonzero rational ell and every quadratic twist.",
+      "parameter_range": "Characteristic zero over Q and its algebraic closure.",
+      "uniformity": "The invariant j is independent of ell; this conclusion does not provide a uniform open-image index.",
+      "constants": "c4=208ell^2, discriminant=2304ell^6, j=35152/9;9 does not divide35152.",
+      "normalizations": "Use the classical elliptic Weierstrass c4^3/discriminant invariant and the full CM order, including nonmaximal orders.",
+      "exceptional_cases": "ell=0 excluded because the curve is singular; no claim about the separate CM generator curve or the quaternionic coordinate.",
+      "limit_order": "Compute nonsingular invariants first; use monic integral CM class polynomials to rule out geometric CM before invoking open image."
+    },
+    "classification": "dependency",
+    "reason": "Every nonsingular curve E_ell:y^2=x(x-ell)(x+3ell) with nonzero rational ell has no geometric CM, since its classical elliptic j is35152/9, a nonintegral rational number; the same holds for its quadratic twists.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1730,
+        "end_line": 1733,
+        "excerpt_sha256": "7e67cb2a9ebc0116453809cd97ad99c0c53de684aa1f8108269ac486df552216"
+      },
+      "statement": "For an imaginary quadratic order, the singular moduli are roots of a monic integral class polynomial, hence are algebraic integers.",
+      "publication": {
+        "title": "Some uniform effective results on André–Oort for sums of powers in C^n",
+        "authors": "G. Fowler",
+        "venue": "Mathematical Proceedings of the Cambridge Philosophical Society180(2026),607–641",
+        "authoritative_version": "Published version; retainedPDFbc676f4d5b6a2a70fa3e6bed55a4449622d6728167d4c668068b89da6b2d55ae",
+        "locator": "Section2.1, printed612–613",
+        "corrections": "Exact published A065 scope reused from independent sieve-bounds review; no new full-source audit."
+      }
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1729,
+      "end_line": 1733,
+      "excerpt_sha256": "5490eaaa7739617697bdb556c00f2b1dca23a81bd904fa7ca35f0c40ce95f789"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-RC-ELLIPTIC-NONCM",
+    "use_sha256": "a00e58c2612b0e28cd74876845d1d0d653c18af83345eb6c476a7fb23a9c8527",
+    "supplier_passage_role": "application",
+    "available_assertion": {
+      "statement": "For an imaginary quadratic order, the singular moduli are roots of a monic integral class polynomial, hence are algebraic integers.",
+      "objects": "Classical elliptic singular moduli of imaginary quadratic orders.",
+      "hypotheses": "The elliptic curve has geometric complex multiplication by an imaginary quadratic order.",
+      "quantifiers": "Every imaginary quadratic order, including nonmaximal orders.",
+      "parameter_range": "Negative order discriminants; elliptic curves in characteristic zero.",
+      "uniformity": "Algebraic integrality for all such singular moduli.",
+      "constants": "No numerical height bound or discriminant estimate used.",
+      "normalizations": "Use the classical elliptic Weierstrass c4^3/discriminant invariant and the full CM order, including nonmaximal orders.",
+      "exceptional_cases": "No maximal-order restriction; this is not a formula for a quaternionic Hauptmodul.",
+      "limit_order": "Fix the CM order and form its class polynomial."
+    },
+    "needed_assertion": {
+      "statement": "Every nonsingular curve E_ell:y^2=x(x-ell)(x+3ell) with nonzero rational ell has no geometric CM, since its classical elliptic j is35152/9, a nonintegral rational number; the same holds for its quadratic twists.",
+      "objects": "The classical elliptic j-invariant of E_ell and its quadratic twists, not the quaternionic moduli coordinate also denoted j.",
+      "hypotheses": "ell is nonzero and rational; the displayed Weierstrass equation is used.",
+      "quantifiers": "Every nonzero rational ell and every quadratic twist.",
+      "parameter_range": "Characteristic zero over Q and its algebraic closure.",
+      "uniformity": "The invariant j is independent of ell; this conclusion does not provide a uniform open-image index.",
+      "constants": "c4=208ell^2, discriminant=2304ell^6, j=35152/9;9 does not divide35152.",
+      "normalizations": "Use the classical elliptic Weierstrass c4^3/discriminant invariant and the full CM order, including nonmaximal orders.",
+      "exceptional_cases": "ell=0 excluded because the curve is singular; no claim about the separate CM generator curve or the quaternionic coordinate.",
+      "limit_order": "Compute nonsingular invariants first; use monic integral CM class polynomials to rule out geometric CM before invoking open image."
+    },
+    "required_capabilities": [
+      "ACTIVE-RC-ELLIPTIC-NONCM"
+    ],
+    "available_capabilities": [
+      "CM_j_integrality"
+    ],
+    "derived_capabilities": [
+      "ACTIVE-RC-ELLIPTIC-NONCM"
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 1729,
+        "end_line": 1733,
+        "excerpt_sha256": "5490eaaa7739617697bdb556c00f2b1dca23a81bd904fa7ca35f0c40ce95f789"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "Every nonsingular curve E_ell:y^2=x(x-ell)(x+3ell) with nonzero rational ell has no geometric CM, since its classical elliptic j is35152/9, a nonintegral rational number; the same holds for its quadratic twists.",
+        "objects": "The classical elliptic j-invariant of E_ell and its quadratic twists, not the quaternionic moduli coordinate also denoted j.",
+        "hypotheses": "ell is nonzero and rational; the displayed Weierstrass equation is used.",
+        "quantifiers": "Every nonzero rational ell and every quadratic twist.",
+        "parameter_range": "Characteristic zero over Q and its algebraic closure.",
+        "uniformity": "The invariant j is independent of ell; this conclusion does not provide a uniform open-image index.",
+        "constants": "c4=208ell^2, discriminant=2304ell^6, j=35152/9;9 does not divide35152.",
+        "normalizations": "Use the classical elliptic Weierstrass c4^3/discriminant invariant and the full CM order, including nonmaximal orders.",
+        "exceptional_cases": "ell=0 excluded because the curve is singular; no claim about the separate CM generator curve or the quaternionic coordinate.",
+        "limit_order": "Compute nonsingular invariants first; use monic integral CM class polynomials to rule out geometric CM before invoking open image."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "ell=0 excluded because the curve is singular; no claim about the separate CM generator curve or the quaternionic coordinate.",
+      "evidence": [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 3765,
+        "end_line": 3768,
+        "excerpt_sha256": "85af27d1d0234a601e2491b7a0857e2d04976260ca0fc3825a3ad8e0e23eee34"
+      }
+    ]
+  },
+  "initial_mapping": [
+    {
+      "initial_use_id": "HIST-arithmetic-AR-U034",
+      "part": "Classical j-integrality excludes geometric CM"
+    }
+  ],
+  "retained_separate_inputs": [
+    "Elementary invariant computation and rational algebraic integer criterion"
+  ],
+  "scope": "Conditional current inline interface; named inputs remain separate source and construction requirements.",
+  "prior_review": {
+    "path": "work/theorem-application-audit-20261105/parallel-009/sieve-bounds/ACCEPTANCE-REPORT.md",
+    "sha256": "2788baf6db0838c681199d69449a12a1c192be6decae6cb8b5a02f917f56b4bf",
+    "scope": "A065 full order j-integrality and exact E_ell invariant calculation, including repeated RC use."
+  }
+}

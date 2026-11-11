@@ -1,0 +1,13 @@
+# Independent committed controller and binder readback
+
+Reviewer: /root/v14_arithmetic_review. Accepted for the exact local committed installation and unsigned binder successor described here; no remote activation or mathematical gate decision is asserted.
+
+Actual controller commit d135affeb727346e9d36d08d34874bae1e76cc76 is a descendant of baseline268cc244786568f4a63a02ca1108ad81c2763937. Git reports exactly the seven paths specified by accepted rollout002, with no additional committed path changes. Every committed target byte matches the reviewed target SHA and current working file. Unchanged protected config, workflows, requirement lock and Protocol1.4 document match their prior pins. The active configuration was not changed by this commit.
+
+The new v14-controller-preparation-004/MANIFEST.json has SHA e14a0fef30dc54e3f8f0194e8b29ac2d7bc1e61c995d0cfd698c862bf2270e00; RUNTIME-PINS.json has SHA f747bb6be0871a68aa0c4033256e64f2e8282ac790afba3c4419518995c6aae2. All successor members verify. Its50 runtime entries match actual Git blobs at d135affe and the working files. Relative to the exact49-entry predecessor, only coverage_gate.py and both live_protocol_context modules change, with their accepted hashes, and test_source_extensions.py is appended. Every other runtime entry remains byte-identical.
+
+bind.py, templates, tests and all other predecessor members except README and RUNTIME-PINS are byte-identical. The predecessor manifest and README are preserved under history. The new README expressly marks earlier generators/transition records historical, while SOURCE-EXTENSION-TRANSITION.json records the actual old/new commits, three changed runtime paths and added test. No speculative future commit or review identity was substituted.
+
+CHECKS.json records103 successful identity/delta/history checks and zero failures. I independently ran the unchanged successor test_bind.py: six tests passed, exit0. Earlier independent gate and rollout reviews retain their164 gate tests,9 wiring tests and4 live dependency tamper rejections; this readback adds exact committed-version binding rather than repeating their entire test suites.
+
+Root may use this as the bounded installation/readback receipt. Remote push, exact remote source readback, approved-SHA activation and actual workflow observation remain separate. An idle successful controller does not approve the mathematics. The actual final source profile, original and supplemental frozen reconstructions, fresh comparisons, complete author-distinct authenticated reports and final source-transition/CI checks are still required before a substantive gate decision. This review changes no files in the controller or manuscript repositories and makes no assertion about secrets.

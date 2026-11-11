@@ -1,0 +1,378 @@
+{
+  "inputs": [
+    {
+      "path": "v14-dual-exponential-application-001/MANIFEST.json",
+      "sha256": "79d5afc9cd0c3ec6f2a572721f45a518e47edf88548dda5da30eb8dc1c6e600d"
+    },
+    {
+      "path": "v14-cj-actual-caller-data-001/MANIFEST.json",
+      "sha256": "7eb99eec8b6717a6ea5a1a54601ce11583f14f8af791587c00f70fc951e83f1e"
+    },
+    {
+      "path": "v14-dual-exponential-trace-001/REVIEWER-RECONCILIATION-REVIEW.json",
+      "sha256": "52fd84e34ca5b8d3360afbd121e12a82e3d7f07e11c8314a55e2d513e95d3f32"
+    },
+    {
+      "path": "v14-final-composite-review-001/CJ-ACTUAL-CALLER-DATA-REVIEW.json",
+      "sha256": "dc6948952f5679aa242ad99adbcd70702338ef7c01ecfb8aeeb5c7c9403afde5"
+    }
+  ],
+  "new_ids": [
+    "ACTIVE-KATO-DERHAM-BASECHANGE-DUAL-EXP",
+    "ACTIVE-THETA-DUAL-EXPONENTIAL-TRACE",
+    "ACTIVE-CJ-ACTUAL-ROOT-CHARACTERS",
+    "ACTIVE-CJ-ACTUAL-NORM-CHARACTER",
+    "ACTIVE-CJ-ACTUAL-EVALUATION-MAP"
+  ],
+  "coarse_rebase": {
+    "delta": {
+      "use_id": "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT",
+      "use_sha256": "ebf68c68d41a2771679e128ada99bfdc1f451da6eb3a6e785ddb84bed324c48f",
+      "append_consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+            "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+          },
+          "start_line": 79,
+          "end_line": 79,
+          "excerpt_sha256": "e53cae0b507c4904a1ecd8128273ee09196494d417299102bb625ccbf0f5a069"
+        }
+      ],
+      "shared_contract_justification": "The same supersingular coarse points and rational parametrization provide the F_(q^2) domain for each term of this finite sum; this is the same coarse-only descent conclusion, not labelled CM descent."
+    },
+    "before": {
+      "use": {
+        "id": "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT-CONSUMER",
+          "SRC-CJ-IGUSA-167"
+        ],
+        "assertion": {
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+          "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+          "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+          "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+          "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+          "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+          "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+          "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+        },
+        "classification": "dependency",
+        "reason": "Retain the exact independently accepted A052 application. The right module Hom(E0,E), its left endomorphism order and right uniformizer operation use one convention; the ideal quotient and same-place specialization remain separate inputs.",
+        "shared_contract_justification": "These additional source-proof invocations use the same incoming assertion under its retained hypotheses; the source output is not used as its own premise.",
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15061,
+            "end_line": 15068,
+            "excerpt_sha256": "5b40ef5e5ee6f15132391abb73e76dec78dbd1642607566db2a70050fcfe8180"
+          },
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15061,
+          "end_line": 15068,
+          "excerpt_sha256": "5b40ef5e5ee6f15132391abb73e76dec78dbd1642607566db2a70050fcfe8180"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT",
+        "use_sha256": "f3faf4c7d57e64a45b0471932b798e1b19b5e9c3d30fe935bae63d6a9a73d9cc",
+        "supplier_passage_role": "proof",
+        "available_assertion": {
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+          "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+          "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+          "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+          "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+          "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+          "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+          "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+        },
+        "needed_assertion": {
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+          "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+          "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+          "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+          "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+          "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+          "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+          "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+        },
+        "required_capabilities": [
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT"
+        ],
+        "available_capabilities": [
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT"
+        ],
+        "derived_capabilities": [],
+        "connecting_derivation": {
+          "kind": "identification",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15061,
+            "end_line": 15068,
+            "excerpt_sha256": "5b40ef5e5ee6f15132391abb73e76dec78dbd1642607566db2a70050fcfe8180"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+            "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+            "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+            "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+            "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+            "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+            "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+            "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+            "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+            "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15820,
+            "end_line": 15903,
+            "excerpt_sha256": "ba74a8ede205c62f1f93b676d5304e85eb974c52ed9f0c7790b0e7bd409f1582"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+              "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+            },
+            "start_line": 70,
+            "end_line": 70,
+            "excerpt_sha256": "c7caa165da09cfc9fe1cfae80079db2cc47a7961911ac38741bbbecfc4aae6c7"
+          }
+        ]
+      },
+      "state": "author proposal pending independent review",
+      "initial_mapping": [],
+      "retained_input_uses": [],
+      "scope": "Exact current source-to-consumer join with its stated premises; no general CJ theorem or transitive foundational closure.",
+      "origin": "v14-active-connection-collection-014/COMPONENTS.json"
+    },
+    "after": {
+      "use": {
+        "id": "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT-CONSUMER",
+          "SRC-CJ-IGUSA-167",
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT-CJ79"
+        ],
+        "assertion": {
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+          "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+          "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+          "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+          "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+          "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+          "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+          "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+        },
+        "classification": "dependency",
+        "reason": "Retain the exact independently accepted A052 application. The right module Hom(E0,E), its left endomorphism order and right uniformizer operation use one convention; the ideal quotient and same-place specialization remain separate inputs.",
+        "shared_contract_justification": "These additional source-proof invocations use the same incoming assertion under its retained hypotheses; the source output is not used as its own premise. The same supersingular coarse points and rational parametrization provide the F_(q^2) domain for each term of this finite sum; this is the same coarse-only descent conclusion, not labelled CM descent.",
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15061,
+            "end_line": 15068,
+            "excerpt_sha256": "5b40ef5e5ee6f15132391abb73e76dec78dbd1642607566db2a70050fcfe8180"
+          },
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "publication": null
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 15061,
+          "end_line": 15068,
+          "excerpt_sha256": "5b40ef5e5ee6f15132391abb73e76dec78dbd1642607566db2a70050fcfe8180"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT",
+        "use_sha256": "4aa03ed324ea56726ae161cf3a6e78a2ba569d33c36a668cb83e8ea384d1525f",
+        "supplier_passage_role": "proof",
+        "available_assertion": {
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+          "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+          "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+          "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+          "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+          "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+          "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+          "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+        },
+        "needed_assertion": {
+          "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+          "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+          "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+          "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+          "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+          "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+          "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+          "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+          "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+        },
+        "required_capabilities": [
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT"
+        ],
+        "available_capabilities": [
+          "ACTIVE-CJ-SOURCE-A052-COARSE-DESCENT"
+        ],
+        "derived_capabilities": [],
+        "connecting_derivation": {
+          "kind": "identification",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15061,
+            "end_line": 15068,
+            "excerpt_sha256": "5b40ef5e5ee6f15132391abb73e76dec78dbd1642607566db2a70050fcfe8180"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "Every supersingular geometric coarse modular point is F_(q^2)-rational; a parametrization overF_q sends it into E(F_(q^2)), so one lambda_M evaluates all terms.",
+            "objects": "The finite-type coarse scheme X0(N)/F_q, closed-point residue field, Frobenius orbit, rational modular parametrization.",
+            "hypotheses": "Ribet Frobenius is involutive on its geometric supersingular point set; the parametrization extends overF_q by retained good-reduction input.",
+            "quantifiers": "Every supersingular geometric coarse point and every corresponding parametrization value used in the finite character sum.",
+            "parameter_range": "q=ell_0 odd prime; all positive N coprime to q, with arbitrary prime-power exponents including2; choose auxiliary p outside Nq.",
+            "uniformity": "Exact geometric classification and actions; no asymptotic bound or discriminant size condition.",
+            "constants": "No class-number or automorphism quotient factor is inserted; Frobenius has order dividing2 on the coarse set.",
+            "normalizations": "Closed-point degree equals Frobenius orbit length; fixed by square implies degree divides2. This is descent of a coarse scheme point.",
+            "exceptional_cases": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+            "limit_order": "Use geometric classification and involution, deduce residue degree, then apply the F_q morphism and lambda_M."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No descent of all labelled moduli objects, isogenies or embeddings; no scalar-Frobenius elliptic model is concluded or needed.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 15820,
+            "end_line": 15903,
+            "excerpt_sha256": "ba74a8ede205c62f1f93b676d5304e85eb974c52ed9f0c7790b0e7bd409f1582"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+              "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+            },
+            "start_line": 70,
+            "end_line": 70,
+            "excerpt_sha256": "c7caa165da09cfc9fe1cfae80079db2cc47a7961911ac38741bbbecfc4aae6c7"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+              "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+            },
+            "start_line": 79,
+            "end_line": 79,
+            "excerpt_sha256": "e53cae0b507c4904a1ecd8128273ee09196494d417299102bb625ccbf0f5a069"
+          }
+        ]
+      },
+      "state": "author proposal pending independent review",
+      "initial_mapping": [],
+      "retained_input_uses": [],
+      "scope": "Exact current source-to-consumer join with its stated premises; no general CJ theorem or transitive foundational closure.",
+      "origin": "v14-active-connection-collection-014/COMPONENTS.json"
+    },
+    "changes": [
+      ".use.passages",
+      ".use.shared_contract_justification",
+      ".connection.use_sha256",
+      ".connection.consumer_locations"
+    ]
+  },
+  "scope": "Exact accepted additions and additive coarse occurrence transport; final cumulative review pending."
+}

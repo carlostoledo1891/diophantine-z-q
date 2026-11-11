@@ -1,0 +1,5 @@
+# Independent composition review
+
+Root independently reviewed the cached ControllerHTTPS implementation, bounded raw-blob storage, checksum validation, numeric diagnostics, and live-read preservation. Independent Sol acceptance is preserved alongside. Root separately reviewed the empty-jobs branch and its seven tests, then composed it with the cache candidate. The composition changes no active-job path besides the accepted caching and diagnostics; an empty list returns only after the existing owner/private/revision guard. Source serialization was normalized to LF. Final runtime SHA256 is be8dd9c490f1e8f0c03ff8ece6ed95a3b4b9b1f49f2496a3ae8f17b644753759.
+
+The quota probe performs only the existing owner/revision reads, with a read-only workflow token and no App or ledger credentials. Hourly scheduling replaces the initial30-minute interval on the independent quota review recommendation. Manual dispatch remains available. This is not an atomic guarantee against new comments after evaluation.

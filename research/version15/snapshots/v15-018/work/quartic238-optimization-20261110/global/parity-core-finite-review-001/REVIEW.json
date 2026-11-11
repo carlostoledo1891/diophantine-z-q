@@ -1,0 +1,74 @@
+{
+  "schema": "quartic-optimization-finite-review/v1",
+  "reviewer": "/root/v14_final_disjoint_assembly_review",
+  "actual_review_run": "01a1c306-54a5-7ec3-b591-72464f3d2aee",
+  "outcome": "accepted_within_scope",
+  "scope": "Independent exact scalar-core interface, complete IR delta, and formal sum-of-squares verification. The separately reviewed new arithmetic criterion is adopted only for its stated scope.",
+  "independence": "Reviewer did not author the new parity criterion, candidate237 IR, or candidate polynomial. Prior root-coordinate authorship in the inherited parent is disclosed; this review concerns the new scalar-core delta and independently recomputes the full formal expansion.",
+  "subject": {
+    "manifest": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/scalar/parity-core-237-001/MANIFEST.json",
+    "manifest_sha256": "1ddfe4da2fda25a29cf4f3c51cacd659d25400058dcf53395a155863ca62338f",
+    "ir_sha256": "64649e6f06b3d8dc1f592805610f550b9500a7a44d4ed13796af0f83544e3c9b",
+    "polynomial_sha256": "c1f9e8d0b9ac2239ca0a91960a1ebac50c50d7f36fc96b631bd21e7ff00d3109"
+  },
+  "results": {
+    "manifest_sha256": "1ddfe4da2fda25a29cf4f3c51cacd659d25400058dcf53395a155863ca62338f",
+    "ir_sha256": "64649e6f06b3d8dc1f592805610f550b9500a7a44d4ed13796af0f83544e3c9b",
+    "all_manifest_members_pass": true,
+    "unchanged_parent_rows": 209,
+    "changed_parent_rows": [
+      83,
+      88
+    ],
+    "deleted_parent_rows": [
+      82
+    ],
+    "deleted_coordinate": 137,
+    "variables": 237,
+    "quadratics": 211,
+    "degree": 4,
+    "parameter_separated_terms": 3016,
+    "coordinate_monomials": 3015,
+    "primitive_content": 1,
+    "height": "A_N^2+1 for every integer N>=53; coefficient bound only",
+    "highest_parameter_monomial": [
+      "127,127"
+    ],
+    "max_constant_coefficient": "32342558628366490523958090505137577127207666788272010514121214447529782641164116187119030726093150720667902069114633303663819344628711959349317400252596443885527565897256790971300704192409599390436731181452655668356998506023069549107151770397486097251277767085767051395915412347065187780512213046875304646705259362698639998819330718197810416613557658448307987213918746782428494356430635201635285362278400000000000000000000000000000000000000000000000000000000",
+    "max_linear_parameter_coefficient": "44402"
+  },
+  "checks": [
+    "Every manifest member matched its exact size and SHA256.",
+    "The only deleted coordinate is old137; its only consumers are old rows82/83. The only deleted row is old82.",
+    "Old rows83/88 match the advertised new scalar equations exactly after deletion-map renumbering; all other209 parent rows are unchanged.",
+    "All237 coordinates occur. Every residual has integer coefficients and degree at most2. Parameter A_N and the input coordinate retain their meanings.",
+    "Independent BigInt unordered-pair multiplication of all211 residual squares matches every advertised polynomial coefficient and monomial exactly.",
+    "The sum of squares has degree4 and content1, with3015 coordinate monomials and3016 parameter-separated terms. The coefficient envelope is exactly A_N²+1 for N>=53; this was checked symbolically with a bounded endpoint integer comparison.",
+    "The unchanged H-field square rows imply H0²−8H1²=Norm(f(H))², so the inserted expression has the advertised physical meaning.",
+    "The proposed system changes the scalar arithmetic test; no bijection to the old scalar witnesses is asserted. Its accepted soundness and completeness proof is separately pinned."
+  ],
+  "arithmetic_review": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/norm-guards/parity-core-237-review-001/REVIEW.json",
+    "sha256": "7ed8629000d1b21d83fd6dd352f2dfbd644f6c99c0c8dc0c5af3ea4d940ca02a",
+    "scope": "Parity, source-prime hypotheses,149 depth,both height contradictions,zero strata,and complete finite/real choice order."
+  },
+  "own_evidence": [
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/global/parity-core-finite-review-001/check.cjs",
+      "sha256": "861cf75205963bf066989b0d60a1fd559f0e264ccc93e88a3146d2f73b70a825"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/global/parity-core-finite-review-001/RESULTS.json",
+      "sha256": "69d282743a5006c8bc707d1879ea693076694dd0ee5193a0453eff4aebf36c61"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/global/PARITY-CORE-CONSUMER-CHECK.json",
+      "sha256": "22fbcc1d6231297e48822175879f2867693057fb03343dcd889e380e9513dfeb"
+    }
+  ],
+  "limitations": [
+    "The sufficiently-large defining threshold N0 remains ineffective. N>=53 is only a coefficient threshold.",
+    "This does not re-audit inherited arithmetic foundations, certify a concrete N, or modify/release V14 or V15.",
+    "Further sparse coordinate changes need their own exact finite verification."
+  ]
+}

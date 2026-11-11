@@ -1,0 +1,89 @@
+{
+  "schema": "source-role-relationships/v1",
+  "scope": "Two Williams specializations in the retained old41 proof; local Selberg algebra and prime-pattern theorem remain separate.",
+  "source": {
+    "kind": "published_external",
+    "application_id": null,
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/gaussian-external-source-cards-002/SOURCES.md",
+        "sha256": "e03d57e7b99f977de154be384560ad1fc589de7ca8e8629fdcc656c48d1b788b"
+      },
+      "start_line": 25,
+      "end_line": 25,
+      "excerpt_sha256": "2378075591a427d59bbd5c5f321f58817c332ed979b217e0cf9eadc800d3ede2"
+    },
+    "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+    "publication": {
+      "title": "Mertens’ theorem for arithmetic progressions",
+      "authors": "Kenneth S. Williams",
+      "venue": "Journal of Number Theory 6 (1974), 353–359",
+      "authoritative_version": "{\"access\":\"Author-hosted scan of published pages checked; Theorem1 on p.356.\",\"authors\":\"Kenneth S. Williams\",\"byte_verification\":\"docs/quartic-1272/evidence/sun-source-byte-verification.json\",\"file\":\"sources/Williams-published.pdf\",\"id\":\"WILLIAMS\",\"publication\":\"Journal of Number Theory 6 (1974), 353–359\",\"release_availability\":\"Hash-pinned external audit source; full text not redistributed here.\",\"sha256\":\"9e78492d928f8af5654388db11d9d253749fe7c1e1b627effd0f20d1baafc8c0\",\"sourceversion\":\"Published version, 1974\",\"title\":\"Mertens’ theorem for arithmetic progressions\",\"url\":\"https://doi.org/10.1016/0022-314X(74)90032-8\"}",
+      "locator": "Theorem1, p.356; ordinary formula(1.1), p.353",
+      "corrections": "Original source-version qualifications are retained in the accepted source card. Historical application status is not an independent approval of this new current use."
+    }
+  },
+  "source_contract_provenance": {
+    "use_id": "GA-EXTERNAL-V5-SUN-WILLIAMS-MERTENS",
+    "use_sha256": "06d4744f6409438b66a13634843d8b80ab67499c2a1cc01c2344953435ea6456"
+  },
+  "rows": [
+    {
+      "id": "OLD41-MERTENS-DENSITY",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 9497,
+        "end_line": 9510,
+        "excerpt_sha256": "d70603d0458e5749da0ef65acc7cb1eba4e44dbd9d2b83a4ec517096348653c1"
+      },
+      "available": {
+        "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+        "objects": "Primes in a fixed reduced arithmetic progression.",
+        "hypotheses": "The residue and modulus are coprime and fixed.",
+        "quantifiers": "For every source object and parameter choice meeting the explicitly stated hypotheses.",
+        "parameter_range": "The prime cutoff tends to infinity; finitely many fixed primes may be omitted.",
+        "uniformity": "Constants depend on the fixed progression and finite exclusions.",
+        "normalizations": "Mertens products over primes, with the reciprocal-logarithm exponent of the fixed progression.",
+        "exceptional_cases": "Nonreduced residues are not covered by this assertion.",
+        "limit_order": "Fix progression and exclusions before the cutoff tends to infinity.",
+        "constants": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant."
+      },
+      "needed": "For fixed m<=41 and Q>2m, product over Q<q<=L of(1−2m/q) is bounded below by a positive fixed constant times(log L)^(-2m).",
+      "derivation": "Compare log(1−2m/q) with2m log(1−1/q); their difference is O_m(q^-2), whose tail converges. Apply Williams in the unique unit class modulo2; finitely many removed primes affect only a positive Q,m-dependent constant.",
+      "boundary": "The surviving residue density uses the earlier union bound; the asymptotic X threshold may still depend on L."
+    },
+    {
+      "id": "OLD41-MERTENS-TRUNCATION",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 9530,
+        "end_line": 9559,
+        "excerpt_sha256": "c6dbe06d231839ccf3e9099922d21efa3fc2549542977bab0b03e343240f28d0"
+      },
+      "available": {
+        "statement": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant.",
+        "objects": "Primes in a fixed reduced arithmetic progression.",
+        "hypotheses": "The residue and modulus are coprime and fixed.",
+        "quantifiers": "For every source object and parameter choice meeting the explicitly stated hypotheses.",
+        "parameter_range": "The prime cutoff tends to infinity; finitely many fixed primes may be omitted.",
+        "uniformity": "Constants depend on the fixed progression and finite exclusions.",
+        "normalizations": "Mertens products over primes, with the reciprocal-logarithm exponent of the fixed progression.",
+        "exceptional_cases": "Nonreduced residues are not covered by this assertion.",
+        "limit_order": "Fix progression and exclusions before the cutoff tends to infinity.",
+        "constants": "For a fixed arithmetic progression with coprime residue and modulus, the Mertens product has a positive constant and the prescribed reciprocal-logarithm exponent. In particular the two unit classes modulo4 have exponent1/2; removing finitely many fixed primes changes only the positive constant."
+      },
+      "needed": "The two Euler products have respectively growth log z for split primes with rho=2q−1, and(log z)^(m−1) for all primes with rho=(m−1)q; the displayed truncation yields the same lower orders for G(Z).",
+      "derivation": "Expand log(1+h(q)) to first order. Williams modulo4 gives exponent2*(1/2)=1 in the norm sieve; modulo2 gives m−1 in the other sieve. The O(q^-2) errors converge. Use z=Z^(1/512) and the local weighted-log expectation bound to retain at least half the mass belowZ. Omitting one supported q loses at most a factor2 by the displayed h(q) formula and fixed lower cutoff.",
+      "boundary": "Williams supplies the prime product, not the Selberg identity or truncation probability argument; those are explicit local computations. Constants depend on fixedQ,m but not the omitted prime."
+    }
+  ]
+}

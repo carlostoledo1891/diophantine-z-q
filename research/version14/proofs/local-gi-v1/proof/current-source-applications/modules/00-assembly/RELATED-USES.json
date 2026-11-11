@@ -1,0 +1,295 @@
+{
+  "schema": "protocol-v1.4-bounded-related-use-audit/v1",
+  "trigger": "Confirmed GTZ filtration, symbol-domain and linearization failures; later GI2 author notice.",
+  "scope_rule": "Trace the failure mechanism through the exact theorem assembly and named current consumers, including equivalent polynomial/linear and scalar/vector uses. RootLP00 owns broader transitive coverage.",
+  "findings": [
+    {
+      "id": "ASM-F01",
+      "mechanism": "Coordinate order changed without matching the consumed independent variable.",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "p1272 splitting ofJ; actual page image pinned by rootLP00"
+      },
+      "scope": "The two displayed downsets, fixed-h degree claim, independence claim and final CS use on p1272.",
+      "finding": "Printed i/first-coordinate restrictions do not imply independence of h or lower n degree in coordinate order(h,n).",
+      "repair": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/assembly.tex",
+        "sha256": "193809d41aa75046c6190cd8904d7d0c27f61d5b103d888bcda2fdbf7fcf105a",
+        "bytes": 25395,
+        "start_line": 148,
+        "end_line": 267,
+        "excerpt_sha256": "73b17368cfcede88ccb2f65afcf990924bdcf4fe13954c955745eafe51ecc174"
+      },
+      "status": "Local splitting replacement accepted in assembly001; the exact proof section is unchanged in this successor.",
+      "history": "Earlier correction search not complete; no novelty claim.",
+      "current_repair": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+        "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489",
+        "bytes": 36521,
+        "start_line": 321,
+        "end_line": 440,
+        "excerpt_sha256": "dfd30a7f923c6c30613c16ba5d12b0e7e4bdd2927e42fe8a293ce52995b1099c"
+      },
+      "independent_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-F02",
+      "mechanism": "Lie-kernel intersection does not alone establish point separation modulo a lattice.",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "E.4 p1352"
+      },
+      "scope": "Actual J=A union B splitting and universal cover/lattice lift.",
+      "finding": "The application requires the lattice intersection as well as disjoint Lie ideals; no counterexample to the free Hall construction is asserted.",
+      "repair": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/assembly.tex",
+        "sha256": "193809d41aa75046c6190cd8904d7d0c27f61d5b103d888bcda2fdbf7fcf105a",
+        "bytes": 25395,
+        "start_line": 148,
+        "end_line": 267,
+        "excerpt_sha256": "73b17368cfcede88ccb2f65afcf990924bdcf4fe13954c955745eafe51ecc174"
+      },
+      "status": "Local splitting replacement accepted in assembly001; the exact proof section is unchanged in this successor.",
+      "current_repair": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+        "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489",
+        "bytes": 36521,
+        "start_line": 321,
+        "end_line": 440,
+        "excerpt_sha256": "dfd30a7f923c6c30613c16ba5d12b0e7e4bdd2927e42fe8a293ce52995b1099c"
+      },
+      "independent_decision": {
+        "path": "work/quartic-v14-prep/final-source-gtz/independent-sol-review/GI-ASSEMBLY-REVIEW-002.md",
+        "sha256": "395b2000d784a88b5ae5cfd0fe62a22c3c5c8068defcb2c61d1989d44b086727",
+        "bytes": 5326
+      }
+    },
+    {
+      "id": "ASM-F03",
+      "mechanism": "Full polynomial suspension can exceed the original step.",
+      "scope": "PublishedC2 p1341, Conj4.5->1.2, converse polynomial-to-linear and currentGI20/GI39/proposedGI uses.",
+      "finding_record": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/appendix-c-obstruction-001/MANIFEST.json",
+        "sha256": "637440d747538e166c2e41ecf14d44e8233c33edeed14fb169609eec2bb4aa80",
+        "bytes": 1716
+      },
+      "repair": {
+        "id": "GTZ-LP-INCREMENT-LINEARIZATION",
+        "manifest": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/linearization-001/MANIFEST.json",
+          "sha256": "a84c82576e4045ebbc0ecdc882879435bb2bc6dad679dd3420b3faf13235925e",
+          "bytes": 3451
+        },
+        "proof": {
+          "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/14-gtz-lp-increment-linearization/proof.tex",
+          "sha256": "9e4e070160785bc951d1827a80a7cf285129d1e7d2551d066f3c6aff0a60f437",
+          "bytes": 19732
+        },
+        "independent_decision": {
+          "path": "work/quartic-v14-prep/independent-source-review/GTZ-LINEARIZATION-DISPOSITION-001.md",
+          "sha256": "7654d40492ec0dc8dc3e140d3be915ebee612b14ac6782f9db44b663a6a01e07",
+          "bytes": 9955
+        },
+        "scope": "accepted for exact sequence/finite-family same-step join, not every old C.2 clause"
+      },
+      "status": "local exact sequence repair accepted; original obstruction retained; fullGI stillopen"
+    },
+    {
+      "id": "ASM-F04",
+      "mechanism": "Quadratic extension from subgroup fails in general.",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/GT-U3-author-notice.html",
+        "sha256": "5016021cbd9d09452d792a5ced25f2c71298e2f6077f2f8dbd43503f3f200dd3",
+        "bytes": 42845
+      },
+      "public_url": "https://arxiv.org/abs/math/0503014",
+      "publisher_source": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/GT-U3-final.pdf",
+        "sha256": "528e87ff045b74d6dd45006c612e8c755a7ae67fb05c62f8fe370ca650345ede",
+        "bytes": 727553,
+        "locator": "Proposition3.2 p88; Lemma10.7 pp122-123; actualProp10.10 pp123-124"
+      },
+      "scope": "The proper finite progression with H={0} needed by the cyclic GI2 base; the current construction bypasses the affected skew-iterate route.",
+      "repair": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/BASE-AND-CONVERSE.tex",
+        "sha256": "8727f61c18b561959a48c31f323012594c80a715aa9741496601bd1e0ac6136a",
+        "bytes": 9768,
+        "start_line": 22,
+        "end_line": 87,
+        "excerpt_sha256": "8dff780fc4f9883fce997267f6cdc7ff1b50ae417a787e207dfc4256d4ce761d"
+      },
+      "status": "The local H={0} specialization is accepted in gi-base002, relative to its retained forward published inputs. Earlier assembly base remains historical.",
+      "numbering": "Notice uses preprint10.6/10.8; final publisher has10.7/10.10. No blind number transfer.",
+      "current_repair": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937
+      }
+    },
+    {
+      "id": "ASM-F05",
+      "mechanism": "A disconnected elementary orbit is not automatically a connected simply connected nilmanifold.",
+      "scope": "PublishedU3Example12.3 and Theorem12.9 to polynomialGI2.",
+      "repair": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/BASE-AND-CONVERSE.tex",
+        "sha256": "8727f61c18b561959a48c31f323012594c80a715aa9741496601bd1e0ac6136a",
+        "bytes": 9768,
+        "start_line": 88,
+        "end_line": 149,
+        "excerpt_sha256": "83f5a74bd7d3b35de728b76a3ec819cc4de67e8b3512f275781ce3c7ad7d0fc3"
+      },
+      "status": "Superseded base route; gi-base002 directly constructs connected polynomial models and bypasses disconnected skew iterates."
+    },
+    {
+      "id": "ASM-F06",
+      "mechanism": "A source-qualification sentence overstates a conditional premise match.",
+      "source": {
+        "path": "work/quartic-v14-prep/final-source-dk/replacement-packet/APPLICATION-CONTRACTS.json",
+        "sha256": "51f8694104929523a574fbfa69da5c0cd1c1be8ef893426493789fd83beadb4c",
+        "bytes": 47390
+      },
+      "exact_old_text": "Only source qualification and bounded premise are discharged here",
+      "replacement_meaning": "Only the conditional interface matching is established here; corrected GI proof and source qualification remain open.",
+      "scope": "V14-GAU-GTZ-GI downstream_consumption justification and repeated premise-status reporting.",
+      "status": "frozen old packet preserved; correction required in next DK successor, notified root and05"
+    },
+    {
+      "id": "ASM-F07",
+      "mechanism": "Component acceptance or a bibliography update is mistaken for whole theorem acceptance.",
+      "scope": "All component decisions, currentGI20/GI39 paragraphs, source table, bibliography and uninstalledGaussian candidate.",
+      "current_repetitions": [
+        "CURRENT-GI20",
+        "CURRENT-GI39",
+        "CURRENT-SUMMARY",
+        "CURRENT-BIBLIOGRAPHY",
+        "PROPOSED-GAUSSIAN-GI"
+      ],
+      "status": "all recorded as conditional/open until assembled chain accepted; no release source edits"
+    },
+    {
+      "id": "ASM-F08",
+      "mechanism": "Scalar components of a unit vector or merely standard-point identities are used as stronger data.",
+      "scope": "Initial unit-vector selection, LP02/03 component recovery, local13.2, finalSection12 constructor and Section13Symmetry.",
+      "repair": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/assembly.tex",
+        "sha256": "193809d41aa75046c6190cd8904d7d0c27f61d5b103d888bcda2fdbf7fcf105a",
+        "bytes": 25395,
+        "start_line": 268,
+        "end_line": 337,
+        "excerpt_sha256": "9acc1e451947a611f7d00c8f12b2a011baf30cbf546cb671ef3ccdfa00d052ba"
+      },
+      "status": "initial selection supplies exact all-limit unit-vector identities; downstream constructors retain their own pending or accepted scopes"
+    }
+  ],
+  "exclusions": [
+    "No claim of complete audit of Sections9-11, external equidistribution or every use of inverse theorems in the full archived corpus.",
+    "No claim that every printed GI2 numerical constant is correct; only the finite threshold-dependent strength is consumed.",
+    "No modification of any frozen predecessor or release source."
+  ],
+  "successor_source_records": [
+    {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/rank-iteration-001/RELATED-USES.json",
+      "sha256": "ec1f20b92ca7566355b783cd88dfdc155306879ef9b4992c76b78e915f1ee17d",
+      "bytes": 2090
+    },
+    {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/RELATED-USES.json",
+      "sha256": "5ada0b77fc4f943187a8ed9acb4fe27a7d090f47535230d85a37be9e8e4e2a51",
+      "bytes": 4835
+    },
+    {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/converse-001/RELATED-USES.json",
+      "sha256": "4728af121f76522f7768a90c39b04961209cd5c27e2b86ffa60fa5cdfe482a2c",
+      "bytes": 2472
+    }
+  ],
+  "new_open_scope": [
+    {
+      "id": "GI-IN-SECTION9-11",
+      "needed": "For every rank-family input in rank-iteration001 Section3, reconstruct the universal representation, actual core/linear/independent decomposition and both real-valued annihilations of11.1.",
+      "not_available_for_free": "The next family has unit norm and uniform rational geometry, but inherits no frequency decomposition or independence.",
+      "status": "Conditionally accepted in frozen Gaussian Sections9-11 and Sol review. This successor binds the exact fresh-family interface; analytic suppliers remain explicit.",
+      "component": "GI-SECTION9-11"
+    },
+    {
+      "id": "GI-IN-D4-D6-F",
+      "needed": "One-variable factorization/equidistribution, the exact subgroup/character conclusions used by11.1, and the finite additive-combinatorial/bracket-linear suppliers of10.10.",
+      "not_available_for_free": "A named published conclusion or a geometric quotient proof does not supply the actual quantifiers, denominator conventions and consumers.",
+      "status": "DF002 remainder and periodicity have separate decisions; previously open proof-level affine transfer is now supplied by accepted MF-AFFINE and ASM-J07. Retained final published source scope remains explicit.",
+      "component": "GI-DF"
+    },
+    {
+      "id": "GI-IN-AFFINE-OFFSET",
+      "needed": "Transfer positive-degree binomial coefficient estimates from a dense progression to the ambient interval when its step is bounded but its offset is O(N). A fixed denominator must clear integer contributions, and an input residual O(N^-j) multiplied by O(N^(j-i)) must give O(N^-i) for each positive output degree i.",
+      "not_available_for_free": "The inverse-affine substitution can have unbounded coefficients because of the offset. Bounded progression step alone does not make all coefficients bounded. The right-coset periodicity repair is a different argument.",
+      "consumers": [
+        "DF002 one-variable Proposition9.2 application",
+        "Gaussian Sections9-11 analytic contract D"
+      ],
+      "status": "Supplied by frozen multifactor001 with both required independent decisions and exact affected applications. This successor explicitly binds the supplier; current composition review remains pending.",
+      "component": "GI-MULTIFACTOR"
+    },
+    {
+      "id": "GI-IN-D5-E11-E13",
+      "needed": "Multivariable global g=epsilon p gamma on the equal-scale box; epsilon coefficients O(N^-|a|); one standard discrete overgroup for periodic gamma; the same p totally equidistributed on every dense product and finite-index cover; rational conjugate residue-class factors and all-box lower-degree reconstruction.",
+      "not_available_for_free": "The printed deletion of gamma Taylor coefficients is not used; one-variableD4 is insufficient.",
+      "consumers": [
+        "Section13 E11",
+        "Section13 E13"
+      ],
+      "status": "Supplied by frozen multifactor001 with both required independent decisions and exact affected applications. This successor explicitly binds the supplier; current composition review remains pending.",
+      "component": "GI-MULTIFACTOR"
+    },
+    {
+      "id": "GI-IN-PLAIN8.4",
+      "needed": "Plain additive-quadruple bias with exact finite-interval domains and retained lower factor information in the Section13 application.",
+      "not_available_for_free": "LP03 only yields lower-degree bias and cannot replace the stronger plain statement.",
+      "status": "Supplied and independently accepted by plain-quadruples001. Exact scalar selection and signs/shifts are rebound in this successor; incoming uniform selection bounds are preserved.",
+      "component": "GI-PLAIN-QUADRUPLES"
+    },
+    {
+      "id": "GI-IN-BASE-PUBLISHED",
+      "needed": "The retained forward bracket inverse theorem10.11, forward2.7 and Bohr inputs in gi-base002, after the local H={0} specialization replaces the failed extension use.",
+      "status": "Scoped source-to-base acceptance exists; broader unchanged-source risk audit remains separate."
+    },
+    {
+      "id": "GI-IN-CONVERSE-CUBE",
+      "needed": "Published11.5 cube constraint and its AppendixE proof on the exact same-step model.",
+      "status": "Retained published input explicitly checked in the independent converse001 decision. The local converse application is accepted within its fixed-geometry and uniform-test scope.",
+      "component": "GI-CONVERSE"
+    },
+    {
+      "id": "GI-IN-COVERAGE",
+      "needed": "Independent bounded affected-dependency reconstruction and repeated-assertion reconciliation across the complete source chain and actual manuscript consumers.",
+      "status": "RootLP00 and source-risk audit remain open; no file-count or component-count completeness inference."
+    }
+  ],
+  "status": "Successor reconciliation; exact-delta independent review pending. Historical records are preserved.",
+  "multifactor_source_records": [
+    {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/FINDINGS-RELATED-USES.json",
+      "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+      "bytes": 3022
+    }
+  ],
+  "successor_boundary": {
+    "consumer": {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+      "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+      "bytes": 22893,
+      "start_line": 298,
+      "end_line": 305,
+      "excerpt_sha256": "53810290f6971dbbefb0852b8d567aa701bff9b1228993dc788eae1e82bf72f3"
+    },
+    "connection": "ASM-J10-SECTION13-CONVERSE",
+    "meaning": "Separate d>=1 converse application from elementary degree-zero/U1 case; no supplier domain enlargement."
+  }
+}

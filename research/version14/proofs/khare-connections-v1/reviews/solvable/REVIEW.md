@@ -1,0 +1,27 @@
+# Independent review of the solvable-image exit
+
+Decision: accepted within the eight application scopes recorded in DECISION.json. No author correction is requested. The exact target is root's author22 manifest ca45a63a2942d4e82b2278740527b5aa0ab2ebd1b28143d784343756cec68c5e and proof 24d89f4fc8e35ec849702886101a5303e326c88648929708109ec035189aad3e.
+
+## Independence and reading
+
+Root authored this strategy and proof. I did not author the Artin-to-higher-weight construction. I independently froze the required caller domain and source reading in solvable-modularity-initial-review-arithmetic-001 before reading this proof. I previously authored a different arbitrary-weight finite-character untwist and an exceptional-p3 ordered-entry argument, using some of the same DS, Li and GV sources. Those arguments are not used to prove this packet. This overlap is disclosed; neither their author approval nor my prior source familiarity replaces the present reading. I also previously reviewed the local normalization proof. No mathematical repair to author22 was supplied by me.
+
+I read the complete frozen proof, all eight application cards, the three caller branches, source records and inputs. The selected actual final sources were read, including MT 643/648 and bibliography, DS 509/512-513/522-523, Li 294, GV 2143-2144 and early KW 229-230. Extra DS page renders in this review substantiate the coefficient-lattice and finite-field comparison interfaces. Raw third-party material remains local-only.
+
+## Mathematical checks
+
+The selected MT input is the inline classical Artin intermediate of Theorem 4, not the refined Katz conclusion. The given residual representation, its chosen residue embedding and the characteristic-zero lift use the same place. Published Fong-Swan and Langlands-Tunnell inputs remain explicit. The article's in-preparation reference and the GRH assertions elsewhere in the paper are not selected suppliers.
+
+The coefficient lattice is legitimate in weight one. DS Proposition 2.7 concerns cusp forms and supplies a finite free Hecke/diamond-stable lattice spanning the characteristic-zero space. Remark 2.8 includes bounded denominators in weight one. The fixed-character space can be intersected with the coefficient lattice; one need not divide by the order of a diamond group when that order is divisible by p. The proof's primitive rescaling has nonzero reduction because division by the uniformizer would otherwise preserve every integral coefficient. A unit first coefficient is not assumed.
+
+For n=2(p-1), DS6.9 applies even at p=3, where n=4. The product with E_n stays cuspidal and has the same nonzero reduction. The good Hecke Fourier formulas differ only in the determinant factor q^n, which is one in the residue field. This checks both the eigenvalue and determinant, including p dividing the level. DS6.11 is used on the fixed-character cusp lattice over a localized number-field DVR, so its finite extension remains algebraic and admits compatible complex and p-adic embeddings. The theorem lifts eigenvalues, not an eigenvector reduction.
+
+The extra T_p step is valid: if p does not divide N, it preserves the already chosen common characteristic-zero eigenspace and has an eigenvector after finite extension. This is also the step explicitly used in DS6.12. Li's good-Hecke old/new decomposition therefore receives its actual required input. It supplies a normalized primitive form at a divisor level with unchanged weight, good packet and inflated character. The proof does not identify an optimal residual level or weight.
+
+GV's general attachment statement is read before its ordinary assumption. It supplies the representation of this actual classical form with arithmetic Frobenius characteristic polynomials. A stable lattice follows from compactness. Equality of characteristic polynomials on the common finite residual quotient follows from finite Chebotarev. Finite-characteristic Brauer-Nesbitt, as used in DS6.13 and stated directly in DS3.2, then identifies the semisimplifications. Absolute irreducibility of r makes the whole residual module simple, so it is the required actual lattice reduction. No characteristic-zero trace-only lemma is applied to residual representations.
+
+## Caller fit and limits
+
+The three actual branches require weak classical residual modularity. The FIRST branch permits ramification at the old prime P and includes ell=3; no level-one nonexistence assertion is substituted there. Construction14 and caller13 continue to supply the separate properties of the actual characteristic-zero first member. The RETURN solvable branch obtains weak modularity, with its local weight computation, any optimal realization and the nonsolvable lower-weight induction left separate. The original solvable branch has the same odd-prime domain. The proof supplies no arbitrary characteristic-zero lift modularity and no missing local ordinary ordering.
+
+The initial Katz/Herremans exploration is preserved but not selected. This decision does not establish that arbitrary Katz weight-one forms lift. It does not reprove the published ancestors of the immediate source statements, approve all of MT or DS, close a complete Serre induction, adopt a current ordinary register, edit the manuscript, or authorize a release. The earlier source-first requirements remain immutable history. The eight exact accepted connections and retained boundaries are the extent of this decision.

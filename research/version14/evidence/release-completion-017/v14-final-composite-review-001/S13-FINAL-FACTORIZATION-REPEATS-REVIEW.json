@@ -1,0 +1,39 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:39:56.094Z",
+  "target_manifest": {
+    "path": "v14-gi-s13-final-factorization-locations-001/MANIFEST.json",
+    "sha256": "722f10c7bb5843c5b6aa24f9ae889d91e23353438385494c98b80b97b9c111c8"
+  },
+  "decision": "accepted three repeated final-factorization applications",
+  "checks": [
+    {
+      "id": "ACTIVE-GI-LP05-TO-S13",
+      "base": true,
+      "pin": true,
+      "excerpt": true
+    },
+    {
+      "id": "ACTIVE-GI-LP13-MULTILINEARITY-TO-S13",
+      "base": true,
+      "pin": true,
+      "excerpt": true
+    },
+    {
+      "id": "ACTIVE-GI-EXT-S13-SYMBOL-LAW",
+      "base": true,
+      "pin": true,
+      "excerpt": true
+    }
+  ],
+  "findings": [
+    "Read S13 lines355–409. The separate torsion-free symmetric-box argument precedes rectangle restriction and the single-h identity; multilinearity does not supply symmetry.",
+    "LP05 supplies the same actual cube representative and block coarsening. LP13 expands fixed integer slot substitutions; terms with at least two h slots retain the distinguished first slot.",
+    "The tensor quotient W has a lower-degree representation only on the stated rectangle; the extension is a representation of that restricted nilsequence, not an unproved global equality.",
+    "Fixed finite contractions of unit vectors recover every component. No scalar coordinate is divided out."
+  ],
+  "limits": [
+    "Existing source contracts and prerequisites remain unchanged, including strong global representations and earlier symmetry/shift/selection inputs.",
+    "This is location normalization, not whole GI source coverage."
+  ]
+}

@@ -1,0 +1,91 @@
+\paragraph{An operator construction of the common double cover.}
+Here is a direct justification that the same lifts may be used in
+the comparison. It also fixes the signs of the diagonal operators.
+Work over $k=\mathbb Q_p$, including $p=2$, or $k=\mathbb R$,
+with the additive character just specified. For a nondegenerate
+ternary $Q$ write $\gamma_Q=\gamma(Q)$ and define
+\[
+ \begin{split}
+ U_Q(b)\phi(x)&=\mathbf e_k(bQ(x))\phi(x),\\
+ D(a)\phi(x)&=|a|_k^{3/2}\phi(ax),\\
+ W_Q&=\gamma_Q\mathcal F_Q,\qquad
+ M_Q(a)=r_Q(a)D(a),\qquad
+ r_Q(a)=\frac{\gamma(aQ)}{\gamma(Q)}.
+ \end{split}
+\]
+The Weyl matrix in this convention is
+$w=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$.
+The opposite Fourier-sign convention changes both compared
+representations together.
+
+The Fourier formula of \cite[I.14, Theorem~2]{weil}, or its
+completion-of-the-square calculation, says for $b\ne0$ that
+\[
+ \int_{k^3}
+ \mathbf e_k\bigl(bQ(z)+B_Q(z,v)\bigr)\,dz_Q
+   =|b|_k^{-3/2}\gamma(bQ)\mathbf e_k(-b^{-1}Q(v)).
+\]
+The integral has the oscillatory meaning of that theorem.
+Applying it to a Schwartz function gives the operator identity
+\[
+ \mathcal F_Q U_Q(b)\mathcal F_Q
+ =\gamma(bQ)U_Q(-b^{-1})D(b^{-1})
+                   \mathcal F_Q^{-1}U_Q(-b^{-1}).
+\]
+Thus no choice of an individual square root of a Gauss sum is
+needed. The index identities proved above also give
+\[
+ \gamma(Q)^2=(\det Q,-1)_k\gamma(1)^6,
+ \qquad \gamma(1)^4=(-1,-1)_k,
+ \qquad r_Q(a)r_Q(b)=(a,b)_k r_Q(ab).
+\]
+For the middle equality apply the quaternion-norm formula to
+$\langle1,1,1,1\rangle$; the first follows by applying the same
+formula to $\langle1,-a_i,1,-a_i\rangle$ for each diagonal
+entry $a_i$ of $Q$.
+
+Consequently the displayed operators satisfy
+\[
+ \begin{gathered}
+ U_Q(b)U_Q(c)=U_Q(b+c),\qquad
+ M_Q(a)U_Q(b)M_Q(a)^{-1}=U_Q(a^2b),\\
+ M_Q(a)M_Q(b)=(a,b)_kM_Q(ab),\qquad
+ W_QM_Q(a)W_Q^{-1}=M_Q(a^{-1}),\\
+ W_Q^2=(-1,-1)_kM_Q(-1),\\
+ W_QU_Q(b)W_Q
+ =(-b,-1)_kU_Q(-b^{-1})M_Q(-b^{-1})W_QU_Q(-b^{-1})
+ \quad(b\ne0).
+ \end{gathered}
+\]
+For the last equality, the preceding Fourier identity leaves
+the scalar $\gamma(Q)^2\gamma(bQ)^2$; the index-square formula
+reduces it to $(-b,-1)_k$. Every scalar in these relations is
+independent of the ternary form. Interpreting a scalar $-1$ as
+the central element $\varepsilon$ gives one common double
+cover of $\operatorname{SL}_2(k)$. Indeed these relations reduce
+every word to one of
+$\varepsilon^eU(x)M(a)$ or
+$\varepsilon^eU(x)M(a)WU(y)$, with $e\in\{0,1\}$.
+The ordinary Bruhat decomposition makes their projections
+unique, apart from $\varepsilon^e$; the operators send
+$\varepsilon$ to $-\operatorname{id}$, so the central kernel
+has exactly two elements. This realizes the rank-three pullback
+of Weil's metaplectic operators, rather than assuming a section
+over the diagonal units.
+
+For $Q_0=\langle1,1,1\rangle$ these operators are the tensor
+products of the three ordinary one-dimensional theta operators.
+For either $Q$ or $Q_0$, changing a lift multiplies its operator
+by the same $-1$. Hence the quotient of their eigenvalues is
+independent of the lift. At two the relation
+$M_Q(-1)^2=(-1,-1)_2\operatorname{id}=-\operatorname{id}$
+explicitly retains the order-four lift of $-I$.
+
+On a unit $a$ the quotient of the two diagonal index factors is
+\[
+ \frac{r_Q(a)}{r_{Q_0}(a)}=(a,\det Q)_k.
+\]
+Together with $f_p(ax)=\alpha_p(a)f_p(x)$, this is exactly
+the eigenvalue quotient $\alpha_p(a)(a,\det Q)_p$ used below.
+There is no remaining eighth-root factor at two.
+

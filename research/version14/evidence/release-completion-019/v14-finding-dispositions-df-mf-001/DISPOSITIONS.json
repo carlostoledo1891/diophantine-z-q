@@ -1,0 +1,668 @@
+{
+  "state": "proposed dispositions for independent review",
+  "authorship_disclosure": "Mapper authored later normalization/selection and Gaussian pipeline edges, not these underlying DF/MF/S9 proofs or cited historical reviews. No self-acceptance of earlier mapping is requested.",
+  "rows": [
+    {
+      "finding_id": "DF-F01",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/0"
+      },
+      "original_object": {
+        "id": "DF-F01",
+        "source": "GTZ D2 p1343",
+        "issue": "Single-scale equidistribution need not imply total equidistribution or absence of a 1/N-Lipschitz horizontal character.",
+        "proposed_action": "g(n)=n/N onR/Z; full Fourier meanzero, half mean2i/pi. One-variable repair uses actualGT12Prop9.2, notfalseequivalence.",
+        "status": "Local replacement proposed; independent review pending."
+      },
+      "proposed_status": "repaired",
+      "reason": "Uses actual failed total distribution on a dense progression, not the false single-scale equivalence. The large-offset transition is supplied separately by MF-AFFINE.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 113,
+          "end_line": 144,
+          "excerpt_sha256": "b17838c96ea5fae2600f2b801e42bfbc0a478c0db7063d8124673afb8834df2b",
+          "excerpt": "Failed total equidistribution supplies an internal dense progression and a\r\nstandard Lipschitz test with noninfinitesimal discrepancy. Thus for some\r\nstandard $0<\\delta<1/2$ it fails total $\\delta$-equidistribution in the\r\nquantitative convention of [GT12]. Reduce $\\delta$ further to include the\r\nrationality constant of the fixed Mal'cev basis. Apply the one-variable case\r\nof [GT12, Proposition 9.2, pp.522--523] with this $\\delta$, the actual degree\r\nof $G_\\bullet$, and the actual dimension of $G$. Its bounds are standard.\r\nThe same argument works for an internal Lipschitz test with a standard norm\r\nbound: a finite uniform net in the standard Lipschitz ball first supplies a\r\nstandard test with positive discrepancy. This uses compactness of $G/\\Gamma$.\r\n\r\nHere are the stronger bounds extracted from that source's construction,\r\nincluding the distinctions needed for later use. Write $g(0)=c\\lambda$\r\nwith $c$ in a fixed bounded fundamental set and $\\lambda\\in{}^*\\Gamma$.\r\nThen $\\widetilde g=c^{-1}g\\lambda^{-1}$ has value $1$ at zero. Left\r\ntranslation by bounded $c$ changes a Lipschitz norm by a standard factor,\r\nand right multiplication by $\\lambda^{-1}$ changes no point of $G/\\Gamma$.\r\nThus the same failed-total-equidistribution argument applies to\r\n$\\widetilde g$, with a possibly smaller standard $\\delta$.\r\n\r\nThe source's horizontal-character step gives a nonzero standard integer\r\nvector $k$ with\r\n\\[\r\n \\psi(\\widetilde g(n))=\\sum_{r\\geq1}t_r\\binom n r,\r\n \\qquad \\|k\\cdot t_r\\|_\\T=O(N^{-r}).                         \\tag{D1}\r\n\\]\r\nHere $k\\cdot\\psi$ is the real lift of the horizontal homomorphism; in\r\nparticular it kills all commutators. Standardness of $k$ follows because the\r\nquantitative bound leaves finitely many integer vectors. The source obtains\r\n(D1) by applying its Theorem 2.9 to the witnessing progression and undoing\r\nthat progression by its Lemma 8.4. This use does not assert the false\r\nsingle-scale equivalence described above.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/DF-REVIEW-002.md",
+          "sha256": "ea44509fc31d1a9ef7a1472a1b90df4ae2e16a07d7af0fe7714dc12cc87a2d64"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F02",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/1"
+      },
+      "original_object": {
+        "id": "DF-F02",
+        "source": "GTZ D3/D4 pp1344\u20131345",
+        "issue": "Rational subgroup lattice must be cocompact in subgroup, not ambientG; D4 properness is false in general.",
+        "proposed_action": "State connectedP, PintersectionGamma cocompactinP; allowP=G/trivial.",
+        "status": "Local statement correction proposed."
+      },
+      "proposed_status": "repaired",
+      "reason": "Least-dimensional representing subgroup may equal G or be trivial. Rationality and lattice are relative to P, not cocompactness of P in ambient G.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 262,
+          "end_line": 316,
+          "excerpt_sha256": "271456c432fe73a1ac2ae362986faebe1c6e9cfd4b73e504531b042838cbfa7f",
+          "excerpt": "\\section{Minimal subgroup descent, with all finite covers retained}\r\n\\begin{proof}[Proof of Theorem~\\ref{thm:D}]\r\nFirst address the filtration convention. If $G_1$ is proper, write\r\n$g(0)=c\\lambda$ as above and set $p=c^{-1}g\\lambda^{-1}$.\r\nThen $p(0)=1$ and\r\n\\[\r\n p(n)=\\lambda\\bigl(g(0)^{-1}g(n)\\bigr)\\lambda^{-1}\\in G_1.\r\n\\]\r\nThe groups $G_r$ are normal in $G_0$, so conjugation preserves them.\r\nThe induced filtration on $G_1$ has zeroth and first group both $G_1$,\r\nand the positive groups remain $G_r$. Hence the one-variable result with\r\nthe convention $G_0=G_1$ applies there. This also shows directly that a\r\ncontrolled representation exists: $\\epsilon=c$, $\\gamma=\\lambda$,\r\nand the represented subgroup is $G_1$. If $G_1=G$, the identity-factor\r\nrepresentation is already enough. Trivial groups cause no exception.\r\n\r\nCall a subgroup $P$ a representing subgroup if a factorization with all\r\nconclusions of Theorem~\\ref{thm:D} except total equidistribution exists.\r\nChoose one with least dimension among the nonempty collection of standard\r\nrational representing subgroups. This uses a least element of the finite\r\nset $\\{0,\\ldots,\\dim G\\}$, not an infinite iteration or a uniform choice\r\nover all finite covers.\r\n\r\nSuppose that for a standard finite-index $\\Delta\\leq P\\cap\\Gamma$ the\r\norbit $p\\Delta$ is not totally equidistributed. The induced filtration of\r\n$P$ is rational for $\\Delta$, since passing to a finite-index lattice\r\ndoes not change its rational Lie algebra. If $P\\cap G_1$ is proper in $P$,\r\nthe normalization just given already represents $p$ in that proper subgroup,\r\nwith a bounded constant on the left and a $\\Delta$-element on the right.\r\nOtherwise apply Lemma~\\ref{lem:weak} in $P/\\Delta$ to obtain\r\n\\[\r\n                 p=\\epsilon_2p_2\\gamma_2\r\n\\]\r\nwith $p_2$ in a standard proper rational $P_2<P$.\r\nRationality relative to $\\Delta$ is rationality relative to $P\\cap\\Gamma$,\r\nso $P_2$ is rational in $G$. The actual new factorization is\r\n\\[\r\n                 g=(\\epsilon\\epsilon_2)p_2(\\gamma_2\\gamma).    \\tag{D3}\r\n\\]\r\nThe order of both products is necessary in a noncommutative group.\r\nLemma~\\ref{lem:closure} proves the small-coefficient assertions for the left\r\nproduct, in the ambient coordinates. For the right product, the rational\r\nlattice coordinates of $\\gamma_2$ relative to $\\Delta$ have common standard\r\ndenominators in the original rational structure. The same lemma supplies a\r\nsingle discrete overgroup containing its values, the old overgroup, and\r\n$\\Gamma$. It also supplies the standard period modulo $\\Gamma$.\r\nThus (D3) is a representation by the lower-dimensional subgroup $P_2$,\r\ncontrary to minimality.\r\n\r\nNo choice of $\\Delta$ was imposed in that minimality argument. Consequently\r\nthe chosen $p$ is totally equidistributed for every standard finite-index\r\n$\\Delta\\leq P\\cap\\Gamma$, with the same factors. This is the required\r\nquantifier order. The argument only produces standard constants for this\r\nparticular internal orbit and fixed standard geometry. It does not assert\r\na prescribed effective bound uniform over all internal orbits.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/DF-REVIEW-002.md",
+          "sha256": "ea44509fc31d1a9ef7a1472a1b90df4ae2e16a07d7af0fe7714dc12cc87a2d64"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F03",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/2"
+      },
+      "original_object": {
+        "id": "DF-F03",
+        "source": "GT12 Section10 p525 and GTZ D4 p1345",
+        "issue": "Noncommutative iteration must useepsilon epsilon2 andgamma2 gamma; common discrete overgroup requiresproof.",
+        "proposed_action": "EquationD3 and Lemma4 constructthe weightedBCHlattice andperiod.",
+        "status": "Local repair proposed."
+      },
+      "proposed_status": "repaired",
+      "reason": "Weighted BCH lattice supplies the common discrete overgroup; ordered factors are epsilon epsilon2 and gamma2 gamma.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 218,
+          "end_line": 238,
+          "excerpt_sha256": "9e27b87c63a623e73213a3c64311f3b89720c1415f41c93a41d8686465f34871",
+          "excerpt": "For the discrete-overgroup assertion, use a rational basis adapted to the\r\nlower central series and let its weights be $w_i\\geq1$. All points of each\r\ngiven lattice have logarithmic coordinates with bounded denominators, as do\r\nthe specified coordinate sets, by the fixed polynomial coordinate changes.\r\nChoose a standard integer $D$ divisible by these denominators and by the\r\ndenominators of all coefficients in the finite BCH formula in this basis.\r\nIncrease $D$ for the finitely many basis conversions if necessary. The set\r\n\\[\r\n L=\\sum_i D^{-(2w_i-1)}\\Z X_i\r\n\\]\r\nis closed under BCH. For a nonlinear term with $t\\geq2$ inputs of weights\r\n$w_{i_1},\\ldots,w_{i_t}$ contributing to output weight $w_k$, one has\r\n$w_k\\geq\\sum w_{i_a}$. Therefore the difference of denominator exponents is\r\n\\[\r\n (2w_k-1)-\\sum_a(2w_{i_a}-1)\\geq t-1\\geq1.\r\n\\]\r\nThe extra power of $D$ clears that BCH coefficient. Linear terms and negation\r\nalso preserve $L$. Thus $\\exp L$ is a standard discrete subgroup containing\r\nall the required points and $\\Gamma$. It is cocompact, and\r\n$[\\exp L:\\Gamma]$ is finite. This argument also proves commensurability\r\nclaims needed when a lattice of a rational subgroup is enlarged inside $G$.\r\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 285,
+          "end_line": 307,
+          "excerpt_sha256": "ee621ff264f3a83add0b0d2d10bef724c0895ee873414a6d3604a01009f7f01d",
+          "excerpt": "Suppose that for a standard finite-index $\\Delta\\leq P\\cap\\Gamma$ the\r\norbit $p\\Delta$ is not totally equidistributed. The induced filtration of\r\n$P$ is rational for $\\Delta$, since passing to a finite-index lattice\r\ndoes not change its rational Lie algebra. If $P\\cap G_1$ is proper in $P$,\r\nthe normalization just given already represents $p$ in that proper subgroup,\r\nwith a bounded constant on the left and a $\\Delta$-element on the right.\r\nOtherwise apply Lemma~\\ref{lem:weak} in $P/\\Delta$ to obtain\r\n\\[\r\n                 p=\\epsilon_2p_2\\gamma_2\r\n\\]\r\nwith $p_2$ in a standard proper rational $P_2<P$.\r\nRationality relative to $\\Delta$ is rationality relative to $P\\cap\\Gamma$,\r\nso $P_2$ is rational in $G$. The actual new factorization is\r\n\\[\r\n                 g=(\\epsilon\\epsilon_2)p_2(\\gamma_2\\gamma).    \\tag{D3}\r\n\\]\r\nThe order of both products is necessary in a noncommutative group.\r\nLemma~\\ref{lem:closure} proves the small-coefficient assertions for the left\r\nproduct, in the ambient coordinates. For the right product, the rational\r\nlattice coordinates of $\\gamma_2$ relative to $\\Delta$ have common standard\r\ndenominators in the original rational structure. The same lemma supplies a\r\nsingle discrete overgroup containing its values, the old overgroup, and\r\n$\\Gamma$. It also supplies the standard period modulo $\\Gamma$.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/DF-REVIEW-002.md",
+          "sha256": "ea44509fc31d1a9ef7a1472a1b90df4ae2e16a07d7af0fe7714dc12cc87a2d64"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F04",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/3"
+      },
+      "original_object": {
+        "id": "DF-F04",
+        "source": "GTZ D5 p1346",
+        "issue": "Gamma periodic moduloGamma and discrete-overgroup-valued does not meanGamma-valued; deleting its Taylorcoefficient isfalse.",
+        "proposed_action": "Gaussian ownsstandard-denominator character correction. E11/E13do notneedthefalseTaylorclaim butstillneedtheir actualmultivariablefactorization.",
+        "status": "Open applicationjoin; notclosedhere."
+      },
+      "proposed_status": "repaired",
+      "reason": "The false rational-Taylor deletion stays rejected. Actual one-variable horizontal application clears its standard denominator; multivariable reconstruction retains residue representatives on one common cover.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a",
+          "start_line": 371,
+          "end_line": 387,
+          "excerpt_sha256": "6536ee9698316b4ec1fb665390ea40d13821906c771ed57f61e63ed12a451f54",
+          "excerpt": "We claim $\\pi_i(P\\cap G_i)\\supseteq\\Xi_i^\\perp$. Let $\\lambda$ be an\ninteger character annihilating the rational space $\\pi_i(P\\cap G_i)$.\nThen $\\lambda(\\Tay_i(g_P))=0$. Conjugation changes no horizontal\ncoefficient since $[G,G_i]\\subseteq G_{(i,2)}$. Hence the horizontal\nhomomorphism identity gives\n\\[\n \\lambda(\\Tay_i(g))=\n \\lambda(\\Tay_i(\\varepsilon))+\n \\lambda(\\Tay_i(\\gamma)) \\pmod1.\n\\]\nThe first term is $O(N^{-i})$. The second is rational of bounded standard\ndenominator: derivatives of $\\gamma$ lie in $\\widehat\\Gamma\\cap G_i$, whose\nhorizontal image is a finite-index over-lattice of that of $\\Gamma\\cap G_i$.\nThus for some standard positive $q$, $q\\lambda\\in\\Xi_i$. Every annihilator\nof the rational image has this property. Taking real annihilators proves the\nclaim. In particular no false assertion that $\\gamma$ takes values in\n$\\Gamma$ or has zero horizontal coefficient is needed.\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 278,
+          "end_line": 302,
+          "excerpt_sha256": "9be689e999ac059c32edfabefc3cb31e84c35bf6279b482973fb4739a847d0fe",
+          "excerpt": "\\section{One quotient for all periodic residue classes}\nWe now work in a taut ambient degree-$d$ group $G$, so $G_d$ is central.\nTautification-003, Theorem 1, supplies this exact representation for each\nnilsequence used below with the same positive-degree groups and the same\nstandard vertical character. Products of these representations remain taut.\n\nApply Theorem~\\ref{thm:factor}, and choose a standard representative\n$\\lambda_\\rho\\in\\Lambda$ for each value of the right coset of $\\gamma(n)$\non a residue class $n\\equiv\\rho\\pmod q$, $\\rho\\in(\\Z/q\\Z)^k$.\nSuch representatives can be standard: $\\Lambda/\\Gamma$ is a fixed finite\nset, and periodicity makes the coset constant on each class. Let\n\\[\n \\Gamma_0=\\bigcap_{\\lambda\\in\\Lambda}\\lambda\\Gamma\\lambda^{-1},\n \\qquad \\Delta=P\\cap\\Gamma_0.                                \\tag{7}\n\\]\nThe first intersection is the kernel of the action on the finite coset set,\nso it is a standard normal finite-index subgroup of $\\Lambda$ contained in\n$\\Gamma$. Thus $\\Delta$ is finite index in $P\\cap\\Gamma$, and $p$ is\ntotally equidistributed on $P/\\Delta$. For every $\\rho$ the function\n\\[\n                      x\\longmapsto F(zx\\lambda_\\rho\\Gamma)   \\tag{8}\n\\]\nis well-defined on this \\emph{same} quotient: for $\\delta\\in\\Delta$,\n$\\lambda_\\rho^{-1}\\delta\\lambda_\\rho\\in\\Gamma$.\nNo deletion of a rational horizontal coefficient is involved.\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 423,
+          "end_line": 453,
+          "excerpt_sha256": "96d251af7355689acb1d31cc1aa48372132d1fc0ecca6d941d5933bcad101de5",
+          "excerpt": "Choose a fixed Lipschitz function $B(t)$ on $\\T^k$ equal to one on\n$[-1/10,1/10]^k$ and zero outside $(-1/5,1/5)^k$.\nUsing centered representatives inside that chart, define\n$\\widetilde H_\\rho(x,t)=B(t)H_\\rho(x,t)$ there and zero outside.\nIt is a globally bounded Lipschitz vector function. The zero collar makes\nthe definition independent of the chart boundary. The functions are limit\nfunctions with a standard bound, since their coordinate-level construction\nhas uniform bounds before taking the ultrapower.\n\nFor each $\\rho\\in(\\Z/q\\Z)^k$ choose a standard Lipschitz function\n$b_\\rho$ on $\\T^k$ with\n$b_\\rho(\\sigma/q)=1_{\\rho=\\sigma}$. For example use products of triangular\nbumps of radius $1/q$; for $q=1$ use the constant function one.\nThe vector function\n\\[\n \\mathcal H(x,t,z)=\\sum_\\rho b_\\rho(z)\\widetilde H_\\rho(x,t)    \\tag{13}\n\\]\nis globally bounded Lipschitz with a standard bound. Its orbit is\n\\[\n          n\\longmapsto\\bigl(\\overline p(n)\\overline\\Delta,\n                                      n/(10N),\\,n/q\\bigr).    \\tag{14}\n\\]\nThis orbit has degree at most $d-1$: its first component has that degree\nand both tori have degree one, with $1\\leq d-1$.\nFor every $n\\in I^k$, exactly the correct residue value is sampled in\n(13), and $B(n/(10N))=1$. The identities (1), (2), and (12) give\n\\[\n                        \\chi(n)=\\mathcal H((14)).              \\tag{15}\n\\]\nThis is an equality of the actual vector functions on the entire symmetric\nbox. It is not an extrapolation of an equality on just one progression.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTIONS9-11-REVIEW.md",
+          "sha256": "58a5574d16e3a932f45a95ccb5808a98e5465e9ba777f326e483aa9039545248"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/MULTIFACTOR-REVIEW-001.md",
+          "sha256": "1a0f5a0b6b4866c184ff2fefb3d354ce185620454e02bfdd195f5f5490cf73cf"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF",
+        "GI-06-MF",
+        "GI-07-S9-11"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F05",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/4"
+      },
+      "original_object": {
+        "id": "DF-F05",
+        "source": "GTZ F1 p1368",
+        "issue": "Unsigned graphs do not representadditivequadruples asfirstcoordinatezero.",
+        "proposed_action": "EquationF1 reflectsfirstcoordinates3and4, preservingallplusfunctionvalues.",
+        "status": "Local repair proposed."
+      },
+      "proposed_status": "repaired",
+      "reason": "Reflects first coordinates of graphs3/4, preserving plus signs of function values; Fourier energy is taken in the actual product group.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 319,
+          "end_line": 350,
+          "excerpt_sha256": "04c8b1d4e023de46c271f0498c805a52cfb27acfa78dc5ad3797818223dc6491",
+          "excerpt": "\\section{A finite combinatorial proof of the linearization contract}\r\nWe prove a finite assertion with constants depending only on $c,C$ and then\r\ntransfer. Take $N\\geq1$, $0<e\\leq1$, and suppose the hypotheses of\r\nTheorem~\\ref{thm:F} hold in finite sets. Put $M=\\lceil1/e\\rceil$ and\r\n$Q=100N+1$. Round each $\\xi_i(h)$ in the circle to $y_i(h)\\in M^{-1}\\Z/\\Z$,\r\nwith error at most $1/(2M)\\leq e/2$. Since $Me\\leq2$, the approximate sum\r\ncan take only a bounded number, depending on $C$, of values in this grid.\r\nFor at least $c_1N^3$ of the original quadruples its rounded value is a\r\nfixed $a_0$ in that grid. Here $c_1>0$ depends only on $c,C$.\r\n\r\nEmbed $[-N,N]$ in $B=\\Z/Q\\Z$ and identify the target grid with $A=\\Z/M\\Z$.\r\nIn $B\\times A$ form the four sets\r\n\\[\r\n A_1=\\{(h,y_1(h))\\},\\quad A_2=\\{(h,y_2(h))\\},\\quad\r\n A_3=\\{(-h,y_3(h))\\},\\quad A_4=\\{(-h,y_4(h))\\}.             \\tag{F1}\r\n\\]\r\nThe signed first coordinates are essential. The selected quadruples now\r\ngive $c_1N^3$ representations of $(0,a_0)$ in $A_1+A_2+A_3+A_4$.\r\nThe initial additive relation has no wraparound, since $4N<Q$.\r\nFourier inversion and Holder's inequality in this finite abelian group give\r\n\\[\r\n r_{A_1+A_2+A_3+A_4}(0,a_0)\r\n          \\leq\\prod_{i=1}^4 E(A_i)^{1/4},\\qquad\r\n E(A_i)=|\\{x_1+x_2=x_3+x_4:x_a\\in A_i\\}|.\r\n\\]\r\nFor completeness, with unnormalized Fourier transforms the inverse formula\r\nhas factor $|B\\times A|^{-1}$; Holder bounds the sum of four transforms\r\nby the fourth moments, each of which equals $|B\\times A|E(A_i)$.\r\nThose factors cancel. Each $E(A_i)\\leq |H|^3\\leq27N^3$.\r\nIt follows that $E(A_1)\\geq c_2N^3$ for a positive $c_2=c_2(c,C)$.\r\nThe same reasoning can isolate any $A_i$; reflecting its first coordinate\r\nback if necessary gives the graph of the specified $y_i$.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/DF-REVIEW-002.md",
+          "sha256": "ea44509fc31d1a9ef7a1472a1b90df4ae2e16a07d7af0fe7714dc12cc87a2d64"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F06",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/5"
+      },
+      "original_object": {
+        "id": "DF-F06",
+        "source": "GTZ F1 references toGT08",
+        "issue": "Finalpublished numbering isBogolyubov6.4 andbracketquadratic10.10, not6.3and10.8. Quadraticextensiongeneralstatementhasauthornotice.",
+        "proposed_action": "UsefinalGT08Theorems5.2/5.3,Lemma6.4,Lemma10.4; proveourlinearprogressionformula directly.",
+        "status": "Source reconciliationproposed; no faultyquadraticimport."
+      },
+      "proposed_status": "repaired",
+      "reason": "Uses final GT08 5.2/5.3,6.4,10.4 and derives a linear bracket formula. The faulty quadratic-extension theorem is not consumed.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 353,
+          "end_line": 362,
+          "excerpt_sha256": "aae574682c9f03f77cb721730448c0a1c82083bec250d4bd1581447f85d62deb",
+          "excerpt": "Apply [GT08, Theorems 5.2 and 5.3, p.95] to $A_1$ in the actual finite\r\ngroup $B\\times A$. Their hypotheses follow from the energy bound and\r\n$|A_1|\\leq3N$. They give a subset $\\Gamma'$ of its graph and a constant\r\n$K_0=K_0(c,C)$ such that\r\n\\[\r\n            |\\Gamma'|\\geq N/K_0,\r\n            \\qquad |9\\Gamma'-8\\Gamma'|\\leq K_0N.             \\tag{F2}\r\n\\]\r\nWe use these published theorems themselves, not the special correlation\r\npremise in [GT08, Proposition 5.4].\r\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 398,
+          "end_line": 432,
+          "excerpt_sha256": "f5174dec18f55c1cd8fd9a459dbc88f1ae8e08c73d847e4a9dcfa88c1ddeb261",
+          "excerpt": "\\subsection*{A proper progression and an explicit linear bracket formula}\r\nThe set $H''$ has density at least $c_3/101$ in $B$.\r\nBy [GT08, Lemma 6.4, pp.97--98] there is a bounded set of characters $S$\r\nwith $B(S,1/4)\\subseteq2H''-2H''$.\r\nAdd the faithful character $x\\mapsto x/Q$ to $S$, and shrink the radius\r\nto $\\rho=1/16$. Write $d=|S|$, a bounded integer.\r\n[GT08, Lemma 10.4, p.121] supplies a proper centered progression\r\n\\[\r\n P=\\Bigl\\{\\sum_{a=1}^r l_av_a: |l_a|<L_a\\Bigr\\}\\subseteq B(S,\\rho),\r\n              \\qquad |P|\\geq c_4 Q,\r\n\\]\r\nwith $r\\leq d$, and linearly independent vectors\r\n$\\Phi(v_a)=(\\{\\chi(v_a)\\})_{\\chi\\in S}$.\r\nThe coset subgroup in that lemma is zero because $S$ contains a faithful\r\ncharacter. Its proof also gives\r\n\\[\r\n \\Phi\\left(\\sum_a l_av_a\\right)=\\sum_a l_a\\Phi(v_a)\\quad\\hbox{on }P. \\tag{F3}\r\n\\]\r\nThis is the lift of a lattice progression inside the real cube, not an\r\nunjustified inference from reduction modulo one. Delete inactive generators\r\nwith no nonzero integer coefficient allowed; all remaining $v_a$ lie in $P$.\r\nEvery partial sum along a coordinate path to a point of this centered box\r\nstays in $P$. The local additivity of $\\zeta$ consequently gives\r\n\\[\r\n          \\zeta\\left(\\sum_a l_av_a\\right)=\\sum_a l_a\\zeta(v_a).\r\n\\]\r\nChoose real lifts $b_a$ of $\\zeta(v_a)$ and real dual vectors $u_a$ to the\r\nindependent vectors $\\Phi(v_a)$ on their span. Using (F3), define\r\n$b_\\chi=\\sum_a b_a(u_a)_\\chi$. Then, for every $p\\in P$,\r\n\\[\r\n                 \\zeta(p)=\\sum_{\\chi\\in S}b_\\chi\\{\\chi(p)\\}\\pmod1. \\tag{F4}\r\n\\]\r\nThis is a linear calculation. It uses neither the quadratic-extension\r\ntheorem nor the quadratic classification lemma in [GT08]. The author notice\r\nconcerning that extension theorem is therefore not a new assumption here.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/DF-REVIEW-002.md",
+          "sha256": "ea44509fc31d1a9ef7a1472a1b90df4ae2e16a07d7af0fe7714dc12cc87a2d64"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F07",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/6"
+      },
+      "original_object": {
+        "id": "DF-F07",
+        "source": "GTZ F1 graph/Bohr/finalpigeonholejoins",
+        "issue": "Targetgridneednotequaldualofbasecyclicgroup; translationcarriescannotbeignoredwhenbetaunbounded.",
+        "proposed_action": "Target-characterseparation,faithfulbasecharacter,realdualityandfixedcarrycells inSections4.1\u20134.3.",
+        "status": "Local connectingproof proposed."
+      },
+      "proposed_status": "repaired",
+      "reason": "Separates the actual target cyclic group by characters; adds the faithful base character, uses the real progression lift, and freezes translation carries before the Freiman restriction.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 364,
+          "end_line": 465,
+          "excerpt_sha256": "a43c841c44d046a21e980ddd5db7893ec8f9cd2a6b15a1a3a5698f3b4a494fa0",
+          "excerpt": "\\subsection*{Graph refinement with the actual cyclic target}\r\nLet $V=\\{a\\in A:(0,a)\\in8\\Gamma'-8\\Gamma'\\}$.\r\nThe map $\\Gamma'\\times V\\to9\\Gamma'-8\\Gamma'$ given by addition is\r\ninjective: equality determines the first graph coordinate, then its unique\r\nsecond coordinate, and finally $a$. Hence $|V|\\leq K_0^2$.\r\nThere is a set $S_A$ of at most $O(1+\\log K_0)$ characters of $A$ for which\r\n\\[\r\n        V\\cap\\{a:\\|\\chi(a)\\|_\\T<1/4\\ \\forall\\chi\\in S_A\\}=\\{0\\}.\r\n\\]\r\nIndeed, for any nonzero $a$ a uniformly random character takes values\r\nuniformly among the roots of unity of its order; at least one third of those\r\nvalues have distance at least $1/4$ from zero. Choose enough independent\r\ncharacters that the union bound over $V\\setminus\\{0\\}$ is less than one.\r\nThis proves the required separation without identifying $A$ with the dual\r\nof $B$, an identification that is unavailable here.\r\n\r\nPartition each coordinate of the character vector on $A$ into intervals of\r\nlength at most $1/100$. A cell contains a subset $\\Gamma''\\subseteq\\Gamma'$\r\nof size $c_3N$. In any element of $8\\Gamma''-8\\Gamma''$, every selected\r\ncharacter of the second coordinate has a real representative of absolute\r\nvalue less than $16/100<1/4$ when its first coordinate is zero.\r\nIt follows that the only element of this difference set with first\r\ncoordinate zero is $(0,0)$. Therefore $4\\Gamma''-4\\Gamma''$ is a graph.\r\nWrite $H''$ for the projection of $\\Gamma''$, and let\r\n\\[\r\n \\zeta:2H''-2H''\\longrightarrow A\r\n\\]\r\nbe the function whose graph is $2\\Gamma''-2\\Gamma''$.\r\nIt is an exact Freiman homomorphism on this domain: two sums of two of its\r\ngraph points lie in $4\\Gamma''-4\\Gamma''$, where the first coordinate\r\ndetermines the second. Also $\\zeta(0)=0$. Thus\r\n$\\zeta(x+y)=\\zeta(x)+\\zeta(y)$ whenever $x,y,x+y$ lie in its domain.\r\nThis proves precisely the generalization of [GT08, Lemma 9.2] needed here.\r\n\r\n\\subsection*{A proper progression and an explicit linear bracket formula}\r\nThe set $H''$ has density at least $c_3/101$ in $B$.\r\nBy [GT08, Lemma 6.4, pp.97--98] there is a bounded set of characters $S$\r\nwith $B(S,1/4)\\subseteq2H''-2H''$.\r\nAdd the faithful character $x\\mapsto x/Q$ to $S$, and shrink the radius\r\nto $\\rho=1/16$. Write $d=|S|$, a bounded integer.\r\n[GT08, Lemma 10.4, p.121] supplies a proper centered progression\r\n\\[\r\n P=\\Bigl\\{\\sum_{a=1}^r l_av_a: |l_a|<L_a\\Bigr\\}\\subseteq B(S,\\rho),\r\n              \\qquad |P|\\geq c_4 Q,\r\n\\]\r\nwith $r\\leq d$, and linearly independent vectors\r\n$\\Phi(v_a)=(\\{\\chi(v_a)\\})_{\\chi\\in S}$.\r\nThe coset subgroup in that lemma is zero because $S$ contains a faithful\r\ncharacter. Its proof also gives\r\n\\[\r\n \\Phi\\left(\\sum_a l_av_a\\right)=\\sum_a l_a\\Phi(v_a)\\quad\\hbox{on }P. \\tag{F3}\r\n\\]\r\nThis is the lift of a lattice progression inside the real cube, not an\r\nunjustified inference from reduction modulo one. Delete inactive generators\r\nwith no nonzero integer coefficient allowed; all remaining $v_a$ lie in $P$.\r\nEvery partial sum along a coordinate path to a point of this centered box\r\nstays in $P$. The local additivity of $\\zeta$ consequently gives\r\n\\[\r\n          \\zeta\\left(\\sum_a l_av_a\\right)=\\sum_a l_a\\zeta(v_a).\r\n\\]\r\nChoose real lifts $b_a$ of $\\zeta(v_a)$ and real dual vectors $u_a$ to the\r\nindependent vectors $\\Phi(v_a)$ on their span. Using (F3), define\r\n$b_\\chi=\\sum_a b_a(u_a)_\\chi$. Then, for every $p\\in P$,\r\n\\[\r\n                 \\zeta(p)=\\sum_{\\chi\\in S}b_\\chi\\{\\chi(p)\\}\\pmod1. \\tag{F4}\r\n\\]\r\nThis is a linear calculation. It uses neither the quadratic-extension\r\ntheorem nor the quadratic classification lemma in [GT08]. The author notice\r\nconcerning that extension theorem is therefore not a new assumption here.\r\n\r\n\\subsection*{Translation, fixed carries, and the Freiman restriction}\r\nAveraging translates of $P$ in $B$ gives an $x\\in B$ with\r\n$|H''\\cap(x+P)|\\geq |H''||P|/Q\\geq c_5N$.\r\nFor $h=x+p$ and $h_0=x+p_0$ in this intersection, the graph relation gives\r\n$y(h)-y(h_0)=\\zeta(p-p_0)$, since $\\Gamma''-\\Gamma''$ is contained in\r\n$2\\Gamma''-2\\Gamma''$. Both $p,p_0$ lie in the domain of $\\zeta$.\r\nIts Freiman identity applied to $(p-p_0)+p_0=p+0$ gives\r\n\\[\r\n                 y(h)=\\delta_x+\\zeta(p).\r\n\\]\r\nFor each $\\chi\\in S$, write $\\chi(h)=\\alpha_\\chi h$ on the cyclic group.\r\nThe difference\r\n\\[\r\n \\{\\chi(h-x)\\}-\\{\\chi(h)\\}+\\{\\chi(x)\\}\r\n\\]\r\nis an integer in a fixed set of at most three values. Restrict to a cell on\r\nwhich all these carries are fixed. This costs a factor at most $3^d$ and,\r\nby (F4), gives\r\n\\[\r\n                y(h)=\\delta+\\sum_{\\chi\\in S}b_\\chi\\{\\alpha_\\chi h\\}.\r\n\\]\r\nFinally partition each $\\{\\alpha_\\chi h\\}$ into a fixed number of intervals\r\nof length at most $1/10$, and retain a largest cell $H'$.\r\nFor any integer relation $h_1+h_2=h_3+h_4$ in $H'$, the corresponding sum\r\nof four fractional parts, with signs $+,+,-,-$, is an integer of absolute\r\nvalue at most $1/5<1$. It is therefore zero in $\\R$ for each character.\r\nThe real weighted sum is an exact Freiman homomorphism on $H'$.\r\nUndoing the rounding changes the displayed value by at most $e/2$.\r\nAll density losses depend only on $c,C$ and all sets and choices are finite.\r\nThis proves the finite assertion, and transfer with $e=N^{-j}$ proves\r\nTheorem~\\ref{thm:F}. A bounded rank can be made a fixed standard rank by\r\npassing to its ultrapower value or by adding zero terms.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/DF-REVIEW-002.md",
+          "sha256": "ea44509fc31d1a9ef7a1472a1b90df4ae2e16a07d7af0fe7714dc12cc87a2d64"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F08",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/7"
+      },
+      "original_object": {
+        "id": "DF-F08",
+        "source": "GTZ D5 toE11/E13",
+        "issue": "One-variableD4 doesnotprove the requiredk-variablefactorization andall-boxlower-degree reconstruction.",
+        "proposed_action": "Exactrequiredstatement inOPEN-MULTIVARIABLE-OBLIGATION.json.",
+        "status": "OPEN; preserveSection13conditionalstatus."
+      },
+      "proposed_status": "repaired",
+      "reason": "The one-variable packet remains insufficient by itself. The separately reviewed multivariable equal-scale factorization and original-vector whole-box reconstruction now supply the exact missing route, with d>=2 and finite standard geometry.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 139,
+          "end_line": 198,
+          "excerpt_sha256": "a77caa970e6458099eeea6b8ad0654906391d7e254655bec945bef6ae5ea4ef8",
+          "excerpt": "\\section{From a dense rectangle to the published equal-side theorem}\n\\begin{lemma}[Weak factorization in finitely many parameters]\\label{lem:weak}\nSuppose $G_0=G_1=G$. If $g\\Gamma$ is not totally equidistributed on $[N]^k$,\nit has a factorization (1) with $p$ in a standard proper connected rational\nsubgroup, retaining all conclusions of Theorem~\\ref{thm:factor} except\nthe final equidistribution condition.\n\\end{lemma}\n\\begin{proof}\nFailure supplies a product of progressions\n$P_i=\\{a_i+b_it:1\\leq t\\leq L_i\\}\\subseteq[N]$ with $L_i\\geq\\delta N$,\nstandard $\\delta>0$, and a bounded Lipschitz test with noninfinitesimal\ndiscrepancy. Their integer steps obey $1\\leq b_i\\leq2/\\delta$ and their\noffsets are $O(N)$. Subtract the Haar mean, normalize the test and rotate a\nconstant complex phase so that the real mean discrepancy is positive.\n\nIn the index rectangle $\\prod[ L_i]$, partition each axis into blocks of a\ncommon length $L=\\lfloor\\eta N\\rfloor$, leaving a final remainder of length\nless than $L$. Choose the standard $\\eta>0$ small compared with the\ndiscrepancy, $\\delta$, $k$ and the test norm. The discarded proportion is\nat most $\\sum_iL/L_i\\leq k\\eta/\\delta+o(1)$, so its contribution is less\nthan one quarter of that discrepancy. At least one full cube of side $L$\nhas a positive standard discrepancy. On this cube the polynomial is\n$\\widetilde g(m)=g(A_1+b_1m_1,\\ldots,A_k+b_km_k)$ with $|A_i|=O(N)$.\n\nApply the exact equal-side theorem of [GT14, pp.1176--1177] at length $L$,\nusing a standard error parameter below this discrepancy and below the\nreciprocal rationality bound of the fixed adapted basis. The result gives\na nonzero bounded horizontal integer character $\\xi$ for which all positive\ncoefficients of the real horizontal lift of $\\xi\\widetilde g$ have circle\nnorm $O(L^{-|\\alpha|})=O(N^{-|\\alpha|})$.\nOnly finitely many such characters are possible, so the selected character\nis standard. Lemma~\\ref{lem:affine} replaces it by a nonzero standard\nmultiple and gives the same coefficient bounds for $\\xi g$ on the\noriginal variables. This is the precise rectangle-to-equal-cube join;\nthe original unequal-side theorem is not used.\n\nNormalize $g(0)=c\\lambda$ with bounded $c$ and $\\lambda\\in{}^*\\Gamma$\nand apply the preceding argument to $c^{-1}g\\lambda^{-1}$, whose failure\nis preserved by bounded left translation. Its coordinates are\n$\\sum_{\\alpha>0}t_\\alpha\\binom n\\alpha$, with $t_\\alpha$ supported in\n$G_{|\\alpha|}$ by [GT12, Lemma 6.7]. Write the real horizontal lift as\n$u\\cdot\\psi$, with $u$ a fixed integer vector.\nChoose integers $a_\\alpha$ nearest to $u\\cdot t_\\alpha$.\nOn a support where $u$ is nonzero choose a fixed rational vector\n$v_\\alpha$ of that support with $u\\cdot v_\\alpha=1$, and define\n\\[\n w_\\alpha=(u\\cdot t_\\alpha-a_\\alpha)v_\\alpha,\n \\quad z_\\alpha=a_\\alpha v_\\alpha,\n \\quad \\psi(\\epsilon_0(n))=\\sum w_\\alpha\\binom n\\alpha,\n \\quad \\psi(\\gamma_0(n))=\\sum z_\\alpha\\binom n\\alpha.           \\tag{6}\n\\]\nIf $u$ vanishes on a support, set all these vectors and its integer to zero.\nCoordinate support and polynomial group closure make these maps polynomial\nfor the original filtration. The real lift is identically zero on\n$p=\\epsilon_0^{-1}c^{-1}g\\lambda^{-1}\\gamma_0^{-1}$.\nThus $p$ lies in its standard proper connected rational kernel.\nThe original factors are $\\epsilon=c\\epsilon_0$ and\n$\\gamma=\\gamma_0\\lambda$. The $w_\\alpha$ have precisely the required\nsmall bounds; the $z_\\alpha$ have a common standard denominator, without\na numerator bound. Controlled products and periods are checked next.\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 278,
+          "end_line": 302,
+          "excerpt_sha256": "9be689e999ac059c32edfabefc3cb31e84c35bf6279b482973fb4739a847d0fe",
+          "excerpt": "\\section{One quotient for all periodic residue classes}\nWe now work in a taut ambient degree-$d$ group $G$, so $G_d$ is central.\nTautification-003, Theorem 1, supplies this exact representation for each\nnilsequence used below with the same positive-degree groups and the same\nstandard vertical character. Products of these representations remain taut.\n\nApply Theorem~\\ref{thm:factor}, and choose a standard representative\n$\\lambda_\\rho\\in\\Lambda$ for each value of the right coset of $\\gamma(n)$\non a residue class $n\\equiv\\rho\\pmod q$, $\\rho\\in(\\Z/q\\Z)^k$.\nSuch representatives can be standard: $\\Lambda/\\Gamma$ is a fixed finite\nset, and periodicity makes the coset constant on each class. Let\n\\[\n \\Gamma_0=\\bigcap_{\\lambda\\in\\Lambda}\\lambda\\Gamma\\lambda^{-1},\n \\qquad \\Delta=P\\cap\\Gamma_0.                                \\tag{7}\n\\]\nThe first intersection is the kernel of the action on the finite coset set,\nso it is a standard normal finite-index subgroup of $\\Lambda$ contained in\n$\\Gamma$. Thus $\\Delta$ is finite index in $P\\cap\\Gamma$, and $p$ is\ntotally equidistributed on $P/\\Delta$. For every $\\rho$ the function\n\\[\n                      x\\longmapsto F(zx\\lambda_\\rho\\Gamma)   \\tag{8}\n\\]\nis well-defined on this \\emph{same} quotient: for $\\delta\\in\\Delta$,\n$\\lambda_\\rho^{-1}\\delta\\lambda_\\rho\\in\\Gamma$.\nNo deletion of a rational horizontal coefficient is involved.\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 401,
+          "end_line": 502,
+          "excerpt_sha256": "a00c730b160c40847c9d5c6601775a4dc2b7831b962a46e9e5fc9aadab2d546a",
+          "excerpt": "Suppose that\n\\[\n                  \\eta(\\operatorname{pr}_\\chi K)=0.            \\tag{11}\n\\]\nFor each $\\rho$ and bounded real-coordinate parameter $t\\in[-1/5,1/5]^k$,\ndefine, initially on $P/\\Delta$,\n\\[\n H_\\rho(x,t)=F_\\chi\\bigl(\n   \\widetilde\\epsilon_\\chi(10Nt)\\,x_\\chi\\,(\\lambda_\\rho)_\\chi\n                                                    \\Gamma_\\chi\\bigr), \\tag{12}\n\\]\nwhere $\\widetilde\\epsilon$ is the real-coordinate polynomial extension.\nThis is well-defined by (7). It is invariant under $K$ by the all-limit\nvertical identity and (11); centrality permits its element to pass across\n$\\widetilde\\epsilon$ and $\\lambda_\\rho$. Hence (12) descends to\n$\\overline P/\\overline\\Delta$.\nThe scaled-coefficient estimates imply a standard Lipschitz bound in $t$,\nuniformly in $N$. Smooth multiplication on fixed compact ranges gives the\nsame conclusion in $x$. Invariance descends this bound to the quotient\nmetric; any fixed standard Riemannian metric is equivalent on this compact\nnilmanifold.\n\nChoose a fixed Lipschitz function $B(t)$ on $\\T^k$ equal to one on\n$[-1/10,1/10]^k$ and zero outside $(-1/5,1/5)^k$.\nUsing centered representatives inside that chart, define\n$\\widetilde H_\\rho(x,t)=B(t)H_\\rho(x,t)$ there and zero outside.\nIt is a globally bounded Lipschitz vector function. The zero collar makes\nthe definition independent of the chart boundary. The functions are limit\nfunctions with a standard bound, since their coordinate-level construction\nhas uniform bounds before taking the ultrapower.\n\nFor each $\\rho\\in(\\Z/q\\Z)^k$ choose a standard Lipschitz function\n$b_\\rho$ on $\\T^k$ with\n$b_\\rho(\\sigma/q)=1_{\\rho=\\sigma}$. For example use products of triangular\nbumps of radius $1/q$; for $q=1$ use the constant function one.\nThe vector function\n\\[\n \\mathcal H(x,t,z)=\\sum_\\rho b_\\rho(z)\\widetilde H_\\rho(x,t)    \\tag{13}\n\\]\nis globally bounded Lipschitz with a standard bound. Its orbit is\n\\[\n          n\\longmapsto\\bigl(\\overline p(n)\\overline\\Delta,\n                                      n/(10N),\\,n/q\\bigr).    \\tag{14}\n\\]\nThis orbit has degree at most $d-1$: its first component has that degree\nand both tori have degree one, with $1\\leq d-1$.\nFor every $n\\in I^k$, exactly the correct residue value is sampled in\n(13), and $B(n/(10N))=1$. The identities (1), (2), and (12) give\n\\[\n                        \\chi(n)=\\mathcal H((14)).              \\tag{15}\n\\]\nThis is an equality of the actual vector functions on the entire symmetric\nbox. It is not an extrapolation of an equality on just one progression.\nNo unit condition is imposed on $\\mathcal H$ away from the orbit; a\nlower-degree vector nilsequence does not require one.\n\n\\section{Bias and torsion applications on the same objects}\n\\begin{proof}[Proof of Theorem~\\ref{thm:outputs}]\nFor the bias assertion, choose the scalar coordinate and the lower-degree\nscalar test occurring in the actual nonzero correlation. If a vector\ncorrelation is given, a fixed finite coordinate choice supplies one such\nscalar nonzero average; its density loss is standard. Form the taut product\nrepresentation $G^\\chi\\times G^0$ and the product test\n$F= (F_\\chi)_i\\overline{F_0}$, using the sign in that correlation.\nIt has vertical character $\\eta$ on the degree-$d$ group because $G^0_d$\nis trivial. Apply Theorem~\\ref{thm:factor} and Lemma~\\ref{lem:integral} to\nthis actual product orbit and test, obtaining a nonzero integral (10).\n\nTranslation of Haar measure on $P/\\Delta$ by any $u\\in K$ preserves that\nintegral. The integrand is multiplied by\n$e(\\eta(\\operatorname{pr}_\\chi u))$, since $K$ is central in the ambient\ntaut group. The integral is nonzero, so this phase is one for every\nstandard $u\\in K$. The real homomorphism $\\eta$ is continuous and $K$ is\nconnected; its image is therefore a connected subset of $\\Z$, hence zero.\nIts natural ultrapower extension vanishes on every limit element too.\nThis is (11). Equations (12)--(15), with the \\emph{original} vector test\n$F_\\chi$, now prove the asserted all-box lower-degree representation.\n\nFor the torsion assertion, let $\\Psi$ be the given degree-at-most-$(d-1)$\nvector nilsequence equal to $\\chi^{\\otimes a}$ on $I^k$.\nPut its finitely many coordinates into one common product nilmanifold of\nthat degree. Since $\\chi$ is a unit vector, pointwise on $[N]^k$ one has\n\\[\n              \\sum_j (\\chi^{\\otimes a})_j(n)\\overline{\\Psi_j(n)}=1.\n\\]\nAt least one scalar term has a nonzero standard average, with lower bound\nat least the reciprocal of the fixed tensor dimension in absolute value.\nUse that term as the test on the product of the original $\\chi$ geometry\nand the auxiliary geometry of $\\Psi$. Its top vertical character is\n$a\\eta$. Lemma~\\ref{lem:integral} applies with the full positive cube and\nno nontrivial cutoff. The same Haar argument gives\n$a\\eta(\\operatorname{pr}_\\chi K)=0$ as a real homomorphism.\nAs $a\\geq1$, (11) follows. The same reconstruction (12)--(15) uses the\noriginal $F_\\chi$, not its tensor power, and proves the required conclusion.\n\nIn the symbol formulation of [GTZ, E.13],\n$a[\\chi]=0$ means exactly that the tensor power is equivalent to the\nconstant nilcharacter. By the definition of equivalence, its coordinates\nare lower-degree nilsequences on the specified box. This is precisely the\n$\\Psi$ premise just used, with a finite common representation.\nNo torsion-free conclusion in degree one is asserted; the time and residue\ntorus factors explain the requirement $d\\geq2$.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/MULTIFACTOR-REVIEW-001.md",
+          "sha256": "1a0f5a0b6b4866c184ff2fefb3d354ce185620454e02bfdd195f5f5490cf73cf"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/v14-gi-integration-review-001/REVIEW.md",
+          "sha256": "91264c32ba0745a10bc45c003fe41331dcd23b130822add2f60f7a30cddf18ed"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "DF-F09",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/FINDINGS-RELATED-USES.json",
+        "sha256": "6f566c93597d8c0c2c3446feb42cb2c3d3ad5eeb33ac08a1edd63ebea6991e0f",
+        "json_pointer": "/findings/8"
+      },
+      "original_object": {
+        "id": "DF-F09",
+        "source": "GT12 A.12 proof p535",
+        "issue": "A left quotient does not establish right-coset periodicity when Gamma is not normal.",
+        "proposed_action": "Successor proof lines240\u2013259 uses R(n,r)=psi(gamma(n)^-1 gamma(n+r)), interpolation and common-denominator clearing. Sol identified the issue and proposed the direction; root independently reviews this sublemma.",
+        "status": "Local repair proposed; root decision pending."
+      },
+      "proposed_status": "repaired",
+      "reason": "Uses right difference gamma(n)^-1 gamma(n+r), fixed-degree interpolation and common-denominator period. Left-coset implication remains rejected.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "start_line": 240,
+          "end_line": 259,
+          "excerpt_sha256": "05c517280e4bcc0e8d3cadb3345100ea01a3952567cc57bc84c5b13a99e083a4",
+          "excerpt": "For the period in the required right-coset convention, write the Mal'cev\r\ncoordinate vector of $\\gamma(n)$ as a polynomial of fixed degree $D_0$.\r\nIts values have a common standard coordinate denominator, since\r\n$\\gamma(n)\\in{}^*\\Lambda$. Interpolating at $0,\\ldots,D_0$ shows that\r\nits coefficients have a common standard denominator too. Their numerators\r\nmay be arbitrary internal integers. By the rational polynomial formulas\r\nfor multiplication and inversion, the vector\r\n\\[\r\n             R(n,r)=\\psi\\bigl(\\gamma(n)^{-1}\\gamma(n+r)\\bigr)\r\n\\]\r\nis a polynomial in the two integer variables $n,r$ with a common standard\r\ncoefficient denominator $A$. The identity $R(n,0)=0$ is a polynomial\r\nidentity, so every monomial has a positive power of $r$.\r\nFor the standard integer $q=A$, every coordinate of $R(n,q)$ is an integer\r\nfor every internal integer $n$. Adapted Mal'cev coordinates identify\r\n$\\Gamma$ with the integer-coordinate points. Hence\r\n$\\gamma(n)^{-1}\\gamma(n+q)\\in{}^*\\Gamma$, exactly the assertion\r\n$\\gamma(n+q)\\Gamma=\\gamma(n)\\Gamma$.\r\nThis proves the conclusion of [GT12, A.12] directly; its printed left\r\nquotient $\\gamma(n+q)\\gamma(n)^{-1}$ is not the quotient used here.\r\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-root-df-orientation-002/REVIEW.md",
+          "sha256": "c1f67c0794ec488ce5b792159946f91ead1b9efae03c26f30110ec997d3fbb82"
+        }
+      ],
+      "affected_claims": [
+        "GI-05-DF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "MF-F01",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/FINDINGS-RELATED-USES.json",
+        "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+        "json_pointer": "/findings/0"
+      },
+      "original_object": {
+        "id": "MF-F01",
+        "source": "GT12Lemma8.4p519 andProp9.2pp522\u2013523",
+        "issue": "A full-heightQ bound cannot be inserted with offsetO(N) and then treated asstandard.",
+        "repair": "MF-AFFINE keeps denominators bounded independentlyofintegeroffset and recordsweight growthN^(|beta|-|alpha|).",
+        "status": "Author repair, independent review pending",
+        "related_use": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-002/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "bytes": 27725,
+          "start_line": 132,
+          "end_line": 145,
+          "excerpt_sha256": "8b7ddd929548d28776ee66f2a53ca776e6ed2377d92fea0e85ff4f8f46da546b"
+        }
+      },
+      "proposed_status": "repaired",
+      "reason": "Inverse affine coefficients have bounded denominators independent of integer offsets O(N), with growth N^(|beta|-|alpha|); no full-height O(1) claim.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 91,
+          "end_line": 137,
+          "excerpt_sha256": "5c88582518601cf30ab7eafe4d1845c0b96576d8bc6b1d1a645d56f1665aa387",
+          "excerpt": "\\section{A weighted inverse-affine estimate}\nThe following estimate also supplies the large-offset transition behind\n[GT12, Proposition 9.2]. Merely inserting an offset of size $N$ into the\nheight bound of its Lemma 8.4 would not give the required standard bound.\n\n\\begin{lemma}[Large offsets, bounded steps, MF-AFFINE]\\label{lem:affine}\nLet $f(n)$ be a real polynomial of fixed total degree at most $D$ in $k$\nvariables. Let $A_i$ be internal integers with $|A_i|=O(N)$ and let $b_i$\nbe nonzero integers of bounded absolute value. Put\n$\\widetilde f(m)=f(A_1+b_1m_1,\\ldots,A_k+b_km_k)$.\nSuppose every positive product-binomial coefficient $\\widetilde f_\\beta$\nsatisfies $\\|\\widetilde f_\\beta\\|_\\T=O(N^{-|\\beta|})$.\nThere is a standard positive integer $r$, depending only on $D,k$ and the\nstep bounds, such that every positive coefficient of $rf$ has the same\nbound $O(N^{-|\\alpha|})$ modulo one.\n\\end{lemma}\n\\begin{proof}\nInvert the substitution over $\\R$ and expand\n\\[\n \\prod_i\\binom{(n_i-A_i)/b_i}{\\beta_i}\n        =\\sum_{\\alpha\\leq\\beta}c_{\\alpha\\beta}\\binom n\\alpha.\n                                                               \\tag{3}\n\\]\nExpanding each falling factorial first in monomials shows that the\ndenominators divide a fixed integer formed from $\\beta_i!$ and\n$b_i^{\\beta_i}$. Conversion of ordinary powers to binomial coefficients\nuses integer Stirling coefficients. Thus one standard $r$ clears all\ndenominators, independently of the integer numerators $A_i$.\nThe coefficient of $n^\\nu$ before the last conversion is a polynomial in\nthe $A_i$ of total degree at most $|\\beta|-|\\nu|$. Consequently\n\\[\n |c_{\\alpha\\beta}|=O(N^{|\\beta|-|\\alpha|}),\n \\qquad rc_{\\alpha\\beta}\\in{}^*\\Z.                             \\tag{4}\n\\]\nThe case $\\beta=0$ contributes only to $\\alpha=0$.\nFor each $\\beta>0$ write $\\widetilde f_\\beta=z_\\beta+e_\\beta$, where\n$z_\\beta$ is an integer and $e_\\beta=O(N^{-|\\beta|})$.\nIn the coefficient of index $\\alpha>0$ in $rf$, the contributions\n$rc_{\\alpha\\beta}z_\\beta$ are integers, while\n\\[\n \\sum_{\\beta\\geq\\alpha}rc_{\\alpha\\beta}e_\\beta\n                         =O(N^{-|\\alpha|}).                    \\tag{5}\n\\]\nThere are only a fixed number of indices. This proves the claim. Negative\nsteps cause no change after taking a positive common denominator. The\nuncontrolled constant coefficient causes no positive-index error.\n\\end{proof}\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "MF-F02",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/FINDINGS-RELATED-USES.json",
+        "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+        "json_pointer": "/findings/1"
+      },
+      "original_object": {
+        "id": "MF-F02",
+        "source": "GT12Theorem8.6 andGT14publishedcorrection",
+        "issue": "Originalmultivariable proof didnotretainonecharacter when switchingcoordinates; publishedrepair onlyassertsequal-sideversion.",
+        "repair": "Importexactfinalequal-sideGT14statement andexplicitlylocalizeprogressionrectangletocube; no arbitrary-side theorem imported.",
+        "status": "Source-correction application pending review"
+      },
+      "proposed_status": "repaired",
+      "reason": "Partitions the dense rectangle into equal cubes, retains discrepancy, and applies final GT14 only on an equal cube with one horizontal character.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 147,
+          "end_line": 173,
+          "excerpt_sha256": "e172e7d6ae5a1995b53f39f61139ec9681fc216dad8c28dcc1a2eba649388bf0",
+          "excerpt": "Failure supplies a product of progressions\n$P_i=\\{a_i+b_it:1\\leq t\\leq L_i\\}\\subseteq[N]$ with $L_i\\geq\\delta N$,\nstandard $\\delta>0$, and a bounded Lipschitz test with noninfinitesimal\ndiscrepancy. Their integer steps obey $1\\leq b_i\\leq2/\\delta$ and their\noffsets are $O(N)$. Subtract the Haar mean, normalize the test and rotate a\nconstant complex phase so that the real mean discrepancy is positive.\n\nIn the index rectangle $\\prod[ L_i]$, partition each axis into blocks of a\ncommon length $L=\\lfloor\\eta N\\rfloor$, leaving a final remainder of length\nless than $L$. Choose the standard $\\eta>0$ small compared with the\ndiscrepancy, $\\delta$, $k$ and the test norm. The discarded proportion is\nat most $\\sum_iL/L_i\\leq k\\eta/\\delta+o(1)$, so its contribution is less\nthan one quarter of that discrepancy. At least one full cube of side $L$\nhas a positive standard discrepancy. On this cube the polynomial is\n$\\widetilde g(m)=g(A_1+b_1m_1,\\ldots,A_k+b_km_k)$ with $|A_i|=O(N)$.\n\nApply the exact equal-side theorem of [GT14, pp.1176--1177] at length $L$,\nusing a standard error parameter below this discrepancy and below the\nreciprocal rationality bound of the fixed adapted basis. The result gives\na nonzero bounded horizontal integer character $\\xi$ for which all positive\ncoefficients of the real horizontal lift of $\\xi\\widetilde g$ have circle\nnorm $O(L^{-|\\alpha|})=O(N^{-|\\alpha|})$.\nOnly finitely many such characters are possible, so the selected character\nis standard. Lemma~\\ref{lem:affine} replaces it by a nonzero standard\nmultiple and gives the same coefficient bounds for $\\xi g$ on the\noriginal variables. This is the precise rectangle-to-equal-cube join;\nthe original unequal-side theorem is not used.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "MF-F03",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/FINDINGS-RELATED-USES.json",
+        "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+        "json_pointer": "/findings/2"
+      },
+      "original_object": {
+        "id": "MF-F03",
+        "source": "GTZD5p1346",
+        "issue": "PeriodicmoduloGamma doesnotmeanGamma-valued, so itsTaylorcoefficientcannotbe erased.",
+        "repair": "Usecommonfinitecover andactualresiduerepresentatives. FalseTaylorcloseness notclaimed; GaussianD6retainsown denominatorjoin.",
+        "status": "Local routeavoidsfalsepremise; Gaussianapplicationseparate"
+      },
+      "proposed_status": "repaired",
+      "reason": "Retains rational residue factors on the common finite cover; no false Taylor erasure. Separate Gaussian horizontal application clears denominators explicitly.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 278,
+          "end_line": 302,
+          "excerpt_sha256": "9be689e999ac059c32edfabefc3cb31e84c35bf6279b482973fb4739a847d0fe",
+          "excerpt": "\\section{One quotient for all periodic residue classes}\nWe now work in a taut ambient degree-$d$ group $G$, so $G_d$ is central.\nTautification-003, Theorem 1, supplies this exact representation for each\nnilsequence used below with the same positive-degree groups and the same\nstandard vertical character. Products of these representations remain taut.\n\nApply Theorem~\\ref{thm:factor}, and choose a standard representative\n$\\lambda_\\rho\\in\\Lambda$ for each value of the right coset of $\\gamma(n)$\non a residue class $n\\equiv\\rho\\pmod q$, $\\rho\\in(\\Z/q\\Z)^k$.\nSuch representatives can be standard: $\\Lambda/\\Gamma$ is a fixed finite\nset, and periodicity makes the coset constant on each class. Let\n\\[\n \\Gamma_0=\\bigcap_{\\lambda\\in\\Lambda}\\lambda\\Gamma\\lambda^{-1},\n \\qquad \\Delta=P\\cap\\Gamma_0.                                \\tag{7}\n\\]\nThe first intersection is the kernel of the action on the finite coset set,\nso it is a standard normal finite-index subgroup of $\\Lambda$ contained in\n$\\Gamma$. Thus $\\Delta$ is finite index in $P\\cap\\Gamma$, and $p$ is\ntotally equidistributed on $P/\\Delta$. For every $\\rho$ the function\n\\[\n                      x\\longmapsto F(zx\\lambda_\\rho\\Gamma)   \\tag{8}\n\\]\nis well-defined on this \\emph{same} quotient: for $\\delta\\in\\Delta$,\n$\\lambda_\\rho^{-1}\\delta\\lambda_\\rho\\in\\Gamma$.\nNo deletion of a rational horizontal coefficient is involved.\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 423,
+          "end_line": 453,
+          "excerpt_sha256": "96d251af7355689acb1d31cc1aa48372132d1fc0ecca6d941d5933bcad101de5",
+          "excerpt": "Choose a fixed Lipschitz function $B(t)$ on $\\T^k$ equal to one on\n$[-1/10,1/10]^k$ and zero outside $(-1/5,1/5)^k$.\nUsing centered representatives inside that chart, define\n$\\widetilde H_\\rho(x,t)=B(t)H_\\rho(x,t)$ there and zero outside.\nIt is a globally bounded Lipschitz vector function. The zero collar makes\nthe definition independent of the chart boundary. The functions are limit\nfunctions with a standard bound, since their coordinate-level construction\nhas uniform bounds before taking the ultrapower.\n\nFor each $\\rho\\in(\\Z/q\\Z)^k$ choose a standard Lipschitz function\n$b_\\rho$ on $\\T^k$ with\n$b_\\rho(\\sigma/q)=1_{\\rho=\\sigma}$. For example use products of triangular\nbumps of radius $1/q$; for $q=1$ use the constant function one.\nThe vector function\n\\[\n \\mathcal H(x,t,z)=\\sum_\\rho b_\\rho(z)\\widetilde H_\\rho(x,t)    \\tag{13}\n\\]\nis globally bounded Lipschitz with a standard bound. Its orbit is\n\\[\n          n\\longmapsto\\bigl(\\overline p(n)\\overline\\Delta,\n                                      n/(10N),\\,n/q\\bigr).    \\tag{14}\n\\]\nThis orbit has degree at most $d-1$: its first component has that degree\nand both tori have degree one, with $1\\leq d-1$.\nFor every $n\\in I^k$, exactly the correct residue value is sampled in\n(13), and $B(n/(10N))=1$. The identities (1), (2), and (12) give\n\\[\n                        \\chi(n)=\\mathcal H((14)).              \\tag{15}\n\\]\nThis is an equality of the actual vector functions on the entire symmetric\nbox. It is not an extrapolation of an equality on just one progression.\n"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a",
+          "start_line": 371,
+          "end_line": 387,
+          "excerpt_sha256": "6536ee9698316b4ec1fb665390ea40d13821906c771ed57f61e63ed12a451f54",
+          "excerpt": "We claim $\\pi_i(P\\cap G_i)\\supseteq\\Xi_i^\\perp$. Let $\\lambda$ be an\ninteger character annihilating the rational space $\\pi_i(P\\cap G_i)$.\nThen $\\lambda(\\Tay_i(g_P))=0$. Conjugation changes no horizontal\ncoefficient since $[G,G_i]\\subseteq G_{(i,2)}$. Hence the horizontal\nhomomorphism identity gives\n\\[\n \\lambda(\\Tay_i(g))=\n \\lambda(\\Tay_i(\\varepsilon))+\n \\lambda(\\Tay_i(\\gamma)) \\pmod1.\n\\]\nThe first term is $O(N^{-i})$. The second is rational of bounded standard\ndenominator: derivatives of $\\gamma$ lie in $\\widehat\\Gamma\\cap G_i$, whose\nhorizontal image is a finite-index over-lattice of that of $\\Gamma\\cap G_i$.\nThus for some standard positive $q$, $q\\lambda\\in\\Xi_i$. Every annihilator\nof the rational image has this property. Taking real annihilators proves the\nclaim. In particular no false assertion that $\\gamma$ takes values in\n$\\Gamma$ or has zero horizontal coefficient is needed.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/MULTIFACTOR-REVIEW-001.md",
+          "sha256": "1a0f5a0b6b4866c184ff2fefb3d354ce185620454e02bfdd195f5f5490cf73cf"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTIONS9-11-REVIEW.md",
+          "sha256": "58a5574d16e3a932f45a95ccb5808a98e5465e9ba777f326e483aa9039545248"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF",
+        "GI-07-S9-11"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "MF-F04",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/FINDINGS-RELATED-USES.json",
+        "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+        "json_pointer": "/findings/3"
+      },
+      "original_object": {
+        "id": "MF-F04",
+        "source": "GTZE11p1366 andE13p1367",
+        "issue": "A lowerdegreerepresentation ononeprogression doesnotitself supplywhole symmetricbox equality.",
+        "repair": "Equations7\u201315 giveonequotient andexplicit slowtime/residueinterpolation foractualoriginalvectorfunction onallI^k.",
+        "status": "Author connectingproof; independent application/coverage decisionpending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Original vector descends under the vanishing top character and is reconstructed by time cutoff and residue interpolation on the full symmetric box, rather than extrapolated from one progression.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 401,
+          "end_line": 502,
+          "excerpt_sha256": "a00c730b160c40847c9d5c6601775a4dc2b7831b962a46e9e5fc9aadab2d546a",
+          "excerpt": "Suppose that\n\\[\n                  \\eta(\\operatorname{pr}_\\chi K)=0.            \\tag{11}\n\\]\nFor each $\\rho$ and bounded real-coordinate parameter $t\\in[-1/5,1/5]^k$,\ndefine, initially on $P/\\Delta$,\n\\[\n H_\\rho(x,t)=F_\\chi\\bigl(\n   \\widetilde\\epsilon_\\chi(10Nt)\\,x_\\chi\\,(\\lambda_\\rho)_\\chi\n                                                    \\Gamma_\\chi\\bigr), \\tag{12}\n\\]\nwhere $\\widetilde\\epsilon$ is the real-coordinate polynomial extension.\nThis is well-defined by (7). It is invariant under $K$ by the all-limit\nvertical identity and (11); centrality permits its element to pass across\n$\\widetilde\\epsilon$ and $\\lambda_\\rho$. Hence (12) descends to\n$\\overline P/\\overline\\Delta$.\nThe scaled-coefficient estimates imply a standard Lipschitz bound in $t$,\nuniformly in $N$. Smooth multiplication on fixed compact ranges gives the\nsame conclusion in $x$. Invariance descends this bound to the quotient\nmetric; any fixed standard Riemannian metric is equivalent on this compact\nnilmanifold.\n\nChoose a fixed Lipschitz function $B(t)$ on $\\T^k$ equal to one on\n$[-1/10,1/10]^k$ and zero outside $(-1/5,1/5)^k$.\nUsing centered representatives inside that chart, define\n$\\widetilde H_\\rho(x,t)=B(t)H_\\rho(x,t)$ there and zero outside.\nIt is a globally bounded Lipschitz vector function. The zero collar makes\nthe definition independent of the chart boundary. The functions are limit\nfunctions with a standard bound, since their coordinate-level construction\nhas uniform bounds before taking the ultrapower.\n\nFor each $\\rho\\in(\\Z/q\\Z)^k$ choose a standard Lipschitz function\n$b_\\rho$ on $\\T^k$ with\n$b_\\rho(\\sigma/q)=1_{\\rho=\\sigma}$. For example use products of triangular\nbumps of radius $1/q$; for $q=1$ use the constant function one.\nThe vector function\n\\[\n \\mathcal H(x,t,z)=\\sum_\\rho b_\\rho(z)\\widetilde H_\\rho(x,t)    \\tag{13}\n\\]\nis globally bounded Lipschitz with a standard bound. Its orbit is\n\\[\n          n\\longmapsto\\bigl(\\overline p(n)\\overline\\Delta,\n                                      n/(10N),\\,n/q\\bigr).    \\tag{14}\n\\]\nThis orbit has degree at most $d-1$: its first component has that degree\nand both tori have degree one, with $1\\leq d-1$.\nFor every $n\\in I^k$, exactly the correct residue value is sampled in\n(13), and $B(n/(10N))=1$. The identities (1), (2), and (12) give\n\\[\n                        \\chi(n)=\\mathcal H((14)).              \\tag{15}\n\\]\nThis is an equality of the actual vector functions on the entire symmetric\nbox. It is not an extrapolation of an equality on just one progression.\nNo unit condition is imposed on $\\mathcal H$ away from the orbit; a\nlower-degree vector nilsequence does not require one.\n\n\\section{Bias and torsion applications on the same objects}\n\\begin{proof}[Proof of Theorem~\\ref{thm:outputs}]\nFor the bias assertion, choose the scalar coordinate and the lower-degree\nscalar test occurring in the actual nonzero correlation. If a vector\ncorrelation is given, a fixed finite coordinate choice supplies one such\nscalar nonzero average; its density loss is standard. Form the taut product\nrepresentation $G^\\chi\\times G^0$ and the product test\n$F= (F_\\chi)_i\\overline{F_0}$, using the sign in that correlation.\nIt has vertical character $\\eta$ on the degree-$d$ group because $G^0_d$\nis trivial. Apply Theorem~\\ref{thm:factor} and Lemma~\\ref{lem:integral} to\nthis actual product orbit and test, obtaining a nonzero integral (10).\n\nTranslation of Haar measure on $P/\\Delta$ by any $u\\in K$ preserves that\nintegral. The integrand is multiplied by\n$e(\\eta(\\operatorname{pr}_\\chi u))$, since $K$ is central in the ambient\ntaut group. The integral is nonzero, so this phase is one for every\nstandard $u\\in K$. The real homomorphism $\\eta$ is continuous and $K$ is\nconnected; its image is therefore a connected subset of $\\Z$, hence zero.\nIts natural ultrapower extension vanishes on every limit element too.\nThis is (11). Equations (12)--(15), with the \\emph{original} vector test\n$F_\\chi$, now prove the asserted all-box lower-degree representation.\n\nFor the torsion assertion, let $\\Psi$ be the given degree-at-most-$(d-1)$\nvector nilsequence equal to $\\chi^{\\otimes a}$ on $I^k$.\nPut its finitely many coordinates into one common product nilmanifold of\nthat degree. Since $\\chi$ is a unit vector, pointwise on $[N]^k$ one has\n\\[\n              \\sum_j (\\chi^{\\otimes a})_j(n)\\overline{\\Psi_j(n)}=1.\n\\]\nAt least one scalar term has a nonzero standard average, with lower bound\nat least the reciprocal of the fixed tensor dimension in absolute value.\nUse that term as the test on the product of the original $\\chi$ geometry\nand the auxiliary geometry of $\\Psi$. Its top vertical character is\n$a\\eta$. Lemma~\\ref{lem:integral} applies with the full positive cube and\nno nontrivial cutoff. The same Haar argument gives\n$a\\eta(\\operatorname{pr}_\\chi K)=0$ as a real homomorphism.\nAs $a\\geq1$, (11) follows. The same reconstruction (12)--(15) uses the\noriginal $F_\\chi$, not its tensor power, and proves the required conclusion.\n\nIn the symbol formulation of [GTZ, E.13],\n$a[\\chi]=0$ means exactly that the tensor power is equivalent to the\nconstant nilcharacter. By the definition of equivalence, its coordinates\nare lower-degree nilsequences on the specified box. This is precisely the\n$\\Psi$ premise just used, with a finite common representation.\nNo torsion-free conclusion in degree one is asserted; the time and residue\ntorus factors explain the requirement $d\\geq2$.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/MULTIFACTOR-REVIEW-001.md",
+          "sha256": "1a0f5a0b6b4866c184ff2fefb3d354ce185620454e02bfdd195f5f5490cf73cf"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/v14-gi-integration-review-001/REVIEW.md",
+          "sha256": "91264c32ba0745a10bc45c003fe41331dcd23b130822add2f60f7a30cddf18ed"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "MF-F05",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/FINDINGS-RELATED-USES.json",
+        "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+        "json_pointer": "/findings/4"
+      },
+      "original_object": {
+        "id": "MF-F05",
+        "source": "GT12A12 andDF002",
+        "issue": "Printedleftdifference doesnotestablish right-cosetperiodicity.",
+        "repair": "ParameterwiseR_i(n,r)=psi(gamma(n)^-1 gamma(n+r e_i)) with tensor-gridinterpolation andboundeddenominator; rootreview ofone-variableversionpreserved.",
+        "status": "Newmultivariableapplication pending review; priorrootdecisionnotextendedautomatically"
+      },
+      "proposed_status": "repaired",
+      "reason": "Tensor-grid interpolation gives the same common denominator for the parameterwise right differences; this has its own multivariable review, not just the one-variable root receipt.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 236,
+          "end_line": 250,
+          "excerpt_sha256": "6f6dba743e9092ef5181ae6218de785e6acabf5c3cdd4c864ddff213fc4b5364",
+          "excerpt": "Here is the full multivariable period argument, in the right-coset direction.\nEach coordinate of $\\gamma(n)$ is a polynomial of fixed degree whose values\nhave a common standard denominator. Tensor-product interpolation on a fixed\ninteger grid gives a standard common denominator for all its coefficients.\nFor every $i$ the vector\n\\[\n R_i(n,r)=\\psi\\bigl(\\gamma(n)^{-1}\\gamma(n+re_i)\\bigr)\n\\]\nis a rational coefficient polynomial with a common standard denominator.\nIt is identically zero when $r=0$. Choose a standard positive $q$ divisible\nby all these denominators. Each monomial then has a positive power of $r$,\nso $R_i(n,q)$ is integral for every internal integer vector $n$.\nThis is exactly (2). This proof does not use the wrongly oriented quotient\nin the printed proof of [GT12, A.12]. The corresponding one-variable\nsublemma of DF002 has a separate independent root review.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-gaussian-multifactor-001/REVIEW.md",
+          "sha256": "0e8f0e4dc3328e01a4e051233ffc6dac87c76afdaa56e3b9ad01cd0af415f9ed"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    },
+    {
+      "finding_id": "MF-F06",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/FINDINGS-RELATED-USES.json",
+        "sha256": "4a8b525f81f32d6557997334afdd1045b5d1621520729b390046da7b8dd5150d",
+        "json_pointer": "/findings/5"
+      },
+      "original_object": {
+        "id": "MF-F06",
+        "source": "Draft equation14",
+        "issue": "Sol identified duplicated comma inorbit display.",
+        "repair": "Corrected typography beforefreeze; no mathematicalchange.",
+        "status": "Author correction recorded"
+      },
+      "proposed_status": "repaired",
+      "reason": "Current displayed orbit(14) and identity(15) have the corrected punctuation; this is a typography-only correction, not a theorem repair.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3",
+          "start_line": 440,
+          "end_line": 450,
+          "excerpt_sha256": "d75ecba1808832c702515c45802bace9d46b1e66545210e22cbf4f00881a463a",
+          "excerpt": "is globally bounded Lipschitz with a standard bound. Its orbit is\n\\[\n          n\\longmapsto\\bigl(\\overline p(n)\\overline\\Delta,\n                                      n/(10N),\\,n/q\\bigr).    \\tag{14}\n\\]\nThis orbit has degree at most $d-1$: its first component has that degree\nand both tori have degree one, with $1\\leq d-1$.\nFor every $n\\in I^k$, exactly the correct residue value is sampled in\n(13), and $B(n/(10N))=1$. The identities (1), (2), and (12) give\n\\[\n                        \\chi(n)=\\mathcal H((14)).              \\tag{15}\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/MULTIFACTOR-REVIEW-001.md",
+          "sha256": "1a0f5a0b6b4866c184ff2fefb3d354ce185620454e02bfdd195f5f5490cf73cf"
+        }
+      ],
+      "affected_claims": [
+        "GI-06-MF"
+      ],
+      "scope": "Exact correction or replacement route only; unchanged source hypotheses and downstream applications remain required. Historical rejected claims are preserved."
+    }
+  ]
+}

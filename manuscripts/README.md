@@ -1,12 +1,13 @@
 # Manuscripts
 
-The current manuscript is **Version 10**, dated November 7, 2026:
+The current manuscript is **Version 15**:
 
-- [PDF: quartic_v10.pdf](quartic_v10.pdf)
-- [TeX: quartic_v10.tex](quartic_v10.tex)
-- [New arithmetic and inventory](../docs/quartic-523-540/README.md)
-- [Four Gaussian audits and repairs](../docs/quartic-962/gaussian-audit-20261106.md)
-- [Research handoff and verification](../handoff/README.md)
+- [PDF: quartic_v15.pdf](../research/version15/snapshots/v15-222-004/manuscript/quartic_v15.pdf)
+- [TeX: quartic_v15.tex](../research/version15/snapshots/v15-222-004/manuscript/quartic_v15.tex)
+- [Version 15 artifacts and review scopes](../research/version15/README.md)
+- [Current research handoff](../research/version15/CUMULATIVE-HANDOFF.md)
+
+Version 14 and its [reductions, inventory and review scopes](../docs/manuscript-revisions/version14/GUIDE.md) remain available below.
 
 ## Earlier versions
 
@@ -14,6 +15,11 @@ These files are preserved byte for byte. Historical inventories retain their ori
 
 | Version | PDF | TeX |
 | --- | --- | --- |
+| 14 | [PDF](quartic_v14.pdf) | [TeX](quartic_v14.tex) |
+| 13 | [PDF](quartic_v13.pdf) | [TeX](quartic_v13.tex) |
+| 12 | [PDF](quartic_v12.pdf) | [TeX](quartic_v12.tex) |
+| 11 | [PDF](quartic_v11.pdf) | [TeX](quartic_v11.tex) |
+| 10 | [PDF](quartic_v10.pdf) | [TeX](quartic_v10.tex) |
 | 9 | [PDF](quartic_v9.pdf) | [TeX](quartic_v9.tex) |
 | 8 | [PDF](archive/quartic_v8.pdf) | [TeX](archive/quartic_v8.tex) |
 | 7 | [PDF](archive/quartic_v7.pdf) | [TeX](archive/quartic_v7.tex) |

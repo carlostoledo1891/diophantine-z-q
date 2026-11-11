@@ -1,0 +1,51 @@
+{
+  "id": "LATE07-RATIONAL-SELMER-SUM-DIFFERENCE",
+  "role": "local_derivation_from_published_inputs",
+  "consumer_location": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+    },
+    "start_line": 16820,
+    "end_line": 16832,
+    "excerpt_sha256": "8b13093ec7ffceaaf36b703bbc3c033e44aa1b758fa4fb28b9d7b8dc74ff1476"
+  },
+  "secondary_consumer_location": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+    },
+    "start_line": 3492,
+    "end_line": 3502,
+    "excerpt_sha256": "cba83f031857002f7382ac4a9d29c0590421ae8c57d098e0828cad6eeeac17ad"
+  },
+  "needed": "The full 2-primary Selmer corank of E over K equals the sum of the full coranks of E and its k-twist over Q; therefore it is one under the actual initial corank-one and forward corank-zero premises.",
+  "sources": [
+    {
+      "id": "ACTIVE-THETA-NEKOVAR-SHAPIRO",
+      "part": "Generic available discrete-coefficient Shapiro theorem only; old cyclotomic needed assertion not reused."
+    },
+    {
+      "id": "ACTIVE-THETA-NEKOVAR-SEMILOCAL-SHAPIRO",
+      "part": "Generic available semilocal compatibility only; no inverse-limit exception or old weighted-class conclusion."
+    },
+    {
+      "id": "ACTIVE-FORWARD-FINITE-KUMMER",
+      "part": "Naturality of actual all-place Kummer conditions."
+    },
+    {
+      "id": "ACTIVE-H6-WEIL-RESTRICTION-PRODUCT",
+      "part": "Existence and product-of-conjugates description only, not a Selmer theorem."
+    }
+  ],
+  "derivation_file": "SELMER-DERIVATION.md",
+  "argument": "Use the quadratic twist isomorphism and its negative conjugate to define the two sum-and-difference maps with both composites [2]. Global and semilocal Shapiro compare full discrete Selmer groups; functoriality of division-point Kummer cocycles preserves every local condition. Kernels and cokernels are killed by2. Dualize and tensor Q2; multiplication2 is now invertible, proving the dimension sum.",
+  "incoming": [
+    "K/Q is quadratic, in characteristic zero; actual full Kummer local conditions at every place.",
+    "Initial s2(E/Q)=1 and independently supplied forward theorem for actual E^k with nonzero central value.",
+    "This does not identify inverse-limit finite Selmer groups with the Pontryagin dual; it uses the latter compact module, expressly allowed by main3499. No finite-Sha or integral splitting claim."
+  ],
+  "status": "proposed for independent review"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "Uninstalled proposal; surface-source acceptance pending; not a publication or Protocol D approval",
+  "baseline_sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+  "candidate_sha256": "51c18b4bfb393a9012f5f2ffd135c3871eb8747d38f5bad99ba31394c1eee5fc",
+  "changes": [
+    {
+      "id": "surface-height-direct-published-supplier",
+      "before": "\\begin{proof}\r\nChoose an $L'$-homomorphism $A\\to J$ with finite kernel, and\r\nlet $A_0\\subset J$ be its image. It is an abelian surface over\r\n$L'$ and is $L'$-isogenous to $A$.\r\nThe stable version of R\\'emond's subvariety inequality\r\n\\cite[Corollary~1.2 and the paragraph following Corollary~1.3]{v15-height-Remond}\r\ngives\r\n\\[\r\n \\hF(A_0)+\\hF(J/A_0)\\le\\hF(J).\r\n\\]\r\nBost's lower bound in the original normalization is\r\n$\\hF(B)\\ge-\\log(\\pi\\sqrt2)\\dim B>-3\\dim B/2$.\r\nThus $\\hF(A_0)\\le H_J$.\r\n\r\nApply \\cite[Theorem~1.9(1)]{v15-height-GaudronRemond} with source $A_0$\r\nand target $A$, both over $L'$. In dimension two it supplies an\r\nisogeny of degree at most\r\n\\[\r\n \\left(14^{32}d'\\max(1,\\log d',\\hF(A_0))\\right)^{16}.\r\n\\]\r\nStable Faltings height increases under an isogeny of degree $D$\r\nby at most $\\frac12\\log D$; see also\r\n\\cite[Proposition~2.1]{v15-height-Remond}. Replacing $\\hF(A_0)$ by $H_J$\r\nproves \\eqref{v15:height:eq:surface}.\r\n\\end{proof}",
+      "after": "\\begin{proof}\r\nApply the construction in the published proof of\r\n\\cite[Lemma~16.2(1), pp.~97--98]{v15-height-GaudronRemond}\r\nover the fixed field $L'$ to $J$. It gives an $L'$-isogenous\r\nabelian variety $J_0$, a product over $L'$ of simple abelian varieties,\r\nwith $\\hF(J_0)\\le\\hF(J)$. Since $A$ is an $L'$-isogeny factor\r\nof $J_0$, uniqueness of simple factors up to $L'$-isogeny, with\r\nmultiplicities, selects a subproduct $B$ that is $L'$-isogenous to $A$.\r\nWrite $J_0=B\\times E$; then $\\dim B=2$ and $\\dim E=g-2$.\r\nAdditivity of stable Faltings height on products and Bost's lower bound\r\nin the original normalization give\r\n\\[\r\n \\hF(B)=\\hF(J_0)-\\hF(E)\r\n \\le\\hF(J)+3(g-2)/2\\le H_J.\r\n\\]\r\nHere the lower bound is\r\n$\\hF(E)\\ge-\\log(\\pi\\sqrt2)\\dim E>-3\\dim E/2$\r\nwhen $\\dim E>0$, and $\\hF(E)=0$ when $\\dim E=0$;\r\nsee \\cite[\\S2.3 and Corollary~8.4]{gr2014}.\r\nThe direct supplier for the product construction is the published\r\n2023 proof just cited; that proof in turn uses R\\'emond's 2022\r\nheight results \\cite{v15-height-Remond} and his 2017 results.\r\nThis use does not remove those underlying dependencies.\r\n\r\nApply \\cite[Theorem~1.9(1)]{v15-height-GaudronRemond} with source $B$\r\nand target $A$, both over $L'$. In dimension two it supplies an\r\nisogeny of degree at most\r\n\\[\r\n \\left(14^{32}d'\\max(1,\\log d',\\hF(B))\\right)^{16}.\r\n\\]\r\nStable Faltings height increases under an isogeny of degree $D$\r\nby at most $\\frac12\\log D$; see \\cite[\\S2.3]{gr2014}.\r\nReplacing $\\hF(B)$ by $H_J$ proves\r\n\\eqref{v15:height:eq:surface}.\r\n\\end{proof}",
+      "before_sha256": "0aa83c9b05d3245474a64cb0dde654c50fbb3a7a9ae23e1ca633708593a8a616",
+      "after_sha256": "60547e0593235899cc538103266aea3bb6789f21ef23a72948d22434c28e90b7"
+    },
+    {
+      "id": "SOURCE_MAP-reference",
+      "before": "the companion \\texttt{SOURCE\\_MAP.json} retains the\r\nhistorical source references.",
+      "after": "the same manifest retains the historical source references.",
+      "before_sha256": "18eb4912992b81b4c369f66eacce8762a6ac5c9e748a24b43b84ec85b6680dfa",
+      "after_sha256": "5ba03c3a0b27b767b6e5539130e5a8c3c5cf866987843a777b4044aad0edb225"
+    },
+    {
+      "id": "epsilon-square-order",
+      "before": "Since $\\varepsilon^2$ is trivial on $G_{L'}$, its image order\r\ndivides $[L':\\Q]$. Hence",
+      "after": "Since $\\varepsilon^2$ is trivial on $G_{L'}$, the image of\r\n$\\varepsilon^2$ has order dividing $[L':\\Q]$. Therefore\r\n$\\operatorname{ord}(\\varepsilon)\\le2[L':\\Q]$, and hence",
+      "before_sha256": "29f6e87b6cd4eb3dee4024f9dce2556e850a560e97c9416b389cec340694ec5f",
+      "after_sha256": "95a4f62df632aed945cb7ad93edf73a49d4f57b58b65bc83f6aeb95e40ae38a3"
+    }
+  ]
+}

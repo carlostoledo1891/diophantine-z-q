@@ -1,0 +1,9 @@
+# Hilbert-class prime occurrence review
+
+Reviewer: /root/v14_arithmetic_review. Accepted, bounded to v14-rc-hilbert-class-primes-001/MANIFEST.json SHA256 c82eb44450e8e03a54f62d92a9e0702300bbff6a31befa1c3492f9fc2d5ca026 and the unchanged current manuscript1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8.
+
+The conductor-one finite idelic quotient is the actual ordinary class group. The retained reciprocity/existence input therefore supplies the Hilbert class field and arithmetic ideal-Artin identification. For imaginary quadratic K, conjugation preserves unramifiedness and abelianness, hence the Hilbert class field is normal over Q. A prescribed element in Gal(H/K) is consequently an actual element of the finite Galois group over Q, and its conjugacy class restricts trivially to K. Finite Chebotarev gives rational primes splitting in K; choice of a place above each prime realizes the desired element and thus the desired ideal class. Finite exclusions preserve infinitely many choices, so the class generators can be represented by distinct conjugate pairs avoiding the existing list.
+
+I compared the actual4414–4418 occurrence, the retained class-field source and the already reviewed finite Chebotarev scope. No simultaneous independent-component prescription or effective prime bound is inferred. The needed class-group finiteness and prescribed original active primes remain inputs. The added occurrence must be merged cumulatively with other accepted Chebotarev appends, including3360–3372; the historical base_passages list is not permission to discard them.
+
+Both manifest members and four distinct source/current spans pass CHECKS.json. This accepts the one class-field application and one repeated finite-Chebotarev occurrence, not recursive closure of original residual20 or installation status.

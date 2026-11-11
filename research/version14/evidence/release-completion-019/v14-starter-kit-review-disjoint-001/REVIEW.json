@@ -1,0 +1,95 @@
+{
+  "schema": "independent-bounded-document-review/v1",
+  "reviewer": "/root/v14_final_disjoint_assembly_review",
+  "requested_model": "gpt-6-astra",
+  "decision": "accepted_within_scope",
+  "scope": "Current four-file reusable starter kit and the narrow uncommitted PROJECT.md/README.md wording changes. Review of assurance preservation, local downloadable companion links and Protocol_D naming. Not final manuscript, source coverage, release, remote publication or authenticated gate acceptance.",
+  "independence": "I authored none of the four candidate documents or their changes. Only this review is authored here.",
+  "observed_head": "e4159fb1a5f6543159ece5f784622b5cc3855549",
+  "files": [
+    {
+      "path": "docs/research-review/starter-kit/AGENTS.md",
+      "sha256": "797e03d0eddde851426f87bb3e33a72650c11157eddf84b64f183843b5482849",
+      "bytes": 7796,
+      "head_sha256": "797e03d0eddde851426f87bb3e33a72650c11157eddf84b64f183843b5482849"
+    },
+    {
+      "path": "docs/research-review/starter-kit/PROJECT.md",
+      "sha256": "9fa822a083e79134d2cd67efaaf585b19b76ea09d8ee3af9c10e961edbedbdce",
+      "bytes": 1824,
+      "head_sha256": "68c91e62c6f9e63b9e656f880582806e4fcdca75d03a3f830ff90ffdba9ff264"
+    },
+    {
+      "path": "docs/research-review/starter-kit/PROTOCOL.md",
+      "sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9",
+      "bytes": 55964,
+      "head_sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9"
+    },
+    {
+      "path": "docs/research-review/starter-kit/README.md",
+      "sha256": "73ffdaed5dc2d086b0d265400c62a1ea4f0653699c8b66528b92119494dc692a",
+      "bytes": 1753,
+      "head_sha256": "557b69395902c70a65796e8d35c40e3690f1164dcbd8d946166a2518f547a89c"
+    }
+  ],
+  "governing_protocol": {
+    "path": "docs/research-review/PROTOCOL.md",
+    "sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9",
+    "identical_to_starter_copy": true,
+    "identical_to_observed_head": true
+  },
+  "changes": [
+    "PROJECT.md replaces the fixed version-label field with Protocol_D, its canonical GitHub URL, and the included local PROTOCOL.md name. Owner replacement remains explicit.",
+    "README.md makes the same naming/link adjustment while keeping the local PROTOCOL.md download link.",
+    "README.md describes the two companions as operating instructions and a project brief instead of asserting their supplied contents were preserved."
+  ],
+  "reasoning": [
+    "The starter protocol is byte-identical to the governing approved local text and its observed HEAD blob. The narrow diff contains no protocol change and no change to assurance requirements. This reuses the approved protocol at exactly the same bytes; it is not a new amendment review.",
+    "AGENTS.md preserves complete substantive-input accounting, non-author review, source-first initial reconstruction before inventory exposure, separate application/coverage/assembly decisions, exact dependency-aware reuse, objection handling, and final mathematical review. Its instructions to use a small ledger and avoid unnecessary repetition do not exempt an obligation.",
+    "PROJECT.md collects the mathematical objective, evidence, known objections, prior acceptance versions, artifacts, trust departures and existing authorizations. It does not create an additional permission gate or authorize an unstated assurance downgrade.",
+    "README.md clearly names three files to download together. All five relative links resolve to actual local files, including both companions and the exact protocol copy. It distinguishes a reusable template from an automated gate and from this repository’s own instructions.",
+    "Both new external links use exactly https://github.com/elliotglazer/protocols/blob/main/Protocol_D.md, matching the governing link in the repository root AGENTS.md. They are navigational links; the local immutable reviewed content is bound separately by SHA256."
+  ],
+  "checks": {
+    "git_diff": "Only PROJECT.md and README.md changed: three paragraph/line replacements in total.",
+    "local_link_results": [
+      {
+        "source": "README.md",
+        "target": "PROTOCOL.md",
+        "resolved": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-v14-release\\preview-repository\\docs\\research-review\\starter-kit\\PROTOCOL.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "AGENTS.md",
+        "resolved": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-v14-release\\preview-repository\\docs\\research-review\\starter-kit\\AGENTS.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "PROJECT.md",
+        "resolved": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-v14-release\\preview-repository\\docs\\research-review\\starter-kit\\PROJECT.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "../PROTOCOL.md",
+        "resolved": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-v14-release\\preview-repository\\docs\\research-review\\PROTOCOL.md",
+        "exists": true
+      },
+      {
+        "source": "README.md",
+        "target": "../../../AGENTS.md",
+        "resolved": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-v14-release\\preview-repository\\AGENTS.md",
+        "exists": true
+      }
+    ],
+    "protocol_raw_byte_equality": true,
+    "AGENTS_unchanged_from_head": true,
+    "PROTOCOL_unchanged_from_head": true
+  },
+  "limitations": [
+    "Remote destination availability could not be independently confirmed in this run: the web fetches returned Cache miss and direct read failed. This is not evidence of a bad URL. The exact URL is checked against the repository’s governing Protocol_D link; local companion availability and protocol identity are verified.",
+    "No remote file was changed or published. No final commit S or authenticated acceptance is invented. Source coverage and final assembly review remain separate pending work."
+  ]
+}

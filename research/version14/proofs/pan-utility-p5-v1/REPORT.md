@@ -1,0 +1,11 @@
+# Source and acceptance boundaries
+
+The preserved CONNECTIONS.md has SHA256 `94121cf6978dddbf7c6857dd1e6da10a31297b68dada25fb2229b3136ec0a71c`. It was authored by `/root/astra_v14_assertions_arithmetic` and independently reviewed by `/root/astra_v14_source_review`. The exact independent disposition, included as REVIEW.md, has SHA256 `e46a726c775646b166deb68d0fb6aabe8d421d43c8a40eb0df486d96d165d5a8`. Acceptance is confined to PAN-12 through PAN-15 with the stated representability, p-finiteness, lattice and global-field premises.
+
+The local framing proof supplies the needed relative smoothness without using a published-version-equivalence assumption for KW09b. The direct O-coefficient compact-lattice proof supplies the completion isomorphism without such an assumption for Kisin2003. The Euler route uses Milne2006 I.4.10(c), I.4.15 and I.5.1, printed57,62,67, followed by the explicit finite-to-p-adic proof. The reviewer independently checked Milne's version page authentication and the ordinary H0 normalization in the p67 footnote. The exact source PDF hash is recorded, but its bytes are not redistributed here.
+
+The actual KW09b author Proposition2.1 and following paragraph, Kisin2003 author Proposition9.5 and Lemma9.7, and Pan's consuming author passages were read. Their final journal versions were not compared. The historical source checks remain qualified and must not be relabeled as final-source acceptance merely because the needed local statements now have project proofs.
+
+The public source-version inventory records the bounded correction checks from the accepted packet. No relevant change to the three selected Milne statements appeared in the displayed errata list. No correction specific to the named KW/Kisin utility statements was located in the inspected records. These are bounded findings, not a universal absence-of-corrections claim.
+
+APPLICATIONS.json preserves the four accepted assertion contracts, apart from deleting the irrelevant Euler-limit sentence from PAN-12 and PAN-15. The precise proof and scope are unchanged. EDGES.json expresses the adopted local proof route and its retained premises, while preserving the historical import as a separate relation. The new wrapper, edge map and TeX references require an incorporation review. No whole-Pan, final-Pan or live-release approval is implied.

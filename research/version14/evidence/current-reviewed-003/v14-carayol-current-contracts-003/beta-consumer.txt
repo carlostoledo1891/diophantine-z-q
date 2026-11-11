@@ -1,0 +1,63 @@
+Here are uniform local bounds, including the small primes.
+For a finite extension of $\Q_p$ of degree at most $a$, its
+normal closure has degree at most $a!$. For a finite Galois
+local extension with ramification index $e$ and different
+exponent $\delta$, let $f$ be the Eisenstein polynomial of a
+uniformizer $\pi$ over the maximal unramified subfield. Then
+$\delta\le e-1+e v_p(e)$. The derivative terms have distinct
+valuations modulo $e$, so there is no cancellation at the
+smallest valuation. The identity
+$f'(\pi)=\prod_{\sigma\ne1}(\pi-\sigma\pi)$ over the inertia
+conjugates gives $\delta=\sum_{i\ge0}(|G_i|-1)$. Changing variables
+by the Herbrand function yields
+$\delta/e=1-1/e+\int_0^\infty(1-|G^u|^{-1})\,du$.
+Before the last positive upper break the integrand is at least
+$1/2$, so that break is bounded by
+$2\delta/e\le2(1+\log_2(a!))\le4a^2$
+\cite[Sections 4.1--4.3]{serrelocal}.
+
+At $p$, take $F=L_v$ and adjoin $A[3]$, using $A[5]$ if
+$p=3$. This extension has degree at most $DG_0$ over $\Q_p$.
+Raynaud's criterion \cite[Theorem 3.5]{silverbergzarhin}
+gives semistable reduction there. Its wild inertia acts
+trivially on each $V_\ell(A)$ with $\ell\ne p$.
+The preceding break bound and the subgroup rule for upper
+numbering therefore show that all absolute ramification
+groups above $U_0=4(DG_0)^2$ act trivially on that Tate module.
+On these groups $a_\sigma\mu_\sigma=1$ because they lie in $G_L$.
+For odd $p$, the character $\beta|_{G_F}$ is trivial on wild
+inertia: its square is the tame character $\chi|_{G_F}$, and a
+pro-$p$ group has no quotient of order two. At $p=2$, local
+reciprocity and the norm map give $\beta^4=1$ on the units of
+$F$, since the $2$-primary local factor of $\chi$ has conductor
+at most four. If $e=v_F(2)\le D$, the logarithm for $\widehat{\mathbf G}_m$ identifies
+$U_F^{e+1}$ with $\mathfrak m_F^{e+1}$ since $e+1>e$
+\cite[IV.6.4, p.~132]{silverman}. Multiplication by four gives
+$(U_F^{e+1})^4=U_F^{3e+1}$. Thus the relative upper break of
+$\beta$ is at most $3e$. To make the change of numbering explicit,
+the same normal-closure estimate bounds the last upper break of
+$F/\mathbb Q_2$ by $4D^2$. Above it, the absolute upper group
+$G_{\mathbb Q_2}^{u}$ lies in $G_F$, and the subgroup formula is
+\[
+ G_{\mathbb Q_2}^{u}\cap G_F
+       =G_F^{\psi_{F/\mathbb Q_2}(u)},
+ \qquad \psi_{F/\mathbb Q_2}(u)\ge u\quad(u\ge0).
+\]
+Consequently $\beta$ is trivial on every absolute upper group with
+$u>\max(4D^2,3e)$, which is at most $U_0$.
+This proves the asserted absolute bound without a factor involving
+$[L':\mathbb Q]$.
+The Artin conductor exponent of $r_\ell$ is consequently
+at most $2+2U_0\le E_0$.
+
+For $p>R$, the extension $L_v/\Q_p$ is tame, since its
+degree is at most $D<p$. The surface has good reduction,
+and the same argument kills the wild part of $\beta$.
+Hence the conductor exponent is at most two there.
+Outside $T$ it is zero. Local--global compatibility for the
+weight-two modular representation therefore bounds the
+primitive level $N$ of $f$ by
+\[
+ N\le\Bigl(\prod_{p\le R}p^{E_0}\Bigr)M^2
+      \le R^{RE_0}M^2=QM^2.
+\]

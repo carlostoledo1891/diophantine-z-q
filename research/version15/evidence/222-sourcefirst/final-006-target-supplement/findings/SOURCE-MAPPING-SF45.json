@@ -1,0 +1,34 @@
+{
+  "schema": "v15-exact-current-finding-target-review/v1",
+  "reviewer_agent": "01a1c426-ce3c-73b2-bc1f-18da903ebf63",
+  "run_id": "01a1c4f5-9e5a-7082-9c12-c876f25edd6c",
+  "observed_model": "gpt-6-astra",
+  "reviewed_at": "2026-11-10T11:06:05.855878+00:00",
+  "subject": {
+    "kind": "finding",
+    "id": "SOURCE-MAPPING-SF45",
+    "target_sha256": "ed001e2b73cabd55392b6f9bd48f2a502b8442c6ed3f912ac84ee830c0102b4d",
+    "recursive_dependency_sha256": "8b323cb0e32dfb0af223ac83b27304302ae3a57673f8a65ec30ec6f4c843c164"
+  },
+  "decision": "accepted_at_stated_scope",
+  "finding_object_sha256": "ed001e2b73cabd55392b6f9bd48f2a502b8442c6ed3f912ac84ee830c0102b4d",
+  "connection_finding_sha256": "a5fc3ac9f63b11cac6308a400bed46c10068fae1076e1ca2e429f4298864e949",
+  "review_body": {
+    "path": "work/v15-222-sourcefirst-review-001/final-006/PROTOCOL14-COVERAGE-REVIEW.json",
+    "sha256": "9b7dc976e14eb57b940e6f478e921726f3158403b890589f3269ee6eec3f743c"
+  },
+  "exact_scoped_decision": {
+    "subject": "finding:SOURCE-MAPPING-SF45",
+    "subject_sha256": "a5fc3ac9f63b11cac6308a400bed46c10068fae1076e1ca2e429f4298864e949",
+    "outcome": "accepted_within_scope",
+    "review_basis": "reconstructed",
+    "prior_review": null,
+    "scope": "Accept the current classification, bounded related-use scope, exact correction representations and each recorded disposition. Original representation occurrences and downstream dependency occurrences have distinct roles; a downstream window need not literally repeat the correction text.",
+    "limitations": "Underlying arithmetic and supplier repairs are reused only at their independently accepted scopes. This decision does not recover missing historical observations or enlarge the related-use scope to every transitive descendant."
+  },
+  "judgment": "The exact current finding target and its dependency binding carry the accepted historical disposition, current representations and bounded related-use review. Acceptance is not inferred from author status fields or from silence.",
+  "limitations": [
+    "No old ACK is replayed. Actual Git/head and authenticated capture remain future.",
+    "Preserved missing-original-history limitations and excluded mathematical scopes remain in force."
+  ]
+}

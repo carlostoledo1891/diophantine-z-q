@@ -1,0 +1,37 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:48:49.359Z",
+  "decision": "accepted exact ordinary union successor",
+  "input_sha256": "0f476c5d9c5c0941d3a5021d66ca4bd66a6469b2de94da8ae8d4deb42be28419",
+  "changes": [
+    {
+      "id": "GA-S1-OUTER-CLOSURE",
+      "p": "/dependencies/1",
+      "a": "GI-00-ASSEMBLY",
+      "b": "GA-ARTIN-PATTERNS"
+    },
+    {
+      "id": "GA-S1-OUTER-CLOSURE",
+      "p": "/dependencies/2",
+      "a": "GA-ARTIN-PATTERNS"
+    },
+    {
+      "id": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "p": "/dependencies/3",
+      "a": "GA-S1-OUTER-CLOSURE"
+    },
+    {
+      "id": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "p": "/obligations/local_conditions/justification",
+      "a": "The named height/Kato/GI/S1 dependencies supply their bounded interfaces; the remaining explicit inline arguments and source uses must be bound at their actual current locations. No finite-Sha assumption may replace full corank, and no auxiliary field may silently replace the controlled field.",
+      "b": "The named height, Kato and GI dependencies supply their bounded interfaces. The original prime argument at2189–2204 uses rational affine forms and GI(20), with the separate Green–Tao and Mobius inputs retained. The later Gaussian S1 theorem is not an input to this original P_star proof. Remaining explicit inline arguments and source uses must be bound at their actual current locations; full corank and the original controlled field remain required."
+    }
+  ],
+  "checks": {
+    "count": 176,
+    "missing": [],
+    "cycles": [],
+    "unique": true
+  },
+  "scope": "Only reviewed removal of extraneous mainroot-to-Gaussian edge with matching prose and redundant S1-to-GI edge. Read exact accepted outer-use002 patch; retained path S1 -> centered cutoff -> relative inverse -> GI remains. All other applications, authors and obligations unchanged. No final coverage acceptance."
+}

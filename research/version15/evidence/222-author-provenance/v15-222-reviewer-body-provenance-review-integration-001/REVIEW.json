@@ -1,0 +1,41 @@
+{
+  "decision": "accept_bounded_original_reviewer_writing_provenance",
+  "subject_manifest_sha256": "acce714e326ba0151f19b51dffcc5a5e398df6739eb55de6391881bfb9fbddd6",
+  "observations_sha256": "d956455ddfb7aaa2b59c33141e3a618e806f2cdfde9f9f23300bcca94c424305",
+  "checks": {
+    "manifest_members": 7,
+    "original_reference_reads": 12,
+    "operations": 3,
+    "artifact_manifests": 2,
+    "artifact_members_rehashed": 75,
+    "observed_identity_matches": true,
+    "final_bundle_and_supplement_execution_exit_codes": [
+      0,
+      0
+    ]
+  },
+  "reviewer": {
+    "agent_id": "01a1c426-ce3c-73b2-bc1f-18da903ebf63",
+    "run_id": "01a1c4f5-9e5a-7082-9c12-c876f25edd6c",
+    "host_configured_model": "gpt-6-astra"
+  },
+  "artifacts": [
+    {
+      "path": "work/v15-222-sourcefirst-review-001/final-006/MANIFEST.json",
+      "sha256": "130fa20ff584828b42b925605081739f5c4ef3fdc18a4920acff26db61778d9c",
+      "member_count": 39
+    },
+    {
+      "path": "work/v15-222-sourcefirst-review-001/final-006-target-supplement/MANIFEST.json",
+      "sha256": "eee0d52747f518c6d5a94d138845aa743d9984740697dc06725d81e547d42e27",
+      "member_count": 36
+    }
+  ],
+  "scope": "Initial script writing, corrected script and actual final006 execution, and supplement script/execution are bound to original completed operations. Final two completions emit the exact selected manifest hashes.",
+  "limitations": [
+    "This is provenance validation only, not renewed mathematical review or review of the reviewer’s own underlying proof contributions.",
+    "No PR-bound acknowledgment, collector-native report_observed event, signature, provider attestation or final authenticated acceptance is supplied.",
+    "Raw original records and scan candidates remain private; only this scoped receipt may be distributed."
+  ],
+  "reviewed_at": "2026-11-10T11:08:07.570Z"
+}

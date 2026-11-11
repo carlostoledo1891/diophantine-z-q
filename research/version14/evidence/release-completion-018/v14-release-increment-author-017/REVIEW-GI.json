@@ -1,0 +1,37 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "created_at": "2026-11-09T10:48:51.427Z",
+  "decision": "accepted bounded selection checks; provenance additions required before final handoff",
+  "manifest": {
+    "path": "work/source-risk-review-20261107/v14-release-increment-author-017/MANIFEST.json",
+    "sha256": "3a3bb997e205e8468ed5fe162624375d0631425a14a3f3c472b1c5070e8f17ed"
+  },
+  "checks": {
+    "manifest_and_baseline_checks": 2221,
+    "increment_bytes_verified": 2204,
+    "baseline_recursive_replay_exact": true,
+    "selection_replay_exact": true,
+    "selected_paths": 9226,
+    "source136_exact": true,
+    "original_to_selected_mappings": 3312,
+    "mappings_exact": true,
+    "policy_six_exact": true,
+    "independent_privacy_flags": [],
+    "unavailable_historical_references": 8
+  },
+  "required_correction": {
+    "reason": "Two selected code replacements lack their existing independent approval receipts in cumulative selected payload.",
+    "missing_receipt_sha256": [
+      "330c41616c14c77ef74084f11aa825d8871c982f561c4173658339bd683584f2",
+      "80d1535f484c276c4a7cccca78aee8c7a7d3227cdce28570cb7ed230c5f9819c"
+    ],
+    "action": "Add exact bounded historical code provenance in one successor; preserve frozen017."
+  },
+  "limits": [
+    "Accepted016 baseline reused; no new audit of its unchanged contents.",
+    "Privacy check scans increment paths and UTF-8 content for credentials/conversation markers and excludes non-project binary/fulltext payload; it is not an assertion of theorem correctness.",
+    "Existing author packaging guards passed as recorded; independent rerun was unavailable because installed Python launch aliases could not start. Independent Node path/content/byte checks performed.",
+    "Eight unavailable historical references remain explicit and are not substituted with current bytes.",
+    "No code semantic approval inferred from inclusion; no final archive, source commit, protocol gate, publication or mathematical closure approved."
+  ]
+}

@@ -1,0 +1,11 @@
+# Finitely many cyclotomic zeros of a bounded-denominator power series
+
+Let A=Z_2[[t]][1/2] and let f=sum a_j t^j be nonzero. The valuations of its nonzero coefficients are integers bounded below. Let mu be their minimum and d the least index attaining it. Choose epsilon>0 so that v_2(a_j)-mu>(d-j)epsilon for every nonzero coefficient with j<d; if there is no such coefficient, any positive epsilon works.
+
+If 0<v_2(z)<epsilon, the term a_d z^d has strictly smaller valuation than every other nonzero term. For j<d this follows from the choice of epsilon; for j>d it follows from v_2(a_j)>=mu and (j-d)v_2(z)>0. The series converges because its coefficient valuations are bounded below, and its sum has valuation mu+d v_2(z). In particular f(z) is nonzero.
+
+For a primitive root zeta of order 2^n, n>=1, v_2(zeta-1)=1/2^(n-1). Indeed (1+t)^(2^(n-1))+1 is Eisenstein at two: its constant term is2, all nonleading coefficients are even, and its leading coefficient is1. Equivalently the usual valuation comparison in this polynomial gives the stated common root valuation. Thus v_2(zeta-1) tends to zero with n. Only finitely many n can give f(zeta-1)=0, and each of these orders has finitely many roots. The trivial character z=0 adds at most one value.
+
+Let x be an A-module element killed by some nonzero f. Any compatible specialization to the character t=zeta-1 carries f*x=0 to f(zeta-1)*x_zeta=0. Where f(zeta-1) is nonzero it is invertible in the characteristic-zero coefficient field, so x_zeta=0. This uses only compatibility of specialization with the module action, not an isomorphism between specialized cohomology and cohomology after specialization.
+
+Apply this separately to each rational sign component of the actual retained Euler-system class in main13682–13693. If that class were torsion, its specializations could be nonzero at only finitely many finite-order cyclotomic characters in that sign component. The separately supplied reciprocity formula and Kato13.5(2), together with the nonzero smoothing factors and infinitely many characters of each sign, give infinitely many nonzero specializations. The contradiction proves the claimed generic nonvanishing. The local calculation does not supply reciprocity, the finite exceptional L-value theorem, or the identification of the actual retained specialization.

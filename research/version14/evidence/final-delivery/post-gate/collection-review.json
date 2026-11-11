@@ -1,0 +1,80 @@
+{
+  "schema": "v14-actual-collection-review/v1",
+  "decision": "accepted",
+  "reviewer": "/root/v14_arithmetic_review",
+  "scope": "Actual five-file S3 collection, acquisition provenance and exact run/check/PR/source binding only; not a new mathematical audit, final release or publication approval.",
+  "source_commit": "ceb028b95dd5d485586baa824badf0eb856567cb",
+  "controller_revision": "781cd16986cd0300715f044707f97016cd550416",
+  "run_id": 42687676966,
+  "check_id": 129408252578,
+  "app_id": 5663093,
+  "collection_files": {
+    "check-run.json": {
+      "bytes": 3711,
+      "sha256": "79f575afbb469701f9dfb39b77ca5d7d85618ed9622f24b4ee4425df7f5fc5ae"
+    },
+    "controller-result.json": {
+      "bytes": 288,
+      "sha256": "b7ed451711d1800709a5b12404e3c28396651ca110d2391a9a4ab4101f41a34f"
+    },
+    "packet.json": {
+      "bytes": 11649616,
+      "sha256": "6d551c236790aad7795a98cf55b862c8c56dd3d1f72f4eaf9bdd49bb7c5eb2c1"
+    },
+    "profile.json": {
+      "bytes": 12239,
+      "sha256": "9c98297319315d2ed21b2807e3e7372b28706d79e78d102a5106db76a140182a"
+    },
+    "pull-request.json": {
+      "bytes": 19629,
+      "sha256": "a122802636bc8b6dae73d3d1a9db6ae4b836222740b3eeeee82a9595e5a9b730"
+    }
+  },
+  "acquisition": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\v14-actual-s3-post-gate-001\\ACQUISITION.json",
+    "sha256": "b91c204fdc166d054191ad783d399cf8ec7a57328d40c631f15985e95a4072fd"
+  },
+  "collector": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\v14-s3-package-adaptation-author-001\\collect.py",
+    "sha256": "e1d3c0ace7c5d2d618db8808232b5122b9c65b0d5141d853f9d63130ae44b7c6"
+  },
+  "collector_review": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\v14-s3-package-adaptation-review-h6-001\\REVIEW.json",
+    "sha256": "3602d0873af44ae735b7d173ae31dc46b22ac0d5b5d8beec691c6d925710e54a"
+  },
+  "artifact_contract": {
+    "path": "C:\\Users\\glaze\\Documents\\Codex\\2026-11-02\\lo\\work\\quartic-v14-release-assembled-001\\artifact_contracts.py",
+    "sha256": "0a165ed9d0b6967627dbeef88e2408fe912367eeabc30a6f775770638aeac558"
+  },
+  "private_provenance": {
+    "controller-config.json": {
+      "sha256": "c8b8f75a85f11633f020e6e0c38f367064087ab3fddaa8b1da9a1f276032839b",
+      "bytes": 168477
+    },
+    "jobs.json": {
+      "sha256": "9fd27152ffe5a71d30ebea9ecff95e802c2d3359cde53beebf7938c6e4da96e9",
+      "bytes": 2824
+    },
+    "logs.zip": {
+      "sha256": "05ea73a31e63874a9bcfd9c1b9af0c1969d45b371251516022bb100787193e47",
+      "bytes": 11491
+    },
+    "run.json": {
+      "sha256": "2c74a055e320db3748a5b66d6fb6a9c5f1c6d34d789451e55736b4789112f0d0",
+      "bytes": 15444
+    }
+  },
+  "checks": [
+    "All five hashes and sizes match acquisition; exact file set.",
+    "Successful evaluator run and job bind exact controller revision, workflow, repository and run attempt.",
+    "Only this successful run archive inspected; both timestamp-stripped result occurrences match exact collected bytes.",
+    "Config and packet Git OIDs/SHA256/size independently verified and bytes equal local committed controller revision.",
+    "Profile equals selected protected job; App5663093 and head mode agree.",
+    "Unmodified artifact_contracts.gate_binding passes in memory with this actual review pin."
+  ],
+  "limits": [
+    "Collection was acquired by root using the accepted authenticated collector; this independent review did not repeat live HTTP acquisition.",
+    "Saved JSON and this review are not independent MAC authentication or a new proof verdict.",
+    "No collection files modified, finalize invoked, dispatch, publish, or cancelled-run logs accessed."
+  ]
+}

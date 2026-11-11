@@ -1,0 +1,55 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T09:39:00.151Z",
+  "decision": "accept bounded component correction and six-caller fixed-field replacement",
+  "manifest_sha256": "642ac5028d153332173ec29ab4f04be6021ab860c01c4c7e23e8b174804c22ad",
+  "component_sha256": "e2efedc112e1bc33c1d1ed407dcda0044218650e1453edf2d646cc4fcb117141",
+  "changes": [
+    {
+      "p": "origin",
+      "a": "v14-qroot2-class-unit-proof-002",
+      "b": "v14-qroot2-class-unit-proof-003"
+    },
+    {
+      "p": "use.assertion.exceptional_cases",
+      "a": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "b": "The local proof identifies all units, but these callers require only principal ideals and the four sign squareclasses; no varying-field assertion or elliptic conclusion follows."
+    },
+    {
+      "p": "use.reason",
+      "a": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "b": "The direct fixed-field proof supplies the integer ring, principal ideals and unit-sign squareclasses consumed at the six retained callers; separate elliptic and local premises remain."
+    },
+    {
+      "p": "connection.use_sha256",
+      "a": "e3b39a05dd3659b2dbf0a2f4af34777f7fc373053d34aea45381128e480dfa6f",
+      "b": "34f887ade04f425319a3547759ee0a2e4cf6b96b49b4fb7c82d1ee722187d8a5"
+    },
+    {
+      "p": "connection.supplier_passage_role",
+      "a": "statement",
+      "b": "proof"
+    },
+    {
+      "p": "connection.available_assertion.exceptional_cases",
+      "a": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "b": "The local proof identifies all units, but these callers require only principal ideals and the four sign squareclasses; no varying-field assertion or elliptic conclusion follows."
+    },
+    {
+      "p": "connection.needed_assertion.exceptional_cases",
+      "a": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "b": "The local proof identifies all units, but these callers require only principal ideals and the four sign squareclasses; no varying-field assertion or elliptic conclusion follows."
+    },
+    {
+      "p": "connection.connecting_derivation.output_assertion.exceptional_cases",
+      "a": "This does not identify a fundamental unit; roots of unity are +/-1 because K0 is real.",
+      "b": "The local proof identifies all units, but these callers require only principal ideals and the four sign squareclasses; no varying-field assertion or elliptic conclusion follows."
+    }
+  ],
+  "reused_review": "v14-qroot2-class-unit-proof-002/REVIEWER-RECONCILIATION-REVIEW.json",
+  "checks": {
+    "use_digest": true,
+    "consumers_unchanged": true
+  },
+  "scope": "Source proof and eight observations already reviewed. The retained integer-ring/discriminant line records the same proved fixed-field facts, not an additional unproved premise. Canonical source edits and later transport remain separate."
+}

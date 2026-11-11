@@ -1,0 +1,100 @@
+\paragraph{The compatible modular representations.}
+Choose a number field containing all normalization scalars, the values
+of $b$, and a splitting field of $B$. For each coefficient prime $\ell$
+and an embedding into $\overline{\mathbb Q}_\ell$, set
+\[
+ \rho_\ell(\sigma)=b(\sigma)^{-1}a_\sigma\mu_\sigma\circ\sigma.
+\]
+The cocycle identity makes this a representation commuting with $B$;
+after splitting $B$, matrix units give $\rho_\ell=r_\ell\oplus r_\ell$
+with $\dim r_\ell=2$. On $G_{L'}$, $\rho_\ell$ is the Tate action of
+$A$. Every geometric endomorphism is defined over $L\subset L'$, and
+$\operatorname{End}^0(A_{\overline{\mathbb Q}})=B$. Faltings'
+semisimplicity and endomorphism theorems therefore apply to the actual
+Tate action on $G_{L'}$. After splitting $B$, its commutant is $M_2$;
+the original matrix-unit factor has scalar commutant and is semisimple.
+The same calculation after every finite coefficient extension proves
+that this original $r_\ell$ is absolutely irreducible for every $\ell$.
+The representation is unramified outside $T\cup\{\ell\}$,
+by (LR2) and the reduction and field properties.
+Apply Lemma~\ref{lem:qm-modularity-descent} with
+$t_\sigma=a_\sigma/b(\sigma)$. It gives a primitive weight-two
+newform $f$ whose Tate realization is exactly the original $r_5$.
+Write $N$ for the level of this final form, after the finite character
+in that lemma has been absorbed. The finite character $\delta$ absorbed in the lemma is not identified
+with the controlled character $\chi=b^2$; the original $L'$, $b$ and
+$r_\ell$ remain those in (LR2)--(LR3) and the estimates below.
+The comparison at every coefficient prime uses the original family,
+not a replacement of the controlled field or its ramification set.
+Choose an auxiliary finite Galois field $K_{\rm aux}$ defining the
+finitely many isogenies $\mu_\sigma$, their twists, and the scalar
+choices. Choose a positive integer $m$ clearing all quasi-isogeny
+denominators. After excluding a finite set $S$ of rational primes,
+including those ramified in $K_{\rm aux}$,
+these data spread to abelian schemes and homomorphisms $m\mu_\sigma$.
+The auxiliary field $K_{\rm aux}$ and comparison set $S$ do not replace
+$L'$ or $T$.
+
+Let $p\notin S$ and choose a place of $K_{\rm aux}$ above $p$.
+An arithmetic Frobenius lift $\sigma_p$ acts on the residue field by
+$x\mapsto x^p$. Reduction identifies ${}^{\sigma_p}A$ with the
+$p$-Frobenius twist of the reduced surface $A_v$, so
+\[
+ e_p=\overline{m\mu_{\sigma_p}}\circ\operatorname{Fr}_{p,A_v}
+ \in\operatorname{End}(A_v).
+\]
+Here $\operatorname{Fr}_{p,A_v}$ is relative $p$-Frobenius. Replacing it
+by Frobenius for the full residue-field cardinality would give a
+different power of $\sigma_p$. The rational degree polynomial of an
+endomorphism is its characteristic polynomial on every prime-to-$p$
+rational Tate module, by
+\cite[Proposition 12.9 and the preceding definition, p.~125]{milne1986-abelian}.
+Thus $q_p=\operatorname{Tr}(e_p)/m\in\mathbb Q$ is independent of the
+Tate prime. This division by $m$ retains the original quasi-isogeny.
+
+For $\ell\ne p$, reduction on $\ell$-power torsion is compatible with
+these spread homomorphisms. Indeed, the torsion is finite \'etale and
+becomes a disjoint union of sections over the strict henselization.
+It therefore identifies $\mu_{\sigma_p}\circ\sigma_p$ on rational
+Tate modules with $e_p/m$. Since $\rho_\ell=r_\ell\oplus r_\ell$, this
+gives
+\[
+ \operatorname{Tr}r_\ell(\sigma_p)
+   =\frac12\,\iota_\ell\!\left(a_{\sigma_p}/b(\sigma_p)\right)q_p.
+\]
+The factor $1/2$ comes from the two equal summands of the full Tate
+representation.
+
+Fix a coefficient prime $\ell$. Choose a number field $F_{\rm coeff}$
+containing the original scalar and splitting field and the coefficients
+of the primitive form $f$. Choose an embedding into
+$\overline{\mathbb Q}_5$ extending the fixed one used to identify the
+original $r_5$ with the realization of $f$, and an embedding into
+$\overline{\mathbb Q}_\ell$ extending the fixed embedding for the
+original $r_\ell$. At $\ell$, work over a common finite coefficient
+extension containing both coefficient images. Before either embedding,
+\[
+ \tau_p=\tfrac12\bigl(a_{\sigma_p}/b(\sigma_p)\bigr)q_p
+ \in F_{\rm coeff}.
+\]
+Outside the finite set also containing $\ell,5$ and the level of $f$,
+the identification at five gives
+$\iota_5(\tau_p)=\iota_5(a_p(f))$. Injectivity gives equality in
+$F_{\rm coeff}$, and the embedding at $\ell$ gives equality of the
+traces of the original $r_\ell$ and the corresponding classical
+Tate realization $U_{f,\ell}$.
+
+Use the established absolute irreducibility of the original $r_\ell$.
+Chebotarev and Brauer--Nesbitt identify $r_\ell$ with
+$U_{f,\ell}^{\rm ss}$ over the common coefficient extension.
+No independent semisimplicity assertion about $U_{f,\ell}$ is needed:
+its semisimplification is one simple two-dimensional factor, so
+$U_{f,\ell}$ has composition length one and is itself irreducible.
+Hence $r_\ell\simeq U_{f,\ell}$ as representations of the full
+$G_{\mathbb Q}$. The finite comparison exclusions neither restrict
+this isomorphism to a subgroup nor enlarge $T$.
+
+For each rational prime $p$ one may choose $\ell\ne p$ and restrict
+this isomorphism to its decomposition group. In particular, the same
+form $f$ may still be compared with $r_3$ at the prime $5$ and with
+$r_5$ at the other places. The comparison asserts no new numerical

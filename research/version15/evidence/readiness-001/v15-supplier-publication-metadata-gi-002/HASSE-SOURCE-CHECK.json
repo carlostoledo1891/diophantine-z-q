@@ -1,0 +1,74 @@
+{
+  "scope": "New exact primary-locator completion only, not a new arithmetic assumption or blanket approval",
+  "source": {
+    "file": {
+      "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+      "bytes": 3658085
+    },
+    "title": "The Arithmetic of Elliptic Curves",
+    "version": "Final Springer second edition2009",
+    "url": "https://www.math.ens.psl.eu/~obenoist/refs/Silverman.pdf",
+    "locator": "III.1.4(b),(c)p45; VI.4.1/4.1.1 pp171–173; VI.5.1.1/5.3 pp173,175; C.11.1/11.2p426; C.11.4p427",
+    "role": "published_external",
+    "distribution": "PDF excluded; hash and bibliographic locator only"
+  },
+  "retained_source_catalog": {
+    "path": "work/source-risk-review-20261107/cj-cm-inputs-author/SOURCES.json",
+    "sha256": "996c83ceb337df292170c8ecd1a24168c314ce87e90f4f59dfee08f4c69e76d2"
+  },
+  "errata": {
+    "file": {
+      "path": "work/quartic-v14-prep/bcdt-published-alternative/local-only/silverman-errata2022.pdf",
+      "sha256": "6c2274403a32af5d4b075c1504a1aaa04c9b304c0f94b8dd337f9c72d51f6f34",
+      "bytes": 418604
+    },
+    "title": "Errata for The Arithmetic of Elliptic Curves",
+    "version": "Official October13,2022",
+    "url": "https://www.math.brown.edu/johsilve/AEC/AECErrata.pdf",
+    "locator": "PDF19; no C.11.4 change located",
+    "role": "official_corrections",
+    "distribution": "PDF excluded; hash and bibliographic locator only"
+  },
+  "statement": {
+    "hypotheses": "E is an elliptic curve over a finite field F_q; q is a prime power.",
+    "conclusion": "abs(cardinality(E(F_q)) - q - 1) <= 2 sqrt(q)",
+    "point_count": "Full elliptic curve group, including point at infinity; p137 identifies it as one more than the affine Weierstrass solution count.",
+    "locator": "TheoremV.1.1, printedp138/PDFpage155; conventions printedp137/PDFpage154"
+  },
+  "current_use": {
+    "primary_locator": "Hasse bound for an elliptic curve over F_p",
+    "current_invocation": {
+      "pin": {
+        "path": "research/version15/snapshots/v15-018/manuscript/quartic_v15.tex",
+        "sha256": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b"
+      },
+      "start_line": 31970,
+      "end_line": 32033,
+      "excerpt_sha256": "2f13482b3f324c6526600f245f1ada3eb20aa8c2f214c0d25e1abe28ae30fbca",
+      "line_convention": "bytes.splitlines(keepends=True)"
+    },
+    "source_review_pins": [
+      {
+        "path": "work/v15-sourcefirst-review-001/SUPPLEMENT-018-019-DECISIONS.json",
+        "sha256": "352fe46083d5707fd1d05e92063fe1f7ce3a8afe0f18fa0067ab5a02ff88ce31"
+      },
+      {
+        "path": "work/v15-sourcefirst-review-001/INHERITED-CURRENT-EDGES-020-DECISION.json",
+        "sha256": "2c08cb3f9ae07ee23b1e8d52f2465d50b86f07ac68d242d470b1cf872fde226e"
+      }
+    ],
+    "match": "Set q=p_j at the already specified smooth reduction. The bound gives cardinality=p_j+1+O(sqrt(p_j)), hence p_j+O(sqrt(p_j)). It does not bound an arbitrary point order below by p_j; the separate group/order-identification hypothesis must remain. No claim that every point order has this size.",
+    "excluded": "Bad reduction and arbitrary proper subgroup order are not covered by this theorem."
+  },
+  "errata_check": {
+    "pages": [
+      16,
+      17,
+      18
+    ],
+    "result": "No correction at printedp138/TheoremV.1.1 in checked retained errata; p139 field typo is a separate character-sum application."
+  },
+  "source_file_sha256_checked": true,
+  "decision": "author_source_locator_for_independent_review"
+}

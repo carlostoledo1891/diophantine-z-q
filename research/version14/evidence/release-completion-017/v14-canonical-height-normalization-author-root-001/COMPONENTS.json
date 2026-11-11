@@ -1,0 +1,173 @@
+[
+  {
+    "origin": "v14-canonical-height-normalization-author-root-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-GENERATOR-CANONICAL-HEIGHT-NORMALIZATION",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-GENERATOR-CANONICAL-HEIGHT-NORMALIZATION-P1"
+      ],
+      "assertion": {
+        "statement": "For C:y^2=x^3-(3-sqrt2)^2*x over K0=Q(sqrt2), every P in C(K0) satisfies 2*hhat(P)=lim_j 4^(-j)*h_x([2^j]P).",
+        "objects": "The actual curve C, its degree-two x-map to P1, absolute logarithmic projective x-height and Silverman canonical height.",
+        "hypotheses": "K0 is a number field; C is a nonsingular elliptic curve; h_x includes every place with normalization 1/[K0:Q].",
+        "quantifiers": "Every P in C(K0), including the identity and torsion; limit over nonnegative integers j.",
+        "parameter_range": "The fixed characteristic-zero curve C, delta=3-sqrt2 nonzero.",
+        "uniformity": "The same canonical-height convention is used at every iterate; no point-dependent rescaling.",
+        "constants": "The factor2 is deg(x). No numerical duplication error bound is supplied by this theorem.",
+        "normalizations": "Silverman second edition definition following VIII Proposition9.1; the convention is hhat=(1/deg f)*lim4^(-j)h_f([2^j]P), not the doubled convention noted in Remark9.2.",
+        "exceptional_cases": "The projective x-map sends the identity to infinity, of height0; doubling into the identity remains covered. No nontorsion assumption is needed for the limit identity.",
+        "limit_order": "Fix C, P and the absolute height, iterate doubling, then take j to infinity."
+      },
+      "classification": "dependency",
+      "reason": "The D5 source-side telescoping step explicitly imports the canonical-height limit normalization; its own duplication output cannot supply that premise.",
+      "shared_contract_justification": "Specialize the published limit definition to the even degree-two x-map of C over K0, retaining the absolute height normalization.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/applications.json",
+            "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+          },
+          "start_line": 6978,
+          "end_line": 7020,
+          "excerpt_sha256": "b1c7dba6c093bc3aa66c50d931d631926e211b4ac0819755749d73bfe8568b63"
+        },
+        "statement": "For an elliptic curve E over a number field and any nonconstant even rational function f, (1/deg f)*lim_j 4^(-j)*h_f([2^j]P) exists for every algebraic point P and defines the canonical height independently of f.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "VIII Proposition9.1 and following definition, printed pp247-248; Remark9.2 convention warning, p248",
+          "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this canonical-height assertion. Direct inspection corrects the inherited bibliographic label Theorem9.1 to Proposition9.1; the mathematical limit statement and factor2 are unchanged."
+        }
+      },
+      "application_id": null,
+      "inline_argument": null
+    },
+    "connection": {
+      "use_id": "ACTIVE-GENERATOR-CANONICAL-HEIGHT-NORMALIZATION",
+      "use_sha256": "359141908ee011dfc2b356c70d8348d6fa37c228fc52c78cd89588e7b976a389",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For an elliptic curve E over a number field and any nonconstant even rational function f, (1/deg f)*lim_j 4^(-j)*h_f([2^j]P) exists for every algebraic point P and defines the canonical height independently of f.",
+        "objects": "E/K, the even map f:E->P1, the induced absolute logarithmic height and the canonical height.",
+        "hypotheses": "K is a number field and f is a nonconstant even rational function.",
+        "quantifiers": "Every algebraic point P; every such f.",
+        "parameter_range": "Elliptic curves over number fields.",
+        "uniformity": "The same canonical-height convention is used at every iterate; no point-dependent rescaling.",
+        "constants": "The exact normalizing factor is 1/deg(f); the source gives no constants392 or676.",
+        "normalizations": "Silverman second edition definition following VIII Proposition9.1; the convention is hhat=(1/deg f)*lim4^(-j)h_f([2^j]P), not the doubled convention noted in Remark9.2.",
+        "exceptional_cases": "Poles are evaluated in P1; the alternative doubled canonical-height convention is explicitly distinguished.",
+        "limit_order": "Fix C, P and the absolute height, iterate doubling, then take j to infinity."
+      },
+      "needed_assertion": {
+        "statement": "For C:y^2=x^3-(3-sqrt2)^2*x over K0=Q(sqrt2), every P in C(K0) satisfies 2*hhat(P)=lim_j 4^(-j)*h_x([2^j]P).",
+        "objects": "The actual curve C, its degree-two x-map to P1, absolute logarithmic projective x-height and Silverman canonical height.",
+        "hypotheses": "K0 is a number field; C is a nonsingular elliptic curve; h_x includes every place with normalization 1/[K0:Q].",
+        "quantifiers": "Every P in C(K0), including the identity and torsion; limit over nonnegative integers j.",
+        "parameter_range": "The fixed characteristic-zero curve C, delta=3-sqrt2 nonzero.",
+        "uniformity": "The same canonical-height convention is used at every iterate; no point-dependent rescaling.",
+        "constants": "The factor2 is deg(x). No numerical duplication error bound is supplied by this theorem.",
+        "normalizations": "Silverman second edition definition following VIII Proposition9.1; the convention is hhat=(1/deg f)*lim4^(-j)h_f([2^j]P), not the doubled convention noted in Remark9.2.",
+        "exceptional_cases": "The projective x-map sends the identity to infinity, of height0; doubling into the identity remains covered. No nontorsion assumption is needed for the limit identity.",
+        "limit_order": "Fix C, P and the absolute height, iterate doubling, then take j to infinity."
+      },
+      "required_capabilities": [
+        "For C:y^2=x^3-(3-sqrt2)^2*x over K0=Q(sqrt2), every P in C(K0) satisfies 2*hhat(P)=lim_j 4^(-j)*h_x([2^j]P)."
+      ],
+      "available_capabilities": [
+        "For an elliptic curve E over a number field and any nonconstant even rational function f, (1/deg f)*lim_j 4^(-j)*h_f([2^j]P) exists for every algebraic point P and defines the canonical height independently of f."
+      ],
+      "derived_capabilities": [
+        "For C:y^2=x^3-(3-sqrt2)^2*x over K0=Q(sqrt2), every P in C(K0) satisfies 2*hhat(P)=lim_j 4^(-j)*h_x([2^j]P)."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+            "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+          },
+          "start_line": 51,
+          "end_line": 51,
+          "excerpt_sha256": "7c99e4b448d98e5f0ee9b851308627c126e521151d3b14b352edd6587ce4c559"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For C:y^2=x^3-(3-sqrt2)^2*x over K0=Q(sqrt2), every P in C(K0) satisfies 2*hhat(P)=lim_j 4^(-j)*h_x([2^j]P).",
+          "objects": "The actual curve C, its degree-two x-map to P1, absolute logarithmic projective x-height and Silverman canonical height.",
+          "hypotheses": "K0 is a number field; C is a nonsingular elliptic curve; h_x includes every place with normalization 1/[K0:Q].",
+          "quantifiers": "Every P in C(K0), including the identity and torsion; limit over nonnegative integers j.",
+          "parameter_range": "The fixed characteristic-zero curve C, delta=3-sqrt2 nonzero.",
+          "uniformity": "The same canonical-height convention is used at every iterate; no point-dependent rescaling.",
+          "constants": "The factor2 is deg(x). No numerical duplication error bound is supplied by this theorem.",
+          "normalizations": "Silverman second edition definition following VIII Proposition9.1; the convention is hhat=(1/deg f)*lim4^(-j)h_f([2^j]P), not the doubled convention noted in Remark9.2.",
+          "exceptional_cases": "The projective x-map sends the identity to infinity, of height0; doubling into the identity remains covered. No nontorsion assumption is needed for the limit identity.",
+          "limit_order": "Fix C, P and the absolute height, iterate doubling, then take j to infinity."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The projective x-map sends the identity to infinity, of height0; doubling into the identity remains covered. No nontorsion assumption is needed for the limit identity. The local duplication inequalities and their finite/archimedean bounds remain separate inputs.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+              "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+            },
+            "start_line": 51,
+            "end_line": 51,
+            "excerpt_sha256": "7c99e4b448d98e5f0ee9b851308627c126e521151d3b14b352edd6587ce4c559"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+            "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+          },
+          "start_line": 51,
+          "end_line": 51,
+          "excerpt_sha256": "7c99e4b448d98e5f0ee9b851308627c126e521151d3b14b352edd6587ce4c559"
+        }
+      ]
+    },
+    "passage_bindings": [
+      {
+        "id": "ACTIVE-GENERATOR-CANONICAL-HEIGHT-NORMALIZATION-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/local-generator-and-index-inputs-001/PROOF.md",
+            "sha256": "ea87ad6b7d7f4eed8c6fbf46d7ac934136d7e4977aca5d81e9ecbe19d42c9c99"
+          },
+          "start_line": 51,
+          "end_line": 51,
+          "excerpt_sha256": "7c99e4b448d98e5f0ee9b851308627c126e521151d3b14b352edd6587ce4c559"
+        }
+      }
+    ],
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "docs/theorem-application-audit/applications.json",
+        "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+      }
+    ],
+    "retained_separate_inputs": [
+      "Local duplication inequalities with constants392 and676",
+      "Actual number-field absolute height normalization",
+      "Finite generator saturation and candidate enumeration"
+    ],
+    "scope": "Only the incoming canonical-height limit at the D5 proof is supplied. No new proof source is introduced; this binds a new occurrence of the already audited published height theorem."
+  }
+]

@@ -1,0 +1,834 @@
+{
+  "schema": "gtz-local-proof-source-uses/v1",
+  "protocol": "1.4",
+  "author": "/root/astra_v14_baseline_compiler",
+  "uses": [
+    {
+      "id": "MF-U01",
+      "claim_id": "MF-CONVENTIONS",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 26,
+          "end_line": 90,
+          "excerpt_sha256": "40ccdf9ed299feed5f1e5df8b265dd08bf625178c4d6661a56d331dc1eca6361"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "source_id": "GTZ",
+          "title": "Green, Tao and Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "publication": "Annals of Mathematics176(2012),1231–1372",
+          "doi": "10.4007/annals.2012.176.2.11",
+          "version": "final published PDF",
+          "locator": "D1, E11/E13 and symbol definitions",
+          "pages": [
+            {
+              "printed_page": 1342,
+              "pdf_page": 112,
+              "extracted_text_sha256": "16fe64c7673f0e883bad0e6cccb6b4cec70e7f55bbfd995c46e4a4ba9ea4e531"
+            },
+            {
+              "printed_page": 1351,
+              "pdf_page": 121,
+              "extracted_text_sha256": "6f82733c5c43c8b03b33723b76d5b13fee8db53b8db3d55b4dfe4bd85812319b"
+            },
+            {
+              "printed_page": 1352,
+              "pdf_page": 122,
+              "extracted_text_sha256": "a4a05ce882eb2a83750173881e6dcc4bac36b0308d381209ef225f1993ba5dce"
+            },
+            {
+              "printed_page": 1364,
+              "pdf_page": 134,
+              "extracted_text_sha256": "fee672dcfc389960130ab701aba2b5871894ec33510d8be07dcab2d609d0c123"
+            },
+            {
+              "printed_page": 1366,
+              "pdf_page": 136,
+              "extracted_text_sha256": "4a8d38a79b8545950cbcd2b28f1cfe9c3f33020bcc0d2e83612b814ef70881f8"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+          "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+          "bytes": 13507,
+          "locator": "Theorem1 exact tautification and all-limit vertical convention"
+        }
+      ],
+      "assertion": {
+        "statement": "Use fixed total-degree geometry and natural ultrapowers, with exact all-limit vertical identities and total equidistribution on dense progression products.",
+        "objects": "Fixed k,d,N; rational G/Gamma, internal g, unit vector nilcharacter chi, auxiliary lower-degree nilsequence and its actual finite coordinates.",
+        "hypotheses": "Connected simply connected nilpotent groups; standard rational geometry and finite dimensions; d>=2 for bias/torsion.",
+        "quantifiers": "Factorization global on*Z^k, same p for every standard finite-index cover; final lower-degree equality on all[-N,N]^k.",
+        "parameter_range": "Any fixed finite k; factorization permits degree0/trivial group via normalization; outputs E11/E13 require d>=2.",
+        "uniformity": "Standard coefficient and Lipschitz bounds for the fixed orbit; finite nets handle internal tests of a standard Lipschitz norm.",
+        "constants": "Positive multiindexalpha has epsilon coefficient O(N^-|alpha|); no promised effective complexity bound uniform over all orbits.",
+        "normalizations": "Right cosets; total-degree source; tensor Hilbert unit vectors; real vertical character with integer values on lattice.",
+        "exceptional_cases": "P may be G or trivial; gamma need not be Gamma-valued; no torsion-free claim in degree1.",
+        "limit_order": "Choose fixed geometry before unboundedN and standard approximation accuracy before equidistribution limit."
+      },
+      "connection": {
+        "available": "Published definitions and exact project tautification supply the conventions, but not the currently missing multivariable connecting proof.",
+        "needed": "Precisely the two statements in Section1 without strengthening source quantifiers.",
+        "derivation": "Section1 fixes the full domains and constants; Sections2–7 prove the announced connecting assertions.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I01",
+        "MF-I03",
+        "MF-I06",
+        "MF-I08"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U02",
+      "claim_id": "MF-AFFINE",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 91,
+          "end_line": 138,
+          "excerpt_sha256": "e20f5d0b0d32b38f0889638769b7350af37e6e4055a09bbe9d9bd01c8a87002f"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-001/GT-orbits-final.pdf",
+          "sha256": "8c7ea5eced84dc5da97508f4eda39fa84c958d3e659a797ab402645c1c207c8f",
+          "bytes": 861456,
+          "source_id": "GT12",
+          "title": "Green and Tao, The quantitative behaviour of polynomial orbits on nilmanifolds",
+          "publication": "Annals of Mathematics175(2012),465–540",
+          "doi": "10.4007/annals.2012.175.2.2",
+          "version": "final published PDF",
+          "locator": "Lemma8.4 and Proposition9.2 progression substitution",
+          "pages": [
+            {
+              "printed_page": 519,
+              "pdf_page": 55,
+              "extracted_text_sha256": "3cadfc29c90730382efd6fe9f56b45c1d740f5a9216776a49fdbd939fc1dd5e5"
+            },
+            {
+              "printed_page": 522,
+              "pdf_page": 58,
+              "extracted_text_sha256": "d60f2fca4d3e099b40dd0e3793e79dcfaab935fda03798a7af8e6110151a3535"
+            },
+            {
+              "printed_page": 523,
+              "pdf_page": 59,
+              "extracted_text_sha256": "1dd27a52335163301bfbcaa54dec0d94c7fcb6776afe2ac0e0d0b080de9bf9ef"
+            }
+          ]
+        }
+      ],
+      "assertion": {
+        "statement": "A bounded standard multiplier transfers small positive circle coefficients through an inverse affine substitution with offsets O(N).",
+        "objects": "Real polynomial f, ftilde(m)=f(A_i+b_i m_i), integer offsets A_i, bounded nonzero integer steps b_i, product-binomial coefficients.",
+        "hypotheses": "Fixed total degreeD and dimensionk; |A_i|=O(N); ftilde coefficientbeta modulo1 is O(N^-|beta|) for every positivebeta.",
+        "quantifiers": "All positive output indicesalpha, with one common standard multiplier r independent of actual offset numerators andN.",
+        "parameter_range": "Positive or negative bounded steps; k=1 included; no assumption A_i is standard or bounded.",
+        "uniformity": "Denominators depend only onD,k,step bounds; |c_alpha,beta|=O(N^(|beta|-|alpha|)).",
+        "constants": "r clears b_i^beta_i beta_i! denominators; residual error cancels the weighted coefficient growth exactly.",
+        "normalizations": "Expand binom((n_i-A_i)/b_i,beta_i) over the reals; integer parts become integer coefficients afterr, then reduce modulo1.",
+        "exceptional_cases": "The constant coefficient contributes only to index0; it need not be controlled. A nonzero horizontal character remains nonzero after multiplying byr.",
+        "limit_order": "Invert the real substitution, clear bounded denominators, separate integer and residual parts, then estimate each coefficient."
+      },
+      "connection": {
+        "available": "GT12Lemma8.4 controls by full affine coefficient height; if offset isO(N), that bound alone is insufficient for standard constants.",
+        "needed": "The weighted bound in the actual large-offset regime used by9.2 and the new equal-cube reduction.",
+        "derivation": "Lemma2 equations3–5 explicitly expand falling factorials and use integer Stirling conversion; no unproved quantitative extrapolation is used.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I02"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U03",
+      "claim_id": "MF-D4-WEAK",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 139,
+          "end_line": 200,
+          "excerpt_sha256": "e91a9090f319ad0c621e2740dd8526d9473809f793eacb2deb9d3f7e3db2f81f"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-001/GT-orbits-erratum-final.pdf",
+          "sha256": "f710f09ca6c8ecc1837e26fbdd5d331b75e6876868d018ca34c34d84ffe4d28d",
+          "bytes": 364726,
+          "source_id": "GT14",
+          "title": "Green and Tao, On the quantitative distribution of polynomial nilsequences—erratum",
+          "publication": "Annals of Mathematics179(2014),1175–1183",
+          "doi": "10.4007/annals.2014.179.3.8",
+          "version": "final published PDF",
+          "locator": "Equal-side theorem and proof",
+          "pages": [
+            {
+              "printed_page": 1176,
+              "pdf_page": 2,
+              "extracted_text_sha256": "a36bd7fe1e3834995398738f5695fcdc4ee03168f3138b3e11fc0d8a14375d19"
+            },
+            {
+              "printed_page": 1177,
+              "pdf_page": 3,
+              "extracted_text_sha256": "8f1f958e48b9bbfab0fae6a1827c29314efa8508f99fc4176801198c4b9354df"
+            },
+            {
+              "printed_page": 1178,
+              "pdf_page": 4,
+              "extracted_text_sha256": "cdab1df98f03cf01a51aa18c230c275cd2b5f6b53bbccce846ca59a634c6fdc6"
+            },
+            {
+              "printed_page": 1179,
+              "pdf_page": 5,
+              "extracted_text_sha256": "6b56239709682e200521a1d65812f043dccb3025060c604ad19a026d9ece09c5"
+            },
+            {
+              "printed_page": 1180,
+              "pdf_page": 6,
+              "extracted_text_sha256": "73026d65f80d76463e6148f44441715425bebdb6d557eda00cf2a36db58d35f5"
+            },
+            {
+              "printed_page": 1181,
+              "pdf_page": 7,
+              "extracted_text_sha256": "4095cadb77e112c9abdb7bbe8ffcabc6f268cff954b9bb1159a6d56c832e5bc4"
+            },
+            {
+              "printed_page": 1182,
+              "pdf_page": 8,
+              "extracted_text_sha256": "6792aa0859d5ba74bfa534a4a2af169dc9cf13a962ab0be8eab45bdf05a56d8f"
+            },
+            {
+              "printed_page": 1183,
+              "pdf_page": 9,
+              "extracted_text_sha256": "9533abdd192000d40020cf1d9013661071b7ddb78b82cd3b08f6409a5ef89eb8"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-001/GT-orbits-final.pdf",
+          "sha256": "8c7ea5eced84dc5da97508f4eda39fa84c958d3e659a797ab402645c1c207c8f",
+          "bytes": 861456,
+          "source_id": "GT12",
+          "title": "Green and Tao, The quantitative behaviour of polynomial orbits on nilmanifolds",
+          "publication": "Annals of Mathematics175(2012),465–540",
+          "doi": "10.4007/annals.2012.175.2.2",
+          "version": "final published PDF",
+          "locator": "Lemma6.7; Proposition9.2 coefficient construction",
+          "pages": [
+            {
+              "printed_page": 501,
+              "pdf_page": 37,
+              "extracted_text_sha256": "c6cd5ab3e2f7b1212d452a9e36446083a79c02a84124b9b198bdca5ce0184559"
+            },
+            {
+              "printed_page": 502,
+              "pdf_page": 38,
+              "extracted_text_sha256": "0134ec76c12847aed3a929330b9919895deef6a829c090296e02db4584d6d4e1"
+            },
+            {
+              "printed_page": 522,
+              "pdf_page": 58,
+              "extracted_text_sha256": "d60f2fca4d3e099b40dd0e3793e79dcfaab935fda03798a7af8e6110151a3535"
+            },
+            {
+              "printed_page": 523,
+              "pdf_page": 59,
+              "extracted_text_sha256": "1dd27a52335163301bfbcaa54dec0d94c7fcb6776afe2ac0e0d0b080de9bf9ef"
+            }
+          ]
+        }
+      ],
+      "assertion": {
+        "statement": "Failure of total equidistribution yields a proper connected rational-kernel factorization in k parameters with actual small coefficient and rational-denominator factors.",
+        "objects": "Dense progression product with lengthsL_i>=deltaN, index cubes of common sidefloor(etaN), transformed orbitg(A_i+b_i m_i), horizontal characteru, coordinate vectorsw_alpha,z_alpha.",
+        "hypotheses": "Standard positive discrepancy, fixed rational basis and degree; G0=G1 for this weak step, handled separately in descent.",
+        "quantifiers": "One selected equal cube and one nonzero standard horizontal character controls every positive multiindex of the same originalg.",
+        "parameter_range": "Fixed k; rectangular progressions have bounded steps and O(N) offsets; only equal-side GT14 is imported.",
+        "uniformity": "Discarded index fraction<=k eta/delta+o(1); cube side is a standard positive proportion ofN; character bounds leave finitely many integer vectors.",
+        "constants": "w_alpha=(u.t_alpha-a_alpha)v_alpha; z_alpha=a_alpha v_alpha; same bounded-denominator vector hasu.v_alpha=1.",
+        "normalizations": "Normalizeg0=c lambda; real horizontal lift of p vanishes coefficientwise; original epsilon=c epsilon0 andgamma=gamma0 lambda.",
+        "exceptional_cases": "Ifu vanishes on a support set a_alpha,w_alpha,z_alpha tozero. Rational numerators may be unbounded. Trivial ambient group does not enter failure step.",
+        "limit_order": "Localize failure, apply published equal cube theorem, useMF-AFFINE, then split coefficients on their actual adapted supports."
+      },
+      "connection": {
+        "available": "GT14 supplies a character obstruction on an equal cube. GT12 coordinate support and polynomial closure supply the algebraic maps.",
+        "needed": "An ambient coefficient obstruction and actual factors for dense progression products, without an arbitrary-side theorem.",
+        "derivation": "Section3 performs the cube averaging with controlled remainders, then invokesLemma2 and gives every factor in equation6.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I01",
+        "MF-I02",
+        "MF-I03"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U04",
+      "claim_id": "MF-D4",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 201,
+          "end_line": 277,
+          "excerpt_sha256": "ac1d80c74e713a1f5e904ab7f4da04e98e4709b30cf4bed1bb1614ad97e1d137"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-001/GT-orbits-final.pdf",
+          "sha256": "8c7ea5eced84dc5da97508f4eda39fa84c958d3e659a797ab402645c1c207c8f",
+          "bytes": 861456,
+          "source_id": "GT12",
+          "title": "Green and Tao, The quantitative behaviour of polynomial orbits on nilmanifolds",
+          "publication": "Annals of Mathematics175(2012),465–540",
+          "doi": "10.4007/annals.2012.175.2.2",
+          "version": "final published PDF",
+          "locator": "Coordinate polynomial laws and rational lattices",
+          "pages": [
+            {
+              "printed_page": 501,
+              "pdf_page": 37,
+              "extracted_text_sha256": "c6cd5ab3e2f7b1212d452a9e36446083a79c02a84124b9b198bdca5ce0184559"
+            },
+            {
+              "printed_page": 502,
+              "pdf_page": 38,
+              "extracted_text_sha256": "0134ec76c12847aed3a929330b9919895deef6a829c090296e02db4584d6d4e1"
+            },
+            {
+              "printed_page": 527,
+              "pdf_page": 63,
+              "extracted_text_sha256": "e5e61dec36013faddfb387d34faa8498ee8d19ffca916b35d4c1639645e93a39"
+            },
+            {
+              "printed_page": 528,
+              "pdf_page": 64,
+              "extracted_text_sha256": "6810507259769762606104e998820ec233391b9045fdd6d63548061af0a49395"
+            },
+            {
+              "printed_page": 534,
+              "pdf_page": 70,
+              "extracted_text_sha256": "09bc675f8b2347e964c48c647a4f49f571ce562db822d8fca0a8af49c9e448e5"
+            },
+            {
+              "printed_page": 535,
+              "pdf_page": 71,
+              "extracted_text_sha256": "a54110d1e9fcf2006b0cb011b7d3baca1fab6e94bea6b0b044772805fa6652fb"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "source_id": "GTZ",
+          "title": "Green, Tao and Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "publication": "Annals of Mathematics176(2012),1231–1372",
+          "doi": "10.4007/annals.2012.176.2.11",
+          "version": "final published PDF",
+          "locator": "B9 and D4 descent",
+          "pages": [
+            {
+              "printed_page": 1337,
+              "pdf_page": 107,
+              "extracted_text_sha256": "4259fc2586f96dc01422b88653d8266e8186eda9b7c2c11ff54c67522fd4be4e"
+            },
+            {
+              "printed_page": 1338,
+              "pdf_page": 108,
+              "extracted_text_sha256": "4ef55434bf0a7d952d83bd18c44c05c62629b61fa3c4a3e45147d2930d915fef"
+            },
+            {
+              "printed_page": 1344,
+              "pdf_page": 114,
+              "extracted_text_sha256": "743949580c9008b2a8204e8801233f4dc4179f3f4f56eb5141ca5d331afea91c"
+            },
+            {
+              "printed_page": 1345,
+              "pdf_page": 115,
+              "extracted_text_sha256": "1fc9f072cf94e7a568d3e55f4379d7e1388abe2cc088606b2e3164cf8a1869df"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-002/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "bytes": 27725,
+          "locator": "Lemmas3–4; earlier one-variable statements remain unchanged"
+        }
+      ],
+      "assertion": {
+        "statement": "Products, right-coset periods and least-dimensional descent preserve controlled factors and produce one p equidistributed on all standard finite-index covers.",
+        "objects": "Scaled coordinate polynomials, formal Taylor weights, lower-central denominator lattice, tensor-grid interpolation, R_i(n,r), and rational representing subgroups.",
+        "hypotheses": "Fixed finite k/group/degree and finite products; rational coordinate formulas; weak stepMF-U03 already supplied.",
+        "quantifiers": "Global identities and periods for everyinternal n and everyaxis; same p and P before arbitrary finite-indexDelta is considered.",
+        "parameter_range": "Any fixed standard dilate[-AN,AN]^k; all positive multiindices; finitely many possible dimensions0,...,dimG.",
+        "uniformity": "Small coefficients stayO(N^-|alpha|); real extensions arebounded andO(1/N)-Lipschitz on fixed dilates; periods and denominator lattice standard.",
+        "constants": "BCH denominator exponent excess>=t-1 for t inputs; R_i(n,0)=0; q clears all denominators for allaxes.",
+        "normalizations": "Right quotientgamma(n)^-1 gamma(n+r e_i), notleftquotient. Refined product isepsilon epsilon2 andgamma2 gamma.",
+        "exceptional_cases": "IfG1 orP intersectionG1 is proper, normalizeconstant term and restrict. Commonfinite covers do not requireGamma normal; usefinite-indexrational structures.",
+        "limit_order": "Construct controlled representations, choose minimumdimension, then contradict anyfailed later cover. No simultaneous infinite choice of covers."
+      },
+      "connection": {
+        "available": "DF002 proves one-variable versions; published coordinate laws work in fixed finite parameters but do not justify an automatic extension of equidistribution.",
+        "needed": "Explicit parameterwise estimates, period proof and cover quantifier order for the new factors.",
+        "derivation": "Section4 proves scaled-polynomial and Taylor-weight closure, repeats the BCH lattice construction, uses tensor-grid interpolation for right periods, and performs the descent.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I03",
+        "MF-I04"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U05",
+      "claim_id": "MF-COMMON-CORE",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 278,
+          "end_line": 303,
+          "excerpt_sha256": "de0a4b96b4bc3f2b9a8ffae7ee94f7ca7c81ade2b922a115dcb1ab01213e8f91"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "source_id": "GTZ",
+          "title": "Green, Tao and Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "publication": "Annals of Mathematics176(2012),1231–1372",
+          "doi": "10.4007/annals.2012.176.2.11",
+          "version": "final published PDF",
+          "locator": "D5 factorization and rational residue-class proof",
+          "pages": [
+            {
+              "printed_page": 1345,
+              "pdf_page": 115,
+              "extracted_text_sha256": "1fc9f072cf94e7a568d3e55f4379d7e1388abe2cc088606b2e3164cf8a1869df"
+            },
+            {
+              "printed_page": 1346,
+              "pdf_page": 116,
+              "extracted_text_sha256": "7a2f31fe61e15923d111fe9d130d6215eb0c609e5a712577b4d18bad74f6a80c"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+          "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+          "bytes": 13507,
+          "locator": "Theorem1 taut representations with unchanged positive groups"
+        }
+      ],
+      "assertion": {
+        "statement": "Every rational residue representative gives a well-defined test on one common finite cover ofP.",
+        "objects": "Standard discreteLambda>=Gamma, finite coset valueslambda_rho, normalcoreGamma0, Delta=P intersectionGamma0.",
+        "hypotheses": "Global right-coset period fromMF-D4; fixed finite-indexovergroup; ambient degree filtration taut after exact projecttautification.",
+        "quantifiers": "All residueclassesrho in(Z/q)^k and allx inP/Delta use the sameDelta and sameorbitp.",
+        "parameter_range": "q standardpositive; all k-tuples of residues, includingclasses not encountered in a later cutoff.",
+        "uniformity": "Finitecosetset and q^k representatives are standard; rational quotient metrics fixed.",
+        "constants": "Gamma0 iskernelofaction onLambda/Gamma, hence normal finiteindex; lambda_rho^-1 delta lambda_rho inGamma.",
+        "normalizations": "Test isF(z x lambda_rho Gamma) and uses rightcosets; no claimgamma liesinGamma or haszerohorizontalTaylorcoefficients.",
+        "exceptional_cases": "Gamma neednotbenormal. Multiple residues may choose the samerepresentative; q=1 causesnoexception.",
+        "limit_order": "Choose factorization first, representatives next, commoncore and finitecover before takingHaarmeans."
+      },
+      "connection": {
+        "available": "D5 gives rational residue representatives but its later Taylor deletion is false.",
+        "needed": "A quotient on which all actual residue tests are well-defined and p remains totallyequidistributed.",
+        "derivation": "Equation7 uses the finitecosetaction and equation8 checksinvariance directly; the all-cover clauseofMF-D4 applies toDelta.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I04",
+        "MF-I06"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U06",
+      "claim_id": "MF-INTEGRAL",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 304,
+          "end_line": 359,
+          "excerpt_sha256": "50fe1860564c9b8701f46b16cc945b8aafb2d006c534a8d5f2690007f1b92411"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GT-final.pdf",
+          "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+          "bytes": 1213124,
+          "source_id": "GT10",
+          "title": "Green and Tao, Linear equations in primes",
+          "publication": "Annals of Mathematics171(2010),1753–1850",
+          "doi": "10.4007/annals.2010.171.1753",
+          "version": "final published PDF",
+          "locator": "CorollaryA2 and lattice packing consequence",
+          "pages": [
+            {
+              "printed_page": 1810,
+              "pdf_page": 60,
+              "extracted_text_sha256": "5ef067ec5d462dddd44674de2d753158a03c545a78e6c4061ccbce20ae6322f4"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "locator": "MF-D4 and common-core construction, Sections3–5"
+        }
+      ],
+      "assertion": {
+        "statement": "A positive convex/progression weighted correlation gives a nonzero Haarintegral for the actual producttest and actual common quotient.",
+        "objects": "Omega convexinI^k, densepositiveprogressionsP_i, residueclass, indexmesh ofsideetaN, epsilon(n0), testF(zx lambda_rho).",
+        "hypotheses": "Bounded standard Lipschitz norm; originalcorrelation>standardc; MF-D4 factorization with commonDelta.",
+        "quantifiers": "One residue and one denseprogressionproductR suffice; estimateuniformoverx inP/Delta beforefreezingsmoothfactor.",
+        "parameter_range": "All fixedk and bounded progressionsteps; convexsetswithorwithoutinterior; eta chosenstandardafteractualbounds.",
+        "uniformity": "Boundarypoints O(etaN^k)+O(N^(k-1)); internaltests compared by finite uniformnets; all errorlosses belowfixedpositivec0.",
+        "constants": "Retainedsum>=c0N^k; boundaryloss<c0N^k/4; selectedmean>=3c0/4; smoothfreezingloss<c0/4.",
+        "normalizations": "Pull convexset into progressionindexcoordinates; residue intersections useelementarycongruences; averagedHaarmeasure isprobabilitymeasure.",
+        "exceptional_cases": "Empty residueclasses discarded. Degenerateconvexsets handledbyarbitrarysmallthickening andboundaryneighborhoodlimit.",
+        "limit_order": "Factor first, thenfixcosetpositivecontribution andc0, choosemeshusingepsilon/testbounds, freezeepsilon, finallyuseequidistribution."
+      },
+      "connection": {
+        "available": "PublishedCorA2 controls boundaryvolume; total equidistribution applies to actual denseprogressionproducts, not an arbitraryconvexweight.",
+        "needed": "A denseproduct onwhich theperiodiccoset isfixed and epsilon can befrozen withoutlosingpositivebias.",
+        "derivation": "Lemma4 supplies the lattice-pointboundarypacking, retainsquantitativepositivec0, and identifies thefrozenmean withtheHaarintegral.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I05"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U07",
+      "claim_id": "MF-RECONSTRUCT",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 360,
+          "end_line": 432,
+          "excerpt_sha256": "d9165d0e76115850fc559f7f77d87ff48713a51db5c93e50dffc91f97be3ac1a"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/lemma13-2-002/proof.tex",
+          "sha256": "791446a2706d4a4551a00ec26b507ef76eb53f36f6d343a895cdb35d3a638388",
+          "bytes": 20576,
+          "locator": "Section2 rational subgroup/intersection/central quotient geometry"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+          "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+          "bytes": 13507,
+          "locator": "Theorem1 tautification and all-limit vertical identity"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "locator": "MF-D4 and equations7–8"
+        }
+      ],
+      "assertion": {
+        "statement": "Vanishing of the actual verticalcharacter onP_d gives an exact globallyrepresented lower-degreenilsequence equaltooriginalchi on theentiresymmetricbox.",
+        "objects": "K=P intersectionG_d, commonlatticeDelta, quotientP/K, originalvectorFchi, realpolynomialepsilonextension, timebumpB, residuebumpsb_rho, orbit(pbar,n/(10N),n/q).",
+        "hypotheses": "TautambientproductGchi timesG0 withG0_d trivial; eta(projectionK)=0; rationalconnectedcentralK and all-limit equivariance.",
+        "quantifiers": "Every x inP/Delta and limitpoint ofK fordescent; every n in[-N,N]^k forequality, notjustbiasedprogression.",
+        "parameter_range": "d>=2 so bothtori degree1<=d-1; fixedstandardq,k; charttimecube[-1/5,1/5]^k.",
+        "uniformity": "Scaled epsilon coefficients giveuniform Lip in time; compact quotient andstandardresidue representatives giveuniformLip inx; sumhasq^k terms.",
+        "constants": "Time n/(10N) lieswhereB=1; residue bumpssampleKroneckervalues exactlyat n/q; quotienttopgroupiszero.",
+        "normalizations": "Right multiplicationlambda_rho retainedinFchi; centralK commutesacrossepsilon andlambda; actualvectorfunctionreused afterquotient.",
+        "exceptional_cases": "q=1 usesconstantresiduefunction; lowersequence neednotbeunitawayfromorbit; noinvariance inferred merelyfrompermutation-equivariance.",
+        "limit_order": "Proveeta-vanishingfirst; descendtestforeachrho; constructglobalbumps; thenevaluateorbitandverifyexactidentity15."
+      },
+      "connection": {
+        "available": "LP13 supplies actualrationalgeometry and tautification suppliescentrality/all-limit convention; neither alone suppliesglobal reconstruction.",
+        "needed": "The lowerdegreefunction onallresidues and negativecoordinates of thesymmetricbox.",
+        "derivation": "Equations11–15 explicitly useonecommonquotient, slowtimechart withzerocollar and finite residueinterpolation; identity followsfromglobalfactorization andrightcosets.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I06",
+        "MF-I07"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U08",
+      "claim_id": "MF-E11",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 433,
+          "end_line": 454,
+          "excerpt_sha256": "a33e6a8353a26967db23c566e06f0743c29e4d7adc594abbdd6b958415d266c0"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "source_id": "GTZ",
+          "title": "Green, Tao and Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "publication": "Annals of Mathematics176(2012),1231–1372",
+          "doi": "10.4007/annals.2012.176.2.11",
+          "version": "final published PDF",
+          "locator": "E11 statement, lower-degree correlation and proof",
+          "pages": [
+            {
+              "printed_page": 1351,
+              "pdf_page": 121,
+              "extracted_text_sha256": "6f82733c5c43c8b03b33723b76d5b13fee8db53b8db3d55b4dfe4bd85812319b"
+            },
+            {
+              "printed_page": 1352,
+              "pdf_page": 122,
+              "extracted_text_sha256": "a4a05ce882eb2a83750173881e6dcc4bac36b0308d381209ef225f1993ba5dce"
+            },
+            {
+              "printed_page": 1364,
+              "pdf_page": 134,
+              "extracted_text_sha256": "fee672dcfc389960130ab701aba2b5871894ec33510d8be07dcab2d609d0c123"
+            },
+            {
+              "printed_page": 1365,
+              "pdf_page": 135,
+              "extracted_text_sha256": "e5f9cf425cbac9e26378ddd3ecc1a6582ca25b38406d8295ee4d357c88282ead"
+            },
+            {
+              "printed_page": 1366,
+              "pdf_page": 136,
+              "extracted_text_sha256": "4a8d38a79b8545950cbcd2b28f1cfe9c3f33020bcc0d2e83612b814ef70881f8"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "locator": "MF-INTEGRAL and MF-RECONSTRUCT"
+        }
+      ],
+      "assertion": {
+        "statement": "The exact cutoff bias inE11 forceseta tovanish ontheconnectedtopsubgroup and givesoriginalchi lowerdegreeonallI^k.",
+        "objects": "A selectedscalarcoordinate ofunitvectorchi, actuallowerdegreecorrelatingtestF0, tautproductorbit, P_d and nonzeroHaarintegral.",
+        "hypotheses": "d>=2; standardnonzero weightedcorrelation; lowergeometry hastrivialdegree-dgroup; all-limit verticalequivariance.",
+        "quantifiers": "One finitecoordinate choice followedbyallstandardu inK; conclusionforall n inI^k and alloriginalvectorcoordinates.",
+        "parameter_range": "Anyfixedk,d; sourcepositiveprogressions andconvexpolytope; no full-boxplainbias assumedinitially.",
+        "uniformity": "Coordinatecount finite andstandard; lossinpositivecorrelation standard; quotient/testbounds fromexactreconstruction.",
+        "constants": "Haar integralI=e(eta(u))I withI nonzero, soeta(K) subsetZ; continuityandconnectedness forcezero.",
+        "normalizations": "ProducttestFchi_i timesconjugateF0 retainseta, sinceauxiliarytopgrouptrivial; laterreconstructionusesFchi itself.",
+        "exceptional_cases": "No first-coordinate scalarneedhaveunitmodulus. Itsnonzerointegral suffices, andwholeunitvectorisreconstructed.",
+        "limit_order": "Fixactualcorrelation andcoordinate, factorproduct, obtainHaarintegral, provecharacterzero, thenapplyreconstruction."
+      },
+      "connection": {
+        "available": "E11 is a published statement but its transitive factorization and all-box join wereexplicitlyopen inDF002.",
+        "needed": "Thatstatement ontheactual all-limitobjects usedbySection13.",
+        "derivation": "Section7 biasparagraph suppliesHaartranslation, real-characterconnectedness and citesexplicitidentity15 ratherthanunprovedtranslate-extrapolation.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I05",
+        "MF-I06",
+        "MF-I07"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U09",
+      "claim_id": "MF-E13",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 455,
+          "end_line": 480,
+          "excerpt_sha256": "20a19174462a442b7f8d88345e1c63593bd4743eea44ba766c8d0efdbbf8c6db"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "source_id": "GTZ",
+          "title": "Green, Tao and Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "publication": "Annals of Mathematics176(2012),1231–1372",
+          "doi": "10.4007/annals.2012.176.2.11",
+          "version": "final published PDF",
+          "locator": "E13 and symbolequivalence definitions",
+          "pages": [
+            {
+              "printed_page": 1351,
+              "pdf_page": 121,
+              "extracted_text_sha256": "6f82733c5c43c8b03b33723b76d5b13fee8db53b8db3d55b4dfe4bd85812319b"
+            },
+            {
+              "printed_page": 1352,
+              "pdf_page": 122,
+              "extracted_text_sha256": "a4a05ce882eb2a83750173881e6dcc4bac36b0308d381209ef225f1993ba5dce"
+            },
+            {
+              "printed_page": 1366,
+              "pdf_page": 136,
+              "extracted_text_sha256": "4a8d38a79b8545950cbcd2b28f1cfe9c3f33020bcc0d2e83612b814ef70881f8"
+            },
+            {
+              "printed_page": 1367,
+              "pdf_page": 137,
+              "extracted_text_sha256": "7cfb15bd57fc7a502f116848270257d26e779c733c6beb28dca3f6749e439ffc"
+            }
+          ]
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "locator": "MF-INTEGRAL and MF-RECONSTRUCT"
+        }
+      ],
+      "assertion": {
+        "statement": "A standardpositive tensorpower lowerdegreeonI^k impliesoriginalchi lowerdegreeonthesamebox.",
+        "objects": "Unitvectorchi, tensorpowera, actualequal lowerdegreevectorPsi, finitecommonauxiliarygeometry, topcharacter a eta.",
+        "hypotheses": "a>=1 standard; d>=2; all-limit verticalidentity and exactcomponentwise lowerdegreerepresentation onI^k.",
+        "quantifiers": "Pointwise tensorpairing onpositive[N]^k yieldsonefixedscalaraverage; conclusionreturnsoriginalchi onentireI^k.",
+        "parameter_range": "Allstandardtensorpowers; dimensionD^a standard; no torsionclaimindegree1.",
+        "uniformity": "Nonzero scalaraverage at least1/D^a inabsolutevalue forsomecoordinate; finitegeometry andbounds remainstandard.",
+        "constants": "Sum_j chi_tensor_j conjugatePsi_j=1; Haarinvariance givesa eta(K)=0 asrealhomomorphism, theneta(K)=0.",
+        "normalizations": "Symbola[chi]=0 meanschi_tensor equivalenttoconstant, henceactual lowerdegreecoordinatefunctions onthebox.",
+        "exceptional_cases": "a=1 allowed; no dividedfunction orcoordinatequotient used; no finiteSha-styleextra premise or externaltorsion assumption.",
+        "limit_order": "UnifyfinitePsi geometry, selectscalaraverage, factorjointorbit, eliminatea inrealcharacter, reconstructoriginalvector."
+      },
+      "connection": {
+        "available": "PublishedE13 states torsion-freeness; its proof invokesE12 andD5 withoutthecurrentlyrequiredglobalconnectingrecord.",
+        "needed": "A direct same-object proof avoidingthat unprovedextrapolation.",
+        "derivation": "Section7 tensorpairing and connectedcharacterargument feedthe sameglobalreconstruction15.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I06",
+        "MF-I08"
+      ],
+      "status": "author proposal"
+    },
+    {
+      "id": "MF-U10",
+      "claim_id": "MF-CONSUMER-BOUNDARY",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-multifactor-compiler-001/proof.tex",
+          "sha256": "7c125e3cd3d932a43145a2525b9efd4f445b382d12bd0d5869c6ab6b70612515",
+          "bytes": 27330,
+          "start_line": 481,
+          "end_line": 494,
+          "excerpt_sha256": "f1f7f5c777ed66483234a0315b90112edf0be8094706ec54bb469e63e010f6c1"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-002/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+          "bytes": 27725,
+          "locator": "DF002 weak-step coefficient transfer"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "source_id": "GTZ",
+          "title": "Green, Tao and Ziegler, An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "publication": "Annals of Mathematics176(2012),1231–1372",
+          "doi": "10.4007/annals.2012.176.2.11",
+          "version": "final published PDF",
+          "locator": "D5 horizontal Taylor assertion; E11/E13 direct consumers",
+          "pages": [
+            {
+              "printed_page": 1346,
+              "pdf_page": 116,
+              "extracted_text_sha256": "7a2f31fe61e15923d111fe9d130d6215eb0c609e5a712577b4d18bad74f6a80c"
+            },
+            {
+              "printed_page": 1365,
+              "pdf_page": 135,
+              "extracted_text_sha256": "e5f9cf425cbac9e26378ddd3ecc1a6582ca25b38406d8295ee4d357c88282ead"
+            },
+            {
+              "printed_page": 1366,
+              "pdf_page": 136,
+              "extracted_text_sha256": "4a8d38a79b8545950cbcd2b28f1cfe9c3f33020bcc0d2e83612b814ef70881f8"
+            },
+            {
+              "printed_page": 1367,
+              "pdf_page": 137,
+              "extracted_text_sha256": "7cfb15bd57fc7a502f116848270257d26e779c733c6beb28dca3f6749e439ffc"
+            }
+          ]
+        }
+      ],
+      "assertion": {
+        "statement": "Link onlythe newlyproved affine/factorization/reconstruction assertions to affectedconsumers and keepcompleteGI/release acceptance separate.",
+        "objects": "FrozenDF002, frozenSection13, GaussianD6 andnewMF statements; unchangedpriorreviews.",
+        "hypotheses": "Currentpacket isauthorproposal; independentdecision andconsumerbinding arestillrequired.",
+        "quantifiers": "All namedrelateduses inAFFECTED-CONSUMERS; no silenthashrefresh or globalclosure inference.",
+        "parameter_range": "Affinelemma k=1 usedbyDF002; E11 scale8N dimension s+1 degree s; E13 scale8N dimension2 power s!.",
+        "uniformity": "Alls andfactorials standard; contractssupplyexactranges without effectiveuniformbounds beyondthoseproved.",
+        "constants": "No deletionofgamma horizontalTaylor contribution; Gaussianstillrequires itsdenominatorcorrection.",
+        "normalizations": "Useexact frozenproofs andsamecoset/verticalconventions; olddecisions retainoldscope.",
+        "exceptional_cases": "UnreviewedotherGIcomponents remainopen. Publishedsourceerrors do notbythemselvesdisprovetheir validrepaired conclusions.",
+        "limit_order": "Freezeproposal, obtainnon-authorapplication/coverage review, thenintegratorbindsaffectedconsumers."
+      },
+      "connection": {
+        "available": "Earliercomponents have boundeddecisions but expressly leaveaffine andmultivariableconnections open.",
+        "needed": "A concrete proposed supplier for thoseopen obligations, withoutfabricated acceptance.",
+        "derivation": "Section8 andAFFECTED-CONSUMERS recordexactbefore/needed/after interfaces andpendingreviewstatus.",
+        "status": "New author derivation; independent mathematical and coverage decision pending"
+      },
+      "initial_use_ids": [
+        "MF-I02",
+        "MF-I04",
+        "MF-I07",
+        "MF-I08"
+      ],
+      "status": "author proposal"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+[
+  {
+    "id": "CORANK-MORDELL-WEIL-FINITE-GENERATION",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1795,
+      "end_line": 1796,
+      "excerpt_sha256": "8e5d946bc0e99226d256eaf556b3744bf701d08e01f161be2324186dc6c8139a"
+    },
+    "source": {
+      "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+      "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+      "locator": "VIII Theorem4.1, printed220, proof224; statement directly viewed atPDF235"
+    },
+    "available": {
+      "statement": "For every elliptic curve E/Q, the abelian group E(Q) is finitely generated.",
+      "hypotheses": "E is an elliptic curve overQ.",
+      "parameter_range": "No rank or rational-torsion restriction.",
+      "normalizations": "The full rational-points group, with its finite torsion subgroup.",
+      "limit_order": "Fix E/Q; the theorem gives finite generation, not generators or an effective rank bound."
+    },
+    "needed": "For the actual full-rational-two-torsion E/Q, dim_F2 E(Q)/2E(Q)=r+2.",
+    "derivation": "Write E(Q)=Z^r plus a finite abelian torsion group T. Multiplication by2 on finite T has equal kernel and cokernel sizes, so dim T/2T=dim T[2]=2 by full rational two-torsion. Hence the required dimension is r+2.",
+    "boundary": "No analytic-rank equality or finiteness of Sha is inferred."
+  },
+  {
+    "id": "CORANK-FINITE-KUMMER-DIMENSION",
+    "role": "published_theorem_application",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1795,
+      "end_line": 1796,
+      "excerpt_sha256": "8e5d946bc0e99226d256eaf556b3744bf701d08e01f161be2324186dc6c8139a"
+    },
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1824,
+      "end_line": 1830,
+      "excerpt_sha256": "4bd0ea0a127c7909e68bcf93600f7f4ab5fcc721ac76e47d7ea544104eea863a"
+    },
+    "publication": {
+      "title": "On the Mordell–Weil group and the Shafarevich–Tate group of modular elliptic curves",
+      "authors": "V. A. Kolyvagin",
+      "venue": "Proceedings of the International Congress of Mathematicians, Kyoto 1990, Vol. I, Mathematical Society of Japan, 1991, pp.429–436",
+      "authoritative_version": "Published proceedings; locally retained PDF SHA a86ae342133e8f051752bfd26009c38b9c755e8469c46235cef2d35e8c68f75d. Not the earlier MPIM preprint.",
+      "locator": "Equations (4) and (5), p.432, finite Kummer/Selmer sequences",
+      "corrections": "Current published-version selection and bounded forward/Hodge adoption retained; no new source edition claimed."
+    },
+    "available_assertion": {
+      "statement": "The finite all-place Kummer and Selmer sequences identify the rational-points, Selmer and Sha-torsion terms.",
+      "objects": "Finite Kummer and all-place Selmer groups of A/Q at powers of two.",
+      "hypotheses": "A is an elliptic curve over Q; finite multiplication-by-2^n sequences with all local conditions.",
+      "quantifiers": "Every actual elliptic curve A/Q satisfying the stated hypotheses.",
+      "parameter_range": "Positive integers n; finite powers of two.",
+      "uniformity": "Qualitative statement for each A; no effective bound.",
+      "constants": "No numerical constant or effective bound.",
+      "normalizations": "Finite sequences only. The filtered direct limit and corank computation are separate local deductions.",
+      "exceptional_cases": "Includes prime two; does not itself supply finite Sha, rank equality or Mordell–Weil finite generation.",
+      "limit_order": "Fix each finite power first; direct-limit passage is supplied separately."
+    },
+    "needed": "The actual Sel2 dimension3 gives r+dim_F2 Sha(E/Q)[2]=1.",
+    "derivation": "At n=1 use exact0→E(Q)/2E(Q)→Sel2(E/Q)→Sha(E/Q)[2]→0 with the all-place local conditions. Insert the separately obtained dimension r+2 and the hypothesis dim Sel2=3. This proves finite Sha[2] of dimension at most1; it does not prove finiteness of the whole Sha group.",
+    "incoming": [
+      "The lemma hypotheses E/Q, full rational2-torsion and dim Sel2=3.",
+      "The preceding Mordell–Weil dimension calculation."
+    ],
+    "boundary": "Finite-level sequence only. The final Selmer corank and Cassels–Tate pairing remain separate."
+  },
+  {
+    "id": "CORANK-TWO-PRIMARY-DECOMPOSITION",
+    "role": "local_algebra_derivation",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1797,
+      "end_line": 1799,
+      "excerpt_sha256": "fd0832a932a9f208a004e947a8ad2685ab16c57fa173bfcd7160e08e9f5db35a"
+    },
+    "needed": "For A=Sha(E/Q)[2∞] with dim A[2]<=1, A=(Q2/Z2)^t plus a finite group F; the divisible summand is maximal and dim A[2]=t+dim F[2].",
+    "derivation": "If A[2]=0 then A=0, since any nonzero2-power-torsion element has a nonzero multiple of order2. Otherwise |A[2]|=2. Inductively the multiplication-by2 map A[2^n]→A[2^(n-1)] has kernel of size2, so |A[2^n]|<=2^n and every A[2^n] is finite. A finite subgroup H of A has at most one nonzero element of order2. Choose an element of maximal order2^e in H; since H=H[2^e], the same kernel count gives |H|<=2^e, so this element generates H. Thus every A[2^n] is cyclic. If element orders in A are bounded by2^e, A=A[2^e] is finite cyclic: take t=0,F=A. If orders are unbounded, for each n an element of order at least2^n gives |A[2^n]|>=2^n, hence A[2^n] is cyclic of exact order2^n. Multiplication by2 from the next cyclic group onto it is surjective. Choose compatible generators inductively; their union identifies A with Q2/Z2. Then take t=1,F=0. These cases prove the displayed decomposition under the actual already established rank bound without a general cofinite-generation theorem. In either case any divisible subgroup has zero image in finite F, so the displayed summand is maximal. Taking2-torsion of the direct sum gives the claimed dimension identity.",
+    "incoming": [
+      "A is the2-primary torsion subgroup by definition.",
+      "The previous finite Kummer calculation gives dim_F2 A[2]<=1."
+    ],
+    "boundary": "Before the separate alternating nondegenerate pairing is used, the finite cyclic F is not asserted to vanish. F=0 would still allow a nonzero divisible Sha subgroup; no finiteness of full Sha is claimed."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-01",
+    "role": "source_to_source_actual_application",
+    "source_label": "hyp:RC",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1722,
+      "end_line": 1728,
+      "excerpt_sha256": "d85a599cfe148c59fd2caf1646d7e0b84a495cb7649dc199ff5cefe8ff58f939"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1863,
+      "end_line": 1873,
+      "excerpt_sha256": "543b65665417ee87bb983246b6ac135b6c6fe0285c6adf54b4ac6d7db3f37d66"
+    },
+    "purpose": "Apply restricted converse to both admissible twists.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "EARLY-INTERNAL-REFERENCE-02",
+    "role": "source_to_source_actual_application",
+    "source_label": "lem:forward-rank",
+    "source_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1810,
+      "end_line": 1814,
+      "excerpt_sha256": "bd7765e0bca4d1934f826eec8caf81e69049171729a0a33b357458a0025bd22d"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1863,
+      "end_line": 1873,
+      "excerpt_sha256": "543b65665417ee87bb983246b6ac135b6c6fe0285c6adf54b4ac6d7db3f37d66"
+    },
+    "purpose": "Deduce rational rank and finite Sha for both twists.",
+    "boundary": "Preserve exact source hypotheses and limit order. This is an incoming source relationship, not a new ordinary consumer or source-proof approval."
+  },
+  {
+    "id": "SELMER-SIMULTANEOUS-MATRICES",
+    "role": "retained_local_proof_application",
+    "source_location": {
+      "path": "work/parity-frozen-4eaee875.tex",
+      "sha256": "d986fd78ba814d6783165ab3fcc9da89c2b983d43d1e737a4bf798d1d753ac58",
+      "start_line": 543,
+      "end_line": 691,
+      "excerpt_sha256": "986845c478bfff9620f84f2506c763ac4536ec7618c8952568f261a60dcccab6"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1752,
+      "end_line": 1774,
+      "excerpt_sha256": "ead21660543686d14415183099f4f769a2c016aa25867e41ecfb0026ffe08a7b"
+    },
+    "needed": "The same prescribed symbols yield kerK=<1,1_B> and lambda outside imK on both supports.",
+    "connecting_argument": "The raw proof uses Ksharp=K+lambda a^t and K=Ksharp T. The deleted smaller matrix has C columns e_i+e_d, annihilator span1 and 1^tD1=1. The larger determinant has full Boolean-product coefficient1. Both cross-row sums, not zero individual cross-symbols, are retained. d=1 and empty theta support remain valid.",
+    "retained_inputs": [
+      "Actual beta/theta cross-square preparation, disjoint supports and congruences are supplied before this block.",
+      "Split-cubic Kummer theorem, odd formal-group/local squareclass facts, quadratic reciprocity, CRT and Dirichlet remain the explicit foundational source inputs of the retained proof."
+    ],
+    "excluded": "Raw broad converse457–494 and raw later global-point invocation are not imported; no rational point or finite Sha is asserted."
+  },
+  {
+    "id": "SELMER-PRIME-REALIZATION",
+    "role": "retained_local_proof_application",
+    "source_location": {
+      "path": "work/parity-frozen-4eaee875.tex",
+      "sha256": "d986fd78ba814d6783165ab3fcc9da89c2b983d43d1e737a4bf798d1d753ac58",
+      "start_line": 692,
+      "end_line": 703,
+      "excerpt_sha256": "486c5a7de31801a67645d55ab8a25d6985bf7b2439d8b99b36af7b3b7fee74c9"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1775,
+      "end_line": 1775,
+      "excerpt_sha256": "c40c7a82cd76164fd170fc3c912022aeb1d5c75565f5820fa96fab7dd5d3a523"
+    },
+    "needed": "Realize this one compatible finite symbol prescription with distinct primes.",
+    "connecting_argument": "Types1 or7 modulo12 and nonzero residues at distinct old primes give a reduced residue class. Choose the I primes and q0 last after the Boolean assignment; CRT and Dirichlet give finite avoidance. Reverse symbols are fixed by reciprocity, not independently prescribed.",
+    "retained_inputs": [
+      "Actual beta/theta cross-square preparation, disjoint supports and congruences are supplied before this block.",
+      "Split-cubic Kummer theorem, odd formal-group/local squareclass facts, quadratic reciprocity, CRT and Dirichlet remain the explicit foundational source inputs of the retained proof."
+    ],
+    "excluded": "Raw broad converse457–494 and raw later global-point invocation are not imported; no rational point or finite Sha is asserted."
+  },
+  {
+    "id": "SELMER-LOCAL-EQUATIONS",
+    "role": "retained_local_proof_application",
+    "source_location": {
+      "path": "work/parity-frozen-4eaee875.tex",
+      "sha256": "d986fd78ba814d6783165ab3fcc9da89c2b983d43d1e737a4bf798d1d753ac58",
+      "start_line": 317,
+      "end_line": 435,
+      "excerpt_sha256": "dfa4becc0d779dd24e3438b64cb2e13ad4b32c75258acca2614871b480351650"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1777,
+      "end_line": 1785,
+      "excerpt_sha256": "8340133f0a8bf30a967e0689e822357ff3adae4dd0db1edc6079c46af7c69cc1"
+    },
+    "needed": "The exact normalized local Kummer equations give an upper bound of eight classes.",
+    "connecting_argument": "Use roots -3l,l,0 in the split-cubic Kummer map. Torsion images(l,1),(3,-l), the four-element odd local image, and the necessary dyadic even-valuation condition give the displayed equations. The condition at3 is(lambda+s)^tv=0. The kernel computation forces v=0,delta=0,u in kerK. Necessary dyadic conditions are not promoted to sufficiency.",
+    "retained_inputs": [
+      "Actual beta/theta cross-square preparation, disjoint supports and congruences are supplied before this block.",
+      "Split-cubic Kummer theorem, odd formal-group/local squareclass facts, quadratic reciprocity, CRT and Dirichlet remain the explicit foundational source inputs of the retained proof."
+    ],
+    "excluded": "Raw broad converse457–494 and raw later global-point invocation are not imported; no rational point or finite Sha is asserted."
+  },
+  {
+    "id": "SELMER-EXTRA-CLASS",
+    "role": "retained_local_proof_application",
+    "source_location": {
+      "path": "work/parity-frozen-4eaee875.tex",
+      "sha256": "d986fd78ba814d6783165ab3fcc9da89c2b983d43d1e737a4bf798d1d753ac58",
+      "start_line": 437,
+      "end_line": 453,
+      "excerpt_sha256": "2731ebd2399354ffbaaf2c1fe0f5ec79164f468860262b3e6eac9fbf1bf23a9c"
+    },
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 1786,
+      "end_line": 1789,
+      "excerpt_sha256": "49e9a76e4dd2ae1e3d860a1e5f82447f6e849bf5e7163252344d2433e32c10b4"
+    },
+    "needed": "The same(beta,1) is everywhere locally Kummer and independent of the two torsion classes.",
+    "connecting_argument": "At2 and infinity beta is a positive local square; at3 it is the nonsquare unit matching tau1. At support primes K1_B=0 supplies the square unit quotients; elsewhere the unramified odd image suffices. beta>1 and q0 outsideB exclude identity/tau1, and negative second coordinates exclude tau2 and its product. This supplies the lower bound matching eight classes.",
+    "retained_inputs": [
+      "Actual beta/theta cross-square preparation, disjoint supports and congruences are supplied before this block.",
+      "Split-cubic Kummer theorem, odd formal-group/local squareclass facts, quadratic reciprocity, CRT and Dirichlet remain the explicit foundational source inputs of the retained proof."
+    ],
+    "excluded": "Raw broad converse457–494 and raw later global-point invocation are not imported; no rational point or finite Sha is asserted."
+  }
+]

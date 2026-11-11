@@ -1,0 +1,9 @@
+# Published invariant replacement review
+
+Reviewer: /root/v14_arithmetic_review. Accepted as the bounded source-eligibility replacement in v14-rc-tame-cup-transfer-inputs-003/MANIFEST.json SHA256 43c38592f9bb1ad21b8c2ad06af91de3c0219a1d662bc32da962531d9061c16f. The four needed assertions and actual caller locations remain unchanged from the accepted002 packet.
+
+I directly read Milne, Arithmetic Duality Theorems, second edition2006, I(1.1b) printed17 and Example1.6(b) printed19 in the retained PDF2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31. The first states restriction scales the class-formation invariant by subgroup index; the second explicitly supplies that formation for full local H2(G_K,K_s^*) and constructs its Frobenius normalization. This is the required published full-H2 statement, not merely the unramified relative subgroup.
+
+I also directly read Nekovar5.1.3 and5.2.1 printed114–115, and retained the previous direct checks of7.5.3 and8.1.4–8.1.6.5. Finite/adic trace normalization is thus supplied. The cochain trace of the constant induced tuple sums one copy per coset, giving cor res equal to the index on cohomology. Surjectivity of index multiplication on the full Q/Z invariant then yields invariance under cor, as in the accepted calculation. There is no division by the extension degree at finite coefficients.
+
+The new source paragraph cites published ADT and Nekovar. The former online notes are historical only. All four manifest members match; unchanged needed/caller checks are recorded in CHECKS.json. The previous local cup, matrix and coherence conclusions and their explicit setup assumptions remain in force. This receipt does not promote residue-unit adjustment, local splitting or other retained premises to independently proved claims, and does not certify final merged coverage.

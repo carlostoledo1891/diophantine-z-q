@@ -1,0 +1,87 @@
+\subsection{Local functions and the theta sum}
+\begin{proposition}[The actual odd theta form and its recurrence]\label{ex:app-theta-form}
+Fix an actual stage of Proposition~\ref{ex:app-detector} with $M\ge2$.
+Use $m=|h_*|$, the same $L$, the Eichler order of level $N$ in the
+quaternion algebra ramified at $\ell_0,\infty$, and the local
+Schwartz functions specified below, including (O.3).
+With $c_0=|\operatorname{GL}_4(\F_3)|=24\,261\,120$, the sum
+$H_M$ in (O.4) is well defined modulo $2^M$ in the character ring.
+It gives an actual holomorphic form
+\[
+ g_M=\sum_n a_M(n)q^n,\qquad a_M(n)=H_M(mn),
+ \qquad g_M\in M_{3/2}(\Gamma_0(K),\psi),
+\]
+with level supported only at the specified coefficient primes.
+The characters are exactly
+$\psi=\eta_B(m/\cdot)$ and $\eta=\eta_B\chi_{h_*}$, so
+$\psi/\eta=\chi_{-1}$. For every prime outside that support,
+the recurrence (O.6) holds at every integer index, with nonintegral
+indices interpreted as zero. Changing the lifts of $P_M$ loses no
+precision. A specified further local coefficient sieve retains this
+conclusion outside the enlarged support.
+\end{proposition}
+\begin{proof}\leavevmode
+In this appendix $M=M_\theta$; take $M\geq2$.  Retain the
+same $m=|h_*|$, $L$, and detecting prime $\ell_0$ as in (O.2).
+Since $\operatorname{Fr}_{\ell_0}^2=1$ on $E[2^M]$, evaluation at
+arithmetic Frobenius squared identifies the finite-field Kummer
+quotient with $T_2E/2^M T_2E$.  Equivariance and $bC=b$ imply
+$\lambda_M(\operatorname{Fr}_{\ell_0} P)=\lambda_M(P)$.
+The determinant gives $\ell_0\equiv-1\pmod4$; hence
+$(m/\ell_0)=(-1/\ell_0)(h_*/\ell_0)=1$.
+\paragraph{The finite-field evaluation map.}
+Write $k_0=\mathbb F_{\ell_0^2}$ and let $F$ denote its arithmetic
+Frobenius. For $P\in E(k_0)$, choose $Q_P\in E(\overline{k_0})$
+with $2^M Q_P=P$. Then
+\[
+ \kappa_M(P)=FQ_P-Q_P\in E[2^M]
+\]
+is independent of the choice of $Q_P$, since $F$ is the identity
+on $E[2^M]$. This is an additive map. It kills $2^ME(k_0)$,
+and its kernel is exactly that subgroup: a zero value means that
+$Q_P$ itself lies in $E(k_0)$. The finite group
+$E(k_0)/2^ME(k_0)$ has order $|E(k_0)[2^M]|=2^{2M}$, as does
+$E[2^M]$, so the induced injection is an isomorphism.
+Composing $\kappa_M$ with the fixed row $b$ modulo $2^M$ gives
+$\lambda_M$. The arithmetic Frobenius over $\mathbb F_{\ell_0}$
+commutes with $F$ and acts on the torsion by $C$. Hence
+$\kappa_M(\operatorname{Fr}_{\ell_0}P)=C\kappa_M(P)$ and
+$bC=b$ proves the asserted Frobenius sign.
+For the fixed witness, specialization of a compatible division
+point identifies this evaluation with the cocycle value at
+$\sigma^2$, whose $b$-value is $2^{a+1}$. Thus the visibility
+valuation is fixed as the precision grows.
+
+By \cite[Main Theorem 14.6.1]{voight-quaternion}, there is a quaternion
+algebra $B/\mathbb Q$ ramified exactly at $\ell_0$ and infinity.
+Let $R$ be an Eichler
+order of level $N$.  Supersingular pairs are
+$X=B^\times\backslash\widehat B^\times/\widehat R^\times$;
+their automorphism groups are $R_z^\times$ for
+$R_z=B\cap z\widehat Rz^{-1}$.  This description allows every
+$N$ prime to $\ell_0$, including powers of two.  One may choose each
+underlying supersingular curve over $\mathbb F_{\ell_0^2}$ with scalar
+Frobenius; its cyclic subgroups of order $N$ are then stable.  Thus
+all the corresponding coarse moduli points are defined over that
+field.  The geometric and adelic descriptions are those of
+\cite[Sections 1.1--1.2 and 2.5]{jetchevkane}.
+
+Define $P_M(z)=\lambda_M(L\pi_{\ell_0}(z))$.  Here the specialization is
+legitimate because $\ell_0\nmid N$: the modular curve has good
+reduction and the map to the good-reduction elliptic curve extends
+over the local base.  The good Hecke correspondences also extend.
+Writing $\pi$ as the Abel--Jacobi map based at infinity followed by
+the elliptic quotient gives, for $p\nmid N\ell_0$,
+\[
+ \sum_{z'\text{ a }p\text{-neighbor of }z}\pi_{\ell_0}(z')
+       =a_p(E)\pi_{\ell_0}(z).
+\]
+Indeed the quotient intertwines $T_p$ with $[a_p(E)]$ and
+$T_p(\infty)=(p+1)\infty$.  For an Atkin--Lehner involution
+$W_{p^e}$ the analogous identity has eigenvalue $w_{p^e}$ and the
+constant $\pi(W_{p^e}\infty)$, which $L$ kills.  Frobenius acts on
+the supersingular set as the right division-uniformizer operation.
+Consequently $P_M$ has the asserted good Hecke and Atkin--Lehner
+eigenvalues modulo $2^M$, and uniformizer eigenvalue $+1$.
+Choose arbitrary integral lifts of this finite function.
+

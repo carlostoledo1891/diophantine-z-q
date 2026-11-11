@@ -1,0 +1,860 @@
+\section{A quartic presentation with 394 variables}
+\label{sec:v13}
+
+The transformations in this section give the following specified
+polynomials. The arithmetic inputs and their scope are those retained
+in Section~\ref{subsec:v12-inputs}.
+\begin{theorem}\label{thm:v13-quartic}
+There is a specified integer polynomial $P_{394}$ of total degree four
+in 394 variables such that
+\[
+ X\in\mathbb Z\quad\Longleftrightarrow\quad
+ \exists\mathbf v\in\mathbb Q^{393}:P_{394}(X,\mathbf v)=0.
+\]
+It has 6,338 nonzero monomials, content one, and largest absolute
+coefficient $16\cdot3^{2^{26}}$. Its symbolic coefficient table uses
+$C=3^{2^{25}}$ as a fixed integer, not an additional variable.
+There is also a specified integer quartic $P_{411}$ with
+\[
+ X\in\mathbb Z\quad\Longleftrightarrow\quad
+ \exists\mathbf w\in\mathbb Q^{410}:P_{411}(X,\mathbf w)=0.
+\]
+It has 6,388 nonzero monomials, content one, and all coefficients have
+absolute value less than $2^{3247}$. Its largest coefficient has exactly
+3,247 bits; its exact value is included in the coefficient artifact.
+\end{theorem}
+
+Some transformations below are inverse rational changes of private
+witnesses, fixing every outside coordinate. Others change the arithmetic
+certificate or enlarge a point domain; for those we prove soundness and
+existence of witnesses for every integer input separately.
+
+\subsection{Conventions and retained arithmetic inputs}
+Put $K=\mathbb Q(\rho)$, $\rho^2=2$, $d_0=3-\rho$, $D=d_0^2$, and
+$E:y^2=x^3-Dx$. Retain $2E(K)=\mathbb ZP$, with
+\[
+ P=(c_*,a_*b_*),\quad a_*=-1+7\rho/4,\quad
+ b_*=39/8-9\rho/2,\quad c_*=a_*^2.
+\]
+The roots $Q_i=[n_i]P$ have nonzero odd indices, with
+$(n_1,n_2,n_3,n_4)=(n,a,t,b)$. In the intermediate source the auxiliary point is
+$H=[h]P\ne O$, and $U_i=[u_i]P$, $V_0=H-P$, $V_i=U_i-Q_i$.
+We will allow $U_i$ and $V_i$ to be $O$ for $i>0$. The proof below
+still excludes $V_0=O$. The scalar point is $R=Q_2-P=[s]P$, where
+$s=a-1$ is nonzero and even.
+
+The retained root-height implication is
+\begin{equation}\label{eq:v13-height}
+ B^2-6<7\mathcal H|N|^{19/k},\qquad
+ B=\max_i|n_i|,\quad 1\le\mathcal H<2^{2093966},
+\end{equation}
+whenever the $k$th powers of the three contact radicals divide the
+nonzero integer $N$. Their scales are $1,C_0^2,(1+C_1^2)^2$, where
+$\prod_i x(Q_i)=C_0+C_1\rho$. The retained scalar anchor gives
+\begin{equation}\label{eq:v13-anchor}
+ \log_2|s|>25165823.5.
+\end{equation}
+These are precisely the root-height and anchor statements proved earlier;
+neither is inferred from a finite coefficient calculation.
+
+\subsection{Rational logarithms and the two order-ten tests}
+Write $f=1/x$, $z=-x/y$, and extend these regular functions by
+$f(O)=z(O)=0$. Define
+\begin{align*}
+ Q(w)&=1-\frac{1526}{1073}w+\frac{513}{1073}w^2,\\
+ N(w)&=1-\frac{9776}{5365}w+\frac{2941}{3219}w^2
+ -\frac{1024}{13949}w^3-\frac{1920}{237133}w^4
+ -\frac{1024}{711399}w^5-\frac{1408}{5928325}w^6
+ +\frac{2432}{103152855}w^8,\\
+ \mathcal R(w)&=N(w)/Q(w).
+\end{align*}
+The exact identity
+\[
+ QG_9-N=\frac{2970726}{254443709}w^{10}
+       -\frac{41697666}{6361092725}w^{11}
+\]
+proves that this replacement has the same order-forty local accuracy.
+Indeed, on $[0,1]$ the denominator is at least $60/1073$ and the
+Bernstein coefficients of the numerator are
+\[
+ 1,\ \frac{4143}{5365},\ \frac{260069}{450660},\
+ \frac{27829}{67340},\ \frac{4636683}{16599310},\
+ \frac{82391}{474266},\ \frac{2245591}{23713300},\
+ \frac{955437}{23713300},\ \frac{83904}{10113025}.
+\]
+They are all positive and give $N\ge83904/10113025$. Every nonidentity point of $2E(K)$ has
+$0<Df^2<1$ at both real embeddings; at $O$ its value is zero.
+Thus it is defined and nonzero on these doubled-point domains. For
+the later enlarged H domain and its difference H-P, we instead use
+the global numerator and denominator nonvanishing certificates below.
+
+At an unramified place above $p>76176$, a nonidentity formal point of
+depth $r=v(z)\ge1$ has $v(Df^2)=4r$. All coefficient denominators
+above are supported at primes at most37. Consequently
+$v(\mathcal R-G_9)\ge40r$. The earlier full-tail estimate gives
+$v(\log_E(Q)-z\mathcal R(Df^2))\ge41r$.
+The point $O$ has exact zero error. We retain the $G_2$ numerator at
+$V_1$, of relative precision12, and use $\mathcal R$ at $V_0,V_2,V_3,V_4$.
+
+Set $\ell_0=z(V_0)\mathcal R(Df(V_0)^2)$ and define
+\[
+ L_i=z(U_i)/z(H),\quad
+ L'_1=\overline{z(V_1)G_2(Df(V_1)^2)/\ell_0},\quad
+ L'_i=\overline{z(V_i)\mathcal R(Df(V_i)^2)/\ell_0}\quad(i>1).
+\]
+The nonzero denominator is proved below, before these quotients are used.
+The tests have orders1 on $f(U_i)$ and $\overline{f(V_i)}$, order40
+on $f(H)$, order10 on $L_1-L'_1,L_1-\beta$, and order40 on the other
+three cross-tests and
+\[
+ F(L_2,L_3,L_4),\qquad F(A,T,B)=T^2-A(A-2)TB+(A-2)^2B^2-1.
+\]
+Conjugation and the place conventions are unchanged.
+
+For completeness, spell out the zero-safe local argument. Let $A(Q)$ be
+the analytic unit defined by $\log_E(Q)=z(Q)A(Q)$, with $A(O)=1$.
+Define $T_2=G_2/A$ and $T_{40}=\mathcal R/A$ by their power series.
+These units equal1 at $O$. Their errors at nonidentity formal points
+have the stated orders. The primary ratio is exactly
+$(u_i/h)A(H)/A(U_i)$, also when $u_i=0$. The alternate ratio is
+$(u_i-n_i)/(h-1)$ times the corresponding conjugated unit ratio.
+At least one of $h,h-1$ is a $p$-unit. Therefore one full ratio is
+integral, and the positive-order cross-test transfers integrality to
+both approximate and full ratios. Only now infer depth at least20 for
+a nonzero $U_i$; if $U_i=O$, its error is zero. The primary error has
+order80. Multiplication by $h,h-1$ and subtraction give
+\[
+ L_1\equiv n\pmod{p^{10}},\qquad L_i\equiv n_i\pmod{p^{40}} (i>1).
+\]
+No quotient $\log_E(O)/z(O)$ is used.
+
+\subsection{Odd roots, shared reciprocals and identity-inclusive charts}
+The retained finite chart for a root is
+$x=h_Q^2$, $j_Q^2=x^2-D$, $Q=(x,h_Qj_Q)$.
+It has $h_Qj_Q\ne0$ by the real embeddings and $\operatorname{Norm}(d_0)=7$.
+Replace its old odd-index witnesses by $A\in K,u\in\mathbb Q$ with
+\[
+ A^2-2(x+j_Q)A-D=0,\qquad \operatorname{Norm}(A)=-u^2.
+\]
+Here is the reverse implication, including the squareclass choice.
+Put $q=x+j_Q$ and $t=(A-q)/h_Q$. The equation gives
+$t^2=2q$. The point $(A,At)$ lies on $E$ and its tangent slope is
+$h_Q+t$, so its double is exactly $(x,h_Qj_Q)$.
+The inherited squareclass decomposition writes its abscissa class as
+$[\epsilon]^m[-1]^e[d_0]^f$, where $\epsilon=1+\rho$ and $e,f\in\{0,1\}$.
+The norm condition forces $m$ odd and $f=0$. Thus $[A]=[\epsilon]$
+or $[-\epsilon]$. In the latter case replace $A,t$ by $2q-A,-t$;
+the product of the two abscissae is $-D$, so the new class is
+$[\epsilon]$. Choosing the corresponding square root recovers the old
+odd witnesses without changing the root. Conversely the old witnesses
+$t,r$ give $A=th_Q+q=\epsilon r^2$, $u=\operatorname{Norm}(r)$.
+This is equality of exterior projections, not a unique private inverse.
+
+For the primary ratios keep one shared field value
+$S=j_H/h_H=-1/z(H)$. The finite-point equations become
+\[
+ h_H S=j_H,\qquad j_iL_i=h_iS.
+\]
+These remove the four private primary parameters $z(U_i)$ without
+changing their ratios. The scalar equation can be fused in the same way.
+If its old equations are $Tz_R+a_*N=0$ and
+$h_H\varrho+j_Hz_R=0$, replace them by
+\[
+ T\varrho-a_*NS=0.
+\]
+The inverse is $z_R=-\varrho/S$; $S\ne0$ follows from the retained
+finite H chart.
+
+For $i>0$ an identity-inclusive primary chart instead uses
+\[
+ f_i=r_i^2,\qquad J_i^2+Df_i^2=1,\qquad J_iL_i=r_iS.
+\]
+When $r_i\ne0$, set $h_i=1/r_i,j_i=J_i/f_i$ to recover the old
+finite chart. When $r_i=0$, interpret $U_i=O$. Both choices $J_i=\pm1$
+give that same point. The factor $J_i$ cannot vanish: it would give
+$D r_i^4=1$, and taking real signs and then norms gives
+$7\operatorname{Norm}(r_i)^2=1$, impossible over $\mathbb Q$.
+Thus $z(U_i)=-r_i/J_i$ and the primary ratio is correct also at $O$.
+
+Write the corresponding fixed root as $Q_i=(c,ab)$ with
+$c=a^2$, $b^2=c^2-D$. Define
+\[
+ d=c+Df_i,\quad dg=aJ_i-br_i,\quad u=cr_i+bg,
+ \quad dk=bJ_i-2au,\quad f(V_i)=g^2,\quad kz(V_i)=-g.
+\]
+The factor $d$ is positive at both real embeddings. Reduction by the
+primary conic gives $k^2+Dg^4=1$, so $k\ne0$ by the same norm argument.
+On the ordinary subtraction domain these expressions give
+$V_i=(1/g^2,k/g^3)=U_i-Q_i$. They have the following exact boundary values.
+If $r_i=0$, then $g=J_i/a$, $k=-bJ_i/c$, and $V_i=-Q_i$.
+If $g=0$, substitution gives
+$(cr_i^2-1)(c+Dr_i^2)=0$, hence $U_i=Q_i$ and $V_i=O$.
+The remaining equal-abscissa case is the regular doubling limit for
+$U_i=-Q_i$. Equality with the group-law morphism follows from its equality
+on the dense ordinary domain and regularity of these formulas.
+
+For H and the denominator difference retain the finite chart, or its
+following exact rescaling. With $x=h_H^2$, put
+\[
+ d=c_*x+D,\quad N=a_*j_H-b_*h_H,\quad dg=N,
+ \quad T=-2Dh_H-a_*b_*j_H+2Db_*g.
+\]
+The scalar reciprocal elimination is the identity
+$L=a_*dZ-zK-a_*G$, where
+$G=dg-N$, $K=a_*dk-T$, $Z=kz+g$, $L=Tz+a_*N$.
+Since $a_*d\ne0$, reinserting $k=T/(a_*d)$ recovers the old equations.
+
+For V0 one may also eliminate $j_H$ by writing $j_H=h_HS$ and $g=h_Hv$.
+The resulting exact equations are
+\[
+ S^2=x-Df(H),\quad (c_*x+D)v=a_*S-b_*,\quad
+ f(V_0)f(H)=v^2,
+\]
+\[
+ (-2D-a_*b_*S+2Db_*v)\ell_0
+       +a_*(a_*S-b_*)\mathcal R(Df(V_0)^2)=0.
+\]
+Both maps divide only by the already nonzero $h_H$ and $x$.
+These exact maps precede the separately justified enlargement of H below.
+
+\paragraph{The denominator cannot be the identity.}
+The old argument using $V_1\ne O$ is no longer available. Instead suppose
+$V_0=O$. The reciprocal chart gives $H=P$, and
+\[
+ f(H)=\frac{8(57+28\rho)}{1681}
+\]
+is a unit at every consumed place over $p>76176$. The one-place detector
+lemma would force its order-forty test at any contact prime, a contradiction.
+Thus all three contact radicals equal1. Equation~\eqref{eq:v13-height}
+with $N=1$ gives $B^2-6<7\mathcal H$, contrary to
+$B\ge|a|>(40\mathcal H)^{10}$ from the unchanged anchor.
+This argument precedes every interpretation of an LP quotient.
+Now $V_0\ne O$, its parameter is nonzero, and the established positivity
+of $\mathcal R$ gives $\ell_0\ne0$. The local ratio proof above therefore
+applies to all new solutions. It proves soundness directly, without
+asserting that identity-branch witnesses lift to the old affine source.
+
+\subsection{Scaled biquadratic comparison charts}
+For one root write $Q=(c,ab)$, $c=a^2$ and $b^2=c^2-D$.
+The reciprocal comparison chart above uses $r,J,f,g,k,u,F$, with
+$f=r^2$, $F=g^2$. Its retained squared outputs are
+$Y_U=f^2$ and $Y_V=F^2$, as elements of $K$, not separate component
+squares. Replace the seven field values by five:
+\[
+ V=ar,\quad Q'=ag,\quad I=aJ,\quad K'=ak,\quad W=rg.
+\]
+The new equations are
+\begin{align*}
+ VQ'&=cW,& V^2+(Q')^2+DW^2+2bW&=1,\\
+ aI&=bV+cQ'+DVW,& aK'&=-bQ'-cV-DQ'W,\\
+ IL&=VS,& K'z&=-Q',\\
+ DcY_U+I^2&=c,& DcY_V+(K')^2&=c.
+\end{align*}
+Every displayed equation is quadratic in retained coordinates. In
+particular c is an existing coordinate, so cY is a quadratic product.
+
+Here is an algebraic proof including all zero branches. Put
+$d=c+Dr^2$, $e=c+Dg^2$, and define
+\[
+ T=c(r^2+g^2)+Dr^2g^2+2brg-1,
+\]
+\[
+ G=dg-aJ+br,\quad E'=ak+bg+er,\quad
+ H'=dk-bJ+2a(cr+bg).
+\]
+Modulo only $c=a^2$ and $b^2=c^2-D$, direct expansion gives
+\begin{align*}
+ a^2(J^2+Dr^4-1)&=dT-G(dg+br+aJ),\\
+ a^2(k^2+Dg^4-1)&=eT+E'(ak-bg-er),\\
+ dE'&=aH'+DrT-bG.
+\end{align*}
+The factors a,c,D are nonzero, and d,e are positive at both real
+embeddings. An old solution has G=H'=0, hence T=E'=0, proving
+all new equations and the second reciprocal conic. Conversely set
+$r=V/a$, $g=Q'/a$, $J=I/a$, $k=K'/a$; the product equation
+forces W=rg. The new equations give T=G=E'=0, so the three
+identities recover both conics and $H'=0$. Set $f=r^2$, $F=g^2$ and
+$u=cr+bg$. Comparing each new Y equation with its recovered conic
+gives $Y_U=r^4$ and $Y_V=g^4$. Dividing the ratio equations by a
+restores the old ratios. Thus these are inverse rational maps,
+fixing every outside coordinate.
+
+There is no division by r,g,J,k,W,L,z or either test value. When
+r=0 the first point is O and its ratio is zero; when g=0 the
+difference is O and its parameter is zero. The biquadratic equation
+prevents both from vanishing. These are exactly the already accepted
+identity branches. This transformation replaces the intermediate inverse-addition change;
+it is not composed with a second copy of that elimination.
+
+\subsection{Enlarging the auxiliary H point domain}
+After the exact H.j rescaling, the two coordinates H.h occur only
+in the two component equations x=H.h$^2$. Delete them and keep
+\[
+                  xf=1,\qquad S^2=x-Df.
+\]
+They define the finite point H=(x,xS) of E(K), with x nonzero,
+but no longer require H to be a double. The rank and torsion
+calculation in the generator proof gives
+\[
+ H=[m]R_0+T,\quad P=2R_0,\quad m\in\mathbb Z,\quad T\in E[2](K).
+\]
+Write h=m/2 only for its rational free index. It is not notation
+for multiplication by a half-integer on the elliptic curve.
+
+We first exclude all finite points in $E[2]$, $P+E[2]$ and
+$-P+E[2]$ before interpreting ratios. The points O and (0,0) are
+excluded by the finite chart. Put $d_0=3-\rho$, $c_*=x(P)$.
+The exact norm and translation identities are
+\[
+ \operatorname{Norm}(c_*)=41^2/64,\quad
+ \operatorname{Norm}(c_*-d_0)=17^2/64,\quad
+ \operatorname{Norm}(c_*+d_0)=63^2/64,
+\]
+\[
+ x(P+(0,0))=-D/c_*,\quad
+ x(P+(d_0,0))=d_0(c_*+d_0)/(c_*-d_0),
+\]
+\[
+ x(P+(-d_0,0))=-d_0(c_*-d_0)/(c_*+d_0).
+\]
+Each of these abscissae and its inverse is integral outside
+$\{2,3,7,17,41\}$. The same is true for the nonzero torsion
+abscissae, and negating P changes none of these abscissae. Thus
+f(H) is a unit at every consumed place. The retained order40 f(H)
+test would then rule out every contact prime. All three radicals
+would equal1, contradicting the root-height bound and scalar anchor
+exactly as in the preceding V0 exclusion. This proof needs no
+ratio involving H. Consequently m is neither0 nor2, H and H-P are
+nontorsion, S is nonzero, and H is neither P nor -P.
+
+In the rescaled difference equations put
+\[
+ d=c_*x+D,\quad N=a_*S-b_*,\quad dv=N,\quad
+ T'=-2D-a_*b_*S+2Db_*v.
+\]
+The former positivity proof for d no longer applies. If d=0, the
+curve equation gives $x=-D/c_*$, $S=\pm b_*/a_*$, so H is one of
+the excluded points $\pm P+(0,0)$. If N=0, it gives
+$(x-c_*)(x+D/c_*)=0$, also excluded. Thus d,N,v are nonzero.
+Direct subtraction now gives
+\[
+ x(H-P)=1/(xv^2),\qquad y(H-P)=T'/(a_*dxv^3),
+ \qquad z(H-P)=-a_*dv/T'.
+\]
+There is no unresolved equal-abscissa case, since $x=c_*$ means
+H=P or -P. Since H-P is nontorsion, its ordinate and T' are
+nonzero. In particular the retained equation $f(V_0)f(H)=v^2$ has
+its intended interpretation, even if either real abscissa is negative.
+
+The old positivity interval for the rational logarithm is no longer
+enough. A stronger certificate is available: N(w) above has no root
+modulo71, and Q(w) has no root modulo7. At the respective prime all
+coefficients are integral and the leading coefficient is a unit.
+These assertions are finite substitutions through all residues. Both
+primes split in K, with square roots of2 equal to12,59 modulo71
+and3,4 modulo7. A K-root would give a local root, necessarily integral,
+and then a forbidden residue root. Hence N and Q never vanish in K.
+The actual equation $T'\ell_0+a_*N\mathcal R(Df(V_0)^2)=0$
+therefore implies $\ell_0\ne0$ and gives the correct denominator
+logarithm. No sign assertion for this logarithm is needed.
+
+The formal ratio argument changes by using integral group identities:
+\[
+ [m]U_i=[2u_i]H,\qquad
+ [m-2]V_i=[2(u_i-n_i)]V_0.
+\]
+They kill T. Applying the formal logarithm only to formal points
+gives ratios $u_i/h$ and $(u_i-n_i)/(h-1)$. At every consumed odd
+prime h and h-1 are integral and differ by1. The earlier transfer
+and subtraction proof therefore applies, including zero numerators.
+At opposite split places use the same conjugation as before; at an
+inert place it preserves the valuation.
+
+The scalar transfer uses the same integral-index convention. For $R=[s]P$ use
+\[
+                    [m](2R)=[4s]H.
+\]
+If the scalar coefficient test has depth $d_s$, formal logarithm
+isometry gives $v_p(s/(m/2))\ge d_s$. Since m/2 is p-integral,
+$v_p(s)\ge d_s$. This includes the selected depth24. The proof
+that 2R is formal when R is near O or (0,0) is unchanged. Thus
+both the comparison and scalar height arguments survive the larger
+domain. Completeness uses the original H in $2E(K)$ and forgets its
+two square witnesses. It need not realize any newly admitted half-index
+or torsion translate.
+
+\subsection{A positive scalar input and the depth-twenty-four certificate}
+Use the selected label and contact polynomial
+\[
+ \tau=2X+1,\qquad \beta=51\tau^2+2504,
+ \qquad r=\beta(\beta-1)(\beta-2401)(32\beta+343)(2\beta-1).
+\]
+For every rational $X$, $\beta\ge2504$, hence $r>0$.
+For integral $X$, $\tau$ is odd and $\beta$ is a positive odd integer.
+Conversely, the final conclusion must be that $\beta$ is an \emph{odd}
+integer. If $\tau=u/v$ in lowest terms, integrality gives $v^2\mid51$;
+as $51$ is squarefree, $v=1$. Oddness of $\beta$ then makes $\tau$ odd
+and $X=(\tau-1)/2$ integral. Mere integrality would not suffice:
+$X=-1/2$ gives the even integer $\beta=2504$.
+The unchanged odd chart for $Q_1=[n]P$ supplies the required oddness
+once $n=\beta$ has been proved.
+
+At a consumed prime $p>76176$, $51$ is a unit. A negative valuation
+of $\beta$ is $2v_p(\tau)$, hence even. The five contact factors then
+have the same valuation, so an odd valuation of $r$ must be positive.
+This argument makes no assertion at the exceptional primes3 and17.
+
+For integral $X$ the following simultaneous local calculation holds.
+Since $\tau$ is odd, $\beta\equiv3\pmod8$; the two even contact
+factors each have valuation one and equal odd parts modulo8. The
+other factors have residues3,7,5. Therefore $v_2(r)=2$ and
+$r/4\equiv1\pmod8$. At3, $\beta\equiv2$ and the first four factors
+have product1 modulo3. Furthermore
+\[
+ (2\beta-1)/3=34\tau^2+1669\equiv1+\tau^2\pmod3,
+\]
+which is nonzero. Thus $v_3(r)=1$. At17, the contact residues are
+5,4,1,10,9 with product15, a nonzero square. Thus $v_{17}(r)=0$.
+
+An intermediate one-choice construction used $c=33033$ when
+$3\mid\tau$ and $c=33$ otherwise. Both are square units at2 and17,
+and their unit parts at3 are respectively1 and2, correcting the two
+possible classes of $r$. The selected construction removes even
+this choice and sets
+\[
+                 c=r+4896,\qquad4896=2^5\cdot3^2\cdot17.
+\]
+At2 the quotient $c/r=1+4896/r$ belongs to $1+8\mathbb Z_2$;
+at3 and17 it belongs to $1+p\mathbb Z_p$. Hence $cr$ is a square
+in all three local fields. Also $c,r$ are positive integers.
+At a consumed scalar contact prime, positivity of the odd valuation
+$v_p(r)$ was proved before using $c$; since4896 is a unit there,
+$c$ is a unit there too. We do not assert that $c$ is a unit at
+\emph{every} large prime. Its additional finite prime support is
+included in the preparation before the continuity modulus is chosen.
+
+The physical input square $Y=X^2$ is retained. In each other consumer,
+the old occurrence of $Y$ is replaced by $102Y+102X+76$, since
+$2(102Y+102X+76)+2403=51(2X+1)^2+2504$. This substitution must
+include every scalar test and height-input consumer, not the defining
+row $Y=X^2$ itself.
+
+For the deterministic correction the two old physical rows, in their
+fixed normalization, are
+\[
+ cs_0-20619812F=0,\qquad
+ (7895415c+20619812F)V-20619812b_0=0.
+\]
+The retained contact expression has $r=-4(s_0+7895415)$.
+Substitution and multiplication by $-4$ give
+$rcV+82479248b_0=0$. With the already retained coordinate $r_2=r^2$,
+the selected row is
+\[
+                    (r_2+4896r)V+82479248b_0=0.
+\]
+This is quadratic and preserves the physical sign of the scalar input.
+The free correction coordinate and its product coordinate have no
+remaining consumers. In the reverse arithmetic interpretation the
+correction is defined to be $r+4896$; the removed finite-choice equation
+is not reimposed.
+
+Write $q=\operatorname{Norm}_{K/\mathbb Q}(f(H))$ and
+$z(R)/z(H)=z_0+z_1\rho$. The selected scalar root is
+\begin{equation}\label{eq:v13-scalar24}
+ B_s=\frac{z_0^2+r z_1^2}{r^{32}},\qquad
+ W=\frac{B_s^2+r q^2}{r^{32}},\qquad \mathfrak b=crW^2.
+\end{equation}
+Here $q\ne0$ and $r>0$, so $W>0$. Forward powers compute $r^{32}$;
+there is no need to retain an inverse-power tower or $r^{64}$.
+The square $q^2$ is computed without a separate norm coordinate:
+if $f(H)=f_0+f_1\rho$, use
+\[
+ q^2=(f_0^2+2f_1^2)^2-8(f_0f_1)^2.
+\]
+The factor $8$ is essential: the second stored quantity is a product,
+not the full $\rho$-coefficient.
+
+Here is the changed local application. At a consumed prime let
+$\eta=v_p(r)>0$ be odd. The correction is a unit there.
+The pole obstruction gives $\eta+2v_p(W)>0$.
+The two terms in each numerator of~\eqref{eq:v13-scalar24} have
+opposite valuation parity, so they cannot cancel; assign valuation
+$+\infty$ to a zero term. Successively this gives
+\[
+ v_p(B_s)>63\eta/4,\quad v_p(q)>61\eta/4,\quad
+ v_p(z_0)>191\eta/8,\quad v_p(z_1)>187\eta/8.
+\]
+Thus both rational coefficient valuations are at least24.
+Positive valuation of the norm supplies a place with $v(f(H))>0$;
+there $H$ is formal and $v(z(R)/z(H))\ge24$.
+Small $z(R)$ alone does not imply that $R$ is formal. If $e=v(x(R))$,
+then $e\ne0$, and the duplication identity gives, for either sign of $e$,
+\[
+ v(x(2R))=-2v(z(R)),\qquad v(z(2R))=v(z(R)).
+\]
+For the enlarged H domain apply the formal logarithm to
+$[m](2R)=[4s]H$, where $h=m/2$, to obtain
+$v_p(s/(m/2))\ge24$. Since $m/2$ is p-integral at this odd prime,
+$v_p(s)\ge24$. This uses integer group multiples only.
+The same height theorem therefore gives
+\[
+ \operatorname h(\beta)\le\mathcal H|s|^{19/24}.
+\]
+The exact inequality
+$(5/24)\,25165823.5>2093966+7$ and~\eqref{eq:v13-anchor} imply
+$\operatorname h(\beta)<|s|/80\le|a|/40$.
+The retained anchor also gives $\log(48\mathcal H)<|a|/40$.
+
+For completeness choose $c$ first. The existing preparation permits
+arbitrary finite coefficient-depth conditions over the support of $cr$.
+At a prime dividing $r$, impose depth $8v_p(r)$ on the coefficients of
+$f(H)$ and depth $24v_p(r)$ on $z_0,z_1$. Then $W$ is integral there.
+At primes dividing $c$ but not $r$, sufficiently positive depths give
+integrality as well. The actual pole input $crW^2$ is positive, has
+square reduced denominator and the prescribed local squareclasses.
+These are the retained pole-completeness hypotheses; $W$ need not be
+a unit. Fresh pole witnesses are supplied for this new input.
+
+The scalar coefficient guard may be imposed on $f(R)_1$ instead of
+$f(R)_0$. In the reciprocal chart $f(R)=g^2$ one has
+$f(R)_0=g_0^2+2g_1^2$ and $f(R)_1=2g_0g_1$. A nonzero second
+coefficient therefore implies a positive first coefficient and recovers
+the old guard. Completeness uses the established exact formula
+$v_3(f([s]P)_1)=2+2v_3(s)$ for nonzero even $s$, so this second
+coefficient is nonzero on every prepared scalar orbit point.
+This is an arithmetic replacement of the guard, not an equivalence
+for arbitrary pairs $g_0,g_1$.
+
+\subsection{The two final height contradictions}
+The local order-forty tests force the contact radicals to divide
+$F=t^2-a(a-2)tb+(a-2)^2b^2-1$ to order40.
+If $F\ne0$, then $|F|<5B^4$ and~\eqref{eq:v13-height} contradicts
+the retained lower bound $B\ge|a|>(40\mathcal H)^{10}$.
+Thus $F=0$. The nonzero odd root label $b$ and the retained Lucas lemma
+give $\log B>|a|-3$.
+If $n\ne\beta$, its nonzero reduced numerator $N$ satisfies
+$|N|\le2e^{\operatorname h(\beta)}B$ and is divisible by the three
+contact radicals to order10. Since $B^2-6>(5/8)B^2$ for $B>4$,
+\[
+ B^{1/10}<48\mathcal H e^{(19/10)\operatorname h(\beta)},\qquad
+ \log B<10\log(48\mathcal H)+19\operatorname h(\beta)
+          <29|a|/40<|a|-3.
+\]
+This contradiction proves $n=\beta$. The unchanged root chart makes $n$ odd, so the parity-sensitive input argument above gives $X\in\mathbb Z$.
+The first contradiction uses order40; lowering only the scalar depth
+does not weaken that test.
+
+\subsection{Polynomial circuit reductions}
+For retained field values $Y_i$, each order block evaluates
+$\prod_i(1+qY_i)$. In order1 group the nine factors as
+\[
+ [V_0,U_1,U_2],\quad[V_1,U_3,U_4],\quad[V_2,V_3,V_4],
+\]
+where labels denote the squared test values with their existing
+conjugations. Order10 uses its pair; order40 retains its pair and
+triple. For a triple $a,b,c$ the polynomial is
+\[
+ 1+q(a+b+c)+q^2(ab+ac+bc)+q^3abc.
+\]
+Its coefficients can be shared among the three detectors. If an old
+private coordinate is $d=bc$ and $e_2=a(b+c)+d$, eliminate it by
+\[
+ d=e_2-a(b+c),\qquad e_3=ae_2-a^2(b+c).
+\]
+For the chosen first members the square $a^2$ already has a retained
+quadratic expression from the logarithm block. Substitution therefore
+keeps the new residual quadratic. The reverse map reinserts the displayed
+d. Every other use is substituted as well, including affine-normalized
+W coordinates. Such a coordinate has the explicit inverse
+$W_{\rm old}=(W_{\rm new}-r)/c$ with a fixed nonzero rational c.
+These are polynomial reconstructions apart from division by constants.
+They do not alter the field test values or pole conditions.
+
+For the order weights let E and q be the retained nonzero scale and
+order-one weight. Use
+\[
+ Ea=q,\quad Eb=a^2,\quad qc=b^2,\quad cd=q^2q^3,
+ \quad cq_{10}=d^2,\quad cq_{40}=q_{10}^4.
+\]
+The last fourth power is evaluated through its retained square.
+These equations give $c=q^3/E^6$, $d=q^2E^6$,
+$q_{10}=qE^{18}$ and $q_{40}=qE^{78}$. All divisions are licensed by
+the unchanged norm/trace guards. The expression $q^5=q^2q^3$
+removes the former fifth-power coordinate without increasing degree.
+
+An exact elimination is certified by a residual identity
+\[
+ F_{\rm new}=F_{\rm old}|_{x=q}
+              +\sum_j A_jG_j,
+\]
+where the retained $G_j$ vanish and the old defining equation has a
+nonzero constant pivot in x. Forgetting x proves the forward map;
+reinserting x=q proves the reverse map. Checking all consumers is
+part of this argument, not an inference from a lower variable count.
+
+\subsection{Factored poles and the preparation conic}
+For a normalized detector, the old second-conic rows include
+\[
+ 17E-Eb-17F=0,\quad t_2=t^2,\quad q_2=q^2,\quad
+ 17bq_2+867F^2-34Ft_2-t_2^2=0.
+\]
+Replace $F=t v$, $q=t Q$, $q_2=t^2Q_2$ and use
+\[
+ Q_2=Q^2,\qquad17bQ_2+867v^2-34tv-t^2=0,
+ \qquad17E-Eb-17tv=0.
+\]
+The old conic is $t^2$ times the new conic, so every new solution
+reconstructs an old one, including t=0. For completeness the retained
+construction supplies positive semantic b. If t!=0 divide by t;
+if t=0 the old equation forces F=q=0, so the zero lift works.
+The same argument applies to the scalar pole after its exact fixed
+normalization. Its stored input has the opposite sign from the semantic
+positive input; positivity must not be inferred from the stored symbol.
+
+For scalar preparation, only the square N of the prepared value is
+consumed outside its private block. The old equations are
+\[
+ t_2=t^2,\quad\mathfrak b(T-t_2)=1,\quad TW=2,
+ \quad N=(W-\mathfrak b)^2.
+\]
+Replace them by
+\[
+ U^2=N,\qquad \mathfrak bJ=1,\qquad JN+Y^2=\mathfrak b.
+\]
+Forward take $U=W-\mathfrak b$, $J=T-t_2$, $Y=tW$. Conversely, if
+$d=\mathfrak b+U\ne0$, take $W=d$, $t=Y/d$, $t_2=t^2$, $T=t_2+J$.
+The conic identity gives TW=2. If d=0, then Y=0 and
+$N=\mathfrak b^2$; choose $W=2\mathfrak b$, $t=t_2=0$, $T=J$.
+This changes only the sign of a private unsquared value and preserves N.
+The inverse guard is retained, and no rational point on an unrelated
+conic is being assumed.
+
+\subsection{Specializing the scalar preparation to zero}
+Write $q=\operatorname{Norm}(f(H))$, and write the actual scalar ratio as
+$z(R)/z(H)=z_0+z_1\rho$. The retained expressions are
+\[
+ B=(z_0^2+rz_1^2)/r^{32},\qquad
+ W=(B^2+rq^2)/r^{32},\qquad \mathfrak b=crW^2.
+\]
+Here $r,c$ are positive and $q\ne0$, so $W,\mathfrak b>0$ at every
+rational solution, independently of a private preparation inverse.
+The earlier preparation-zero lemma applies when $\mathfrak b<17$, its
+reduced denominator is a square, it is locally square at $2,3,17$, and
+its valuations there are at least $3,1,2$, respectively. We now arrange
+these conditions at the same points used in the final construction.
+
+Let $G$ be the closure of the simultaneous real orbit of $P$ and its
+conjugate, let $G^0$ be its identity component, and put $m_0=|G/G^0|$.
+The real-progression lemma says that a progression with both residue
+and modulus divisible by $m_0$ has dense positive tail in $G^0$.
+The functions $f,z$ extend continuously to the identity with value zero.
+Choose a multiple $M$ of $64m_0$ whose multiples give all desired formal
+depths at primes in $S=\operatorname{supp}(cr)\cup\{2,3,17\}$.
+In particular require coefficient depth $8\eta$ for $f(H)$ when
+$\eta=v_p(r)>0$, and positive coefficient depth at17. Density permits
+$H_0=[h_0]P$, $h_0>0$, $M\mid h_0$, as close to the two real identities
+as needed to make $q(H_0)^2/r^{31}$ arbitrarily small.
+Its real $z$ values are nonzero.
+
+With $H_0$ fixed, choose a multiple $N_0$ of $6m_0$ imposing the anchor
+and all required scalar finite depths. At $p\mid r$ require coefficient
+depth $24\eta$ for $z(R)/z(H_0)$; impose positive depths also at17 and
+at primes dividing $c$ but not $r$. The formal subgroups have finite
+index, so arbitrary further depths can be imposed this way. Density of
+the positive progression $s\equiv0\pmod{N_0}$ permits $s$ arbitrarily
+large and $R=[s]P$ arbitrarily close to both real identities. The two
+real ratios, hence their rational coefficients $z_0,z_1$, become small.
+Choose them so that $\mathfrak b(H_0,R)<17/4$. This also permits the
+size part of the anchor; set $a=s+1$ as before.
+
+At $p\mid r$ these depths give $v_p(q)\ge16\eta$,
+$v_p(B)\ge16\eta$ and $v_p(W)\ge0$. At $p\mid c$, $p\nmid r$,
+the imposed positive depths again give $v_p(W)\ge0$. Outside this
+support $v_p(\mathfrak b)=2v_p(W)$, so the reduced denominator of
+$\mathfrak b$ is a square. Its squareclasses at $2,3,17$ are those of
+$cr$. Since $v_2(cr)=4$, $v_3(cr)=2$, the first two required bounds
+hold. At17 both $r,c$ are units; the separately imposed depths give
+$v_{17}(q),v_{17}(B)\ge2$, hence $v_{17}(W)\ge4$ and
+$v_{17}(\mathfrak b)\ge8$. Inclusion of17 does not depend on it
+belonging to the support of $cr$.
+
+Keep $R$ fixed. A nonempty real neighborhood $U\subset G^0$ of $H_0$
+has $0<\mathfrak b(H,R)<17$. A sufficiently divisible continuity
+modulus $L$, divisible by $64m_0$, preserves all the finite conditions
+under $h\equiv h_0\pmod L$. Choose the remaining labels, root points
+and height scales before the contact primes, and enlarge $L$ for their
+finite continuity conditions. The finitely many comparison pole sets
+have measure zero in $G^0$ by the real-progression lemma. Choose a
+nonempty open $U'$, with compact closure in $U$, avoiding them. All
+comparison functions are now uniformly bounded on that closure, by
+bounds fixed before any contact prime is chosen.
+
+The original simultaneous-prime and separation argument is valid for
+this enlarged fixed $L$. Its compatible congruences are
+\[
+ h\equiv0\pmod{\Pi^{19}M_-},\qquad
+ h\equiv1\pmod{M_+},\qquad h\equiv h_0\pmod L.
+\]
+Their solution progression has residue and modulus divisible by $m_0$.
+Its positive tail is therefore dense in $G^0$ and meets $U'$ at
+arbitrarily large indices. Choose the final $H$ there. It has every
+required primary and opposite-place depth, all scalar finite depths,
+the real comparison bounds and $0<\mathfrak b<17$ simultaneously.
+The preparation-zero lemma supplies fresh pole witnesses with prepared
+value exactly $\mathfrak b$. A zero factor in the factored pole is
+handled by the zero lift already proved above.
+
+For clarity, the physical elimination is also exact. With its fixed
+positive normalization $K$, the semantic input is
+$\mathfrak b=-Kx$ and the consumed square is $K^2n$. The old rows are
+\[
+ U^2=K^2n,\qquad1+KxJ=0,\qquad Kx+K^2Jn+V^2=0.
+\]
+Replace all three by $n=x^2$ and forget $U,J,V$. At any new solution
+$\mathfrak b>0$ as proved independently above; restore
+$U=\mathfrak b$, $J=1/\mathfrak b$, $V=0$. Each old row is then zero,
+and every outside value is unchanged. The opposite direction for the
+integer input projection is the simultaneous construction, not a claim
+that an arbitrary old preparation witness can be specialized.
+
+\subsection{Normalizing the remaining scalar pole}
+After the preparation-zero replacement, let $x$ again denote the
+physical scalar input coordinate, so $\mathfrak b=-Kx>0$ and $x\ne0$.
+This nonvanishing was proved from the unchanged point and scalar root
+rows; it does not depend on the preparation square or on the private
+pole equations. Assign weight one to the five private slots
+$(e,h,p,q,v)$ and weight two to their square slots $(p_2,q_2)$.
+Replace each old slot of weight $j$ by $x^j$ times its new slot,
+and discard the preparation-square slot $n$, setting it equal to $x^2$.
+Every one of the five remaining pole residuals is then $x^2$ times
+its new residual. For example the first conic and the h equation have
+respectively their $ex$ and $x^2$ terms replaced by $e$ and1, and
+\[
+ 17ex+Ken-17hv=0
+       \quad\longmapsto\quad 17e+Kxe-17hv=0.
+\]
+The square rows remain $p_2=p^2$, $q_2=q^2$, and the factored
+second-conic coefficient list is unchanged. In the physical indexing
+of the reviewed component, the weight-one slots are
+$51,52,53,54,532$, the weight-two slots are $527,534$, and $531$ is n.
+These are implementation indices, not mathematical constants.
+
+From an old solution divide each private slot by its indicated power
+of x. From a new solution multiply by that power and restore $n=x^2$.
+These maps are inverse and fix every outside coordinate. The sign of x
+is immaterial, and no division uses a private pole value. In particular
+all zero branches of p,q,v or h are preserved. These seven slots occur only in the five displayed pole rows, and n
+has only its former definition and these consumers. Thus there is no
+untransformed outside use of a rescaled slot.
+
+\subsection{Rescaling the scalar anchor}
+The odd scalar root S has the unchanged chart
+$S=(x,hj)$, $x=h^2$, $j^2=x^2-D$, hence $S=[a]P$ for an odd integer a.
+Write the retained reciprocal difference equation as
+\[
+ (c_*x+D)g=a_*j-b_*h,\qquad g=g_0+g_1\rho.
+\]
+Its denominator is positive in both real embeddings. We replace the
+old inverse of the irrational coefficient of f(S-P) by
+$g_0\tau=1$. This implies $g\ne0$ before using the anchor.
+The subtraction chart identifies $g^2=f(S-P)$: at $S=P$ the quotient
+would be zero, which is excluded, and at $S=-P$ the explicit duplication
+formula gives the same value $f(-2P)$. Thus $S-P=[s]P$ has a nonzero
+even index $s=a-1$ without any prior anchor divisibility assertion.
+
+The earlier scalar coefficient lemma applies to every such s and gives
+\[
+ v_3(f_1([s]P))=2+2v_3(s).
+\]
+Its hypotheses contain no anchor equation. Indeed
+$z(2P)/3\equiv2+\rho\pmod3$; multiplication by units and then by
+powers of3 in the integral formal group preserve the stated leading
+term. The curve equation makes the leading residue of
+$f/3^{2+2v_3(s)}$ a nonzero rational multiple of $\rho$.
+Independence of1 and $\rho$ in the residue field proves the displayed
+coefficient valuation, also for negative s. Consequently
+$F=f_1([s]P)=2g_0g_1\ne0$, in particular $g_1\ne0$.
+This is the noncircular justification for restoring the old inverse.
+
+The old three-row subsystem is
+\[
+ F=2g_0g_1,\quad F\sigma=1,\quad
+ u^2+6v^2-2w^2-3F^2-4Cw=0.
+\]
+The new subsystem is
+\[
+ g_0\tau=1,\qquad
+ U^2+6V^2-2W^2-12g_1^2-4C\tau W=0.
+\]
+Forward put $(U,V,W)=(u,v,w)/g_0$, $\tau=1/g_0$ and forget F.
+Backward put $(u,v,w)=g_0(U,V,W)$, restore $F=2g_0g_1$ and
+$\sigma=1/F$. If $q_{\rm old},q_{\rm new}$ denote the anchor residuals,
+the exact identity is
+\[
+ q_{\rm old}|_{(u,v,w)=g_0(U,V,W),\ F=2g_0g_1}
+       -g_0^2q_{\rm new}
+       =4Cg_0W(g_0\tau-1).
+\]
+These inverse maps fix the input and all other coordinates. They permit
+zero values of U,V,W. They are equivalences for the full point system,
+not for an isolated anchor with arbitrary g: that isolated equation
+would admit $g_1=0$, which the coefficient lemma just excluded.
+
+When C remains a fixed integer coefficient, both new residuals are
+quadratic and their squared sum contributes $16C^2\tau^2W^2$.
+For the ordinary companion compute C by the quadratic chain
+$c_0=3^{1024}$, $c_j=c_{j-1}^2$ for $1\le j\le15$, so that
+$c_{15}=3^{2^{25}}=C$. Introduce a separate multiplication
+slot $T_C$ and equation
+\[
+                 T_C=C\tau.
+\]
+Use $-4T_CW$ in the anchor. Treating a computed C as a coefficient would
+instead make $C\tau W$ cubic, so this extra slot is necessary for that
+companion. Both directions restore $T_C$ uniquely; no nonvanishing or
+point-domain argument is changed. This slot and its gate, together with the sixteen constant-chain slots,
+are included in the ordinary companion.
+
+\subsection{Completeness and finite certification}
+Fix an integer X and compute the positive deterministic scalar correction.
+Choose the preliminary shared point and then the deep nonzero scalar
+point by the simultaneous real and finite-place construction just proved.
+Choose the odd Lucas labels, then their actual root points and positive
+root scales. Fix a continuity modulus for all the new rational functions.
+Only after these choices select the contact primes and solve the retained
+primary/opposite congruences. Take a sufficiently large common index h in the prescribed real open
+set, avoiding the finitely many old exceptional point loci. This gives
+$U_i=[hn_i]P$ and $V_i=[(h-1)n_i]P$, all nonidentity in this completeness
+construction. The new rational logarithms have the required local
+precision, and the original real pole estimates and arbitrary finite
+preparation depths give positive semantic pole inputs. Obtain fresh
+pole witnesses with scalar preparation equal to its input, apply the
+factored-conic maps, and reconstruct each
+finite private circuit. These are simultaneous choices; no claim is
+made that an arbitrary old pole witness survives a changed logarithm
+or changed scalar root.
+
+\subsection{The specified polynomials and coefficient tables}
+Clear denominators and divide each nonzero quadratic residual by its
+integer content. Define $P_{394}$ to be the sum of the squares of the
+364 resulting integer residuals. Over the rational numbers this sum
+vanishes exactly when every residual vanishes. The soundness and
+simultaneous completeness arguments above therefore prove its stated
+integer projection. The sixteen constant-chain equations and the
+$T_C=C\tau$ equation give the ordinary companion: its 381 normalized
+residual squares define $P_{411}$, with the same integer projection.
+
+Expansion of the specified residual lists gives respectively 6,338 and
+6,388 distinct nonzero monomials. Both polynomials have total degree
+four and content one. For the symbolic polynomial the largest absolute
+coefficient is $16C^2=16\cdot3^{2^{26}}$; for the ordinary polynomial it
+has 3,247 bits and is strictly less than $2^{3247}$. These counts and
+bounds are computed from the complete coefficient lists, not by adding
+component savings. Every listed coordinate occurs.
+
+The coefficient artifacts use consecutive coordinate indices, with
+index one for X. The symbolic JSON coefficient table has 973,221 bytes,
+and the ordinary JSON coefficient table has 982,235 bytes. Their plain
+text tables have 212,067 and 214,957 bytes, respectively. The tables,
+residual lists, coordinate maps and exact maximum coefficients specify
+the two polynomials independently of their factored construction.

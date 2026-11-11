@@ -1,0 +1,612 @@
+[
+  {
+    "origin": "v14-gi-external-core-004/COMPONENTS.json",
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INITIAL-SELECTION.md",
+      "sha256": "a6631ff76f47ab278a37041b1b15bc6acd912862de016f5567b4e00bb9c289d9"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-S13-SELECTION",
+      "consumer": "GI-13-S13",
+      "passages": [
+        "ACTIVE-GI-EXT-S13-SELECTION-P1"
+      ],
+      "assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "classification": "dependency",
+      "reason": "Apply the degree-(s-2) approximation to the actual uniformly bounded lower tests, keep one of finitely many scalar components with positive correlation and retain the entire unit vector. Uniform internal choice uses the reviewed ordinary-test compact-net construction, not an arbitrary weak-object upgrade.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INITIAL-SELECTION.md",
+            "sha256": "a6631ff76f47ab278a37041b1b15bc6acd912862de016f5567b4e00bb9c289d9"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "09ecdc685fff0d0c864cfb7098ffbdee9bac29bc868cb33400996bcc433d5d9e"
+        },
+        "statement": "A scalar degree-d nilsequence is uniformly approximable by a bounded linear combination of components of degree-d unit-vector nilcharacters. Nonzero degree-d bias is consequently witnessed by correlation with a degree-d nilcharacter.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma 6.4 and Corollary 6.5, pp.1255–1256",
+          "corrections": "The reviewed assembly initial-selection construction supplies the last two steps and the actual strong represented family. This card imports the published approximation and bias criterion only."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 88,
+        "end_line": 159,
+        "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S13-SELECTION",
+      "use_sha256": "1c1f0ef71587269a2f69586ff1f29d495950d020d7f45a6d60fac1809cdb898c",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "A scalar degree-d nilsequence is uniformly approximable by a bounded linear combination of components of degree-d unit-vector nilcharacters. Nonzero degree-d bias is consequently witnessed by correlation with a degree-d nilcharacter.",
+        "objects": "Scalar nilsequences, vector nilcharacters and their scalar components in the conventions of Section 6.",
+        "hypotheses": "The degree-d nilsequence and bias hypotheses; the proof uses global ordinary vertical tests and the conjugation-stable point-separating algebra they generate.",
+        "quantifiers": "Each fixed nilsequence and positive approximation tolerance; each biased sequence under the stated boundedness assumptions.",
+        "parameter_range": "Fixed standard degree d; the current initial Section 7 use has d=s-1>0.",
+        "uniformity": "The source gives a finite approximation for a fixed test; parameter-uniform finite witness lists are established in the local compact-net argument.",
+        "constants": "Finite coefficient and geometry bounds must be retained when passing from approximation to positive component correlation.",
+        "normalizations": "Correlation uses a selected scalar component of a globally unit vector; the vector is retained for subsequent symbol operations.",
+        "exceptional_cases": "No claim that every weak object already satisfies the project strong convention; no prescribed-symbol selection is supplied.",
+        "limit_order": "Construct ordinary approximants, take a finite net for the fixed bounded class, and only then choose a witness internally in the consuming proof."
+      },
+      "needed_assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "required_capabilities": [
+        "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h."
+      ],
+      "available_capabilities": [
+        "A scalar degree-d nilsequence is uniformly approximable by a bounded linear combination of components of degree-d unit-vector nilcharacters. Nonzero degree-d bias is consequently witnessed by correlation with a degree-d nilcharacter."
+      ],
+      "derived_capabilities": [
+        "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+            "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+          },
+          "start_line": 5,
+          "end_line": 19,
+          "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+          "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+          "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+          "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+          "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+          "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+          "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+          "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+          "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+          "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The explicit later selection proof starts from the actual lower-test correlation premise, constructs an ordinary increasing exhaustion and internal threshold relation, and selects full global unit representatives. It neither invokes the initial inverse theorem nor upgrades a prescribed weak object.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INITIAL-SELECTION.md",
+              "sha256": "a6631ff76f47ab278a37041b1b15bc6acd912862de016f5567b4e00bb9c289d9"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "09ecdc685fff0d0c864cfb7098ffbdee9bac29bc868cb33400996bcc433d5d9e"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+              "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+            },
+            "start_line": 88,
+            "end_line": 159,
+            "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+              "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+            },
+            "start_line": 5,
+            "end_line": 19,
+            "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S13-SELECTION-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 88,
+        "end_line": 159,
+        "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+      },
+      "claim_ids": [
+        "GI-13-S13"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S13-SELECTION"
+      ]
+    },
+    "scope": "This external import retains all separately supplied local hypotheses. It is not source-wide or whole-GI approval.",
+    "additional_ordinary_files": [
+      {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+        "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+      }
+    ]
+  },
+  {
+    "origin": "v14-gi-external-core-004/ADDITIONAL-COMPONENTS.json",
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+      "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+    },
+    "additional_ordinary_files": [
+      {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+        "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+      }
+    ],
+    "use": {
+      "id": "ACTIVE-GI-EXT-S13-STAGE-SELECTION",
+      "consumer": "GI-13-S13",
+      "passages": [
+        "ACTIVE-GI-EXT-S13-STAGE-SELECTION-P1"
+      ],
+      "assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "classification": "dependency",
+      "reason": "Apply the stated source ingredient in the explicitly represented witness-space construction; the other approximation and geometry inputs remain separate.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+            "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+          },
+          "start_line": 3,
+          "end_line": 25,
+          "excerpt_sha256": "3d894dfe96f4a3a667692bfc7a257d5dd6f1474f701c618474479581ddde25dd"
+        },
+        "statement": "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Definition A.10 and Lemma A.11, p.1330; boundedness A.5, p.1327",
+          "corrections": "The actual application uses an internal standard-stage exhaustion and a reciprocal-threshold relation. A local finite-intersection proof supplies the bounded-stage step; no unjustified representative diagonal or ambiguous A.12 display is imported."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+          "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+        },
+        "start_line": 5,
+        "end_line": 19,
+        "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S13-STAGE-SELECTION",
+      "use_sha256": "8baf68e065ae8b4d1e416173a59edbe89effd35971520d4f0d862875d502c970",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer.",
+        "objects": "Internal X,Y,R and S equal to the union over standard indices of an internal increasing exhaustion.",
+        "hypotheses": "Every x has a witness in S; the exhaustion is one internal sequence as required by Definition A.10.",
+        "quantifiers": "Every x in X, selected simultaneously by one internal map.",
+        "parameter_range": "The natural ultrapower framework of Appendix A; stages indexed by limit natural numbers.",
+        "uniformity": "One internal witness map; the stage can be bounded by a standard integer when the least-stage map is pointwise standard-bounded.",
+        "constants": "No effective value of the standard bound is asserted.",
+        "normalizations": "An external positive-standard condition must be encoded by an internal reciprocal-threshold coordinate.",
+        "exceptional_cases": "An arbitrary countable family of internal sets is not automatically the specified sigma-limit presentation. The local finite-intersection proof avoids an unjustified diagonal representative.",
+        "limit_order": "Construct the exhaustion and internal relation, prove pointwise standard-stage existence, then select."
+      },
+      "needed_assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "required_capabilities": [
+        "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h."
+      ],
+      "available_capabilities": [
+        "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer."
+      ],
+      "derived_capabilities": [
+        "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+            "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+          },
+          "start_line": 5,
+          "end_line": 19,
+          "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+          "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+          "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+          "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+          "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+          "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+          "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+          "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+          "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+          "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The actual application uses an internal standard-stage exhaustion and a reciprocal-threshold relation. A local finite-intersection proof supplies the bounded-stage step; no unjustified representative diagonal or ambiguous A.12 display is imported.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+              "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+            },
+            "start_line": 3,
+            "end_line": 25,
+            "excerpt_sha256": "3d894dfe96f4a3a667692bfc7a257d5dd6f1474f701c618474479581ddde25dd"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+              "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+            },
+            "start_line": 88,
+            "end_line": 159,
+            "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+              "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+            },
+            "start_line": 5,
+            "end_line": 19,
+            "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S13-STAGE-SELECTION-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 88,
+        "end_line": 159,
+        "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+      },
+      "claim_ids": [
+        "GI-13-S13"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S13-STAGE-SELECTION"
+      ]
+    }
+  },
+  {
+    "origin": "v14-gi-external-core-004/ADDITIONAL-COMPONENTS.json",
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-COUNTABLE-MODELS.md",
+      "sha256": "fa5beec86f052de29169f22a0a1c9d9c01fb93819a442ca41ecfc9353d396f2e"
+    },
+    "additional_ordinary_files": [
+      {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+        "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+      }
+    ],
+    "use": {
+      "id": "ACTIVE-GI-EXT-S13-MODEL-COUNTABILITY",
+      "consumer": "GI-13-S13",
+      "passages": [
+        "ACTIVE-GI-EXT-S13-MODEL-COUNTABILITY-P1"
+      ],
+      "assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "classification": "dependency",
+      "reason": "Apply the stated source ingredient in the explicitly represented witness-space construction; the other approximation and geometry inputs remain separate.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-COUNTABLE-MODELS.md",
+            "sha256": "fa5beec86f052de29169f22a0a1c9d9c01fb93819a442ca41ecfc9353d396f2e"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "2113b9559ccb6d3e7cad3cb02ad16312244c6a81b67adf8c7de7558fd8beeb0c"
+        },
+        "statement": "At fixed finite degree the rational filtered nilmanifolds in the stated Malcev framework have countably many isomorphism classes; one may choose a smooth compact metric on each representative, and metrics on a fixed compact smooth model are equivalent.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Section 5, p.1250, with the Malcev-coordinate framework of Section 3",
+          "corrections": "The local assembly proof supplies the diagonal finite-family selection. Countability is a qualitative source premise, not a uniform bound on an unrestricted family."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+          "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+        },
+        "start_line": 5,
+        "end_line": 19,
+        "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S13-MODEL-COUNTABILITY",
+      "use_sha256": "492d4e22c2df3dcc11212cfdec3060d068c5d0defcd3c76a5fa16300e369c341",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "At fixed finite degree the rational filtered nilmanifolds in the stated Malcev framework have countably many isomorphism classes; one may choose a smooth compact metric on each representative, and metrics on a fixed compact smooth model are equivalent.",
+        "objects": "Rational filtered lattice models and fixed smooth metrics on their compact quotients.",
+        "hypotheses": "The rational finite-dimensional filtered models of the paper; metric comparison takes place on one fixed compact model.",
+        "quantifiers": "All models in the stated rational class, and every pair of fixed smooth metrics on one model.",
+        "parameter_range": "Fixed finite degree; countably many finite dimensions and rational structure data.",
+        "uniformity": "Countability enables an enumeration; it does not give a common geometric constant for every model.",
+        "constants": "Metric equivalence constants depend on the fixed model and metrics.",
+        "normalizations": "Choose representatives up to filtered lattice isomorphism before enumerating bounded Lipschitz tests.",
+        "exceptional_cases": "No finite list of all rational models and no global metric-equivalence bound is asserted.",
+        "limit_order": "Enumerate models, choose their fixed metrics, then use the local finite-family contradiction argument."
+      },
+      "needed_assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "required_capabilities": [
+        "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h."
+      ],
+      "available_capabilities": [
+        "At fixed finite degree the rational filtered nilmanifolds in the stated Malcev framework have countably many isomorphism classes; one may choose a smooth compact metric on each representative, and metrics on a fixed compact smooth model are equivalent."
+      ],
+      "derived_capabilities": [
+        "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+            "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+          },
+          "start_line": 5,
+          "end_line": 19,
+          "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+          "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+          "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+          "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+          "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+          "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+          "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+          "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+          "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+          "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The local assembly proof supplies the diagonal finite-family selection. Countability is a qualitative source premise, not a uniform bound on an unrestricted family.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-COUNTABLE-MODELS.md",
+              "sha256": "fa5beec86f052de29169f22a0a1c9d9c01fb93819a442ca41ecfc9353d396f2e"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "2113b9559ccb6d3e7cad3cb02ad16312244c6a81b67adf8c7de7558fd8beeb0c"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+              "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+            },
+            "start_line": 88,
+            "end_line": 159,
+            "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+              "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+            },
+            "start_line": 5,
+            "end_line": 19,
+            "excerpt_sha256": "3e6e2c5f2d0edfe386d87a49a82f3036f96bec6350245e4441cde1ee94fa0f75"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S13-MODEL-COUNTABILITY-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 88,
+        "end_line": 159,
+        "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+      },
+      "claim_ids": [
+        "GI-13-S13"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S13-MODEL-COUNTABILITY"
+      ]
+    }
+  }
+]

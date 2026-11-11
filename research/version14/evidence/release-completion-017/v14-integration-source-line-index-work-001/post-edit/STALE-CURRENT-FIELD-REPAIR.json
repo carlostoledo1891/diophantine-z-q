@@ -1,0 +1,71 @@
+[
+  {
+    "kind": "claim_text",
+    "line": 4,
+    "before": "This is a new bounded author proposal for the current main manuscript, SHA256 1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8. It supplies only the elementary connections assigned to A055–A058. Historical closure-batch-001/002/010 are retained as author derivations, not relabelled independent acceptances. Generator finite enumeration, rank/torsion, height saturation, local duplication, formal groups, reduction, Hasse bounds and the M0 construction remain separately supplied. No canonical file is changed.",
+    "after": "This note supplies only the elementary connections assigned to A055–A058. Its original review target was the main manuscript with SHA256 1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8. Source replacements and current manuscript bindings are recorded in the Version 14 review evidence; this note does not itself claim whole-proof acceptance. Historical closure-batch-001/002/010 are retained as author derivations, not relabelled independent acceptances. Generator finite enumeration, rank/torsion, height saturation, local duplication, formal groups, reduction, Hasse bounds and the M0 construction remain separately supplied."
+  },
+  {
+    "kind": "claim_text",
+    "line": 16,
+    "before": "Sutherland, MIT 18.783 Fall2025 Lecture5, September18,2025, sections5.5–5.6, definitions printed p.10, Lemma5.20 and Theorem5.21 p.11, recurrence verification p.12, Lemma5.24 p.14: for a nonsingular short Weierstrass model the division polynomials have the stated parity; (phi_n/psi_n^2,omega_n/psi_n^3) gives [n]; phi_n and psi_n^2 are coprime. The displayed omega numerator has a minus sign. Exact PDF SHA256 4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7. This is an author lecture note, not a peer-reviewed article. The note verifies the psi recurrence and refers for a complete proof of the analogous identities to Washington Theorem9.33; no claim of a new independent proof of that external theorem is made. We use its stated theorem.",
+    "after": "Silverman, The Arithmetic of Elliptic Curves, second edition2009, ExerciseIII.3.7 pp105–106: for a nonsingular short Weierstrass model, the positive-index division polynomials have the stated parity and recurrences; parts(c),(d),(f) give coprimality, scalar coordinates and zeros exactly at nonidentity n-torsion. Exact published PDF SHA256 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25. The official2011 errata p4 corrects the omega numerator to a minus sign (PDF SHA256 cc89fd821b15df1fa2e139d32dbee447793ffc004fcf4f7cd962191873a2c37a). The retained2022 errata corrects the even parity factor and requests explicit small-index conventions; here psi0=0, psi(-1)=-1 and n=1,2 are checked from the bases. These are published exercise statements with official corrections; no claim is made that the exercise solutions are printed. The former Sutherland lecture-note supplier is retained only as historical provenance."
+  },
+  {
+    "kind": "claim_text",
+    "line": 22,
+    "before": "The corrected omega_n=(psi_{n+2}psi_{n-1}^2-psi_{n-2}psi_{n+1}^2)/(4y) and the even recurrence give psi_{2n}=2psi_n omega_n; n=1,2 follow from the bases. Therefore 2y([n]P)psi_n(P)^4=psi_{2n}(P), while x([n]P)psi_n(P)^2=phi_n(P). For a nonidentity point P in the torsion-free carrier and n!=0, [n]P is not the identity, so psi_n(P)!=0 by the scalar-coordinate theorem and coprimality. With this guard, the two cleared equations uniquely recover both coordinates of [n]P. The inverse-norm guard is the separately supplied field encoding of nonzero elements of K0; it is not established by division polynomials. n=0 and identity P use their explicit identity branches. Negative n uses psi_{-n}=-psi_n and group negation, preserving the ordinate sign. This supplies current278–304 and its actual scalar-template use. The inaccessible Silverman errata are not a premise: closure-batch-010 supersedes the earlier A056 source-retrieval gap with the pinned Sutherland source. Existing finite scalar tests are supplementary checks, not the proof.",
+    "after": "The corrected omega_n=(psi_{n+2}psi_{n-1}^2-psi_{n-2}psi_{n+1}^2)/(4y) and the even recurrence give psi_{2n}=2psi_n omega_n; n=1,2 follow from the bases. Therefore 2y([n]P)psi_n(P)^4=psi_{2n}(P), while x([n]P)psi_n(P)^2=phi_n(P). For a nonidentity point P in the torsion-free carrier and n!=0, [n]P is not the identity, so psi_n(P)!=0 by ExerciseIII.3.7(f), with coprimality supplied separately by part(c). With this guard, the two cleared equations uniquely recover both coordinates of [n]P. The inverse-norm guard is the separately supplied field encoding of nonzero elements of K0; it is not established by division polynomials. n=0 and identity P use their explicit identity branches. Negative n uses psi_{-n}=-psi_n and group negation, preserving the ordinate sign. This supplies current278–304 and its actual scalar-template use. The pinned official errata and published exercise now replace the Sutherland source; the earlier access limitation is historical. Existing finite scalar tests are supplementary checks, not the proof."
+  },
+  {
+    "kind": "claim_text",
+    "line": 25,
+    "before": "Milne, Class Field Theory v4.03 (6August2020), ChapterV Theorem2.2, printed p.155: for every positive integer modulus m and every a coprime to m the rational primes congruent to a modulo m have Dirichlet density 1/phi(m), hence infinitely many. Exact PDF SHA256 50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5; this is an author course note. In current306–308 set the fixed positive integer W=4 product_{p<=324}p. There are finitely many unit classes a modulo W. Each has infinitely many primes, and deleting the finite set <=324 leaves infinitely many. Ascending enumeration with finite trial primality tests and a congruence test therefore stops after finding22 in each class. The union is a fixed finite catalogue H_cat; its product with product_{p<=324}p defines N_s. This proves termination of this particular catalogue only, with no effective bound on its final prime and no claim about every later prime choice. The successful M0 index and its proof are separate.",
+    "after": "For every fixed integer q>=3 and gcd(a,q)=1, the published Bennett–Martin–O'Bryant–Rechnitzer estimate gives theta(x;q,a)=x/phi(q)+O_q(x/log x). The exact source and the deduction of infinitude are supplied in ../prime-realization-current/SOURCE.md, lines3–4. In current306–308 the fixed integer W=4 product_{p<=324}p is at least4, so this estimate applies to every unit class modulo W. Choosing log x greater than twice the fixed implied constant times phi(W) makes theta(x;W,a) at least x/(2phi(W)), which is unbounded. Thus each such class contains infinitely many primes; deleting primes<=324 leaves infinitely many. Ascending enumeration with finite trial primality and congruence tests therefore stops after finding22 primes in each of the finitely many unit classes. The union is the fixed finite catalogue H_cat and defines N_s exactly as before. This proves only termination of this catalogue; it gives no asserted effective largest-prime bound and does not establish the separate M0 index."
+  },
+  {
+    "kind": "claim_text",
+    "line": 28,
+    "before": "Milne, Algebraic Number Theory v3.08 (19July2020), Theorem4.3 printed p.70 and Theorem5.1 printed p.85: every ideal class has an integral representative with norm at most (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group of a number field is finitely generated with rank r1+r2-1 and torsion its roots of unity. Exact PDF SHA256 de2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b; these are author course notes. For K0=Q(s), s^2=2, its integral basis1,s gives discriminant8 and two real places. Minkowski bound is sqrt2<2, so the representative has norm1 and every ideal class is trivial. Roots of unity in a real field are +/-1, hence the units modulo squares have order4. The sign vectors of -1 and epsilon=1+s are independent, so this sign map on the four squareclasses is bijective and a totally positive unit is a square. This supplies current344–346. It does not claim epsilon is a chosen fundamental unit.",
+    "after": "For K0=Q(s), s^2=2, the direct proof in ../qroot2-class-units-current/PROOF.md shows O_K0=Z[s] by trace/norm parity, and discriminant8. Nearest-integer rounding in both coefficients gives Euclidean remainder norm at most one half of the divisor norm, so every ideal is principal. Reducing a unit positive at the real embedding s>0 by powers of epsilon=1+s into [1,epsilon) forces its s coefficient to be zero; consequently all units are uniquely +/-epsilon^k. Thus units modulo squares have four classes, and the independent sign vectors of -1 and epsilon distinguish them. Every totally positive unit is a square. This replaces the general course-note Minkowski and unit-rank inputs only for this fixed field, and supplies current344–346. Rank, torsion, descent and saturation remain separate."
+  },
+  {
+    "kind": "catalogue_source_record",
+    "before": {
+      "id": "milne-cft",
+      "bibliography": null,
+      "urls": [],
+      "files": [
+        {
+          "workspace_relative_path": "work/astra-final-moving-character-audit-001/primary/milne-cft.pdf",
+          "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+          "bytes": 2072714
+        }
+      ],
+      "version_notes": "Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Class Field Theory v4.03, August 6, 2020, author course notes. Supplementary source not separately in the manuscript bibliography. Theorem locators specify the chapter as numbering repeats. Author notes v4.03,6August2020.",
+      "source_status": "bytes_pinned"
+    },
+    "after": {
+      "id": "bmor-published-fixed-progression",
+      "publication": {
+        "title": "Explicit bounds for primes in arithmetic progressions",
+        "authors": "M.A. Bennett, G. Martin, K. O'Bryant, A. Rechnitzer",
+        "venue": "Illinois Journal of Mathematics62(2018),427–532",
+        "authoritative_version": "Final publishedPDF958b0390475236b68afdec28ce006b1a1d6ac59484eea9443e0b287e9f61a541",
+        "locator": "Definition1.5 printed429, Theorem1.2 printed431",
+        "corrections": "Only fixedq infinitude is consumed; no uniform prime-size bound."
+      },
+      "source_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/prime-realization-current/SOURCE.md",
+          "sha256": "c5c097ad13252d80c37c07383e54df56c03708f9fa221897132fb3f58c0fa7c9"
+        },
+        "start_line": 3,
+        "end_line": 4,
+        "excerpt_sha256": "1ff5fa879d0cc533833e6b1acd8f429d2e13b3263aafd9440100afe20c5a7ead"
+      },
+      "scope": "Fixed W>=4 catalogue application; original course-note metadata retained in prior_source_record."
+    }
+  }
+]

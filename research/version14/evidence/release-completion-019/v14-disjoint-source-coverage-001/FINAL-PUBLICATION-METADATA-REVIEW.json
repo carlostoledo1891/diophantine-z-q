@@ -1,0 +1,60 @@
+{
+  "reviewer_thread": "01a1c014-d895-7ab0-82a2-fb9cfc01f15a",
+  "reviewer_turn": "01a1c039-bc65-76d0-bba6-ff234232907d",
+  "at": "2026-11-09T12:14:37.644Z",
+  "decision": "accepted_metadata_only_publication_successor",
+  "dossier_sha256": "f1c54c738d5f8ecc1de7e86f74c4b3e85e7208b5df0f8ab3c02b4136237d0088",
+  "connections_sha256": "56ae3d3bbd9873ae0894809b9721c5382990cbf82bf36bdfdb667d630abb4ad7",
+  "delta_manifest_sha256": "56c9b8d20b90c4b41dcbc3ca501707dd7fdc53a9fa20f42a789b4a4b344d7317",
+  "checks": [
+    {
+      "id": "ACTIVE-SOURCE-MIDDLE-J1-MODULAR-GENUS",
+      "useHashCorrect": true,
+      "historyHashCorrect": true,
+      "publicationKeys": [
+        "authoritative_version",
+        "authors",
+        "corrections",
+        "locator",
+        "title",
+        "venue"
+      ]
+    },
+    {
+      "id": "ACTIVE-SOURCE-MIDDLE-J1-MODULAR-BELYI",
+      "useHashCorrect": true,
+      "historyHashCorrect": true,
+      "publicationKeys": [
+        "authoritative_version",
+        "authors",
+        "corrections",
+        "locator",
+        "title",
+        "venue"
+      ]
+    }
+  ],
+  "dossier_changes": [
+    "/protocol14_record/sha256",
+    "/reconciled_uses/1066/supplier/publication/doi",
+    "/reconciled_uses/1066/supplier/publication/authoritative_version",
+    "/reconciled_uses/1067/supplier/publication/doi",
+    "/reconciled_uses/1067/supplier/publication/authoritative_version",
+    "/reconciliation/1932/after_sha256",
+    "/reconciliation/1933/after_sha256"
+  ],
+  "connection_changes": [
+    "/connections/1066/use_sha256",
+    "/connections/1067/use_sha256"
+  ],
+  "report_changes": [
+    "/scope",
+    "/decisions/1066/subject_sha256",
+    "/decisions/1067/subject_sha256",
+    "/decisions/1190/subject_sha256"
+  ],
+  "reason": "The exact six-field publication schema cannot contain a separate doi key. Both original DOI values are preserved verbatim as DOI 10.1017/fms.2021.29 in authoritative_version. Authors, title, venue, locator, source/version meaning, mathematical assertions, consumer spans and all other uses/findings remain unchanged. The only dependent hashes are the two use/connection hashes, their final history hashes and inventory digest.",
+  "reconciliation": "FINAL-397-RECONCILIATION-002 remains semantically unchanged and accepted for this exact metadata successor; its predecessor C/projection pins are historical and this addendum supplies the new binding.",
+  "continuity": "Same reviewer agent; original source-first turn d993 and later corrections remain distinct, preserved records. No source reread or new mathematical proof audit.",
+  "limitations": "Actual source commit S is still required for the separate acknowledgment."
+}

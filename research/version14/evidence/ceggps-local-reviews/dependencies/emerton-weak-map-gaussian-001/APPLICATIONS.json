@@ -1,0 +1,129 @@
+{
+  "schema": "bounded-author-conditional-applications/v1.4",
+  "applications": [
+    {
+      "id": "EME-NORMALIZATION",
+      "author": "/root/astra_v14_baseline_gaussian",
+      "status": "author conditional proof; independent review pending",
+      "assertion": {
+        "statement": "The classical algebraic factor for positive-Sen labels a>b is Sym^(a-b-1) tensor det^(b+1), equivalently for negative labels u<v it is Sym^(v-u-1) tensor det^(1-v).",
+        "objects": "V_f epsilon^n, algebraic dual symmetric power, smooth WD twist.",
+        "hypotheses": "Published classical cohomology decomposition and cohomological V_f of weight k; epsilon=x|.|.",
+        "quantifiers": "All k>=2 and n integral, a=n,b=n+1-k.",
+        "parameter_range": "p=5 for intended use; abstract statements retain explicitly stated general rings/fields/groups.",
+        "uniformity": "Exact identities and existence; no quantitative bound.",
+        "constants": "No unspecified multiplicity-one constant; arbitrary multiplicity space is allowed where stated.",
+        "normalizations": "Geometric Frobenius; Tate-normalized smooth factor; smooth |det|^n retained.",
+        "exceptional_cases": "No identical numeric Hodge convention across sources; no central-character-only identification of Banach functors.",
+        "limit_order": "Fix actual V_f, twist, dualize symmetric power, then relabel weights."
+      },
+      "proof": {
+        "path": "work/source-risk-review-20261107/emerton-weak-map-gaussian-001/REPORT.md",
+        "sha256": "3069edb31002faa1a50dec5347a1b3170c707bdf1be6d26fb1e8029947fc27b8",
+        "bytes": 14914,
+        "start_line": 16,
+        "end_line": 31,
+        "excerpt_sha256": "165bbf6cc406eefd54722233573487276256b8ce449c5b411f94719845e3d46f"
+      },
+      "suppliers": [
+        "E06 pp286,289,295,363-364",
+        "E11 p19 footnote6 comparison retained as premise",
+        "PBM p23 and CEG pp7-8 comparison only"
+      ],
+      "consumer": "HT-SUPERCUSPIDAL-LOCAL-ALGEBRAIC via PBM4.14 and PBM6.5/6.6",
+      "independent_acceptance": null
+    },
+    {
+      "id": "EME-FIBERS",
+      "author": "/root/astra_v14_baseline_gaussian",
+      "status": "author conditional proof; independent review pending",
+      "assertion": {
+        "statement": "Dense nonzero fibers imply every fiber nonzero when a finite invariant submodule splits off and generates the module.",
+        "objects": "Noetherian E-algebra A, A[Gamma]-module M, finite F=M^H, averaging idempotent.",
+        "hypotheses": "F finite over A, F generates M over A[Gamma], averaging splits F, dense nonzero fibers.",
+        "quantifiers": "Every maximal ideal of A.",
+        "parameter_range": "p=5 for intended use; abstract statements retain explicitly stated general rings/fields/groups.",
+        "uniformity": "Exact identities and existence; no quantitative bound.",
+        "constants": "No unspecified multiplicity-one constant; arbitrary multiplicity space is allowed where stated.",
+        "normalizations": "Residue-field tensor; exact splitting preserved; support argument does not require A reduced.",
+        "exceptional_cases": "A[1/t] without finite invariant generators is excluded; actual X duality remains a separate premise.",
+        "limit_order": "Verify module hypotheses, pass to F fibers, use closed support and Nakayama."
+      },
+      "proof": {
+        "path": "work/source-risk-review-20261107/emerton-weak-map-gaussian-001/REPORT.md",
+        "sha256": "3069edb31002faa1a50dec5347a1b3170c707bdf1be6d26fb1e8029947fc27b8",
+        "bytes": 14914,
+        "start_line": 32,
+        "end_line": 45,
+        "excerpt_sha256": "59e50d5b9ab14db76699fcd2db2421af0c42397d99b9ad3281ed57aa8d4c279c"
+      },
+      "suppliers": [
+        "Local proof, compared with E11 C.35-C.36 pp112-113"
+      ],
+      "consumer": "HT-SUPERCUSPIDAL-LOCAL-ALGEBRAIC via PBM4.14 and PBM6.5/6.6",
+      "independent_acceptance": null
+    },
+    {
+      "id": "EME-WEAK-TO-ALG",
+      "author": "/root/astra_v14_baseline_gaussian",
+      "status": "author conditional proof; independent review pending",
+      "assertion": {
+        "statement": "A nonzero weak map with the specified classical target identifies the locally algebraic source with its supercuspidal factor even at arbitrary multiplicity.",
+        "objects": "rho, B, Hausdorff H, simple S=W tensor pi, multiplicity space U.",
+        "hypotheses": "rho absolutely irreducible; B absolutely topologically irreducible; Balg nonzero; exact classical eigenspace Halg=rho tensor S tensor U; C10 VI5.7 dichotomy.",
+        "quantifiers": "Every such map; any multiplicity space U.",
+        "parameter_range": "p=5 for intended use; abstract statements retain explicitly stated general rings/fields/groups.",
+        "uniformity": "Exact identities and existence; no quantitative bound.",
+        "constants": "No unspecified multiplicity-one constant; arbitrary multiplicity space is allowed where stated.",
+        "normalizations": "Tensor Galois factor separated with matrix units; no unproved K1(N)-invariant vector choice.",
+        "exceptional_cases": "Special algebraic-character/Steinberg constituents excluded by cuspidal target; no arbitrary eigenspace is assumed classical.",
+        "limit_order": "Injectivity, restrict algebraic vectors, remove rho, exclude special case, project one nonzero multiplicity coordinate."
+      },
+      "proof": {
+        "path": "work/source-risk-review-20261107/emerton-weak-map-gaussian-001/REPORT.md",
+        "sha256": "3069edb31002faa1a50dec5347a1b3170c707bdf1be6d26fb1e8029947fc27b8",
+        "bytes": 14914,
+        "start_line": 46,
+        "end_line": 61,
+        "excerpt_sha256": "879f2a7dc210af08ec7e6227978c70d7477e7fdae5432f0ccd12450dc5d809e7"
+      },
+      "suppliers": [
+        "E06 Th2.5.1 p295 and Th7.4.2 p364",
+        "C10 VI5.7 p441, VI6.18 p452",
+        "C10 VI6.42 pp460-463 for subsequent same-WD transfer"
+      ],
+      "consumer": "HT-SUPERCUSPIDAL-LOCAL-ALGEBRAIC via PBM4.14 and PBM6.5/6.6",
+      "independent_acceptance": null
+    }
+  ],
+  "open_interfaces": [
+    {
+      "id": "EME-AUXILIARY",
+      "needed": "Classical auxiliary point with exact local type and all residual/global hypotheses",
+      "owner": "separate CEGGPS route; no acceptance assumed"
+    },
+    {
+      "id": "EME-ACTUAL-X",
+      "needed": "Actual X(theta) has finitely generated admissible smooth dual, fiber duality, dense nonzero allowable fibers and correct Banach specialization",
+      "status": "first unresolved direct weak-map interface",
+      "draft_locators": "6.3.4/6.3.8/6.3.12/6.3.15-17;5.4.9;C.14/C.35",
+      "reason": "Abstract support proof does not verify these concrete hypotheses"
+    },
+    {
+      "id": "EME-BANACH-CONVENTION",
+      "needed": "Exact functor comparison and twists linking B_E and Paškūnas Pi; no identification solely from central characters",
+      "status": "retained explicit supplier"
+    }
+  ],
+  "nine_obligations": {
+    "hypotheses": "Each card lists actual prerequisites; no assertion of their completion.",
+    "objects": "Actual Galois and Banach representations, cohomological V_f and the finite invariant module.",
+    "maps": "Matrix-unit extraction, algebraic dual identity, averaging, specialization and conditional weak embedding.",
+    "domains": "Coefficient fields characteristic0; local p=5 intended; prime-to-p compact averaging elsewhere.",
+    "normalizations": "Positive versus negative weights explicitly related; cyclotomic smooth factor retained.",
+    "exceptions": "Special algebraic alternative, nonfinite module counterexample and unproved tame-level invariance handled.",
+    "uniformity": "Exact results; arbitrary multiplicity space.",
+    "consumers": "Both HT M1 and M2 inherit the same unresolved identity.",
+    "related_uses": "All draft determinant occurrences and both HT branches checked; extension results remain separate."
+  }
+}

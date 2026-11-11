@@ -1,0 +1,194 @@
+[
+  {
+    "origin": "v14-gi-base-prime-input-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-GI-EXT-BASE-BERTRAND",
+      "consumer": "GI-01-BASE2",
+      "passages": [
+        "ACTIVE-GI-EXT-BASE-BERTRAND-P1"
+      ],
+      "assertion": {
+        "statement": "For every positive integer N and the fixed integer C>16, choose a prime P with CN<P<2CN for the base-case cyclic embedding.",
+        "objects": "Interval length N, fixed integer C>16, and cyclic modulus prime P.",
+        "hypotheses": "N>=1 and C is a fixed integer greater than16; hence m=CN>1.",
+        "quantifiers": "Every positive integer N, with C fixed before N.",
+        "parameter_range": "All positive lengths, including small N.",
+        "uniformity": "C remains fixed, so N/P is between1/(2C) and1/C.",
+        "constants": "CN and2CN; no asymptotic exceptional range.",
+        "normalizations": "Strict lower and upper inequalities. Even if the upper endpoint is written non-strict in an intermediate argument, 2m is composite for m>1.",
+        "exceptional_cases": "No limit argument is required to omit small lengths. This prime existence does not itself imply the Gowers-norm inequality or forward bracket theorem.",
+        "limit_order": "Fix C, choose P by the theorem with m=CN, then zero-extend and use the separately justified norm comparison."
+      },
+      "classification": "dependency",
+      "reason": "Exact explicit published input in the frozen local proof; local conclusions are derived separately.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/ERDOS-BERTRAND.md",
+            "sha256": "cd7f32ca7c929290d94f0b5913c604a395ff45f9c28e9f946cf0968105d22746"
+          },
+          "start_line": 5,
+          "end_line": 23,
+          "excerpt_sha256": "92e5e5148e4d1efbe48f3da67cf885d9804262ea48ddaec401ba653eaf8e2266"
+        },
+        "statement": "For every integer m>1 there is a prime p with m<p<2m.",
+        "publication": {
+          "title": "Beweis eines Satzes von Tschebyschef",
+          "authors": "P. Erdos",
+          "venue": "Acta Scientiarum Mathematicarum5 (1932),194–198",
+          "authoritative_version": "Original institutional PDF SHA256 e9c7f6658e7ffb67b11d4efb931db4c1433417999e3efe9fb48470d45688a5ba",
+          "locator": "Sections4–5, pp.197–198",
+          "corrections": "No correction invoked; m>1 excludes the upper endpoint because2m is composite."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/01-gi-base2/proof.tex",
+          "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c"
+        },
+        "start_line": 233,
+        "end_line": 239,
+        "excerpt_sha256": "f586b7a4640e0cb0e0c05294ecac12ee23da683640b0891ef2d777667e9dfb0d"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-BASE-BERTRAND",
+      "use_sha256": "e44649dc192ad7002c172f6eee2df621c2b2eaa42155244743182a7d08f2e06a",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For every integer m>1 there is a prime p with m<p<2m.",
+        "objects": "Positive integers and rational primes.",
+        "hypotheses": "m is an integer greater than1.",
+        "quantifiers": "Every integer m>1.",
+        "parameter_range": "The full finite range, not only sufficiently large m.",
+        "uniformity": "The factor2 is absolute.",
+        "constants": "Upper endpoint2m.",
+        "normalizations": "Strict lower and upper inequalities. Even if the upper endpoint is written non-strict in an intermediate argument, 2m is composite for m>1.",
+        "exceptional_cases": "m=1 is excluded; no assertion about arithmetic progression primes.",
+        "limit_order": "Fix m, then choose a prime in the interval."
+      },
+      "needed_assertion": {
+        "statement": "For every positive integer N and the fixed integer C>16, choose a prime P with CN<P<2CN for the base-case cyclic embedding.",
+        "objects": "Interval length N, fixed integer C>16, and cyclic modulus prime P.",
+        "hypotheses": "N>=1 and C is a fixed integer greater than16; hence m=CN>1.",
+        "quantifiers": "Every positive integer N, with C fixed before N.",
+        "parameter_range": "All positive lengths, including small N.",
+        "uniformity": "C remains fixed, so N/P is between1/(2C) and1/C.",
+        "constants": "CN and2CN; no asymptotic exceptional range.",
+        "normalizations": "Strict lower and upper inequalities. Even if the upper endpoint is written non-strict in an intermediate argument, 2m is composite for m>1.",
+        "exceptional_cases": "No limit argument is required to omit small lengths. This prime existence does not itself imply the Gowers-norm inequality or forward bracket theorem.",
+        "limit_order": "Fix C, choose P by the theorem with m=CN, then zero-extend and use the separately justified norm comparison."
+      },
+      "required_capabilities": [
+        "For every positive integer N and the fixed integer C>16, choose a prime P with CN<P<2CN for the base-case cyclic embedding."
+      ],
+      "available_capabilities": [
+        "For every integer m>1 there is a prime p with m<p<2m."
+      ],
+      "derived_capabilities": [
+        "For every positive integer N and the fixed integer C>16, choose a prime P with CN<P<2CN for the base-case cyclic embedding."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/01-gi-base2/proof.tex",
+            "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c"
+          },
+          "start_line": 233,
+          "end_line": 239,
+          "excerpt_sha256": "f586b7a4640e0cb0e0c05294ecac12ee23da683640b0891ef2d777667e9dfb0d"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For every positive integer N and the fixed integer C>16, choose a prime P with CN<P<2CN for the base-case cyclic embedding.",
+          "objects": "Interval length N, fixed integer C>16, and cyclic modulus prime P.",
+          "hypotheses": "N>=1 and C is a fixed integer greater than16; hence m=CN>1.",
+          "quantifiers": "Every positive integer N, with C fixed before N.",
+          "parameter_range": "All positive lengths, including small N.",
+          "uniformity": "C remains fixed, so N/P is between1/(2C) and1/C.",
+          "constants": "CN and2CN; no asymptotic exceptional range.",
+          "normalizations": "Strict lower and upper inequalities. Even if the upper endpoint is written non-strict in an intermediate argument, 2m is composite for m>1.",
+          "exceptional_cases": "No limit argument is required to omit small lengths. This prime existence does not itself imply the Gowers-norm inequality or forward bracket theorem.",
+          "limit_order": "Fix C, choose P by the theorem with m=CN, then zero-extend and use the separately justified norm comparison."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No limit argument is required to omit small lengths. This prime existence does not itself imply the Gowers-norm inequality or forward bracket theorem.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/01-gi-base2/proof.tex",
+              "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c"
+            },
+            "start_line": 257,
+            "end_line": 258,
+            "excerpt_sha256": "de7f84b5d8cb8ef2e5b33615d0ca55f383fb70a36f8ebf3a9138b3ffda80fd5d"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/01-gi-base2/proof.tex",
+            "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c"
+          },
+          "start_line": 233,
+          "end_line": 239,
+          "excerpt_sha256": "f586b7a4640e0cb0e0c05294ecac12ee23da683640b0891ef2d777667e9dfb0d"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/01-gi-base2/proof.tex",
+          "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c"
+        },
+        "start_line": 233,
+        "end_line": 239,
+        "excerpt_sha256": "f586b7a4640e0cb0e0c05294ecac12ee23da683640b0891ef2d777667e9dfb0d"
+      }
+    ],
+    "additional_file_pins": [
+      {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/ERDOS-BERTRAND.md",
+        "sha256": "cd7f32ca7c929290d94f0b5913c604a395ff45f9c28e9f946cf0968105d22746"
+      }
+    ],
+    "retained_separate_inputs": [
+      "Normalized Gowers comparison",
+      "Forward bracket theorem and its smallness range",
+      "Periodic nilsequence realization"
+    ],
+    "scope": "This component is conditional on every stated incoming input. It is not whole-proof or release acceptance.",
+    "passage_bindings": [
+      {
+        "passage_id": "ACTIVE-GI-EXT-BASE-BERTRAND-P1",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/01-gi-base2/proof.tex",
+            "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c"
+          },
+          "start_line": 233,
+          "end_line": 239,
+          "excerpt_sha256": "f586b7a4640e0cb0e0c05294ecac12ee23da683640b0891ef2d777667e9dfb0d"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+--- r2/docs/research-review/README.md
++++ r3/docs/research-review/README.md
+@@ -14,7 +14,7 @@
+ 
+ Historical research releases and reviews retain their original standard and scope. Adopting v1.3 does not recertify them under its new coverage requirements. A new full mathematical closure requires documented source-first baseline coverage and reconciliation under v1.3. The documentation-only adoption PR may use a narrowly reviewed non-substantive scope, but it cannot certify the current manuscript as v1.3-complete.
+ 
+-The deployed gate checks the existing recorded review evidence and live repository context. At preparation of this update, it does not enforce the new v1.3 coverage-index, source-use-table and reconciliation requirements or their separate coverage decisions. Those records and non-author review remain required by the protocol. A separately reviewed and deployed implementation must identify which v1.3 structural checks it actually performs before claiming automated coverage. A passing earlier gate check does not establish v1.3 compliance.
++Acceptance under v1.3 requires a reviewed protected `coverage_profile` supplied by the controller, binding the governing protocol, runtime policy, mode and proof-source inventory. The validator requires a committed coverage dossier and a separate authenticated non-author coverage decision. In substantive mode it checks passage coverage, source-use and application links, direct dependencies, preserved reconciliation and current bindings. The `1.3-non-substantive-scope-only` result instead checks a reviewed policy/editorial scope and unchanged protected proof artifacts; it does not certify a complete proof. Source completeness, reconstruction chronology, prior exposure and mathematical adequacy remain reviewer attestations. Before a v1.3 merge, verify that the deployed controller uses the reviewed profile and validator and that the live gate produces the required result. This describes the required acceptance configuration, not a claim that deployment has already happened.
+ 
+ ## Evidence to include in a PR
+ 

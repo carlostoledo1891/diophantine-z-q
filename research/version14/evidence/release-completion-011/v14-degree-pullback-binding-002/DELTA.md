@@ -1,0 +1,1 @@
+Retain the frozen LP13 328–342 connecting derivation. Correct all old S13 79–294 application bindings to the actual fixed integer pullback at345–351, including inline_argument, consumer, adverse-case and coverage location fields wherever present. Recompute use digest. No assertion text or source theorem changes.

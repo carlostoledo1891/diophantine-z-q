@@ -1,0 +1,14 @@
+{
+  "target": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+  "base_sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127",
+  "line": 28,
+  "old": "Milne, Algebraic Number Theory v3.08 (19July2020), Theorem4.3 printed p.70 and Theorem5.1 printed p.85: every ideal class has an integral representative with norm at most (n!/n^n)(4/pi)^r2 sqrt(|disc K|); the unit group of a number field is finitely generated with rank r1+r2-1 and torsion its roots of unity. Exact PDF SHA256 de2066ee7a319c0e6e521895a7e9e9567c2804bcafc0c8e67c417e508f2bc26b; these are author course notes. For K0=Q(s), s^2=2, its integral basis1,s gives discriminant8 and two real places. Minkowski bound is sqrt2<2, so the representative has norm1 and every ideal class is trivial. Roots of unity in a real field are +/-1, hence the units modulo squares have order4. The sign vectors of -1 and epsilon=1+s are independent, so this sign map on the four squareclasses is bijective and a totally positive unit is a square. This supplies current344–346. It does not claim epsilon is a chosen fundamental unit.",
+  "new": "For K0=Q(s), s^2=2, the direct proof in ../qroot2-class-units-current/PROOF.md shows O_K0=Z[s] by trace/norm parity, and discriminant8. Nearest-integer rounding in both coefficients gives Euclidean remainder norm at most one half of the divisor norm, so every ideal is principal. Reducing a positive unit by powers of epsilon=1+s into [1,epsilon) forces its s coefficient to be zero; consequently all units are uniquely +/-epsilon^k. Thus units modulo squares have four classes, and the independent sign vectors of -1 and epsilon distinguish them. Every totally positive unit is a square. This replaces the general course-note Minkowski and unit-rank inputs only for this fixed field, and supplies current344–346. Rank, torsion, descent and saturation remain separate.",
+  "main_edit": {
+    "start_line": 344,
+    "end_line": 346,
+    "old": "The ring of integers $\\Z[s]$ has class number one because its Minkowski\nbound is $\\sqrt2<2$. It has four unit squareclasses. The sign vectors\nof $-1,1+s$ are independent, so every totally positive unit is a square.\n",
+    "new": "The ring of integers $\\Z[s]$ is norm-Euclidean, hence has class number one.\nIts units are $\\{\\pm(1+s)^k:k\\in\\Z\\}$, so it has four unit squareclasses.\nThe sign vectors of $-1,1+s$ are independent, so every totally positive unit is a square.\n"
+  },
+  "canonical_write": false
+}

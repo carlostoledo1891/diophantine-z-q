@@ -1,0 +1,15 @@
+{
+  "scope": "Test-only adapter for unchanged legacy REST blob-cache fixtures; production sources unchanged",
+  "original_sha256": "c0b215073dd92a8f7355c0657e7b25e8beedfbc2c28f1d23b464a35f3aea1174",
+  "adapted_sha256": "f218ca0e2ed335a3c08af42568a871e0932a7e319b849bc3bd9bffb948d67813",
+  "changes": [
+    "Mock state_snapshot only in REST-cache fixture to prevent Git acquisition outside fake HTTP backend",
+    "Include already-deployed sanitized last-status and retry-after diagnostics in exact expectation"
+  ],
+  "initial_result": {
+    "tests": 187,
+    "failures": 1,
+    "errors": 2
+  },
+  "network_note": "Initial old fixtures attempted a fake owner/controller read using a literal dummy credential; protected acquisition failed. No production repository or real credential was supplied."
+}

@@ -1,0 +1,13 @@
+{
+  "predecessor_manifest_sha256": "bf49a3b4ce15643ad4505a83b7c8a54ce1f234a7b00cc53d431ca46e74ec9d29",
+  "repair": "Remove finding_inventory from text-only decoding exclusion; it remains a mandatory input and is decoded into values.",
+  "production_code_changes": [
+    {
+      "file": "bind.py",
+      "before": "values={k:decode(v) for k,v in source.items() if k not in {'scope_review','policy_review','observation_provenance','finding_inventory'}}",
+      "after": "values={k:decode(v) for k,v in source.items() if k not in {'scope_review','policy_review','observation_provenance'}}"
+    }
+  ],
+  "regression": "test_finding_inventory_is_json executes the actual assignment AST with inert regression-only data; no packet or gate result generated.",
+  "generator_scripts": "prepare_templates.py and freeze.py retained as predecessor authoring history; do not execute them against frozen directories."
+}

@@ -1,0 +1,56 @@
+{
+  "findings": [
+    {
+      "id": "MF-F01",
+      "source": "GT12Lemma8.4p519 andProp9.2pp522–523",
+      "issue": "A full-heightQ bound cannot be inserted with offsetO(N) and then treated asstandard.",
+      "repair": "MF-AFFINE keeps denominators bounded independentlyofintegeroffset and recordsweight growthN^(|beta|-|alpha|).",
+      "status": "Author repair, independent review pending",
+      "related_use": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-df-compiler-002/proof.tex",
+        "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6",
+        "bytes": 27725,
+        "start_line": 132,
+        "end_line": 145,
+        "excerpt_sha256": "8b7ddd929548d28776ee66f2a53ca776e6ed2377d92fea0e85ff4f8f46da546b"
+      }
+    },
+    {
+      "id": "MF-F02",
+      "source": "GT12Theorem8.6 andGT14publishedcorrection",
+      "issue": "Originalmultivariable proof didnotretainonecharacter when switchingcoordinates; publishedrepair onlyassertsequal-sideversion.",
+      "repair": "Importexactfinalequal-sideGT14statement andexplicitlylocalizeprogressionrectangletocube; no arbitrary-side theorem imported.",
+      "status": "Source-correction application pending review"
+    },
+    {
+      "id": "MF-F03",
+      "source": "GTZD5p1346",
+      "issue": "PeriodicmoduloGamma doesnotmeanGamma-valued, so itsTaylorcoefficientcannotbe erased.",
+      "repair": "Usecommonfinitecover andactualresiduerepresentatives. FalseTaylorcloseness notclaimed; GaussianD6retainsown denominatorjoin.",
+      "status": "Local routeavoidsfalsepremise; Gaussianapplicationseparate"
+    },
+    {
+      "id": "MF-F04",
+      "source": "GTZE11p1366 andE13p1367",
+      "issue": "A lowerdegreerepresentation ononeprogression doesnotitself supplywhole symmetricbox equality.",
+      "repair": "Equations7–15 giveonequotient andexplicit slowtime/residueinterpolation foractualoriginalvectorfunction onallI^k.",
+      "status": "Author connectingproof; independent application/coverage decisionpending"
+    },
+    {
+      "id": "MF-F05",
+      "source": "GT12A12 andDF002",
+      "issue": "Printedleftdifference doesnotestablish right-cosetperiodicity.",
+      "repair": "ParameterwiseR_i(n,r)=psi(gamma(n)^-1 gamma(n+r e_i)) with tensor-gridinterpolation andboundeddenominator; rootreview ofone-variableversionpreserved.",
+      "status": "Newmultivariableapplication pending review; priorrootdecisionnotextendedautomatically"
+    },
+    {
+      "id": "MF-F06",
+      "source": "Draft equation14",
+      "issue": "Sol identified duplicated comma inorbit display.",
+      "repair": "Corrected typography beforefreeze; no mathematicalchange.",
+      "status": "Author correction recorded"
+    }
+  ],
+  "scope": "All exactD5-to-E11/E13 factorization and all-box transitions inthispacket, plus the one-variable large-offsettransfer inDF002 and right-period orientation. Other sourceproofs notclaimedreproved.",
+  "coverage_decision": null
+}

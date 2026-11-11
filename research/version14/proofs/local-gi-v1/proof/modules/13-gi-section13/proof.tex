@@ -1,0 +1,438 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\Z}{\mathbb Z}\newcommand{\N}{\mathbb N}
+\newcommand{\C}{\mathbb C}\newcommand{\E}{\mathbb E}
+\newcommand{\Symb}{\operatorname{Symb}}
+\newcommand{\Nil}{\operatorname{Nil}}
+\newcommand{\one}{\mathbf1}
+\title{The Section 13 correlation and symmetry join}
+\author{Author proposal: /root/astra\_v14\_baseline\_compiler}
+\date{7 November 2026}
+\begin{document}\maketitle
+\noindent\textbf{Status.} This is a separate author proposal following
+LP05-001. It does not alter that frozen proof or claim a complete inverse
+theorem. Its project premises and unchanged published inputs are explicit
+below. Mathematical acceptance, related-use completeness and incorporation
+require independent decisions. The signed identities here retain the actual
+unconjugated $\alpha$ in published (13.10).
+
+\section{Target and exact inputs}
+Fix a standard integer $s\geq3$ and an unbounded limit integer $N$.
+Write $I_t=[-tN,tN]\cap{}^*\Z$, $J=[N]$, $r=s-1$ and $m=s-2$.
+All geometric data and finite dimensions are standard. Vertical identities
+hold for every limit point and every limit top-group element under the
+natural ultrapower extension, as in the project tautification and LP13
+units. Tensor products have their Hilbert tensor norms. Every nilcharacter
+is unit-vector-valued; a scalar coordinate need not have modulus one.
+
+\begin{theorem}[Theorem 7.4 on the consumed domain]\label{thm:target}
+Let $f$ be bounded on $J$, extended by zero outside $J$, and let
+$H\subseteq I_1$ be a dense limit subset. Suppose that $\chi(h,n)$ is
+a globally represented multidegree-$(1,s-1)$ nilcharacter and
+$\Delta_h f$ has degree-at-most-$(s-2)$ correlation with $\chi(h,\cdot)$
+on $J$ for every $h\in H$, with GTZ's correlation convention.
+Then there are a globally represented degree-at-most-$s$ unit nilcharacter
+$\Theta$ and a bounded globally represented nilsequence $\Psi(h,n)$
+supported on
+\[
+ \mathcal J=\{(i,j):i+j\leq s-1\}\cup\{(i,s-i):2\leq i\leq s\}
+                                                        \tag{1}
+\]
+such that, on $I_1\times J$, each component of $\chi(h,n)$ is a bounded
+finite linear combination of components of
+\[
+ \Theta(n+h)\otimes\overline{\Theta(n)}\otimes\Psi(h,n).  \tag{2}
+\]
+All families and bounds are standard in the limit sense, independently of
+the interval length. No effective numerical constants are asserted.
+\end{theorem}
+
+We use the following exact premises.
+The project LP05-001 supplies a unit nilcharacter $\widetilde\chi$ of
+cube multidegree $(1,\ldots,1)$, literally symmetric in its last $r$
+variables, with
+\[
+ [\chi(h,n)]_{\Symb_s({}^*\Z^2)}
+       =s[\widetilde\chi(h,n,\ldots,n)]_{\Symb_s({}^*\Z^2)}. \tag{3}
+\]
+The project LP13 theorem supplies multilinearity of the symbol of
+$\widetilde\chi$ under fixed integer linear substitutions, in each slot.
+The project tautification-003 Theorem 3 supplies the uniform shift tensor
+of a positive-degree nilcharacter, lowering degree by one in the ordinary
+degree case. It applies to limit shifts and limit families.
+
+The unchanged published inputs are the definitions and elementary symbol
+arithmetic E.3, E.7 and E.8(i)--(iii),(vi); nilcharacter approximation and
+selection E.5/E.6 and Appendix A; Proposition 8.4 with its plain-correlation
+hypothesis; the converse Proposition 5.6; and E.11/E.13. Their exact source
+applications are recorded separately. In particular Proposition 8.4 is a
+distinct input. The weaker degree-$(s-2)$ biased-quadruple conclusion of
+Proposition 7.3 alone would not retain the lower factors needed here.
+No corrected assertion is supplied by citing the unpublished erratum.
+
+For an ordered list of linear forms define
+\[
+ T(L_1;L_2,\ldots,L_s)=[\widetilde\chi(L_1,L_2,\ldots,L_s)]_{\Symb_s}.
+\]
+The semicolon separates the distinguished first slot. We use the notation
+$n^j$ in a slot list for $j$ repeated entries, not a power of $n$.
+All formulas between such symbols are on the full indicated limit lattice
+until a box is explicitly named.
+
+\section{Plain correlation and retention of the lower factors}
+By E.5/E.6 in the ordinary one-dimensional degree ordering and Appendix A
+selection, after restricting to a still dense
+internal subset of $H$, choose degree-at-most-$(s-2)$ unit nilcharacters
+$\varphi_h$ so that $\Delta_hf$ plainly correlates with
+$\chi(h,\cdot)\otimes\varphi_h$. The family is internal, with a standard
+finite geometry list, bounded dimensions and common Lipschitz bounds.
+Here the selection is into the countable increasing complexity presentation
+of the nilcharacter class. An internal image contained in that union is
+contained in a standard stage by Appendix A compactness; otherwise nested
+nonempty internal sets of parameters outside successive stages give an
+image outside the union. Positive correlations can likewise be made
+uniform by A.6. Pad targets by zero coordinates to one fixed dimension.
+Outside the retained set use a fixed constant unit nilcharacter, and keep
+all parameter indicators separately. This preserves the unit norm needed
+for the identities below.
+Conjugate the selected lower nilcharacter if needed to match the published
+correlation convention. A finite pigeonhole also fixes a scalar coordinate
+of $\chi(h,\cdot)\otimes\varphi_h$ retaining plain correlation on a dense
+set. Thus the scalar version of Proposition 8.4 suffices; the full unit
+vectors remain available behind these coordinates.
+
+Apply published Proposition 8.4 to this actual family. Its hypotheses are
+plain correlation on $J$, internal dependence, bounded functions and a
+dense subset of $I_1$; all hold. Its conclusion gives bias for many additive
+quadruples $(h_1,h_2,h_3,h_4)$ in that subset, with tensor signs $+,+,-,-$
+and the shift $n+h_1-h_4$ on the second and fourth factors. Parameterise
+\[
+ (h_1,h_2,h_3,h_4)=(h_0+a,h_0+b,h_0+a+b,h_0).
+\]
+This is an injective correspondence with the retained quadruples.
+$h_0\in I_1$ and $a,b\in I_2$. Pigeonhole in $h_0$ to obtain one fixed
+$h_0$ and a dense set of pairs $(a,b)\in I_2^2$.
+Define the global unit nilcharacter
+\[
+ \tau(a,b,n)=\chi(h_0+a,n)\otimes\chi(h_0+b,n+a)
+ \otimes\overline{\chi(h_0+a+b,n)}
+ \otimes\overline{\chi(h_0,n+a)}.                         \tag{4}
+\]
+It has total degree at most $s$, not degree three for general $s$.
+
+For any coordinate of a unit nilcharacter $v$, the exact identity
+\[
+ v_j(n+a)=\sum_k\bigl(v_j(n+a)\overline{v_k(n)}\bigr)v_k(n) \tag{5}
+\]
+follows from $\sum_k|v_k(n)|^2=1$. The bracket is a coordinate of the
+shift tensor. Apply the project shift theorem to $\varphi_{h_0+b}$ and
+$\varphi_{h_0}$, with shift $a$. These brackets have degree at most
+$s-3$, uniformly in all parameters. Conjugate (5) when the shifted factor
+is conjugated. Thus the original bias implies degree-at-most-$(s-3)$ bias
+of
+\[
+ \tau(a,b,n)\otimes\varphi_{h_0+a}(n)\otimes\varphi_{h_0+b}(n)
+ \otimes\overline{\varphi_{h_0+a+b}(n)}
+ \otimes\overline{\varphi_{h_0}(n)}.                      \tag{6}
+\]
+Selection gives internal scalar degree-at-most-$(s-3)$ tests with common
+bounds and finite geometries. A standard finite choice of coordinates
+retains a positive density of the pairs. Phase-align their scalar averages
+by a bounded parameter scalar, and set the test equal to zero on other
+pairs. These factors are constant in $n$, so they have degree zero.
+We obtain fixed scalar coordinates $t$ of $\tau$ and $u,v,w,z$ of the
+displayed $\varphi$ factors with
+\[
+ \left|\E_{a,b\in I_2,n\in J}
+ t(a,b,n)u_a(n)v_b(n)\overline{w_{a+b}(n)}\overline{z(n)}
+ p_{a,b}(n)\right|\gg1.                                 \tag{7}
+\]
+The scalar $p_{a,b}$ is a uniformly bounded internal lower-degree family.
+Finite coordinate selection, rather than division by a coordinate, justifies
+this passage even if individual coordinates vanish.
+
+\section{The three Cauchy--Schwarz eliminations}
+Every average in this section has $n\in J$. All bounds are standard.
+Applying Cauchy--Schwarz in $(a,n)$ to remove the bounded factor
+$u_a\overline z$ in (7), and expanding the squared inner average, gives
+\[
+ \left|\E_{a,b,b'\in I_2,n\in J}
+ t(a,b,n)\overline{t(a,b',n)}v_b(n)\overline{v_{b'}(n)}
+ \overline{w_{a+b}(n)}w_{a+b'}(n)
+ p_{a,b}(n)\overline{p_{a,b'}(n)}\right|\gg1.             \tag{8}
+\]
+Put $c=a+b+b'$. Keep $b,b'\in I_2$, take $c\in I_6$, and retain
+$\one_{c-b-b'\in I_2}$. This exact indicator is independent of $n$.
+The normalized average changes by the factor $|I_2|/|I_6|$, comparable
+to one. No three-term sum of elements of $I_2$ is asserted to lie in $I_3$.
+Pigeonhole in $c$ to fix $c_0\in I_6$. Set
+\[
+ \alpha(b,b',n)=\tau(c_0-b-b',b,n)
+                    \otimes\overline{\tau(c_0-b-b',b',n)},\qquad
+ V_b(n)=v_b(n)w_{c_0-b}(n).                              \tag{9}
+\]
+In particular the second factor of $V_b$ is not conjugated: its sign
+follows from the last two $w$ factors in (8). Absorb the parameter cutoff
+into the scalar lower test. Equation (8) becomes, for a fixed coordinate
+$a_0$ of the actual $\alpha$,
+\[
+ \left|\E_{b,b'\in I_2,n\in J}
+ a_0(b,b',n)V_b(n)\overline{V_{b'}(n)}q_{b,b'}(n)\right|\gg1. \tag{10}
+\]
+The functions $V_b$ need only be bounded; no inverse or unit norm for them
+is used. Cauchy--Schwarz in $(b',n)$ removes $\overline{V_{b'}}$ and
+produces the product
+$a_0(b_1,b',n)\overline{a_0(b_2,b',n)}V_{b_1}\overline{V_{b_2}}$
+with the product of the corresponding $q$ tests. Cauchy--Schwarz in
+$(b_1,b_2,n)$ removes the remaining $V$ factors. Its expanded four-term
+product is
+\[
+ a_0(b_1,b'_1,n)\overline{a_0(b_2,b'_1,n)}
+ \overline{a_0(b_1,b'_2,n)}a_0(b_2,b'_2,n).               \tag{11}
+\]
+Its scalar test is the product of four $q$ tests with the same signs,
+still degree at most $s-3$, internal and uniformly bounded.
+Pigeonhole in $(b_2,b'_2)$, calling the fixed values $(b_0,b'_0)\in I_2^2$.
+The resulting expression is a coordinate of the global unit nilcharacter
+\[
+ \alpha'(b,b',n)=\alpha(b,b',n)\otimes\overline{\alpha(b_0,b',n)}
+ \otimes\overline{\alpha(b,b'_0,n)}\otimes\alpha(b_0,b'_0,n). \tag{12}
+\]
+Hence $\alpha'(b,b',\cdot)$ is degree-at-most-$(s-3)$ biased on $J$
+for many $(b,b')\in I_2^2$. To see the last assertion quantitatively,
+if the final average has modulus at least $\delta>0$ and each inner
+average is at most $B$, a proportion at least $\delta/(2B)$ has modulus
+at least $\delta/2$. All selections and parameter cutoffs above depend
+internally on the parameters. Products and conjugates do not increase the
+ordinary nilsequence degree or destroy the fixed finite complexity bounds.
+
+\section{Exact symbols and the lower-slot remainder}\label{sec:algebra}
+Constants such as $h_0,c_0,b_0,b'_0$ are limit integers. Give the original
+multidegree group its total-degree filtration generated by all components
+whose total weight is \emph{at least} the index, as verified in LP05.
+Apply the uniform project ordinary-degree shift theorem on the full slot
+domain to a constant translation in the relevant coordinate. Its difference
+has degree at most $s-1$, and stays lower-degree under any fixed integer
+linear pullback. Thus a constant added to a slot can be removed in the
+degree-$s$ symbol. A slot consisting only of a constant becomes zero.
+LP13 additivity gives $T(\ldots,0,\ldots)=2T(\ldots,0,\ldots)$, so that
+symbol is zero. This argument does not choose an implicit subgroup
+basepoint for a fixed-slot orbit. The coarsening uses $|a|\geq j$;
+the opposite inequality printed in Example 6.11 is not used.
+
+From (3),(4), linearity in the first slot, and last-block symmetry,
+\begin{align}
+ [\tau(a,b,n)]
+ &=s\bigl(T(b;(n+a)^r)-T(b;n^r)\bigr)\notag\\
+ &=s\sum_{j=1}^r {r\choose j}T(b;a^j,n^{r-j}).           \tag{13}
+\end{align}
+In the first line $(n+a)^r$ denotes repeated slots.
+The leading term is $srT(b;a,n^m)$. Let
+\[
+ R_\tau(a,b,n)=s\sum_{j=2}^r {r\choose j}T(b;a^j,n^{r-j}). \tag{14}
+\]
+Every summand has at most $s-3$ slots equal to $n$.
+Substitute $a=c_0-b-b'$ in (9), remove $c_0$ as just justified, and
+expand the $j$ copies of $-b-b'$ by LP13. The leading symbol of $\alpha$ is
+\[
+ -sr\,T(b-b';b+b',n^m).                                \tag{15}
+\]
+This has the order of the two distinguished entries dictated by (13).
+Interchanging them would require an unproved first-slot symmetry and is
+not permitted. The remainder is the difference of the two substitutions
+in (14), each fully expanded into entries in $\{b,b',n\}$ and still with
+at most $s-3$ copies of $n$.
+
+Apply the mixed difference (12). At the level of degree-$s$ symbols,
+constant slots vanish; a monomial with no $b$ or no $b'$ cancels.
+In (15) the pure terms $T(b;b,n^m)$ and $T(b';b',n^m)$ therefore disappear.
+There is a globally represented unit nilcharacter $\beta$ such that
+\[
+ [\alpha'(b,b',n)]=-sr\bigl(T(b;b',n^m)-T(b';b,n^m)\bigr)+[\beta(b,b',n)].
+                                                               \tag{16}
+\]
+Here $[\beta]$ is an explicit finite integer linear combination of symbols
+$T(v_1;\ldots,v_s)$, with every $v_i\in\{b,b',n\}$ and at most $s-3$
+slots equal to $n$. More precisely, expand (14) after the two substitutions
+$(a,b)=(-b-b',b)$ and $(-b-b',b')$, subtract the second, then delete the
+monomials missing $b$ or missing $b'$. Tensor the corresponding actual
+pullbacks of $\widetilde\chi$ with their signed integer multiplicities.
+This constructs $\beta$ and proves (16). Thus the needed remainder
+assertion is stronger than merely a separate bound on its degree in $n$.
+
+Define the actual unit nilcharacter
+\[
+ \sigma(b,b',h_1,\ldots,h_m,n)=
+ \bigotimes_{\omega\in\{0,1\}^m}\mathcal C^{|\omega|}
+   \alpha'\left(b,b',n+\sum_{j=1}^m\omega_jh_j\right),    \tag{17}
+\]
+where $\mathcal C$ is conjugation. Every shift has its own $h_j$.
+It has total degree at most $s$ by linear pullback and tensor arithmetic.
+Apply the alternating sum to (16). In a term with fewer than $m$ slots
+equal to $n$, expand each such slot into $n$ and the available $h_j$.
+If a subset $S$ of the shift labels is used, its coefficient contains
+\[
+ \sum_{\omega:\,\omega_j=1\ (j\in S)}(-1)^{|\omega|}=0
+ \quad\hbox{unless }S=[m].
+\]
+There are too few slots to use all $m$ labels, so every $\beta$ term
+vanishes. For the leading term there are exactly $m!$ surviving bijections
+of labels to slots, each with coefficient $(-1)^m$. Last-block symmetry
+identifies their values. With the minus sign in (16), the exact result is
+\[
+ [\sigma]=(-1)^{s-1}s!
+ \bigl(T(b;b',h_1,\ldots,h_m)-T(b';b,h_1,\ldots,h_m)\bigr). \tag{18}
+\]
+The unused coordinate $n$ on the right is still a coordinate of the same
+domain. Formula (18) keeps the actual definitions (9),(12),(17). If one
+instead conjugates $\alpha$ and $\alpha'$ explicitly, its coefficient
+changes sign; silently using the other object is not an identification.
+
+\section{From correlation to a zero symbol on the correct box}
+By Proposition 5.6, the positive degree-at-most-$(s-3)$ bias obtained
+after (12) implies a positive $U^m[J]$ norm for a scalar coordinate of
+$\alpha'$, for many $(b,b')$. Appendix A uniformity gives a standard
+positive lower bound on a dense internal set. Equivalently the average
+of the vector $U^m[J]^{2^m}$ quantities is $\gg1$. Since the dimension is
+standard finite, at least one fixed scalar coordinate contributes $\gg1$.
+For $s=3$, this is the converse at degree zero and $U^1$, so no extra
+one-step test has been inserted.
+
+Expand the interval Gowers norm using its zero-extension definition and
+the same normalization as GTZ. One can choose the auxiliary cyclic group
+of order a fixed multiple of $N$ greater than $2(m+1)N$. For a nonzero
+cube all vertices lie in $J$, so its differences have unique lifts
+$h_j\in I_1$, and no lifted sum can wrap around that cyclic group.
+The normalizing denominator is a positive standard constant multiple of
+the count of such cubes. Thus the expansion gives a coordinate of (17)
+with a positive standard average, up to a fixed positive normalizing factor,
+on the convex polytope
+\[
+ \Omega=\{(b,b',h,n): b,b'\in I_2,\quad
+       1\leq n+\omega\cdot h\leq N\text{ for all }\omega\in\{0,1\}^m\}.
+                                                               \tag{19}
+\]
+In particular $\Omega\subseteq I_8^{s+1}$, and
+$\left|\E_{x\in I_8^{s+1}}\one_\Omega(x)\sigma(x)\right|\gg1$.
+All defining inequalities in (19) are affine linear; their number depends
+only on $s$. The selection of biased pairs is used only for a lower bound
+on the nonnegative norm average, not as an extra arbitrary cutoff in (19).
+
+Published E.11 asks for dense subprogressions of a positive interval.
+Partition $I_8^{s+1}$ into its finitely many sign orthants and coordinate-zero
+hyperplanes. Since $\sigma$ is bounded, the latter have normalized mass
+$O_s(1/N)$ and contribute $o(1)$. By the triangle inequality one open
+orthant has positive standard weighted average. For its signs
+$\varepsilon_i\in\{-1,1\}$, reflect $x_i=\varepsilon_i y_i$.
+The reflected polytope is convex and the reflected nilcharacter
+$\sigma_\varepsilon(y)=\sigma(\varepsilon y)$ has degree at most $s$.
+Take every progression in E.11 to be the full positive interval $[8N]$.
+The hypothesis is plain bias, hence bias of degree strictly below $s$.
+E.11, with dimension $s+1$, degree $s\geq3$ and scale $8N$, gives
+$\sigma_\varepsilon\in\Nil_{<s}(I_8^{s+1})$. Reflecting back gives
+\[
+ [\sigma]_{\Symb_s(I_8^{s+1})}=0.                        \tag{20}
+\]
+Only one orthant was used to obtain bias; E.11 itself supplies the conclusion
+on the full symmetric box. No extrapolation from positive points is implicit.
+
+Pull (18),(20) back along the fixed integer linear map
+\[
+ (h,n)\longmapsto(b,b',h_1,\ldots,h_m,n_{\rm aux})
+                 =(h,n,n,\ldots,n,0).
+\]
+It maps $I_8^2$ into $I_8^{s+1}$. Lower-degree nilsequences pull back with
+the same degree, so
+\[
+ s!\bigl(T(h;n^r)-T(n;h,n^{r-1})\bigr)=0
+                    \quad\hbox{in }\Symb_s(I_8^2).       \tag{21}
+\]
+The sign in (18) can be removed because both sides equal zero. Apply E.13
+on this symmetric box, with dimension two, degree $s\geq3$ and the fixed
+positive integer $s!$. Its torsion-free conclusion gives
+\[
+ T(h;n^r)=T(n;h,n^{r-1})\quad\hbox{in }\Symb_s(I_8^2).  \tag{22}
+\]
+We restrict to $I_1\times J$ only after this use. E.13 is not being applied
+directly to an asymmetric rectangle.
+
+\section{Exact finite-component factorization}
+Set $\Theta(n)=\widetilde\chi(n,\ldots,n)$, the same object as in LP05.
+It is a unit degree-at-most-$s$ nilcharacter. Expand
+$[\Theta(n+h)]-[\Theta(n)]$ by LP13. Terms with exactly one $h$ equal
+\[
+ T(h;n^r)+rT(n;h,n^{r-1})=sT(h;n^r)=[\chi(h,n)]          \tag{23}
+\]
+on $I_1\times J$, by (22),(3). Let $R(h,n)$ be the tensor product of
+the actual pullbacks of $\widetilde\chi$ for all subsets of the $s$ slots
+of cardinality at least two, putting $h$ in those slots and $n$ elsewhere.
+There is no permutation of the distinguished first slot in this definition.
+Every factor has multidegree at most $(i,s-i)$ for its subset size $i$:
+coarsen the cube filtration by counting the coordinates assigned to $h$
+and $n$, using all weights at least the index. The polynomial orbit,
+rationality and top frequency are as in the LP05 block coarsening.
+Their product is therefore supported on the union of these downsets,
+contained in $\mathcal J$.
+
+By the symbol equality just proved, the unit-vector expression
+\[
+ W(h,n)=\chi(h,n)\otimes\overline{\Theta(n+h)}\otimes\Theta(n)\otimes R(h,n)
+                                                               \tag{24}
+\]
+is a degree-at-most-$(s-1)$ nilsequence on $I_1\times J$.
+By the definition of the restricted nilsequence class, it has a global
+representation whose restriction is (24); no global equality beyond this
+rectangle is claimed. Such a degree filtration gives multidegree support
+$i+j\leq s-1$ by assigning the group at $(i,j)$ its total-degree group.
+Choose that representation and set $\Psi=\overline R\otimes W$.
+It has support in (1) by the product filtration and is uniformly bounded.
+
+Finally tensor (24) with
+$\Theta(n+h)\otimes\overline{\Theta(n)}\otimes\overline R$.
+Contract the matching pairs using their unit norms. Each contraction is
+a fixed linear map between fixed finite tensor spaces. The result is exactly
+$\chi$, so (2) holds component by component with fixed bounded coefficients.
+This does not divide by any scalar coordinate or replace symbol equality
+by an unproved scalar equality. It proves Theorem~\ref{thm:target}.
+
+\section{Bounds, source differences and review boundary}
+All finite coordinate selections, tensor dimensions, permutation counts
+and parameter boxes depend only on fixed degree and geometric data.
+Appendix A selection/uniformity supplies the finite family of lower tests
+before the averaging manipulations. The three Cauchy--Schwarz steps use
+common standard bounds, and each pigeonhole retains a standard positive
+amount. Fixed parameter values may be unbounded limit integers; the project
+shift theorem supplies uniform constructions for exactly that case.
+All algebraic identities are finite and transfer coordinatewise, with the
+all-limit vertical convention retained. E.11 and E.13 have the exact degree,
+dimension, progression and symmetric-box domains stated above.
+
+The proof retains, rather than erases, the published factorial history.
+Theorem 7.4 on both pp.~1271 and 1315 prints the stricter hypothesis
+``$<s-2$-correlates'', whereas the preceding Theorem 7.1 supplies
+degree-at-most-$(s-2)$ correlation. The target here deliberately assumes
+the latter, and Section 2 proves the required selection and shift step
+under that weaker hypothesis. The printed Theorem 7.4 is not a premise.
+In addition to the repeated shift index and alternating-derivative sign in
+(13.14)--(13.17), the first two slots in printed Lemma 13.4 are interchanged
+relative to (13.3),(13.10). This changes the sign in (13.13). Formula (18)
+is the resulting coefficient for the actual unconjugated objects. The
+published simplification in Lemma 13.3 also retains an $a$ where cancellation
+requires $b$; its tail has degree at most $s-3$ in $n$. The scalar lower-factor
+bookkeeping and the $I_6$ substitution above give their own exact formulas.
+These source discrepancies are not counterexamples to the final zero relation.
+Their required related uses and current representations must be checked
+independently before a complete correction claim.
+
+This packet proves a local composition relative to its stated project and
+published premises. It does not reprove E.11/E.13's equidistribution inputs,
+Proposition 5.6's published converse sources, Proposition 8.4, the frequency
+analysis, or the final finite-family inverse-theorem assembly. Those are
+direct dependencies or separate consumers, not silently discharged here.
+\end{document}

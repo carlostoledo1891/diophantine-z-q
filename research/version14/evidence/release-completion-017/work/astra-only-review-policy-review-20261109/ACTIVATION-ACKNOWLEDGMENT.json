@@ -1,0 +1,56 @@
+{
+  "reviewer": "/root/v14_h6_coverage",
+  "at": "2026-11-09T10:34:22.541Z",
+  "decision": "accepted_exact_deployment_reporting_delta",
+  "policy_sha256": "7ab22a753f25450eb955ff8b315a814cfaaa784cc0855d929e2d68442663ec4b",
+  "sanitized_record_sha256": "c2e0aa527a04e9450d420b676981a3d92cf0cd131e20a855cccde45411cc55a3",
+  "root_evidence": [
+    {
+      "path": "ACTIVATION.json",
+      "sha256": "71357776a8777dad3a941fc2635e3f97ea604bb5ad4dc77b8b3cff6174c3b5eb"
+    },
+    {
+      "path": "LIVE-READBACK.json",
+      "sha256": "4185737bea8be3148585bb6c42ea87b6aa5bf006d0a07e50f21921ba75d9edc9"
+    }
+  ],
+  "checks": [
+    {
+      "name": "only deployment paragraph changed",
+      "pass": true
+    },
+    {
+      "name": "exact six reviewed runtime pins",
+      "pass": true
+    },
+    {
+      "name": "approved commit matches run",
+      "pass": true
+    },
+    {
+      "name": "run fields identical",
+      "pass": true
+    },
+    {
+      "name": "public and private rule readback identical",
+      "pass": true
+    },
+    {
+      "name": "idle scope and tests accurate",
+      "pass": true
+    },
+    {
+      "name": "unchanged AGENTS.md",
+      "pass": true
+    },
+    {
+      "name": "unchanged docs/research-review/README.md",
+      "pass": true
+    },
+    {
+      "name": "unchanged .github/pull_request_template.md",
+      "pass": true
+    }
+  ],
+  "scope": "Compared public reporting against exact root-recorded remote readbacks and prior independently reviewed implementation/test pins. No independent fresh GitHub request in this acknowledgment. All prior policy semantics unchanged; idle startup is explicitly not a mathematical PR acceptance."
+}

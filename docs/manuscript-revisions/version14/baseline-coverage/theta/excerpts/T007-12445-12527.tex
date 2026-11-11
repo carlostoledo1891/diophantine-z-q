@@ -1,0 +1,83 @@
+For $m=2^n$ with $n\geq a$, the field $L_m$ can be replaced by
+$\mathbf Q(\zeta_{d2^n})$: apply repeated-two norm compatibility
+from exponent $n+a$ to $n$. This introduces no factor $2^a$.
+The construction therefore covers discriminant $4h$ on the same
+cofinal tail. At the coefficient level it retains the full character
+$\chi_2\chi_{\rm odd}$. A dyadic character nontrivial on $\Gamma$
+changes its action by the integral automorphism
+$1+t\mapsto-(1+t)$, or $t\mapsto-2-t$. A dyadic sign character
+instead changes the finite real-sign component. Neither operation
+is a division by a sign projector.
+
+\paragraph{5. One coefficient map produces every constituent.}
+For $n$ large enough to contain the dyadic characters, put
+$A_{F,n}=\operatorname{Gal}(\mathbf Q(\zeta_{F2^n})/\mathbf Q)$.
+Apply Shapiro to $z_{F2^n}$, then the map on group bases
+\[
+ \Phi_n:\mathbf Z_2[A_{F,n}]\longrightarrow
+                  \mathbf Z_2[\Gamma_n\times G],\qquad
+ [s]\longmapsto\chi_0(s)[\bar s][\psi(s)].                 \tag{K10}
+\]
+With inverse deck actions, both sides transform under $g\in G_{\mathbf Q}$
+by the inverse of its group image. On the target the extra scalar
+is $\chi_0(g)$; since $\chi_0^{-1}=\chi_0$, (K10) is equivariant.
+This is an integral coefficient homomorphism. Shapiro restriction
+to an inertia subgroup is the direct sum of the upper restrictions;
+the same zero restrictions used in (K7) therefore remain zero after
+(K10). In particular the map acts on actual integral classes.
+The map in (K10) is defined on this finite group for the following
+reason. The constituent indexed by the trivial character of $G$ is
+$\chi_0$, and
+$x\circ\psi=\chi_x\chi_0$ for every $x\in\widehat G$.
+All these quadratic Dirichlet characters have conductor dividing
+$F2^n$ once $n$ is large enough. If an element of $G_{\mathbf Q}$
+acts trivially on $\mathbf Q(\zeta_{F2^n})$, every character of $G$
+is therefore one on its image under $\psi$. Character separation
+makes that image the identity. Thus both $\chi_0$ and $\psi$
+factor through $A_{F,n}$. Explicitly, for $g\in G_{\mathbf Q}$,
+\[
+ \Phi_n([g^{-1}s])
+ =\chi_0(g)\,[\bar g]^{-1}[\psi(g)]^{-1}\Phi_n([s]).
+\]
+This verifies equivariance on each integral group basis before
+evaluation at any character. The quotient to the real tower sends
+each basis element to its image; its matrix has entries zero and
+one. The transition maps and character evaluations are also maps
+of integral coefficient modules. None of these operations is the
+idempotent $|G|^{-1}\sum_g x(g)[g]$.
+
+
+The maps $\Phi_n$ commute with the norm transition maps.
+Proposition~8.12 has no new prime when $n$ increases, so their
+images define the single class $Z_F$ in (K1).
+The finite-coefficient degree-zero groups are finite and satisfy
+Mittag--Leffler. The inverse-limit exact sequence
+\cite[Corollary 4.1.3, p.~96]{nekovar} therefore has zero
+$\varprojlim^1 H^0$ term, so it gives this degree-one class
+in completed cochains.
+The quotient from the full cyclotomic tower to $\Gamma$ is the
+integral quotient of group bases, equivalently corestriction to
+the real subfield. No factor $(1+\tau)/2$ occurs.
+
+After evaluation at $x$, (K10) is the coefficient form of the
+unnormalized corestriction weighted by $\chi_x$. Factor that
+corestriction through the primitive conductor field in (K8).
+Transitivity and Proposition~8.12 give the exact identity
+\[
+              (Z_F)_x=
+       \prod_{q\mid F/d}E_q(\chi_x)\,y_{2^\infty}.        \tag{E.1}
+\]
+It is an identity of the given classes. The same smoothing choice
+appears on both sides. There is no group-order denominator and no
+comparison with a canonical zeta class of $f\otimes\chi_x$.
+
+For clarity, at a constituent write $\chi_h=\chi_2\chi_{\rm odd}$ and
+$|\Delta_h|=2^a d$. Before taking the cofinal limit, the corresponding
+scalar coefficient map is exactly
+\[
+ [s]\longmapsto\chi_2(s)\chi_{\rm odd}(s)[s|_{\Gamma_n}],
+                    \qquad n\ge\max\{a,2\}.\tag{E.2}
+\]
+Thus the dyadic character is part of the module action, including
+when the field discriminant is $4h$.
+

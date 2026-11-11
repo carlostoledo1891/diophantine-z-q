@@ -1,0 +1,39 @@
+{
+  "status": "Reviewed additive current-222 workflow installed locally; no hosted run or publication claimed",
+  "snapshot": {
+    "path": "research/version15/snapshots/v15-018/REPOSITORY-MANIFEST-018.json",
+    "sha256": "8a10b6a6405adabf25ad8359900c7681251cf710a24bb4926feec261a411df6c"
+  },
+  "workflow": ".github/workflows/version15-checks.yml",
+  "trigger": "workflow_dispatch only",
+  "permissions": {
+    "contents": "read"
+  },
+  "checks": [
+    {
+      "kind": "314",
+      "script": "quartics/quartic-299-314/verify_lineage.py"
+    },
+    {
+      "kind": "233",
+      "script": "work/quartic238-optimization-20261110/linear-lucas/reference233-sparse-015/verify.py"
+    },
+    {
+      "kind": "huge",
+      "script": "scripts/check_construction.py"
+    }
+  ],
+  "source_prefix": "research/version15/snapshots/v15-018/",
+  "runner_wrapper": "scripts/v15/run_finite.py",
+  "verification_scope": "exact selected bytes and existing finite checks; no global mathematical approval",
+  "publication": false,
+  "historical_checks_scope": "The three original checks below replay the unchanged v15-018 predecessor snapshot.",
+  "current_check": {
+    "kind": "222",
+    "script": "research/version15/quartics/quartic-222/verify.py",
+    "package_manifest": "4aea7c8b169bab133b3685f2a541d733a1297db7ac21dc458ccf6dc3cd2666eb",
+    "workflow_sha256": "5570bd924f14231c8baed789b52a0bd7141b908bd7e8f359e80e1d813df0c109",
+    "independent_workflow_review": "c20f213d7b6dd5b22570c57803f8d6fbcac1caadaee3dcdcb357e500463fe971",
+    "local_result": "Installed-path verifier passed; no effective defining threshold certified"
+  }
+}

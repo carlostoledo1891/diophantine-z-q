@@ -1,0 +1,35 @@
+{
+  "schema": "bounded-original-operation-review/v1",
+  "decision": "accepted_at_recorded_operation_and_sealed_artifact_scope",
+  "subject_sha256": "a67faa6a7835476527bba7df409b82bd0b12fbba1bcef8b504f5b37bcf8be1b4",
+  "subject_path": "work/v15-222-ledger-author-001/private-selected-stage-scan-001/MANIFEST.json",
+  "reviewer": "/root/v14_arithmetic_review",
+  "scope": "Independent byte-range, host metadata, concrete write/completion and sealed artifact checks for the five selected original operations. No mathematical reapproval.",
+  "results": {
+    "operations": 5,
+    "original_ranges": 20,
+    "input_members": 4,
+    "sealed_artifact_members": 25,
+    "all_hashes_match": true,
+    "all_call_completion_run_ids_match": true,
+    "all_session_agent_and_context_model_fields_match": true
+  },
+  "checks": {
+    "path": "work/v15-222-stage-provenance-review-arithmetic-001/CHECKS.json",
+    "sha256": "bfbfc20c06c21142d576c4393460223bee53951e45fef6fe1a108a4398cabab4"
+  },
+  "interpretation": [
+    "107 writes PROOF.md and its manifest; prior check/table creation is not independently attributed by this call alone.",
+    "109 writes MAP.json, PROOF.md and its manifest.",
+    "110 writes PROOF.md, CHECKS.txt and its manifest; this proves the recorded writer sealed the tables, not that this call originally generated every member.",
+    "116 modifies build.py, executes the builder, writes PROOF.md and the final manifest; terminal exit0 and exact output hashes are recorded.",
+    "GI005 writes TRACE-AND-CONSUMERS.json and its manifest."
+  ],
+  "limits": [
+    "Recorded model metadata is observed host context, not provider authentication.",
+    "No ACK, review approval, future target binding or Git identity is inferred.",
+    "No exhaustive contributor census claimed; earlier232/226/224/112 and remaining direct author operations are separate.",
+    "Raw original records and candidate diagnostics remain private and were not copied into this review.",
+    "Reviewer contributions to earlier mathematics do not affect these narrow original-record checks; no self-approval of mathematical claims is made."
+  ]
+}

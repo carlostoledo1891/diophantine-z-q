@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "scope": "Proposed source-side consumer extensions only. Not a live collection mutation; merge with other proposed appends before canonical hashing.",
+  "deltas": [
+    {
+      "use_id": "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER",
+      "base_use_sha256": "55343690e869a6d0ee0db00db08956b1e9632f326dd962cef87524a8023ce657",
+      "added_passage": "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-KUMMER-SOURCE-9",
+      "added_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+      },
+      "assertions_unchanged": true,
+      "proposed_component": {
+        "origin": "v14-generic-kummer-input-author-001/COMPONENTS.json",
+        "state": "author_proposal_pending_independent_review_and_source_adoption",
+        "use": {
+          "id": "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER",
+          "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+          "passages": [
+            "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P1",
+            "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P2",
+            "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P3",
+            "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-P4",
+            "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER-KUMMER-SOURCE-9"
+          ],
+          "assertion": {
+            "statement": "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms.",
+            "objects": "The fixed elliptic curve, actual M_I and H_f number fields, finite extensions of Q_p at old places, and their finite extensions.",
+            "hypotheses": "F has characteristic0, E/F is an elliptic curve and a>=1; continuous Galois cohomology with discrete algebraic-point modules.",
+            "quantifiers": "Every permitted field and positive finite coefficient stage; every point and cohomology class in the displayed groups.",
+            "parameter_range": "n=2^a; all residue characteristics including2 for the local fields.",
+            "uniformity": "The same construction is natural for the actual restrictions and field transports; no quantitative constant.",
+            "constants": "No multiplier beyond the separately supplied local c_E enters the exact sequence.",
+            "normalizations": "delta(P)(g)=gQ-Q for nQ=P; ordinary untwisted E[n] at the descent stage.",
+            "exceptional_cases": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+            "limit_order": "Establish surjectivity over the separable closure, construct the cocycle and prove exactness, then apply to point multiples or the separately annihilated restriction kernel."
+          },
+          "classification": "dependency",
+          "reason": "The actual number-field and local-field steps require the generic finite Kummer sequence, not the earlier Q-only forward Selmer specialization.",
+          "shared_contract_justification": "All occurrences use the same characteristic-zero finite Kummer construction; the number-field step uses equivariance and vanishing on multiples, and the local step uses exactness after a separately supplied annihilator.",
+          "supplier": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+              },
+              "start_line": 5,
+              "end_line": 9,
+              "excerpt_sha256": "ee1ee51fd7484debd433187bafdd9f2aa52e447d3ea71cdc93a82882e438b804"
+            },
+            "statement": "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective.",
+            "publication": {
+              "title": "The Arithmetic of Elliptic Curves",
+              "authors": "J. H. Silverman",
+              "venue": "Second edition, Springer,2009",
+              "authoritative_version": "Exact retained PDF SHA256 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25.",
+              "locator": "SectionIII.4 opening p66; Example4.1 p67; Proposition4.2(a) p68.",
+              "corrections": "Original pages66–68 directly rendered and read. No uninspected erratum is used; this source claim is separate from known division-polynomial and two-isogeny display corrections elsewhere."
+            }
+          },
+          "application_id": null,
+          "inline_argument": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 11,
+            "end_line": 29,
+            "excerpt_sha256": "72040594aba013e74a7a137714321687a7afed422f15e5e30ba4caf57e7502d2"
+          }
+        },
+        "connection": {
+          "use_id": "ACTIVE-HEEGNER-GENERIC-FINITE-KUMMER",
+          "use_sha256": "b235ae5c2ee2eba12d7658aaf51beca9e93543309e945ca94b8208682bf98134",
+          "supplier_passage_role": "statement",
+          "available_assertion": {
+            "statement": "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective.",
+            "objects": "Elliptic curves and their multiplication maps.",
+            "hypotheses": "Elliptic curve over the source field; nonzero integer multiplication.",
+            "quantifiers": "Every such elliptic curve and nonzero integer.",
+            "parameter_range": "Used here only in characteristic0 with positive powers of2.",
+            "uniformity": "Exact algebraic assertion independent of the arithmetic field or conductor.",
+            "constants": "No numerical degree formula is required.",
+            "normalizations": "Usual group-law multiplication, identity mapped to identity.",
+            "exceptional_cases": "Zero multiplication is excluded; this assertion does not itself state the Kummer cohomology sequence.",
+            "limit_order": "Construct multiplication as a field-defined morphism, establish nonconstancy, then use surjectivity of a nonzero isogeny."
+          },
+          "needed_assertion": {
+            "statement": "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms.",
+            "objects": "The fixed elliptic curve, actual M_I and H_f number fields, finite extensions of Q_p at old places, and their finite extensions.",
+            "hypotheses": "F has characteristic0, E/F is an elliptic curve and a>=1; continuous Galois cohomology with discrete algebraic-point modules.",
+            "quantifiers": "Every permitted field and positive finite coefficient stage; every point and cohomology class in the displayed groups.",
+            "parameter_range": "n=2^a; all residue characteristics including2 for the local fields.",
+            "uniformity": "The same construction is natural for the actual restrictions and field transports; no quantitative constant.",
+            "constants": "No multiplier beyond the separately supplied local c_E enters the exact sequence.",
+            "normalizations": "delta(P)(g)=gQ-Q for nQ=P; ordinary untwisted E[n] at the descent stage.",
+            "exceptional_cases": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+            "limit_order": "Establish surjectivity over the separable closure, construct the cocycle and prove exactness, then apply to point multiples or the separately annihilated restriction kernel."
+          },
+          "required_capabilities": [
+            "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms."
+          ],
+          "available_capabilities": [
+            "For an elliptic curve over a field, multiplication by a nonzero integer is a nonconstant isogeny defined over the field; every nonzero isogeny is finite and surjective."
+          ],
+          "derived_capabilities": [
+            "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms."
+          ],
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+              },
+              "start_line": 11,
+              "end_line": 29,
+              "excerpt_sha256": "72040594aba013e74a7a137714321687a7afed422f15e5e30ba4caf57e7502d2"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "For each actual characteristic-zero Heegner field or local completion F, the finite Kummer sequence 0->E(F)/2^a E(F)->H1(F,E[2^a])->H1(F,E)[2^a]->0 is exact and its point map is additive, restriction-compatible and equivariant under field automorphisms.",
+              "objects": "The fixed elliptic curve, actual M_I and H_f number fields, finite extensions of Q_p at old places, and their finite extensions.",
+              "hypotheses": "F has characteristic0, E/F is an elliptic curve and a>=1; continuous Galois cohomology with discrete algebraic-point modules.",
+              "quantifiers": "Every permitted field and positive finite coefficient stage; every point and cohomology class in the displayed groups.",
+              "parameter_range": "n=2^a; all residue characteristics including2 for the local fields.",
+              "uniformity": "The same construction is natural for the actual restrictions and field transports; no quantitative constant.",
+              "constants": "No multiplier beyond the separately supplied local c_E enters the exact sequence.",
+              "normalizations": "delta(P)(g)=gQ-Q for nQ=P; ordinary untwisted E[n] at the descent stage.",
+              "exceptional_cases": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+              "limit_order": "Establish surjectivity over the separable closure, construct the cocycle and prove exactness, then apply to point multiples or the separately annihilated restriction kernel."
+            }
+          },
+          "adverse_cases": {
+            "status": "checked",
+            "reason": "Does not supply CM points, norm relations, relative Galois groups, unramifiedness or local cohomology annihilation. No rational-torsion, good-reduction, rank or finite-Sha assumption.",
+            "evidence": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                  "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+                },
+                "start_line": 11,
+                "end_line": 29,
+                "excerpt_sha256": "72040594aba013e74a7a137714321687a7afed422f15e5e30ba4caf57e7502d2"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 3882,
+                "end_line": 3886,
+                "excerpt_sha256": "c30068ba28b272d39f52558c7f50c90d660636202d4ac6e59e030777c97256f9"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 3942,
+                "end_line": 3946,
+                "excerpt_sha256": "7d18d6ce40537a68b95fe9d6baf570bc9da0c8599cead31474e9c5b465ff7b20"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                  "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+                },
+                "start_line": 49,
+                "end_line": 51,
+                "excerpt_sha256": "b33c19d9fddcd3185b7e9bd7541167739b0bc51ab291d2b263200620fcf6071a"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                  "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+                },
+                "start_line": 97,
+                "end_line": 99,
+                "excerpt_sha256": "7c4cf0ec44bb99517b1d25956bb9634ef47ad9879959692a0b50a2b8e92d67e0"
+              }
+            ]
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3882,
+              "end_line": 3886,
+              "excerpt_sha256": "c30068ba28b272d39f52558c7f50c90d660636202d4ac6e59e030777c97256f9"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3942,
+              "end_line": 3946,
+              "excerpt_sha256": "7d18d6ce40537a68b95fe9d6baf570bc9da0c8599cead31474e9c5b465ff7b20"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 49,
+              "end_line": 51,
+              "excerpt_sha256": "b33c19d9fddcd3185b7e9bd7541167739b0bc51ab291d2b263200620fcf6071a"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 97,
+              "end_line": 99,
+              "excerpt_sha256": "7c4cf0ec44bb99517b1d25956bb9634ef47ad9879959692a0b50a2b8e92d67e0"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+              },
+              "start_line": 9,
+              "end_line": 9,
+              "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3882,
+            "end_line": 3886,
+            "excerpt_sha256": "c30068ba28b272d39f52558c7f50c90d660636202d4ac6e59e030777c97256f9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3942,
+            "end_line": 3946,
+            "excerpt_sha256": "7d18d6ce40537a68b95fe9d6baf570bc9da0c8599cead31474e9c5b465ff7b20"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 49,
+            "end_line": 51,
+            "excerpt_sha256": "b33c19d9fddcd3185b7e9bd7541167739b0bc51ab291d2b263200620fcf6071a"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 97,
+            "end_line": 99,
+            "excerpt_sha256": "7c4cf0ec44bb99517b1d25956bb9634ef47ad9879959692a0b50a2b8e92d67e0"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "57600e42f0dab85be1fcd33e704f1310e712ae1f7a4528768ee00545140ccc22"
+          }
+        ]
+      }
+    },
+    {
+      "use_id": "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE",
+      "base_use_sha256": "765712aa47e322ca927e7a02a5a5ceefbc48ae6a114504e514111037e96a83b2",
+      "added_passage": "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE-KUMMER-SOURCE-25",
+      "added_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+      },
+      "assertions_unchanged": true,
+      "proposed_component": {
+        "origin": "v14-heegner-ring-class-inputs-author-001/COMPONENTS.json",
+        "state": "author_proposal_pending_independent_review",
+        "use": {
+          "id": "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE",
+          "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+          "passages": [
+            "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE-P1",
+            "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE-P2",
+            "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE-P3",
+            "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE-P4",
+            "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE-KUMMER-SOURCE-25"
+          ],
+          "assertion": {
+            "statement": "For the actual permitted imaginary quadratic K and order O_f, Pic(O_f) is the finite-idelic quotient by K* and completed order units; conjugation acts by inversion, split prime Artin symbols are inverse, and adjoining distinct new inert conductor primes gives the full product of cyclic groups of order ell+1.",
+            "objects": "The same K, O_f=Z+fO_K, H_f, and ring-class composita used in the fixed E/Q finite Heegner construction.",
+            "hypotheses": "K is imaginary quadratic with units exactly plus/minus1; f is prime to2ND_K. Each derivative prime is new, inert and outside6fND_K. K splits at2N when the Q_p conclusion is used.",
+            "quantifiers": "Every permitted old conductor f and finite set of distinct new inert primes in this construction.",
+            "parameter_range": "The actual untwisted ring-class fields; no arbitrary non-ring-class extension.",
+            "uniformity": "One exact construction for all permitted conductors and finite composita; no conductor-dependent multiplier.",
+            "constants": "Relative local cyclic factors have exact order ell+1; no bound on class number is needed.",
+            "normalizations": "Invertible locally principal order ideals; arithmetic Artin maps; conjugation inversion and unaveraged group operations.",
+            "exceptional_cases": "Only invertible locally principal order ideals are used. No splitting of the full class group, nontrivial omitted unit quotient, point norm relation, CM congruence or Kummer descent is inferred.",
+            "limit_order": "Fix the actual order and unit subgroup, apply reciprocity/existence, derive local quotient and ramification properties, then consume these in the norm/derivative/local-descent construction."
+          },
+          "classification": "dependency",
+          "reason": "The exact retained A068 derivation supplies this actual incoming ring-class premise; point relations, local geometry and Kummer inputs remain separate.",
+          "shared_contract_justification": "All listed occurrences use the same permitted order fields, unit restrictions and arithmetic Artin convention. The supporting note restates the same construction, not a different family.",
+          "supplier": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+                "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+              },
+              "start_line": 7,
+              "end_line": 16,
+              "excerpt_sha256": "6f1df3e17fecb465188382f86e86d9a5a28bd00b9753fe4fdd52dd97f1658c89"
+            },
+            "statement": "Global reciprocity identifies finite abelian extensions with the appropriate finite-index open idelic subgroups containing principal ideles; the global Artin map restricts to local Artin maps, and units control unramifiedness. At unramified primes the positive prime ideal has arithmetic Frobenius.",
+            "publication": {
+              "title": "Class Field Theory",
+              "authors": "J. S. Milne",
+              "venue": "Author course notes, version4.03, August6,2020",
+              "authoritative_version": "Retained author PDF SHA256 50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5; author notes, not described as a peer-reviewed article.",
+              "locator": "V Theorem1.7 pp150–151; V.1.9–1.10 pp152–153; V Theorems3.5–3.6 and Remark3.8 p158; V Proposition5.2 p178; V Theorems5.3 and5.5 pp178–179.",
+              "corrections": "Reuses the exact edition and bounded source check in A068 independent second review. The local norm-locator correction for the unrelated beta paragraph is not used here."
+            }
+          },
+          "application_id": null,
+          "inline_argument": {
+            "pin": {
+              "side": "head",
+              "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+              "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+            },
+            "start_line": 18,
+            "end_line": 62,
+            "excerpt_sha256": "9201db49be4865becf3884f1bdac3cf5673062082b2b5a9d9af64d58e724f763"
+          }
+        },
+        "connection": {
+          "use_id": "ACTIVE-HEEGNER-RING-CLASS-STRUCTURE",
+          "use_sha256": "84499833d092d663f9d100ab083685ed7b6dc36585558b2733f238424cc15ccc",
+          "supplier_passage_role": "statement",
+          "available_assertion": {
+            "statement": "Global reciprocity identifies finite abelian extensions with the appropriate finite-index open idelic subgroups containing principal ideles; the global Artin map restricts to local Artin maps, and units control unramifiedness. At unramified primes the positive prime ideal has arithmetic Frobenius.",
+            "objects": "Number-field ideles, ray class groups, finite abelian extensions and local/global Artin maps.",
+            "hypotheses": "Number field and the finite-index open subgroup/conductor conditions of the cited reciprocity and existence theorems; use the finite ideles for the imaginary quadratic specialization.",
+            "quantifiers": "For every such subgroup and extension with the stated local conditions.",
+            "parameter_range": "Finite abelian class-field extensions; arithmetic Frobenius at unramified finite places.",
+            "uniformity": "Exact algebraic correspondences, with no effective bound or uniform analytic estimate.",
+            "constants": "No numerical bound is imported.",
+            "normalizations": "Positive prime ideal corresponds to arithmetic Frobenius; principal ideles are trivial.",
+            "exceptional_cases": "This source statement alone does not identify noninvertible order ideals, prove CM-point reciprocity or construct modular parametrizations.",
+            "limit_order": "Fix the subgroup and local unit conditions before taking its corresponding extension."
+          },
+          "needed_assertion": {
+            "statement": "For the actual permitted imaginary quadratic K and order O_f, Pic(O_f) is the finite-idelic quotient by K* and completed order units; conjugation acts by inversion, split prime Artin symbols are inverse, and adjoining distinct new inert conductor primes gives the full product of cyclic groups of order ell+1.",
+            "objects": "The same K, O_f=Z+fO_K, H_f, and ring-class composita used in the fixed E/Q finite Heegner construction.",
+            "hypotheses": "K is imaginary quadratic with units exactly plus/minus1; f is prime to2ND_K. Each derivative prime is new, inert and outside6fND_K. K splits at2N when the Q_p conclusion is used.",
+            "quantifiers": "Every permitted old conductor f and finite set of distinct new inert primes in this construction.",
+            "parameter_range": "The actual untwisted ring-class fields; no arbitrary non-ring-class extension.",
+            "uniformity": "One exact construction for all permitted conductors and finite composita; no conductor-dependent multiplier.",
+            "constants": "Relative local cyclic factors have exact order ell+1; no bound on class number is needed.",
+            "normalizations": "Invertible locally principal order ideals; arithmetic Artin maps; conjugation inversion and unaveraged group operations.",
+            "exceptional_cases": "Only invertible locally principal order ideals are used. No splitting of the full class group, nontrivial omitted unit quotient, point norm relation, CM congruence or Kummer descent is inferred.",
+            "limit_order": "Fix the actual order and unit subgroup, apply reciprocity/existence, derive local quotient and ramification properties, then consume these in the norm/derivative/local-descent construction."
+          },
+          "required_capabilities": [
+            "For the actual permitted imaginary quadratic K and order O_f, Pic(O_f) is the finite-idelic quotient by K* and completed order units; conjugation acts by inversion, split prime Artin symbols are inverse, and adjoining distinct new inert conductor primes gives the full product of cyclic groups of order ell+1."
+          ],
+          "available_capabilities": [
+            "Global reciprocity identifies finite abelian extensions with the appropriate finite-index open idelic subgroups containing principal ideles; the global Artin map restricts to local Artin maps, and units control unramifiedness. At unramified primes the positive prime ideal has arithmetic Frobenius."
+          ],
+          "derived_capabilities": [
+            "For the actual permitted imaginary quadratic K and order O_f, Pic(O_f) is the finite-idelic quotient by K* and completed order units; conjugation acts by inversion, split prime Artin symbols are inverse, and adjoining distinct new inert conductor primes gives the full product of cyclic groups of order ell+1."
+          ],
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+                "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+              },
+              "start_line": 18,
+              "end_line": 62,
+              "excerpt_sha256": "9201db49be4865becf3884f1bdac3cf5673062082b2b5a9d9af64d58e724f763"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "For the actual permitted imaginary quadratic K and order O_f, Pic(O_f) is the finite-idelic quotient by K* and completed order units; conjugation acts by inversion, split prime Artin symbols are inverse, and adjoining distinct new inert conductor primes gives the full product of cyclic groups of order ell+1.",
+              "objects": "The same K, O_f=Z+fO_K, H_f, and ring-class composita used in the fixed E/Q finite Heegner construction.",
+              "hypotheses": "K is imaginary quadratic with units exactly plus/minus1; f is prime to2ND_K. Each derivative prime is new, inert and outside6fND_K. K splits at2N when the Q_p conclusion is used.",
+              "quantifiers": "Every permitted old conductor f and finite set of distinct new inert primes in this construction.",
+              "parameter_range": "The actual untwisted ring-class fields; no arbitrary non-ring-class extension.",
+              "uniformity": "One exact construction for all permitted conductors and finite composita; no conductor-dependent multiplier.",
+              "constants": "Relative local cyclic factors have exact order ell+1; no bound on class number is needed.",
+              "normalizations": "Invertible locally principal order ideals; arithmetic Artin maps; conjugation inversion and unaveraged group operations.",
+              "exceptional_cases": "Only invertible locally principal order ideals are used. No splitting of the full class group, nontrivial omitted unit quotient, point norm relation, CM congruence or Kummer descent is inferred.",
+              "limit_order": "Fix the actual order and unit subgroup, apply reciprocity/existence, derive local quotient and ramification properties, then consume these in the norm/derivative/local-descent construction."
+            }
+          },
+          "adverse_cases": {
+            "status": "checked",
+            "reason": "Only invertible locally principal order ideals are used. No splitting of the full class group, nontrivial omitted unit quotient, point norm relation, CM congruence or Kummer descent is inferred.",
+            "evidence": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+                  "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+                },
+                "start_line": 18,
+                "end_line": 62,
+                "excerpt_sha256": "9201db49be4865becf3884f1bdac3cf5673062082b2b5a9d9af64d58e724f763"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 3815,
+                "end_line": 3816,
+                "excerpt_sha256": "9fdf812fc939ea5dcade0e8b59623bda18ac4260742539f74d119043fc0bb336"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 3853,
+                "end_line": 3874,
+                "excerpt_sha256": "d375e3ec6fb7e1dfac895eab5ed60a8c9ee51d52889772d06ba8c1d1a91299a4"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                  "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+                },
+                "start_line": 13,
+                "end_line": 15,
+                "excerpt_sha256": "3d3a6f485545e1a1550e998b6f90c9c9e26d0d4f849b3f2f8d95bb8586bad7f5"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                  "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+                },
+                "start_line": 43,
+                "end_line": 51,
+                "excerpt_sha256": "a07ffda4cdec5710f35e845b7d8c90633814c54afd07c6cdd6a1105fee51f5fc"
+              }
+            ]
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3815,
+              "end_line": 3816,
+              "excerpt_sha256": "9fdf812fc939ea5dcade0e8b59623bda18ac4260742539f74d119043fc0bb336"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3853,
+              "end_line": 3874,
+              "excerpt_sha256": "d375e3ec6fb7e1dfac895eab5ed60a8c9ee51d52889772d06ba8c1d1a91299a4"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 13,
+              "end_line": 15,
+              "excerpt_sha256": "3d3a6f485545e1a1550e998b6f90c9c9e26d0d4f849b3f2f8d95bb8586bad7f5"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 43,
+              "end_line": 51,
+              "excerpt_sha256": "a07ffda4cdec5710f35e845b7d8c90633814c54afd07c6cdd6a1105fee51f5fc"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+              },
+              "start_line": 25,
+              "end_line": 25,
+              "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3815,
+            "end_line": 3816,
+            "excerpt_sha256": "9fdf812fc939ea5dcade0e8b59623bda18ac4260742539f74d119043fc0bb336"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3853,
+            "end_line": 3874,
+            "excerpt_sha256": "d375e3ec6fb7e1dfac895eab5ed60a8c9ee51d52889772d06ba8c1d1a91299a4"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 13,
+            "end_line": 15,
+            "excerpt_sha256": "3d3a6f485545e1a1550e998b6f90c9c9e26d0d4f849b3f2f8d95bb8586bad7f5"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 43,
+            "end_line": 51,
+            "excerpt_sha256": "a07ffda4cdec5710f35e845b7d8c90633814c54afd07c6cdd6a1105fee51f5fc"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 25,
+            "end_line": 25,
+            "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+          }
+        ]
+      }
+    },
+    {
+      "use_id": "ACTIVE-HEEGNER-CCL-NORMS",
+      "base_use_sha256": "e52ba06efe3a831412de1f8418e4264ef4cca39a0532a38208871ca860de9cd6",
+      "added_passage": "ACTIVE-HEEGNER-CCL-NORMS-KUMMER-SOURCE-25",
+      "added_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 25,
+        "end_line": 25,
+        "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+      },
+      "assertions_unchanged": true,
+      "proposed_component": {
+        "origin": "v14-heegner-descent-inputs-author-002/COMPONENTS.json",
+        "state": "author_proposal_pending_independent_review",
+        "use": {
+          "id": "ACTIVE-HEEGNER-CCL-NORMS",
+          "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+          "passages": [
+            "ACTIVE-HEEGNER-CCL-NORMS-P1",
+            "ACTIVE-HEEGNER-CCL-NORMS-KUMMER-SOURCE-25"
+          ],
+          "assertion": {
+            "statement": "For every actual old conductor d and permitted new prime, Tr(y_dell)=a_ell y_d when inert and Tr(y_dq)=(a_q-sigma_q-sigma_q^-1)y_d when split, with no conductor-dependent multiplier.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Source split-Heegner specialization N1=1; base conductor d prime to N; new prime outside6dND_K; O_K units exactly plus/minus1.",
+            "quantifiers": "Every permitted old conductor and new prime, with compatible points and places.",
+            "parameter_range": "Exactly current main 3798–3820 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Unaveraged traces, rational principal Artin product, pi(infinity)=0.",
+            "exceptional_cases": "Compatible CM points and orientations; Fixed normalized Hecke-equivariant elliptic quotient; Ordinary Artin reciprocity conventions",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          },
+          "classification": "dependency",
+          "reason": "Actual current finite-Heegner clause, separated from other clauses in the frozen compound row.",
+          "shared_contract_justification": null,
+          "supplier": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 5,
+              "end_line": 10,
+              "excerpt_sha256": "eebb20473b8e302e84f310a0ae32d87f4c26180fef84ba515a2b0501db30e5d6"
+            },
+            "statement": "For compatible CM points on the source modular curve, the unaveraged conductor-raising trace is the Hecke operator at an inert new prime, and the Hecke operator minus the two prime Artin actions at a split new prime, with the stated unit factor.",
+            "publication": {
+              "title": "L. Cai, Y. Chen and Y. Liu, \\emph{Heegner points on modular\ncurves}, Transactions of the American Mathematical Society 370 (2018),\n3721--3743. \\url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.",
+              "authors": "L. Cai, Y. Chen and Y. Liu",
+              "venue": "L. Cai, Y. Chen and Y. Liu, \\emph{Heegner points on modular\ncurves}, Transactions of the American Mathematical Society 370 (2018),\n3721--3743. \\url{https://archive.ymsc.tsinghua.edu.cn/pacm_download/632/12220-Heegner_points_on_modular_curves.pdf}.",
+              "authoritative_version": "Exact bytes pinned below; publication/version equivalence is not inferred from the filename. Exact pinned PDF fd19f0588bf3cee285f731812ae058dc3f8527d30d26eac7c2b6a21bfa847522",
+              "locator": "Theorem2.15, printed p3730, condition(*) p3722",
+              "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+            }
+          },
+          "application_id": null,
+          "inline_argument": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 11,
+            "end_line": 16,
+            "excerpt_sha256": "68a52517b71b0b26948eb08529d7c5503d753d5b6382cf93ce2a1fbabf031f2a"
+          }
+        },
+        "connection": {
+          "use_id": "ACTIVE-HEEGNER-CCL-NORMS",
+          "use_sha256": "3b7e78b03b81d7a90f943479a76661b842c0a08b2144204386fad242e1e3c6ce",
+          "supplier_passage_role": "statement",
+          "available_assertion": {
+            "statement": "For compatible CM points on the source modular curve, the unaveraged conductor-raising trace is the Hecke operator at an inert new prime, and the Hecke operator minus the two prime Artin actions at a split new prime, with the stated unit factor.",
+            "objects": "The objects of the stated published theorem in the displayed source scope.",
+            "hypotheses": "Theorem2.15 hypotheses with split-Heegner N1=1, base conductor prime to N, new prime outside6dND_K, and unit factor1.",
+            "quantifiers": "All objects satisfying the stated source hypotheses.",
+            "parameter_range": "Only the displayed source statement and its exact cited version.",
+            "uniformity": "No additional uniformity beyond that statement is asserted.",
+            "constants": "No new application-specific multiplier is supplied by the source statement.",
+            "normalizations": "Use the source conventions stated in the available statement; application-specific translation is in the connecting argument.",
+            "exceptional_cases": "The source alone does not discharge the separately listed current application premises.",
+            "limit_order": "Establish the stated source premises before applying this input."
+          },
+          "needed_assertion": {
+            "statement": "For every actual old conductor d and permitted new prime, Tr(y_dell)=a_ell y_d when inert and Tr(y_dq)=(a_q-sigma_q-sigma_q^-1)y_d when split, with no conductor-dependent multiplier.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Source split-Heegner specialization N1=1; base conductor d prime to N; new prime outside6dND_K; O_K units exactly plus/minus1.",
+            "quantifiers": "Every permitted old conductor and new prime, with compatible points and places.",
+            "parameter_range": "Exactly current main 3798–3820 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Unaveraged traces, rational principal Artin product, pi(infinity)=0.",
+            "exceptional_cases": "Compatible CM points and orientations; Fixed normalized Hecke-equivariant elliptic quotient; Ordinary Artin reciprocity conventions",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          },
+          "required_capabilities": [
+            "For every actual old conductor d and permitted new prime, Tr(y_dell)=a_ell y_d when inert and Tr(y_dq)=(a_q-sigma_q-sigma_q^-1)y_d when split, with no conductor-dependent multiplier."
+          ],
+          "available_capabilities": [
+            "For compatible CM points on the source modular curve, the unaveraged conductor-raising trace is the Hecke operator at an inert new prime, and the Hecke operator minus the two prime Artin actions at a split new prime, with the stated unit factor."
+          ],
+          "derived_capabilities": [
+            "For every actual old conductor d and permitted new prime, Tr(y_dell)=a_ell y_d when inert and Tr(y_dq)=(a_q-sigma_q-sigma_q^-1)y_d when split, with no conductor-dependent multiplier."
+          ],
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 11,
+              "end_line": 16,
+              "excerpt_sha256": "68a52517b71b0b26948eb08529d7c5503d753d5b6382cf93ce2a1fbabf031f2a"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "For every actual old conductor d and permitted new prime, Tr(y_dell)=a_ell y_d when inert and Tr(y_dq)=(a_q-sigma_q-sigma_q^-1)y_d when split, with no conductor-dependent multiplier.",
+              "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+              "hypotheses": "Source split-Heegner specialization N1=1; base conductor d prime to N; new prime outside6dND_K; O_K units exactly plus/minus1.",
+              "quantifiers": "Every permitted old conductor and new prime, with compatible points and places.",
+              "parameter_range": "Exactly current main 3798–3820 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+              "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+              "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+              "normalizations": "Unaveraged traces, rational principal Artin product, pi(infinity)=0.",
+              "exceptional_cases": "Compatible CM points and orientations; Fixed normalized Hecke-equivariant elliptic quotient; Ordinary Artin reciprocity conventions",
+              "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+            }
+          },
+          "adverse_cases": {
+            "status": "checked",
+            "reason": "Compatible CM points and orientations; Fixed normalized Hecke-equivariant elliptic quotient; Ordinary Artin reciprocity conventions",
+            "evidence": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                  "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+                },
+                "start_line": 5,
+                "end_line": 16,
+                "excerpt_sha256": "200debb5888fd24c7fa6c1fa08cfc650b26038cbb089bc17e89b49391156189a"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 3798,
+                "end_line": 3820,
+                "excerpt_sha256": "ea67102fa29e775b9f517356fd19e1a17d1c4cbae9030f66b4517b460972aff4"
+              }
+            ]
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3798,
+              "end_line": 3820,
+              "excerpt_sha256": "ea67102fa29e775b9f517356fd19e1a17d1c4cbae9030f66b4517b460972aff4"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+              },
+              "start_line": 25,
+              "end_line": 25,
+              "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+            }
+          ]
+        },
+        "retained_separate_inputs": [
+          "Compatible CM points and orientations",
+          "Fixed normalized Hecke-equivariant elliptic quotient",
+          "Ordinary Artin reciprocity conventions"
+        ],
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3798,
+            "end_line": 3820,
+            "excerpt_sha256": "ea67102fa29e775b9f517356fd19e1a17d1c4cbae9030f66b4517b460972aff4"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 25,
+            "end_line": 25,
+            "excerpt_sha256": "6cafbdf196c58e832e3b241f2b2ae823a522970b3c7a66369ad799fde2481aab"
+          }
+        ]
+      }
+    },
+    {
+      "use_id": "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY",
+      "base_use_sha256": "cdb199ca68dbc874e31ab2eb0b283dd7898d96fcd2b5e31b5da8fb1a59a778ed",
+      "added_passage": "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY-KUMMER-SOURCE-27",
+      "added_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+          "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+        },
+        "start_line": 27,
+        "end_line": 27,
+        "excerpt_sha256": "5968139803e85274df7863989b0b7a8c6c3ae3dc82496173af7ada22985828c7"
+      },
+      "assertions_unchanged": true,
+      "proposed_component": {
+        "origin": "v14-heegner-descent-inputs-author-002/COMPONENTS.json",
+        "state": "author_proposal_pending_independent_review",
+        "use": {
+          "id": "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY",
+          "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+          "passages": [
+            "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY-P1",
+            "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY-KUMMER-SOURCE-27"
+          ],
+          "assertion": {
+            "statement": "H1(Gal(Fprime/F),B0(Fprime))=0 and the geometric component order c_B kills H1(Gal(Fprime/F),B(Fprime)), including even extension degree.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Finite unramified Fprime/F of nonarchimedean local fields; base uniformizer fixed by its finite Galois group; actual elliptic Neron/formal group.",
+            "quantifiers": "Every permitted finite stage satisfying these hypotheses; fixed curve and fixed local types are retained.",
+            "parameter_range": "Exactly current main 3931–3940 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Use the actual untwisted Tate torsion, based quotient and unaveraged operations; no inverse field degree is introduced.",
+            "exceptional_cases": "Previous Lang residue step; Normal-basis theorem and completeness; Geometric component group, not merely rational component count",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          },
+          "classification": "dependency",
+          "reason": "Actual current finite-Heegner clause, separated from other clauses in the frozen compound row.",
+          "shared_contract_justification": null,
+          "supplier": {
+            "kind": "published_external",
+            "application_id": null,
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 77,
+              "end_line": 82,
+              "excerpt_sha256": "d146e3476a313932eea17785726680969a52ee657476c5317526c4821f2a689a"
+            },
+            "statement": "The formal group filtration has successive quotients identified additively with the corresponding residue-field ideal quotients; the kernel of reduction is the formal group, and reduction to nonsingular points gives the standard exact sequence.",
+            "publication": {
+              "title": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+              "authors": "J. H. Silverman",
+              "venue": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+              "authoritative_version": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file. Exact pinned PDF 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+              "locator": "IV Proposition3.2(a), printed p124; VII Propositions2.1–2.2, pp188–191",
+              "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+            }
+          },
+          "application_id": null,
+          "inline_argument": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+              "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+            },
+            "start_line": 83,
+            "end_line": 88,
+            "excerpt_sha256": "a23dd407ca9874e9b3bb3da4a2dcdee1e3daad82abb2d8a81806bb665d8e1386"
+          }
+        },
+        "connection": {
+          "use_id": "ACTIVE-HEEGNER-FORMAL-COHOMOLOGY",
+          "use_sha256": "202e19a5b716e363b90501a6c8386160054986ec8578be7d15bd9b9d965ad93f",
+          "supplier_passage_role": "statement",
+          "available_assertion": {
+            "statement": "The formal group filtration has successive quotients identified additively with the corresponding residue-field ideal quotients; the kernel of reduction is the formal group, and reduction to nonsingular points gives the standard exact sequence.",
+            "objects": "The objects of the stated published theorem in the displayed source scope.",
+            "hypotheses": "An elliptic curve over a nonarchimedean local field F, with a minimal Weierstrass model over F (remaining minimal under the unramified extension Fprime/F); equivalently use the formal completion of the Neron identity section identified through that model.",
+            "quantifiers": "All objects satisfying the stated source hypotheses.",
+            "parameter_range": "Only the displayed source statement and its exact cited version.",
+            "uniformity": "No additional uniformity beyond that statement is asserted.",
+            "constants": "No new application-specific multiplier is supplied by the source statement.",
+            "normalizations": "Use the source conventions stated in the available statement; application-specific translation is in the connecting argument.",
+            "exceptional_cases": "The source alone does not discharge the separately listed current application premises.",
+            "limit_order": "Establish the stated source premises before applying this input."
+          },
+          "needed_assertion": {
+            "statement": "H1(Gal(Fprime/F),B0(Fprime))=0 and the geometric component order c_B kills H1(Gal(Fprime/F),B(Fprime)), including even extension degree.",
+            "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+            "hypotheses": "Finite unramified Fprime/F of nonarchimedean local fields; base uniformizer fixed by its finite Galois group; actual elliptic Neron/formal group.",
+            "quantifiers": "Every permitted finite stage satisfying these hypotheses; fixed curve and fixed local types are retained.",
+            "parameter_range": "Exactly current main 3931–3940 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+            "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+            "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+            "normalizations": "Use the actual untwisted Tate torsion, based quotient and unaveraged operations; no inverse field degree is introduced.",
+            "exceptional_cases": "Previous Lang residue step; Normal-basis theorem and completeness; Geometric component group, not merely rational component count",
+            "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+          },
+          "required_capabilities": [
+            "H1(Gal(Fprime/F),B0(Fprime))=0 and the geometric component order c_B kills H1(Gal(Fprime/F),B(Fprime)), including even extension degree."
+          ],
+          "available_capabilities": [
+            "The formal group filtration has successive quotients identified additively with the corresponding residue-field ideal quotients; the kernel of reduction is the formal group, and reduction to nonsingular points gives the standard exact sequence."
+          ],
+          "derived_capabilities": [
+            "H1(Gal(Fprime/F),B0(Fprime))=0 and the geometric component order c_B kills H1(Gal(Fprime/F),B(Fprime)), including even extension degree."
+          ],
+          "connecting_derivation": {
+            "kind": "derivation",
+            "location": {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+              },
+              "start_line": 83,
+              "end_line": 88,
+              "excerpt_sha256": "a23dd407ca9874e9b3bb3da4a2dcdee1e3daad82abb2d8a81806bb665d8e1386"
+            },
+            "application_id": null,
+            "output_assertion": {
+              "statement": "H1(Gal(Fprime/F),B0(Fprime))=0 and the geometric component order c_B kills H1(Gal(Fprime/F),B(Fprime)), including even extension degree.",
+              "objects": "The actual fixed E/Q, normalized pi:X0(N)->E, permitted imaginary quadratic K, ring-class fields H_f and M_I, and untwisted E[2^a] at the indicated step.",
+              "hypotheses": "Finite unramified Fprime/F of nonarchimedean local fields; base uniformizer fixed by its finite Galois group; actual elliptic Neron/formal group.",
+              "quantifiers": "Every permitted finite stage satisfying these hypotheses; fixed curve and fixed local types are retained.",
+              "parameter_range": "Exactly current main 3931–3940 under the setup3720–3740; no omitted excluded fields or bad new primes are added.",
+              "uniformity": "Only the uniformity asserted in the needed conclusion; constants attached to fixed data are not uniform over all curves.",
+              "constants": "Only the fixed constants explicitly named in the current conclusion and connecting argument.",
+              "normalizations": "Use the actual untwisted Tate torsion, based quotient and unaveraged operations; no inverse field degree is introduced.",
+              "exceptional_cases": "Previous Lang residue step; Normal-basis theorem and completeness; Geometric component group, not merely rational component count",
+              "limit_order": "Fix E, pi and local types first; make the indicated local/source construction; then vary only the permitted finite arithmetic data."
+            }
+          },
+          "adverse_cases": {
+            "status": "checked",
+            "reason": "Previous Lang residue step; Normal-basis theorem and completeness; Geometric component group, not merely rational component count",
+            "evidence": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+                  "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+                },
+                "start_line": 77,
+                "end_line": 88,
+                "excerpt_sha256": "9c239372e2f77d7eb212887915e21d8a0dbebae7de8c35b31d4a644baa3676f6"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+                },
+                "start_line": 3931,
+                "end_line": 3940,
+                "excerpt_sha256": "ff3f2b8057b78e89b1aa53671eeb4e07f99873943558b9cd5871b54423dc7a4a"
+              }
+            ]
+          },
+          "consumer_locations": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 3931,
+              "end_line": 3940,
+              "excerpt_sha256": "ff3f2b8057b78e89b1aa53671eeb4e07f99873943558b9cd5871b54423dc7a4a"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+                "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+              },
+              "start_line": 27,
+              "end_line": 27,
+              "excerpt_sha256": "5968139803e85274df7863989b0b7a8c6c3ae3dc82496173af7ada22985828c7"
+            }
+          ]
+        },
+        "retained_separate_inputs": [
+          "Previous Lang residue step",
+          "Normal-basis theorem and completeness",
+          "Geometric component group, not merely rational component count"
+        ],
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3931,
+            "end_line": 3940,
+            "excerpt_sha256": "ff3f2b8057b78e89b1aa53671eeb4e07f99873943558b9cd5871b54423dc7a4a"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/generic-kummer-current/PROOF.md",
+              "sha256": "523a28c1c3bdb5f23db40adb362d2f7ca3cb51851f598d2df496f4f1568945a3"
+            },
+            "start_line": 27,
+            "end_line": 27,
+            "excerpt_sha256": "5968139803e85274df7863989b0b7a8c6c3ae3dc82496173af7ada22985828c7"
+          }
+        ]
+      }
+    }
+  ]
+}

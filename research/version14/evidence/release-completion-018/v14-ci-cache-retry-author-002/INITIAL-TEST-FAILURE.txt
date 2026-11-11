@@ -1,0 +1,14 @@
+....F.....
+======================================================================
+FAIL: test_each_explicit_transient (__main__.RetryTests.test_each_explicit_transient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\glaze\Documents\Codex\2026-11-02\lo\work\source-risk-review-20261107\v14-ci-cache-retry-author-002\test_retry.py", line 26, in test_each_explicit_transient
+    for code in [408,429,500,502,503,504]:self.assertTrue(m.transient_download('curl: (22) The requested URL returned error: '+str(code)))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+FAILED (failures=1)

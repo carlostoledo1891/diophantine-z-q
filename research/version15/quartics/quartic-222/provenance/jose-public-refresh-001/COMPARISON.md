@@ -1,0 +1,7 @@
+# Public source comparison
+
+Read-only comparison on 2026-11-10 of JoseBrox/diophantine-z-q_improvements. Pinned prior source: d25e0aa6046662d9a878755aca8ed742821d3e61. Public main/HEAD: 34454098637ba9100b19071da55a38199589f5e0. There is exactly one commit after the pin, “Reduce the defining family to 25 variables and quartics to 238 and 93”. The repository was cloned without checkout; no source script was executed.
+
+The new inherited-premise quartic advertises238 variables and2924 monomials. Its fixed-difference chart and direct alternate-ratio equations are substantive finite-construction changes. The direct-ratio section, lines197–218, gives a useful shared denominator allowing one field numerator coordinate per block to disappear. Our candidate in ../shared-alternate-226-001 applies that idea to the already accepted raw232 family, retaining our old reference chart and deriving the new denominator domain from the existing forced149 argument. It does not adopt the new common-chart theorem or new arithmetic results.
+
+Other public changes include a25-variable higher-degree family and a93-variable quartic with additional abc premises. They are not imported here. The existing inherited arithmetic, parameter A_N=149^(2N+1), and ineffective defining threshold remain unchanged. Exact source copies, hashes and TeX diff are retained for attribution and comparison. Repository license is captured unchanged; no relicensing claim is made.

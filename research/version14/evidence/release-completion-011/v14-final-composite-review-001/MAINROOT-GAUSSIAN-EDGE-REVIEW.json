@@ -1,0 +1,19 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:47:46.622Z",
+  "decision": "accept the single extraneous-edge correction",
+  "input_sha256": "ba803fa8126a5c81b0e577d06af1111eed4bf9d9561c84895348414ddbfa30e9",
+  "delta": [
+    {
+      "p": "/dependencies/3",
+      "a": "GA-S1-OUTER-CLOSURE"
+    },
+    {
+      "p": "/obligations/local_conditions/justification",
+      "a": "The named height/Kato/GI/S1 dependencies supply their bounded interfaces; the remaining explicit inline arguments and source uses must be bound at their actual current locations. No finite-Sha assumption may replace full corank, and no auxiliary field may silently replace the controlled field.",
+      "b": "The named height, Kato and GI dependencies supply their bounded interfaces. The original prime argument at2189–2204 uses rational affine forms and GI(20), with the separate Green–Tao and Mobius inputs retained. The later Gaussian S1 theorem is not an input to this original P_star proof. Remaining explicit inline arguments and source uses must be bound at their actual current locations; full corank and the original controlled field remain required."
+    }
+  ],
+  "reason": "The original P_star assembly uses the original rational-affine prime proof. Actual2189–2205 explicitly calls Green–Tao, Mobius and GI20 on integral affine forms. It does not invoke the later Gaussian S1 theorem. Removing only this direct edge and correcting the matching justification is faithful; later quartic Gaussian dependencies and original prime-proof sources remain required.",
+  "limits": "No other dependency removed, no ordinary obligation asserted proved by this correction, no global source closure."
+}

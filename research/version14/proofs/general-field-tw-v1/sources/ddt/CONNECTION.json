@@ -1,0 +1,124 @@
+{
+  "schema": "bounded-source-connection/v1",
+  "id": "DDT-FINAL-GENERAL-SELMER",
+  "author": "/root/astra_quartic_opt05_anchor",
+  "status": "authored source connection awaiting independent decision",
+  "supplier_passage_role": "statement",
+  "source": {
+    "path": "work/source-risk-review-20261107/item210-published-sources-05/local-only/ddt-final-publisher.pdf",
+    "sha256": "2b45bf258d078924f008ff178a49d78e033c83541af5f9c95fa1aeab215e235d",
+    "bytes": 12052172
+  },
+  "locator": "Theorem2.19 printed57; definitions54–55 and proof2.18/transition56",
+  "available_assertion": {
+    "statement": "For a number field F, a finite continuous discrete G_F-module M, and local subgroups L_v of H^1(F_v,M) equal to the unramified subgroup almost everywhere, the two dual Selmer groups are finite and |H^1_L(F,M)|/|H^1_Lperp(F,M^D)| = |H^0(F,M)|/|H^0(F,M^D)| times product_v |L_v|/|H^0(F_v,M)|.",
+    "objects": "M^D=Hom_Z(M,mu_n) for nM=0, with contragredient Galois action; local annihilators use cup product and the local invariant map; all H^1 and H^0 in the displayed final formula are ordinary continuous Galois cohomology.",
+    "quantifiers": "Every number field F and every such finite continuous module and family of local conditions; all places occur in the product.",
+    "hypotheses": "F is finite over Q; M has finite cardinality; local conditions are subgroups and are unramified except at finitely many places. The chosen finite exceptional set contains all archimedean places, all primes dividing |M|, and all ramification.",
+    "parameter_range": "No condition that F be unramified at2; no odd-primary restriction. Includes modules of exponent2^j.",
+    "uniformity": "An exact identity separately for each F,M,L; no uniform bound as these vary.",
+    "exceptional_cases": "At real places the intermediate Poitou–Tate sequence uses Tate H^0, but the final Euler-corrected formula uses ordinary H^0. At complex places H^1=0. Zero/full local subgroups have respectively full/zero H^1 annihilator.",
+    "constants": "Every coefficient is explicit in the displayed cardinality identity; almost all product factors equal1.",
+    "normalization": "The dual is the cyclotomic Tate dual, not the untwisted linear dual. For k-linear modules in characteristic2, the additive dual is identified with the k-linear dual twisted by1 using the nondegenerate finite-field trace.",
+    "limit_order": "Choose the finite exceptional set for a fixed finite module and family of local conditions, apply the finite identity, then specialize. No passage to an infinite coefficient module is asserted."
+  },
+  "needed_assertion": {
+    "statement": "Apply the displayed finite identity to M=End_k(k^2), to M=k, and to M=Z/2^j, over the actual totally real F of theta001, with zero conditions at S, full conditions at Q, and unramified conditions elsewhere.",
+    "objects": "S contains all2-adic and archimedean places and module ramification. Q is disjoint from S. The dual of Z/2^j is mu_(2^j). For End_k(k^2), use the full matrix trace pairing followed by Tr_(k/F2), not the degenerate restriction to trace-zero matrices.",
+    "quantifiers": "Every number field F and every such finite continuous module and family of local conditions; all places occur in the product.",
+    "hypotheses": "F is finite over Q; M has finite cardinality; local conditions are subgroups and are unramified except at finitely many places. The chosen finite exceptional set contains all archimedean places, all primes dividing |M|, and all ramification.",
+    "parameter_range": "No condition that F be unramified at2; no odd-primary restriction. Includes modules of exponent2^j.",
+    "uniformity": "An exact identity separately for each F,M,L; no uniform bound as these vary.",
+    "exceptional_cases": "At real places the intermediate Poitou–Tate sequence uses Tate H^0, but the final Euler-corrected formula uses ordinary H^0. At complex places H^1=0. Zero/full local subgroups have respectively full/zero H^1 annihilator.",
+    "constants": "Every coefficient is explicit in the displayed cardinality identity; almost all product factors equal1.",
+    "normalization": "The dual is the cyclotomic Tate dual, not the untwisted linear dual. For k-linear modules in characteristic2, the additive dual is identified with the k-linear dual twisted by1 using the nondegenerate finite-field trace.",
+    "limit_order": "Choose the finite exceptional set for a fixed finite module and family of local conditions, apply the finite identity, then specialize. No passage to an infinite coefficient module is asserted."
+  },
+  "connecting_derivation": "Identify the finite Tate dual and the zero/full/unramified local conditions as in the nine comparisons. Apply published Theorem2.19 directly; no deduction of generality from the Q-only Theorem2.18 is needed. The theorem itself extends to arbitrary F.",
+  "comparisons": [
+    {
+      "id": "1",
+      "topic": "field",
+      "comparison": "The theorem says number field; theta F is a totally real number field. Its ramification at2 is unrestricted.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "2",
+      "topic": "module",
+      "comparison": "All three theta modules are finite continuous additive G_F-modules; the theorem is not restricted to vector spaces or to exponent2.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "3",
+      "topic": "dual",
+      "comparison": "Cyclotomic dual agrees with theta M^*(1); mu_(2^j) is retained for the constant cyclic module. In characteristic2 the mod2 cyclotomic action is trivial.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "4",
+      "topic": "local_conditions",
+      "comparison": "Zero at S, full at Q and unramified elsewhere satisfy the almost-everywhere condition. Local H^1 duality makes their annihilators full at S and zero at Q.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "5",
+      "topic": "infinite_places",
+      "comparison": "S includes every real place; ordinary H^0 remains in the final denominator. No vanishing of H^1(R,M) at2 is assumed.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "6",
+      "topic": "cardinality",
+      "comparison": "The identity is a ratio of finite group orders. Taking log base |k| is allowed for the k-vector-space applications; no such linear-dimension replacement is made for Z/2^j.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "7",
+      "topic": "coefficients",
+      "comparison": "For End_k(k^2), (X,Y) -> Tr_(k/F2)(tr(XY)) is nondegenerate and G_F-invariant. The presence of scalar trace-zero matrices in characteristic2 does not make this full-pairing degenerate.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "8",
+      "topic": "scope",
+      "comparison": "This source input supplies the general finite identity, not theta cyclotomic disjointness, prime selection, tangent count, local module counts or class-field finiteness.",
+      "status": "author-checked; independent decision pending"
+    },
+    {
+      "id": "9",
+      "topic": "version",
+      "comparison": "Published1995 Theorem2.19 p57 is inspected directly. The current author2007 Theorem2.19 p62 has the same needed statement. No equality of all2000/2007/1995bytes or1997reprint is asserted.",
+      "status": "author-checked; independent decision pending"
+    }
+  ],
+  "consumer_locations": [
+    {
+      "path": "work/source-risk-review-20261107/kwii-general-field-tw-theta-001/PROOF.md",
+      "sha256": "02adafa304e6b4f733c99330268bab678ab1376468f03ecc3443b9e6638b6d8e",
+      "bytes": 15254,
+      "start_line": 3,
+      "end_line": 19,
+      "excerpt_sha256": "22d58ca51a9ca1dde746345a695d3ee94bd76cb71dd8c5721dcdc66f52aefe47"
+    },
+    {
+      "path": "work/source-risk-review-20261107/kwii-general-field-tw-theta-001/PROOF.md",
+      "sha256": "02adafa304e6b4f733c99330268bab678ab1376468f03ecc3443b9e6638b6d8e",
+      "bytes": 15254,
+      "start_line": 60,
+      "end_line": 77,
+      "excerpt_sha256": "a1c6be828b1de1ceae08fa069354a436c0e64bd50af1c4e57eae079d7c8540ca"
+    },
+    {
+      "path": "work/source-risk-review-20261107/kwii-general-field-tw-theta-001/PROOF.md",
+      "sha256": "02adafa304e6b4f733c99330268bab678ab1376468f03ecc3443b9e6638b6d8e",
+      "bytes": 15254,
+      "start_line": 78,
+      "end_line": 95,
+      "excerpt_sha256": "67bee2d7e5ef18547cc96bc5ae5d02a7be336a961d2ed2ba8cdedc27120debbe"
+    }
+  ],
+  "retained_inputs": [
+    "The published theorem and its printed Milne/Serre duality/Euler ancestors are used; this packet is not an independent proof of their entire theories.",
+    "Actual hypotheses/counts in theta001 outside this finite identity remain with their respective review."
+  ]
+}

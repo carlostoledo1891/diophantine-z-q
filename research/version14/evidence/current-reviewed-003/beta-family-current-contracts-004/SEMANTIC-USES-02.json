@@ -1,0 +1,607 @@
+{
+  "rule": "Pin and location references expand exactly from the dictionaries; all semantic fields retained.",
+  "content": {
+    "assertion_rule": "Merge common with overrides to reconstruct the exact assertion.",
+    "available_common": {},
+    "needed_common": {
+      "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+      "quantifiers": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+      "parameter_range": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+      "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+      "constants": "No new degree, ramification-support or conductor bound.",
+      "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+      "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+    },
+    "records": [
+      {
+        "id": "BETA-DEGREE-POLYNOMIAL",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "$location": "L1"
+          },
+          "statement": "The rational degree polynomial of an endomorphism equals its characteristic polynomial on each admissible rational Tate module.",
+          "publication": {
+            "title": "Abelian Varieties",
+            "authors": "J. S. Milne",
+            "venue": "Arithmetic Geometry, Springer, 1986, pp.103-150",
+            "authoritative_version": "Original published chapter, final PDF SHA86259344a576e4ef75a9d81e9bf43143f872a72b14cf8fcc2703f3aea6349136",
+            "locator": "Proposition12.9 and preceding End^0 degree-polynomial definition, printed125",
+            "corrections": "Only this arbitrary-endomorphism Tate-module statement is selected; no later edition is silently substituted."
+          }
+        },
+        "available_overrides": {
+          "statement": "The rational degree polynomial of an endomorphism equals its characteristic polynomial on each admissible rational Tate module.",
+          "objects": "An abelian variety D/k, alpha in End^0(D), and the covariant V_l(D).",
+          "hypotheses": "l differs from the characteristic of k.",
+          "quantifiers": "Every such D, alpha and coefficient prime l.",
+          "parameter_range": "Every such D, alpha and coefficient prime l.",
+          "uniformity": "The rational characteristic polynomial is independent of l.",
+          "constants": "Coefficients are rational, and integral when alpha is an integral endomorphism.",
+          "normalizations": "The degree polynomial is monic of degree twice dim(D); its linear trace and determinant are those of alpha.",
+          "exceptional_cases": "There is no Frobenius-only or semisimplicity hypothesis.",
+          "limit_order": "Choose D and alpha before varying l."
+        },
+        "needed_overrides": {
+          "statement": "The trace of the actual reduced endomorphism u_p is rational and independent of ell different from p.",
+          "hypotheses": "At a good comparison p the relative p-Frobenius goes to the correct sigma twist and is composed with the reduction of the actual isogeny.",
+          "normalizations": "Arithmetic Q_p Frobenius x maps to x^p; half the four-dimensional trace multiplied by a_sigma/beta(sigma)."
+        },
+        "derivation": {
+          "kind": "derivation",
+          "location": {
+            "$location": "L2"
+          },
+          "additional_evidence": [
+            {
+              "$location": "L3"
+            }
+          ],
+          "application_id": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+          "output_assertion": {
+            "statement": "The trace of the actual reduced endomorphism u_p is rational and independent of ell different from p.",
+            "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+            "hypotheses": "At a good comparison p the relative p-Frobenius goes to the correct sigma twist and is composed with the reduction of the actual isogeny.",
+            "quantifiers": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "parameter_range": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+            "constants": "No new degree, ramification-support or conductor bound.",
+            "normalizations": "Arithmetic Q_p Frobenius x maps to x^p; half the four-dimensional trace multiplied by a_sigma/beta(sigma).",
+            "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+            "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+          },
+          "argument": "The accepted beta proof and current1455-1467 identify the map before applying the unchanged published1986 degree-polynomial theorem."
+        },
+        "consumer_locations": [
+          {
+            "$location": "L3"
+          },
+          {
+            "$location": "L4"
+          }
+        ],
+        "adverse_cases": {
+          "status": "author_checked_pending_review",
+          "reason": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "evidence": [
+            {
+              "$location": "L2"
+            },
+            {
+              "$location": "L3"
+            }
+          ]
+        }
+      },
+      {
+        "id": "BETA-CLASSICAL-TRACE",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "$location": "L5"
+          },
+          "statement": "The classical two-dimensional representation has the good-prime trace and determinant of the normalized cuspidal Hecke eigenform.",
+          "publication": {
+            "title": "On the local behaviour of ordinary Lambda-adic representations",
+            "authors": "E. Ghate and V. Vatsal",
+            "venue": "Ann. Inst. Fourier54 (2004),2143–2162",
+            "authoritative_version": "Selected final publication",
+            "locator": "Attachment2143–2144; determinant2153",
+            "corrections": "Retain the exact source/version qualifications in the accepted donor records."
+          }
+        },
+        "available_overrides": {
+          "statement": "The classical two-dimensional representation has the good-prime trace and determinant of the normalized cuspidal Hecke eigenform.",
+          "objects": "A normalized cuspidal Hecke eigenform f of weight k>=2 and level N>=1, and a chosen coefficient-prime embedding.",
+          "hypotheses": "The coefficient prime p is any prime; comparison primes do not divide Np.",
+          "quantifiers": "Every such form and every good comparison prime.",
+          "parameter_range": "Every such form and every good comparison prime.",
+          "uniformity": "The same fixed objects are used throughout the stated domain.",
+          "constants": "No additional numerical conductor or controlled-field bound is supplied.",
+          "normalizations": "Trace a_l(f) and determinant chi(l)l^(k-1) in the chosen coefficient completion.",
+          "exceptional_cases": "No ordinarity, Hodge-Tate or semisimplicity clause is supplied by this source paragraph.",
+          "limit_order": "Choose the form and coefficient embedding before comparing good primes."
+        },
+        "needed_overrides": {
+          "statement": "The corresponding U_f,ell has the good-prime trace a_p(f) for every ell.",
+          "hypotheses": "The same normalized primitive weight-two f and extended original coefficient embedding.",
+          "normalizations": "Compare over one finite extension of Q_ell containing the original coefficient fields."
+        },
+        "derivation": {
+          "kind": "derivation",
+          "location": {
+            "$location": "L2"
+          },
+          "additional_evidence": [
+            {
+              "$location": "L6"
+            },
+            {
+              "$location": "L3"
+            }
+          ],
+          "application_id": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+          "output_assertion": {
+            "statement": "The corresponding U_f,ell has the good-prime trace a_p(f) for every ell.",
+            "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+            "hypotheses": "The same normalized primitive weight-two f and extended original coefficient embedding.",
+            "quantifiers": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "parameter_range": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+            "constants": "No new degree, ramification-support or conductor bound.",
+            "normalizations": "Compare over one finite extension of Q_ell containing the original coefficient fields.",
+            "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+            "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+          },
+          "argument": "Injectivity at five identifies the algebraic trace, then transport gives the trace of this exact classical realization."
+        },
+        "consumer_locations": [
+          {
+            "$location": "L3"
+          },
+          {
+            "$location": "L4"
+          }
+        ],
+        "adverse_cases": {
+          "status": "author_checked_pending_review",
+          "reason": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "evidence": [
+            {
+              "$location": "L2"
+            },
+            {
+              "$location": "L6"
+            },
+            {
+              "$location": "L3"
+            }
+          ]
+        }
+      },
+      {
+        "id": "BETA-DENSITY",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "AC-CHEBOTAREV",
+          "location": {
+            "$location": "L7"
+          },
+          "statement": "Equality of continuous trace functions at almost all rational Frobenius elements implies equality on G_Q.",
+          "publication": null
+        },
+        "available_overrides": {
+          "statement": "Equality of continuous trace functions at almost all rational Frobenius elements implies equality on G_Q.",
+          "objects": "Continuous conjugacy-invariant functions on G_Q with values in one fixed characteristic-zero coefficient field.",
+          "hypotheses": "The functions agree at all Frobenius classes outside a finite set.",
+          "quantifiers": "Every element of G_Q after passage through finite quotients.",
+          "parameter_range": "Every element of G_Q after passage through finite quotients.",
+          "uniformity": "The same fixed objects are used throughout the stated domain.",
+          "constants": "No additional numerical conductor or controlled-field bound is supplied.",
+          "normalizations": "Qualitative Frobenius density, with no effective bound.",
+          "exceptional_cases": "An auxiliary finite exceptional set is permitted.",
+          "limit_order": "Obtain the good-prime trace equality before applying density."
+        },
+        "needed_overrides": {
+          "statement": "The constructed trace equality extends from the cofinite comparison set to G_Q.",
+          "hypotheses": "Both trace functions are continuous and conjugacy-invariant; equality holds at every permitted good Frobenius.",
+          "normalizations": "Use density of the union of the Frobenius conjugacy classes."
+        },
+        "derivation": {
+          "kind": "derivation",
+          "location": {
+            "$location": "L2"
+          },
+          "additional_evidence": [],
+          "application_id": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+          "output_assertion": {
+            "statement": "The constructed trace equality extends from the cofinite comparison set to G_Q.",
+            "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+            "hypotheses": "Both trace functions are continuous and conjugacy-invariant; equality holds at every permitted good Frobenius.",
+            "quantifiers": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "parameter_range": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+            "constants": "No new degree, ramification-support or conductor bound.",
+            "normalizations": "Use density of the union of the Frobenius conjugacy classes.",
+            "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+            "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+          },
+          "argument": "The retained density theorem applies after finite exclusions, which do not alter T or the controlled family."
+        },
+        "consumer_locations": [
+          {
+            "$location": "L3"
+          },
+          {
+            "$location": "L4"
+          }
+        ],
+        "adverse_cases": {
+          "status": "author_checked_pending_review",
+          "reason": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "evidence": [
+            {
+              "$location": "L2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "BETA-TRACE-AND-LENGTH",
+        "supplier": {
+          "kind": "internal",
+          "application_id": "AC-BRAUER-NESBITT",
+          "location": {
+            "$location": "L8"
+          },
+          "statement": "Finite-dimensional semisimple characteristic-zero representations with equal traces are isomorphic.",
+          "publication": null
+        },
+        "available_overrides": {
+          "statement": "Finite-dimensional semisimple characteristic-zero representations with equal traces are isomorphic.",
+          "objects": "Representations of one group algebra over the same characteristic-zero coefficient field.",
+          "hypotheses": "Semisimplicity and equality of traces on every group element.",
+          "quantifiers": "The two representations and their finite common coefficient extension.",
+          "parameter_range": "The two representations and their finite common coefficient extension.",
+          "uniformity": "The same fixed objects are used throughout the stated domain.",
+          "constants": "No additional numerical conductor or controlled-field bound is supplied.",
+          "normalizations": "Apply the algebra trace lemma to the group algebra; semisimplification preserves trace.",
+          "exceptional_cases": "An arbitrary nonsemisimple representation is not identified until the separate composition-length argument.",
+          "limit_order": "First establish equal traces for the two semisimple representations over the common characteristic-zero coefficient field, then apply the trace criterion."
+        },
+        "needed_overrides": {
+          "statement": "The actual U_f,ell is isomorphic to the scalar extension of the original r_ell.",
+          "hypotheses": "The two semisimplifications have equal traces; original r_ell is absolutely irreducible.",
+          "normalizations": "Finite-dimensional diagonal image algebra over the common finite coefficient field."
+        },
+        "derivation": {
+          "kind": "derivation",
+          "location": {
+            "$location": "L2"
+          },
+          "additional_evidence": [
+            {
+              "$location": "L9"
+            },
+            {
+              "$location": "L3"
+            }
+          ],
+          "application_id": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+          "output_assertion": {
+            "statement": "The actual U_f,ell is isomorphic to the scalar extension of the original r_ell.",
+            "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+            "hypotheses": "The two semisimplifications have equal traces; original r_ell is absolutely irreducible.",
+            "quantifiers": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "parameter_range": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+            "constants": "No new degree, ramification-support or conductor bound.",
+            "normalizations": "Finite-dimensional diagonal image algebra over the common finite coefficient field.",
+            "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+            "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+          },
+          "argument": "The trace criterion identifies the semisimplifications. One simple composition factor forces U_f,ell itself to have length one."
+        },
+        "consumer_locations": [
+          {
+            "$location": "L3"
+          },
+          {
+            "$location": "L4"
+          }
+        ],
+        "adverse_cases": {
+          "status": "author_checked_pending_review",
+          "reason": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "evidence": [
+            {
+              "$location": "L2"
+            },
+            {
+              "$location": "L9"
+            },
+            {
+              "$location": "L3"
+            }
+          ]
+        }
+      },
+      {
+        "id": "BETA-GENERAL-COMPATIBILITY",
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "$location": "L10"
+          },
+          "statement": "Each fixed original normalized family with the stated geometry, irreducibility and r_5 inputs is compatible with its same form at every coefficient prime.",
+          "publication": null
+        },
+        "available_overrides": {
+          "statement": "Each fixed original normalized family with the stated geometry, irreducibility and r_5 inputs is compatible with its same form at every coefficient prime.",
+          "objects": "One fixed original normalized family, its actual abelian surface, full quaternion endomorphism algebra, common definition field and original matrix-unit factors.",
+          "hypotheses": "The fixed family satisfies the full-End and field hypotheses, all-prime irreducibility and the original coefficient-five identification with one primitive weight-two form; classical good-prime traces are supplied.",
+          "quantifiers": "Every rational coefficient prime for the one fixed original family.",
+          "parameter_range": "Characteristic-zero finite coefficient extensions, including ell=2; trace specialization only at ell different from p.",
+          "uniformity": "The same original family, scalar cochain and factors remain fixed across coefficient primes.",
+          "constants": "No new degree, ramification-support or conductor bound.",
+          "normalizations": "Original matrix-unit factors; common finite coefficient extension for comparison, retaining original embeddings.",
+          "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "limit_order": "Establish the stated input hypotheses before applying this conditional general result."
+        },
+        "needed_overrides": {
+          "statement": "The first beta-family is compatible with the same f at every ell.",
+          "hypotheses": "The preceding beta-specific actual inputs and same-r_5 identity.",
+          "normalizations": "Apply eta=beta; original matrix-unit factors and coefficient embeddings are retained."
+        },
+        "derivation": {
+          "kind": "derivation",
+          "location": {
+            "$location": "L2"
+          },
+          "additional_evidence": [
+            {
+              "$location": "L9"
+            },
+            {
+              "$location": "L11"
+            },
+            {
+              "$location": "L3"
+            }
+          ],
+          "application_id": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+          "output_assertion": {
+            "statement": "The first beta-family is compatible with the same f at every ell.",
+            "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+            "hypotheses": "The preceding beta-specific actual inputs and same-r_5 identity.",
+            "quantifiers": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "parameter_range": "Every coefficient prime ell in characteristic zero, for the one fixed first beta-family.",
+            "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+            "constants": "No new degree, ramification-support or conductor bound.",
+            "normalizations": "Apply eta=beta; original matrix-unit factors and coefficient embeddings are retained.",
+            "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+            "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+          },
+          "argument": "The accepted beta-specific proof supplies the concrete specialization, including the corrected original-idempotent interpretation and common coefficient extension."
+        },
+        "consumer_locations": [
+          {
+            "$location": "L3"
+          },
+          {
+            "$location": "L4"
+          }
+        ],
+        "adverse_cases": {
+          "status": "author_checked_pending_review",
+          "reason": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "evidence": [
+            {
+              "$location": "L2"
+            },
+            {
+              "$location": "L9"
+            },
+            {
+              "$location": "L11"
+            },
+            {
+              "$location": "L3"
+            }
+          ]
+        }
+      },
+      {
+        "id": "BETA-LOCAL-ISOMORPHISM",
+        "supplier": {
+          "kind": "inline",
+          "application_id": null,
+          "location": {
+            "$location": "L4"
+          },
+          "statement": "Restricting the actual all-prime isomorphism for the beta-family identifies local Galois representations and Artin conductors whenever ell differs from p.",
+          "publication": null
+        },
+        "available_overrides": {
+          "statement": "Restricting the actual all-prime isomorphism for the beta-family identifies local Galois representations and Artin conductors whenever ell differs from p.",
+          "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+          "hypotheses": "The actual global isomorphism over a common finite coefficient extension.",
+          "quantifiers": "Every residue prime p, using ell different from p.",
+          "parameter_range": "Every residue prime p, using ell different from p.",
+          "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+          "constants": "No new degree, ramification-support or conductor bound.",
+          "normalizations": "Restriction to the same decomposition group; scalar extension preserves invariant dimensions and Artin/Swan conductors.",
+          "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+        },
+        "needed_overrides": {
+          "statement": "For every p and any chosen ell different from p, the original beta-family local conductor equals that of the corresponding U_f,ell.",
+          "hypotheses": "The actual global isomorphism over a common finite coefficient extension.",
+          "quantifiers": "Every residue prime p, using ell different from p.",
+          "parameter_range": "Every residue prime p, using ell different from p.",
+          "normalizations": "Restriction to the same decomposition group; scalar extension preserves invariant dimensions and Artin/Swan conductors."
+        },
+        "derivation": {
+          "kind": "derivation",
+          "location": {
+            "$location": "L4"
+          },
+          "additional_evidence": [
+            {
+              "$location": "L3"
+            },
+            {
+              "$location": "L12"
+            }
+          ],
+          "application_id": "CURRENT-BETA-ALL-PRIME-COMPATIBILITY",
+          "output_assertion": {
+            "statement": "For every p and any chosen ell different from p, the original beta-family local conductor equals that of the corresponding U_f,ell.",
+            "objects": "The first beta-family A/K, L=EK, its original L-prime, finite B-linear mu_sigma, positive a_sigma, beta, matrix-unit factors r_ell and the same primitive form f. No discriminant-210 b-family input is used.",
+            "hypotheses": "The actual global isomorphism over a common finite coefficient extension.",
+            "quantifiers": "Every residue prime p, using ell different from p.",
+            "parameter_range": "Every residue prime p, using ell different from p.",
+            "uniformity": "The original A,L-prime,beta and factors are fixed across coefficient primes.",
+            "constants": "No new degree, ramification-support or conductor bound.",
+            "normalizations": "Restriction to the same decomposition group; scalar extension preserves invariant dimensions and Artin/Swan conductors.",
+            "exceptional_cases": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+            "limit_order": "Supply the actual family and endomorphism inputs, identify the original factors, compare traces, then restrict the actual isomorphism locally."
+          },
+          "argument": "Restriction preserves the isomorphism and its inertia/ramification actions. Coefficient extension commutes with finite-dimensional invariant equations. The separate Carayol owner supplies equality with the primitive level."
+        },
+        "consumer_locations": [
+          {
+            "$location": "L3"
+          },
+          {
+            "$location": "L4"
+          }
+        ],
+        "adverse_cases": {
+          "status": "author_checked_pending_review",
+          "reason": "Only the non-CM full-End=B branch is considered. Local trace specialization requires ell different from p.",
+          "evidence": [
+            {
+              "$location": "L4"
+            },
+            {
+              "$location": "L3"
+            },
+            {
+              "$location": "L12"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "pins": {
+    "P1": {
+      "side": "head",
+      "path": "research/version14/proofs/direct-p5-modularity-v1/FIVE-TO-THREE-SOURCES.md",
+      "sha256": "5552cf5078213c729ddb0939152b2a0fa5cf5cc8fa2e1a96e52320681f608366"
+    },
+    "P2": {
+      "side": "head",
+      "path": "work/source-risk-review-20261107/v14-resume-arithmetic-author-proxy-002/PROOF.md",
+      "sha256": "0ccb4a3ee6b2ed28e52077bc23b9b0492645e59fdfb443075587077214e6b7e1"
+    },
+    "P3": {
+      "side": "head",
+      "path": "work/source-risk-review-20261107/v14-assembly-resume-root-003/PROPOSED.tex",
+      "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+    },
+    "P4": {
+      "side": "head",
+      "path": "research/version14/proofs/direct-p5-modularity-v1/ORDINARY-SOURCES.md",
+      "sha256": "91ed0eaa5059799db1e7b71e8462b99954bb1e479ec6890422ed135574ba6fc7"
+    },
+    "P5": {
+      "side": "head",
+      "path": "research/version14/source-use-tw-ac-002/SOURCE-INPUTS.md",
+      "sha256": "d9a564e2157712b39656b775e1b65e9ff8a702ed99ad3c24d3f848648c941cfd"
+    },
+    "P6": {
+      "side": "head",
+      "path": "work/source-risk-review-20261107/all-prime-compatibility-sol-001/PROOF.md",
+      "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+    }
+  },
+  "locations": {
+    "L1": {
+      "pin": "P1",
+      "start_line": 5,
+      "end_line": 5,
+      "excerpt_sha256": "ad21187dd56a3b5e83e3e3b4626aea0d4ab71c302c91ea5ea99adc436fb517f6"
+    },
+    "L2": {
+      "pin": "P2",
+      "start_line": 25,
+      "end_line": 40,
+      "excerpt_sha256": "9815e71d59f76cd16a55a2fa77359ab8c5a160a78ac7e5c52bf5073aa86031cc"
+    },
+    "L3": {
+      "pin": "P3",
+      "start_line": 1451,
+      "end_line": 1479,
+      "excerpt_sha256": "be809e4db3e60e72e1e029a3c12244111a0b05ec11c7fdae68bb7e6833aa15e6"
+    },
+    "L4": {
+      "pin": "P2",
+      "start_line": 41,
+      "end_line": 46,
+      "excerpt_sha256": "67e176407ed351778b0b90e0b6deec7f31e06e0d090fe36c69c241b6fd6e17f0"
+    },
+    "L5": {
+      "pin": "P4",
+      "start_line": 23,
+      "end_line": 23,
+      "excerpt_sha256": "e306e7ba9a0ea1e41333af086c6ead2f44fb89b16f5196035290d361f0438cbf"
+    },
+    "L6": {
+      "pin": "P3",
+      "start_line": 1438,
+      "end_line": 1442,
+      "excerpt_sha256": "2269bc0e9b527c90c3749999eaf5068191dc8fc2c7cb35c3ea6de8241006dc87"
+    },
+    "L7": {
+      "pin": "P5",
+      "start_line": 11,
+      "end_line": 16,
+      "excerpt_sha256": "0bf6a0e52855892d8f005d8a8953f80ae6370e873035480eae06aec170c667cd"
+    },
+    "L8": {
+      "pin": "P5",
+      "start_line": 17,
+      "end_line": 22,
+      "excerpt_sha256": "55ad88785d6ab2a981ca72d52ba0f0c1e1c870d7a7aba353ffbe4bb29197e353"
+    },
+    "L9": {
+      "pin": "P2",
+      "start_line": 13,
+      "end_line": 24,
+      "excerpt_sha256": "e5f3e5002f223e2ca2390295959b0d01606e6651fe972d2bbf0ac1a9e91ce9f1"
+    },
+    "L10": {
+      "pin": "P6",
+      "start_line": 1,
+      "end_line": 14,
+      "excerpt_sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+    },
+    "L11": {
+      "pin": "P2",
+      "start_line": 5,
+      "end_line": 12,
+      "excerpt_sha256": "dcf588c25873957b46280955c920c9dfd138a5813c487b3db1788cdddae349b4"
+    },
+    "L12": {
+      "pin": "P3",
+      "start_line": 1480,
+      "end_line": 1481,
+      "excerpt_sha256": "0aa4e9ea6a08c0d284b918ee5adfe518a87adf19c321a349f02d1013506d5181"
+    }
+  }
+}

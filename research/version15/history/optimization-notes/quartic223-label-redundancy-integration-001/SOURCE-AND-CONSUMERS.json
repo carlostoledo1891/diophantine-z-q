@@ -1,0 +1,1275 @@
+{
+  "source_sha256": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b",
+  "source_path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+  "windows": [
+    {
+      "start": 32447,
+      "end": 32461,
+      "text": "if it is nonpositive, the conclusion is immediate.\r\n\r\nThe retained root points are\r\n\\[\r\n Q_1=[n]P,\\quad Q_2=[a]P,\\quad Q_3=[t]P,\\quad Q_4=[b]P,\r\n \\qquad B=\\max(|n|,|a|,|t|,|b|),\r\n\\]\r\nwith nonzero integer labels. Set\r\n\\[\r\n T=\\frac14\\Tr_{K/\\Q}\\left(\\sum_{i=1}^4x(Q_i)\\right).\r\n\\]\r\nIt is positive, and the aggregate trace theorem gives fixed constants\r\n$M_1>0$, $M_2\\ge1$ such that\r\n\\begin{equation}\\label{v15:base248:eq:aggregate}\r\n                         B^2\\le M_1h(T)+M_2.\r"
+    },
+    {
+      "start": 32854,
+      "end": 32909,
+      "text": "The scalar bounds~\\eqref{v15:base248:eq:scalar} hold independently of the\r\ncomparison logarithms. In particular $c\\to\\infty$ uniformly with $N$,\r\nand $B\\ge c-1$.\r\n\r\nLet\r\n$\\Delta=t^2-a(a-2)tb+(a-2)^2b^2-1$.\r\nThe local comparison shows that each fourth power of a comparison\r\nradical divides $\\Delta$. If $\\Delta\\ne0$, then\r\n$|\\Delta|\\le14B^4$, and \\eqref{v15:base248:eq:heighttransfer} gives\r\n\\[\r\n                  B^2\\le C14^{7/16}B^{7/4}+M_2.\r\n\\]\r\nSince $7/4<2$, this bounds $B$ by a fixed constant. Equation\r\n\\eqref{v15:base248:eq:scalar} gives $B\\ge c-1\\to\\infty$ uniformly as\r\n$N\\to\\infty$, a contradiction. Thus $\\Delta=0$ eventually.\r\nA stronger form of the integral Lucas descent gives\r\n\\begin{equation}\\label{v15:base248:eq:stronglucas}\r\n              \\log B\\ge(c-5)\\log(c-2)\\qquad(c\\ge8).\r\n\\end{equation}\r\nHere is the complete elementary argument. Put $A_0=|a|$ and\r\n$w=\\operatorname{sgn}(a)(a-2)b$. Then\r\n$t^2-A_0tw+w^2=1$. For\r\n$\\eta=(A_0+\\sqrt{A_0^2-4})/2$, every positive norm-one unit of\r\n$\\Z[\\eta]$ is a power of $\\eta$. Indeed multiply a unit by a\r\npower of $\\eta$ to place it in $[1,\\eta)$; its coefficient of\r\n$\\eta$ is $(v-v^{-1})/(\\eta-\\eta^{-1})$, an integer in $[0,1)$,\r\nso it is zero and $v=1$.\r\nLet $U_0=0$, $U_1=1$, and $U_{j+1}=A_0U_j-U_{j-1}$ for $j\\ge1$.\r\nThe unit identities show that $|w|=U_j$ and\r\n$|t|\\in\\{U_{j-1},U_{j+1}\\}$ for some $j\\ge1$.\r\nModulo $A_0-2$ one has $U_j\\equiv j$; modulo $A_0+2$ one has\r\n$U_j\\equiv(-1)^{j-1}j$. Since $w$ is a nonzero multiple of\r\n$|a-2|$, it follows that $j\\ge A_0-2$ if $a>0$ and\r\n$j\\ge A_0+2$ if $a<0$. Induction gives\r\n$U_j\\ge(A_0-1)^{j-1}$ for $j\\ge1$. Therefore\r\n$|t|\\ge(A_0-1)^{A_0-4}$. Finally $A_0\\ge c-1$, which proves\r\n\\eqref{v15:base248:eq:stronglucas}.\r\n\r\nIf $n-\\beta\\ne0$, let $J$ be its nonzero reduced numerator.\r\nThe local input comparisons make both radicals divide $J$,\r\nwhile $|J|\\le2B\\exp(h(\\beta))$. For $B^2\\ge2M_2$,\r\n\\eqref{v15:base248:eq:heighttransfer} gives\r\n\\[\r\n \\log B\\le4\\log(2C)+7\\log2+7h(\\beta)\r\n \\le C'+7C_3\\ell^{-L_N}c\\left(1+\\frac{\\log c}{3}\\right).\r\n\\]\r\nChoose $N$ sufficiently large that $7C_3\\ell^{-L_N}\\le1$.\r\nThe right side is then at most $C'+c+(c\\log c)/3$, which is\r\nstrictly smaller than $(c-5)\\log(c-2)$ for all sufficiently large\r\n$c$. Since $c\\ge\\ell^{L_N}\\to\\infty$ uniformly with $N$,\r\nthis contradicts~\\eqref{v15:base248:eq:stronglucas}.\r\nHence $n=\\beta\\in\\Z$. If $X=u/v$ is reduced with $v>0$, then\r\n$v^2\\mid51$, and squarefreeness of $51$ gives $v=1$.\r\nAll bounds depend only on fixed constants. Since $L_N$ is increasing,\r\na single $N_0$ works for every larger $N$. Its dependence on the\r\naggregate additive constant is ineffective.\r"
+    },
+    {
+      "start": 33166,
+      "end": 33196,
+      "text": "\\subsection{Root-product charts: 245 to 240}\r\nPut $d=3-\\sqrt2$ and $D=d^2$. For each of the four source root blocks the old field coordinates satisfy $x=h^2$, $j^2=x^2-D$ and\r\n\\begin{align*}\r\nhI&=jV+DVW+xQ,&hK_1&=-jQ-xV-DQW,\\\\\r\nVQ&=xW,&V^2+Q^2+2jW+DW^2&=1.\r\n\\end{align*}\r\nHere $F_U$ and $F_V$ are the retained reciprocal-abscissa-square tests of the associated points $U,V$: the source ratio equations give $I^2=x(1-DF_U)$ and $K_1^2=x(1-DF_V)$. The retained $z_V$ is the plain formal coordinate $-x(V)/y(V)$, with the source zero convention at the identity. The primary comparison $L$ satisfies $V S_H=I L$, so it represents the original primary formal-coordinate ratio wherever the denominator is nonzero, with the same cleared equation at zero. These are existing consumers, not newly imposed nonvanishing assumptions. Replace these eight field coordinates by seven $A,B,C,E,i,k,u$, imposing\r\n\\begin{gather*}\r\n A^2+B^2+2CE=0,\\quad AC=d(i-k),\\quad BE=d(i+k),\\\\\r\n (A+B)^2=4Du,\\quad F_U=u^2,\\quad i^2+DF_U=1,\\quad k^2+DF_V=1,\\\\\r\n A-B+2dkz_V=0,\\qquad (A+B)S_H=2diL.\r\n\\end{gather*}\r\nThe last two equations replace the old reciprocal and primary ratio equations. Their number is unchanged. Take rational components with the explicit conventions of Section~\\ref{v15:component-typing}.\r\n\r\nThe forward map is\r\n\\begin{gather*}\r\n A=d(V+Q)/h,\\quad B=d(V-Q)/h,\\quad C=(x+j+DW)/h,\\\\\r\n E=C-2h,\\quad i=I/h,\\quad k=K_1/h,\\quad u=(A+B)^2/(4D).\r\n\\end{gather*}\r\nHere $h\\ne0$ follows from $j^2=h^4-D$ at a real embedding. The inverse is\r\n\\begin{gather*}\r\n h=(C-E)/2,\\quad x=h^2,\\quad j=(B^2+C^2-A^2-E^2)/4,\\\\\r\n V=h(A+B)/(2d),\\quad Q=h(A-B)/(2d),\\quad\r\n I=hi,\\quad K_1=hk,\\quad W=(A^2-B^2)/(4D).\r\n\\end{gather*}\r\nFor verification put $\\alpha=(B^2+C^2)/2$ and $\\beta_1=(A^2+E^2)/2$. The new equations give $\\alpha+\\beta_1=2h^2$ and $\\alpha\\beta_1=D$, using\r\n\\[(B^2+C^2)(A^2+E^2)=(AB-CE)^2+(AC+BE)^2.\\]\r\nThus $j^2=h^4-D$ and $h\\ne0$. Also $j\\ne0$, since $h^4=d^2$ would force $d$ to be a square in $K$, contrary to $\\operatorname{Norm}(d)=7$. Substitution proves both compositions and all retained equations. No division by $A\\pm B,i,k,C,E$ is made, so their zero strata survive.\r\n\r\nFour blocks save eight rational coordinates. Retaining the two components of $j_S$ and adding one rational trace output $T=\\tfrac14\\operatorname{Tr}_{K/\\Q}\\sum h_\\ell^2$ gives $245-8+2+1=240$, with 214 residuals. The scalar ratio uses $h_S=(C_S-E_S)/2$ and the retained quadratic expression for $j_S$.\r\n\r"
+    }
+  ],
+  "ir_sha256": "0839eb623c76ba462eec8842dc5b8c85fef85cc924c9daa98f35a83ae61948e0",
+  "root3_coordinates": [
+    {
+      "id": 189,
+      "name": "rootProduct.3.A.0.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 190,
+      "name": "rootProduct.3.A.1.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 191,
+      "name": "rootProduct.3.B.0.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 192,
+      "name": "rootProduct.3.B.1.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 193,
+      "name": "rootProduct.3.C.0.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 194,
+      "name": "rootProduct.3.C.1.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 195,
+      "name": "rootProduct.3.E.0.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 196,
+      "name": "rootProduct.3.E.1.rescaled",
+      "kind": "base"
+    },
+    {
+      "id": 197,
+      "name": "rootProduct.3.i.0",
+      "kind": "base"
+    },
+    {
+      "id": 198,
+      "name": "rootProduct.3.i.1",
+      "kind": "base"
+    },
+    {
+      "id": 199,
+      "name": "rootProduct.3.k.0",
+      "kind": "base"
+    },
+    {
+      "id": 200,
+      "name": "rootProduct.3.k.1",
+      "kind": "base"
+    },
+    {
+      "id": 201,
+      "name": "rootProduct.3.u.0",
+      "kind": "base"
+    },
+    {
+      "id": 202,
+      "name": "rootProduct.3.u.1",
+      "kind": "base"
+    }
+  ],
+  "root3_consumers": [
+    {
+      "id": 100,
+      "parentRowId": 100,
+      "name": "residue.det1.factor1.0.definition",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [],
+          "coefficient": "-2401"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            23,
+            99
+          ],
+          "coefficient": "-37249"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            24,
+            99
+          ],
+          "coefficient": "34848"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            60,
+            97
+          ],
+          "coefficient": "4802"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            76,
+            97
+          ],
+          "coefficient": "-2401"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            97
+          ],
+          "coefficient": "-2401"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            147
+          ],
+          "coefficient": "2401"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            201,
+            201
+          ],
+          "coefficient": "-2401"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            202,
+            202
+          ],
+          "coefficient": "-4802"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "parentRowId": 101,
+      "name": "residue.det1.factor1.1.definition",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            23,
+            99
+          ],
+          "coefficient": "25476"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            24,
+            99
+          ],
+          "coefficient": "-25476"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            61,
+            97
+          ],
+          "coefficient": "9604"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            77,
+            97
+          ],
+          "coefficient": "-9604"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            148
+          ],
+          "coefficient": "2401"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            201,
+            202
+          ],
+          "coefficient": "-4802"
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "parentRowId": 152,
+      "name": "rootProduct.3.equation1.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            189
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            190
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            191
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            192,
+            192
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            193,
+            195
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            194,
+            196
+          ],
+          "coefficient": "4"
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "parentRowId": 153,
+      "name": "rootProduct.3.equation1.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            190
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            192
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            193,
+            196
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            194,
+            195
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "parentRowId": 154,
+      "name": "rootProduct.3.equation2.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            197
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            198
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            199
+          ],
+          "coefficient": "3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            200
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            193
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            194
+          ],
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "parentRowId": 155,
+      "name": "rootProduct.3.equation2.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            197
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            198
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            199
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            200
+          ],
+          "coefficient": "3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            194
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            193
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "parentRowId": 156,
+      "name": "rootProduct.3.equation3.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            197
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            198
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            199
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            200
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            195
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            192,
+            196
+          ],
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "parentRowId": 157,
+      "name": "rootProduct.3.equation3.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            197
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            198
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            199
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            200
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            196
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            192,
+            195
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "parentRowId": 158,
+      "name": "rootProduct.3.equation4.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            201
+          ],
+          "coefficient": "-44"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            202
+          ],
+          "coefficient": "48"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            189
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            191
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            190
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            192
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            191
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            192,
+            192
+          ],
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "parentRowId": 159,
+      "name": "rootProduct.3.equation4.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            201
+          ],
+          "coefficient": "12"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            96,
+            202
+          ],
+          "coefficient": "-22"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            190
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            192
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            191
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            192
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "parentRowId": 162,
+      "name": "rootProduct.3.equation6.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            98
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            197,
+            197
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            198,
+            198
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            201,
+            201
+          ],
+          "coefficient": "11"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            201,
+            202
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            202,
+            202
+          ],
+          "coefficient": "22"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "parentRowId": 163,
+      "name": "rootProduct.3.equation6.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            197,
+            198
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            201,
+            201
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            201,
+            202
+          ],
+          "coefficient": "11"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            202,
+            202
+          ],
+          "coefficient": "-6"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "parentRowId": 164,
+      "name": "rootProduct.3.equation7.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            31,
+            98
+          ],
+          "coefficient": "11"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            32,
+            98
+          ],
+          "coefficient": "-24"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            98
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            199,
+            199
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            200,
+            200
+          ],
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "parentRowId": 165,
+      "name": "rootProduct.3.equation7.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            31,
+            98
+          ],
+          "coefficient": "-3"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            32,
+            98
+          ],
+          "coefficient": "11"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            199,
+            200
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "parentRowId": 166,
+      "name": "alternate.direct.3.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            49,
+            199
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            49,
+            200
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            50,
+            199
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            50,
+            200
+          ],
+          "coefficient": "-12"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            217
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            218
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            217
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            192,
+            218
+          ],
+          "coefficient": "-2"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "parentRowId": 167,
+      "name": "alternate.direct.3.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            49,
+            199
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            49,
+            200
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            50,
+            199
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            50,
+            200
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            189,
+            218
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            190,
+            217
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            191,
+            218
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            192,
+            217
+          ],
+          "coefficient": "-1"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "parentRowId": 168,
+      "name": "rootProduct.3.equation9.0",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            19,
+            189
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            19,
+            191
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            20,
+            190
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            20,
+            192
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            47,
+            197
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            47,
+            198
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            48,
+            197
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            48,
+            198
+          ],
+          "coefficient": "-12"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "parentRowId": 169,
+      "name": "rootProduct.3.equation9.1",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            19,
+            190
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            19,
+            192
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            20,
+            189
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            20,
+            191
+          ],
+          "coefficient": "1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            47,
+            197
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            47,
+            198
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            48,
+            197
+          ],
+          "coefficient": "-6"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            48,
+            198
+          ],
+          "coefficient": "4"
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "name": "trace.first",
+      "terms": [
+        {
+          "parameterPower": 0,
+          "monomial": [
+            165,
+            165
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            165,
+            167
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            166,
+            166
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            166,
+            168
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            167,
+            167
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            168,
+            168
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            193,
+            193
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            193,
+            195
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            194,
+            194
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            194,
+            196
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            195,
+            195
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            196,
+            196
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            207,
+            207
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            207,
+            209
+          ],
+          "coefficient": "2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            208,
+            208
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            208,
+            210
+          ],
+          "coefficient": "4"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            209,
+            209
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            210,
+            210
+          ],
+          "coefficient": "-2"
+        },
+        {
+          "parameterPower": 0,
+          "monomial": [
+            223
+          ],
+          "coefficient": "1"
+        }
+      ]
+    }
+  ]
+}

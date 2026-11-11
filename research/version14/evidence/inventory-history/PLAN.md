@@ -1,0 +1,13 @@
+# Version14 application inventory work
+
+Author work is confined to this directory. Frozen R6, manuscript sources and the repository remain unchanged.
+
+The deliverable retains39 baseline application identities and351 explicit obligations. Each current record will bind the exact prior record, identify changed dependencies, state which old hypotheses and conclusions remain valid, and bind the actual final addition/manuscript consumers. Unchanged old text alone will not justify carry-forward when its objects or downstream uses changed.
+
+Selection has two distinct graphs. The literal assembly graph follows the frozen IR comparison parents and transported component dependencies from published394 to corrected299 and selected ordinary314. The current proof-use map separately distinguishes retained applications, supporting source arguments, superseded intermediate circuits and unused alternatives. Neither all48 R6 entries nor all263 R6 edges will be declared directly consumed by Version14.
+
+Portable output paths are `docs/manuscript-revisions/version14/` with APPLICATIONS.json, validation-schema.json, validate-applications.py, integration-map.json, new-application-rows.json, GUIDE.md, author application contracts and inventory-install-manifest.json. The validator CLI will support `--repo . --self-test`. Evidence from outside the released repository will be copied without changing bytes into content-addressed public evidence paths. Source relocation metadata will record the original path and exact hash.
+
+The policy release builder owns assembly of manuscripts/quartic_v14.tex and the exact edit records. Mathematical edits use contract ID QUARTIC-299-COMPOSITION. The bounded installer consumes the final authored contract and application records. It creates no current registry or acceptance files. Those require independently authored decisions bound to final contracts and final manuscript. No successful historical component review is relabeled as acceptance of the new assembled exposition.
+
+The final addition is still being authored. Until it is frozen, the installer must not emit final span bindings. This bounded stage supplies the route selection,39 explicit comparison notes, the portable validation schema, installer and negative tests. The final351 obligation statements and their exact source/consumer spans remain mandatory authored inputs. The input contract documents that handoff. Existing component deltas and complete finite replay remain in the separately reviewed artifact package; this installer binds their exact selected files rather than pretending to rerun that proof.

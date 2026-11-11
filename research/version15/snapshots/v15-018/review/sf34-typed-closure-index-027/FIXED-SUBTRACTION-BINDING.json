@@ -1,0 +1,50 @@
+{
+  "status": "author dependency binding; historical result preserved; current-use comparison pending source-first review",
+  "source_script": {
+    "path": "work/jose248-audit-20261109/repository/computation/quartic/check_z_difference_identity.py",
+    "sha256": "8d4c2abadce33557fb1f166454d934638213e57a48211b6cb8e0ea3d0ad8c892"
+  },
+  "historical_result": {
+    "path": "work/jose248-audit-20261109/repository/computation/quartic/family_abc97_v17/z-difference-identity.json",
+    "sha256": "5e912d8a2792f61f27a46a47803ba6e051d68da6b150a663f7139813a601f0db"
+  },
+  "not_rerun": "No new PARI execution is claimed. The historical result says PARI2.17.2 and nine exact identities.",
+  "current_source_windows": [
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32500,
+        32536
+      ],
+      "excerpt_sha256": "e42bf3d4c3edbd95121ed0c44d8fb390f5cc87b6ab0b8aee65041db887ad14ff",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    },
+    {
+      "path": "work/version15-protocold-233-20261110/repository/manuscript/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "lines": [
+        32621,
+        32706
+      ],
+      "excerpt_sha256": "f42064572ae27c95d33b4156f9e08ab3884a14cca8e0ff14577426fbd9b26aff",
+      "excerpt_convention": "split raw bytes at LF; join selected lines with LF; retain CR; no final LF"
+    }
+  ],
+  "H_use": {
+    "substitution": "x=chi, S=S_H, g=g_H",
+    "input": "chi*f=1 and S_H^2=chi-Df",
+    "output": "f(V0)=chi*g_H^2=g_H^2/f and z(H-P)=N/D0",
+    "normalization": "Multiply N and D0 by the nonzero unit 3+2rho for the reduced N_H,D_H printed at32674 onward.",
+    "remaining": "E[2](K),P+E[2](K),-P+E[2](K) must be excluded by the existing149 argument before quotient use."
+  },
+  "S_use": {
+    "substitution": "x=h_S^2, S=j_S/h_S, g=g_S/h_S",
+    "nonzero": "h_S!=0 is supplied by the square-abscissa root chart; current025 checks that domain.",
+    "equation": "Multiplying the certificate g equation by h_S yields exactly the retained scalar g_S equation.",
+    "numerator": "h_S*N=(-660+417rho)h_S+(-228+112rho)j_S=N_S",
+    "denominator": "h_S*D0=(-704+384rho)h_S+(660-417rho)j_S+(6888-5040rho)g_S=D_S",
+    "output": "z(S-P)=N_S/D_S. The retained equation Z*D_S=-N_S*S_H then gives the scalar ratio on its established nonzero domain.",
+    "remaining": "Root point membership S=[a]P, the gS-real-component guard implying a!=1, and absence of other torsion-coset exceptions are arithmetic prerequisites from the current proof. The certificate alone is not their proof."
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "state": "proposed dispositions for independent review",
+  "authorship_disclosure": "Mapper did not author these LP05/S13 proofs or cited reviews; earlier normalization/selection work is separate.",
+  "rows": [
+    {
+      "finding_id": "LP05-F01",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/11-gtz-lp05/FINDINGS.json",
+        "sha256": "52bf2bcf23f3dbb468a8ee52f449c79a1e4cc8d7da09b4da9ae4b26d75ec4a11",
+        "json_pointer": "/findings/0"
+      },
+      "original_object": {
+        "id": "LP05-F01",
+        "source": {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898
+        },
+        "locator": "p.1359, two function displays and (E.3)",
+        "finding": "Missing factorial powers fail to cancel the top phase on graph(X,d! X).",
+        "history": "The separate author erratum p.6 explicitly identifies these omissions; this is not a new historical discovery.",
+        "proposed_repair": "proof.tex (11)-(12) retain F^tensor C and chi^tensor C, with a direct top-phase calculation.",
+        "related_use_ids": [
+          "R01",
+          "R02",
+          "R04",
+          "R08",
+          "R09"
+        ],
+        "status": "author repair proposed, independent acceptance and manuscript incorporation pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Restores both factorial tensor powers on the actual top graph; the opposite vertical phases cancel exactly.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/11-gtz-lp05/proof.tex",
+          "sha256": "b69f434a77b8c2509d132a6a7d58e31185b1abb2639314afa4d11cadb8604ab2",
+          "start_line": 273,
+          "end_line": 330,
+          "excerpt_sha256": "f8f845cabc0561718e69e36f450c5202441a4385f0c64261caeef55d64fe8553",
+          "excerpt": "\\begin{lemma}[Raw diagonal identity]\\label{lem:raw}\nThe diagonal $\\widetilde\\chi(\\Delta n)$ is equivalent at multidegree $d$\nto $\\chi(n)^{\\otimes C}$. In particular for $k=1$ the multiplier is $d!$.\n\\end{lemma}\n\\begin{proof}\nOn the positive Rees algebra $\\mathcal R$ of Section~\\ref{sec:scale}, set\n\\[\n T(Xt^a)=\\left(X,a!\\sum_{w(J)=a}X\\epsilon_J\\right)\n                       \\in\\g\\oplus\\widetilde\\g.           \\tag{8}\n\\]\nThis is a rational Lie map. Indeed for each $U$ with $w(U)=a+b$ the\nnumber of ordered disjoint decompositions $U=J\\sqcup L$ with\n$w(J)=a,w(L)=b$ is $\\prod_i\\binom{a_i+b_i}{a_i}$.\nMultiplying by $a!b!$ gives $(a+b)!$. Thus\n$[T(Xt^a),T(Yt^b)]=T([X,Y]t^{a+b})$ exactly. If $a+b$ is outside\nthe support, both sides vanish by $[\\g_a,\\g_b]\\subseteq\\g_{a+b}=0$.\n\nDefine $\\mathfrak k_b=T(\\bigoplus_{a\\geq b,a\\ne0}\\g_a t^a)$,\n$K_b=\\exp\\mathfrak k_b$. As before these give a descending, rational,\ntaut filtration on $K_0\\subseteq G\\times\\widetilde G$, with lattice\n$\\Lambda=K_0\\cap(\\Gamma\\times\\widetilde\\Gamma)$. They give the actual\ncomparison orbit\n\\[\n (g(n),\\widetilde g(\\Delta n))\n       =\\prod_a\\exp\\left(n^aT(X_at^a)\\right).             \\tag{9}\n\\]\nNo asserted equality of top weights is being used to generate a\nnon-descending filtration: every defining sum includes all $a\\geq b$.\nThe top is exactly\n\\[\n K_d=\\{(\\exp X,\\exp(CX\\epsilon_{[D]})):X\\in\\g_d\\}.       \\tag{10}\n\\]\nIt is rational and central. The function on the comparison nilmanifold is\n\\[\n \\mathcal F(x,y)=F(x)^{\\otimes C}\\otimes\\overline{\\widetilde F(y)}.\n                                                        \\tag{11}\n\\]\nIts two vertical phases on (10) are $C\\eta(\\exp X)$ and\n$-\\widetilde\\eta(\\exp(CX\\epsilon_{[D]}))=-C\\eta(\\exp X)$.\nTherefore (11) descends to a Lipschitz function $F'$ on\n$K_0/K_d$ with the projected lattice $\\Lambda'$ and quotient filtration.\nWriting $k_a'$ for the projected $\\exp T(X_a t^a)$ gives the corrected\nidentity\n\\[\n \\chi(n)^{\\otimes C}\\otimes\\overline{\\widetilde\\chi(\\Delta n)}\n       =F'\\left(\\prod_a(k_a')^{n^a}\\Lambda'\\right).        \\tag{12}\n\\]\nThe right side has top group zero, so it has support strictly below $d$.\nFor $k=1$, (11) contains $F^{\\otimes d!}$ and (12) contains\n$\\chi^{\\otimes d!}$. Dropping either factor would leave the uncancelled\nvertical phase $(1-d!)\\eta$ and would not prove the claimed equivalence.\n\nThe diagonal itself is a degree-$d$ nilcharacter: coarsen (5) by taking\nthe direct sum of components with $w(J)\\geq a$ at index $a$. This is\ndescending, rational and taut, its top is still the $J=[D]$ component,\nand (7) on the diagonal is polynomial for it. This verifies the exact\nsymbol domain used in (12), without assuming that arbitrary linear\nmaps preserve arbitrary multidegree filtrations.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        }
+      ],
+      "affected_claims": [
+        "GI-11-LP05"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "LP05-F02",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/11-gtz-lp05/FINDINGS.json",
+        "sha256": "52bf2bcf23f3dbb468a8ee52f449c79a1e4cc8d7da09b4da9ae4b26d75ec4a11",
+        "json_pointer": "/findings/1"
+      },
+      "original_object": {
+        "id": "LP05-F02",
+        "source": {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898
+        },
+        "locator": "p.1359 arbitrary auxiliary F-tilde followed by clear symmetry; E.10 pp.1363-1364 inherits it",
+        "finding": "Equivariant g-tilde and arbitrary vertical F-tilde do not establish literal symmetric chi-tilde.",
+        "history": "New connecting argument required within the read scope. Checked final E.9/E.10 and corresponding author-v5 construction; no claim that all historical literature lacks a repair.",
+        "proposed_repair": "proof.tex (13)-(15): normalized nonvanishing symmetric tensor product; exact m-fold diagonal and C^2 division of original input.",
+        "related_use_ids": [
+          "R01",
+          "R02",
+          "R03",
+          "R04",
+          "R05",
+          "R06",
+          "R07",
+          "R08",
+          "R09"
+        ],
+        "status": "author repair proposed; arbitrary-F inference remains recorded as unsupported, not a counterexample to the theorem"
+      },
+      "proposed_status": "repaired",
+      "reason": "Constructs a nonvanishing normalized symmetric tensor product and divides the original input by C squared before construction. Arbitrary auxiliary tests are not asserted symmetric.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/11-gtz-lp05/proof.tex",
+          "sha256": "b69f434a77b8c2509d132a6a7d58e31185b1abb2639314afa4d11cadb8604ab2",
+          "start_line": 333,
+          "end_line": 387,
+          "excerpt_sha256": "0e5160d1bac0d33c419abf47cf45f25a4cbadf149b51ddd6fe120e5c16d4a7ce",
+          "excerpt": "\\section{Literal symmetry and division before construction}\\label{sec:symmetry}\nThe map $\\widetilde g$ is equivariant under block permutations:\n$\\widetilde g(\\sigma z)=\\sigma\\widetilde g(z)$ after fixing the compatible\naction convention. An arbitrary $\\widetilde F$ need not be invariant,\nso equivariance alone does not prove that $\\widetilde\\chi$ is symmetric.\nWe supply the missing transition explicitly.\n\nLet $V$ be the finite-dimensional Hermitian target of $\\widetilde F$ and\n$m=|P|=C$. Regard $\\Sym^m V$ as the symmetric subspace of $V^{\\otimes m}$\nwith its induced norm, and write $\\odot$ for symmetrised tensor product.\nOn the compact nilmanifold put\n\\[\n B(x)=\\mathop{\\bigodot}_{\\sigma\\in P}\\widetilde F(\\sigma x),\n \\qquad F_{\\rm sym}(x)=B(x)/\\|B(x)\\|.                    \\tag{13}\n\\]\nThe product of nonzero vectors in the symmetric algebra is nonzero:\nafter a choice of basis this algebra is a polynomial ring over $\\C$,\nan integral domain. Hence $\\|B(x)\\|>0$ everywhere. Continuity and\ncompactness give a positive minimum, so (13) is Lipschitz. Reindexing\nthe finite product proves exact $P$-invariance. Since $P$ fixes the top\ngroup, (13) has vertical frequency $m\\widetilde\\eta$.\nConsequently\n\\[\n \\chi_{\\rm sym}(z)=F_{\\rm sym}(\\widetilde g(z)\\widetilde\\Gamma)\n                                                        \\tag{14}\n\\]\nis a literally block-symmetric multidegree-$(1,\\ldots,1)$ nilcharacter.\nOn a block diagonal, $\\sigma\\widetilde g(\\Delta n)=\\widetilde g(\\Delta n)$.\nAll factors in (13) then equal the same unit vector $v$, and\n$v^{\\odot m}=v^{\\otimes m}$ has norm one. Thus the diagonal of (14)\nis exactly $\\widetilde\\chi(\\Delta n)^{\\otimes m}$ in the symmetric\nsubspace, not merely a proportional vector with an uncontrolled scalar.\nLemma~\\ref{lem:raw} therefore gives\n\\[\n [\\chi_{\\rm sym}(\\Delta n)]=Cm[\\chi(n)].                 \\tag{15}\n\\]\n\n\\begin{theorem}[E.9 and E.10 with a symmetric output]\\label{thm:multi}\nFor a multidegree-$d$ nilcharacter $\\chi$ there is a literally\nblock-symmetric multidegree-$(1,\\ldots,1)$ nilcharacter $M(\\chi)$\nwhose block diagonal is equivalent to $\\chi$. The one-variable case\nis the asserted symmetric E.9 output. The assertion holds on any\ngiven limit subset after restriction.\n\\end{theorem}\n\\begin{proof}\nIf $d\\ne0$, first use Corollary~\\ref{cor:divide} with $Q=Cm=C^2$\nto choose the specified representative $\\rho$ with $[\\chi]=Cm[\\rho]$.\nApply (4)--(14) to this $\\rho$, including its actual polynomial\ncoefficients, lattice, function and vertical frequency. Equation (15)\nnow identifies its output diagonal with $[\\chi]$. We do not divide\nthe already symmetrised function and assume that its symmetry survives.\nIf $C=1$, all constructions and division remain valid. Coordinates\nwith $d_i=0$ have empty blocks; the normalised polynomial is independent\nof them. If all $d_i=0$, the original sequence is a constant unit vector\nand that vector on the zero-variable domain gives the assertion exactly.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        }
+      ],
+      "affected_claims": [
+        "GI-11-LP05"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "LP05-F03",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/11-gtz-lp05/FINDINGS.json",
+        "sha256": "52bf2bcf23f3dbb468a8ee52f449c79a1e4cc8d7da09b4da9ae4b26d75ec4a11",
+        "json_pointer": "/findings/2"
+      },
+      "original_object": {
+        "id": "LP05-F03",
+        "source": {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898
+        },
+        "locator": "pp.1321-1322, (13.14)-(13.17)",
+        "finding": "The printed shifts use sum_j omega_j h_(s-2) rather than h_j. Even after correcting that index, the printed C^|omega| and (-1)^|omega| yield (-1)^(s-2)(s-2)! on an (s-2)-linear diagonal, whereas (13.16) prints +s!.",
+        "evidence": "PDF pages 91-92 visually inspected. For r=1, A(n)-A(n+h)=-A(h); in general only assignments using every shift survive the alternating sum, each with sign (-1)^r, and there are r! such assignments.",
+        "history": "Located in bounded related-use reading; no whole-history search or independent decision yet.",
+        "proposed_repair": "Section 13 author/reviewer must determine exact corrected shifts and sign, and recheck downstream zero-symbol inference. The overall sign may be immaterial to that zero consequence, but the printed exact identity still needs disposition.",
+        "related_use_ids": [
+          "R09"
+        ],
+        "status": "open follow-up outside LP05 theorem claim; reported to root and Theta"
+      },
+      "proposed_status": "repaired",
+      "reason": "Uses independent h_j shifts and the actual negative precursor alpha-prime. Final coefficient is (-1)^(s-1)s!, rather than silently retaining the printed positive sign.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 229,
+          "end_line": 295,
+          "excerpt_sha256": "261f623cd279f1480c34bda199deae9d6d4d90426f13084694845b1d46e13d0a",
+          "excerpt": "From (3),(4), linearity in the first slot, and last-block symmetry,\n\\begin{align}\n [\\tau(a,b,n)]\n &=s\\bigl(T(b;(n+a)^r)-T(b;n^r)\\bigr)\\notag\\\\\n &=s\\sum_{j=1}^r {r\\choose j}T(b;a^j,n^{r-j}).           \\tag{13}\n\\end{align}\nIn the first line $(n+a)^r$ denotes repeated slots.\nThe leading term is $srT(b;a,n^m)$. Let\n\\[\n R_\\tau(a,b,n)=s\\sum_{j=2}^r {r\\choose j}T(b;a^j,n^{r-j}). \\tag{14}\n\\]\nEvery summand has at most $s-3$ slots equal to $n$.\nSubstitute $a=c_0-b-b'$ in (9), remove $c_0$ as just justified, and\nexpand the $j$ copies of $-b-b'$ by LP13. The leading symbol of $\\alpha$ is\n\\[\n -sr\\,T(b-b';b+b',n^m).                                \\tag{15}\n\\]\nThis has the order of the two distinguished entries dictated by (13).\nInterchanging them would require an unproved first-slot symmetry and is\nnot permitted. The remainder is the difference of the two substitutions\nin (14), each fully expanded into entries in $\\{b,b',n\\}$ and still with\nat most $s-3$ copies of $n$.\n\nApply the mixed difference (12). At the level of degree-$s$ symbols,\nconstant slots vanish; a monomial with no $b$ or no $b'$ cancels.\nIn (15) the pure terms $T(b;b,n^m)$ and $T(b';b',n^m)$ therefore disappear.\nThere is a globally represented unit nilcharacter $\\beta$ such that\n\\[\n [\\alpha'(b,b',n)]=-sr\\bigl(T(b;b',n^m)-T(b';b,n^m)\\bigr)+[\\beta(b,b',n)].\n                                                               \\tag{16}\n\\]\nHere $[\\beta]$ is an explicit finite integer linear combination of symbols\n$T(v_1;\\ldots,v_s)$, with every $v_i\\in\\{b,b',n\\}$ and at most $s-3$\nslots equal to $n$. More precisely, expand (14) after the two substitutions\n$(a,b)=(-b-b',b)$ and $(-b-b',b')$, subtract the second, then delete the\nmonomials missing $b$ or missing $b'$. Tensor the corresponding actual\npullbacks of $\\widetilde\\chi$ with their signed integer multiplicities.\nThis constructs $\\beta$ and proves (16). Thus the needed remainder\nassertion is stronger than merely a separate bound on its degree in $n$.\n\nDefine the actual unit nilcharacter\n\\[\n \\sigma(b,b',h_1,\\ldots,h_m,n)=\n \\bigotimes_{\\omega\\in\\{0,1\\}^m}\\mathcal C^{|\\omega|}\n   \\alpha'\\left(b,b',n+\\sum_{j=1}^m\\omega_jh_j\\right),    \\tag{17}\n\\]\nwhere $\\mathcal C$ is conjugation. Every shift has its own $h_j$.\nIt has total degree at most $s$ by linear pullback and tensor arithmetic.\nApply the alternating sum to (16). In a term with fewer than $m$ slots\nequal to $n$, expand each such slot into $n$ and the available $h_j$.\nIf a subset $S$ of the shift labels is used, its coefficient contains\n\\[\n \\sum_{\\omega:\\,\\omega_j=1\\ (j\\in S)}(-1)^{|\\omega|}=0\n \\quad\\hbox{unless }S=[m].\n\\]\nThere are too few slots to use all $m$ labels, so every $\\beta$ term\nvanishes. For the leading term there are exactly $m!$ surviving bijections\nof labels to slots, each with coefficient $(-1)^m$. Last-block symmetry\nidentifies their values. With the minus sign in (16), the exact result is\n\\[\n [\\sigma]=(-1)^{s-1}s!\n \\bigl(T(b;b',h_1,\\ldots,h_m)-T(b';b,h_1,\\ldots,h_m)\\bigr). \\tag{18}\n\\]\nThe unused coordinate $n$ on the right is still a coordinate of the same\ndomain. Formula (18) keeps the actual definitions (9),(12),(17). If one\ninstead conjugates $\\alpha$ and $\\alpha'$ explicitly, its coefficient\nchanges sign; silently using the other object is not an identification.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F01",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/0"
+      },
+      "original_object": {
+        "id": "S13-F01",
+        "locator": "Theorem7.4 pp1271 and1315",
+        "available_vs_needed_difference": "Both print strict<s-2 correlation, while7.1 supplies degree<=s-2.",
+        "proposed_derivation": "Our Theorem1 explicitly assumes<=s-2 and Section2 derives the needed phi/shift interface.",
+        "use_ids": [
+          "S13-U02"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Selects degree-at-most s-2 lower nilcharacters from the actual hypothesis and retains them through the plain-correlation application and shift-tensor reduction.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 88,
+          "end_line": 158,
+          "excerpt_sha256": "738f125d84ada9413879be0ac15bcf17234245838ca81c0876de8e2f5fff3ee0",
+          "excerpt": "\\section{Plain correlation and retention of the lower factors}\nBy E.5/E.6 in the ordinary one-dimensional degree ordering and Appendix A\nselection, after restricting to a still dense\ninternal subset of $H$, choose degree-at-most-$(s-2)$ unit nilcharacters\n$\\varphi_h$ so that $\\Delta_hf$ plainly correlates with\n$\\chi(h,\\cdot)\\otimes\\varphi_h$. The family is internal, with a standard\nfinite geometry list, bounded dimensions and common Lipschitz bounds.\nHere the selection is into the countable increasing complexity presentation\nof the nilcharacter class. An internal image contained in that union is\ncontained in a standard stage by Appendix A compactness; otherwise nested\nnonempty internal sets of parameters outside successive stages give an\nimage outside the union. Positive correlations can likewise be made\nuniform by A.6. Pad targets by zero coordinates to one fixed dimension.\nOutside the retained set use a fixed constant unit nilcharacter, and keep\nall parameter indicators separately. This preserves the unit norm needed\nfor the identities below.\nConjugate the selected lower nilcharacter if needed to match the published\ncorrelation convention. A finite pigeonhole also fixes a scalar coordinate\nof $\\chi(h,\\cdot)\\otimes\\varphi_h$ retaining plain correlation on a dense\nset. Thus the scalar version of Proposition 8.4 suffices; the full unit\nvectors remain available behind these coordinates.\n\nApply published Proposition 8.4 to this actual family. Its hypotheses are\nplain correlation on $J$, internal dependence, bounded functions and a\ndense subset of $I_1$; all hold. Its conclusion gives bias for many additive\nquadruples $(h_1,h_2,h_3,h_4)$ in that subset, with tensor signs $+,+,-,-$\nand the shift $n+h_1-h_4$ on the second and fourth factors. Parameterise\n\\[\n (h_1,h_2,h_3,h_4)=(h_0+a,h_0+b,h_0+a+b,h_0).\n\\]\nThis is an injective correspondence with the retained quadruples.\n$h_0\\in I_1$ and $a,b\\in I_2$. Pigeonhole in $h_0$ to obtain one fixed\n$h_0$ and a dense set of pairs $(a,b)\\in I_2^2$.\nDefine the global unit nilcharacter\n\\[\n \\tau(a,b,n)=\\chi(h_0+a,n)\\otimes\\chi(h_0+b,n+a)\n \\otimes\\overline{\\chi(h_0+a+b,n)}\n \\otimes\\overline{\\chi(h_0,n+a)}.                         \\tag{4}\n\\]\nIt has total degree at most $s$, not degree three for general $s$.\n\nFor any coordinate of a unit nilcharacter $v$, the exact identity\n\\[\n v_j(n+a)=\\sum_k\\bigl(v_j(n+a)\\overline{v_k(n)}\\bigr)v_k(n) \\tag{5}\n\\]\nfollows from $\\sum_k|v_k(n)|^2=1$. The bracket is a coordinate of the\nshift tensor. Apply the project shift theorem to $\\varphi_{h_0+b}$ and\n$\\varphi_{h_0}$, with shift $a$. These brackets have degree at most\n$s-3$, uniformly in all parameters. Conjugate (5) when the shifted factor\nis conjugated. Thus the original bias implies degree-at-most-$(s-3)$ bias\nof\n\\[\n \\tau(a,b,n)\\otimes\\varphi_{h_0+a}(n)\\otimes\\varphi_{h_0+b}(n)\n \\otimes\\overline{\\varphi_{h_0+a+b}(n)}\n \\otimes\\overline{\\varphi_{h_0}(n)}.                      \\tag{6}\n\\]\nSelection gives internal scalar degree-at-most-$(s-3)$ tests with common\nbounds and finite geometries. A standard finite choice of coordinates\nretains a positive density of the pairs. Phase-align their scalar averages\nby a bounded parameter scalar, and set the test equal to zero on other\npairs. These factors are constant in $n$, so they have degree zero.\nWe obtain fixed scalar coordinates $t$ of $\\tau$ and $u,v,w,z$ of the\ndisplayed $\\varphi$ factors with\n\\[\n \\left|\\E_{a,b\\in I_2,n\\in J}\n t(a,b,n)u_a(n)v_b(n)\\overline{w_{a+b}(n)}\\overline{z(n)}\n p_{a,b}(n)\\right|\\gg1.                                 \\tag{7}\n\\]\nThe scalar $p_{a,b}$ is a uniformly bounded internal lower-degree family.\nFinite coordinate selection, rather than division by a coordinate, justifies\nthis passage even if individual coordinates vanish.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F02",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/1"
+      },
+      "original_object": {
+        "id": "S13-F02",
+        "locator": "Lemma13.3 p1319",
+        "available_vs_needed_difference": "Printed total degree3 is wrong for arbitrarys; simplification retainsa where cancellation givesb; tail bound must be<=s-3 for its stated quotient.",
+        "proposed_derivation": "Equations(4),(13)-(14) give total degrees and exactslot counts.",
+        "use_ids": [
+          "S13-U06"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Retains arbitrary-s total degree, the actual b slot, and explicit remainder with at most s-3 copies of n.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 215,
+          "end_line": 250,
+          "excerpt_sha256": "c06798efa26fff611250c482e2626f9e3f3b3eeaa507afd90a1112c77abfadad",
+          "excerpt": "\\section{Exact symbols and the lower-slot remainder}\\label{sec:algebra}\nConstants such as $h_0,c_0,b_0,b'_0$ are limit integers. Give the original\nmultidegree group its total-degree filtration generated by all components\nwhose total weight is \\emph{at least} the index, as verified in LP05.\nApply the uniform project ordinary-degree shift theorem on the full slot\ndomain to a constant translation in the relevant coordinate. Its difference\nhas degree at most $s-1$, and stays lower-degree under any fixed integer\nlinear pullback. Thus a constant added to a slot can be removed in the\ndegree-$s$ symbol. A slot consisting only of a constant becomes zero.\nLP13 additivity gives $T(\\ldots,0,\\ldots)=2T(\\ldots,0,\\ldots)$, so that\nsymbol is zero. This argument does not choose an implicit subgroup\nbasepoint for a fixed-slot orbit. The coarsening uses $|a|\\geq j$;\nthe opposite inequality printed in Example 6.11 is not used.\n\nFrom (3),(4), linearity in the first slot, and last-block symmetry,\n\\begin{align}\n [\\tau(a,b,n)]\n &=s\\bigl(T(b;(n+a)^r)-T(b;n^r)\\bigr)\\notag\\\\\n &=s\\sum_{j=1}^r {r\\choose j}T(b;a^j,n^{r-j}).           \\tag{13}\n\\end{align}\nIn the first line $(n+a)^r$ denotes repeated slots.\nThe leading term is $srT(b;a,n^m)$. Let\n\\[\n R_\\tau(a,b,n)=s\\sum_{j=2}^r {r\\choose j}T(b;a^j,n^{r-j}). \\tag{14}\n\\]\nEvery summand has at most $s-3$ slots equal to $n$.\nSubstitute $a=c_0-b-b'$ in (9), remove $c_0$ as just justified, and\nexpand the $j$ copies of $-b-b'$ by LP13. The leading symbol of $\\alpha$ is\n\\[\n -sr\\,T(b-b';b+b',n^m).                                \\tag{15}\n\\]\nThis has the order of the two distinguished entries dictated by (13).\nInterchanging them would require an unproved first-slot symmetry and is\nnot permitted. The remainder is the difference of the two substitutions\nin (14), each fully expanded into entries in $\\{b,b',n\\}$ and still with\nat most $s-3$ copies of $n$.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F03",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/2"
+      },
+      "original_object": {
+        "id": "S13-F03",
+        "locator": "Lemma13.4, (13.10) p1320; (13.13) p1321",
+        "available_vs_needed_difference": "Printed first two slots are interchanged relative to13.3 and actualalpha. Thus the printedalpha-prime leading sign is reversed.",
+        "proposed_derivation": "Keep actualalpha/alpha-prime, giving -sr T(b-b-prime;b+b-prime,n^m) and negative antisymmetric term in(16).",
+        "use_ids": [
+          "S13-U06"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Preserves the distinguished first slot and derives negative sr leading term from the actual alpha and alpha-prime definitions.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 229,
+          "end_line": 267,
+          "excerpt_sha256": "0a901dbb2b57386b6b44040b351fdde943141aeb6de90dc10c396b049bec398a",
+          "excerpt": "From (3),(4), linearity in the first slot, and last-block symmetry,\n\\begin{align}\n [\\tau(a,b,n)]\n &=s\\bigl(T(b;(n+a)^r)-T(b;n^r)\\bigr)\\notag\\\\\n &=s\\sum_{j=1}^r {r\\choose j}T(b;a^j,n^{r-j}).           \\tag{13}\n\\end{align}\nIn the first line $(n+a)^r$ denotes repeated slots.\nThe leading term is $srT(b;a,n^m)$. Let\n\\[\n R_\\tau(a,b,n)=s\\sum_{j=2}^r {r\\choose j}T(b;a^j,n^{r-j}). \\tag{14}\n\\]\nEvery summand has at most $s-3$ slots equal to $n$.\nSubstitute $a=c_0-b-b'$ in (9), remove $c_0$ as just justified, and\nexpand the $j$ copies of $-b-b'$ by LP13. The leading symbol of $\\alpha$ is\n\\[\n -sr\\,T(b-b';b+b',n^m).                                \\tag{15}\n\\]\nThis has the order of the two distinguished entries dictated by (13).\nInterchanging them would require an unproved first-slot symmetry and is\nnot permitted. The remainder is the difference of the two substitutions\nin (14), each fully expanded into entries in $\\{b,b',n\\}$ and still with\nat most $s-3$ copies of $n$.\n\nApply the mixed difference (12). At the level of degree-$s$ symbols,\nconstant slots vanish; a monomial with no $b$ or no $b'$ cancels.\nIn (15) the pure terms $T(b;b,n^m)$ and $T(b';b',n^m)$ therefore disappear.\nThere is a globally represented unit nilcharacter $\\beta$ such that\n\\[\n [\\alpha'(b,b',n)]=-sr\\bigl(T(b;b',n^m)-T(b';b,n^m)\\bigr)+[\\beta(b,b',n)].\n                                                               \\tag{16}\n\\]\nHere $[\\beta]$ is an explicit finite integer linear combination of symbols\n$T(v_1;\\ldots,v_s)$, with every $v_i\\in\\{b,b',n\\}$ and at most $s-3$\nslots equal to $n$. More precisely, expand (14) after the two substitutions\n$(a,b)=(-b-b',b)$ and $(-b-b',b')$, subtract the second, then delete the\nmonomials missing $b$ or missing $b'$. Tensor the corresponding actual\npullbacks of $\\widetilde\\chi$ with their signed integer multiplicities.\nThis constructs $\\beta$ and proves (16). Thus the needed remainder\nassertion is stronger than merely a separate bound on its degree in $n$.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F04",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/3"
+      },
+      "original_object": {
+        "id": "S13-F04",
+        "locator": "(13.14)-(13.17) pp1321-1322",
+        "available_vs_needed_difference": "Repeatedh_(s-2) does not supply independent shifts; the alternating cube factor also has a parity sign.",
+        "proposed_derivation": "Equation(17) usesh_j. With the additional precursorF03, actualobjects yield(-1)^(s-1)s! in(18).",
+        "use_ids": [
+          "S13-U07"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Independent shift labels and exact alternating expansion give (-1)^(s-1)s!, including the precursor sign.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 269,
+          "end_line": 295,
+          "excerpt_sha256": "c40ad4c7c939ef4e72108a47b889369d0c18543c8c167b123f581601b676ad93",
+          "excerpt": "Define the actual unit nilcharacter\n\\[\n \\sigma(b,b',h_1,\\ldots,h_m,n)=\n \\bigotimes_{\\omega\\in\\{0,1\\}^m}\\mathcal C^{|\\omega|}\n   \\alpha'\\left(b,b',n+\\sum_{j=1}^m\\omega_jh_j\\right),    \\tag{17}\n\\]\nwhere $\\mathcal C$ is conjugation. Every shift has its own $h_j$.\nIt has total degree at most $s$ by linear pullback and tensor arithmetic.\nApply the alternating sum to (16). In a term with fewer than $m$ slots\nequal to $n$, expand each such slot into $n$ and the available $h_j$.\nIf a subset $S$ of the shift labels is used, its coefficient contains\n\\[\n \\sum_{\\omega:\\,\\omega_j=1\\ (j\\in S)}(-1)^{|\\omega|}=0\n \\quad\\hbox{unless }S=[m].\n\\]\nThere are too few slots to use all $m$ labels, so every $\\beta$ term\nvanishes. For the leading term there are exactly $m!$ surviving bijections\nof labels to slots, each with coefficient $(-1)^m$. Last-block symmetry\nidentifies their values. With the minus sign in (16), the exact result is\n\\[\n [\\sigma]=(-1)^{s-1}s!\n \\bigl(T(b;b',h_1,\\ldots,h_m)-T(b';b,h_1,\\ldots,h_m)\\bigr). \\tag{18}\n\\]\nThe unused coordinate $n$ on the right is still a coordinate of the same\ndomain. Formula (18) keeps the actual definitions (9),(12),(17). If one\ninstead conjugates $\\alpha$ and $\\alpha'$ explicitly, its coefficient\nchanges sign; silently using the other object is not an identification.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F05",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/4"
+      },
+      "original_object": {
+        "id": "S13-F05",
+        "locator": "Section13 phi-prime definition and c substitution, p1320",
+        "available_vs_needed_difference": "Actual scalar Cauchy-Schwarz product requiresV_b=v_b w_(c-b), and sum of threeI2 variables lies inI6 rather thanI3.",
+        "proposed_derivation": "Equations(8)-(10) derive the signs, exact indicator and normalization.",
+        "use_ids": [
+          "S13-U05"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Actual scalar products give V_b=v_b w_(c-b), and c is in I6 with its exact cutoff and normalization.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 160,
+          "end_line": 213,
+          "excerpt_sha256": "692e2a9a4ce0bf90fdef154e509420a88c9ac994d4d2dbc00140bba1e553d25d",
+          "excerpt": "\\section{The three Cauchy--Schwarz eliminations}\nEvery average in this section has $n\\in J$. All bounds are standard.\nApplying Cauchy--Schwarz in $(a,n)$ to remove the bounded factor\n$u_a\\overline z$ in (7), and expanding the squared inner average, gives\n\\[\n \\left|\\E_{a,b,b'\\in I_2,n\\in J}\n t(a,b,n)\\overline{t(a,b',n)}v_b(n)\\overline{v_{b'}(n)}\n \\overline{w_{a+b}(n)}w_{a+b'}(n)\n p_{a,b}(n)\\overline{p_{a,b'}(n)}\\right|\\gg1.             \\tag{8}\n\\]\nPut $c=a+b+b'$. Keep $b,b'\\in I_2$, take $c\\in I_6$, and retain\n$\\one_{c-b-b'\\in I_2}$. This exact indicator is independent of $n$.\nThe normalized average changes by the factor $|I_2|/|I_6|$, comparable\nto one. No three-term sum of elements of $I_2$ is asserted to lie in $I_3$.\nPigeonhole in $c$ to fix $c_0\\in I_6$. Set\n\\[\n \\alpha(b,b',n)=\\tau(c_0-b-b',b,n)\n                    \\otimes\\overline{\\tau(c_0-b-b',b',n)},\\qquad\n V_b(n)=v_b(n)w_{c_0-b}(n).                              \\tag{9}\n\\]\nIn particular the second factor of $V_b$ is not conjugated: its sign\nfollows from the last two $w$ factors in (8). Absorb the parameter cutoff\ninto the scalar lower test. Equation (8) becomes, for a fixed coordinate\n$a_0$ of the actual $\\alpha$,\n\\[\n \\left|\\E_{b,b'\\in I_2,n\\in J}\n a_0(b,b',n)V_b(n)\\overline{V_{b'}(n)}q_{b,b'}(n)\\right|\\gg1. \\tag{10}\n\\]\nThe functions $V_b$ need only be bounded; no inverse or unit norm for them\nis used. Cauchy--Schwarz in $(b',n)$ removes $\\overline{V_{b'}}$ and\nproduces the product\n$a_0(b_1,b',n)\\overline{a_0(b_2,b',n)}V_{b_1}\\overline{V_{b_2}}$\nwith the product of the corresponding $q$ tests. Cauchy--Schwarz in\n$(b_1,b_2,n)$ removes the remaining $V$ factors. Its expanded four-term\nproduct is\n\\[\n a_0(b_1,b'_1,n)\\overline{a_0(b_2,b'_1,n)}\n \\overline{a_0(b_1,b'_2,n)}a_0(b_2,b'_2,n).               \\tag{11}\n\\]\nIts scalar test is the product of four $q$ tests with the same signs,\nstill degree at most $s-3$, internal and uniformly bounded.\nPigeonhole in $(b_2,b'_2)$, calling the fixed values $(b_0,b'_0)\\in I_2^2$.\nThe resulting expression is a coordinate of the global unit nilcharacter\n\\[\n \\alpha'(b,b',n)=\\alpha(b,b',n)\\otimes\\overline{\\alpha(b_0,b',n)}\n \\otimes\\overline{\\alpha(b,b'_0,n)}\\otimes\\alpha(b_0,b'_0,n). \\tag{12}\n\\]\nHence $\\alpha'(b,b',\\cdot)$ is degree-at-most-$(s-3)$ biased on $J$\nfor many $(b,b')\\in I_2^2$. To see the last assertion quantitatively,\nif the final average has modulus at least $\\delta>0$ and each inner\naverage is at most $B$, a proportion at least $\\delta/(2B)$ has modulus\nat least $\\delta/2$. All selections and parameter cutoffs above depend\ninternally on the parameters. Products and conjugates do not increase the\nordinary nilsequence degree or destroy the fixed finite complexity bounds.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F06",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/5"
+      },
+      "original_object": {
+        "id": "S13-F06",
+        "locator": "Lemma13.5 beta paragraph p1322",
+        "available_vs_needed_difference": "Separate n-degree bound alone does not justify the required total-symbol derivative cancellation.",
+        "proposed_derivation": "Equation(14) and explicit substitution/deletion algorithm constructbeta asT-words with<=s-3 nslots, then inclusion-exclusion kills them.",
+        "use_ids": [
+          "S13-U06",
+          "S13-U07"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Constructs beta from explicit substituted T-words with too few n slots; missing-label inclusion-exclusion kills each word.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 252,
+          "end_line": 290,
+          "excerpt_sha256": "319282e61eecf49c632194409c464ad12917116e769c61c84d405707b0216ec4",
+          "excerpt": "Apply the mixed difference (12). At the level of degree-$s$ symbols,\nconstant slots vanish; a monomial with no $b$ or no $b'$ cancels.\nIn (15) the pure terms $T(b;b,n^m)$ and $T(b';b',n^m)$ therefore disappear.\nThere is a globally represented unit nilcharacter $\\beta$ such that\n\\[\n [\\alpha'(b,b',n)]=-sr\\bigl(T(b;b',n^m)-T(b';b,n^m)\\bigr)+[\\beta(b,b',n)].\n                                                               \\tag{16}\n\\]\nHere $[\\beta]$ is an explicit finite integer linear combination of symbols\n$T(v_1;\\ldots,v_s)$, with every $v_i\\in\\{b,b',n\\}$ and at most $s-3$\nslots equal to $n$. More precisely, expand (14) after the two substitutions\n$(a,b)=(-b-b',b)$ and $(-b-b',b')$, subtract the second, then delete the\nmonomials missing $b$ or missing $b'$. Tensor the corresponding actual\npullbacks of $\\widetilde\\chi$ with their signed integer multiplicities.\nThis constructs $\\beta$ and proves (16). Thus the needed remainder\nassertion is stronger than merely a separate bound on its degree in $n$.\n\nDefine the actual unit nilcharacter\n\\[\n \\sigma(b,b',h_1,\\ldots,h_m,n)=\n \\bigotimes_{\\omega\\in\\{0,1\\}^m}\\mathcal C^{|\\omega|}\n   \\alpha'\\left(b,b',n+\\sum_{j=1}^m\\omega_jh_j\\right),    \\tag{17}\n\\]\nwhere $\\mathcal C$ is conjugation. Every shift has its own $h_j$.\nIt has total degree at most $s$ by linear pullback and tensor arithmetic.\nApply the alternating sum to (16). In a term with fewer than $m$ slots\nequal to $n$, expand each such slot into $n$ and the available $h_j$.\nIf a subset $S$ of the shift labels is used, its coefficient contains\n\\[\n \\sum_{\\omega:\\,\\omega_j=1\\ (j\\in S)}(-1)^{|\\omega|}=0\n \\quad\\hbox{unless }S=[m].\n\\]\nThere are too few slots to use all $m$ labels, so every $\\beta$ term\nvanishes. For the leading term there are exactly $m!$ surviving bijections\nof labels to slots, each with coefficient $(-1)^m$. Last-block symmetry\nidentifies their values. With the minus sign in (16), the exact result is\n\\[\n [\\sigma]=(-1)^{s-1}s!\n \\bigl(T(b;b',h_1,\\ldots,h_m)-T(b';b,h_1,\\ldots,h_m)\\bigr). \\tag{18}\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F07",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/6"
+      },
+      "original_object": {
+        "id": "S13-F07",
+        "locator": "E.11 use after(13.14) and E.13 final use, p1322",
+        "available_vs_needed_difference": "E.11 has positive-progressions hypothesis; E.13 is stated for symmetric boxes.",
+        "proposed_derivation": "Sign orthants/reflection give an exactE.11 match; diagonal pullback and torsion cancellation happen onI8^2 before restriction.",
+        "use_ids": [
+          "S13-U09",
+          "S13-U10"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Reflects a contributing orthant to the positive E11 domain; obtains full symmetric-box conclusion and applies diagonal pullback and E13 before restriction.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 297,
+          "end_line": 363,
+          "excerpt_sha256": "53ae5d86fe06216f6ed3ff7a51fa3bacbf228455dceb26680205a4b30fc67890",
+          "excerpt": "\\section{From correlation to a zero symbol on the correct box}\nBy Proposition 5.6, the positive degree-at-most-$(s-3)$ bias obtained\nafter (12) implies a positive $U^m[J]$ norm for a scalar coordinate of\n$\\alpha'$, for many $(b,b')$. Appendix A uniformity gives a standard\npositive lower bound on a dense internal set. Equivalently the average\nof the vector $U^m[J]^{2^m}$ quantities is $\\gg1$. Since the dimension is\nstandard finite, at least one fixed scalar coordinate contributes $\\gg1$.\nFor $s=3$, this is the converse at degree zero and $U^1$, so no extra\none-step test has been inserted.\n\nExpand the interval Gowers norm using its zero-extension definition and\nthe same normalization as GTZ. One can choose the auxiliary cyclic group\nof order a fixed multiple of $N$ greater than $2(m+1)N$. For a nonzero\ncube all vertices lie in $J$, so its differences have unique lifts\n$h_j\\in I_1$, and no lifted sum can wrap around that cyclic group.\nThe normalizing denominator is a positive standard constant multiple of\nthe count of such cubes. Thus the expansion gives a coordinate of (17)\nwith a positive standard average, up to a fixed positive normalizing factor,\non the convex polytope\n\\[\n \\Omega=\\{(b,b',h,n): b,b'\\in I_2,\\quad\n       1\\leq n+\\omega\\cdot h\\leq N\\text{ for all }\\omega\\in\\{0,1\\}^m\\}.\n                                                               \\tag{19}\n\\]\nIn particular $\\Omega\\subseteq I_8^{s+1}$, and\n$\\left|\\E_{x\\in I_8^{s+1}}\\one_\\Omega(x)\\sigma(x)\\right|\\gg1$.\nAll defining inequalities in (19) are affine linear; their number depends\nonly on $s$. The selection of biased pairs is used only for a lower bound\non the nonnegative norm average, not as an extra arbitrary cutoff in (19).\n\nPublished E.11 asks for dense subprogressions of a positive interval.\nPartition $I_8^{s+1}$ into its finitely many sign orthants and coordinate-zero\nhyperplanes. Since $\\sigma$ is bounded, the latter have normalized mass\n$O_s(1/N)$ and contribute $o(1)$. By the triangle inequality one open\northant has positive standard weighted average. For its signs\n$\\varepsilon_i\\in\\{-1,1\\}$, reflect $x_i=\\varepsilon_i y_i$.\nThe reflected polytope is convex and the reflected nilcharacter\n$\\sigma_\\varepsilon(y)=\\sigma(\\varepsilon y)$ has degree at most $s$.\nTake every progression in E.11 to be the full positive interval $[8N]$.\nThe hypothesis is plain bias, hence bias of degree strictly below $s$.\nE.11, with dimension $s+1$, degree $s\\geq3$ and scale $8N$, gives\n$\\sigma_\\varepsilon\\in\\Nil_{<s}(I_8^{s+1})$. Reflecting back gives\n\\[\n [\\sigma]_{\\Symb_s(I_8^{s+1})}=0.                        \\tag{20}\n\\]\nOnly one orthant was used to obtain bias; E.11 itself supplies the conclusion\non the full symmetric box. No extrapolation from positive points is implicit.\n\nPull (18),(20) back along the fixed integer linear map\n\\[\n (h,n)\\longmapsto(b,b',h_1,\\ldots,h_m,n_{\\rm aux})\n                 =(h,n,n,\\ldots,n,0).\n\\]\nIt maps $I_8^2$ into $I_8^{s+1}$. Lower-degree nilsequences pull back with\nthe same degree, so\n\\[\n s!\\bigl(T(h;n^r)-T(n;h,n^{r-1})\\bigr)=0\n                    \\quad\\hbox{in }\\Symb_s(I_8^2).       \\tag{21}\n\\]\nThe sign in (18) can be removed because both sides equal zero. Apply E.13\non this symmetric box, with dimension two, degree $s\\geq3$ and the fixed\npositive integer $s!$. Its torsion-free conclusion gives\n\\[\n T(h;n^r)=T(n;h,n^{r-1})\\quad\\hbox{in }\\Symb_s(I_8^2).  \\tag{22}\n\\]\nWe restrict to $I_1\\times J$ only after this use. E.13 is not being applied\ndirectly to an asymmetric rectangle.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F08",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/7"
+      },
+      "original_object": {
+        "id": "S13-F08",
+        "locator": "Theorem7.4 conclusion and its Section7 consumer",
+        "available_vs_needed_difference": "A symbol relation and literal symmetry are different from an actual finite-component factorization on the required domain.",
+        "proposed_derivation": "Section6 constructsW andPsi and gives exact unit contractions onI1 times[N], with global factor representations.",
+        "use_ids": [
+          "S13-U11"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Constructs R,W and Psi on the required rectangle and uses finite unit contractions to obtain the actual component identity, without scalar division.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 365,
+          "end_line": 402,
+          "excerpt_sha256": "8d9a209dea94490a4b42c4d4700371c94060c65a1373ede9125dae39d85992cc",
+          "excerpt": "\\section{Exact finite-component factorization}\nSet $\\Theta(n)=\\widetilde\\chi(n,\\ldots,n)$, the same object as in LP05.\nIt is a unit degree-at-most-$s$ nilcharacter. Expand\n$[\\Theta(n+h)]-[\\Theta(n)]$ by LP13. Terms with exactly one $h$ equal\n\\[\n T(h;n^r)+rT(n;h,n^{r-1})=sT(h;n^r)=[\\chi(h,n)]          \\tag{23}\n\\]\non $I_1\\times J$, by (22),(3). Let $R(h,n)$ be the tensor product of\nthe actual pullbacks of $\\widetilde\\chi$ for all subsets of the $s$ slots\nof cardinality at least two, putting $h$ in those slots and $n$ elsewhere.\nThere is no permutation of the distinguished first slot in this definition.\nEvery factor has multidegree at most $(i,s-i)$ for its subset size $i$:\ncoarsen the cube filtration by counting the coordinates assigned to $h$\nand $n$, using all weights at least the index. The polynomial orbit,\nrationality and top frequency are as in the LP05 block coarsening.\nTheir product is therefore supported on the union of these downsets,\ncontained in $\\mathcal J$.\n\nBy the symbol equality just proved, the unit-vector expression\n\\[\n W(h,n)=\\chi(h,n)\\otimes\\overline{\\Theta(n+h)}\\otimes\\Theta(n)\\otimes R(h,n)\n                                                               \\tag{24}\n\\]\nis a degree-at-most-$(s-1)$ nilsequence on $I_1\\times J$.\nBy the definition of the restricted nilsequence class, it has a global\nrepresentation whose restriction is (24); no global equality beyond this\nrectangle is claimed. Such a degree filtration gives multidegree support\n$i+j\\leq s-1$ by assigning the group at $(i,j)$ its total-degree group.\nChoose that representation and set $\\Psi=\\overline R\\otimes W$.\nIt has support in (1) by the product filtration and is uniformly bounded.\n\nFinally tensor (24) with\n$\\Theta(n+h)\\otimes\\overline{\\Theta(n)}\\otimes\\overline R$.\nContract the matching pairs using their unit norms. Each contraction is\na fixed linear map between fixed finite tensor spaces. The result is exactly\n$\\chi$, so (2) holds component by component with fixed bounded coefficients.\nThis does not divide by any scalar coordinate or replace symbol equality\nby an unproved scalar equality. It proves Theorem~\\ref{thm:target}.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    },
+    {
+      "finding_id": "S13-F09",
+      "original_location": {
+        "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/FINDINGS-RELATED-USES.json",
+        "sha256": "688147a85dbcc28892b6d4db598312ec5cd98c9e45299fadeb53944a3b5a036a",
+        "json_pointer": "/findings/8"
+      },
+      "original_object": {
+        "id": "S13-F09",
+        "locator": "Example6.11 p1262, total-degree coarsening display",
+        "available_vs_needed_difference": "The printed generators have total weight<=the index, retaining G0 and giving the wrong filtration. Theta reported this and the final-page image was directly inspected.",
+        "proposed_derivation": "LP05 and this proof use all weights>=the index, with descending/bracket/rationality checks in the supplying project proof. Constants are removed by uniform shift plus zero-slot additivity.",
+        "use_ids": [
+          "S13-U01",
+          "S13-U04",
+          "S13-U11"
+        ],
+        "history_classification": "new argument or explicit correction within stated read scope; no exhaustive historical-literature search claimed",
+        "manuscript_incorporation": "pending",
+        "status": "author repair proposed; independent review and related-use coverage decision pending"
+      },
+      "proposed_status": "repaired",
+      "reason": "Uses descending total-weight-at-least coarsening, full-domain uniform shift then linear pullback, and zero-slot additivity; the opposite printed inequality remains rejected.",
+      "current_proof": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "start_line": 215,
+          "end_line": 227,
+          "excerpt_sha256": "36e6258330fc1cd78e6bc94c9fe7fde36baaea2b111c84662105bd9b471d5973",
+          "excerpt": "\\section{Exact symbols and the lower-slot remainder}\\label{sec:algebra}\nConstants such as $h_0,c_0,b_0,b'_0$ are limit integers. Give the original\nmultidegree group its total-degree filtration generated by all components\nwhose total weight is \\emph{at least} the index, as verified in LP05.\nApply the uniform project ordinary-degree shift theorem on the full slot\ndomain to a constant translation in the relevant coordinate. Its difference\nhas degree at most $s-1$, and stays lower-degree under any fixed integer\nlinear pullback. Thus a constant added to a slot can be removed in the\ndegree-$s$ symbol. A slot consisting only of a constant becomes zero.\nLP13 additivity gives $T(\\ldots,0,\\ldots)=2T(\\ldots,0,\\ldots)$, so that\nsymbol is zero. This argument does not choose an implicit subgroup\nbasepoint for a fixed-slot orbit. The coarsening uses $|a|\\geq j$;\nthe opposite inequality printed in Example 6.11 is not used.\n"
+        }
+      ],
+      "prior_reviews": [
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/LP05-REVIEW.md",
+          "sha256": "6ef53efefe9c81ceb8b957005d00d5de52b829c566288cc7fcdb3456ad02b106"
+        },
+        {
+          "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-sol-review/SECTION13-REVIEW-001.md",
+          "sha256": "ee1ec1d816a49d96ebf326478c7828cb9579d503bb773e273506fdc3a72c14b0"
+        }
+      ],
+      "affected_claims": [
+        "GI-13-S13"
+      ],
+      "scope": "Only the named correction under the separately supplied strong shift, multilinearity, plain-quadruple and MF bias/torsion inputs. No blanket source or whole-GI approval."
+    }
+  ]
+}

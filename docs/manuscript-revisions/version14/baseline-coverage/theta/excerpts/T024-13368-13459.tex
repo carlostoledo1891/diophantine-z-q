@@ -1,0 +1,92 @@
+Here is a local construction of a scalar type that retains the
+reference functional. At $p\in S_0$, write $\ell=\ell_{D_0}$ and
+choose $v$ with $\ell(v)\ne0$. Normalize Haar measure in
+\[
+ P_Rv=\frac1{\operatorname{vol}(p^{-R}\Z_p)}
+       \int_{p^{-R}\Z_p}
+          e_p(-D_0b)\pi(n(b))v\,db .
+\]
+Then $\ell(P_Rv)=\ell(v)$. Let $M(u)$ be the unit action normalized
+by the Weil multiplier. Explicitly, if the chosen torus lifts have
+cocycle $(u,v)_p$, their theta-cubed multiplier $\gamma$ has
+two-power root-of-unity values and satisfies
+$\gamma(u)\gamma(v)=(u,v)_p\gamma(uv)$; put
+$M(u)=\gamma(u)^{-1}\pi(\widetilde m(u))$.
+It is therefore an action of
+$\Z_p^\times$ and
+$M(u)\pi(n(b))M(u)^{-1}=\pi(n(u^2b))$.
+Changing $u$ to its inverse changes none of the following support
+conditions. Direct substitution gives
+\[
+ \ell(M(u)P_Rv)=
+ {\bf1}_{\,u^2\equiv1\;(\mathrm{mod}\;p^R)}
+                    \ell(M(u)v).
+\]
+The integral is a finite sum on this smooth vector.
+
+The normalized $M(-1)$ acts by a scalar $\delta\in\{1,-1\}$.
+Choose a continuous unit character $\alpha$ of two-power order
+with $\alpha(-1)=\delta$. Such a character exists: for odd $p$,
+$-1$ lies in the two-primary factor of the finite cyclic group
+of residue-field units; for $p=2$ use the factor
+$\{1,-1\}$ of $\Z_2^\times$.
+Take $R$ large enough that both $v$ and $\alpha$ are constant on
+the small neighborhoods appearing above. The projection
+\[
+ w=\int_{\Z_p^\times}\alpha(u)^{-1}M(u)P_Rv\,d^\times u
+\]
+satisfies $M(u)w=\alpha(u)w$. Its $\ell$-value is nonzero:
+the neighborhoods of $1$ and $-1$ contribute the same nonzero
+value. For odd $p$ the solution set is
+$1+p^R\Z_p$ together with $-1+p^R\Z_p$.
+For $p=2$ and $R\ge3$ it is
+\[
+ (1+2^{R-1}\Z_2)\ \cup\
+ (-1+2^{R-1}\Z_2).
+\]
+Thus the four residue classes modulo $2^R$ form two neighborhoods;
+there are not four independently assignable phases.
+For completeness, the noncancellation in this projection is an exact
+calculation. Normalize multiplicative Haar measure to give
+$\Z_p^\times$ volume one, and put
+$K_R=1+p^R\Z_p$ for odd $p$, and $K_R=1+2^{R-1}\Z_2$
+for $p=2$. Increase $R$ until $M(k)v=v$ and $\alpha(k)=1$
+for $k\in K_R$. On $K_R$ the integrand after applying $\ell$
+is $\ell(v)$. On $-K_R$ it is
+$\alpha(-1)^{-1}\ell(M(-1)v)=\delta^{-1}\delta\ell(v)$.
+It vanishes elsewhere by the displayed additive projection formula.
+Consequently
+\[
+                 \ell(w)=2\operatorname{vol}(K_R)\ell(v)\ne0.
+\]
+This calculation takes place in characteristic zero; reduction at two
+is not involved. For the later support projection choose $m$ so that
+the required unit squareclass is a union $A$ of residue classes modulo
+$p^m$. Its operator is
+\[
+ \Pi_A=\frac1{p^m}\sum_{b\bmod p^m}
+       \left(\sum_{a\in A}e_p(-ab/p^m)\right)\pi(n(b/p^m)).
+\]
+On the Fourier functional of integral frequency $D$ it acts as
+$\mathbf1_A(D)$. It therefore preserves the reference value and
+annihilates every excluded frequency. Conjugation by $M(u)$ permutes
+the summands and replaces $A$ by $u^2A=A$, proving the asserted
+commutation. Its denominators are fixed before the form is normalized.
+
+
+The vector $P_Rv$, and then $w$, is fixed by upper unipotents
+$n(\Z_p)$, because $D_0$ is a unit. Smoothness makes $w$
+fixed by lower unipotents at sufficiently deep level. Together with
+the unit eigencharacter, the elementary decomposition of
+$K_0(p^m)$ gives a scalar $K_0$ type for sufficiently large $m$.
+The Weil normalization contributes only two-power roots of unity,
+so the resulting classical character has two-power order.
+The forced values at $-1$ give the global parity required for a
+weight-$3/2$ scalar character: the product of the finite central
+actions is the inverse of the holomorphic archimedean action,
+and the theta-cubed multiplier has the same product relation
+on rational $-I$. Thus the quotient character satisfies
+$\psi(-1)=1$. At $2$ one may, if desired, choose
+$\alpha$ of arbitrarily large two-power conductor before increasing
+$R$; this does not enlarge the prime support.
+

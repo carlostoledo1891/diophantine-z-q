@@ -1,0 +1,23 @@
+# Section 13 author proposal
+
+This packet supplies a new proof of the remaining Theorem 7.4 interface after equation (13.4), relative to the exact local multilinearity, shift and LP05 units and the stated unchanged published inputs. Its author is `/root/astra_v14_baseline_compiler`, an operator-local identifier. It is not an independent decision, a complete GI proof, or a manuscript installation.
+
+The target assumes degree-at-most s-2 correlation, the interface actually supplied by Theorem 7.1. Both final published Theorem 7.4 statements, printed pp.1271 and 1315, visibly say strict less than s-2 correlation. The proof here does not invoke that theorem. It selects degree-at-most s-2 lower nilcharacters and proves the necessary shift and Cauchy-Schwarz chain under the needed weaker hypothesis.
+
+The plain-correlation Proposition 8.4 is a direct published premise. The weaker modified Proposition 7.3 output alone would discard the lower factors required in this part of the argument. The proof retains those factors, uses unit-vector contractions instead of dividing by coordinates, and writes all three Cauchy-Schwarz eliminations. The parameter substitution uses its actual box I6 and exact parameter-only cutoff. No discontinuous cutoff in the averaging variable is hidden in a degree-zero test.
+
+The proof keeps the original unconjugated alpha and alpha-prime objects. Direct expansion reveals an additional precursor to LP05-F03: printed Lemma 13.4 swaps the first two slots relative to Lemma 13.3 and definition (13.10). Therefore the actual alpha-prime has a negative s(s-1) antisymmetric leading term. The independent-shift alternating cube then has coefficient `(-1)^(s-1) s!`. The earlier LP05 review's `(-1)^(s-2) s!` discussion was explicitly conditional on printed (13.13); that historical record remains unchanged. Both the earlier review and the new precursor are preserved, rather than changing a prior verdict.
+
+The lower remainder beta is constructed as a finite integer combination of multilinear words with at most s-3 copies of n. Inclusion-exclusion kills those words and counts the surviving (s-2)! permutations in the leading term. The proof does not substitute a mere separate n-degree assertion for this stronger representation.
+
+The analytic join uses the published converse Proposition 5.6 and the normalized zero-extension Gowers cube identity to obtain bias with an explicit convex-polytope cutoff. It partitions signs, discards negligible coordinate-zero planes and reflects one orthant to match E.11's positive-progressions hypothesis. E.11 then gives zero symbol on the whole symmetric box. The diagonal pullback and E.13 torsion cancellation occur on a symmetric two-dimensional box before restriction to the consumer rectangle.
+
+Finally the same Theta as in LP05 yields the exact one-h terms. The remaining slot subsets give R, and the symbol discrepancy gives an actual lower-degree nilsequence W on the rectangle. Fixed unit-pair contractions produce the required finite-component factorization with a globally represented Psi supported on the exact union downset J. Equality is asserted on `[[N]] × [N]`, which the downstream assembly consumes; the factor representations are global. No stronger global identity is inferred from a boxwise symbol equality.
+
+The source-use contracts identify every direct input, available/needed difference, connecting derivation and failure case. The author application records contain the nine comparisons, and the coverage index covers the whole proof. The findings/related-use record includes the stricter printed hypothesis, slot/sign/index discrepancies, lower-factor bookkeeping, parameter-box correction, beta expansion, E.11/E.13 domains and the final function-level join. Independent source-first completeness and related-use coverage decisions remain required.
+
+The proof imports E.11/E.13 rather than reproving their published equidistribution arguments. It likewise imports the unchanged converse and Proposition 8.4. Their upstream dependencies and the complete final GI assembly remain separate review tasks. The exact project proofs and their existing scoped reviews are pinned without creating a new approval.
+
+Tectonic rendered the proof successfully. The final log has no TeX errors, unresolved references or overfull/underfull boxes. Rendered pages were checked for layout, including the key signed identity and the final join. These checks establish rendering and byte bindings only. No finite polynomial experiment is used to establish the universal multilinear identities.
+
+The main manuscript and the LP05-001 freeze are untouched. External-source PDF renders in this work directory are local reading aids excluded from the publishable manifest.

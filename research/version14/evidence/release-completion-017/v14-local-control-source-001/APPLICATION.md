@@ -1,0 +1,5 @@
+# Local cyclotomic descent
+
+Fix one local twist. Take R=Z2, G=G_Q2, H the Galois group over the local cyclotomic Z2 extension, and the continuous finite free module T chi in degree zero. The finite local-cohomology input gives cd2(G)=2 and condition(F). Thus8.3.5(ii) identifies the Iwasawa groups with inverse limits of local cohomology under corestriction; no group occurs above degree2. Corollary8.4.8.2(ii), with e=2 and n=0, gives H2_Iw/(gamma-1)H2_Iw = H2(G,T chi). Equivalently the one-variable exact sequence in8.4.8.2(i) has zero H3_Iw invariant term. Tensoring with Q2 gives the asserted rational central identity. The finite sign decomposition is performed rationally and preserves this identity component by component.
+
+This is only the control step at manuscript13867–68 and13921–23. Local duality, the self-dual Tate pairing, finiteness of local elliptic torsion, and finite generation/torsion of the Iwasawa module are separate inputs to the subsequent vanishing and characteristic-element argument. In particular this source is not an assertion of vanishing at the center.

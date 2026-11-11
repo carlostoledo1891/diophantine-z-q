@@ -1,0 +1,9 @@
+# Bertrand's theorem at the interval-base consumer
+
+The supplying statement is the opening theorem in S. Ramanujan, “A proof of Bertrand's postulate,” Journal of the Indian Mathematical Society 11 (1919), 181–182, reprinted as paper 24 in *Collected Papers of Srinivasa Ramanujan*, edited by G. H. Hardy, P. V. Seshu Aiyar and B. M. Wilson, Cambridge University Press, 1927, pp. 208–209. The retrieved file is a scan of that published volume, not a newly typeset author draft. Its title page is PDF page 3, contents entry is PDF page 6, and paper 24 is PDF pages 244–245 (all one-based).
+
+The opening statement gives a prime in the interval (x<p\leq2x) for real (x\geq1). The first section concludes the proof on p. 209; its smaller-value verification is part of the stated published theorem. Only this existence conclusion is imported here. The later bounds on prime counts are not used. The two paper pages were visually inspected to confirm the inequality and endpoint convention.
+
+The actual consumer is `gi-base-002/proof.tex`, lines 257–259, read with its fixed integer (C>16) and positive integer (N). Put (x=CN). Then (x\geq1), so the theorem gives a prime (P) with (CN<P\leq2CN). Because (CN>1) is an integer, (2CN) is composite. Hence (P<2CN), exactly the open interval required by the base proof. The same fixed (C) works for every positive (N), including bounded (N). Nothing is required about the prime's residue class. Consequently (P/N\in(C,2C)), and all previously stated ambient-ratio bounds remain valid.
+
+This is a source completion for an already written application. It neither alters the base proof nor re-proves Bertrand's theorem. The exact imported statement, application and source qualification require independent review. The broader local-source coverage decision remains separate.

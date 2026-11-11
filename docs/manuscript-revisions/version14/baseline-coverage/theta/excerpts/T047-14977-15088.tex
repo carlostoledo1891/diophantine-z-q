@@ -1,0 +1,112 @@
+\subsection{Integer divisions and actual trace operators}
+\begin{proposition}[Arithmetic realization of the coefficient rules]\label{ex:app-coefficient-rules}
+Use the rational full-two-torsion graph conventions of
+Definitions~\ref{ex:sec7-typed-graph} and~\ref{ex:sec7-symbol}.
+For an even source of Proposition~\ref{ex:app-even-phase}, use its
+fixed minimum depth. For an odd source, first fix a finite operator
+budget $|U|\le W$, take $R\ge2$, and choose an actual stage satisfying
+the depth inequalities of Proposition~\ref{ex:app-odd-minimum}.
+Then the integer divisions (O.9)--(O.11) are valid at every Fourier
+index, with the stated truncation for the odd source.
+The fresh coefficient-one reading is
+$\overline{(t(\operatorname{Fr}_q)\theta H_U)[1]}=\mathcal A(Uq)$.
+On all tested nonempty configurations, these actual symbols depend
+only on their typed graph and satisfy the rules of
+Lemma~\ref{ex:sec7-coefficient-rules}: a pair difference
+contracts the endpoints and adds their types and every external
+incidence; whole-prime omission uses the same source, phase, depth
+and stage; and an isolated primary vertex of neutral type and
+neutral external incidences makes the symbol zero.
+Every contraction has nonempty output. Stationary character tests
+are carried along in the same product rule. This statement asserts
+neither values at untested odd-stage weights nor an identity at an
+empty contraction output.
+\end{proposition}
+\begin{proof}\leavevmode
+All new primes below avoid the full coefficient support $S$,
+including every late sieve and the current $\ell_0$.
+Here $S$ is the actual coefficient support.  The coefficients of
+$g$ vanish at all indices not prime to $S$.
+For the odd source this is forced at $2,N,h_*,\ell_0$ by the
+local Schwartz support and the extraction at $|h_*|$.
+At every additional coefficient-sieve prime it is imposed by an
+exact zero-or-retain Fourier sieve, which commutes with the good
+recurrence outside the enlarged support.  This is the vanishing
+used in the condition $(m,S)=1$ in the unary series below.
+Later stationary prime-selection tests may enrich the common
+label alphabet without resieving the intrinsic odd source;
+such tests do not enlarge this coefficient-support condition.
+Use the minimum-depth inequalities proved in Appendix~\ref{app:endpoints}.
+The general bookkeeping assigns weight one to a split prime of
+$\Q(E[2])$ and one-half to a prime with transposition Frobenius, called
+simple. In our actual full-two-torsion family every prime is split,
+$w(U)=|U|$, and the depth $\delta$ is an integer. Thus only matching
+parity, meaning $e_U=0$, is needed here; the displayed general formula
+also records where the unused simple-prime term would enter.
+For a finite set $U$, put
+\[
+ n_U=\lceil\delta+w(U)\rceil,\quad e_U=n_U-\delta-w(U),\qquad
+ B_U=2^{-n_U}\prod_{p\in U}(U_p-\eta(p)V_p)g,
+\]
+where $U_p(\sum a(n)q^n)=\sum a(pn)q^n$ and $V_pg(\tau)=g(p\tau)$.
+These are operations on the actual form $g$. We verify the level
+at a new odd prime using the classical theta multiplier. Write the
+old level as $4A$, with $p\nmid4A$, and put
+$\beta=\left(\begin{smallmatrix}p&0\\0&1\end{smallmatrix}\right)$.
+For $\gamma=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)
+\in\Gamma_0(4Ap)$ one has
+\[
+ \beta\gamma\beta^{-1}=
+       \begin{pmatrix}a&pb\\c/p&d\end{pmatrix}\in\Gamma_0(4A).
+\]
+The square-root factor in the theta multiplier is unchanged on
+evaluating the latter matrix at $p\tau$. The quotient of its
+arithmetic factor by that of $\gamma$ is
+$(c/p\,/d)/(c/d)=(p/d)$. Cubing the multiplier leaves this
+quadratic factor unchanged. Hence $V_pg$ has level $4Ap$ and
+character $\psi(p/\cdot)$.
+
+At this level the normalized sum
+\[
+ U_{p^2}h(\tau)=\frac1{p^2}\sum_{r\bmod p^2}
+                             h((\tau+r)/p^2)
+\]
+preserves the same weight and character. Indeed, put
+$\alpha_r=\left(\begin{smallmatrix}1&r\\0&p^2\end{smallmatrix}\right)$.
+For $\gamma\in\Gamma_0(4Ap)$ choose
+$r'\equiv(b+rd)/(a+rc)\pmod{p^2}$. Then
+\[
+ \alpha_r\gamma=\gamma'_r\alpha_{r'},\qquad
+ \gamma'_r=
+ \begin{pmatrix}
+  a+rc&(b+rd-(a+rc)r')/p^2\\
+  p^2c&d-cr'
+ \end{pmatrix}\in\Gamma_0(4Ap).
+\]
+The map $r\mapsto r'$ is a permutation, since $a+rc$ is a unit
+modulo $p$ and the fractional linear map has determinant one.
+Writing $d'=d-cr'$, its nebentypus factor is unchanged since
+$d'\equiv d\pmod{4Ap}$. Its theta arithmetic factor is unchanged
+as well: $d'\equiv d\pmod c$, $d'\equiv d\pmod4$, and
+$(p^2c/d')=(c/d')=(c/d)$. These are the usual Kronecker-symbol
+identities for the theta multiplier on $\Gamma_0(4)$.
+Its square-root factor, evaluated at $(\tau+r')/p^2$, is
+$(c\tau+d)^{1/2}$. Thus the sum transforms with the same
+theta multiplier cubed and the same character. The formulas also
+hold for the triangular matrices, and holomorphy at the cusps is
+preserved by the finite rational translates.
+On Fourier expansions $U_{p^2}V_p=U_p$. Consequently both terms
+of $U_p-\eta(p)V_p$ have level exponent at most one at $p$ and
+character $\psi(p/\cdot)$. Iteration introduces no higher exponent
+at previously added primes.
+
+The same computation applies to the unary corrections. Start with
+the odd-character unary theta series at the old support, including
+its fixed coprimality sieve. Its $J$-series is its transform by
+$V_J$, for squarefree $J\subset U$. A prime $p\mid J$ therefore
+has exponent at most one and the extra character $(p/\cdot)$;
+a prime $p\nmid J$ is absent from its original level. Multiplication
+by the ordinary theta series introduces no odd level prime. This
+proves the precise level and oldform alternatives used in (O.12).
+
+

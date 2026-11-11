@@ -1,0 +1,32 @@
+{
+  "schema": "bounded-independent-pin-transport-review/v1",
+  "reviewer": "/root/v14_gi_constructors",
+  "decision": "accepted at exact pin-transport scope",
+  "target": {
+    "path": "work/source-risk-review-20261107/v14-guide-count-pin-transport-001/MANIFEST.json",
+    "sha256": "0fb28ccc34ec6f4658b63c89a87c9588f0b61b14d371fc184554cc6fb74ed81f"
+  },
+  "candidate": {
+    "path": "APPLICATIONS.json",
+    "sha256": "ccc2e24486720727ef10deeaf7a587438b9a05fab47d731f29465d5164476316"
+  },
+  "checks": {
+    "manifest_member_and_predecessor_metadata_review_pins": 5,
+    "actual_guide_pin": true,
+    "complete_recursive_diff": 10,
+    "exact_declared_delta": true,
+    "all_changed_records_head_side_guide": true,
+    "other_leaves_unchanged": true
+  },
+  "reason": "The complete predecessor-to-candidate difference is exactly ten GUIDE SHA256 fields in one of ten release application objects. Each resolves to the independently reviewed count-edit bytes. No assertion, author, dependency, base binding or approval changes.",
+  "reused_review": {
+    "path": "work/source-risk-review-20261107/v14-final-source-summary-review-h6-001/REVIEW.json",
+    "sha256": "fb33d76edbbefddd0cf5c9b65830d9b2851e4617bd2392f83c10093330066dec"
+  },
+  "independence": "Reviewer did not author this count edit or hash transport. Earlier release metadata and source contributions are not independently reapproved here.",
+  "limits": [
+    "Only this exact pin transport is accepted.",
+    "The metadata count review retains its own scope; no proof or global coverage review is repeated.",
+    "Canonical installation, final source commit, authenticated approvals and release remain separate."
+  ]
+}

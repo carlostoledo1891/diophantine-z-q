@@ -1,0 +1,45 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "created_at": "2026-11-09T07:04:06.203Z",
+  "status": "chronology preparation only; not final attestation",
+  "thread_id": "01a1be26-d82d-7a70-8e74-dc81f8304182",
+  "observed_runs": [
+    {
+      "id": "01a1bebc-57d3-7b03-9599-7ab3d3950faf",
+      "status": "completed",
+      "startedAt": 1794201376,
+      "completedAt": 1794203858,
+      "durationMs": 2481430
+    },
+    {
+      "id": "01a1bee2-5b01-73c1-9cfc-6b089ad42255",
+      "status": "failed",
+      "startedAt": 1794203867,
+      "completedAt": 1794204109,
+      "durationMs": 241106
+    },
+    {
+      "id": "01a1bf12-9675-7203-b312-d332af3e1866",
+      "status": "inProgress",
+      "startedAt": 1794207028,
+      "completedAt": null,
+      "durationMs": null
+    }
+  ],
+  "metadata_evidence": {
+    "path": "work/source-risk-review-20261107/local-only/coverage-review-identity-009/REVIEWER-CONTINUATION-METADATA.json",
+    "sha256": "4cb3bc12d184c844e71488e1e45e1e1a6501ae55172041de1ee8475e140ef7b7"
+  },
+  "initial": {
+    "uses_sha256": "42ba6262e6da0d73a206e5603b6bc45feadf776795ac37487f39cc71d2de15c5",
+    "passages_sha256": "bbd9684af01160bcaaa3377fc6d8e70184cf0d1051975ee0edd29915886fce0a"
+  },
+  "required_final_shape": {
+    "schema": "protocol-review-continuation/v1",
+    "run_ids": "Original frozen run, every actual intervening authenticated run, actual final receipt run; all same immutable agent and excluding authors.",
+    "initial": "Exact dossier.initial pin, unchanged",
+    "sources_sha256": "Canonical digest of exact ordered frozen dossier.sources",
+    "attestation": "Must be authored by reviewer only after final dossier/content comparison; none supplied here"
+  },
+  "remaining": "Operator must authenticate every actual listed run in its ledger. Desktop metadata alone is not authorization. Preserve original reconstruction.run_id and freeze timestamp. Do not relabel failed continuation or omit it from chronology."
+}

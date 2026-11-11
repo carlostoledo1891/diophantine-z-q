@@ -1,0 +1,29 @@
+{
+  "schema": "protocol-owner-ingress/v1",
+  "id": {
+    "$required": "new immutable batch identity"
+  },
+  "job_id": {
+    "$required": "matching actual V14 job"
+  },
+  "mode": {
+    "$required": "capture or finalize based on actual intake state"
+  },
+  "key_ids": {
+    "operator": "operator-20261107",
+    "intake": "intake-20261107",
+    "collector": "collector-20261107"
+  },
+  "operator_events": {
+    "$required": "only newly observed events; never replay existing event IDs"
+  },
+  "external_materials": {
+    "$required": "actual material registrations and original observation bytes"
+  },
+  "findings": {
+    "$required": "actual new finding registrations and observations"
+  },
+  "classifications": {
+    "$required": "explicit material/report selectors and original classifications; do not synthesize no-finding statements"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "bounded-host-provenance-review/v1",
+  "decision": "accepted",
+  "subject_sha256": "fa916e3a46ce109a443c921a2a5f78da9e16da6fde7538ad53749deae25b78c4",
+  "observation_sha256": "d39c7b74246ea4df49f4ecfea9860140aa27f05b7dce1adda4ed27ebbaebbf99",
+  "scope": "Four original host operation pairs establish the observed author of normalization002; no inherited proof authorship or current target acceptance inferred.",
+  "checks": {
+    "original_reference_reads": 16,
+    "operation_pairs": 4,
+    "member_pins": 4,
+    "normalization_members": 9,
+    "exact_call_code_and_completion_link": true,
+    "actual_turn_id": "01a1c474-0285-7e22-b6b7-bfbd9dad81fa",
+    "actual_session_id": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "host_recorded_model": "gpt-6-astra",
+    "failed001_attempt_retained": true,
+    "successful002_manifest_output_matches": true
+  },
+  "limitations": [
+    "Host-recorded model only, not provider attestation.",
+    "001 failed attempt in this subset does not assert all later001 operations failed.",
+    "003 normalization and later source transport require their own author evidence.",
+    "No new Git binding, signed operator event or reviewer acknowledgment."
+  ]
+}

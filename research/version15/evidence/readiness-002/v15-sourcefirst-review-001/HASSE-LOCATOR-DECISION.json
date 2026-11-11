@@ -1,0 +1,36 @@
+{
+  "schema": "v15-bounded-source-review/v1",
+  "decision": "accepted",
+  "written_utc": "2026-11-10T08:45:22.5386418Z",
+  "reviewer_agent": "01a1c426-ce3c-73b2-bc1f-18da903ebf63",
+  "scope": "SF23-S3 exact primary Hasse locator and consumed estimate only",
+  "inputs": [
+    {
+      "path": "work/v15-supplier-publication-metadata-gi-002/MANIFEST.json",
+      "sha256": "5a3d9eb32cf7e67858ec1887ce0a8d32319e24e6c7247c0813010672f4214db4"
+    },
+    {
+      "path": "work/v15-supplier-publication-metadata-gi-002/HASSE-SOURCE-CHECK.json",
+      "sha256": "217a61bad9ea60698dd001e6d4d6c1ecf2ba47b6340b505ee6d6c9d855cff19d"
+    },
+    {
+      "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+      "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25"
+    },
+    {
+      "path": "work/quartic-v14-prep/bcdt-published-alternative/local-only/silverman-errata2022.pdf",
+      "sha256": "6c2274403a32af5d4b075c1504a1aaa04c9b304c0f94b8dd337f9c72d51f6f34"
+    }
+  ],
+  "source_read": "Silverman, The Arithmetic of Elliptic Curves, second edition2009, ChapterV introductory conventions p137 and TheoremV.1.1 p138 (PDF154-155), extracted directly from the pinned local PDF using bundled Python/pypdf.",
+  "statement": "For an elliptic curve over finite F_q, abs(#E(F_q)-q-1) <= 2 sqrt(q). The count includes the point at infinity, as explicitly defined on p137.",
+  "current_read": "Current dbc35 source31970-32033: separation assumes d_j=p_j+O(sqrt(p_j)) uniformly and4 divides d_j; the subsequent application identifies Hasse as the source of this estimate for the specified elliptic curves.",
+  "application": "At smooth reduction q=p_j, Hasse supplies the required uniform estimate for the full finite elliptic group. The separately accepted group/order-identification premise is necessary when d_j denotes the selected order; Hasse alone does not give this size for an arbitrary point or proper subgroup. Divisibility by4 is from the separate fixed congruences, not Hasse.",
+  "corrections": "Read retained official October13,2022 errata PDF16-18 directly. No correction to p138/TheoremV.1.1 occurs there. The p139 correction changes the coefficient field in a later displayed polynomial; it does not alter Hasse theorem.",
+  "limitations": [
+    "No claim of a fresh full-book or global errata audit.",
+    "The source.locator inside author HASSE-SOURCE-CHECK preserves the earlier source catalog uses; the new authoritative consumed locator is statement.locator and PUBLICATIONS SF23-S3.",
+    "Other17 publication metadata entries remain their existing review/normalization scope.",
+    "No third-party PDF is approved for redistribution by this receipt."
+  ]
+}

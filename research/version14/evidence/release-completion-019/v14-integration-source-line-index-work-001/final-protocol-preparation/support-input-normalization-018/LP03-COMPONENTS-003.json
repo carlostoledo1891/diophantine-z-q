@@ -1,0 +1,532 @@
+[
+  {
+    "use": {
+      "id": "ACTIVE-LP03-SOURCE-ORDINARY-WITNESS",
+      "consumer": "GI-04-LP02-03",
+      "passages": [
+        "ACTIVE-LP03-SOURCE-ORDINARY-WITNESS-P1"
+      ],
+      "assertion": {
+        "statement": "For every h, some coordinate pair (a,b) and an ordinary globally equivariant unit-vector lower-test nilcharacter give positive standard-size correlation with the corresponding bounded scalar weight u_(h,a,b).",
+        "objects": "For each h, a selected coordinate pair (a,b), the corresponding bounded scalar weight u_(h,a,b) from LP03 line7, and its ordinary lower-degree test.",
+        "hypotheses": "The lower-test correlation premise at LP03 line5 and coordinate construction at line7; fixed standard degree d=s-2>=1. Line9 selects some coordinate pair and witness for each h, not a witness for every coordinate pair.",
+        "quantifiers": "For every h there exists some coordinate pair (a,b) and a witness; no common stage bound has yet been obtained.",
+        "parameter_range": "s>=3 and d=s-2.",
+        "uniformity": "The approximation and finite coefficient sum are fixed for each h; uniformity over h belongs to the later stage argument.",
+        "constants": "Choose approximation error less than half the actual coordinate-weight correlation divided by max(1,||u_(h,a,b)||infinity); retain the finite component coefficients.",
+        "normalizations": "Use ordinary global unit-vector vertical tests; conjugate if required by the correlation convention.",
+        "exceptional_cases": "Do not upgrade an arbitrary preexisting weak object or prescribe a symbol.",
+        "limit_order": "Obtain pointwise ordinary-test existence before forming the stage exhaustion."
+      },
+      "classification": "dependency",
+      "reason": "Apply the same ordinary global lower-test approximation to the bounded internal scalar weight; reserve half the correlation margin and retain the finite coefficient sum.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+            "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "391b9f8ea92943a8dd9019feb943f9f46eeda46c5e22109aff66ec1b67482cb7"
+        },
+        "statement": "For each parameter separately, the lower-test correlation has a scalar component of an ordinary globally equivariant unit-vector nilcharacter with positive standard-size correlation.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "51f603e6d359c343b57067f41df0e056408ac64b13e36f17373e578a9f8d555c"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-LP03-SOURCE-ORDINARY-WITNESS",
+      "use_sha256": "d956fecce6a20f0a117e71950fad7de6c82b49c16205ee5a5ba1a4535e1985bd",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "For each parameter separately, the lower-test correlation has a scalar component of an ordinary globally equivariant unit-vector nilcharacter with positive standard-size correlation.",
+        "objects": "The actual component u_h, its lower degree test and its fixed compact model for this h.",
+        "hypotheses": "Pointwise lower degree correlation from line5; fixed standard degree d=s-2>=1; bounded u_h.",
+        "quantifiers": "For every h separately there exists a witness; no common bound has yet been obtained.",
+        "parameter_range": "s>=3 and d=s-2.",
+        "uniformity": "The approximation and finite coefficient sum are fixed for each h; uniformity over h belongs to the later stage argument.",
+        "constants": "Choose approximation error less than half the correlation divided by max(1,||u_h||infinity); retain finite component coefficients.",
+        "normalizations": "Use ordinary global unit-vector vertical tests; conjugate if required by the correlation convention.",
+        "exceptional_cases": "Do not upgrade an arbitrary preexisting weak object or prescribe a symbol.",
+        "limit_order": "Obtain pointwise ordinary-test existence before forming the stage exhaustion."
+      },
+      "needed_assertion": {
+        "statement": "For every h, some coordinate pair (a,b) and an ordinary globally equivariant unit-vector lower-test nilcharacter give positive standard-size correlation with the corresponding bounded scalar weight u_(h,a,b).",
+        "objects": "For each h, a selected coordinate pair (a,b), the corresponding bounded scalar weight u_(h,a,b) from LP03 line7, and its ordinary lower-degree test.",
+        "hypotheses": "The lower-test correlation premise at LP03 line5 and coordinate construction at line7; fixed standard degree d=s-2>=1. Line9 selects some coordinate pair and witness for each h, not a witness for every coordinate pair.",
+        "quantifiers": "For every h there exists some coordinate pair (a,b) and a witness; no common stage bound has yet been obtained.",
+        "parameter_range": "s>=3 and d=s-2.",
+        "uniformity": "The approximation and finite coefficient sum are fixed for each h; uniformity over h belongs to the later stage argument.",
+        "constants": "Choose approximation error less than half the actual coordinate-weight correlation divided by max(1,||u_(h,a,b)||infinity); retain the finite component coefficients.",
+        "normalizations": "Use ordinary global unit-vector vertical tests; conjugate if required by the correlation convention.",
+        "exceptional_cases": "Do not upgrade an arbitrary preexisting weak object or prescribe a symbol.",
+        "limit_order": "Obtain pointwise ordinary-test existence before forming the stage exhaustion."
+      },
+      "required_capabilities": [
+        "For every h, some coordinate pair (a,b) and an ordinary globally equivariant unit-vector lower-test nilcharacter give positive standard-size correlation with the corresponding bounded scalar weight u_(h,a,b)."
+      ],
+      "available_capabilities": [
+        "For each parameter separately, the lower-test correlation has a scalar component of an ordinary globally equivariant unit-vector nilcharacter with positive standard-size correlation."
+      ],
+      "derived_capabilities": [
+        "For every h, some coordinate pair (a,b) and an ordinary globally equivariant unit-vector lower-test nilcharacter give positive standard-size correlation with the corresponding bounded scalar weight u_(h,a,b)."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+            "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "51f603e6d359c343b57067f41df0e056408ac64b13e36f17373e578a9f8d555c"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For every h, some coordinate pair (a,b) and an ordinary globally equivariant unit-vector lower-test nilcharacter give positive standard-size correlation with the corresponding bounded scalar weight u_(h,a,b).",
+          "objects": "For each h, a selected coordinate pair (a,b), the corresponding bounded scalar weight u_(h,a,b) from LP03 line7, and its ordinary lower-degree test.",
+          "hypotheses": "The lower-test correlation premise at LP03 line5 and coordinate construction at line7; fixed standard degree d=s-2>=1. Line9 selects some coordinate pair and witness for each h, not a witness for every coordinate pair.",
+          "quantifiers": "For every h there exists some coordinate pair (a,b) and a witness; no common stage bound has yet been obtained.",
+          "parameter_range": "s>=3 and d=s-2.",
+          "uniformity": "The approximation and finite coefficient sum are fixed for each h; uniformity over h belongs to the later stage argument.",
+          "constants": "Choose approximation error less than half the actual coordinate-weight correlation divided by max(1,||u_(h,a,b)||infinity); retain the finite component coefficients.",
+          "normalizations": "Use ordinary global unit-vector vertical tests; conjugate if required by the correlation convention.",
+          "exceptional_cases": "Do not upgrade an arbitrary preexisting weak object or prescribe a symbol.",
+          "limit_order": "Obtain pointwise ordinary-test existence before forming the stage exhaustion."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Apply the same ordinary global lower-test approximation to the bounded internal scalar weight; reserve half the correlation margin and retain the finite coefficient sum. Preserve all pointwise, internality and finite-stage restrictions of the source proof.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+              "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+            },
+            "start_line": 7,
+            "end_line": 7,
+            "excerpt_sha256": "391b9f8ea92943a8dd9019feb943f9f46eeda46c5e22109aff66ec1b67482cb7"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+              "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "51f603e6d359c343b57067f41df0e056408ac64b13e36f17373e578a9f8d555c"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+            "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "51f603e6d359c343b57067f41df0e056408ac64b13e36f17373e578a9f8d555c"
+        }
+      ]
+    },
+    "original": {
+      "id": "LP03-SOURCE-ORDINARY-WITNESS",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "51f603e6d359c343b57067f41df0e056408ac64b13e36f17373e578a9f8d555c"
+      },
+      "supplier_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+          "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+        },
+        "start_line": 7,
+        "end_line": 7,
+        "excerpt_sha256": "391b9f8ea92943a8dd9019feb943f9f46eeda46c5e22109aff66ec1b67482cb7"
+      },
+      "upstream_use_id": "ACTIVE-S13-NOTE-ORDINARY-TEST-EXISTENCE",
+      "reason": "Apply the same ordinary global lower-test approximation to the bounded internal scalar weight; reserve half the correlation margin and retain the finite coefficient sum."
+    }
+  },
+  {
+    "use": {
+      "id": "ACTIVE-LP03-SOURCE-MODEL-EXHAUSTION",
+      "consumer": "GI-04-LP02-03",
+      "passages": [
+        "ACTIVE-LP03-SOURCE-MODEL-EXHAUSTION-P1"
+      ],
+      "assertion": {
+        "statement": "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model.",
+        "objects": "The model tags for the actual LP03 coordinate weights u_(h,a,b), assembled into the increasing ordinary witness sets T_M at LP03 line11.",
+        "hypotheses": "Fixed finite degree d and rational filtered compact lattice models.",
+        "quantifiers": "Every model needed by the pointwise test occurs in the enumeration.",
+        "parameter_range": "Finite dimensions and fixed degree d=s-2>=1.",
+        "uniformity": "No uniform geometry bound over the entire enumeration is inferred. Finite stages are constructed locally.",
+        "constants": "Metric bounds depend on the model; stage M encodes bounds separately.",
+        "normalizations": "Choose model representatives and metrics before the ordinary parameter sets.",
+        "exceptional_cases": "The countability assertion does not itself imply that arbitrary internal sets form an internal exhaustion.",
+        "limit_order": "Enumerate models before the locally constructed increasing standard sequence and internal relation."
+      },
+      "classification": "dependency",
+      "reason": "Reuse the ordinary model/character/dimension tags and unrestricted Taylor coefficients in one increasing sequence T_M. Extra finite coordinate tags do not alter internality.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+            "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+          },
+          "start_line": 9,
+          "end_line": 9,
+          "excerpt_sha256": "285d5b9a8aa5f02852013f7f0e97109157a1fef132748beeb78a847e7700f083"
+        },
+        "statement": "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt_sha256": "e002987fd08f6633dca664129a8ba1733de9e9df45d816e151e79b0db79f343f"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-LP03-SOURCE-MODEL-EXHAUSTION",
+      "use_sha256": "ee5e4c8fa06948252a0af106546aea62f27bdd23456aa83fa491468f62fcb959",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model.",
+        "objects": "Model tags used in the increasing ordinary witness sets T_M.",
+        "hypotheses": "Fixed finite degree d and rational filtered compact lattice models.",
+        "quantifiers": "Every model needed by the pointwise test occurs in the enumeration.",
+        "parameter_range": "Finite dimensions and fixed degree d=s-2>=1.",
+        "uniformity": "No uniform geometry bound over the entire enumeration is inferred. Finite stages are constructed locally.",
+        "constants": "Metric bounds depend on the model; stage M encodes bounds separately.",
+        "normalizations": "Choose model representatives and metrics before the ordinary parameter sets.",
+        "exceptional_cases": "The countability assertion does not itself imply that arbitrary internal sets form an internal exhaustion.",
+        "limit_order": "Enumerate models before the locally constructed increasing standard sequence and internal relation."
+      },
+      "needed_assertion": {
+        "statement": "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model.",
+        "objects": "The model tags for the actual LP03 coordinate weights u_(h,a,b), assembled into the increasing ordinary witness sets T_M at LP03 line11.",
+        "hypotheses": "Fixed finite degree d and rational filtered compact lattice models.",
+        "quantifiers": "Every model needed by the pointwise test occurs in the enumeration.",
+        "parameter_range": "Finite dimensions and fixed degree d=s-2>=1.",
+        "uniformity": "No uniform geometry bound over the entire enumeration is inferred. Finite stages are constructed locally.",
+        "constants": "Metric bounds depend on the model; stage M encodes bounds separately.",
+        "normalizations": "Choose model representatives and metrics before the ordinary parameter sets.",
+        "exceptional_cases": "The countability assertion does not itself imply that arbitrary internal sets form an internal exhaustion.",
+        "limit_order": "Enumerate models before the locally constructed increasing standard sequence and internal relation."
+      },
+      "required_capabilities": [
+        "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model."
+      ],
+      "available_capabilities": [
+        "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model."
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+            "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+          },
+          "start_line": 11,
+          "end_line": 11,
+          "excerpt_sha256": "e002987fd08f6633dca664129a8ba1733de9e9df45d816e151e79b0db79f343f"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed-degree rational filtered model types admit a countable enumeration with one fixed smooth metric per model.",
+          "objects": "The model tags for the actual LP03 coordinate weights u_(h,a,b), assembled into the increasing ordinary witness sets T_M at LP03 line11.",
+          "hypotheses": "Fixed finite degree d and rational filtered compact lattice models.",
+          "quantifiers": "Every model needed by the pointwise test occurs in the enumeration.",
+          "parameter_range": "Finite dimensions and fixed degree d=s-2>=1.",
+          "uniformity": "No uniform geometry bound over the entire enumeration is inferred. Finite stages are constructed locally.",
+          "constants": "Metric bounds depend on the model; stage M encodes bounds separately.",
+          "normalizations": "Choose model representatives and metrics before the ordinary parameter sets.",
+          "exceptional_cases": "The countability assertion does not itself imply that arbitrary internal sets form an internal exhaustion.",
+          "limit_order": "Enumerate models before the locally constructed increasing standard sequence and internal relation."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Reuse the ordinary model/character/dimension tags and unrestricted Taylor coefficients in one increasing sequence T_M. Extra finite coordinate tags do not alter internality. Preserve all pointwise, internality and finite-stage restrictions of the source proof.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+              "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "285d5b9a8aa5f02852013f7f0e97109157a1fef132748beeb78a847e7700f083"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+              "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+            },
+            "start_line": 11,
+            "end_line": 11,
+            "excerpt_sha256": "e002987fd08f6633dca664129a8ba1733de9e9df45d816e151e79b0db79f343f"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+            "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+          },
+          "start_line": 11,
+          "end_line": 11,
+          "excerpt_sha256": "e002987fd08f6633dca664129a8ba1733de9e9df45d816e151e79b0db79f343f"
+        }
+      ]
+    },
+    "original": {
+      "id": "LP03-SOURCE-MODEL-EXHAUSTION",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 11,
+        "end_line": 11,
+        "excerpt_sha256": "e002987fd08f6633dca664129a8ba1733de9e9df45d816e151e79b0db79f343f"
+      },
+      "supplier_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+          "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+        },
+        "start_line": 9,
+        "end_line": 9,
+        "excerpt_sha256": "285d5b9a8aa5f02852013f7f0e97109157a1fef132748beeb78a847e7700f083"
+      },
+      "upstream_use_id": "ACTIVE-S13-NOTE-MODEL-EXHAUSTION",
+      "reason": "Reuse the ordinary model/character/dimension tags and unrestricted Taylor coefficients in one increasing sequence T_M. Extra finite coordinate tags do not alter internality."
+    }
+  },
+  {
+    "use": {
+      "id": "ACTIVE-LP03-SOURCE-BOUNDED-STAGE",
+      "consumer": "GI-04-LP02-03",
+      "passages": [
+        "ACTIVE-LP03-SOURCE-BOUNDED-STAGE-P1"
+      ],
+      "assertion": {
+        "statement": "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0.",
+        "objects": "The LP03 parameter set, coordinate weights u_(h,a,b), T_M and internal reciprocal-correlation relation defined at LP03 line13.",
+        "hypotheses": "For every h, LP03 line9 gives some coordinate pair (a,b) and a lower-test witness in a standard stage; line11 includes coordinate tags in T_M; line13 defines R(h,t).",
+        "quantifiers": "Every h simultaneously with one internal map and one standard stage bound.",
+        "parameter_range": "Fixed degree and finite standard model tags at each stage; polynomial orbit coefficients remain unrestricted.",
+        "uniformity": "One standard bound for geometry, dimensions, test norms and reciprocal threshold, independent of h.",
+        "constants": "No effective value of M0 is claimed.",
+        "normalizations": "Positive standard correlation is encoded through a reciprocal threshold coordinate, not an external condition in R.",
+        "exceptional_cases": "No compactness of the noncompact orbit parameter and no unjustified diagonal representative.",
+        "limit_order": "Pointwise existence and internal exhaustion first; nested finite-intersection proof gives bounded stage; then internal choice."
+      },
+      "classification": "dependency",
+      "reason": "The same internal reciprocal relation and corrected finite-intersection argument apply to these bounded scalar weights. This is not an initial-inverse-theorem invocation.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+            "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+          },
+          "start_line": 11,
+          "end_line": 15,
+          "excerpt_sha256": "f5b55fbc2b80decc0d567b333285fb6910ab567f08d935237e5311a5b0f44101"
+        },
+        "statement": "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 13,
+        "end_line": 13,
+        "excerpt_sha256": "59a85c1597481d0a0adc26eebe294b0b1e0023012e6f3f4c1eea5df33956ebe1"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-LP03-SOURCE-BOUNDED-STAGE",
+      "use_sha256": "edab65b6b1afb48e7e7abdf3e226000b28803c31713d18783c6a7da9683defed",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0.",
+        "objects": "H, T_M, internal R(h,t) with reciprocal correlation threshold, and the least-stage map.",
+        "hypotheses": "Every h has a witness in a standard stage by line7; line9 supplies one ordinary increasing sequence; line11 gives an internal relation.",
+        "quantifiers": "Every h simultaneously with one internal map and one standard stage bound.",
+        "parameter_range": "Fixed degree and finite standard model tags at each stage; polynomial orbit coefficients remain unrestricted.",
+        "uniformity": "One standard bound for geometry, dimensions, test norms and reciprocal threshold, independent of h.",
+        "constants": "No effective value of M0 is claimed.",
+        "normalizations": "Positive standard correlation is encoded through a reciprocal threshold coordinate, not an external condition in R.",
+        "exceptional_cases": "No compactness of the noncompact orbit parameter and no unjustified diagonal representative.",
+        "limit_order": "Pointwise existence and internal exhaustion first; nested finite-intersection proof gives bounded stage; then internal choice."
+      },
+      "needed_assertion": {
+        "statement": "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0.",
+        "objects": "The LP03 parameter set, coordinate weights u_(h,a,b), T_M and internal reciprocal-correlation relation defined at LP03 line13.",
+        "hypotheses": "For every h, LP03 line9 gives some coordinate pair (a,b) and a lower-test witness in a standard stage; line11 includes coordinate tags in T_M; line13 defines R(h,t).",
+        "quantifiers": "Every h simultaneously with one internal map and one standard stage bound.",
+        "parameter_range": "Fixed degree and finite standard model tags at each stage; polynomial orbit coefficients remain unrestricted.",
+        "uniformity": "One standard bound for geometry, dimensions, test norms and reciprocal threshold, independent of h.",
+        "constants": "No effective value of M0 is claimed.",
+        "normalizations": "Positive standard correlation is encoded through a reciprocal threshold coordinate, not an external condition in R.",
+        "exceptional_cases": "No compactness of the noncompact orbit parameter and no unjustified diagonal representative.",
+        "limit_order": "Pointwise existence and internal exhaustion first; nested finite-intersection proof gives bounded stage; then internal choice."
+      },
+      "required_capabilities": [
+        "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0."
+      ],
+      "available_capabilities": [
+        "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0."
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+            "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+          },
+          "start_line": 13,
+          "end_line": 13,
+          "excerpt_sha256": "59a85c1597481d0a0adc26eebe294b0b1e0023012e6f3f4c1eea5df33956ebe1"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual internal witness relation on H and the ordinary increasing exhaustion admits an internal witness map whose stage is bounded by one standard M0.",
+          "objects": "The LP03 parameter set, coordinate weights u_(h,a,b), T_M and internal reciprocal-correlation relation defined at LP03 line13.",
+          "hypotheses": "For every h, LP03 line9 gives some coordinate pair (a,b) and a lower-test witness in a standard stage; line11 includes coordinate tags in T_M; line13 defines R(h,t).",
+          "quantifiers": "Every h simultaneously with one internal map and one standard stage bound.",
+          "parameter_range": "Fixed degree and finite standard model tags at each stage; polynomial orbit coefficients remain unrestricted.",
+          "uniformity": "One standard bound for geometry, dimensions, test norms and reciprocal threshold, independent of h.",
+          "constants": "No effective value of M0 is claimed.",
+          "normalizations": "Positive standard correlation is encoded through a reciprocal threshold coordinate, not an external condition in R.",
+          "exceptional_cases": "No compactness of the noncompact orbit parameter and no unjustified diagonal representative.",
+          "limit_order": "Pointwise existence and internal exhaustion first; nested finite-intersection proof gives bounded stage; then internal choice."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The same internal reciprocal relation and corrected finite-intersection argument apply to these bounded scalar weights. This is not an initial-inverse-theorem invocation. Preserve all pointwise, internality and finite-stage restrictions of the source proof.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+              "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+            },
+            "start_line": 11,
+            "end_line": 15,
+            "excerpt_sha256": "f5b55fbc2b80decc0d567b333285fb6910ab567f08d935237e5311a5b0f44101"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+              "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+            },
+            "start_line": 13,
+            "end_line": 13,
+            "excerpt_sha256": "59a85c1597481d0a0adc26eebe294b0b1e0023012e6f3f4c1eea5df33956ebe1"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+            "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+          },
+          "start_line": 13,
+          "end_line": 13,
+          "excerpt_sha256": "59a85c1597481d0a0adc26eebe294b0b1e0023012e6f3f4c1eea5df33956ebe1"
+        }
+      ]
+    },
+    "original": {
+      "id": "LP03-SOURCE-BOUNDED-STAGE",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-LP03-BOUNDED-LOWER-TEST-SELECTION.md",
+          "sha256": "4f3252d25bceb9011ca0db677ab9be2200472f5f9201ae729a8118412f6411f0"
+        },
+        "start_line": 13,
+        "end_line": 13,
+        "excerpt_sha256": "59a85c1597481d0a0adc26eebe294b0b1e0023012e6f3f4c1eea5df33956ebe1"
+      },
+      "supplier_location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-adoption-ordinary-v1/local-derivations/GI-S13-BOUNDED-SELECTION.md",
+          "sha256": "e245e0eb1025ab11bcbd47b3f6928bd050076969dfb07c2a9cf950e46cbcaacf"
+        },
+        "start_line": 11,
+        "end_line": 15,
+        "excerpt_sha256": "f5b55fbc2b80decc0d567b333285fb6910ab567f08d935237e5311a5b0f44101"
+      },
+      "upstream_use_id": "ACTIVE-S13-NOTE-INTERNAL-WITNESS-SELECTION",
+      "reason": "The same internal reciprocal relation and corrected finite-intersection argument apply to these bounded scalar weights. This is not an initial-inverse-theorem invocation."
+    }
+  }
+]

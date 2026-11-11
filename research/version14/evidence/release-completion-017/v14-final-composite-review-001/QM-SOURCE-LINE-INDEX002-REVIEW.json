@@ -1,0 +1,103 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:06:30.272Z",
+  "status": "accepted_bounded_source_roles_and_one_application_append",
+  "target_manifest": "d8fbfc3d9d379beccf2c90bac380a2ccebc55f0bbd5e94419b35c0bf82afac77",
+  "checks": [
+    {
+      "id": "SRC-QM-001",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-002",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-003",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-004",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-005",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-006",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-007",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-008",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-QM-CENTRAL-SIMPLE-SPLITTING-P1",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-009",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION-SOURCE-APPLICATION",
+      "ok": true
+    },
+    {
+      "file": "research/version14/evidence/current-reviewed-003/suppliers/qm-lemma-inventory-v1/SEMISIMPLE-COEFFICIENTS.md",
+      "partition": true
+    },
+    {
+      "id": "SRC-QM-010",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-011",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-012",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-013",
+      "ok": true
+    },
+    {
+      "id": "ARITH-PASSAGE-QM-FALTINGS",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-QM-SEMISIMPLE-COEFFICIENT-EXTENSION-P1",
+      "ok": true
+    },
+    {
+      "id": "SRC-QM-014",
+      "ok": true
+    },
+    {
+      "file": "research/version14/evidence/current-reviewed-003/suppliers/all-prime-irreducibility-matrix-units-002/PROOF.md",
+      "partition": true
+    }
+  ],
+  "delta": [
+    {
+      "p": "/0/after_component/use/shared_contract_justification",
+      "a": null,
+      "b": "The same coefficient-extension assertion is applied to the actual semisimple Tate module in the all-prime argument and in the provider's explicit application paragraph; both retain their original coefficient field and separate Faltings/full-endomorphism hypotheses."
+    },
+    {
+      "p": "/0/after_component/connection/use_sha256",
+      "a": "3805ca473514fa0911ad4948cb4e670f6f37aea9fb942f9ede861c28b053c7be",
+      "b": "7a6c90b06be89b9825cf9ec6b12a228ee8e7538d800441641559b1fe8312a7fc"
+    }
+  ],
+  "use_hash_matches": true,
+  "reason": "Read both complete proofs. Theorem declaration and explicit local image-algebra/projection arguments are distinguished from the splitting and Faltings inputs. Semisimple11 is an actual application after the general proof, not an invocation of its own conclusion as premise. The added consumer shares the same conditional extension assertion, now explicitly justified.",
+  "limits": "FullEnd, common field, Faltings assumptions and original-family caller discharge remain in PENDING. This is not final whole-line or global premise closure."
+}

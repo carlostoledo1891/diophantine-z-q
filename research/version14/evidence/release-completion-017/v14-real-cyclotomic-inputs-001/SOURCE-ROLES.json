@@ -1,0 +1,230 @@
+[
+  {
+    "id": "REAL-CYCLOTOMIC-TOWER-INPUT",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14018,
+      "end_line": 14028,
+      "excerpt_sha256": "4d90ad48ed5fdca1f713916ba739cb73b93344996779b7da7edc113a49a31535"
+    },
+    "role": "local_source_to_consumer",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+        },
+        "start_line": 7,
+        "end_line": 9,
+        "excerpt_sha256": "b37e839eb3634ffbd40e4d5eeda08c677274a2e993de103f4f3bab71176feda6"
+      }
+    ],
+    "source_use_ids": [
+      "ACTIVE-REAL-CYCLOTOMIC-RAMIFICATION"
+    ],
+    "explanation": "Use degree2 steps and unique dyadic total ramification before the class-field induction; the ramification use is actually applied in the new proof line9, not claimed as an independent invocation at every main line."
+  },
+  {
+    "id": "REAL-CYCLOTOMIC-CLASS-INDUCTION",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14018,
+      "end_line": 14029,
+      "excerpt_sha256": "d9f8c8aa37614ece6318838054791cc65cce653f1e2f0b5d0c7a6d348300a668"
+    },
+    "role": "actual_external_application_with_local_derivation",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+        },
+        "start_line": 11,
+        "end_line": 13,
+        "excerpt_sha256": "8c86afe663af2e36c5595adc2ba2e2374221968d04ed69e5697bfca6e3d03064"
+      }
+    ],
+    "source_use_ids": [
+      "ACTIVE-REAL-CYCLOTOMIC-HILBERT-CLASS"
+    ],
+    "retained_premises": "Finite-group maximal-subgroup argument and ordinary real-splitting convention; no imaginary-field shortcut."
+  },
+  {
+    "id": "REAL-CYCLOTOMIC-SIGNATURE-INPUT",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14031,
+      "end_line": 14047,
+      "excerpt_sha256": "abdedcbadd268667491afe5f9f295a15a3c7b6c1f39bb8053a8f18499dde10ae"
+    },
+    "role": "actual_local_proof_application",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+        },
+        "start_line": 15,
+        "end_line": 17,
+        "excerpt_sha256": "8c847644781d558cc33bf2698a2e82ad2eff91c8303370ae51e1dd2c67c18860"
+      }
+    ],
+    "source_use_ids": [
+      "ACTIVE-REAL-CYCLOTOMIC-UNIT-SIGNATURES"
+    ],
+    "retained_premises": "n>=1 for the displayed cyclotomic unit, and -1 when n=0."
+  },
+  {
+    "id": "REAL-CYCLOTOMIC-KUMMER-BRAUER-INPUT",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14049,
+      "end_line": 14060,
+      "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+    },
+    "role": "actual_external_application_with_local_derivation",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+        },
+        "start_line": 19,
+        "end_line": 21,
+        "excerpt_sha256": "a79406d72c96727a8d4223d40b2cfd5345a62e55b14080deaae9923eb4ac5bd3"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14018,
+        "end_line": 14047,
+        "excerpt_sha256": "f48e282a3cd867a6d5686c9f42bc0bf59269b7ba399f8fbd5fdd327cfb809a27"
+      }
+    ],
+    "source_use_ids": [
+      "ACTIVE-REAL-CYCLOTOMIC-KUMMER-BRAUER"
+    ],
+    "retained_premises": "Odd-order S-class group and actual unit signatures are prior local results."
+  },
+  {
+    "id": "REAL-CYCLOTOMIC-H1-COUNT",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14049,
+      "end_line": 14054,
+      "excerpt_sha256": "79559fb33282493cff5ae5fa12bdb4d64dcbb7e5d7524e0d4a028342991564e3"
+    },
+    "role": "local_source_to_consumer",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+        },
+        "start_line": 23,
+        "end_line": 23,
+        "excerpt_sha256": "d6f84e8ba056ea2f7e04d4b5e98edcab6d26ea695177ab1ae9478e0a8e93d3c6"
+      }
+    ],
+    "source_use_ids": [
+      "ACTIVE-REAL-CYCLOTOMIC-EULER-COUNT"
+    ],
+    "explanation": "The Euler use is actually at proof23 and supplies the stated finite dimension here; its location is not silently repointed to the manuscript sentence."
+  },
+  {
+    "id": "REAL-CYCLOTOMIC-POSITIVE-FIBER",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14060,
+      "end_line": 14067,
+      "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+    },
+    "role": "actual_external_application_with_local_derivation",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/real-cyclotomic-residual-v1/PROOF.md",
+          "sha256": "78d71b12f979182c64fe96d8c747908746f25eb3d6e85a8fac639112bdce5853"
+        },
+        "start_line": 23,
+        "end_line": 27,
+        "excerpt_sha256": "d64c52234b25fffbe3f95cf2439fcc9bbbce0832fdf28cbe2538c02fca387869"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14049,
+        "end_line": 14060,
+        "excerpt_sha256": "c04eae63ca929d57e91b470416ba3da1575f69e029a06e360de7e8aa8dabbf80"
+      }
+    ],
+    "source_use_ids": [
+      "ACTIVE-REAL-CYCLOTOMIC-HIGH-REAL-COMPARISON"
+    ],
+    "retained_premises": "Keep ordinary H0 diagonal and both surjectivity inputs."
+  },
+  {
+    "id": "REAL-CYCLOTOMIC-LIMIT-BOUNDARY",
+    "consumer_location": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14069,
+      "end_line": 14091,
+      "excerpt_sha256": "2f468adc4c6f9fb63d9c8bc46d482534042afcae82544e5add10504f0ec935ba"
+    },
+    "role": "downstream_navigation_only",
+    "supplier_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14060,
+        "end_line": 14067,
+        "excerpt_sha256": "bfefae2f73c7ec43d31b73985e56146a8f2b13206d17a9ccfe7afbdd4f6d4b03"
+      }
+    ],
+    "source_use_ids": [],
+    "explanation": "This packet supplies only finite residual dimensions; bounded s_n, compatible towers, completed tensor products and rank passage remain their existing separate arguments."
+  }
+]

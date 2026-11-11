@@ -1,0 +1,64 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:41:38.795Z",
+  "decision": "accept exact kind-only correction",
+  "target": {
+    "path": "v14-active-connection-collection-011/COMPONENTS.json",
+    "sha256": "2ed40b9086ad18f9e6254c1017644936c3553dd4f68c112a976cba489fe3d9ac"
+  },
+  "checks": [
+    [
+      "v14-active-connection-collection-010/COMPONENTS.json",
+      true
+    ],
+    [
+      "v14-isogeny-components-root-002/COMPONENTS.json",
+      true
+    ],
+    [
+      "v14-isogeny-components-review-h6-001/SUCCESSOR002-REVIEW.json",
+      true
+    ],
+    [
+      "same621uses",
+      true
+    ],
+    [
+      "same background",
+      true
+    ]
+  ],
+  "delta": [
+    {
+      "id": "ACTIVE-RC-MILNE-ISOGENY-RATIO",
+      "diff": [
+        {
+          "p": "/connection/connecting_derivation/kind",
+          "a": "identification",
+          "b": "derivation"
+        },
+        {
+          "p": "/origin",
+          "a": "v14-isogeny-components-root-001/COMPONENTS.json",
+          "b": "v14-isogeny-components-root-002/COMPONENTS.json"
+        }
+      ]
+    },
+    {
+      "id": "ACTIVE-RC-EDIXHOVEN-TAME-COMPONENTS",
+      "diff": [
+        {
+          "p": "/connection/connecting_derivation/kind",
+          "a": "identification",
+          "b": "derivation"
+        },
+        {
+          "p": "/origin",
+          "a": "v14-isogeny-components-root-001/COMPONENTS.json",
+          "b": "v14-isogeny-components-root-002/COMPONENTS.json"
+        }
+      ]
+    }
+  ],
+  "scope": "The two source-to-current specializations are correctly marked derivation rather than identification. Read the separate independent successor review. All621 use objects and two background records remain exact; no assertion, source, consumer or mathematical scope changes. No final coverage acceptance."
+}

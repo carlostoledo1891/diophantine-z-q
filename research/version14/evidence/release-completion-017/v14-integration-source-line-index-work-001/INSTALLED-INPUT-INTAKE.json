@@ -1,0 +1,61 @@
+{
+  "inputs": [
+    {
+      "path": "v14-rc-integral-shapiro-input-002/MANIFEST.json",
+      "sha256": "6f5638f1223a7cee107e533544d998822ebdd3dc66b70ad6b907440fbb0ef0e2"
+    },
+    {
+      "path": "v14-rc-tate-image-inputs-001/MANIFEST.json",
+      "sha256": "961d7bc02dabef9364f03483abeaeadf9b77d4dd025e61d86ecb276cab3b166e"
+    },
+    {
+      "path": "v14-rc-weil-pairing-input-001/MANIFEST.json",
+      "sha256": "bc61769e6b4dda06be8739f6e484d3795a4ec3947c3ba17fbd5e460413db7ce3"
+    },
+    {
+      "path": "v14-quadratic-gauss-application-001/MANIFEST.json",
+      "sha256": "a1b79bd48d93c50325fde69435be6960fdf6cb1d29bd85e2be1c0284acc2844a"
+    }
+  ],
+  "installation": {
+    "path": "v14-accepted-source-installation-root-001/INSTALLATION.json",
+    "sha256": "8e4513a6865d7dbb1b3fc78b038bf5d05c337a06da6e19e6e8e3d1dbf14df359"
+  },
+  "added": [
+    {
+      "input": "v14-rc-integral-shapiro-input-002",
+      "id": "ACTIVE-RC-SOURCE-INTEGRAL-SHAPIRO"
+    },
+    {
+      "input": "v14-rc-tate-image-inputs-001",
+      "id": "ACTIVE-RC-TATE-DETERMINANT-CYCLOTOMIC"
+    },
+    {
+      "input": "v14-rc-weil-pairing-input-001",
+      "id": "ACTIVE-RC-SOURCE-FINITE-WEIL-PAIRING"
+    },
+    {
+      "input": "v14-quadratic-gauss-application-001",
+      "id": "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS"
+    }
+  ],
+  "append": {
+    "input": "v14-rc-tate-image-inputs-001",
+    "use_id": "ACTIVE-RC-SERRE-OPEN-IMAGE",
+    "locations": [
+      {
+        "passage_id": "ACTIVE-RC-SERRE-OPEN-IMAGE-REPEAT-4484",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4484,
+          "end_line": 4488,
+          "excerpt_sha256": "437c2dc4eb396b54c7c10436523cf68c2e41a606f356878738fbfa7d402474ae"
+        }
+      }
+    ]
+  }
+}

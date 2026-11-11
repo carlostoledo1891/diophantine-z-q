@@ -1,0 +1,348 @@
+[
+  {
+    "state": "author_proposal_pending_review",
+    "use": {
+      "id": "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE",
+      "consumer": "GA-RELATIVE-INVERSE",
+      "passages": [
+        "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE-P1"
+      ],
+      "assertion": {
+        "statement": "The local GI(k) hypothesis required by GT Proposition10.1 is available at k=r-1 and threshold min(alpha*delta/(4*Cstar),1/2), with fixed finite linear models independent of L,z,b and the ray-class union.",
+        "objects": "The absolute one-bounded GI input in Proposition10.1; its relative real input is treated by that proposition, not inserted directly into the one-bounded theorem.",
+        "hypotheses": "Fix the desired s>=2, r=max(s,4), k=r-1, Cstar and majorant scaling alpha before the norm threshold delta; the separate relative proposition requires its pseudorandom majorant.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "Each fixed r>=4 and k=r-1>=3; alpha>0,Cstar fixed; positive threshold at most1/2.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "The local theorem uses normalized interval Gowers norm. The current proof first converts the truncated relative input to the required U^r threshold using the exact indicator ratios.",
+        "exceptional_cases": "No assertion that the prime-dominated relative input is one-bounded; no fixed-z pseudorandom limit or direct contradiction before the slow cutoff.",
+        "limit_order": "Fix the finite-order parameters and threshold; apply the finite-family GI hypothesis inside the relative inverse theorem; the following stagewise cutoff separately supplies a sequence satisfying its asymptotic hypotheses."
+      },
+      "classification": "dependency",
+      "reason": "This is the actual local-GI invocation at main19648. The independent relative inverse proposition and majorant remain separate suppliers.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "internal",
+        "application_id": "GI-00-ASSEMBLY",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+            "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+          },
+          "start_line": 39,
+          "end_line": 83,
+          "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+        },
+        "statement": "For each fixed k>=3 and 0<delta<=1, every complex one-bounded function on [N] with normalized U^(k+1)[N] norm at least delta correlates with a one-bounded, uniformly Lipschitz linear nilsequence from one fixed finite family of connected simply connected models of step at most k.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 19604,
+        "end_line": 19653,
+        "excerpt_sha256": "06ac5461fa8b3e11040e1c65260353d3b583ec47fe10a963bb986b9e4dc391c4"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE",
+      "use_sha256": "91ab9588605827d6a309758bc0366597e3794d0efe9b1f79ef2570c8bc998c5b",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For each fixed k>=3 and 0<delta<=1, every complex one-bounded function on [N] with normalized U^(k+1)[N] norm at least delta correlates with a one-bounded, uniformly Lipschitz linear nilsequence from one fixed finite family of connected simply connected models of step at most k.",
+        "objects": "Complex one-bounded functions on [N], connected simply connected nilpotent groups, lattices and fixed smooth metrics.",
+        "hypotheses": "k>=3 fixed and normalized interval U^(k+1) norm at least delta>0.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "Every fixed integer k>=3 and positive delta<=1; in particular20,39 and each fixed r-1>=3.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "Zero extension divided by interval-indicator Gowers norm; complex conjugation may be moved to the test.",
+        "exceptional_cases": "Strict published thresholds use delta/2. Bounded N is handled by finite circle interpolation.",
+        "limit_order": "Fix k and delta, obtain the finite family and constants, then allow N, the function and all orbit parameters to vary. The assembly proof retains all component premises."
+      },
+      "needed_assertion": {
+        "statement": "The local GI(k) hypothesis required by GT Proposition10.1 is available at k=r-1 and threshold min(alpha*delta/(4*Cstar),1/2), with fixed finite linear models independent of L,z,b and the ray-class union.",
+        "objects": "The absolute one-bounded GI input in Proposition10.1; its relative real input is treated by that proposition, not inserted directly into the one-bounded theorem.",
+        "hypotheses": "Fix the desired s>=2, r=max(s,4), k=r-1, Cstar and majorant scaling alpha before the norm threshold delta; the separate relative proposition requires its pseudorandom majorant.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "Each fixed r>=4 and k=r-1>=3; alpha>0,Cstar fixed; positive threshold at most1/2.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "The local theorem uses normalized interval Gowers norm. The current proof first converts the truncated relative input to the required U^r threshold using the exact indicator ratios.",
+        "exceptional_cases": "No assertion that the prime-dominated relative input is one-bounded; no fixed-z pseudorandom limit or direct contradiction before the slow cutoff.",
+        "limit_order": "Fix the finite-order parameters and threshold; apply the finite-family GI hypothesis inside the relative inverse theorem; the following stagewise cutoff separately supplies a sequence satisfying its asymptotic hypotheses."
+      },
+      "required_capabilities": [
+        "The local GI(k) hypothesis required by GT Proposition10.1 is available at k=r-1 and threshold min(alpha*delta/(4*Cstar),1/2), with fixed finite linear models independent of L,z,b and the ray-class union."
+      ],
+      "available_capabilities": [
+        "For each fixed k>=3 and 0<delta<=1, every complex one-bounded function on [N] with normalized U^(k+1)[N] norm at least delta correlates with a one-bounded, uniformly Lipschitz linear nilsequence from one fixed finite family of connected simply connected models of step at most k."
+      ],
+      "derived_capabilities": [
+        "The local GI(k) hypothesis required by GT Proposition10.1 is available at k=r-1 and threshold min(alpha*delta/(4*Cstar),1/2), with fixed finite linear models independent of L,z,b and the ray-class union."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19604,
+          "end_line": 19653,
+          "excerpt_sha256": "06ac5461fa8b3e11040e1c65260353d3b583ec47fe10a963bb986b9e4dc391c4"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The local GI(k) hypothesis required by GT Proposition10.1 is available at k=r-1 and threshold min(alpha*delta/(4*Cstar),1/2), with fixed finite linear models independent of L,z,b and the ray-class union.",
+          "objects": "The absolute one-bounded GI input in Proposition10.1; its relative real input is treated by that proposition, not inserted directly into the one-bounded theorem.",
+          "hypotheses": "Fix the desired s>=2, r=max(s,4), k=r-1, Cstar and majorant scaling alpha before the norm threshold delta; the separate relative proposition requires its pseudorandom majorant.",
+          "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+          "parameter_range": "Each fixed r>=4 and k=r-1>=3; alpha>0,Cstar fixed; positive threshold at most1/2.",
+          "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+          "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+          "normalizations": "The local theorem uses normalized interval Gowers norm. The current proof first converts the truncated relative input to the required U^r threshold using the exact indicator ratios.",
+          "exceptional_cases": "No assertion that the prime-dominated relative input is one-bounded; no fixed-z pseudorandom limit or direct contradiction before the slow cutoff.",
+          "limit_order": "Fix the finite-order parameters and threshold; apply the finite-family GI hypothesis inside the relative inverse theorem; the following stagewise cutoff separately supplies a sequence satisfying its asymptotic hypotheses."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The real relative input is not falsely treated as one-bounded. The order r>=4, positive threshold, interval normalization and independent pseudorandom/slow-cutoff assumptions are retained.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+              "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+            },
+            "start_line": 39,
+            "end_line": 83,
+            "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19604,
+            "end_line": 19653,
+            "excerpt_sha256": "06ac5461fa8b3e11040e1c65260353d3b583ec47fe10a963bb986b9e4dc391c4"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19604,
+          "end_line": 19653,
+          "excerpt_sha256": "06ac5461fa8b3e11040e1c65260353d3b583ec47fe10a963bb986b9e4dc391c4"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 19604,
+        "end_line": 19653,
+        "excerpt_sha256": "06ac5461fa8b3e11040e1c65260353d3b583ec47fe10a963bb986b9e4dc391c4"
+      },
+      "claim_ids": [
+        "GA-RELATIVE-INVERSE"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "use": {
+      "id": "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20-P1"
+      ],
+      "assertion": {
+        "statement": "The fixed complexity-at-most20 prime-asymptotic application has the required GI(20) input: normalized interval U^21 inverse theorem with one finite family of linear step-at-most20 nilsequences for each fixed positive threshold.",
+        "objects": "The twenty-two integral affine forms at main2194–2196, whose separate complexity bound is at most20, and the GI(20) assumption of the retained prime-asymptotic theorem.",
+        "hypotheses": "Fix L, the admissible residue r, the moduli and coefficient data before X varies. Pairwise independent linear parts and the complexity bound are established in the separate prime-pattern argument.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "k=20; every fixed 0<delta<=1; all interval lengths.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "The local normalized finite-family linear formulation is used as the GI hypothesis of the external prime theorem; the form-count/complexity assertion is not supplied by GI.",
+        "exceptional_cases": "No uniform asymptotic in the varying cutoff L is inferred; L is fixed first. GI does not supply MN(20), local densities or admissibility.",
+        "limit_order": "Fix the arithmetic data and L, then apply GI at the fixed order20; the prime-asymptotic limit is X to infinity with these data fixed."
+      },
+      "classification": "dependency",
+      "reason": "This is the explicit GI(20) invocation at main2200–2204, separately from the external prime theorem and MN input.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "internal",
+        "application_id": "GI-00-ASSEMBLY",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+            "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+          },
+          "start_line": 39,
+          "end_line": 83,
+          "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+        },
+        "statement": "For each fixed k>=3 and 0<delta<=1, every complex one-bounded function on [N] with normalized U^(k+1)[N] norm at least delta correlates with a one-bounded, uniformly Lipschitz linear nilsequence from one fixed finite family of connected simply connected models of step at most k.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2190,
+        "end_line": 2206,
+        "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20",
+      "use_sha256": "51ce461dcff029ad67776258dc3e882e5dfe1f10964c0ecef2db441713379cfd",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For each fixed k>=3 and 0<delta<=1, every complex one-bounded function on [N] with normalized U^(k+1)[N] norm at least delta correlates with a one-bounded, uniformly Lipschitz linear nilsequence from one fixed finite family of connected simply connected models of step at most k.",
+        "objects": "Complex one-bounded functions on [N], connected simply connected nilpotent groups, lattices and fixed smooth metrics.",
+        "hypotheses": "k>=3 fixed and normalized interval U^(k+1) norm at least delta>0.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "Every fixed integer k>=3 and positive delta<=1; in particular20,39 and each fixed r-1>=3.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "Zero extension divided by interval-indicator Gowers norm; complex conjugation may be moved to the test.",
+        "exceptional_cases": "Strict published thresholds use delta/2. Bounded N is handled by finite circle interpolation.",
+        "limit_order": "Fix k and delta, obtain the finite family and constants, then allow N, the function and all orbit parameters to vary. The assembly proof retains all component premises."
+      },
+      "needed_assertion": {
+        "statement": "The fixed complexity-at-most20 prime-asymptotic application has the required GI(20) input: normalized interval U^21 inverse theorem with one finite family of linear step-at-most20 nilsequences for each fixed positive threshold.",
+        "objects": "The twenty-two integral affine forms at main2194–2196, whose separate complexity bound is at most20, and the GI(20) assumption of the retained prime-asymptotic theorem.",
+        "hypotheses": "Fix L, the admissible residue r, the moduli and coefficient data before X varies. Pairwise independent linear parts and the complexity bound are established in the separate prime-pattern argument.",
+        "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+        "parameter_range": "k=20; every fixed 0<delta<=1; all interval lengths.",
+        "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+        "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+        "normalizations": "The local normalized finite-family linear formulation is used as the GI hypothesis of the external prime theorem; the form-count/complexity assertion is not supplied by GI.",
+        "exceptional_cases": "No uniform asymptotic in the varying cutoff L is inferred; L is fixed first. GI does not supply MN(20), local densities or admissibility.",
+        "limit_order": "Fix the arithmetic data and L, then apply GI at the fixed order20; the prime-asymptotic limit is X to infinity with these data fixed."
+      },
+      "required_capabilities": [
+        "The fixed complexity-at-most20 prime-asymptotic application has the required GI(20) input: normalized interval U^21 inverse theorem with one finite family of linear step-at-most20 nilsequences for each fixed positive threshold."
+      ],
+      "available_capabilities": [
+        "For each fixed k>=3 and 0<delta<=1, every complex one-bounded function on [N] with normalized U^(k+1)[N] norm at least delta correlates with a one-bounded, uniformly Lipschitz linear nilsequence from one fixed finite family of connected simply connected models of step at most k."
+      ],
+      "derived_capabilities": [
+        "The fixed complexity-at-most20 prime-asymptotic application has the required GI(20) input: normalized interval U^21 inverse theorem with one finite family of linear step-at-most20 nilsequences for each fixed positive threshold."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2190,
+          "end_line": 2206,
+          "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed complexity-at-most20 prime-asymptotic application has the required GI(20) input: normalized interval U^21 inverse theorem with one finite family of linear step-at-most20 nilsequences for each fixed positive threshold.",
+          "objects": "The twenty-two integral affine forms at main2194–2196, whose separate complexity bound is at most20, and the GI(20) assumption of the retained prime-asymptotic theorem.",
+          "hypotheses": "Fix L, the admissible residue r, the moduli and coefficient data before X varies. Pairwise independent linear parts and the complexity bound are established in the separate prime-pattern argument.",
+          "quantifiers": "For every fixed k and delta, all positive N and all such f; all orbit parameters allowed.",
+          "parameter_range": "k=20; every fixed 0<delta<=1; all interval lengths.",
+          "uniformity": "Family, Lipschitz and correlation bounds are independent of N, f and orbit parameters.",
+          "constants": "Finite C(k,delta), positive c(k,delta); no numerical/effective bound is claimed.",
+          "normalizations": "The local normalized finite-family linear formulation is used as the GI hypothesis of the external prime theorem; the form-count/complexity assertion is not supplied by GI.",
+          "exceptional_cases": "No uniform asymptotic in the varying cutoff L is inferred; L is fixed first. GI does not supply MN(20), local densities or admissibility.",
+          "limit_order": "Fix the arithmetic data and L, then apply GI at the fixed order20; the prime-asymptotic limit is X to infinity with these data fixed."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "No uniform asymptotic in the varying cutoff L is inferred; L is fixed first. GI does not supply MN(20), local densities or admissibility.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+              "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+            },
+            "start_line": 39,
+            "end_line": 83,
+            "excerpt_sha256": "b88875b6c086bfba8b18b573509c93343a97686d21194f1fc4112f7ff785723b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2190,
+            "end_line": 2206,
+            "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2190,
+          "end_line": 2206,
+          "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2190,
+        "end_line": 2206,
+        "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+      },
+      "claim_ids": [
+        "V14-MAIN-POLYNOMIAL-DEFINITION"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20"
+      ]
+    }
+  }
+]

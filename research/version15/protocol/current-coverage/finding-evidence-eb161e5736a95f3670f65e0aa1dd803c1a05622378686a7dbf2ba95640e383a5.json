@@ -1,0 +1,28 @@
+{
+  "status": "author repair; independent review pending",
+  "predecessor": {
+    "path": "work/v15-repository-candidate-001/snapshots/v15-017/review/application-transfer-009/V15-HEIGHT-MODULAR.json",
+    "sha256": "5c5d379c5dab805dd1d5f04d8a2fda45c1f206eadef643e82857e95ff04ce190"
+  },
+  "changes": [
+    "Replace obligation6 with the exact adopted same-field product/subproduct proof and current evidence",
+    "Add explicit SF11 dependency; all other historical fields preserved"
+  ],
+  "historical_fields": "Unchanged old source pointers and status text remain historical; normalized current source transport is separate",
+  "graph_delta": {
+    "add": [
+      [
+        "V15-HEIGHT-MODULAR",
+        "SF11"
+      ]
+    ],
+    "remove": [
+      [
+        "SF11",
+        "V15-HEIGHT-MODULAR"
+      ]
+    ],
+    "reason": "SF11 is the general same-field surface-factor lemma. Its statement/proof has no modular quotient premise; the modular application consumes it, not conversely."
+  },
+  "source_unchanged": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b"
+}

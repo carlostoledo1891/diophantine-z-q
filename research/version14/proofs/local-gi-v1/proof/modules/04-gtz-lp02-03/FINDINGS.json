@@ -1,0 +1,21 @@
+{
+  "author": "/root/sol_protocol_final_review",
+  "findings": [
+    {
+      "id": "GTZ-LP-VECTOR-SCALAR-SHIFT",
+      "status": "repair_proposed_pending_nonauthor_review",
+      "affected": [
+        "erratum Proposition 3.1-to-7.3 argument, p.4"
+      ],
+      "available": "E.5 provides vector unit nilcharacters with scalar contractions.",
+      "needed": "Move the high factor to n+h while leaving only lower-degree dependence on h.",
+      "failure": "Scalar coordinate need not have modulus one or be nonzero.",
+      "repair": "Insert the sum of coordinate squared moduli and use the full shift tensor.",
+      "related_uses": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-sol-lp02-03-r3/RELATED-USES.md",
+        "sha256": "c9f32d0fdf097df9cdda02faad7837388de33d0ca954d7fec0c6d4792a6c1278",
+        "bytes": 3274
+      }
+    }
+  ]
+}

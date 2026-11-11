@@ -1,0 +1,74 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:56:40.158Z",
+  "status": "accepted eight scoped non-direct relations",
+  "targets": [
+    {
+      "path": "v14-v13-anchor-coefficient-family-001/DISPOSITION.json",
+      "sha256": "7a957c2dbd3883ebc2ff0ec51f30c9eb9c4ccbb3221978c7eb2531e18d5170de"
+    },
+    {
+      "path": "v14-v13-odd-norm-family-001/DISPOSITION.json",
+      "sha256": "906a11952baf0791bc400c901c90fdb20d7aec644242267234ac8bf6a6de967f"
+    },
+    {
+      "path": "v14-v13-anchor-rescaling-family-001/DISPOSITION.json",
+      "sha256": "329366018ed0607e91cb5b5b6de490bb9b2f6698eb19949051d27eca8b311aa9"
+    }
+  ],
+  "rows": [
+    {
+      "consumer": "V13-ANCHOR-COEFFICIENT",
+      "supplier": "N15-ABSCISSA-COEFFICIENTS",
+      "reason": "The complete N07 source proof22901–22956 contains the X_n valuation calculation22912–22932 and its subsequent parity use. The wrapper imports that complete result once; N15 remains the corresponding subproof and actual root import."
+    },
+    {
+      "consumer": "V13-ANCHOR-COEFFICIENT",
+      "supplier": "N16-SHIFTED-ANCHOR359",
+      "reason": "The same complete N07 proof includes T=Fs+Cq, shifted anchor and integrality/parity conclusion22934–22955. N16 names this same subconstruction, not a second independently applied result at the wrapper."
+    },
+    {
+      "consumer": "V13-ANCHOR-COEFFICIENT",
+      "supplier": "N30-ANCHOR-SMALL-LOCAL",
+      "reason": "Small-prime local points on the final anchor quadric are constructed later for completeness. They are not used to prove the coefficient valuations or parity deduction22901–22956."
+    },
+    {
+      "consumer": "V13-ANCHOR-RESCALING",
+      "supplier": "N48-ORDINARY-CORRECTED299",
+      "reason": "The anchor rescaling and choice of gamma use the fixed integer C. The later conversion of C into14 constant variables plusQ is not an input to that symbolic anchor construction. Retain the ordinary lift as a later actual theorem import."
+    },
+    {
+      "consumer": "V13-ODD-NORM",
+      "supplier": "N15-ABSCISSA-COEFFICIENTS",
+      "reason": "The complete current N07 argument22901–22956 includes this coefficient/shifted-anchor substep and outputs odd root labels. The half-chart consumer22957–22972 uses that output; it does not repeat the underlying parity proof. Retain the actual N07 input and all corresponding theorem-root source uses."
+    },
+    {
+      "consumer": "V13-ODD-NORM",
+      "supplier": "N16-SHIFTED-ANCHOR359",
+      "reason": "The complete current N07 argument22901–22956 includes this coefficient/shifted-anchor substep and outputs odd root labels. The half-chart consumer22957–22972 uses that output; it does not repeat the underlying parity proof. Retain the actual N07 input and all corresponding theorem-root source uses."
+    },
+    {
+      "consumer": "V13-ANCHOR-RESCALING",
+      "supplier": "N08-S-HALF-RESTORATION",
+      "reason": "The restored old half-chart is used by separate root consumers. The new unscaled anchor depends on the parity/integrality output ofN07 and its fixed T, not on reintroducing the deleted half-chart variables."
+    },
+    {
+      "consumer": "V13-ANCHOR-RESCALING",
+      "supplier": "N16-SHIFTED-ANCHOR359",
+      "reason": "The shifted T and integrality/parity argument are already part of the complete explicitN07 input; the private inverse is separatelyN18. Do not add another application of the same shifted-anchor subproof."
+    }
+  ],
+  "method": "Read current main22901–22973 and23439–23480 and all required fields of the three current wrapper contracts. Compared the claimed direct consumption with the explicit parity, half-chart and anchor sequence.",
+  "findings": [
+    "The complete N07 argument contains the coefficient and shifted-anchor substeps. Odd-norm consumes its established odd-label output; those substeps are not independent invocations there.",
+    "Anchor rescaling consumes fixed T and the unscaled quadric. The deleted half-chart coordinates and later ordinary constant-gate encoding are not inputs to that construction.",
+    "Small-prime local target construction supplies later completeness, not the earlier coefficient/parity deduction."
+  ],
+  "retained": [
+    "Actual N07 import and its scalar-coefficient and quaternion hypotheses.",
+    "All distinct half-chart, sign compatibility, private inverse, power-chain and local/real approximation inputs.",
+    "All selected-source theorem imports and actual applications remain; the independent actual-use reviews are separate."
+  ],
+  "limits": "No waiver of source ancestry, current completeness or finite compiler verification; no final coverage acceptance."
+}

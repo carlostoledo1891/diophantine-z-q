@@ -1,0 +1,299 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}[lemma]{Theorem}
+\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}\newcommand{\E}{\mathbb E}
+\newcommand{\ee}{\mathrm e}
+\title{The polynomial GI(2) base from the published bracket theorem}
+\author{Author proposal: /root/astra\_v14\_baseline\_theta}
+\date{7 November 2026}
+\begin{document}\maketitle
+
+\noindent\textbf{Scope.} This is an author proposal awaiting independent
+review. It derives the exact polynomial interval base from the forward
+bracket-quadratic theorem and Bohr regularity in Green--Tao,
+\emph{An inverse theorem for the Gowers $U^3(G)$ norm}, Proceedings of
+the Edinburgh Mathematical Society 51 (2008), 73--153. It replaces the
+needed use of the false quadratic-extension assertion by an explicit
+finite-box proof. It also constructs the bracket tests directly on
+connected polynomial models, so neither Theorem 12.9 nor its erroneous
+skew-shift iterate parameters are a theorem premise. The forward
+Bohr/bracket inverse theorem and its unchanged proof inputs remain
+published inputs, not newly proved by this unit. The complete GI theorem
+and broader source-risk review remain separate.
+
+\section{Exact target and published input}
+
+The required base is this statement. For every $\delta>0$ there are
+finitely many fixed rational filtered nilmanifolds of degree at most two,
+with connected simply connected groups, and constants $L<\infty,c>0$
+such that every complex $1$-bounded $f:[N]\to\C$ with
+$\|f\|_{U^3[N]}\geq\delta$ correlates by at least $c$ with
+$F(g(n)\Gamma)$ on one of them. The polynomial $g$ is adapted,
+$\|F\|_\infty\leq1$, and $\operatorname{Lip}(F)\leq L$.
+All geometry and constants are fixed before $N$ and $f$.
+The interval norm is zero extension to a sufficiently large cyclic
+group divided by the norm of the interval indicator.
+
+The published forward input is Theorem 10.11, pp.~124--125, especially
+(10.7) and (10.9). For each fixed sufficiently small $\eta>0$, and
+each prime $P>2$, a function $u:\Z/P\Z\to\C$ with
+$|u|\leq1$ and $\|u\|_{U^3}\geq\eta$ yields a frequency set
+$S$ of size at most $D(\eta)$, a proper progression $Q$ containing
+a Bohr set $B(S,\rho_0)$ with $\rho_0\geq\rho_*(\eta)>0$,
+and one bracket quadratic
+\[
+ \phi(n)=c+\sum_j a_j\{\alpha_jn\}
+                  +\sum_{j,k}a_{jk}\{\alpha_jn\}\{\alpha_kn\}
+       \pmod1 .
+\]
+Here $\alpha_j=\xi_j/P$ represents a frequency in $S$,
+$\{t\}\in[-1/2,1/2)$, and coefficients are unrestricted real numbers.
+For every nonempty $A\subseteq Q$ there is a shift $h_A$ such that
+\[
+ \left|\E_{n\in A}u(n+h_A)\ee(-\phi(n))\right|
+ \geq b_*(\eta)>0.
+\]
+The actual powers and exponential constants printed in 10.11 are
+stronger than needed; only the stated positive/finiteness dependence
+on $\eta$ is consumed. Its proof uses the forward Theorem 2.7,
+Corollary 10.6 and Proposition 10.10. The affected special case in the
+latter is supplied next.
+
+\section{The exact specialization replacing quadratic extension}
+
+The final PDF's Lemma 10.7, pp.~122--123, invokes quadratic extension
+from a subgroup. The author notice of December 2023 identifies
+Proposition 3.2, p.~88, as false. The later use needed here is
+Proposition 10.10, where the progression is proper and $H=\{0\}$.
+The notice numbers these items 10.6 and 10.8 in its preprint version;
+we bind to the final PDF numbering and argument.
+
+\begin{lemma}\label{lem:box}
+On a finite box $B=\prod_{j=1}^d\{0,\ldots,L_j-1\}$, any
+$v:B\to\R/\Z$ whose third additive differences vanish whenever
+the whole cube lies in $B$ has the form
+\[
+ v(l)=c+\sum_j b_jl_j+\sum_j d_j\binom{l_j}{2}
+                       +\sum_{j<k}e_{jk}l_jl_k.
+\]
+Consequently a locally quadratic phase on a proper progression with
+trivial subgroup has the polynomial coordinate representation needed
+in Proposition 10.10, without extension to the ambient group.
+\end{lemma}
+\begin{proof}
+Coordinates of length one can be omitted. Each mixed second difference
+is constant on its rectangular domain: every coordinate difference of
+it is a vanishing third difference, and the domain is connected by
+coordinate steps. The same holds for each available diagonal second
+difference when $L_j\geq3$. Choose their constants as $e_{jk}$ and
+$d_j$, setting $d_j=0$ when $L_j=2$. Subtract these quadratic terms.
+Every remaining first difference is constant because its differences
+in every available coordinate vanish. When $L_j=2$ its domain has only
+one slice in direction $j$, so mixed differences suffice. Subtract the
+resulting linear function; the remainder is constant by connectedness.
+The coordinate map of a proper progression is injective and pulls
+back the local quadratic identities to the box. This proves the
+claim. Division by two in $\R/\Z$, if one wants the symmetric
+coefficient convention of (10.5), is possible; no uniqueness is used.
+\end{proof}
+
+In Proposition 10.10 the independent vectors supplied by Corollary 10.6
+express each progression coordinate as a real linear combination of
+$\{\xi n/P\}$ on that progression. Substituting the lemma's polynomial
+gives precisely its bracket quadratic. The later localization and
+shift in the proof of 10.11 use this specialization, not the extension
+of a phase from a nontrivial subgroup. The remaining published forward
+inverse and Bohr-set applications are retained as explicit inputs.
+This does not claim to prove a corrected general version of 3.2.
+
+\section{A smooth periodic bracket test with positive correlation}
+
+Use Lemmas 8.1--8.2 to choose a regular Bohr set
+$B=B(S,\rho)\subseteq Q$, where $\rho$ has a positive lower bound
+depending only on $\eta$ and may be taken at most $1/8$.
+Its density in $\Z/P\Z$ is at least $b_0(\eta)>0$.
+Apply the displayed (10.9) input with $A=B$ and write its shift as $h$.
+
+For $d=|S|>0$, choose a fixed $0<\epsilon<1/(100d)$ sufficiently
+small in terms of $b_*(\eta)$ and $d$. Let $\chi:\R/\Z\to[0,1]$
+be one on $|x|\leq\rho(1-\epsilon)$, zero on
+$|x|\geq\rho(1+\epsilon)$, and linear on the intervening strips.
+Its Lipschitz bound is at most $(2\epsilon\rho)^{-1}$, with an
+inessential larger fixed bound permitted. In particular it vanishes
+on a fixed neighbourhood of the fractional-part seam at $1/2$.
+Put
+\[
+ W(n)=\prod_{j=1}^d\chi(\alpha_j n)^{1+4d},\qquad
+ \Psi(n)=W(n)\ee(-\phi(n)).
+\]
+The difference $W-1_B$ vanishes outside the regularity boundary shell
+$B(S,\rho(1+\epsilon))\setminus B(S,\rho(1-\epsilon))$ and
+is bounded by one. Bohr regularity bounds the shell by
+$C d\epsilon |B|$ with an absolute fixed $C$. Choose $\epsilon$
+so that $Cd\epsilon\leq b_*(\eta)/2$. It follows that
+\begin{equation}\label{eq:bias}
+ \left|\E_{n\in\Z/P\Z}u(n+h)\Psi(n)\right|
+ \geq \tfrac12 b_*(\eta)b_0(\eta)=:c_0(\eta)>0.
+\end{equation}
+When $S$ is empty the phase is constant and this conclusion already
+uses a constant test; that case needs no cutoff construction.
+
+Every factor in $\Psi$ is periodic with period $P$, because
+$P\alpha_j$ is integral. We now represent this same function for
+all integers, not merely signed representatives of $\Z/P\Z$.
+
+\section{Connected polynomial models for every bracket factor}
+
+Write the coefficients below as $a=q+s$, with $q\in\Z$ and
+$|s|\leq1/2$. A linear bracket factor is
+\[
+ \chi(\alpha n)\ee(a\{\alpha n\})
+ =\chi(\alpha n)\ee(s\{\alpha n\})\ee(q\alpha n).
+\]
+It is the test $F(x,y)=\chi(x)\ee(sx+y)$ along the linear
+polynomial $(\alpha n,q\alpha n)$ on $\R^2/\Z^2$.
+The seam is harmless because $\chi$ vanishes there. This test is
+$1$-bounded and has Lipschitz bound $O(1+\operatorname{Lip}\chi)$,
+uniformly in $a,\alpha$.
+
+A quadratic bracket factor satisfies the exact identity
+\begin{align*}
+ &\chi(\alpha n)^2\chi(\gamma n)^2
+                    \ee(a\{\alpha n\}\{\gamma n\})\\
+ &=\bigl[\chi(\alpha n)\chi(\gamma n)
+             \ee(s\{\alpha n\}\{\gamma n\})\bigr]
+   \ee(q\alpha\gamma n^2)
+   \bigl[\chi(\gamma n)\ee(-q\alpha n[\gamma n])\bigr]
+   \bigl[\chi(\alpha n)\ee(-q\gamma n[\alpha n])\bigr].
+\end{align*}
+Indeed the omitted term in expanding the integer part is
+$q[\alpha n][\gamma n]\in\Z$, where $[t]=t-\{t\}$.
+The first bracket is a test on a two-torus with uniformly bounded
+Lipschitz constant. The pure quadratic phase is a test $\ee(z)$
+along $z=q\alpha\gamma n^2$ on $\R/\Z$, using the degree-two
+filtration $G_0=G_1=G_2=\R$, $G_3=0$.
+
+For the remaining bracket use the connected simply connected Heisenberg
+group with coordinates $(u,v,w)$ and law
+\[
+ (u,v,w)(u',v',w')=(u+u',v+v',w+w'+uv').
+\]
+Its lattice is $\Z^3$ in these coordinates; its degree-two filtration
+has $G_0=G_1=G$ and $G_2=\{(0,0,w)\}$.
+On a right lattice quotient, reduce $v$ first, then $u$. The resulting
+coordinates are
+\[
+ (\{u\},\{v\},w-u[v]\pmod1).
+\]
+Define a test on this fundamental cube by
+$F_H(\{u\},\{v\},z)=\chi(\{v\})\ee(z)$.
+It is well-defined and globally Lipschitz. Across the $u$ faces the
+central coordinate does not change; the central faces are periodic;
+across the $v$ faces the cutoff is identically zero in a neighbourhood.
+Within the remaining finitely many fixed charts its Lipschitz constant
+is bounded by a fixed geometric multiple of
+$1+\operatorname{Lip}\chi$.
+
+Evaluate this test on the polynomial
+$p(n)=(\beta n,\alpha n,0)$. The exact value is
+\[
+ F_H(p(n)\Gamma)=\chi(\alpha n)\ee(-\beta n[\alpha n]).
+\]
+For completeness its left first difference is
+$(\beta h,\alpha h,-\alpha\beta hn)$, its next difference
+is $(0,0,-\alpha\beta hk)$, and its third difference is the
+identity. These satisfy the degree-two filtration for every integer
+shift, so this is an adapted polynomial without any appeal to an
+incorrect formula for linear skew iterates. Take $\beta=q\gamma$
+and interchange $\alpha,\gamma$ for the two remaining factors.
+
+Apply the linear construction to each coefficient of $-\phi$ and
+the quadratic construction to all ordered pairs, inserting zero
+coefficients if needed. Each frequency receives one cutoff from the
+linear factor and $4d$ from the quadratic factors, exactly the power
+in $W$. The constant phase is harmless. Products give a fixed
+connected rational polynomial model of degree at most two, of dimension
+at most $2d+9d^2$. The product test is $1$-bounded and has a finite
+Lipschitz bound depending only on $d,\rho,\epsilon$. Arbitrarily
+large coefficients occur only in polynomial orbit parameters.
+There are finitely many geometric product types for $d\leq D(\eta)$.
+
+Thus the model represents the periodic function $\Psi(n)$ exactly
+for all $n\in\Z$. Individual polynomial factors need not be
+$P$-periodic; their product is periodic by the exact bracket identity.
+That distinction is used in the next change of variables.
+
+\section{The normalized interval transfer}
+
+Fix an integer $C>16$ and choose a prime $P$ with $CN<P<2CN$.
+Zero-extend the given interval function to $u$ on $\Z/P\Z$.
+The interval-indicator Gowers norm is at least its mean $N/P$, so
+$\|u\|_{U^3}\geq\delta/(2C)$. Choose once and for all a positive
+$\eta$ at most this bound and within the smallness range of the
+published forward theorem. All preceding data now depend only on
+$\delta$.
+
+Using the exact periodicity of $\Psi$ in \eqref{eq:bias}, change
+variables to obtain
+\[
+ \left|\E_{n\in\Z/P\Z}u(n)\Psi(n-h)\right|\geq c_0(\eta).
+\]
+The zero extension gives
+\[
+ \left|\E_{n\in[N]}f(n)\Psi(n-h)\right|
+ \geq (P/N)c_0(\eta)>0.
+\]
+The translated sequence is represented by the same test on the same
+fixed model, with polynomial orbit $g(n-h)$. Translation preserves
+adapted polynomiality, either by the derivative criterion or B.5.
+No signed-representative split, discontinuous interval indicator or
+additional $N$-dependent geometry is introduced. Norm, Lipschitz
+and correlation bounds have precisely the required fixed dependence.
+Bertrand's postulate applies to the integer $CN>1$, so the prime
+choice also covers every positive $N$.
+
+\section{Source comparison and bounded related-use findings}
+
+The unpublished author notice identifies the false general quadratic
+extension, but is used here only to locate the affected proof. The
+needed trivial-subgroup specialization is proved in Section 2.
+Its published source locator is Proposition 3.2 on p.~88, correcting
+the p.~89 metadata typo in assembly001's RELATED-USES record.
+
+The actual publisher image of Example 12.3 on p.~136 gives
+$T(x,y)=(x+\alpha,y+\beta+mx)$ but prints an iterate omitting
+$mnx$ and using $mn(n+1)\alpha/2$. Direct iteration gives
+\[
+ T^n(x,y)=(x+n\alpha,
+ y+n\beta+mnx+m\alpha\tbinom n2).
+\]
+Already $n=1$ distinguishes these formulas. The later pure quadratic
+choice in Lemma 12.11 inherits the printed iterate convention.
+Rather than silently change its parameters, Section 4 constructs
+all needed factors directly on connected polynomial models.
+This preserves the qualitative base theorem's strength and avoids
+those printed iterates entirely.
+
+The cutoff's derivative bound also depends on its transition width.
+This proof retains the finite factors $(\epsilon\rho)^{-1}$ instead
+of importing the universal numerical bounds stated for those tests
+in Lemma 12.11. The required application needs only finite bounds
+after $\eta$ is fixed.
+
+The bounded audit scope is the forward chain
+$2.7\to10.6\to10.10\to10.11$, the affected trivial-subgroup use
+of 10.7, Bohr regularity 8.1--8.2, and the elementary construction
+12.2--12.11 as consumed by the interval base. The chain notation
+records dependencies to inspect, not acceptance of all their proofs.
+The converse half of 2.7, the finite-field-only extension use and
+unrelated applications are not premises of this unit. The old
+assembly001/base text remains frozen. This successor changes its
+base supplier from 12.9 to the precise bracket theorem plus local
+construction; its separate converse argument is unchanged.
+
+\end{document}

@@ -1,0 +1,52 @@
+We also account for the difference between the two published
+cohomology conventions. Write $C_j$ for the $j_*$ Iwasawa complex of
+\cite[Section 12.1]{kato}, and $C_S$ for full cochains on the open
+scheme with the odd support inverted, as in \cite[Section 0.5]{kato1999}.
+Work in one rational sign component and localize at $\mathfrak p$.
+Their quotient is the direct sum of the odd local complexes (K16).
+Each differential has nonzero determinant, so its degree-one
+cohomology vanishes. Hence $H^1(C_j)\simeq H^1(C_S)$ and
+$H^2(C_j)\hookrightarrow H^2(C_S)$. At an odd prime $q$, the
+unramified local term has cohomological dimension one after inverting
+$2$. The localization triangle identifies the degree-two cohomology
+of (K16) with full local $H^2(\Q_q,T\chi)$ in Iwasawa cohomology.
+The map from $H^2(C_S)$ is the usual local restriction. Exactness
+therefore identifies $H^2(C_j)$ with the kernel of all those odd
+local restrictions. Intersecting with the kernel of restriction at
+$2$ gives
+\[
+ \ker\bigl(H^2(C_j)\to H^2_{\rm loc,2}\bigr)
+ \simeq
+ \ker\bigl(H^2(C_S)\to\!\bigoplus_{q\in S}H^2_{\rm loc,q}\bigr).
+\]
+This is precisely the comparison of the subscript-zero groups in
+the two sources. The $H^1$ identification preserves the actual
+Euler-system class and its coordinate ideal $J$. Thus Theorem 0.8
+gives (K15) in the convention used here. The argument for (K16)
+below is local and does not use (K15). We do not invoke the
+odd-prime-only Perrin--Riou argument or an unchecked version of
+Rubin's theorem at $2$.
+
+\paragraph{8. Paying for the full global complex.}
+At an odd prime put $W_q=H^1(I_q,V\chi)$. The rational cone from
+$j_*$ to full cochains is
+\[
+ [\,W_q\otimes A\xrightarrow{1-\sigma_q^{-1}\operatorname{Fr}_{W_q}}
+          W_q\otimes A\,],\qquad\deg=(1,2).              \tag{K16}
+\]
+Its determinant $D_q$ is nonzero, since the cyclotomic Frobenius
+exponent is nonzero. The map is injective even after localization
+at a prime dividing $D_q$; it is not being reduced modulo that
+prime. Thus the cone contributes only degree-two length
+$v_{\mathfrak p}(D_q)$. The long exact sequence shows that full
+$H^2$ increases by at most their sum and that $H^1$ is unchanged.
+This inequality does not require vanishing of the next $j_*$ group.
+
+At a good inactive prime, $W_q=V\chi(-1)$, so $D_q=E_q(\chi)$
+with exactly the convention of (K9). At a good active prime,
+ramified quadratic inertia acts by $-1$; its rational cohomology
+vanishes and $D_q=1$. This includes every active base prime,
+regardless of how many there are. At an old bad prime retain
+$H^1(I_q,V\chi)$ itself; replacing it by $V^{I_q}\chi(-1)$
+would in general be false.
+

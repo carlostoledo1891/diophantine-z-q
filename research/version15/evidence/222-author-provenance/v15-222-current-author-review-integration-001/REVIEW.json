@@ -1,0 +1,78 @@
+{
+  "decision": "accepted",
+  "scope": "Bounded original-operation and host-context provenance only",
+  "subject_sha256": "54a21294318247759a299fefbddef9ee015e943d3ec59881204071223d8408a0",
+  "observations_sha256": "2b7c17d4ae3fdacb6f9e7e0aa920728a0234b3b077bfdd507221637aabab4667",
+  "checks": [
+    {
+      "stage": "new222-chapter-prefix-write",
+      "run_id": "01a1c4f5-3f3a-75a0-aa5b-894c6f035a6f",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "original_ranges_verified": 4,
+      "call_completion_match": true,
+      "scope": "Actual initial source authoring; not a claim these bytes equal the later final manuscript."
+    },
+    {
+      "stage": "initial222-full-source-generation",
+      "run_id": "01a1c4f5-3f3a-75a0-aa5b-894c6f035a6f",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "original_ranges_verified": 4,
+      "call_completion_match": true,
+      "scope": "Actual initial source authoring; not a claim these bytes equal the later final manuscript."
+    },
+    {
+      "stage": "final-successor002-source-write",
+      "run_id": "01a1c4f5-3f3a-75a0-aa5b-894c6f035a6f",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "original_ranges_verified": 4,
+      "call_completion_match": true,
+      "scope": "Exact three reference repairs applied to predecessor and b379 source written; completion pins final source."
+    },
+    {
+      "stage": "successor002-build-seal",
+      "run_id": "01a1c4fe-9c8d-7b82-8bba-c1c17f1cd246",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "original_ranges_verified": 4,
+      "call_completion_match": true,
+      "scope": "Build/manifest metadata authored in later4fe run; not substituted for source author run."
+    },
+    {
+      "stage": "artifact003-packaging-write",
+      "run_id": "01a1c4f5-4d04-7a72-b78d-ff1a75e6e027",
+      "agent_id": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+      "original_ranges_verified": 4,
+      "call_completion_match": true,
+      "scope": "Packaging/README successor, not underlying mathematics authorship."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/v15-222-manuscript-author-001/successor-002/quartic_v15.tex",
+      "sha256": "b379fef539ed1481754e770d683577754198d491d4b883323469be4ba16cefb5"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/v15-222-manuscript-author-001/successor-002/CHANGES.json",
+      "sha256": "2ba5a7d0407645d23bea9dc2abd9c06603998969e52dbbeb34e2f30db3dbc1d1"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/v15-222-manuscript-author-001/successor-002/BUILD.json",
+      "sha256": "0bff467424d8822ece527bc233d20c8342e661105491efacdfb8355621f8bf52"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/v15-222-manuscript-author-001/successor-002/MANIFEST.json",
+      "sha256": "b4619dd8c3b22a991cf8cfc381b5e20178055817e2a5f19f6f8d66b1d36fd6ed"
+    },
+    {
+      "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/v15-222-artifact-author-003/MANIFEST.json",
+      "sha256": "4aea7c8b169bab133b3685f2a541d733a1297db7ac21dc458ccf6dc3cd2666eb"
+    }
+  ],
+  "limitations": [
+    "Initial chapter and full-source operations are initial authoring, not equality to final successor bytes.",
+    "Build operation is the recorded build/manifest seal; this review does not independently reexecute compilation.",
+    "Artifact003 operation is packaging and README revision, not authorship of all inherited proof content.",
+    "Host-record model/context metadata is not provider-signed attestation or authenticated controller evidence.",
+    "No mathematical approval, future acknowledgment, or exhaustive contributor census is supplied.",
+    "Raw session records remain private and are not selected for distribution."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "v14-source-role-clarification/1",
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T10:04:46.555Z",
+  "status": "author clarification requiring independent review",
+  "base": {
+    "path": "MASS-INDEX-SOURCE-RELATIONS.json",
+    "sha256": "d80f5b850b70abe04f4ff1137d969452e7fbc70fe6dc568a06ae92215c26d79e"
+  },
+  "changes": "Clarifies only the native subgroup, exact point membership and norm action in relation H6-LATE-04-NATIVE-INDEX-AND-HEIGHT. The mass/Hecke relation and all other source conclusions are unchanged.",
+  "source_locations": [
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 3286,
+      "end_line": 3291,
+      "excerpt_sha256": "fb1709b62bbebcdf8c78a19d7f14d3d82caffa46cb54eb68e4dd86428e5fc8de"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 3303,
+      "end_line": 3315,
+      "excerpt_sha256": "7bdb59655cc10fdd844fd7c39e6d4907c7c9964f2b2fbe6a890edb467746fa57"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14792,
+      "end_line": 14802,
+      "excerpt_sha256": "548c3e0d2a3e5d77a894be832d77a19025ad7824c7b057fd147fdca11e56e9ba"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14846,
+      "end_line": 14858,
+      "excerpt_sha256": "e15695ad6ad1aa242655fb7b3f5200ddfa81c1312a9069bef99eaf1cb50d6e59"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 14872,
+      "end_line": 14893,
+      "excerpt_sha256": "ba898e053e8e2f550eb3c5975bde1f978fafc7ddb063c0dc26f27261b31c305d"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 15966,
+      "end_line": 15990,
+      "excerpt_sha256": "8df645ad920e32d69e13df4782abb8319edc26c068410ed8a0947c9310dcc503"
+    }
+  ],
+  "textual_status": "The current definition3286–3291 names the native lattices and their index valuations without spelling out the group. The following is the explicit subgroup required by the genus-character construction. It is a clarification, not a claim that these words already appear there. It must not be replaced by the full Mordell–Weil group E(F_D).",
+  "definition": "For D>1 put K_D=Q(sqrt(D h*)), F_D=Q(sqrt D,sqrt h*), and let tau be the nonidentity element of Gal(F_D/K_D). Define Gamma_D={P in E(F_D):tau(P)=-P}, and Lambda_D=Gamma_D/Gamma_D,tors. The native genus index at a known simple zero is the divisibility index of the class of the actual P_D in this rank-one free lattice. The rank-one premise is retained from the actual genus/analytic-rank construction; it is not deduced solely from height nonzero. For D=1 put F_D=K_D=Q(sqrt h*), Gamma_1=E(K_D), with its torsion-free quotient as the native lattice.",
+  "exact_membership": "The unaveraged sum P_D=sum_[a] chi_h*(Norm a) pi(x_D^[a]) transforms under the class-field Galois group by this exact quadratic character: applying an Artin element permutes the index set, and reindexing multiplies the whole sum by its character value. The kernel fixes P_D, so P_D belongs to E(F_D); the nonidentity element over K_D acts by -1 when D>1. This is equality of points, not only an equality modulo torsion or after applying4B. It uses the stated CM reciprocity action and the same Q-defined parametrization. For D=1 the character is trivial and the sum is K_D-rational.",
+  "twist_identification": "Let iota_D:E^(D)->E be the standard isomorphism over Q(sqrt D), with g(iota_D)=chi_D(g)iota_D. For P in Gamma_D, tau(iota_D^(-1)P)=chi_D(tau)iota_D^(-1)tau(P)=iota_D^(-1)P. Thus iota_D identifies E^(D)(K_D) exactly with Gamma_D. It identifies E^(D)(Q) with the rational D-character subgroup inside Gamma_D.",
+  "norm_argument": "Under this identification, let sigma be the nonidentity element of Gal(K_D/Q), represented for D>1 by changing sqrt(h*) while fixing sqrt D. The retained rational character decomposition has D and h* components; the latter has rank zero by the forward theorem. Consequently sigma fixes the torsion-free class of each Q in E^(D)(K_D). The point Q+sigma(Q) is actually Q-rational, and its class is2[Q]. Therefore the image of E^(D)(Q) in Lambda_D contains2 Lambda_D. Since Lambda_D has rank one, its index is1 or2. Torsion need not vanish to make this conclusion. For D=1 the same argument uses E(K_D), ordinary conjugation, the rational E component and the rank-zero h* twist. The multiplier4B used later to obtain exact D-character points is independent of this norm-index proof.",
+  "boundaries": [
+    "The genus-character/CM reciprocity statement is a separate actual input, including the current residual02 comparison.",
+    "The rational D-component rank-one premise and h* rank-zero premise remain supplied; no rank inference from nontorsion alone.",
+    "The index≤2 result is for Lambda_D and its rational D-twist subgroup, not all of E(F_D).",
+    "No equality of integral lattices, no torsion index and no global source-closure claim."
+  ]
+}

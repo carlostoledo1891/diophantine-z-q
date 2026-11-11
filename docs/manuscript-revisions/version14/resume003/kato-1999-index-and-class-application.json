@@ -1,0 +1,206 @@
+{
+  "id": "KATO-1999-INDEX-AND-CLASS",
+  "manuscript": {
+    "path": "manuscripts/quartic_v14.tex",
+    "sha256": "5882a77003b9772b5b572a5ab2c2b2f8ce9fc53e1e368a3b69851c8a9b3bfcac"
+  },
+  "reviewed_edits": {
+    "construction-domain": "ca92363d5784c59b784a7299b7e166081f537d952ad8d0b32603dca1dd3cb92b",
+    "construction-subfamilies": "114b224d85f4f84db374860e3016a94b07f739402a125ddca97efefb3a944eea",
+    "specified-euler-subfamilies": "ddf5de54a692c3db757187f96f267fcbaf9e087683455f82ef0da5042c8dbf2d",
+    "index-norm-limit": "c38b69c7faf074666f2cc74509e4090b2a906b054050ad0e57b88257f33f3bad",
+    "kato-bibliographic-locators": "8b7e1c302f1c79a82918af54dd45eb1e9648dc39d4e6f6e401e2aca88b4c9b82"
+  },
+  "authors": [
+    "/root",
+    "/root/astra_bl5_covers",
+    "/root/astra_bl5_arithmetic",
+    "/root/astra_bl5_minimality",
+    "/root/v14_sign_conductor"
+  ],
+  "sources": [
+    {
+      "id": "kato1999",
+      "url": "https://www.jstage.jst.go.jp/article/kodaimath1978/22/3/22_3_313/_pdf/-char/en",
+      "sha256": "483dc18c56b2fe9cfac4e37f2e6594399625c3f0ea98a05bb69116377c67fc06",
+      "version": "Original published article",
+      "locator": "0.1, 0.4-0.7 and Theorem 0.8, printed pp.314-318"
+    },
+    {
+      "id": "kato2004",
+      "url": "https://www.numdam.org/article/AST_2004__295__117_0.pdf",
+      "sha256": "3c6e14b11fa60262db8aff782ce3cf4d83e9100c0be83621a7e4ce502cec605d",
+      "version": "Original published article",
+      "locator": "(8.1.3), 8.2, 8.9-8.12, printed pp.180-186; 13.1-13.4, pp.224-226"
+    }
+  ],
+  "evidence": {
+    "norms": {
+      "path": "docs/manuscript-revisions/version11/evidence/norms.md",
+      "sha256": "7bdb086e077af429f1d71bade31b233b672929f78e2aa790eb4985a78a837f3e"
+    },
+    "interface": {
+      "path": "docs/manuscript-revisions/version11/evidence/interface.md",
+      "sha256": "8cb644f5f20090f3e47de412b62942b3e93a6c2e674dc7924678137c8d188774"
+    },
+    "prior-v13-contract": {
+      "path": "docs/manuscript-revisions/version13/kato-carryforward-application.json",
+      "sha256": "10f81599b387b96d8cc8da01f14e736f5573e03f5ad40ca9e8a4c1d0927a6676"
+    },
+    "current-carryforward-impact": {
+      "path": "docs/manuscript-revisions/version14/resume003/evidence/carryforward-impact.md",
+      "sha256": "ab76096254053226b187251ae0ee7464ecdc8d45e54b9fe3b1878dbd4823a102"
+    }
+  },
+  "manuscript_spans": [
+    {
+      "role": "construction",
+      "start_line": 13392,
+      "end_line": 13533,
+      "sha256": "07fdbb7971932cf1f4c1e2d5262fb5f9bc99bc24bd0408d89486aabe84f2619a"
+    },
+    {
+      "role": "application",
+      "start_line": 13755,
+      "end_line": 13869,
+      "sha256": "2ea9b76d8dd1d4cbfbbeef77f372c2622c7b5049d3456f9007edf0bfb7d7a147"
+    },
+    {
+      "role": "consumer",
+      "start_line": 13704,
+      "end_line": 13754,
+      "sha256": "987a09fd64b2cfb5d1c67aed88933baad1af759f64783a2035befade63015d9f"
+    }
+  ],
+  "obligations": {
+    "source_hypotheses": {
+      "status": "checked",
+      "required": "1999 0.1 requires every multiple of N_K coprime to Nprime; 0.7 uses its normed Iwasawa class.",
+      "constructed": "N_K=2Nd, Nprime=c*d_s, with gcd=1 by K5 and d|F.",
+      "justification": "Original definitions were read. Existing rational-away-2 representation hypotheses are retained, not inferred from residual irreducibility.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "constructed_objects": {
+      "status": "checked",
+      "required": "An integral compatible T*chi-valued Euler system in the stated cohomology groups.",
+      "constructed": "K8 defined for all positive m prime to c*d_s, using the same original z_(Dm), symbol and smoothers.",
+      "justification": "2004 8.1.3 and 8.9-8.12 allow these levels. K7 supplies j-star descent; the fixed lattice map is used uniformly.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "index_domain_coverage": {
+      "status": "checked",
+      "required": "All m divisible by N_K and coprime to Nprime, including conductor and bad primes.",
+      "constructed": "The expanded K8 domain includes every such m and retains the old Xi subfamily.",
+      "justification": "S_(Dm) misses smoothing primes. The former Xi restriction is no longer incorrectly used to satisfy the larger 1999 domain.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "transition_maps": {
+      "status": "checked",
+      "required": "1999 0.1.1: identity for repeated primes, P_l(l^-1 sigma_l^-1) for new primes.",
+      "constructed": "If l|m the supports agree; otherwise N_K|m implies l does not divide 2Nd and exactly l is added.",
+      "justification": "Prop8.12 and tensor/corestriction equivariance give both cases, with no bad-prime Euler polynomial substituted.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "limiting_object_identity": {
+      "status": "checked",
+      "required": "The 0.7 class for divisor parameter1 must be the supplied retained dyadic class.",
+      "constructed": "Displayed corestriction identity from N_K*2^n to 2^n for every n>=1.",
+      "justification": "Equal construction supports give exact norm of original classes. Transitivity through two intermediate fields in one upper field gives y_(2^n); no field-degree scalar. The fixed lattice factor is separately stated.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "coefficient_conventions": {
+      "status": "checked",
+      "required": "Arithmetic Frobenius on T*chi, inverse deck element in Euler substitution; integral lattice followed by localization away2.",
+      "constructed": "P_l(X)=1-a_l chi(l)X+lX^2. Optional uniform2^c_E sends original lattice into T.",
+      "justification": "chi is quadratic, so the equivariance scalar matches K9. The fixed factor is a unit only at the explicitly used away-2 primes, preserving J there.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "local_conditions": {
+      "status": "checked",
+      "required": "1999 full cohomology uses fixed inverted N_K; 2004 construction is j-star over the dyadic open scheme.",
+      "constructed": "The proof distinguishes the varying construction support S_(Dm) from primes inverted in the 1999 scheme.",
+      "justification": "K7 gives the integral j-star property even for ramified transfer; restriction then supplies full cohomology. Existing local-complex comparison is unchanged.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "exceptional_cases": {
+      "status": "checked",
+      "required": "Repeated bad/conductor primes, dyadic conductor, smoothing primes, initial dyadic levels and the reused symbol d.",
+      "constructed": "Repeated support gives factor1; smoothers are excluded; n>=1 is cofinal; source divisor parameter1 is distinguished from conductor d.",
+      "justification": "No disjointness of the two intermediate cyclotomic fields is assumed. Full D remains in every upper field. No assertion that 3 always belongs to Sigma is needed.",
+      "evidence": [
+        "norms",
+        "interface"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    },
+    "downstream_consumption": {
+      "status": "checked",
+      "required": "K15 must bound J of the actual supplied retained class, not an arbitrary proportional generator.",
+      "constructed": "xi_K is the full-cohomology image of y_(2^infinity), with only the stated uniform lattice map.",
+      "justification": "The equality and away-2 unit show its localized coordinate ideal is J. The subsequent unchanged cohomology comparison transfers the bound in the convention consumed by K15.",
+      "evidence": [
+        "norms",
+        "interface",
+        "current-carryforward-impact"
+      ],
+      "sources": [
+        "kato1999",
+        "kato2004"
+      ]
+    }
+  },
+  "dependency_impact": "The source-to-consumer application is carried forward within its original conditional scope on current003. Exact unchanged spans or the separately accepted four-line V12 successor justify reuse. Changed incoming arithmetic/GI proofs remain separate assembly and coverage obligations, not facts accepted by this carry-forward. See current-carryforward-impact evidence.",
+  "historical_dependency_impact": "Retains the exact Version 13 argument and its source qualifications in Version 14. Construction and application passages remain byte-identical. The new downstream P299/P314 reduction does not change these suppliers. This proposal renews the current manuscript binding and, for P394/P411, names the retained theorem as consumer instead of the replaced abstract. No historical approval is copied onto this new binding; a current independent decision is required. Current003 transport: earlier proof acceptance remains historical; changed arithmetic/GI dependencies require their separately accepted successor owners and final joined coverage. This record does not infer unchanged dependencies from unchanged text."
+}

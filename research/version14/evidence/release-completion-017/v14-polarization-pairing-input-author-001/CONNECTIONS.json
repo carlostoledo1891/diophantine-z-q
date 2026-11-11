@@ -1,0 +1,188 @@
+[
+  {
+    "use_id": "ARITH-PAIRING-BETA",
+    "use_sha256": "4faf54471c2127719cc9738c50cdc3ad54c1925237c146a454ed1158bd1083a9",
+    "supplier_passage_role": "Published pairing statement paraphrased in a project source card; original scan inspected.",
+    "available_assertion": {
+      "statement": "For an abelian variety A over a number field F and an F-defined polarization lambda, the canonical torsion pairings yield an F-Galois-equivariant perfect pairing of rational Tate modules V_5(A) x V_5(A^dual) into Q_5(1). Composing in the second argument with V_5(lambda) gives a nondegenerate alternating pairing on V_5(A) with values in Q_5(1).",
+      "objects": "Any abelian variety A over a number field F, its dual, and an F-defined polarization lambda.",
+      "hypotheses": "Characteristic zero, ell=5, and lambda a polarization; the published alternating assertion applies after algebraic closure.",
+      "quantifiers": "For every such A,F,lambda and all Tate vectors and G_F elements.",
+      "parameter_range": "ell=5; no condition on reduction at 5 or on the 5-part of deg(lambda).",
+      "uniformity": "Canonical functorial pairing for each fixed A/F; no quantitative uniformity assertion.",
+      "constants": "Multiplier epsilon_5. Nondegeneracy is over Q_5, regardless of the integral cokernel of T_5(lambda).",
+      "normalizations": "Covariant Tate modules and the roots-of-unity Tate twist Q_5(1). The dual pairing is composed in the second factor with lambda.",
+      "exceptional_cases": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity.",
+      "limit_order": "Take compatible prime-power torsion pairings, pass to Tate modules, tensor with Q_5, and compose with the isogeny lambda."
+    },
+    "needed_assertion": {
+      "statement": "The original beta caller's V_5(A) admits the nondegenerate alternating G_F-equivariant pairing into Q_5(1) used in the determinant calculation.",
+      "objects": "The same abelian surface A over the finite number field F of actual Tate restriction, and an F-defined polarization lambda:A->A^dual.",
+      "hypotheses": "A is an abelian variety over F of characteristic zero. Choose an ample F-line bundle and its polarization; retain the original normalized-family Tate restriction separately.",
+      "quantifiers": "For all x,y in V_5(A) and g in G_F, the pairing satisfies <gx,gy>=epsilon_5(g)<x,y>.",
+      "parameter_range": "ell=5; no condition on reduction at 5 or on the 5-part of deg(lambda).",
+      "uniformity": "The construction applies to this original A and F; it asserts no uniform field degree and makes no replacement of the family.",
+      "constants": "Multiplier epsilon_5. Nondegeneracy is over Q_5, regardless of the integral cokernel of T_5(lambda).",
+      "normalizations": "Covariant Tate modules and the roots-of-unity Tate twist Q_5(1). The dual pairing is composed in the second factor with lambda.",
+      "exceptional_cases": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity.",
+      "limit_order": "Take compatible prime-power torsion pairings, pass to Tate modules, tensor with Q_5, and compose with the isogeny lambda."
+    },
+    "required_capabilities": [
+      "equivariant-alternating-nondegenerate-pairing"
+    ],
+    "available_capabilities": [
+      "canonical-dual-torsion-pairing",
+      "line-bundle-alternation"
+    ],
+    "derived_capabilities": [
+      "equivariant-alternating-nondegenerate-pairing"
+    ],
+    "connecting_derivation": {
+      "kind": "inline",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/polarization-pairing-input-001/PROOF.md",
+          "sha256": "6a247a14fe447ede63085d182cabca3cf7558b77bd3a3da8dedb7a5058fd62b1"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "f261924220791dd1af12e7b5143e1032cb3a0e4af205dce6fbeeba401952ca63"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "The original beta caller's V_5(A) admits the nondegenerate alternating G_F-equivariant pairing into Q_5(1) used in the determinant calculation.",
+        "objects": "The same abelian surface A over the finite number field F of actual Tate restriction, and an F-defined polarization lambda:A->A^dual.",
+        "hypotheses": "A is an abelian variety over F of characteristic zero. Choose an ample F-line bundle and its polarization; retain the original normalized-family Tate restriction separately.",
+        "quantifiers": "For all x,y in V_5(A) and g in G_F, the pairing satisfies <gx,gy>=epsilon_5(g)<x,y>.",
+        "parameter_range": "ell=5; no condition on reduction at 5 or on the 5-part of deg(lambda).",
+        "uniformity": "The construction applies to this original A and F; it asserts no uniform field degree and makes no replacement of the family.",
+        "constants": "Multiplier epsilon_5. Nondegeneracy is over Q_5, regardless of the integral cokernel of T_5(lambda).",
+        "normalizations": "Covariant Tate modules and the roots-of-unity Tate twist Q_5(1). The dual pairing is composed in the second factor with lambda.",
+        "exceptional_cases": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity.",
+        "limit_order": "Take compatible prime-power torsion pairings, pass to Tate modules, tensor with Q_5, and compose with the isogeny lambda."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity. Isogeny inverse after Q_5 scalar extension handles 5-divisible polarization degree.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/polarization-pairing-input-001/PROOF.md",
+            "sha256": "6a247a14fe447ede63085d182cabca3cf7558b77bd3a3da8dedb7a5058fd62b1"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "f261924220791dd1af12e7b5143e1032cb3a0e4af205dce6fbeeba401952ca63"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 636,
+        "end_line": 638,
+        "excerpt_sha256": "6fb6125d0691e216bfc5c81fdbe0a33d754adad5c8ec54a8b0e4e1d8d8488961"
+      }
+    ]
+  },
+  {
+    "use_id": "ARITH-PAIRING-B",
+    "use_sha256": "7ec74d5b04f0690fa5cbf9f0bda7d19a395cfd2cb76770dc4d7c8d206590ee17",
+    "supplier_passage_role": "Published pairing statement paraphrased in a project source card; original scan inspected.",
+    "available_assertion": {
+      "statement": "For an abelian variety A over a number field F and an F-defined polarization lambda, the canonical torsion pairings yield an F-Galois-equivariant perfect pairing of rational Tate modules V_5(A) x V_5(A^dual) into Q_5(1). Composing in the second argument with V_5(lambda) gives a nondegenerate alternating pairing on V_5(A) with values in Q_5(1).",
+      "objects": "Any abelian variety A over a number field F, its dual, and an F-defined polarization lambda.",
+      "hypotheses": "Characteristic zero, ell=5, and lambda a polarization; the published alternating assertion applies after algebraic closure.",
+      "quantifiers": "For every such A,F,lambda and all Tate vectors and G_F elements.",
+      "parameter_range": "ell=5; no condition on reduction at 5 or on the 5-part of deg(lambda).",
+      "uniformity": "Canonical functorial pairing for each fixed A/F; no quantitative uniformity assertion.",
+      "constants": "Multiplier epsilon_5. Nondegeneracy is over Q_5, regardless of the integral cokernel of T_5(lambda).",
+      "normalizations": "Covariant Tate modules and the roots-of-unity Tate twist Q_5(1). The dual pairing is composed in the second factor with lambda.",
+      "exceptional_cases": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity.",
+      "limit_order": "Take compatible prime-power torsion pairings, pass to Tate modules, tensor with Q_5, and compose with the isogeny lambda."
+    },
+    "needed_assertion": {
+      "statement": "The original b caller's V_5(A) admits the nondegenerate alternating G_F-equivariant pairing into Q_5(1) used in the determinant calculation.",
+      "objects": "The same abelian surface A over the finite number field F of actual Tate restriction, and an F-defined polarization lambda:A->A^dual.",
+      "hypotheses": "A is an abelian variety over F of characteristic zero. Choose an ample F-line bundle and its polarization; retain the original normalized-family Tate restriction separately.",
+      "quantifiers": "For all x,y in V_5(A) and g in G_F, the pairing satisfies <gx,gy>=epsilon_5(g)<x,y>.",
+      "parameter_range": "ell=5; no condition on reduction at 5 or on the 5-part of deg(lambda).",
+      "uniformity": "The construction applies to this original A and F; it asserts no uniform field degree and makes no replacement of the family.",
+      "constants": "Multiplier epsilon_5. Nondegeneracy is over Q_5, regardless of the integral cokernel of T_5(lambda).",
+      "normalizations": "Covariant Tate modules and the roots-of-unity Tate twist Q_5(1). The dual pairing is composed in the second factor with lambda.",
+      "exceptional_cases": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity.",
+      "limit_order": "Take compatible prime-power torsion pairings, pass to Tate modules, tensor with Q_5, and compose with the isogeny lambda."
+    },
+    "required_capabilities": [
+      "equivariant-alternating-nondegenerate-pairing"
+    ],
+    "available_capabilities": [
+      "canonical-dual-torsion-pairing",
+      "line-bundle-alternation"
+    ],
+    "derived_capabilities": [
+      "equivariant-alternating-nondegenerate-pairing"
+    ],
+    "connecting_derivation": {
+      "kind": "inline",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/polarization-pairing-input-001/PROOF.md",
+          "sha256": "6a247a14fe447ede63085d182cabca3cf7558b77bd3a3da8dedb7a5058fd62b1"
+        },
+        "start_line": 15,
+        "end_line": 15,
+        "excerpt_sha256": "f261924220791dd1af12e7b5143e1032cb3a0e4af205dce6fbeeba401952ca63"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "The original b caller's V_5(A) admits the nondegenerate alternating G_F-equivariant pairing into Q_5(1) used in the determinant calculation.",
+        "objects": "The same abelian surface A over the finite number field F of actual Tate restriction, and an F-defined polarization lambda:A->A^dual.",
+        "hypotheses": "A is an abelian variety over F of characteristic zero. Choose an ample F-line bundle and its polarization; retain the original normalized-family Tate restriction separately.",
+        "quantifiers": "For all x,y in V_5(A) and g in G_F, the pairing satisfies <gx,gy>=epsilon_5(g)<x,y>.",
+        "parameter_range": "ell=5; no condition on reduction at 5 or on the 5-part of deg(lambda).",
+        "uniformity": "The construction applies to this original A and F; it asserts no uniform field degree and makes no replacement of the family.",
+        "constants": "Multiplier epsilon_5. Nondegeneracy is over Q_5, regardless of the integral cokernel of T_5(lambda).",
+        "normalizations": "Covariant Tate modules and the roots-of-unity Tate twist Q_5(1). The dual pairing is composed in the second factor with lambda.",
+        "exceptional_cases": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity.",
+        "limit_order": "Take compatible prime-power torsion pairings, pass to Tate modules, tensor with Q_5, and compose with the isogeny lambda."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "A principal polarization and degree prime to 5 are unnecessary. Skew symmetry is alternating in characteristic zero. Pairing supply does not establish the separate two-copy identity. Isogeny inverse after Q_5 scalar extension handles 5-divisible polarization degree.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/polarization-pairing-input-001/PROOF.md",
+            "sha256": "6a247a14fe447ede63085d182cabca3cf7558b77bd3a3da8dedb7a5058fd62b1"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "f261924220791dd1af12e7b5143e1032cb3a0e4af205dce6fbeeba401952ca63"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 636,
+        "end_line": 638,
+        "excerpt_sha256": "6fb6125d0691e216bfc5c81fdbe0a33d754adad5c8ec54a8b0e4e1d8d8488961"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "schema": "bounded-source-review/v1",
+  "reviewed_at": "2026-11-09T08:19:22.680Z",
+  "target": {
+    "path": "v14-active-connection-collection-015/MANIFEST.json",
+    "sha256": "2a0041346170a0e8ecfb58189d1a510e198f0ed1a5d8cf30b9a608c94f828eb9"
+  },
+  "decision": "accepted exact collection transport only",
+  "checks": {
+    "input_pins": true,
+    "ordered_replay_count": 820,
+    "zero_replay_differences": true,
+    "changed_record_checks": 147,
+    "changed_record_checks_pass": true,
+    "review_pins": true,
+    "background_unchanged": true
+  },
+  "reasoning": "Exact014 base plus16 new bounded accepted uses and three caller002 location replacements. Source assertions and existing records otherwise preserved by ordered replay; source-index appends have not been folded in. Prior independent source decisions retain their scopes.",
+  "limits": "820 active records and two background records are accounting, not exhaustive premise or full-line coverage and not final gate acceptance."
+}

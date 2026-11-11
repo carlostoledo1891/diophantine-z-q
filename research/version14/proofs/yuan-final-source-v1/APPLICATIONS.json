@@ -1,0 +1,50 @@
+{
+  "status": "author proposal",
+  "applications": [
+    {
+      "id": "YKS-MODEL-FINAL",
+      "supplier": "Yuan2024 final Section2.1, pp230–231",
+      "available": "Regular flat semistable Deligne–Mumford integral moduli stack over Z[1/n(U)], smooth away d_B; proper for division B, with the universal abelian scheme on the stack.",
+      "needed": "The maximal stack at n(U)=1 for the indefinite division quaternion algebra of discriminant210, and actual principal level3 moduli scheme.",
+      "objects": "The maximal stack mathscr X, its universal abelian surface, U=U(3), and the entire level scheme, not a chosen connected component.",
+      "hypotheses": "Indefinite B/Q, maximal order, determinant condition; d_B=210 implies division; the chosen principal U(3) is an actual fine level.",
+      "conventions": "n(U) is the product of primes where level is nonmaximal. Maximal U has n=1; U(3) inverts3. The source contains a general fineness phrasing issue about containment of U(N); the current level is exactly U(3).",
+      "connection": "Apply the moduli statement to maximal level for the stack, and principal3 for the fine cover; no integral coarse-model pullback is used.",
+      "consumer": "model-and-tame-cover",
+      "retained_separate": "The manuscript supplies tame quotient arguments, order576, descent, homomorphism fields and bad-prime support separately. Generic stabilizer input is not newly proved by this source-version replacement.",
+      "limitations": "This is not an authentication of every antecedent to Yuan Section2.1 or of a coarse-model map at bad primes."
+    },
+    {
+      "id": "YKS-INTEGRAL-FINAL",
+      "supplier": "Yuan2024 final Theorem1.1, p229",
+      "available": "The canonical square-Hodge to square-dualizing map on the stack is injective with image d_B times the square-dualizing line.",
+      "needed": "For d_B=210, identify the Hodge square with the sublattice210 omega_mathscrX^2 in the proper maximal stack.",
+      "objects": "Same maximal stack and universal abelian scheme as YKS-MODEL-FINAL, same polarization and canonical Kodaira–Spencer determinant map.",
+      "hypotheses": "The integral quaternionic moduli setup and polarization specified in the source; same discriminant and maximal order.",
+      "conventions": "The image is d_B times the target line, not d_B inverse and not a coarse orbifold bundle.",
+      "connection": "Use the actual theorem on the stack after the manuscript independently extends J^2 q_i as sections of the stack square-dualizing line.",
+      "consumer": "direct-stack-sections; metric-and-height",
+      "retained_separate": "The vertical valuation proof, regularity extension, rational-point extension and arithmetic degree conventions are separate manuscript inferences.",
+      "limitations": "Lemma2.1 and Theorem2.2 are not used to supply this map or integral extension. Theorem1.1 proof itself must be checked for this dependency distinction by the independent reviewer."
+    },
+    {
+      "id": "YKS-METRIC-FINAL",
+      "supplier": "Yuan2024 final pp228–229 and Theorem1.1",
+      "available": "Faltings norm squared has (2pi)^(-2) normalization in dimension2; Petersson norm of d tau is2 Im(tau); the canonical map is an isometry.",
+      "needed": "Same stack isometry in the height calculation and fixed analytic norm for q_i.",
+      "objects": "Same Hodge and dualizing bundles, original stable Faltings height, and stack point after extension.",
+      "hypotheses": "The source complex uniformization and positive polarization; no coarse metric transfer.",
+      "conventions": "Square norm versus norm is distinguished. The existing manuscript converts the normalization by log pi in dimension2 and the sublattice height by positive log210 on solving for target height.",
+      "connection": "The isometry supplies the metric identification used after the separate manuscript supremum and section-integrality estimates.",
+      "consumer": "metric-and-height",
+      "retained_separate": "The original stable-height normalization conversion, curvature calculation, additive budget and sign algebra are unchanged manuscript arguments, not conclusions supplied by the theorem alone.",
+      "limitations": "No blanket equality of Chinese and English proofs; no coarse arithmetic-intersection formula is imported."
+    }
+  ],
+  "historical_disposition": {
+    "id": "YKS-COARSE",
+    "current_h5": "not selected; exact direct-stack connection is required and independently reviewed",
+    "source_finding": "SOURCE-YUAN-LEMMA21-SEPARABILITY",
+    "related_scope": "Direct uses of Lemma2.1, coarse Theorem2.2, and similar-proof Lemma5.2 remain subject to the finding; no global retirement outside this profile."
+  }
+}

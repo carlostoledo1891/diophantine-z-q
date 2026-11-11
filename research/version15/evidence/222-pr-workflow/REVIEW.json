@@ -1,0 +1,28 @@
+{
+  "scope": "Dedicated PR-only workflow and non-deployed policy contribution; local source inspection only",
+  "input": {
+    "path": "work/v15-ci-requirements-author-002/MANIFEST.json",
+    "sha256": "1c9fd91b868c225b447b78e4d8c3791da179b701eadb050b6de4e22c32ff4345"
+  },
+  "outcome": "accepted within scope",
+  "checks": {
+    "manifest_members": 5,
+    "schema_input_pins": 4,
+    "source_closure_pins": 222,
+    "errors": [],
+    "current_222_job_byte_identical_to_prior": true,
+    "historical_manual_workflow_unchanged": true,
+    "only_pull_request_trigger": true,
+    "no_conditional_jobs_or_steps": true,
+    "read_only_permissions": true,
+    "action_pins_unchanged": true
+  },
+  "controller_match": "Reader requires PR event, exact job set, successful run/jobs/all steps; dedicated unconditional current-222 job avoids the superseded proposal skipped-job and competing-push problem.",
+  "limits": [
+    "No hosted run or actual registered workflow/check identity verified.",
+    "Contribution remains non-loadable with null workflow/App/commit/transition fields; root must obtain actual identities and exact source transition before any deployment.",
+    "Required_merge_ci applies only in merge mode; head enforcement is policy.workflows.",
+    "No controller, repository, or remote mutation performed.",
+    "No mathematical reapproval or new finite rerun."
+  ]
+}

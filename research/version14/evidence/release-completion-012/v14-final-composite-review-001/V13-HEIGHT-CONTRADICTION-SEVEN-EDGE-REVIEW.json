@@ -1,0 +1,69 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:57:37.237Z",
+  "target": {
+    "path": "v14-v13-height-contradiction-ancestry-001/DISPOSITION.json",
+    "sha256": "7f178009e3cb145c2d048bb871a3ea75151b6399e8d5f35925af3a13bb2969b7"
+  },
+  "status": "accepted seven scoped indirect relations",
+  "rows": [
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N03-SQUARED-H-EXCEPTIONS",
+      "reason": "Preliminary H branch exclusion is required before the complete N38 congruence argument. It is not re-applied in the final height/Lucas contradiction."
+    },
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N04-CONTACT-POLE-LOCAL",
+      "reason": "The pole identity supplies earlier detector estimates. The final contradiction uses the completed congruences and the retained height/Lucas lemmas."
+    },
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N06-CONDITIONAL-GUARDS",
+      "reason": "Conditional pole guards are established upstream of the detector/congruence proof; they are not a separate step in the final height application."
+    },
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N13-THREE326-LOCAL",
+      "reason": "The same-place group bound is upstream of the full N38 congruences. Preserve it there rather than claiming the height argument re-proves a group minimum."
+    },
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N25-H-DEPTH-BOOTSTRAP",
+      "reason": "The complete N38 source proof23292–23338 includes the integral-ratio/unit-L bootstrap before its final congruences. N25 is that earlier sub-result, not a second independent final-height input."
+    },
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N44-RAW-RATIO-GLOBAL-REDUNDANCY",
+      "reason": "The global raw-ratio domain is a prerequisite of the complete N38 source proof. It remains necessary there, but the final height step consumes the already proved congruence."
+    },
+    {
+      "consumer": "V13-HEIGHT-CONTRADICTIONS",
+      "supplier": "N46-S-ALL-E-DOMAIN-APPLICATION",
+      "reason": "All four pairs, including the scalar pair, are already in the N38 congruence output; no additional application of the whole all-E domain statement is made at the final height contradiction."
+    }
+  ],
+  "checks": [
+    {
+      "start": 23292,
+      "end": 23338,
+      "raw_equal": true
+    },
+    {
+      "start": 23360,
+      "end": 23367,
+      "raw_equal": true
+    }
+  ],
+  "findings": [
+    "Read current full transfer23292–23338 and final application23360–23367, compared with all required wrapper fields. The final height application consumes completed order10/40 congruences, not a provisional pre-bootstrap result.",
+    "The earlier N=1 empty-radical contradiction remains an independent height/anchor step before H, not something deduced from the later congruences.",
+    "The listed pole, guard, local, domain and bootstrap statements remain necessary upstream of complete N38 but are not repeated final-height invocations."
+  ],
+  "retained": [
+    "Complete N38 current application, independent height/Lucas lemmas, odd integer root labels, scalar orientation, scalar-depth24 and exact height margin.",
+    "All earlier global ratio/H-domain and same-place local hypotheses."
+  ],
+  "limits": "No circular use of full N38 before bootstrap; no whole-source or final coverage acceptance."
+}

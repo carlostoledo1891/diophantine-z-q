@@ -1,0 +1,62 @@
+
+Let $\tau\in\operatorname{Aut}(\overline{\Q}/\Q)$.
+Choose an odd integer $e$ describing its action on all values of
+$\eta$ and $\psi$, and put $\nu=\eta^{(e-1)/2}$.
+Coefficientwise conjugation gives a form $g^\tau$ with character
+$\psi^e$ and good eigenvalues $\eta(p)^e a_p(E)$.
+One can reduce this conjugation assertion to integral weight by
+multiplying by the ordinary theta series: it has rational
+coefficients, and its fourth power has trivial scalar character.
+The algebraic divisibility condition at the cusps is precisely the
+one in Ramsey's section model, so division after conjugation is
+again a half-integral-weight form.
+The coefficientwise twist $g\otimes\nu$ has character
+$\psi\nu^2=\psi^e$ and exactly these good eigenvalues.
+The identities hold because $\psi/\eta$ is quadratic.
+The twist is modular at a level still supported on $S_0$; this
+follows as well by writing it as the finite additive translation
+sum using the Gauss sum of the primitive character inducing $\nu$.
+
+Pass to a common such level. Both forms lie in its full
+good-Hecke eigenspace, so the proportionality of its $D$ and $D_0$
+functionals gives
+\[
+ \tau(a(D))
+ =\frac{\nu(D)a(D)}{\nu(D_0)a(D_0)}
+ =\nu(D/D_0)a(D).                                  
+\]
+There is no vanishing reference denominator: $D_0$ is prime to
+$S_0$ and $a(D_0)=1$. No rationality of the central-value quotient
+has been assumed in obtaining this equality.
+
+Write the Dirichlet character as a product of its finite
+prime-power factors $\eta_p$. For every $p$ dividing its conductor
+choose $u_p\in\Z_p^\times$ with $u_p^2=D/D_0$, and set
+\[
+                 z_D=\prod_{p\mid\operatorname{cond}(\eta)}
+                                      \eta_p(u_p).
+\]
+Then $z_D$ is a two-power root of unity,
+$z_D^2=\eta(D/D_0)$, and
+\[
+ \tau(z_D)=z_D^e,\qquad
+ \nu(D/D_0)=z_D^{e-1}.
+\]
+Changing the selected odd representative of $e$ has no effect on
+the last identity, because $D/D_0$ is a local square at the
+conductor. The preceding Galois identity now shows that $a(D)/z_D$ is fixed by
+every $\tau$, hence lies in $\Q$.
+Different choices of the local square roots change $z_D$ by a
+sign, which changes only the sign of this rational number.
+
+Finally, $\psi/\eta=\chi_{-\sigma}$ is trivial on $D/D_0$:
+its conductor is supported at two and the ratio is a square there.
+Thus $\psi(D/D_0)=z_D^2$. Dividing (E.10) by $z_D^2$ gives
+\[
+ a(D)=z_Dr_D,\qquad z_D\in\mu_{2^\infty},\qquad r_D\in\Q,
+ \qquad r_D^2=\frac{L_*(\sigma D)}{L_*(\sigma D_0)}.       \tag{E.11}
+\]
+The argument also covers the zero coefficient case. In particular,
+every nonzero coefficient in (E.11) has integral normalized
+two-adic valuation.
+

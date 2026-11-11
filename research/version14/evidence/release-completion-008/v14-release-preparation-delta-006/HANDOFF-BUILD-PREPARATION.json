@@ -1,0 +1,57 @@
+{
+  "schema": "v14-handoff-build-preparation/v1",
+  "status": "not deployable; no build executed",
+  "approved_builder": {
+    "path": "work/quartic-v14-release-assembled-001/package_v14.py",
+    "sha256": "f2893bc123c178997c74ccb12f187b1f302cb841bdff18bb501a5674f80805bb",
+    "bytes": 13122
+  },
+  "approved_contracts": {
+    "path": "work/quartic-v14-release-assembled-001/artifact_contracts.py",
+    "sha256": "2e74531dd6f05e682b3c2711d5c3e582aa72847cd112ff0da3b8fe690fcf67f0",
+    "bytes": 11600
+  },
+  "selection": {
+    "draft": "WORKTREE-SELECTION-DRAFT.json",
+    "final_rule": "Regenerate and verify from selected Git blobs at actual S; never use worktree hashes as unverified Git pins"
+  },
+  "inputs": {
+    "required_top_level": [
+      "schema",
+      "source_commit",
+      "manuscript",
+      "pdf",
+      "roles",
+      "gate_binding"
+    ],
+    "schema_value": "v14-final-release-inputs/v1",
+    "source_commit": null,
+    "role_draft": "CUMULATIVE-ROLE-DRAFT.json",
+    "gate_binding": null
+  },
+  "coverage_selection": {
+    "status": "pending final coverage and explicit evidence selection",
+    "rule": "Every source-domain final role pin must occur in coverage, profiles or evidence lists"
+  },
+  "source_map": {
+    "status": "pending actual selected Git bytes",
+    "schema": "v14-cumulative-source-map/v1",
+    "required_fields": [
+      "schema",
+      "base_sha256",
+      "annex_sha256",
+      "files",
+      "exclusions"
+    ],
+    "rule": "files keys equal exactly selected files; classify each current/historical and retain reviewed exclusions"
+  },
+  "command": "COMMAND-PLAN.json",
+  "unbound": [
+    "actual S",
+    "final full coverage and independent decision",
+    "Git-derived source-map/selection",
+    "real PR and authenticated controller success",
+    "external post-gate manifest"
+  ],
+  "prohibition": "No placeholder is an observation or approval. No archive build or dispatch is authorized by this preparation artifact."
+}

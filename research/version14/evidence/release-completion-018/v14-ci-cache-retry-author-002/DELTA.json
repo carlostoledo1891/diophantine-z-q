@@ -1,0 +1,35 @@
+{
+  "status": "isolated successor002 pending independent review",
+  "predecessor": {
+    "workflow": {
+      "path": ".github/workflows/research-checks.yml",
+      "sha256": "8390d9e2c60806ea39eb534098ae7b2a699f3914f3f9565446a7f264edc55191"
+    },
+    "build_paper": {
+      "path": "scripts/build_paper.py",
+      "sha256": "850ff9b315504a009773823d1ce1f9ec3c10e3d75b2ec5ad2df35496e0cd8a7f"
+    }
+  },
+  "changes": [
+    "New fetch_lean_cache.py runs only lake exe cache get in the existing lean directory.",
+    "At most3 total attempts with2s then4s backoff; only explicit download+transient HTTP signatures retry.",
+    "Known Lean compiler/build failure markers suppress retry. All other failure outputs, exceptions, checksum errors and unrecognized network errors fail immediately.",
+    "Only the cache-fetch step changes; pinned setup actions, elan4.2.4 URL/checksum, lean-toolchain and actual single-run check_lean build/axiom command remain unchanged.",
+    "No Tectonic change: its existing four-attempt retry already handles these HTTP codes."
+  ],
+  "tests": {
+    "exit_code": 0,
+    "count": 10,
+    "network_called": false
+  },
+  "limits": [
+    "Retry classification uses explicit diagnostic text; unrecognized transient errors deliberately fail rather than retry.",
+    "No new mirrors, no version/hash updates, no test bypass, no actual workflow run launched."
+  ],
+  "supersedes": {
+    "path": "v14-ci-cache-retry-author-001/MANIFEST.json",
+    "sha256": "733a6b9066bdf989e62c533b87c1a810890b50e9fb4e43ac2361b43de71b28f3"
+  },
+  "correction": "Integrity/checksum/hash failures and compiler/build diagnostics override any earlier transient download message. Unknown error diagnostics fail closed; the exact curl22 transient-status form remains eligible.",
+  "history": "Initial successor test caught the exact curl diagnostic being rejected by the generic error guard; the exception is now restricted to that precise transient curl format. Initial failing output retained."
+}

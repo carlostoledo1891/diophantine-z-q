@@ -1,0 +1,185 @@
+{
+  "schema": "source-use-ten-fields/v1",
+  "uses": [
+    {
+      "id": "BASE-U01",
+      "assertion": {
+        "statement": "The forward prime-cyclic bracket theorem supplies one phase and a progression containing a fixed-radius Bohr set, with shifted positive phase correlation on every nonempty subset.",
+        "objects": "Complex one-bounded u on Z/PZ, frequency setS, proper progressionQ, bracket quadraticphi and shifts h_A.",
+        "hypotheses": "P prime>2, fixed sufficiently small eta>0, U3 norm at leasteta. The affected H={0} specialization is proved locally.",
+        "quantifiers": "Every such u,P; every nonempty A subsetQ, with one common phi but a shift depending onA.",
+        "parameter_range": "Only order2 base and positive eta; no converse half or nontrivial-subgroup extension imported.",
+        "uniformity": "Finite frequency count and positive radius/correlation constants depend only oneta.",
+        "constants": "Only finite D(eta) and positive rho_star,b_star needed, not the printed explicit powers.",
+        "normalizations": "Fractional parts in[-1/2,1/2), arbitrary real coefficient lifts, additive characters alpha=xi/P.",
+        "exceptional_cases": "Empty frequency set gives a constant test. Small eta requirement met by a fixed lower threshold.",
+        "limit_order": "Fix eta before P; obtain the common phase, then choose a regularBohr subset and its shift."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/GT-U3-final.pdf",
+        "sha256": "528e87ff045b74d6dd45006c612e8c755a7ae67fb05c62f8fe370ca650345ede",
+        "bytes": 727553,
+        "locator": "Theorem10.11 pp124-125, equations10.7 and10.9; definitions10.9, forward2.7 and exact specialization of10.10"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "start_line": 29,
+        "end_line": 66,
+        "excerpt_sha256": "04801e8197bb420288a36d7039953b34d4ea03b0e334fc6eff5e3530b3620ba0"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "BASE-U02",
+      "assertion": {
+        "statement": "A locally quadratic phase on a proper finite progression with H={0} has the coordinate quadratic polynomial needed by10.10.",
+        "objects": "Injective box coordinate map, mixed/diagonal finite differences and coefficients inR/Z.",
+        "hypotheses": "Third differences vanish for every full cube in the finite box; progression is proper.",
+        "quantifiers": "Every finite side length and every such phase; every admissible cube, not just interior points.",
+        "parameter_range": "Exactly H={0}; no extension to an arbitrary subgroup or ambient finite group.",
+        "uniformity": "Exact algebraic statement independent of progression size and coefficients.",
+        "constants": "No approximation loss. Division bytwo inR/Z is used only for optional symmetric coefficient convention.",
+        "normalizations": "Use binomial diagonal terms, linear terms and pairwise mixed terms; coordinate pullback is injective.",
+        "exceptional_cases": "Length1 coordinates omitted; length2 has no diagonal second difference, so choose its diagonal coefficientzero.",
+        "limit_order": "Prove the box formula, substitute Cor10.6 independent fractional coordinates, then use the forward10.11 proof."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/GT-U3-final.pdf",
+        "sha256": "528e87ff045b74d6dd45006c612e8c755a7ae67fb05c62f8fe370ca650345ede",
+        "bytes": 727553,
+        "locator": "Lemma10.7 pp122-123 and Proposition10.10 pp123-124; Proposition3.2 p88 bypassed by the local finite-box lemma"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "start_line": 67,
+        "end_line": 113,
+        "excerpt_sha256": "e479c32a0c763a602bdec89fde8705e859977e018720fb36eabb975196606839"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "BASE-U03",
+      "assertion": {
+        "statement": "A regularBohr subset with fixed positive density supplies a smooth periodic bracket test retaining positive cyclic correlation.",
+        "objects": "RegularB(S,rho), cutoffchi, W=product chi^(1+4d), Psi=W exp(-2pi i phi).",
+        "hypotheses": "B lies inQ, radius bounded below ineta and at most1/8; choose epsilon within the regularity range.",
+        "quantifiers": "Every primeP and resulting frequencies; all cyclic points and all integer representatives.",
+        "parameter_range": "d<=D(eta); epsilon fixed positive and smaller than the correlation divided byCd.",
+        "uniformity": "Cutoff norm/Lipschitz bounds and surviving correlation depend only oneta.",
+        "constants": "Shell error<=Cd epsilon|B|, lost correlation at most half; retain Lipchi of order1/(epsilon rho).",
+        "normalizations": "W differs from1_B only in the regularity shell; exact periodicity comes from integralPalpha_j.",
+        "exceptional_cases": "No claim of a universal cutoff derivative50 or2pi. EmptyS handled separately.",
+        "limit_order": "Choose regularrho, thenepsilon, then the test; all before changingP or takinglimits."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-assembly-001/GT-U3-final.pdf",
+        "sha256": "528e87ff045b74d6dd45006c612e8c755a7ae67fb05c62f8fe370ca650345ede",
+        "bytes": 727553,
+        "locator": "Lemmas8.1-8.2 pp104-108 and regular Bohr definition; source10.11(10.7,10.9)"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "start_line": 114,
+        "end_line": 149,
+        "excerpt_sha256": "e53d714f818b6e3e9aef143b7afb924fe24ba59e91b00ba35d31857749819dbf"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "BASE-U04",
+      "assertion": {
+        "statement": "Each cutoff linear/quadratic bracket factor has an exact connected polynomial degree-two model with coefficient-independent test bounds.",
+        "objects": "Circle/two-torus tests, pure quadratic torus orbit, Heisenberg right quotient and p(n)=(beta n,alpha n,0).",
+        "hypotheses": "Cutoff vanishes near fractional-part seam; integer/fractional coefficient split a=q+s, |s|<=1/2.",
+        "quantifiers": "All real coefficients, all real frequencies and all integern, including negatives.",
+        "parameter_range": "One linear factor perfrequency and one quadratic factor perorderedpair; dimension<=2d+9d^2.",
+        "uniformity": "Fixed finitely many model types and fixed Lip bounds ineta; largeq appears only in orbit coefficients.",
+        "constants": "Tests boundedby1; product Lipschitz bounded by fixed factor count times individual bounds.",
+        "normalizations": "Heisenberg law w+w prime+uv prime, right reduction w-u[v]; first/second differences explicitly computed.",
+        "exceptional_cases": "Diagonal quadratic pairs are allowed. Individual factors need not beP-periodic; their exact productisperiodic.",
+        "limit_order": "Construct and verify factor identities and quotientgluing before multiplying; no flawed skew-iterate identity imported."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "locator": "Local exact torus/Heisenberg construction inSection4; published elementary examples used for comparison only"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "start_line": 150,
+        "end_line": 230,
+        "excerpt_sha256": "e19572ba29a937c8d02bcd9750897f82b5304717ec563b25eb713ea942a3e0c2"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "BASE-U05",
+      "assertion": {
+        "statement": "Products and translates of the constructed adapted polynomial orbits remain adapted of degree at most two.",
+        "objects": "Fixed product filtered nilmanifold with product lattice, translated orbitg(n-h).",
+        "hypotheses": "Each factor has the explicit degree-two derivative property; all filtration commutator conditions hold.",
+        "quantifiers": "All integer shifts h and all polynomial coefficients.",
+        "parameter_range": "Degree at most two, with a fixed finite number of factors for eta.",
+        "uniformity": "Translation changes coefficients only, not geometry, test or Lipschitz bounds.",
+        "constants": "Exact identities, with no correlation loss.",
+        "normalizations": "Use the left difference convention and right lattice quotients consistently.",
+        "exceptional_cases": "Abelian degree-two factors have G1=G2=R and are still valid filtrations.",
+        "limit_order": "Verify individual factors, form product, then translate for cyclic correlation."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Polynomial closureB.4 p1334 and translationB.5; local factor derivative verification"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "start_line": 150,
+        "end_line": 230,
+        "excerpt_sha256": "e19572ba29a937c8d02bcd9750897f82b5304717ec563b25eb713ea942a3e0c2"
+      },
+      "status": "author_proposed; independent review pending"
+    },
+    {
+      "id": "BASE-U06",
+      "assertion": {
+        "statement": "The periodic cyclic bracket test gives the exact finite-family polynomial GI(2) interval statement.",
+        "objects": "Prime P in (CN,2CN), zero extension u, interval indicator, periodic Psi and translated model.",
+        "hypotheses": "Complex one-bounded f with normalized U3[N]>=delta; fixed integer C>16.",
+        "quantifiers": "Every delta>0 and every positive integer N; if delta>1 the hypothesis is void.",
+        "parameter_range": "eta is fixed, positive, at most delta/(2C), and within the published smallness range.",
+        "uniformity": "All model, test and correlation data depend only on delta, never on N or the selected h.",
+        "constants": "Indicator norm is at least N/P; resulting interval correlation is P/N times the cyclic correlation.",
+        "normalizations": "Exact periodicity permits a cyclic change of variables before zero extension removes terms outside [N].",
+        "exceptional_cases": "No signed-truncation branch split; Bertrand covers CN>1 for all N. The empty-frequency constant case is included.",
+        "limit_order": "Fix C, delta, eta and the resulting family before N; choose P and orbit parameters afterward."
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "locator": "Normalized intervalnorm p1232; elementary cyclicGowers mean bound and Bertrand prime choice, applied locally"
+      },
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+        "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+        "bytes": 13937,
+        "start_line": 231,
+        "end_line": 259,
+        "excerpt_sha256": "4c1764a51a7e295aed5b131bf1215a5e1bdeb2e49301c2c0ed9cd626f116abf3"
+      },
+      "status": "author_proposed; independent review pending"
+    }
+  ]
+}

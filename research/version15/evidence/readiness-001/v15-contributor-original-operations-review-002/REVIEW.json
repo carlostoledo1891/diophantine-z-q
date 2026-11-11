@@ -1,0 +1,57 @@
+{
+  "decision": "accepted_at_original_proof_write_scope",
+  "subjects": [
+    {
+      "path": "work/v15-contributor-original-operations-h6-001/PARITY-PROOF-WRITE.json",
+      "sha256": "ad16d721562b9375e6bce7ed96dab9d9d7a0654c28031a6462b0b4f1c56bd680"
+    },
+    {
+      "path": "work/v15-contributor-original-operations-h6-001/GLOBAL-OBSERVATIONS.json",
+      "sha256": "cc49413df78840bf20e5bbb9c1be383b98c9c51e2f0225fcf0e36a781790edf1"
+    },
+    {
+      "path": "work/v15-contributor-original-operations-h6-001/SCALAR-RESCALE-OBSERVATIONS.json",
+      "sha256": "46ff2c2ba1418e161d2ba9644e983c9e66abc38ce489cdaf01c76393779425e6"
+    }
+  ],
+  "checks": [
+    {
+      "name": "parity-proof",
+      "run_id": "01a1c308-55a9-7c43-a857-607c05650987",
+      "agent_id": "01a1be27-02c7-7b42-8156-2ee21f1c2ffa",
+      "proof_sha256": "658aaa37b030e23afb225ab46eaf2c596b7f198fc401856907458e7b49d0e71a"
+    },
+    {
+      "name": "root240",
+      "run_id": "01a1c2c3-8049-7e82-a1cb-425271ae558f",
+      "agent_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+      "proof_sha256": "706a8c17c1072933d8aa5e6d9ae82a64b64fde2c577875040e9029baf9c6ef65"
+    },
+    {
+      "name": "reciprocal239",
+      "run_id": "01a1c2d0-9a54-7d40-91f5-a0f1b34f67e5",
+      "agent_id": "01a1c011-0e1c-78c3-944c-d28e25c9b1ff",
+      "proof_sha256": "a3b981e71dc6c7593cf21701da80181ccecd1a99d059301c3ff523263627b7f9"
+    },
+    {
+      "name": "scalar245",
+      "run_id": "01a1c2c3-6a7b-7e40-b78b-5a174d71c2f7",
+      "agent_id": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+      "proof_sha256": "953e212533ce99cf8520380fa38138c8b172c7dc1785d0e9cfb7c2b25ff5ce95"
+    },
+    {
+      "name": "rescale238",
+      "run_id": "01a1c2d8-120f-7c61-a3d2-010cd14bac8f",
+      "agent_id": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+      "proof_sha256": "114e6ab6dcf8cb67da7337b6652e1dc1e6e32c2051f1a2178cc1be869f5354fe"
+    }
+  ],
+  "original_record_references_checked": 20,
+  "method": "Read exact original byte ranges and verify hashes, match outgoing code to completed code and actual context/session. Extract literal proof strings without executing any historical code; compare exact proof hashes and current artifact bytes.",
+  "prior_caveat_resolved": "The direct parity proof write closes the seal-only limitation in review001.",
+  "limitations": [
+    "No new mathematical approval.",
+    "Host-recorded identity only; no provider attestation or future ACK.",
+    "These selected operations do not assert the complete contributor set."
+  ]
+}

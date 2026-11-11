@@ -1,0 +1,78 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewed_at": "2026-11-09T09:08:38.483Z",
+  "target": {
+    "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-cj-igusa-source-index-author-004/MANIFEST.json",
+    "sha256": "540b5d19f267369be9af4d11080dcc0d351163be7e2a4ce69395b9c3f404efb8"
+  },
+  "decision": "accepted two additional rows; cumulative369 classified rows, three pending",
+  "checks": [
+    {
+      "id": "ACTIVE-CJ-LOCAL-DIVISION-INPUT",
+      "hash": true,
+      "loc": true
+    },
+    {
+      "id": "ACTIVE-CJ-CONJUGACY-INPUT",
+      "hash": true,
+      "loc": true
+    },
+    {
+      "id": "ACTIVE-CJ-CENTRALIZER-INPUT",
+      "hash": true,
+      "loc": true
+    }
+  ],
+  "findings": [
+    "The only new accepted rows39/41 bind the exact existing local-division, specified-conjugacy and pointwise-centralizer applications.",
+    "The local class distinction and F-times stabilizer preserve labels; no enlarged normalizer quotient or global reference object is inferred.",
+    "Prior classified367 rows and four occurrence proposals remain accepted unchanged."
+  ],
+  "pending": [
+    {
+      "id": "SRC-CJ-IGUSA-130",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+          "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+        },
+        "start_line": 33,
+        "end_line": 33,
+        "excerpt_sha256": "23c95d77a2c80d64ea92fcd92d22755fd3394b967e26a6e7878184b5f30d6b40"
+      },
+      "requirement": "Requires explicit source-level binding of the rational embedding/existence input and geometric reference object. Retained local proof is not being replaced by a source-availability claim."
+    },
+    {
+      "id": "SRC-CJ-IGUSA-180",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+          "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+        },
+        "start_line": 83,
+        "end_line": 83,
+        "excerpt_sha256": "1489b23371a7ebd48e40d660b5588db78dfd601702d78ce1f532535e78e28f4d"
+      },
+      "requirement": "Requires exact current local Schwartz, Atkin-Lehner/parametrization and q-character transformation input bindings; the torsor conclusion does not prove these. Also retain the geometric quotient/dual realization of the actual Atkin-Lehner operation used at66."
+    },
+    {
+      "id": "SRC-CJ-IGUSA-184",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/cj-conductor-one-v1/proof.md",
+          "sha256": "67fde89bb38f6bd50c4588a359de143480978c2e802eed64a1ef013fbdfd8ed8"
+        },
+        "start_line": 87,
+        "end_line": 87,
+        "excerpt_sha256": "2e9b175056ca32530f072b88358501b9d2633830689cf71dba3f3a8c60a99c93"
+      },
+      "requirement": "Compare actual current discriminant, split-level, inert-prime and unit hypotheses at the caller; this line asserts that match rather than proving every support fact here. Also bind the actual additive lambda_M and F_(q^2) domain used at79; finite-sum algebra does not supply these."
+    }
+  ],
+  "limits": [
+    "CJ33/83/87 remain pending. No full nine-file or global ancestry closure."
+  ]
+}

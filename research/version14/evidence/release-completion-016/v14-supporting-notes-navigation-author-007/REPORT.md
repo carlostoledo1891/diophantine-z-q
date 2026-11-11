@@ -1,0 +1,1 @@
+Adds two installed kernel/lifting links with exact hashes and conditional scopes. Full proof, card, mathematical review, source-input review and fresh eleven-observation review read. No canonical edits or global coverage claim.

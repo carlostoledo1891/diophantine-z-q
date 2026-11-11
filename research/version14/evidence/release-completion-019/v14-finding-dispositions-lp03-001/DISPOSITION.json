@@ -1,0 +1,48 @@
+{
+  "state": "proposed disposition for independent review",
+  "finding_id": "GTZ-LP-VECTOR-SCALAR-SHIFT",
+  "original_location": {
+    "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/FINDINGS.json",
+    "sha256": "3a006f503dc7dc3369458dd8c3cda638459a5ebc4ba15e536a89534675f2028e",
+    "json_pointer": "/findings/0"
+  },
+  "original_object": {
+    "id": "GTZ-LP-VECTOR-SCALAR-SHIFT",
+    "status": "repair_proposed_pending_nonauthor_review",
+    "affected": [
+      "erratum Proposition 3.1-to-7.3 argument, p.4"
+    ],
+    "available": "E.5 provides vector unit nilcharacters with scalar contractions.",
+    "needed": "Move the high factor to n+h while leaving only lower-degree dependence on h.",
+    "failure": "Scalar coordinate need not have modulus one or be nonzero.",
+    "repair": "Insert the sum of coordinate squared moduli and use the full shift tensor.",
+    "related_uses": {
+      "path": "work/quartic-v14-prep/final-source-gtz/local-proof-sol-lp02-03-r3/RELATED-USES.md",
+      "sha256": "c9f32d0fdf097df9cdda02faad7837388de33d0ca954d7fec0c6d4792a6c1278",
+      "bytes": 3274
+    }
+  },
+  "proposed_status": "repaired",
+  "reason": "Current LP03 inserts the full sum of squared coordinate moduli via its unit-vector identity, then takes the bracket as a shift-tensor component. It never divides by a coordinate or assumes scalar modulus one. Zero coordinates remain valid. The original scalar-unit implication stays rejected.",
+  "current_proof": {
+    "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+    "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b",
+    "start_line": 208,
+    "end_line": 226,
+    "excerpt_sha256": "6dc0b6fc64d517162617c09a8027a7fd6fcbc11aab423efbe2b6c7a4d63b6a7d",
+    "excerpt": "The $U$ product is a component of $D_k$. Take LP02 with error\nless than half the correlation divided by a common bound for the\nother factors. A term of the standard finite sum retains a positive\nstandard correlation. Absorb its lower factor into $c_{h,k}$.\n\nFor its surviving coordinate $\\Psi_{k,a}(n)$ use the identity\n\\[\n \\Psi_{k,a}(n)=\\sum_b\n [\\Psi_{k,a}(n)\\overline{\\Psi_{k,b}(n+h)}]\\Psi_{k,b}(n+h).\n\\]\nThe identity uses the unit vector norm of $\\Psi_k(n+h)$.\nIndividual coordinates need not have modulus one. The bracket\nis a component of the conjugate transpose of the shift tensor.\nThe one-variable degree case of the project shift theorem gives\ndegree at most $s-2$, uniformly and internally in $h,k$, using the\nfinite geometries of LP02. Select a surviving term by the same\nfinite averaging argument. Absorb the bracket into $d_{h,k}$ and\nwrite the remaining coordinate as $P_k(n+h)$. The lower test is\nstill exactly zero unless both $h,h+k$ are retained shifts.\n"
+  },
+  "prior_reviews": [
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/reviews/independent-source-review/GTZ-LP02-03-DISPOSITION-R3.md",
+      "sha256": "e7a6360e054205a4ab2f0b5069d50eb70ebc0b735c2a885551b70dffa3fc82d3"
+    },
+    {
+      "path": "research/version14/proofs/local-gi-v1/proof/reviews/v14-gi-integration-review-001/REVIEW.md",
+      "sha256": "91264c32ba0745a10bc45c003fe41331dcd23b130822add2f60f7a30cddf18ed"
+    }
+  ],
+  "current_claim": "GI-04-LP02-03",
+  "scope": "Only the disputed high-factor shift in LP03; the separately accepted shift theorem and LP02 decomposition remain inputs. No whole-GI acceptance.",
+  "authorship_disclosure": "This mapper authored earlier cumulative normalization/selection records, not this underlying LP03 construction or the two cited reviews. Fresh disposition requires non-author review."
+}

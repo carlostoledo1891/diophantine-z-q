@@ -1,0 +1,413 @@
+[
+  {
+    "state": "author proposal; independent clause/source comparison pending",
+    "use": {
+      "id": "ACTIVE-THETA-T001",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "HIST-theta-T001-P1",
+        "HIST-theta-T001-P2",
+        "HIST-theta-T001-P3",
+        "HIST-theta-T001-P4",
+        "HIST-theta-T001-P5"
+      ],
+      "assertion": {
+        "statement": "Summary contracts require parity at full Selmer corank; p=2 rational Kato bound; signed-prime nonvanishing; full Waldspurger eigenspace; unaveraged CM norms/heights; actual derived Kummer duality; forward finiteness; finite-Sha isogeny ratio; de Rham height input; fixed-complexity prime estimate. This table does not prove those applications.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/theta/INITIAL-SOURCE-USES.json @ 36e496efc6ff759dd883d511d03568ac700e9d2a85565e2504e127db9d8b3aa4 row T001",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "classification": "background",
+      "reason": "This is a boundary summary or scope note, not a supplier of the referenced mathematical arguments.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    "initial_mapping": [
+      {
+        "id": "HIST-theta-T001",
+        "part": "Scope summary only; mathematical applications retain their separate records."
+      }
+    ],
+    "retained_separate_inputs": [],
+    "source_ancestry_status": "Historical family matches are candidates for exact current-source classification, not required use of superseded publications. No current source approval or ordinary ID is inferred from this inventory.",
+    "historical_citation_inventory": [
+      {
+        "id": "A022",
+        "title": "2-isogeny Selmer parity",
+        "source_locator": "DD Theorem 1.8 (= Corollary 5.8), printed p.4; definition of rk_p immediately before Conjecture 1.4",
+        "sources": [
+          "dd"
+        ],
+        "objects_and_maps": "E_l/Q with rational2-isogeny; full corank_Z2 Sel2∞=1.",
+        "hypotheses_and_discharge": "A rational point of order two supplies a rational degree-two isogeny over the number field. The checked Theorem 1.8 concerns the corank of the entire p-infinity Selmer group, so no finite-Sha hypothesis from Theorem 1.2 is imported. The required Selmer corank remains a separate input.",
+        "conventions": "p=2; parity of full Selmer corank, not algebraic rank. Root number of E, not of its unrelated CM generator curve.",
+        "translation_justification": "(-1)^corank=w(E) gives w=-1; use negative/positive nonvanishing branches accordingly.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A023",
+        "title": "Kato rational Euler-system divisibility",
+        "source_locator": "Theorems13.4(2),13.5(2),13.6–13.7; §13.1",
+        "sources": [
+          "kato"
+        ],
+        "objects_and_maps": "T2E and quadratic twists with cyclotomic inverse deck action; full coefficient ring A=Z2[[t]][1/2].",
+        "hypotheses_and_discharge": "Euler norm relation, nonzero generic class in both real components, each real eigenspace rank1, purity, rational irreducibility, cyclotomic-kernel element with one-dimensional fixed space. Open image supplies latter two.",
+        "conventions": "Kato purity uses inverse arithmetic Frobenius (weight -1 for Tate module); prime is away from2. Source target H2_0=ker(H2→H2_loc), not unrestricted H2.",
+        "translation_justification": "Apply13.4(2) at each height-one prime not containing2; separate local cone comparison and fixed F_E promote H2_0 to the full target. Part(3), whose residual hypotheses fail, is excluded.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A024",
+        "title": "Even nonvanishing with bounded prime support",
+        "source_locator": "Theorem on pp.435–436",
+        "sources": [
+          "hl"
+        ],
+        "objects_and_maps": "Weight-two trivial-nebentypus newform of actual twist E^(q0); positive discriminant d splitting at prescribed finite set.",
+        "hypotheses_and_discharge": "Choose signed q0 in compatible unit classes, even root number, avoid finite set including q0 and conductor. Source permits a finite splitting set.",
+        "conventions": "At most4 prime factors for d, thus at most5 for q0d; no use of unproved three-prime remark. Discriminant versus squarefree parameter tracked at2.",
+        "translation_justification": "First change to E^(q0), then apply theorem to positive d. This preserves arbitrary original local squareclasses after multiplication.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A025",
+        "title": "Odd nonvanishing and negative genus partner",
+        "source_locator": "Opening theorem clauses(i),(ii), printed pp.543–544",
+        "sources": [
+          "bfh"
+        ],
+        "objects_and_maps": "Twists of fixed weight-two trivial-character newform; negative h_* with nonzero central value and positive D_w with simple zero.",
+        "hypotheses_and_discharge": "Full Selmer parity first supplies the needed sign. Prescribe only the theorem’s finite splitting set; add support of h_* before constructing D_w.",
+        "conventions": "Negative discriminant nonvanishing and positive discriminant simple-zero are different clauses. No bounded-prime-support or arbitrary nonabelian Chebotarev constraints from BFH.",
+        "translation_justification": "Choose the clause matching sign and desired analytic order; absorb q0 for arbitrary classes in A024’s manner. The genus partner is fixed before varying D.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A027",
+        "title": "Explicit Gross–Zagier comparison",
+        "source_locator": "Theorem1.1, published pp.2524–2525",
+        "sources": [
+          "cst"
+        ],
+        "objects_and_maps": "Fixed parametrization pi and UNAVERAGED CM/ring-class or genus-character point; compare two Rankin products.",
+        "hypotheses_and_discharge": "All level primes split, conductor prime to N, exclude extra-unit fields, prescribed character conductor. In genus case c=1, mu(N,Dh_*)=0. pi(infinity)=0.",
+        "conventions": "Canonical height, fixed period/measure, conductor c sqrt(|discK|); include rational free-line index≤2. Do not use adjacent BSD conjecture.",
+        "translation_justification": "Cancel common L(E^h,s) factor in the two height identities. Nontorsion visible point then implies nonzero derivative before invoking native rank-one index.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A028",
+        "title": "Oriented supersingular reduction",
+        "source_locator": "H.1–H.3; Lemma2.1(ii),(iv); §§3.1–3.6, Theorem3.1, Corollary3.2; §§4.9–4.10",
+        "sources": [
+          "cornutjetchev",
+          "voight-quaternion"
+        ],
+        "objects_and_maps": "F=Q, B_source=M2(Q), changed set{ell0}, K_D=Q(sqrt(Dh_*)); oriented reduction to definite Eichler order of full level N.",
+        "hypotheses_and_discharge": "ell0 inert in K_D, prime to NDh_*; source fine conductors(1,1); parity1+0+1=2; all primes dividing N split. Extra quadratic units excluded. Outside (D/ell0)=1 support, coefficient is zero instead.",
+        "conventions": "Keep residue orientation at ell0; kappa=1 via N_ell0(0,0,0)=1. Old prime powers, including2, retained. Artin convention reversed only together with class labels.",
+        "translation_justification": "Count2^(omega(N)+1) orientation orbits, stabilizer quotient1/2; no second division for conjugate pairs. Obtain2^omega(N) times reduction of the same unaveraged point. Weight flip signs are manuscript calculations.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A029",
+        "title": "Full-space Fourier proportionality",
+        "source_locator": "§I.2, Proposition2 p.377; Corollary2 and proof pp.483–484",
+        "sources": [
+          "waldspurger"
+        ],
+        "objects_and_maps": "Full almost-all-good-Hecke space for phi0=f_E⊗eta; Fourier functionals at D0,D, not just one chosen eigenvector.",
+        "hypotheses_and_discharge": "Nonzero space first establishes H1; indices same local squareclass at every prime of actual level, including2, positive ratio at infinity. Same dyadic class removes H2 only as source permits.",
+        "conventions": "eta=psi chi_-sigma, chi0=psi chi_-1; resulting analytic twist chi_sigma. Character factor orientation psi(D/D0); L_* includes square-root normalization.",
+        "translation_justification": "Source proof extends linear functional relation over full space, including old copies; characteristic-zero polarization gives a common phase, not an independent sign per vector.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A031",
+        "title": "Algebraic half-integral model and descent",
+        "source_locator": "Definition3.1,Theorem4.2,Remark4.4",
+        "sources": [
+          "ramsey"
+        ],
+        "objects_and_maps": "Finite-dimensional algebraic half-integral-weight section space with Hecke/diamond operators; flat extension between characteristic-zero coefficient fields.",
+        "hypotheses_and_discharge": "Invert4N in base; fixed finite level, appropriate character; algebraic kernel conditions define selected vector.",
+        "conventions": "q-expansion principle and descent; no arbitrary-ring base-change claim from Theorem4.3 in weight3/2. Galois conjugation transports character.",
+        "translation_justification": "Solve algebraic linear conditions and apply q-expansion descent; Galois conjugation plus compensating character twist is an additional argument giving rational coefficient ratios up to2-power roots.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A034",
+        "title": "Heegner norm relations",
+        "source_locator": "Theorem2.15",
+        "sources": [
+          "ccl"
+        ],
+        "objects_and_maps": "Compatible CM points x_d on X0(N), y_d=pi(x_d), arbitrary old conductor d; new prime outside6dND_K.",
+        "hypotheses_and_discharge": "Split Heegner hypothesis gives N1=1, condition(*) becomes(d,N)=1; O_K^×={±1} gives u_m=1.",
+        "conventions": "Unaveraged traces; split terms a_q-sigma_q-sigma_q^-1. Artin symbol pair is inverse because rational principal ideal(q) is trivial.",
+        "translation_justification": "Apply pi on degree-zero divisors and pi(infinity)=0; fixed cusp annihilator C_pi only if needed. No conductor-dependent multiplier.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A037",
+        "title": "Local Kummer annihilator",
+        "source_locator": "Milne ADT I.2.3 p.28 and I.3.2–3.5 pp.41–44, especially the Kummer diagram in the proof on pp.42–43",
+        "sources": [
+          "milne"
+        ],
+        "objects_and_maps": "Kummer map B(F)/2^a→H1(F,B[2^a]) and map to H1(F,B)[2^a], paired by Weil pairing and local invariant.",
+        "hypotheses_and_discharge": "Nonarchimedean local field, canonical principal polarization, finite coefficients; actual integral Kummer complex must retain degree0 torsion.",
+        "conventions": "Adjoint maps and Tate twist; exact annihilator, not merely isotropy. Integral chain null-homotopy does not follow without the separate divisibility argument.",
+        "translation_justification": "Finite local duality gives annihilator equality; manuscript constructs the homotopy and derived Nakayama comparison before applying global duality.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A038",
+        "title": "Global Selmer duality",
+        "source_locator": "Nekovar 5.1, 5.2.4, 5.4.3; 6.2.5–6.2.8 pp.139–141 and Theorem 6.3.4 p.143",
+        "sources": [
+          "nekovar"
+        ],
+        "objects_and_maps": "Actual local-condition maps U_v→C(G_v,T) and their isotropy homotopies; Selmer cone and conjugate dual.",
+        "hypotheses_and_discharge": "Perfect coefficient pairing, perfect complexes, mutually orthogonal local diagrams with specified homotopies. K imaginary eliminates real correction in these uses.",
+        "conventions": "Shift3, cohomological grading, coefficient conjugation. The coefficient of the identity in ab is integral permutation pairing, not |G|^-1 trace.",
+        "translation_justification": "Only after these hypotheses is the quotient identified with the dual cone; an abstract isomorphism of cohomology or same Euler characteristic is insufficient.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A039",
+        "title": "Change of arithmetic support",
+        "source_locator": "Nekovar Proposition 7.8.8(i),(ii), pp.186–187; its finite-module excision proof on p.187",
+        "sources": [
+          "nekovar"
+        ],
+        "objects_and_maps": "Remove new primes with unramified local conditions, preserve arbitrary old local maps.",
+        "hypotheses_and_discharge": "Actual coefficient representation unramified at removed prime. Five uses: universal augmentation; unused scalar prime; residual characteristic2 after chi_h=1; moving prime after t=0; new inert derivative prime outside h,r_i.",
+        "conventions": "Not active ramified prime or moving r_i before central specialization. Take finite models then inner limit before t inversion.",
+        "translation_justification": "Identify smaller-support complex with unramified-condition complex; later full-condition replacement has its own singular quotient cone. Preserve inclusions and homotopies.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A040",
+        "title": "Algebraic isogeny ratio",
+        "source_locator": "Milne ADT proof of I.7.3 pp.97–100, equation (7.3.1) p.98 and its Poitou–Tate proof pp.99–100",
+        "sources": [
+          "milne"
+        ],
+        "objects_and_maps": "Dual sum/difference maps between Res_K/Q E and E×E^(k); indices I,J and pullback Neron differentials.",
+        "hypotheses_and_discharge": "Finite Sha at already-known simple zeros from A020; maps compose to[2]; actual canonical height and measures.",
+        "conventions": "IJ=2 on rank1 free parts, Reg_B/Reg_A=2/I²; differential determinants ab=4; orientation of kernel/cokernel ratio fixed.",
+        "translation_justification": "Use algebraic duality identity from proof, not BSD leading-term equality at unknown base. Component-factor correction is a separate tame-reduction input.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A011",
+        "title": "Modularity of r5",
+        "source_locator": "Part I Theorem 12.1(a), p. 55; Theorem 10.15, p. 49; Proposition 10.20, p. 50; Lemma 14.5, p. 63; Part IV Theorem 3.5, pp. 141-142 and Lemma 3.9, p. 143.; arXiv:1901.07166v2, Theorem 1.0.4, p. 4, with Conjecture 1.0.1, p. 2.; Version 4.03, August 6, 2020, Chapter VIII Theorem 7.4.; Appendix B, pp. 32-33, Definition B.1 and the following one-dimensional Hodge-Tate/local algebraicity assertion.; Theorem 1, printed pp. 526-527; finite-character twisting in Section 4, equation (4.1), p. 531.; Printed p. 285 conventions; p. 294 old/new decomposition; p. 296 unnumbered paragraph immediately before Lemma 6; p. 298 Theorem 5.",
+        "sources": [
+          "pan2022",
+          "conrad-local-characters",
+          "li-newforms",
+          "shimura-factors",
+          "milne-av",
+          "milne-cft"
+        ],
+        "objects_and_maps": "r5:G_Q→GL2(C_5 finite); identify a cuspidal eigenform up to character twist, then its weight-two primitive newform f.",
+        "hypotheses_and_discharge": "Consumes continuity, absolute irreducibility, oddness, finite ramification, distinct weights, and potential semistability established upstream. Also consumes the standard modular Galois representation with its de Rham property and weight normalization in Pan's modular conclusion.",
+        "conventions": "Tate weights {0,-1}, modular weights {0,1-k}; dual cohomological convention reverses both. One-dimensional de Rham twist is finite-order times an integral cyclotomic power.",
+        "translation_justification": "Pan v2 Theorem 1.0.4 has no residual-image exception at p=5. The Hom character is de Rham; Conrad local algebraicity over Q5 removes an integral cyclotomic power, and global class field theory gives a finite character. Weights force k=2 and power zero. Twist the form and take its primitive newform. Li supplies Fricke stability of its full coefficient-conjugate span. Shimura constructs the quotient and product Euler factors. Compare the entire Tate module with the direct sum of the conjugate modular representations by Chebotarev and semisimple trace identification, then select the chosen summand. Duality gives the H1 constituent and preserves conductor.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A014",
+        "title": "Modular Jacobian Belyi height",
+        "source_locator": "Javanpeykar published ANT 8 (2014), Theorem 1.1.1, p. 90; modular curves pp. 92-93; section 2.1, p. 93; section 2.3, pp. 97-98.",
+        "sources": [
+          "javanpeykar"
+        ],
+        "objects_and_maps": "J=J1(N); curve X1(N) with its standard Belyi map; h_F(J) from curve height.",
+        "hypotheses_and_discharge": "Smooth projective geometrically connected curve over Qbar; g≥2 here from A as isogeny factor. Index of Gamma1(N)≤N² bounds genus and Belyi degree.",
+        "conventions": "Original stable Faltings metric (i/2) integral; theorem curve height equals stable Jacobian height by §2.3.",
+        "translation_justification": "Substitute g≤N², deg_B≤N² into 13·10^6 g deg_B^5. The extraction of A as factor is A063, not this height theorem.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A015",
+        "title": "Isogeny back from modular Jacobian",
+        "source_locator": "Gaudron-Remond published Duke 163 (2014), kappa and original stable-height convention p. 2058; couple of isogenies definition p. 2059; Theorem 1.4 p. 2060.",
+        "sources": [
+          "gr2014"
+        ],
+        "objects_and_maps": "Source J dimension g over L′; target A×Z; direction J→A×Z.",
+        "hypotheses_and_discharge": "The L′-isogeny exists by Faltings Hom and Poincare reducibility. Source height bound and d′=[L′:Q] are available.",
+        "conventions": "No principal-polarization assumption; correct source height is h_F(J). logarithms natural.",
+        "translation_justification": "Take logarithm of explicit degree bound and substitute g,d′,h_F(J). Preserve dimension powers; manuscript gives≤Q^17 M^24.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A003",
+        "title": "CM class number to discriminant",
+        "source_locator": "Fowler, publisher version, Proposition 2.7; §2.1 for order class numbers",
+        "sources": [
+          "fowler"
+        ],
+        "objects_and_maps": "CM elliptic factor E/L, full geometric order discriminant Delta<0; k=D and h(Delta)≤[L:Q]≤D.",
+        "hypotheses_and_discharge": "The proposition applies to every imaginary quadratic order, including nonmaximal orders. The order class number is the source h(Delta). The CM class-polynomial irreducibility input recorded in A065 gives h(Delta)=[Q(j(E)):Q]<=[L:Q]<=D.",
+        "conventions": "h(Delta) is order class number, not a field class number; sqrt(|Delta|)≤2k² exp(21000k²).",
+        "translation_justification": "Substitute k=D in the proposition. Its lack of an exceptional-field exclusion is essential; Proposition 2.5 is not a substitute.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A004",
+        "title": "CM Faltings metric formula",
+        "source_locator": "Equation (6.2), pp.13–14; potential good reduction in proof of Theorem 1.3",
+        "sources": [
+          "cmheight"
+        ],
+        "objects_and_maps": "Stable h_F(E), reduced CM period tau=x+iy; eta product in the elliptic discriminant formula.",
+        "hypotheses_and_discharge": "Pass to good reduction without changing stable height; sqrt(3)/2<=y<=sqrt(|Delta|)/2. The source review checks the general discriminant identity (6.2); the surrounding Proposition 6.1 Q(j)-model restriction is not a hypothesis of this identity.",
+        "conventions": "Original Faltings metric; analytic discriminant (2pi)^12 eta(tau)^24; logarithms natural, not log_2.",
+        "translation_justification": "Substitute the product for eta, bound its logarithmic tail, and average over embeddings; keep the -log(2pi) term before discarding it in an upper bound.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A018",
+        "title": "Theta to Faltings height",
+        "source_locator": "§§2.2–2.3 and Corollary1.3(2), r=2,g=2",
+        "sources": [
+          "pazuki"
+        ],
+        "objects_and_maps": "Sixteen half-characteristic theta values (six odd zero); theta projective height and h_F(A).",
+        "hypotheses_and_discharge": "Principal polarization and allowed theta structure; compare Euclidean source height with supremum height used in manuscript.",
+        "conventions": "Pazuki uses Deligne metric: h_F^D=h_F+log pi for dimension2 in this normalization. X_D≤3X; coordinate permutations/root-of-unity factors preserve heights.",
+        "translation_justification": "Apply the published Pazuki Corollary 1.3(2) with r=2 and g=2, compare Euclidean with supremum projective height, and convert h_F^D=h_F+log(pi). The actual consumer gives h([z_m]) <= 10000*2^24*X; insert A017 and the preceding CM/non-CM height bound. The obsolete 700X summary is not the bound used by the manuscript.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A021",
+        "title": "Finite complexity asymptotic for 22 primes",
+        "source_locator": "Green-Tao Main Theorem p.1763, Definition 1.5 pp.1759-1760; Moebius Theorem 1.1; GTZ v5 Theorem 1.3 with separate erratum; Williams 1974 Theorem 1 p.356 for fixed moduli 2 and 4",
+        "sources": [
+          "greentao",
+          "moebius",
+          "gtz",
+          "williams-mertens"
+        ],
+        "objects_and_maps": "Twenty-two integral affine forms epsilon_nu F_nu(r+W_L n)/k_nu on X Omega, fixed L,r.",
+        "hypotheses_and_discharge": "Integral coefficients, pairwise independent linear parts, positive chamber, nonzero local factors. Choose L before taking X→infinity. Avoid claiming uniform error in growing L.",
+        "conventions": "Prime-weighted asymptotic versus unweighted primes; signed forms positive on Omega; local density normalized by (1-1/q)^-22.",
+        "translation_justification": "GI and MN discharge the conditional analytic inputs. The lower singular-product bound and large-prime tail removal are manuscript arguments, not automatic from prime asymptotic. A072 supplies the CM/reduction-order implication identifying bad prime values; not audited in A021.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A046",
+        "title": "Explicit progression cutoff",
+        "source_locator": "BMOR arXiv v3 and published author PDF, Theorem 1.2 and Corollary 6.17 with parameter A=1",
+        "sources": [
+          "bmor"
+        ],
+        "objects_and_maps": "Modulus W=4 product_{p≤324}p, all unit classes a; X=2^(W³).",
+        "hypotheses_and_discharge": "W>=10^5. The reviewed substitutions verify X>=exp(0.03*sqrt(W)*(log W)^3) and error<=X/(160*log X), including the source exceptional-zero case.",
+        "conventions": "theta(X;W,a) is sum log p, not prime count; divide by log X before claiming>22. Logarithm base conversion explicit.",
+        "translation_justification": "The positive lower theta bound yields 22 primes per class and hence the finite catalogue bounds. Subsequent M0 uses actual reduction orders, not their upper bounds as if divisible. The later formal-group and reduction-order argument belongs to A071/A072 and is not covered by this progression application.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A082",
+        "title": "Forward analytic rank zero",
+        "source_locator": "Kolyvagin MPI/90-69, Theorem 1 pp.4-5 and Theorems 2-5; Kato 2004 Corollary 14.3 p.235; BCDT Theorem A",
+        "sources": [
+          "kolyvagin",
+          "kato",
+          "bcdt"
+        ],
+        "objects_and_maps": "Known twists with L(E^h,1)≠0 in even central calibration.",
+        "hypotheses_and_discharge": "Nonzero central L-value known independently; modular curve over Q. Need rank0 and finite Sha[2∞] for central Selmer length.",
+        "conventions": "Finite Sha alone does not imply corank0; unknown corank1 base is excluded.",
+        "translation_justification": "Supplies corank0 for use of integral determinant length formula; does not derive nonzero L-value from finite Sha.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      },
+      {
+        "id": "A020",
+        "title": "Forward rank-one theorem",
+        "source_locator": "Kolyvagin MPI/90-69, Theorem 1 pp.4-5 and Theorems 2-5; Kato 2004 Corollary 14.3 p.235; BCDT Theorem A",
+        "sources": [
+          "gz",
+          "kolyvagin",
+          "kato",
+          "bcdt"
+        ],
+        "objects_and_maps": "E_n,E_nθ after RC; known simple-zero twists in arithmetic comparison.",
+        "hypotheses_and_discharge": "Modularity, analytic order exactly1, auxiliary Heegner data for the standard forward theorem. Apply only after simple zero has been proved; never use the desired converse as a forward premise.",
+        "conventions": "Analytic rank versus Mordell–Weil rank versus full Selmer corank. Finiteness of Sha is an output only at these known simple zeros.",
+        "translation_justification": "The forward analytic-rank-one result gives rank one and finite Sha; combine dim Sel_2=3 and full rational two-torsion to remove Sha[2]. The separate analytic-rank-zero application is recorded in A082 with its own independently nonzero central L-value premise.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      }
+    ],
+    "origin": "v14-theta-active-author-003/COMPONENTS.json"
+  },
+  {
+    "state": "author proposal; independent clause/source comparison pending",
+    "use": {
+      "id": "ACTIVE-THETA-T074",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "HIST-theta-T074-P1"
+      ],
+      "assertion": {
+        "statement": "Scope note correctly excludes inference deRham from Hodge–Tate weights alone; trailing comments have no imported proof step.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/theta/INITIAL-SOURCE-USES.json @ 36e496efc6ff759dd883d511d03568ac700e9d2a85565e2504e127db9d8b3aa4 row T074",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "classification": "background",
+      "reason": "This is a boundary summary or scope note, not a supplier of the referenced mathematical arguments.",
+      "shared_contract_justification": null,
+      "supplier": null,
+      "application_id": null,
+      "inline_argument": null
+    },
+    "initial_mapping": [
+      {
+        "id": "HIST-theta-T074",
+        "part": "Scope summary only; mathematical applications retain their separate records."
+      }
+    ],
+    "retained_separate_inputs": [],
+    "source_ancestry_status": "Historical family matches are candidates for exact current-source classification, not required use of superseded publications. No current source approval or ordinary ID is inferred from this inventory.",
+    "historical_citation_inventory": [
+      {
+        "id": "A009",
+        "title": "de Rham property and weights",
+        "source_locator": "Scholze published 2013, Corollary 1.8 pp.5-6, Theorems 9.1 p.74 and 9.3 p.75, with published 2016 corrigendum; Brinon-Conrad 2009 Theorem 5.2.1 and Propositions 6.3.3,6.3.8; Milne AV v2.00, I Theorem 12.1(a)",
+        "sources": [
+          "scholze2013",
+          "scholze-erratum",
+          "brinon-conrad",
+          "milne-av"
+        ],
+        "objects_and_maps": "Actual Tate representation of A over L′; descend de Rhamness to Q_l and pass to multiplicity summand r_l.",
+        "hypotheses_and_discharge": "Smooth proper A, finite local extension; de Rham category closed under summands and finite-extension descent. Hodge multiplicities must be compatible with the B action.",
+        "conventions": "Tate module is dual to etale H1 cohomology; cyclotomic weight -1. Each r_l has weights {0,-1}.",
+        "translation_justification": "Comparison supplies de Rhamness of the geometric representation; descent and Morita multiplicities are separate standard inputs. Hodge–Tate alone would not imply de Rham.",
+        "review_scope": "Source statement, hypotheses, conventions and recorded translation checked for the registered consumers, with named internal premises and integrated repairs. This does not certify all upstream lemmas or the main theorem."
+      }
+    ],
+    "origin": "v14-theta-active-author-003/COMPONENTS.json"
+  }
+]

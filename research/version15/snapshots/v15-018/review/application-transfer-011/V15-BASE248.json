@@ -1,0 +1,297 @@
+{
+  "id": "V15-BASE248",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      32333,
+      33129
+    ],
+    "excerpt_sha256": "443edb05566dc4d6e8381979aa106fb55e0b2f6215f9b4e5a3f5172a34ef7974"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33130,
+      33156
+    ],
+    "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+  },
+  "dependencies": [
+    "V15-AMPLIFY",
+    "V15-AGGREGATE",
+    "V15-LOGS"
+  ],
+  "retained_reviews": [
+    {
+      "key": "v15typing",
+      "path": "work/quartic-v15-238-20261110/premise-audit/typing-delta-review-002/REVIEW.json",
+      "sha256": "8d0492468bf531fb435d24d268a1b007f572e414692942c5f246504f667a7354",
+      "scope": "New238 argument and exact typing; inherited V14 foundation excluded.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "height",
+      "path": "work/jose248-audit-20261109/height-review/REVIEW.json",
+      "sha256": "2f63b6695a3d473d6a05ff9222fcd516723d89bdb4061b42723c43f2dd50073a",
+      "scope": "Evaluation-to-contact-height argument and consumers, relative to retained modular input; not all248.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Family",
+      "required": "Keep the actual parameter family",
+      "constructed": "A_N=149^(2N+1), fixed K=Q(√2), D=(3−√2)² and point P=2(1+√2,2√2)",
+      "match": "Only all sufficiently large N are claimed to define the integers; the threshold is ineffective.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32333,
+            32403
+          ],
+          "excerpt_sha256": "daa407bebeae1b22bb9ab1a2aac29ff1b8715cd7fdd35fbb4eac8057687c3865"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Height input",
+      "required": "Use the actual two contact blocks",
+      "constructed": "Reflected contacts yield exponent7/4; the four-label sum height controls T and scales1,T",
+      "match": "The separate general amplification bound is not substituted for this consumer.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32404,
+            32485
+          ],
+          "excerpt_sha256": "6d514091986c35e7166722857da9b844b189154958896f5a0b7fb2f4180f87f5"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Scalar domain",
+      "required": "Exclude reference exceptions before division",
+      "constructed": "The scalar normalizer and forced149 valuation bound establish the H and H−P chart domain",
+      "match": "The historical baseline uses the shifted comparison index a−1; later245 replaces it separately.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32487,
+            32658
+          ],
+          "excerpt_sha256": "0d2a3b6740a85f69aee1103639b7c87e14485ab7369cad02ac6805ec1e17a6ed"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Test definitions",
+      "required": "Preserve all orders and conjugations",
+      "constructed": "D_H order2; C2,C3,C4,G order4; C1 order1; I order2; nine A_i,B_i order1; final input comparison order1",
+      "match": "B_i=conjugate f(V_i), and alternate ratios are conjugated only after their field equation.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32659,
+            32706
+          ],
+          "excerpt_sha256": "a462ac8c600b1ee569803ad1f95d1f64944dfe989a76cc4cac69773c83c9391c"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Local extraction",
+      "required": "Use the actual five-factor detector",
+      "constructed": "The distinct residue classes in each packed factor prevent cancellation at a selected place",
+      "match": "Positive-order reciprocal-abscissa and mismatch tests imply the required formal conditions.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32707,
+            32805
+          ],
+          "excerpt_sha256": "8b65de482a34cbaf7c9eeb602d772d27d98a80096d2fa8da287fff0f5dc44a12"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Soundness",
+      "required": "Keep both global contradictions and integer descent",
+      "constructed": "First the Lucas defect vanishes by B² versus B^(7/4); then the comparison/input argument and integral Lucas descent apply",
+      "match": "A local congruence is not itself an exact global identity; the height contradiction is essential.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32844,
+            32901
+          ],
+          "excerpt_sha256": "6e27b5d02887d4fa497ac019e47bc10f9199843262c3112daf05cb40681f23bb"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Finite preparation",
+      "required": "Prepare scalar and comparison data before contact primes",
+      "constructed": "Choose H and shifted scalar index deeply at finite support; retain a fixed congruence class after choosing labels and scales",
+      "match": "Later primes avoid that support, preserving all earlier conditions.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32902,
+            32957
+          ],
+          "excerpt_sha256": "37af53aad06e5191194c6b63df4ddb3c2c246d277a83f07006598efabcfa33c9"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Pole completion",
+      "required": "Preserve the exact physical pole input",
+      "constructed": "The comparison input is γ²R/Tr(W^(−1))²; fixed denominator dilation prepares2,3,17; outside selected prime numerators valuations are even",
+      "match": "This is an exact formula, not replacement of the pole input by an arbitrary square multiple.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32958,
+            33031
+          ],
+          "excerpt_sha256": "364dbc52aab5ad9a3d5278622b8a5c96688af508400375f16b449f122925ad40"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Real completion",
+      "required": "Keep the correct baseline real rates and count",
+      "constructed": "Baseline W_s=O(R_s^(−3)), b_s=O(R_s^(−4)); comparison input tends to41616/167281 in(0,17), then the exact circuit is filled",
+      "match": "Later parity237 uses different real rates; no such rates are silently transported backward.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32902,
+            33129
+          ],
+          "excerpt_sha256": "39fbb68e436120c5695ad5c34eaa0c9addd064233fcf4ac4eba42f5feea27c42"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33130,
+            33156
+          ],
+          "excerpt_sha256": "6dc8673d0b29b1c0d83290d99bd1607bd3d53aed1d289569b903beb871cc7566"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

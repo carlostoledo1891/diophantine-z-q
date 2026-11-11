@@ -1,0 +1,1640 @@
+{
+  "summary": {
+    "checks_passed": 614,
+    "errors": [],
+    "locations": 148,
+    "statuses": {
+      "unresolved": 72
+    },
+    "canonical_formats": [
+      [
+        false,
+        [
+          ",",
+          ":"
+        ]
+      ]
+    ],
+    "core_diff_count": 37,
+    "semantic_diffs": [
+      [
+        "APPLICATIONS.json/CURRENT-HODGE-TORSION-DESCENT/dependencies",
+        [
+          "CURRENT-MILNE-CAV-HODGE"
+        ],
+        []
+      ],
+      [
+        "APPLICATIONS.json/CURRENT-MILNE-CAV-HODGE/obligations/downstream_consumption/constructed",
+        "The equality is used before887-896.",
+        "The equality is used beforecombined005 lines 1431\u20131440 (ed992 predecessor lines 887\u2013896)."
+      ],
+      [
+        "APPLICATIONS.json/CURRENT-MILNE-CAV-HODGE/obligations/downstream_consumption/required",
+        "Supply the rational Hodge/algebraic quasi-endomorphism equality at883-886.",
+        "Supply the rational Hodge/algebraic quasi-endomorphism equality atcombined005 lines 1427\u20131430 (ed992 predecessor lines 883\u2013886)."
+      ],
+      [
+        "USES.json/CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+        "REMOVED"
+      ],
+      [
+        "USES.json/FR-PICARD-DIVISOR/supplier/statement",
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+      ],
+      [
+        "CONNECTIONS.json/CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+        "REMOVED"
+      ],
+      [
+        "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/objects",
+        "Divisors under finite maps of smooth projective curves and Pic0 of an elliptic curve with identity.",
+        "Degree-zero divisor classes under finite maps of smooth projective curves and the elliptic identity."
+      ],
+      [
+        "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/parameter_range",
+        "The finite curve-map divisor identity and elliptic Picard identification.",
+        "The finite curve-map divisor identity and the elliptic degree-zero divisor-class group identification."
+      ],
+      [
+        "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/quantifiers",
+        "The finite curve-map divisor identity and elliptic Picard identification.",
+        "The finite curve-map divisor identity and the elliptic degree-zero divisor-class group identification."
+      ],
+      [
+        "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/statement",
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+      ],
+      [
+        "CONNECTIONS.json/FR-PICARD-DIVISOR/available_capabilities",
+        [
+          "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve."
+        ],
+        [
+          "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+        ]
+      ],
+      [
+        "CONNECTIONS.json/FR-PICARD-DIVISOR/required_capabilities",
+        [
+          "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+          "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+        ],
+        [
+          "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve.",
+          "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+        ]
+      ],
+      [
+        "INDEX.json/CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE-P",
+        "REMOVED"
+      ],
+      [
+        "EDGES.json",
+        [
+          {
+            "consumer": "CURRENT-FORWARD-KOLYVAGIN",
+            "supplier": "CURRENT-FORWARD-MODULARITY",
+            "use_ids": [
+              "CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-FORWARD-KUMMER-CORANK",
+            "supplier": "CURRENT-FORWARD-KOLYVAGIN",
+            "use_ids": [
+              "CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-FORWARD-PICARD-QUOTIENT",
+            "supplier": "CURRENT-FORWARD-MODULARITY",
+            "use_ids": [
+              "CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-FORWARD-KATO-OPTIONAL",
+            "supplier": "CURRENT-FORWARD-PICARD-QUOTIENT",
+            "use_ids": [
+              "CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-HODGE-TORSION-DESCENT",
+            "supplier": "CURRENT-MILNE-CAV-HODGE",
+            "use_ids": [
+              "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE"
+            ],
+            "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+          },
+          {
+            "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+            "supplier": "CURRENT-MILNE-CAV-HODGE",
+            "use_ids": [
+              "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE"
+            ],
+            "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+          },
+          {
+            "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+            "supplier": "CURRENT-HODGE-TORSION-DESCENT",
+            "use_ids": [
+              "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT"
+            ],
+            "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+          }
+        ],
+        [
+          {
+            "consumer": "CURRENT-FORWARD-KOLYVAGIN",
+            "supplier": "CURRENT-FORWARD-MODULARITY",
+            "use_ids": [
+              "CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-FORWARD-KUMMER-CORANK",
+            "supplier": "CURRENT-FORWARD-KOLYVAGIN",
+            "use_ids": [
+              "CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-FORWARD-PICARD-QUOTIENT",
+            "supplier": "CURRENT-FORWARD-MODULARITY",
+            "use_ids": [
+              "CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-FORWARD-KATO-OPTIONAL",
+            "supplier": "CURRENT-FORWARD-PICARD-QUOTIENT",
+            "use_ids": [
+              "CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT"
+            ],
+            "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+          },
+          {
+            "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+            "supplier": "CURRENT-MILNE-CAV-HODGE",
+            "use_ids": [
+              "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE"
+            ],
+            "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+          },
+          {
+            "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+            "supplier": "CURRENT-HODGE-TORSION-DESCENT",
+            "use_ids": [
+              "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT"
+            ],
+            "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+          }
+        ]
+      ]
+    ]
+  },
+  "checks": [
+    "manifest",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/APPLICATIONS.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/CAPABILITY-DELTA.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/CONNECTIONS.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/CONNECTIONS.md",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/COVERAGE-DELTA.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/EDGES.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/FINAL-PROJECTION-DELTA.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/FRONTIER.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/INDEX.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/INPUTS.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/PASSIVE-EVIDENCE-COPIES.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/PICARD-REVIEW-DELTA.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/prepare.py",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/PROOF-PATH-ADDITIONS.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/proposed-repository/research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/proposed-repository/research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/proposed-repository/research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/proposed-repository/research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/README.md",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/ROLE-AUDIT.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/SCOPE-CORRECTIONS.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/SOURCE-PROVENANCE.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/TRANSPORT.json",
+    "member work/source-risk-review-20261107/combined005-forward-hodge-author-sol-004/USES.json",
+    "input work/quartic-v14-prep/independent-source-review/forward-rank-current-review-001/MANIFEST.json",
+    "input work/quartic-v14-prep/independent-source-review/hodge-centralizer-current-review-001/MANIFEST.json",
+    "input work/source-risk-review-20261107/current-source-adoption-ordinary-theta-002/MANIFEST.json",
+    "input work/source-risk-review-20261107/picard-quotient-review-root-001/MANIFEST.json",
+    "input work/quartic-v14-combined-20261108-005/candidate/manuscripts/quartic_v14.tex",
+    "input work/quartic-v14-combined-20261108-004/candidate/manuscripts/quartic_v14.tex",
+    "input work/source-risk-review-20261107/picard-quotient-fresh-review-001/MANIFEST.json",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "pin manuscripts/quartic_v14.tex",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "pin research/version14/source-adoption-ordinary-v1/reviews/milne.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:7",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:11",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:19",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:23",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:9",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md:1",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:7",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:11",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:25",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:19",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:25",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:25",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:29",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:23",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:29",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:29",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:25",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:29",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:9",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:9",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:9",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md:1",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "span research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md:1",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:9",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:25",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:29",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:1",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:1",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:7",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:11",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:19",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:23",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:7",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:11",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:19",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md:23",
+    "pin research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:3",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:9",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md:15",
+    "pin research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+    "span research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md:1",
+    "pin research/version14/source-adoption-ordinary-v1/source-statements/MILNE.md",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1961",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1964",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1969",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1427",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1431",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1434",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:1976",
+    "pin manuscripts/quartic_v14.tex",
+    "span manuscripts/quartic_v14.tex:2001",
+    "pin manuscripts/quartic_v14.tex",
+    "primary work/astra-final-size-independent-review-001/silverman-2009.pdf",
+    "primary work/quartic-v14-prep/final-source-root/icm1990.pdf",
+    "primary work/quartic-v14-prep/final-source-root/icm1990.pdf",
+    "primary work/astra-final-size-independent-review-001/silverman-2009.pdf",
+    "primary work/kato-2004.pdf",
+    "primary Milne",
+    "counts",
+    "72 unresolved",
+    "canonical use hashes",
+    "consumer FR-MODULARITY-SILVERMAN",
+    "use-index FR-MODULARITY-SILVERMAN",
+    "consumer FR-KOLYVAGIN-PUBLISHED",
+    "use-index FR-KOLYVAGIN-PUBLISHED",
+    "consumer FR-KUMMER-FINITE",
+    "use-index FR-KUMMER-FINITE",
+    "use-index FR-KUMMER-FINITE",
+    "consumer FR-PICARD-DIVISOR",
+    "use-index FR-PICARD-DIVISOR",
+    "use-index FR-PICARD-DIVISOR",
+    "consumer FR-KATO-COR14.3",
+    "use-index FR-KATO-COR14.3",
+    "use-index FR-KATO-COR14.3",
+    "consumer CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "use-index CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "consumer CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "use-index CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "use-index CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "consumer CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "use-index CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "use-index CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "consumer CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "use-index CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "use-index CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "consumer CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "use-index CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "use-index CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "consumer CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "use-index CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "use-index CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "consumer CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "use-index CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "use-index CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "consumer CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "use-index CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "consumer CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "use-index CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "use-index CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "consumer CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "use-index CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "use-index CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "index-use FR-MODULARITY-SILVERMAN-P",
+    "index-use FR-KOLYVAGIN-PUBLISHED-P",
+    "index-use FR-KUMMER-FINITE-P",
+    "index-use FR-PICARD-DIVISOR-P",
+    "index-use FR-KATO-COR14.3-P",
+    "index-use CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY-P",
+    "index-use CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN-P",
+    "index-use CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY-P",
+    "index-use CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT-P",
+    "index-use CURRENT-FORWARD-KUMMER-CORANK-LOCAL-P",
+    "index-use CURRENT-HODGE-TORSION-DESCENT-LOCAL-P",
+    "index-use CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL-P",
+    "index-use CURRENT-MILNE-CAV-HODGE-P1",
+    "index-use CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE-P",
+    "index-use CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT-P",
+    "index-use FR-HODGE-PROOF-3",
+    "index-use FR-HODGE-PROOF-3",
+    "index-use FR-HODGE-PROOF-3",
+    "index-use FR-HODGE-PROOF-9",
+    "index-use FR-HODGE-PROOF-15",
+    "index-use FR-HODGE-PROOF-15",
+    "index-use FR-HODGE-PROOF-15",
+    "index-use FR-HODGE-PROOF-25",
+    "index-use FR-HODGE-PROOF-25",
+    "index-use FR-HODGE-PROOF-29",
+    "index-use FR-HODGE-PROOF-29",
+    "needed FR-MODULARITY-SILVERMAN",
+    "output FR-MODULARITY-SILVERMAN",
+    "available FR-MODULARITY-SILVERMAN",
+    "capabilities FR-MODULARITY-SILVERMAN",
+    "needed FR-KOLYVAGIN-PUBLISHED",
+    "output FR-KOLYVAGIN-PUBLISHED",
+    "available FR-KOLYVAGIN-PUBLISHED",
+    "capabilities FR-KOLYVAGIN-PUBLISHED",
+    "needed FR-KUMMER-FINITE",
+    "output FR-KUMMER-FINITE",
+    "available FR-KUMMER-FINITE",
+    "capabilities FR-KUMMER-FINITE",
+    "needed FR-PICARD-DIVISOR",
+    "output FR-PICARD-DIVISOR",
+    "available FR-PICARD-DIVISOR",
+    "capabilities FR-PICARD-DIVISOR",
+    "needed FR-KATO-COR14.3",
+    "output FR-KATO-COR14.3",
+    "available FR-KATO-COR14.3",
+    "capabilities FR-KATO-COR14.3",
+    "needed CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "output CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "available CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "capabilities CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "needed CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "output CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "available CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "capabilities CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "needed CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "output CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "available CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "capabilities CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "needed CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "output CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "available CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "capabilities CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "needed CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "output CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "available CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "capabilities CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "needed CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "output CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "available CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "capabilities CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "needed CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "output CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "available CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "capabilities CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "needed CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "output CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "available CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "capabilities CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "needed CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "output CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "available CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "capabilities CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "needed CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "output CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "available CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "capabilities CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "deps CURRENT-FORWARD-MODULARITY",
+    "deps CURRENT-FORWARD-KOLYVAGIN",
+    "deps CURRENT-FORWARD-KUMMER-CORANK",
+    "deps CURRENT-FORWARD-PICARD-QUOTIENT",
+    "deps CURRENT-FORWARD-KATO-OPTIONAL",
+    "deps CURRENT-HODGE-TORSION-DESCENT",
+    "deps CURRENT-HODGE-QUATERNION-CENTRALIZER",
+    "deps CURRENT-MILNE-CAV-HODGE",
+    "edge CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "edge CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "edge CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "edge CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "edge CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "edge CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "role FR-MODULARITY-SILVERMAN",
+    "role FR-KOLYVAGIN-PUBLISHED",
+    "role FR-KUMMER-FINITE",
+    "role FR-PICARD-DIVISOR",
+    "role FR-KATO-COR14.3",
+    "role CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY",
+    "role CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN",
+    "role CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY",
+    "role CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT",
+    "role CURRENT-FORWARD-KUMMER-CORANK-LOCAL",
+    "role CURRENT-HODGE-TORSION-DESCENT-LOCAL",
+    "role CURRENT-HODGE-QUATERNION-CENTRALIZER-LOCAL",
+    "role CURRENT-MILNE-CAV-HODGE-USE-MILNE",
+    "role CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE",
+    "role CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT",
+    "transport CURRENT-FORWARD-MODULARITY",
+    "transport CURRENT-FORWARD-KOLYVAGIN",
+    "transport CURRENT-FORWARD-KUMMER-CORANK",
+    "transport CURRENT-FORWARD-PICARD-QUOTIENT",
+    "transport CURRENT-FORWARD-KATO-OPTIONAL",
+    "transport CURRENT-MILNE-CAV-HODGE",
+    "transport CURRENT-HODGE-TORSION-DESCENT",
+    "transport CURRENT-HODGE-QUATERNION-CENTRALIZER",
+    "transport Milne ordinary source",
+    "transport Milne ordinary source",
+    "transport Milne ordinary source"
+  ],
+  "all_core_diffs": [
+    [
+      "APPLICATIONS.json/CURRENT-FORWARD-KATO-OPTIONAL/files",
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        }
+      ],
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        }
+      ]
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-FORWARD-KOLYVAGIN/files",
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+        }
+      ],
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+        }
+      ]
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-FORWARD-KUMMER-CORANK/files",
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        }
+      ],
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        }
+      ]
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-FORWARD-MODULARITY/files",
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+        }
+      ],
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+        }
+      ]
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-FORWARD-PICARD-QUOTIENT/files",
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        }
+      ],
+      [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+          "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+        },
+        {
+          "side": "head",
+          "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+          "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+        }
+      ]
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-HODGE-TORSION-DESCENT/dependencies",
+      [
+        "CURRENT-MILNE-CAV-HODGE"
+      ],
+      []
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-MILNE-CAV-HODGE/obligations/downstream_consumption/constructed",
+      "The equality is used before887-896.",
+      "The equality is used beforecombined005 lines 1431\u20131440 (ed992 predecessor lines 887\u2013896)."
+    ],
+    [
+      "APPLICATIONS.json/CURRENT-MILNE-CAV-HODGE/obligations/downstream_consumption/required",
+      "Supply the rational Hodge/algebraic quasi-endomorphism equality at883-886.",
+      "Supply the rational Hodge/algebraic quasi-endomorphism equality atcombined005 lines 1427\u20131430 (ed992 predecessor lines 883\u2013886)."
+    ],
+    [
+      "USES.json/CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+      {
+        "id": "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+        "consumer": "CURRENT-HODGE-TORSION-DESCENT",
+        "passages": [
+          "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE-P"
+        ],
+        "assertion": {
+          "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+          "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+          "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+          "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+          "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+          "uniformity": "Only the exact stated objects and domain are used.",
+          "constants": "No effective quantitative bound is asserted.",
+          "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+          "exceptional_cases": "This is separate from the published Hodge equivalence.",
+          "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+        },
+        "classification": "dependency",
+        "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "internal",
+          "application_id": "CURRENT-MILNE-CAV-HODGE",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+            },
+            "start_line": 1427,
+            "end_line": 1430,
+            "excerpt_sha256": "7ba7c4459c99b9a8c880049de3e8c5bdd7228ab7ee0e0b7199418b3cd0000b0c"
+          },
+          "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+          "publication": null
+        },
+        "application_id": "CURRENT-HODGE-TORSION-DESCENT",
+        "inline_argument": null
+      },
+      null
+    ],
+    [
+      "USES.json/FR-KATO-COR14.3/supplier/location/pin/sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "USES.json/FR-KOLYVAGIN-PUBLISHED/supplier/location/pin/sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "USES.json/FR-KUMMER-FINITE/supplier/location/pin/sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "USES.json/FR-MODULARITY-SILVERMAN/supplier/location/pin/sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "USES.json/FR-PICARD-DIVISOR/supplier/location/excerpt_sha256",
+      "b23ebfbe80a2aa19303c373b8bb26a24e6cb767638ad0dc01f1b0ab22bec2a37",
+      "a63c45c31169280d99768745cd24e225e9af1a87002ac6f9a871e0d1bc9581ad"
+    ],
+    [
+      "USES.json/FR-PICARD-DIVISOR/supplier/location/pin/sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "USES.json/FR-PICARD-DIVISOR/supplier/statement",
+      "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+      "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+    ],
+    [
+      "CONNECTIONS.json/CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+      {
+        "use_id": "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE",
+        "use_sha256": "8e9326f0fcd7f0bab4e6d001762ec765fa2e60818dfcdf6592b2e2c322ac7623",
+        "supplier_passage_role": "application",
+        "available_assertion": {
+          "statement": "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+          "objects": "Complex abelian varieties, integral H1 lattices and their rational Hodge morphisms.",
+          "hypotheses": "Polarizable objects of the specified homology types; morphisms preserve the Hodge decomposition.",
+          "quantifiers": "For every pair of such objects and every rational Hodge morphism.",
+          "parameter_range": "Over C; rational Hom groups obtained by tensoring integral Hom with Q.",
+          "uniformity": "The assertion applies to each object satisfying the stated hypotheses; no uniform effective bound is used.",
+          "constants": "No quantitative constant is supplied or changed.",
+          "normalizations": "H1 is covariant and has weight -1. Morphisms need not preserve a chosen polarization.",
+          "exceptional_cases": "No assertion of Qbar or Q descent, higher-weight Hodge conjecture, or family algebraization is supplied.",
+          "limit_order": "No limiting operation is used."
+        },
+        "needed_assertion": {
+          "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+          "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+          "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+          "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+          "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+          "uniformity": "Only the exact stated objects and domain are used.",
+          "constants": "No effective quantitative bound is asserted.",
+          "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+          "exceptional_cases": "This is separate from the published Hodge equivalence.",
+          "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+        },
+        "required_capabilities": [
+          "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1).",
+          "Every rational complex endomorphism of the actual surface A descends to Qbar."
+        ],
+        "available_capabilities": [
+          "Covariant H1 gives an equivalence from complex abelian varieties up to isogeny to polarizable rational Hodge structures of types(-1,0),(0,-1)."
+        ],
+        "derived_capabilities": [
+          "Every rational complex endomorphism of the actual surface A descends to Qbar."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+              "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+            },
+            "start_line": 9,
+            "end_line": 14,
+            "excerpt_sha256": "803e19d2f170d649e891691a9b1e772d99cbc3b14662711b3fce446568bcdc84"
+          },
+          "application_id": "CURRENT-HODGE-TORSION-DESCENT",
+          "output_assertion": {
+            "statement": "Every rational complex endomorphism of the actual surface A descends to Qbar.",
+            "objects": "A defined over Qbar, its complex endomorphism and torsion points.",
+            "hypotheses": "The complex endomorphism acts algebraically on the complex base change of A.",
+            "quantifiers": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+            "parameter_range": "The actual quaternionic abelian surface, including rational endomorphisms after clearing denominators.",
+            "uniformity": "Only the exact stated objects and domain are used.",
+            "constants": "No effective quantitative bound is asserted.",
+            "normalizations": "Torsion points over Qbar, density in the complex torus, invariant graph.",
+            "exceptional_cases": "This is separate from the published Hodge equivalence.",
+            "limit_order": "Clear denominators, compare conjugates on torsion, then descend the invariant graph."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "This is separate from the published Hodge equivalence.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+              },
+              "start_line": 1427,
+              "end_line": 1430,
+              "excerpt_sha256": "7ba7c4459c99b9a8c880049de3e8c5bdd7228ab7ee0e0b7199418b3cd0000b0c"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+                "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+              },
+              "start_line": 9,
+              "end_line": 14,
+              "excerpt_sha256": "803e19d2f170d649e891691a9b1e772d99cbc3b14662711b3fce446568bcdc84"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+            },
+            "start_line": 1431,
+            "end_line": 1433,
+            "excerpt_sha256": "e352eedb362642adde395dab55250a1b41e37fa668097de0f8cf46f7ba300ebb"
+          }
+        ]
+      },
+      null
+    ],
+    [
+      "CONNECTIONS.json/FR-KATO-COR14.3/adverse_cases/evidence",
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "b901cdd8e980340adf4270baf8883a77d49cef04c05ce82a32cf034316def8ee"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 29,
+          "end_line": 32,
+          "excerpt_sha256": "3a2be1b0e7b53266500dba2afcdd9a4f31248a7791bbd3ad4a690904b165fd02"
+        }
+      ],
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "b901cdd8e980340adf4270baf8883a77d49cef04c05ce82a32cf034316def8ee"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 29,
+          "end_line": 32,
+          "excerpt_sha256": "3a2be1b0e7b53266500dba2afcdd9a4f31248a7791bbd3ad4a690904b165fd02"
+        }
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-KATO-COR14.3/use_sha256",
+      "02882f2ef70d1c6eeda86cb94214a82c7f40a85fb2597d7f90e8d97d06458e0a",
+      "fd97375154d6dc73c12d0bf12071800fd1431650c789ce4349b633454b32714a"
+    ],
+    [
+      "CONNECTIONS.json/FR-KOLYVAGIN-PUBLISHED/adverse_cases/evidence",
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+          },
+          "start_line": 11,
+          "end_line": 11,
+          "excerpt_sha256": "7fc4a5b1d3c2322526b5159c62b42eda3087bd45e9168e1acebc0d2d2636cdf4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1964,
+          "end_line": 1968,
+          "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+        }
+      ],
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 11,
+          "end_line": 11,
+          "excerpt_sha256": "7fc4a5b1d3c2322526b5159c62b42eda3087bd45e9168e1acebc0d2d2636cdf4"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1964,
+          "end_line": 1968,
+          "excerpt_sha256": "3413484c0c4842f52f47f66c3bd5f93217e455bd463ea9296ebd093dbb46aac8"
+        }
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-KOLYVAGIN-PUBLISHED/use_sha256",
+      "4a339346fea3563fe7801ef636df26a64b61c11116f12afd35cced288a6d3a0a",
+      "7d96506e809dde46d51123d8ad9c979da65e8d077dc4d344e50b6442a16c6946"
+    ],
+    [
+      "CONNECTIONS.json/FR-KUMMER-FINITE/adverse_cases/evidence",
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "24e255cce9cb17af3e8d24ea4abac6d05b2d0d0ace289fbf79008cb61db83710"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 3,
+          "end_line": 8,
+          "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+        }
+      ],
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "24e255cce9cb17af3e8d24ea4abac6d05b2d0d0ace289fbf79008cb61db83710"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 3,
+          "end_line": 8,
+          "excerpt_sha256": "125a7fd93df298e8af720e08406fb824b7c3ced4b55de07626a388c8dfccb414"
+        }
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-KUMMER-FINITE/use_sha256",
+      "d864d86343f10d66838a0bd8252ecc5fb7c2f7ffb7e3d4dbdbd365705392e4e9",
+      "627cfa41c56153c2b09aed8bab50c8c0f1b5de0ac9235f48f03f18aa0f19bb00"
+    ],
+    [
+      "CONNECTIONS.json/FR-MODULARITY-SILVERMAN/adverse_cases/evidence",
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "8764f0824fc31efb416a89df65bbb796507bdccad7f16effe7448587187465f3"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1961,
+          "end_line": 1963,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        }
+      ],
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 7,
+          "end_line": 7,
+          "excerpt_sha256": "8764f0824fc31efb416a89df65bbb796507bdccad7f16effe7448587187465f3"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1961,
+          "end_line": 1963,
+          "excerpt_sha256": "0654c15d1be96780f0a690bc83ec1292c54f68375edcea4f3f6abc3b3d6a2b99"
+        }
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-MODULARITY-SILVERMAN/use_sha256",
+      "3b264c599cbfb17983bbd42be5fd4270917bb78611bc4ba750dcdab7a34cc8fa",
+      "89d64679a48ec4287b5b5e189516e11c6087b962f175dd7cc08f306b9da9f22b"
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/adverse_cases/evidence",
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "b23ebfbe80a2aa19303c373b8bb26a24e6cb767638ad0dc01f1b0ab22bec2a37"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 25,
+          "end_line": 28,
+          "excerpt_sha256": "ab1a98670e5e0f9fdffc96761e5febf8d9d5c30ece49d72b2ff28dccdf534f4a"
+        }
+      ],
+      [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/SOURCE-STATEMENTS.md",
+            "sha256": "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "a63c45c31169280d99768745cd24e225e9af1a87002ac6f9a871e0d1bc9581ad"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/forward-rank-hodge-v1/CONNECTIONS.md",
+            "sha256": "8bbb16bcc972320689a8e287b94467e07fef9e97b6670460a9d822b859641ab6"
+          },
+          "start_line": 25,
+          "end_line": 28,
+          "excerpt_sha256": "ab1a98670e5e0f9fdffc96761e5febf8d9d5c30ece49d72b2ff28dccdf534f4a"
+        }
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/objects",
+      "Divisors under finite maps of smooth projective curves and Pic0 of an elliptic curve with identity.",
+      "Degree-zero divisor classes under finite maps of smooth projective curves and the elliptic identity."
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/parameter_range",
+      "The finite curve-map divisor identity and elliptic Picard identification.",
+      "The finite curve-map divisor identity and the elliptic degree-zero divisor-class group identification."
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/quantifiers",
+      "The finite curve-map divisor identity and elliptic Picard identification.",
+      "The finite curve-map divisor identity and the elliptic degree-zero divisor-class group identification."
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/available_assertion/statement",
+      "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+      "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/available_capabilities",
+      [
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve."
+      ],
+      [
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve."
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/required_capabilities",
+      [
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero Picard variety with the elliptic curve.",
+        "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+      ],
+      [
+        "Pushforward of divisors preserves degree and principal divisor classes under the stated finite curve morphism, and the elliptic identity identifies its degree-zero divisor-class group with the elliptic curve.",
+        "The actual A is a quotient of J1(N) by a surjective homomorphism over Q."
+      ]
+    ],
+    [
+      "CONNECTIONS.json/FR-PICARD-DIVISOR/use_sha256",
+      "d32644d1012a3d86e1e7286351ff675e55d82c3ab972748936187487dd381d7c",
+      "e89698ef638925b60223d910e710e9d1bd91d3044387884cc6c589dcb914551a"
+    ],
+    [
+      "INDEX.json/CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE-P",
+      {
+        "id": "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE-P",
+        "claim_ids": [
+          "CURRENT-HODGE-TORSION-DESCENT"
+        ],
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "7a848c441ebd7a03c249db66b555f2c0439da79efe10eadedff118247229b551"
+          },
+          "start_line": 1431,
+          "end_line": 1433,
+          "excerpt_sha256": "e352eedb362642adde395dab55250a1b41e37fa668097de0f8cf46f7ba300ebb"
+        },
+        "status": "reviewed",
+        "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate.",
+        "use_ids": [
+          "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE"
+        ],
+        "no_imports_reason": null
+      },
+      null
+    ],
+    [
+      "INDEX.json/FR-HODGE-SOURCE-PROJECTION/location/excerpt_sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "INDEX.json/FR-HODGE-SOURCE-PROJECTION/location/pin/sha256",
+      "b3bcbeba985f481a407e5b5da06ad6fe5ccc8a1da4cf29f5185da58f4764c7df",
+      "b9e29dd8b66b4651b6a5ebc2594fe6e8cb9633f85cac0796fa4e57c9c8836657"
+    ],
+    [
+      "EDGES.json",
+      [
+        {
+          "consumer": "CURRENT-FORWARD-KOLYVAGIN",
+          "supplier": "CURRENT-FORWARD-MODULARITY",
+          "use_ids": [
+            "CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-FORWARD-KUMMER-CORANK",
+          "supplier": "CURRENT-FORWARD-KOLYVAGIN",
+          "use_ids": [
+            "CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-FORWARD-PICARD-QUOTIENT",
+          "supplier": "CURRENT-FORWARD-MODULARITY",
+          "use_ids": [
+            "CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-FORWARD-KATO-OPTIONAL",
+          "supplier": "CURRENT-FORWARD-PICARD-QUOTIENT",
+          "use_ids": [
+            "CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-HODGE-TORSION-DESCENT",
+          "supplier": "CURRENT-MILNE-CAV-HODGE",
+          "use_ids": [
+            "CURRENT-HODGE-TORSION-DESCENT-FROM-CURRENT-MILNE-CAV-HODGE"
+          ],
+          "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+        },
+        {
+          "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+          "supplier": "CURRENT-MILNE-CAV-HODGE",
+          "use_ids": [
+            "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE"
+          ],
+          "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+        },
+        {
+          "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+          "supplier": "CURRENT-HODGE-TORSION-DESCENT",
+          "use_ids": [
+            "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT"
+          ],
+          "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+        }
+      ],
+      [
+        {
+          "consumer": "CURRENT-FORWARD-KOLYVAGIN",
+          "supplier": "CURRENT-FORWARD-MODULARITY",
+          "use_ids": [
+            "CURRENT-FORWARD-KOLYVAGIN-FROM-CURRENT-FORWARD-MODULARITY"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-FORWARD-KUMMER-CORANK",
+          "supplier": "CURRENT-FORWARD-KOLYVAGIN",
+          "use_ids": [
+            "CURRENT-FORWARD-KUMMER-CORANK-FROM-CURRENT-FORWARD-KOLYVAGIN"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-FORWARD-PICARD-QUOTIENT",
+          "supplier": "CURRENT-FORWARD-MODULARITY",
+          "use_ids": [
+            "CURRENT-FORWARD-PICARD-QUOTIENT-FROM-CURRENT-FORWARD-MODULARITY"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-FORWARD-KATO-OPTIONAL",
+          "supplier": "CURRENT-FORWARD-PICARD-QUOTIENT",
+          "use_ids": [
+            "CURRENT-FORWARD-KATO-OPTIONAL-FROM-CURRENT-FORWARD-PICARD-QUOTIENT"
+          ],
+          "reason": "Use the same elliptic curve and the displayed prerequisite. The other explicit source inputs remain part of this application."
+        },
+        {
+          "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+          "supplier": "CURRENT-MILNE-CAV-HODGE",
+          "use_ids": [
+            "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-MILNE-CAV-HODGE"
+          ],
+          "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+        },
+        {
+          "consumer": "CURRENT-HODGE-QUATERNION-CENTRALIZER",
+          "supplier": "CURRENT-HODGE-TORSION-DESCENT",
+          "use_ids": [
+            "CURRENT-HODGE-QUATERNION-CENTRALIZER-FROM-CURRENT-HODGE-TORSION-DESCENT"
+          ],
+          "reason": "Use the same rational homology, complex structure and actual surface. The geometric descent and algebraic centralizer remain separate."
+        }
+      ]
+    ]
+  ]
+}

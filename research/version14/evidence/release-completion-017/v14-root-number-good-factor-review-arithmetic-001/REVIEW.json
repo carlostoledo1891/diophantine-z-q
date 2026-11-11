@@ -1,0 +1,52 @@
+{
+  "reviewer": "/root/v14_arithmetic_review",
+  "decision": "accepted at bounded mathematical and exact-edit scope",
+  "target_manifest_sha256": "baca2648b629c0a7e217b05205c6b66593fa68ceea23bb9e83edb95485641369",
+  "proof_sha256": "5c82c501929e90e6e546b5481070161fe9f955eddc89a1f303f2e7bccc9d528b",
+  "candidate_sha256": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+  "prior_observations_sha256": "3c525f2270b506a761dd1b8ee82f72aff3f69c571f274dcdb5648391bf07509a",
+  "source_review": [
+    "Directly read Silverman 2009 printed449–451 (PDF indices459–461), exact72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25. C16 bad factors and Theorem16.3 suffice; no use of convention-sensitive16.4(b).",
+    "Reuse independently viewed Atkin–Lehner1970 printed147 Theorem3 at weight2k,k=1, exact18ca10d80324eeba53190fe06ebbfcd0a3d981e9a643e0e1b753b416b0ee1c91, including bad coefficients and coefficient recurrences."
+  ],
+  "reason": [
+    "Removing the finite bad denominators equates the good Euler products on a common absolute-convergence half-plane. Analytic continuation preserves that equality. Every removed factor at1 is1 or1+/-1/p, hence nonzero. Thus central orders agree without equality of the full L-series.",
+    "Completion factors are nonzero at1. The first nonzero Taylor coefficient of each functional equation identifies the sign with parity of the central order. The retained normalized Mellin calculation therefore gives the elliptic sign as minus the product of the prime-power Atkin signs.",
+    "The actual same-form good-trace input and separately reviewed2|N argument remain explicit incoming premises. No change of associated form or assertion of special-value equality occurs."
+  ],
+  "limits": [
+    "This review does not assert full L-function equality, bad-factor equality, global source coverage, installation, or authenticated project approval.",
+    "The new proof remains subject to explicit source intake/reconciliation. Original custom observations precede detailed SOURCE-INPUTS exposure but follow prior Atkin/source familiarity; no blind-review claim."
+  ],
+  "checks": [
+    {
+      "path": "PROOF.md",
+      "hash": "5c82c501929e90e6e546b5481070161fe9f955eddc89a1f303f2e7bccc9d528b",
+      "ok": true
+    },
+    {
+      "path": "EDIT.json",
+      "hash": "b5e8df6aecdbf2eeeb57925f953a044e8a81d828aee149ec3ecb1df81270aaa7",
+      "ok": true
+    },
+    {
+      "path": "PROPOSED-GLOBAL-SIGN.md",
+      "hash": "9c03538a9208a43b514de99f430ee0fbfc6495363b9430da83ac9f136441ac37",
+      "ok": true
+    },
+    {
+      "path": "SOURCE-INPUTS.json",
+      "hash": "67ce4a1c42fb6768cbe1f8e657551ce087dc3d26d40e3555abd7996be807be63",
+      "ok": true
+    },
+    {
+      "path": "CHECKS.json",
+      "hash": "409b06d542dfe78d98760f21912b25ec17df8e4a606c7c022a7746a70cc87357",
+      "ok": true
+    },
+    {
+      "check": "exact single line substitution",
+      "ok": true
+    }
+  ]
+}

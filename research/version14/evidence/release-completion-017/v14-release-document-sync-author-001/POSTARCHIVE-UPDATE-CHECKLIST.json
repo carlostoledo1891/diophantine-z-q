@@ -1,0 +1,66 @@
+{
+  "schema": "post-archive-update-checklist/v1",
+  "author": "/root/v14_gi_constructors",
+  "scope": "Required release bindings after this documentation/source snapshot; none are asserted complete by the overlay.",
+  "r10_rule": "Documents included in source commit S may keep post-S fields pending. Bind their resolved values in separately pinned external final-input/source-map/post-gate records; do not amend S merely to name its own hash.",
+  "fields": [
+    {
+      "field": "selected_source_commit",
+      "required": "Exact full commit and tree identity for source S, repositories and branch/revision scope.",
+      "document_slots": [
+        "research/version14/CUMULATIVE-HANDOFF.md: Selected source commit",
+        "research/version14/ARTIFACT-INDEX.md: final pending paragraph"
+      ]
+    },
+    {
+      "field": "cumulative_archive",
+      "required": "Final archive path/URL, SHA-256, bytes, final manifest identity, exact inclusion/omission policy and historical-base binding.",
+      "document_slots": [
+        "research/version14/README.md: final cumulative archive paragraph",
+        "research/version14/CUMULATIVE-HANDOFF.md: Intended cumulative archive",
+        "research/version14/ARTIFACT-INDEX.md: final pending paragraph"
+      ]
+    },
+    {
+      "field": "release_source_map_and_inputs",
+      "required": "Final source map and release-input record hashes generated from S, including selected files and artifact identities.",
+      "document_slots": [
+        "research/version14/CUMULATIVE-HANDOFF.md: Final release source map and release-input records"
+      ]
+    },
+    {
+      "field": "restoration_and_replay",
+      "required": "Actual isolated restore/replay commands, input archive hash, outputs and independent scoped verification receipt. Do not substitute earlier package checks for final restoration.",
+      "document_slots": [
+        "research/version14/CUMULATIVE-HANDOFF.md: Verification and historical runners"
+      ]
+    },
+    {
+      "field": "authenticated_gate",
+      "required": "Trusted controller/App result for exact repository/PR/base/head/merge revision, governing policy/profile, evidence manifests and evaluation cutoff; independent post-gate receipt.",
+      "document_slots": [
+        "research/version14/CUMULATIVE-HANDOFF.md: Authenticated release gate",
+        "research/version14/ARTIFACT-INDEX.md: final pending paragraph"
+      ]
+    },
+    {
+      "field": "publication_and_mirror",
+      "required": "Actual public/private merge readbacks, final release/tag/download URLs and final artifact digests; private no-ruleset policy retained.",
+      "document_slots": [
+        "README.md: audit supplement navigation",
+        "research/version14/README.md: final cumulative archive paragraph"
+      ]
+    }
+  ],
+  "unchanged_historical_records": [
+    "docs/manuscript-revisions/version14/RELEASE-PROFILE.json is a dated requirements proposal, not current executed acceptance metadata. Its historical protocol/version text was not silently rewritten.",
+    "Earlier manuscript/application/source receipts retain their old hashes and dates as history."
+  ],
+  "no_claims": [
+    "Archive assembled",
+    "Authenticated gate passed",
+    "Published release",
+    "New mathematical acceptance",
+    "New PDF build"
+  ]
+}

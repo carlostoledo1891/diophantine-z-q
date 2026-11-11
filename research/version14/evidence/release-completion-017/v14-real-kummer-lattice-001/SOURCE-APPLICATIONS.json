@@ -1,0 +1,57 @@
+{
+  "author": "/root/v14_gi_constructors",
+  "rows": [
+    {
+      "id": "REAL-KUMMER-COMPLEX-PERIOD-ISOMORPHISM",
+      "role": "published_source_application",
+      "source": {
+        "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+        "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "publication": "Joseph H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009",
+        "locator": "VI Corollary5.1.1 and Proposition5.2, printed173–174; Proposition5.4(a), printed175"
+      },
+      "available": "For every elliptic curve over C, integration of an invariant differential identifies its complex Lie group with C/Lambda for its full rank-two period lattice. The torsion subgroup is (1/m)Lambda/Lambda.",
+      "needed": "For the actual real curve and a real invariant differential, obtain the full period lattice and finite torsion identifications before proving integral conjugation splitting.",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 5,
+          "end_line": 7,
+          "excerpt_sha256": "38f40600a77efd3cc04b80c7e807ee3d705e6a784669d1cba641c3a5884113d0"
+        }
+      ],
+      "derivation": "Complex conjugation of paths conjugates the integral of the real differential. This proves equivariance; the trivial action on E[2] then forces (J-1)Lambda subset2Lambda and gives integral projectors. Neither equivariance nor integral splitting is attributed to a rational eigenbasis alone.",
+      "boundary": "General complex uniformization is used; no CM hypothesis or CM-specific model is imported."
+    },
+    {
+      "id": "REAL-KUMMER-FINITE-TATE-INPUT",
+      "role": "retained_reviewed_source_application",
+      "source_packet": "work/source-risk-review-20261107/v14-real-finite-duality-inputs-001/MANIFEST.json",
+      "source_manifest_sha256": "cba7d352826b3d65b0e720f21fa733bc8206645c6600c3c8bd4621bf86bb5e0f",
+      "source_id": "THETA-REAL-FINITE-TATE-PAIRING",
+      "review": {
+        "path": "work/source-risk-review-20261107/v14-real-finite-duality-review-arithmetic-001/REVIEW.json",
+        "sha256": "3ed80d6bf86ceb1a98bbd5610957bfa12495f6a9068eec4b37446fe0547ca13f"
+      },
+      "available": "Finite real Tate cup duality for E[2^n] is perfect after Weil self-duality.",
+      "needed": "Once the actual minus-line Kummer subgroup is computed and shown isotropic, order2 in the order4 cohomology group gives its exact annihilator.",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/real-kummer-lattice-v1/PROOF.md",
+            "sha256": "b04e70da4b6db56b736417726acf0c0a3f797eee2e80389588556e134b10380c"
+          },
+          "start_line": 15,
+          "end_line": 15,
+          "excerpt_sha256": "5f4acc770ca9055384b560b8f638d9b48c6b788c7cc5301910dca7a7075f790d"
+        }
+      ],
+      "boundary": "The finite duality theorem supplies perfection only. The actual lattice and Kummer subgroup are constructed in preceding proof lines."
+    }
+  ]
+}

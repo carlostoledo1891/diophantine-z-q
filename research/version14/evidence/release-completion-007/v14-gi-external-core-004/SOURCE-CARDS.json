@@ -1,0 +1,354 @@
+{
+  "GTZ-POLYNOMIAL-GROUP": {
+    "assertion": {
+      "statement": "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group.",
+      "objects": "I-filtered groups H,G; P_i=poly(H to G^{+i}); difference operators and the quotient by P_{i+j+k} or P_{i+k+l}.",
+      "hypotheses": "The index system and all source, target and shifted filtrations satisfy the hypotheses of Appendix B; direction h_k lies in H_k. Commutation of the two first differences in B.7 additionally uses an abelian domain.",
+      "quantifiers": "All admissible filtration indices and all polynomial maps and directions in the stated groups.",
+      "parameter_range": "The filtered-group setting of Appendix B, including the finite degree, degree-rank and multidegree specializations only after their axioms are checked.",
+      "uniformity": "Exact group identities, independent of polynomial coefficients or any interval length.",
+      "constants": "No analytic estimate or loss is asserted.",
+      "normalizations": "Use the published difference convention consistently; products retain their order. P_i brackets with P_j into P_{i+j}.",
+      "exceptional_cases": "No arbitrary Taylor factors are asserted to commute. The printed malformed codomain in B.5 is not imported.",
+      "limit_order": "Verify the actual filtrations first, apply product/shifted closure, then compute the indicated quotient errors."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Corollary B.4, Proposition B.6 and Corollary B.7, pp.1334–1336",
+      "corrections": "Horizontal Taylor homomorphisms, translation invariance modulo rank errors, and derivative convention changes are local deductions in the consuming proofs. This source does not supply those conclusions without the relevant quotient calculation."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+        "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "036b735ec5a7923b06b9f23c1b10f20a657d0b4b03c2d74610bbf2043b397b0b"
+    }
+  },
+  "GTZ-TAYLOR-LIFT": {
+    "assertion": {
+      "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+      "objects": "The multidegree filtration on Z^d, a finite-downset target G, an order extending the partial order on J, and a layerwise-surjective filtered map phi:Gprime to G.",
+      "hypotheses": "The actual target and lift filtrations satisfy the Appendix B hypotheses. The coefficient-lifting application checks surjectivity in every required layer.",
+      "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+      "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+      "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+      "constants": "Exact algebraic equality, without approximation.",
+      "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+      "exceptional_cases": "A constant coefficient is retained unless g(0)=1. The local uses check the central maximal-layer condition in their taut or shifted target; no unrestricted non-taut extension is inferred.",
+      "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Lemma B.9 and Corollary B.10, pp.1337–1338",
+      "corrections": "B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+        "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+    }
+  },
+  "GTZ-BCH-REAL-HULL": {
+    "assertion": {
+      "statement": "A connected simply connected nilpotent Lie group has global exponential and logarithm coordinates and finite BCH identities. The real hull generated by A has Lie algebra generated by log A. For finite A the abstract subgroup generated by A is cocompact in its real hull, and is a lattice when discrete.",
+      "objects": "A finite-dimensional connected simply connected nilpotent real Lie group, its Lie algebra, real powers and a finite subset A.",
+      "hypotheses": "Nilpotency and simple connectivity; finiteness of A for the cocompactness assertion; discreteness for a lattice.",
+      "quantifiers": "Every element and real power in the stated group; every finite generating set satisfying the stated conditions.",
+      "parameter_range": "Fixed finite nilpotency class and dimension.",
+      "uniformity": "Exact coordinate and subgroup statements; no uniform quantitative lattice bound over changing rational structures.",
+      "constants": "BCH has finitely many universal rational coefficients at fixed nilpotency class.",
+      "normalizations": "g^t=exp(t log g); real generation and abstract integer-word generation are distinguished.",
+      "exceptional_cases": "Real hull need not be discrete; discreteness is an additional premise for a lattice.",
+      "limit_order": "Construct the Lie algebra and real hull; prove the discrete lattice premise in the actual application."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Section 3, pp.1242–1243",
+      "corrections": "This does not itself prove that every rational Lie subalgebra has cocompact intersection with a given lattice. The separate GT12 A.10 bridge and local rational-geometry proofs retain that obligation."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-BCH-REAL-HULL.md",
+        "sha256": "dc8d0d916bac47948b9654e09b7211021cbcf18577e0fc33a20a7a5cb087caca"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "c95a09d4e07dcd69d9e1042a30b2ae4ab6ddabcb53452f4f486ce61d62bd4bcb"
+    }
+  },
+  "TOINTON-INTEGRAL-HALL": {
+    "assertion": {
+      "statement": "In a free nilpotent group the ordered basic commutators give unique integer collection coordinates; basic commutators of each bracket length give a free abelian basis of the corresponding lower-central quotient.",
+      "objects": "A free nilpotent group on finitely many generators, ordered basic commutators and its lower-central series.",
+      "hypotheses": "The free group and nilpotency-class hypotheses of Section 5.4; use the stated basic-commutator order.",
+      "quantifiers": "Every element of the free nilpotent group and every lower-central layer through its fixed class.",
+      "parameter_range": "Finite rank and finite nilpotency class. The source weight here is bracket length.",
+      "uniformity": "Integral unique coordinates for the whole free nilpotent group at fixed rank and class.",
+      "constants": "No analytic constants.",
+      "normalizations": "Integer powers of group commutators; the associated graded classes are a free abelian basis.",
+      "exceptional_cases": "This is not a saturation theorem for an arbitrary rational quotient or arbitrary weighted ideal.",
+      "limit_order": "Collect in the free group first; justify each special quotient and lattice intersection separately."
+    },
+    "publication": {
+      "title": "Introduction to Approximate Groups",
+      "authors": "Matthew C. H. Tointon",
+      "venue": "Cambridge University Press, LMS Student Texts 94 (2020)",
+      "authoritative_version": "Author-hosted published book PDF SHA256 16e53474390645cf0256c92fb821c08c4cadffe3b31e5c685f5bb023b1208d59",
+      "locator": "Definition 5.4.3, Theorem 5.4.5 and the final free-nilpotent paragraph of Section 5.4, printed pp.96–98",
+      "corrections": "The project proof uses triangular BCH coordinates and upward-closed individual-letter multidegree monomial ideals to establish its exact quotient lattice. That local saturation argument is essential. The previously checked author corrections list had no correction to Section 5.4; this is not a claim about all future errata. The book PDF remains local and is not redistributed."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/TOINTON-INTEGRAL-HALL.md",
+        "sha256": "fb56ccd0e90b01788ab2725c7f0b1861411561b20f5cd09c098cd862964a9ade"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "8f631bf4bf501a3688180f3ace0b409f1f6aa3af942e35beca9284d8569bf37f"
+    }
+  },
+  "GTZ-UNIT-VERTICAL": {
+    "assertion": {
+      "statement": "For a fixed compact nilmanifold with rational central top torus and an integral top character, finitely many local trivializations and a smooth partition with sum of squared magnitudes one produce a globally defined smooth unit-vector test with that vertical character.",
+      "objects": "A central torus bundle G/Gamma over G/(Gtop Gamma), an integral character of its top torus, and a finite-dimensional complex vector-valued test.",
+      "hypotheses": "Centrality and rationality of the top subgroup; integrality of the character on its lattice; compact base admitting finite smooth local sections.",
+      "quantifiers": "Every fixed integral top character on the stated fixed bundle.",
+      "parameter_range": "Finite-dimensional compact nilmanifold and fixed character; the vector dimension may depend on those data.",
+      "uniformity": "Global equivariance on all ordinary points and a finite Lipschitz bound on the fixed model.",
+      "constants": "No bound uniform over unbounded characters or changing models is asserted.",
+      "normalizations": "The vector has pointwise Euclidean norm one; the squared partition coefficients sum to one.",
+      "exceptional_cases": "A global scalar function of modulus one need not exist. Zero coordinates are permitted; no coordinate is divided out.",
+      "limit_order": "Choose the actual character and finite bundle atlas, construct the ordinary global unit test, then extend it when forming represented limit families."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Section 6, formula (6.3), p.1254; proof of Lemma 6.4, p.1256; proof of E.5, p.1353",
+      "corrections": "The strong all-limit identity comes from extension of these ordinary globally equivariant tests, not from silently strengthening the literal quantifiers of Definition 6.19. Extension of a rank-top character to the full ordinary top torus is a separate local Hall-lattice step."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-UNIT-VERTICAL.md",
+        "sha256": "3968e8de9bc19ba301faaa4864ffd5c9e73e770eb1fbf919afb00deff662bbdf"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "0cbd0b7770e2f43745d26e15d68cebfdee00525c0fd57856f91422d931999a02"
+    }
+  },
+  "GTZ-FINITE-FOURIER": {
+    "assertion": {
+      "statement": "A degree-at-most d nilsequence can be uniformly approximated to any positive standard tolerance by a finite sum of bounded linear functionals of psi_j tensor chi_j, where psi_j is lower degree and chi_j is a degree-at-most d unit-vector nilcharacter.",
+      "objects": "The stated filtered abelian domain and nilsequence, lower-support tests, unit-vector nilcharacters and finite linear functionals.",
+      "hypotheses": "The nilsequence and degree hypotheses of E.5. The current applications use taut one-variable geometry with central top torus; the proof constructs ordinary global vertical tests.",
+      "quantifiers": "Each such nilsequence and each positive standard approximation tolerance.",
+      "parameter_range": "Fixed standard finite degree d and fixed compact geometry for each application.",
+      "uniformity": "Uniform approximation on the domain for the selected nilsequence. Uniform finite lists over a bounded class require the additional compact-net argument.",
+      "constants": "Finite coefficients and dimensions may depend on the tolerance, geometry and test; they are not automatically uniform over an unbounded class.",
+      "normalizations": "The chi_j are unit vectors; their components and functional coefficients remain in the finite sum.",
+      "exceptional_cases": "The statement is not a procedure upgrading an arbitrary weak nilcharacter to a strong one, and does not discard the lower-degree factors.",
+      "limit_order": "Fix the ordinary geometry/test and tolerance, construct the finite approximation, then make any separately justified uniform or internal selection."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Lemma E.5, pp.1352–1353",
+      "corrections": "The current LP02, rank and selection proofs supply finite compact nets, tolerance budgets, internal choices and strong represented-family bounds. Those are local application steps, not an unqualified uniformity clause in E.5."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-FINITE-FOURIER.md",
+        "sha256": "40bb9bc30cf2d8620c550a97d59d46d9b53170e544d8f3e6c264514122623730"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "c723c07d1f3cf15f9479d601e12478b1ad1a04b2ab0e7042dbfbc6de9323b74e"
+    }
+  },
+  "GTZ-INITIAL-SELECTION": {
+    "assertion": {
+      "statement": "A scalar degree-d nilsequence is uniformly approximable by a bounded linear combination of components of degree-d unit-vector nilcharacters. Nonzero degree-d bias is consequently witnessed by correlation with a degree-d nilcharacter.",
+      "objects": "Scalar nilsequences, vector nilcharacters and their scalar components in the conventions of Section 6.",
+      "hypotheses": "The degree-d nilsequence and bias hypotheses; the proof uses global ordinary vertical tests and the conjugation-stable point-separating algebra they generate.",
+      "quantifiers": "Each fixed nilsequence and positive approximation tolerance; each biased sequence under the stated boundedness assumptions.",
+      "parameter_range": "Fixed standard degree d; the current initial Section 7 use has d=s-1>0.",
+      "uniformity": "The source gives a finite approximation for a fixed test; parameter-uniform finite witness lists are established in the local compact-net argument.",
+      "constants": "Finite coefficient and geometry bounds must be retained when passing from approximation to positive component correlation.",
+      "normalizations": "Correlation uses a selected scalar component of a globally unit vector; the vector is retained for subsequent symbol operations.",
+      "exceptional_cases": "No claim that every weak object already satisfies the project strong convention; no prescribed-symbol selection is supplied.",
+      "limit_order": "Construct ordinary approximants, take a finite net for the fixed bounded class, and only then choose a witness internally in the consuming proof."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Lemma 6.4 and Corollary 6.5, pp.1255–1256",
+      "corrections": "The reviewed assembly initial-selection construction supplies the last two steps and the actual strong represented family. This card imports the published approximation and bias criterion only."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INITIAL-SELECTION.md",
+        "sha256": "a6631ff76f47ab278a37041b1b15bc6acd912862de016f5567b4e00bb9c289d9"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "09ecdc685fff0d0c864cfb7098ffbdee9bac29bc868cb33400996bcc433d5d9e"
+    }
+  },
+  "GTZ-COUNTABLE-MODELS": {
+    "assertion": {
+      "statement": "At fixed finite degree the rational filtered nilmanifolds in the stated Malcev framework have countably many isomorphism classes; one may choose a smooth compact metric on each representative, and metrics on a fixed compact smooth model are equivalent.",
+      "objects": "Rational filtered lattice models and fixed smooth metrics on their compact quotients.",
+      "hypotheses": "The rational finite-dimensional filtered models of the paper; metric comparison takes place on one fixed compact model.",
+      "quantifiers": "All models in the stated rational class, and every pair of fixed smooth metrics on one model.",
+      "parameter_range": "Fixed finite degree; countably many finite dimensions and rational structure data.",
+      "uniformity": "Countability enables an enumeration; it does not give a common geometric constant for every model.",
+      "constants": "Metric equivalence constants depend on the fixed model and metrics.",
+      "normalizations": "Choose representatives up to filtered lattice isomorphism before enumerating bounded Lipschitz tests.",
+      "exceptional_cases": "No finite list of all rational models and no global metric-equivalence bound is asserted.",
+      "limit_order": "Enumerate models, choose their fixed metrics, then use the local finite-family contradiction argument."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Section 5, p.1250, with the Malcev-coordinate framework of Section 3",
+      "corrections": "The local assembly proof supplies the diagonal finite-family selection. Countability is a qualitative source premise, not a uniform bound on an unrestricted family."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-COUNTABLE-MODELS.md",
+        "sha256": "fa5beec86f052de29169f22a0a1c9d9c01fb93819a442ca41ecfc9353d396f2e"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "2113b9559ccb6d3e7cad3cb02ad16312244c6a81b67adf8c7de7558fd8beeb0c"
+    }
+  },
+  "GT-COMPACT-CUBE": {
+    "assertion": {
+      "statement": "On a fixed s-step nilmanifold the zero vertex of every linear-orbit (s+1)-cube is a continuous function of the remaining vertices on one fixed compact subset of their product space.",
+      "objects": "M=G/Gamma, Sigma contained in M to the power {0,1}^{s+1} minus zero, and a continuous P:Sigma to M.",
+      "hypotheses": "The fixed s-step nilmanifold hypotheses and the linear-orbit parallelepiped definition x_omega=g^{n+omega dot h}x.",
+      "quantifiers": "Every g in G, x in M, n in Z and h in Z^{s+1}.",
+      "parameter_range": "Fixed s>=1 and fixed nilmanifold.",
+      "uniformity": "Sigma and P are independent of g,x,n,h and interval length.",
+      "constants": "A topological conclusion, without a quantitative modulus uniform over changing nilmanifolds.",
+      "normalizations": "All 2^{s+1}-1 nonzero vertices are retained.",
+      "exceptional_cases": "The source concerns linear orbits; polynomial sequences first require the separately proved same-step linearization.",
+      "limit_order": "Fix the nilmanifold and its cube constraint, then approximate composed test functions in the local proof."
+    },
+    "publication": {
+      "title": "Linear equations in primes",
+      "authors": "Ben Green and Terence Tao",
+      "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+      "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "locator": "Definition 11.4 and Proposition 11.5, p.1799; proof in Appendix E",
+      "corrections": "The local converse does not import Proposition 11.2’s averaging-domain transition. The compact tensor approximation, normalized smooth averaging and Fourier cutoff estimates are separate local arguments."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-CUBE.md",
+        "sha256": "a510e814d2ab5aac5371726f81bfe40d991a6935c729839dd3c430087c116ce1"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "83289768729c5f214b7e006a4e15f00aedab8be80da17190c5aa1122598290d8"
+    }
+  },
+  "GT-GOWERS-CS-NORMALIZATION": {
+    "assertion": {
+      "statement": "The absolute value of a finite abelian-group cube average is at most the product of the Gowers norms of its vertex functions. For a nonempty subset A, the localized Gowers norm equals the norm of the zero extension divided by the norm of 1_A.",
+      "objects": "A finite additive group Z, complex vertex functions, a nonempty A subset Z and zero extensions.",
+      "hypotheses": "The cube dimension and normalized uniform expectations of Appendix B; use the alternating conjugations in the cube form.",
+      "quantifiers": "Every collection of vertex functions and every nonempty subset in the stated finite group.",
+      "parameter_range": "The current application has cube dimension d+1>=2 and a cyclic ambient group of size comparable to N.",
+      "uniformity": "Exact inequalities and normalization identities independent of N and the vertex functions.",
+      "constants": "Constant one in the group Gowers–Cauchy–Schwarz inequality; the denominator norm of 1_A must be retained.",
+      "normalizations": "Normalized uniform averages, zero extension, and the precise local/global norm ratio.",
+      "exceptional_cases": "No automatic replacement of a weighted integer cube average by a cyclic one is asserted; no cutoff Fourier coefficient is discarded.",
+      "limit_order": "The local proof establishes no-wrap embedding and summable Fourier weights before applying the group inequality, then converts back with B.14."
+    },
+    "publication": {
+      "title": "Linear equations in primes",
+      "authors": "Ben Green and Terence Tao",
+      "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+      "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "locator": "Appendix B, equations (B.12), (B.13) and (B.14), p.1817",
+      "corrections": "The consuming proof supplies the smooth averaging, phase absorption, finite coefficient sum and interval normalization bounds. These do not follow from B.12 alone."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-GOWERS-CS-NORMALIZATION.md",
+        "sha256": "bb4b2d4ac6b4d19f0b05e783fedd0aff0b915649a47e5f881bc3dc1f6657035b"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "698363ed9d961972a8b361c651123087080ee7d9284bef04919df0591a6e1400"
+    }
+  },
+  "GTZ-INTERNAL-SELECTION": {
+    "assertion": {
+      "statement": "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer.",
+      "objects": "Internal X,Y,R and S equal to the union over standard indices of an internal increasing exhaustion.",
+      "hypotheses": "Every x has a witness in S; the exhaustion is one internal sequence as required by Definition A.10.",
+      "quantifiers": "Every x in X, selected simultaneously by one internal map.",
+      "parameter_range": "The natural ultrapower framework of Appendix A; stages indexed by limit natural numbers.",
+      "uniformity": "One internal witness map; the stage can be bounded by a standard integer when the least-stage map is pointwise standard-bounded.",
+      "constants": "No effective value of the standard bound is asserted.",
+      "normalizations": "An external positive-standard condition must be encoded by an internal reciprocal-threshold coordinate.",
+      "exceptional_cases": "An arbitrary countable family of internal sets is not automatically the specified sigma-limit presentation. The local finite-intersection proof avoids an unjustified diagonal representative.",
+      "limit_order": "Construct the exhaustion and internal relation, prove pointwise standard-stage existence, then select."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+        "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+      },
+      "start_line": 3,
+      "end_line": 25,
+      "excerpt_sha256": "3d894dfe96f4a3a667692bfc7a257d5dd6f1474f701c618474479581ddde25dd"
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Definition A.10 and Lemma A.11, p.1330; boundedness A.5, p.1327",
+      "corrections": "The actual application uses an internal standard-stage exhaustion and a reciprocal-threshold relation. A local finite-intersection proof supplies the bounded-stage step; no unjustified representative diagonal or ambiguous A.12 display is imported."
+    }
+  }
+}

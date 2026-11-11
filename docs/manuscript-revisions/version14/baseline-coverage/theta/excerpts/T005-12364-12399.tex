@@ -1,0 +1,36 @@
+\paragraph{3. The integral $j_*$ condition survives ramified transfer.}
+For a number field $K$, let $X_K=\operatorname{Spec}\mathcal O_K[1/2]$
+and $j_K:\operatorname{Spec}K\to X_K$. At finite coefficients
+$M=T/2^aT$, the low-degree Leray sequence gives an injection
+\[
+ H^1(X_K,j_{K,*}M)\longrightarrow H^1(K,M)
+\]
+whose image is the kernel of all inertia restrictions outside two.
+Indeed the higher-direct-image stalk formula and Leray sequence
+\cite[Tags 03Q9 and 03QA]{stackscohom} identify the stalks of
+$R^1j_{K,*}M$ at a finite place with $H^1(I_v,M)$;
+the edge map is restriction to these stalks. The generic-point map
+$j_K$ is affine, hence quasi-compact and quasi-separated, as required
+by the stalk formula. Kato's section~8.2,
+pp.~180--181, defines the integral groups by the inverse limit of
+these finite-coefficient groups, so this assertion applies to the
+classes (K4) before rationalization.
+
+Let $L/K$ be finite, with absolute Galois groups $H\subset G_K$.
+For a class $z\in H^1(H,M)$ and an inertia subgroup $I\subset G_K$,
+the Mackey formula is
+\[
+ \operatorname{res}_{I}^{G_K}\operatorname{cor}_{H}^{G_K}z
+ =\sum_{g\in I\backslash G_K/H}
+   \operatorname{cor}_{I\cap gHg^{-1}}^{I}
+   \operatorname{res}_{I\cap gHg^{-1}}^{gHg^{-1}}(g z).    \tag{K7}
+\]
+The intersection in each summand is the upper inertia subgroup
+for the corresponding place of $L$. If all upper inertia
+restrictions vanish, every summand is zero. This does not require
+$L/K$ to be unramified. It is a finite double-coset identity at each
+finite coefficient precision. Uniqueness under the Leray injection
+makes the extensions across $X_K$ compatible in $a$. Thus the
+integral $j_*$ condition survives corestriction, including at primes
+ramified in a quadratic twisting field.
+

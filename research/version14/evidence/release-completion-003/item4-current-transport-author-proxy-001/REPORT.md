@@ -1,0 +1,29 @@
+# Item4 current connecting-proof transport
+
+Author: /root/v14_arithmetic_author. Target: v14-assembly-resume-root-003/PROPOSED.tex, SHA256 1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8. Status: author proposal for independent review; no whole-proof or release decision.
+
+## Exact consumer transport
+
+The complete combined007 assembly REVIEW.md and FINITE-EVIDENCE.json were read, together with its explicit FRONTIERS and the combined008 transport REVIEW. Their bounded claims, incoming assumptions and authorship exclusions are retained. CONSUMER-TRANSPORT.json checks the fourteen uniquely matching consumer intervals against current source. These preserve the original index-to-ordinary connection, compiler, pole/RC interfaces, original AST bounds, corollaries, H5 statement, height19 interface, degree obstruction, fixed-field polynomial transfer, ray diagonal and V14 assembly. Equal consumer text does not prove an altered incoming supplier; those joins are treated below.
+
+ANNOUNCED-CLAIMS (007/current1-208) differs only at line41, November7 to November8. No announced polynomial or number changes. HEIGHT-INPUT (007448-650/current448-713) changes only the classical modularity connector. The current561-642 text equals the independently accepted99d561-642 insertion in classical-local-tex-incorporation-review-001. It first selects a normalized primitive constituent at positive weight, excludes weight one by its finite-image realization, then applies all-level Kato de Rham filtration and dual normalization. The weights force k=2 and weight(delta)=0; the determinant identity separately proves delta finite. It retains the original r5 and hypotheses. This is transport of that receipt, not a fresh claim that weight zero alone implies finiteness.
+
+The008 receipt confirms its three changes from007 were date and two display-formatting changes, preserving numbers and quantifiers. In particular the earlier514-variable bound is not the selected314-variable bound. RAW-DIFF-SCAN.json records all29 hunks from007 and26 from008 to current, so the fourteen equal consumer blocks are not presented as a whole-source equality.
+
+## Changed incoming arithmetic connections
+
+The new beta comparison is supplied by CURRENT-BETA-ALL-PRIME-COMPATIBILITY and BETA-CONTRACTS004-REVIEW: original beta-family matrix-unit factor, its own full geometric endomorphism and common-Hom field, original r5 and primitive form, compatible coefficient embeddings and actual local isomorphisms. Its current comparison occupies1451-1479. The beta conductor-level conclusion1480-1481 is a separate CURRENT-BETA-DIRECT-CARAYOL-CONDUCTOR use. No D210 geometry is transferred to beta.
+
+For b, B-CONTRACTS005-TRANSPORT-REVIEW supplies COV-B-ALL-PRIME-IRREDUCIBILITY and COV-B-ALL-PRIME-COMPATIBILITY with the separate D210 fullEnd/common-field inputs. The exact current8261-8267 irreducibility and long8277-8351 comparison are retained. CURRENT-B-DIRECT-CARAYOL-CONDUCTOR supplies the primitive-level equality8356-8395 from actual local isomorphism and the independent newform conductor theorem. Neither the local comparison nor the old C6 alone supplies that level equality.
+
+H5-FOUR-JOINS002-REVIEW supplies the four current SIGN/TATE/IRREDUCIBILITY/COMPARISON-CONDUCTOR joins, preserving the old36 statuses. Rational scalar normalization precedes the actual A007/A011 C2-C3 cochain supplier; TATE does not depend cyclically on its later irreducibility or comparison. The unchanged height19 interface consumes this underlying H5 construction and final form, not an inference from an exponent24 bound to exponent19. The finite twist absorbed into the final form is distinct from the controlled character. Field-size and ramification bounds continue to concern their original controlled fields.
+
+These receipt joins close the changed arithmetic interfaces just named. Other changes in the full diff (including full-Hom geometry, fixed-order embedding, A063 complement and their bibliography) retain their separate source/application owners; this packet does not manufacture their approval from unchanged downstream text.
+
+## Finite evidence and remaining delta
+
+The original P-star uses its own ordinary-integer-definition AST, SHA2564d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6, with292890231904 witnesses and root height256. Its replay is a wiring/partition and syntactic-size check, not an expanded polynomial or proof of the recognizer arithmetic. The ordinary input uses the same nonzero kappa in Close and Test; completeness chooses Test's kappa first.
+
+The separate299-r2/314 evidence is the28-stage package5369f80f69742958ea31f3a32b62b43e6b23b284063e6870af2dc2f0073977fb and artifact manifest4ad263949b42d7bc5c306f68a168f4375275271e4bf649225b9479340cbe67af. The complete V14 assembly00722519-23490 equals current22755-23726. It retains distinct root/auxiliary domains and input-projection equivalence,279 residuals for299-r2, and the14 constant-chain plus root-sum variables for314. The source-coordinate0 to physical-coordinate1 bijection remains. Counts remain299/6630 and314/6672; the latter coefficient bound is below2^6496, not the historical2^3247. This proposal requests transport of the existing exact finite evidence; independent finite-input verification is being recorded by /root/v14_h6_coverage.
+
+Remaining checklist: (1) independent review of this exact bounded connecting transport; (2) attach the independent finite-input/replay transport receipt; (3) root separately reconcile other source/application owners and complete current inventory, publication payload, build and layout work. No new finite computation or quartic optimization is required by the unchanged selected inputs. Successful finite checks do not discharge analytic, geometric or arithmetic premises.

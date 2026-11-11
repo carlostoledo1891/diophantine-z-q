@@ -1,0 +1,61 @@
+{
+  "reviewer": "/root/v14_h6_coverage",
+  "decision": "accepted at bounded metadata scope",
+  "independence": "No authorship of the candidate count edit or source summary. Earlier source contributions and source-link reviews are not reapproved here.",
+  "author_manifest": {
+    "path": "work/source-risk-review-20261107/v14-final-source-summary-author-001/MANIFEST.json",
+    "sha256": "2398f24d9c22cf99ead65969acb56f36264b5853279b0850bf626730857247fe"
+  },
+  "snapshot_manifest": {
+    "path": "work/source-risk-review-20261107/v14-integration-source-line-index-work-001/final-protocol-preparation/merged-incoming-021/MANIFEST.json",
+    "sha256": "2fc62812176672e3559a1b11f643f8a1728b918c8f6f1a84f5efca2aa88d0962"
+  },
+  "checks": [
+    {
+      "check": "author overlay/docs/manuscript-revisions/version14/GUIDE.md",
+      "pass": true
+    },
+    {
+      "check": "author FINAL-SOURCE-SUMMARY.json",
+      "pass": true
+    },
+    {
+      "check": "author DELTA.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot CONNECTIONS.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot USE-ROW-PROJECTION.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot DOSSIER-PRE-HISTORY.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot RESTORATION-LEDGER.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot SUPPLEMENTAL-OBSERVATION-DISPOSITIONS.json",
+      "pass": true
+    },
+    {
+      "check": "snapshot CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "one literal replacement only",
+      "pass": true
+    },
+    {
+      "check": "actual snapshot counts",
+      "pass": true
+    }
+  ],
+  "reason": "Exactly one GUIDE count changes from1,042 to1,120. Actual frozen data contains1120 dependency uses/connections,8496 coverage rows,70 findings and136 source files. Summary explicitly leaves final source commit null and disclaims final coverage/gate/release approval. All other GUIDE bytes are unchanged.",
+  "limits": "Coverage rows are not theorem counts. This metadata review does not approve the source proofs, final397 reconstruction, future history-only dossier or Git/authentication bindings."
+}

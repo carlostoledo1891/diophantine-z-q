@@ -1,0 +1,808 @@
+{
+  "schema": "gtz-local-proof-source-uses/v1",
+  "protocol": "1.4",
+  "author": "/root/astra_v14_baseline_compiler",
+  "uses": [
+    {
+      "id": "S13-U01",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 25,
+          "end_line": 87,
+          "excerpt_sha256": "68fa8db580aad753001719e58ac4eb553ba73037045f64f7d2dcf2c4f24826b6"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 215,
+          "end_line": 296,
+          "excerpt_sha256": "533b558e1aa1a1aa38ec2844c9b17b72ffedc36efc094b91288a265517341093"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 365,
+          "end_line": 403,
+          "excerpt_sha256": "ec244489d755fa858db829ff3886d0d4229f363bf2bdfb79e24b751eba57eb94"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/gtz-local-proof-lp05-compiler/proof.tex",
+          "sha256": "b69f434a77b8c2509d132a6a7d58e31185b1abb2639314afa4d11cadb8604ab2",
+          "bytes": 24895,
+          "locator": "Theorem5 and Section5, exact(13.4) output; descending degree/block coarsenings"
+        },
+        {
+          "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+          "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860",
+          "bytes": 20575,
+          "locator": "Theorem1 multilinearity under fixed integer homomorphisms"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "E.3,E.7,E.8(i)-(iii),(vi), symbol and restricted-nilsequence definitions",
+          "page_text_locators": [
+            {
+              "printed_page": 1268,
+              "pdf_page": 38,
+              "extracted_text_sha256": "1778d14d264f799b22974ececd0f259a3f8ba667c17a2615742c8547a99f5835"
+            },
+            {
+              "printed_page": 1351,
+              "pdf_page": 121,
+              "extracted_text_sha256": "6f82733c5c43c8b03b33723b76d5b13fee8db53b8db3d55b4dfe4bd85812319b"
+            },
+            {
+              "printed_page": 1352,
+              "pdf_page": 122,
+              "extracted_text_sha256": "a4a05ce882eb2a83750173881e6dcc4bac36b0308d381209ef225f1993ba5dce"
+            },
+            {
+              "printed_page": 1353,
+              "pdf_page": 123,
+              "extracted_text_sha256": "abefc2fd857dceafec602f73a6bbe4164d095bac22b50a37011a3be5bce5ce69"
+            },
+            {
+              "printed_page": 1354,
+              "pdf_page": 124,
+              "extracted_text_sha256": "0057b051235a9a98c313a6eb86f51fb69f0c53f2e7dc25c54c7fcd5206d7a77f"
+            },
+            {
+              "printed_page": 1355,
+              "pdf_page": 125,
+              "extracted_text_sha256": "698ff5fe95a91f57cce790c97eb2a5ebb57bd8ea79c966119fa70f338145f670"
+            },
+            {
+              "printed_page": 1356,
+              "pdf_page": 126,
+              "extracted_text_sha256": "5a13b0da77207ba0eea3667757c342f835fcef419edcfdb605dec28f96219d4b"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        }
+      ],
+      "assertion": {
+        "statement": "Use one actual cube-multidegree unit nilcharacter TildeChi, literally symmetric only in its last s-1 variables, with [chi]=s[TildeChi(h,n,...,n)] and multilinearity of its degree-s symbol.",
+        "objects": "T(L1;L2,...,Ls) is the symbol of the same TildeChi under the displayed integer linear forms; Theta is its full diagonal.",
+        "hypotheses": "Explicit all-limit vertical identity; rational fixed geometry; s standard>=3; exact LP05/LP13 representations and symbol conventions.",
+        "quantifiers": "Every fixed integer linear substitution in the proof, on its full limit lattice, followed by the stated restrictions.",
+        "parameter_range": "Any fixed s>=3; parameter constants may be limit integers and are treated by the shift/coarsening construction, not by fixed-homomorphism multilinearity alone.",
+        "uniformity": "Finite target dimensions and geometric/Lipschitz bounds from exact project suppliers, independent of interval length.",
+        "constants": "Multiplier s in(3), last-block permutation multiplicities and signed tensor exponents are retained exactly.",
+        "normalizations": "Semicolon marks the first slot; repeated n^j means slots. Addition of symbols is tensor product, negation conjugation, not scalar addition of functions.",
+        "exceptional_cases": "No literal first-slot symmetry is assumed. Constants are removed by the uniform total-degree shift theorem; a zero slot has zero symbol by LP13 additivity.",
+        "limit_order": "Choose TildeChi once from the original chi before the correlation manipulations and reuse the same representative throughout."
+      },
+      "connection": {
+        "available": "LP05 gives(13.4) and literal last-block symmetry; LP13 gives symbol multilinearity, not function equality.",
+        "needed": "Exact symbol manipulations with the same output and a final equality of actual functions after contraction.",
+        "derivation": "Sections1,4 and6 keep the semicolon slot, use fixed integer substitutions, and distinguish symbol relations from the lower-degree W that realizes them. Descending weight coarsening handles constant slots and the support of R.",
+        "failure_cases": "Interchanging the first two slots before proving(22) would be circular; symbol equality alone is not a scalar factorization.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "Theorem1",
+        "S13-U06",
+        "S13-U07",
+        "S13-U11"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U02",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "Ordinary-degree E.5/E.6 and Appendix A.5,A.6,A.11,A.12",
+          "page_text_locators": [
+            {
+              "printed_page": 1327,
+              "pdf_page": 97,
+              "extracted_text_sha256": "c93d94e1593621ab7ec182452b82c9773f8b9887079020be43873fb1f5d06b6d"
+            },
+            {
+              "printed_page": 1328,
+              "pdf_page": 98,
+              "extracted_text_sha256": "40e6c84ca3686cf35d0f37d7d7406ef6233dad307d8b129ef0556879f4c98844"
+            },
+            {
+              "printed_page": 1330,
+              "pdf_page": 100,
+              "extracted_text_sha256": "7f33d63fb54913249bb5c188a0e4aed6a960db7afc78b8bd538813d98344fdde"
+            },
+            {
+              "printed_page": 1352,
+              "pdf_page": 122,
+              "extracted_text_sha256": "a4a05ce882eb2a83750173881e6dcc4bac36b0308d381209ef225f1993ba5dce"
+            },
+            {
+              "printed_page": 1353,
+              "pdf_page": 123,
+              "extracted_text_sha256": "abefc2fd857dceafec602f73a6bbe4164d095bac22b50a37011a3be5bce5ce69"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        }
+      ],
+      "assertion": {
+        "statement": "From degree-at-most(s-2) correlation choose an internal uniformly bounded family of unit nilcharacters phi_h of degree<=s-2 retaining plain correlation with chi(h,.) tensor phi_h.",
+        "objects": "Dense H subset[-N,N], lower test class in one-variable ordinary degree, fixed finite-dimensional padded targets and scalar component choices.",
+        "hypotheses": "Each shift has the supplied lower-degree correlation; correlation is positive standard; nilcharacter class has its standard countable complexity presentation.",
+        "quantifiers": "Every h in a retained dense internal subset; selected families and phases are internal.",
+        "parameter_range": "s>=3, so selected degree s-2>=1 and later shift degree s-3>=0.",
+        "uniformity": "A standard complexity stage and common positive correlation threshold are fixed before averaging; no unbounded pointwise family is used.",
+        "constants": "Finite pigeonhole losses depend on standard dimensions and bounds only; no division by a coordinate.",
+        "normalizations": "Conjugate selected lower tests if required to match the source convention; pad by zeros to preserve unit norm.",
+        "exceptional_cases": "Outside retained H use a constant unit character and put vanishing indicators in parameter scalars, not in the unit character itself.",
+        "limit_order": "Select witnesses and a common complexity/correlation stage first, then apply8.4 and all Cauchy-Schwarz steps."
+      },
+      "connection": {
+        "available": "E.6 converts ordinary-degree bias to nilcharacter correlation; A.11/A.12 gives internal selection and bounded complexity stages.",
+        "needed": "The same finite family and positive bounds uniformly over the shifts, under the weaker <=s-2 hypothesis needed from7.1.",
+        "derivation": "Section2 applies ordinary-degree selection, explains the standard-stage argument, fixes scalar coordinate indices by finite pigeonhole and extends other parameters by a unit constant. This proves the connection directly; printed strict< s-2 Theorem7.4 is not invoked.",
+        "failure_cases": "Arbitrary external pointwise choices need not yield an internal bounded family. The strict printed7.4 hypothesis would not itself justify the needed<=s-2 application.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U03",
+        "S13-U04",
+        "Theorem1 input match"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U03",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "Proposition8.4 plain-correlated quadruple statement, p1277; source context Section8",
+          "page_text_locators": [
+            {
+              "printed_page": 1276,
+              "pdf_page": 46,
+              "extracted_text_sha256": "df85409fd7cdff6d2146f4ae5cfd770ca2515eb5ddc560c14b09380a1ad2d2bc"
+            },
+            {
+              "printed_page": 1277,
+              "pdf_page": 47,
+              "extracted_text_sha256": "0bafb967ae7240bd2f0c35b4e080744fc07d65766f419ad5626adf77f410a4cb"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        }
+      ],
+      "assertion": {
+        "statement": "Plain correlation of Delta_h f with the selected bounded scalar coordinate gives bias of the four-factor tensor at many additive quadruples, with signs+,+,-,- and the n+h1-h4 shift.",
+        "objects": "f on[N] zero-extended, dense retained H, selected scalar coordinates of chi(h,n) tensor phi_h(n), then tau defined in(4).",
+        "hypotheses": "Actual plain-correlation hypothesis, bounded internal functions and dense internal H; not merely lower-degree bias of the four chi factors.",
+        "quantifiers": "At least a standard positive multiple of N^3 quadruples in H; after fixing h0 a positive multiple of N^2 pairs(a,b).",
+        "parameter_range": "h0 in I1, a,b in I2; h1+h2=h3+h4; s>=3.",
+        "uniformity": "Uniform boundedness and correlation from U02; finite density losses only.",
+        "constants": "Change(h1,h2,h3,h4)=(h0+a,h0+b,h0+a+b,h0) is injective on additive quadruples.",
+        "normalizations": "Both second and fourth factors use n+a; tau retains the exact conjugated third and fourth chi factors.",
+        "exceptional_cases": "Quadruples outside retained H are not counted; parameter cutoffs remain exact. Proposition7.3 weaker output is not substituted.",
+        "limit_order": "Apply8.4 to the actual selected family before discarding any lower phi information."
+      },
+      "connection": {
+        "available": "Published8.4 supplies ordinary bias of the full correlated family.",
+        "needed": "The tau-and-phi tensor needed for three later Cauchy-Schwarz eliminations.",
+        "derivation": "Section2 matches the scalar hypothesis, uses the exact additive-quadruple parametrization, fixes h0, and defines the actual unit tau with the required shifts and signs.",
+        "failure_cases": "LP03/7.3 alone supplies lower-degree biased chi quadruples and loses the phi information needed to reach degree s-3 later.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U04",
+        "S13-U05"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U04",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 215,
+          "end_line": 296,
+          "excerpt_sha256": "533b558e1aa1a1aa38ec2844c9b17b72ffedc36efc094b91288a265517341093"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+          "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+          "bytes": 13507,
+          "locator": "Theorem3 ordinary-degree uniform shift, including limit shifts"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b",
+          "locator": "Unit-vector identity(5) and its conjugate",
+          "kind": "new inline author derivation"
+        }
+      ],
+      "assertion": {
+        "statement": "Each shifted phi_h coordinate is a finite sum of unshifted coordinates times degree<=s-3 scalar tests; constant shifts can be removed from degree-s symbols with fixed bounds.",
+        "objects": "Bracket phi_j(n+a) conjugate(phi_k(n)), actual unit vector phi_h, and fixed limit h0,c0,b0,b0-prime.",
+        "hypotheses": "Positive input degrees s-2 and s; all-limit vertical convention; same vector in both factors of the contraction.",
+        "quantifiers": "All n,a,h in the selected parameter domains, including unbounded limit shifts.",
+        "parameter_range": "s=3 gives degree zero brackets; s>3 gives ordinary lower-degree tests.",
+        "uniformity": "Project shift construction fixes geometry and Lipschitz bounds independently of shift and orbit coefficients.",
+        "constants": "Sum_k |phi_k(n)|^2=1 exactly; finite component count, no error.",
+        "normalizations": "Conjugate(5) for conjugated shifted factors. Retain lower tests as scalar families; do not identify individual unit-vector coordinates with phases.",
+        "exceptional_cases": "Coordinates may vanish; the sum identity does not divide by them. A fixed slot may contain an unbounded constant but still lowers variable degree.",
+        "limit_order": "Choose the uniform shift representation before averaging and retain its internal parameter dependence."
+      },
+      "connection": {
+        "available": "Tautification003 supplies the exact lower-degree shift tensor.",
+        "needed": "An unshifted phi factor with a bounded lower-degree multiplier, not merely a symbol assertion.",
+        "derivation": "Equation(5) contracts the shift tensor with the same unit vector. Finite coordinate selection retains a lower-degree test. Section4 uses descending total-degree coarsening, ordinary shift for constant translations, and LP13 additivity to kill zero slots.",
+        "failure_cases": "Dividing by a chosen coordinate or taking a nonuniform representation for each shift would fail.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U05",
+        "S13-U06"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U05",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 160,
+          "end_line": 214,
+          "excerpt_sha256": "d28c62e890855dd993f636aab1d8fcac19052ead2461ddde7a6c324b04dd0077"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 88,
+          "end_line": 159,
+          "excerpt_sha256": "9b32a421bddd7b8c1f751afe9bec36a4eb26cdc925b6727e6625c45c131b8d4b",
+          "locator": "Scalar averaged correlation(7)",
+          "kind": "new inline author derivation"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 160,
+          "end_line": 214,
+          "excerpt_sha256": "d28c62e890855dd993f636aab1d8fcac19052ead2461ddde7a6c324b04dd0077",
+          "locator": "Three Cauchy-Schwarz steps(8)-(12)",
+          "kind": "new inline author derivation"
+        }
+      ],
+      "assertion": {
+        "statement": "Produce many(b,b-prime) for which the actual unit alpha-prime is degree<=s-3 biased on[N], preserving internal uniformly bounded lower tests.",
+        "objects": "t,u,v,w,z,p in(7); c=a+b+b-prime; alpha=tau(c0-b-b-prime,b) tensor conjugate tau(c0-b-b-prime,b-prime); V_b=v_b w_(c0-b); alpha-prime mixed difference(12).",
+        "hypotheses": "Scalar coordinates are bounded, lower tests have degree<=s-3 with finite geometry, and average(7) has positive standard modulus.",
+        "quantifiers": "All averages over the displayed boxes; retained dense subsets have positive standard density.",
+        "parameter_range": "a,b,b-prime in I2, c in I6, c0 fixed there, b0,b0-prime in I2; n always[N].",
+        "uniformity": "Products/conjugates preserve bounded complexity; each Cauchy-Schwarz and pigeonhole loss is a fixed standard amount.",
+        "constants": "Substitution multiplies normalized average by |I2|/|I6|. Positive-average threshold gives density at least delta/(2B).",
+        "normalizations": "V second factor is un-conjugated, forced by(8). The indicator1_(c-b-b-prime in I2) is constant in n and stays in the lower scalar test.",
+        "exceptional_cases": "V need not be unit or nonzero. No assertion I2+I2+I2 subset I3. No discontinuous n-cutoff is absorbed as a degree-zero nilsequence.",
+        "limit_order": "Eliminate u,z; substitute and fix c; eliminate V twice; then fix b0,b0-prime. No future parameter is used before it is chosen."
+      },
+      "connection": {
+        "available": "The exact scalar correlation(7) and uniform lower tests.",
+        "needed": "A biased mixed difference with only degree<=s-3 tests.",
+        "derivation": "Section3 writes the first expansion, all signs, the exact substitution cutoff and normalized factor, then both remaining expansions and final mixed-difference definition. All cutoffs introduced here are parameter-only.",
+        "failure_cases": "Wrong conjugation in V or omission of the c-box cutoff changes the actual product. A cutoff depending on n would require another argument at s=3.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U06",
+        "S13-U08"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U06",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 215,
+          "end_line": 296,
+          "excerpt_sha256": "533b558e1aa1a1aa38ec2844c9b17b72ffedc36efc094b91288a265517341093"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+          "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860",
+          "bytes": 20575,
+          "locator": "Theorem1 multilinearity"
+        },
+        {
+          "path": "work/quartic-v14-prep/gtz-local-proof-lp05-compiler/proof.tex",
+          "sha256": "b69f434a77b8c2509d132a6a7d58e31185b1abb2639314afa4d11cadb8604ab2",
+          "bytes": 24895,
+          "locator": "Section5 same TildeChi and last-block symmetry"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+          "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+          "bytes": 13507,
+          "locator": "Theorem3 constant-shift removal"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 215,
+          "end_line": 296,
+          "excerpt_sha256": "533b558e1aa1a1aa38ec2844c9b17b72ffedc36efc094b91288a265517341093",
+          "locator": "Equations(13)-(16), explicit beta construction",
+          "kind": "new inline author derivation"
+        }
+      ],
+      "assertion": {
+        "statement": "The actual alpha-prime has symbol -s(s-1)(T(b;b-prime,n^m)-T(b-prime;b,n^m))+[beta], where beta has an explicit finite expansion into T-words with at most s-3 n slots.",
+        "objects": "Same tau, alpha and alpha-prime from(4),(9),(12); R_tau finite j>=2 sum; beta is the signed tensor product of retained expanded pullbacks.",
+        "hypotheses": "LP13 multilinearity, literal symmetry only in last slots, total-degree shifts/coarsenings, same representative TildeChi.",
+        "quantifiers": "Full limit lattice of(a,b,n), then(b,b-prime,n), not only a selected set of biased parameters.",
+        "parameter_range": "r=s-1, m=s-2; j runs2 through r, all entries after expansion in{b,b-prime,n}.",
+        "uniformity": "Finite integer expansion size and tensors depend only on s.",
+        "constants": "Tau coefficient s binomial(r,j); alpha leading term -sr T(b-b-prime;b+b-prime,n^m); mixed difference leading sign is minus.",
+        "normalizations": "First slot never interchanged. Constant-slot terms have degree<s. Remove words missing b or b-prime in the mixed difference.",
+        "exceptional_cases": "Separate n-degree alone is insufficient; the explicit T-word representation is constructed. The j>=2 remainder is empty when the range is empty.",
+        "limit_order": "Expand tau, substitute actual alpha, then take the actual mixed difference; do not use the desired first-slot symmetry in the calculation."
+      },
+      "connection": {
+        "available": "Same-representative multilinear symbol and exact definitions of the correlation products.",
+        "needed": "The stronger lower-slot expansion consumed by the alternating cube sum, with the correct leading orientation.",
+        "derivation": "Equations(13)-(16) give each expansion and an explicit algorithm for beta: substitute -b-b-prime into the two R_tau terms, expand every slot, subtract, and retain words containing both b and b-prime. Constant shifts are discarded only after their degree-lowering proof.",
+        "failure_cases": "Printed Lemma13.4 reverses its first two slots; importing that conclusion would make(13.13) have the opposite sign. A bound on degree in n would not justify the total-symbol cancellation.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U07"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U07",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 215,
+          "end_line": 296,
+          "excerpt_sha256": "533b558e1aa1a1aa38ec2844c9b17b72ffedc36efc094b91288a265517341093"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 215,
+          "end_line": 296,
+          "excerpt_sha256": "533b558e1aa1a1aa38ec2844c9b17b72ffedc36efc094b91288a265517341093",
+          "locator": "Definition(17), inclusion-exclusion computation and identity(18)",
+          "kind": "new inline author derivation"
+        },
+        {
+          "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+          "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860",
+          "bytes": 20575,
+          "locator": "Fixed integer linear pullbacks and multilinearity"
+        }
+      ],
+      "assertion": {
+        "statement": "For the actual unconjugated alpha and alpha-prime, [sigma]=(-1)^(s-1)s! times the antisymmetric T difference in b,b-prime with independent shift slots h1,...,hm.",
+        "objects": "sigma=tensor_(omega in{0,1}^m) C^|omega| alpha-prime(b,b-prime,n+sum_j omega_j h_j).",
+        "hypotheses": "Explicit beta word expansion U06, m=n-slot count s-2, and literal last-block symmetry.",
+        "quantifiers": "Every point of the full limit lattice with s+1 coordinates.",
+        "parameter_range": "s>=3, m>=1, all binary omega; each h_j is a separate coordinate.",
+        "uniformity": "Exactly2^m factors and m! bijections, fixed once s is fixed.",
+        "constants": "Alternating derivative contributes(-1)^m m!; actual alpha-prime contributes -s(s-1); product is(-1)^(s-1)s!.",
+        "normalizations": "No sign is dropped until the symbol equals zero. Conjugating alpha would change the object and sign and is not done here.",
+        "exceptional_cases": "Every beta word misses at least one shift label, so its signed coefficient is zero. Repeating h_m in every position would change the required multilinear identity.",
+        "limit_order": "Form the actual cube tensor first, expand symbol second, and only later use bias to obtain a zero symbol."
+      },
+      "connection": {
+        "available": "U06 gives a precise leading antisymmetry and a finite lower-slot remainder.",
+        "needed": "The exact signed identity on the same cube object used by the Gowers expansion.",
+        "derivation": "The coefficient sum over omega vanishes unless all labels occur. Fewer than m slots cannot use all labels. With m slots the surviving assignments are bijections, each has sign(-1)^m, and last-block symmetry identifies their m! values.",
+        "failure_cases": "The earlier LP05-F03 sign discussion was conditional on printed(13.13). Correcting the preceding slot swap adds another minus for these actual objects.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U09",
+        "S13-U10"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U08",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 297,
+          "end_line": 364,
+          "excerpt_sha256": "588d7d9a230fed425a15ecee9b200bea74c911d2be134243f5be138d70ba2d15"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "Proposition5.6 converse; interval Gowers norm p1232; A.6 uniformity",
+          "page_text_locators": [
+            {
+              "printed_page": 1232,
+              "pdf_page": 2,
+              "extracted_text_sha256": "4a21e3819c743d5f19963932d2dea604d5419d4daa371d0d3f72b75f10997122"
+            },
+            {
+              "printed_page": 1251,
+              "pdf_page": 21,
+              "extracted_text_sha256": "d6b97f2272746e0b90d6fc45746656f48fc1ba2956c9ff768a20f449b88ecaee"
+            },
+            {
+              "printed_page": 1327,
+              "pdf_page": 97,
+              "extracted_text_sha256": "c93d94e1593621ab7ec182452b82c9773f8b9887079020be43873fb1f5d06b6d"
+            },
+            {
+              "printed_page": 1328,
+              "pdf_page": 98,
+              "extracted_text_sha256": "40e6c84ca3686cf35d0f37d7d7406ef6233dad307d8b129ef0556879f4c98844"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 297,
+          "end_line": 364,
+          "excerpt_sha256": "588d7d9a230fed425a15ecee9b200bea74c911d2be134243f5be138d70ba2d15",
+          "locator": "Zero-extension cube expansion and convex polytope(19)",
+          "kind": "new inline author derivation"
+        }
+      ],
+      "assertion": {
+        "statement": "Positive lower bias of alpha-prime yields positive standard average of a coordinate of sigma over the explicit convex polytopeOmega.",
+        "objects": "Scalar coordinates of alpha-prime, their interval U^m[N] norms, zero-extended cubes, Omega={b,b-prime in I2 and1<=n+omega.h<=N for everyomega}.",
+        "hypotheses": "U05 gives degree<=s-3 bias with standard lower-test bounds; converse applies at degree s-3.",
+        "quantifiers": "Many(b,b-prime) give a uniform norm lower bound; the final norm average includes all pairs and is nonnegative.",
+        "parameter_range": "m=s-2>=1; auxiliary cyclic group has order greater than2(m+1)N; ambient final box I8^(s+1).",
+        "uniformity": "A.6 gives positive standard lower norm on the retained internal set; finite coordinate choice and normalization ratios depend on s.",
+        "constants": "Use exactly the interval norm normalized by its indicator. Cube counts differ by fixed positive factors, not an untracked vanishing factor.",
+        "normalizations": "Each h_j is the unique integer difference of vertices; no cyclic wrap can occur under the chosen group size. Fixed scalar coordinate repeated on all vertices is a coordinate of the full tensor sigma.",
+        "exceptional_cases": "At s=3 use degree-zero converse and U^1. The selected parameter set is not inserted as an arbitrary cutoff inOmega; it only lower-bounds a nonnegative norm average.",
+        "limit_order": "Converse and uniformity precede norm expansion. The explicit cube cutoff is retained as a convex polytope for E.11."
+      },
+      "connection": {
+        "available": "Converse5.6 gives a positive norm from lower bias; its source is independent of the inverse theorem under construction.",
+        "needed": "A biased global nilcharacter with a single allowed convex-polytope cutoff, suitable for E.11.",
+        "derivation": "Section5 explains the finite coordinate selection, zero-extension lift, no-wrap bound and exact affine inequalities. The nonnegative norm average removes the need to carry a nonconvex selected-parameter indicator.",
+        "failure_cases": "Using inverse GI here would be circular. Treating an arbitrary parameter subset as a polytope would not satisfy E.11.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U09"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U09",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 297,
+          "end_line": 364,
+          "excerpt_sha256": "588d7d9a230fed425a15ecee9b200bea74c911d2be134243f5be138d70ba2d15"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "LemmaE.11, exact statement and proof",
+          "page_text_locators": [
+            {
+              "printed_page": 1364,
+              "pdf_page": 134,
+              "extracted_text_sha256": "fee672dcfc389960130ab701aba2b5871894ec33510d8be07dcab2d609d0c123"
+            },
+            {
+              "printed_page": 1365,
+              "pdf_page": 135,
+              "extracted_text_sha256": "e5f9cf425cbac9e26378ddd3ecc1a6582ca25b38406d8295ee4d357c88282ead"
+            },
+            {
+              "printed_page": 1366,
+              "pdf_page": 136,
+              "extracted_text_sha256": "4a8d38a79b8545950cbcd2b28f1cfe9c3f33020bcc0d2e83612b814ef70881f8"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 297,
+          "end_line": 364,
+          "excerpt_sha256": "588d7d9a230fed425a15ecee9b200bea74c911d2be134243f5be138d70ba2d15",
+          "locator": "Sign-orthant partition/reflection and(20)",
+          "kind": "new inline author derivation"
+        }
+      ],
+      "assertion": {
+        "statement": "The actual sigma has zero degree-s symbol on the full symmetric box I8^(s+1).",
+        "objects": "Reflected sigma_epsilon, reflected convexOmega, all progressions P_i=[8N], degree d=s and dimension k=s+1.",
+        "hypotheses": "Standard d>=2, unbounded scale8N, a global nilcharacter, convex polytope and dense positive progressions, plus bias of degree<d.",
+        "quantifiers": "E.11 conclusion holds on the entire symmetric box; one orthant supplies its positive bias hypothesis.",
+        "parameter_range": "s>=3;2^(s+1) orthants; coordinate-zero hyperplanes negligible.",
+        "uniformity": "One standard-positive orthant survives because there are finitely many; reflections are fixed integer linear maps preserving degree and bounds.",
+        "constants": "Zero planes have normalized mass O_s(1/N); bounded sigma makes their contribution infinitesimal.",
+        "normalizations": "E.11 progressions are positive intervals; they are not silently replaced by symmetric intervals. Reflect back only after the full-box conclusion.",
+        "exceptional_cases": "Boundary hyperplanes are removed before selecting an orthant; degree1 exception is outside scope.",
+        "limit_order": "Choose a positive-bias sign orthant, reflect, apply E.11, then undo reflection."
+      },
+      "connection": {
+        "available": "U08 gives polytope-weighted bias in a symmetric ambient box; E.11 is stated with positive progressions.",
+        "needed": "A valid E.11 application whose conclusion is on the symmetric box needed downstream.",
+        "derivation": "Partition signs, bound zero planes, choose one orthant, and reflect to y_i in[8N]. The polytope remains convex and the test is a degree-s nilcharacter. Plain bias is< s bias. E.11 supplies the whole box, so reflection yields(20).",
+        "failure_cases": "Bias on a selected orthant alone does not mean zero symbol globally; the global conclusion comes from the exact E.11 theorem. Its published equidistribution inputs remain direct upstream dependencies.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U10"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U10",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 297,
+          "end_line": 364,
+          "excerpt_sha256": "588d7d9a230fed425a15ecee9b200bea74c911d2be134243f5be138d70ba2d15"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 365,
+          "end_line": 403,
+          "excerpt_sha256": "ec244489d755fa858db829ff3886d0d4229f363bf2bdfb79e24b751eba57eb94"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "LemmaE.13 torsion-free symbol group",
+          "page_text_locators": [
+            {
+              "printed_page": 1366,
+              "pdf_page": 136,
+              "extracted_text_sha256": "4a8d38a79b8545950cbcd2b28f1cfe9c3f33020bcc0d2e83612b814ef70881f8"
+            },
+            {
+              "printed_page": 1367,
+              "pdf_page": 137,
+              "extracted_text_sha256": "7cfb15bd57fc7a502f116848270257d26e779c733c6beb28dca3f6749e439ffc"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 297,
+          "end_line": 364,
+          "excerpt_sha256": "588d7d9a230fed425a15ecee9b200bea74c911d2be134243f5be138d70ba2d15",
+          "locator": "Symmetric-box diagonal pullback(21)-(22)",
+          "kind": "new inline author derivation"
+        }
+      ],
+      "assertion": {
+        "statement": "Obtain T(h;n^r)=T(n;h,n^(r-1)) as a degree-s symbol equality on I8^2, hence on I1 times[N].",
+        "objects": "Diagonal map(h,n)->(h,n,n,...,n,0) into I8^(s+1); the actual difference of two unit nilcharacters and the integer s!.",
+        "hypotheses": "U07 signed identity and U09 zero symbol; fixed linear pullback preserves degree; E.13 applies on a symmetric integer box at degree>=2.",
+        "quantifiers": "Every point in I8^2; restriction to the mixed rectangle is subsequent.",
+        "parameter_range": "Dimension2, scale8N, degree s>=3, fixed positive multiplier s!.",
+        "uniformity": "No division of functions or small quantities; torsion-free property concerns exact symbol equality.",
+        "constants": "Sign(-1)^(s-1) is removed only from an equality to zero; then s! torsion is cancelled by E.13.",
+        "normalizations": "E.13 is used on Symb_s([[-8N,8N]]^2), not asserted directly for an asymmetric rectangle.",
+        "exceptional_cases": "The degree1 torsion phenomenon does not occur. n_aux=0 is allowed in the symmetric source box.",
+        "limit_order": "Pull back zero on the symmetric box, apply torsion-freeness there, then restrict n to[N]."
+      },
+      "connection": {
+        "available": "Zero sigma symbol and an exact signed multiple of the antisymmetric difference.",
+        "needed": "First-slot exchange in symbols on the consumer rectangle.",
+        "derivation": "The displayed homomorphism maps the full symmetric2-box into the full symmetric(s+1)-box. Pull back, remove the harmless overall sign at zero, apply E.13 with integer s!, and only then restrict.",
+        "failure_cases": "A direct E.13 citation for I1 times[N] would have a domain mismatch. First-slot symmetry is concluded here, never assumed in the earlier expansion.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "S13-U11"
+      ],
+      "status": "author_proposed"
+    },
+    {
+      "id": "S13-U11",
+      "consumer": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 365,
+          "end_line": 403,
+          "excerpt_sha256": "ec244489d755fa858db829ff3886d0d4229f363bf2bdfb79e24b751eba57eb94"
+        }
+      ],
+      "suppliers": [
+        {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-section13-compiler-001/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce",
+          "bytes": 22893,
+          "start_line": 365,
+          "end_line": 403,
+          "excerpt_sha256": "ec244489d755fa858db829ff3886d0d4229f363bf2bdfb79e24b751eba57eb94",
+          "locator": "Equations(23)-(24), R construction and unit contractions",
+          "kind": "new inline author derivation"
+        },
+        {
+          "path": "work/quartic-v14-prep/gtz-local-proof-lp05-compiler/proof.tex",
+          "sha256": "b69f434a77b8c2509d132a6a7d58e31185b1abb2639314afa4d11cadb8604ab2",
+          "bytes": 24895,
+          "locator": "Descending block coarsening"
+        },
+        {
+          "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+          "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "bytes": 1300898,
+          "locator": "Restricted nilsequence definition, product closure and symbol equivalence",
+          "page_text_locators": [
+            {
+              "printed_page": 1249,
+              "pdf_page": 19,
+              "extracted_text_sha256": "4a09ea9db0ee13d19fa12c3de2db799697744a6043c2f761d180b23d0ab1bc84"
+            },
+            {
+              "printed_page": 1268,
+              "pdf_page": 38,
+              "extracted_text_sha256": "1778d14d264f799b22974ececd0f259a3f8ba667c17a2615742c8547a99f5835"
+            },
+            {
+              "printed_page": 1350,
+              "pdf_page": 120,
+              "extracted_text_sha256": "fe00ee7abaf1d314a3a10053e51c1961383297e76a1ae8d855eed779c0aa065e"
+            },
+            {
+              "printed_page": 1351,
+              "pdf_page": 121,
+              "extracted_text_sha256": "6f82733c5c43c8b03b33723b76d5b13fee8db53b8db3d55b4dfe4bd85812319b"
+            },
+            {
+              "printed_page": 1354,
+              "pdf_page": 124,
+              "extracted_text_sha256": "0057b051235a9a98c313a6eb86f51fb69f0c53f2e7dc25c54c7fcd5206d7a77f"
+            }
+          ],
+          "extraction_convention": "pypdf extract_text UTF8, locating aid only; authoritative source is the pinned PDF"
+        }
+      ],
+      "assertion": {
+        "statement": "Construct global-represented boundedPsi supported onJ such that each chi component is a fixed finite linear combination of components ofTheta(n+h) tensor conjugateTheta(n) tensorPsi on I1 times[N].",
+        "objects": "Theta=full diagonal of same TildeChi; R=tensor over slot subsets of size>=2; W=chi tensor conjugateTheta-shift tensorTheta tensorR, a lower-degree sequence on the rectangle;Psi=conjugateR tensor global extension ofW.",
+        "hypotheses": "U10 first-slot exchange and U01 symbol equality; all character factors have unit norm; restricted lower nilsequence admits a global representation by definition.",
+        "quantifiers": "Exact equality for all(h,n) in the consumed rectangle, with globally defined representing factors.",
+        "parameter_range": "R factors have multidegrees(i,s-i),2<=i<=s; W has total degree<=s-1; union is exactly the allowedJ.",
+        "uniformity": "2^s finite slot subsets, fixed tensor contractions and bounded global tests; no orbit-dependent tensor dimension.",
+        "constants": "Single-h terms contribute1+(s-1)=s, matching(3) exactly. Linear contractions have fixed bounded coefficients.",
+        "normalizations": "No global identity beyond the rectangle is claimed forW. Tensor arithmetic first gives a symbol relation;W realizes its lower-degree discrepancy.",
+        "exceptional_cases": "Vanishing coordinates cause no division. Full literal symmetry ofTildeChi is unnecessary;R retains actual slot subsets.",
+        "limit_order": "ExpandTheta, use the proved box symmetry, identifyW in the restricted lower class, choose its global representation, then contract actual unit factors."
+      },
+      "connection": {
+        "available": "The corrected symmetry relation and exact symbol relation(3).",
+        "needed": "The finite-component actual nilsequence factorization needed by Theta assembly after Theorem7.4.",
+        "derivation": "Section6 definesR from actual pullbacks, coarsens its degree with descending layers, forms the exact discrepancyW, and uses unit-pair contractions. Product filtrations give supportJ. This is an exact equality of functions on the claimed domain.",
+        "failure_cases": "Replacing a symbol equality by scalar multiplication withoutW or dividing by coordinates would not prove the required factorization.",
+        "reviewer_scope": "Author derivation; fresh non-author application and related-use coverage decision required."
+      },
+      "downstream": [
+        "Theta gi-assembly-001 symmetrization interface",
+        "Theorem1"
+      ],
+      "status": "author_proposed"
+    }
+  ]
+}

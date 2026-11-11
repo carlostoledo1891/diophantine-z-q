@@ -1,0 +1,583 @@
+[
+  {
+    "id": "BAP-IRR-END",
+    "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "passages": [
+      "BAP-IRR-END-P1"
+    ],
+    "assertion": {
+      "statement": "The full geometric endomorphism algebra of the actual non-CM A is B.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The retained non-CM Hodge-centralizer and algebraic-closure descent for the D210 fiber.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Use the full algebra, not only an embedded B-action.",
+      "exceptional_cases": "The CM case is excluded by the actual branch.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "GEOMETRIC-ISOGENY section3 supplies the full algebra for this A; current7986-7997 chooses this same case.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/h5-full-three-v1/GEOMETRIC-ISOGENY.md",
+          "sha256": "f889eab0b9f7880a647ebb34f10ac44a73aaf748f2041cb03dea756079d6ab9e"
+        },
+        "start_line": 17,
+        "end_line": 20,
+        "excerpt_sha256": "e390c022e603e92df0d2e8b70111207bd73737d93dbb800614a14a5f911d0a7b"
+      },
+      "statement": "In the non-CM case the full geometric rational endomorphism algebra of each selected fiber surface is B.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-IRR-FIELD",
+    "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "passages": [
+      "BAP-IRR-FIELD-P1"
+    ],
+    "assertion": {
+      "statement": "Every geometric rational endomorphism of this A is defined over this original L-prime.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The simultaneous Hom theorem over L, and LR3 defining L-prime as the kernel field of b on G_L.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Apply Hom descent to the self-pair and include L in L-prime.",
+      "exceptional_cases": "No bounded descent to Q is inferred.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "GEOMETRIC-ISOGENY section5 gives all self-Hom maps over L. LR3 gives L contained in L-prime, so the same maps remain defined there.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/h5-full-three-v1/GEOMETRIC-ISOGENY.md",
+          "sha256": "f889eab0b9f7880a647ebb34f10ac44a73aaf748f2041cb03dea756079d6ab9e"
+        },
+        "start_line": 39,
+        "end_line": 44,
+        "excerpt_sha256": "f194c35fb2d1435ca347b8334a703aa9654aab4dfe9c297e018dd5d5afbbf68f"
+      },
+      "statement": "The simultaneous Hom statement makes the endomorphisms and their rationalizations of the selected fiber surfaces defined over the same L.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-IRR-FAMILY",
+    "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "passages": [
+      "BAP-IRR-FAMILY-P1"
+    ],
+    "assertion": {
+      "statement": "For every ell, rho_ell is the original B-commuting family and restricts to V_ell(A) on G_L-prime, with the original factor r_ell.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The actual b-family supplies full geometric End=B over L-prime and rho_ell restricts to the original Tate action there.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Use the original covariant Tate module and matrix units. Coefficient extension preserves the factor up to a G_Q-equivariant isomorphism.",
+      "exceptional_cases": "No quadratic coefficient field is added.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "FAMILY-CONNECTION uses the same finite mu choice. On G_L-prime, mu=1, a=1 and b=1; the original matrix units identify the factor.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/direct-p5-modularity-v1/FAMILY-CONNECTION.md",
+          "sha256": "f8169651e1835464ef65927f92d0eb24f8af0ada1ab8b5da8b37cf4603ad34f9"
+        },
+        "start_line": 1,
+        "end_line": 9,
+        "excerpt_sha256": "f8169651e1835464ef65927f92d0eb24f8af0ada1ab8b5da8b37cf4603ad34f9"
+      },
+      "statement": "The original rho_l are B-commuting representations restricting to V_l(A) on G_L-prime, with the original matrix-unit factors r_l.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-IRR-FALTINGS",
+    "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "passages": [
+      "BAP-IRR-FALTINGS-P1"
+    ],
+    "assertion": {
+      "statement": "For every ell, V_ell(A) on G_L-prime is semisimple and its commutant is B tensor Q_ell.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "A is an abelian variety over L-prime, and BAP-IRR-END/FIELD supply its full endomorphism algebra.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Rationalize the integral Faltings comparison before extending coefficients.",
+      "exceptional_cases": "No good reduction or residual irreducibility at ell is required, including ell=2.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "The retained Faltings statement quantifies over coefficient primes. Specialize to each ell and use the independently supplied full-End and field inputs.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/qm-lemma-inventory-v1/SOURCE-STATEMENTS.md",
+          "sha256": "ef2f06fc68db86587c7e341e3017067af80f7fddf3d608f7a1c2c32db378eac0"
+        },
+        "start_line": 35,
+        "end_line": 35,
+        "excerpt_sha256": "bd444e1205c2bf4c2b4350a71fbee5169247853cae15b0c04ab967661fee5e2c"
+      },
+      "statement": "For an abelian variety A over a number field K, V_l(A) is semisimple and End_K(A) tensor Z_l maps isomorphically to End_GK(T_l(A)).",
+      "publication": {
+        "title": "Complements to Mordell",
+        "authors": "Gerd Faltings",
+        "venue": "\\bibitem{faltings1986-complements} G. Faltings,\n\\emph{Complements to Mordell}, in \\emph{Rational Points},\nsecond edition, Vieweg, 1986, Theorem 1(a)--(b), p.~204.\n\\url{https://doi.org/10.1007/978-3-663-06812-9}.",
+        "authoritative_version": "Published Rational Points, second edition (1986), Complements to Mordell, Theorem 1(a)-(b), page 204; semisimplicity and endomorphism comparison.",
+        "locator": "Theorem1(a),(b) p204",
+        "corrections": "Original source versions and their limitations are retained in SOURCE-METADATA.json; this statement is an authored paraphrase."
+      }
+    },
+    "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-IRR-COEFFICIENTS",
+    "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "passages": [
+      "BAP-IRR-COEFFICIENTS-P1"
+    ],
+    "assertion": {
+      "statement": "The Tate module and original semisimple matrix-unit factor stay semisimple under every finite coefficient extension at every ell.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The preceding Faltings application makes V_ell(A) semisimple in characteristic zero; after splitting B the original matrix-unit factor is its direct summand.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Use the original covariant Tate module and matrix units. Coefficient extension preserves the factor up to a G_Q-equivariant isomorphism.",
+      "exceptional_cases": "No assertion about an unrelated modular realization is assumed.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "Apply the retained characteristic-zero coefficient-extension lemma at each ell, then to its direct summand; the original scalar-commutant argument proves absolute irreducibility.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "internal",
+      "application_id": "QM-SEMISIMPLE-BASE-CHANGE",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/qm-lemma-inventory-v1/SEMISIMPLE-COEFFICIENTS.md",
+          "sha256": "7dec48331eaa5098ddf1be281148b6f5f2e5aaf1e5e2a389e1b7ec935e7b5d07"
+        },
+        "start_line": 1,
+        "end_line": 11,
+        "excerpt_sha256": "7dec48331eaa5098ddf1be281148b6f5f2e5aaf1e5e2a389e1b7ec935e7b5d07"
+      },
+      "statement": "A finite-dimensional semisimple group representation over a characteristic-zero field stays semisimple after algebraic coefficient extension.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-FAMILY",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-FAMILY-P1"
+    ],
+    "assertion": {
+      "statement": "The same finite algebraic maps and normalized b-family are used for every coefficient prime.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The original r_5 is the realization of the final primitive weight-two f; the same b-family satisfies BAP-IRR inputs for every ell.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Enlarge the common number field, retain the embedding at five and extend the original ell embedding. Compare over a common finite extension of Q_ell.",
+      "exceptional_cases": "The absorbed finite character delta is not identified with controlled chi=b squared.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "The actual source8100-8120 and FAMILY-CONNECTION retain A,L-prime,b and r_ell; no new twist or family is introduced.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/direct-p5-modularity-v1/FAMILY-CONNECTION.md",
+          "sha256": "f8169651e1835464ef65927f92d0eb24f8af0ada1ab8b5da8b37cf4603ad34f9"
+        },
+        "start_line": 1,
+        "end_line": 9,
+        "excerpt_sha256": "f8169651e1835464ef65927f92d0eb24f8af0ada1ab8b5da8b37cf4603ad34f9"
+      },
+      "statement": "The original rho_l are B-commuting representations restricting to V_l(A) on G_L-prime, with the original matrix-unit factors r_l.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-MILNE",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-MILNE-P1"
+    ],
+    "assertion": {
+      "statement": "At each admissible p the rational trace of e_p/m is independent of every coefficient prime different from p.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "Construct e_p by reduction of m mu_sigma followed by relative p-Frobenius to the correct twist.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Divide Tr(e_p) by m, then multiply by a_sigma/b_sigma and one-half.",
+      "exceptional_cases": "Never apply prime-to-p specialization to ell=p; m=1 is possible for the actual isogenies.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "The selected published degree polynomial quantifies over every admissible Tate prime. The same reduced rational endomorphism is used at five and ell.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/direct-p5-modularity-v1/FIVE-TO-THREE-SOURCES.md",
+          "sha256": "5552cf5078213c729ddb0939152b2a0fa5cf5cc8fa2e1a96e52320681f608366"
+        },
+        "start_line": 5,
+        "end_line": 5,
+        "excerpt_sha256": "ad21187dd56a3b5e83e3e3b4626aea0d4ab71c302c91ea5ea99adc436fb517f6"
+      },
+      "statement": "The rational degree polynomial of an endomorphism equals its characteristic polynomial on each admissible rational Tate module.",
+      "publication": {
+        "title": "Abelian Varieties",
+        "authors": "J. S. Milne",
+        "venue": "Arithmetic Geometry, Springer, 1986, pp.103-150",
+        "authoritative_version": "Original published chapter, final PDF SHA86259344a576e4ef75a9d81e9bf43143f872a72b14cf8fcc2703f3aea6349136",
+        "locator": "Proposition12.9 and preceding End^0 degree-polynomial definition, printed125",
+        "corrections": "Only this arbitrary-endomorphism Tate-module statement is selected; no later edition is silently substituted."
+      }
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-CLASSICAL",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-CLASSICAL-P1"
+    ],
+    "assertion": {
+      "statement": "The corresponding classical U_f,ell has the expected good-prime traces for every ell.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The original r_5 is the realization of the final primitive weight-two f; the same b-family satisfies BAP-IRR inputs for every ell.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Enlarge the common number field, retain the embedding at five and extend the original ell embedding. Compare over a common finite extension of Q_ell.",
+      "exceptional_cases": "Comparison excludes ell, five, the level primes and a finite spreading set; T in bounds is unchanged.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "Apply the retained classical trace statement to the same final f and chosen coefficient embedding at ell.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/direct-p5-modularity-v1/ORDINARY-SOURCES.md",
+          "sha256": "91ed0eaa5059799db1e7b71e8462b99954bb1e479ec6890422ed135574ba6fc7"
+        },
+        "start_line": 23,
+        "end_line": 23,
+        "excerpt_sha256": "e306e7ba9a0ea1e41333af086c6ead2f44fb89b16f5196035290d361f0438cbf"
+      },
+      "statement": "The classical two-dimensional representation has the good-prime trace and determinant of the normalized cuspidal Hecke eigenform.",
+      "publication": {
+        "title": "On the local behaviour of ordinary Lambda-adic representations",
+        "authors": "E. Ghate and V. Vatsal",
+        "venue": "Ann. Inst. Fourier54 (2004),2143–2162",
+        "authoritative_version": "Selected final publication",
+        "locator": "Attachment2143–2144; determinant2153",
+        "corrections": "Retain the exact source/version qualifications in the accepted donor records."
+      }
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-DENSITY",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-DENSITY-P1"
+    ],
+    "assertion": {
+      "statement": "The trace equality on the cofinite comparison set extends to G_Q for each ell.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The preceding trace calculation gives equality at all rational Frobenius elements outside a finite set. Both trace functions are continuous and conjugacy-invariant on G_Q.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Enlarge the common number field, retain the embedding at five and extend the original ell embedding. Compare over a common finite extension of Q_ell.",
+      "exceptional_cases": "Use the union of Frobenius conjugacy classes, not a claim that arbitrary selected lifts are dense.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "Injectivity at five gives one equality of algebraic traces. Chebotarev and continuity give equality on G_Q after transport to ell.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "internal",
+      "application_id": "AC-CHEBOTAREV",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-use-tw-ac-002/SOURCE-INPUTS.md",
+          "sha256": "d9a564e2157712b39656b775e1b65e9ff8a702ed99ad3c24d3f848648c941cfd"
+        },
+        "start_line": 11,
+        "end_line": 16,
+        "excerpt_sha256": "0bf6a0e52855892d8f005d8a8953f80ae6370e873035480eae06aec170c667cd"
+      },
+      "statement": "Equality of continuous trace functions at almost all rational Frobenius elements implies equality on G_Q.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-TRACE",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-TRACE-P1"
+    ],
+    "assertion": {
+      "statement": "The actual U_f,ell is isomorphic to the scalar extension of the original r_ell for every ell.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "Over the common finite coefficient field, r_ell and U_f,ell semisimplified are semisimple and have equal traces on G_Q. The new b-family irreducibility application makes r_ell absolutely irreducible.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Enlarge the common number field, retain the embedding at five and extend the original ell embedding. Compare over a common finite extension of Q_ell.",
+      "exceptional_cases": "Do not infer equality of actual representations from traces without the length-one step.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "Use the finite-dimensional span of the diagonal image and the semisimple trace criterion; BAP-IRR supplies absolute irreducibility, so U_f,ell has composition length one.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "internal",
+      "application_id": "AC-BRAUER-NESBITT",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-use-tw-ac-002/SOURCE-INPUTS.md",
+          "sha256": "d9a564e2157712b39656b775e1b65e9ff8a702ed99ad3c24d3f848648c941cfd"
+        },
+        "start_line": 17,
+        "end_line": 22,
+        "excerpt_sha256": "55ad88785d6ab2a981ca72d52ba0f0c1e1c870d7a7aba353ffbe4bb29197e353"
+      },
+      "statement": "Finite-dimensional semisimple characteristic-zero representations with equal traces are isomorphic.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-R5",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-R5-P1"
+    ],
+    "assertion": {
+      "statement": "The five-adic realization of the same final primitive form f is the original r_5.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The original r_5 is the realization of the final primitive weight-two f; the same b-family satisfies BAP-IRR inputs for every ell.",
+      "quantifiers": "The fixed original coefficient-five factor r_5; its identification is reused for every comparison coefficient ell.",
+      "parameter_range": "Only coefficient five is supplied by this input. The all-prime conclusion is proved by the separate comparison.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Enlarge the common number field, retain the embedding at five and extend the original ell embedding. Compare over a common finite extension of Q_ell.",
+      "exceptional_cases": "The controlled character b squared is not changed by absorbing the separate finite modular twist.",
+      "limit_order": "Identify the original r_5 with the final primitive form before transporting algebraic trace equalities."
+    },
+    "classification": "dependency",
+    "reason": "Current8114-8120 is the retained DIRECT-SECOND-CALLER conclusion. Its same-r_5 identity is the algebraic trace anchor.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "internal",
+      "application_id": "DIRECT-SECOND-CALLER",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/direct-p5-modularity-v1/PROOF.md",
+          "sha256": "995d60ad7b793c17096bbb55476f52104af45a84d634713e3c490fe9bbd6ffda"
+        },
+        "start_line": 33,
+        "end_line": 39,
+        "excerpt_sha256": "cdae082aa14f9855d41f50682b9884b508baa988ce396f8f1f4b7f839d7d45a0"
+      },
+      "statement": "Same second r5 modular; final form level measured after twist",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-IRR-GENERAL",
+    "consumer": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "passages": [
+      "BAP-IRR-GENERAL-P1"
+    ],
+    "assertion": {
+      "statement": "Every original r_ell of the actual b-family is absolutely irreducible.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The actual b-family supplies full geometric End=B over L-prime and rho_ell restricts to the original Tate action there.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Use the original covariant Tate module and matrix units. Coefficient extension preserves the factor up to a G_Q-equivariant isomorphism.",
+      "exceptional_cases": "Only the actual non-CM b-family is in this application.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "BAP-IRR-END, FIELD and FAMILY separately establish each actual input of the accepted generic lemma.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/all-prime-irreducibility-matrix-units-002/PROOF.md",
+          "sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+        },
+        "start_line": 1,
+        "end_line": 12,
+        "excerpt_sha256": "ec1f11878335336783f65789d8d6de108170019177dfca68b4608bc3e610f107"
+      },
+      "statement": "A normalized original matrix-unit factor is absolutely irreducible for every ell if full geometric End=B is defined over L-prime and the restriction is the Tate action.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-GENERAL",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-GENERAL-P1"
+    ],
+    "assertion": {
+      "statement": "The actual b-family satisfies this comparison for every ell over a common finite coefficient extension.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The separate b-family inputs give full geometric End=B over L-prime, original Tate restriction, every original r_ell absolutely irreducible, and the original r_5 identification with the final primitive weight-two f. The retained classical realization gives its stated good-prime traces.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Use the original covariant Tate module and matrix units. Coefficient extension preserves the factor up to a G_Q-equivariant isomorphism.",
+      "exceptional_cases": "Only the actual non-CM b-family is in this application.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "Specialize eta=b and use this family's separate full-End, field and map inputs. The original matrix-unit interpretation is the accepted corrected one.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/all-prime-compatibility-sol-001/PROOF.md",
+          "sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+        },
+        "start_line": 1,
+        "end_line": 14,
+        "excerpt_sha256": "7f55eedeb8f7a4ccb7b302477f6bfd40ed8edae48e7495c4375a931ac2f54f55"
+      },
+      "statement": "Each fixed original family satisfies all-prime compatibility with its same primitive form under the stated geometric, family and r_5 inputs.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  },
+  {
+    "id": "BAP-COMP-IRR",
+    "consumer": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "passages": [
+      "BAP-COMP-IRR-P1"
+    ],
+    "assertion": {
+      "statement": "Every r_ell in the trace comparison is absolutely irreducible, so the matching modular semisimplification has length one.",
+      "objects": "The original discriminant-210 non-CM b-family A/L, L-prime, mu_sigma, a_sigma, b, original matrix-unit factors r_ell and their original coefficient embeddings.",
+      "hypotheses": "The actual b-family supplies full geometric End=B over L-prime and rho_ell restricts to the original Tate action there.",
+      "quantifiers": "For every rational coefficient prime ell; comparison primes p are distinct from ell and five and avoid the stated finite comparison set.",
+      "parameter_range": "The same b-family only, including ell=2. Local comparison always uses ell different from the residue prime p.",
+      "uniformity": "The same A, L-prime, b, finite isogeny family and final primitive form f are retained across coefficient primes.",
+      "constants": "No additional field-degree, conductor or support bound is asserted.",
+      "normalizations": "Use the original covariant Tate module and matrix units. Coefficient extension preserves the factor up to a G_Q-equivariant isomorphism.",
+      "exceptional_cases": "Only the actual non-CM b-family is in this application.",
+      "limit_order": "Supply the actual geometric and family inputs first, apply the all-prime argument, then restrict the resulting actual representation isomorphism locally."
+    },
+    "classification": "dependency",
+    "reason": "Apply the preceding b-family irreducibility application to the same original factor, not the older r_3-only receipt.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": "COV-B-ALL-PRIME-IRREDUCIBILITY",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "work/source-risk-review-20261107/b-family-attachment-resume-proxy-001/REPORT.md",
+          "sha256": "7aa5f98651111a19b776024966c2afdb9e7adf771609eea2ca7a047bc03b2853"
+        },
+        "start_line": 1,
+        "end_line": 46,
+        "excerpt_sha256": "7aa5f98651111a19b776024966c2afdb9e7adf771609eea2ca7a047bc03b2853"
+      },
+      "statement": "The application BAP-IRR establishes absolute irreducibility for every original r_ell of this b-family.",
+      "publication": null
+    },
+    "application_id": "COV-B-ALL-PRIME-COMPATIBILITY",
+    "inline_argument": null
+  }
+]

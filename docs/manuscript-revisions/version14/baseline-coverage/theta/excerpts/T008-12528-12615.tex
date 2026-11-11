@@ -1,0 +1,88 @@
+\paragraph{6. Central trace and period normalization.}
+First use (E.1) to remove the unused tame primes. The central
+specialization of (K8) is the corestriction of $z_D\otimes e_\chi$
+from $\mathbf Q(\zeta_D)$ to $\mathbf Q$, with omitted support
+$\operatorname{prime}(2Nd)$. For $D=1$ use the trivial character
+and the same omitted support. This follows from the same repeated-two
+norm identity even when $D=4|h|$. One must do this before using a
+Gauss basis; the Gauss sum of an imprimitive character modulo a
+larger cyclotomic level can be zero.
+
+Theorem~9.7, p.~189, identifies the dual exponential of $z_D$ with
+the retained-smoothed de Rham zeta element. Dual exponential commutes
+with corestriction, whose de Rham map is field trace. Thus the
+coefficient of $e_\chi$ is the exact unnormalized sum
+\[
+                    \sum_{g\in\operatorname{Gal}(\mathbf Q(\zeta_D)/\mathbf Q)}
+                       \chi(g)\,g(\exp^*z_D).             \tag{K12}
+\]
+Theorem~6.6, p.~163, evaluates precisely this sum. In weight two,
+$r=r'=1$, its Betti sign is $\epsilon=\chi(-1)$ and its power of
+$2\pi i$ is zero. If $e_B^\epsilon$ is a fixed rational generator
+of that Betti line and
+$\delta(f,1,\xi)^\epsilon=b_\epsilon e_B^\epsilon$, then
+$b_\epsilon\in\mathbf Q^\times$ is fixed and
+\[
+     \operatorname{per}_f\bigl((\text{K12})\bigr)^\epsilon
+          =s_F L_{\operatorname{prime}(2Nd)}(f,\chi,1)\,
+                        b_\epsilon e_B^\epsilon.          \tag{K13}
+\]
+Choose the original de Rham generator so that its Betti period
+on this line is $\Omega_E^\epsilon e_B^\epsilon$, absorbing a
+fixed rational comparison in $b_\epsilon$. Formula (K13) says
+that the scalar multiplying $e_\chi$ in (K12) is
+$s_F b_\epsilon L_{\operatorname{prime}(2Nd)}(f,\chi,1)/
+\Omega_E^\epsilon$. Its Galois character is $\chi$.
+
+To descend it, take the invariant basis $\sqrt h\,e_\chi$ of the
+quadratic character line. With the usual complex convention
+$\Omega_E^-=i|\Omega_E^-|$ and $\sqrt h=i\sqrt{|h|}$ for $h<0$,
+division by $\sqrt h$ gives, up to the already fixed rational
+period choice, exactly
+\[
+             s_F b_\epsilon\,\frac{L_*(h)}{h}
+       \prod_{p\mid 2N}\text{(the omitted local factor at $p$)}.
+                                                               \tag{K14}
+\]
+The signed integer $h$ is odd, so $h^{-1}$ has valuation zero.
+This computation also explains the usual Gauss-basis description:
+for the primitive character, $\tau(\chi)^2=\Delta_h$ and
+$\tau(\chi)e_\chi$ is invariant; replacing it by $\sqrt h e_\chi$
+costs the fixed dyadic factor $\sqrt{\Delta_h/h}$. It does not cost
+$\varphi(D)$ or any power of the number of prime divisors of $h$.
+The discriminant-$4h$ case has ratio two in this last basis change,
+and the direct basis calculation (K14) already includes it.
+One can verify the normalization without choosing an idempotent.
+Write $\beta=\exp^*z_D$ in the original de Rham line and put
+$\beta_\chi=\sum_g\chi(g)g\beta$. Then
+$u\beta_\chi=\chi(u)\beta_\chi$ for every $u$ in the finite
+cyclotomic group. Thus $\beta_\chi\otimes e_\chi$ is invariant,
+and its coordinate in the invariant basis
+$\sqrt h\,e_\chi$ is $\beta_\chi/\sqrt h$.
+Theorem~6.6 uses precisely $\beta_\chi$, rather than
+$\beta_\chi/\varphi(D)$. Theorem~9.7 applies here since
+$1\le r=r'=1\le k-1=1$; it has no restriction that $p$ be odd.
+The dual form $f^*$ in Theorem~6.6 equals $f$, because the elliptic
+newform has rational coefficients.
+
+In the real-period convention,
+$L_*(h)=\sqrt{|h|}L(E^h,1)/|\Omega_E^\epsilon|$, up to the
+fixed rational period comparison already included in $b_\epsilon$.
+For $h>0$,
+$\Omega_E^+\sqrt h=|\Omega_E^+|\sqrt{|h|}$; for $h<0$,
+$\Omega_E^-\sqrt h=-|\Omega_E^-|\sqrt{|h|}$.
+Consequently
+\[
+ \frac{L(E^h,1)}{\Omega_E^\epsilon\sqrt h}
+     =\frac{L_*(h)}{h}
+\]
+with the same fixed period comparison. This proves the signed
+factor in (K14), not only its valuation. For a primitive quadratic
+character, $\tau(\chi)^2=\Delta_h$ and
+$\tau(\chi)/\sqrt h$ equals a fixed choice of
+$\sqrt{\Delta_h/h}$. Changing from its Gauss basis to the displayed
+invariant basis multiplies the coordinate by this ratio, which
+is one or two up to sign. In particular the discriminant-$4h$
+case adds no factor depending on the number of odd conductor primes.
+
+

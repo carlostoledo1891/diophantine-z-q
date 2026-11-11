@@ -1,0 +1,134 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "status": "accepted_bounded_source_roles",
+  "target": {
+    "path": "v14-main-specification-source-index-003/MANIFEST.json",
+    "sha256": "8b58a60498d827ec3c817bd8723988c6b9965d3316ad6606292ef9517044f9ce"
+  },
+  "compared_at": "2026-11-09T08:47:23.799Z",
+  "reading": "Read full main209–321, exact S01–S03 catalogue12979–12981, and full independent normalization replay receipt f01470f3. Compared the five existing actual source applications.",
+  "findings": [
+    "Line219 is now an explicit construction/semantic-input declaration; normalization only establishes equality of polynomial-defining data.",
+    "Literal private-witness scope, rational four squares, division polynomial normalization, catalogue existence and M0 bound keep distinct actual use bindings.",
+    "Overlapping catalogue306–308 and M0 306–320 ranges represent distinct input applications; no claim that each source line occurs exactly once in this packet.",
+    "The missing SOURCE_MAP.json navigation target remains explicit and requires final navigation repair; no substitute was assumed."
+  ],
+  "checks": [
+    {
+      "id": "SRC-MAIN-SPEC-209-232",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-233-233",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-234-257",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-258-269",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-270-277",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-278-304",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-305-305",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-306-308",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-306-320",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    },
+    {
+      "id": "SRC-MAIN-SPEC-321-321",
+      "raw": true,
+      "consumer": true,
+      "bindings": true
+    }
+  ],
+  "source_roles": {
+    "declaration": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 219,
+      "end_line": 219,
+      "excerpt_sha256": "a884719fc84934a4021c7c5bbe0631a4b0233eefd34a1c7504cce9bb4c90768c"
+    },
+    "catalogue": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 12979,
+      "end_line": 12981,
+      "excerpt_sha256": "a6c1ab256f254995c7b81f57a9d704d650db78c53abb9b826d35d2c6802e1953"
+    },
+    "sources": [
+      {
+        "id": "S01",
+        "role": "Outer construction",
+        "current_artifact": {
+          "path": "construction/ordinary-integer-polynomial.js",
+          "sha256": "a0f2c5915d479fbf4321e94c7d19b24b58eb8d618917a7b5a87fdb6943690846"
+        },
+        "status": "declared source requirement; not discharged by normalization",
+        "historical_basename": "ordinary-integer-polynomial.js.txt"
+      },
+      {
+        "id": "S02",
+        "role": "Substitution semantics",
+        "current_artifact": {
+          "path": "construction/rational-circuit-translator.js",
+          "sha256": "d0c389916b10e8523877026dd89aa0163c1fe9fecc7a129f61231ff5683a4bbd"
+        },
+        "status": "declared source requirement; not discharged by normalization",
+        "historical_basename": "rational-circuit-translator.js.txt"
+      },
+      {
+        "id": "S03",
+        "role": "Fixed constructors",
+        "current_artifact": {
+          "path": "construction/finite-polynomial-expressions.js",
+          "sha256": "983a82e0a01d6bf7a19fef1d5f7e6a3a0493fb0b0592f283a073b0d147965a18"
+        },
+        "status": "declared source requirement; not discharged by normalization",
+        "historical_basename": "finite-polynomial-expressions.js.txt"
+      }
+    ],
+    "navigation_pending": "The main text names construction/SOURCE_MAP.json, which is absent in the current tree. Resolve its navigation target in the final manuscript navigation change; no replacement source map has been assumed."
+  },
+  "limits": "Does not supply S01–S03 semantic correctness, false-multiplication exclusion, new computation replay or final navigation completeness."
+}

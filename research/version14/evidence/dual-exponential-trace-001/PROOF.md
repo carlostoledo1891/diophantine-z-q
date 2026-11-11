@@ -1,0 +1,19 @@
+# Dual exponential and finite trace
+
+Let K be a finite extension of Q_p, let L/K be finite, and let V be a finite-dimensional continuous de Rham representation of G_K. Use V restricted to G_L, not an unrelated representation. The application uses the original representation of the fixed elliptic newform. This is a rational finite-extension statement, not an integral lattice or infinite-tower comparison.
+
+The published input is Kato, Astérisque 295 (2004), section9.2 and section9.3, printed p187 (the definition of the cyclotomic logarithm continues on p188). Section9.2 identifies D_dR(L,V) with L tensor_K D_dR(K,V). Section9.3 defines exp* by the natural coefficient map H1(K,V) -> H1(K,B_dR^+ tensor V), followed by the inverse of cup product with log(chi_cyclo) from H0(K,B_dR^+ tensor V). Its target is D_dR^0(K,V). We use exactly this normalization at both fields.
+
+Put M=B_dR^+ tensor V and alpha=log(chi_cyclo). The class alpha on G_L is the restriction of the class on G_K. Finite-coset corestriction commutes with the coefficient map V -> M. It also satisfies cor(res(alpha) cup m)=alpha cup cor(m), for m in H0(L,M). Explicitly, put G=G_K, H=G_L and choose left coset representatives r_i. Write g r_i=r_j h_i. For c(h)=alpha(h)m, the corestriction cocycle is sum_i r_j c(h_i). Since alpha(h_i)=alpha(g)+alpha(r_i)-alpha(r_j), this sum is alpha(g)Tr(m)+g b-b, where b=sum_i alpha(r_i)r_i m. Indeed H fixes m, so r_j m=g r_i m, and j permutes the representatives. The last two terms are the explicit coboundary of b. This proves the degree-one projection formula. All sums are finite and continuous; no discrete-coefficient approximation to B_dR^+ is invoked.
+
+If z belongs to H1(L,V) and m=exp*_L(z), the image of z in H1(L,M) is res(alpha) cup m. Applying corestriction and the preceding formula shows that the image of cor(z) in H1(K,M) is alpha cup cor(m). Inverting Kato's same cup-product isomorphism gives exp*_K(cor(z))=cor(m).
+
+On H0(L,M), corestriction is the sum of the conjugate embeddings. Under the section9.2 identification L tensor_K D_dR(K,V), this is Tr_(L/K) tensor1: the second factor is G_K-invariant and the first factor is acted on by the embeddings of L. Thus exp*_K(cor(z))=Tr_(L/K)(exp*_L(z)). The sum preserves filtration zero, so this statement has the stated target D_dR^0(K,V).
+
+For the actual character-weighted application, let chi be the finite quadratic character and put W=V tensor Q_p e_chi, with g(e_chi)=chi(g)e_chi. Take the conductor field L so that chi restricts trivially to G_L. The representation W is de Rham: over L it is the de Rham representation V with a constant one-dimensional factor, and section9.2 states that being de Rham descends across a finite extension. Over L, naturality of the coefficient map and of cup product with alpha gives exp*_(L,W)(z_D tensor e_chi)=exp*_(L,V)(z_D) tensor e_chi.
+
+Apply the proved trace identity to W, not to an unrelated untwisted endpoint. Under the tensor identification over the conductor field, each embedding g sends this last vector to chi(g) g(exp*_(L,V)(z_D)) tensor e_chi. Thus the trace is precisely the unnormalized chi-weighted sum. It belongs to D_dR^0(K,W); its later coordinate in the invariant basis sqrt(h)e_chi is a separate basis calculation. In particular the use of the original V to compute exp*(z_D) over L does not replace W by V at the descended endpoint.
+
+For a finite product of completions, apply this identity to each field factor and add. Localization of the global corestriction is the sum of these local corestrictions, by the finite-coset decomposition. This gives exactly the character-weighted sum in current main13591–13596. No field-degree or character-group-order factor is divided out.
+
+The input supplies only finite-extension functoriality. The actual reciprocity value, retained smoothing, coefficient inverse limits, cyclotomic norm-compatible classes, and local periods remain separate inputs or calculations.

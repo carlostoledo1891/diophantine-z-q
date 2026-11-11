@@ -1,0 +1,96 @@
+{
+  "author": "/root/v14_sign_conductor",
+  "rows": [
+    {
+      "id": "THETA-REAL-FINITE-TATE-PAIRING",
+      "source": {
+        "title": "Selmer Complexes",
+        "authors": "Jan Nekovar",
+        "version": "Asterisque310(2006), published volume",
+        "path": "work/nekovar-selmer-complexes-2006.pdf",
+        "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+        "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+      },
+      "source_clause": "5.7.1.4",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14247,
+        "end_line": 14265,
+        "excerpt_sha256": "bd2c903f04d27d030f9163dd27d8888799a66db544d94caca3e4970574d9b669"
+      },
+      "available": "For every finite discrete Z/2^nZ module of Gal(C/R), cup product gives perfect pairings between Tate cohomology in degrees i and2-i of the module and its Tate dual, with values Z/2Z.",
+      "needed": "For M=E^h[2^n], the real degree-one pairing is perfect. The separately computed minus-line Kummer subgroup is its own annihilator.",
+      "argument": "The Weil pairing identifies the finite module with its Tate dual. The actual rational two-torsion gives integral plus/minus eigenlattices as stated in the caller. Its explicit rectangular-lattice Kummer computation gives the minus line of order2. H1 has the two order2 summands from these eigenlattices. Pairing two cocycles valued in the same minus eigenline gives zero by the alternating Weil pairing. The line is therefore isotropic and has half the dimension of this nondegenerate two-dimensional F2 space, hence is its own annihilator.",
+      "incoming": [
+        "The actual elliptic Weil pairing and rational full two-torsion.",
+        "The explicit real Kummer calculation and integral eigenlattice decomposition in the caller."
+      ],
+      "limit": "This uses degree-one Tate cohomology, which equals ordinary H1. It does not replace ordinary H0 by Tate H0 or discard the real degree-zero summand."
+    },
+    {
+      "id": "THETA-FINITE-POITOU-TATE-WITH-REAL-PLACES",
+      "source": {
+        "title": "Selmer Complexes",
+        "authors": "Jan Nekovar",
+        "version": "Asterisque310(2006), published volume",
+        "path": "work/nekovar-selmer-complexes-2006.pdf",
+        "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+        "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+      },
+      "source_clause": "5.7.1.6",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14267,
+        "end_line": 14296,
+        "excerpt_sha256": "1d2552e8d6e3041398017f0e269ba5fd6315e8ed8cd3f9154d851a52e4e96678"
+      },
+      "available": "For a finite discrete Z/2^nZ[G_K,S] module, the finite Poitou–Tate sequence is exact with the displayed finite local terms, real Tate local terms, and Tate-dual global terms.",
+      "needed": "Apply the finite sequence to the actual E^h[2^n] over Q and the fixed support S before imposing the computed orthogonal Kummer conditions and passing to compact/discrete limits.",
+      "argument": "The support contains2, infinity and all ramification of this finite torsion module. The module is finite and discrete. The elliptic Weil pairing identifies its Tate dual. Thus all finite-level terms and arrows are those of the source. The real H1 and H2 terms agree with ordinary cohomology in these positive degrees. Retain the real H2 term. The preceding local Kummer calculations, the subsequent inverse/direct limit passage, and the resulting exact length identity are separate deductions, not assertions supplied by this finite theorem.",
+      "incoming": [
+        "S contains all ramification and all places above2 and infinity.",
+        "Elliptic Weil self-duality.",
+        "Local orthogonal Kummer conditions at finite and real places, and the explicit compatible limit passage."
+      ],
+      "limit": "The source alone does not identify the limiting Selmer cone or prove corank zero, finiteness of Sha, or the claimed length formula."
+    },
+    {
+      "id": "THETA-HIGH-DEGREE-REAL-LOCALIZATION",
+      "source": {
+        "title": "Selmer Complexes",
+        "authors": "Jan Nekovar",
+        "version": "Asterisque310(2006), published volume",
+        "path": "work/nekovar-selmer-complexes-2006.pdf",
+        "sha256": "61c84e5ad3252a2e520747215ac57a282addc2b58c824a3637bcd77bbe02153f",
+        "locator": "5.7.1.4,5.7.1.6,5.7.1.7, printed131"
+      },
+      "source_clause": "5.7.1.7",
+      "consumer_location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+        },
+        "start_line": 14290,
+        "end_line": 14296,
+        "excerpt_sha256": "aa98496ff2fd2ba6553145eafa4ac28b903b5eaa3e4402799d7ce99898c6afc9"
+      },
+      "available": "For every such finite module and i>2, restriction identifies global H^i with the sum of real local H^i; the finite local terms vanish.",
+      "needed": "At finite coefficient level the high-degree terms are exactly real local terms, supplying the termination by real localization used in the caller.",
+      "argument": "Use K=Q and the same E^h[2^n] and support. There is one real place. The source map is the actual localization map used in the cone, so it identifies the high-degree global tail with that real tail. Passing to the compatible compact/discrete system remains a separate stated step.",
+      "incoming": [
+        "Same finite module/support as in the preceding row.",
+        "Compatibility of all finite-level maps in the caller."
+      ],
+      "limit": "No finite cohomological dimension of G_Q at2 is asserted; the real tail is explicitly retained."
+    }
+  ]
+}

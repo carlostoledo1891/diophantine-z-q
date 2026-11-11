@@ -1,0 +1,149 @@
+{
+  "author": "/root/v14_sign_conductor",
+  "rows": [
+    {
+      "id": "CALIBRATION-SAME-CLASS-K3",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14338,
+          "end_line": 14348,
+          "excerpt_sha256": "1ae6518953590dc433ba6a8db856bc8a8af5aea3cab241a553dd6da058beda6e"
+        }
+      ],
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 13590,
+          "end_line": 13676,
+          "excerpt_sha256": "aebc3037c435b0dabfb8fc71d073d33f27f714311968e864400966b5fc07efd7"
+        }
+      ],
+      "accepted_inputs": [
+        {
+          "path": "v14-dual-exponential-trace-001/REVIEWER-RECONCILIATION-REVIEW.json",
+          "sha256": "52fd84e34ca5b8d3360afbd121e12a82e3d7f07e11c8314a55e2d513e95d3f32"
+        },
+        {
+          "path": "v14-local-twist-review-arithmetic-001/APPLICATION002-REVIEW.json",
+          "sha256": "764bbe95124fdfe9c7dd6e9aba2a221a2c10ea8787ff4a6693daac2bc49dd513"
+        }
+      ],
+      "argument": "This is downstream consumption of the already proved K3 for the retained class z=F_E(Z_F)_h, not an input to its own proof. The actual primitive trace and sqrt(h)e_chi comparison occur in13590–13676. At each unused good q its factor has value #E^h(F_q)/q; q is odd so its2-adic valuation is exactly v2#E^h(F_q). Fixed smoothing, original-support and F_E(0) contributions go into the same fixed epsilon bound. The local-twist source requires the adopted minimal invariant differential or dual convention; no arbitrary rescaling is allowed.",
+      "limits": "Same fixed class, basis, local types and fixedF_E; no new Euler system or quantitative uniformity across E."
+    },
+    {
+      "id": "CALIBRATION-GOOD-PRIME-TORSION",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14350,
+          "end_line": 14354,
+          "excerpt_sha256": "3d2dbd5806918916ba33aafc135afd7df821b1c100e875bb7e7ff9e117e95689"
+        }
+      ],
+      "source_inputs": [
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-integral-map-current/SOURCE-CONNECTIONS.md",
+              "sha256": "c220b352d3be0ef26a3b0475b141e2b43c239095e8a0430156670f2de4adc1f6"
+            },
+            "start_line": 9,
+            "end_line": 9,
+            "excerpt_sha256": "4bd4b5bdec633e7baa5a19cfa57b4a9c783dc1b28d4ec3377d98a6d50933dd20"
+          },
+          "part": "general BLR mapping property for a good abelian scheme"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/b11-integral-model-v1/MARKING-DESCENT.md",
+              "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469"
+            },
+            "start_line": 15,
+            "end_line": 17,
+            "excerpt_sha256": "7ada7876c05ea5d077f98fba2bc724e8d564396077b28c34d01df8b29b3c565e"
+          },
+          "part": "general proof that[n] is finite etale when n is invertible"
+        },
+        {
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-kernel-specialization-current/source-statements/STACKS-04GK.md",
+              "sha256": "b3da49274324f40e5ad3e3207ca330e0c4b972e5926ba0e5f8f65fb88d60be56"
+            },
+            "start_line": 5,
+            "end_line": 5,
+            "excerpt_sha256": "cd2e461da338fa12c65c11234142c0edd08134939faa9fbfd20b1b50f5c7b568"
+          },
+          "part": "henselian finite-etale equivalence"
+        }
+      ],
+      "argument": "For an unused odd good prime q, [2^n] on the smooth good elliptic scheme is finite etale. Henselian finite-etale equivalence identifies the generic and special geometric2^n-torsion with residue Frobenius. Taking rational invariants gives E^h(Q_q)[2^n]=E^h(F_q)[2^n]; passing to the increasing union yields g_q=v2#E^h(F_q). This reuses only the general good-scheme finite-etale and henselian input, not the detector witness or its Frobenius-square condition. At an active odd good prime, the original E torsion representation is unramified and the twisting character is ramified quadratic. An inertia element with character-1 forces any invariant point of D=E[2^infinity] to satisfy2P=0. Conversely original E[2] is rational and quadratic twisting acts trivially on it; hence all of E[2] is G_Qq-fixed in the twist and D^G_Qq=D[2], of length2. For the finitely many fixed old primes (including2), there are finitely many local squareclasses; each local torsion group is finite, so the bounds are fixed. Global torsion injects into local torsion at2 by the field inclusion, not by reduction at2.",
+      "limits": "q odd and good for original E; active twist ramified quadratic; full rational E[2]. General bad-prime invariants are not replaced by this formula.",
+      "local_finiteness_review": {
+        "path": "v14-local-h2-review-arithmetic-001/REVIEW.json",
+        "sha256": "2e6936dbcf1edea0dd02aa4b04c0024119d3d6e8c616180cdd792d9e75156cbf"
+      }
+    },
+    {
+      "id": "CALIBRATION-G1-NUMERICAL-SUBSTITUTION",
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14355,
+          "end_line": 14370,
+          "excerpt_sha256": "2a1d95b409924e9083e9391036d1fdcee4a091a7a574eddf1ab1b3e7737b2acc"
+        }
+      ],
+      "source_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14173,
+          "end_line": 14214,
+          "excerpt_sha256": "19dd9f6a9c3947c1c6e32df776153383845d217c3d3adbd707951f0d7742baa1"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14221,
+          "end_line": 14243,
+          "excerpt_sha256": "b6f0f26df84fa8692ead184ddf94979a5a308d3e8045ae38b0399ca21bc2e6c1"
+        }
+      ],
+      "argument": "The accepted saturation/length calculation cancels m and a_s before specialization. Substitute the same-class K3 and the preceding unused/active torsion values. Unused values cancel pairwise and each active good prime contributes exactly2, yielding E8. Nonzero L_* is handled by the separate forward-rank invocation. With G=1 the already proved integral scalar bound E5 applies to its central value, giving E9; no binary-family dimension or new uniform bound is introduced.",
+      "limits": "Consumes K2/K3, the accepted real-limit cancellation and the separate forward-rank source. It does not prove any of those by the numerical conclusion.",
+      "review": {
+        "path": "v14-real-limit-reconciliation-003/REVIEWER-REVIEW.json",
+        "sha256": "d17e44746d3ae5128597808059513384ebd20830e90e9d73b876d75e3733a5e1"
+      }
+    }
+  ]
+}

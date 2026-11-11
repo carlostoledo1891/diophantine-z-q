@@ -1,0 +1,109 @@
+{
+  "schema": "bounded-transport-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T08:27:07.457Z",
+  "targets": [
+    {
+      "path": "v14-current-source-scope-012/MANIFEST.json",
+      "sha256": "314db6d71b5ded31af6d2c1fba45595f2769004a35ea3d47c90be079a26e1103"
+    },
+    {
+      "path": "v14-current-profile-scope-010/MANIFEST.json",
+      "sha256": "fdce8c1fd72527efecb7f9f23f96bd06acbb587d19a076602670aad430705d2b"
+    }
+  ],
+  "decision": "accepted exact CM-reduction source and profile append",
+  "checks": [
+    {
+      "id": "source",
+      "ok": true
+    },
+    {
+      "id": "initial",
+      "ok": true
+    },
+    {
+      "id": "initial_passages",
+      "ok": true
+    },
+    {
+      "id": "reconciliation",
+      "ok": true
+    },
+    {
+      "id": "review",
+      "ok": true
+    },
+    {
+      "id": "installation",
+      "ok": true
+    },
+    {
+      "id": "prior109",
+      "ok": true
+    },
+    {
+      "id": "profile110",
+      "ok": true
+    }
+  ],
+  "deltas": {
+    "source": [
+      {
+        "p": "/state",
+        "a": "Explicit current source scope: original92 preserved, ten added proof notes and seven subsequent individual sources, through eight disclosed later source extensions. Full source-side and premise closure remain separate.",
+        "b": "Explicit current source scope: original92 preserved, ten added proof notes and eight subsequent individual sources, through nine disclosed later source extensions. Full source-side and premise closure remain separate."
+      },
+      {
+        "p": "/current_sources/109",
+        "b": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md",
+          "sha256": "5a8f69fef00fc38d9bf01e5c0edb722e99e8810e74f027f6ea31841873e2ee8f"
+        }
+      },
+      {
+        "p": "/ninth_source_extension",
+        "b": {
+          "source": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md",
+            "sha256": "5a8f69fef00fc38d9bf01e5c0edb722e99e8810e74f027f6ea31841873e2ee8f"
+          },
+          "scope": "General-conductor CM supersingularity input only. Four fresh source observations with disclosed exposure; subgroup kernels, integral models, parametrization and full reduction congruence remain separate.",
+          "initial": {
+            "path": "v14-final-composite-review-001/cm-reduction-source-initial-001/INITIAL-SOURCE-USES.json",
+            "sha256": "3023ef0dda5fdbc3f5e695e952c96948fba49d6f9b22ccc2c2e4fd23f451e135"
+          },
+          "initial_passages": {
+            "path": "v14-final-composite-review-001/cm-reduction-source-initial-001/INITIAL-PASSAGES.json",
+            "sha256": "79808ee19885256ca2da3f28105bf7e1263ff983d96894d56a93cccab44a65bb"
+          },
+          "reconciliation": {
+            "path": "v14-cm-reduction-reconciliation-author-001/RECONCILIATION.json",
+            "sha256": "774f13ae535a49145799e3b60c4d5cdc6278d6a13b8c99c50d54e4bbc7755103"
+          },
+          "review": {
+            "path": "v14-final-composite-review-001/CM-REDUCTION-FOUR-FRESH-RECONCILIATION-REVIEW.json",
+            "sha256": "600ca427f47dd9ecf4f9397162f01c200e01e98e7d74a0e9e8cb78a82d51abbf"
+          },
+          "installation": {
+            "path": "v14-heegner-cm-reduction-install-root-001/INSTALLATION.json",
+            "sha256": "72f5e2d7e259187050833e8b963e3d45c3205acb600ccc30baaee84fc6629786"
+          }
+        }
+      }
+    ],
+    "profile": [
+      {
+        "p": "/proof_paths/109",
+        "b": "research/version14/evidence/heegner-cm-reduction-current/SOURCE-CONNECTION.md"
+      }
+    ]
+  },
+  "limits": [
+    "Prior109 source prefix and earlier extension objects unchanged; seven profile claim roots unchanged.",
+    "New source explicitly binds true fresh four-observation initial, reconciliation, independent comparison and installation.",
+    "General-order supersingularity only; no kernel/model/parametrization or whole-source closure inferred."
+  ]
+}

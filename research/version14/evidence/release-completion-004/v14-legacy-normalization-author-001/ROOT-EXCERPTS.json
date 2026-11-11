@@ -1,0 +1,229 @@
+{
+  "source": {
+    "path": "docs/manuscript-revisions/version14/APPLICATIONS.json",
+    "sha256": "b6afe631461d60dec2b23bf0fea9c492726bd6605af535497fd72beb39f9a9f1"
+  },
+  "keys": [
+    "selected",
+    "baselineInventory",
+    "baselineManuscript",
+    "routeSelection",
+    "r6Relation",
+    "r6Manifest",
+    "repairHistory",
+    "finalArtifacts",
+    "schema",
+    "status",
+    "manuscript",
+    "addition",
+    "edits",
+    "externalSources",
+    "existingSourceCatalog",
+    "assemblyOrder",
+    "applications",
+    "edgeBindings",
+    "mathematicalAcceptanceClaim",
+    "selectedApplicationMap",
+    "newInternalEntries",
+    "historicalSourceScope"
+  ],
+  "first_two": [
+    {
+      "id": "V13-MODEL",
+      "obligations": {
+        "required_inputs": "The stated curve over Q(sqrt(2)), the fixed generator P, its halving R0, rational two-torsion, and the inherited rank and squareclass calculations.",
+        "constructed_inputs": "K=Q(rho), rho²=2, D=(3-rho)², E:y²=x³-Dx, R0=(1+rho,2rho), P=2R0. The roots are restored as nonzero odd integer multiples of P. H and the auxiliary points use E(K)=Z R0+E[2](K).",
+        "domain_and_index_coverage": "Roots remain in2E(K); U_i,V_i can be in the larger reciprocal chart, which includes O and omits (0,0). Their free labels are k_i/2 and can be half-integral. The enlargement is not applied to roots.",
+        "transition_maps_and_scalars": "The retained square abscissa and oriented root equation recover b_i=y_i/a_i; the independent squareclasses restore integral root labels. Doubling the group identities kills both H and auxiliary torsion.",
+        "identity_of_consumed_object": "K=Q(rho), rho²=2, D=(3-rho)², E:y²=x³-Dx, R0=(1+rho,2rho), P=2R0. The roots are restored as nonzero odd integer multiples of P. H and the auxiliary points use E(K)=Z R0+E[2](K). The bound downstream argument consumes these same objects and the normalization specified in the transition statement.",
+        "exceptional_cases": "A nonzero root abscissa follows from the retained product inverse before division by a_i. Low tests exclude the two represented nonidentity2-torsion points before ratios.",
+        "affected_downstream_claims": "The integer root labels used in parity, root heights and final input integrality, and the half-integral auxiliary labels used in formal-log transfer.",
+        "source_version_and_conventions": "K=Q(rho), rho^2=2; D=(3-rho)^2; f=1/x and z=-x/y. At consumed places p>76176 use the inherited unramified valuation normalization and conjugation conventions. C=3^(2^25). Exact file, span and prior-source record hashes are supplied in source and historical evidence. Preserve all Version12 source-status/errata qualifications.",
+        "validation_and_acceptance_scope": "Author record for the exact Version14 manuscript and selected corrected299/ordinary314 artifacts. Historical component reviews retain their original scope. Structural checking is not mathematical proof; no final contract approval or renewed audit of the entire inherited argument is asserted here."
+      },
+      "keys": [
+        "id",
+        "priorRecordSha256",
+        "sourceVersionAndConventions",
+        "obligations",
+        "dependencyDisposition"
+      ]
+    },
+    {
+      "id": "V13-HEIGHT",
+      "obligations": {
+        "required_inputs": "Three contact radicals, the retained product-height scales and nonzero integer N divisible by their kth powers.",
+        "constructed_inputs": "The same three scales A0=1,A1=C0²,A2=(1+C1²)² from the product of the four actual root abscissae, the same B=max|n_i| and Hcal<2^2093966.",
+        "domain_and_index_coverage": "Use the height implication only for a nonzero integer numerator N and the restored nonzero odd integral root labels; the auxiliary all-E domain does not enter the abscissa product.",
+        "transition_maps_and_scalars": "The shifted anchor first restores the former scalar divisibility and lower bound B>(40Hcal)^10. Then the same k-th-power radical divisibility gives B²-6<7Hcal|N|^(19/k).",
+        "identity_of_consumed_object": "The same three scales A0=1,A1=C0²,A2=(1+C1²)² from the product of the four actual root abscissae, the same B=max|n_i| and Hcal<2^2093966. The bound downstream argument consumes these same objects and the normalization specified in the transition statement.",
+        "exceptional_cases": "If all three contact radicals were1, the height inequality for N=1 contradicts the anchor before H or logarithms. Zero numerators are handled as the desired equalities, not submitted to a height bound.",
+        "affected_downstream_claims": "Pre-H exceptional-branch exclusion and, after logarithm congruences, the retained Lucas and input-equality height contradictions.",
+        "source_version_and_conventions": "K=Q(rho), rho^2=2; D=(3-rho)^2; f=1/x and z=-x/y. At consumed places p>76176 use the inherited unramified valuation normalization and conjugation conventions. C=3^(2^25). Exact file, span and prior-source record hashes are supplied in source and historical evidence. Preserve all Version12 source-status/errata qualifications.",
+        "validation_and_acceptance_scope": "Author record for the exact Version14 manuscript and selected corrected299/ordinary314 artifacts. Historical component reviews retain their original scope. Structural checking is not mathematical proof; no final contract approval or renewed audit of the entire inherited argument is asserted here."
+      },
+      "keys": [
+        "id",
+        "priorRecordSha256",
+        "sourceVersionAndConventions",
+        "obligations",
+        "dependencyDisposition"
+      ]
+    }
+  ],
+  "selected_source": {
+    "path": "docs/manuscript-revisions/version14/evidence/selected-entries.json",
+    "sha256": "8df367e0fb28f624a3ab019cb4935f66f6315e97ae5840854e2c33512e6875bc"
+  },
+  "selected_keys": [
+    "schema",
+    "manuscript",
+    "entries",
+    "repairHistory",
+    "scope"
+  ],
+  "selected_first_two": [
+    {
+      "entryId": "N01-KUMMER-AFFINE",
+      "disposition": "current_application",
+      "justification": "Retained final argument or exact source-specific transformation; bind its actual final text and consumers before acceptance.",
+      "internalOrExternal": "internally proved transformation or application; no new external theorem",
+      "historicalAuthorProof": [
+        {
+          "path": "work/quartic-under300-20261107/03-depth/REPORT392t.md",
+          "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd",
+          "heading": "## Equations and meanings",
+          "startLine": 15,
+          "endLine": 43
+        },
+        {
+          "path": "work/quartic-under300-20261107/03-depth/REPORT392t.md",
+          "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd",
+          "heading": "## Exact reverse reconstruction",
+          "startLine": 50,
+          "endLine": 67
+        },
+        {
+          "path": "work/quartic-under300-20261107/03-depth/REPORT392t.md",
+          "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd",
+          "heading": "## Forward map and completeness",
+          "startLine": 68,
+          "endLine": 79
+        }
+      ],
+      "portableProofSpans": [
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/REPORT392t.md",
+          "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd",
+          "start_line": 15,
+          "end_line": 43,
+          "sha256_raw_utf8_span": "ad264a5fbd5449be3e02d7e0d04082686be7e41d62365b2112733763870ecb0b"
+        },
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/REPORT392t.md",
+          "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd",
+          "start_line": 50,
+          "end_line": 67,
+          "sha256_raw_utf8_span": "1970d6f51504089b907160c0153a23f6823ce5d32d9ed832a0415818912734a4"
+        },
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/REPORT392t.md",
+          "sha256": "b96a442d27a62189ef8c3ffdbe2b6ca368cc8b5e657a05cf5bf31735a19cfcfd",
+          "start_line": 68,
+          "end_line": 79,
+          "sha256_raw_utf8_span": "be1c3987472325fe3812f9668af6e59594fa9d5bc463eb2c9b1ac37d9e8f6ecf"
+        }
+      ],
+      "historicalRecordedReview": {
+        "path": "work/quartic-under300-20261107/01-elimination/review392t/REVIEW.md",
+        "sha256": "054a137adf03fa23f58ecb1f75e2365d2e2a32f0382d6da4cb3d3949edfb2923"
+      },
+      "portableReviewPins": [
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/01-elimination/review392t/REVIEW.md",
+          "sha256": "054a137adf03fa23f58ecb1f75e2365d2e2a32f0382d6da4cb3d3949edfb2923"
+        }
+      ],
+      "currentDerivationSpans": [
+        {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "b8421edc569a832c9c4271e3592b10df58e75d25f4dc5619c2b4a6766157044d",
+          "start_line": 21707,
+          "end_line": 21733,
+          "sha256_raw_utf8_span": "1a58df04f15366340e29df6a8ecbf14505ecca52d34faa474b7c14b7c258180d"
+        }
+      ],
+      "historicalComponents": [
+        "kummer392t"
+      ],
+      "selectedComponents": [
+        "kummer392t"
+      ],
+      "newAcceptanceCreated": false
+    },
+    {
+      "entryId": "N02-SQUARED-H-RECONSTRUCTION",
+      "disposition": "current_application",
+      "justification": "Retained final argument or exact source-specific transformation; bind its actual final text and consumers before acceptance.",
+      "internalOrExternal": "internally proved transformation or application; no new external theorem",
+      "historicalAuthorProof": [
+        {
+          "path": "work/quartic-under300-20261107/01-elimination/squared-h/REPORT.md",
+          "sha256": "18682f8f61cbf7642e074a7e47641fb91aa1023b8c81c29edf233ca232d4f02a",
+          "heading": "## Equations and exact interface",
+          "startLine": 18,
+          "endLine": 41
+        },
+        {
+          "path": "work/quartic-under300-20261107/01-elimination/squared-h/REPORT.md",
+          "sha256": "18682f8f61cbf7642e074a7e47641fb91aa1023b8c81c29edf233ca232d4f02a",
+          "heading": "## Reconstruction on Q,U nonzero",
+          "startLine": 42,
+          "endLine": 57
+        }
+      ],
+      "portableProofSpans": [
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/01-elimination/squared-h/REPORT.md",
+          "sha256": "18682f8f61cbf7642e074a7e47641fb91aa1023b8c81c29edf233ca232d4f02a",
+          "start_line": 18,
+          "end_line": 41,
+          "sha256_raw_utf8_span": "9e56656521510ff0fed17d1cd21347d47176cfb51702ecd6a96f4f79180ee597"
+        },
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/01-elimination/squared-h/REPORT.md",
+          "sha256": "18682f8f61cbf7642e074a7e47641fb91aa1023b8c81c29edf233ca232d4f02a",
+          "start_line": 42,
+          "end_line": 57,
+          "sha256_raw_utf8_span": "0182886d6c5061f1224aed29c00eeb443c9d4ee3d9287b805394ec7c61f6c1ea"
+        }
+      ],
+      "historicalRecordedReview": {
+        "path": "work/quartic-under300-20261107/03-depth/review390/REVIEW.md",
+        "sha256": "61b755da24b3934ca8725159ac96c59c8b5090a4c7a032fe5487646853e7a667"
+      },
+      "portableReviewPins": [
+        {
+          "path": "quartics/quartic-299-314/sources/work/quartic-under300-20261107/03-depth/review390/REVIEW.md",
+          "sha256": "61b755da24b3934ca8725159ac96c59c8b5090a4c7a032fe5487646853e7a667"
+        }
+      ],
+      "currentDerivationSpans": [
+        {
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "b8421edc569a832c9c4271e3592b10df58e75d25f4dc5619c2b4a6766157044d",
+          "start_line": 21735,
+          "end_line": 21747,
+          "sha256_raw_utf8_span": "96fa101a3d3e3da2c78da932304591968d08c5451a9181a9f9096640889c0e06"
+        }
+      ],
+      "historicalComponents": [
+        "squaredH390"
+      ],
+      "selectedComponents": [
+        "squaredH390"
+      ],
+      "newAcceptanceCreated": false
+    }
+  ]
+}

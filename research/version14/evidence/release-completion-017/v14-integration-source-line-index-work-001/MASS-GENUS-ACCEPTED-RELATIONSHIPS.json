@@ -1,0 +1,946 @@
+{
+  "items": [
+    {
+      "source": {
+        "path": "v14-main15300-source-role-author-002/MASS-INDEX-SOURCE-RELATIONS.json",
+        "sha256": "d80f5b850b70abe04f4ff1137d969452e7fbc70fe6dc568a06ae92215c26d79e"
+      },
+      "review": {
+        "path": "v14-mass-index-review-root-001/REVIEW.json",
+        "sha256": "5b3d5ff1732e2a34eeeef94e5d2cbaca9f6862ed4a5ea8a9cc6921ff6348f613"
+      },
+      "original": {
+        "schema": "v14-source-role-correction/1",
+        "author": "/root/v14_h6_coverage",
+        "created_at": "2026-11-09T09:57:05.374Z",
+        "status": "author proposal requiring independent review",
+        "base_partition": "v14-main15300-source-role-author-002",
+        "current_source_sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059",
+        "transport": {
+          "original_sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+          "checked_same_raw_lines": [
+            14801,
+            16320
+          ]
+        },
+        "source_inputs": [
+          {
+            "id": "ACTIVE-KERNEL-SOURCE-DUAL-DEGREE",
+            "source_use_sha256": "c71a5e8151cb9a46d73fd801ff0c299fd5370f75cf3257dd1f537ef266c3a840",
+            "source": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-kernel-specialization-current/PROOF.md",
+                  "sha256": "9ecec72ad6682c91c8ce182e3f9e3e9c57a960b0daf96bb8e519f553ca4209ef"
+                },
+                "start_line": 7,
+                "end_line": 7,
+                "excerpt_sha256": "490a6a74c4fd7af77d707cf469957a7d343e6693532ec95e787c6d059c583d36"
+              },
+              "statement": "A degree-d elliptic isogeny has a dual with both composites [d]; multiplication [n] has degree n squared.",
+              "publication": {
+                "title": "The Arithmetic of Elliptic Curves",
+                "authors": "Joseph H. Silverman",
+                "venue": "Second edition, Springer2009",
+                "authoritative_version": "Second edition, Springer2009",
+                "locator": "III6.1–6.2 printed81–83; III6.4 printed86",
+                "corrections": "Exact source pins and retained independent proof review are recorded in PROVENANCE.json; no broader application scope inferred."
+              }
+            },
+            "available_assertion": {
+              "statement": "A degree-d elliptic isogeny has a dual with both composites [d]; multiplication [n] has degree n squared.",
+              "objects": "Elliptic curves over a field, isogenies, multiplication maps.",
+              "hypotheses": "Nonzero isogeny and nonzero integer n.",
+              "quantifiers": "Every such isogeny and multiplication map.",
+              "parameter_range": "Including characteristic dividing n.",
+              "uniformity": "Only the stated source assertion; no uniform field of definition or global quantitative bound.",
+              "constants": "Only the degree or rank expressly stated in this assertion.",
+              "normalizations": "Use the source morphisms and their actual base fields; no rescaling or change of realization.",
+              "exceptional_cases": "No omitted hypothesis or separate source input is supplied by this assertion.",
+              "limit_order": "Fix the source objects and verify the stated hypotheses before applying the conclusion."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          },
+          {
+            "id": "ACTIVE-RC-NEWFORM-HECKE-CONNECTION",
+            "source_use_sha256": "9445db4bb9e90f0986f98bfdadba66a00325ca6414576cceb7599850cbdc3c84",
+            "source": {
+              "kind": "inline",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 2588,
+                "end_line": 2657,
+                "excerpt_sha256": "1e0b0fba5a16a60c1cb5c2a3f3f98795f35ace903af833bf7b624bcada42eb7a"
+              },
+              "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+              "publication": null
+            },
+            "available_assertion": {
+              "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+              "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+              "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+              "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+              "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+              "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+              "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+              "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+              "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+              "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          },
+          {
+            "id": "ACTIVE-RC-EARLY-CST-TWO-HEIGHTS",
+            "source_use_sha256": "02daf4f096f508599368da03492423455f35b4948c96da97f22859941b7a1273",
+            "source": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14844,
+                "end_line": 14891,
+                "excerpt_sha256": "b61d342d099ce10211aff033649088141584199b159ebc241f3b20230f50341b"
+              },
+              "statement": "The explicit Gross–Zagier height formula relates the unaveraged conductor-one genus point height to the indicated Rankin derivative in the split-level setting.",
+              "publication": {
+                "title": "Explicit Gross–Zagier and Waldspurger formulae",
+                "authors": "L. Cai, J. Shu and Y. Tian",
+                "venue": "Algebra and Number Theory8(2014),published pp2524–2525 for Theorem1.1",
+                "authoritative_version": "cst: 3eef3f34a03d21575bdb352acfaa0bef2fbe3701068a65798cb89a6ae84333e7",
+                "locator": "Theorem1.1,publishedpp2524–2525",
+                "corrections": "The factorization uses Lprime(E^D,1)*L(E^h_star,1). Nontorsion at the reference and torsion at nonsimple odd-sign parameters follow with the actual fixed normalization; no class-number averaging."
+              }
+            },
+            "available_assertion": {
+              "statement": "The explicit Gross–Zagier height formula relates the unaveraged conductor-one genus point height to the indicated Rankin derivative in the split-level setting.",
+              "objects": "An actual parametrization and unaveraged conductor-one genus point over an imaginary quadratic field in the split-level Gross-Zagier setting.",
+              "hypotheses": "Actual parametrization and unaveraged point; imaginary quadratic field split at the level, conductor prime to level, no extra units, prescribed genus character.",
+              "quantifiers": "For each parametrization, imaginary field, conductor and genus character satisfying the source hypotheses, the formula relates the specified point height and Rankin derivative.",
+              "parameter_range": "Actual parametrization and unaveraged point; imaginary quadratic field split at the level, conductor prime to level, no extra units, prescribed genus character.",
+              "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+              "constants": "No new numerical constant or size bound is inferred.",
+              "normalizations": "Use the unaveraged point, the actual parametrization and the conductor factor c*sqrt(abs(disc K)). Factorization of a particular Rankin derivative, comparison of native lattices and torsion deductions are subsequent applications, not part of the generic formula.",
+              "exceptional_cases": "Use the unaveraged point, the actual parametrization and the conductor factor c*sqrt(abs(disc K)). Factorization of a particular Rankin derivative, comparison of native lattices and torsion deductions are subsequent applications, not part of the generic formula.",
+              "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          },
+          {
+            "id": "ACTIVE-GENERATOR-HEIGHT-SATURATION",
+            "source_use_sha256": "6524abe7a316d703bc11431f5abb9ee3d46b6931855ee369097a3abfd8b5ed90",
+            "source": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "docs/theorem-application-audit/applications.json",
+                  "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+                },
+                "start_line": 6978,
+                "end_line": 7020,
+                "excerpt_sha256": "b1c7dba6c093bc3aa66c50d931d631926e211b4ac0819755749d73bfe8568b63"
+              },
+              "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+              "publication": {
+                "title": "The Arithmetic of Elliptic Curves",
+                "authors": "Joseph H. Silverman",
+                "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+                "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+                "locator": "VIII Theorem9.1, following definition, Remark9.2 and Theorem9.3, pp247–249",
+                "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this canonical-height assertion."
+              }
+            },
+            "available_assertion": {
+              "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+              "objects": "An elliptic curve over a number field and its canonical height.",
+              "hypotheses": "An elliptic curve over a number field; nontorsion where strict positivity is used.",
+              "quantifiers": "Every rational point over that number field and every integer multiple.",
+              "parameter_range": "The source canonical-height setting; current application is C/K0.",
+              "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+              "constants": "No numerical duplication error or finite candidate count is supplied by this theorem.",
+              "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+              "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+              "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          }
+        ],
+        "relationships": [
+          {
+            "id": "H6-LATE-03-MASS-AND-HECKE",
+            "pending_group": "H6-LATE-PREMISE-03",
+            "consumer": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 15653,
+              "end_line": 15676,
+              "excerpt_sha256": "fbce72ca676950910f4462358666e62782f092b03399adfdfd4e7c545e9a7513"
+            },
+            "incoming": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 15049,
+                "end_line": 15085,
+                "excerpt_sha256": "2e7ba8149daf37af9f57f8e1e6e69a5e97391bf2f1967c011def57360f78dedf"
+              }
+            ],
+            "source_ids": [
+              "ACTIVE-KERNEL-SOURCE-DUAL-DEGREE",
+              "ACTIVE-RC-NEWFORM-HECKE-CONNECTION"
+            ],
+            "derivation": "At a good prime p outside the level and residue characteristic, count actual degree-p isogenies of the enhanced curves. Each cyclic neighbor kernel with target isomorphic to j gives exactly w_j target identifications, hence N_ij*w_j actual arrows. Dualization bijects these with reverse arrows: its double dual is the original arrow and [p] preserves each cyclic level subgroup since p is prime to N. Thus N_ij*w_j=N_ji*w_i, and division by w_i*w_j gives N_ij/w_i=N_ji/w_j. This is precisely self-adjointness for mass1/w_i. The actual pi is the same normalized modular parametrization used in the earlier proof15070–15085. The good Hecke identity survives its specified good reduction, multiplication by fixed L, and the additive map lambda_M, so moving the neighbor sum onto P_M gives a_p(E)P_M. Retain the separately computed norm-character factor chi_hstar(p) and local weight s; no division by a_p is made.",
+            "retained_inputs": [
+              "Actual enhanced supersingular curve/order correspondence and automorphism identification",
+              "Good-reduction extension of the actual normalized parametrization and good correspondences",
+              "Same additive finite-field map lambda_M",
+              "Local integral/nonintegral neighbor count and weight scaling15600–15660",
+              "p outside all stated support; arbitrary bad-prime or inseparable dual-neighbor claims excluded"
+            ],
+            "outgoing_not_used_as_input": [
+              "ACTIVE-THETA-T042"
+            ]
+          },
+          {
+            "id": "H6-LATE-04-NATIVE-INDEX-AND-HEIGHT",
+            "pending_group": "H6-LATE-PREMISE-04",
+            "consumer": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 15966,
+              "end_line": 15990,
+              "excerpt_sha256": "8df645ad920e32d69e13df4782abb8319edc26c068410ed8a0947c9310dcc503"
+            },
+            "incoming": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 3303,
+                "end_line": 3315,
+                "excerpt_sha256": "7bdb59655cc10fdd844fd7c39e6d4907c7c9964f2b2fbe6a890edb467746fa57"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14844,
+                "end_line": 14891,
+                "excerpt_sha256": "b61d342d099ce10211aff033649088141584199b159ebc241f3b20230f50341b"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 15019,
+                "end_line": 15043,
+                "excerpt_sha256": "7b0422106d742de09bd5c8972ccb6601b30a6aa740b33dc5c0ff142128cadc46"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 15916,
+                "end_line": 15948,
+                "excerpt_sha256": "a5d40d545937d6ca8856e86f72fe7d8118a8d0b4267a915f28eaac80ed5aefd9"
+              }
+            ],
+            "source_ids": [
+              "ACTIVE-RC-EARLY-CST-TWO-HEIGHTS",
+              "ACTIVE-GENERATOR-HEIGHT-SATURATION"
+            ],
+            "derivation": "Keep the previously established same-parameter genus-point descent and its native rank-one free lattice. If conjugation fixes its free class, the norm P+tau(P) is rational and represents twice that class. Thus the rational free subgroup contains2 times the native rank-one lattice and has index at most2; this does not claim integral equality or new rank. For P_D=m_D*G+T with the fixed L killing T, the additive integral finite-field evaluation sends L*P_D to m_D times the evaluation of L*G. Its truncated2-adic valuation therefore cannot be less than min(M,v2(m_D)); the fixed factors in O.7 and the preceding index change are absorbed into the already fixed Cdet. In the nonsimple odd-sign case the actual Rankin derivative is zero after the retained factorization, so the unaveraged CST formula gives canonical height zero. Silverman canonical-height positivity implies torsion, and the same fixed L kills it. No genus free index is defined for that torsion case.",
+            "retained_inputs": [
+              "Same actual parametrization and unaveraged genus point, split-level and prime-to-level conductor hypotheses; f(infinity)=O",
+              "Previously proved conjugation/twist descent into the native rank-one line at simple zeros",
+              "Rank and nonvanishing information at simple zeros; analytic sign and actual Rankin factorization",
+              "Uniform torsion annihilator L and O.7 with its fixed integral multiplier",
+              "Actual additive integral evaluation; no division of a mod2^M congruence or claim that finite evaluation is injective"
+            ],
+            "outgoing_not_used_as_input": [
+              "ACTIVE-THETA-T046"
+            ]
+          }
+        ]
+      },
+      "current": {
+        "schema": "v14-source-role-correction/1",
+        "author": "/root/v14_h6_coverage",
+        "created_at": "2026-11-09T09:57:05.374Z",
+        "status": "author proposal requiring independent review",
+        "base_partition": "v14-main15300-source-role-author-002",
+        "current_source_sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059",
+        "transport": {
+          "original_sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8",
+          "checked_same_raw_lines": [
+            14801,
+            16320
+          ]
+        },
+        "source_inputs": [
+          {
+            "id": "ACTIVE-KERNEL-SOURCE-DUAL-DEGREE",
+            "source_use_sha256": "c71a5e8151cb9a46d73fd801ff0c299fd5370f75cf3257dd1f537ef266c3a840",
+            "source": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "research/version14/evidence/heegner-kernel-specialization-current/PROOF.md",
+                  "sha256": "9ecec72ad6682c91c8ce182e3f9e3e9c57a960b0daf96bb8e519f553ca4209ef"
+                },
+                "start_line": 7,
+                "end_line": 7,
+                "excerpt_sha256": "490a6a74c4fd7af77d707cf469957a7d343e6693532ec95e787c6d059c583d36"
+              },
+              "statement": "A degree-d elliptic isogeny has a dual with both composites [d]; multiplication [n] has degree n squared.",
+              "publication": {
+                "title": "The Arithmetic of Elliptic Curves",
+                "authors": "Joseph H. Silverman",
+                "venue": "Second edition, Springer2009",
+                "authoritative_version": "Second edition, Springer2009",
+                "locator": "III6.1–6.2 printed81–83; III6.4 printed86",
+                "corrections": "Exact source pins and retained independent proof review are recorded in PROVENANCE.json; no broader application scope inferred."
+              }
+            },
+            "available_assertion": {
+              "statement": "A degree-d elliptic isogeny has a dual with both composites [d]; multiplication [n] has degree n squared.",
+              "objects": "Elliptic curves over a field, isogenies, multiplication maps.",
+              "hypotheses": "Nonzero isogeny and nonzero integer n.",
+              "quantifiers": "Every such isogeny and multiplication map.",
+              "parameter_range": "Including characteristic dividing n.",
+              "uniformity": "Only the stated source assertion; no uniform field of definition or global quantitative bound.",
+              "constants": "Only the degree or rank expressly stated in this assertion.",
+              "normalizations": "Use the source morphisms and their actual base fields; no rescaling or change of realization.",
+              "exceptional_cases": "No omitted hypothesis or separate source input is supplied by this assertion.",
+              "limit_order": "Fix the source objects and verify the stated hypotheses before applying the conclusion."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          },
+          {
+            "id": "ACTIVE-RC-NEWFORM-HECKE-CONNECTION",
+            "source_use_sha256": "9445db4bb9e90f0986f98bfdadba66a00325ca6414576cceb7599850cbdc3c84",
+            "source": {
+              "kind": "inline",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 2588,
+                "end_line": 2657,
+                "excerpt_sha256": "1e0b0fba5a16a60c1cb5c2a3f3f98795f35ace903af833bf7b624bcada42eb7a"
+              },
+              "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+              "publication": null
+            },
+            "available_assertion": {
+              "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+              "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+              "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+              "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+              "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+              "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+              "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+              "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+              "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+              "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          },
+          {
+            "id": "ACTIVE-RC-EARLY-CST-TWO-HEIGHTS",
+            "source_use_sha256": "02daf4f096f508599368da03492423455f35b4948c96da97f22859941b7a1273",
+            "source": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14844,
+                "end_line": 14891,
+                "excerpt_sha256": "b61d342d099ce10211aff033649088141584199b159ebc241f3b20230f50341b"
+              },
+              "statement": "The explicit Gross–Zagier height formula relates the unaveraged conductor-one genus point height to the indicated Rankin derivative in the split-level setting.",
+              "publication": {
+                "title": "Explicit Gross–Zagier and Waldspurger formulae",
+                "authors": "L. Cai, J. Shu and Y. Tian",
+                "venue": "Algebra and Number Theory8(2014),published pp2524–2525 for Theorem1.1",
+                "authoritative_version": "cst: 3eef3f34a03d21575bdb352acfaa0bef2fbe3701068a65798cb89a6ae84333e7",
+                "locator": "Theorem1.1,publishedpp2524–2525",
+                "corrections": "The factorization uses Lprime(E^D,1)*L(E^h_star,1). Nontorsion at the reference and torsion at nonsimple odd-sign parameters follow with the actual fixed normalization; no class-number averaging."
+              }
+            },
+            "available_assertion": {
+              "statement": "The explicit Gross–Zagier height formula relates the unaveraged conductor-one genus point height to the indicated Rankin derivative in the split-level setting.",
+              "objects": "An actual parametrization and unaveraged conductor-one genus point over an imaginary quadratic field in the split-level Gross-Zagier setting.",
+              "hypotheses": "Actual parametrization and unaveraged point; imaginary quadratic field split at the level, conductor prime to level, no extra units, prescribed genus character.",
+              "quantifiers": "For each parametrization, imaginary field, conductor and genus character satisfying the source hypotheses, the formula relates the specified point height and Rankin derivative.",
+              "parameter_range": "Actual parametrization and unaveraged point; imaginary quadratic field split at the level, conductor prime to level, no extra units, prescribed genus character.",
+              "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+              "constants": "No new numerical constant or size bound is inferred.",
+              "normalizations": "Use the unaveraged point, the actual parametrization and the conductor factor c*sqrt(abs(disc K)). Factorization of a particular Rankin derivative, comparison of native lattices and torsion deductions are subsequent applications, not part of the generic formula.",
+              "exceptional_cases": "Use the unaveraged point, the actual parametrization and the conductor factor c*sqrt(abs(disc K)). Factorization of a particular Rankin derivative, comparison of native lattices and torsion deductions are subsequent applications, not part of the generic formula.",
+              "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          },
+          {
+            "id": "ACTIVE-GENERATOR-HEIGHT-SATURATION",
+            "source_use_sha256": "6524abe7a316d703bc11431f5abb9ee3d46b6931855ee369097a3abfd8b5ed90",
+            "source": {
+              "kind": "published_external",
+              "application_id": null,
+              "location": {
+                "pin": {
+                  "side": "head",
+                  "path": "docs/theorem-application-audit/applications.json",
+                  "sha256": "1d53028414eefe1eeed85db566aae47b2b00d4206f3eaffeec8625f0e3c089bb"
+                },
+                "start_line": 6978,
+                "end_line": 7020,
+                "excerpt_sha256": "b1c7dba6c093bc3aa66c50d931d631926e211b4ac0819755749d73bfe8568b63"
+              },
+              "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+              "publication": {
+                "title": "The Arithmetic of Elliptic Curves",
+                "authors": "Joseph H. Silverman",
+                "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+                "authoritative_version": "Second edition2009 PDF SHA25672ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+                "locator": "VIII Theorem9.1, following definition, Remark9.2 and Theorem9.3, pp247–249",
+                "corrections": "Retained source register reports specific division-polynomial/isogeny typos elsewhere and does not claim a complete official-errata audit. Those formulas are not imported by this canonical-height assertion."
+              }
+            },
+            "available_assertion": {
+              "statement": "The canonical height of an elliptic curve over a number field is quadratic, vanishes on torsion and is positive on nontorsion; with the x-height convention,2 hhat(P)=lim_n4^(-n)h_x(2^nP).",
+              "objects": "An elliptic curve over a number field and its canonical height.",
+              "hypotheses": "An elliptic curve over a number field; nontorsion where strict positivity is used.",
+              "quantifiers": "Every rational point over that number field and every integer multiple.",
+              "parameter_range": "The source canonical-height setting; current application is C/K0.",
+              "uniformity": "Only this fixed saturation problem; no general bound for arbitrary elliptic curves.",
+              "constants": "No numerical duplication error or finite candidate count is supplied by this theorem.",
+              "normalizations": "2 hhat(P)=lim_n4^(-n)h_x(2^nP); hhat(mS+T)=m^2 hhat(S), torsion height0, positive canonical height on nontorsion.",
+              "exceptional_cases": "The finite certificate includes both quadratic roots, rational candidates and zero. Height positivity is used only after nontorsion is known. No rank oracle replaces saturation.",
+              "limit_order": "First rank and odd index, then the height bound, then exhaustive candidates, then the contradiction to quadraticity and the coordinate change."
+            },
+            "restriction": "Reuse only the expressly stated primitive or completed input, not the unrelated original consumer-specific conclusion."
+          }
+        ],
+        "relationships": [
+          {
+            "id": "H6-LATE-03-MASS-AND-HECKE",
+            "pending_group": "H6-LATE-PREMISE-03",
+            "consumer": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 15653,
+              "end_line": 15676,
+              "excerpt_sha256": "fbce72ca676950910f4462358666e62782f092b03399adfdfd4e7c545e9a7513"
+            },
+            "incoming": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 15049,
+                "end_line": 15085,
+                "excerpt_sha256": "2e7ba8149daf37af9f57f8e1e6e69a5e97391bf2f1967c011def57360f78dedf"
+              }
+            ],
+            "source_ids": [
+              "ACTIVE-KERNEL-SOURCE-DUAL-DEGREE",
+              "ACTIVE-RC-NEWFORM-HECKE-CONNECTION"
+            ],
+            "derivation": "At a good prime p outside the level and residue characteristic, count actual degree-p isogenies of the enhanced curves. Each cyclic neighbor kernel with target isomorphic to j gives exactly w_j target identifications, hence N_ij*w_j actual arrows. Dualization bijects these with reverse arrows: its double dual is the original arrow and [p] preserves each cyclic level subgroup since p is prime to N. Thus N_ij*w_j=N_ji*w_i, and division by w_i*w_j gives N_ij/w_i=N_ji/w_j. This is precisely self-adjointness for mass1/w_i. The actual pi is the same normalized modular parametrization used in the earlier proof15070–15085. The good Hecke identity survives its specified good reduction, multiplication by fixed L, and the additive map lambda_M, so moving the neighbor sum onto P_M gives a_p(E)P_M. Retain the separately computed norm-character factor chi_hstar(p) and local weight s; no division by a_p is made.",
+            "retained_inputs": [
+              "Actual enhanced supersingular curve/order correspondence and automorphism identification",
+              "Good-reduction extension of the actual normalized parametrization and good correspondences",
+              "Same additive finite-field map lambda_M",
+              "Local integral/nonintegral neighbor count and weight scaling15600–15660",
+              "p outside all stated support; arbitrary bad-prime or inseparable dual-neighbor claims excluded"
+            ],
+            "outgoing_not_used_as_input": [
+              "ACTIVE-THETA-T042"
+            ]
+          },
+          {
+            "id": "H6-LATE-04-NATIVE-INDEX-AND-HEIGHT",
+            "pending_group": "H6-LATE-PREMISE-04",
+            "consumer": {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+              },
+              "start_line": 15966,
+              "end_line": 15990,
+              "excerpt_sha256": "8df645ad920e32d69e13df4782abb8319edc26c068410ed8a0947c9310dcc503"
+            },
+            "incoming": [
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 3303,
+                "end_line": 3315,
+                "excerpt_sha256": "7bdb59655cc10fdd844fd7c39e6d4907c7c9964f2b2fbe6a890edb467746fa57"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 14844,
+                "end_line": 14891,
+                "excerpt_sha256": "b61d342d099ce10211aff033649088141584199b159ebc241f3b20230f50341b"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 15019,
+                "end_line": 15043,
+                "excerpt_sha256": "7b0422106d742de09bd5c8972ccb6601b30a6aa740b33dc5c0ff142128cadc46"
+              },
+              {
+                "pin": {
+                  "side": "head",
+                  "path": "manuscripts/quartic_v14.tex",
+                  "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+                },
+                "start_line": 15916,
+                "end_line": 15948,
+                "excerpt_sha256": "a5d40d545937d6ca8856e86f72fe7d8118a8d0b4267a915f28eaac80ed5aefd9"
+              }
+            ],
+            "source_ids": [
+              "ACTIVE-RC-EARLY-CST-TWO-HEIGHTS",
+              "ACTIVE-GENERATOR-HEIGHT-SATURATION"
+            ],
+            "derivation": "Keep the previously established same-parameter genus-point descent and its native rank-one free lattice. If conjugation fixes its free class, the norm P+tau(P) is rational and represents twice that class. Thus the rational free subgroup contains2 times the native rank-one lattice and has index at most2; this does not claim integral equality or new rank. For P_D=m_D*G+T with the fixed L killing T, the additive integral finite-field evaluation sends L*P_D to m_D times the evaluation of L*G. Its truncated2-adic valuation therefore cannot be less than min(M,v2(m_D)); the fixed factors in O.7 and the preceding index change are absorbed into the already fixed Cdet. In the nonsimple odd-sign case the actual Rankin derivative is zero after the retained factorization, so the unaveraged CST formula gives canonical height zero. Silverman canonical-height positivity implies torsion, and the same fixed L kills it. No genus free index is defined for that torsion case.",
+            "retained_inputs": [
+              "Same actual parametrization and unaveraged genus point, split-level and prime-to-level conductor hypotheses; f(infinity)=O",
+              "Previously proved conjugation/twist descent into the native rank-one line at simple zeros",
+              "Rank and nonvanishing information at simple zeros; analytic sign and actual Rankin factorization",
+              "Uniform torsion annihilator L and O.7 with its fixed integral multiplier",
+              "Actual additive integral evaluation; no division of a mod2^M congruence or claim that finite evaluation is injective"
+            ],
+            "outgoing_not_used_as_input": [
+              "ACTIVE-THETA-T046"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "v14-main15300-source-role-author-002/NATIVE-GENUS-LATTICE-ADDENDUM.json",
+        "sha256": "549ba7b5e1e3a9255e857fc079e9b90e632420f023bf19e960c2e4cd5e6abead"
+      },
+      "review": {
+        "path": "v14-native-genus-lattice-review-arithmetic-001/REVIEW.json",
+        "sha256": "9423bc8ca44c75116b0e4ff6f1412db42828d94a8ca5081778627d81fcfff45e"
+      },
+      "original": {
+        "schema": "v14-source-role-clarification/1",
+        "author": "/root/v14_h6_coverage",
+        "created_at": "2026-11-09T10:04:46.555Z",
+        "status": "author clarification requiring independent review",
+        "base": {
+          "path": "MASS-INDEX-SOURCE-RELATIONS.json",
+          "sha256": "d80f5b850b70abe04f4ff1137d969452e7fbc70fe6dc568a06ae92215c26d79e"
+        },
+        "changes": "Clarifies only the native subgroup, exact point membership and norm action in relation H6-LATE-04-NATIVE-INDEX-AND-HEIGHT. The mass/Hecke relation and all other source conclusions are unchanged.",
+        "source_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 3286,
+            "end_line": 3291,
+            "excerpt_sha256": "fb1709b62bbebcdf8c78a19d7f14d3d82caffa46cb54eb68e4dd86428e5fc8de"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 3303,
+            "end_line": 3315,
+            "excerpt_sha256": "7bdb59655cc10fdd844fd7c39e6d4907c7c9964f2b2fbe6a890edb467746fa57"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14792,
+            "end_line": 14802,
+            "excerpt_sha256": "548c3e0d2a3e5d77a894be832d77a19025ad7824c7b057fd147fdca11e56e9ba"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14846,
+            "end_line": 14858,
+            "excerpt_sha256": "e15695ad6ad1aa242655fb7b3f5200ddfa81c1312a9069bef99eaf1cb50d6e59"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14872,
+            "end_line": 14893,
+            "excerpt_sha256": "ba898e053e8e2f550eb3c5975bde1f978fafc7ddb063c0dc26f27261b31c305d"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 15966,
+            "end_line": 15990,
+            "excerpt_sha256": "8df645ad920e32d69e13df4782abb8319edc26c068410ed8a0947c9310dcc503"
+          }
+        ],
+        "textual_status": "The current definition3286–3291 names the native lattices and their index valuations without spelling out the group. The following is the explicit subgroup required by the genus-character construction. It is a clarification, not a claim that these words already appear there. It must not be replaced by the full Mordell–Weil group E(F_D).",
+        "definition": "For D>1 put K_D=Q(sqrt(D h*)), F_D=Q(sqrt D,sqrt h*), and let tau be the nonidentity element of Gal(F_D/K_D). Define Gamma_D={P in E(F_D):tau(P)=-P}, and Lambda_D=Gamma_D/Gamma_D,tors. The native genus index at a known simple zero is the divisibility index of the class of the actual P_D in this rank-one free lattice. The rank-one premise is retained from the actual genus/analytic-rank construction; it is not deduced solely from height nonzero. For D=1 put F_D=K_D=Q(sqrt h*), Gamma_1=E(K_D), with its torsion-free quotient as the native lattice.",
+        "exact_membership": "The unaveraged sum P_D=sum_[a] chi_h*(Norm a) pi(x_D^[a]) transforms under the class-field Galois group by this exact quadratic character: applying an Artin element permutes the index set, and reindexing multiplies the whole sum by its character value. The kernel fixes P_D, so P_D belongs to E(F_D); the nonidentity element over K_D acts by -1 when D>1. This is equality of points, not only an equality modulo torsion or after applying4B. It uses the stated CM reciprocity action and the same Q-defined parametrization. For D=1 the character is trivial and the sum is K_D-rational.",
+        "twist_identification": "Let iota_D:E^(D)->E be the standard isomorphism over Q(sqrt D), with g(iota_D)=chi_D(g)iota_D. For P in Gamma_D, tau(iota_D^(-1)P)=chi_D(tau)iota_D^(-1)tau(P)=iota_D^(-1)P. Thus iota_D identifies E^(D)(K_D) exactly with Gamma_D. It identifies E^(D)(Q) with the rational D-character subgroup inside Gamma_D.",
+        "norm_argument": "Under this identification, let sigma be the nonidentity element of Gal(K_D/Q), represented for D>1 by changing sqrt(h*) while fixing sqrt D. The retained rational character decomposition has D and h* components; the latter has rank zero by the forward theorem. Consequently sigma fixes the torsion-free class of each Q in E^(D)(K_D). The point Q+sigma(Q) is actually Q-rational, and its class is2[Q]. Therefore the image of E^(D)(Q) in Lambda_D contains2 Lambda_D. Since Lambda_D has rank one, its index is1 or2. Torsion need not vanish to make this conclusion. For D=1 the same argument uses E(K_D), ordinary conjugation, the rational E component and the rank-zero h* twist. The multiplier4B used later to obtain exact D-character points is independent of this norm-index proof.",
+        "boundaries": [
+          "The genus-character/CM reciprocity statement is a separate actual input, including the current residual02 comparison.",
+          "The rational D-component rank-one premise and h* rank-zero premise remain supplied; no rank inference from nontorsion alone.",
+          "The index≤2 result is for Lambda_D and its rational D-twist subgroup, not all of E(F_D).",
+          "No equality of integral lattices, no torsion index and no global source-closure claim."
+        ]
+      },
+      "current": {
+        "schema": "v14-source-role-clarification/1",
+        "author": "/root/v14_h6_coverage",
+        "created_at": "2026-11-09T10:04:46.555Z",
+        "status": "author clarification requiring independent review",
+        "base": {
+          "path": "MASS-INDEX-SOURCE-RELATIONS.json",
+          "sha256": "d80f5b850b70abe04f4ff1137d969452e7fbc70fe6dc568a06ae92215c26d79e"
+        },
+        "changes": "Clarifies only the native subgroup, exact point membership and norm action in relation H6-LATE-04-NATIVE-INDEX-AND-HEIGHT. The mass/Hecke relation and all other source conclusions are unchanged.",
+        "source_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 3286,
+            "end_line": 3291,
+            "excerpt_sha256": "fb1709b62bbebcdf8c78a19d7f14d3d82caffa46cb54eb68e4dd86428e5fc8de"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 3303,
+            "end_line": 3315,
+            "excerpt_sha256": "7bdb59655cc10fdd844fd7c39e6d4907c7c9964f2b2fbe6a890edb467746fa57"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14792,
+            "end_line": 14802,
+            "excerpt_sha256": "548c3e0d2a3e5d77a894be832d77a19025ad7824c7b057fd147fdca11e56e9ba"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14846,
+            "end_line": 14858,
+            "excerpt_sha256": "e15695ad6ad1aa242655fb7b3f5200ddfa81c1312a9069bef99eaf1cb50d6e59"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 14872,
+            "end_line": 14893,
+            "excerpt_sha256": "ba898e053e8e2f550eb3c5975bde1f978fafc7ddb063c0dc26f27261b31c305d"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+            },
+            "start_line": 15966,
+            "end_line": 15990,
+            "excerpt_sha256": "8df645ad920e32d69e13df4782abb8319edc26c068410ed8a0947c9310dcc503"
+          }
+        ],
+        "textual_status": "The current definition3286–3291 names the native lattices and their index valuations without spelling out the group. The following is the explicit subgroup required by the genus-character construction. It is a clarification, not a claim that these words already appear there. It must not be replaced by the full Mordell–Weil group E(F_D).",
+        "definition": "For D>1 put K_D=Q(sqrt(D h*)), F_D=Q(sqrt D,sqrt h*), and let tau be the nonidentity element of Gal(F_D/K_D). Define Gamma_D={P in E(F_D):tau(P)=-P}, and Lambda_D=Gamma_D/Gamma_D,tors. The native genus index at a known simple zero is the divisibility index of the class of the actual P_D in this rank-one free lattice. The rank-one premise is retained from the actual genus/analytic-rank construction; it is not deduced solely from height nonzero. For D=1 put F_D=K_D=Q(sqrt h*), Gamma_1=E(K_D), with its torsion-free quotient as the native lattice.",
+        "exact_membership": "The unaveraged sum P_D=sum_[a] chi_h*(Norm a) pi(x_D^[a]) transforms under the class-field Galois group by this exact quadratic character: applying an Artin element permutes the index set, and reindexing multiplies the whole sum by its character value. The kernel fixes P_D, so P_D belongs to E(F_D); the nonidentity element over K_D acts by -1 when D>1. This is equality of points, not only an equality modulo torsion or after applying4B. It uses the stated CM reciprocity action and the same Q-defined parametrization. For D=1 the character is trivial and the sum is K_D-rational.",
+        "twist_identification": "Let iota_D:E^(D)->E be the standard isomorphism over Q(sqrt D), with g(iota_D)=chi_D(g)iota_D. For P in Gamma_D, tau(iota_D^(-1)P)=chi_D(tau)iota_D^(-1)tau(P)=iota_D^(-1)P. Thus iota_D identifies E^(D)(K_D) exactly with Gamma_D. It identifies E^(D)(Q) with the rational D-character subgroup inside Gamma_D.",
+        "norm_argument": "Under this identification, let sigma be the nonidentity element of Gal(K_D/Q), represented for D>1 by changing sqrt(h*) while fixing sqrt D. The retained rational character decomposition has D and h* components; the latter has rank zero by the forward theorem. Consequently sigma fixes the torsion-free class of each Q in E^(D)(K_D). The point Q+sigma(Q) is actually Q-rational, and its class is2[Q]. Therefore the image of E^(D)(Q) in Lambda_D contains2 Lambda_D. Since Lambda_D has rank one, its index is1 or2. Torsion need not vanish to make this conclusion. For D=1 the same argument uses E(K_D), ordinary conjugation, the rational E component and the rank-zero h* twist. The multiplier4B used later to obtain exact D-character points is independent of this norm-index proof.",
+        "boundaries": [
+          "The genus-character/CM reciprocity statement is a separate actual input, including the current residual02 comparison.",
+          "The rational D-component rank-one premise and h* rank-zero premise remain supplied; no rank inference from nontorsion alone.",
+          "The index≤2 result is for Lambda_D and its rational D-twist subgroup, not all of E(F_D).",
+          "No equality of integral lattices, no torsion index and no global source-closure claim."
+        ]
+      }
+    },
+    {
+      "source": {
+        "path": "v14-main15300-source-role-author-002/GENUS-CHARACTER-SOURCE-RELATION.json",
+        "sha256": "f8d5ea3765d74421d836cb0850fdfdbc023626096b16a16272e9197a04523790"
+      },
+      "review": {
+        "path": "v14-final-composite-review-001/GENUS-CHARACTER-REVIEW.json",
+        "sha256": "77e00fc58d8907f56297349a9927c174a7d667b908ecd3e7c25bef009ce4e5c9"
+      },
+      "original": {
+        "schema": "v14-source-role-correction/1",
+        "author": "/root/v14_h6_coverage",
+        "created_at": "2026-11-09T10:02:39.908Z",
+        "status": "author proposal requiring independent source and mathematical review",
+        "pending_group": "H6-LATE-PREMISE-02 remaining genus-character clause only",
+        "consumer": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15774,
+          "end_line": 15797,
+          "excerpt_sha256": "9c7dfbb686d91dedd7c89b6d72b315da732a77c4afff119ad16ee68f410fffa6"
+        },
+        "domain": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14785,
+          "end_line": 14801,
+          "excerpt_sha256": "6348aa8656c299dcff9cfd15cc64fd6618629dac2f82052377a16e70ef0ac680"
+        },
+        "primary": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-global-published-source-replacements-author-001/local-only/cox.pdf",
+          "sha256": "f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34",
+          "publication": "David A. Cox, Primes of the Form x²+ny², Wiley1989 first edition, second printing",
+          "locators": [
+            "Equations5.12–5.14, printed103: quadratic discriminant and integral basis",
+            "Theorem6.1(i),(ii),printed121: genus field unramified and generated by prime-discriminant square roots",
+            "Lemma6.8,printed124: K(sqrt(a))/K unramified for a|d_K and a=1mod4",
+            "Equations6.11–6.14 and proof,printed125–126: Artin action via ideal norm and prime-discriminant characters"
+          ],
+          "read": "Printed103,121–126 visually read. Earlier accepted edition identification retained.",
+          "errata": {
+            "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-global-published-source-replacements-author-001/local-only/cox-typos3.pdf",
+            "sha256": "5835bce67e65422f677fd83874e77abfe27c57db3fddf0ea313a5aafd181b6eb",
+            "relevant": "Printed124 line3 must read a|d_K, not the missing divisibility sign in the original scan. This corrected hypothesis is used."
+          }
+        },
+        "required_assertion": "For actual coprime odd fundamental discriminants D>1 and h*<0, F=Q(sqrt(Dh*)) and L=Q(sqrt D,sqrt h*) have disc(L)=(Dh*)² and L/F unramified. The restriction of chi_h* to G_F corresponds on Pic(O_F) to the quadratic norm character used in O.1. D=1 gives the trivial character.",
+        "derivations": [
+          {
+            "name": "Exact biquadratic discriminant by integral trace pairing",
+            "argument": "Put alpha=(1+sqrt D)/2 and beta=(1+sqrt h*)/2. Cox5.13 supplies the two quadratic integer rings. A=Z[alpha,beta] has rank4 and is integral. For x in O_L, write x=a+b beta with a,b in Q(sqrt D). Both relative traces Tr(x) and Tr(beta*x) are integral in Q(sqrt D). The two-by-two trace matrix of1,beta has determinant h*, so solving this system shows h*a,h*b in Z[alpha], hence h*x in A. Interchanging the fields gives D*x in A. Since gcd(D,h*)=1, Bezout gives x in A, so A=O_L. The four embeddings show the trace matrix on1,alpha,beta,alpha*beta is the tensor product of the two quadratic trace matrices, up to basis ordering. Its determinant is D²(h*)², proving exactly the displayed equality. This is a local connecting derivation from the published quadratic integral bases, not a statement attributed verbatim to Cox."
+          },
+          {
+            "name": "Unramified genus extension",
+            "argument": "The actual domain has F imaginary and d_F=D h* odd fundamental. Apply corrected Lemma6.8 with a=D: D divides d_F and D=1mod4. Thus F(sqrt D)=L is unramified, equivalently its relative discriminant ideal is1. This also follows from Theorem6.1 since D is a product of its signed prime discriminants. This direct published implication supplies the consumed unramified conclusion without assuming the discriminant equality as its own premise."
+          },
+          {
+            "name": "Actual norm character",
+            "argument": "Write h* as the product of signed prime discriminants p*. Cox6.12–6.14 identifies the Artin action on each sqrt(p*) at any ideal a prime to2D h* by (Norm(a)/p). Quadratic reciprocity gives (p*/Norm(a))=(Norm(a)/p); multiplying over p|h* gives chi_h*(Norm(a)). This is exactly the restriction character on sqrt(h*), so it factors through Pic(O_F). Multiplicativity extends from prime ideals. Each ideal class admits an integral representative prime to2D h*: choose an element in the inverse ideal with the required minimal valuations at the finitely many excluded primes by the Chinese remainder theorem, and multiply the ideal by it. Thus choosing representatives prime to2D h* is an allowed strengthening of the manuscript choice prime to h*. This proves independence from the representative, not merely a formula on selected prime ideals. For the full finite-idelic equality, apply the independently accepted generic local norm/reciprocity theorem at each completion F_v/Q_p, and multiply over v|p. This identifies chi_h*(Norm a) with the restriction of chi_h* to G_F, so its local-unit factors are trivial because L/F is unramified. At the complex place the norm is positive, so the real sign character is trivial. This justifies the whole idelic expression, not only its value on convenient ideal representatives. The beta-specific conductor/unit bounds from that source are not used."
+          },
+          {
+            "name": "Exceptional case and conventions",
+            "argument": "If D=1 then F=Q(sqrt h*) already contains sqrt h*, so the restricted character and the genus extension are trivial. No degree4 basis computation is applied in this case. Reversing arithmetic/geometric Artin conventions inverts a quadratic character and hence leaves its values unchanged."
+          }
+        ],
+        "retained_inputs": [
+          "D and h* are the actual coprime odd fundamental discriminants from the fixed prepared domain, not arbitrary squarefree integers",
+          "Algebraic integers are closed under relative trace; elementary trace determinant and Bezout calculations",
+          "Usual ideal-class interpretation and arithmetic Artin convention, already supplied by accepted Cox class-field source",
+          "Chinese remainder theorem for ideals used only to choose a representative away from a finite set"
+        ],
+        "excluded_claims": [
+          "No new general local norm/reciprocity theorem",
+          "No new assertion about CM reduction, level orientations, genus-point nonvanishing or the subsequent theta comparison",
+          "No modification to original source freeze or canonical manuscript"
+        ],
+        "additional_generic_input": {
+          "path": "v14-beta-local-norm-published-002/PROOF.md",
+          "sha256": "8cc16d56e6211c629191205fecc3f8098ef54933b854c3fe5e22ffa3ce4c756d",
+          "scope": "Generic finite-local-extension norm/reciprocity theorem before its beta-specific final application; nonnormal extensions allowed.",
+          "math_review": {
+            "path": "v14-beta-local-norm-review-arithmetic-001/REVIEW.json",
+            "sha256": "703ab21fb0e0c0a955ecf3092b467fc09b59f8791f1c9bb9e5515b4ab80514a2"
+          },
+          "source_reconciliation_review": {
+            "path": "v14-beta-local-norm-source-review-001/REVIEW.json",
+            "sha256": "4c6fa7b4436c2b5ae84cf6ce194f82c3106234f24e1cd61d2e37744d729994a8"
+          }
+        }
+      },
+      "current": {
+        "schema": "v14-source-role-correction/1",
+        "author": "/root/v14_h6_coverage",
+        "created_at": "2026-11-09T10:02:39.908Z",
+        "status": "author proposal requiring independent source and mathematical review",
+        "pending_group": "H6-LATE-PREMISE-02 remaining genus-character clause only",
+        "consumer": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 15774,
+          "end_line": 15797,
+          "excerpt_sha256": "9c7dfbb686d91dedd7c89b6d72b315da732a77c4afff119ad16ee68f410fffa6"
+        },
+        "domain": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+          },
+          "start_line": 14785,
+          "end_line": 14801,
+          "excerpt_sha256": "6348aa8656c299dcff9cfd15cc64fd6618629dac2f82052377a16e70ef0ac680"
+        },
+        "primary": {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-global-published-source-replacements-author-001/local-only/cox.pdf",
+          "sha256": "f7ad9babf95257295d21114774c48b38967c1f604eecdbeb04749252ab829c34",
+          "publication": "David A. Cox, Primes of the Form x²+ny², Wiley1989 first edition, second printing",
+          "locators": [
+            "Equations5.12–5.14, printed103: quadratic discriminant and integral basis",
+            "Theorem6.1(i),(ii),printed121: genus field unramified and generated by prime-discriminant square roots",
+            "Lemma6.8,printed124: K(sqrt(a))/K unramified for a|d_K and a=1mod4",
+            "Equations6.11–6.14 and proof,printed125–126: Artin action via ideal norm and prime-discriminant characters"
+          ],
+          "read": "Printed103,121–126 visually read. Earlier accepted edition identification retained.",
+          "errata": {
+            "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/v14-global-published-source-replacements-author-001/local-only/cox-typos3.pdf",
+            "sha256": "5835bce67e65422f677fd83874e77abfe27c57db3fddf0ea313a5aafd181b6eb",
+            "relevant": "Printed124 line3 must read a|d_K, not the missing divisibility sign in the original scan. This corrected hypothesis is used."
+          }
+        },
+        "required_assertion": "For actual coprime odd fundamental discriminants D>1 and h*<0, F=Q(sqrt(Dh*)) and L=Q(sqrt D,sqrt h*) have disc(L)=(Dh*)² and L/F unramified. The restriction of chi_h* to G_F corresponds on Pic(O_F) to the quadratic norm character used in O.1. D=1 gives the trivial character.",
+        "derivations": [
+          {
+            "name": "Exact biquadratic discriminant by integral trace pairing",
+            "argument": "Put alpha=(1+sqrt D)/2 and beta=(1+sqrt h*)/2. Cox5.13 supplies the two quadratic integer rings. A=Z[alpha,beta] has rank4 and is integral. For x in O_L, write x=a+b beta with a,b in Q(sqrt D). Both relative traces Tr(x) and Tr(beta*x) are integral in Q(sqrt D). The two-by-two trace matrix of1,beta has determinant h*, so solving this system shows h*a,h*b in Z[alpha], hence h*x in A. Interchanging the fields gives D*x in A. Since gcd(D,h*)=1, Bezout gives x in A, so A=O_L. The four embeddings show the trace matrix on1,alpha,beta,alpha*beta is the tensor product of the two quadratic trace matrices, up to basis ordering. Its determinant is D²(h*)², proving exactly the displayed equality. This is a local connecting derivation from the published quadratic integral bases, not a statement attributed verbatim to Cox."
+          },
+          {
+            "name": "Unramified genus extension",
+            "argument": "The actual domain has F imaginary and d_F=D h* odd fundamental. Apply corrected Lemma6.8 with a=D: D divides d_F and D=1mod4. Thus F(sqrt D)=L is unramified, equivalently its relative discriminant ideal is1. This also follows from Theorem6.1 since D is a product of its signed prime discriminants. This direct published implication supplies the consumed unramified conclusion without assuming the discriminant equality as its own premise."
+          },
+          {
+            "name": "Actual norm character",
+            "argument": "Write h* as the product of signed prime discriminants p*. Cox6.12–6.14 identifies the Artin action on each sqrt(p*) at any ideal a prime to2D h* by (Norm(a)/p). Quadratic reciprocity gives (p*/Norm(a))=(Norm(a)/p); multiplying over p|h* gives chi_h*(Norm(a)). This is exactly the restriction character on sqrt(h*), so it factors through Pic(O_F). Multiplicativity extends from prime ideals. Each ideal class admits an integral representative prime to2D h*: choose an element in the inverse ideal with the required minimal valuations at the finitely many excluded primes by the Chinese remainder theorem, and multiply the ideal by it. Thus choosing representatives prime to2D h* is an allowed strengthening of the manuscript choice prime to h*. This proves independence from the representative, not merely a formula on selected prime ideals. For the full finite-idelic equality, apply the independently accepted generic local norm/reciprocity theorem at each completion F_v/Q_p, and multiply over v|p. This identifies chi_h*(Norm a) with the restriction of chi_h* to G_F, so its local-unit factors are trivial because L/F is unramified. At the complex place the norm is positive, so the real sign character is trivial. This justifies the whole idelic expression, not only its value on convenient ideal representatives. The beta-specific conductor/unit bounds from that source are not used."
+          },
+          {
+            "name": "Exceptional case and conventions",
+            "argument": "If D=1 then F=Q(sqrt h*) already contains sqrt h*, so the restricted character and the genus extension are trivial. No degree4 basis computation is applied in this case. Reversing arithmetic/geometric Artin conventions inverts a quadratic character and hence leaves its values unchanged."
+          }
+        ],
+        "retained_inputs": [
+          "D and h* are the actual coprime odd fundamental discriminants from the fixed prepared domain, not arbitrary squarefree integers",
+          "Algebraic integers are closed under relative trace; elementary trace determinant and Bezout calculations",
+          "Usual ideal-class interpretation and arithmetic Artin convention, already supplied by accepted Cox class-field source",
+          "Chinese remainder theorem for ideals used only to choose a representative away from a finite set"
+        ],
+        "excluded_claims": [
+          "No new general local norm/reciprocity theorem",
+          "No new assertion about CM reduction, level orientations, genus-point nonvanishing or the subsequent theta comparison",
+          "No modification to original source freeze or canonical manuscript"
+        ],
+        "additional_generic_input": {
+          "path": "v14-beta-local-norm-published-002/PROOF.md",
+          "sha256": "8cc16d56e6211c629191205fecc3f8098ef54933b854c3fe5e22ffa3ce4c756d",
+          "scope": "Generic finite-local-extension norm/reciprocity theorem before its beta-specific final application; nonnormal extensions allowed.",
+          "math_review": {
+            "path": "v14-beta-local-norm-review-arithmetic-001/REVIEW.json",
+            "sha256": "703ab21fb0e0c0a955ecf3092b467fc09b59f8791f1c9bb9e5515b4ab80514a2"
+          },
+          "source_reconciliation_review": {
+            "path": "v14-beta-local-norm-source-review-001/REVIEW.json",
+            "sha256": "4c6fa7b4436c2b5ae84cf6ce194f82c3106234f24e1cd61d2e37744d729994a8"
+          }
+        }
+      }
+    }
+  ],
+  "status": "Accepted source relationships incorporated after aggregate snapshot22116b76; proposed native proof-note and TeX changes are not installed by this record.",
+  "limits": "Original incoming premises remain explicit; root authored native clarification uses separate arithmetic-author independent review."
+}

@@ -1,0 +1,13 @@
+# Actual newform Atkin-Lehner action
+
+Atkin and Lehner, Hecke Operators on Gamma0(m), Math. Ann.185(1970),134-160, Theorem3(iii), printed147: a newform F of level m is an eigenform of W_q, with eigenvalue +1 or -1, for every prime q with q^alpha exactly dividing m. Their W_q denotes W_(q^alpha), not an operator of determinant q when alpha>1 (printed139, equation2.3 and footnote2). No odd-prime or squarefree restriction appears.
+
+The source uses even weight 2k and slash F|M=det(M)^k*(cz+d)^(-2k)*F(Mz), printed135. Its multiplier is unity, explicitly printed136. Matrices W_Q=(Qx,y;mz,Qw) have determinant Q for Q an exact divisor, printed138; Lemmas8-10 and equation2.3, printed138-139, give the involution and independence of the representative. The new subspace is the orthogonal complement of the lower-level degeneracy images, printed145; Lemma21, printed146, identifies its Hecke eigenvectors with scalar multiples of the normalized newforms.
+
+At weight two set source k=1. For every positive-determinant matrix M, d(Mz)=det(M)*(cz+d)^(-2) dz. Consequently (F|M) dz=M^*(F dz), with the same identity after multiplication by 2*pi*i. Scaling M by a nonzero real scalar does not change either action. Thus the source slash convention is exactly pullback on holomorphic differentials, not an inverse, unnormalized determinant action, or dual representation.
+
+Apply the published theorem to the already supplied normalized primitive weight-two form f for the actual rational elliptic quotient at level N and trivial character. Take source m=N and q=p, alpha=e for every p^e exactly dividing N, including p=2. Write w_(p^e) for the resulting sign. Then W_(p^e)^*(f(z) dz)=w_(p^e)*f(z) dz. This application requires the actual primitive form; it does not assert the same scalar action on an arbitrary oldform or the whole oldspace.
+
+The already supplied quotient has pi^*omega=c*2*pi*i*f(z) dz for nonzero c. Therefore W_(p^e)^*pi^*omega=w_(p^e)*pi^*omega for this same pi. The separately established based-map argument then gives pi(Wx)=w_(p^e)*pi(x)+pi(W infinity); the separately supplied cuspidal annihilator L removes that constant. Only the eigen-action input is established here; the quotient differential identity, zero-differential constant-map argument, cusp permutation, finite annihilator, and specialization are separate inputs.
+
+No root-number formula, numerical value of the sign, relation between different primes, or character-twist formula is asserted. In particular this source is not substituted for the separate global product of signs used elsewhere in the theta construction.

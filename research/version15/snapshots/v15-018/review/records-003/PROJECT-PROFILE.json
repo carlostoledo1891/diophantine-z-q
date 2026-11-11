@@ -1,0 +1,81 @@
+{
+  "name": "Version 15",
+  "scope": "Original large polynomial definition, fixed decimal314 quartic, and233-variable family with2514 monomials",
+  "status": "Delivered full draft; preliminary Protocol D preparation remains open",
+  "distinction": "Separate from the older internal238 Version15 and delivered Version15x",
+  "baseline": {
+    "path": "work/quartic-v15x-233-20261110/author/quartic_v15x.tex",
+    "sha256": "f1aa5ab0a91988ffe600a532614ad11d12360f224d64dc0c5d0b5e64f1a8b2ed"
+  },
+  "claims": [
+    {
+      "id": "CLAIM-LARGE",
+      "statement": "Integer polynomial in292890231905 variables, degree below2↑↑7, coefficients below2↑↑8, rational zero projection exactly Z",
+      "qualification": "Original construction retained by explicit user request; no new proof claim",
+      "dependencies": [
+        "V15-FOUNDATION"
+      ]
+    },
+    {
+      "id": "CLAIM314",
+      "statement": "Fullydecimal314-variable quartic,6672monomials,264430byte ordinaryTXT,coefficients<2^6496,exactZinQprojection",
+      "dependencies": [
+        "V15-314"
+      ],
+      "qualification": "Concrete fixed polynomial; retain299intermediatewithoutheadline; abstract bound2^6500 follows from sharper theorem bound2^6496"
+    },
+    {
+      "id": "CLAIM233",
+      "statement": "233-variable explicitparameterfamily,232witnesses,207quadraticresiduals,2514monomials; sufficientlylargeN defineZinQ",
+      "dependencies": [
+        "V15-POLYNOMIAL233"
+      ],
+      "qualification": "A_N=149^(2N+1); heightA_N²+1 forN>=53; no numericaldefiningNcertified"
+    }
+  ],
+  "excluded": [
+    "a fixed numerical defining N for233",
+    "arbitrary symbolic A equivalence",
+    "new mathematical claims from editorial selection",
+    "Protocol D completion or publication"
+  ],
+  "governing": {
+    "public_url": "https://raw.githubusercontent.com/elliotglazer/protocols/main/Protocol_D.md",
+    "retrieval": "Read-only HTTPS retrieval during this preparation; moving main URL, no commit pin claimed",
+    "sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9",
+    "local_exact_match": true
+  },
+  "artifact_requirements": [
+    "Final coherent TeX and corresponding rendered PDF",
+    "314 ordinary decimal table with exact bytes and reconstruction checks",
+    "233 exact IR/equations/maps and coefficient-only threshold",
+    "Scoped current-use, coverage and final assembly reviews"
+  ],
+  "permissions": "Own preparation workspace only; no production changes or publication",
+  "artifacts": {
+    "source": {
+      "path": "full-draft-002/quartic_v15.tex",
+      "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+      "bytes": 1855938
+    },
+    "pdf": {
+      "path": "build/8867d26272fcfb91/quartic_v15.pdf",
+      "sha256": "c08e31b6123a2b693b57f80329b3b97d20a99754683eefecd9571dac46383e48",
+      "bytes": 2652565,
+      "pages": 525
+    }
+  },
+  "future_candidates": "2408 and other lower-term presentations are not selected or incorporated",
+  "scoped_reviews": [
+    {
+      "path": "full-draft-002/editorial-review/REVIEW.json",
+      "sha256": "0cef0386e0333e04a0a148fcb3ea56764d016e8a8ff2a3f7d84ebf5fe8074789",
+      "scope": "Independent editorial delta only; not a new mathematical proof audit"
+    },
+    {
+      "path": "build/8867d26272fcfb91/VISUAL-REVIEW-GI.json",
+      "sha256": "1d69ed04482ffefc6ea71ed92a601ab038d65971b298464cc1302047d8f56d1c",
+      "scope": "Author visual QA of pages1,9,10 only; not independent mathematical acceptance"
+    }
+  ]
+}

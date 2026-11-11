@@ -1,0 +1,156 @@
+[
+  {
+    "use": {
+      "id": "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS-P1",
+        "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS-P2"
+      ],
+      "assertion": {
+        "statement": "For the actual primitive chi_h used in the current retained-class calculation, replacing its Gauss basis by sqrt(h)e_chi costs only the fixed factor ±1 or ±2 and no factor depending on the number of odd conductor primes.",
+        "objects": "The primitive quadratic character, its finite Gauss sum, and the chosen square root of odd squarefree signed h.",
+        "hypotheses": "Primitivity at the actual conductor; the signed fundamental discriminant convention Delta_h in {h,4h}; chi_h(-1)=sign(Delta_h); the quadratic action on sqrt(h).",
+        "quantifiers": "Every such fixed character; the trivial conductor-one character is treated separately.",
+        "parameter_range": "All signed odd squarefree h in this convention, including the discriminant4h case.",
+        "uniformity": "The possible basis ratios form the fixed set {1,-1,2,-2}.",
+        "constants": "No conductor-size or prime-count factor.",
+        "normalizations": "tau=sum_x chi(x) exp(2*pi*i*x/D), chi extended by zero; no normalized average.",
+        "exceptional_cases": "No positive Gauss-sum sign is claimed; D=1 has tau=1.",
+        "limit_order": "Finite sums only; no coefficient or cyclotomic inverse limit."
+      },
+      "classification": "dependency",
+      "reason": "Apply the finite-character proof to the actual primitive quadratic character and its signed fundamental discriminant. Both tau and sqrt(h) transform by chi_h; their tensor products with e_chi are invariant. The ratio conclusion is only up to sign, exactly as needed here. The actual character/discriminant identification is retained as a caller condition, not deduced from Fourier orthogonality.",
+      "shared_contract_justification": "Both occurrences concern the identical primitive character, original invariant line and signed discriminant normalization; the second explicitly repeats the same basis calculation.",
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/quadratic-gauss-local-001/PROOF.md",
+            "sha256": "0ea59481f2f6bed3ddd4bf19362fee92a110ab88d3f2ee63788ebd8edb7e1f06"
+          },
+          "start_line": 3,
+          "end_line": 17,
+          "excerpt_sha256": "0d95f4ba0265d59c3a769ce3b56fc2a3ca1984ff6b7acc543119a4b9daa4ea5b"
+        },
+        "statement": "For a primitive quadratic character of conductor D, tau squared equals chi(-1)D and sigma_a(tau)=chi(a)tau. Under the stated signed fundamental-discriminant convention, tau/sqrt(h) belongs to {1,-1,2,-2}.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/quadratic-gauss-local-001/PROOF.md",
+          "sha256": "0ea59481f2f6bed3ddd4bf19362fee92a110ab88d3f2ee63788ebd8edb7e1f06"
+        },
+        "start_line": 3,
+        "end_line": 17,
+        "excerpt_sha256": "0d95f4ba0265d59c3a769ce3b56fc2a3ca1984ff6b7acc543119a4b9daa4ea5b"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS",
+      "use_sha256": "5fdf27a16961b0b47972456d8f9733f87a0ec147c7e3433efcf9fe793d1017ac",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "For a primitive quadratic character of conductor D, tau squared equals chi(-1)D and sigma_a(tau)=chi(a)tau. Under the stated signed fundamental-discriminant convention, tau/sqrt(h) belongs to {1,-1,2,-2}.",
+        "objects": "The primitive quadratic character, its finite Gauss sum, and the chosen square root of odd squarefree signed h.",
+        "hypotheses": "Primitivity at the actual conductor; the signed fundamental discriminant convention Delta_h in {h,4h}; chi_h(-1)=sign(Delta_h); the quadratic action on sqrt(h).",
+        "quantifiers": "Every such fixed character; the trivial conductor-one character is treated separately.",
+        "parameter_range": "All signed odd squarefree h in this convention, including the discriminant4h case.",
+        "uniformity": "The possible basis ratios form the fixed set {1,-1,2,-2}.",
+        "constants": "No conductor-size or prime-count factor.",
+        "normalizations": "tau=sum_x chi(x) exp(2*pi*i*x/D), chi extended by zero; no normalized average.",
+        "exceptional_cases": "No positive Gauss-sum sign is claimed; D=1 has tau=1.",
+        "limit_order": "Finite sums only; no coefficient or cyclotomic inverse limit."
+      },
+      "needed_assertion": {
+        "statement": "For the actual primitive chi_h used in the current retained-class calculation, replacing its Gauss basis by sqrt(h)e_chi costs only the fixed factor ±1 or ±2 and no factor depending on the number of odd conductor primes.",
+        "objects": "The primitive quadratic character, its finite Gauss sum, and the chosen square root of odd squarefree signed h.",
+        "hypotheses": "Primitivity at the actual conductor; the signed fundamental discriminant convention Delta_h in {h,4h}; chi_h(-1)=sign(Delta_h); the quadratic action on sqrt(h).",
+        "quantifiers": "Every such fixed character; the trivial conductor-one character is treated separately.",
+        "parameter_range": "All signed odd squarefree h in this convention, including the discriminant4h case.",
+        "uniformity": "The possible basis ratios form the fixed set {1,-1,2,-2}.",
+        "constants": "No conductor-size or prime-count factor.",
+        "normalizations": "tau=sum_x chi(x) exp(2*pi*i*x/D), chi extended by zero; no normalized average.",
+        "exceptional_cases": "No positive Gauss-sum sign is claimed; D=1 has tau=1.",
+        "limit_order": "Finite sums only; no coefficient or cyclotomic inverse limit."
+      },
+      "required_capabilities": [
+        "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS"
+      ],
+      "available_capabilities": [
+        "ACTIVE-THETA-QUADRATIC-GAUSS-BASIS"
+      ],
+      "derived_capabilities": [],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/quadratic-gauss-local-001/PROOF.md",
+            "sha256": "0ea59481f2f6bed3ddd4bf19362fee92a110ab88d3f2ee63788ebd8edb7e1f06"
+          },
+          "start_line": 3,
+          "end_line": 17,
+          "excerpt_sha256": "0d95f4ba0265d59c3a769ce3b56fc2a3ca1984ff6b7acc543119a4b9daa4ea5b"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "For the actual primitive chi_h used in the current retained-class calculation, replacing its Gauss basis by sqrt(h)e_chi costs only the fixed factor ±1 or ±2 and no factor depending on the number of odd conductor primes.",
+          "objects": "The primitive quadratic character, its finite Gauss sum, and the chosen square root of odd squarefree signed h.",
+          "hypotheses": "Primitivity at the actual conductor; the signed fundamental discriminant convention Delta_h in {h,4h}; chi_h(-1)=sign(Delta_h); the quadratic action on sqrt(h).",
+          "quantifiers": "Every such fixed character; the trivial conductor-one character is treated separately.",
+          "parameter_range": "All signed odd squarefree h in this convention, including the discriminant4h case.",
+          "uniformity": "The possible basis ratios form the fixed set {1,-1,2,-2}.",
+          "constants": "No conductor-size or prime-count factor.",
+          "normalizations": "tau=sum_x chi(x) exp(2*pi*i*x/D), chi extended by zero; no normalized average.",
+          "exceptional_cases": "No positive Gauss-sum sign is claimed; D=1 has tau=1.",
+          "limit_order": "Finite sums only; no coefficient or cyclotomic inverse limit."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Uses primitive rather than inflated Gauss sums; includes negative h, discriminant4h and the trivial case; no exact positivity or unproved reciprocity.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/quadratic-gauss-local-001/PROOF.md",
+              "sha256": "0ea59481f2f6bed3ddd4bf19362fee92a110ab88d3f2ee63788ebd8edb7e1f06"
+            },
+            "start_line": 3,
+            "end_line": 17,
+            "excerpt_sha256": "0d95f4ba0265d59c3a769ce3b56fc2a3ca1984ff6b7acc543119a4b9daa4ea5b"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 13627,
+          "end_line": 13633,
+          "excerpt_sha256": "7bffb92702850b14ca01f732e71403a6d182654c30fd2cfde52f449eb0b9199d"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 13660,
+          "end_line": 13665,
+          "excerpt_sha256": "99353cc8de91dc6b28db06901c31586bbc2be34de974605260d2e608645ec5f4"
+        }
+      ]
+    },
+    "state": "Author proposal pending independent comparison",
+    "initial_mapping": []
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "author": "/root/astra_v14_baseline_compiler",
+  "status": "authored proposal; independent review pending",
+  "uses": [
+    {
+      "id": "U03-RAY-FINITE-PUBLISHED",
+      "available_statement": "Kopp-Lagarias Theorem 6.9, final pp.44-45: finite ray class group for any order-level datum, with real-place subset. Definitions 5.2-5.4, p.33.",
+      "needed_assertion": "Cl_(m,Sigma)(O_F) is finite for each fixed nonzero integral modulus m and real-place subset Sigma.",
+      "objects": "F number field; O=O_F its maximal order; m product of Q for theta, arbitrary nonzero integral ideal for the separately mentioned signed-modulus application.",
+      "hypotheses": "All match the source. Sigma may be empty. m=O_F is allowed if Q is empty. All nonzero fractional ideals of O_F are invertible.",
+      "maps": "Identity between the source quotient J_m^*(O_F)/P_(m,Sigma)(O_F) and the usual ray class group; no change of field, order or class of ideals.",
+      "conventions": "Congruence alpha=1 modulo m in the semilocal sense; positivity at precisely Sigma. Theta uses Sigma empty, not the narrow class group.",
+      "connecting_derivation": "Specialize O to the maximal order. Only finiteness is used, not the class number formula or the rank of ray units. The published proof uses its exact sequence and ordinary class-number finiteness.",
+      "consumers": "theta003 line90 through the following U03-RAY-COMMON-MODULUS connection. Signed-modulus availability is recorded only as a source fact, with the actual AC application reserved to parent.",
+      "limitations": "No new independent proof of the source theorem ancestors. No whole U03, auxiliary-prime, or AC acceptance.",
+      "status": "new exact published supplier application proposed for independent review"
+    },
+    {
+      "id": "U03-RAY-COMMON-MODULUS",
+      "available_statement": "Published ray-class finiteness above, retained local/global reciprocity and qualitative Chebotarev, plus the defining ramification and splitting conditions on Theta_Q.",
+      "needed_assertion": "Every finite subextension has Galois group a quotient of the same finite Cl_(product Q,empty)(O_F); therefore Theta_Q itself is finite.",
+      "objects": "Finite abelian 2-extension L/F inside Theta_Q, fixed finite Q disjoint from S, all dyadic and real places in S.",
+      "hypotheses": "Unramified outside Q and split at S; Q consists of odd primes. No bound on ramification index is added.",
+      "maps": "Local reciprocity on units; ideal Artin map onto Gal(L/F); quotient by principal ideals alpha=1 mod product Q; compositum of finite subextensions.",
+      "conventions": "Arithmetic versus geometric Frobenius changes the Artin map to its inverse, not its kernel. Conductor exponents at Q at most one. No real or dyadic modulus.",
+      "connecting_derivation": "U_v^1 is pro-residue-characteristic, so maps trivially to a finite 2-group at each odd v. Global reciprocity kills each principal ray ideal. Chebotarev gives surjectivity. Degrees are bounded by the same finite ray class order. A finite subextension of maximal degree contains all others by the compositum argument.",
+      "consumers": "theta003 PROOF.md section6 line90, within exact pinned lines78-95.",
+      "limitations": "Finiteness only. No uniform bound as Q varies, no approval of the earlier Selmer or prime-selection proof, and no claim every unitary character is finite.",
+      "status": "new connecting proof authored here; pending nonauthor review"
+    }
+  ]
+}

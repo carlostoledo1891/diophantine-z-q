@@ -1,0 +1,166 @@
+[
+  {
+    "origin": "v14-finite-field-source-reconciliation-author-001/SOURCE-INPUTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-FINITE-FIELD-SOURCE-FORMAL-QUOTIENT",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-FINITE-FIELD-SOURCE-FORMAL-QUOTIENT-P1"
+      ],
+      "assertion": {
+        "statement": "The actual nth formal quotient over Fprime is identified with pi^n O_Fprime/pi^(n+1) O_Fprime, equivariantly for Gal(Fprime/F).",
+        "objects": "The actual elliptic formal group over the base local ring, base-defined parameter and finite unramified extension.",
+        "hypotheses": "Use the formal completion of the Neron identity at zero, identified by a base minimal Weierstrass parameter; unramified extension preserves this parameter and minimality.",
+        "quantifiers": "Every congruence filtration stage n>=1.",
+        "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+        "uniformity": "No restriction that r be prime to the characteristic.",
+        "constants": "No quantitative bound or division by r.",
+        "normalizations": "The group acts on coefficients and fixes pi and the parameter definition.",
+        "exceptional_cases": "The new local finite-field proof separately establishes normal-basis and cohomology conclusions.",
+        "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+      },
+      "classification": "dependency",
+      "reason": "Imports only the formal-filtration identification into the actual finite-field application, not the outgoing H1 conclusion.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 79,
+          "end_line": 79,
+          "excerpt_sha256": "8ee075cda7f66ac4ff093403660a119863529f293753b3a4e73263ab13f9c56b"
+        },
+        "statement": "For a one-dimensional formal group over a complete discrete valuation ring, the nth congruence quotient is canonically the additive nth residue ideal quotient via the formal parameter.",
+        "publication": {
+          "title": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "authors": "J. H. Silverman",
+          "venue": "J. H. Silverman, \\emph{The arithmetic of elliptic\ncurves}, second edition, Springer, 2009, Chapters IV and VII.",
+          "authoritative_version": "Second edition (2009), exact PDF pinned. Direct inspection found the omega sign typo on p.105 and a^2-b instead of a^2-4b in X Proposition 4.9, p.337. The full official errata file was not retrieved. A056 uses the separately pinned Sutherland lecture statement and the checked corrected recurrences; the isogeny-kernel calculation is derived independently in closure-batch-002. No application relies on an uninspected errata file. Exact pinned PDF 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "Chapter IV, Proposition3.2(a), printed124; formal-completion identification via the existing elliptic minimal-model input is separate.",
+          "corrections": "Only the stated source scope is reused; retained qualifications and separate inputs remain in force."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+          "sha256": "7cf2deac2376b3866f091ce4fce6469d4feedb6544193e1607daac2e5bc77f8f"
+        },
+        "start_line": 23,
+        "end_line": 23,
+        "excerpt_sha256": "fea8619b12a3bf87014552928fdf210ff40b86a6fb6e82101f5aea84e24e529b"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-FINITE-FIELD-SOURCE-FORMAL-QUOTIENT",
+      "use_sha256": "ba0a46db50d8fdab753f651f612db220049aa2179e151fc3ac257d80ce414f11",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a one-dimensional formal group over a complete discrete valuation ring, the nth congruence quotient is canonically the additive nth residue ideal quotient via the formal parameter.",
+        "objects": "One-dimensional formal group over a complete discrete valuation ring and its congruence filtration.",
+        "hypotheses": "The formal group law and parameter are defined over the base ring; n>=1.",
+        "quantifiers": "Every congruence filtration stage n>=1.",
+        "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+        "uniformity": "No restriction that r be prime to the characteristic.",
+        "constants": "No quantitative bound or division by r.",
+        "normalizations": "Parameter modulo the next ideal power identifies the additive law.",
+        "exceptional_cases": "No cohomology vanishing or component group statement is supplied.",
+        "limit_order": "Define the formal group and its parameter over the complete discrete valuation ring, then take its congruence filtration and identify each successive quotient."
+      },
+      "needed_assertion": {
+        "statement": "The actual nth formal quotient over Fprime is identified with pi^n O_Fprime/pi^(n+1) O_Fprime, equivariantly for Gal(Fprime/F).",
+        "objects": "The actual elliptic formal group over the base local ring, base-defined parameter and finite unramified extension.",
+        "hypotheses": "Use the formal completion of the Neron identity at zero, identified by a base minimal Weierstrass parameter; unramified extension preserves this parameter and minimality.",
+        "quantifiers": "Every congruence filtration stage n>=1.",
+        "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+        "uniformity": "No restriction that r be prime to the characteristic.",
+        "constants": "No quantitative bound or division by r.",
+        "normalizations": "The group acts on coefficients and fixes pi and the parameter definition.",
+        "exceptional_cases": "The new local finite-field proof separately establishes normal-basis and cohomology conclusions.",
+        "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+      },
+      "required_capabilities": [
+        "The actual nth formal quotient over Fprime is identified with pi^n O_Fprime/pi^(n+1) O_Fprime, equivariantly for Gal(Fprime/F)."
+      ],
+      "available_capabilities": [
+        "For a one-dimensional formal group over a complete discrete valuation ring, the nth congruence quotient is canonically the additive nth residue ideal quotient via the formal parameter."
+      ],
+      "derived_capabilities": [
+        "The actual nth formal quotient over Fprime is identified with pi^n O_Fprime/pi^(n+1) O_Fprime, equivariantly for Gal(Fprime/F)."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+            "sha256": "7cf2deac2376b3866f091ce4fce6469d4feedb6544193e1607daac2e5bc77f8f"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "fea8619b12a3bf87014552928fdf210ff40b86a6fb6e82101f5aea84e24e529b"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual nth formal quotient over Fprime is identified with pi^n O_Fprime/pi^(n+1) O_Fprime, equivariantly for Gal(Fprime/F).",
+          "objects": "The actual elliptic formal group over the base local ring, base-defined parameter and finite unramified extension.",
+          "hypotheses": "Use the formal completion of the Neron identity at zero, identified by a base minimal Weierstrass parameter; unramified extension preserves this parameter and minimality.",
+          "quantifiers": "Every congruence filtration stage n>=1.",
+          "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+          "uniformity": "No restriction that r be prime to the characteristic.",
+          "constants": "No quantitative bound or division by r.",
+          "normalizations": "The group acts on coefficients and fixes pi and the parameter definition.",
+          "exceptional_cases": "The new local finite-field proof separately establishes normal-basis and cohomology conclusions.",
+          "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The new local finite-field proof separately establishes normal-basis and cohomology conclusions.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+              "sha256": "7cf2deac2376b3866f091ce4fce6469d4feedb6544193e1607daac2e5bc77f8f"
+            },
+            "start_line": 23,
+            "end_line": 25,
+            "excerpt_sha256": "c625947d73b39870b2646b6adf757799c97fc0125d5bfbc5a778728c67aa2d1d"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+            "sha256": "7cf2deac2376b3866f091ce4fce6469d4feedb6544193e1607daac2e5bc77f8f"
+          },
+          "start_line": 23,
+          "end_line": 23,
+          "excerpt_sha256": "fea8619b12a3bf87014552928fdf210ff40b86a6fb6e82101f5aea84e24e529b"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+          "sha256": "7cf2deac2376b3866f091ce4fce6469d4feedb6544193e1607daac2e5bc77f8f"
+        },
+        "start_line": 23,
+        "end_line": 23,
+        "excerpt_sha256": "fea8619b12a3bf87014552928fdf210ff40b86a6fb6e82101f5aea84e24e529b"
+      }
+    ]
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "components": [
+    {
+      "origin": "v14-rc-hilbert-class-primes-001",
+      "state": "author_proposal",
+      "use": {
+        "id": "ACTIVE-RC-HILBERT-CLASS-FIELD",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-HILBERT-CLASS-FIELD-P1"
+        ],
+        "assertion": {
+          "statement": "The Hilbert class field of the actual imaginary quadratic K has Galois group Cl(K) under the arithmetic ideal Artin map, so its elements may be used in the subsequent finite Chebotarev choice.",
+          "objects": "The actual imaginary quadratic K and the finite unramified abelian class field corresponding to all local unit subgroups.",
+          "hypotheses": "K is the actual number field; the ordinary ideal class group is finite; finite-idelic quotient by K* and the completed maximal-order unit subgroup identifies with Cl(K).",
+          "quantifiers": "Every class of the fixed ordinary ideal class group.",
+          "parameter_range": "Conductor one; no order of nonmaximal conductor at this step.",
+          "uniformity": "Qualitative finite extension and exact Artin identification.",
+          "constants": "No bound on discriminant, class number or prime size.",
+          "normalizations": "Arithmetic Frobenius of a prime ideal gives its ideal class; inverse convention may be changed consistently.",
+          "exceptional_cases": "The existence of a prime representative outside exclusions is supplied separately by finite Chebotarev.",
+          "limit_order": "Form the conductor-one class field, identify its ideal class Galois group, then apply finite Chebotarev."
+        },
+        "classification": "dependency",
+        "reason": "Supplies the class field in which the generator primes are chosen.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "docs/theorem-application-audit/evidence/closure-batch-009.md",
+              "sha256": "7b94588fc609efc57ccec36816ed61f57bce51fc61d566e865484258311672c3"
+            },
+            "start_line": 7,
+            "end_line": 16,
+            "excerpt_sha256": "6f1df3e17fecb465188382f86e86d9a5a28bd00b9753fe4fdd52dd97f1658c89"
+          },
+          "statement": "Global reciprocity identifies finite abelian extensions with the appropriate finite-index open idelic subgroups containing principal ideles; the global Artin map restricts to local Artin maps, and units control unramifiedness. At unramified primes the positive prime ideal has arithmetic Frobenius.",
+          "publication": {
+            "title": "Class Field Theory",
+            "authors": "J. S. Milne",
+            "venue": "Author course notes, version4.03, August6,2020",
+            "authoritative_version": "Retained author PDF SHA256 50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5; author notes, not described as a peer-reviewed article.",
+            "locator": "V Theorem1.7 pp150–151; V.1.9–1.10 pp152–153; V Theorems3.5–3.6 and Remark3.8 p158; V Proposition5.2 p178; V Theorems5.3 and5.5 pp178–179.",
+            "corrections": "Reuses the exact edition and bounded source check in A068 independent second review. The local norm-locator correction for the unrelated beta paragraph is not used here."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4414,
+          "end_line": 4418,
+          "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-HILBERT-CLASS-FIELD",
+        "use_sha256": "3da9c04a72117abb244846c29ec4bd82b01f92b5dba2a9e3ba686067663ac64c",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Global reciprocity identifies finite abelian extensions with the appropriate finite-index open idelic subgroups containing principal ideles; the global Artin map restricts to local Artin maps, and units control unramifiedness. At unramified primes the positive prime ideal has arithmetic Frobenius.",
+          "objects": "Number-field ideles, ray class groups, finite abelian extensions and local/global Artin maps.",
+          "hypotheses": "Number field and the finite-index open subgroup/conductor conditions of the cited reciprocity and existence theorems; use the finite ideles for the imaginary quadratic specialization.",
+          "quantifiers": "For every such subgroup and extension with the stated local conditions.",
+          "parameter_range": "Finite abelian class-field extensions; arithmetic Frobenius at unramified finite places.",
+          "uniformity": "Exact algebraic correspondences, with no effective bound or uniform analytic estimate.",
+          "constants": "No numerical bound is imported.",
+          "normalizations": "Positive prime ideal corresponds to arithmetic Frobenius; principal ideles are trivial.",
+          "exceptional_cases": "This source statement alone does not identify noninvertible order ideals, prove CM-point reciprocity or construct modular parametrizations.",
+          "limit_order": "Fix the subgroup and local unit conditions before taking its corresponding extension."
+        },
+        "needed_assertion": {
+          "statement": "The Hilbert class field of the actual imaginary quadratic K has Galois group Cl(K) under the arithmetic ideal Artin map, so its elements may be used in the subsequent finite Chebotarev choice.",
+          "objects": "The actual imaginary quadratic K and the finite unramified abelian class field corresponding to all local unit subgroups.",
+          "hypotheses": "K is the actual number field; the ordinary ideal class group is finite; finite-idelic quotient by K* and the completed maximal-order unit subgroup identifies with Cl(K).",
+          "quantifiers": "Every class of the fixed ordinary ideal class group.",
+          "parameter_range": "Conductor one; no order of nonmaximal conductor at this step.",
+          "uniformity": "Qualitative finite extension and exact Artin identification.",
+          "constants": "No bound on discriminant, class number or prime size.",
+          "normalizations": "Arithmetic Frobenius of a prime ideal gives its ideal class; inverse convention may be changed consistently.",
+          "exceptional_cases": "The existence of a prime representative outside exclusions is supplied separately by finite Chebotarev.",
+          "limit_order": "Form the conductor-one class field, identify its ideal class Galois group, then apply finite Chebotarev."
+        },
+        "required_capabilities": [
+          "The Hilbert class field of the actual imaginary quadratic K has Galois group Cl(K) under the arithmetic ideal Artin map, so its elements may be used in the subsequent finite Chebotarev choice."
+        ],
+        "available_capabilities": [
+          "Global reciprocity identifies finite abelian extensions with the appropriate finite-index open idelic subgroups containing principal ideles; the global Artin map restricts to local Artin maps, and units control unramifiedness. At unramified primes the positive prime ideal has arithmetic Frobenius."
+        ],
+        "derived_capabilities": [
+          "The Hilbert class field of the actual imaginary quadratic K has Galois group Cl(K) under the arithmetic ideal Artin map, so its elements may be used in the subsequent finite Chebotarev choice."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4414,
+            "end_line": 4418,
+            "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "The Hilbert class field of the actual imaginary quadratic K has Galois group Cl(K) under the arithmetic ideal Artin map, so its elements may be used in the subsequent finite Chebotarev choice.",
+            "objects": "The actual imaginary quadratic K and the finite unramified abelian class field corresponding to all local unit subgroups.",
+            "hypotheses": "K is the actual number field; the ordinary ideal class group is finite; finite-idelic quotient by K* and the completed maximal-order unit subgroup identifies with Cl(K).",
+            "quantifiers": "Every class of the fixed ordinary ideal class group.",
+            "parameter_range": "Conductor one; no order of nonmaximal conductor at this step.",
+            "uniformity": "Qualitative finite extension and exact Artin identification.",
+            "constants": "No bound on discriminant, class number or prime size.",
+            "normalizations": "Arithmetic Frobenius of a prime ideal gives its ideal class; inverse convention may be changed consistently.",
+            "exceptional_cases": "The existence of a prime representative outside exclusions is supplied separately by finite Chebotarev.",
+            "limit_order": "Form the conductor-one class field, identify its ideal class Galois group, then apply finite Chebotarev."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "The existence of a prime representative outside exclusions is supplied separately by finite Chebotarev.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 4414,
+              "end_line": 4418,
+              "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4414,
+            "end_line": 4418,
+            "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 4414,
+          "end_line": 4418,
+          "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+        }
+      ],
+      "passage_bindings": [
+        {
+          "passage_id": "ACTIVE-RC-HILBERT-CLASS-FIELD-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 4414,
+            "end_line": 4418,
+            "excerpt_sha256": "ea4f9fca8688278cd83237c8b2281a3a6cebd9c5e655a548b63b3e5a0652375a"
+          }
+        }
+      ]
+    }
+  ]
+}

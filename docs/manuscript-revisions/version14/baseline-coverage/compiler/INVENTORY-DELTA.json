@@ -1,0 +1,105 @@
+{
+  "schema": "compiler-inventory-delta-v1",
+  "scope": "Additive independent coverage overlay; no historical record overwritten.",
+  "initial_literal_parser_additions": [
+    {
+      "passage": "COMP-059",
+      "kind": "cite",
+      "supplier": "silverman",
+      "line": 8201,
+      "end_line": 8202,
+      "printed_locator": "[IV\\S1, Example~IV.2.2.3 and\nProposition~IV.2.3(a)]",
+      "supplier_label_line": null,
+      "cross_slice": false
+    },
+    {
+      "passage": "COMP-077",
+      "kind": "cite",
+      "supplier": "diamond-im",
+      "line": 8966,
+      "end_line": 8967,
+      "printed_locator": "[\\S12.5, (12.5.1)--(12.5.2) and Remark 12.5.1,\npp.~119--120]",
+      "supplier_label_line": null,
+      "cross_slice": false
+    }
+  ],
+  "novel_coverage": "141 contiguous manually reconstructed consuming passages, including unnamed imports and constructor/section/equation dependencies outside the older result-only inventory.",
+  "matched_internal_result_count": 53,
+  "cross_slice_incoming_count": 47,
+  "cross_slice_outgoing_count": 54,
+  "v7_changes": [
+    {
+      "kind": "replace",
+      "v7_lines": [
+        6505,
+        6505
+      ],
+      "v13_lines": [
+        6660,
+        6661
+      ],
+      "v13_text": "of rational points, Conjecture~3 of \\cite{mazur1992,mazur1995}, is\nfalse. Its stronger Conjecture~2 is false as well."
+    },
+    {
+      "kind": "replace",
+      "v7_lines": [
+        6508,
+        6508
+      ],
+      "v13_lines": [
+        6664,
+        6666
+      ],
+      "v13_text": "We recall Mazur's projection argument, originating in\n\\cite{mazur1992} and repeated in \\cite[p.~166]{mazur1995}.\nConjecture~3 in \\cite[p.~165]{mazur1995} asserts that the closure"
+    },
+    {
+      "kind": "replace",
+      "v7_lines": [
+        6525,
+        6525
+      ],
+      "v13_lines": [
+        6683,
+        6686
+      ],
+      "v13_text": "components, contradicting the stated conjecture. Conjecture~2 in\nthe same source would give the homotopy type of a finite simplicial\ncomplex and hence only finitely many connected components, so it\nimplies Conjecture~3 and is contradicted too."
+    },
+    {
+      "kind": "insert",
+      "v7_lines": [
+        6571,
+        6570
+      ],
+      "v13_lines": [
+        6732,
+        6738
+      ],
+      "v13_text": "\nOpenAI already obtained Turing degree $0'$ for this set in\n\\cite[Corollary 7.1, pp.~56--57]{openaihtp}; that paper explicitly\ndoes not assert many-one completeness. The stronger direction below\nis $0'\\le_m\\operatorname{HTP}(\\Q)$, obtained from the integer\ndefinition through the universal polynomial. The reverse many-one\nreduction is the standard enumeration of rational solutions."
+    },
+    {
+      "kind": "insert",
+      "v7_lines": [
+        11797,
+        11796
+      ],
+      "v13_lines": [
+        11965,
+        11972
+      ],
+      "v13_text": "In particular S30, S18, S29 and S32 are, respectively, Sections\n2, 4, 5 and 9 of OpenAI's \\emph{A pointwise 2-converse for elliptic\ncurves with rational two-torsion}~\\cite{openaipointwise}, frozen at\n\\texttt{openai/math} commit\n\\nolinkurl{4eaee87548250b2682affda7d05d947c05554bae}.\nThe source filenames are provenance labels for those sections, not\nindependent publications or independent arithmetic assumptions.\n"
+    },
+    {
+      "kind": "insert",
+      "v7_lines": [
+        11883,
+        11882
+      ],
+      "v13_lines": [
+        12059,
+        12146
+      ],
+      "v13_text": "\n\\subsection{The saved templates and the mathematical predicates}\n\\label{subsec:v10-template-dictionary}\nThe following dictionary identifies the relations encoded by the saved\ntemplates, in addition to the decoding rules above. Point arguments are\ncanonical five-coordinate codes. Field values have their two rational\ncomponents in the basis $(1,\\sqrt2)$; conjugation negates the second\ncomponent. An inverse equation guards each displayed quotient.\nConjunction is encoded by a sum of squares, and disjunction by a\nproduct, with the private witness blocks specified in the file.\nThe identities are identities of zero sets over $\\Q$; squaring a\ncallee polynomial can change the literal polynomial without changing\nthe relation it defines.\n\n\\begin{longtable}{p{.29\\textwidth}p{.65\\textwidth}}\n\\toprule Saved template & Relation and constraints\\\\\\midrule\\endhead\n\\nolinkurl{member} & Membership in the canonical code domain $D=2E(K)$\nof Section~\\ref{sec:model}.\\\\\n\\nolinkurl{raw_add}, \\nolinkurl{raw_z}, \\nolinkurl{raw_inverse_x} &\nThe group-law relation on typed inputs, $z=-x/y$, and $w=1/x$,\nrespectively, with $z(O)=w(O)=0$.\\\\\n\\nolinkurl{log25} & The two-component equality to the displayed\nscaled degree-25 polynomial $L$ in Section~\\ref{sec:mult}.\\\\\n\\nolinkurl{pole} & $Q_{\\rm pole}(B)^2$, where $Q_{\\rm pole}$ is the\neleven-witness polynomial of Section~\\ref{sec:pole}. The outer square\ncomes from the singleton conjunction added by the rational builder.\\\\\n\\nolinkurl{test_group} & The twelve field tests of\nSection~\\ref{sec:mult}, including $A_i-\\sigma(A'_i)$ for $i=1,2,3$.\nIts four input points are $[c_*]P_0,[c_*]P_1,[c_*]P_2,[c_*]P_3$.\nIt types the first four auxiliary points and obtains the second four\nby subtraction; its two denominator points and logarithms are nonzero.\\\\\n\\nolinkurl{slope} & The normalized twelve-test products in six private\ngroups, their traced inverses, and $\\Phi(R/\\Theta^2)$ from\nSection~\\ref{sec:mult}, with all contact and denominator guards.\\\\\n\\nolinkurl{height_certificate} & The 27 slopes summing in triples to\nthe nine homogeneous coordinate quantities in that section, together\nwith membership of the three input points.\\\\\n\\nolinkurl{multiply.scalar}, \\nolinkurl{multiply.guard},\n\\nolinkurl{multiply} & The fixed $[c_*]$ graph; the inverse of the\nfinite false-triple product; and their conjunction with the height\ncertificate at the fixed $\\ell_0$.\\\\\n\\nolinkurl{natural} & Four model squares, formed by multiplication,\nwhose sum is the input code, as in Section~\\ref{sec:compiler}.\\\\\n\\nolinkurl{value.signed_encode} & $N=\\iota(n)$ and a natural code\n$C=\\iota(c)$ with $n=c/2$ for even $c$, and $n=-(c+1)/2$ for odd\n$c$. The two branches use $c=2q$ and $c=2q+1$ with $q\\ge0$.\\\\\n\\nolinkurl{value.abs} & $a=|x|$: $a$ is a sum of four rational\nsquares and $a^2=x^2$.\\\\\n\\nolinkurl{value.close_coordinates} & The strict coordinate window\nof Section~\\ref{sec:bridge}, using the typed points $A,L,J$,\n$r=\\operatorname{Tr}(z(J)/z(A))/2$ and\n$\\epsilon=|(z(L))_0|+|(z(L))_1|>0$, with $|t-r|<\\epsilon$.\nThis template alone does not assert the precision relation.\\\\\n\\nolinkurl{value.test} & Exactly $\\Test(N,\\kappa,t)$ of\nSection~\\ref{sec:bridge}: $C_1=[\\kappa n]P_0$,\n$V_0=H-\\kappa P_0$, $V_1=U-C_1$, the six displayed raw-$z$ tests,\ntheir normalization by $F(t)$, and the single guarded pole input.\nThese ratios use $z$, not $L$.\\\\\n\\nolinkurl{value.exceptions} & The six branches\n$N=\\iota(c)$ and $t=c$, $c\\in\\Cset$, with the constant points\ncomputed by the fixed group-law chains.\\\\\n\\nolinkurl{scalar.integer_constant_}\\,$i$ & The fixed integer\nscalar graph requested by the translated precision computation.\\\\\n\\bottomrule\n\\end{longtable}\n\nThe composition recipes make the remaining identifications explicit.\n\\texttt{power\\_value} translates the source power template with its\nthree input codes and output code; \\texttt{precision} translates\nthe five-natural-input precision polynomial, in the order\n$(n,\\kappa,a,\\ell,j)$ after signed encoding. The recipe\n\\texttt{close} introduces $A,L,J$, forms those five signed encodings,\nconjoins \\texttt{precision}, and calls\n\\nolinkurl{value.close_coordinates}. Thus it is the full $\\Close$.\nThe recipe \\texttt{main} introduces one shared $\\kappa$ and conjoins\n\\texttt{close} and \\nolinkurl{value.test} at exactly that same code.\nThe product recipe \\texttt{value\\_union} joins this branch with\n\\nolinkurl{value.exceptions}; \\texttt{value} also imposes\n\\texttt{member} on $N$. Finally \\texttt{integers} existentially\nintroduces $N$ and calls \\texttt{value} with external coordinate\n$t=X_0$. These are precisely $\\Val$ and its input projection.\nThe ordered calls and private ranges are checked by\n\\nolinkurl{auditOrdinaryIntegerPolynomial} in\n\\nolinkurl{construction/ordinary-integer-polynomial.js}.\n\\nolinkurl{scripts/check_construction.py} regenerates the saved\nexpression byte for byte. The dictionary supplies the mathematical\nidentification; those finite checks verify the stored syntax and\nwiring, not the arithmetic theorems used to prove the predicates."
+    }
+  ],
+  "retired_source_warning": "Historical v5 Frei-Tinkova application is retired by the v7 internal simultaneous-prime theorem. The cross-slice theorem is the consumed supplier; do not restore the preprint as a current premise."
+}

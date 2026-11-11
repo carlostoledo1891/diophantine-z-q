@@ -1,0 +1,15 @@
+# Independent review of seven Gaussian pipeline connections
+
+Reviewer: /root/v14_arithmetic_review. No controller-run or gate identity is asserted.
+
+Decision: accept the seven internal connections in v14-ga-pipeline-edges-author-002, manifest SHA256 e68555bea3bf290f49f7b763a496b7637b7a95277f226461d817ee94e5250b12, against current main 1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8. I reused the exact accepted pipeline002 source scopes and independently read the seven serialized available/needed assertions, actual source and consumer passages, and corrected metadata.
+
+HECKE-to-NORM consumes the finite character expansion with the one-half factor and square-root prime-power error, not a progression estimate promoted to nilsequence orthogonality. The fixed-W substitution and sigma_1*c_W<1/4 absorb that error under the separate ideal minor-arc and affine-interpolation hypotheses. HECKE-to-CENTERED consumes the actual progression cancellation with arbitrary logarithmic saving; its exponent is chosen after the factorization and cell-count exponents. NORM-to-CENTERED supplies the specified power-form estimate, restricted delta/Q regime, mean-zero tests and equidistribution premises; dimension-zero and larger-delta handling match the current corollary.
+
+CENTERED-to-ARTIN is accepted precisely as the documented retained prerequisite through the analytic bridge, not a direct proof of the polynomial count. SLOW-CUTOFF-to-ARTIN consumes the refined Gowers bounds in the actual telescoping linear replacement at physical scale N/V_z. The fixed-W estimate, growing stagewise cutoff, normal-form generalized von Neumann input, bounded admissibility mass, ordinary model, local cube, concatenation and boundary arguments remain distinct. No varying-W uniformity or constant-one interval norm monotonicity is added.
+
+SIEVE-to-SIMULTANEOUS uses the same logarithmic product weight and half interval as the lower count. The leading obstruction constant is controlled by choosing the finite cutoff first; each tau-dependent error is controlled only after fixing that tau. ARTIN-to-SIMULTANEOUS then fixes the field and ray data, uses the actual conditional-density singular series and one-half factor, and supplies one common retained pattern after subtracting the full obstruction. No uniform asymptotic over varying fields or inverse growing field-degree factor is inferred.
+
+All 25 independent member, unique current-location and canonical use/output checks pass. The 001-to-002 component delta consists only of removing the unrelated inherited Kato review and replacing its scope text on each row. All seven use/connection objects are unchanged. The corrected metadata has no remaining Kato mapping; initial_mapping is empty and the separate inputs match these seven edges.
+
+This accepts the seven existing dependency connections, not fresh source theorem proofs, recursive ancestry, complete Gaussian coverage, the final prime-to-completeness edge, or a release gate. Canonical files were not edited. Exact IDs and use digests accompany the report.

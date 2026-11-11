@@ -1,0 +1,54 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "status": "proposed narrow retained-source specialization; independent review pending",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+    },
+    "start_line": 15748,
+    "end_line": 15750,
+    "excerpt_sha256": "857571ca673cd1d04b496a13693d57ae4ea7ebfa2682dc4a8b0fbe1b83ea2952"
+  },
+  "retained_supplier": {
+    "use_id": "ACTIVE-CJ-LOCAL-PRIMITIVE-LOCAL-DIVISION",
+    "use_sha256": "88a4f0c296d31149fcba9922dd13910c414ccd147eb74f6d70bde5e802163730",
+    "available_assertion": {
+      "statement": "The local division quaternion algebra has the unramified quadratic cyclic model and unique maximal order, radical and quadratic residue field described in the cited theorem.",
+      "objects": "The field and quaternion algebra in the fixed-type CJ comparison.",
+      "hypotheses": "Nonarchimedean local field, its unramified quadratic extension and a uniformizer; current k=Q_q.",
+      "quantifiers": "Every object satisfying precisely the stated source hypotheses.",
+      "parameter_range": "Characteristic zero; the current global field is Q and the current local field is Q_q.",
+      "uniformity": "Exact existence, identity or classification only; no quantitative estimate.",
+      "constants": "Dimensions4 and2 where used; valuation factor1/2 in the local division case.",
+      "normalizations": "Valuation is v(nrd)/2, not v(nrd); q is the actual inert prime, not the H19 prime3 specialization.",
+      "exceptional_cases": "Valuation is v(nrd)/2, not v(nrd); q is the actual inert prime, not the H19 prime3 specialization.",
+      "limit_order": "No limits. Apply the source theorem before the following finite algebraic calculation."
+    },
+    "publication": {
+      "title": "Quaternion Algebras",
+      "authors": "John Voight",
+      "venue": "Graduate Texts in Mathematics288, Springer(2021)",
+      "authoritative_version": "Published final chapter with exact source pins in SOURCE-PINS.json",
+      "locator": "Voight13.3.1–4 and Theorem13.3.11 pp205–207; published chapter13",
+      "corrections": "Valuation is v(nrd)/2, not v(nrd); q is the actual inert prime, not the H19 prime3 specialization."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/evidence/cj-local-structure-001/SOURCE-CONNECTION.md",
+        "sha256": "f40e1015c5d651a998856ba90dd74a15d6e01a705da7f70301b1d6ad0c149293"
+      },
+      "start_line": 18,
+      "end_line": 18,
+      "excerpt_sha256": "f94c080f07676bd376df0970571487aa7ac7d5c138d49dd9430d8fb9062da3d1"
+    }
+  },
+  "specialization": "Apply the generic nonarchimedean local division theorem at k=Q_ell0 to the already specified quaternion division algebra. Its unique maximal order modulo its radical is F_(ell0²). This supplies precisely the residue-field assertion at15748–15749.",
+  "boundaries": [
+    "The incoming theorem is used through its generic available assertion, not its previous fixed-CJ needed assertion.",
+    "The count of residue embeddings follows from the degree-two finite-field extension. Lifting/classification of integral embedding orbits is not declared closed by this residue-field specialization.",
+    "The rank-one fractional-ideal and split Eichler lattice-pair assertions at15739–15747 remain separate."
+  ]
+}

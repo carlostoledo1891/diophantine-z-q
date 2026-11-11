@@ -1,0 +1,82 @@
+% End 06-literal-construction.tex
+
+
+% Begin 07-even-source.tex
+\section{Fixed-form arithmetic and the even coefficient source}\label{app:even-source}
+This appendix supplies the constructions used in (3.1)--(3.3).
+Throughout, $E=E_\ell$ is fixed, with the lattice, parametrization and
+period convention of Section~\ref{sec:rc}. Constants may depend on these
+data and on the prescribed finite list of local types. They do not depend
+on the number or sizes of the later good conductor primes.
+
+\subsection{One retained class, including discriminant \texorpdfstring{$4h$}{4h}}
+All numbered primary references in this subsection are to Kato~\cite{kato}.
+
+Fix a non-CM elliptic curve $E/\mathbf Q$ of conductor $N$, its weight-two newform $f$,
+$T=T_2E$, and $V=T\otimes\mathbf Q_2$. In the application
+$E=E_\ell$ is fixed first. Put
+$\Lambda=\mathbf Z_2[[\Gamma]]=\mathbf Z_2[[t]]$, where $\Gamma$
+is the real cyclotomic Galois group. Let
+$\kappa:G_{\mathbf Q}\to\Gamma\subset\Lambda^\times$ be the quotient map,
+and set $A=\Lambda[1/2]$.
+We use arithmetic Frobenius throughout. The action on the cyclotomic
+group-ring coefficient is the inverse deck action.
+
+\paragraph{The precise output.}
+\begin{proposition}[One retained Kato system and its two comparisons]
+\label{ex:app-kato-system}
+Use the fixed curve, lattice and cyclotomic convention just specified.
+Fix $e\ge\max\{3,v_2(N)\}$ large enough for the fixed initial local data;
+the smoothing choice is (K5).
+Let $G$ be a finite elementary abelian two-group, let
+$\psi:G_{\mathbf Q}\to G$ be a continuous homomorphism, and let
+$\chi_x=\chi_0(x\circ\psi)$, for $x\in\widehat G$, be a finite
+family of quadratic characters with one fixed real sign and fixed
+local squareclasses at the primes dividing $2N$.
+Since the characters of $G$ separate
+its elements, $\psi(c)=1$ for complex conjugation $c$, and
+$\psi|_{G_{\mathbf Q_v}}=1$ at every $v\mid2N$. All varying conductor primes
+are good odd primes for $E$. Let $F$ be the squarefree least common
+multiple of the odd parts of the primitive conductors. There is a
+single retained-smoothed class
+\[
+ Z_F\in 2^{-c_E}H^1\bigl(G_{\mathbf Q,S},
+        T\otimes\Lambda[G](\chi_0\psi\kappa^{-1})\bigr),
+ \qquad S=\operatorname{prime}(2NF),                         \tag{K1}
+\]
+where $c_E$ is fixed before $F$ and $G$.
+There is also one $F_E\in\Lambda$ with $F_E(0)\ne0$, fixed before
+$F,G$, such that at every height-one prime $\mathfrak p$ of $A$,
+\[
+ \ell_{A_{\mathfrak p}}H^2(C_{S,x})_{\mathfrak p}
+ \leq
+ \ell_{A_{\mathfrak p}}
+ \left(H^1(C_{S,x})/A F_E(Z_F)_x\right)_{\mathfrak p}.       \tag{K2}
+\]
+Here $C_{S,x}$ is the full rational global Iwasawa complex of the
+constituent. For an odd squarefree signed parameter $h$ giving
+$\chi_x=\chi_h$, central reciprocity for this same class gives
+\[
+ v_2\exp^*\bigl(F_E(Z_F)_x(0)\bigr)
+ =v_2L_*(h)+\sum_{q\mid F,\ q\nmid h}
+        v_2\#E^h(\mathbf F_q)+2e+v_2F_E(0)+\epsilon_h,       \tag{K3}
+\]
+when the value is nonzero. The numbers $\epsilon_h$ belong to a
+bounded set depending only on the fixed curve, period conventions
+and local types at two. A zero central $L$-value gives zero dual
+exponential. Formula (K3) does not assert that its remaining unit is
+one. No part of (K1)--(K3) compares integral lattices of varying newforms.
+\end{proposition}
+\begin{proof}\leavevmode
+\paragraph{The retained route and its comparison.}
+All classes in this subsection retain the smoothing integers of (K5).
+The comparison used below is the exact identity (E.1), obtained by
+integral weighted corestriction and the norm relation of
+\cite[Proposition 8.12]{kato}. We do not divide by the smoothing
+operators, or compare a chosen generator with a separately normalized
+zeta class for the varying newform. In particular the central factor
+is $s_F$ of (K6), whose valuation is $2e$ for every $F$.
+The use of power-series zero finiteness in paragraph~7 establishes
+nonvanishing of the supplied Euler system in both generic sign
+components; it is not a comparison of two Euler systems.
+

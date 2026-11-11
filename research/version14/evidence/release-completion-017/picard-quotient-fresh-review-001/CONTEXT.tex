@@ -1,0 +1,57 @@
+
+\begin{lemma}[Forward analytic rank zero and one]\label{lem:forward-rank}
+Let $A/\Q$ be an elliptic curve. If $\ord_{s=1}L(A,s)=r\leq1$,
+then $\operatorname{rank}A(\Q)=r$ and $\Sha(A/\Q)$ is finite.
+Consequently $\operatorname{corank}_{\Z_2}\Sel_{2^\infty}(A/\Q)=r$.
+\end{lemma}
+\begin{proof}
+Use the modularity theorem of Breuil, Conrad, Diamond and Taylor
+\cite{bcdt} in the published formulation
+\cite[Theorem C.13.6, p.~442]{silverman}.
+Apply \cite[Theorem 1, pp.~430--431]{kolyvagin}, whose statement
+includes both $r=0$ and $r=1$. Its Theorems 3--5 provide the
+auxiliary imaginary quadratic field, the nonzero Heegner height,
+and finiteness over that field; the restriction kernel for $\Sha$
+is contained in the finite group $\Sha(A/\Q)[2]$.
+The ordinary Kummer sequence
+\[
+0\longrightarrow A(\Q)\otimes\Q_2/\Z_2
+\longrightarrow\Sel_{2^\infty}(A/\Q)
+\longrightarrow\Sha(A/\Q)[2^\infty]\longrightarrow0
+\]
+gives the corank assertion.
+For the modular quotient used below, let $N$ be the conductor of $A$.
+Choose the finite surjective $\Q$-morphism
+$\rho:X_0(N)\to A$ supplied by
+\cite[Theorem C.13.6]{silverman}, and compose it with the finite
+surjective forgetful morphism $u:X_1(N)\to X_0(N)$.
+Put $f=\rho\circ u$. Pushforward of divisors preserves degree
+and sends principal divisors to principal divisors by the function-field
+norm \cite[Proposition II.3.6(c),(d)]{silverman}.
+It therefore induces
+\[
+ q=f_*:J_1(N)=\operatorname{Pic}^0(X_1(N))
+       \longrightarrow\operatorname{Pic}^0(A)\simeq A,
+\]
+where the last identification uses the identity point of $A$
+\cite[Proposition III.3.4]{silverman}.
+This is a homomorphism of abelian varieties over $\Q$: for the finite
+flat map $f$, the norm on line bundles is
+$\mathcal L\mapsto\det(f_*\mathcal L)\otimes
+\det(f_*\mathcal O_{X_1(N)})^{-1}$;
+this construction is defined over $\Q$, commutes with base change,
+and induces the displayed map of Picard varieties.
+To check surjectivity, work over $\overline{\Q}$ and fix any
+$P_0\in X_1(N)(\overline{\Q})$. Given $a\in A(\overline{\Q})$,
+choose $P$ with $f(P)=a+f(P_0)$. Then
+$q([P]-[P_0])=a$. No rational point on $X_1(N)$ is required.
+Independently, the $r=0$ finiteness
+assertion follows directly from \cite[Corollary 14.3]{kato},
+applied to the modular quotient $J_1(N)\twoheadrightarrow A$
+over $\Q$ and the trivial character. This result includes the
+prime two and imposes no residual irreducibility hypothesis.
+\end{proof}
+
+Applying Theorem~\ref{hyp:RC} to both $n$ and $n\theta$,
+Lemma~\ref{lem:forward-rank} gives rank one and finite $\Sha$, hence
+$\Sha[2]=0$.

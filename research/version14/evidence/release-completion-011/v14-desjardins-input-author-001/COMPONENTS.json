@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "author": "/root/v14_arithmetic_author",
+  "components": [
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-RC-DESJARDINS-ROOT-FACTOR",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-RC-DESJARDINS-ROOT-FACTOR-P1"
+        ],
+        "assertion": {
+          "statement": "For the actual signed unit-filter parameters, each newly ramified prime outside S contributes (-1/p), and their product is fixed by the sign and dyadic unit class.",
+          "objects": "The fixed curve E of the nonvanishing section, S containing2,3 and all bad primes, and odd signed squarefree t coprime to S.",
+          "hypotheses": "The parameter has the prescribed real sign and local unit squareclasses; E is good outside S.",
+          "quantifiers": "Every parameter in this fixed signed unit filter.",
+          "parameter_range": "New primes p|t outside S, necessarily p>=5.",
+          "uniformity": "The product of the new factors is constant over the filter; no nonvanishing uniformity follows.",
+          "constants": "Exact signs only; no analytic constants.",
+          "normalizations": "Quadratic twist by t, not by an incorrectly assumed odd fundamental discriminant; D_p inversion does not change ±1.",
+          "exceptional_cases": "At2,3 and old bad primes use local isomorphism from equal squareclasses. Classes3 or7 modulo8 remain allowed; discriminant may be4t.",
+          "limit_order": "Fix S and the signed unit filter, then choose a parameter; compute local factors and their finite product."
+        },
+        "classification": "dependency",
+        "reason": "Actual root-number check in the signed unit-filter nonvanishing reduction.",
+        "shared_contract_justification": "One use covers the identical local factor and its displayed finite-product specialization.",
+        "supplier": {
+          "kind": "published_external",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/desjardins-current/SOURCE.md",
+              "sha256": "a610610dc6b7c349df08cadf992411c9dff167adc0924a7e18e3aa6937460f34"
+            },
+            "start_line": 3,
+            "end_line": 4,
+            "excerpt_sha256": "676d42c8bf4dc7266a605de24e9ff219401276f46af8b78b49614a96fe20b015"
+          },
+          "statement": "For p>=5, p|t with t nonzero squarefree, and E of good reduction type I0, W_p(E_t)=(-1/p).",
+          "publication": {
+            "title": "Root number of twists of an elliptic curve",
+            "authors": "Julie Desjardins",
+            "venue": "Journal de Theorie des Nombres de Bordeaux 32 (2020),73–101",
+            "authoritative_version": "Final published PDF SHA2569c77b1ca4721c814b3f6c8ac153a061132750fcda21249493349d11421e82533",
+            "locator": "Proposition3.3(2), printed84, typeI0; Proposition3.1 printed83",
+            "corrections": "Only p>=5; no dyadic extension inferred."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/desjardins-current/SOURCE.md",
+            "sha256": "a610610dc6b7c349df08cadf992411c9dff167adc0924a7e18e3aa6937460f34"
+          },
+          "start_line": 6,
+          "end_line": 10,
+          "excerpt_sha256": "58a690733efac3ef667ff93c95b870802d7001ebe348e74842be3d044dd6a523"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-RC-DESJARDINS-ROOT-FACTOR",
+        "use_sha256": "5d611f825df0836fbc1f8fbd003451dd5809adcf8d453f14fc22217955108d38",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "For p>=5, p|t with t nonzero squarefree, and E of good reduction type I0, W_p(E_t)=(-1/p).",
+          "objects": "An elliptic curve E/Q_p, its quadratic twist E_t, and local root numbers in {±1}.",
+          "hypotheses": "p>=5; squarefree nonzero integer t; p divides t; E has good reduction.",
+          "quantifiers": "Every such E,p,t.",
+          "parameter_range": "Only the type I0 branch of Proposition3.3(2).",
+          "uniformity": "Independent of unit part of t in this branch.",
+          "constants": "The value is exactly the Legendre symbol (-1/p).",
+          "normalizations": "Desjardins defines W_p(E)=D_p W_p(E_t); D_p²=1 and good reduction gives W_p(E)=1.",
+          "exceptional_cases": "No p2 or p3 conclusion is asserted; other reduction types are not consumed.",
+          "limit_order": "Fix E and a squarefree parameter t, then apply at its prime divisors p>=5."
+        },
+        "needed_assertion": {
+          "statement": "For the actual signed unit-filter parameters, each newly ramified prime outside S contributes (-1/p), and their product is fixed by the sign and dyadic unit class.",
+          "objects": "The fixed curve E of the nonvanishing section, S containing2,3 and all bad primes, and odd signed squarefree t coprime to S.",
+          "hypotheses": "The parameter has the prescribed real sign and local unit squareclasses; E is good outside S.",
+          "quantifiers": "Every parameter in this fixed signed unit filter.",
+          "parameter_range": "New primes p|t outside S, necessarily p>=5.",
+          "uniformity": "The product of the new factors is constant over the filter; no nonvanishing uniformity follows.",
+          "constants": "Exact signs only; no analytic constants.",
+          "normalizations": "Quadratic twist by t, not by an incorrectly assumed odd fundamental discriminant; D_p inversion does not change ±1.",
+          "exceptional_cases": "At2,3 and old bad primes use local isomorphism from equal squareclasses. Classes3 or7 modulo8 remain allowed; discriminant may be4t.",
+          "limit_order": "Fix S and the signed unit filter, then choose a parameter; compute local factors and their finite product."
+        },
+        "required_capabilities": [
+          "For the actual signed unit-filter parameters, each newly ramified prime outside S contributes (-1/p), and their product is fixed by the sign and dyadic unit class."
+        ],
+        "available_capabilities": [
+          "For p>=5, p|t with t nonzero squarefree, and E of good reduction type I0, W_p(E_t)=(-1/p)."
+        ],
+        "derived_capabilities": [
+          "For the actual signed unit-filter parameters, each newly ramified prime outside S contributes (-1/p), and their product is fixed by the sign and dyadic unit class."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/desjardins-current/SOURCE.md",
+              "sha256": "a610610dc6b7c349df08cadf992411c9dff167adc0924a7e18e3aa6937460f34"
+            },
+            "start_line": 6,
+            "end_line": 10,
+            "excerpt_sha256": "58a690733efac3ef667ff93c95b870802d7001ebe348e74842be3d044dd6a523"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual signed unit-filter parameters, each newly ramified prime outside S contributes (-1/p), and their product is fixed by the sign and dyadic unit class.",
+            "objects": "The fixed curve E of the nonvanishing section, S containing2,3 and all bad primes, and odd signed squarefree t coprime to S.",
+            "hypotheses": "The parameter has the prescribed real sign and local unit squareclasses; E is good outside S.",
+            "quantifiers": "Every parameter in this fixed signed unit filter.",
+            "parameter_range": "New primes p|t outside S, necessarily p>=5.",
+            "uniformity": "The product of the new factors is constant over the filter; no nonvanishing uniformity follows.",
+            "constants": "Exact signs only; no analytic constants.",
+            "normalizations": "Quadratic twist by t, not by an incorrectly assumed odd fundamental discriminant; D_p inversion does not change ±1.",
+            "exceptional_cases": "At2,3 and old bad primes use local isomorphism from equal squareclasses. Classes3 or7 modulo8 remain allowed; discriminant may be4t.",
+            "limit_order": "Fix S and the signed unit filter, then choose a parameter; compute local factors and their finite product."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "At2,3 and old bad primes use local isomorphism from equal squareclasses. Classes3 or7 modulo8 remain allowed; discriminant may be4t.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/desjardins-current/SOURCE.md",
+                "sha256": "a610610dc6b7c349df08cadf992411c9dff167adc0924a7e18e3aa6937460f34"
+              },
+              "start_line": 3,
+              "end_line": 10,
+              "excerpt_sha256": "be36f31d738430e13cb2c8279f3cd0b039b3d83673e3da62bfd3d22b17ea2f6d"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 2869,
+              "end_line": 2876,
+              "excerpt_sha256": "0e9bab7318139588be0afa63703bc2252e44f68848ba3382aa2099a99e046658"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2843,
+            "end_line": 2879,
+            "excerpt_sha256": "a4f78ae0ffe54ed6c7d7f9e4cfae39200d193282b9342a025c88d1aca8a6612a"
+          }
+        ]
+      },
+      "retained_separate_inputs": [
+        "Dirichlet/CRT prime realization",
+        "HL/BFH nonvanishing and prime-count conclusions",
+        "Local twist classification by squareclasses"
+      ],
+      "origin": {
+        "historical_application": "A026",
+        "current_mapping": "DIRECT003 root-number clause",
+        "historical_status": "Preserved verbatim in SOURCE-PROVENANCE.json; no global closure inferred."
+      }
+    }
+  ]
+}

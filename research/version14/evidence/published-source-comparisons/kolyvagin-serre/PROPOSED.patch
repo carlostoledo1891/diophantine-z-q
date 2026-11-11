@@ -1,0 +1,72 @@
+--- base/quartic_v14.tex
++++ proposal/quartic_v14.tex
+@@ -833,12 +833,23 @@
+ $\ell=5$; there is no residual-image proviso at this prime.
+ It gives a cuspidal eigenform up to character twist. The twisting
+ character is a de Rham subrepresentation of the Hom representation
+-and is unramified outside finitely many primes. Local algebraicity
+-\cite[Appendix B, pp.~32--33]{conrad-local-characters} and class field
+-theory over $\mathbb Q$ make it a finite character times an integral
+-power of the cyclotomic character: removing its integral local
+-Hodge--Tate weight leaves finite inertia at five and at every other
+-prime, hence a finite ray-class character. Comparing $\{0,-1\}$
++and is unramified outside finitely many primes. Choose a finite
++coefficient extension $E/\Q_5$ containing its values. On the underlying
++$\Q_5$-representation, inertia acts semisimply: after scalar extension
++to $\overline{\Q}_5$, multiplication in $E$ splits under the embeddings
++of $E$ as a direct sum of characters. Tate's local-algebraicity theorem
++\cite[Chapter III, \S1.2 and Appendix A.7, Theorem 3]{serre-ladic-published}
++therefore applies. The associated algebraic map from $\mathbb G_m$
++commutes with $E$, since it does so on an open subgroup of $\Q_5^\times$.
++It consequently takes values in $\operatorname{Res}_{E/\Q_5}\mathbb G_m$.
++The adjunction defining restriction of scalars identifies such maps
++with the integer powers of $\mathbb G_m$ over $E$. Taking account of
++the inverse in the source's reciprocity convention, the twisting
++character agrees on an open inertia subgroup with an integral power
++of the cyclotomic character. Dividing by that power leaves finite
++inertia at five and at every other prime. Class field theory over
++$\mathbb Q$ then makes the remaining character a finite ray-class
++character. Comparing $\{0,-1\}$
+ with the modular weights $\{0,1-k\}$ after that power forces
+ $k=2$ and power zero. Absorb the finite Dirichlet character into
+ the eigenform and take its primitive newform $f$. Li's Fricke formula
+@@ -1175,7 +1186,7 @@
+ \end{lemma}
+ \begin{proof}
+ Modularity follows from \cite[Theorem A]{bcdt}.
+-Apply \cite[Theorem 1, pp.~4--5]{kolyvagin}, whose statement
++Apply \cite[Theorem 1, pp.~430--431]{kolyvagin}, whose statement
+ includes both $r=0$ and $r=1$. Its Theorems 3--5 provide the
+ auxiliary imaginary quadratic field, the nonzero Heegner height,
+ and finiteness over that field; the restriction kernel for $\Sha$
+@@ -22711,10 +22722,12 @@
+ Theorem 1.0.4, the version used here. Published in Journal of the
+ American Mathematical Society 35 (2022), 1031--1169.
+ \url{https://arxiv.org/abs/1901.07166v2}.
+-\bibitem{conrad-local-characters} B. Conrad,
+-\emph{Lifting global representations with local properties},
+-author preprint, December 11, 2011, Appendix B, pp.~32--33.
+-\url{https://math.stanford.edu/~conrad/papers/locchar.pdf}.
++\bibitem{serre-ladic-published} J.-P. Serre,
++\emph{Abelian $\ell$-adic representations and elliptic curves},
++Addison--Wesley, 1989, reprint of the 1968 edition,
++Chapter III, \S1.2, p.~III-7, and Appendix A.7,
++Theorem 3, pp.~III-52--53.
++\url{https://www.math.mcgill.ca/darmon/courses/18-19/gs/serre-mcgill.pdf}.
+ \bibitem{li-newforms} W.-C. W. Li,
+ \emph{Newforms and functional equations}, Mathematische Annalen
+ 212 (1975), 285--315, p.~296.
+@@ -22830,9 +22843,10 @@
+ of $L$-series}, Inventiones Mathematicae 84 (1986), 225--320.
+ \bibitem{kolyvagin} V. A. Kolyvagin,
+ \emph{On the Mordell--Weil group and the Shafarevich--Tate group
+-of modular elliptic curves}, MPIM preprint MPI/90-69 (1990),
+-Theorems 1--5, pp.~4--5.
+-\url{https://archive.mpim-bonn.mpg.de/id/eprint/325/1/preprint_1990_69.pdf}.
++of modular elliptic curves}, Proceedings of the International Congress
++of Mathematicians, Kyoto 1990, Vol.~I, Mathematical Society of Japan,
++1991, pp.~429--436, Theorems 1--5, pp.~430--431.
++\url{https://www.mathunion.org/fileadmin/ICM/Proceedings/ICM1990.1/ICM1990.1.ocr.pdf}.
+ \bibitem{kato} K. Kato, \emph{$p$-adic Hodge theory and values of zeta
+ functions of modular forms}, Ast\'erisque 295 (2004), 117--290.
+ \url{https://www.numdam.org/article/AST_2004__295__117_0.pdf}.

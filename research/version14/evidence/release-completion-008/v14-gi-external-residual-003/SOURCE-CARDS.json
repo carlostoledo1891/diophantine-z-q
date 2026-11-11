@@ -1,0 +1,66 @@
+{
+  "GT-COMPACT-TENSOR-APPROXIMATION": {
+    "assertion": {
+      "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+      "objects": "The compact set Sigma, its coordinate projections to a fixed compact nilmanifold, a continuous P and tests F composed with P.",
+      "hypotheses": "The coordinate-test algebra contains constants, is closed under conjugation and separates points. The input test class has fixed norm and Lipschitz bounds on a compact metric space.",
+      "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+      "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+      "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+      "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+      "normalizations": "Uniform error on the entire compact constraint space, before evaluating any orbit or averaging.",
+      "exceptional_cases": "Without point separation or bounded-class compactness the corresponding conclusion is not asserted.",
+      "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+    },
+    "publication": {
+      "title": "Linear equations in primes",
+      "authors": "Ben Green and Terence Tao",
+      "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+      "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "locator": "Proof of Proposition 11.2, compactness step p.1799 and Stone–Weierstrass tensor approximation p.1801",
+      "corrections": "Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+        "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+    }
+  },
+  "GTZ-DEGREE-PULLBACK": {
+    "assertion": {
+      "statement": "Precomposition of a degree-at-most d nilcharacter by a fixed integer linear map is again a degree-at-most d nilcharacter. The same precomposition preserves degree-d symbol equivalence.",
+      "objects": "An integer linear map T:Z^k to Z^ell, a degree-filtered nilcharacter on Z^ell and its lower-degree tensor comparison.",
+      "hypotheses": "Ordinary degree filtrations; T is a fixed standard integer linear map; the actual test, polynomial orbit and lower-degree representation satisfy their stated conditions.",
+      "quantifiers": "Every such fixed T and every such represented nilcharacter and equivalence.",
+      "parameter_range": "Fixed finite dimensions and ordinary degree bound d.",
+      "uniformity": "The same target geometry and test are retained; only the polynomial orbit is precomposed.",
+      "constants": "No new test Lipschitz constant or target dimension is required.",
+      "normalizations": "The symbol comparison is the pullback of the original full tensor comparison.",
+      "exceptional_cases": "Zero maps and rank-deficient maps may lower the actual degree. No arbitrary linear map is asserted to preserve a multidegree rectangle.",
+      "limit_order": "Check the source and target degree filtrations, then precompose the orbit and its lower-degree comparison."
+    },
+    "publication": {
+      "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+      "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+      "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+      "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+      "locator": "Lemma E.8(vi), p.1354, with proof reference p.1356",
+      "corrections": "The printed E8(vi) contains a domain mismatch for chi-prime, and its B5 citation has a composition codomain typo. The current fixed-integer-map application is checked directly: each iterated difference after precomposition equals the original iterated difference in the image directions. The unchanged global test retains its vertical identity; a lower-degree representation pulls back the same way. No unchecked multidegree or arbitrary limit-coefficient claim is used."
+    },
+    "location": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-DEGREE-PULLBACK.md",
+        "sha256": "36787ab69c5ceb50c245a77e1d5417310fdaec0befd5a120531ea60317d1e79d"
+      },
+      "start_line": 5,
+      "end_line": 27,
+      "excerpt_sha256": "0bd0b3d25926e9f29e16754950f604de24cf159fe3aade716fb360c01112ef59"
+    }
+  }
+}

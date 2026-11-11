@@ -1,0 +1,159 @@
+[
+  {
+    "origin": "v14-heegner-finite-field-input-author-001/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-HEEGNER-ADDITIVE-RESIDUE-H1",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-HEEGNER-ADDITIVE-RESIDUE-H1-P1"
+      ],
+      "assertion": {
+        "statement": "Every additive 1-cocycle in each actual formal-filtration quotient used in the Heegner local correction is a coboundary.",
+        "objects": "pi^n O_Fprime/pi^(n+1) O_Fprime for the actual finite unramified local extension, identified with additive kprime.",
+        "hypotheses": "Actual formal parameter is defined over F; pi is a base uniformizer; the formal-filtration identification is separately supplied.",
+        "quantifiers": "Every quotient used in successive correction and every finite unramified extension Fprime/F.",
+        "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+        "uniformity": "No restriction that r be prime to the characteristic.",
+        "constants": "No quantitative bound or division by r.",
+        "normalizations": "The quotient identification is Galois equivariant because pi and the parameter are defined over F.",
+        "exceptional_cases": "Does not supply the formal-filtration theorem, Neron model, Lang step, or convergence of infinite corrections.",
+        "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+      },
+      "classification": "dependency",
+      "reason": "Supplies the exact residue-module H1 vanishing needed for successive formal cocycle correction by a direct finite-field calculation.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "inline",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+            "sha256": "f7565b803d6ce9c51c7e981b0350292de46b33c4c1c379fa74139c8bc7c278b0"
+          },
+          "start_line": 7,
+          "end_line": 11,
+          "excerpt_sha256": "3b8de3b536d6e5dc123f41fceded2284fea2950bbe02ef9866ee1d6913cb21c9"
+        },
+        "statement": "For every finite extension kprime/k of finite fields with its cyclic Galois action, H1(Gal(kprime/k),kprime additive)=0.",
+        "publication": null
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+          "sha256": "f7565b803d6ce9c51c7e981b0350292de46b33c4c1c379fa74139c8bc7c278b0"
+        },
+        "start_line": 15,
+        "end_line": 17,
+        "excerpt_sha256": "f4c420af4c0c5fd1649bfa36199136ae38042db9b73cdcfc07aa8c13ede54ce6"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-HEEGNER-ADDITIVE-RESIDUE-H1",
+      "use_sha256": "bfb5ba88c2e03f3892682d5ebdef51a9fcd3734dd9cdfe9be799923cb7b06b56",
+      "supplier_passage_role": "proof",
+      "available_assertion": {
+        "statement": "For every finite extension kprime/k of finite fields with its cyclic Galois action, H1(Gal(kprime/k),kprime additive)=0.",
+        "objects": "Finite fields k and kprime, additive kprime, Frobenius sigma.",
+        "hypotheses": "k has q elements and kprime has q^r elements, r>=1.",
+        "quantifiers": "Every such finite field extension and additive 1-cocycle.",
+        "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+        "uniformity": "No restriction that r be prime to the characteristic.",
+        "constants": "No quantitative bound or division by r.",
+        "normalizations": "sigma(x)=x^q, T=sum of powers of sigma; coboundary at sigma is sigma(y)-y.",
+        "exceptional_cases": "r=1 is included; no normal-basis or higher-cohomology theorem is claimed.",
+        "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+      },
+      "needed_assertion": {
+        "statement": "Every additive 1-cocycle in each actual formal-filtration quotient used in the Heegner local correction is a coboundary.",
+        "objects": "pi^n O_Fprime/pi^(n+1) O_Fprime for the actual finite unramified local extension, identified with additive kprime.",
+        "hypotheses": "Actual formal parameter is defined over F; pi is a base uniformizer; the formal-filtration identification is separately supplied.",
+        "quantifiers": "Every quotient used in successive correction and every finite unramified extension Fprime/F.",
+        "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+        "uniformity": "No restriction that r be prime to the characteristic.",
+        "constants": "No quantitative bound or division by r.",
+        "normalizations": "The quotient identification is Galois equivariant because pi and the parameter are defined over F.",
+        "exceptional_cases": "Does not supply the formal-filtration theorem, Neron model, Lang step, or convergence of infinite corrections.",
+        "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+      },
+      "required_capabilities": [
+        "Every additive 1-cocycle in each actual formal-filtration quotient used in the Heegner local correction is a coboundary."
+      ],
+      "available_capabilities": [
+        "For every finite extension kprime/k of finite fields with its cyclic Galois action, H1(Gal(kprime/k),kprime additive)=0."
+      ],
+      "derived_capabilities": [
+        "Every additive 1-cocycle in each actual formal-filtration quotient used in the Heegner local correction is a coboundary."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+            "sha256": "f7565b803d6ce9c51c7e981b0350292de46b33c4c1c379fa74139c8bc7c278b0"
+          },
+          "start_line": 15,
+          "end_line": 17,
+          "excerpt_sha256": "f4c420af4c0c5fd1649bfa36199136ae38042db9b73cdcfc07aa8c13ede54ce6"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "Every additive 1-cocycle in each actual formal-filtration quotient used in the Heegner local correction is a coboundary.",
+          "objects": "pi^n O_Fprime/pi^(n+1) O_Fprime for the actual finite unramified local extension, identified with additive kprime.",
+          "hypotheses": "Actual formal parameter is defined over F; pi is a base uniformizer; the formal-filtration identification is separately supplied.",
+          "quantifiers": "Every quotient used in successive correction and every finite unramified extension Fprime/F.",
+          "parameter_range": "All prime characteristics and all extension degrees r>=1.",
+          "uniformity": "No restriction that r be prime to the characteristic.",
+          "constants": "No quantitative bound or division by r.",
+          "normalizations": "The quotient identification is Galois equivariant because pi and the parameter are defined over F.",
+          "exceptional_cases": "Does not supply the formal-filtration theorem, Neron model, Lang step, or convergence of infinite corrections.",
+          "limit_order": "Compute trace and Frobenius kernels for the finite field extension before applying to each formal quotient."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Does not supply the formal-filtration theorem, Neron model, Lang step, or convergence of infinite corrections.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/heegner-finite-field-current/PROOF.md",
+              "sha256": "f7565b803d6ce9c51c7e981b0350292de46b33c4c1c379fa74139c8bc7c278b0"
+            },
+            "start_line": 7,
+            "end_line": 17,
+            "excerpt_sha256": "b6175fca3db506e9bd150f724c0f5448f3739ed4be01e2a06788dc993496eb41"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+            "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+          },
+          "start_line": 81,
+          "end_line": 87,
+          "excerpt_sha256": "87c09408caef899ce2a817013101f71cc97eafded6187dbe8b9c0be2a0751b78"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/heegner-descent-current/SOURCE-CONNECTIONS.md",
+          "sha256": "d16b5cbc134812a4ecf1a6c4c008a0a076b79fdce7d3b5f6b9f8d94c9276268f"
+        },
+        "start_line": 81,
+        "end_line": 87,
+        "excerpt_sha256": "87c09408caef899ce2a817013101f71cc97eafded6187dbe8b9c0be2a0751b78"
+      }
+    ]
+  }
+]

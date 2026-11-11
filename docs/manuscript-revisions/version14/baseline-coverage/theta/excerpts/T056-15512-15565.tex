@@ -1,0 +1,54 @@
+\section{Nonvanishing, normalization and the final family}\label{app:endpoints}
+The uses of the coefficient and address propositions have the following
+order. First apply only their even-source case, whose depth is already
+fixed by Proposition~\ref{ex:app-even-phase}. This gives the rough
+companion and the genus lower bound. These in turn establish the odd
+minimum and its finite-stage inequalities. Only then apply the odd
+case of Proposition~\ref{ex:app-coefficient-rules} and the two-symbol
+address construction. In particular the proof of the rough companion
+does not use the later odd minimum.
+We give the choice order underlying (3.3)--(3.9). This also separates
+the two valuation arguments: the even upper transfer uses the common
+Kato scalar, while the final contradiction uses the common Heegner
+coordinate of Section~\ref{sec:limits}.
+
+\subsection{An absolute bound of five new primes}
+The theorem of Hoffstein--Luo \cite[p.~436]{hl} supplies fundamental
+discriminants with nonzero central value and at most four prime
+factors. Its finite splitting set is arbitrary. The bound four is
+absolute; no uniform size threshold for those discriminants is needed.
+
+\begin{proposition}[Nonvanishing with five primes and finite local prescriptions]\label{ex:app-five-prime}
+Let $A/\Q$ be a fixed modular elliptic curve for this application,
+let $S$ contain $2,3$ and all its bad primes, and let $B$ be a finite
+prime exclusion set. In every nonempty signed unit-squareclass filter
+at $S$ of even root number, there is a signed odd squarefree parameter
+$u$, prime to $S\cup B$, with $L(A^u,1)\ne0$ and $\omega(u)\le5$.
+Only the intermediate parameter supplied by Hoffstein--Luo is required
+to be fundamental; the final field discriminant may be $4u$.
+The number five is independent of the prescribed finite set. No
+uniform bound on the sizes of the selected primes is asserted.
+\end{proposition}
+\begin{proof}\leavevmode
+Let $A/\Q$ be any fixed modular elliptic curve for this application,
+$S$ contain two, three and all its bad primes, and $B$ be any finite
+exclusion set. Fix a nonempty signed unit filter of even root number.
+By CRT and Dirichlet choose one signed prime $q_0$ in its classes,
+outside $S\cup B$. Apply the theorem to the actual curve $A^{q_0}$,
+putting
+\[
+                 S'=S\cup B\cup\{|q_0|\}\cup
+                               \{p:p\mid N_{A^{q_0}}\}
+\]
+in its splitting set. The theorem gives a fundamental $d$ with
+$\chi_d(p)=1$ for all $p\in S'$ and at most four prime factors.
+The functional equation forces $d>0$, since $A^{q_0}$ has even
+root number and every conductor prime splits. Splitting at two
+gives $d\equiv1\pmod8$. Thus $q_0d$ has all original unit
+classes, is prime to $B$, is squarefree, and has at most five
+prime factors. If $q_0d\equiv3$ or $7\pmod8$, its field
+discriminant is $4q_0d$; only $d$ was required to be fundamental
+in the theorem. This is compatible with the coefficient
+construction (E.2).
+\end{proof}
+

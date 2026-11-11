@@ -1,0 +1,35 @@
+# Source-first reconstruction: classical modular representation connector
+
+This record was authored before opening or receiving the root-authored connector proof. The task is a bounded independent review of the classical eigenform input consumed by section5 of pan-calegari-direct-author-001/PUBLIC-PROOF.md. It is not a new review of Pan/Calegari modularity, the construction of r5, or the finite-twist theorem.
+
+The existing consumer supplies a two-dimensional de Rham r5 with weights {0,-1}, an up-to-character modular identification r5 = U_f tensor delta after finite coefficient extension, and a normalized primitive classical cuspidal f of positive integral weight k. The missing local bridge must treat k=1 separately, establish de Rhamness and the exact weights of U_f for every level when k>=2, and fix the determinant/Frobenius normalization. Kato's k>=2 result cannot silently be used at k=1.
+
+## Direct source reading
+
+I independently verified final Kato SHA2563c6e14b11fa60262db8aff782ce3cf4d83e9100c0be83621a7e4ce502cec605d and final Deligne–Serre SHA25665b390f6d33e827e30c6c66bbc15421eca51db3180bdf5996dcee19047be97fc. I extracted the cited pages from those PDFs myself and visually inspected the formulas, not merely OCR output. The local-only renders and extracted text are evidence for this reading and are not redistribution payloads.
+
+Kato: section5.4, printed155, extends the rational realization to levels1,2,3 by invariant parts. Sections6.1–6.3, printed160–162, work with k>=2 and N>=1, give the coefficient field F, and give dim_F V_F(f)=2 and dim_F S(f)=1. Section8.3, printed181–182 (with section8 opening at180), supplies the etale Galois action, its rational low-level extension and the F_lambda-linear action on the realization. There is no coprimality requirement p not dividing N in these definitions.
+
+Kato9.2, printed187, states de Rham closure under direct sums, tensor products, duals and subquotients, and invariance under finite extension of the local base field. Its9.2.2 applies to G\\Y(N), N>=3, and k>=2. Kato9.4, printed188, explicitly applies this to V_{F_lambda}(f) for a normalized newform, giving filtration dimension2 in indices i<=0, dimension1 for1<=i<=k-1, and dimension0 for i>=k. Combined with5.4/8.3, this covers every level N>=1, including p dividing N. It is a de Rham assertion, not a claim of crystallinity at bad level.
+
+Kato14.10.1–14.10.3, printed240, fixes the dual/twist and arithmetic-Frobenius conventions. In particular det(V)=kappa^{1-k} epsilon^{-1}; the good-prime polynomial is written for Fr_l^{-1} on V and equals1-a_l u+epsilon(l)l^{k-1}u^2. I also read the continuation14.10.4–14.10.5 at241; its crystalline-module polynomial is not needed to obtain the all-level de Rham assertion. The section ends before14.11. No inference of full crystalline dimension is made from14.10.4.
+
+Deligne–Serre: printed513–514 (PDF8–9) gives the discrete-complex finite-image convention, the arithmetic Frobenius convention, Lemma3.2 uniqueness for semisimple representations, Theorem4.1, and Remarks4.3–4.5. A nonzero weight-one eigenform has a finite-image representation with trace a_l and determinant epsilon(l); it is irreducible when the form is cuspidal. Remark6.5 and its footnote at printed521 (PDF16) explicitly give the finite-image l-adic version and realization over the number field of character values. Sections8.2,8.5,8.6 at printed525–526 (PDF20–21) also exhibit the number field and finite-image realization used in proving4.1. This justifies transfer to the chosen p-adic coefficient embedding; it is not an arbitrary unproved identification of complex and p-adic matrices.
+
+## Independent derivation to test against the future author packet
+
+For k>=2, use V=V_{F_lambda}(f) in Kato's cohomological normalization. The filtration jumps show weights {0,k-1} in the convention that Q_p(1) has weight-1. Its dual U=V^vee has weights {0,1-k}, is de Rham, and has determinant kappa^{k-1}epsilon. Its arithmetic-Frobenius characteristic polynomial is exactly the inverse-Frobenius polynomial of V. Thus it has the Tate-normalized good-prime eigenvalues required by the current consumer. If the modularity formulation uses the standard semisimple attached representation, make the semisimple matching explicit: characteristic-zero Chebotarev/Brauer–Nesbitt identifies that representation with the semisimplification of V^vee, and de Rham subquotient/direct-sum closure preserves the asserted weights and determinant. Alternatively an explicit standard irreducible realization identification suffices. A bare name U_f must not conceal a dual, a contragredient nebentype or an extra Tate twist.
+
+For k=1 the Deligne–Serre representation, and also its dual if that convention is chosen, has finite image. It becomes trivial over a finite extension at p; therefore it is de Rham with both weights0. This uses finite-extension invariance in Kato9.2 and the trivial representation, not the k>=2 filtration formula.
+
+Under the given isomorphism r5 = U_f tensor delta, the isomorphism line gives a Galois-stable copy of delta in Hom(U_f,r5). Since both factors are de Rham in either case, the tensor/dual/subobject closure makes delta de Rham. A one-dimensional de Rham character has one integral filtration weight m. At k=1 the twisted weights are {m,m}, contradicting {0,-1}. Hence k>=2. In that range {m,m+1-k}={0,-1}; since k is an integer at least2, m=0 and k=2.
+
+After k=2 the determinant formula reads det(U_f)/kappa=epsilon, a finite character in this Tate convention. It supplies exactly the finite nebentype input used by the existing determinant argument for delta. Weight0 alone is not substituted for that finite-character argument.
+
+## Standard inputs and review boundaries
+
+The other substantive standard inputs are the identification of Hodge–Tate weights with filtration jumps for de Rham representations in the stated sign convention, dual negation and tensor addition of weights, exact filtered behavior under de Rham subquotients, and the usual semisimple good-prime realization/uniqueness convention when matching attached representations. Kato9.2 and Deligne–Serre3.2 provide the relevant closure and uniqueness interfaces; these accepted foundations are not recursively reproved.
+
+The forthcoming review must check the actual author's assumptions, all-level scope, dual and epsilon signs, finite coefficient extension, k=1 branch, and exact current consumer. It must not enlarge this input to a new proof of modularity, a full local-global compatibility theorem at bad primes, a crystalline assertion at p dividing N, conductor determination, or release acceptance.
+
+Independence: I have not contributed to the root connector or the SourceReview dual-match argument. I have received only source locators and the review assignment, not their derivation or disposition. Earlier Pan record adoption was my bounded review, not authorship of this bridge. The serving model is unknown/not exposed in retained launch metadata.

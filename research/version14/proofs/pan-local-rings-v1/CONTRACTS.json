@@ -1,0 +1,107 @@
+[
+  {
+    "id": "PTC-CORRECTION",
+    "status": "authored; independent review pending",
+    "assertion10": {
+      "statement": "ANT2020 corrects generic reducedness to (R_1)_red/lambda; the whole unreduced R_1/lambda need not be generically reduced.",
+      "objects": "O a coefficient DVR, fraction field E of characteristic zero, finite residue field k of characteristic 5; q=N(v), d=chi(Frob_v), framed matrix pair (Phi,Sigma), with fixed det(Phi)=d",
+      "hypotheses": "Pan 4.1.1: q=1 mod 5, d=1 mod lambda; xi has 5-power order and values in O; retain exact residual pair, finite-type and Noetherian completion hypotheses",
+      "quantifiers": "Every v in the actual S minus Sigma_p and the relevant branch of xi and the residual pair",
+      "parameter_range": "p=5, n=2; no statement at p=2; q a residue cardinality prime to 5",
+      "uniformity": "The same formulas apply to all these places and coefficient extensions preserving the stated hypotheses; no numerical bound claimed",
+      "constants": "Only q,d and the specified roots alpha,beta enter the equations; 2 is a unit",
+      "normalizations": "Arithmetic Frobenius matrix satisfies Phi Sigma Phi^-1=Sigma^q; inertia eigencharacters form the unordered reciprocal pair; same framed basis",
+      "exceptional_cases": "xi=1 and xi nontrivial are separate; nontrivial residual representation does not enter the Thorne residual-trivial application",
+      "limit_order": "Artin quotient functors first, then their representing complete local rings; invert 5 only in explicitly generic-fiber conclusions"
+    },
+    "needed": "Identify whether Pan invokes the corrected false assertion.",
+    "available": "ANT2020 Section 3.1 and actual PAN 4.2.10–4.2.4.",
+    "derivation": "REPORT source-only finding; PROOF Sections 1 and 3.",
+    "adverse_cases": "O[e]/e^2 has unchanged spectrum but nonreduced special fiber.",
+    "scope": "Source-only branch comparison; not full proof acceptance."
+  },
+  {
+    "id": "PTC-DET",
+    "status": "authored; independent review pending",
+    "assertion10": {
+      "statement": "Fixed determinant is obtained by the specified degree-two etale cover and exact formal-variable splitting at the residual point.",
+      "objects": "O a coefficient DVR, fraction field E of characteristic zero, finite residue field k of characteristic 5; q=N(v), d=chi(Frob_v), framed matrix pair (Phi,Sigma), with fixed det(Phi)=d",
+      "hypotheses": "Pan 4.1.1: q=1 mod 5, d=1 mod lambda; xi has 5-power order and values in O; retain exact residual pair, finite-type and Noetherian completion hypotheses",
+      "quantifiers": "Every v in the actual S minus Sigma_p and the relevant branch of xi and the residual pair",
+      "parameter_range": "p=5, n=2; no statement at p=2; q a residue cardinality prime to 5",
+      "uniformity": "The same formulas apply to all these places and coefficient extensions preserving the stated hypotheses; no numerical bound claimed",
+      "constants": "Only q,d and the specified roots alpha,beta enter the equations; 2 is a unit",
+      "normalizations": "Arithmetic Frobenius matrix satisfies Phi Sigma Phi^-1=Sigma^q; inertia eigencharacters form the unordered reciprocal pair; same framed basis",
+      "exceptional_cases": "xi=1 and xi nontrivial are separate; nontrivial residual representation does not enter the Thorne residual-trivial application",
+      "limit_order": "Artin quotient functors first, then their representing complete local rings; invert 5 only in explicitly generic-fiber conclusions"
+    },
+    "needed": "Transfer finite-type component and completed generic-fiber statements to the actual fixed determinant.",
+    "available": "TAY2008 Lemma 3.2(1), Lemma 2.7; read THO2015 3.15(2)/3.16 for unrestricted determinant.",
+    "derivation": "PROOF Section 2 gives s^2=det(Phi)/d, inverse map and component argument.",
+    "adverse_cases": "The global affine-line product is not asserted; square root uniqueness fails at p=2.",
+    "scope": "Authored comparison; Thorne final edition remains qualified."
+  },
+  {
+    "id": "PTC-NIL",
+    "status": "authored; independent review pending",
+    "assertion10": {
+      "statement": "Nilpotent quotients preserve the component topology through the actual finite tensor, localization and Noetherian completion constructions.",
+      "objects": "O a coefficient DVR, fraction field E of characteristic zero, finite residue field k of characteristic 5; q=N(v), d=chi(Frob_v), framed matrix pair (Phi,Sigma), with fixed det(Phi)=d",
+      "hypotheses": "Pan 4.1.1: q=1 mod 5, d=1 mod lambda; xi has 5-power order and values in O; retain exact residual pair, finite-type and Noetherian completion hypotheses",
+      "quantifiers": "Every v in the actual S minus Sigma_p and the relevant branch of xi and the residual pair",
+      "parameter_range": "p=5, n=2; no statement at p=2; q a residue cardinality prime to 5",
+      "uniformity": "The same formulas apply to all these places and coefficient extensions preserving the stated hypotheses; no numerical bound claimed",
+      "constants": "Only q,d and the specified roots alpha,beta enter the equations; 2 is a unit",
+      "normalizations": "Arithmetic Frobenius matrix satisfies Phi Sigma Phi^-1=Sigma^q; inertia eigencharacters form the unordered reciprocal pair; same framed basis",
+      "exceptional_cases": "xi=1 and xi nontrivial are separate; nontrivial residual representation does not enter the Thorne residual-trivial application",
+      "limit_order": "Artin quotient functors first, then their representing complete local rings; invert 5 only in explicitly generic-fiber conclusions"
+    },
+    "needed": "Justify reduction of the trivial-xi factors in PAN p47 for Proposition 4.2.4(2).",
+    "available": "Componentwise TAY2008 statement; nilradical in a Noetherian ring is nilpotent.",
+    "derivation": "PROOF Section 3; no transfer of unreduced generic reducedness.",
+    "adverse_cases": "An unchanged topological spectrum does not imply unchanged nilpotent scheme structure.",
+    "scope": "Only the enumerated component conclusions are transferred."
+  },
+  {
+    "id": "PTC-FLAT",
+    "status": "authored; independent review pending",
+    "assertion10": {
+      "statement": "The actual fixed-determinant n=2 nontrivial-xi ring is O-flat before reduction, and so is its local completion.",
+      "objects": "O a coefficient DVR, fraction field E of characteristic zero, finite residue field k of characteristic 5; q=N(v), d=chi(Frob_v), framed matrix pair (Phi,Sigma), with fixed det(Phi)=d",
+      "hypotheses": "Pan 4.1.1: q=1 mod 5, d=1 mod lambda; xi has 5-power order and values in O; retain exact residual pair, finite-type and Noetherian completion hypotheses",
+      "quantifiers": "Every v in the actual S minus Sigma_p and the relevant branch of xi and the residual pair",
+      "parameter_range": "p=5, n=2; no statement at p=2; q a residue cardinality prime to 5",
+      "uniformity": "The same formulas apply to all these places and coefficient extensions preserving the stated hypotheses; no numerical bound claimed",
+      "constants": "Only q,d and the specified roots alpha,beta enter the equations; 2 is a unit",
+      "normalizations": "Arithmetic Frobenius matrix satisfies Phi Sigma Phi^-1=Sigma^q; inertia eigencharacters form the unordered reciprocal pair; same framed basis",
+      "exceptional_cases": "xi=1 and xi nontrivial are separate; nontrivial residual representation does not enter the Thorne residual-trivial application",
+      "limit_order": "Artin quotient functors first, then their representing complete local rings; invert 5 only in explicitly generic-fiber conclusions"
+    },
+    "needed": "Supply extra O-flatness assertion in PAN 4.2.10(2), used for S_1 at p47.",
+    "available": "No such implication follows solely from the read THO2015 3.15(2)/3.16 statements.",
+    "derivation": "PROOF Section 4: monic polynomial divisibility, rank-one matrix minors, explicit free monomial basis, lambda cancellation, monic quadratic extension and completion.",
+    "adverse_cases": "Do not invert alpha-beta; xi=1 does not justify the same commutation equation.",
+    "scope": "New project proof pending independent acceptance; not a theorem attributed to ANT2020."
+  },
+  {
+    "id": "PTC-DOWNSTREAM",
+    "status": "authored; independent review pending",
+    "assertion10": {
+      "statement": "The available branch results concern the same local factors and their completed localization in PAN Proposition 4.2.4.",
+      "objects": "O a coefficient DVR, fraction field E of characteristic zero, finite residue field k of characteristic 5; q=N(v), d=chi(Frob_v), framed matrix pair (Phi,Sigma), with fixed det(Phi)=d",
+      "hypotheses": "Pan 4.1.1: q=1 mod 5, d=1 mod lambda; xi has 5-power order and values in O; retain exact residual pair, finite-type and Noetherian completion hypotheses",
+      "quantifiers": "Every v in the actual S minus Sigma_p and the relevant branch of xi and the residual pair",
+      "parameter_range": "p=5, n=2; no statement at p=2; q a residue cardinality prime to 5",
+      "uniformity": "The same formulas apply to all these places and coefficient extensions preserving the stated hypotheses; no numerical bound claimed",
+      "constants": "Only q,d and the specified roots alpha,beta enter the equations; 2 is a unit",
+      "normalizations": "Arithmetic Frobenius matrix satisfies Phi Sigma Phi^-1=Sigma^q; inertia eigencharacters form the unordered reciprocal pair; same framed basis",
+      "exceptional_cases": "xi=1 and xi nontrivial are separate; nontrivial residual representation does not enter the Thorne residual-trivial application",
+      "limit_order": "Artin quotient functors first, then their representing complete local rings; invert 5 only in explicitly generic-fiber conclusions"
+    },
+    "needed": "Connect the local comparison to the current retained Pan route.",
+    "available": "PAN pp38–47; current manuscript raw spans830–863 and7393–7409.",
+    "derivation": "PROOF Section5 and REPORT related-use audit identify S_1, trivial factors, and exact component consumer.",
+    "adverse_cases": "No transfer to separate nontrivial-residual Shotton branch or unadopted global CEGGPS route.",
+    "scope": "Preserves upstream completed-tensor foundations, final-version limits and all other Pan dependencies."
+  }
+]

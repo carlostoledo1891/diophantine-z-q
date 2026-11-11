@@ -1,0 +1,9 @@
+# Actual contact-prime consumer
+
+The actual chain is main20372–75 (named inherited global inputs),20782 (roots/scales/L before primes),21739–67 (explicit prime selection and CRT),22572–95 (enlarged fixed continuity modulus and real neighborhood),22709–22 (V13 completeness), and23428–35 (retained ordering in the selected system). The earlier supplied spans23027–33 and23639–23707 concern valuation ratios and finite compilation; they are not the prime invocation.
+
+The simultaneous-prime theorem at17509–39 gives the Gaussian prime/residue/adjacent-norm data for fixed coefficients and thresholds. The contact forms are merged and their rational scales cleared before this application, as stated at20831. A finite cutoff can exclude the primes in the fixed denominators and continuity modulus. The original contact construction and two-reductions lemma remain the supplier translating adjacent norms into the primary/opposite reduced group orders.
+
+The additional separation p_i not dividing d_plus(p_j) is not inferred from the bare existence theorem. At20831–44 the proof uses the positive weighted Artin count and slow diagonal to impose w>=N^(1/3) while w^2=o(N). The removed strip has weight O(N^(4/3)log(N)^k)=o(NT). Hasse gives d_plus(p_j)=p_j+O(sqrt(N)); an eventual divisibility ratio in(1/2,2) would be equality. Distinct forms differ by at least c*N^(2/3), excluding equality for i!=j; for i=j divisibility by4 excludes equality to the odd prime. The separate real-progression argument then chooses the common index in the actual CRT class and real open set. These are explicit independent incoming premises for completeness, not new conclusions supplied by the prime theorem alone.
+
+This record repairs a missing consumer location. It does not assert closure of the Artin/diagonal/Hasse/real-progression source edges or invent a new Gaussian application of historical GI39. Author has prior exposure; independent review is required.

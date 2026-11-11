@@ -1,0 +1,70 @@
+\begin{proposition}[One actual stage for the final family]\label{ex:app-final-family}
+In the nonempty-seed case of Proposition~\ref{ex:app-nonempty-seeds},
+fix the final $k,K$ and the stabilized common alphabet. For every
+sufficiently large $b$, the address construction is realized at one
+actual theta stage by a finite set $Q$ of distinct good odd primes
+split in $K$, avoiding the fixed support and the specified finite
+exclusions. With nonzero activations $\lambda_q$ it gives exactly
+the family in (3.9),
+\[
+ h_x=\prod_{q\in Q}(q^*)^{\lambda_q(x)},\qquad h_0=1,
+ \qquad q^*=(-1)^{(q-1)/2}q.
+\]
+All fixed local types are retained, and for every $x\ne0$,
+\[
+ \operatorname{ord}_{s=1}L(E^{h_x},s)=1,\quad L_*(h_xk)\ne0,
+ \qquad j_{\rm gen}(h_x)\le\omega(h_x)+C_o,\quad
+ v_2L_*(h_xk)\le2\omega(h_x)+C_e.
+\]
+The constants precede $b$. The finite graph budget and then the
+actual theta precision are chosen after $b$. The theta prime remains
+a coefficient prime and exclusion, not a relaxed Selmer prime.
+\end{proposition}
+\begin{proof}\leavevmode
+For each chosen $b$, this construction has a finite budget $W_b$.
+Enlarge it to bound every graph product and squarefree output in its
+finite auxiliary tests, as well as every operator set. Contractions
+only decrease the number of vertices. Thus every final $h_x$ lies in
+the tested range of (F.7); this enlargement changes no fixed constant.
+Only now take one actual theta stage in the finite intersection
+of the selected table sets through $W_b+1$, the valid-stage set
+for the full budget $|U|\le W_b$ with $R=2$, and the required
+precision and finite exclusion sets.  In particular (F.6) holds
+through the threshold $T$ used for that budget.
+Realize its prescribed forward residue bits by distinct primes using CRT and Dirichlet;
+quadratic reciprocity supplies the reverse bits.
+There is no uniform bound on $W_b$, no intersection over all
+budgets, and no product-surjectivity assumption on the alphabets.
+The resulting one family satisfies (3.9), with constants fixed
+before $b$. The theta prime $\ell_0$ is a coefficient prime and
+an exclusion, not an active relaxed Selmer prime or a moving
+arithmetic prime $r_i$.
+\paragraph{Finite intersection and the upper bound.}
+The required stage conditions form a finite list once the address
+program is fixed. Let $\mathcal U$ be the chosen ultrafilter and
+let $A_1,\ldots,A_t\in\mathcal U$ be the selected truth-table
+sets used by that program, including all intermediate graphs.
+Let $B\in\mathcal U$ impose (F.6) through the threshold $T$
+for its operator budget and impose
+$M\ge\max(0,\delta_o+W_b)+2$ and $M>T+\delta_o$.
+Finite prime exclusions are included in $B$.
+Then $B\cap\bigcap_{i=1}^t A_i\in\mathcal U$, hence is nonempty.
+Choose a stage there before realizing the prime labels. The
+coefficient rules hold for every realization at this stage, not
+merely for a previously selected finite list of Fourier indices.
+The address construction makes each nonzero address a unit of
+both sources. For the odd source this says exactly
+\[
+ v_2a_M(h_x)=\delta_o+\omega(h_x)<M.
+\]
+The strict inequality follows from the tested-range precision
+condition. Applying (O.8) gives the simple zero and
+$j_{\rm gen}(h_x)\le\omega(h_x)+\delta_o+C_{\rm det}$.
+The normalized even source gives
+$v_2L_*(h_xk)\le2\omega(h_x)+C_{e,\rm final}$.
+Thus one may take $C_o=\delta_o+C_{\rm det}$ and
+$C_e=C_{e,\rm final}$, both fixed before $b$. Only the number
+of tests, the threshold $T$, and the chosen stage depend on the
+address dimension.
+\end{proof}
+

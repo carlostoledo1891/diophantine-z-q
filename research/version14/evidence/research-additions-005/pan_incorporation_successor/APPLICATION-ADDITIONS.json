@@ -1,0 +1,88 @@
+{
+  "status": "Proposed additive integration; no current-registry acceptance inferred",
+  "base_registry": "work/quartic-v14-prep/gate-applications-author/joined-source-successor-006",
+  "contracts": [
+    "PTC-CORRECTION",
+    "PTC-DET",
+    "PTC-NIL",
+    "PTC-FLAT",
+    "PTC-DOWNSTREAM"
+  ],
+  "direct_edges": [
+    {
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "A011",
+      "use_ids": [
+        "B19-d",
+        "B20-a"
+      ],
+      "status": "preserve existing"
+    },
+    {
+      "consumer": "COMPILER-B108",
+      "supplier": "A011",
+      "use_ids": [
+        "COMP-B108-pan-source"
+      ],
+      "status": "preserve existing"
+    },
+    {
+      "consumer": "A011",
+      "supplier": "PTC-DOWNSTREAM",
+      "status": "proposed new proof connection; both actual uses listed above"
+    },
+    {
+      "consumer": "PTC-DOWNSTREAM",
+      "supplier": "PTC-DET"
+    },
+    {
+      "consumer": "PTC-DOWNSTREAM",
+      "supplier": "PTC-NIL"
+    },
+    {
+      "consumer": "PTC-DOWNSTREAM",
+      "supplier": "PTC-FLAT"
+    }
+  ],
+  "source_qualification_record": "PTC-CORRECTION",
+  "additional_external_inputs": [
+    "Taylor2008 final Lemma3.2(1),Lemma2.7",
+    "ANT2020 final Section3.1 correction; source qualification",
+    "Thorne2015 author3.15(2)/3.16 remains qualified"
+  ],
+  "retained": [
+    "Pan/Thorne final-version comparisons",
+    "Other residual local branches",
+    "Completed-tensor and excellent-completion foundations"
+  ],
+  "proof_pin": {
+    "path": "research/version14/proofs/pan-local-rings-v1/PROOF.md",
+    "sha256": "4eec0cf2d9c56a5ebd4880def6a232abc689d88c36a89227c6781ebd13cda5d7"
+  },
+  "independent_proof_decision": {
+    "path": "work/source-risk-review-20261107/pan-thorne15-root-review-001/DECISION.json",
+    "sha256": "0760c5ed0c48c8d4e8b02611fde45e7cc4fda8bd52c65121692ecbd2a31adce0",
+    "bytes": 3043
+  },
+  "actual_consumers": [
+    {
+      "use_ids": [
+        "B19-d",
+        "B20-a"
+      ],
+      "consumer_application": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier_application": "A011",
+      "new_supplement": "PTC-DOWNSTREAM",
+      "site": "first"
+    },
+    {
+      "use_ids": [
+        "COMP-B108-pan-source"
+      ],
+      "consumer_application": "COMPILER-B108",
+      "supplier_application": "A011",
+      "new_supplement": "PTC-DOWNSTREAM",
+      "site": "repeated"
+    }
+  ]
+}

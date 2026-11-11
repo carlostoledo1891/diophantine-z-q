@@ -1,0 +1,506 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\setlength{\emergencystretch}{1em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\T}{\mathbb T}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\E}{\mathbb E}
+\newcommand{\poly}{\operatorname{poly}}
+\newcommand{\Lie}{\operatorname{Lie}}
+\newcommand{\Lip}{\operatorname{Lip}}
+\title{One-variable factorization and approximate additive linearization}
+\author{Author proposal: operator-local agent /root/astra\_v14\_baseline\_compiler}
+\date{Protocol 1.4; exact source contracts for the Sections 9--11 repair}
+\begin{document}
+\maketitle
+\noindent This is a new connecting proof, pending independent review. It does not
+approve itself, the complete inverse theorem, or any release. The earlier
+Section 13 packet is unchanged. We use the final published sources [GTZ],
+[GT12], [GT14], and [GT08] identified in the accompanying source record.
+Only one-variable factorization is asserted here.
+
+\section{Objects, source differences, and the required outputs}
+All nilpotent Lie groups below are standard, connected and simply connected;
+all lattices and filtrations are standard and rational. Subgroups described as
+rational are connected, and their intersection with the ambient lattice is
+cocompact in that subgroup. We use the natural ultrapowers of these objects,
+with the internal-function convention of [GTZ, Appendix A]. A bounded quantity
+is bounded by some standard constant. In the finite combinatorial proof all
+constants depend only on the stated positive density and error constants.
+Passing that finite proof to an ultrapower therefore preserves uniformity and
+internal choices. Braces denote the representative in $(-1/2,1/2]$.
+
+An $\mathbb N$-filtration $G_\bullet$ may have $G_1\ne G_0=G$.
+Its positive groups satisfy $[G_i,G_j]\subseteq G_{i+j}$ and are rational.
+The polynomial convention is the ordinary degree filtration on the source.
+In fixed adapted Mal'cev coordinates, write the coordinates of a polynomial
+map as a finite polynomial in $n$ or $\binom n j$. Coordinate degree is bounded
+in terms of the fixed filtered group. For a smooth factor, ``small Taylor
+coefficients'' means that its constant coefficient is bounded and its
+coefficient of index $j\geq1$ is $O(N^{-j})$, in the group Taylor convention
+of [GTZ, Lemma B.9]. Equivalent coordinate bounds are justified below.
+
+The statement of [GTZ, D.2] cannot be used as a literal equivalence: on
+$\R/\Z$, $g(n)=n/N$ is equidistributed on $[N]$ but is not equidistributed
+on $[\lfloor N/2\rfloor]$. For example its first Fourier average on that
+half interval tends to $2i/\pi$, whereas its full-interval average tends to
+zero. Its nontrivial horizontal character is $1/N$-Lipschitz. We instead use
+the one-variable weak factorization [GT12, Proposition 9.2], whose proof uses
+the quantitative theorem on an actual dense progression. The published
+correction [GT14, pp.1175--1176] explicitly retains the one-variable results.
+Its minor corrections on pp.1182--1183 are part of this source choice.
+
+The properness requirement printed in the second bullet of [GTZ, D.4] is
+removed. Only a weak-factorization step that starts with failed total
+equidistribution forces a proper subgroup. Also, a rational periodic factor
+is not asserted to take values in $\Gamma$.
+
+\begin{theorem}[One-variable factorization, DF-D4]\label{thm:D}
+Let $N$ be unbounded and let $g\in{}^*\poly(\Z,G_\bullet)$.
+There are a standard connected rational subgroup $P\leq G$ and internal
+polynomial maps $\epsilon,p,\gamma\in{}^*\poly(\Z,G_\bullet)$ such that
+\[
+             g(n)=\epsilon(n)p(n)\gamma(n)\qquad(n\in{}^*\Z).
+\]
+The map $p$ takes values in ${}^*P$, with its induced filtration. On $[N]$,
+$\epsilon$ is bounded, is $O(1/N)$-Lipschitz, and has the small Taylor
+coefficient bounds above. There is a standard discrete subgroup
+$\Lambda\geq\Gamma$ with $\gamma(n)\in{}^*\Lambda$ for every $n$, and a
+standard integer $q>0$ with
+$\gamma(n+q)\Gamma=\gamma(n)\Gamma$ for every $n$.
+For every standard finite-index subgroup $\Delta\leq P\cap\Gamma$,
+$p(n)\Delta$ is totally equidistributed in $P/\Delta$ on $[N]$.
+The subgroup $P$ is allowed to equal $G$ or to be trivial.
+\end{theorem}
+
+\begin{theorem}[Approximate four-function linearization, DF-F1]\label{thm:F}
+Let $N$ be unbounded, let $j\geq1$ be standard, and put $e=N^{-j}$.
+Let $H\subseteq[-N,N]\cap{}^*\Z$ be internal, and let
+$\xi_i:H\to{}^*\T$, $1\leq i\leq4$, be internal functions.
+Suppose that for at least $cN^3$ ordered quadruples in $H^4$ satisfying
+$h_1+h_2=h_3+h_4$ one has
+\[
+ \|\xi_1(h_1)+\xi_2(h_2)+\xi_3(h_3)+\xi_4(h_4)-a\|_\T\leq C e,
+\]
+where $c>0$ and $C<\infty$ are standard and $a\in{}^*\T$.
+For any specified index $i$ there are standard $K<\infty$, $c'>0$,
+an internal $H'\subseteq H$ with $|H'|\geq c'N$, internal
+$\alpha_k\in{}^*\T$, $\beta_k\in{}^*\R$, and $\delta\in{}^*\T$ such that
+\[
+ \xi_i(h)=\delta+\sum_{k=1}^K\{\alpha_kh\}\beta_k+O(e)
+                    \quad(h\in H').                                      \tag{F}
+\]
+The implicit constant is standard and uniform over $H'$.
+The bracket sum restricted to $H'$ is an exact Freiman homomorphism:
+it preserves every relation $h_1+h_2=h_3+h_4$ with all four points in $H'$.
+No initial Freiman property, boundedness of the real $\beta_k$, or regularity
+of the input functions is assumed. All choices may be made internally.
+\end{theorem}
+
+\section{Weak factorization and coefficient bounds}
+\begin{lemma}[Weak step, DF-D3]\label{lem:weak}
+Suppose first that $G_1=G$. If $g(n)\Gamma$ is not totally equidistributed
+on $[N]$, it admits the factorization of Theorem~\ref{thm:D} with $p$ taking
+values in a standard proper connected rational subgroup, without the final
+equidistribution requirement. All other bounds and the discrete-overgroup
+and period assertions hold.
+\end{lemma}
+\begin{proof}
+Failed total equidistribution supplies an internal dense progression and a
+standard Lipschitz test with noninfinitesimal discrepancy. Thus for some
+standard $0<\delta<1/2$ it fails total $\delta$-equidistribution in the
+quantitative convention of [GT12]. Reduce $\delta$ further to include the
+rationality constant of the fixed Mal'cev basis. Apply the one-variable case
+of [GT12, Proposition 9.2, pp.522--523] with this $\delta$, the actual degree
+of $G_\bullet$, and the actual dimension of $G$. Its bounds are standard.
+The same argument works for an internal Lipschitz test with a standard norm
+bound: a finite uniform net in the standard Lipschitz ball first supplies a
+standard test with positive discrepancy. This uses compactness of $G/\Gamma$.
+
+Here are the stronger bounds extracted from that source's construction,
+including the distinctions needed for later use. Write $g(0)=c\lambda$
+with $c$ in a fixed bounded fundamental set and $\lambda\in{}^*\Gamma$.
+Then $\widetilde g=c^{-1}g\lambda^{-1}$ has value $1$ at zero. Left
+translation by bounded $c$ changes a Lipschitz norm by a standard factor,
+and right multiplication by $\lambda^{-1}$ changes no point of $G/\Gamma$.
+Thus the same failed-total-equidistribution argument applies to
+$\widetilde g$, with a possibly smaller standard $\delta$.
+
+The source's horizontal-character step gives a nonzero standard integer
+vector $k$ with
+\[
+ \psi(\widetilde g(n))=\sum_{r\geq1}t_r\binom n r,
+ \qquad \|k\cdot t_r\|_\T=O(N^{-r}).                         \tag{D1}
+\]
+Here $k\cdot\psi$ is the real lift of the horizontal homomorphism; in
+particular it kills all commutators. Standardness of $k$ follows because the
+quantitative bound leaves finitely many integer vectors. The source obtains
+(D1) by applying its Theorem 2.9 to the witnessing progression and undoing
+that progression by its Lemma 8.4. This use does not assert the false
+single-scale equivalence described above.
+
+Choose integers $a_r$ nearest to $k\cdot t_r$.
+The coordinate support condition in [GT12, Lemma 6.7] says that $t_r$ lies
+in the coordinate subspace for $G_r$. If $k$ vanishes on that subspace,
+take $a_r=0$ and $v_r=w_r=0$. Otherwise fix a rational vector $u_r$ in
+that subspace with $k\cdot u_r=1$, and put
+\[
+ v_r=a_ru_r,\qquad w_r=(k\cdot t_r-a_r)u_r.
+\]
+Define $\epsilon_0$ and $\gamma_0$ by Mal'cev coordinates
+\[
+ \psi(\epsilon_0(n))=\sum_r w_r\binom n r,
+ \qquad \psi(\gamma_0(n))=\sum_r v_r\binom n r,
+ \qquad p=\epsilon_0^{-1}\widetilde g\gamma_0^{-1}.             \tag{D2}
+\]
+The same coordinate-support lemma and closure of polynomial maps under
+products show that these are polynomial for the original filtration.
+The real horizontal lift vanishes identically on $p$, since its coefficient
+at every index is $k\cdot t_r-(k\cdot t_r-a_r)-a_r=0$.
+Consequently $p$ lies in the connected kernel of that real homomorphism.
+This is a standard proper rational subgroup. A kernel of the circle-valued
+homomorphism alone would not establish connectedness; (D2) supplies the real
+zero required here.
+
+Each $w_r$ is $O(N^{-r})$. The vectors $v_r$ have a common standard
+denominator, but their numerators need not be bounded. This denominator
+statement is all that is required. By [GT12, A.11--A.12], $\gamma_0$ is
+uniformly rational and periodic modulo $\Gamma$ with a standard period.
+The more explicit common discrete overgroup argument below also applies.
+Set $\epsilon=c\epsilon_0$ and $\gamma=\gamma_0\lambda$.
+These are the correct ordered factors of the original $g$.
+Multiplication by bounded $c$ preserves the stated small-coordinate bounds,
+and the added $\lambda$ lies in the original lattice. The next lemma verifies
+all closure and Taylor assertions used here and in the descent.
+\end{proof}
+
+\begin{lemma}[Closure of the controlled factors]\label{lem:closure}
+In a fixed rational nilpotent group, finite products of bounded polynomial
+maps with coefficient bounds $O(N^{-r})$ retain those bounds and are
+$O(1/N)$-Lipschitz on $[N]$. These bounds imply the group Taylor bounds in
+Theorem~\ref{thm:D}. A finite collection of rational lattices commensurable
+with $\Gamma$, together with sets of points whose rational coordinates have
+a fixed common denominator, is contained in a standard discrete subgroup
+$\Lambda\geq\Gamma$. Any fixed-degree polynomial map into this group is
+periodic modulo $\Gamma$ with a standard period.
+\end{lemma}
+\begin{proof}
+Coordinate products, inverses, and changes between first-kind and Mal'cev
+coordinates are fixed polynomials by [GT12, A.2--A.3]. In a coordinate
+polynomial $\sum a_r n^r$, the bounds $a_r=O(N^{-r})$ are equivalent to
+bounded coefficients after substituting $n=Nt$. Products of such polynomials
+retain that property. Converting back to the binomial basis gives at index
+$r$ a fixed linear combination of coefficients of monomial indices $\ell\geq r$,
+hence $O(N^{-r})$. Constant coefficients stay bounded. On the fixed compact
+coordinate range for $0\leq t\leq1$, the group-coordinate maps have bounded
+derivatives; differentiation in $n$ contributes $N^{-1}$. This proves the
+Lipschitz assertion, with any fixed standard metric.
+
+For clarity about the group Taylor convention, one may assign formal weight
+$r$ to each coefficient of $n^r$ in the logarithm of a coordinate polynomial.
+The recursive Taylor extraction by $g(0)$, then $g_1^{\binom n1}$, then
+$g_2^{\binom n2}$, and so on uses only fixed BCH polynomials. Its coefficient
+$\log g_r$ contains no monomial of formal weight less than $r$.
+Indeed after removing indices below $r$, each surviving polynomial term of
+formal weight $w$ has ordinary degree at most $w$. The residual group map
+is the identity at $0,\ldots,r-1$, as a formal identity in its input
+coefficients. Its logarithmic terms of weight $w<r$ are therefore polynomials
+of degree less than $r$ with $r$ zeros, and vanish. BCH products add weights,
+so this assertion is preserved at each extraction step.
+The remaining finitely many monomials have weight at least $r$, and are
+$O(N^{-r})$. This proves the group Taylor assertion, including under products
+and fixed rational embeddings of subgroups.
+
+For the discrete-overgroup assertion, use a rational basis adapted to the
+lower central series and let its weights be $w_i\geq1$. All points of each
+given lattice have logarithmic coordinates with bounded denominators, as do
+the specified coordinate sets, by the fixed polynomial coordinate changes.
+Choose a standard integer $D$ divisible by these denominators and by the
+denominators of all coefficients in the finite BCH formula in this basis.
+Increase $D$ for the finitely many basis conversions if necessary. The set
+\[
+ L=\sum_i D^{-(2w_i-1)}\Z X_i
+\]
+is closed under BCH. For a nonlinear term with $t\geq2$ inputs of weights
+$w_{i_1},\ldots,w_{i_t}$ contributing to output weight $w_k$, one has
+$w_k\geq\sum w_{i_a}$. Therefore the difference of denominator exponents is
+\[
+ (2w_k-1)-\sum_a(2w_{i_a}-1)\geq t-1\geq1.
+\]
+The extra power of $D$ clears that BCH coefficient. Linear terms and negation
+also preserve $L$. Thus $\exp L$ is a standard discrete subgroup containing
+all the required points and $\Gamma$. It is cocompact, and
+$[\exp L:\Gamma]$ is finite. This argument also proves commensurability
+claims needed when a lattice of a rational subgroup is enlarged inside $G$.
+
+For the period in the required right-coset convention, write the Mal'cev
+coordinate vector of $\gamma(n)$ as a polynomial of fixed degree $D_0$.
+Its values have a common standard coordinate denominator, since
+$\gamma(n)\in{}^*\Lambda$. Interpolating at $0,\ldots,D_0$ shows that
+its coefficients have a common standard denominator too. Their numerators
+may be arbitrary internal integers. By the rational polynomial formulas
+for multiplication and inversion, the vector
+\[
+             R(n,r)=\psi\bigl(\gamma(n)^{-1}\gamma(n+r)\bigr)
+\]
+is a polynomial in the two integer variables $n,r$ with a common standard
+coefficient denominator $A$. The identity $R(n,0)=0$ is a polynomial
+identity, so every monomial has a positive power of $r$.
+For the standard integer $q=A$, every coordinate of $R(n,q)$ is an integer
+for every internal integer $n$. Adapted Mal'cev coordinates identify
+$\Gamma$ with the integer-coordinate points. Hence
+$\gamma(n)^{-1}\gamma(n+q)\in{}^*\Gamma$, exactly the assertion
+$\gamma(n+q)\Gamma=\gamma(n)\Gamma$.
+This proves the conclusion of [GT12, A.12] directly; its printed left
+quotient $\gamma(n+q)\gamma(n)^{-1}$ is not the quotient used here.
+\end{proof}
+
+\section{Minimal subgroup descent, with all finite covers retained}
+\begin{proof}[Proof of Theorem~\ref{thm:D}]
+First address the filtration convention. If $G_1$ is proper, write
+$g(0)=c\lambda$ as above and set $p=c^{-1}g\lambda^{-1}$.
+Then $p(0)=1$ and
+\[
+ p(n)=\lambda\bigl(g(0)^{-1}g(n)\bigr)\lambda^{-1}\in G_1.
+\]
+The groups $G_r$ are normal in $G_0$, so conjugation preserves them.
+The induced filtration on $G_1$ has zeroth and first group both $G_1$,
+and the positive groups remain $G_r$. Hence the one-variable result with
+the convention $G_0=G_1$ applies there. This also shows directly that a
+controlled representation exists: $\epsilon=c$, $\gamma=\lambda$,
+and the represented subgroup is $G_1$. If $G_1=G$, the identity-factor
+representation is already enough. Trivial groups cause no exception.
+
+Call a subgroup $P$ a representing subgroup if a factorization with all
+conclusions of Theorem~\ref{thm:D} except total equidistribution exists.
+Choose one with least dimension among the nonempty collection of standard
+rational representing subgroups. This uses a least element of the finite
+set $\{0,\ldots,\dim G\}$, not an infinite iteration or a uniform choice
+over all finite covers.
+
+Suppose that for a standard finite-index $\Delta\leq P\cap\Gamma$ the
+orbit $p\Delta$ is not totally equidistributed. The induced filtration of
+$P$ is rational for $\Delta$, since passing to a finite-index lattice
+does not change its rational Lie algebra. If $P\cap G_1$ is proper in $P$,
+the normalization just given already represents $p$ in that proper subgroup,
+with a bounded constant on the left and a $\Delta$-element on the right.
+Otherwise apply Lemma~\ref{lem:weak} in $P/\Delta$ to obtain
+\[
+                 p=\epsilon_2p_2\gamma_2
+\]
+with $p_2$ in a standard proper rational $P_2<P$.
+Rationality relative to $\Delta$ is rationality relative to $P\cap\Gamma$,
+so $P_2$ is rational in $G$. The actual new factorization is
+\[
+                 g=(\epsilon\epsilon_2)p_2(\gamma_2\gamma).    \tag{D3}
+\]
+The order of both products is necessary in a noncommutative group.
+Lemma~\ref{lem:closure} proves the small-coefficient assertions for the left
+product, in the ambient coordinates. For the right product, the rational
+lattice coordinates of $\gamma_2$ relative to $\Delta$ have common standard
+denominators in the original rational structure. The same lemma supplies a
+single discrete overgroup containing its values, the old overgroup, and
+$\Gamma$. It also supplies the standard period modulo $\Gamma$.
+Thus (D3) is a representation by the lower-dimensional subgroup $P_2$,
+contrary to minimality.
+
+No choice of $\Delta$ was imposed in that minimality argument. Consequently
+the chosen $p$ is totally equidistributed for every standard finite-index
+$\Delta\leq P\cap\Gamma$, with the same factors. This is the required
+quantifier order. The argument only produces standard constants for this
+particular internal orbit and fixed standard geometry. It does not assert
+a prescribed effective bound uniform over all internal orbits.
+\end{proof}
+
+\section{A finite combinatorial proof of the linearization contract}
+We prove a finite assertion with constants depending only on $c,C$ and then
+transfer. Take $N\geq1$, $0<e\leq1$, and suppose the hypotheses of
+Theorem~\ref{thm:F} hold in finite sets. Put $M=\lceil1/e\rceil$ and
+$Q=100N+1$. Round each $\xi_i(h)$ in the circle to $y_i(h)\in M^{-1}\Z/\Z$,
+with error at most $1/(2M)\leq e/2$. Since $Me\leq2$, the approximate sum
+can take only a bounded number, depending on $C$, of values in this grid.
+For at least $c_1N^3$ of the original quadruples its rounded value is a
+fixed $a_0$ in that grid. Here $c_1>0$ depends only on $c,C$.
+
+Embed $[-N,N]$ in $B=\Z/Q\Z$ and identify the target grid with $A=\Z/M\Z$.
+In $B\times A$ form the four sets
+\[
+ A_1=\{(h,y_1(h))\},\quad A_2=\{(h,y_2(h))\},\quad
+ A_3=\{(-h,y_3(h))\},\quad A_4=\{(-h,y_4(h))\}.             \tag{F1}
+\]
+The signed first coordinates are essential. The selected quadruples now
+give $c_1N^3$ representations of $(0,a_0)$ in $A_1+A_2+A_3+A_4$.
+The initial additive relation has no wraparound, since $4N<Q$.
+Fourier inversion and Holder's inequality in this finite abelian group give
+\[
+ r_{A_1+A_2+A_3+A_4}(0,a_0)
+          \leq\prod_{i=1}^4 E(A_i)^{1/4},\qquad
+ E(A_i)=|\{x_1+x_2=x_3+x_4:x_a\in A_i\}|.
+\]
+For completeness, with unnormalized Fourier transforms the inverse formula
+has factor $|B\times A|^{-1}$; Holder bounds the sum of four transforms
+by the fourth moments, each of which equals $|B\times A|E(A_i)$.
+Those factors cancel. Each $E(A_i)\leq |H|^3\leq27N^3$.
+It follows that $E(A_1)\geq c_2N^3$ for a positive $c_2=c_2(c,C)$.
+The same reasoning can isolate any $A_i$; reflecting its first coordinate
+back if necessary gives the graph of the specified $y_i$.
+We henceforth call that function $y$ and its graph $A_1$.
+
+Apply [GT08, Theorems 5.2 and 5.3, p.95] to $A_1$ in the actual finite
+group $B\times A$. Their hypotheses follow from the energy bound and
+$|A_1|\leq3N$. They give a subset $\Gamma'$ of its graph and a constant
+$K_0=K_0(c,C)$ such that
+\[
+            |\Gamma'|\geq N/K_0,
+            \qquad |9\Gamma'-8\Gamma'|\leq K_0N.             \tag{F2}
+\]
+We use these published theorems themselves, not the special correlation
+premise in [GT08, Proposition 5.4].
+
+\subsection*{Graph refinement with the actual cyclic target}
+Let $V=\{a\in A:(0,a)\in8\Gamma'-8\Gamma'\}$.
+The map $\Gamma'\times V\to9\Gamma'-8\Gamma'$ given by addition is
+injective: equality determines the first graph coordinate, then its unique
+second coordinate, and finally $a$. Hence $|V|\leq K_0^2$.
+There is a set $S_A$ of at most $O(1+\log K_0)$ characters of $A$ for which
+\[
+        V\cap\{a:\|\chi(a)\|_\T<1/4\ \forall\chi\in S_A\}=\{0\}.
+\]
+Indeed, for any nonzero $a$ a uniformly random character takes values
+uniformly among the roots of unity of its order; at least one third of those
+values have distance at least $1/4$ from zero. Choose enough independent
+characters that the union bound over $V\setminus\{0\}$ is less than one.
+This proves the required separation without identifying $A$ with the dual
+of $B$, an identification that is unavailable here.
+
+Partition each coordinate of the character vector on $A$ into intervals of
+length at most $1/100$. A cell contains a subset $\Gamma''\subseteq\Gamma'$
+of size $c_3N$. In any element of $8\Gamma''-8\Gamma''$, every selected
+character of the second coordinate has a real representative of absolute
+value less than $16/100<1/4$ when its first coordinate is zero.
+It follows that the only element of this difference set with first
+coordinate zero is $(0,0)$. Therefore $4\Gamma''-4\Gamma''$ is a graph.
+Write $H''$ for the projection of $\Gamma''$, and let
+\[
+ \zeta:2H''-2H''\longrightarrow A
+\]
+be the function whose graph is $2\Gamma''-2\Gamma''$.
+It is an exact Freiman homomorphism on this domain: two sums of two of its
+graph points lie in $4\Gamma''-4\Gamma''$, where the first coordinate
+determines the second. Also $\zeta(0)=0$. Thus
+$\zeta(x+y)=\zeta(x)+\zeta(y)$ whenever $x,y,x+y$ lie in its domain.
+This proves precisely the generalization of [GT08, Lemma 9.2] needed here.
+
+\subsection*{A proper progression and an explicit linear bracket formula}
+The set $H''$ has density at least $c_3/101$ in $B$.
+By [GT08, Lemma 6.4, pp.97--98] there is a bounded set of characters $S$
+with $B(S,1/4)\subseteq2H''-2H''$.
+Add the faithful character $x\mapsto x/Q$ to $S$, and shrink the radius
+to $\rho=1/16$. Write $d=|S|$, a bounded integer.
+[GT08, Lemma 10.4, p.121] supplies a proper centered progression
+\[
+ P=\Bigl\{\sum_{a=1}^r l_av_a: |l_a|<L_a\Bigr\}\subseteq B(S,\rho),
+              \qquad |P|\geq c_4 Q,
+\]
+with $r\leq d$, and linearly independent vectors
+$\Phi(v_a)=(\{\chi(v_a)\})_{\chi\in S}$.
+The coset subgroup in that lemma is zero because $S$ contains a faithful
+character. Its proof also gives
+\[
+ \Phi\left(\sum_a l_av_a\right)=\sum_a l_a\Phi(v_a)\quad\hbox{on }P. \tag{F3}
+\]
+This is the lift of a lattice progression inside the real cube, not an
+unjustified inference from reduction modulo one. Delete inactive generators
+with no nonzero integer coefficient allowed; all remaining $v_a$ lie in $P$.
+Every partial sum along a coordinate path to a point of this centered box
+stays in $P$. The local additivity of $\zeta$ consequently gives
+\[
+          \zeta\left(\sum_a l_av_a\right)=\sum_a l_a\zeta(v_a).
+\]
+Choose real lifts $b_a$ of $\zeta(v_a)$ and real dual vectors $u_a$ to the
+independent vectors $\Phi(v_a)$ on their span. Using (F3), define
+$b_\chi=\sum_a b_a(u_a)_\chi$. Then, for every $p\in P$,
+\[
+                 \zeta(p)=\sum_{\chi\in S}b_\chi\{\chi(p)\}\pmod1. \tag{F4}
+\]
+This is a linear calculation. It uses neither the quadratic-extension
+theorem nor the quadratic classification lemma in [GT08]. The author notice
+concerning that extension theorem is therefore not a new assumption here.
+
+\subsection*{Translation, fixed carries, and the Freiman restriction}
+Averaging translates of $P$ in $B$ gives an $x\in B$ with
+$|H''\cap(x+P)|\geq |H''||P|/Q\geq c_5N$.
+For $h=x+p$ and $h_0=x+p_0$ in this intersection, the graph relation gives
+$y(h)-y(h_0)=\zeta(p-p_0)$, since $\Gamma''-\Gamma''$ is contained in
+$2\Gamma''-2\Gamma''$. Both $p,p_0$ lie in the domain of $\zeta$.
+Its Freiman identity applied to $(p-p_0)+p_0=p+0$ gives
+\[
+                 y(h)=\delta_x+\zeta(p).
+\]
+For each $\chi\in S$, write $\chi(h)=\alpha_\chi h$ on the cyclic group.
+The difference
+\[
+ \{\chi(h-x)\}-\{\chi(h)\}+\{\chi(x)\}
+\]
+is an integer in a fixed set of at most three values. Restrict to a cell on
+which all these carries are fixed. This costs a factor at most $3^d$ and,
+by (F4), gives
+\[
+                y(h)=\delta+\sum_{\chi\in S}b_\chi\{\alpha_\chi h\}.
+\]
+Finally partition each $\{\alpha_\chi h\}$ into a fixed number of intervals
+of length at most $1/10$, and retain a largest cell $H'$.
+For any integer relation $h_1+h_2=h_3+h_4$ in $H'$, the corresponding sum
+of four fractional parts, with signs $+,+,-,-$, is an integer of absolute
+value at most $1/5<1$. It is therefore zero in $\R$ for each character.
+The real weighted sum is an exact Freiman homomorphism on $H'$.
+Undoing the rounding changes the displayed value by at most $e/2$.
+All density losses depend only on $c,C$ and all sets and choices are finite.
+This proves the finite assertion, and transfer with $e=N^{-j}$ proves
+Theorem~\ref{thm:F}. A bounded rank can be made a fixed standard rank by
+passing to its ultrapower value or by adding zero terms.
+
+\section{Consumer boundary and related-use scope}
+Theorem~\ref{thm:D} supplies exactly the one-variable factorization consumed
+by the Sections 9--11 repair. That repair still must derive its nonzero coset
+integral and its degree-rank horizontal inclusion for the actual Taylor
+quotients. In particular, it may multiply a character by a standard
+denominator to kill the rational periodic contribution; it may not silently
+erase that contribution. No such application is accepted by this packet.
+
+Theorem~\ref{thm:F} applies separately at each of the finitely many required
+indices $j$, including $j=1$, and to any chosen one of the four functions.
+The number of applications is standard. Dense refinements and all losses
+remain standard only when that finite iteration is recorded by the consumer.
+The theorem supplies no global Freiman extension beyond $H'$.
+
+The related-use audit is bounded by uses of the single-scale equivalence,
+properness in D.4, composition of factorization factors, deletion of rational
+Taylor contributions, and the graph/Bohr/bracket joins in F.1. The
+multi-variable D.5 and its consumers in Appendix E require their own exact
+application review. They are not inferred from the one-variable theorem here.
+Likewise, this packet does not accept Gaussian's pending Sections 9--11
+argument or any downstream assembled inverse theorem.
+\begin{thebibliography}{9}
+\bibitem{GTZ}[GTZ] B. Green, T. Tao and T. Ziegler,
+An inverse theorem for the Gowers $U^{s+1}[N]$-norm,
+\emph{Annals of Mathematics} 176 (2012), 1231--1372.
+DOI: 10.4007/annals.2012.176.2.11.
+\bibitem{GT12}[GT12] B. Green and T. Tao,
+The quantitative behaviour of polynomial orbits on nilmanifolds,
+\emph{Annals of Mathematics} 175 (2012), 465--540.
+DOI: 10.4007/annals.2012.175.2.2.
+\bibitem{GT14}[GT14] B. Green and T. Tao,
+On the quantitative distribution of polynomial nilsequences---erratum,
+\emph{Annals of Mathematics} 179 (2014), 1175--1183.
+DOI: 10.4007/annals.2014.179.3.8.
+\bibitem{GT08}[GT08] B. Green and T. Tao,
+An inverse theorem for the Gowers $U^3(G)$ norm,
+\emph{Proceedings of the Edinburgh Mathematical Society} 51 (2008), 73--153.
+DOI: 10.1017/S0013091505000325.
+\end{thebibliography}
+\end{document}

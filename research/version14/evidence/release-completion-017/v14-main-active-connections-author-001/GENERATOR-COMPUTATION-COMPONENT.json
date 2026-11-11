@@ -1,0 +1,190 @@
+{
+  "state": "author_proposal_pending_review",
+  "use": {
+    "id": "ACTIVE-GENERATOR-FINITE-CERTIFICATE",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "ACTIVE-GENERATOR-FINITE-P1",
+      "ACTIVE-GENERATOR-FINITE-P2"
+    ],
+    "assertion": {
+      "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+      "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+      "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+      "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+      "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+      "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+      "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+      "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+      "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+      "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+    },
+    "classification": "dependency",
+    "reason": "The retained exact checker and its saved result provide only the finite arithmetic consumed by the generator proof. The saved result names the exact checker SHA.",
+    "shared_contract_justification": "Both locations consume components of the same fixed finite certificate; no arbitrary-curve or height theorem is inferred.",
+    "supplier": {
+      "kind": "computation",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+          "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+        },
+        "start_line": 1,
+        "end_line": 282,
+        "excerpt_sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+      },
+      "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+      "publication": null
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+        "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+      },
+      "start_line": 1,
+      "end_line": 104,
+      "excerpt_sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-GENERATOR-FINITE-CERTIFICATE",
+    "use_sha256": "5573684483d9efe5935979fb3303681a7b55140ca0c338ad3bc4297d8e233884",
+    "supplier_passage_role": "computation_certificate",
+    "available_assertion": {
+      "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+      "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+      "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+      "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+      "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+      "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+      "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+      "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+      "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+      "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+    },
+    "needed_assertion": {
+      "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+      "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+      "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+      "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+      "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+      "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+      "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+      "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+      "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+      "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+    },
+    "required_capabilities": [
+      "exact finite generator arithmetic"
+    ],
+    "available_capabilities": [
+      "exact finite generator arithmetic"
+    ],
+    "derived_capabilities": [],
+    "connecting_derivation": {
+      "kind": "identification",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+          "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+        },
+        "start_line": 1,
+        "end_line": 104,
+        "excerpt_sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "The exact finite generator calculation gives reduction counts20 and24;7004 primitive quadratics,14008 roots and111 rational candidates; precisely the seven displayed abscissas; and verifies the doubling, torsion translations, coordinate change to P0 and stated strict integer inequality.",
+        "objects": "E over Q(sqrt2), its reductions at(17,s-6),(23,s-5), C:y^2=x^3-(3-s)^2x, R=(1+s,2s), and the explicit bounded quadratic/rational candidate sets.",
+        "hypotheses": "The supplied candidate box is exactly1<=a<=81,|b|<=162,|c|<=81,discriminant2k^2 with1<=k<=162 and primitive coefficients; rational candidates have reduced numerator of magnitude<=9 and denominator1..9.",
+        "quantifiers": "Every candidate in those finite sets is tested; both quadratic roots and both signs of the norm square root are retained.",
+        "parameter_range": "Only this fixed finite computation and these two residue fields; the separate height proof must justify completeness of the candidate box for possible generators.",
+        "uniformity": "Exhaustive finite enumeration, not a numerical sample or rank oracle.",
+        "constants": "Counts20,24,7004,14008,111; exact comparison41^3*676*392^36<9^108.",
+        "normalizations": "Exact Python integers and rational Fraction arithmetic in Q(sqrt2); no floating point.",
+        "exceptional_cases": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+        "limit_order": "First justify the height box independently, then consume the exhaustive finite test and exact coordinate identities."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "The square test includes zero and the y0=0 case. The certificate does not prove two-isogeny descent or the duplication height inequalities.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+            "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+          },
+          "start_line": 1,
+          "end_line": 104,
+          "excerpt_sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+            "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+          },
+          "start_line": 1,
+          "end_line": 282,
+          "excerpt_sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 364,
+        "end_line": 364,
+        "excerpt_sha256": "adfe4cd46c3a94cf1158eee9e66379fd1694baf73c018e34aa12a7a382c2eb3a"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 387,
+        "end_line": 418,
+        "excerpt_sha256": "0b1febc69b59979e8b036125fca2efc288f419ce8d2b843d157c0f9987e646f1"
+      }
+    ]
+  },
+  "additional_file_pins": [
+    {
+      "side": "head",
+      "path": "docs/theorem-application-audit/computations/generator-arithmetic.json",
+      "sha256": "b3d54ec0ffc02f51f20636a22a4bd31a6caa41a96680a65edea3291c928d888f"
+    },
+    {
+      "side": "head",
+      "path": "docs/theorem-application-audit/computations/check_generator_arithmetic.py",
+      "sha256": "f10d5636264f0c1b1ce23fd288532ac509e167aba3dab89a5655d7bb4e9de0fb"
+    }
+  ],
+  "initial_mapping": [
+    {
+      "id": "HIST-arithmetic-AR-U012",
+      "part": "Reduction counts only; descent and torsion inference remain separate."
+    },
+    {
+      "id": "HIST-arithmetic-AR-U013",
+      "part": "Finite enumeration and exact arithmetic only; canonical-height identities and duplication inequalities remain separate."
+    }
+  ],
+  "checks": {
+    "saved_source_sha256_matches_actual_checker": true,
+    "no_new_execution_claimed": true
+  },
+  "scope": "Uses the retained computation certificate and its exact checker; this turn verified their binding and current consumer correspondence, not a fresh independent replay."
+}

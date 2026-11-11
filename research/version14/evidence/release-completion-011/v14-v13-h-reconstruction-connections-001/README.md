@@ -1,0 +1,1 @@
+Three actual current H-reconstruction inputs. Reuses accepted N01–N03 available assertions, with distinct current H consumer passages. N03 classifies the exceptional values; the separate pre-H group and height argument remains required and is not asserted to follow from classification alone. Author proposal only.

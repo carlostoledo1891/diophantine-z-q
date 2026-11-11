@@ -1,0 +1,31 @@
+{
+  "status": "local trace map for H6 mixed root/ratio scaling; full candidate pending",
+  "contribution": "H6 proposed M-free ordinary-root and ratio rescaling. This record supplies the corresponding trace identity and bounded consumer check.",
+  "parent_sha256": "abd51c098e6f8de7207977beafb4319fc334e3c5c3e621cfa1f48fd3c9f9c3af",
+  "G": "8*x4*x98-[(x185-x187)^2+2*(x186-x188)^2]",
+  "Z": "sum over blocks1,3,4 of [(new C0-new E0)^2+2*(new C1-new E1)^2]",
+  "new_trace": "x104*G-x125*Z=0",
+  "scaling": "C,E in blocks1,3,4 are (q/R) times their old values. Block2 unchanged.",
+  "proof": "Q2*G-R²*Z = q² * old row192, after substituting the two helper definitions. Divide by q² in reverse. R,q nonzero supplied separately.",
+  "ratio_check": {
+    "variables_scaled_old_equals_R_new": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      56,
+      57,
+      58,
+      59
+    ],
+    "rows10_13": "Each old polynomial has commonR; quotient remains quadratic, including R*newC/newAT.",
+    "rows14_15": "CommonR² cancels using x125=R²; oldF60/61 unchanged.",
+    "rows24_27": "CommonR² cancels; old outputs78..81 unchanged.",
+    "remaining_consumers": "Only root comparison rows; full candidate author checks scaling there."
+  },
+  "count": "Two rational trace helpers, no M introduced."
+}

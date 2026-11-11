@@ -1,0 +1,73 @@
+{
+  "schema": "v15-consumer-role-bounded-review/v1",
+  "decision": "accepted_direct_edge_and_role_correction_scope",
+  "subject_sha256": "8fe464e0d5b0028eceea05efc9b9cf8854fa8fbd7c8e154e1d677de6e39bd530",
+  "predecessor_review": "755620e22b24ea197b8c6d61bff9150f0c39e614cb974d9ebac789dc0e50fe39",
+  "checks": {
+    "exact_role_delta": [
+      {
+        "path": "/uses/0/suppliers/0/proposed_supplier_applications/0",
+        "before": "V15-GAUSSIAN"
+      },
+      {
+        "path": "/uses/0/suppliers/0/classification",
+        "before": "separately identified application supplier, or local result when equal to consumer",
+        "after": "local denominator valuation construction; Gaussian prime selection is a separate invocation"
+      },
+      {
+        "path": "/uses/5/suppliers/3/proposed_supplier_applications/0",
+        "before": "V15-LOGS",
+        "after": "V15-BASE248"
+      },
+      {
+        "path": "/uses/5/suppliers/3/classification",
+        "before": "separately identified application supplier, or local result when equal to consumer",
+        "after": "pole-realization helper within BASE248; local when consumer is BASE248"
+      },
+      {
+        "path": "/uses/6/suppliers/4/proposed_supplier_applications/0",
+        "before": "V15-LOGS",
+        "after": "V15-BASE248"
+      },
+      {
+        "path": "/uses/6/suppliers/4/classification",
+        "before": "separately identified application supplier, or local result when equal to consumer",
+        "after": "pole-realization helper within BASE248; local when consumer is BASE248"
+      },
+      {
+        "path": "/uses/9/suppliers/4/proposed_supplier_applications/0",
+        "before": "V15-LOGS",
+        "after": "V15-BASE248"
+      },
+      {
+        "path": "/uses/9/suppliers/4/classification",
+        "before": "separately identified application supplier, or local result when equal to consumer",
+        "after": "pole-realization helper within BASE248; local when consumer is BASE248"
+      },
+      {
+        "path": "/uses/15/suppliers/4/proposed_supplier_applications/0",
+        "before": "V15-LOGS",
+        "after": "V15-BASE248"
+      },
+      {
+        "path": "/uses/15/suppliers/4/classification",
+        "before": "separately identified application supplier, or local result when equal to consumer",
+        "after": "pole-realization helper within BASE248; local when consumer is BASE248"
+      },
+      {
+        "path": "/uses/16/suppliers/1/proposed_supplier_applications/0",
+        "before": "V15-LOGS",
+        "after": "V15-BASE248"
+      },
+      {
+        "path": "/uses/16/suppliers/1/classification",
+        "before": "separately identified application supplier, or local result when equal to consumer",
+        "after": "pole-realization helper within BASE248; local when consumer is BASE248"
+      }
+    ],
+    "all_edges_already_reachable": true,
+    "added_direct_edges": 16,
+    "all_pins": true
+  },
+  "scope": "Local denominator construction separated from Gaussian prime selection; pole helper assigned to actual BASE248 consumer/supplier. No mathematical reapproval, application mutation, or final target acceptance."
+}

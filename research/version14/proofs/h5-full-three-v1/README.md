@@ -1,0 +1,1 @@
+Author-frozen full-isomorphism construction for the discriminant210 H5 input. Read PROOF.md, SOURCES.json, ERRATA-READING.json and the seven application cards together. Independent review is pending. No manuscript or public repository was edited. Files in local-only, and PROOF-DRAFT.md, are not selected for public copying.

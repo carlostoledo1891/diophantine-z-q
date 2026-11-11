@@ -1,0 +1,508 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{1em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\Z}{\mathbb Z}\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}\newcommand{\T}{\mathbb T}
+\newcommand{\E}{\mathbb E}\newcommand{\poly}{\operatorname{poly}}
+\newcommand{\Lip}{\operatorname{Lip}}
+\title{Equal-scale factorization and the bias and torsion joins}
+\author{Author proposal: /root/astra\_v14\_baseline\_compiler}
+\date{Protocol 1.4; separate successor to the one-variable D/F packet}
+\begin{document}\maketitle
+\noindent This packet does not revise the frozen D/F or Section 13 proofs.
+It supplies a proposed connecting proof for the previously open
+D.5-to-E.11/E.13 dependency. All acceptance and incorporation decisions
+remain independent. The only quantitative equidistribution input is the
+\emph{final published} equal-side theorem in [GT14, pp.1176--1177], with
+the published minor corrections to [GT12]. No unpublished arbitrary-side
+extension is imported.
+
+\section{Conventions and exact statements}
+Fix standard positive integers $k,d$ and an unbounded integer $N$.
+All groups, rational structures, lattices, coordinate bases and finite
+dimensions are standard, with natural ultrapower extensions. A nilpotent
+Lie group is connected and simply connected. The rational degree filtration
+$G_\bullet$ has finite length; the source $\Z^k$ has its total-degree
+filtration. Multiindices have nonnegative integer entries, and
+$|\alpha|=\sum_i\alpha_i$. All vertical identities for a limit nilcharacter
+hold at every limit group element and point, as in the accepted
+tautification-003 convention. We do not substitute equivariance only at
+standard points.
+
+In fixed Mal'cev coordinates, small polynomial coefficients mean bounded
+constant coefficient and coefficient $O(N^{-|\alpha|})$ at positive index
+$\alpha$ in either the monomial or product-binomial basis. The constants
+are standard and may depend on the actual fixed geometric data and orbit.
+Total equidistribution on $[N]^k$ means equidistribution on every product
+of dense arithmetic progressions in $[N]$, with standard Lipschitz tests.
+It also applies to internal tests with a common standard Lipschitz bound:
+finite uniform nets in a compact Lipschitz ball reduce those tests to
+standard ones, with the desired accuracy chosen before taking the limit.
+
+\begin{theorem}[Equal-scale factorization, MF-D4]\label{thm:factor}
+For $g\in{}^*\poly(\Z^k,G_\bullet)$ there are a standard connected rational
+subgroup $P\leq G$ and internal polynomial maps $\epsilon,p,\gamma$ such that
+\[
+                       g(n)=\epsilon(n)p(n)\gamma(n)
+                         \qquad(n\in{}^*\Z^k).                 \tag{1}
+\]
+The map $p$ lies in $P$ with its induced filtration, and is totally
+equidistributed on $[N]^k$ in $P/\Delta$ for every standard finite-index
+$\Delta\leq P\cap\Gamma$, with the same $p$ and $P$.
+The coefficients of $\epsilon$ are small as specified above; it is bounded
+and $O(1/N)$-Lipschitz on every fixed standard dilate $[-AN,AN]^k$.
+Its group Taylor coefficient at positive index $\alpha$ is
+$O(N^{-|\alpha|})$ as well. There is a standard discrete subgroup
+$\Lambda\geq\Gamma$ containing all values of $\gamma$, and a standard
+$q>0$ such that
+\[
+           \gamma(n+qe_i)\Gamma=\gamma(n)\Gamma
+                  \qquad(n\in{}^*\Z^k, 1\leq i\leq k).       \tag{2}
+\]
+There is no properness requirement on $P$, and no claim that $\gamma$ is
+$\Gamma$-valued. All factors in (1) are defined on the full integer lattice.
+\end{theorem}
+
+Write $I=[-N,N]\cap{}^*\Z$.
+\begin{theorem}[Actual bias and torsion outputs, MF-E11/E13]\label{thm:outputs}
+Let $d\geq2$ be standard, and let $\chi$ be a globally represented unit
+vector nilcharacter of degree $d$ on ${}^*\Z^k$.
+If a scalar coordinate of $\chi$ has nonzero correlation with a degree
+at most $d-1$ nilsequence after multiplication by the indicator of a
+convex polytope in $I^k$ and a product of dense progressions in $[N]$,
+then $\chi$ agrees on all of $I^k$ with a globally represented
+degree-at-most-$(d-1)$ vector nilsequence. The same conclusion holds if
+$\chi^{\otimes a}$ agrees on $I^k$ with a degree-at-most-$(d-1)$ vector
+nilsequence for a standard integer $a\geq1$.
+
+These assertions give exactly the lower-degree conclusions of [GTZ, E.11]
+and [GTZ, E.13] on their required symmetric box. They include finite
+scalar-coordinate reductions for vector correlations. They do not require
+an extrapolation from an unrelated subprogression or the deletion of a
+rational Taylor coefficient.
+\end{theorem}
+
+\section{A weighted inverse-affine estimate}
+The following estimate also supplies the large-offset transition behind
+[GT12, Proposition 9.2]. Merely inserting an offset of size $N$ into the
+height bound of its Lemma 8.4 would not give the required standard bound.
+
+\begin{lemma}[Large offsets, bounded steps, MF-AFFINE]\label{lem:affine}
+Let $f(n)$ be a real polynomial of fixed total degree at most $D$ in $k$
+variables. Let $A_i$ be internal integers with $|A_i|=O(N)$ and let $b_i$
+be nonzero integers of bounded absolute value. Put
+$\widetilde f(m)=f(A_1+b_1m_1,\ldots,A_k+b_km_k)$.
+Suppose every positive product-binomial coefficient $\widetilde f_\beta$
+satisfies $\|\widetilde f_\beta\|_\T=O(N^{-|\beta|})$.
+There is a standard positive integer $r$, depending only on $D,k$ and the
+step bounds, such that every positive coefficient of $rf$ has the same
+bound $O(N^{-|\alpha|})$ modulo one.
+\end{lemma}
+\begin{proof}
+Invert the substitution over $\R$ and expand
+\[
+ \prod_i\binom{(n_i-A_i)/b_i}{\beta_i}
+        =\sum_{\alpha\leq\beta}c_{\alpha\beta}\binom n\alpha.
+                                                               \tag{3}
+\]
+Expanding each falling factorial first in monomials shows that the
+denominators divide a fixed integer formed from $\beta_i!$ and
+$b_i^{\beta_i}$. Conversion of ordinary powers to binomial coefficients
+uses integer Stirling coefficients. Thus one standard $r$ clears all
+denominators, independently of the integer numerators $A_i$.
+The coefficient of $n^\nu$ before the last conversion is a polynomial in
+the $A_i$ of total degree at most $|\beta|-|\nu|$. Consequently
+\[
+ |c_{\alpha\beta}|=O(N^{|\beta|-|\alpha|}),
+ \qquad rc_{\alpha\beta}\in{}^*\Z.                             \tag{4}
+\]
+The case $\beta=0$ contributes only to $\alpha=0$.
+For each $\beta>0$ write $\widetilde f_\beta=z_\beta+e_\beta$, where
+$z_\beta$ is an integer and $e_\beta=O(N^{-|\beta|})$.
+In the coefficient of index $\alpha>0$ in $rf$, the contributions
+$rc_{\alpha\beta}z_\beta$ are integers, while
+\[
+ \sum_{\beta\geq\alpha}rc_{\alpha\beta}e_\beta
+                         =O(N^{-|\alpha|}).                    \tag{5}
+\]
+There are only a fixed number of indices. This proves the claim. Negative
+steps cause no change after taking a positive common denominator. The
+uncontrolled constant coefficient causes no positive-index error.
+\end{proof}
+
+\section{From a dense rectangle to the published equal-side theorem}
+\begin{lemma}[Weak factorization in finitely many parameters]\label{lem:weak}
+Suppose $G_0=G_1=G$. If $g\Gamma$ is not totally equidistributed on $[N]^k$,
+it has a factorization (1) with $p$ in a standard proper connected rational
+subgroup, retaining all conclusions of Theorem~\ref{thm:factor} except
+the final equidistribution condition.
+\end{lemma}
+\begin{proof}
+Failure supplies a product of progressions
+$P_i=\{a_i+b_it:1\leq t\leq L_i\}\subseteq[N]$ with $L_i\geq\delta N$,
+standard $\delta>0$, and a bounded Lipschitz test with noninfinitesimal
+discrepancy. Their integer steps obey $1\leq b_i\leq2/\delta$ and their
+offsets are $O(N)$. Subtract the Haar mean, normalize the test and rotate a
+constant complex phase so that the real mean discrepancy is positive.
+
+In the index rectangle $\prod[ L_i]$, partition each axis into blocks of a
+common length $L=\lfloor\eta N\rfloor$, leaving a final remainder of length
+less than $L$. Choose the standard $\eta>0$ small compared with the
+discrepancy, $\delta$, $k$ and the test norm. The discarded proportion is
+at most $\sum_iL/L_i\leq k\eta/\delta+o(1)$, so its contribution is less
+than one quarter of that discrepancy. At least one full cube of side $L$
+has a positive standard discrepancy. On this cube the polynomial is
+$\widetilde g(m)=g(A_1+b_1m_1,\ldots,A_k+b_km_k)$ with $|A_i|=O(N)$.
+
+Apply the exact equal-side theorem of [GT14, pp.1176--1177] at length $L$,
+using a standard error parameter below this discrepancy and below the
+reciprocal rationality bound of the fixed adapted basis. The result gives
+a nonzero bounded horizontal integer character $\xi$ for which all positive
+coefficients of the real horizontal lift of $\xi\widetilde g$ have circle
+norm $O(L^{-|\alpha|})=O(N^{-|\alpha|})$.
+Only finitely many such characters are possible, so the selected character
+is standard. Lemma~\ref{lem:affine} replaces it by a nonzero standard
+multiple and gives the same coefficient bounds for $\xi g$ on the
+original variables. This is the precise rectangle-to-equal-cube join;
+the original unequal-side theorem is not used.
+
+Normalize $g(0)=c\lambda$ with bounded $c$ and $\lambda\in{}^*\Gamma$
+and apply the preceding argument to $c^{-1}g\lambda^{-1}$, whose failure
+is preserved by bounded left translation. Its coordinates are
+$\sum_{\alpha>0}t_\alpha\binom n\alpha$, with $t_\alpha$ supported in
+$G_{|\alpha|}$ by [GT12, Lemma 6.7]. Write the real horizontal lift as
+$u\cdot\psi$, with $u$ a fixed integer vector.
+Choose integers $a_\alpha$ nearest to $u\cdot t_\alpha$.
+On a support where $u$ is nonzero choose a fixed rational vector
+$v_\alpha$ of that support with $u\cdot v_\alpha=1$, and define
+\[
+ w_\alpha=(u\cdot t_\alpha-a_\alpha)v_\alpha,
+ \quad z_\alpha=a_\alpha v_\alpha,
+ \quad \psi(\epsilon_0(n))=\sum w_\alpha\binom n\alpha,
+ \quad \psi(\gamma_0(n))=\sum z_\alpha\binom n\alpha.           \tag{6}
+\]
+If $u$ vanishes on a support, set all these vectors and its integer to zero.
+Coordinate support and polynomial group closure make these maps polynomial
+for the original filtration. The real lift is identically zero on
+$p=\epsilon_0^{-1}c^{-1}g\lambda^{-1}\gamma_0^{-1}$.
+Thus $p$ lies in its standard proper connected rational kernel.
+The original factors are $\epsilon=c\epsilon_0$ and
+$\gamma=\gamma_0\lambda$. The $w_\alpha$ have precisely the required
+small bounds; the $z_\alpha$ have a common standard denominator, without
+a numerator bound. Controlled products and periods are checked next.
+\end{proof}
+
+\section{Controlled products, periods, and descent}
+Scale all variables by $n_i=Nt_i$. Fixed coordinate polynomials with small
+coefficients become polynomials in $t$ with bounded coefficients. The
+fixed BCH and coordinate-change polynomials preserve this property under
+finite products, inverses and fixed rational subgroup embeddings.
+Conversion between monomial and product-binomial bases is triangular in
+componentwise indices, so the coefficient of $\binom n\alpha$ is
+$O(N^{-|\alpha|})$. Differentiating the scaled coordinate maps on the
+compact box $[-A,A]^k$ gives the claimed $O(1/N)$ Lipschitz bound on every
+fixed dilate. A real-coordinate polynomial extension of $\epsilon$ has the
+same bounds, which will be used below.
+
+These estimates also imply the group Taylor bounds. Assign formal weight
+$|\alpha|$ to each logarithmic coefficient of $n^\alpha$ and weight zero to
+the bounded constant term. Group Taylor extraction in any fixed admissible
+order uses fixed BCH polynomials. Inductively every term of formal weight
+$w$ has coordinate polynomial total degree at most $w$; removing a Taylor
+factor at index $\beta$ preserves this property because its binomial power
+has degree $|\beta|$. The coefficient at index $\alpha$ cannot contain a
+term of formal weight less than $|\alpha|$: such a term has total degree
+less than $|\alpha|$ and has zero coefficient at that index. This is the
+same triangular Taylor extraction as [GTZ, B.9], now with product-binomial
+indices. Each surviving BCH monomial contributes at least
+$N^{-|\alpha|}$ decay. In particular no estimate is inferred solely from
+separate degree in individual variables.
+
+The common discrete overgroup argument is independent of the number of
+parameters. In a rational lower-central basis of weights $w_i$, choose a
+standard $D$ clearing every coordinate denominator and every fixed BCH
+coefficient. As in DF002, the additive lattice
+$\sum_iD^{-(2w_i-1)}\Z X_i$ is BCH-closed: a nonlinear term with $t$
+inputs has output denominator exponent exceeding the input sum by at least
+$t-1$. Its exponential is a standard discrete overgroup $\Lambda\geq\Gamma$
+containing the rational factors and any finite product of them.
+
+Here is the full multivariable period argument, in the right-coset direction.
+Each coordinate of $\gamma(n)$ is a polynomial of fixed degree whose values
+have a common standard denominator. Tensor-product interpolation on a fixed
+integer grid gives a standard common denominator for all its coefficients.
+For every $i$ the vector
+\[
+ R_i(n,r)=\psi\bigl(\gamma(n)^{-1}\gamma(n+re_i)\bigr)
+\]
+is a rational coefficient polynomial with a common standard denominator.
+It is identically zero when $r=0$. Choose a standard positive $q$ divisible
+by all these denominators. Each monomial then has a positive power of $r$,
+so $R_i(n,q)$ is integral for every internal integer vector $n$.
+This is exactly (2). This proof does not use the wrongly oriented quotient
+in the printed proof of [GT12, A.12]. The corresponding one-variable
+sublemma of DF002 has a separate independent root review.
+
+To finish Theorem~\ref{thm:factor}, first normalize the constant term and
+restrict to $G_1$ if $G_1\ne G$. The identity
+\[
+ c^{-1}g(n)\lambda^{-1}
+          =\lambda\bigl(g(0)^{-1}g(n)\bigr)\lambda^{-1}\in G_1
+\]
+holds in any number of variables, since first derivatives lie in $G_1$ and
+the positive groups are normal in $G_0$. Thus a controlled representation
+exists with a taut positive filtration.
+Choose a standard rational representing subgroup of least dimension.
+For any standard finite-index lattice $\Delta\leq P\cap\Gamma$, failure
+of total equidistribution in $P/\Delta$ permits Lemma~\ref{lem:weak}, after
+the same normalization if its induced first group is proper.
+It supplies $p=\epsilon_2p_2\gamma_2$ in a proper rational $P_2<P$.
+The correct new identity is
+\[
+                 g=(\epsilon\epsilon_2)p_2(\gamma_2\gamma).
+\]
+The preceding controlled-product and discrete-overgroup arguments verify
+every required bound and period. Rationality relative to $\Delta$ is the
+same rational structure as relative to $P\cap\Gamma$.
+This contradicts minimal dimension. It proves total equidistribution for
+every standard finite-index cover with the same factors. Only a minimum
+among $0,\ldots,\dim G$ was selected; no infinite sequence of refinements
+or dependence of the chosen factors on the later cover is hidden here.
+
+\section{One quotient for all periodic residue classes}
+We now work in a taut ambient degree-$d$ group $G$, so $G_d$ is central.
+Tautification-003, Theorem 1, supplies this exact representation for each
+nilsequence used below with the same positive-degree groups and the same
+standard vertical character. Products of these representations remain taut.
+
+Apply Theorem~\ref{thm:factor}, and choose a standard representative
+$\lambda_\rho\in\Lambda$ for each value of the right coset of $\gamma(n)$
+on a residue class $n\equiv\rho\pmod q$, $\rho\in(\Z/q\Z)^k$.
+Such representatives can be standard: $\Lambda/\Gamma$ is a fixed finite
+set, and periodicity makes the coset constant on each class. Let
+\[
+ \Gamma_0=\bigcap_{\lambda\in\Lambda}\lambda\Gamma\lambda^{-1},
+ \qquad \Delta=P\cap\Gamma_0.                                \tag{7}
+\]
+The first intersection is the kernel of the action on the finite coset set,
+so it is a standard normal finite-index subgroup of $\Lambda$ contained in
+$\Gamma$. Thus $\Delta$ is finite index in $P\cap\Gamma$, and $p$ is
+totally equidistributed on $P/\Delta$. For every $\rho$ the function
+\[
+                      x\longmapsto F(zx\lambda_\rho\Gamma)   \tag{8}
+\]
+is well-defined on this \emph{same} quotient: for $\delta\in\Delta$,
+$\lambda_\rho^{-1}\delta\lambda_\rho\in\Gamma$.
+No deletion of a rational horizontal coefficient is involved.
+
+\begin{lemma}[A nonzero integral from the actual cutoff]\label{lem:integral}
+Let $F$ be an internal bounded Lipschitz scalar test of standard norm on
+$G/\Gamma$. If
+\[
+ \left|\E_{n\in I^k}1_\Omega(n)1_{P_1\times\cdots\times P_k}(n)
+                           F(g(n)\Gamma)\right|>c>0           \tag{9}
+\]
+for a convex polytope $\Omega\subseteq I^k$ and dense progressions
+$P_i\subseteq[N]$, then for some residue $\rho$ and bounded
+$z=\epsilon(n_0)$ one has
+\[
+          \left|\int_{P/\Delta}F(zx\lambda_\rho\Gamma)
+                                           \,d\mu(x)\right|>c'>0. \tag{10}
+\]
+Here $c'$ is standard and positive. The factors and quotient are those
+just constructed for the same actual $g$.
+\end{lemma}
+\begin{proof}
+Partition the progression product into its finitely many nonempty residue
+classes modulo $q$. Each intersection is again a product of dense
+progressions, by the elementary congruence calculation for each axis.
+Their steps are bounded by the old step times $q$. Rotate a common complex
+phase in (9); one class retains a real sum at least $c_0N^k$ for a
+standard $c_0>0$. Fix this lower bound before selecting a mesh.
+
+Use index coordinates on that progression product. The inverse image of
+$\Omega$ intersected with the index rectangle is convex and lies in a box
+of side $O(N)$. Partition it by cubes of side $\lfloor\eta N\rfloor$.
+The cubes meeting its boundary have at most $O_k(\eta N^k)+O_k(N^{k-1})$
+integer points, with constants also depending on the fixed step bounds.
+Indeed place disjoint unit cubes at those integer points and enclose them
+in the $O_k(\eta N+1)$ neighborhood of the convex boundary; apply the
+published boundary-volume estimate [GT10, Corollary A.2, p.1810].
+For a convex set with empty interior, first thicken by an arbitrarily small
+ball and then take the decreasing limit of its boundary neighborhoods.
+Choose standard $\eta$ small enough that the discarded boundary
+contribution is below $c_0N^k/4$. The total number of points in the full
+cubes is at most $N^k$. Some cube contained in the convex set therefore
+gives a dense progression product $R$ whose phase-adjusted average is at
+least $3c_0/4$.
+
+The choice of $\eta$ can also ensure that
+$|F(\epsilon(n)x\lambda_\rho\Gamma)-F(\epsilon(n_0)x\lambda_\rho\Gamma)|$
+is below $c_0/4$ for all $n,n_0\in R$ and all
+$x\in P/\Delta$. This follows from the $O(1/N)$ variation of $\epsilon$,
+its bounded image, the fixed standard representative $\lambda_\rho$, and
+compactness of $P/\Delta$. Choose the mesh only after these standard
+constants and the original positive discrepancy are known.
+For $n\in R$, (1) and the fixed right coset give
+$F(g(n)\Gamma)=F(\epsilon(n)p(n)\lambda_\rho\Gamma)$.
+Freeze $\epsilon$ at $n_0$. Total equidistribution of the same $p$ in
+$P/\Delta$ on $R$ identifies the resulting average with the integral in
+(10), up to an infinitesimal error. Internal-test uniformity follows from
+the finite Lipschitz net specified at the start. This proves (10).
+\end{proof}
+
+\section{Exact reconstruction on the symmetric box}
+Let $G=G^{\chi}\times G^0$ be the taut product of a degree-$d$ nilcharacter
+representation and any degree-at-most-$(d-1)$ auxiliary representation.
+The latter has trivial degree-$d$ group. Write $F_\chi$ for the original
+unit vector test, and let $\eta$ be its real standard vertical character.
+Set
+\[
+                K=P_d=P\cap G_d.
+\]
+This is connected, rational and central. These facts follow by taking Lie
+algebra intersections in a simply connected nilpotent group; the rational
+subgroup and quotient assertions are precisely the geometry established
+in LP13-002, Section 2. Since $\Delta$ has finite index, $K$ is rational
+for $\Delta$ too. Thus $\overline P=P/K$ with lattice
+$\overline\Delta$ is a fixed standard filtered nilmanifold of degree at
+most $d-1$.
+
+Suppose that
+\[
+                  \eta(\operatorname{pr}_\chi K)=0.            \tag{11}
+\]
+For each $\rho$ and bounded real-coordinate parameter $t\in[-1/5,1/5]^k$,
+define, initially on $P/\Delta$,
+\[
+ H_\rho(x,t)=F_\chi\bigl(
+   \widetilde\epsilon_\chi(10Nt)\,x_\chi\,(\lambda_\rho)_\chi
+                                                    \Gamma_\chi\bigr), \tag{12}
+\]
+where $\widetilde\epsilon$ is the real-coordinate polynomial extension.
+This is well-defined by (7). It is invariant under $K$ by the all-limit
+vertical identity and (11); centrality permits its element to pass across
+$\widetilde\epsilon$ and $\lambda_\rho$. Hence (12) descends to
+$\overline P/\overline\Delta$.
+The scaled-coefficient estimates imply a standard Lipschitz bound in $t$,
+uniformly in $N$. Smooth multiplication on fixed compact ranges gives the
+same conclusion in $x$. Invariance descends this bound to the quotient
+metric; any fixed standard Riemannian metric is equivalent on this compact
+nilmanifold.
+
+Choose a fixed Lipschitz function $B(t)$ on $\T^k$ equal to one on
+$[-1/10,1/10]^k$ and zero outside $(-1/5,1/5)^k$.
+Using centered representatives inside that chart, define
+$\widetilde H_\rho(x,t)=B(t)H_\rho(x,t)$ there and zero outside.
+It is a globally bounded Lipschitz vector function. The zero collar makes
+the definition independent of the chart boundary. The functions are limit
+functions with a standard bound, since their coordinate-level construction
+has uniform bounds before taking the ultrapower.
+
+For each $\rho\in(\Z/q\Z)^k$ choose a standard Lipschitz function
+$b_\rho$ on $\T^k$ with
+$b_\rho(\sigma/q)=1_{\rho=\sigma}$. For example use products of triangular
+bumps of radius $1/q$; for $q=1$ use the constant function one.
+The vector function
+\[
+ \mathcal H(x,t,z)=\sum_\rho b_\rho(z)\widetilde H_\rho(x,t)    \tag{13}
+\]
+is globally bounded Lipschitz with a standard bound. Its orbit is
+\[
+          n\longmapsto\bigl(\overline p(n)\overline\Delta,
+                                      n/(10N),\,n/q\bigr).    \tag{14}
+\]
+This orbit has degree at most $d-1$: its first component has that degree
+and both tori have degree one, with $1\leq d-1$.
+For every $n\in I^k$, exactly the correct residue value is sampled in
+(13), and $B(n/(10N))=1$. The identities (1), (2), and (12) give
+\[
+                        \chi(n)=\mathcal H((14)).              \tag{15}
+\]
+This is an equality of the actual vector functions on the entire symmetric
+box. It is not an extrapolation of an equality on just one progression.
+No unit condition is imposed on $\mathcal H$ away from the orbit; a
+lower-degree vector nilsequence does not require one.
+
+\section{Bias and torsion applications on the same objects}
+\begin{proof}[Proof of Theorem~\ref{thm:outputs}]
+For the bias assertion, choose the scalar coordinate and the lower-degree
+scalar test occurring in the actual nonzero correlation. If a vector
+correlation is given, a fixed finite coordinate choice supplies one such
+scalar nonzero average; its density loss is standard. Form the taut product
+representation $G^\chi\times G^0$ and the product test
+$F= (F_\chi)_i\overline{F_0}$, using the sign in that correlation.
+It has vertical character $\eta$ on the degree-$d$ group because $G^0_d$
+is trivial. Apply Theorem~\ref{thm:factor} and Lemma~\ref{lem:integral} to
+this actual product orbit and test, obtaining a nonzero integral (10).
+
+Translation of Haar measure on $P/\Delta$ by any $u\in K$ preserves that
+integral. The integrand is multiplied by
+$e(\eta(\operatorname{pr}_\chi u))$, since $K$ is central in the ambient
+taut group. The integral is nonzero, so this phase is one for every
+standard $u\in K$. The real homomorphism $\eta$ is continuous and $K$ is
+connected; its image is therefore a connected subset of $\Z$, hence zero.
+Its natural ultrapower extension vanishes on every limit element too.
+This is (11). Equations (12)--(15), with the \emph{original} vector test
+$F_\chi$, now prove the asserted all-box lower-degree representation.
+
+For the torsion assertion, let $\Psi$ be the given degree-at-most-$(d-1)$
+vector nilsequence equal to $\chi^{\otimes a}$ on $I^k$.
+Put its finitely many coordinates into one common product nilmanifold of
+that degree. Since $\chi$ is a unit vector, pointwise on $[N]^k$ one has
+\[
+              \sum_j (\chi^{\otimes a})_j(n)\overline{\Psi_j(n)}=1.
+\]
+At least one scalar term has a nonzero standard average, with lower bound
+at least the reciprocal of the fixed tensor dimension in absolute value.
+Use that term as the test on the product of the original $\chi$ geometry
+and the auxiliary geometry of $\Psi$. Its top vertical character is
+$a\eta$. Lemma~\ref{lem:integral} applies with the full positive cube and
+no nontrivial cutoff. The same Haar argument gives
+$a\eta(\operatorname{pr}_\chi K)=0$ as a real homomorphism.
+As $a\geq1$, (11) follows. The same reconstruction (12)--(15) uses the
+original $F_\chi$, not its tensor power, and proves the required conclusion.
+
+In the symbol formulation of [GTZ, E.13],
+$a[\chi]=0$ means exactly that the tensor power is equivalent to the
+constant nilcharacter. By the definition of equivalence, its coordinates
+are lower-degree nilsequences on the specified box. This is precisely the
+$\Psi$ premise just used, with a finite common representation.
+No torsion-free conclusion in degree one is asserted; the time and residue
+torus factors explain the requirement $d\geq2$.
+\end{proof}
+
+\section{Boundaries of this proposal}
+This proof supplies the finite-parameter factorization actually needed by
+E.11/E.13 and their all-symmetric-box reconstruction. It does not assert
+the false horizontal Taylor closeness printed in D.5. Gaussian's separate
+one-variable D.6 argument must retain its denominator correction in the
+degree-rank horizontal quotient.
+The inverse-affine Lemma~\ref{lem:affine} also validates the large-offset
+coefficient transition in the one-variable weak-factorization source.
+That is a related use requiring an explicit link to this frozen version;
+the earlier DF002 bytes and earlier decisions are preserved.
+The Section 13 application still needs an independent decision binding its
+exact E.11/E.13 objects and domains to this proposal, and the complete
+inverse theorem still needs its other separately assigned components.
+
+\begin{thebibliography}{9}
+\bibitem{GT14}[GT14] B. Green and T. Tao, On the quantitative distribution
+of polynomial nilsequences---erratum, Ann. of Math. 179 (2014), 1175--1183.
+DOI: 10.4007/annals.2014.179.3.8.
+\bibitem{GT12}[GT12] B. Green and T. Tao, The quantitative behaviour of
+polynomial orbits on nilmanifolds, Ann. of Math. 175 (2012), 465--540.
+DOI: 10.4007/annals.2012.175.2.2.
+\bibitem{GT10}[GT10] B. Green and T. Tao, Linear equations in primes,
+Ann. of Math. 171 (2010), 1753--1850. DOI: 10.4007/annals.2010.171.1753.
+\bibitem{GTZ}[GTZ] B. Green, T. Tao and T. Ziegler, An inverse theorem for
+the Gowers $U^{s+1}[N]$-norm, Ann. of Math. 176 (2012), 1231--1372.
+DOI: 10.4007/annals.2012.176.2.11.
+\end{thebibliography}
+\end{document}

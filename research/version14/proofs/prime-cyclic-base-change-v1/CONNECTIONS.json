@@ -1,0 +1,416 @@
+{
+  "schema": "bounded-source-connections/v1",
+  "connections": [
+    {
+      "id": "AC-PRIME-ASCENT",
+      "author": "/root/astra_quartic_opt05_anchor",
+      "status": "authored source/application connection awaiting independent decision",
+      "supplier_passage_role": "statement",
+      "source": {
+        "path": "work/source-risk-review-20261107/item210-published-sources-05/local-only/arthur-clozel-toronto.pdf",
+        "sha256": "3033d863634f5a1e8c26e48ba5b5ec9d8f95fb411b2a6d21c1580db80bc01737",
+        "bytes": 17549338,
+        "role": "1989 final published facsimile; local-only"
+      },
+      "locator": "III4.2(a), printed202; proof203–206",
+      "available_assertion": {
+        "statement": "A unitary cuspidal pi with pi not isomorphic to pi tensor eta has a unique sigma-stable cuspidal weak lift Pi over L.",
+        "objects": "L/K cyclic prime degree q; pi on GL(n,A_K); eta generates the characters of K*Norm(A_L*)\\A_K*.",
+        "quantifiers": "Every such prime cyclic extension and unitary cuspidal pi.",
+        "hypotheses": "pi is not isomorphic to pi tensor eta.",
+        "parameter_range": "n positive; q any prime, including 2.",
+        "uniformity": "Existence and uniqueness for each fixed extension and representation; no quantitative bounds.",
+        "exceptional_cases": "The self-twist case is a different part of the theorem and is not included in this conclusion.",
+        "constants": "Degree q; unramified residue degree f.",
+        "normalization": "Weak lift raises unitary Satake matrices to their f-th powers.",
+        "limit_order": "Fix L/K and pi before applying III4.2(a)."
+      },
+      "needed_assertion": {
+        "statement": "The weight-two cuspidal form attached to r|G_K has a cuspidal lift attached to the same r|G_L.",
+        "objects": "n=2; K,L totally real; l-adic r with nonsolvable residual image throughout the selected solvable tower.",
+        "quantifiers": "Every prime step in that tower at which r|G_K is modular.",
+        "hypotheses": "The stable lattice and solvable top extension imply residual and characteristic-zero absolute irreducibility on G_L. U04 supplies attachment.",
+        "parameter_range": "The coefficient prime l may be 2 and is distinct from the tower degree variable q.",
+        "uniformity": "One fixed global r is used at all steps.",
+        "exceptional_cases": "A self-twist forces eta squared equal to 1. Odd q is impossible by determinant; q=2 gives two G_L-stable eigenspaces in characteristic zero, also impossible.",
+        "constants": "Arithmetic roots alpha,beta have product q_v*s_v; q_w=q_v^f.",
+        "normalization": "Unitary roots divide by sqrt(q_v); their f-th powers restore arithmetic roots alpha^f,beta^f.",
+        "limit_order": "Exclude the self-twist first, apply III4.2(a), recover weight via split places, then compare attached representations."
+      },
+      "connecting_derivation": {
+        "path": "work/source-risk-review-20261107/arthur-clozel-prime-substitution-05/REPORT.md",
+        "sha256": "a1c9929d511ca357848d293bd041e0074662a61a2ef4694f3ccd8508ec24e02b",
+        "scope": "Sections3–7, with retained assumptions in8"
+      },
+      "comparisons": [
+        {
+          "id": "1",
+          "topic": "Prime degree",
+          "comparison": "III4.2 explicitly assumes q prime; the solvable tower is refined to such steps.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "2",
+          "topic": "Automorphic category",
+          "comparison": "Weight-two Hilbert forms are used in unitary cuspidal normalization, matching Definition4.1.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "3",
+          "topic": "Actual hypothesis",
+          "comparison": "The non-self-twist condition is proved from the same target r by the determinant and quadratic-eigenspace arguments.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "4",
+          "topic": "Cuspidality",
+          "comparison": "Use part(a), not merely existence part(c), so the resulting lift is cuspidal.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "5",
+          "topic": "Galois identity",
+          "comparison": "Unramified Satake powers and U04 identify the arithmetic representation with r restricted to G_L.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "6",
+          "topic": "Coefficient prime",
+          "comparison": "The intertwiner is in characteristic zero even when l=2; q denotes the extension degree.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "7",
+          "topic": "Infinity",
+          "comparison": "III5.1 at split real places supplies weight, not weak lifting alone.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "8",
+          "topic": "Exceptional branch",
+          "comparison": "The q=2 obstruction is explicitly ruled out; no induction exception is silently omitted.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "9",
+          "topic": "Scope",
+          "comparison": "No composite descent, general local parameter comparison or global degree bound is used.",
+          "status": "author-checked; independent decision pending"
+        }
+      ],
+      "consumer_ids": [
+        "H-D4-SECTION-1",
+        "H-D4-SECTION-3",
+        "H-D4-SECTION-4"
+      ]
+    },
+    {
+      "id": "AC-PRIME-DESCENT",
+      "author": "/root/astra_quartic_opt05_anchor",
+      "status": "authored source/application connection awaiting independent decision",
+      "supplier_passage_role": "statement",
+      "source": {
+        "path": "work/source-risk-review-20261107/item210-published-sources-05/local-only/arthur-clozel-toronto.pdf",
+        "sha256": "3033d863634f5a1e8c26e48ba5b5ec9d8f95fb411b2a6d21c1580db80bc01737",
+        "bytes": 17549338,
+        "role": "1989 final published facsimile; local-only"
+      },
+      "locator": "III4.2(d), printed202; proof206–207",
+      "available_assertion": {
+        "statement": "A sigma-stable unitary cuspidal Pi over L descends to a cuspidal pi over K; its q descendants differ by eta powers.",
+        "objects": "L/K cyclic prime degree q; Pi on GL(n,A_L); generator sigma and norm character eta.",
+        "quantifiers": "Every invariant unitary cuspidal Pi in this prime-degree setting.",
+        "hypotheses": "Pi is isomorphic to Pi composed with sigma.",
+        "parameter_range": "Any prime q; n positive.",
+        "uniformity": "One-step existence and fiber statement only.",
+        "exceptional_cases": "No composite-degree invariant descent is claimed.",
+        "constants": "Exactly q eta-twists as printed.",
+        "normalization": "The descent is a weak lift with the same unramified Satake-power convention.",
+        "limit_order": "Verify invariance before applying III4.2(d)."
+      },
+      "needed_assertion": {
+        "statement": "There is a weight-two cuspidal descendant whose attached representation equals r|G_K after the uniquely needed finite-character correction.",
+        "objects": "Pi is attached to r|G_L; r is already defined on G_K; both restrictions have dimension two.",
+        "quantifiers": "Every downward prime step in the fixed solvable tower.",
+        "hypotheses": "Absolute irreducibility on G_L; invariance follows from global r and III(2.4); split infinity gives weight two; U04 supplies the descendant attachment.",
+        "parameter_range": "q any prime and coefficient l any prime; finite coefficient extensions allowed.",
+        "uniformity": "The target is the restriction of the same original r at each step.",
+        "exceptional_cases": "A raw descendant need not already have the target determinant or equal r; its difference is the scalar character chi of Gal(L/K).",
+        "constants": "chi has finite order dividing q.",
+        "normalization": "If R=r tensor chi, twist the automorphic form by the inverse arithmetic-reciprocity Hecke character of chi.",
+        "limit_order": "Choose a descendant, compare G_L restrictions, obtain chi by Schur, correct it, then re-establish invariance for the next step."
+      },
+      "connecting_derivation": {
+        "path": "work/source-risk-review-20261107/arthur-clozel-prime-substitution-05/REPORT.md",
+        "sha256": "a1c9929d511ca357848d293bd041e0074662a61a2ef4694f3ccd8508ec24e02b",
+        "scope": "Sections3–7, with retained assumptions in8"
+      },
+      "comparisons": [
+        {
+          "id": "1",
+          "topic": "Invariance",
+          "comparison": "Global r supplies conjugation invariance; III(2.4) converts all unramified Hecke equalities to Pi^sigma=Pi.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "2",
+          "topic": "Degree",
+          "comparison": "Only the printed prime-degree part(d) is invoked.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "3",
+          "topic": "Existence",
+          "comparison": "Part(d) supplies a cuspidal descendant, rather than a possibly Eisenstein object.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "4",
+          "topic": "Weight",
+          "comparison": "The real places split, and III5.1 preserves their exact weight-two components.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "5",
+          "topic": "Attachment",
+          "comparison": "Finite central character plus that weight supplies the retained U04 domain.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "6",
+          "topic": "Comparison",
+          "comparison": "Both restrictions to G_L are the same absolutely irreducible two-dimensional representation.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "7",
+          "topic": "Twist",
+          "comparison": "Their scalar ratio defines chi of Gal(L/K); inverse arithmetic Hecke twist gives exactly r.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "8",
+          "topic": "Iteration",
+          "comparison": "At the next step start with the corrected form and verify its invariance anew.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "9",
+          "topic": "History",
+          "comparison": "No arbitrary intermediate descendant is assumed invariant, avoiding the defect of III6.3.",
+          "status": "author-checked; independent decision pending"
+        }
+      ],
+      "consumer_ids": [
+        "H-D4-SECTION-1",
+        "H-D4-SECTION-3",
+        "H-D4-SECTION-5"
+      ]
+    },
+    {
+      "id": "AC-SPLIT-REAL",
+      "author": "/root/astra_quartic_opt05_anchor",
+      "status": "authored source/application connection awaiting independent decision",
+      "supplier_passage_role": "statement",
+      "source": {
+        "path": "work/source-risk-review-20261107/item210-published-sources-05/local-only/arthur-clozel-toronto.pdf",
+        "sha256": "3033d863634f5a1e8c26e48ba5b5ec9d8f95fb411b2a6d21c1580db80bc01737",
+        "bytes": 17549338,
+        "role": "1989 final published facsimile; local-only"
+      },
+      "locator": "III5.1 printed212–213; I.5 printed48–50; III1.1–1.2 printed199",
+      "available_assertion": {
+        "statement": "In the prime-degree setting of III4.2, a weak lift between representations induced from unitary cuspidal ones is a strong lift.",
+        "objects": "pi on GL(n,A_K), Pi on GL(n,A_L); local components at every place.",
+        "quantifiers": "Every such weak lift for the fixed prime cyclic L/K.",
+        "hypotheses": "Both representations are induced from cuspidal in Definition4.1; they satisfy weak lifting.",
+        "parameter_range": "Every place; this application consumes only split real places.",
+        "uniformity": "Local identity for each place, without quantitative uniformity.",
+        "exceptional_cases": "Do not confuse local Lemma I.6.3 with composite descent Lemma III.6.3.",
+        "constants": "At a split place L tensor K_v is K_v^q.",
+        "normalization": "I.5 transfer is convolution; the Galois action permutes factors and lifting repeats the local component.",
+        "limit_order": "Obtain the global weak lift before using III5.1."
+      },
+      "needed_assertion": {
+        "statement": "The cuspidal lift and descendant in H-D4 have the same weight-two real components; the descendant central character has finite order.",
+        "objects": "K,L totally real; each real completion gives L tensor K_v=R^q.",
+        "quantifiers": "Every real place in every prime step.",
+        "hypotheses": "The lift is weak and cuspidal; the split-place consequence of III5.1 applies. Class-field/ray-class finiteness is retained.",
+        "parameter_range": "Only split real local behavior is consumed.",
+        "uniformity": "Parallel weight two is preserved across the finite tower.",
+        "exceptional_cases": "No general ramified local Galois/LLC comparison is inferred from this assertion.",
+        "constants": "Central character is trivial on positive real groups and smooth of some finite conductor.",
+        "normalization": "Split convolution and cyclic tensor trace identify equal local representations, not an unspecified Tate or absolute-value twist.",
+        "limit_order": "First identify real components; then use conductor plus finite ray-class quotient to obtain finite central character."
+      },
+      "connecting_derivation": {
+        "path": "work/source-risk-review-20261107/arthur-clozel-prime-substitution-05/REPORT.md",
+        "sha256": "a1c9929d511ca357848d293bd041e0074662a61a2ef4694f3ccd8508ec24e02b",
+        "scope": "Sections3–7, with retained assumptions in8"
+      },
+      "comparisons": [
+        {
+          "id": "1",
+          "topic": "Degree",
+          "comparison": "III5.1 carries the prime-degree assumptions of III4.2.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "2",
+          "topic": "Category",
+          "comparison": "Both sides here are cuspidal and hence fall within induced-from-cuspidal scope.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "3",
+          "topic": "Real field",
+          "comparison": "Both number fields are totally real, so every real completion splits as R^q.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "4",
+          "topic": "Transfer",
+          "comparison": "I.5 identifies split transfer with convolution of the component test functions.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "5",
+          "topic": "Character",
+          "comparison": "Cyclic tensor trace and independence identify the actual local representation.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "6",
+          "topic": "Normalization",
+          "comparison": "No unramified norm twist arises at a split real place.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "7",
+          "topic": "Central character",
+          "comparison": "Its real connected restriction is trivial and its finite conductor is open, so the ray-class quotient is finite.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "8",
+          "topic": "Proof references",
+          "comparison": "I.6.3 is the local lemma; III6.3 is excluded. The split calculation does not require the non-split local classification.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "9",
+          "topic": "Scope",
+          "comparison": "Only infinity weight and central-character domain are adopted; the separate ramified local-BC bridge remains separate.",
+          "status": "author-checked; independent decision pending"
+        }
+      ],
+      "consumer_ids": [
+        "H-D4-SECTION-2",
+        "H-D4-SECTION-4",
+        "H-D4-SECTION-5"
+      ]
+    },
+    {
+      "id": "AC-STRONG-MULTIPLICITY",
+      "author": "/root/astra_quartic_opt05_anchor",
+      "status": "authored source/application connection awaiting independent decision",
+      "supplier_passage_role": "statement",
+      "source": {
+        "path": "work/source-risk-review-20261107/item210-published-sources-05/local-only/arthur-clozel-toronto.pdf",
+        "sha256": "3033d863634f5a1e8c26e48ba5b5ec9d8f95fb411b2a6d21c1580db80bc01737",
+        "bytes": 17549338,
+        "role": "1989 final published facsimile; local-only"
+      },
+      "locator": "III(2.4), printed200",
+      "available_assertion": {
+        "statement": "Cuspidal pairs on Levi subgroups of GL(n) with equal unramified Hecke conjugacy classes at almost all places are conjugate.",
+        "objects": "The cuspidal Levi pairs (M,pi),(L,sigma) in III(2.4).",
+        "quantifiers": "Every two such pairs over the same number field and same total n.",
+        "hypotheses": "Equal almost-everywhere unramified Hecke classes.",
+        "parameter_range": "Unitary cuspidal factors as in III2.",
+        "uniformity": "An exact uniqueness statement; finite exceptional sets may vary.",
+        "exceptional_cases": "Equal data only at split primes are not asserted sufficient here.",
+        "constants": "No numerical density bound; equality is outside a finite set.",
+        "normalization": "Hecke matrices use the unitary normalization of III2.",
+        "limit_order": "Establish almost-everywhere equality, then apply (2.4)."
+      },
+      "needed_assertion": {
+        "statement": "Pi is isomorphic to Pi composed with sigma, verifying the hypothesis for prime descent.",
+        "objects": "Pi and Pi^sigma are cuspidal GL2 forms over L attached to conjugate restrictions of the same global r.",
+        "quantifiers": "Each generator sigma at a downward prime step.",
+        "hypotheses": "Global r identifies the conjugate Galois restrictions. U04 compares their unramified arithmetic polynomials; the common weight normalizes them to the same unitary Hecke classes.",
+        "parameter_range": "Same field L and total dimension 2.",
+        "uniformity": "Apply separately at every step to the corrected form attached to r.",
+        "exceptional_cases": "Do not infer invariance of an arbitrary intermediate descendant merely from invariance of its base change.",
+        "constants": "Both exceptional Hecke sets are finite.",
+        "normalization": "Conjugate primes have equal residue cardinalities, so arithmetic-to-unitary scaling preserves equality.",
+        "limit_order": "Compare attached representations, compare Hecke data, apply multiplicity one, then invoke prime descent."
+      },
+      "connecting_derivation": {
+        "path": "work/source-risk-review-20261107/arthur-clozel-prime-substitution-05/REPORT.md",
+        "sha256": "a1c9929d511ca357848d293bd041e0074662a61a2ef4694f3ccd8508ec24e02b",
+        "scope": "Sections3–7, with retained assumptions in8"
+      },
+      "comparisons": [
+        {
+          "id": "1",
+          "topic": "Field",
+          "comparison": "Pi and Pi^sigma are representations over the same L.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "2",
+          "topic": "Rank",
+          "comparison": "Take both Levi groups to be GL2 itself in (2.4).",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "3",
+          "topic": "Cuspidality",
+          "comparison": "Both forms are cuspidal, as required.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "4",
+          "topic": "Equality",
+          "comparison": "Global conjugation of r gives equality at all but finitely many primes, not just primes split over K.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "5",
+          "topic": "Normalization",
+          "comparison": "Residue norms are preserved by sigma, so unitary Hecke classes agree.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "6",
+          "topic": "Conclusion",
+          "comparison": "Conjugacy of the full-GL2 cuspidal pairs is isomorphism of the two forms.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "7",
+          "topic": "Consumer",
+          "comparison": "That is the exact invariance hypothesis of III4.2(d).",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "8",
+          "topic": "Ancestors",
+          "comparison": "Jacquet-Shalika and Shahidi inputs named in III2 remain published theorem premises, not new proofs here.",
+          "status": "author-checked; independent decision pending"
+        },
+        {
+          "id": "9",
+          "topic": "Iteration",
+          "comparison": "The same comparison is repeated after every finite-character correction.",
+          "status": "author-checked; independent decision pending"
+        }
+      ],
+      "consumer_ids": [
+        "H-D4-SECTION-1",
+        "H-D4-SECTION-5"
+      ]
+    }
+  ]
+}

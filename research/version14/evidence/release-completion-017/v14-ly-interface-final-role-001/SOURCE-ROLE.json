@@ -1,0 +1,44 @@
+{
+  "author": "/root/v14_sign_conductor",
+  "status": "proposed for independent source-role review",
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "research/version14/proofs/ly-d6-normalization-v1/CURRENT-INTERFACE.md",
+      "sha256": "c0cc8a5d70bc53dbf654709fe671a97f44307c6fde905d7f7e395c7f0ded50d0"
+    },
+    "start_line": 47,
+    "end_line": 48,
+    "excerpt_sha256": "6f2d520cd9f161537c70bf1643185f90543dcf103ad7263cfdc354509bfd461c"
+  },
+  "source_role": "downstream_result_report",
+  "supplier": {
+    "pin": {
+      "side": "head",
+      "path": "research/version14/proofs/igusa-theta-v1/PROOF.md",
+      "sha256": "291bc1bc1300aba427fd4dff78cbef9e8de690a330ea4a21adccf9dae6ff77d8"
+    },
+    "start_line": 63,
+    "end_line": 71,
+    "excerpt_sha256": "4cf8b36926448cc6abf4500ce9378eea05da716b8994a64976f58e253b0ccf94"
+  },
+  "prerequisite_context": {
+    "pin": {
+      "side": "head",
+      "path": "research/version14/proofs/igusa-theta-v1/PROOF.md",
+      "sha256": "291bc1bc1300aba427fd4dff78cbef9e8de690a330ea4a21adccf9dae6ff77d8"
+    },
+    "start_line": 48,
+    "end_line": 61,
+    "excerpt_sha256": "deb3fc128f807e24373b77398d70b832761f3aede28eb5031746acbb2402f223"
+  },
+  "assertion": "The same-point half-characteristic substitution gives j=3779136*(product_even z_m)^4/(sum_even z_m^8)^5, with numerator and denominator of degree40.",
+  "argument": "The Igusa proof substitutes the fixed forms into j=16*144^5*chi10^2/psi4^5. Its displayed scalar calculation gives 2^6*3^10=3779136; common weight20 and degree40 remove common projective scaling. The interface reports this already completed downstream calculation. It does not use the result to derive the Lin–Yang constants or their common weighted representative.",
+  "retained_premises": [
+    "Same principally polarized point and period matrix; matching psi4/chi10 conventions.",
+    "Common weighted Lin–Yang representative and finite nonzero j; denominator nonzero.",
+    "The accepted independent Igusa source applications remain required."
+  ],
+  "no_new_upstream_import_reason": "This is a report of the downstream Igusa calculation, not an additional input to the Lin–Yang normalization proof. No reverse dependency is introduced.",
+  "supersedes_pending_id": "LY-CURRENT-INTERFACE-md-47-48"
+}

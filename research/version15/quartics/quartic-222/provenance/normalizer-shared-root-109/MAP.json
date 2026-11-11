@@ -1,0 +1,31 @@
+{
+  "status": "Author map; full candidate composition pending",
+  "baseline": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/quartic238-optimization-20261110/global/resume-20261110/shared-T-elimination224-004/candidate224-ir.json",
+  "baseline_sha256": "abd51c098e6f8de7207977beafb4319fc334e3c5c3e621cfa1f48fd3c9f9c3af",
+  "q": 102,
+  "R": 126,
+  "R_squared": 125,
+  "q_squared": 104,
+  "forward": {
+    "167..178": "new=(q/R)*old",
+    "179,180": "new=q*old",
+    "195..202,209..216": "new=(q/R)*old",
+    "203..208,217..222": "new=q*old",
+    "47..54,56..59": "new=old/R",
+    "deleted": "62,63,66,67,68,69; recover from unsquared output",
+    "other_coordinates": "unchanged",
+    "G": "8*x4*x98-[(x185-x187)^2+2*(x186-x188)^2]",
+    "Z": "sum of (new a-new b)^2+2(new(a+1)-new(b+1))^2 over(a,b)=(171,173),(199,201),(213,215)"
+  },
+  "reverse": {
+    "167..178,195..202,209..216": "old=(R/q)*new",
+    "179,180,203..208,217..222": "old=new/q",
+    "47..54,56..59": "old=R*new",
+    "FU": "For(FUreal,FUhalfimag,Ureal,Uimag)=(62,63,179,180),(66,67,207,208),(68,69,221,222): oldFUreal=(Ureal²+2Uimag²)/q²; oldFUhalfimag=Ureal*Uimag/q²",
+    "G,Z": "forget; uniquely defined"
+  },
+  "zeros": "All individual components and outputs may vanish. OnlyR,q inverses; q=-1 allowed. No L/integer label is divided by.",
+  "domain": "Use independently accepted q proof9c8f7c60 from unchanged ten rows; own author107 not self-reapproved.",
+  "external_obligations": "Deleted FU outputs still require the independently authored paired-factor rewrite. This map preserves their reconstruction FU=U²/q² and the second-root output, so that rewrite can be composed without changed coefficient meanings.",
+  "count": "Six FU rational coordinates removed; three paired-factor coefficient helpers and two trace helpers yield proposed netone saving only after full composition. No M or inverseguard needed."
+}

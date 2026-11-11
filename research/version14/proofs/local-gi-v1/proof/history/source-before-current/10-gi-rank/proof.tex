@@ -1,0 +1,271 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}[lemma]{Theorem}
+\newcommand{\R}{\mathbb R}\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}\newcommand{\N}{\mathbb N}
+\newcommand{\C}{\mathbb C}\newcommand{\DR}{\mathrm{DR}}
+\title{Degree conversion and the finite rank iteration}
+\author{Author proposal: /root/astra\_v14\_baseline\_theta}
+\date{7 November 2026}
+\begin{document}\maketitle
+
+\noindent\textbf{Status.} This is a bounded author proof awaiting independent
+review. It proves the degree conversions and the assembly of the rank
+steps from the precisely stated one-step geometric/frequency interface.
+It does not prove the analytic sunflower or commutator hypotheses of
+GTZ Sections 10--11. The complete inverse theorem remains open.
+Every internal nilcharacter below has exact unit norm and vertical
+equivariance for all limit elements under the natural ultrapower
+interpretation. The main manuscript is not modified.
+
+\section{The actual degree-to-rank conversion}
+
+Let $G/\Gamma$ be a connected simply connected nilpotent Lie group with
+lattice and rational degree filtration $(G_i)_{i\geq0}$ supported on
+$0\leq i\leq m$. Apply accepted bounded tautification first, so
+$G_0=G_1=G$ and polynomial orbits may be normalized at zero without
+changing the represented sequence. Write $\mathfrak g_i=\log G_i$.
+All the vector spaces here are rational for the rational structure
+determined by $\Gamma$.
+
+For $(d,r)\in\DR=\{(d,r)\in\N^2:0\leq r\leq d\}$ with $d>0$ define
+$\mathfrak h_{(d,r)}$ to be the real span of all iterated Lie brackets
+of length $\ell\geq1$ with entries $X_j\in\mathfrak g_{i_j}$,
+$i_j\geq1$, for which
+\begin{equation}\label{eq:DR}
+ w:=\sum_{j=1}^{\ell}i_j>d,
+ \qquad\hbox{or}\qquad
+ w=d\ \hbox{and}\ \ell\geq\max(r,1).
+\end{equation}
+Take every bracketing and set
+$\mathfrak h_{(0,0)}=\mathfrak g$, $H_{(d,r)}=\exp\mathfrak h_{(d,r)}$.
+Only finitely many nonzero brackets occur, since their weight exceeds
+$m$ when they can no longer contribute and every entry has positive
+weight.
+
+\begin{lemma}\label{lem:DR}
+These are connected rational groups forming a taut degree--rank
+filtration supported on $(m,m)$. For each $d>0$,
+$H_{(d,0)}=H_{(d,1)}=G_d$. Hence the original degree-polynomial orbits
+are exactly the degree--rank polynomial orbits for this refinement.
+A degree-$m$ nilcharacter is a degree--rank $(m,m)$ nilcharacter
+with the same function and with the top character restricted.
+\end{lemma}
+\begin{proof}
+All bracket spans in \eqref{eq:DR} are rational, because brackets of
+rational vectors are rational. Bracketing with $\mathfrak g_1$ raises
+weight by at least one, so each span is an ideal of $\mathfrak g$.
+It is therefore a Lie subalgebra, and its exponential is a connected
+normal subgroup. Rational subgroup/lattice geometry gives a discrete
+cocompact intersection with $\Gamma$; this is the exact rational
+subgroup lemma proved in local Lemma 13.2, Section 2.
+
+The lexicographic nesting is immediate at a fixed $d$ as $r$ increases.
+If $d$ increases, every new allowed weight was strictly above the old
+$d$, so its span is contained in the old one as well. For two positive
+indices $(d,r),(e,t)$, brackets either have weight greater than $d+e$,
+or weight exactly $d+e$ and length at least
+$\max(r,1)+\max(t,1)\geq\max(r+t,1)$. Thus the Lie bracket is in
+$\mathfrak h_{(d+e,r+t)}$. The BCH commutator and its higher terms
+lie there too, using the ideal property. At index zero use normality.
+This verifies every pair of indices, not only equal indices.
+
+For $r=0$ or $1$, every allowed bracket has weight at least $d$ and
+thus lies in $\mathfrak g_d$. Conversely the length-one brackets with
+$i_1=d$ include all of $\mathfrak g_d$. This proves
+$H_{(d,0)}=H_{(d,1)}=G_d$. In particular $H_{(1,0)}=G$.
+If $d>m$ all brackets vanish. At degree $m$ every nonzero bracket has
+length at most its weight $m$, which gives the asserted support.
+
+The domain filtration on $\Z$ has $\Z$ at indices $(0,0),(1,0)$
+and zero at all other indices, including $(1,1)$, as in Definition 6.17.
+The derivative criterion for an adapted
+map therefore asks for its $a$th differences to lie in $H_{(a,0)}$;
+these groups equal $G_a$. This proves the equality of the polynomial
+classes directly, matching published (6.8). The new top
+$H_{(m,m)}$ is a rational subgroup of $G_m$. Restricting the original
+vertical character is integral on its lattice and preserves all exact
+vertical identities and unit norm. No enlargement of its character
+domain is asserted.
+\end{proof}
+
+\section{The total-degree conversion used in related applications}
+
+For a rational multidegree filtration $(G_a)_{a\in\N^q}$ supported
+on a finite downset $J$, first use bounded tautification to restrict
+to $H=\langle G_{e_1},\ldots,G_{e_q}\rangle$. Let
+\[
+ K_0=H,\qquad
+ \mathfrak k_i=\sum_{a\in J:\ |a|\geq i}\mathfrak g_a,
+ \qquad K_i=\exp\mathfrak k_i\quad(i\geq1).
+\]
+Each $\mathfrak g_a$ is an ideal in $\mathfrak g_0$, so the sum is
+a rational ideal. It equals the Lie algebra of the connected generated
+group. The brackets satisfy
+$[\mathfrak k_i,\mathfrak k_j]\subseteq\mathfrak k_{i+j}$,
+because $[\mathfrak g_a,\mathfrak g_b]\subseteq\mathfrak g_{a+b}$
+and $|a+b|=|a|+|b|$. The index-zero condition follows from normality.
+Also $K_1=H$ and $K_i$ is trivial above $D=\max_{a\in J}|a|$.
+The rational subgroup lemma verifies every lattice intersection.
+
+For the diagonal restriction $n\mapsto g(n,\ldots,n)$ of a
+multivariable polynomial orbit, use its Taylor expansion. A factor
+with coefficient $u_a\in G_a$ has scalar exponent
+$\prod_j\binom n{a_j}$ of ordinary degree $|a|$. Such a factor
+is adapted to $K_\bullet$ since $u_a\in K_{|a|}$; its successive
+differences have the same one-parameter coefficient and the required
+scalar polynomial degree. The product is polynomial by B.4. This
+checks the actual diagonal map rather than treating the domain
+filtrations as identical. For a rectangle $J=\{a:a\leq d\}$,
+the only index of total weight $|d|$ is $d$, so $K_{|d|}=G_d$.
+A multidegree-$d$ nilcharacter therefore restricts diagonally to a
+degree-$|d|$ nilcharacter with exactly the same top character.
+For a nonrectangular downset only the nilsequence degree assertion
+has been proved, and no unwarranted common top character is claimed.
+
+\section{The precise one-step interface}
+
+Fix $s\geq3$, write $m=s-1$, and let $1\leq R\leq m$.
+Suppose $f$ is bounded on $[N]$, $H$ is a dense internal set of
+shifts, $A(h,n)$ is a single unit multidegree $(1,m)$ nilcharacter,
+and $(\chi_h)$ is an internal uniformly bounded family of unit
+degree--rank $(m,R)$ nilcharacters. Suppose that for every retained
+$h$, $\Delta_h f$ has positive degree-at-most-$m-1$ correlation with
+$A(h,\cdot)\otimes\chi_h$.
+
+The one-step premise used here is the following exact output, after
+restricting to a dense internal subset and fixing uniform standard
+bounds. It must be supplied by the corrected additive-quadruple result,
+the actual Section 10 frequency representation, the two conclusions of
+Theorem 11.1, accepted LP04 and the final Section 12 join:
+\begin{enumerate}
+\item There is a unit multidegree $(1,m)$ nilcharacter $Z(h,n)$,
+defined globally, and a family of unit-vector sequences $\zeta_h(n)$
+such that $Z(h,n)=\iota\zeta_h(n)$ for retained $h$, with one fixed
+coordinate isometry $\iota$. Zero padding is allowed.
+\item The entire matrix-valued function
+$V_h=\chi_h\otimes\overline{\zeta_h}$ is a nilsequence of
+degree--rank at most $(m,R-1)$, with standard uniform geometry and
+Lipschitz bounds and internal parameter dependence.
+\end{enumerate}
+The second clause states a rank drop; for $R>1$ it does not state
+an ordinary-degree drop. The final Section 12 constructor must choose
+its test equivariant on the full ordinary top before invoking LP04's
+comparison. Equivariance only on $G_{(m,R)}$ does not by itself
+justify its larger multidegree top. Those obligations remain in the
+separately authored geometric join and are not hidden in this premise.
+
+\section{Recovering the next family without dividing by components}
+
+The unit-vector identity gives, for every component $a$ and all relevant
+integers,
+\begin{equation}\label{eq:recovery}
+ (\chi_h)_a(n)=\sum_b (\zeta_h)_b(n)
+       \bigl((\chi_h)_a(n)\overline{(\zeta_h)_b(n)}\bigr).
+\end{equation}
+The terms in parentheses are components of $V_h$. Replace the first
+factor by its corresponding coordinate in $Z(h,n)$ and form the unit
+nilcharacter $A'(h,n)=A(h,n)\otimes Z(h,n)$ on the product model.
+The product filtration has the same multidegree bound $(1,m)$.
+
+Choose a scalar component and a degree-at-most-$m-1$ test witnessing
+the incoming correlation, with fixed bounds and a fixed positive
+threshold after the usual finite selection. Inserting
+\eqref{eq:recovery} expresses it as a fixed finite sum of correlations
+of $\Delta_h f$ against components of $A'(h,\cdot)$, the same
+ordinary lower-degree test, and a component of $V_h$. At least one
+summand has a positive fixed correlation. Finite pigeonhole restricts
+to a dense subset with fixed component choices if necessary. No scalar
+component is inverted, or assumed nonzero or of modulus one.
+
+On each fixed rational degree--rank model for $V_h$, apply the
+unit-character approximation construction to its top group at
+$(m,R-1)$. That group is central after tautification, since bracketing
+with $G_{(1,0)}$ raises the first coordinate above $m$. Its lattice
+is rational. Smooth local sections and a finite unit partition on the
+central torus produce exact-character unit-vector tests. Their components
+form a conjugation-stable algebra separating points; Stone--Weierstrass
+and a finite uniform net of the bounded Lipschitz test class give a
+finite approximation by components of such tests. This is the same
+explicit compact construction in the assembly's selection section,
+now on the stated degree--rank model. It uses centrality and rationality,
+not an identification of this top with the larger ordinary-degree top.
+
+Choose the approximation error so that its correlation with the other
+fixed bounded factors is less than half the surviving threshold.
+Another finite selection supplies a unit degree--rank $(m,R-1)$
+nilcharacter $\chi'_h$ for which $\Delta_h f$ has positive
+degree-at-most-$m-1$ correlation with
+$A'(h,\cdot)\otimes\chi'_h$. Finite choices and orbit choices are
+made on representatives and then passed to the ultralimit, retaining
+internal dependence and uniform bounds. Every test has its exact
+standard vertical identity before extension, so the all-limit
+convention is preserved. This is the output required by the next
+rank step.
+
+\section{Initialization, termination and the actual endpoint}
+
+Start with the degree-$m$ family obtained from the preceding inverse
+order. Lemma~\ref{lem:DR} makes it a degree--rank $(m,m)$ family
+with the same functions. Take $A=1$, viewed as a constant unit
+multidegree $(1,m)$ nilcharacter. The original positive correlation
+is degree-at-most-$m-1$ correlation with the lower test equal to one.
+
+Apply the one-step premise and the preceding recovery argument at
+$R=m,m-1,\ldots,1$. There are exactly $m$ steps, a fixed standard
+number. A finite sequence of positive standard density losses still
+leaves a positive standard density; the same holds for positive
+correlation and finite complexity bounds. Products of the successive
+multidegree $(1,m)$ nilcharacters retain that bound on their fixed
+product model.
+
+At the last step the residual family has support at most $(m,0)$.
+Its extra degree--rank axiom says $G_{(m,0)}=G_{(m,1)}$.
+But $(m,1)>(m,0)$, so the latter group is trivial. All groups of
+larger degree are also trivial. Thus the ordinary filtration
+$(G_{(i,0)})_i$ has degree at most $m-1$. The residual nilcharacter,
+viewed merely as a bounded nilsequence, can now be multiplied into
+the already present ordinary degree-at-most-$m-1$ correlation test.
+The product degree is still at most $m-1$.
+
+We obtain one internal unit multidegree $(1,m)=(1,s-1)$ nilcharacter
+$A_{\mathrm{final}}(h,n)$ such that $\Delta_h f$ has
+degree-at-most-$s-2$ correlation with it on a dense set of shifts.
+This is the exact Theorem 7.1 endpoint needed by the separately
+authored symmetry proof. It is conditional on the one-step premise
+being supplied at every input rank and every constructed family.
+Acceptance of the finite iteration alone does not establish those
+analytic premises or the full inverse theorem.
+
+\section{Source findings and bounded related-use scope}
+
+The actual final printed p.~1262 was inspected visually. In Example 6.11
+the multidegree-to-degree group is printed with $|a|\leq i$, which
+includes $G_0$ at every $i$ and does not give bounded degree. For
+example $G_0=G_1=\R$, $G_2=0$ would give the group $\R$ at every
+index. The required rule is $|a|\geq i$, proved in Section 2 above.
+
+The same example's degree-to-rank rule prints the equality of summed
+weights to the fixed bound $d$, rather than to the running index $d'$.
+The desired identity $H_{(d',0)}=G_{d'}$ then need not hold. For
+instance the linear filtration $G_0=G_1=\R$, $G_2=0$ with allowed
+degree bound $d=2$ yields zero at $(1,0)$ under that printed rule,
+whereas $G_1=\R$. A nonconstant linear polynomial is then lost.
+Section 1 supplies the current-index rule and proves every filtration,
+lattice and polynomial assertion used here. The printed length
+condition is $\ell\geq\max(r',1)$; that sign is not itself an error.
+
+The bounded related-use scope is Example 6.11, the polynomial identity
+(6.8), Lemma 6.21's degree conversions, the initialization and rank-zero
+termination of Theorems 7.1--7.2, and the diagonal/total-degree conversions
+used in E.9 and the Section 13 assembly. Separate authors of the latter
+consumers have been notified. No claim is made here to have read every
+unrelated use of a filtration in the source or every historical correction.
+These formula errors are not evidence that the intended inverse theorem
+is false. Earlier source bytes and decisions are preserved.
+
+\end{document}

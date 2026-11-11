@@ -1,0 +1,295 @@
+{
+  "id": "V15-ROOT240",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33157,
+      33187
+    ],
+    "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33188,
+      33291
+    ],
+    "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+  },
+  "dependencies": [
+    "V15-SCALAR245"
+  ],
+  "retained_reviews": [
+    {
+      "key": "root-product-independent",
+      "path": "work/quartic248-optimization-20261109/valuation-packing/root-product-independent/REVIEW.json",
+      "sha256": "b63070722ae36434e5048e5e954cfee97c4b338be2efde9d083accf23e0a1121",
+      "scope": "Exact named coordinate/proof-chain scope; preserve source qualifications.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "v15typing",
+      "path": "work/quartic-v15-238-20261110/premise-audit/typing-delta-review-002/REVIEW.json",
+      "sha256": "8d0492468bf531fb435d24d268a1b007f572e414692942c5f246504f667a7354",
+      "scope": "New238 argument and exact typing; inherited V14 foundation excluded.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Field",
+      "required": "Keep the exact quadratic field and curve constant",
+      "constructed": "K=Q(√2), d=3−√2, D=d²",
+      "match": "All maps are field equations expanded into rational components.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Forward map",
+      "required": "Transport each old root block",
+      "constructed": "A=d(V+Q)/h; B=d(V−Q)/h; C=(x+j+DW)/h; E=C−2h; i=I/h; k=K1/h; u=(A+B)²/(4D)",
+      "match": "The old real equation j²=h⁴−D excludes h=0.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Root relations",
+      "required": "Preserve the seven new field equations",
+      "constructed": "A²+B²+2CE=0; AC=d(i−k); BE=d(i+k); (A+B)²=4Du; FU=u²; i²+D*FU=1; k²+D*FV=1",
+      "match": "The FU/FV outputs remain the same physical quantities.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Ratio consumers",
+      "required": "Translate both retained ratio equations",
+      "constructed": "A−B+2dk*zV=0 and (A+B)SH=2diL",
+      "match": "The regular identity value z(O)=0 is retained; no division by these numerators.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Inverse map",
+      "required": "Recover every old coordinate",
+      "constructed": "h=(C−E)/2, x=h², j=(B²+C²−A²−E²)/4, V=h(A+B)/(2d), Q=h(A−B)/(2d), I=hi, K1=hk, W=(A²−B²)/(4D)",
+      "match": "Only nonzero constants occur in the displayed inverse.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Inverse domain",
+      "required": "Prove recovered h and j nonzero",
+      "constructed": "With α=(B²+C²)/2 and β=(A²+E²)/2, α+β=2h² and αβ=D",
+      "match": "Real positivity excludes h=0; j=0 would force d to be a square in K, contrary to Norm(d)=7.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Zero strata",
+      "required": "Retain all other component-zero cases",
+      "constructed": "No division by A±B, i, k, C or E occurs",
+      "match": "A vanishing rational component or numerator is not discarded.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Output recovery",
+      "required": "Keep the scalar jS and aggregate trace",
+      "constructed": "Retain two rational jS coordinates and one T=quarter trace of sum h² coordinate",
+      "match": "Every downstream scalar/aggregate consumer has its old value.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Count",
+      "required": "Count the complete four-block change",
+      "constructed": "Four blocks save eight rational coordinates; retaining three outputs gives 240 coordinates and 214 rows",
+      "match": "This count includes the output coordinates and is not a local chart-only saving.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33188,
+            33291
+          ],
+          "excerpt_sha256": "17b03cb001025f9f41da821d6e75056e93302ad0d12a76b405f97e6cc1dbf98c"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

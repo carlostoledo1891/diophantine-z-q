@@ -1,0 +1,1672 @@
+{
+  "shared_contracts": [
+    {
+      "id": "CURRENT-GA-COMPOUND",
+      "reason": "The eight frozen current rows have identical compound assertion text but different source sites. This shared contract covers the full compound requirement at its actual locations; site-specific clauses distinguish direct GI20, historicalGI39 and the later relative proof.",
+      "clauses": [
+        {
+          "clause": "Full fixed-factor majorant, all linear forms and correlation moments including repeated shifts.",
+          "ordinary_application_id": "GA-MAJORANT-FIXED-E",
+          "final_uses": [
+            {
+              "use_id": "GA-EXTERNAL-V6-GA-GT-MAJORANT",
+              "use_sha256": "36894734e50f870500abdf7208241e4abf4f8846f0474f92669fefba9a74afac",
+              "consumer": "GA-MAJORANT-FIXED-E"
+            },
+            {
+              "use_id": "ACTIVE-GA-MAJORANT-TO-RELATIVE",
+              "use_sha256": "3850555bb1bedf1d78abe45e87000b6cbb56d67eb459c52c24b035e44d5d2a8a",
+              "consumer": "GA-RELATIVE-INVERSE"
+            },
+            {
+              "use_id": "ACTIVE-GA-MAJORANT-TO-CUTOFF",
+              "use_sha256": "ae479bff1d5807330e4f74e0b5513ead80df812f36aa9a7a848e1264df34159c",
+              "consumer": "GA-CENTERED-SLOW-CUTOFF"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19442,
+            "end_line": 19586,
+            "excerpt_sha256": "fa03508377c6fe2d1b2018ca8d055120cfde3f31ead9216afd736514ce1898b3"
+          }
+        },
+        {
+          "clause": "Same-step finite-family GI and conditional relative inverse for the actual truncated real input and normalized interval norm.",
+          "ordinary_application_id": "GA-RELATIVE-INVERSE",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE",
+              "use_sha256": "91ab9588605827d6a309758bc0366597e3794d0efe9b1f79ef2570c8bc998c5b",
+              "consumer": "GA-RELATIVE-INVERSE"
+            },
+            {
+              "use_id": "GA-CURRENT-RELATIVE",
+              "use_sha256": "7c5e24c8b545bc8d3d412aae6764e657bffbaa190928f480f937a3636f412d89",
+              "consumer": "GA-RELATIVE-INVERSE"
+            },
+            {
+              "use_id": "GA-CURRENT-NORM-RELATIVE",
+              "use_sha256": "e479279a2a7f04a97afa4cc989e51601ea231cca2355fa235d3fb93dae4e424c",
+              "consumer": "GA-RELATIVE-INVERSE"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19604,
+            "end_line": 19653,
+            "excerpt_sha256": "06ac5461fa8b3e11040e1c65260353d3b583ec47fe10a963bb986b9e4dc391c4"
+          }
+        },
+        {
+          "clause": "Stagewise cutoff and fixed-V uniform nilsequence contradiction; no fixed-z pseudorandom limit.",
+          "ordinary_application_id": "GA-CENTERED-SLOW-CUTOFF",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-RELATIVE-TO-CUTOFF",
+              "use_sha256": "21252c2407bec0546709add8953fe410c480cf2956754aeef1d49b494cdd115d",
+              "consumer": "GA-CENTERED-SLOW-CUTOFF"
+            },
+            {
+              "use_id": "ACTIVE-GA-CENTERED-TO-CUTOFF",
+              "use_sha256": "5574cd556d6929c75a253e87095608e31f292b4294bd433ed37f23bb77b1e04f",
+              "consumer": "GA-CENTERED-SLOW-CUTOFF"
+            },
+            {
+              "use_id": "GA-CURRENT-NORM-CUTOFF",
+              "use_sha256": "a61be979a3b89ead2b332c9f5e0da7d734f8b8dbf566666936ad089851aa6159",
+              "consumer": "GA-CENTERED-SLOW-CUTOFF"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19655,
+            "end_line": 19685,
+            "excerpt_sha256": "d3528cba45c4d17fcb0bb06f6a8b0d1190e57ca7001aa9a682a051646fe1d664"
+          }
+        },
+        {
+          "clause": "GI alone does not imply S1: generalized von Neumann, local factors and Artin inputs are separate.",
+          "ordinary_application_id": "GA-S1-OUTER-CLOSURE",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-CUTOFF-TO-S1",
+              "use_sha256": "0acef8ba2ea9b79220c09403aecac2cc5c8042b2f554c7396a029aa9ec92b133",
+              "consumer": "GA-S1-OUTER-CLOSURE"
+            },
+            {
+              "use_id": "ACTIVE-GA-ARTIN-TO-S1",
+              "use_sha256": "d23aba1c6dc3e10576d19e56cd8618bdcab82be5fe20c9bf245b876c66e09a18",
+              "consumer": "GA-S1-OUTER-CLOSURE"
+            },
+            {
+              "use_id": "GA-EXTERNAL-V6-GA-GT-RELATIVE-GN",
+              "use_sha256": "e474be4bfb1e7e3b2b887b46a4db7b7eb7f01d1ab3bc54052a1a7c73eb61174e",
+              "consumer": "GA-ARTIN-PATTERNS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19687,
+            "end_line": 20222,
+            "excerpt_sha256": "8506b1973d4e2276edb34c09f23c836650905e4084dc9cbf2d59b18522cb0b1c"
+          }
+        },
+        {
+          "clause": "The old Dodos–Kanellopoulos inverse route is retired at the active edge.",
+          "ordinary_application_id": "GA-RELATIVE-INVERSE",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE",
+              "use_sha256": "91ab9588605827d6a309758bc0366597e3794d0efe9b1f79ef2570c8bc998c5b",
+              "consumer": "GA-RELATIVE-INVERSE"
+            },
+            {
+              "use_id": "GA-CURRENT-RELATIVE",
+              "use_sha256": "7c5e24c8b545bc8d3d412aae6764e657bffbaa190928f480f937a3636f412d89",
+              "consumer": "GA-RELATIVE-INVERSE"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19418,
+            "end_line": 19440,
+            "excerpt_sha256": "633f1dd0621cf3513fa43f6ddd7b1d168c515fa8e57ecbc42d3321de62f41d7c"
+          }
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "initial_use_id": "HIST-gaussian-GAU-002",
+      "initial_assertion_preserved": {
+        "statement": "For odd good ell, count nonzero points on Q_kappa, simultaneous adjacent-norm zeros, and union of prime-form hyperplanes. Distinct coefficient residues and ell not dividing 2kappa are essential.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-002",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-002-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17541,
+            "end_line": 17592,
+            "excerpt_sha256": "2f5a9de3a309089f7d342b68275e7110df0c7d6cb0372136b37d4892f8443996"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-002"
+        }
+      ],
+      "ordinary_application_id": "GA-GAUSSIAN-SIEVE",
+      "clauses": [
+        {
+          "clause": "For odd good ell, count nonzero points on Q_kappa, simultaneous adjacent-norm zeros, and union of prime-form hyperplanes. Distinct coefficient residues and ell not dividing 2kappa are essential.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-SIEVE-DENSITIES",
+              "use_sha256": "992fe981e221073ee6fe71ba4a5d85170af9f7d07eab5cfe232441e494e51840",
+              "consumer": "GA-GAUSSIAN-SIEVE"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17541,
+            "end_line": 17638,
+            "excerpt_sha256": "3833254b25137877d85322efa1a849e3d6779ba88a4987a27978dc09214c4651"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-004",
+      "initial_assertion_preserved": {
+        "statement": "Archimedean density bounded by C tau, with error constants allowed to depend on derivatives and tau.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-004",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-004-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17630,
+            "end_line": 17638,
+            "excerpt_sha256": "25a0f2324f5663acffc5d478c81ebfbfc593c4c7027c5dcac85c121c5ce6ac94"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-004"
+        }
+      ],
+      "ordinary_application_id": "GA-GAUSSIAN-SIEVE",
+      "clauses": [
+        {
+          "clause": "Archimedean density bounded by C tau, with error constants allowed to depend on derivatives and tau.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-SIEVE-DENSITIES",
+              "use_sha256": "992fe981e221073ee6fe71ba4a5d85170af9f7d07eab5cfe232441e494e51840",
+              "consumer": "GA-GAUSSIAN-SIEVE"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17541,
+            "end_line": 17638,
+            "excerpt_sha256": "3833254b25137877d85322efa1a849e3d6779ba88a4987a27978dc09214c4651"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-009",
+      "initial_assertion_preserved": {
+        "statement": "Fixed Gaussian ray field, arithmetic Frobenius, conjugation-invariant C. T_C(p)=2Lambda'_C(p), prime-power L1 error O_H(sqrt X log^2 X), Fourier expansion.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-009",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-009-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17930,
+            "end_line": 17979,
+            "excerpt_sha256": "1f2a05e85b617323f5953d8259997a2fcbd48c34b9585d9563d40bff9bb61166"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-009"
+        }
+      ],
+      "ordinary_application_id": "GA-HECKE-RAY-PROGRESSIONS",
+      "clauses": [
+        {
+          "clause": "Fixed Gaussian ray field, arithmetic Frobenius, conjugation-invariant C. T_C(p)=2Lambda'_C(p), prime-power L1 error O_H(sqrt X log^2 X), Fourier expansion.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-HECKE-CENTERING",
+              "use_sha256": "26c8b5c5c3d37fea539ff1a7bd4fbc442f2243de77bbbca17ec53273944d78a1",
+              "consumer": "GA-HECKE-RAY-PROGRESSIONS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17930,
+            "end_line": 18220,
+            "excerpt_sha256": "2c2cf9b99d5d2f5fd1d4e8cd5c1788f3be941867f5b37beb6fdacaa1267e615f"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-011",
+      "initial_assertion_preserved": {
+        "statement": "Character orthogonality yields arithmetic Frobenius compatibility on Jq=K intersect Q(zeta_q), denominator [KQ(zeta_q):Q], including factor two.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-011",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-011-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18117,
+            "end_line": 18160,
+            "excerpt_sha256": "5273fa94b25164569789c72d12bd3a2e8c121dbd68f311bdf9d87f39badb6205"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-011"
+        }
+      ],
+      "ordinary_application_id": "GA-HECKE-RAY-PROGRESSIONS",
+      "clauses": [
+        {
+          "clause": "Character orthogonality yields arithmetic Frobenius compatibility on Jq=K intersect Q(zeta_q), denominator [KQ(zeta_q):Q], including factor two.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-HECKE-CENTERING",
+              "use_sha256": "26c8b5c5c3d37fea539ff1a7bd4fbc442f2243de77bbbca17ec53273944d78a1",
+              "consumer": "GA-HECKE-RAY-PROGRESSIONS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17930,
+            "end_line": 18220,
+            "excerpt_sha256": "2c2cf9b99d5d2f5fd1d4e8cd5c1788f3be941867f5b37beb6fdacaa1267e615f"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-012",
+      "initial_assertion_preserved": {
+        "statement": "For fixed W containing conductor K^ab and unit b, subtract mu_C(b) ordinary weight; cancellation for all progressions including nonunit residue and large step.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-012",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-012-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18161,
+            "end_line": 18220,
+            "excerpt_sha256": "d23515d940d27001fe43d7900b976f49ad352a6e1f861e41cd1dc748e5204ec5"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-012"
+        }
+      ],
+      "ordinary_application_id": "GA-HECKE-RAY-PROGRESSIONS",
+      "clauses": [
+        {
+          "clause": "For fixed W containing conductor K^ab and unit b, subtract mu_C(b) ordinary weight; cancellation for all progressions including nonunit residue and large step.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-HECKE-CENTERING",
+              "use_sha256": "26c8b5c5c3d37fea539ff1a7bd4fbc442f2243de77bbbca17ec53273944d78a1",
+              "consumer": "GA-HECKE-RAY-PROGRESSIONS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17930,
+            "end_line": 18220,
+            "excerpt_sha256": "2c2cf9b99d5d2f5fd1d4e8cd5c1788f3be941867f5b37beb6fdacaa1267e615f"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-014",
+      "initial_assertion_preserved": {
+        "statement": "Integer quadratic P with abs(a_i)<=B0 X^(1-i/2), length >=sqrt X/B0. Bounded nonzero integer multiple recovers C-infinity[X] norm.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-014",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-014-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18264,
+            "end_line": 18312,
+            "excerpt_sha256": "d2c89668aafc012412db6f99b1a59c523d92fe381af3d3ec41bc53a88746e51a"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-014"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Integer quadratic P with abs(a_i)<=B0 X^(1-i/2), length >=sqrt X/B0. Bounded nonzero integer multiple recovers C-infinity[X] norm.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-POLYNOMIAL-INVERSION",
+              "use_sha256": "3e0eb6569fdc962cd36f9e0cd28735fc22e825898cd1c2daeba9d04681d3070c",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18264,
+            "end_line": 18964,
+            "excerpt_sha256": "b3d580fda95580a5c982c6ce1220f65b8dc5e82be900cabf3eb91a6eb5cd74da"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-025",
+      "initial_assertion_preserved": {
+        "statement": "Integer affine composition with bounded v and potentially O(X) shift can be inverted after bounded integer multiplier.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-025",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-025-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18935,
+            "end_line": 18964,
+            "excerpt_sha256": "49d885b349d8908ba457ddd85d71e5f5887fd3f40e01e44ed9a885133ac86099"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-025"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Integer affine composition with bounded v and potentially O(X) shift can be inverted after bounded integer multiplier.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-POLYNOMIAL-INVERSION",
+              "use_sha256": "3e0eb6569fdc962cd36f9e0cd28735fc22e825898cd1c2daeba9d04681d3070c",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18264,
+            "end_line": 18964,
+            "excerpt_sha256": "b3d580fda95580a5c982c6ce1220f65b8dc5e82be900cabf3eb91a6eb5cd74da"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-017",
+      "initial_assertion_preserved": {
+        "statement": "Requires actual total equidistribution of entire product orbit in dimension 2m; mean zero alone does not imply it. Intersect congruences into one class modulo divisor q.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-017",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-017-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18427,
+            "end_line": 18454,
+            "excerpt_sha256": "d6b4356804e1d27e8082add2e96a641f63ed96972bcf49db20fbdbdcccefb4e3"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-017"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Requires actual total equidistribution of entire product orbit in dimension 2m; mean zero alone does not imply it. Intersect congruences into one class modulo divisor q.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-PRODUCT-ORBIT",
+              "use_sha256": "fedd4154c02312c652cd83fe693d50359acaf2ccceb190f17eb44f46312d6b8f",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18427,
+            "end_line": 18677,
+            "excerpt_sha256": "2830c215e588f59edc522f18030f2f119a0546b93e031bf4e1cfec9ead25a7bc"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-021",
+      "initial_assertion_preserved": {
+        "statement": "Product has Haar mean zero, Lip<=2; all interval cuts and congruences covered, product modulus divides q.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-021",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-021-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18658,
+            "end_line": 18677,
+            "excerpt_sha256": "3f49b84bae2516dfea706425dafa1ac7a39e1fe525c820d85fd7b89ee31892a0"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-021"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Product has Haar mean zero, Lip<=2; all interval cuts and congruences covered, product modulus divides q.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-PRODUCT-ORBIT",
+              "use_sha256": "fedd4154c02312c652cd83fe693d50359acaf2ccceb190f17eb44f46312d6b8f",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18427,
+            "end_line": 18677,
+            "excerpt_sha256": "2830c215e588f59edc522f18030f2f119a0546b93e031bf4e1cfec9ead25a7bc"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-018",
+      "initial_assertion_preserved": {
+        "statement": "Ideal Mobius/convolution, zero-extended completely multiplicative chi; a_E(n)<=tau(n), second moments, A_E(X)=pi X/4+O(sqrt X).",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-018",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-018-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18455,
+            "end_line": 18508,
+            "excerpt_sha256": "2a4267783021dcdaba4e3106e25307a8e1e5070a1dbd1202e7dfc61cc87181b3"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-018"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Ideal Mobius/convolution, zero-extended completely multiplicative chi; a_E(n)<=tau(n), second moments, A_E(X)=pi X/4+O(sqrt X).",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-IDEAL-VAUGHAN-REDUCTION",
+              "use_sha256": "57c78244eb15048f3c6ee2a6b18e92fc9bc104ae6ff467210e8caedd40ffa732",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18455,
+            "end_line": 18657,
+            "excerpt_sha256": "1615406867c94851f5a9f61d9e56333b50da5dc2600eacb20de9be0c503d8401"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-019",
+      "initial_assertion_preserved": {
+        "statement": "Cutoffs U=V=N^(1/3), f supported (N/2,N], three exact sums; alpha,beta <=log(2N) with no endpoint loss.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-019",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-019-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18509,
+            "end_line": 18559,
+            "excerpt_sha256": "34c1a416a33504bbb3728d2d027ddefedf9f4025e29f70a35207960858f66ae7"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-019"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Cutoffs U=V=N^(1/3), f supported (N/2,N], three exact sums; alpha,beta <=log(2N) with no endpoint loss.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-IDEAL-VAUGHAN-REDUCTION",
+              "use_sha256": "57c78244eb15048f3c6ee2a6b18e92fc9bc104ae6ff467210e8caedd40ffa732",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18455,
+            "end_line": 18657,
+            "excerpt_sha256": "1615406867c94851f5a9f61d9e56333b50da5dc2600eacb20de9be0c503d8401"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-020",
+      "initial_assertion_preserved": {
+        "statement": "Large weighted sum yields many integer dilations or dilation pairs, theta=c eps^4/log^24; Type II unweighted ideal correlation after two Cauchy steps.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-020",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-020-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18560,
+            "end_line": 18657,
+            "excerpt_sha256": "4daa16b24b45305bf95388c02d9c813158a8ad71d64f655192cb31ff4ab964af"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-020"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Large weighted sum yields many integer dilations or dilation pairs, theta=c eps^4/log^24; Type II unweighted ideal correlation after two Cauchy steps.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-IDEAL-VAUGHAN-REDUCTION",
+              "use_sha256": "57c78244eb15048f3c6ee2a6b18e92fc9bc104ae6ff467210e8caedd40ffa732",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18455,
+            "end_line": 18657,
+            "excerpt_sha256": "1615406867c94851f5a9f61d9e56333b50da5dc2600eacb20de9be0c503d8401"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-023",
+      "initial_assertion_preserved": {
+        "statement": "Power bound QN log^7 N delta^cG for all delta and all interval progressions step<=Q; no minimum length.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-023",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-023-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18779,
+            "end_line": 18880,
+            "excerpt_sha256": "58fe285c491105a8792c8afc089bc875a783ee1e42ac011e51428d93c6055f96"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-023"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Power bound QN log^7 N delta^cG for all delta and all interval progressions step<=Q; no minimum length.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-CENTERED-MINOR-ARCS",
+              "use_sha256": "0cdb67cddc05c4c8fe7bc698c73bc6e87cfdcdf463f740fb0892846aa2dc6bdc",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18779,
+            "end_line": 19137,
+            "excerpt_sha256": "cdc69c6993b1db47a048e07b8fd8b5c924680baa556961627df3fd9926a35ece"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-024",
+      "initial_assertion_preserved": {
+        "statement": "Same power estimate for rational Lambda and prime-only Lambda', including tiny delta and removal of prime powers.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-024",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-024-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18881,
+            "end_line": 18934,
+            "excerpt_sha256": "d38206f6abc5cfa977562540c13d8abc89072a06174af430779f7d87fe0e2de6"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-024"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Same power estimate for rational Lambda and prime-only Lambda', including tiny delta and removal of prime powers.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-CENTERED-MINOR-ARCS",
+              "use_sha256": "0cdb67cddc05c4c8fe7bc698c73bc6e87cfdcdf463f740fb0892846aa2dc6bdc",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18779,
+            "end_line": 19137,
+            "excerpt_sha256": "cdc69c6993b1db47a048e07b8fd8b5c924680baa556961627df3fd9926a35ece"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-027",
+      "initial_assertion_preserved": {
+        "statement": "Exact change t=Wn+b yields progression modulus Wq and size X=WN+b; mean-zero ideal/rational bounds transfer with Q1=max(Q,Wq,2).",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-027",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-027-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19045,
+            "end_line": 19087,
+            "excerpt_sha256": "fb05cab5ddd2e2de5a89685c6f96351492846e56a130f3d0e78146d3bcc32756"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-027"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Exact change t=Wn+b yields progression modulus Wq and size X=WN+b; mean-zero ideal/rational bounds transfer with Q1=max(Q,Wq,2).",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-CENTERED-MINOR-ARCS",
+              "use_sha256": "0cdb67cddc05c4c8fe7bc698c73bc6e87cfdcdf463f740fb0892846aa2dc6bdc",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18779,
+            "end_line": 19137,
+            "excerpt_sha256": "cdc69c6993b1db47a048e07b8fd8b5c924680baa556961627df3fd9926a35ece"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-028",
+      "initial_assertion_preserved": {
+        "statement": "Finite character linear combination and rational subtraction obey power bound, errors sqrt N log^2 N absorbed by delta>=N^-sigma1.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-028",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-028-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19088,
+            "end_line": 19137,
+            "excerpt_sha256": "c111793ea43e2eb06cba858c3457599e2831d5773c70cb0080d4dff0cb0603cb"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-028"
+        }
+      ],
+      "ordinary_application_id": "GA-NORM-MINOR-ARCS",
+      "clauses": [
+        {
+          "clause": "Finite character linear combination and rational subtraction obey power bound, errors sqrt N log^2 N absorbed by delta>=N^-sigma1.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-CENTERED-MINOR-ARCS",
+              "use_sha256": "0cdb67cddc05c4c8fe7bc698c73bc6e87cfdcdf463f740fb0892846aa2dc6bdc",
+              "consumer": "GA-NORM-MINOR-ARCS"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 18779,
+            "end_line": 19137,
+            "excerpt_sha256": "cdc69c6993b1db47a048e07b8fd8b5c924680baa556961627df3fd9926a35ece"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-032",
+      "initial_assertion_preserved": {
+        "statement": "Uniform fixed arithmetic moduli and finite bounded dimension/degree; pointwise, progression and minor-arc hypotheses all match same centered weight.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-032",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-032-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19331,
+            "end_line": 19385,
+            "excerpt_sha256": "ef2eb408ee74e5c630d431b7635dc08b2b49de90deded10e69be704024719cb7"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-032"
+        }
+      ],
+      "ordinary_application_id": "GA-CENTERED-NILSEQUENCES",
+      "clauses": [
+        {
+          "clause": "Uniform fixed arithmetic moduli and finite bounded dimension/degree; pointwise, progression and minor-arc hypotheses all match same centered weight.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-FIXED-W-UNIFORMITY",
+              "use_sha256": "c6c834fe6862765b5a87dba8da557d740a0daa97672c8cf6eee05f830c6bd0cb",
+              "consumer": "GA-CENTERED-NILSEQUENCES"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19331,
+            "end_line": 19385,
+            "excerpt_sha256": "ef2eb408ee74e5c630d431b7635dc08b2b49de90deded10e69be704024719cb7"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-001",
+      "initial_assertion_preserved": {
+        "statement": "Obtain arbitrarily large simultaneous split primes with Gaussian generators in fixed residues, all forbidden odd common divisors excluded, exact 2-adic valuations. q is handled by c_j -> q^2 c_j and w=qv; no uniformity in fixed data.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-001",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-001-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 17488,
+            "end_line": 17540,
+            "excerpt_sha256": "abe0d350e18d44b0d5fc4712ee5f9667c06e77a4f0536e380c0b44425de180fd"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-001"
+        }
+      ],
+      "ordinary_application_id": "GA-SIMULTANEOUS-PRIMES",
+      "clauses": [
+        {
+          "clause": "Obtain arbitrarily large simultaneous split primes with Gaussian generators in fixed residues, all forbidden odd common divisors excluded, exact 2-adic valuations. q is handled by c_j -> q^2 c_j and w=qv; no uniformity in fixed data.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-SIMULTANEOUS-ENDGAME",
+              "use_sha256": "b7a92809b5dc564239a78a18f501a5f85f748c3062bcaaa4c529f24534ce7ce4",
+              "consumer": "GA-SIMULTANEOUS-PRIMES"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20223,
+            "end_line": 20293,
+            "excerpt_sha256": "732d159dca183319e5f6f9a5b6e2c282a5708f02298e04da124d0fcc952ba7f2"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "HIST-gaussian-GAU-043",
+      "initial_assertion_preserved": {
+        "statement": "First fixed L makes obstruction smaller than density; fix K_L then choose tau_j,N_j. Ray conditions eliminate small odd divisors, sieve all larger, exact 2-parts and arbitrary ratio/prime threshold follow.",
+        "objects": "The objects and maps specified in the retained compound assertion above; exact source: work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-043",
+        "hypotheses": "Retain every hypothesis in that compound assertion and its pinned original source row; this reconstruction adds none.",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Retain all exceptional cases and qualifications in the compound assertion and source; no historical rejection is promoted.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "HIST-gaussian-GAU-043-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20249,
+            "end_line": 20295,
+            "excerpt_sha256": "e42d2f3d292050652c719d9f2a08bef23fe9e53baac5b0682c43c4c730bacbaf"
+          },
+          "source_reading": "work/quartic-v14-release/preview-repository/docs/manuscript-revisions/version14/baseline-coverage/gaussian/INITIAL-SOURCE-USES.json @ 68f58321a3714bb3f0750921a5b848a1aadca40b7d905a035856641e5d0c8406 row GAU-043"
+        }
+      ],
+      "ordinary_application_id": "GA-SIMULTANEOUS-PRIMES",
+      "clauses": [
+        {
+          "clause": "First fixed L makes obstruction smaller than density; fix K_L then choose tau_j,N_j. Ray conditions eliminate small odd divisors, sieve all larger, exact 2-parts and arbitrary ratio/prime threshold follow.",
+          "final_uses": [
+            {
+              "use_id": "ACTIVE-GA-LOCAL-SIMULTANEOUS-ENDGAME",
+              "use_sha256": "b7a92809b5dc564239a78a18f501a5f85f748c3062bcaaa4c529f24534ce7ce4",
+              "consumer": "GA-SIMULTANEOUS-PRIMES"
+            }
+          ],
+          "inline_derivation": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 20223,
+            "end_line": 20293,
+            "excerpt_sha256": "732d159dca183319e5f6f9a5b6e2c282a5708f02298e04da124d0fcc952ba7f2"
+          },
+          "explanation": "This is the actual local derivation within the named current Gaussian stage. The grouped inline use retains each condition and numerical bound; its published and prior-stage inputs remain separate."
+        }
+      ]
+    },
+    {
+      "initial_use_id": "CURRENT-033",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-033-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2193,
+            "end_line": 2193,
+            "excerpt_sha256": "ba188b92923dcdbf8f78fb120eeb229e98d25c2c0a8cffbbcba7ac1532963fb7"
+          },
+          "source_reading": "Actual current main source, changed interval 2193-2193"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "This site invokes GI20 for the original twenty-two affine forms, not the later relative-inverse application.",
+        "final_uses": [
+          {
+            "use_id": "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20",
+            "use_sha256": "51ce461dcff029ad67776258dc3e882e5dfe1f10964c0ecef2db441713379cfd",
+            "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2190,
+          "end_line": 2206,
+          "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-034",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-034-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 2201,
+            "end_line": 2204,
+            "excerpt_sha256": "922ba0a2950d13ec60e20bf08f04b092bf1f7ff2bae2e49ad48183a8a9ae0425"
+          },
+          "source_reading": "Actual current main source, changed interval 2201-2204"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "This site invokes GI20 for the original twenty-two affine forms, not the later relative-inverse application.",
+        "final_uses": [
+          {
+            "use_id": "ACTIVE-GI-ASSEMBLY-TO-ORIGINAL-PRIMES20",
+            "use_sha256": "51ce461dcff029ad67776258dc3e882e5dfe1f10964c0ecef2db441713379cfd",
+            "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 2190,
+          "end_line": 2206,
+          "excerpt_sha256": "f586cb088800630ecd93326d855c4551c34243f04bcdf9e95848972a0f457a49"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-058",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-058-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 9515,
+            "end_line": 9515,
+            "excerpt_sha256": "9d902c29b14e9b8d2a5eb8e2f645b0f49e57c20ad9cf3e97f72743ee44d9d6cd"
+          },
+          "source_reading": "Actual current main source, changed interval 9515-9515"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "historical_invocation",
+        "explanation": "This site belongs to the retained old41/GI39 route. The theorem covers39, but no selected299/Gaussian consumer is established. The identical broad frozen compound requirement is mapped at its actual later sites through the shared contract.",
+        "final_uses": [],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 9505,
+          "end_line": 9520,
+          "excerpt_sha256": "eab64c93e5e9419bc758270cbe4c4fb0eae3a5117ea6896b20f101288925dd85"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-073",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-073-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19418,
+            "end_line": 19586,
+            "excerpt_sha256": "aca94269843d9edf2a6535b7697eaa8fb449d27767eafcc24f05b100ee0c0a55"
+          },
+          "source_reading": "Actual current main source, changed interval 19418-19586"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "This site is the corresponding part of the actual later majorant/relative/cutoff proof. Other compound clauses remain at their real locations.",
+        "final_uses": [
+          {
+            "use_id": "GA-EXTERNAL-V6-GA-GT-MAJORANT",
+            "use_sha256": "36894734e50f870500abdf7208241e4abf4f8846f0474f92669fefba9a74afac",
+            "consumer": "GA-MAJORANT-FIXED-E"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19442,
+          "end_line": 19586,
+          "excerpt_sha256": "fa03508377c6fe2d1b2018ca8d055120cfde3f31ead9216afd736514ce1898b3"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-074",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-074-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19604,
+            "end_line": 19611,
+            "excerpt_sha256": "eb3f93e1e053082688560c0f5672b22e9c768dbd4f8cedcc12257f67ea4e6adc"
+          },
+          "source_reading": "Actual current main source, changed interval 19604-19611"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "This site is the corresponding part of the actual later majorant/relative/cutoff proof. Other compound clauses remain at their real locations.",
+        "final_uses": [
+          {
+            "use_id": "ACTIVE-GI-ASSEMBLY-TO-GA-RELATIVE",
+            "use_sha256": "91ab9588605827d6a309758bc0366597e3794d0efe9b1f79ef2570c8bc998c5b",
+            "consumer": "GA-RELATIVE-INVERSE"
+          },
+          {
+            "use_id": "GA-CURRENT-RELATIVE",
+            "use_sha256": "7c5e24c8b545bc8d3d412aae6764e657bffbaa190928f480f937a3636f412d89",
+            "consumer": "GA-RELATIVE-INVERSE"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19604,
+          "end_line": 19611,
+          "excerpt_sha256": "eb3f93e1e053082688560c0f5672b22e9c768dbd4f8cedcc12257f67ea4e6adc"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-075",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-075-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19613,
+            "end_line": 19621,
+            "excerpt_sha256": "b428340412bd58f763d4dfd2b9581c794fa023178f0cce6d58212bd69fb29577"
+          },
+          "source_reading": "Actual current main source, changed interval 19613-19621"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "This site is the corresponding part of the actual later majorant/relative/cutoff proof. Other compound clauses remain at their real locations.",
+        "final_uses": [
+          {
+            "use_id": "ACTIVE-GA-MAJORANT-TO-RELATIVE",
+            "use_sha256": "3850555bb1bedf1d78abe45e87000b6cbb56d67eb459c52c24b035e44d5d2a8a",
+            "consumer": "GA-RELATIVE-INVERSE"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19613,
+          "end_line": 19621,
+          "excerpt_sha256": "b428340412bd58f763d4dfd2b9581c794fa023178f0cce6d58212bd69fb29577"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-076",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-076-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19623,
+            "end_line": 19629,
+            "excerpt_sha256": "079a9dff050822eddf0f593b1019a40ae957c74de2e05101df469d26cf3c37fa"
+          },
+          "source_reading": "Actual current main source, changed interval 19623-19629"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "The local initial-interval removal gives o(1) norm and correlation errors before threshold conversion; this is not supplied by GI alone.",
+        "final_uses": [
+          {
+            "use_id": "GA-CURRENT-NORM-RELATIVE",
+            "use_sha256": "e479279a2a7f04a97afa4cc989e51601ea231cca2355fa235d3fb93dae4e424c",
+            "consumer": "GA-RELATIVE-INVERSE"
+          },
+          {
+            "use_id": "GA-CURRENT-RELATIVE",
+            "use_sha256": "7c5e24c8b545bc8d3d412aae6764e657bffbaa190928f480f937a3636f412d89",
+            "consumer": "GA-RELATIVE-INVERSE"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19623,
+          "end_line": 19629,
+          "excerpt_sha256": "079a9dff050822eddf0f593b1019a40ae957c74de2e05101df469d26cf3c37fa"
+        }
+      }
+    },
+    {
+      "initial_use_id": "CURRENT-077",
+      "initial_assertion_preserved": {
+        "statement": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input. Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits. Relative inverse step retains auxiliary prime interval, zero extension, initial interval removal, fixed W before asymptotic length and bounded nilsequence family. Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "objects": "Actual fixed-W lattice majorant and normalized cyclic interval; local finite-family same-step GI input",
+        "hypotheses": "Corrected GI component assembly, separate S1 historical closure/five interfaces, fixed-complexity linear-forms estimates and ordered limits",
+        "quantifiers": "The complete quantifier scope in the compound assertion is retained, including each fixed-before-varying choice; no scope is enlarged.",
+        "parameter_range": "Exactly the domains and parameter ranges in the compound assertion and cited source passage; no extension to excluded cases.",
+        "uniformity": "Only the uniformity stated in the compound assertion is required; no uniformity in fixed source data is inferred.",
+        "constants": "Keep each stated constant and its original dependencies; numerical finite-artifact bounds are not recomputed by this coverage table.",
+        "normalizations": "Keep the source normalizations of maps, coefficient fields, signs, lattices and measures appearing in the compound assertion.",
+        "exceptional_cases": "Original Dodos-Kanellopoulos source is retired at active edge; GI alone does not prove S1.",
+        "limit_order": "Retain the source order of choices, limits and specializations exactly; an unchanged passage is not evidence for an altered incoming supplier."
+      },
+      "initial_classification_preserved": "dependency",
+      "frozen_passages": [
+        {
+          "id": "CURRENT-077-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 19631,
+            "end_line": 19685,
+            "excerpt_sha256": "d4b2d39c16ed2e29517b4476d08c2647aff8467dfd16db30b49119491867ecb3"
+          },
+          "source_reading": "Actual current main source, changed interval 19631-19685"
+        }
+      ],
+      "shared_contract_id": "CURRENT-GA-COMPOUND",
+      "site_clause": {
+        "role": "active_direct",
+        "explanation": "This site is the corresponding part of the actual later majorant/relative/cutoff proof. Other compound clauses remain at their real locations.",
+        "final_uses": [
+          {
+            "use_id": "GA-CURRENT-NORM-RELATIVE",
+            "use_sha256": "e479279a2a7f04a97afa4cc989e51601ea231cca2355fa235d3fb93dae4e424c",
+            "consumer": "GA-RELATIVE-INVERSE"
+          },
+          {
+            "use_id": "ACTIVE-GA-RELATIVE-TO-CUTOFF",
+            "use_sha256": "21252c2407bec0546709add8953fe410c480cf2956754aeef1d49b494cdd115d",
+            "consumer": "GA-CENTERED-SLOW-CUTOFF"
+          },
+          {
+            "use_id": "ACTIVE-GA-CENTERED-TO-CUTOFF",
+            "use_sha256": "5574cd556d6929c75a253e87095608e31f292b4294bd433ed37f23bb77b1e04f",
+            "consumer": "GA-CENTERED-SLOW-CUTOFF"
+          }
+        ],
+        "inline_derivation": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 19631,
+          "end_line": 19685,
+          "excerpt_sha256": "d4b2d39c16ed2e29517b4476d08c2647aff8467dfd16db30b49119491867ecb3"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+The other two readings have no determinant operator.  Since $H$
+is integral, for every positive integer $N$,
+\[
+ f[N]=H[N]+2\sum_{0<j^2\le N}H[N-j^2]
+                 \equiv H[N]\pmod{2\mathcal O_{\rm coef}}.     \tag{G.4d}
+\]
+This includes $N=p^3$ and every term in its theta convolution.
+Choose a fresh $K$-split prime $p'$ matching $\phi$ in a sufficiently
+precise finite Galois quotient for the retained integral module,
+and matching all fixed rational characters.  The good Hecke formula
+at $p'\ne p$ identifies $(t(\phi)f)[p^2]$ modulo two with
+$f[p^2p']$, hence with $H[p^2p']$ by (G.4d).
+Neither unary series has support at $p^2p'$, and the recurrence at
+$p\mid pp'$ has $\kappa=0$.  Consequently
+\[
+ H[p^2p']=\frac{a(p^3p')-\eta(p)a(pp')}{4}
+        =\frac{\eta(p)(a_p-1)a(pp')}{4}.
+\]
+The product $pp'$ lies in the square filter even if $p$ alone does
+not.  Its two primes split in $K$, so the no-seed assumption gives
+$v_2a(pp')\ge3$.  This last coefficient is therefore even.
+The trace identity and (G.4c)--(G.4d) now imply
+$H[p^3]\in2\mathcal O_{\rm coef}$.  The following computation
+uses precisely this unary-subtracted coefficient.
+
+\paragraph{The coefficient behind the mod-eight contradiction.}
+Write $a_p=a_p(E^k)$. The transported source tests positive twists of $E^k$. Thus
+$\psi/\eta=\chi_{-1}$ and, at the squarefree index $1$,
+$\kappa=(\psi/\eta)(p)(-1/p)=1$. Also $\eta$ is odd, so
+the unary correction uses $i=0$. With $a(1)=1$ the recurrence gives
+\[
+ a(p^2)=\eta(p)(a_p-1),\qquad
+ a(p^4)=\eta(p)^2\{a_p(a_p-1)-p\}.
+\]
+The inherited depth is zero. Hence
+\[
+ B_{\{p\}}[p]=\frac{\eta(p)(a_p-2)}2,\qquad
+ B_{\{p\}}[p^3]=\frac{\eta(p)^2((a_p-1)^2-p)}2.
+\]
+Only $\Theta_{\{p\}}$ contributes at $p^3$, with coefficient
+$\eta(p)p$. Therefore the actual integer division gives
+\[
+ H_{\{p\}}[p^3]
+   =\frac{\eta(p)^2(a_p-1)(a_p-p-1)}4.
+\]
+This expression is integral because full rational two-torsion gives
+$a_p\equiv p+1\pmod4$. The positive-twist character convention is
+essential in this computation. Under the assumed absence of a
+nonempty unit seed, the trace identity makes this coefficient zero
+in the residue field. Since its phase is a unit and $a_p-1$ is odd,
+it follows that $a_p\equiv p+1\pmod8$. The contradiction is obtained
+only after this conditional deduction.
+Choose $p$ also with $(k/p)=1$, $p\equiv1\pmod4$ and
+$(\ell/p)=-1$, outside the finite support.  These prescriptions
+are compatible: $K$ has a ramified prime outside the ramification
+of $\mathbf Q(i,\sqrt\ell)$, so
+$K\cap\mathbf Q(i,\sqrt\ell)=\mathbf Q$.  The corresponding
+quadratic residue classes are therefore nonempty and Dirichlet's
+theorem supplies infinitely many such primes.  Since $k$ is a
+square modulo $p$, the reductions of $E^{(k)}$ and $E_\ell$ are
+isomorphic.  A half of a nonzero two-torsion point with root $e_i$
+on a split cubic requires both differences $e_i-e_j$ to be
+squares.  For the roots $0,\ell,-3\ell$, one of these required
+differences is, respectively, $-\ell,\ell,-4\ell$.  All three are
+nonsquares under the chosen conditions.  Thus none of the three
+nonzero points of order two has a half over $\mathbf F_p$.
+If the two-primary subgroup had order greater than four, its
+structure as a finite abelian group with exactly four elements
+killed by two would give an element of order four, and hence such
+a half.  Its order is consequently exactly four.  This gives
+$v_2(p+1-a_p)=2$, contradicting the congruence modulo eight above.
+This proves the required nonempty even seed. If the intrinsic odd
+symbol already has a unit at the empty configuration, its detection
+formula gives a simple zero for $E$ and the converse is finished.
+Otherwise take a least nonempty odd unit seed. Thus the remaining
+two-symbol address argument has two nonempty seeds.
+\end{proof}

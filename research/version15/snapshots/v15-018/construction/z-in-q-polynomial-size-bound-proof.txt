@@ -1,0 +1,179 @@
+Size bounds for the actual ordinary-integer candidate
+4 November 2026 UTC
+
+Scope
+
+This note concerns ordinary-integer-definition.json, SHA256
+a86790bbf1095d6b1cea9c66067ad8432dd35adc320254eecde21f9f98574714.
+It bounds the syntactically specified polynomial, whether or not its proposed
+ordinary-Z theorem is true. It is not a size claim about a subsequently
+specialized ZFC-inconsistency polynomial or the older universal equation.
+No monomial expansion or numerical evaluation of the fixed cutoff is used.
+
+The checked assembly has one free variable t and 292,890,231,904 witnesses,
+hence 292,890,231,905 total rational variables.
+
+Proposed bound
+
+Let T be the literal fixed guard cutoff already specified by this artifact:
+T=(48*Aheight)^13, with Aheight and its dependencies in library.fixedConstants.
+Then the claimed conservative bounds are
+
+  total degree <= (T+1)^2048,
+  absolute value of every integer coefficient <= 2^((T+1)^2048).
+
+These are upper bounds, not exact values or decimal evaluations. The proof
+below initially uses a maximum B and then proves B=T+1 for this artifact.
+The independent audit of this new sizing argument is separate from the
+earlier audit of the polynomial's conditional zero-set interpretation.
+
+1. A uniform bound for the three finite constructors
+
+Let B be the maximum of 2^20, T+1, and one plus the absolute value of every
+fixedConstant, explicit scalar constant node, and evaluated fixed_integer
+or psi-index expression in the artifact. All these are fixed integers.
+Give a scalar polynomial its coefficient l1 norm. For pairs representing
+a+b*sqrt(2), use ||a||_1+2||b||_1. This norm is submultiplicative and
+subadditive under the exact quadratic-field operations in the source.
+
+For the formal field variables x=x0+x1*sqrt(2) and y=y0+y1*sqrt(2),
+their norms are 3, and the norm of A=-11243+7950*sqrt(2) is 27143<2^15.
+In elliptic-division-polynomials.js the normalized f_n satisfy
+
+  deg(f_n) <= (n+1)^3,
+  ||f_n|| <= 2^(100*(n+1)^3), n>=0.
+
+For n=0,1,2,3,4 this follows directly from the displayed base formulas.
+The factor D=16*(x^3+A*x)^2 has degree 6 and norm <2^38. In the even
+recurrence n=2m, m>=3, the larger possible sum of inductive cubic exponents
+is (m+1)^3+(m+3)^3+2*m^3. Its difference from (2m+1)^3 is
+4*m^3-24*m-27, which is at least 9 and increases for m>=3.
+The other summand has a smaller sum. This absorbs the addition's factor 2.
+In the odd recurrence n=2m+1, m>=2, the two sums are
+(m+3)^3+3*(m+1)^3 and m^3+3*(m+2)^3. Their differences from (2m+2)^3
+are respectively 4*m^3+6*m^2-12*m-22 and 4*m^3+6*m^2-12*m-16.
+Both are at least 10. This absorbs both D and the factor 2 from subtraction.
+The same inequalities absorb D's degree 6 for the degree induction.
+
+Consequently psi_n, including its even factor 2y and the sign for negative n,
+has degree <=2*(|n|+1)^3 and norm <=2^(101*(|n|+1)^3).
+For |n|<B, these are at most B^4 and 2^(B^8), since B>=2^20.
+The fixed_integer constructor trivially satisfies these same bounds.
+
+For the guard coefficients, write the fixed P coordinates over denominator
+32. Their numerator absolute values and the weighted sums are below 2^19.
+Evaluating psi_m for 0<=m<=2T at P, using the preceding degree/norm bounds,
+therefore gives a representation (a+b*sqrt(2))/c with
+|a|,|b|,|c| <= 2^(160*(2T+1)^3). A common denominator is obtained by
+homogenizing to the degree bound; reduction can only decrease these bounds.
+
+For triples representing quadratic rationals of height at most H>=2, each
+addition, subtraction, multiplication or defined division has a representing
+triple of height <=3*H^4. This follows by common denominators and multiplying
+a denominator by its conjugate. The fixed formulas
+
+ x_n=x(P)-psi_(n+1)(P)*psi_(n-1)(P)/psi_n(P)^2,
+ y_n=psi_(2n)(P)/(2*psi_n(P)^4)
+
+use at most eight such operations after the psi evaluations, including the
+scalar 2. The known nontorsion of P makes the required denominators nonzero.
+Thus every reduced rational coordinate of iota(n), |n|<=T, has numerator
+and denominator at most 2^K in absolute value, where
+
+ K=2^30*(T+1)^3.
+
+Indeed eight updates h -> 4h+log2(3), starting from
+h<=1280*(T+1)^3, give h<2^30*(T+1)^3. The zero code and negative-index
+sign changes also satisfy this bound.
+
+Each guard factor uses fifteen such coordinates A_j/B_j and
+D=product B_j. Both coefficients of D*X_j-(D/B_j)*A_j are bounded by
+2^(15K). The norm of the sum of their fifteen squares is at most
+15*2^(30K+2) <=2^(30K+6). There are at most (2T+1)^3<=8*(T+1)^3
+factors. Hence the entire guard has
+
+ degree <=16*(T+1)^3 <= B^4,
+ log2(max(1,||guard||_1)) <=2^39*(T+1)^6 <= B^8.
+
+The same two uniform bounds therefore hold for each finite constructor as
+a polynomial in its indicated input coordinates: degree <= B^4 and
+coefficient norm <=2^(B^8). Coefficients are integers throughout.
+
+2. Composition bounds and the recorded syntax height
+
+Variables have height zero. Ordinary scalar constants have height one.
+An add or multiply node has height one plus the maximum input height.
+A finite constructor has height one plus its maximum input height.
+A template call has height one plus its callee's intrinsic height plus
+the maximum height of its argument polynomials. Private witness variables
+have height zero. These rules intentionally overestimate.
+
+Inductively a polynomial of positive height h has degree <= B^(8h) and
+log2(max(1,||P||_1)) <= B^(8h). Height-zero inputs are variables, with
+degree one and norm one. For substitution use
+
+ deg(P(Q)) <= deg(P)*max(1,max deg(Q_i)),
+ ||P(Q)||_1 <= ||P||_1*max(1,max ||Q_i||_1)^deg(P).
+
+The extra height at a call absorbs the sum of the two logarithmic bounds.
+For a constructor with nonzero argument height k, its log bound is at most
+B^8+B^4*B^(8k), which is <=B^(8(k+1)). With height-zero arguments the
+substitution has norm-one arguments, so its bound is simply B^8.
+Binary addition and multiplication satisfy the rules by subadditivity and
+submultiplicativity, using B>=2.
+
+Every model-recipe point argument is a coordinate variable, a literal
+constant, a generator variable, or its negative. Height two bounds all of
+them. Three extra levels therefore bound a substituted callee, including
+the call rule. The three generator equations and five root differences
+have height at most two. There are at most 2^20 constraints in each model
+recipe, checked from the actual records. Squaring and summing adds two
+levels: for at most B summands this absorbs their total norm, and even the
+more conservative product norm bound would fit.
+
+Composition recipes substitute only coordinate variables. Their square-sums
+add two levels and their products add one level. The actual number of terms
+is at most 2^20. Shared nodes do not change the polynomial or these bounds;
+unused nodes being counted only makes the result larger.
+
+The independent-of-expansion traversal in bound-ordinary-integer-polynomial.py
+reads the actual hash-bound artifact, rejects unknown operations and invalid
+edges, and applies these rules. It records all 23 template heights and all
+seven recipe heights. The final height bound is 256. Therefore the two
+bounds are B^2048 and 2^(B^2048).
+
+3. Simplifying the fixed maximum to B=T+1
+
+All claims here concern this artifact's literal constants, not arbitrary
+extensions of the constructor language. Put F=324!, D=F*3^(256F^4), and
+use its literal R,Q,E0,Aheight definitions. Certainly F>=256, so
+D>2^(2^40). The literal W and the fixed program code are much smaller:
+W has fewer than 1000 binary digits and every extra integer scalar has
+fewer than 20,000,000 binary digits. These finite digit checks are enough;
+there is no need to evaluate D. Thus W, P0, and all extra scalars are <D.
+
+R>=D, Hmax, cstar, 10^12. The prime catalogue has exactly 22*phi(W)
+entries, so Hproduct<=Hmax^(22W)<=R^(22W), and W<R. It follows that
+Ns=P0*Hproduct<=R^(1+22W). Also
+
+ ell=12*P0^2916*Hproduct^732 <= R^(2917+16104W).
+
+Here E0=10*(D*G0)^2>=100, Q=R^(R*E0), and
+T=(48*Aheight)^13 >= Q^221=R^(221*R*E0).
+Since R>=W and R>=1, 2917+16104W<=19021R<22100R<=221R E0.
+Thus ell,Hproduct,Ns<T. The other constants are bounded directly:
+M<=cstar<=R<Q<T; F,D,G0<=R; E0<=Q; Bcm,Ccm,Aheight<=T.
+All explicit scalar node constants are also below D by finite inspection.
+
+The only psi indices in this saved library are n,n+1,n-1,2n for n=cstar
+or one of the five positive extra scalars. These are <=2R+1<T.
+The only fixed_integer node is ell. Hence every quantity in the definition
+of B is at most T+1, and T itself is a fixedConstant. This proves B=T+1.
+
+Practical interpretation
+
+T is the already specified finite integer, involving the prime catalogue
+and least formal multiple. It has not been evaluated numerically. Therefore
+this note supplies explicit symbolic upper bounds, not decimal digits for
+the actual degree or the largest coefficient. The bounds are deliberately
+very loose and may be improved substantially without altering the polynomial.

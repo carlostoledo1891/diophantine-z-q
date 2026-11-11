@@ -1,0 +1,29 @@
+# Current Tate and marking joins
+
+Accepted at the bounded current-use scope of PROJECT-JOINS entries Tate-lattice and marking-descent, for manuscript SHA8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2. This preserves the named incoming hypotheses and the limits of the retained independent reviews. It is not acceptance of every source-use ID listed in the author mapping, all of B11, or the manuscript.
+
+I did not author these B11 source/application proofs. I previously authored separate forgetful-Picard and raw/sparse233 work; none is freshly accepted here. The present review reuses the prior independent Milne and BLR/Stacks source checks, rather than claiming to have reopened those primary sources. Exact historical files were retrieved as bytes from commit b576d63f8fe271632a42df4128f377b038ec5661. The five retained source hashes, the two current construction excerpts, four consumer pointers and retained inclusion receipts match.
+
+## Tate-lattice
+
+Current30065–30077 retains the domain of an algebraically closed field of characteristic different from3. The actual fibers in803–902 have that domain because the base is Z[1/30]. The action is unital and the relevant algebra B3 is the four-dimensional division quaternion algebra. Rank4 of T3 and rank1 over B3 are therefore applied to the same abelian surface and the same action. The quotient T3/3T3=A[3] is equivariant for this action, rather than merely an equality of cardinalities.
+
+The current lattice proof retains the essential corrected inference. For simple S, positivity and integrality of the degree polynomial make the subgroup D discrete in the finite-dimensional space spanned by a chosen finite free M. The compact fundamental-domain argument proves D/M finite before the3-adic divisibility argument bounds the rank of every M. Only then is M chosen to span the whole rational endomorphism space and discreteness used again to prove finite generation. It does not infer finite generation from finite rank alone. The passage through isogenies to general A and Rosati-positive trace are the same retained steps. The trace value4 and the restriction to pointed polarization-preserving automorphisms are unchanged.
+
+The consumer at894 needs finite order of such an automorphism and faithful Tate action, not Tate-conjecture surjectivity or a bound on the automorphism-group order. Its separate binomial argument in1+3M4(Z3) supplies torsion-freeness and then concludes the geometric stabilizer is trivial. The preceding least-valuation O3-lattice argument uses left modules with y*x^-1 in O3 and gives O3*x; it is compatible with the Tate module action just supplied. No characteristic-zero-only premise is substituted for these fibers.
+
+The retained Gaussian review explicitly read the published1986 Milne scan and its official correction boundary. Its accepted corrected finite-generation argument is faithfully present; no new source-version discrepancy is introduced by this join.
+
+## Marking-descent
+
+Current30078–30092 retains R=Z[1/30], the actual smooth projective rigid full-five scheme with all determinant components, its specified universal polarized O-surface, and the separate geometric module and automorphism calculations. The main construction at803–941 supplies these rather than assuming that a coarse geometric moduli set is fine. The left marking action is explicitly precomposition by right multiplication; this is the same action carried into the quotient and the generic identification.
+
+Finite-etale representability of Isom_O is kept distinct from nonemptiness, which comes from the actual module calculations. The group is finite constant. Empty nonidentity equalizers establish freeness on arbitrary schemes, including nonreduced ones, without inverting the group order. Quotient projectivity uses the ample line-bundle norm after properness, not an unsupported projectivity conclusion from the quotient theorem itself.
+
+Both bases of the abelian schemes are regular noetherian of finite type over R. The retained BLR regular-base projectivity input is used before effective projective descent and before projective-case duality. All required Picard hypotheses remain stated: projective, flat, finitely presented, geometrically reduced irreducible fibers, and zero sections. The canonical base-change identification of the dual makes the relabeling-invariant original polarization descend as an actual morphism. It remains an isomorphism and a polarization fiberwise. The ample norm on the base quotient does not multiply or replace the polarization. O-endomorphisms and the three-marking descend as maps with their identities.
+
+The final functor comparison retains arbitrary-test-scheme rigidity and the locally nonempty five-marking torsor. It identifies the quotient with the full-three problem, so it introduces no five-marking factor in the generic degree. The link at1138–1141 refers to this same Y3 and this same j. The retained GENERIC-FUNCTOR proof/review supplies the separate characteristic-zero canonical-model identification, all components, action convention and coarse j identity before the numerical normalizer estimate is consumed. The current join does not extend this to an integral coarse P1 identification.
+
+The prior marking review explicitly retains the initial model, module nonemptiness, action, generic identification and normalizer calculation as incoming dependencies. They remain separate here. Its BLR/Murre/FGA antecedent limitations are preserved. The author mapping also lists CLASSICAL-LOCAL-CONNECTION and many modularity IDs; that file was hash-checked, but its Kato/Deligne–Serre applications are outside these two current-use decisions and are not accepted by association.
+
+No missing or changed hypothesis was found in these two joins. Source-first's broader table reconciliation and exact prior-draft inclusion comparison remain separate.

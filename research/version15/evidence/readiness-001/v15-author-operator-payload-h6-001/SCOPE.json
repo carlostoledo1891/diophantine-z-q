@@ -1,0 +1,21 @@
+{
+  "status": "Author-observation payload preparation; not a signed capture or current acknowledgment",
+  "authors": 37,
+  "existing_exact_operator_events": 14,
+  "new_original_observations": 23,
+  "missing_original_identity_records": [],
+  "files": {
+    "AUTHOR-RUN-EVENTS.json": "All37 required author observations, suitable as input inventory for a new empty namespace after actual state review. Never append blindly to a namespace containing these run IDs.",
+    "NEW-ORIGINAL-RUN-EVENTS.json": "23 original runs absent from the pinned prior export, not proof of absence in any future actual namespace.",
+    "RETAINED-RUN-EVENTS.json": "14 prior event objects preserved exactly, including original observation and model qualification.",
+    "EVENT-PROVENANCE-MAP.json": "New event hashes and observation hashes; original-host index for23, explicit retained-source identity for14."
+  },
+  "unfilled": [
+    "No target_frozen",
+    "No report_observed",
+    "No current ACK",
+    "No future Git head/binding",
+    "No operator signature"
+  ],
+  "validation": "Actual deployed operator apply_event accepts all37 in an unsigned empty-state schema check. No backend model identity inferred."
+}

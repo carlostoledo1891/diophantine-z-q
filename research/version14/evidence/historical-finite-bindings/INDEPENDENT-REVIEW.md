@@ -1,0 +1,11 @@
+# Historical finite supplement review
+
+I read all eleven proposed split assertions, the installation scope, the three wrappers and the F8 recursive instantiator/serializer. I independently ran the installed F8, 4973 and 962 wrappers, with reports written only in `historical-finite-replay-001`. All three exited successfully. The reports match the installed author reports apart from the 4973 elapsed time and the 962 check timestamp. I checked all 22 installation file pins and 408 preexisting package file pins. The exact proposal hash is `484cb3f0872abeaa39b0d4141ae79ed50e8d6fba8c99b50ddc6f6d81f29c77f9`, and the installation manifest hash is `88b04d332611761651cb4dfca7d69a3e3ca69c443387ee0f185eacc2af4d5b48`.
+
+The finite claims match those replays. F8 has 15,672 total variables, 15,107 residuals and 129,497 monomials of degree 8. The quartic has 4,973 variables, 4,552 residuals and 72,925 monomials. The latter count is not another variable count. Its 551 transformations and initial defining-product lift remain separate. The 962-variable quartic has 919 residuals, 55,409 monomials, 904 gate checks and 894 certificate operations. S remains a fixed coefficient.
+
+The supplement correctly separates these finite facts from the rational witness-map and arithmetic projection assertions. The installed F8 package is the exact finite replay closure, not a restored copy of the archived producer and full historical audit command. The 4973 source audit is not represented as a fresh rerun, and the historical 5173-coordinate endpoint review is not promoted to independent approval of every later transformation. The 962 checker's 127 quotient-domain obligations remain proof obligations. The former reviewer's partial authorship is disclosed.
+
+I accept this supplement as the finite evidence and assertion split needed to replace the four null suppliers, subject to the application author's exact final adoption and graph bindings. This limited acceptance does not infer denominator nonvanishing or integer input projection from polynomial identities. The current manuscript's source arithmetic, quotient domains and maps supply those arguments; their separate source-use records and supplier joins remain part of the final coverage review.
+
+Reviewer: `/root/astra_v14_source_review`, run `local:v14:source-first-review:20261107`.

@@ -1,0 +1,65 @@
+# Independent review of the Khare transfer completion: unchanged remainder
+
+The new deductions in Theta's completion002 are accepted within the scope below, conditional on the two separately reviewed Section 5 connections and the stated retained theorem inputs. This is not a whole-paper, whole-Khare, or release approval.
+
+The exact target is `khare-transfer-completion-theta-002/PROOF.md`, SHA256 `fba01a495b875b6d8af8bd754e5e99d3547afe9cb9c32a78c0458e4916820182`, bound by author manifest `99fea6f7931d05570a41e1f9b3c505531a2071e2e31a466bc1e716e0d55bc6d9`. Its predecessor001 has proof SHA256 `e9b001a2aac23461f69a62c8d6a38cd587142dedaa20183ccebc5b70a8cbf20b`. Independent raw-byte replay verifies that only lines 45 and 47 changed. All other proof lines, including the arguments reviewed here, remain identical.
+
+## Independence and scope
+
+Reviewer: `/root/astra_v14_baseline_compiler`. I read the complete proof before its application inventory, then all four application cards and twelve source contracts. I independently checked the stated source passages and the connections described below. I previously reviewed, but did not author, the separate strict-level-one dihedral proof. Its existing acceptance is a retained premise, not a new approval here.
+
+I identified and supplied explanations for two Section 5 clarifications: identifying a full premotivic member from its irreducible semisimplification, and ordering the finite-nebentype/duality normalization separately in the ordinary and DFG branches. **I do not independently accept lines 45 or 47.** Root is the designated independent reviewer of those two contributions. Their exact successor spans are in CHECKS.json. This decision accepts the remaining deductions conditional on those bridges; it must not be represented as independent approval of my own contributions.
+
+Gaussian supplied the Fontaine terminology source and its proposed applicability. I did not contribute that argument, and independently checked it here. No live manuscript or source packet was changed by this review.
+
+## Actual source reading
+
+The source file pins are copied without modification into SOURCE-PINS.json. The reading comprised BLZ Section 1.1, Remark 4.1.2, Corollary 4.1.3 and Proposition 4.1.4; final DFG pp. 666, 668–670, 672–673, 683–685, 711, 715, 721 and 723; final early Khare–Wintenberger pp. 230, 237, 239 and 243–247; final Serre 1987 pp. 183–187; and final Fontaine 1997 p. 11138. The DFG p. 684 full-family footnote and Fontaine p. 11138 definition were also read from page images. Source hypotheses were checked against the objects in the proof, rather than inferred from the names of prior approvals.
+
+BLZ remains the explicitly qualified final-layout source, not a newly authenticated publisher-edition comparison. DFG, early KW, Serre and Fontaine are the final sources identified in the author pins. The mathematical source imports below remain imports; this review does not independently reprove every theorem in those papers.
+
+## 1. Local ordinary lemma, including h=1
+
+For odd p and 1<=h<=p, a geometrically irreducible crystalline local representation with the two stated weights is covered by the BLZ normal form after a coefficient extension. The crystalline character used to normalize it has weight zero and is unramified. The positive-slope reduction formula applies throughout the range, including h=p by Remark 4.1.2's special m=0 case. Its niveau-two inertia characters are distinct because p+1 does not divide h; Frobenius interchanges them. Thus its residual representation is absolutely irreducible. This contradicts the residual-reducibility hypothesis in the local lemma.
+
+For the geometrically reducible case, crystalline subquotients have the two distinct weights. The weight-h line gives the required weight-zero, unramified quotient directly. In the opposite orientation, duality gives a filtered Frobenius extension with weight-h subobject and weight-zero quotient. Strictness makes the positive filtration equal to the first subobject. The two Frobenius slopes are distinct, so its Frobenius complement also respects that filtration. The exact, fully faithful crystalline correspondence stated on DFG p. 711 then splits the representation. The argument uses the usual numerical equality for rank-one admissible objects and the weight-zero crystalline-character classification; those named crystalline foundations are retained. It does not purport to construct every weakly admissible object.
+
+The intersection of the original lattice with the selected line is saturated. Its quotient is free of rank one; inertia is trivial on it because it is trivial after extending scalars. This supplies the actual ordered residual quotient, not merely an unordered pair of inertia characters. The reasoning includes h=1 and does not cover h=0 or h>p. Application K54C-LOCAL-ORDINARY is accepted in this exact scope.
+
+## 2. Residual branches and the interior lifting theorem
+
+The determinant argument removes a weight-zero character unramified at every finite prime of Q. The retained global input is the absence of a nontrivial everywhere-finite-unramified extension of Q; reduction through all finite quotients also eliminates an infinite compact-image character. Thus the determinant is the specified cyclotomic power. Even k makes it odd and makes the residual inertia characters distinguished where ordinary lifting is used.
+
+The residual partition is exhaustive: globally reducible; globally absolutely irreducible but reducible over the quadratic cyclotomic subfield; or absolutely irreducible on that subfield. In the second branch, index-two Clifford theory and the separately accepted strict-level-one dihedral result give local residual reducibility. Section 2, rather than residual splitting by itself, gives characteristic-zero ordinarity. In the endpoint branch k=p+1, the retained endpoint proof and early KW 5.2(i) exclude the weight-two residual alternative. These arguments satisfy the stated hypotheses of the published ordinary theorem early KW 5.1; they do not infer level one from that theorem alone.
+
+In the remaining interior, evenness gives k<=p-1 and h<=p-2. For V=rho dual, the filtration jumps 0,h satisfy both conditions of DFG shortness on p. 670. Every nonzero underlying-Q_p quotient has jumps drawn from the same range. Twisting by Q_p(p-1) shifts all those jumps strictly below zero, so no such quotient becomes unramified. Positive h also ensures the original local representation is ramified. The exact residual restriction, not just the global residual representation, is absolutely irreducible over the quadratic cyclotomic field. Duality matches DFG's stated geometric convention on p. 715.
+
+Fontaine's final p. 11138 defines geometric by finite ramification and potential semistability at p. It explicitly distinguishes the separate algebraic-origin conjecture. The existing crystalline rho and its dual therefore satisfy the definition; algebraic origin is not an additional unproved premise here. This new terminology application is accepted independently of Gaussian's contribution.
+
+DFG 3.6 on p. 723 applies with these hypotheses. Its finite character twists have zero Hodge weight. The two ordered filtration jumps rule out a nonzero Tate twist and force the classical weight k. DFG's internal conductor-minimization and determinant preparations are part of its published theorem and proof, not extra assumptions silently imposed on the given rho.
+
+## 3. Full-family local comparison and level one
+
+Final DFG p. 684 supplies local Langlands compatibility at every rational finite place for the modular family away from its initial coefficient exclusions. Footnote 1 supplies a full PM object L-admissible everywhere. The definition on p. 669 is full Frobenius-semisimple Weil–Deligne compatibility, retaining monodromy, and explicitly defines unramified by trivial inertia and zero monodromy. This is stronger than equality of local Euler factors.
+
+For each rational place one can choose a coefficient place outside the finite excluded set and away from that rational place. The full family then carries the same Weil–Deligne parameter to the coefficient place of the actual rho. The exact identification with rho dual and its finite-character normalization are the separately reviewed lines 45 and 47, excluded from my independent decision. Subject to those bridges, rho is unramified away from p and crystalline at p, so all the corresponding automorphic parameters have trivial inertia and zero monodromy. The usual unramified local Langlands and conductor characterization gives primitive level one. Application K54C-LEVELONE-LIFT is accepted **conditional on the two excluded connections** and the retained source inputs.
+
+Saito 1997 remains the antecedent named in DFG's published full-family statement. Its final-edition comparison is not supplied here. No theorem over a totally real field of degree greater than one is specialized to Q, and no equality of Euler factors is substituted for monodromy compatibility.
+
+## 4. Exact residual weight and transfer back
+
+For interior 4<=k<=p-1, the geometrically irreducible local case uses the same BLZ inertia calculation with a=0,b=k-1 in Serre's formula. In the locally reducible case the proof above is valid without assuming residual reducibility first. It gives the actual ordinary lattice with unramified quotient and cyclotomic-power line. In the wild case Serre's alpha=0,beta=k-1 are in that order. Since 3<=k-1<=p-2, the exceptional beta=alpha+1 extension case does not occur. This supplies weight k without assuming a peu-ramifie condition. The endpoint alternatives and exclusion of global weight two are treated separately. There is no claim that every ordinary weight-two reduction has weight two.
+
+The compatible-system construction is applied only after the explicit k=2, q=2, q=3 and cyclotomic-degenerate branches. The latter branch retains the Hecke modularity and weight/conductor refinements explicitly stated by early KW p. 247; it is not claimed to follow from the local dihedral lemma alone. In the remaining branch, q>3, 2<=k<=q+1, k!=q and the exact cyclotomic absolute-irreducibility hypothesis match early KW 4.2(i).
+
+The definitions on early KW pp. 243–244 provide semisimple members, absolute irreducibility of every member when the system is called irreducible, and a common full Frobenius-semisimple Weil–Deligne parameter. Minimality and conductor one give unramified parameters away from q; 4.2(i) supplies the parameter at q. The odd coefficient prime p therefore supplies the required crystalline member. The proof neither needs nor claims crystallinity at coefficient prime 2.
+
+At p the reduction is either geometrically reducible and modular in the published lifting convention, or has the exact induction weight just checked. The level-one lift therefore applies, conditional on Section 5's excluded bridges. Equality at the original p-embedding is characteristic-zero equality of good polynomials in a finite number-field compositum. Extending the original q-embedding of the system field to that compositum preserves the original target. Chebotarev and Brauer–Nesbitt identify semisimple characteristic-zero members before reduction. A conjugate embedding of the form field gives a conjugate form. No step identifies lifts solely from residual congruence. Application K54C-WEIGHT-TRANSFER is accepted on these conditions.
+
+The all-weights consequence uses a global cyclotomic residual twist and the precise Serre normalization into 2..q+1, retaining parity, oddness and prime-to-q conductor. The known-all-weights hypothesis at p covers that normalized weight. DFG p. 685 equation (22) supplies the finite-character modular twist back. Only residual modularity is returned; an intermediate characteristic-zero twist need not preserve level one. The q=2 case is the separately retained published empty level-one case. Application K54C-ALL-WEIGHTS is accepted subject to the same earlier bridges.
+
+## Limits and verification
+
+This decision does not replace the nonscalar tame Khare 5.3 argument, the first-system local/type hypotheses of GENERAL-LINK-BACK, or the whole Khare induction. It does not authenticate Khare's final Duke edition. It retains BLZ's version qualification and the published early-KW, DFG, Fontaine, Serre, Skinner–Wiles, potential-modularity, compatible-system and local-global ancestors exactly at their stated boundaries. The existing GL2/Serre proof is referenced only for elementary class-field/trace-comparison context, not imported circularly as a strong modularity theorem.
+
+The independent checker passed 236 file/size/span checks and 30 distinct external-source or proof-span records. It also checked every per-line proof-index hash and replayed exactly the two successor replacements. These byte checks support target identity; they are not the mathematical reason for acceptance. Neither the author packet nor any live manuscript was edited. Root's separate decision must be bound before the two excluded Section 5 connections are reported independently accepted.

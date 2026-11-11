@@ -1,0 +1,37 @@
+{
+  "author": "/root/v14_sign_conductor",
+  "id": "SCHWARTZ-QUADRATIC-LOCAL-UNIT-CHARACTER",
+  "consumer_locations": [
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "bf6aeffbddc3e054ec7dbe907b7cc3d1d84c96685c6e01002710a3f52e82d059"
+      },
+      "start_line": 15165,
+      "end_line": 15172,
+      "excerpt_sha256": "6c36250292b13da99cffcd82fe4185b1f5875145e73e1f1ed111e81483e80e3b"
+    }
+  ],
+  "source": {
+    "path": "work/astra-arithmetic-final-composition-001/milne-ADT-2006.pdf",
+    "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+    "publication": "J. S. Milne, Arithmetic Duality Theorems, second edition2006",
+    "locator": "I Theorem1.3 proof p18; Example1.6(b)p19; local unit/inertia diagram p26",
+    "available": "For finite abelian L/K, local reciprocity identifies K*/N(L*) with Gal(L/K), and sends local units into inertia. This follows from the finite-quotient isomorphism in the proof of1.3 applied to the local class formation1.6(b)."
+  },
+  "needed": "For the actual quadratic field Q(sqrt(h_star)), h_star=-m an odd fundamental discriminant, the local character at p|m restricts on Z_p* to the Legendre symbol. At all other finite places it is unramified and trivial on order-unit norms.",
+  "argument": [
+    "At an odd p|m, v_p(h_star)=1. Set pi=sqrt(h_star). Its polynomial is Eisenstein and the quadratic extension is tamely totally ramified with O_L=Z_p[pi]. A unit of O_L is a+b*pi with a a unit, so its norm reduces modulo p to a². If a field element has unit norm, its L valuation is0 (residue degree1), so the same conclusion applies.",
+    "Conversely, a unit u whose residue is square has a square root v in Z_p* by simple-root Hensel, since p is odd. Viewed in L, N(v)=v²=u. Therefore the norms among base units are exactly those with square residue. The unique nontrivial quadratic reciprocity character is consequently (u/p).",
+    "Because h_star is the actual odd fundamental discriminant, the associated quadratic extension is unramified at finite p not dividingm, including2. The unit/inertia diagram then makes the associated character trivial on base units at those places. Norms of units of any local order R_p are base units. At split quaternion places the reduced norm is the determinant.",
+    "The preceding nilpotent weight transforms by Legendre(det u) at p|m; all other conjugation weights are invariant under order units. Multiplication therefore gives exactly chi_hstar(Nrd u)^(-1), with inverse immaterial for a quadratic character. This is the conjugation formula only; scaling parity/global root number are separate."
+  ],
+  "normalizations": "Reciprocity inversion does not affect an order-two character. Uses actual quadratic Galois character restricted locally; no arbitrary finite character substituted.",
+  "limits": [
+    "p|m is odd and has discriminant valuation1. No dyadic ramified norm computation is claimed.",
+    "Actual h_star/discriminant and local nilpotent weights are premises.",
+    "Global Atkin product sign and the twist formula remain separately supplied."
+  ],
+  "primary_reading": "Directly viewed printed18,19,26 from the pinned2006PDF; source pages rendered in local-only."
+}

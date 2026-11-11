@@ -1,0 +1,316 @@
+{
+  "registry_manifest": {
+    "path": "work/quartic-v14-prep/gate-applications-author/joined-source-successor-006/MANIFEST.json",
+    "sha256": "b7cb37bd764f57ef6c445e5bcf8f596f54cb8a0df11cd7814fe89163e5f7891b",
+    "bytes": 6909
+  },
+  "applications_file": {
+    "path": "work/quartic-v14-prep/gate-applications-author/joined-source-successor-006/APPLICATIONS.json",
+    "sha256": "ad362c332d27fe438215b00cc6c91c57befff4103cc750a195ade5a03edbc47b",
+    "bytes": 10063225
+  },
+  "uses_file": {
+    "path": "work/quartic-v14-prep/gate-applications-author/joined-source-successor-006/USES.json",
+    "sha256": "13dbc0370594b077916b3724e7fa9f68a9519772bfc878538b6563db33839691",
+    "bytes": 2325338
+  },
+  "counts": {
+    "applications": 611,
+    "uses": 927
+  },
+  "row_hash_rule": "SHA256 UTF8 json.dumps ensure_ascii=False sort_keys=True separators comma/colon; audit fingerprint, not a gate-specific canonicalization claim",
+  "application_rows": [
+    {
+      "id": "A001",
+      "sha256": "227e3f841b1f8f473ff33fe4fcbfcbc0a278ae6ec5d10483d3b1976ebbc7f705",
+      "dependencies": []
+    },
+    {
+      "id": "A002",
+      "sha256": "40dd1c35623fe73d634d706120e2017f18ab20ec49fbdd1c4cacf700b8b1ae51",
+      "dependencies": []
+    },
+    {
+      "id": "A011",
+      "sha256": "27df92c500091d4cecb2b99dc2653c85a19a24c171bc95e29c8bcccd3e1337be",
+      "dependencies": [
+        "A064-CHARACTER"
+      ]
+    },
+    {
+      "id": "A020",
+      "sha256": "cc4bcb02681ccc82c03fff8442ffccfaf07c69fd8c18b3ff2c10804882377bd0",
+      "dependencies": []
+    },
+    {
+      "id": "A066",
+      "sha256": "ae2bcbed517efd27c357eef3ece6cd98d1352333c2f0d58ebce56aedecd061fa",
+      "dependencies": []
+    },
+    {
+      "id": "A082",
+      "sha256": "cbda32d2ed892c56a57c0390c48306c46400f3e1a35531c93b7babc7d0cb0b14",
+      "dependencies": []
+    },
+    {
+      "id": "V6-LOWER-KOLLAR",
+      "sha256": "e803b03c27998f6eb14c84e284e36ab5346c457807fcb2c358500d8245eadfa5",
+      "dependencies": []
+    },
+    {
+      "id": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "sha256": "209271de6cbcbc7ab4efe8391baf9de8ac8cccdfa64a53ec3a598da4c006e43d",
+      "dependencies": [
+        "A001",
+        "A002",
+        "A003",
+        "A004",
+        "A005",
+        "A006",
+        "A007",
+        "A008",
+        "A009",
+        "A010",
+        "A011",
+        "A012",
+        "A013",
+        "A014",
+        "A015",
+        "A016",
+        "A017",
+        "A018",
+        "A061",
+        "A062",
+        "A063",
+        "A064-MODULAR-COMPARISON",
+        "A071-FORMAL-LOCAL",
+        "A078",
+        "A079",
+        "C003-PAN-12",
+        "C003-PAN-13",
+        "C003-PAN-14",
+        "C003-PAN-15",
+        "C003-PAN-P5-ASSEMBLY",
+        "C003-PAN-SCALAR"
+      ]
+    },
+    {
+      "id": "COMPILER-B108",
+      "sha256": "63fde978242d170acc7b2cd286ad290e72236f1114694173791b1064f954ec10",
+      "dependencies": [
+        "A007",
+        "A008",
+        "A009",
+        "A010",
+        "A011",
+        "C003-PAN-12",
+        "C003-PAN-13",
+        "C003-PAN-14",
+        "C003-PAN-15",
+        "C003-PAN-P5-ASSEMBLY",
+        "C003-PAN-SCALAR"
+      ]
+    },
+    {
+      "id": "C003-PAN-P5-ASSEMBLY",
+      "sha256": "61f7d6cc9a690f9105736f08958f3af0d9a8b8e9b60c2538a06fa9d08efa1c40",
+      "dependencies": [
+        "C003-PAN-P5-EIGENVALUE",
+        "C003-PAN-P5-GEOMETRIC",
+        "C003-PAN-P5-TRANSFER",
+        "C003-PAN-P5-UNIFORMITY"
+      ]
+    },
+    {
+      "id": "C003-PAN-12",
+      "sha256": "8e2dc8c1fdd02d2f743160ac0d98e38f744aee74b730585c9bac940459a70d1c",
+      "dependencies": []
+    },
+    {
+      "id": "C003-PAN-13",
+      "sha256": "6fca1c752c5a9fb0ad6b27028dbbeb9545d84d0eef2c1d4a2e122878d4a96560",
+      "dependencies": []
+    },
+    {
+      "id": "C003-PAN-14",
+      "sha256": "08f39b9c8aaaad3b1374a4281ea3f026c5780e1e371c9368d759d0215a3aa298",
+      "dependencies": []
+    },
+    {
+      "id": "C003-PAN-15",
+      "sha256": "c541ed805f9db34a1b42014a0254b104f9f946df9ef6c70d22e952115bd3eb7d",
+      "dependencies": []
+    }
+  ],
+  "use_rows": [
+    {
+      "id": "B10-a",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "A001",
+      "sha256": "874b4334fd560002f7214f0a144e59268b4c39d59a1710545d79f00a606f918e"
+    },
+    {
+      "id": "B11-a",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "A002",
+      "sha256": "f15abf71c2cb0b1d2064cdd18ab6fd9d89e40a0bc95519c5afa49dde543cbc4b"
+    },
+    {
+      "id": "B14-a",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "A001",
+      "sha256": "2329adee6a67355349a467696a1b3c81674c151ba9be7cae6ce9bc8a5624236c"
+    },
+    {
+      "id": "B19-d",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "A011",
+      "sha256": "49f6ac5fdee3241eab08e22d564ca40d892bf848cdd85d99faf8c7a1829bdcc1"
+    },
+    {
+      "id": "B20-a",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "A011",
+      "sha256": "8d9fa78421ceea0ced052aca4cbc1daaa0f70b3983b0555f7ee46de6a313e718"
+    },
+    {
+      "id": "B26-b",
+      "consumer": "ORIGINAL-POLE-COMPLETE",
+      "supplier": "A020",
+      "sha256": "9adf5639d142fb5e1979fdb727d8e20cfd80c55761707bd8219b27adace9a239"
+    },
+    {
+      "id": "B26-c",
+      "consumer": "ORIGINAL-POLE-COMPLETE",
+      "supplier": "A066",
+      "sha256": "f8a3548911ffac653f3f76b1903b5e86f2c864f6ab3e6c630f1149ff5eaf0d8a"
+    },
+    {
+      "id": "B26-d",
+      "consumer": "ORIGINAL-POLE-COMPLETE",
+      "supplier": "A082",
+      "sha256": "8990f3c65885c137f25f963b62dfbf1595d6610671a18c61e3040b29fdcbaa5a"
+    },
+    {
+      "id": "B37-a",
+      "consumer": "ORIGINAL-RESTRICTED-CONVERSE",
+      "supplier": "A066",
+      "sha256": "909e143f6a9bc600cbe8cafb0c5502ec27a06957e98d59c04a99dce3b007f39f"
+    },
+    {
+      "id": "B47-d",
+      "consumer": "ORIGINAL-RESTRICTED-CONVERSE",
+      "supplier": "A020",
+      "sha256": "f70fc9c72d6289c8beef4d3db1ee074fb2cc22086fc52b9871228a39b286be8d"
+    },
+    {
+      "id": "B72-b",
+      "consumer": "ORIGINAL-RESTRICTED-CONVERSE",
+      "supplier": "A020",
+      "sha256": "ccde08c8d537e05dcf69a02ad701a6ce2e54ff72b7690549fe9f65bbf05ea02b"
+    },
+    {
+      "id": "COMP-B161-cubic-case",
+      "consumer": "ORIGINAL-DEGREE-LOWER-BOUND",
+      "supplier": "V6-LOWER-KOLLAR",
+      "sha256": "2d40a3f8979306c48924edc0636d462243a219dee66660bec485a243fada5885"
+    },
+    {
+      "id": "COMP-B108-pan-source",
+      "consumer": "COMPILER-B108",
+      "supplier": "A011",
+      "sha256": "561aeea007fa2244d748273dec7d0cf9ca46047d7af381f0c90104b0772af512"
+    },
+    {
+      "id": "B189-complementary-field",
+      "consumer": "THETA-NONEMPTY-SEED",
+      "supplier": "A082",
+      "sha256": "2f4dd5920807642d49a08d92eeb6a0d1a620c4690fb68df9a8d3b12bc863a35a"
+    },
+    {
+      "id": "B176-analytic-to-algebraic-rank",
+      "consumer": "THETA-ODD-WITNESS",
+      "supplier": "A082",
+      "sha256": "10ffe9074648c8ca1407dc177999b1c16b4c1ebbbb95bebb3636c578cf5f0b56"
+    },
+    {
+      "id": "B173-forward-rank-zero",
+      "consumer": "THETA-EVEN-FORM",
+      "supplier": "A082",
+      "sha256": "1e6930458b54d63192c5e6db23ef248e4299bb344aa5152c28bf21ef14ab14fc"
+    },
+    {
+      "id": "V14-TAIL-USE-P08-rcforward--from-A020",
+      "consumer": "V14-TAIL-P08-RCFORWARD",
+      "supplier": "A020",
+      "sha256": "7a131dca10e31bd1dd425bdac057ca6a0b51c3ee5c958f8e80e46fab18188239"
+    },
+    {
+      "id": "PHASE-A040-FORWARD",
+      "consumer": "A040",
+      "supplier": "A020",
+      "sha256": "0a3bc0e6d78e831168464dc75219cca02db01dfd7e05f6b03ef713e87c32be26"
+    },
+    {
+      "id": "C003-pan-p5-sw99-project-1",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "C003-PAN-P5-ASSEMBLY",
+      "sha256": "4b092c5145563feccef8dcde1859c2dd131d2764660d404d196edaa98f4a33df"
+    },
+    {
+      "id": "C003-pan-p5-sw99-project-2",
+      "consumer": "COMPILER-B108",
+      "supplier": "C003-PAN-P5-ASSEMBLY",
+      "sha256": "745e32ac9b33781d804e394ebf3b8ac389ff871f46678b42c747f2e990d07ff4"
+    },
+    {
+      "id": "C003-PAN-12-reference-1",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "C003-PAN-12",
+      "sha256": "9342cb61abfcbaed10ac50f15e3ae7585f769f7af8eb3c8bfad4f533978e3567"
+    },
+    {
+      "id": "C003-PAN-12-reference-2",
+      "consumer": "COMPILER-B108",
+      "supplier": "C003-PAN-12",
+      "sha256": "51ccc869cefc8228f65aa254dc38ae4c6ccd8ad04e29c9a5512e39768798fa0a"
+    },
+    {
+      "id": "C003-PAN-13-reference-1",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "C003-PAN-13",
+      "sha256": "648aeef54bb57deeff17de7ccd6ea0ba633d122ea55aeba5a76854952a581208"
+    },
+    {
+      "id": "C003-PAN-13-reference-2",
+      "consumer": "COMPILER-B108",
+      "supplier": "C003-PAN-13",
+      "sha256": "91433a310cdee36621d287900d422a9fe1222cc41c6c0a7df99edda47d3c84aa"
+    },
+    {
+      "id": "C003-PAN-14-reference-1",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "C003-PAN-14",
+      "sha256": "c123854170df8546a567b7858996664d6193199340d7a337fc22dfa4397ceb15"
+    },
+    {
+      "id": "C003-PAN-14-reference-2",
+      "consumer": "COMPILER-B108",
+      "supplier": "C003-PAN-14",
+      "sha256": "f7a572eb714cb18b06fbc902e736d33b493b52df6ec640289e906d32550ecfcb"
+    },
+    {
+      "id": "C003-PAN-15-reference-1",
+      "consumer": "ORIGINAL-SIX-CONTACT-HEIGHT",
+      "supplier": "C003-PAN-15",
+      "sha256": "562d92768307004d377411acd1e1ca664c0a5c37004c1856c06ec4505add92f7"
+    },
+    {
+      "id": "C003-PAN-15-reference-2",
+      "consumer": "COMPILER-B108",
+      "supplier": "C003-PAN-15",
+      "sha256": "47d2a994b8b7c2edecf59c3c5457fdef237a5b7ac17c44380d7fb14e607515c5"
+    }
+  ],
+  "qualification": "Historical selected registry is not approved as source-transported to the current63db manuscript. This rollup neither mutates nor accepts its rows."
+}

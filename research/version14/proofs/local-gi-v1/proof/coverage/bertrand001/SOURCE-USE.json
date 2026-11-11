@@ -1,0 +1,36 @@
+{
+  "id": "GI-BASE-BERTRAND",
+  "author": "/root/astra_v14_baseline_theta",
+  "status": "Author source completion; independent review requested.",
+  "supplier": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/bertrand-source-001/ramanujan-collected-1927.pdf",
+    "sha256": "858af6247df93916a2ef7cedfe774782e95acbb9c06fe40a876c06ff0add41a7",
+    "bytes": 9617944,
+    "locator": "Paper24, printed208 opening statement and209 conclusion; PDF244-245 one-based. Published title page PDF3, contents PDF6."
+  },
+  "consumer": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/gi-base-002/proof.tex",
+    "sha256": "7cbf7e65945cc6580f2bcc235b22521e41c649ccc3fa4b4491c24e4f1c284d1c",
+    "bytes": 13937,
+    "start_line": 257,
+    "end_line": 259,
+    "excerpt_sha256": "a6092ebff7889a1ea5634f403a5c2592b6b06fc934e74170f72869ffcf76c0b5"
+  },
+  "connection": {
+    "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/bertrand-source-001/CONNECTION.md",
+    "sha256": "2fe326ececded462d8b7f1cc85e1ce48ffd45260de95b0d6c5a9cd77c1de000a",
+    "bytes": 1823
+  },
+  "assertion": {
+    "statement": "For every real x>=1 there is a prime p with x<p<=2x.",
+    "objects": "Real x and an ordinary positive rational prime p.",
+    "hypotheses": "x>=1; at the consumer x=CN with fixed integer C>16 and positive integer N.",
+    "quantifiers": "Every positive N uses the same fixed C; a prime P may depend on N.",
+    "parameter_range": "All positive N, including bounded N; no asymptotic threshold.",
+    "uniformity": "The interval ratio is uniformly between C and2C, independent of N.",
+    "constants": "No new constants: the fixed C already in the base proof is used unchanged.",
+    "normalizations": "For integral CN>1, 2CN is composite, changing the supplied upper weak inequality into the consumer strict one.",
+    "exceptional_cases": "N=1 is included because C>16; no residue-class constraint is asserted.",
+    "limit_order": "Fix C first, then for each N select P. No new cutoff or limiting order."
+  }
+}

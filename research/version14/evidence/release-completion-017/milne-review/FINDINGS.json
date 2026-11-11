@@ -1,0 +1,59 @@
+{
+  "schema": "bounded-independent-source-findings/v1",
+  "reviewer": "/root/astra_quartic_opt05_anchor",
+  "current_target": {
+    "path": "work/source-risk-review-20261107/milne-author-r3/MANIFEST.json",
+    "sha256": "9b975f6059c97ac83e5455a2b9707736fca4d886ca94789de3525e88a7fa4c12"
+  },
+  "findings": [
+    {
+      "id": "MILNE-M01",
+      "classification": "incorrect source-coverage metadata",
+      "original_target": "814f3b20201fef78db3627e1def49b41bd538363fd536fe33b78e0c6fdf1cda9",
+      "affected_fields": ["SOURCE-BINDINGS.json official_addendum.read_scope", "freeze.py corresponding literal", "REPORT.md first-page applicability conclusion"],
+      "failure": "The official ten-page addendum was described as a complete one-page source. That reading claim cannot establish applicability of omitted corrections.",
+      "related_scope": "The completeness declaration and the actual applications of corrections on the omitted pages. No inference that all Milne results fail.",
+      "evidence": "Official exact addendum 2eff84551aa72ce16ae20554e46baf03494fa1130612875041905f9df34ea50c, 10 pages; complete independent reading and ERRATA-APPLICABILITY.json.",
+      "history": [
+        {"target":"814f3b20201fef78db3627e1def49b41bd538363fd536fe33b78e0c6fdf1cda9","disposition":"Rejected completeness metadata; original preserved."},
+        {"target":"037a180fccf370a828c6ffb614dfae1335018db8c947acc2fcc250eaf48777ed","disposition":"Page count and exact raw-source pin corrected; other applicability descriptions required further correction."},
+        {"target":"9b975f6059c97ac83e5455a2b9707736fca4d886ca94789de3525e88a7fa4c12","disposition":"Accepted corrected coverage record within this bounded review."}
+      ],
+      "status": "resolved on R3; original assertion remains rejected"
+    },
+    {
+      "id": "MILNE-M02",
+      "classification": "incorrect source-domain exclusion",
+      "original_target": "037a180fccf370a828c6ffb614dfae1335018db8c947acc2fcc250eaf48777ed",
+      "affected_fields": ["REPORT.md applicability bullet on Exercise I.2.21"],
+      "failure": "R2 called the exercise equal positive characteristic. Printed p39 specifies a two-dimensional local field of characteristic zero with positive-characteristic first residue field. Characteristic zero alone cannot exclude the defective source domain.",
+      "related_scope": "The I.2.21 non-use claim and the local-field domain stated for I.2.3/I.2.8/I.3.2 applications and repetitions. Current completions are ordinary finite extensions of Q_p.",
+      "evidence": "Primary book p39 and addendum p2; R3 REPORT.md and SOURCE-BINDINGS.json r3_applicability.exercise_2_21.",
+      "history": [
+        {"target":"037a180fccf370a828c6ffb614dfae1335018db8c947acc2fcc250eaf48777ed","disposition":"Rejected higher-local-field description; current theorem failure not asserted."},
+        {"target":"9b975f6059c97ac83e5455a2b9707736fca4d886ca94789de3525e88a7fa4c12","disposition":"Accepted exact higher-dimensional/ordinary-local distinction against primary source."}
+      ],
+      "status": "resolved on R3"
+    },
+    {
+      "id": "MILNE-M03",
+      "classification": "omitted transitive correction applicability",
+      "original_target": "037a180fccf370a828c6ffb614dfae1335018db8c947acc2fcc250eaf48777ed",
+      "affected_fields": ["REPORT.md I.3.8 applicability and global isogeny source connection"],
+      "failure": "Direct finite Kummer duality avoids I.3.8, but global finite local support in I.6.3 explicitly invokes it, feeding the Sha setting used in I.7.3. The source review needed that transitive connection and the actual repair.",
+      "related_scope": "I.3.8 -> I.6.3 -> global Sha/isogeny setup; current finite unramified descent at TeX3214-3242. No automatic rejection of unrelated flat-cohomology applications.",
+      "evidence": "Book p46 and p74; official addendum pp2-3; actual finite-complete-extension-first manuscript proof. All exact current spans are pinned in OCCURRENCES.json.",
+      "history": [
+        {"target":"037a180fccf370a828c6ffb614dfae1335018db8c947acc2fcc250eaf48777ed","disposition":"Requested explicit transitive applicability instead of relying on the direct local theorem's non-use."},
+        {"target":"9b975f6059c97ac83e5455a2b9707736fca4d886ca94789de3525e88a7fa4c12","disposition":"Accepted corrected source chain after independent check of the official finite-unramified-extension repair and current related proof."}
+      ],
+      "status": "resolved on R3"
+    }
+  ],
+  "limits": [
+    "These are scoped human-readable review records, not a fabricated authenticated gate receipt.",
+    "No primary-source verdict is used in place of the primary statements and proofs.",
+    "No private conversation or personal source assessment is included.",
+    "The current source and all author predecessors remain unchanged."
+  ]
+}

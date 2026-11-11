@@ -1,0 +1,303 @@
+{
+  "id": "V15-PARITY237",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      35010,
+      35152
+    ],
+    "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      35153,
+      35285
+    ],
+    "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+  },
+  "dependencies": [
+    "V15-TYPING238",
+    "V15-BASE248"
+  ],
+  "retained_reviews": [
+    {
+      "key": "parity_math",
+      "path": "work/quartic238-optimization-20261110/norm-guards/parity-core-237-review-001/REVIEW.json",
+      "sha256": "7ed8629000d1b21d83fd6dd352f2dfbd644f6c99c0c8dc0c5af3ea4d940ca02a",
+      "scope": "Disjoint arithmetic review of237 parity criterion including completeness; finite IR separately.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "parity_finite",
+      "path": "work/quartic238-optimization-20261110/global/parity-core-finite-review-001/REVIEW.json",
+      "sha256": "9b61ac5680b68533798ca54eda4c4d02564d1cb06847e00d1bead5c798f89f28",
+      "scope": "Exact237 row changes and full SOS; arithmetic separately.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "integration233",
+      "path": "work/quartic-v15x-233-20261110/review/REVIEW.json",
+      "sha256": "f6141e296b25fc33db8a7845d16df4038e884dc8cac65defea56b0880c467c9c",
+      "scope": "233 manuscript integration; own237 authorship disclosed; not independent reproof of own lemma or full foundation.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Physical variables",
+      "required": "Match the unmodified scalar interface",
+      "constructed": "R>0; Z=R(u+√2v), W=w/R², F=Norm(fH), D1=v²; F²=x86²−8x87²",
+      "match": "The two components of fH² use the stored factor-two convention.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Replacement rows",
+      "required": "Delete exactly one scalar coordinate",
+      "constructed": "Replace the old core by u²=RC and C²+R D1+F²=R²w; delete raw coordinate137 and row82, then compact indices",
+      "match": "The result has 237 coordinates and 211 rows; the remaining equations are retained.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Parity",
+      "required": "Prevent cancellation at the consumed prime",
+      "constructed": "For positive odd ν=v_p(R), the valuations in R⁴W are 4v(Z0)−6ν, 2v(Z1)−ν and 2v(F)",
+      "match": "They lie in disjoint classes 2 mod4, odd, and 0 mod4; zero components are omitted, F remains nonzero.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Curve input",
+      "required": "Justify the even valuation of F",
+      "constructed": "On y²=x³−Dx at good unramified primes, nonzero finite x has even valuation; use both split and inert norm cases",
+      "match": "This input precedes the three-class noncancellation argument.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Extraction",
+      "required": "Use the new numerical inequalities",
+      "constructed": "The pole obstruction gives v(W)>−ν/2, hence v(Z0)>19ν/8, v(Z1)>9ν/4 and v(F)>7ν/4",
+      "match": "These are the original parity237 bounds, not the later asymmetric-core proposal.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Dependency order",
+      "required": "Exclude reference exceptions before forming later ratios",
+      "constructed": "At p=149, ν is 2N±1; the lower bound on v(F) excludes the finite exceptional reference points",
+      "match": "Formal H and [2m]S′=[4a]H then give v(a)>9ν/4 without an extra divisibility assumption on m.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Global soundness",
+      "required": "Keep one threshold uniform in the input",
+      "constructed": "L′_N=floor(9(2N−1)/4)+1, c0=|a|≥149^L′_N; combine the retained height estimate with (c0−4)log(c0−1)",
+      "match": "The additive aggregate-height constant can be ineffective; no concrete defining N is certified.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Completeness",
+      "required": "Preserve the actual order of choices",
+      "constructed": "On fixed real compact neighborhoods W=O(R^(−4)), b=O(R^(−6)); prepare H and comparison indices at fixed finite support, then choose later contact primes avoiding that support",
+      "match": "For large N, 0<b<17; the finite and real recurrence requirements are met simultaneously.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Map limitation",
+      "required": "Avoid a false auxiliary-witness bijection",
+      "constructed": "For prepared witnesses set C=u²/R, D1=v² and w=R²W; input zero remains allowed",
+      "match": "This is a new sufficient scalar criterion with separate soundness/completeness, unlike the later 237→235→233 bijections.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35010,
+            35152
+          ],
+          "excerpt_sha256": "6bf9e06dc6ebab36bec895184b263b7216d38e866ede5d9629c13b7eda79f439"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            35153,
+            35285
+          ],
+          "excerpt_sha256": "f72416b402add121e1dedba72bd17e3ad64e1be752135fbbf319ca00d035657a"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

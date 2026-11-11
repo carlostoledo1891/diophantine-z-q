@@ -1,0 +1,146 @@
+{
+  "state": "author_proposal_pending_review",
+  "use": {
+    "id": "ACTIVE-RC-NEWFORM-HECKE-CONNECTION",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "PASSAGE-RC-NEWFORM-HECKE"
+    ],
+    "assertion": {
+      "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+      "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+      "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+      "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+      "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+      "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+      "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+      "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+      "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+      "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+    },
+    "classification": "dependency",
+    "reason": "The explicit current connecting derivation checks the even conductor, branch operator, symmetry and cusp cancellation before transferring the quotient identity by the Q-isogeny.",
+    "shared_contract_justification": null,
+    "supplier": {
+      "kind": "inline",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2588,
+        "end_line": 2657,
+        "excerpt_sha256": "1e0b0fba5a16a60c1cb5c2a3f3f98795f35ace903af833bf7b624bcada42eb7a"
+      },
+      "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+      "publication": null
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2613,
+      "end_line": 2657,
+      "excerpt_sha256": "a94969cf15477ac94e2fcc8dcb1f577bcf12cfb54afa1f29933908c97e667f95"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-RC-NEWFORM-HECKE-CONNECTION",
+    "use_sha256": "f8f25639205c7c29be0e1d9d71dc8d9ee735a58c81c2cc12d4e9df8a2fc1159e",
+    "supplier_passage_role": "inline_derivation",
+    "available_assertion": {
+      "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+      "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+      "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+      "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+      "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+      "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+      "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+      "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+      "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+      "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+    },
+    "needed_assertion": {
+      "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+      "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+      "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+      "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+      "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+      "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+      "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+      "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+      "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+      "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+    },
+    "required_capabilities": [
+      "good-prime-unaveraged-hecke"
+    ],
+    "available_capabilities": [
+      "good-prime-unaveraged-hecke"
+    ],
+    "derived_capabilities": [],
+    "connecting_derivation": {
+      "kind": "identification",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2613,
+        "end_line": 2657,
+        "excerpt_sha256": "a94969cf15477ac94e2fcc8dcb1f577bcf12cfb54afa1f29933908c97e667f95"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "For the actual odd-prime curve E_l and its rational normalized newform f, every q not dividing N has a_q(f)=q+1-#E_l(F_q), and phi=alpha q_f:J0(N) to E_l satisfies phi T_q=[a_q(f)]phi with the unaveraged geometric neighbor correspondence; pi(x)=phi([x]-[infinity]) has pi(infinity)=0.",
+        "objects": "The same E_l, conductor N, rational coefficient newform f, Shimura quotient q_f:J0(N) to A_f, and Q-isogeny alpha:A_f to E_l.",
+        "hypotheses": "The published newform input supplies normalized integral weight-two f and its trace comparison outside 2N. Shimura supplies the rational elliptic quotient and the correspondence action. Faltings supplies the same-Q isogeny from almost-all equal Euler factors. The actual model has discriminant 2304*l^6 with l odd.",
+        "quantifiers": "Every prime q not dividing N and every point x of X0(N) in the geometric neighbor correspondence.",
+        "parameter_range": "Fixed E_l and its actual conductor N; l is odd. No bad-prime trace assertion is imported.",
+        "uniformity": "The same quotient and isogeny serve all good primes; no averaging or q-dependent rescaling is introduced.",
+        "constants": "v2(Delta)=8 modulo12 implies 2 divides N; the correspondence has q+1 branches and T_q[infinity]=(q+1)[infinity].",
+        "normalizations": "a_1(f)=1; pullback operator q*f(qz)+(1/q)*sum_j f((z+j)/q), coefficient a_(qn)+q*a_(n/q); the unital rational coefficient action is integer multiplication.",
+        "exceptional_cases": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+        "limit_order": "Choose f and its quotient, compare almost-all Euler factors to obtain alpha over Q, check 2|N, identify the unaveraged good-prime correspondence, and then compose alpha q_f and subtract the fixed cusp."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "At level primes only the U_p eigenoperator statement is retained, not a bad-prime trace formula. a_q=0 causes no division. No Manin constant, integral homology index, Atkin-Lehner identity, local extension or reduction is asserted.",
+      "evidence": [
+        {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2654,
+        "end_line": 2657,
+        "excerpt_sha256": "bf8191c879d17a3b1f92b7aeeba71b0aeae2a7e2c2247aad8509dca63f0f4865"
+      }
+    ]
+  },
+  "initial_mapping": [],
+  "retained_separate_inputs": [
+    "Amir-Hong normalized newform theorem",
+    "Shimura rational quotient and correspondence action",
+    "Faltings1983 isogeny corollary with1984 erratum",
+    "BCDT modularity via published Silverman formulation",
+    "Later CCL norm identity, local extension/reduction and Atkin-Lehner consumers"
+  ],
+  "scope": "Current connecting derivation only, conditional on the named published inputs. Initial-use reconciliation remains pending. Prior source/application acceptance: NEWFORM-HECKE-DISPOSITION-002; no new source acceptance claimed."
+}

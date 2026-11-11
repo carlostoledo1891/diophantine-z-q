@@ -1,0 +1,80 @@
+Write an index as $Jrm^2$ with $J\subset U$ and $r$ squarefree,
+prime to $U$. Products of prime sets are understood here.
+The originating squarefree parameter in the coefficient of $g$ is
+$D=(U\setminus J)r$, not the squarefree part $Jr$ of the tested index.
+Remove the phase $\eta(p)^s$ in (O.6) and put
+\[
+ b_{-1}=0,\quad b_0=1,\quad b_1=a_p-\kappa,\quad
+ b_{s+1}=a_pb_s-pb_{s-1},\quad
+ \kappa=(\psi/\eta)(p)(-D/p).
+\]
+For $p\in U\setminus J$ the factor $b_s-b_{s-1}$ is odd;
+for $p\in J$ the factor $b_{s+1}-b_s$ is even.
+Consequently, for the even source,
+\[
+ v_2B_U[Jrm^2]\ge w(r)
+              +\tfrac12\#\{p\in J:p\text{ is simple}\}-e_U.      \tag{O.9}
+\]
+The right side is an integer on the allowed filter and is
+nonnegative. In our full-two-torsion application all primes are
+split and $w=\omega$.
+For the odd source, fix an integer $R\ge1$ and a weight bound $W$
+first. At one sufficiently advanced actual stage, simultaneously for
+all $U$ with $w(U)\le W$ and every Fourier index, (O.9) holds with
+its right side replaced by its minimum with $R$. Thus the untruncated
+bound on a prescribed bounded range of squarefree weights follows by
+choosing $R$ and then the stage. For the unary-removal and two-trace
+tests below, choose $R\ge2$ after fixing the operator budget.
+For a split prime $a_p\equiv p+1\pmod4$. The recurrence gives the
+same residue on each divided shell,
+\[
+        (b_{s+1}-b_s)/2\equiv
+     c_p(D):=\{a_p-(\psi/\eta)(p)(-D/p)-1\}/2\pmod2.              \tag{O.10}
+\]
+
+\paragraph{The two integral shell calculations.}
+Here every prime is split in the rational two-torsion field, so
+$a_p\equiv p+1\pmod4$. For $p\mid D$ one has $\kappa=0$.
+Reducing the recurrence modulo two gives $b_{s+1}=b_{s-1}$,
+with $b_0=1$ and $b_1=0$. Thus $b_s-b_{s-1}$ is odd for
+all $s\ge0$, including $s=0$ with $b_{-1}=0$.
+For $p\nmid D$, one has $\kappa\in\{1,-1\}$, so every $b_s$
+is odd. Write $d_s=b_{s+1}-b_s$. The recurrence modulo four gives
+$d_s\equiv p d_{s-1}\pmod4$ for $s\ge1$.
+Each $d_s$ is even, and multiplication of an even residue modulo
+four by an odd number fixes that residue. Consequently
+\[
+ d_s\equiv d_0=a_p-\kappa-1\pmod4\qquad(s\ge0).
+\]
+This proves (O.10) without dividing a residue-field identity by two.
+For an index $Jrm^2$, each $p\in J$ therefore supplies an actual
+factor two, whereas the factors for $p\in U\setminus J$ are integral
+units modulo two. The squarefree input has
+$\omega(D)=|U|-|J|+\omega(r)$. Its depth bound plus these $|J|$
+factors gives
+$\delta+\omega(D)+|J|=n_U+\omega(r)$ before division by
+$2^{n_U}$. All removed character factors are units.
+For the odd source the same argument is a congruence modulo
+$2^M\mathcal O_{\rm coef}$ before that division. It therefore
+retains precision $M-n_U$ afterward; the subsequent division
+in (O.11) retains precision $M-n_U-1$.
+Choose $i\in\{0,1\}$ with $\eta\chi_{-4}^i$ odd and let
+\[
+ \Theta_J=\sum_{\substack{m>0\\(m,S)=1}}
+                      \eta(m)\chi_{-4}(m)^i m q^{Jm^2}.
+\]
+Poisson summation gives this genuine unary weight-$3/2$ form.
+Its scalar character is $\eta\chi_{-4}^i(-J/\cdot)$ and every
+$p\mid J$ enters the level at exponent one.
+In matching parity the shell recurrence gives
+$B_U[Jm^2]-B_U[J]\eta(m)\in2\mathcal O_{\rm coef}$.
+Thus
+\[
+                 H_U=\frac{B_U-\sum_JB_U[J]\Theta_J}{2}          \tag{O.11}
+\]
+is integral; in opposite parity take $H_U=B_U$.
+This is division by the integer two, not reduction modulo the
+maximal ideal of a ramified coefficient ring. For odd-stage
+forms, the coarse bound and bounded-weight stabilization proved
+below pay every fixed denominator before choosing the stage.
+

@@ -1,0 +1,5 @@
+# Current source adoption for combined004
+
+The original README and proof reviews in this directory preserve their historical scopes. For the selected combined004 manuscript, the A052 geometric, right-module, Tate-lattice and Frobenius interface uses the independently accepted published Ribet replacement. See [the exact replacement review](../../evidence/source-incorporation-004/ribet-review/REVIEW.md). The earlier open geometric-supplier qualification is therefore superseded for this interface. No equivalence with the unavailable final Jetchev--Kane text has been established or is needed for this substitution.
+
+CM reciprocity, integrality, inert supersingularity, good-reduction specialization and the remaining arithmetic transformations retain their own source applications and reviews. The combined installation does not itself approve the whole conductor-one argument, RC, the full manuscript or a release. Complete inventory reconciliation and protected release checks remain pending.

@@ -1,0 +1,40 @@
+{
+  "schema": "bounded-mathematical-source-review/v1",
+  "decision": "accept exact conditional local comparison and local-factor proof",
+  "reviewer": "/root/v14_arithmetic_author",
+  "author": "/root/v14_sign_conductor",
+  "target": {
+    "path": "v14-local-twist-factors-002/MANIFEST.json",
+    "sha256": "ae2883e3db42add4bae7738a0a018b9bc1b3f2fccacd75909312e4cef0d6d87c"
+  },
+  "proof_sha256": "8d4775ec4b317c4077c63879518607683564c301efd986a4189d0cbaa99147d2",
+  "independent_reading": "Direct visual reading of Silverman printed45,186,196,201,449; revised full proof and current13668–13676. The source criteria have no residue-characteristic exclusion at q=3.",
+  "findings": [
+    "Fixed local minimal invariant differential normalization is essential; arbitrary nonunit rescaling is excluded.",
+    "Four odd dyadic unit classes and unit-square isomorphism preserve comparison valuations.",
+    "Fixed bad-prime local classes give finitely many nonzero Euler factors.",
+    "At active good odd q, ramified quadratic twist is bad by NOS, unchanged integral j excludes multiplicative reduction; additive factor is one, including q=3.",
+    "At unused good odd q, unramified twist remains good and its point count supplies the norm polynomial value.",
+    "Global period and Kato norm inputs remain separate."
+  ],
+  "details": "The lift increment 2^(n-1) adjusts an odd square modulo2^(n+1) and converges. The displayed twist isomorphism pulls back the differential by u^(-1); minimal differentials differ by units. Ramified inertia acts by -1 on V2 at odd q, excluding good reduction; minimal-model c4/Delta criterion and unchanged integral j exclude multiplicative reduction. C.16 then gives factor1. Good Euler factors are nonzero by the identity point, and multiplicative factors 1±1/p are nonzero. Unused-prime character point counting gives the stated polynomial.",
+  "limits": "Accepts only the stated fixed minimal local-generator convention and given good/active/unused prime hypotheses. Does not establish global reciprocity, original rational period comparison, Kato norm relation, detailed source-use mappings or final source adoption. Prior root suggestion disclosed; independently checked here.",
+  "checks": [
+    {
+      "path": "prepare.py",
+      "pass": true
+    },
+    {
+      "path": "PROOF.md",
+      "pass": true
+    },
+    {
+      "path": "SOURCE-PINS.json",
+      "pass": true
+    },
+    {
+      "path": "primary Silverman PDF",
+      "pass": true
+    }
+  ]
+}

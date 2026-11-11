@@ -1,0 +1,81 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewer": "gaussian",
+  "date": "2026-11-08",
+  "status": "accepted_conditional_provider_scope",
+  "target_manifest": {
+    "path": "work/source-risk-review-20261107/b11-marking-descent-sources-theta-006/MANIFEST.json",
+    "sha256": "62bbcd242d6cee3511a787e926350986a2f500b2e0ea5c146000bb4955ca88b4",
+    "bytes": 2128
+  },
+  "proof": {
+    "path": "work/source-risk-review-20261107/b11-marking-descent-sources-theta-006/PROOF.md",
+    "sha256": "90456a2a5375ebd6999fcea7bc5c9c3073efd38e557422cec5392d52fd6de469",
+    "bytes": 14132
+  },
+  "review": {
+    "path": "work/source-risk-review-20261107/b11-marking-descent-review-gaussian-001/REVIEW.md",
+    "sha256": "d3633ac8c002f255caf4929b6deaeba7f6bbc1a52ae351a6bd69c064ec41ca03",
+    "bytes": 9274
+  },
+  "accepted_applications": [
+    "B11-STD-MARKING",
+    "B11-STD-QUOTIENT",
+    "B11-STD-DESCENT"
+  ],
+  "accepted_source_uses": [
+    "B11-STD-U01",
+    "B11-STD-U02",
+    "B11-STD-U03",
+    "B11-STD-U04",
+    "B11-STD-U05",
+    "B11-STD-U06",
+    "B11-STD-U07"
+  ],
+  "obligation_comparisons": 27,
+  "retained_incoming_interfaces": [
+    {
+      "id": "B11-IN-INITIAL",
+      "name": "Direct Buzzard V1(5) model and full-five refinement",
+      "required_assertion": "Smooth projective rigid fine full-five moduli scheme over R with the stated universal polarized O-surface and all determinant components. Rigidity is over every test scheme, not merely geometric points.",
+      "status": "separate input; assembly must bind actual proof and independent decision",
+      "owner_or_scope": "Root direct-source application; not proved in this packet."
+    },
+    {
+      "id": "B11-IN-MODULE",
+      "name": "Nonempty O-linear marking fibres",
+      "required_assertion": "The actual geometric O/nO modules admit the specified full markings, in every relevant residue characteristic.",
+      "status": "separate input; assembly must bind actual proof and independent decision",
+      "owner_or_scope": "Root division-order/Tate calculation; not inferred from etaleness."
+    },
+    {
+      "id": "B11-IN-FREE",
+      "name": "No automorphisms preserving three-marking",
+      "required_assertion": "On every geometric fibre, polarized O-linear automorphisms preserving the three-marking are trivial, via finite polarized Aut, faithful T3 action and the torsion-free level-three congruence kernel.",
+      "status": "separate input; assembly must bind actual proof and independent decision",
+      "owner_or_scope": "Separate arithmetic/general-AV packet and congruence proof; no independent acceptance is imported here."
+    },
+    {
+      "id": "B11-IN-ACTION",
+      "name": "Relabeling descent datum",
+      "required_assertion": "G5 changes only the five-marking, preserving A, its principal lambda, O-action and three-marking with the actual cocycle identity.",
+      "status": "separate input; assembly must bind actual proof and independent decision",
+      "owner_or_scope": "The moduli functor action, which must be joined in B11 ordinary assembly."
+    },
+    {
+      "id": "B11-IN-INDEX",
+      "name": "Generic-fibre index calculation",
+      "required_assertion": "The canonical generic full-three moduli problem is represented by Y3, with the separately proved index bound <=4*81. This is not an assumption that the integral quotient constructed here already equals Y3; section7 proves that quotient represents the same functor.",
+      "status": "separate input; assembly must bind actual proof and independent decision",
+      "owner_or_scope": "Root index/normalizer proof; this packet only removes the extra auxiliary five factor."
+    }
+  ],
+  "authorship": "No authorship of the submitted geometric proof. Reviewer requested explicit missing arguments/conditions and record edges. Author supplied the final proof, including the direct qcqs-base composition lemma; reviewer suggested but did not adopt an alternative H-projective route. See REVIEW.md.",
+  "exclusions": [
+    "Independent acceptance of the initial Buzzard/full-five model and rigid groupoid match",
+    "Independent proof of marking nonemptiness, geometric automorphism/congruence theorem, exact relabeling action, and numerical index",
+    "Whole six-phase B11 assembly or global dependency graph",
+    "Full predecessor-source reconstruction or new comparison of Murre/FGA/Mumford editions",
+    "Live manuscript incorporation, gate passage, release or public-curation approval"
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "schema": 1,
+  "author": "/root/v14_arithmetic_author",
+  "components": [
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-BETA-LOCAL-SERRE",
+        "consumer": "H6-BETA-QUANTITATIVE-DESCENT-LEVEL",
+        "passages": [
+          "ACTIVE-BETA-LOCAL-SERRE-P1"
+        ],
+        "assertion": {
+          "statement": "For the actual beta construction, absolute uppergroups beyondU0=4(DG0)² are beyond the geometric and scalar wild breaks; hence a_p(r_ell)<=2+2U0<=E0.",
+          "objects": "Original A,F=L_v,r_ell,beta,U0,E0.",
+          "hypotheses": "F/Q_p Galois, degree<=D; auxiliary torsion extension degree<=DG0; geometric and scalar input bounds supplied separately.",
+          "quantifiers": "Every primep and ell!=p.",
+          "parameter_range": "Original two-dimensional matrix-unit factor.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Use inversepsi for subgroups, notphi; normalclosure degree<=a!.",
+          "exceptional_cases": "No extra factor[Lprime:Q]; no application of finite-image Artin sum to infinite tame image.",
+          "limit_order": "Prove derivativebound and subgroupformula, combine geometric/scalartriviality, bound Swan."
+        },
+        "classification": "dependency",
+        "reason": "Explicit SUP008 local prerequisite of the original beta quantitative argument.",
+        "shared_contract_justification": "Only the actual beta local construction is covered.",
+        "supplier": {
+          "kind": "published_external",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+              "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+            },
+            "start_line": 3,
+            "end_line": 4,
+            "excerpt_sha256": "4cade7ff6ec6ee4e3194b6c0692702a28d3d6c999efa6da3393a939550a877f4"
+          },
+          "statement": "Upper ramification respects quotients; local reciprocity identifies unit filtrations with upper groups; abelian conductors are last break plus one; Artin conductor is the lower-ramification weighted codimension sum.",
+          "publication": {
+            "title": "Local Class Field Theory",
+            "authors": "J.-P. Serre",
+            "venue": "Cassels–Frohlich, Algebraic Number Theory(1967), ChapterVI,128–161",
+            "authoritative_version": "Inspected extract e0367b25a022eb27ec220e3c15b474a94fb96d70a6bb89b77f4a02c2231950fe",
+            "locator": "§4.1 pp155–157, §4.2 Proposition1 p157, §4.3 pp158–159",
+            "corrections": "Not Local Fields1979; derivativeproduct/subgroup formula explicitly local."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+            "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+          },
+          "start_line": 6,
+          "end_line": 7,
+          "excerpt_sha256": "353e997fab456d9e7b6f45ef55609a60b62dac104f0e1da27d36bae76fac0576"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-BETA-LOCAL-SERRE",
+        "use_sha256": "8afa026732c20b4674fac6e995d8991a042d914d9b9fac3123031050bfa714d9",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Upper ramification respects quotients; local reciprocity identifies unit filtrations with upper groups; abelian conductors are last break plus one; Artin conductor is the lower-ramification weighted codimension sum.",
+          "objects": "Finite Galois extensions of nonarchimedean local fields, their ramification groups, and finite-wild-image representations.",
+          "hypotheses": "Use the stated Galois tower and continuous characteristic-zero representation with finite wild image.",
+          "quantifiers": "Every such extension and ramification index.",
+          "parameter_range": "Upper groups at nonnegative indices and the corresponding unit filtration.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Serre ChapterVI upper numbering; Herbrand phi and inversepsi; conductor includes tame codimension.",
+          "exceptional_cases": "Subgroup psi rule and4a² bound are derived locally, not copied from the source. Infinite tame monodromy is not included in a finite wild sum.",
+          "limit_order": "Define lowergroups, pass to uppernumbering, then change variables for conductor."
+        },
+        "needed_assertion": {
+          "statement": "For the actual beta construction, absolute uppergroups beyondU0=4(DG0)² are beyond the geometric and scalar wild breaks; hence a_p(r_ell)<=2+2U0<=E0.",
+          "objects": "Original A,F=L_v,r_ell,beta,U0,E0.",
+          "hypotheses": "F/Q_p Galois, degree<=D; auxiliary torsion extension degree<=DG0; geometric and scalar input bounds supplied separately.",
+          "quantifiers": "Every primep and ell!=p.",
+          "parameter_range": "Original two-dimensional matrix-unit factor.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Use inversepsi for subgroups, notphi; normalclosure degree<=a!.",
+          "exceptional_cases": "No extra factor[Lprime:Q]; no application of finite-image Artin sum to infinite tame image.",
+          "limit_order": "Prove derivativebound and subgroupformula, combine geometric/scalartriviality, bound Swan."
+        },
+        "required_capabilities": [
+          "For the actual beta construction, absolute uppergroups beyondU0=4(DG0)² are beyond the geometric and scalar wild breaks; hence a_p(r_ell)<=2+2U0<=E0."
+        ],
+        "available_capabilities": [
+          "Upper ramification respects quotients; local reciprocity identifies unit filtrations with upper groups; abelian conductors are last break plus one; Artin conductor is the lower-ramification weighted codimension sum."
+        ],
+        "derived_capabilities": [
+          "For the actual beta construction, absolute uppergroups beyondU0=4(DG0)² are beyond the geometric and scalar wild breaks; hence a_p(r_ell)<=2+2U0<=E0."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+              "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+            },
+            "start_line": 6,
+            "end_line": 7,
+            "excerpt_sha256": "353e997fab456d9e7b6f45ef55609a60b62dac104f0e1da27d36bae76fac0576"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual beta construction, absolute uppergroups beyondU0=4(DG0)² are beyond the geometric and scalar wild breaks; hence a_p(r_ell)<=2+2U0<=E0.",
+            "objects": "Original A,F=L_v,r_ell,beta,U0,E0.",
+            "hypotheses": "F/Q_p Galois, degree<=D; auxiliary torsion extension degree<=DG0; geometric and scalar input bounds supplied separately.",
+            "quantifiers": "Every primep and ell!=p.",
+            "parameter_range": "Original two-dimensional matrix-unit factor.",
+            "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+            "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+            "normalizations": "Use inversepsi for subgroups, notphi; normalclosure degree<=a!.",
+            "exceptional_cases": "No extra factor[Lprime:Q]; no application of finite-image Artin sum to infinite tame image.",
+            "limit_order": "Prove derivativebound and subgroupformula, combine geometric/scalartriviality, bound Swan."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No extra factor[Lprime:Q]; no application of finite-image Artin sum to infinite tame image.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+                "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+              },
+              "start_line": 3,
+              "end_line": 4,
+              "excerpt_sha256": "4cade7ff6ec6ee4e3194b6c0692702a28d3d6c999efa6da3393a939550a877f4"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+                "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+              },
+              "start_line": 6,
+              "end_line": 7,
+              "excerpt_sha256": "353e997fab456d9e7b6f45ef55609a60b62dac104f0e1da27d36bae76fac0576"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-quantitative-join-001/PROOF.md",
+                "sha256": "1507355cf3ed61363b362b6612afc4cf5396d3e07d88198da2d18ed48b9ce970"
+              },
+              "start_line": 35,
+              "end_line": 53,
+              "excerpt_sha256": "dadd1404d72b989126a1394e11d1dd770294694c665594eb5c1a53a8dafcc51b"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-quantitative-join-001/PROOF.md",
+              "sha256": "1507355cf3ed61363b362b6612afc4cf5396d3e07d88198da2d18ed48b9ce970"
+            },
+            "start_line": 35,
+            "end_line": 53,
+            "excerpt_sha256": "dadd1404d72b989126a1394e11d1dd770294694c665594eb5c1a53a8dafcc51b"
+          }
+        ]
+      },
+      "retained_separate_inputs": [
+        "OriginalA/L anddegreebound",
+        "Actualbeta²=chi andramificationdata",
+        "Same-family Tate factors",
+        "Carayollevel identification"
+      ],
+      "origin": {
+        "mapping": "SUP-NOTE-008",
+        "review_reuse": "A012/A013 and accepted beta quantitative proof; normlocator corrected explicitly."
+      }
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-BETA-LOCAL-TORSION",
+        "consumer": "H6-BETA-QUANTITATIVE-DESCENT-LEVEL",
+        "passages": [
+          "ACTIVE-BETA-LOCAL-TORSION-P1"
+        ],
+        "assertion": {
+          "statement": "For original A/F, adjoining A[3] exceptA[5] atp3 gives degree<=DG0 and trivial wild inertia onV_ell after this extension.",
+          "objects": "Original abelian surface A/F, F=L_v, and ell-adic Tate module.",
+          "hypotheses": "[F:Q_p]<=D; A[n]rank4; n=3 unlessp3 then5.",
+          "quantifiers": "Everyprimep and ell!=p.",
+          "parameter_range": "Originalsurface, no replacementfamily.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Torsion is rational overF(A[n]); identity extension is unramified.",
+          "exceptional_cases": "Stable lattice gives finite pro-p image modulo the pro-ell congruence kernel; finite unipotent characteristic0 image is trivial.",
+          "limit_order": "Adjoin torsion, pass to normalclosure ifneeded, apply semistability, then killwildimage."
+        },
+        "classification": "dependency",
+        "reason": "Explicit SUP008 local prerequisite of the original beta quantitative argument.",
+        "shared_contract_justification": "Only the actual beta local construction is covered.",
+        "supplier": {
+          "kind": "published_external",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+              "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+            },
+            "start_line": 9,
+            "end_line": 10,
+            "excerpt_sha256": "e5b781a5ad48d9cab510d9848c50d8de19f15f67a004f0564dd3c3dde57b5f6b"
+          },
+          "statement": "Prime-to-residue-characteristic n-torsion defined over an unramified extension, n>=3, implies semistable reduction; semistable inertia acts unipotently on V_ell for ell!=p.",
+          "publication": {
+            "title": "Semistable reduction and torsion subgroups of abelian varieties",
+            "authors": "A. Silverberg and Yu. G. Zarhin",
+            "venue": "Annales de l Institut Fourier45(1995),403–420",
+            "authoritative_version": "FinalPDFfc62ba1c9d1315a0c441a3dd7de46a254f379289e630c407a3336c0230d91052",
+            "locator": "Theorem3.5 p406 and Theorem3.3 p405",
+            "corrections": "Printedn>=3; text-extractionn>3 is not used."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+            "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+          },
+          "start_line": 12,
+          "end_line": 13,
+          "excerpt_sha256": "ffd43832fde539aee4d1c59ba5c8a60f0060a39b8d315ac9221a6d78df9ea682"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-BETA-LOCAL-TORSION",
+        "use_sha256": "4b03262731bd623047b1a030ed14ad1528c94d74639928ae443ab2dd26f9c22c",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "Prime-to-residue-characteristic n-torsion defined over an unramified extension, n>=3, implies semistable reduction; semistable inertia acts unipotently on V_ell for ell!=p.",
+          "objects": "An abelian variety over a discretely valued field and its torsion/Tate module.",
+          "hypotheses": "n>=3, n prime to residue characteristic; unramified field of definition of all n-torsion.",
+          "quantifiers": "Every abelian variety and integern satisfying the theorem.",
+          "parameter_range": "Nonarchimedean local fields of characteristic0 here.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "The printedn>=3 includesn3; Tate coefficientprimeell differs fromp.",
+          "exceptional_cases": "Semistable does not mean good; do not apply withn divisiblebyp.",
+          "limit_order": "Check torsion premise then semistability and inertia criterion."
+        },
+        "needed_assertion": {
+          "statement": "For original A/F, adjoining A[3] exceptA[5] atp3 gives degree<=DG0 and trivial wild inertia onV_ell after this extension.",
+          "objects": "Original abelian surface A/F, F=L_v, and ell-adic Tate module.",
+          "hypotheses": "[F:Q_p]<=D; A[n]rank4; n=3 unlessp3 then5.",
+          "quantifiers": "Everyprimep and ell!=p.",
+          "parameter_range": "Originalsurface, no replacementfamily.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Torsion is rational overF(A[n]); identity extension is unramified.",
+          "exceptional_cases": "Stable lattice gives finite pro-p image modulo the pro-ell congruence kernel; finite unipotent characteristic0 image is trivial.",
+          "limit_order": "Adjoin torsion, pass to normalclosure ifneeded, apply semistability, then killwildimage."
+        },
+        "required_capabilities": [
+          "For original A/F, adjoining A[3] exceptA[5] atp3 gives degree<=DG0 and trivial wild inertia onV_ell after this extension."
+        ],
+        "available_capabilities": [
+          "Prime-to-residue-characteristic n-torsion defined over an unramified extension, n>=3, implies semistable reduction; semistable inertia acts unipotently on V_ell for ell!=p."
+        ],
+        "derived_capabilities": [
+          "For original A/F, adjoining A[3] exceptA[5] atp3 gives degree<=DG0 and trivial wild inertia onV_ell after this extension."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+              "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+            },
+            "start_line": 12,
+            "end_line": 13,
+            "excerpt_sha256": "ffd43832fde539aee4d1c59ba5c8a60f0060a39b8d315ac9221a6d78df9ea682"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For original A/F, adjoining A[3] exceptA[5] atp3 gives degree<=DG0 and trivial wild inertia onV_ell after this extension.",
+            "objects": "Original abelian surface A/F, F=L_v, and ell-adic Tate module.",
+            "hypotheses": "[F:Q_p]<=D; A[n]rank4; n=3 unlessp3 then5.",
+            "quantifiers": "Everyprimep and ell!=p.",
+            "parameter_range": "Originalsurface, no replacementfamily.",
+            "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+            "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+            "normalizations": "Torsion is rational overF(A[n]); identity extension is unramified.",
+            "exceptional_cases": "Stable lattice gives finite pro-p image modulo the pro-ell congruence kernel; finite unipotent characteristic0 image is trivial.",
+            "limit_order": "Adjoin torsion, pass to normalclosure ifneeded, apply semistability, then killwildimage."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Stable lattice gives finite pro-p image modulo the pro-ell congruence kernel; finite unipotent characteristic0 image is trivial.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+                "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+              },
+              "start_line": 9,
+              "end_line": 10,
+              "excerpt_sha256": "e5b781a5ad48d9cab510d9848c50d8de19f15f67a004f0564dd3c3dde57b5f6b"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+                "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+              },
+              "start_line": 12,
+              "end_line": 13,
+              "excerpt_sha256": "ffd43832fde539aee4d1c59ba5c8a60f0060a39b8d315ac9221a6d78df9ea682"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-quantitative-join-001/PROOF.md",
+                "sha256": "1507355cf3ed61363b362b6612afc4cf5396d3e07d88198da2d18ed48b9ce970"
+              },
+              "start_line": 41,
+              "end_line": 41,
+              "excerpt_sha256": "277020f616b6bdacf7d7e27fa3856acf54769e08cce8b502f93e321e3c8db3bb"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-quantitative-join-001/PROOF.md",
+              "sha256": "1507355cf3ed61363b362b6612afc4cf5396d3e07d88198da2d18ed48b9ce970"
+            },
+            "start_line": 41,
+            "end_line": 41,
+            "excerpt_sha256": "277020f616b6bdacf7d7e27fa3856acf54769e08cce8b502f93e321e3c8db3bb"
+          }
+        ]
+      },
+      "retained_separate_inputs": [
+        "OriginalA/L anddegreebound",
+        "Actualbeta²=chi andramificationdata",
+        "Same-family Tate factors",
+        "Carayollevel identification"
+      ],
+      "origin": {
+        "mapping": "SUP-NOTE-008",
+        "review_reuse": "A012/A013 and accepted beta quantitative proof; normlocator corrected explicitly."
+      }
+    },
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-BETA-LOCAL-NORM",
+        "consumer": "H6-BETA-QUANTITATIVE-DESCENT-LEVEL",
+        "passages": [
+          "ACTIVE-BETA-LOCAL-NORM-P1"
+        ],
+        "assertion": {
+          "statement": "For actual beta overF=L_v atp2, norm compatibility givesbeta^4=1 onunits, hence triviality onU_F^(3e+1).",
+          "objects": "Actualbeta²=chi, F/Q2 ande=v_F(2).",
+          "hypotheses": "F/Q2 Galois; localchi finite; non2 factors unramified and mod4 factor order<=2 onunits.",
+          "quantifiers": "Everyunitx inO_F*.",
+          "parameter_range": "Actualfinitecyclic characterfield anditscompositumwithF.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Compose thenormdiagramwithchi; normofunits isunit; logarithmdepth e+1.",
+          "exceptional_cases": "No assumptionchi globallyquadratic; useitsfinitecyclicfield. No[Lprime:Q]bound.",
+          "limit_order": "Firstnormidentity, thenbeta^4, thenlogarithm fourthpower identity andSerreunitrule."
+        },
+        "classification": "dependency",
+        "reason": "Explicit SUP008 local prerequisite of the original beta quantitative argument.",
+        "shared_contract_justification": "Only the actual beta local construction is covered.",
+        "supplier": {
+          "kind": "published_external",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+              "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+            },
+            "start_line": 15,
+            "end_line": 16,
+            "excerpt_sha256": "8e5e065f022785b41d8ee9a7293fc2337da52d0ea0f9042f0c943c01150c0377"
+          },
+          "statement": "In a finite local Galois tower M/F/K, local Artin maps commute with norm F*->K* and the inclusion-induced map Gal(M/F)^ab->Gal(M/K)^ab.",
+          "publication": {
+            "title": "Class Field Theory",
+            "authors": "J.S. Milne",
+            "venue": "Author course notesv4.03,6August2020",
+            "authoritative_version": "Pinned50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+            "locator": "ChapterIII Lemma3.2 p107, first normdiagram; precedingTheorem3.1",
+            "corrections": "Corrects localnorm citation from globalVProp3.3p157; preserves authornotes status and omittedproof annotation."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+            "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+          },
+          "start_line": 18,
+          "end_line": 19,
+          "excerpt_sha256": "7ed8989e890e634b43904dc732f4e989b72292b5f86e3abe7df607516cb23e25"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-BETA-LOCAL-NORM",
+        "use_sha256": "28afbdcda1dd41a1c1d9aafe30c1c036bd2a7421f22e29bd113245e2d90627ee",
+        "supplier_passage_role": "statement",
+        "available_assertion": {
+          "statement": "In a finite local Galois tower M/F/K, local Artin maps commute with norm F*->K* and the inclusion-induced map Gal(M/F)^ab->Gal(M/K)^ab.",
+          "objects": "Finite local Galois tower and localreciprocity.",
+          "hypotheses": "M/K finiteGalois; F intermediate.",
+          "quantifiers": "Everyx inF*.",
+          "parameter_range": "Localfields and continuous finite quotient characters.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Arithmetic localArtin convention on both sides; first diagram ofIII Lemma3.2.",
+          "exceptional_cases": "Authornotes; displayedproof markedTo beadded, precedingIII3.1 givesRes/Cor compatibility. GlobalV3.3 is not thislocaldiagram.",
+          "limit_order": "Fix tower and projectlocalArtin maps to itsfinitequotients."
+        },
+        "needed_assertion": {
+          "statement": "For actual beta overF=L_v atp2, norm compatibility givesbeta^4=1 onunits, hence triviality onU_F^(3e+1).",
+          "objects": "Actualbeta²=chi, F/Q2 ande=v_F(2).",
+          "hypotheses": "F/Q2 Galois; localchi finite; non2 factors unramified and mod4 factor order<=2 onunits.",
+          "quantifiers": "Everyunitx inO_F*.",
+          "parameter_range": "Actualfinitecyclic characterfield anditscompositumwithF.",
+          "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+          "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+          "normalizations": "Compose thenormdiagramwithchi; normofunits isunit; logarithmdepth e+1.",
+          "exceptional_cases": "No assumptionchi globallyquadratic; useitsfinitecyclicfield. No[Lprime:Q]bound.",
+          "limit_order": "Firstnormidentity, thenbeta^4, thenlogarithm fourthpower identity andSerreunitrule."
+        },
+        "required_capabilities": [
+          "For actual beta overF=L_v atp2, norm compatibility givesbeta^4=1 onunits, hence triviality onU_F^(3e+1)."
+        ],
+        "available_capabilities": [
+          "In a finite local Galois tower M/F/K, local Artin maps commute with norm F*->K* and the inclusion-induced map Gal(M/F)^ab->Gal(M/K)^ab."
+        ],
+        "derived_capabilities": [
+          "For actual beta overF=L_v atp2, norm compatibility givesbeta^4=1 onunits, hence triviality onU_F^(3e+1)."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+              "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+            },
+            "start_line": 18,
+            "end_line": 19,
+            "excerpt_sha256": "7ed8989e890e634b43904dc732f4e989b72292b5f86e3abe7df607516cb23e25"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For actual beta overF=L_v atp2, norm compatibility givesbeta^4=1 onunits, hence triviality onU_F^(3e+1).",
+            "objects": "Actualbeta²=chi, F/Q2 ande=v_F(2).",
+            "hypotheses": "F/Q2 Galois; localchi finite; non2 factors unramified and mod4 factor order<=2 onunits.",
+            "quantifiers": "Everyunitx inO_F*.",
+            "parameter_range": "Actualfinitecyclic characterfield anditscompositumwithF.",
+            "uniformity": "Only the stated fields and representations; no additional family uniformity.",
+            "constants": "Exact structural identities; numerical consequences are stated separately in needed_assertion.",
+            "normalizations": "Compose thenormdiagramwithchi; normofunits isunit; logarithmdepth e+1.",
+            "exceptional_cases": "No assumptionchi globallyquadratic; useitsfinitecyclicfield. No[Lprime:Q]bound.",
+            "limit_order": "Firstnormidentity, thenbeta^4, thenlogarithm fourthpower identity andSerreunitrule."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No assumptionchi globallyquadratic; useitsfinitecyclicfield. No[Lprime:Q]bound.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+                "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+              },
+              "start_line": 15,
+              "end_line": 16,
+              "excerpt_sha256": "8e5e065f022785b41d8ee9a7293fc2337da52d0ea0f9042f0c943c01150c0377"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-local-source-inputs/SOURCE.md",
+                "sha256": "c72725d72bdeaf48b61e5937ba8389396fb72d694411a2ae296ef5428cdad011"
+              },
+              "start_line": 18,
+              "end_line": 19,
+              "excerpt_sha256": "7ed8989e890e634b43904dc732f4e989b72292b5f86e3abe7df607516cb23e25"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "research/version14/evidence/beta-quantitative-join-001/PROOF.md",
+                "sha256": "1507355cf3ed61363b362b6612afc4cf5396d3e07d88198da2d18ed48b9ce970"
+              },
+              "start_line": 43,
+              "end_line": 49,
+              "excerpt_sha256": "0f3b58d1f06999f2fe001b1a7753df96acf41e910cf5cb25796f1e3784b914e1"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/beta-quantitative-join-001/PROOF.md",
+              "sha256": "1507355cf3ed61363b362b6612afc4cf5396d3e07d88198da2d18ed48b9ce970"
+            },
+            "start_line": 43,
+            "end_line": 49,
+            "excerpt_sha256": "0f3b58d1f06999f2fe001b1a7753df96acf41e910cf5cb25796f1e3784b914e1"
+          }
+        ]
+      },
+      "retained_separate_inputs": [
+        "OriginalA/L anddegreebound",
+        "Actualbeta²=chi andramificationdata",
+        "Same-family Tate factors",
+        "Carayollevel identification"
+      ],
+      "origin": {
+        "mapping": "SUP-NOTE-008",
+        "review_reuse": "A012/A013 and accepted beta quantitative proof; normlocator corrected explicitly."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "decision": "accept_bounded_original_operation_provenance",
+  "subject_manifest_sha256": "00d0a0681c61d20c1378ea6f4af0d63ae9a412a25f78f8d80191d843220871a5",
+  "observations_sha256": "759b8a052d9e6271b456d29087d1b234f934f23b17c160846e889893105bc52c",
+  "checks": {
+    "manifest_members": 5,
+    "original_reference_reads": 8,
+    "operations": 2,
+    "artifact_manifests": 2,
+    "sealed_member_checks": 42,
+    "call_completion_context_session_identity_match": true
+  },
+  "observed_writer": {
+    "run_id": "01a1c4fe-793d-7103-a1d8-d121335baee4",
+    "agent_id": "01a1be26-cd38-7f40-81f1-898862820498",
+    "host_configured_model": "gpt-6-astra"
+  },
+  "artifacts": [
+    {
+      "path": "work/v15-222-serialization-author-001/assembled-preflight-004/MANIFEST.json",
+      "sha256": "ac5e899590fb349205454431943d5ea8979e4dea7bafb71723c690f2c566f957"
+    },
+    {
+      "path": "work/v15-222-serialization-author-001/assembled-preflight-005/MANIFEST.json",
+      "sha256": "1963ff053b0e4e3dd4da6c6a1148c0e3d16ac7746eb5c57cd85e13c104f84931"
+    }
+  ],
+  "scope": [
+    "004 establishes enumeration and sealing of existing candidate, not its prior generation.",
+    "005 records successful execution of existing join/index/findings/assembly scripts and sealing of its exact output.",
+    "Existing input and script contributors remain separate; this record adds the observed serializer operation only."
+  ],
+  "exclusions": [
+    "No mathematical approval, current target acknowledgment, authenticated controller event, provider attestation, or future-operation inference.",
+    "Raw host records and private scan files are not public distribution inputs."
+  ],
+  "reviewed_at": "2026-11-10T11:01:55.514Z"
+}

@@ -1,0 +1,296 @@
+{
+  "id": "V15-AGGREGATE",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      31342,
+      31636
+    ],
+    "excerpt_sha256": "7f13d4a170149c295fcb7ea57b9d9d227e806fe03e7d3b9e69ec6be3fbabbae8"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      32440,
+      32485
+    ],
+    "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+  },
+  "dependencies": [],
+  "retained_reviews": [
+    {
+      "key": "v15typing",
+      "path": "work/quartic-v15-238-20261110/premise-audit/typing-delta-review-002/REVIEW.json",
+      "sha256": "8d0492468bf531fb435d24d268a1b007f572e414692942c5f246504f667a7354",
+      "scope": "New238 argument and exact typing; inherited V14 foundation excluded.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "premise",
+      "path": "work/jose248-audit-20261109/238-premise-independent-001/REVIEW.json",
+      "sha256": "cffc7faa1fe9939f08a05c234b65b9cc1067138c083bbca4b13e122e9857cec6",
+      "scope": "Bounded V14-to-new-height/selection binding, including sign correction; aggregate application reused, not full re-audit.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Actual aggregate",
+      "required": "Supply a sum-height bound for four labels",
+      "constructed": "Use r=4 and F+=(d/2)ΣX_i+(d′/2)ΣX′_i on E0^8",
+      "match": "The actual consumer is a trace sum, not the odd-label product theorem.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31591,
+            31636
+          ],
+          "excerpt_sha256": "1aa2aa380e624f5ed98230638f469b1d938f06f7db100ae8dcda4083dea32859"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Within-block poles",
+      "required": "Exclude cancellation for arbitrary nonzero integer labels",
+      "constructed": "At a common pole the coefficient is λ_i^(−2)Σ_j w_j(n_i/n_j)² with positive rational weights",
+      "match": "This is nonzero without a parity restriction.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31342,
+            31386
+          ],
+          "excerpt_sha256": "61a3e6bbd9ee38aac334caabb58cbb2c64405a091f74e2c96dccc66f2b42cc70"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Cross-block independence",
+      "required": "Separate poles of the two conjugate blocks",
+      "constructed": "The squareclasses d,d′ are independent in K(i); an automorphism fixes P1 and negates P2 while fixing Z[i]",
+      "match": "A nontrivial endomorphism relation modulo torsion is excluded.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31518,
+            31590
+          ],
+          "excerpt_sha256": "6f4e3186dc8cfcb816ac5676656f895992743ebb8fd661dc2a4901c156237b92"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "No translate",
+      "required": "Exclude the exceptional abelian translates through the actual tuple",
+      "constructed": "Restrict to an elliptic subgroup direction; at least one block has an uncancelled pole",
+      "match": "Applies to all nonzero labels in the sum theorem.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31387,
+            31410
+          ],
+          "excerpt_sha256": "8df6e0cf70ce56b1c2cbdda1ebfb966eefc9bf64133608bef5a2b19f8c11b4dd"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Family object",
+      "required": "Match the published family-height input",
+      "constructed": "Take the projective graph closure in E0^8×P1 and a fixed finitely generated subgroup containing the linked four-label tuples",
+      "match": "The ambient family is not a transverse curve; no curve-only effective theorem is substituted.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31450,
+            31517
+          ],
+          "excerpt_sha256": "c91b6fcd775c27bcf4ee9b0371ddf81e5416605a3138a99a0b38be39d4c27556"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Boundary",
+      "required": "Handle graph-closure boundary components",
+      "constructed": "Any translate through the actual tuple meets the rational-function domain there and hence densely",
+      "match": "Constancy in the closed fiber would contradict the no-translate argument.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31482,
+            31517
+          ],
+          "excerpt_sha256": "af40aa2297ba710fabf8ae664071d7eff46facddb17e70aa4b0d1fc86e333bea"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Normalization",
+      "required": "Transfer canonical and logarithmic heights",
+      "constructed": "Use a symmetric ample product bundle, pointed curve isomorphisms and conjugation; account for the factor two in coordinate heights",
+      "match": "The change from half trace to quarter trace changes only fixed height constants.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31591,
+            31636
+          ],
+          "excerpt_sha256": "1aa2aa380e624f5ed98230638f469b1d938f06f7db100ae8dcda4083dea32859"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Effectivity",
+      "required": "Preserve the exact strength of the source theorem",
+      "constructed": "Von Buhren Theorem1.1 provides a geometric slope but no effective additive constant here",
+      "match": "B²≤M1*h(T)+M2 is sufficient; no numerical M2 or defining N0 is supplied.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31450,
+            31481
+          ],
+          "excerpt_sha256": "b999ce82da5241944c822e6ca81125e7902f3231133754fb6b9604c773658283"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Consumer",
+      "required": "Connect the four labels to the detector scale",
+      "constructed": "Q=[n]P,[a]P,[t]P,[b]P, B=max absolute label, T=quarter trace Σx(Q)",
+      "match": "The bound feeds scales 1,T and the 7/4 contact estimate; fixed constants do not depend on input labels.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31342,
+            31636
+          ],
+          "excerpt_sha256": "7f13d4a170149c295fcb7ea57b9d9d227e806fe03e7d3b9e69ec6be3fbabbae8"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            32440,
+            32485
+          ],
+          "excerpt_sha256": "b5798b5c1bae74cb7387c4f7172d4f58947672e0ac2a93cbc63bbcf8c8fefac2"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ],
+  "open_evidence": [
+    "Current-edition source-first verification of the exact published Von Buhren statement and its retained version remains pending; no new effective result is asserted."
+  ]
+}

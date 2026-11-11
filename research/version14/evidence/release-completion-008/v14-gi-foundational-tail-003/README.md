@@ -1,0 +1,1 @@
+The predecessor001 accidentally serialized an empty array because a persistent JavaScript helper captured an earlier variable binding. This successor binds the actual two records. Both reuse accepted core004 Section3; no published source is added.

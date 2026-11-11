@@ -1,0 +1,2787 @@
+[
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+      "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-DF-TAYLOR",
+      "consumer": "GI-05-DF",
+      "passages": [
+        "ACTIVE-GI-EXT-DF-TAYLOR-P1"
+      ],
+      "assertion": {
+        "statement": "The DF smooth-factor group Taylor convention is the ordered binomial coefficient convention, and the local coordinate argument transfers its positive-index O(N^-j) bounds without changing the right-coset periodicity requirement.",
+        "objects": "The one-variable smooth factor in a fixed rational filtered group, its Malcev and group Taylor coefficients.",
+        "hypotheses": "The fixed coordinate laws and smooth factor bounds are supplied by the separate GT12/GT08 application; this source supplies the Taylor representation convention.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+        "constants": "Positive coefficient j has O(N^-j); constant coefficient is only bounded, not small.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "No uniformity at O(N) affine offsets is inferred from B.9; that is the separate MF affine lemma.",
+        "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+      },
+      "classification": "dependency",
+      "reason": "Use the ordered Taylor convention. Quantitative coefficient comparison, rational overgroup and right-period proof remain local or separately sourced.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+            "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+        },
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma B.9 and Corollary B.10, pp.1337–1338",
+          "corrections": "B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6"
+        },
+        "start_line": 26,
+        "end_line": 95,
+        "excerpt_sha256": "091053a3fa677b905be974a81cce0e582f21a1d5f622c7cddc37c8df27a13354"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-DF-TAYLOR",
+      "use_sha256": "e3f802ea8b24d221827e9713708d820dd06028f2ceb0ddec6e104a456ae9580e",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "objects": "The multidegree filtration on Z^d, a finite-downset target G, an order extending the partial order on J, and a layerwise-surjective filtered map phi:Gprime to G.",
+        "hypotheses": "The actual target and lift filtrations satisfy the Appendix B hypotheses. The coefficient-lifting application checks surjectivity in every required layer.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "A constant coefficient is retained unless g(0)=1. The local uses check the central maximal-layer condition in their taut or shifted target; no unrestricted non-taut extension is inferred.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "needed_assertion": {
+        "statement": "The DF smooth-factor group Taylor convention is the ordered binomial coefficient convention, and the local coordinate argument transfers its positive-index O(N^-j) bounds without changing the right-coset periodicity requirement.",
+        "objects": "The one-variable smooth factor in a fixed rational filtered group, its Malcev and group Taylor coefficients.",
+        "hypotheses": "The fixed coordinate laws and smooth factor bounds are supplied by the separate GT12/GT08 application; this source supplies the Taylor representation convention.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+        "constants": "Positive coefficient j has O(N^-j); constant coefficient is only bounded, not small.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "No uniformity at O(N) affine offsets is inferred from B.9; that is the separate MF affine lemma.",
+        "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+      },
+      "required_capabilities": [
+        "The DF smooth-factor group Taylor convention is the ordered binomial coefficient convention, and the local coordinate argument transfers its positive-index O(N^-j) bounds without changing the right-coset periodicity requirement."
+      ],
+      "available_capabilities": [
+        "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients."
+      ],
+      "derived_capabilities": [
+        "The DF smooth-factor group Taylor convention is the ordered binomial coefficient convention, and the local coordinate argument transfers its positive-index O(N^-j) bounds without changing the right-coset periodicity requirement."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+            "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6"
+          },
+          "start_line": 181,
+          "end_line": 259,
+          "excerpt_sha256": "a77152784a526b7069f69453c5119da0d7463ceb2e302a94117f7e7c2e023e83"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The DF smooth-factor group Taylor convention is the ordered binomial coefficient convention, and the local coordinate argument transfers its positive-index O(N^-j) bounds without changing the right-coset periodicity requirement.",
+          "objects": "The one-variable smooth factor in a fixed rational filtered group, its Malcev and group Taylor coefficients.",
+          "hypotheses": "The fixed coordinate laws and smooth factor bounds are supplied by the separate GT12/GT08 application; this source supplies the Taylor representation convention.",
+          "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+          "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+          "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+          "constants": "Positive coefficient j has O(N^-j); constant coefficient is only bounded, not small.",
+          "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+          "exceptional_cases": "No uniformity at O(N) affine offsets is inferred from B.9; that is the separate MF affine lemma.",
+          "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Use the ordered Taylor convention. Quantitative coefficient comparison, rational overgroup and right-period proof remain local or separately sourced. B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+              "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+              "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6"
+            },
+            "start_line": 26,
+            "end_line": 95,
+            "excerpt_sha256": "091053a3fa677b905be974a81cce0e582f21a1d5f622c7cddc37c8df27a13354"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+              "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6"
+            },
+            "start_line": 181,
+            "end_line": 259,
+            "excerpt_sha256": "a77152784a526b7069f69453c5119da0d7463ceb2e302a94117f7e7c2e023e83"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+            "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6"
+          },
+          "start_line": 26,
+          "end_line": 95,
+          "excerpt_sha256": "091053a3fa677b905be974a81cce0e582f21a1d5f622c7cddc37c8df27a13354"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-DF-TAYLOR-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/05-gi-df/proof.tex",
+          "sha256": "0d59971c920c4bd9c81bb36679cc8af13f1ad5f08a26ffa14bc174bb1c44cfa6"
+        },
+        "start_line": 26,
+        "end_line": 95,
+        "excerpt_sha256": "091053a3fa677b905be974a81cce0e582f21a1d5f622c7cddc37c8df27a13354"
+      },
+      "claim_ids": [
+        "GI-05-DF"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-DF-TAYLOR"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+      "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-MF-TAYLOR",
+      "consumer": "GI-06-MF",
+      "passages": [
+        "ACTIVE-GI-EXT-MF-TAYLOR-P1"
+      ],
+      "assertion": {
+        "statement": "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction.",
+        "objects": "Multivariable smooth factors, product-binomial indices and fixed rational BCH coordinate laws.",
+        "hypotheses": "Coordinate polynomial bounds have already been proved in the preceding MF argument; finite downset filtration and actual polynomiality are checked.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+        "constants": "For each positive multi-index alpha the group Taylor coefficient is O(N^(-|alpha|)); the constant coefficient is only bounded.",
+        "normalizations": "Total weight |alpha| governs decay; bounded constant terms have weight zero.",
+        "exceptional_cases": "Separate degree in individual variables alone does not imply this estimate.",
+        "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+      },
+      "classification": "dependency",
+      "reason": "B.9 supplies the ordered extraction; the local weight-counting argument, not the source theorem alone, proves decay.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+            "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+        },
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma B.9 and Corollary B.10, pp.1337–1338",
+          "corrections": "B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+        },
+        "start_line": 179,
+        "end_line": 225,
+        "excerpt_sha256": "6f5c6bbe6be71f84802abdd1dc10a422b18ae0cb2f67a7fdb0094b74285ff862"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-MF-TAYLOR",
+      "use_sha256": "04032a3c843e5e7d54983a5d9bc99000675136ead76b177d9b58c77f250735bf",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "objects": "The multidegree filtration on Z^d, a finite-downset target G, an order extending the partial order on J, and a layerwise-surjective filtered map phi:Gprime to G.",
+        "hypotheses": "The actual target and lift filtrations satisfy the Appendix B hypotheses. The coefficient-lifting application checks surjectivity in every required layer.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "A constant coefficient is retained unless g(0)=1. The local uses check the central maximal-layer condition in their taut or shifted target; no unrestricted non-taut extension is inferred.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "needed_assertion": {
+        "statement": "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction.",
+        "objects": "Multivariable smooth factors, product-binomial indices and fixed rational BCH coordinate laws.",
+        "hypotheses": "Coordinate polynomial bounds have already been proved in the preceding MF argument; finite downset filtration and actual polynomiality are checked.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+        "constants": "For each positive multi-index alpha the group Taylor coefficient is O(N^(-|alpha|)); the constant coefficient is only bounded.",
+        "normalizations": "Total weight |alpha| governs decay; bounded constant terms have weight zero.",
+        "exceptional_cases": "Separate degree in individual variables alone does not imply this estimate.",
+        "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+      },
+      "required_capabilities": [
+        "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction."
+      ],
+      "available_capabilities": [
+        "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients."
+      ],
+      "derived_capabilities": [
+        "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 179,
+          "end_line": 225,
+          "excerpt_sha256": "6f5c6bbe6be71f84802abdd1dc10a422b18ae0cb2f67a7fdb0094b74285ff862"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction.",
+          "objects": "Multivariable smooth factors, product-binomial indices and fixed rational BCH coordinate laws.",
+          "hypotheses": "Coordinate polynomial bounds have already been proved in the preceding MF argument; finite downset filtration and actual polynomiality are checked.",
+          "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+          "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+          "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+          "constants": "For each positive multi-index alpha the group Taylor coefficient is O(N^(-|alpha|)); the constant coefficient is only bounded.",
+          "normalizations": "Total weight |alpha| governs decay; bounded constant terms have weight zero.",
+          "exceptional_cases": "Separate degree in individual variables alone does not imply this estimate.",
+          "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "B.9 supplies the ordered extraction; the local weight-counting argument, not the source theorem alone, proves decay. B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+              "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+              "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+            },
+            "start_line": 179,
+            "end_line": 225,
+            "excerpt_sha256": "6f5c6bbe6be71f84802abdd1dc10a422b18ae0cb2f67a7fdb0094b74285ff862"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 179,
+          "end_line": 225,
+          "excerpt_sha256": "6f5c6bbe6be71f84802abdd1dc10a422b18ae0cb2f67a7fdb0094b74285ff862"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-MF-TAYLOR-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+        },
+        "start_line": 179,
+        "end_line": 225,
+        "excerpt_sha256": "6f5c6bbe6be71f84802abdd1dc10a422b18ae0cb2f67a7fdb0094b74285ff862"
+      },
+      "claim_ids": [
+        "GI-06-MF"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-MF-TAYLOR"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-BCH-REAL-HULL.md",
+      "sha256": "dc8d0d916bac47948b9654e09b7211021cbcf18577e0fc33a20a7a5cb087caca"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-MF-BCH",
+      "consumer": "GI-06-MF",
+      "passages": [
+        "ACTIVE-GI-EXT-MF-BCH-P1"
+      ],
+      "assertion": {
+        "statement": "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction.",
+        "objects": "Multivariable smooth factors, product-binomial indices and fixed rational BCH coordinate laws.",
+        "hypotheses": "Coordinate polynomial bounds have already been proved in the preceding MF argument; finite downset filtration and actual polynomiality are checked.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+        "constants": "For each positive multi-index alpha the group Taylor coefficient is O(N^(-|alpha|)); the constant coefficient is only bounded.",
+        "normalizations": "Total weight |alpha| governs decay; bounded constant terms have weight zero.",
+        "exceptional_cases": "Separate degree in individual variables alone does not imply this estimate.",
+        "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+      },
+      "classification": "dependency",
+      "reason": "Finite rational BCH laws supply the coordinate operations. The weighted extraction and denominator-closed overgroup are local; periodicity uses the actual right-coset polynomial.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-BCH-REAL-HULL.md",
+            "sha256": "dc8d0d916bac47948b9654e09b7211021cbcf18577e0fc33a20a7a5cb087caca"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "c95a09d4e07dcd69d9e1042a30b2ae4ab6ddabcb53452f4f486ce61d62bd4bcb"
+        },
+        "statement": "A connected simply connected nilpotent Lie group has global exponential and logarithm coordinates and finite BCH identities. The real hull generated by A has Lie algebra generated by log A. For finite A the abstract subgroup generated by A is cocompact in its real hull, and is a lattice when discrete.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Section 3, pp.1242–1243",
+          "corrections": "This does not itself prove that every rational Lie subalgebra has cocompact intersection with a given lattice. The separate GT12 A.10 bridge and local rational-geometry proofs retain that obligation."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+        },
+        "start_line": 179,
+        "end_line": 245,
+        "excerpt_sha256": "1823fcb24737d91c440071ccf45a7b333c630f2ded402aa72e0b3960d5fd98a8"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-MF-BCH",
+      "use_sha256": "92c19ab4cc5cea97637060f95cf566c7bf3ae80576b2235a159a89c041438205",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "A connected simply connected nilpotent Lie group has global exponential and logarithm coordinates and finite BCH identities. The real hull generated by A has Lie algebra generated by log A. For finite A the abstract subgroup generated by A is cocompact in its real hull, and is a lattice when discrete.",
+        "objects": "A finite-dimensional connected simply connected nilpotent real Lie group, its Lie algebra, real powers and a finite subset A.",
+        "hypotheses": "Nilpotency and simple connectivity; finiteness of A for the cocompactness assertion; discreteness for a lattice.",
+        "quantifiers": "Every element and real power in the stated group; every finite generating set satisfying the stated conditions.",
+        "parameter_range": "Fixed finite nilpotency class and dimension.",
+        "uniformity": "Exact coordinate and subgroup statements; no uniform quantitative lattice bound over changing rational structures.",
+        "constants": "BCH has finitely many universal rational coefficients at fixed nilpotency class.",
+        "normalizations": "g^t=exp(t log g); real generation and abstract integer-word generation are distinguished.",
+        "exceptional_cases": "Real hull need not be discrete; discreteness is an additional premise for a lattice.",
+        "limit_order": "Construct the Lie algebra and real hull; prove the discrete lattice premise in the actual application."
+      },
+      "needed_assertion": {
+        "statement": "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction.",
+        "objects": "Multivariable smooth factors, product-binomial indices and fixed rational BCH coordinate laws.",
+        "hypotheses": "Coordinate polynomial bounds have already been proved in the preceding MF argument; finite downset filtration and actual polynomiality are checked.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+        "constants": "For each positive multi-index alpha the group Taylor coefficient is O(N^(-|alpha|)); the constant coefficient is only bounded.",
+        "normalizations": "Total weight |alpha| governs decay; bounded constant terms have weight zero.",
+        "exceptional_cases": "Separate degree in individual variables alone does not imply this estimate.",
+        "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+      },
+      "required_capabilities": [
+        "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction."
+      ],
+      "available_capabilities": [
+        "A connected simply connected nilpotent Lie group has global exponential and logarithm coordinates and finite BCH identities. The real hull generated by A has Lie algebra generated by log A. For finite A the abstract subgroup generated by A is cocompact in its real hull, and is a lattice when discrete."
+      ],
+      "derived_capabilities": [
+        "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 179,
+          "end_line": 245,
+          "excerpt_sha256": "1823fcb24737d91c440071ccf45a7b333c630f2ded402aa72e0b3960d5fd98a8"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The MF smooth-factor coordinate estimates imply group Taylor coefficient bounds O(N^(-|alpha|)) by the local weighted triangular extraction.",
+          "objects": "Multivariable smooth factors, product-binomial indices and fixed rational BCH coordinate laws.",
+          "hypotheses": "Coordinate polynomial bounds have already been proved in the preceding MF argument; finite downset filtration and actual polynomiality are checked.",
+          "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+          "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+          "uniformity": "A finite coefficient system depending only on the fixed filtration; bounds are justified by the local coordinate comparison.",
+          "constants": "For each positive multi-index alpha the group Taylor coefficient is O(N^(-|alpha|)); the constant coefficient is only bounded.",
+          "normalizations": "Total weight |alpha| governs decay; bounded constant terms have weight zero.",
+          "exceptional_cases": "Separate degree in individual variables alone does not imply this estimate.",
+          "limit_order": "Verify the adapted polynomial and coordinate hypotheses, perform ordered Taylor extraction, then apply the local weighted coefficient comparison."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Finite rational BCH laws supply the coordinate operations. The weighted extraction and denominator-closed overgroup are local; periodicity uses the actual right-coset polynomial. This does not itself prove that every rational Lie subalgebra has cocompact intersection with a given lattice. The separate GT12 A.10 bridge and local rational-geometry proofs retain that obligation.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-BCH-REAL-HULL.md",
+              "sha256": "dc8d0d916bac47948b9654e09b7211021cbcf18577e0fc33a20a7a5cb087caca"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "c95a09d4e07dcd69d9e1042a30b2ae4ab6ddabcb53452f4f486ce61d62bd4bcb"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+              "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+            },
+            "start_line": 179,
+            "end_line": 245,
+            "excerpt_sha256": "1823fcb24737d91c440071ccf45a7b333c630f2ded402aa72e0b3960d5fd98a8"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+            "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+          },
+          "start_line": 179,
+          "end_line": 245,
+          "excerpt_sha256": "1823fcb24737d91c440071ccf45a7b333c630f2ded402aa72e0b3960d5fd98a8"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-MF-BCH-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/06-gi-multifactor/proof.tex",
+          "sha256": "d367d70226c4e12f82447c22adb106c50d265ed07da49f4f7a233774dbdbe1b3"
+        },
+        "start_line": 179,
+        "end_line": 245,
+        "excerpt_sha256": "1823fcb24737d91c440071ccf45a7b333c630f2ded402aa72e0b3960d5fd98a8"
+      },
+      "claim_ids": [
+        "GI-06-MF"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-MF-BCH"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+      "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-S12-POLYNOMIAL",
+      "consumer": "GI-09-S12",
+      "passages": [
+        "ACTIVE-GI-EXT-S12-POLYNOMIAL-P1"
+      ],
+      "assertion": {
+        "statement": "The Section12 orbit O(h,n) is polynomial in the actual N^2-filtered semidirect product on all integer inputs.",
+        "objects": "The factors (0,g0(n),1), (0,1,g1(n)) and (alpha h,1,1), with the actual Section12 target filtration.",
+        "hypotheses": "Each factor and both N^2 filtrations have been checked in the local proof before product closure.",
+        "quantifiers": "All admissible filtration indices and all polynomial maps and directions in the stated groups.",
+        "parameter_range": "The filtered-group setting of Appendix B, including the finite degree, degree-rank and multidegree specializations only after their axioms are checked.",
+        "uniformity": "Exact polynomiality independent of h,n and orbit coefficients.",
+        "constants": "No analytic estimate or loss is asserted.",
+        "normalizations": "Keep the displayed order of multiplication; the h and n directions have their separate source indices.",
+        "exceptional_cases": "Negative integer increments and trivial factors are allowed. No possibly noncentral Taylor theorem is invoked for this check.",
+        "limit_order": "Verify the actual filtrations first, apply product/shifted closure, then compute the indicated quotient errors."
+      },
+      "classification": "dependency",
+      "reason": "This is the explicit sole external polynomial-product use in this join. One-parameter factors are checked by direct differences before applying B.4.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+            "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "036b735ec5a7923b06b9f23c1b10f20a657d0b4b03c2d74610bbf2043b397b0b"
+        },
+        "statement": "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Corollary B.4, Proposition B.6 and Corollary B.7, pp.1334–1336",
+          "corrections": "Horizontal Taylor homomorphisms, translation invariance modulo rank errors, and derivative convention changes are local deductions in the consuming proofs. This source does not supply those conclusions without the relevant quotient calculation."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/09-gi-section12/proof.tex",
+          "sha256": "23f16a5fa80935d0888404ac61f1a69792a5543e265a392782fbd5558a5cecbb"
+        },
+        "start_line": 282,
+        "end_line": 315,
+        "excerpt_sha256": "edf345edce0f6a86c9cd65f57a3571845e728cfa027c64155d10c71bea8bf97f"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S12-POLYNOMIAL",
+      "use_sha256": "3bdc7e08a895df0eb8f5d4d956571aff64ac1e0920bb5d503b2f71dafc9d0c71",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group.",
+        "objects": "I-filtered groups H,G; P_i=poly(H to G^{+i}); difference operators and the quotient by P_{i+j+k} or P_{i+k+l}.",
+        "hypotheses": "The index system and all source, target and shifted filtrations satisfy the hypotheses of Appendix B; direction h_k lies in H_k. Commutation of the two first differences in B.7 additionally uses an abelian domain.",
+        "quantifiers": "All admissible filtration indices and all polynomial maps and directions in the stated groups.",
+        "parameter_range": "The filtered-group setting of Appendix B, including the finite degree, degree-rank and multidegree specializations only after their axioms are checked.",
+        "uniformity": "Exact group identities, independent of polynomial coefficients or any interval length.",
+        "constants": "No analytic estimate or loss is asserted.",
+        "normalizations": "Use the published difference convention consistently; products retain their order. P_i brackets with P_j into P_{i+j}.",
+        "exceptional_cases": "No arbitrary Taylor factors are asserted to commute. The printed malformed codomain in B.5 is not imported.",
+        "limit_order": "Verify the actual filtrations first, apply product/shifted closure, then compute the indicated quotient errors."
+      },
+      "needed_assertion": {
+        "statement": "The Section12 orbit O(h,n) is polynomial in the actual N^2-filtered semidirect product on all integer inputs.",
+        "objects": "The factors (0,g0(n),1), (0,1,g1(n)) and (alpha h,1,1), with the actual Section12 target filtration.",
+        "hypotheses": "Each factor and both N^2 filtrations have been checked in the local proof before product closure.",
+        "quantifiers": "All admissible filtration indices and all polynomial maps and directions in the stated groups.",
+        "parameter_range": "The filtered-group setting of Appendix B, including the finite degree, degree-rank and multidegree specializations only after their axioms are checked.",
+        "uniformity": "Exact polynomiality independent of h,n and orbit coefficients.",
+        "constants": "No analytic estimate or loss is asserted.",
+        "normalizations": "Keep the displayed order of multiplication; the h and n directions have their separate source indices.",
+        "exceptional_cases": "Negative integer increments and trivial factors are allowed. No possibly noncentral Taylor theorem is invoked for this check.",
+        "limit_order": "Verify the actual filtrations first, apply product/shifted closure, then compute the indicated quotient errors."
+      },
+      "required_capabilities": [
+        "The Section12 orbit O(h,n) is polynomial in the actual N^2-filtered semidirect product on all integer inputs."
+      ],
+      "available_capabilities": [
+        "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group."
+      ],
+      "derived_capabilities": [
+        "The Section12 orbit O(h,n) is polynomial in the actual N^2-filtered semidirect product on all integer inputs."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/09-gi-section12/proof.tex",
+            "sha256": "23f16a5fa80935d0888404ac61f1a69792a5543e265a392782fbd5558a5cecbb"
+          },
+          "start_line": 282,
+          "end_line": 315,
+          "excerpt_sha256": "edf345edce0f6a86c9cd65f57a3571845e728cfa027c64155d10c71bea8bf97f"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The Section12 orbit O(h,n) is polynomial in the actual N^2-filtered semidirect product on all integer inputs.",
+          "objects": "The factors (0,g0(n),1), (0,1,g1(n)) and (alpha h,1,1), with the actual Section12 target filtration.",
+          "hypotheses": "Each factor and both N^2 filtrations have been checked in the local proof before product closure.",
+          "quantifiers": "All admissible filtration indices and all polynomial maps and directions in the stated groups.",
+          "parameter_range": "The filtered-group setting of Appendix B, including the finite degree, degree-rank and multidegree specializations only after their axioms are checked.",
+          "uniformity": "Exact polynomiality independent of h,n and orbit coefficients.",
+          "constants": "No analytic estimate or loss is asserted.",
+          "normalizations": "Keep the displayed order of multiplication; the h and n directions have their separate source indices.",
+          "exceptional_cases": "Negative integer increments and trivial factors are allowed. No possibly noncentral Taylor theorem is invoked for this check.",
+          "limit_order": "Verify the actual filtrations first, apply product/shifted closure, then compute the indicated quotient errors."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "This is the explicit sole external polynomial-product use in this join. One-parameter factors are checked by direct differences before applying B.4. Horizontal Taylor homomorphisms, translation invariance modulo rank errors, and derivative convention changes are local deductions in the consuming proofs. This source does not supply those conclusions without the relevant quotient calculation.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+              "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "036b735ec5a7923b06b9f23c1b10f20a657d0b4b03c2d74610bbf2043b397b0b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/09-gi-section12/proof.tex",
+              "sha256": "23f16a5fa80935d0888404ac61f1a69792a5543e265a392782fbd5558a5cecbb"
+            },
+            "start_line": 282,
+            "end_line": 315,
+            "excerpt_sha256": "edf345edce0f6a86c9cd65f57a3571845e728cfa027c64155d10c71bea8bf97f"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/09-gi-section12/proof.tex",
+            "sha256": "23f16a5fa80935d0888404ac61f1a69792a5543e265a392782fbd5558a5cecbb"
+          },
+          "start_line": 282,
+          "end_line": 315,
+          "excerpt_sha256": "edf345edce0f6a86c9cd65f57a3571845e728cfa027c64155d10c71bea8bf97f"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S12-POLYNOMIAL-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/09-gi-section12/proof.tex",
+          "sha256": "23f16a5fa80935d0888404ac61f1a69792a5543e265a392782fbd5558a5cecbb"
+        },
+        "start_line": 282,
+        "end_line": 315,
+        "excerpt_sha256": "edf345edce0f6a86c9cd65f57a3571845e728cfa027c64155d10c71bea8bf97f"
+      },
+      "claim_ids": [
+        "GI-09-S12"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S12-POLYNOMIAL"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+      "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-RANK-DIAGONAL-TAYLOR",
+      "consumer": "GI-10-RANK",
+      "passages": [
+        "ACTIVE-GI-EXT-RANK-DIAGONAL-TAYLOR-P1"
+      ],
+      "assertion": {
+        "statement": "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top.",
+        "objects": "K_i generated by G_a for |a|>=i, diagonal Taylor factors and fixed rational quotient geometry.",
+        "hypotheses": "Finite downset J, rational multidegree filtration and normalized taut ambient group.",
+        "quantifiers": "All indices i and all diagonal polynomial orbits; all coordinate increments in the source Taylor formula.",
+        "parameter_range": "D=max|a| over J; for rectangle a<=d, unique total top is d.",
+        "uniformity": "No dependence on coefficients or interval size; bounds depend only on the fixed geometry.",
+        "constants": "Exact identity; no scalar or correlation loss.",
+        "normalizations": "Use descending |a|>=i, not the printed ascending restriction. Coefficient u_a lies in K_|a|.",
+        "exceptional_cases": "For a general nonrectangular downset no common top-character conclusion is asserted.",
+        "limit_order": "Prove group/lattice filtration, identify Taylor factors, then apply polynomial product closure."
+      },
+      "classification": "dependency",
+      "reason": "The local total-weight calculation specializes multidegree Taylor factors to the diagonal and checks the resulting ordinary filtration; rectangular top-character preservation is local.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+            "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+        },
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma B.9 and Corollary B.10, pp.1337–1338",
+          "corrections": "B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+          "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+        },
+        "start_line": 94,
+        "end_line": 136,
+        "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-RANK-DIAGONAL-TAYLOR",
+      "use_sha256": "46769cbd270ebcf11d7dc6432dce366bec0e339fb2d3744e9f73c30cd8a67f6c",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "objects": "The multidegree filtration on Z^d, a finite-downset target G, an order extending the partial order on J, and a layerwise-surjective filtered map phi:Gprime to G.",
+        "hypotheses": "The actual target and lift filtrations satisfy the Appendix B hypotheses. The coefficient-lifting application checks surjectivity in every required layer.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "A constant coefficient is retained unless g(0)=1. The local uses check the central maximal-layer condition in their taut or shifted target; no unrestricted non-taut extension is inferred.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "needed_assertion": {
+        "statement": "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top.",
+        "objects": "K_i generated by G_a for |a|>=i, diagonal Taylor factors and fixed rational quotient geometry.",
+        "hypotheses": "Finite downset J, rational multidegree filtration and normalized taut ambient group.",
+        "quantifiers": "All indices i and all diagonal polynomial orbits; all coordinate increments in the source Taylor formula.",
+        "parameter_range": "D=max|a| over J; for rectangle a<=d, unique total top is d.",
+        "uniformity": "No dependence on coefficients or interval size; bounds depend only on the fixed geometry.",
+        "constants": "Exact identity; no scalar or correlation loss.",
+        "normalizations": "Use descending |a|>=i, not the printed ascending restriction. Coefficient u_a lies in K_|a|.",
+        "exceptional_cases": "For a general nonrectangular downset no common top-character conclusion is asserted.",
+        "limit_order": "Prove group/lattice filtration, identify Taylor factors, then apply polynomial product closure."
+      },
+      "required_capabilities": [
+        "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top."
+      ],
+      "available_capabilities": [
+        "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients."
+      ],
+      "derived_capabilities": [
+        "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+            "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+          },
+          "start_line": 94,
+          "end_line": 136,
+          "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top.",
+          "objects": "K_i generated by G_a for |a|>=i, diagonal Taylor factors and fixed rational quotient geometry.",
+          "hypotheses": "Finite downset J, rational multidegree filtration and normalized taut ambient group.",
+          "quantifiers": "All indices i and all diagonal polynomial orbits; all coordinate increments in the source Taylor formula.",
+          "parameter_range": "D=max|a| over J; for rectangle a<=d, unique total top is d.",
+          "uniformity": "No dependence on coefficients or interval size; bounds depend only on the fixed geometry.",
+          "constants": "Exact identity; no scalar or correlation loss.",
+          "normalizations": "Use descending |a|>=i, not the printed ascending restriction. Coefficient u_a lies in K_|a|.",
+          "exceptional_cases": "For a general nonrectangular downset no common top-character conclusion is asserted.",
+          "limit_order": "Prove group/lattice filtration, identify Taylor factors, then apply polynomial product closure."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The local total-weight calculation specializes multidegree Taylor factors to the diagonal and checks the resulting ordinary filtration; rectangular top-character preservation is local. B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+              "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+              "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+            },
+            "start_line": 94,
+            "end_line": 136,
+            "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+            "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+          },
+          "start_line": 94,
+          "end_line": 136,
+          "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-RANK-DIAGONAL-TAYLOR-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+          "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+        },
+        "start_line": 94,
+        "end_line": 136,
+        "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+      },
+      "claim_ids": [
+        "GI-10-RANK"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-RANK-DIAGONAL-TAYLOR"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+      "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-RANK-DIAGONAL-PRODUCT",
+      "consumer": "GI-10-RANK",
+      "passages": [
+        "ACTIVE-GI-EXT-RANK-DIAGONAL-PRODUCT-P1"
+      ],
+      "assertion": {
+        "statement": "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top.",
+        "objects": "K_i generated by G_a for |a|>=i, diagonal Taylor factors and fixed rational quotient geometry.",
+        "hypotheses": "Finite downset J, rational multidegree filtration and normalized taut ambient group.",
+        "quantifiers": "All indices i and all diagonal polynomial orbits; all coordinate increments in the source Taylor formula.",
+        "parameter_range": "D=max|a| over J; for rectangle a<=d, unique total top is d.",
+        "uniformity": "No dependence on coefficients or interval size; bounds depend only on the fixed geometry.",
+        "constants": "Exact identity; no scalar or correlation loss.",
+        "normalizations": "Use descending |a|>=i, not the printed ascending restriction. Coefficient u_a lies in K_|a|.",
+        "exceptional_cases": "For a general nonrectangular downset no common top-character conclusion is asserted.",
+        "limit_order": "Prove group/lattice filtration, identify Taylor factors, then apply polynomial product closure."
+      },
+      "classification": "dependency",
+      "reason": "Each diagonal scalar factor is checked at its total weight, then B.4 multiplies them. No general equality between multidegree and degree-rank is assumed.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+            "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "036b735ec5a7923b06b9f23c1b10f20a657d0b4b03c2d74610bbf2043b397b0b"
+        },
+        "statement": "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Corollary B.4, Proposition B.6 and Corollary B.7, pp.1334–1336",
+          "corrections": "Horizontal Taylor homomorphisms, translation invariance modulo rank errors, and derivative convention changes are local deductions in the consuming proofs. This source does not supply those conclusions without the relevant quotient calculation."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+          "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+        },
+        "start_line": 94,
+        "end_line": 136,
+        "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-RANK-DIAGONAL-PRODUCT",
+      "use_sha256": "cad4dd63f875d21b6fe0ca4441379a4061bcb90e76a12830399945c9c79c1641",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group.",
+        "objects": "I-filtered groups H,G; P_i=poly(H to G^{+i}); difference operators and the quotient by P_{i+j+k} or P_{i+k+l}.",
+        "hypotheses": "The index system and all source, target and shifted filtrations satisfy the hypotheses of Appendix B; direction h_k lies in H_k. Commutation of the two first differences in B.7 additionally uses an abelian domain.",
+        "quantifiers": "All admissible filtration indices and all polynomial maps and directions in the stated groups.",
+        "parameter_range": "The filtered-group setting of Appendix B, including the finite degree, degree-rank and multidegree specializations only after their axioms are checked.",
+        "uniformity": "Exact group identities, independent of polynomial coefficients or any interval length.",
+        "constants": "No analytic estimate or loss is asserted.",
+        "normalizations": "Use the published difference convention consistently; products retain their order. P_i brackets with P_j into P_{i+j}.",
+        "exceptional_cases": "No arbitrary Taylor factors are asserted to commute. The printed malformed codomain in B.5 is not imported.",
+        "limit_order": "Verify the actual filtrations first, apply product/shifted closure, then compute the indicated quotient errors."
+      },
+      "needed_assertion": {
+        "statement": "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top.",
+        "objects": "K_i generated by G_a for |a|>=i, diagonal Taylor factors and fixed rational quotient geometry.",
+        "hypotheses": "Finite downset J, rational multidegree filtration and normalized taut ambient group.",
+        "quantifiers": "All indices i and all diagonal polynomial orbits; all coordinate increments in the source Taylor formula.",
+        "parameter_range": "D=max|a| over J; for rectangle a<=d, unique total top is d.",
+        "uniformity": "No dependence on coefficients or interval size; bounds depend only on the fixed geometry.",
+        "constants": "Exact identity; no scalar or correlation loss.",
+        "normalizations": "Use descending |a|>=i, not the printed ascending restriction. Coefficient u_a lies in K_|a|.",
+        "exceptional_cases": "For a general nonrectangular downset no common top-character conclusion is asserted.",
+        "limit_order": "Prove group/lattice filtration, identify Taylor factors, then apply polynomial product closure."
+      },
+      "required_capabilities": [
+        "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top."
+      ],
+      "available_capabilities": [
+        "Polynomial maps between the stated I-filtered groups form a group under pointwise operations. The groups of maps into shifted target filtrations form a filtration. Differences of products, and differences in products of directions, are additive modulo the specified deeper commutator-error group."
+      ],
+      "derived_capabilities": [
+        "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+            "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+          },
+          "start_line": 94,
+          "end_line": 136,
+          "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "A multidegree nilsequence restricted to the diagonal has ordinary degree at most the largest total weight; rectangular top characters retain their exact top.",
+          "objects": "K_i generated by G_a for |a|>=i, diagonal Taylor factors and fixed rational quotient geometry.",
+          "hypotheses": "Finite downset J, rational multidegree filtration and normalized taut ambient group.",
+          "quantifiers": "All indices i and all diagonal polynomial orbits; all coordinate increments in the source Taylor formula.",
+          "parameter_range": "D=max|a| over J; for rectangle a<=d, unique total top is d.",
+          "uniformity": "No dependence on coefficients or interval size; bounds depend only on the fixed geometry.",
+          "constants": "Exact identity; no scalar or correlation loss.",
+          "normalizations": "Use descending |a|>=i, not the printed ascending restriction. Coefficient u_a lies in K_|a|.",
+          "exceptional_cases": "For a general nonrectangular downset no common top-character conclusion is asserted.",
+          "limit_order": "Prove group/lattice filtration, identify Taylor factors, then apply polynomial product closure."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Each diagonal scalar factor is checked at its total weight, then B.4 multiplies them. No general equality between multidegree and degree-rank is assumed. Horizontal Taylor homomorphisms, translation invariance modulo rank errors, and derivative convention changes are local deductions in the consuming proofs. This source does not supply those conclusions without the relevant quotient calculation.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-POLYNOMIAL-GROUP.md",
+              "sha256": "bac77ae0d4277d01acfd1b2a234f11a5f79e7b7c522de488e37c74fab857f79e"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "036b735ec5a7923b06b9f23c1b10f20a657d0b4b03c2d74610bbf2043b397b0b"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+              "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+            },
+            "start_line": 94,
+            "end_line": 136,
+            "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+            "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+          },
+          "start_line": 94,
+          "end_line": 136,
+          "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-RANK-DIAGONAL-PRODUCT-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+          "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+        },
+        "start_line": 94,
+        "end_line": 136,
+        "excerpt_sha256": "5f73c56d0dd9906cc9a3c38dfff18cf3880f65737ffe06e238dfcca62d8a5e02"
+      },
+      "claim_ids": [
+        "GI-10-RANK"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-RANK-DIAGONAL-PRODUCT"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+      "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-ASSEMBLY-SPLITTING-LIFT",
+      "consumer": "GI-00-ASSEMBLY",
+      "passages": [
+        "ACTIVE-GI-EXT-ASSEMBLY-SPLITTING-LIFT-P1"
+      ],
+      "assertion": {
+        "statement": "The normalized polynomial in the actual two-downset splitting lemma lifts to the locally constructed Hall quotient, projecting exactly to the original polynomial.",
+        "objects": "The local universal group U, its lattice Lambda, filtered map phi and lifted ordered Taylor coefficients.",
+        "hypotheses": "The Hall lattice and filtered map have already been constructed; the map is onto each layer from its chosen lattice generators.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "phi composed with gtilde equals g; the test is pulled back without altering values.",
+        "exceptional_cases": "Trivial positive groups give a constant sequence. Underlying-group surjectivity without layerwise surjectivity would not suffice.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "classification": "dependency",
+      "reason": "The local Hall-coordinate proof supplies the exact quotient lattice and each-layer surjectivity; B.9 forms the lifted polynomial from the chosen coefficients.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+            "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+        },
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma B.9 and Corollary B.10, pp.1337–1338",
+          "corrections": "B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+          "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+        },
+        "start_line": 337,
+        "end_line": 360,
+        "excerpt_sha256": "d273ec6d684805c6b3892bca9ad64de4d7b32825c5dcaa7511cd39de257cd536"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-ASSEMBLY-SPLITTING-LIFT",
+      "use_sha256": "179d835e658692c5ff4a2a415e30440f04c894a8b9c5f87d13a014dfe325041b",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "objects": "The multidegree filtration on Z^d, a finite-downset target G, an order extending the partial order on J, and a layerwise-surjective filtered map phi:Gprime to G.",
+        "hypotheses": "The actual target and lift filtrations satisfy the Appendix B hypotheses. The coefficient-lifting application checks surjectivity in every required layer.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "A constant coefficient is retained unless g(0)=1. The local uses check the central maximal-layer condition in their taut or shifted target; no unrestricted non-taut extension is inferred.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "needed_assertion": {
+        "statement": "The normalized polynomial in the actual two-downset splitting lemma lifts to the locally constructed Hall quotient, projecting exactly to the original polynomial.",
+        "objects": "The local universal group U, its lattice Lambda, filtered map phi and lifted ordered Taylor coefficients.",
+        "hypotheses": "The Hall lattice and filtered map have already been constructed; the map is onto each layer from its chosen lattice generators.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "phi composed with gtilde equals g; the test is pulled back without altering values.",
+        "exceptional_cases": "Trivial positive groups give a constant sequence. Underlying-group surjectivity without layerwise surjectivity would not suffice.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "required_capabilities": [
+        "The normalized polynomial in the actual two-downset splitting lemma lifts to the locally constructed Hall quotient, projecting exactly to the original polynomial."
+      ],
+      "available_capabilities": [
+        "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients."
+      ],
+      "derived_capabilities": [
+        "The normalized polynomial in the actual two-downset splitting lemma lifts to the locally constructed Hall quotient, projecting exactly to the original polynomial."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+            "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+          },
+          "start_line": 337,
+          "end_line": 360,
+          "excerpt_sha256": "d273ec6d684805c6b3892bca9ad64de4d7b32825c5dcaa7511cd39de257cd536"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The normalized polynomial in the actual two-downset splitting lemma lifts to the locally constructed Hall quotient, projecting exactly to the original polynomial.",
+          "objects": "The local universal group U, its lattice Lambda, filtered map phi and lifted ordered Taylor coefficients.",
+          "hypotheses": "The Hall lattice and filtered map have already been constructed; the map is onto each layer from its chosen lattice generators.",
+          "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+          "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+          "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+          "constants": "Exact algebraic equality, without approximation.",
+          "normalizations": "phi composed with gtilde equals g; the test is pulled back without altering values.",
+          "exceptional_cases": "Trivial positive groups give a constant sequence. Underlying-group surjectivity without layerwise surjectivity would not suffice.",
+          "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The local Hall-coordinate proof supplies the exact quotient lattice and each-layer surjectivity; B.9 forms the lifted polynomial from the chosen coefficients. B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+              "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+              "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+            },
+            "start_line": 337,
+            "end_line": 360,
+            "excerpt_sha256": "d273ec6d684805c6b3892bca9ad64de4d7b32825c5dcaa7511cd39de257cd536"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+            "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+          },
+          "start_line": 337,
+          "end_line": 360,
+          "excerpt_sha256": "d273ec6d684805c6b3892bca9ad64de4d7b32825c5dcaa7511cd39de257cd536"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-ASSEMBLY-SPLITTING-LIFT-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+          "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+        },
+        "start_line": 337,
+        "end_line": 360,
+        "excerpt_sha256": "d273ec6d684805c6b3892bca9ad64de4d7b32825c5dcaa7511cd39de257cd536"
+      },
+      "claim_ids": [
+        "GI-00-ASSEMBLY"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-ASSEMBLY-SPLITTING-LIFT"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+      "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-S911-TAYLOR",
+      "consumer": "GI-07-S9-11",
+      "passages": [
+        "ACTIVE-GI-EXT-S911-TAYLOR-P1"
+      ],
+      "assertion": {
+        "statement": "Polynomial maps are closed under pointwise products; iterated differences are additive modulo the indicated commutator-error filtration. Horizontal Taylor maps are homomorphisms and translation invariant.",
+        "objects": "DR-filtered group, ordinary integer polynomial domain, G_(i,1)/G_(i,2), binomial factors c^(n choose i).",
+        "hypotheses": "Same indexing filtration for product closure; all group commutator inclusions; taut normalized ambient representation.",
+        "quantifiers": "All polynomial maps, all integer translates and all iterated differences; every positive weight i.",
+        "parameter_range": "Arbitrary internal coefficients; finitely supported degree m; negative increments allowed.",
+        "uniformity": "Exact algebraic identities; no coefficient estimates are inferred from product closure.",
+        "constants": "Horizontal error terms have rank at least2 or weight above i; the sole i-th horizontal coefficient of the binomial factor is c.",
+        "normalizations": "Taylori lives in the finer DR horizontal quotient; constant translates do not alter it.",
+        "exceptional_cases": "No commutativity of arbitrary Taylor coefficients, no B.9 centrality claim and no malformed B.5 codomain are imported.",
+        "limit_order": "Prove the standard group identities first; use the natural internal extensions for families."
+      },
+      "classification": "dependency",
+      "reason": "Taylor coordinates define the horizontal coefficients. The separate B.7 quotient calculation supplies additivity and translation invariance; no commutativity of all Taylor factors is asserted.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+            "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+        },
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma B.9 and Corollary B.10, pp.1337–1338",
+          "corrections": "B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+        },
+        "start_line": 157,
+        "end_line": 180,
+        "excerpt_sha256": "14530510f6fd69c5a611e6cb6d4ca6cae5fb9fb6a3894c80db649275cb428a6d"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S911-TAYLOR",
+      "use_sha256": "9b68e244cddb8d01c33bf621fdf4fc065c42b4989b433e8b324e9339d2d7c09e",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients.",
+        "objects": "The multidegree filtration on Z^d, a finite-downset target G, an order extending the partial order on J, and a layerwise-surjective filtered map phi:Gprime to G.",
+        "hypotheses": "The actual target and lift filtrations satisfy the Appendix B hypotheses. The coefficient-lifting application checks surjectivity in every required layer.",
+        "quantifiers": "Every adapted polynomial map; every integer input, including negative coordinates; each fixed compatible Taylor order.",
+        "parameter_range": "Finite standard dimension and downset; coefficients need not be bounded.",
+        "uniformity": "One finite coefficient list fixed by J. No coefficient-size bound is claimed.",
+        "constants": "Exact algebraic equality, without approximation.",
+        "normalizations": "Ordered product g(n)=product_j g_j^{binom(n,j)}. The lift identity is phi composed with gprime equals g.",
+        "exceptional_cases": "A constant coefficient is retained unless g(0)=1. The local uses check the central maximal-layer condition in their taut or shifted target; no unrestricted non-taut extension is inferred.",
+        "limit_order": "Check filtration and layer surjectivity, lift coefficients, then form the ordered product."
+      },
+      "needed_assertion": {
+        "statement": "Polynomial maps are closed under pointwise products; iterated differences are additive modulo the indicated commutator-error filtration. Horizontal Taylor maps are homomorphisms and translation invariant.",
+        "objects": "DR-filtered group, ordinary integer polynomial domain, G_(i,1)/G_(i,2), binomial factors c^(n choose i).",
+        "hypotheses": "Same indexing filtration for product closure; all group commutator inclusions; taut normalized ambient representation.",
+        "quantifiers": "All polynomial maps, all integer translates and all iterated differences; every positive weight i.",
+        "parameter_range": "Arbitrary internal coefficients; finitely supported degree m; negative increments allowed.",
+        "uniformity": "Exact algebraic identities; no coefficient estimates are inferred from product closure.",
+        "constants": "Horizontal error terms have rank at least2 or weight above i; the sole i-th horizontal coefficient of the binomial factor is c.",
+        "normalizations": "Taylori lives in the finer DR horizontal quotient; constant translates do not alter it.",
+        "exceptional_cases": "No commutativity of arbitrary Taylor coefficients, no B.9 centrality claim and no malformed B.5 codomain are imported.",
+        "limit_order": "Prove the standard group identities first; use the natural internal extensions for families."
+      },
+      "required_capabilities": [
+        "Polynomial maps are closed under pointwise products; iterated differences are additive modulo the indicated commutator-error filtration. Horizontal Taylor maps are homomorphisms and translation invariant."
+      ],
+      "available_capabilities": [
+        "For a finite downset J in N^d and an adapted polynomial map from Z^d, there is a unique ordered product of binomial monomials with coefficient g_j in G_j. A filtered homomorphism surjective on every layer permits lifting such a polynomial map by lifting its Taylor coefficients."
+      ],
+      "derived_capabilities": [
+        "Polynomial maps are closed under pointwise products; iterated differences are additive modulo the indicated commutator-error filtration. Horizontal Taylor maps are homomorphisms and translation invariant."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+            "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+          },
+          "start_line": 157,
+          "end_line": 180,
+          "excerpt_sha256": "14530510f6fd69c5a611e6cb6d4ca6cae5fb9fb6a3894c80db649275cb428a6d"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "Polynomial maps are closed under pointwise products; iterated differences are additive modulo the indicated commutator-error filtration. Horizontal Taylor maps are homomorphisms and translation invariant.",
+          "objects": "DR-filtered group, ordinary integer polynomial domain, G_(i,1)/G_(i,2), binomial factors c^(n choose i).",
+          "hypotheses": "Same indexing filtration for product closure; all group commutator inclusions; taut normalized ambient representation.",
+          "quantifiers": "All polynomial maps, all integer translates and all iterated differences; every positive weight i.",
+          "parameter_range": "Arbitrary internal coefficients; finitely supported degree m; negative increments allowed.",
+          "uniformity": "Exact algebraic identities; no coefficient estimates are inferred from product closure.",
+          "constants": "Horizontal error terms have rank at least2 or weight above i; the sole i-th horizontal coefficient of the binomial factor is c.",
+          "normalizations": "Taylori lives in the finer DR horizontal quotient; constant translates do not alter it.",
+          "exceptional_cases": "No commutativity of arbitrary Taylor coefficients, no B.9 centrality claim and no malformed B.5 codomain are imported.",
+          "limit_order": "Prove the standard group identities first; use the natural internal extensions for families."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Taylor coordinates define the horizontal coefficients. The separate B.7 quotient calculation supplies additivity and translation invariance; no commutativity of all Taylor factors is asserted. B.10 prints the composition in the wrong order; the coefficient proof gives phi(gprime(n))=g(n). Binomial-to-monomial conversion, cube specialization, diagonal degree bounds, and the finite-dimensional Lie-polynomial model are proved locally, not asserted as the literal published theorem.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-TAYLOR-LIFT.md",
+              "sha256": "8640e518dfbe65512c3130033fa97bf63312991c1130427118b10a66df0dd099"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "d646a89778fbea8e87c70acb68d5994dd2225168519e9bbbb858686791e149c9"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+              "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+            },
+            "start_line": 157,
+            "end_line": 180,
+            "excerpt_sha256": "14530510f6fd69c5a611e6cb6d4ca6cae5fb9fb6a3894c80db649275cb428a6d"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+            "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+          },
+          "start_line": 157,
+          "end_line": 180,
+          "excerpt_sha256": "14530510f6fd69c5a611e6cb6d4ca6cae5fb9fb6a3894c80db649275cb428a6d"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S911-TAYLOR-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+        },
+        "start_line": 157,
+        "end_line": 180,
+        "excerpt_sha256": "14530510f6fd69c5a611e6cb6d4ca6cae5fb9fb6a3894c80db649275cb428a6d"
+      },
+      "claim_ids": [
+        "GI-07-S9-11"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S911-TAYLOR"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+      "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-S911-INTERNAL-CHOICE",
+      "consumer": "GI-07-S9-11",
+      "passages": [
+        "ACTIVE-GI-EXT-S911-INTERNAL-CHOICE-P1"
+      ],
+      "assertion": {
+        "statement": "The actual increasing internal witness stages in Section9–11 admit internal choices within a common standard stage; the nested almost-all selection uses the stated finite-intersection construction.",
+        "objects": "Internal parameter families, standard-stage structural witnesses and nested internal bad sets.",
+        "hypotheses": "The witness family is an actual increasing internal sequence, with pointwise standard-stage witnesses. For the almost-all use, the bad sets B_k are increasing and each standard B_k has infinitesimal relative size.",
+        "quantifiers": "Every x in X, selected simultaneously by one internal map.",
+        "parameter_range": "The natural ultrapower framework of Appendix A; stages indexed by limit natural numbers.",
+        "uniformity": "Common standard bounds after selection; exceptional sets are contained in one internal sparse set.",
+        "constants": "No effective value of the standard bound is asserted.",
+        "normalizations": "Finite-intersection diagonalization is used, not the unsupported representative x_(v,v).",
+        "exceptional_cases": "No arbitrary countable family of unrelated internal sets is treated as an internal exhaustion.",
+        "limit_order": "Construct the exhaustion and internal relation, prove pointwise standard-stage existence, then select."
+      },
+      "classification": "dependency",
+      "reason": "The local proof states the actual witness exhaustion and corrected finite-intersection argument. The almost-all form is a local variant, not the literal conclusion of A.11.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+            "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+          },
+          "start_line": 3,
+          "end_line": 25,
+          "excerpt_sha256": "3d894dfe96f4a3a667692bfc7a257d5dd6f1474f701c618474479581ddde25dd"
+        },
+        "statement": "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Definition A.10 and Lemma A.11, p.1330; boundedness A.5, p.1327",
+          "corrections": "The actual application uses an internal standard-stage exhaustion and a reciprocal-threshold relation. A local finite-intersection proof supplies the bounded-stage step; no unjustified representative diagonal or ambiguous A.12 display is imported."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+        },
+        "start_line": 107,
+        "end_line": 139,
+        "excerpt_sha256": "23e1fcf31252f6e276c1868c4bc3016fb5af1f1efe5eb561f6a0531ad089885a"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S911-INTERNAL-CHOICE",
+      "use_sha256": "c6974ca9a97d5604546087b71f78590c7793922cf1a20a88c49d5b6059969153",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer.",
+        "objects": "Internal X,Y,R and S equal to the union over standard indices of an internal increasing exhaustion.",
+        "hypotheses": "Every x has a witness in S; the exhaustion is one internal sequence as required by Definition A.10.",
+        "quantifiers": "Every x in X, selected simultaneously by one internal map.",
+        "parameter_range": "The natural ultrapower framework of Appendix A; stages indexed by limit natural numbers.",
+        "uniformity": "One internal witness map; the stage can be bounded by a standard integer when the least-stage map is pointwise standard-bounded.",
+        "constants": "No effective value of the standard bound is asserted.",
+        "normalizations": "An external positive-standard condition must be encoded by an internal reciprocal-threshold coordinate.",
+        "exceptional_cases": "An arbitrary countable family of internal sets is not automatically the specified sigma-limit presentation. The local finite-intersection proof avoids an unjustified diagonal representative.",
+        "limit_order": "Construct the exhaustion and internal relation, prove pointwise standard-stage existence, then select."
+      },
+      "needed_assertion": {
+        "statement": "The actual increasing internal witness stages in Section9–11 admit internal choices within a common standard stage; the nested almost-all selection uses the stated finite-intersection construction.",
+        "objects": "Internal parameter families, standard-stage structural witnesses and nested internal bad sets.",
+        "hypotheses": "The witness family is an actual increasing internal sequence, with pointwise standard-stage witnesses. For the almost-all use, the bad sets B_k are increasing and each standard B_k has infinitesimal relative size.",
+        "quantifiers": "Every x in X, selected simultaneously by one internal map.",
+        "parameter_range": "The natural ultrapower framework of Appendix A; stages indexed by limit natural numbers.",
+        "uniformity": "Common standard bounds after selection; exceptional sets are contained in one internal sparse set.",
+        "constants": "No effective value of the standard bound is asserted.",
+        "normalizations": "Finite-intersection diagonalization is used, not the unsupported representative x_(v,v).",
+        "exceptional_cases": "No arbitrary countable family of unrelated internal sets is treated as an internal exhaustion.",
+        "limit_order": "Construct the exhaustion and internal relation, prove pointwise standard-stage existence, then select."
+      },
+      "required_capabilities": [
+        "The actual increasing internal witness stages in Section9–11 admit internal choices within a common standard stage; the nested almost-all selection uses the stated finite-intersection construction."
+      ],
+      "available_capabilities": [
+        "An internal relation R between internal sets X and Y with a witness in a sigma-limit subset S of Y for every x admits an internal witness selection into S. Its increasing-stage proof bounds the selected stage by a standard integer."
+      ],
+      "derived_capabilities": [
+        "The actual increasing internal witness stages in Section9–11 admit internal choices within a common standard stage; the nested almost-all selection uses the stated finite-intersection construction."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+            "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+          },
+          "start_line": 107,
+          "end_line": 139,
+          "excerpt_sha256": "23e1fcf31252f6e276c1868c4bc3016fb5af1f1efe5eb561f6a0531ad089885a"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual increasing internal witness stages in Section9–11 admit internal choices within a common standard stage; the nested almost-all selection uses the stated finite-intersection construction.",
+          "objects": "Internal parameter families, standard-stage structural witnesses and nested internal bad sets.",
+          "hypotheses": "The witness family is an actual increasing internal sequence, with pointwise standard-stage witnesses. For the almost-all use, the bad sets B_k are increasing and each standard B_k has infinitesimal relative size.",
+          "quantifiers": "Every x in X, selected simultaneously by one internal map.",
+          "parameter_range": "The natural ultrapower framework of Appendix A; stages indexed by limit natural numbers.",
+          "uniformity": "Common standard bounds after selection; exceptional sets are contained in one internal sparse set.",
+          "constants": "No effective value of the standard bound is asserted.",
+          "normalizations": "Finite-intersection diagonalization is used, not the unsupported representative x_(v,v).",
+          "exceptional_cases": "No arbitrary countable family of unrelated internal sets is treated as an internal exhaustion.",
+          "limit_order": "Construct the exhaustion and internal relation, prove pointwise standard-stage existence, then select."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The local proof states the actual witness exhaustion and corrected finite-intersection argument. The almost-all form is a local variant, not the literal conclusion of A.11. The actual application uses an internal standard-stage exhaustion and a reciprocal-threshold relation. A local finite-intersection proof supplies the bounded-stage step; no unjustified representative diagonal or ambiguous A.12 display is imported.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-INTERNAL-SELECTION.md",
+              "sha256": "a9e7d765b1092344b2833430caf8612f2590cc821fd68d2f4d7ee672682cd8cf"
+            },
+            "start_line": 3,
+            "end_line": 25,
+            "excerpt_sha256": "3d894dfe96f4a3a667692bfc7a257d5dd6f1474f701c618474479581ddde25dd"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+              "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+            },
+            "start_line": 107,
+            "end_line": 139,
+            "excerpt_sha256": "23e1fcf31252f6e276c1868c4bc3016fb5af1f1efe5eb561f6a0531ad089885a"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+            "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+          },
+          "start_line": 107,
+          "end_line": 139,
+          "excerpt_sha256": "23e1fcf31252f6e276c1868c4bc3016fb5af1f1efe5eb561f6a0531ad089885a"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S911-INTERNAL-CHOICE-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/07-gi-section9-11/proof.tex",
+          "sha256": "aa69875973315ea45e405e565f0124c6b258e3a2b288406ef2f529843e6b808a"
+        },
+        "start_line": 107,
+        "end_line": 139,
+        "excerpt_sha256": "23e1fcf31252f6e276c1868c4bc3016fb5af1f1efe5eb561f6a0531ad089885a"
+      },
+      "claim_ids": [
+        "GI-07-S9-11"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S911-INTERNAL-CHOICE"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+      "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-CONVERSE-COMPACT-APPROXIMATION",
+      "consumer": "GI-15-CONVERSE",
+      "passages": [
+        "ACTIVE-GI-EXT-CONVERSE-COMPACT-APPROXIMATION-P1"
+      ],
+      "assertion": {
+        "statement": "The composed test F(P(z)) has a finite tensor approximation with uniform bounds over the fixed bounded Lipschitz test class.",
+        "objects": "Coordinate Lipschitz functions on compact Sigma, complex coefficients c_a, one-bounded factors H_(omega,a), finite uniform test net.",
+        "hypotheses": "Published continuous cube constraint, fixed compact M, fixed norm and Lipschitz bounds, positive epsilon.",
+        "quantifiers": "Every test in the fixed class and every cube point z in Sigma.",
+        "parameter_range": "Any fixed d,M,L and epsilon; finite tensor dimension 2^(d+1)-1.",
+        "uniformity": "The finite coefficient sum, number of terms and factor bounds are uniform in F,g,x,N.",
+        "constants": "Keep sum |c_a|; allocate epsilon/2 to the net and epsilon/2 to approximation.",
+        "normalizations": "Complex Stone-Weierstrass algebra contains constants, separates points and is closed under conjugation.",
+        "exceptional_cases": "Factors are scaled to the unit disk with their magnitudes absorbed into coefficients; they are not silently normalized without compensation.",
+        "limit_order": "Choose the finite net and tensor data before the orbit and averaging parameters."
+      },
+      "classification": "dependency",
+      "reason": "The actual compact cube constraint is supplied separately. The local epsilon/2 net and epsilon/2 approximation retain the coefficient sum and uniform error for the full bounded Lipschitz class.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+            "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+        },
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "publication": {
+          "title": "Linear equations in primes",
+          "authors": "Ben Green and Terence Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+          "locator": "Proof of Proposition 11.2, compactness step p.1799 and Stone–Weierstrass tensor approximation p.1801",
+          "corrections": "Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/15-gi-converse/proof.tex",
+          "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b"
+        },
+        "start_line": 53,
+        "end_line": 83,
+        "excerpt_sha256": "4ac88fa40183cae4f261dc554fc4e2c8e6046dc455c8381a0bbb8c0e6312969a"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-CONVERSE-COMPACT-APPROXIMATION",
+      "use_sha256": "b592abbc83325f464caf5a84a4b90fc1055df2b023058833f1ebba4a7a8cfd2c",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "objects": "The compact set Sigma, its coordinate projections to a fixed compact nilmanifold, a continuous P and tests F composed with P.",
+        "hypotheses": "The coordinate-test algebra contains constants, is closed under conjugation and separates points. The input test class has fixed norm and Lipschitz bounds on a compact metric space.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Uniform error on the entire compact constraint space, before evaluating any orbit or averaging.",
+        "exceptional_cases": "Without point separation or bounded-class compactness the corresponding conclusion is not asserted.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "needed_assertion": {
+        "statement": "The composed test F(P(z)) has a finite tensor approximation with uniform bounds over the fixed bounded Lipschitz test class.",
+        "objects": "Coordinate Lipschitz functions on compact Sigma, complex coefficients c_a, one-bounded factors H_(omega,a), finite uniform test net.",
+        "hypotheses": "Published continuous cube constraint, fixed compact M, fixed norm and Lipschitz bounds, positive epsilon.",
+        "quantifiers": "Every test in the fixed class and every cube point z in Sigma.",
+        "parameter_range": "Any fixed d,M,L and epsilon; finite tensor dimension 2^(d+1)-1.",
+        "uniformity": "The finite coefficient sum, number of terms and factor bounds are uniform in F,g,x,N.",
+        "constants": "Keep sum |c_a|; allocate epsilon/2 to the net and epsilon/2 to approximation.",
+        "normalizations": "Complex Stone-Weierstrass algebra contains constants, separates points and is closed under conjugation.",
+        "exceptional_cases": "Factors are scaled to the unit disk with their magnitudes absorbed into coefficients; they are not silently normalized without compensation.",
+        "limit_order": "Choose the finite net and tensor data before the orbit and averaging parameters."
+      },
+      "required_capabilities": [
+        "The composed test F(P(z)) has a finite tensor approximation with uniform bounds over the fixed bounded Lipschitz test class."
+      ],
+      "available_capabilities": [
+        "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class."
+      ],
+      "derived_capabilities": [
+        "The composed test F(P(z)) has a finite tensor approximation with uniform bounds over the fixed bounded Lipschitz test class."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/15-gi-converse/proof.tex",
+            "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b"
+          },
+          "start_line": 53,
+          "end_line": 83,
+          "excerpt_sha256": "4ac88fa40183cae4f261dc554fc4e2c8e6046dc455c8381a0bbb8c0e6312969a"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The composed test F(P(z)) has a finite tensor approximation with uniform bounds over the fixed bounded Lipschitz test class.",
+          "objects": "Coordinate Lipschitz functions on compact Sigma, complex coefficients c_a, one-bounded factors H_(omega,a), finite uniform test net.",
+          "hypotheses": "Published continuous cube constraint, fixed compact M, fixed norm and Lipschitz bounds, positive epsilon.",
+          "quantifiers": "Every test in the fixed class and every cube point z in Sigma.",
+          "parameter_range": "Any fixed d,M,L and epsilon; finite tensor dimension 2^(d+1)-1.",
+          "uniformity": "The finite coefficient sum, number of terms and factor bounds are uniform in F,g,x,N.",
+          "constants": "Keep sum |c_a|; allocate epsilon/2 to the net and epsilon/2 to approximation.",
+          "normalizations": "Complex Stone-Weierstrass algebra contains constants, separates points and is closed under conjugation.",
+          "exceptional_cases": "Factors are scaled to the unit disk with their magnitudes absorbed into coefficients; they are not silently normalized without compensation.",
+          "limit_order": "Choose the finite net and tensor data before the orbit and averaging parameters."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The actual compact cube constraint is supplied separately. The local epsilon/2 net and epsilon/2 approximation retain the coefficient sum and uniform error for the full bounded Lipschitz class. Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+              "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/15-gi-converse/proof.tex",
+              "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b"
+            },
+            "start_line": 53,
+            "end_line": 83,
+            "excerpt_sha256": "4ac88fa40183cae4f261dc554fc4e2c8e6046dc455c8381a0bbb8c0e6312969a"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/15-gi-converse/proof.tex",
+            "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b"
+          },
+          "start_line": 53,
+          "end_line": 83,
+          "excerpt_sha256": "4ac88fa40183cae4f261dc554fc4e2c8e6046dc455c8381a0bbb8c0e6312969a"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-CONVERSE-COMPACT-APPROXIMATION-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/15-gi-converse/proof.tex",
+          "sha256": "2f3f7126534096dee4e8c8464389cbd7c2e3b1156eea3214856a3d83fb3bb96b"
+        },
+        "start_line": 53,
+        "end_line": 83,
+        "excerpt_sha256": "4ac88fa40183cae4f261dc554fc4e2c8e6046dc455c8381a0bbb8c0e6312969a"
+      },
+      "claim_ids": [
+        "GI-15-CONVERSE"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-CONVERSE-COMPACT-APPROXIMATION"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+      "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-LP02-COMPACT-APPROXIMATION",
+      "consumer": "GI-04-LP02-03",
+      "passages": [
+        "ACTIVE-GI-EXT-LP02-COMPACT-APPROXIMATION-P1"
+      ],
+      "assertion": {
+        "statement": "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection.",
+        "objects": "The two actual quotient nilmanifolds and the common lifted compact manifold.",
+        "hypotheses": "The local lattice proof establishes that the joint quotient map is injective; pulled-back quotient tests consequently separate points.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Pad finite product lists by zero when selecting internally; retain all finite coefficient and sup bounds.",
+        "exceptional_cases": "Disjoint Lie ideals alone do not guarantee quotient point separation; the lattice argument is required.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "classification": "dependency",
+      "reason": "Apply the compact algebra argument only after the local quotient/lattice separation proof. The finite epsilon/4 net and subsequent Fourier error allocation are local application steps.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+            "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+        },
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "publication": {
+          "title": "Linear equations in primes",
+          "authors": "Ben Green and Terence Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+          "locator": "Proof of Proposition 11.2, compactness step p.1799 and Stone–Weierstrass tensor approximation p.1801",
+          "corrections": "Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+          "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+        },
+        "start_line": 73,
+        "end_line": 159,
+        "excerpt_sha256": "b9c8e4d865d5cd503517d68e00e7db901b29e912d591aa9afa47beee26dcceb5"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-LP02-COMPACT-APPROXIMATION",
+      "use_sha256": "5c01c5eb3d6a0b449228a704c458c0e3e4b6e1d1d2d2037e8bc43c25774a7969",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "objects": "The compact set Sigma, its coordinate projections to a fixed compact nilmanifold, a continuous P and tests F composed with P.",
+        "hypotheses": "The coordinate-test algebra contains constants, is closed under conjugation and separates points. The input test class has fixed norm and Lipschitz bounds on a compact metric space.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Uniform error on the entire compact constraint space, before evaluating any orbit or averaging.",
+        "exceptional_cases": "Without point separation or bounded-class compactness the corresponding conclusion is not asserted.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "needed_assertion": {
+        "statement": "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection.",
+        "objects": "The two actual quotient nilmanifolds and the common lifted compact manifold.",
+        "hypotheses": "The local lattice proof establishes that the joint quotient map is injective; pulled-back quotient tests consequently separate points.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Pad finite product lists by zero when selecting internally; retain all finite coefficient and sup bounds.",
+        "exceptional_cases": "Disjoint Lie ideals alone do not guarantee quotient point separation; the lattice argument is required.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "required_capabilities": [
+        "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection."
+      ],
+      "available_capabilities": [
+        "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class."
+      ],
+      "derived_capabilities": [
+        "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+            "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+          },
+          "start_line": 73,
+          "end_line": 159,
+          "excerpt_sha256": "b9c8e4d865d5cd503517d68e00e7db901b29e912d591aa9afa47beee26dcceb5"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection.",
+          "objects": "The two actual quotient nilmanifolds and the common lifted compact manifold.",
+          "hypotheses": "The local lattice proof establishes that the joint quotient map is injective; pulled-back quotient tests consequently separate points.",
+          "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+          "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+          "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+          "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+          "normalizations": "Pad finite product lists by zero when selecting internally; retain all finite coefficient and sup bounds.",
+          "exceptional_cases": "Disjoint Lie ideals alone do not guarantee quotient point separation; the lattice argument is required.",
+          "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Apply the compact algebra argument only after the local quotient/lattice separation proof. The finite epsilon/4 net and subsequent Fourier error allocation are local application steps. Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+              "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+              "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+            },
+            "start_line": 73,
+            "end_line": 159,
+            "excerpt_sha256": "b9c8e4d865d5cd503517d68e00e7db901b29e912d591aa9afa47beee26dcceb5"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+            "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+          },
+          "start_line": 73,
+          "end_line": 159,
+          "excerpt_sha256": "b9c8e4d865d5cd503517d68e00e7db901b29e912d591aa9afa47beee26dcceb5"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-LP02-COMPACT-APPROXIMATION-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/04-gtz-lp02-03/proof.tex",
+          "sha256": "ab378af75276aa59917761522b3700d79a2c6da1cd61575403e3d7bdb5e4b61b"
+        },
+        "start_line": 73,
+        "end_line": 159,
+        "excerpt_sha256": "b9c8e4d865d5cd503517d68e00e7db901b29e912d591aa9afa47beee26dcceb5"
+      },
+      "claim_ids": [
+        "GI-04-LP02-03"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-LP02-COMPACT-APPROXIMATION"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+      "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-ASSEMBLY-COMPACT-SPLITTING",
+      "consumer": "GI-00-ASSEMBLY",
+      "passages": [
+        "ACTIVE-GI-EXT-ASSEMBLY-COMPACT-SPLITTING-P1"
+      ],
+      "assertion": {
+        "statement": "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection.",
+        "objects": "The two actual quotient nilmanifolds and the common lifted compact manifold.",
+        "hypotheses": "The local lattice proof establishes that the joint quotient map is injective; pulled-back quotient tests consequently separate points.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Pad finite product lists by zero when selecting internally; retain all finite coefficient and sup bounds.",
+        "exceptional_cases": "Disjoint Lie ideals alone do not guarantee quotient point separation; the lattice argument is required.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "classification": "dependency",
+      "reason": "The exact Hall-coordinate quotient injection supplies point separation. Standard finite approximants followed by the bounded-class net produce uniform finite lists; neither mere Lie-algebra intersection nor an unchecked E.4 citation supplies this.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+            "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+        },
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "publication": {
+          "title": "Linear equations in primes",
+          "authors": "Ben Green and Terence Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+          "locator": "Proof of Proposition 11.2, compactness step p.1799 and Stone–Weierstrass tensor approximation p.1801",
+          "corrections": "Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+          "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+        },
+        "start_line": 363,
+        "end_line": 393,
+        "excerpt_sha256": "5ac614bd8206999539ba18e6581b7a7385a5d960dc805e6a58523958539582df"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-ASSEMBLY-COMPACT-SPLITTING",
+      "use_sha256": "d322a9f16433c568cd8eac3bb07754cb658105d83811a1db4290b11de38d61e1",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "objects": "The compact set Sigma, its coordinate projections to a fixed compact nilmanifold, a continuous P and tests F composed with P.",
+        "hypotheses": "The coordinate-test algebra contains constants, is closed under conjugation and separates points. The input test class has fixed norm and Lipschitz bounds on a compact metric space.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Uniform error on the entire compact constraint space, before evaluating any orbit or averaging.",
+        "exceptional_cases": "Without point separation or bounded-class compactness the corresponding conclusion is not asserted.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "needed_assertion": {
+        "statement": "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection.",
+        "objects": "The two actual quotient nilmanifolds and the common lifted compact manifold.",
+        "hypotheses": "The local lattice proof establishes that the joint quotient map is injective; pulled-back quotient tests consequently separate points.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Pad finite product lists by zero when selecting internally; retain all finite coefficient and sup bounds.",
+        "exceptional_cases": "Disjoint Lie ideals alone do not guarantee quotient point separation; the lattice argument is required.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "required_capabilities": [
+        "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection."
+      ],
+      "available_capabilities": [
+        "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class."
+      ],
+      "derived_capabilities": [
+        "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+            "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+          },
+          "start_line": 363,
+          "end_line": 393,
+          "excerpt_sha256": "5ac614bd8206999539ba18e6581b7a7385a5d960dc805e6a58523958539582df"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed lifted compact manifold admits finite standard product lists of quotient tests, uniformly approximating the required bounded Lipschitz class before internal orbit selection.",
+          "objects": "The two actual quotient nilmanifolds and the common lifted compact manifold.",
+          "hypotheses": "The local lattice proof establishes that the joint quotient map is injective; pulled-back quotient tests consequently separate points.",
+          "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+          "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+          "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+          "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+          "normalizations": "Pad finite product lists by zero when selecting internally; retain all finite coefficient and sup bounds.",
+          "exceptional_cases": "Disjoint Lie ideals alone do not guarantee quotient point separation; the lattice argument is required.",
+          "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The exact Hall-coordinate quotient injection supplies point separation. Standard finite approximants followed by the bounded-class net produce uniform finite lists; neither mere Lie-algebra intersection nor an unchecked E.4 citation supplies this. Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+              "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+              "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+            },
+            "start_line": 363,
+            "end_line": 393,
+            "excerpt_sha256": "5ac614bd8206999539ba18e6581b7a7385a5d960dc805e6a58523958539582df"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+            "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+          },
+          "start_line": 363,
+          "end_line": 393,
+          "excerpt_sha256": "5ac614bd8206999539ba18e6581b7a7385a5d960dc805e6a58523958539582df"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-ASSEMBLY-COMPACT-SPLITTING-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/00-assembly/assembly.tex",
+          "sha256": "97faa088856a29ca1c569d7c1d8641a2399f48a093625fc535b9c95d7fe19489"
+        },
+        "start_line": 363,
+        "end_line": 393,
+        "excerpt_sha256": "5ac614bd8206999539ba18e6581b7a7385a5d960dc805e6a58523958539582df"
+      },
+      "claim_ids": [
+        "GI-00-ASSEMBLY"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-ASSEMBLY-COMPACT-SPLITTING"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+      "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-RANK-COMPACT-APPROXIMATION",
+      "consumer": "GI-10-RANK",
+      "passages": [
+        "ACTIVE-GI-EXT-RANK-COMPACT-APPROXIMATION-P1"
+      ],
+      "assertion": {
+        "statement": "Exact vector recovery and finite uniform character approximation produce the next unit degree-rank(m,R-1) family while retaining correlation.",
+        "objects": "A prime=A tensor Z, matrix components of V_h, central top torus and a finite list of exact-character unit tests.",
+        "hypotheses": "Unit norm of zeta_h; fixed bounded models for V_h; positive correlation and fixed lower ordinary-degree test.",
+        "quantifiers": "All components a and all retained h; all limit group/space elements for exact vertical identities.",
+        "parameter_range": "Each1<=R<=m; new rankR-1, with ordinary lower-degree test still bounded bym-1.",
+        "uniformity": "Finite approximating lists and positive thresholds are uniform in h,N.",
+        "constants": "Approximation error less than half the correlation divided by other fixed bounds; finite component losses retained.",
+        "normalizations": "chi_a=sum_b zeta_b(chi_a conjugate zeta_b); no division by scalar components. Tensor product preserves unit norm.",
+        "exceptional_cases": "AtR=1 the new top is trivial; frequency-zero unit tests are allowed. Nonunit scalar components are handled explicitly.",
+        "limit_order": "Recover whole matrix, preserve a summand on dense h, approximate on fixed geometry, choose finite assignments then take ultralimits."
+      },
+      "classification": "dependency",
+      "reason": "The local rank proof first performs exact vector recovery and then applies point-separating compact approximation with retained finite coefficients. Fourier unit tests and rank geometry are separate inputs.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+            "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+        },
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "publication": {
+          "title": "Linear equations in primes",
+          "authors": "Ben Green and Terence Tao",
+          "venue": "Annals of Mathematics 171 (2010), 1753–1850",
+          "authoritative_version": "Final publisher PDF SHA256 ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+          "locator": "Proof of Proposition 11.2, compactness step p.1799 and Stone–Weierstrass tensor approximation p.1801",
+          "corrections": "Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+          "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+        },
+        "start_line": 179,
+        "end_line": 215,
+        "excerpt_sha256": "c0ebffd6aa40bbd7e531374f0f718a11306090e0538cdccc4a7b735eb0d489e5"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-RANK-COMPACT-APPROXIMATION",
+      "use_sha256": "11d56f901fd8a43fe71e1750d180984e9f071e11cbd360426441276fc4f7b484",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class.",
+        "objects": "The compact set Sigma, its coordinate projections to a fixed compact nilmanifold, a continuous P and tests F composed with P.",
+        "hypotheses": "The coordinate-test algebra contains constants, is closed under conjugation and separates points. The input test class has fixed norm and Lipschitz bounds on a compact metric space.",
+        "quantifiers": "Every positive tolerance and every test in the specified bounded class.",
+        "parameter_range": "Fixed compact spaces and a fixed finite number of coordinate factors.",
+        "uniformity": "Finite approximation data can be chosen uniformly over the bounded test class; they do not bound varying nilmanifold geometries.",
+        "constants": "Retain the finite sum of coefficient magnitudes and the factor bounds; rescaling factors transfers magnitude to coefficients.",
+        "normalizations": "Uniform error on the entire compact constraint space, before evaluating any orbit or averaging.",
+        "exceptional_cases": "Without point separation or bounded-class compactness the corresponding conclusion is not asserted.",
+        "limit_order": "Choose the compact geometry and test bounds, a finite uniform net and approximants, then evaluate on arbitrary orbits."
+      },
+      "needed_assertion": {
+        "statement": "Exact vector recovery and finite uniform character approximation produce the next unit degree-rank(m,R-1) family while retaining correlation.",
+        "objects": "A prime=A tensor Z, matrix components of V_h, central top torus and a finite list of exact-character unit tests.",
+        "hypotheses": "Unit norm of zeta_h; fixed bounded models for V_h; positive correlation and fixed lower ordinary-degree test.",
+        "quantifiers": "All components a and all retained h; all limit group/space elements for exact vertical identities.",
+        "parameter_range": "Each1<=R<=m; new rankR-1, with ordinary lower-degree test still bounded bym-1.",
+        "uniformity": "Finite approximating lists and positive thresholds are uniform in h,N.",
+        "constants": "Approximation error less than half the correlation divided by other fixed bounds; finite component losses retained.",
+        "normalizations": "chi_a=sum_b zeta_b(chi_a conjugate zeta_b); no division by scalar components. Tensor product preserves unit norm.",
+        "exceptional_cases": "AtR=1 the new top is trivial; frequency-zero unit tests are allowed. Nonunit scalar components are handled explicitly.",
+        "limit_order": "Recover whole matrix, preserve a summand on dense h, approximate on fixed geometry, choose finite assignments then take ultralimits."
+      },
+      "required_capabilities": [
+        "Exact vector recovery and finite uniform character approximation produce the next unit degree-rank(m,R-1) family while retaining correlation."
+      ],
+      "available_capabilities": [
+        "On the fixed compact cube-constraint space, a continuous composed test is uniformly approximable by a finite linear combination of products of bounded Lipschitz coordinate tests. Compactness of a fixed bounded Lipschitz class supplies a finite uniform net, so the number of terms and finite coefficient bounds can be fixed for that class."
+      ],
+      "derived_capabilities": [
+        "Exact vector recovery and finite uniform character approximation produce the next unit degree-rank(m,R-1) family while retaining correlation."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+            "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+          },
+          "start_line": 179,
+          "end_line": 215,
+          "excerpt_sha256": "c0ebffd6aa40bbd7e531374f0f718a11306090e0538cdccc4a7b735eb0d489e5"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "Exact vector recovery and finite uniform character approximation produce the next unit degree-rank(m,R-1) family while retaining correlation.",
+          "objects": "A prime=A tensor Z, matrix components of V_h, central top torus and a finite list of exact-character unit tests.",
+          "hypotheses": "Unit norm of zeta_h; fixed bounded models for V_h; positive correlation and fixed lower ordinary-degree test.",
+          "quantifiers": "All components a and all retained h; all limit group/space elements for exact vertical identities.",
+          "parameter_range": "Each1<=R<=m; new rankR-1, with ordinary lower-degree test still bounded bym-1.",
+          "uniformity": "Finite approximating lists and positive thresholds are uniform in h,N.",
+          "constants": "Approximation error less than half the correlation divided by other fixed bounds; finite component losses retained.",
+          "normalizations": "chi_a=sum_b zeta_b(chi_a conjugate zeta_b); no division by scalar components. Tensor product preserves unit norm.",
+          "exceptional_cases": "AtR=1 the new top is trivial; frequency-zero unit tests are allowed. Nonunit scalar components are handled explicitly.",
+          "limit_order": "Recover whole matrix, preserve a summand on dense h, approximate on fixed geometry, choose finite assignments then take ultralimits."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The local rank proof first performs exact vector recovery and then applies point-separating compact approximation with retained finite coefficients. Fourier unit tests and rank geometry are separate inputs. Only the compact approximation argument is imported. The later published averaging-domain transition is not used. For two quotient factors the local proof separately verifies their joint injection and hence point separation. Local proofs explicitly retain coefficients even when using normalized factors.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GT-COMPACT-TENSOR-APPROXIMATION.md",
+              "sha256": "020db5eebee16a3feacf130cb92fd3feb0ccf99e44c7f266b4630c5410e85abc"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "b6186a8aad9499f69024eae15937b52d1ccf435597103e6635f60ddcffd88e12"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+              "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+            },
+            "start_line": 179,
+            "end_line": 215,
+            "excerpt_sha256": "c0ebffd6aa40bbd7e531374f0f718a11306090e0538cdccc4a7b735eb0d489e5"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+            "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+          },
+          "start_line": 179,
+          "end_line": 215,
+          "excerpt_sha256": "c0ebffd6aa40bbd7e531374f0f718a11306090e0538cdccc4a7b735eb0d489e5"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-RANK-COMPACT-APPROXIMATION-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/10-gi-rank/proof.tex",
+          "sha256": "c20479041c503448c9ded9f37c9f14b4086386e3ffddc6e1922146d11528c948"
+        },
+        "start_line": 179,
+        "end_line": 215,
+        "excerpt_sha256": "c0ebffd6aa40bbd7e531374f0f718a11306090e0538cdccc4a7b735eb0d489e5"
+      },
+      "claim_ids": [
+        "GI-10-RANK"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-RANK-COMPACT-APPROXIMATION"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-SYMBOL-LAW.md",
+      "sha256": "a83680ac63b94cdb1892b5507a338b0f90b748f1b8fdf9abc2ab000dd9877b23"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-S13-SYMBOL-LAW",
+      "consumer": "GI-13-S13",
+      "passages": [
+        "ACTIVE-GI-EXT-S13-SYMBOL-LAW-P1"
+      ],
+      "assertion": {
+        "statement": "On the actual strong taut represented class, tensor/conjugate symbol arithmetic and lower-degree componentwise representations give the equivalences used in Section13.",
+        "objects": "The actual chi, symmetric TildeChi, lower unit factors and finite tensor products in Section13.",
+        "hypotheses": "All positive-degree objects have the stated global vertical identity, unit norm and rational taut models; the lower-degree representations are supplied by their separate local lemmas.",
+        "quantifiers": "For every pair of nilcharacters and lower-degree test satisfying the representation premise, and for every equivalence in the stated class.",
+        "parameter_range": "Degree D>0 or multidegree d nonzero; standard finite dimensions and tensor exponents.",
+        "uniformity": "Tensor, contraction and restriction bounds depend on fixed powers and geometry, never on orbit coefficients.",
+        "constants": "No approximation error; tensor norm of a unit vector is exactly one.",
+        "normalizations": "Use full tensor components and unit contraction, not division by a scalar coordinate.",
+        "exceptional_cases": "Shift, dilation, torsion and symmetry are separate local results, not imported from E8(i)–(iii).",
+        "limit_order": "Establish the actual represented objects and normalization, then apply the equivalence and contraction laws. Shift/dilation/division clauses beyond E8(iii) are not imported by this use."
+      },
+      "classification": "dependency",
+      "reason": "The published E7/E8(i)–(iii) arithmetic is applied to the actual strongly represented objects after normalization. Local LP05/LP13, rather than this source, supply symmetrization and multilinearity.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-SYMBOL-LAW.md",
+            "sha256": "a83680ac63b94cdb1892b5507a338b0f90b748f1b8fdf9abc2ab000dd9877b23"
+          },
+          "start_line": 3,
+          "end_line": 7,
+          "excerpt_sha256": "36683992890cfd56b7f43c82121b56d9ca4f38e037196cedb4709491daa76c83"
+        },
+        "statement": "Nilcharacter equivalence is an equivalence relation; bounded componentwise linear representation by another nilcharacter tensored with a lower-degree nilsequence characterizes this equivalence, and tensor product induces an abelian symbol group.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012),1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma E.7 and Lemma E.8(i)–(iii), p.1354; proof p.1355",
+          "corrections": "Only the equivalence/group-law clauses are used here on the separately tautified strong represented class. Other AppendixE clauses and local corrections retain separate proofs and contracts."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 56,
+        "end_line": 108,
+        "excerpt_sha256": "6e3d4460a13ea5866057a11ef4784cd611f423b4d23c89072073c7dec7300d9e"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S13-SYMBOL-LAW",
+      "use_sha256": "43abfabf1d9b6e8a4c71a932433e87a8e78672612a1f8ed01874194515bad194",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Nilcharacter equivalence is an equivalence relation; bounded componentwise linear representation by another nilcharacter tensored with a lower-degree nilsequence characterizes this equivalence, and tensor product induces an abelian symbol group.",
+        "objects": "Nilcharacters on the stated filtered abelian domain and limit subset, their tensor products and lower-degree nilsequences.",
+        "hypotheses": "The published nilcharacter and lower-degree conventions; the current specialization uses taut models and actual globally equivariant unit tests supplied separately.",
+        "quantifiers": "For every pair of nilcharacters and lower-degree test satisfying the representation premise, and for every equivalence in the stated class.",
+        "parameter_range": "Degree D>0 or multidegree d nonzero; standard finite dimensions and tensor exponents.",
+        "uniformity": "Tensor, contraction and restriction bounds depend on fixed powers and geometry, never on orbit coefficients.",
+        "constants": "No approximation error; tensor norm of a unit vector is exactly one.",
+        "normalizations": "Addition of symbols means tensor product, negation conjugation, equality tested by chi tensor conjugate of chi-prime. Signed tensor exponent 0 is scalar 1.",
+        "exceptional_cases": "Negative exponents use conjugation; degree zero is treated separately in Theorem 5.",
+        "limit_order": "Establish the actual represented objects and normalization, then apply the equivalence and contraction laws. Shift/dilation/division clauses beyond E8(iii) are not imported by this use."
+      },
+      "needed_assertion": {
+        "statement": "On the actual strong taut represented class, tensor/conjugate symbol arithmetic and lower-degree componentwise representations give the equivalences used in Section13.",
+        "objects": "The actual chi, symmetric TildeChi, lower unit factors and finite tensor products in Section13.",
+        "hypotheses": "All positive-degree objects have the stated global vertical identity, unit norm and rational taut models; the lower-degree representations are supplied by their separate local lemmas.",
+        "quantifiers": "For every pair of nilcharacters and lower-degree test satisfying the representation premise, and for every equivalence in the stated class.",
+        "parameter_range": "Degree D>0 or multidegree d nonzero; standard finite dimensions and tensor exponents.",
+        "uniformity": "Tensor, contraction and restriction bounds depend on fixed powers and geometry, never on orbit coefficients.",
+        "constants": "No approximation error; tensor norm of a unit vector is exactly one.",
+        "normalizations": "Use full tensor components and unit contraction, not division by a scalar coordinate.",
+        "exceptional_cases": "Shift, dilation, torsion and symmetry are separate local results, not imported from E8(i)–(iii).",
+        "limit_order": "Establish the actual represented objects and normalization, then apply the equivalence and contraction laws. Shift/dilation/division clauses beyond E8(iii) are not imported by this use."
+      },
+      "required_capabilities": [
+        "On the actual strong taut represented class, tensor/conjugate symbol arithmetic and lower-degree componentwise representations give the equivalences used in Section13."
+      ],
+      "available_capabilities": [
+        "Nilcharacter equivalence is an equivalence relation; bounded componentwise linear representation by another nilcharacter tensored with a lower-degree nilsequence characterizes this equivalence, and tensor product induces an abelian symbol group."
+      ],
+      "derived_capabilities": [
+        "On the actual strong taut represented class, tensor/conjugate symbol arithmetic and lower-degree componentwise representations give the equivalences used in Section13."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 56,
+          "end_line": 108,
+          "excerpt_sha256": "6e3d4460a13ea5866057a11ef4784cd611f423b4d23c89072073c7dec7300d9e"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "On the actual strong taut represented class, tensor/conjugate symbol arithmetic and lower-degree componentwise representations give the equivalences used in Section13.",
+          "objects": "The actual chi, symmetric TildeChi, lower unit factors and finite tensor products in Section13.",
+          "hypotheses": "All positive-degree objects have the stated global vertical identity, unit norm and rational taut models; the lower-degree representations are supplied by their separate local lemmas.",
+          "quantifiers": "For every pair of nilcharacters and lower-degree test satisfying the representation premise, and for every equivalence in the stated class.",
+          "parameter_range": "Degree D>0 or multidegree d nonzero; standard finite dimensions and tensor exponents.",
+          "uniformity": "Tensor, contraction and restriction bounds depend on fixed powers and geometry, never on orbit coefficients.",
+          "constants": "No approximation error; tensor norm of a unit vector is exactly one.",
+          "normalizations": "Use full tensor components and unit contraction, not division by a scalar coordinate.",
+          "exceptional_cases": "Shift, dilation, torsion and symmetry are separate local results, not imported from E8(i)–(iii).",
+          "limit_order": "Establish the actual represented objects and normalization, then apply the equivalence and contraction laws. Shift/dilation/division clauses beyond E8(iii) are not imported by this use."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The published E7/E8(i)–(iii) arithmetic is applied to the actual strongly represented objects after normalization. Local LP05/LP13, rather than this source, supply symmetrization and multilinearity. Only the equivalence/group-law clauses are used here on the separately tautified strong represented class. Other AppendixE clauses and local corrections retain separate proofs and contracts.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-SYMBOL-LAW.md",
+              "sha256": "a83680ac63b94cdb1892b5507a338b0f90b748f1b8fdf9abc2ab000dd9877b23"
+            },
+            "start_line": 3,
+            "end_line": 7,
+            "excerpt_sha256": "36683992890cfd56b7f43c82121b56d9ca4f38e037196cedb4709491daa76c83"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+              "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+            },
+            "start_line": 56,
+            "end_line": 108,
+            "excerpt_sha256": "6e3d4460a13ea5866057a11ef4784cd611f423b4d23c89072073c7dec7300d9e"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 56,
+          "end_line": 108,
+          "excerpt_sha256": "6e3d4460a13ea5866057a11ef4784cd611f423b4d23c89072073c7dec7300d9e"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S13-SYMBOL-LAW-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 56,
+        "end_line": 108,
+        "excerpt_sha256": "6e3d4460a13ea5866057a11ef4784cd611f423b4d23c89072073c7dec7300d9e"
+      },
+      "claim_ids": [
+        "GI-13-S13"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S13-SYMBOL-LAW"
+      ]
+    }
+  },
+  {
+    "state": "author_proposal_pending_review",
+    "additional_ordinary_file": {
+      "side": "head",
+      "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-DEGREE-PULLBACK.md",
+      "sha256": "36787ab69c5ceb50c245a77e1d5417310fdaec0befd5a120531ea60317d1e79d"
+    },
+    "use": {
+      "id": "ACTIVE-GI-EXT-S13-DEGREE-PULLBACK",
+      "consumer": "GI-13-S13",
+      "passages": [
+        "ACTIVE-GI-EXT-S13-DEGREE-PULLBACK-P1"
+      ],
+      "assertion": {
+        "statement": "The fixed standard integer substitutions in the degree-s symbols of Section13 preserve every actual tensor equivalence and its lower-degree error.",
+        "objects": "The T-symbol expressions on the full limit lattice and their fixed integer forms.",
+        "hypotheses": "The multilinear representative and all compared tensor expressions are actually represented as stipulated; ordinary total-degree s is used for symbol arithmetic.",
+        "quantifiers": "Every such fixed T and every such represented nilcharacter and equivalence.",
+        "parameter_range": "Fixed finite dimensions and ordinary degree bound d.",
+        "uniformity": "The same target geometry and test are retained; only the polynomial orbit is precomposed.",
+        "constants": "No new test Lipschitz constant or target dimension is required.",
+        "normalizations": "Restrictions to boxes occur only after the full-lattice identity or after the stated domain-specific argument; no extrapolation from an orthant.",
+        "exceptional_cases": "Zero maps and rank-deficient maps may lower the actual degree. No arbitrary linear map is asserted to preserve a multidegree rectangle.",
+        "limit_order": "Check the source and target degree filtrations, then precompose the orbit and its lower-degree comparison."
+      },
+      "classification": "dependency",
+      "reason": "The fixed substitutions preserve ordinary degree by direct iterated differences and pull back the same lower-degree tensor test. Multilinearity, reflection recovery and factorial torsion remain separately supplied.",
+      "shared_contract_justification": null,
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-DEGREE-PULLBACK.md",
+            "sha256": "36787ab69c5ceb50c245a77e1d5417310fdaec0befd5a120531ea60317d1e79d"
+          },
+          "start_line": 5,
+          "end_line": 27,
+          "excerpt_sha256": "0bd0b3d25926e9f29e16754950f604de24cf159fe3aade716fb360c01112ef59"
+        },
+        "statement": "Precomposition of a degree-at-most d nilcharacter by a fixed integer linear map is again a degree-at-most d nilcharacter. The same precomposition preserves degree-d symbol equivalence.",
+        "publication": {
+          "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+          "authors": "Ben Green, Terence Tao and Tamar Ziegler",
+          "venue": "Annals of Mathematics 176 (2012), 1231–1372",
+          "authoritative_version": "Final publisher PDF SHA256 cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+          "locator": "Lemma E.8(vi), p.1354, with proof reference p.1356",
+          "corrections": "The printed E8(vi) contains a domain mismatch for chi-prime, and its B5 citation has a composition codomain typo. The current fixed-integer-map application is checked directly: each iterated difference after precomposition equals the original iterated difference in the image directions. The unchanged global test retains its vertical identity; a lower-degree representation pulls back the same way. No unchecked multidegree or arbitrary limit-coefficient claim is used."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 79,
+        "end_line": 294,
+        "excerpt_sha256": "84f7758441520437502a10c64c9bc0c35b1b81f2c4b63135f3835e6569d5fcc2"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-GI-EXT-S13-DEGREE-PULLBACK",
+      "use_sha256": "cca6480dfde91eeb11e9fbebc27ce67fbef07c8cbf038aaede8c60510865a7b2",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "Precomposition of a degree-at-most d nilcharacter by a fixed integer linear map is again a degree-at-most d nilcharacter. The same precomposition preserves degree-d symbol equivalence.",
+        "objects": "An integer linear map T:Z^k to Z^ell, a degree-filtered nilcharacter on Z^ell and its lower-degree tensor comparison.",
+        "hypotheses": "Ordinary degree filtrations; T is a fixed standard integer linear map; the actual test, polynomial orbit and lower-degree representation satisfy their stated conditions.",
+        "quantifiers": "Every such fixed T and every such represented nilcharacter and equivalence.",
+        "parameter_range": "Fixed finite dimensions and ordinary degree bound d.",
+        "uniformity": "The same target geometry and test are retained; only the polynomial orbit is precomposed.",
+        "constants": "No new test Lipschitz constant or target dimension is required.",
+        "normalizations": "The symbol comparison is the pullback of the original full tensor comparison.",
+        "exceptional_cases": "Zero maps and rank-deficient maps may lower the actual degree. No arbitrary linear map is asserted to preserve a multidegree rectangle.",
+        "limit_order": "Check the source and target degree filtrations, then precompose the orbit and its lower-degree comparison."
+      },
+      "needed_assertion": {
+        "statement": "The fixed standard integer substitutions in the degree-s symbols of Section13 preserve every actual tensor equivalence and its lower-degree error.",
+        "objects": "The T-symbol expressions on the full limit lattice and their fixed integer forms.",
+        "hypotheses": "The multilinear representative and all compared tensor expressions are actually represented as stipulated; ordinary total-degree s is used for symbol arithmetic.",
+        "quantifiers": "Every such fixed T and every such represented nilcharacter and equivalence.",
+        "parameter_range": "Fixed finite dimensions and ordinary degree bound d.",
+        "uniformity": "The same target geometry and test are retained; only the polynomial orbit is precomposed.",
+        "constants": "No new test Lipschitz constant or target dimension is required.",
+        "normalizations": "Restrictions to boxes occur only after the full-lattice identity or after the stated domain-specific argument; no extrapolation from an orthant.",
+        "exceptional_cases": "Zero maps and rank-deficient maps may lower the actual degree. No arbitrary linear map is asserted to preserve a multidegree rectangle.",
+        "limit_order": "Check the source and target degree filtrations, then precompose the orbit and its lower-degree comparison."
+      },
+      "required_capabilities": [
+        "The fixed standard integer substitutions in the degree-s symbols of Section13 preserve every actual tensor equivalence and its lower-degree error."
+      ],
+      "available_capabilities": [
+        "Precomposition of a degree-at-most d nilcharacter by a fixed integer linear map is again a degree-at-most d nilcharacter. The same precomposition preserves degree-d symbol equivalence."
+      ],
+      "derived_capabilities": [
+        "The fixed standard integer substitutions in the degree-s symbols of Section13 preserve every actual tensor equivalence and its lower-degree error."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 79,
+          "end_line": 294,
+          "excerpt_sha256": "84f7758441520437502a10c64c9bc0c35b1b81f2c4b63135f3835e6569d5fcc2"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The fixed standard integer substitutions in the degree-s symbols of Section13 preserve every actual tensor equivalence and its lower-degree error.",
+          "objects": "The T-symbol expressions on the full limit lattice and their fixed integer forms.",
+          "hypotheses": "The multilinear representative and all compared tensor expressions are actually represented as stipulated; ordinary total-degree s is used for symbol arithmetic.",
+          "quantifiers": "Every such fixed T and every such represented nilcharacter and equivalence.",
+          "parameter_range": "Fixed finite dimensions and ordinary degree bound d.",
+          "uniformity": "The same target geometry and test are retained; only the polynomial orbit is precomposed.",
+          "constants": "No new test Lipschitz constant or target dimension is required.",
+          "normalizations": "Restrictions to boxes occur only after the full-lattice identity or after the stated domain-specific argument; no extrapolation from an orthant.",
+          "exceptional_cases": "Zero maps and rank-deficient maps may lower the actual degree. No arbitrary linear map is asserted to preserve a multidegree rectangle.",
+          "limit_order": "Check the source and target degree filtrations, then precompose the orbit and its lower-degree comparison."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "The fixed substitutions preserve ordinary degree by direct iterated differences and pull back the same lower-degree tensor test. Multilinearity, reflection recovery and factorial torsion remain separately supplied. The printed E8(vi) contains a domain mismatch for chi-prime, and its B5 citation has a composition codomain typo. The current fixed-integer-map application is checked directly: each iterated difference after precomposition equals the original iterated difference in the image directions. The unchanged global test retains its vertical identity; a lower-degree representation pulls back the same way. No unchecked multidegree or arbitrary limit-coefficient claim is used.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/source-adoption-ordinary-v1/source-statements/GTZ-DEGREE-PULLBACK.md",
+              "sha256": "36787ab69c5ceb50c245a77e1d5417310fdaec0befd5a120531ea60317d1e79d"
+            },
+            "start_line": 5,
+            "end_line": 27,
+            "excerpt_sha256": "0bd0b3d25926e9f29e16754950f604de24cf159fe3aade716fb360c01112ef59"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+              "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+            },
+            "start_line": 79,
+            "end_line": 294,
+            "excerpt_sha256": "84f7758441520437502a10c64c9bc0c35b1b81f2c4b63135f3835e6569d5fcc2"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+            "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+          },
+          "start_line": 79,
+          "end_line": 294,
+          "excerpt_sha256": "84f7758441520437502a10c64c9bc0c35b1b81f2c4b63135f3835e6569d5fcc2"
+        }
+      ]
+    },
+    "coverage_index_entry": {
+      "id": "ACTIVE-GI-EXT-S13-DEGREE-PULLBACK-P1",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/proofs/local-gi-v1/proof/modules/13-gi-section13/proof.tex",
+          "sha256": "ec7b9c4b292cc9c16358b5fb0842295c905481aa160ad5d013653b4ad956c6ce"
+        },
+        "start_line": 79,
+        "end_line": 294,
+        "excerpt_sha256": "84f7758441520437502a10c64c9bc0c35b1b81f2c4b63135f3835e6569d5fcc2"
+      },
+      "claim_ids": [
+        "GI-13-S13"
+      ],
+      "use_ids": [
+        "ACTIVE-GI-EXT-S13-DEGREE-PULLBACK"
+      ]
+    }
+  }
+]

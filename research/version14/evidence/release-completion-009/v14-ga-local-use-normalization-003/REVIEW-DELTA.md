@@ -1,0 +1,1 @@
+The affine extrapolation profile now states X>=1, L>=X/E, |A|<=CX, |v|<=E, v!=0,E>=2 and the exact C+E dependence. The ideal Vaughan reduction explicitly requires N>=N0, |f|<=1 and0<epsilon<=1. All eight roles and proof spans remain unchanged.

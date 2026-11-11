@@ -1,0 +1,53 @@
+Choose compatible division points $Q_n$ with
+$2^nQ_n=Q$ and $2Q_{n+1}=Q_n$, and let
+$c_Q(g)=(gQ_n-Q_n)_n\in T_2A$ be the Kummer cocycle.
+Write $\rho_A$ for the Tate representation and $H=\ker\rho_A$.
+On $H$, this cocycle is a homomorphism. Its image is compact,
+and hence a closed $\Z_2$-submodule of $T_2A$. Moreover
+\[
+ c_Q(ghg^{-1})=\rho_A(g)c_Q(h)\qquad(h\in H),
+\]
+so its rational span is invariant under the Tate image.
+
+The curve $A$ is non-CM. Open image \cite{serre} supplies both
+irreducibility of its rational Tate representation and a central
+scalar $z\ne1$ in its Tate image. If $c_Q(H)=0$, the rational
+cocycle descends to that image. Commuting $z$ with $g$ gives
+\[
+ (z-1)c_Q(g)=(g-1)c_Q(z).
+\]
+Since $z-1$ is invertible over $\Q_2$, this is a coboundary.
+It contradicts the Kummer injection
+$A(\Q)\otimes\Q_2\hookrightarrow H^1(\Q,V_2A)$ and
+nontorsion of $Q$. Thus the translation image is nonzero.
+Irreducibility makes its rational span all of $V_2A$.
+It consequently contains $2^{a_0}T_2A$ for some $a_0$.
+
+Let $F_0/\Q$ be any fixed finite Galois auxiliary extension,
+including $\Q(\sqrt{D_w},\sqrt{h_*})$ and any fixed ring-class
+data to be retained with the action of complex conjugation.
+Put $H_0=H\cap G_{F_0}$. It has finite index $d$ in $H$.
+For $h\in H$, $h^d\in H_0$ and
+$c_Q(h^d)=d\,c_Q(h)$. Hence $c_Q(H_0)$ still contains
+$2^aT_2A$ for some fixed $a$.
+This argument uses no independence between $F_0$ and the Tate
+or division-point fields.
+
+Fix actual complex conjugation $\tau$. Since $D_w>0$, the real
+twist identification identifies its matrix on $T_2A$ with its
+matrix $C$ on $T=T_2E$. We have $C^2=1$ and $\det C=-1$.
+Its dual $+1$-eigenspace therefore contains a primitive integral
+row $b:T\to\Z_2$, with $bC=b$ and $b(T)=\Z_2$.
+Choose $t_0\in T$ with $b(t_0)=1$, and choose $h\in H_0$ with
+$c_Q(h)=v=2^at_0$. Set $\sigma=h\tau$. If $d_\tau=c_Q(\tau)$,
+then $(1+C)d_\tau=0$, because $\tau^2=1$. Consequently
+\[
+ \rho_A(\sigma)=C,\qquad
+ c_Q(\sigma^2)=(1+C)(v+d_\tau)=(1+C)v,\qquad
+ b\,c_Q(\sigma^2)=2^{a+1}.
+\]
+Put $c_w=a+1$. The element $\sigma$ and this finite valuation
+are fixed before precision varies. Its restriction to $F_0$
+is that of $\tau$: it fixes $\sqrt{D_w}$ and negates
+$\sqrt{h_*}$. Since $h$ fixes $\sqrt{D_w}$, the matrix of
+$\sigma$ on $T_2E$ is also $C$.

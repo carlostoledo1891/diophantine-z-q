@@ -1,0 +1,91 @@
+[
+  {
+    "id": "SOLV22-ARTIN",
+    "supplier_ids": [
+      "MT-ARTIN"
+    ],
+    "proof_locator": "section 1",
+    "needed_hypotheses": "Odd absolutely irreducible solvable actual r over finite F, p odd",
+    "conclusion": "Classical weight-one cuspidal Artin realization of a characteristic-zero lift reducing to the same r",
+    "connection": "Use the printed intermediate assertion, before its refined-weight step; extend the same coefficient place.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-LATTICE",
+    "supplier_ids": [
+      "DS"
+    ],
+    "proof_locator": "section 2",
+    "needed_hypotheses": "The actual classical cusp eigenform f and selected coefficient place",
+    "conclusion": "A primitive integral cuspidal f_0 with nonzero coefficientwise reduction",
+    "connection": "Use the classical coefficient lattice and its saturated cusp submodule. Rescale inside the eigenline. No Katz lifting or unit first coefficient assumption.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-WEIGHT",
+    "supplier_ids": [
+      "DS"
+    ],
+    "proof_locator": "section 3, paragraphs 1–2",
+    "needed_hypotheses": "Odd p; n=2(p-1)>2 even; same level and character",
+    "conclusion": "Nonzero residual good eigenpacket in weight w=2p-1",
+    "connection": "E_n is integral and congruent1; Fourier formula differs by q^(2(p-1)) which reduces1. Product remains cuspidal.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-EIGEN",
+    "supplier_ids": [
+      "DS"
+    ],
+    "proof_locator": "section 3, paragraphs 3–4",
+    "needed_hypotheses": "Finite free cusp lattice and commuting good Hecke operators",
+    "conclusion": "A characteristic-zero cusp eigenform preserving the residual good eigenvalues",
+    "connection": "Lemma6.11 lifts eigenvalues only; refine the simultaneous eigenspace under T_p if p does not divideN.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-PRIMITIVE",
+    "supplier_ids": [
+      "LI-294"
+    ],
+    "proof_locator": "section 3, paragraph 5",
+    "needed_hypotheses": "Nonzero cusp eigenform for every Hecke prime outsideN",
+    "conclusion": "Normalized primitive H of the same w at some divisor level",
+    "connection": "Invariant new/old projection and primitive extraction; no minimal residual level or weight assertion.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-ATTACH",
+    "supplier_ids": [
+      "GV-ATTACHMENT"
+    ],
+    "proof_locator": "section 4, paragraph 1",
+    "needed_hypotheses": "H normalized cuspidal, w>=2, selected coefficient place",
+    "conclusion": "rho_H with matching good characteristic polynomials modulo the chosen prime",
+    "connection": "Use the attachment before the source introduces ordinarity; preserve trace and determinant, arithmetic Frobenius.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-RESIDUAL",
+    "supplier_ids": [
+      "DS",
+      "SERRE-TRACE-REVIEWED-REPRESENTATION"
+    ],
+    "proof_locator": "section 4, paragraphs 2–3",
+    "needed_hypotheses": "Same finite residual coefficient field after finite extension, absolute irreducibility ofr",
+    "conclusion": "An actual stable lattice quotient is isomorphic tor",
+    "connection": "Compact-image lattice; finite Chebotarev on common quotient; finite-field characteristic-polynomial Brauer–Nesbitt; then composition lengthone. Not the characteristic-zero trace-only lemma.",
+    "status": "authored_pending_independent_review"
+  },
+  {
+    "id": "SOLV22-CALLERS",
+    "supplier_ids": [
+      "KW-CONVENTION"
+    ],
+    "proof_locator": "section 5",
+    "needed_hypotheses": "Actual ORIGINAL/FIRST/RETURN odd-prime globally irreducible solvable branch",
+    "conclusion": "Weak residual modularity for the specified original object",
+    "connection": "Do not identify arbitrary characteristic-zero lifts. Remaining lifting, RETURN weights, induction and refined optimality stay separate.",
+    "status": "authored_pending_independent_review"
+  }
+]

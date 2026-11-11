@@ -1,0 +1,64 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "saved_at": "2026-11-09T06:56:23.628Z",
+  "target_sha256": "881fadc3322cb832454f9f4cfde54266b06e9f1e65c2256806134ccea3535b73",
+  "decision": "accepted within six conditional output-import scopes",
+  "checks": [
+    {
+      "id": "ACTIVE-ORIGINAL-CLOSE-FIXED-SHIFT",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true,
+      "mapping": true
+    },
+    {
+      "id": "ACTIVE-ORIGINAL-TEST-DIVISIBILITY",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true,
+      "mapping": true
+    },
+    {
+      "id": "ACTIVE-ORIGINAL-TEST-SHIFT-EXISTENCE",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true,
+      "mapping": true
+    },
+    {
+      "id": "ACTIVE-ORIGINAL-ORDINARY-VALUE",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true,
+      "mapping": true
+    },
+    {
+      "id": "ACTIVE-ORIGINAL-LITERAL-CUTOFF",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true,
+      "mapping": true
+    },
+    {
+      "id": "ACTIVE-ORIGINAL-POLYNOMIAL-SIZE",
+      "digest": true,
+      "assertions": true,
+      "locations": true,
+      "passages": true,
+      "mapping": true
+    }
+  ],
+  "source_comparison": "Read actual current7027–7199 and7205–7374 and compare to frozen source reconstruction. Fixed shift Close, same-place six-test divisibility, one Test shift, ordinary value composition, literal cutoff and size outputs agree.",
+  "qualifications": [
+    "The divisibility proof uses one maximizing place, guarded nonzero denominators, integral ratios before logarithm comparison, and makes no local-unit assumption on kappa.",
+    "Completeness chooses Test shift first and Close afterward; ordinary rational separation uses the separately supplied height bound.",
+    "The cutoff imports unconditional BMOR including exceptional-zero scope, actual reduction orders and formal bounds; these are not discharged by this output import.",
+    "Size imports the separate exact saved-expression replay, same original polynomial and safe height-four wrappers; no later quartic counts or expanded-polynomial claim.",
+    "Initial compound clauses remain partial; source proofs, finite computations and published inputs retain their separate bindings."
+  ]
+}

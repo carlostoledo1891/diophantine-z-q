@@ -1,0 +1,135 @@
+{
+  "schema": "v15-exact-current-application-review/v1",
+  "created_utc": "2026-11-10T08:13:37.9232749Z",
+  "reviewer": "/root/v15_sourcefirst_review",
+  "subject": {
+    "recursive_dependency_sha256": "cae01fb3b7a4e00e23bbe188c4065faad595129e43192b9a3ba7ce15718cc011",
+    "target_sha256": "874568de76e4946fe76ed2e52c77e33a1ff05a3f43911a55a060407883bd0dbd",
+    "id": "V15-PARITY237",
+    "kind": "application",
+    "targets_file_sha256": "cc8624ffb8ec8a02563f2f4c6b3f2dfa64a69853aee7d7f4abea4586ef23bb73",
+    "applications_file_sha256": "99ada29620b8f2dec1637a66f821443532d4c08e469e1b6b44cc265b61ed2da9"
+  },
+  "mathematical_decision": "accepted_at_stated_scope",
+  "dimensions": {
+    "source_hypotheses": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        3,
+        4,
+        6
+      ],
+      "reviewed_required": "[3 Parity] Prevent cancellation at the consumed prime\n[4 Curve input] Justify the even valuation of F\n[6 Dependency order] Exclude reference exceptions before forming later ratios",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "constructed_objects": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        1,
+        2
+      ],
+      "reviewed_required": "[1 Physical variables] Match the unmodified scalar interface\n[2 Replacement rows] Delete exactly one scalar coordinate",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "index_domain_coverage": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "reviewed_required": "[3 Parity] Prevent cancellation at the consumed prime\n[4 Curve input] Justify the even valuation of F\n[5 Extraction] Use the new numerical inequalities\n[8 Completeness] Preserve the actual order of choices",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "transition_maps": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "reviewed_required": "[1 Physical variables] Match the unmodified scalar interface\n[2 Replacement rows] Delete exactly one scalar coordinate\n[6 Dependency order] Exclude reference exceptions before forming later ratios\n[8 Completeness] Preserve the actual order of choices",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "consumed_object_identity": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "reviewed_required": "[1 Physical variables] Match the unmodified scalar interface\n[4 Curve input] Justify the even valuation of F\n[6 Dependency order] Exclude reference exceptions before forming later ratios\n[7 Global soundness] Keep one threshold uniform in the input",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "coefficient_conventions": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        1,
+        2,
+        3
+      ],
+      "reviewed_required": "[1 Physical variables] Match the unmodified scalar interface\n[2 Replacement rows] Delete exactly one scalar coordinate\n[3 Parity] Prevent cancellation at the consumed prime",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "local_conditions": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "reviewed_required": "[3 Parity] Prevent cancellation at the consumed prime\n[4 Curve input] Justify the even valuation of F\n[5 Extraction] Use the new numerical inequalities\n[7 Global soundness] Keep one threshold uniform in the input",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "exceptional_cases": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "reviewed_required": "[4 Curve input] Justify the even valuation of F\n[5 Extraction] Use the new numerical inequalities\n[8 Completeness] Preserve the actual order of choices\n[9 Map limitation] Avoid a false auxiliary-witness bijection",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    },
+    "downstream_consumption": {
+      "decision": "accepted_at_stated_mathematical_scope",
+      "clause_ids": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "reviewed_required": "[6 Dependency order] Exclude reference exceptions before forming later ratios\n[7 Global soundness] Keep one threshold uniform in the input\n[8 Completeness] Preserve the actual order of choices\n[9 Map limitation] Avoid a false auxiliary-witness bijection",
+      "judgment": "The mapped requirements, constructions, conventions and exceptions were read together and agree with the scoped support and the application-specific reasoning below. Historical author pending-status sentences are preserved as history, not used as evidence of approval."
+    }
+  },
+  "reasoning": "My separate non-author arithmetic review supplies the three disjoint valuation classes, even valuation of F and forced149 exception exclusion before later ratios. The current finite237 binding verifies the two replaced rows and retained209 rows. Completeness and uniform threshold are proved for the new criterion, not inferred from an unrestricted inverse map.",
+  "supporting_reviews": [
+    {
+      "path": "work/v15-sourcefirst-review-001/PARITY237-CURRENT-ARITHMETIC.json",
+      "sha256": "f5d2991b3ada30534f4cfb4978f99f7cb951cceeb404bf62819984eb562b9aec"
+    },
+    {
+      "path": "work/v15-sourcefirst-review-001/LOGS-AND-PARITY-BINDING-DECISION.json",
+      "sha256": "60ba569f3915759118f597e1c7104d8976ee2fa809de28bd682257c5d1634a5f"
+    }
+  ],
+  "dependencies": [
+    "V15-TYPING238",
+    "V15-BASE248",
+    "V15-SCALAR245"
+  ],
+  "source_sha256": "dbc35d8c7f746401b102e0c40e62f906f54fd407ce95229488434ebf0d711e1b",
+  "authorship_declaration": "I did not author the manuscript proofs, constructions or normalized author objects reviewed here. I supplied independent source review and support routing. Other reviewers are used only outside their disclosed author scopes; in particular237 is supported by my review and233 by the disjoint finite reviewer.",
+  "protocol_status": "Mathematical current-object decision only. Complete contributor eligibility, exact eventual Git target and authenticated ACK remain separate and pending; changes to author arrays or paths change target hashes and require explicit transport.",
+  "limitations": [
+    "Reuses exact retained accepted mathematics; not a fresh proof of every published supplier.",
+    "No effective defining N0 is asserted.",
+    "H6 d450 corollary acceptance is withdrawn; where relevant it is replaced by independent b4bae804. Its314-lift scope remains unaffected."
+  ]
+}

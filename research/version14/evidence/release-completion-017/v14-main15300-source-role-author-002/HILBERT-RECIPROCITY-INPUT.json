@@ -1,0 +1,50 @@
+{
+  "author": "/root/v14_h6_coverage",
+  "created_at": "2026-11-09T09:51:37.524Z",
+  "status": "published-source application proposal; independent review and byte-pinned source capture pending",
+  "source": [
+    {
+      "title": "John Voight, Quaternion Algebras, Springer2021, Chapter14",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-56694-4_14",
+      "locators": [
+        "Proposition14.2.1",
+        "Proof of Proposition14.2.1"
+      ],
+      "read_method": "Published Springer HTML read directly using web tool",
+      "scope": "The product of local Hilbert symbols over all places of Q equals one for any two nonzero rational arguments."
+    },
+    {
+      "title": "John Voight, Quaternion Algebras, Springer2021, Chapter12",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-56694-4_12",
+      "locators": [
+        "12.4.5",
+        "Lemma12.4.6",
+        "Table12.4.9",
+        "12.4.12"
+      ],
+      "read_method": "Published Springer HTML read directly using web tool",
+      "scope": "Real sign, symmetry and bimultiplicativity; odd-local unit/unit symbol one and nonsquare unit/uniformizer symbol minus one."
+    }
+  ],
+  "consumer": {
+    "pin": {
+      "side": "head",
+      "path": "manuscripts/quartic_v14.tex",
+      "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+    },
+    "start_line": 15497,
+    "end_line": 15509,
+    "excerpt_sha256": "eb451c5f15936ff393ba96fee0ab16c7a24dd2ca803fbcdf24ffe6010022fdf8"
+  },
+  "hypotheses": "Actual d,m are positive integers; d is prime to complete level, hence to2m; m is odd. Preserve the dyadic factor.",
+  "derivation": [
+    "Apply rational Hilbert reciprocity to(d,m). The infinite factor is one by positivity.",
+    "At odd primes outside2md both are units, so the symbol is one. At q dividing d, m is a unit. Symmetry and bimultiplicativity reduce (d,m)_q to (m,q)_q raised to v_q(d); unit factors contribute one. Table12.4.9 identifies this with (m/q)^v_q(d).",
+    "The product over p dividing2m is therefore the inverse of the product over q dividing d, which equals that product because each factor is plus or minus one. The latter is the Jacobi symbol(m/d)."
+  ],
+  "scope_limits": [
+    "This binds O.5c only, not the metaplectic operator identities or global theta invariance.",
+    "The existing full-book PDF is corrected author edition1.0.7u; it was used only to locate the proposition, not as a published-version substitute.",
+    "No accepted current component was found whose available assertion already states this exact reciprocity input; outgoing T039 does not supply its own premise."
+  ]
+}

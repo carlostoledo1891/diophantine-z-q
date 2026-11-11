@@ -1,0 +1,382 @@
+{
+  "schema": "proposed-nine-obligation-contracts/v1",
+  "author": "/root",
+  "status": "All independent decisions remain unset. Serre errata scope is being checked by the independent reviewer.",
+  "candidate_sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4",
+  "sources": [
+    {
+      "id": "kolyvagin-icm1991",
+      "pin": {
+        "path": "work/quartic-v14-prep/final-source-root/icm1990.pdf",
+        "sha256": "a86ae342133e8f051752bfd26009c38b9c755e8469c46235cef2d35e8c68f75d",
+        "bytes": 85534904
+      },
+      "url": "https://www.mathunion.org/fileadmin/ICM/Proceedings/ICM1990.1/ICM1990.1.ocr.pdf",
+      "locator": "ICM Kyoto 1990, published 1991, volume I, article pp429-436; Theorem1 p430, Theorems2-5 p431; PDF517-524",
+      "redistribution": "Local audit only; source PDF is not a proposed repository artifact."
+    },
+    {
+      "id": "serre-1989-tate",
+      "pin": {
+        "path": "work/quartic-v14-prep/final-source-root/serre-published.pdf",
+        "sha256": "971dbfdd4414d99ea21d7d0af63dbb790d7b1188e9aec37f422181a2b543dec4",
+        "bytes": 5563667
+      },
+      "url": "https://www.math.mcgill.ca/darmon/courses/18-19/gs/serre-mcgill.pdf",
+      "locator": "1989 Addison-Wesley reprint; III section1.1 ppIII1-4; section1.2 pIII7; AppendixA.7 Theorem3 ppIII52-53",
+      "redistribution": "Local audit only; source PDF is not a proposed repository artifact."
+    },
+    {
+      "id": "serre-1979-errata",
+      "pin": {
+        "path": "work/quartic-v14-prep/final-source-root/serre1979-errata.pdf",
+        "sha256": "51ee4c28314e68d4456900cba2f463f9d7c2404a6d7b2595d16ff9738626401b",
+        "bytes": 2739985
+      },
+      "url": "https://www.numdam.org/article/AST_1979__65__155_0.pdf",
+      "locator": "Groupes algebriques associes aux modules de Hodge-Tate, Asterisque65 (1979), pp155-188; errata p188",
+      "redistribution": "Local audit only; source PDF is not a proposed repository artifact."
+    }
+  ],
+  "applications": [
+    {
+      "id": "V14-SOURCE-KOLYVAGIN-PUBLISHED",
+      "affected_inherited_applications": [
+        "A020",
+        "A082"
+      ],
+      "authors": [
+        "/root"
+      ],
+      "kind": "source_replacement",
+      "supplier": "kolyvagin-icm1991",
+      "status": "unaccepted author proposal",
+      "obligations": {
+        "source_hypotheses": {
+          "required": "Modular elliptic curve over Q with analytic rank at most1.",
+          "constructed": "A/Q is the elliptic curve in the forward-rank lemma; modularity is supplied separately by BCDT.",
+          "justification": "The final theorem has no residual-image condition or prime exclusion; BCDT final-source review remains separate.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "constructed_objects": {
+          "required": "The usual elliptic L-function at s=1, Mordell-Weil rank and the full localization-kernel Sha.",
+          "constructed": "The manuscript uses those same objects before passing to the2-primary Kummer sequence.",
+          "justification": "Published p429 defines Sha with all places; p430 fixes L and analytic rank.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "index_domain_coverage": {
+          "required": "Every modular elliptic curve over Q in analytic ranks0 or1.",
+          "constructed": "The entire family in the lemma is covered, since each curve is modular and its assumed analytic rank is at most1.",
+          "justification": "The inclusive inequality was checked in the actual printed page, not OCR alone.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "transition_maps": {
+          "required": "Auxiliary-field restriction if the explanatory proof chain is used.",
+          "constructed": "The manuscript restricts Sha(Q) to Sha(K) and retains its finite2-torsion kernel.",
+          "justification": "Published p431 explicitly gives this containment; no isomorphism between the two Sha groups is asserted.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "consumed_object_identity": {
+          "required": "Rank and finiteness over Q.",
+          "constructed": "Exactly A(Q) and Sha(A/Q) enter the Kummer sequence.",
+          "justification": "Theorem1 directly supplies the Q-result; Theorems3-5 explain the auxiliary route and do not replace the final object.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "coefficient_conventions": {
+          "required": "Integral group rank and finiteness of the entire Sha.",
+          "constructed": "The downstream corank is over Z2 after tensoring A(Q) by Q2/Z2.",
+          "justification": "Finite Sha contributes zero corank, so the corank equals the same integral rank.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "local_conditions": {
+          "required": "Modular parametrization X0(N) to A; the full Sha at every place.",
+          "constructed": "N is the conductor, and BCDT supplies the modularity input.",
+          "justification": "The theorem is global; it requires no ordinary or good reduction at2.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "exceptional_cases": {
+          "required": "Both analytic ranks0 and1; no higher-rank conclusion.",
+          "constructed": "The lemma assumes r at most1; all later uses are in this range.",
+          "justification": "Neither the cited theorem nor this replacement establishes a converse or the restricted2-converse.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "downstream_consumption": {
+          "required": "Forward rank and finiteSha for the two curves after the restricted converse.",
+          "constructed": "The pole-completeness argument consumes rank1 and finiteSha after applying RC.",
+          "justification": "Only the citation edition and page locator change. RC and all other inputs stay independently pending as applicable.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 1182,
+              "end_line": 1205,
+              "excerpt_sha256": "b59787566dbf023c1f7e5348d2cc64fe923eccb8a2a8f3b039be61877fc058f4"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        }
+      }
+    },
+    {
+      "id": "V14-SOURCE-TATE-LOCAL-ALGEBRAICITY",
+      "affected_inherited_applications": [
+        "A011"
+      ],
+      "authors": [
+        "/root"
+      ],
+      "kind": "source_replacement",
+      "supplier": "serre-1989-tate",
+      "status": "unaccepted author proposal",
+      "obligations": {
+        "source_hypotheses": {
+          "required": "Abelian p-adic representation of a finite local extension, Hodge-Tate with semisimple inertia.",
+          "constructed": "Base field Q5, finite coefficient field E, one-dimensional E-valued deRham character.",
+          "justification": "Restriction of scalars is Hodge-Tate; multiplication in E diagonalizes after scalar extension, including on inertia.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "constructed_objects": {
+          "required": "Finite-dimensional Qp-vector space with continuous Galois action.",
+          "constructed": "The underlying Q5-vector space of the E-line.",
+          "justification": "The representation used by Tate is this restriction of scalars, not an incorrectly assumed Q5-valued character.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "index_domain_coverage": {
+          "required": "All inertia elements and a nonempty local-unit neighborhood in the local algebraicity conclusion.",
+          "constructed": "The entire character restriction is semisimple; the theorem supplies an open subgroup of local units.",
+          "justification": "No finite list of units is substituted for the open-subgroup assertion.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "transition_maps": {
+          "required": "Local reciprocity and an algebraic torus morphism.",
+          "constructed": "G_m maps to GL_Q5(E) and then to Res_E/Q5 G_m because it commutes with E on a Zariski-dense open subgroup.",
+          "justification": "Weil-restriction adjunction identifies this morphism with an integral power; the inverse in Serre reciprocity agrees with the cyclotomic unit convention.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "consumed_object_identity": {
+          "required": "The actual twisting character is finite order times an integral cyclotomic power.",
+          "constructed": "The power comes from the algebraic map; the quotient has finite inertia at5 and at the other finitely many ramified primes.",
+          "justification": "Class field theory over Q factors the quotient through a finite ray-class group, so it is the same global character up to that power.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "coefficient_conventions": {
+          "required": "Q5-linear Hodge-Tate condition and Serre local reciprocity convention.",
+          "constructed": "Finite E/Q5 coefficients; manuscript Tate convention assigns cyclotomic weight-1.",
+          "justification": "The argument tracks the inverse on local units and only then compares weight multisets; it does not assume identical sign notation in Serre.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "local_conditions": {
+          "required": "Finite base field over Qp, local algebraicity only near1.",
+          "constructed": "Q5 satisfies the source hypotheses. Other local inertia groups are addressed through local class field theory and the pro-l/pro-5 argument.",
+          "justification": "Finitely many ramified places allow one finite global conductor. The real place is included in the ray modulus when needed.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "exceptional_cases": {
+          "required": "No assertion for nonabelian representations or infinite coefficient fields; negative powers allowed.",
+          "constructed": "The twisting character is abelian and defined over a finite coefficient extension; the integral power can have either sign.",
+          "justification": "The surrounding proof establishes its deRham property separately; that premise is retained rather than inferred from this theorem.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        },
+        "downstream_consumption": {
+          "required": "The modular twist becomes finite after matching the two Hodge-Tate weights.",
+          "constructed": "The existing weight comparison forces weight2 and zero cyclotomic exponent; the finite Dirichlet character is absorbed into the eigenform.",
+          "justification": "The replacement supplies exactly the character classification used there. Modularity, weight comparison, Shimura and Li inputs remain separately inventoried.",
+          "evidence": [
+            {
+              "pin": {
+                "path": "work/quartic-v14-prep/final-source-root/quartic_v14.source-proposal.tex",
+                "sha256": "1a00bb350cea66b0e205f78a937d7eade1c0cf3c793b5ddc7e2b85f2615d06c4"
+              },
+              "start_line": 834,
+              "end_line": 861,
+              "excerpt_sha256": "00a3f66e21ec71081c2394fb40650fda6c72835c221932130a5816428aeaa3c0"
+            }
+          ],
+          "status": "unresolved_independent_review"
+        }
+      }
+    }
+  ],
+  "unresolved_sources": [
+    "Lauter-Naehrig-Yang final coordinate normalization",
+    "Jetchev-Kane final geometric/adelic descriptions"
+  ]
+}

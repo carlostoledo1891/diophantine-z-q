@@ -1,0 +1,3 @@
+This selection preserves the six public members of the imported-proof closure and its independent review. ORIGINAL-MANIFEST.json is metadata for the original mixed-visibility package; its private generator-observation member is deliberately absent. Private scan directories referenced by INPUT-PINS.json remain excluded. Their review summaries are included, not their raw records.
+
+The graph and author propagation supplement the earlier canonical and public-summary proposals. They do not assert final serialized target acceptance or authenticated acknowledgments. Historical pending statements in the author files are preserved; the later review records their accepted scope.

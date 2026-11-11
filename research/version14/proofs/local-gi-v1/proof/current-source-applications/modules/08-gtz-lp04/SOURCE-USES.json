@@ -1,0 +1,309 @@
+{
+  "schema": "gtz-local-proof-source-uses/v1",
+  "author": "/root/astra_v14_assertions_arithmetic",
+  "uses": [
+    {
+      "id": "LP04-U01",
+      "kind": "substantive_dependency",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 30,
+        "end_line": 95,
+        "excerpt_sha256": "6c1a00b0544c1fb7d6f430857fa3c45b933f0c9b59e9c58b8f1d6119f60a31a0"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+        "authors": [
+          "Ben Green",
+          "Terence Tao",
+          "Tamar Ziegler"
+        ],
+        "publication": "Annals of Mathematics 176 (2012), 1231–1372",
+        "doi": "10.4007/annals.2012.176.2.11",
+        "version": "final publisher PDF",
+        "role": "Definitions and explicitly isolated elementary premises; disputed main theorem is not a premise of LP04.",
+        "locator": "Section 3, pp.1241–1244: exponential/BCH and connected real generated nilpotent subgroups; Definition 6.8 (degree–rank indices); Definition 9.1, p.1279"
+      },
+      "assertion": {
+        "statement": "A finite-dimensional nilpotent real Lie algebra has a simply connected BCH group with global exponential coordinates; homogeneous upward-closed word ideals exponentiate to closed connected normal subgroups. The explicitly corrected weighted thresholds define a taut rational degree–rank filtration.",
+        "objects": "Free real Lie algebra on finite core, linear-petal and discarded-petal letters, weighted truncation u, U=exp(u), U_(d,r).",
+        "hypotheses": "Positive integer letter weights; discard w>m or w=m and length>R; finite alphabet; m>=1 and 1<=R<=m.",
+        "quantifiers": "For every such alphabet and every admissible degree–rank index, including (0,0).",
+        "parameter_range": "d,r nonnegative integers with 0<=r<=d; positive-degree rank zero equals rank one; length may be one.",
+        "uniformity": "Only fixed m,R and the labelled dimension vector determine these groups.",
+        "constants": "Nilpotency class at most m; there is no asymptotic or numerical estimate.",
+        "normalizations": "[x,y]=x^-1 y^-1 xy; x^t=exp(t log x); weights sum over actual entries; all w>d words are included without a rank restriction.",
+        "exceptional_cases": "Trivial and missing generator families allowed; top group may be trivial; no quotient kernel is assumed central.",
+        "limit_order": "Construct all real groups and lattices before taking any limit orbit."
+      },
+      "available_from_supplier": "Exponential/BCH framework and the intended universal degree–rank definitions.",
+      "needed_here": "A corrected explicit filtration on exactly the constructed free weighted group.",
+      "connecting_derivation": "Lines30–95 define the ideal, check closure by addition of multidegrees, check nesting and every commutator index, and prove top centrality. The original erroneous filtration formula is replaced, not cited as correct.",
+      "status": "author_proposed; independent acceptance absent"
+    },
+    {
+      "id": "LP04-U02",
+      "kind": "substantive_dependency",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 97,
+        "end_line": 174,
+        "excerpt_sha256": "fb9d63c4a30f4c5229a97e8da5951d89e46d8bc1afdae293a25eeded720a7776"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/local-only/tointon-book.pdf",
+        "sha256": "16e53474390645cf0256c92fb821c08c4cadffe3b31e5c685f5bb023b1208d59",
+        "bytes": 1158802,
+        "title": "Introduction to Approximate Groups",
+        "author": "Matthew C. H. Tointon",
+        "publication": "Cambridge University Press, LMS Student Texts 94, 2020",
+        "doi": "10.1017/9781108652865",
+        "version": "Author-hosted published-book PDF, explicitly linked as his CUP book on author book page",
+        "source_url": "https://tointon.neocities.org/Tointon_Approx_Groups.pdf",
+        "authentication_url": "https://tointon.neocities.org/book",
+        "locator": "Definition 5.4.3, Theorem 5.4.5, concluding free-nilpotent-group paragraph of Section 5.4, printed pp.96–98 / PDF pp.110–112",
+        "corrections_check": "Author page inspected 2026-11-07: listed corrections concern printed pp.2,25,45,46,48,189; none concerns Section 5.4. This is a bounded check, not a claim that no undisclosed correction exists.",
+        "scope": "Integral collection is proved there; the free-group uniqueness and lower-central basis are stated there with Hall Theorem 11.2.4 as proof reference. This application uses the published statement, not a claim to have read Hall.",
+        "restriction": "Author permits personal non-commercial use and prohibits redistribution. Full PDF and rendered pages stay local-only; publish only bibliographic locator, hash and authored comparison."
+      },
+      "assertion": {
+        "statement": "Basic group commutators give integer normal forms in free nilpotent groups, and their fixed-length classes form a free abelian lower-central basis. This yields integral Hall coordinates, lattices, and exact lattice intersections for the upward-closed monomial quotients used here.",
+        "objects": "Free nilpotent group of class m, associated graded Lie ring, free real Lie algebra, finite Hall list, discrete group Lambda generated by exp letters.",
+        "hypotheses": "Finite ordered alphabet; nilpotency class at most m. Uniqueness and graded independence are used only for the free group. Additional relations are exactly sums of upward-closed individual-letter multidegrees.",
+        "quantifiers": "For every such quotient and every further upward-closed homogeneous subgroup S.",
+        "parameter_range": "All integer exponents, all real coordinate parameters, all permitted finite alphabet sizes, including zero survivors.",
+        "uniformity": "Coordinate maps, lattices and fundamental sets depend only on the fixed Hall list and the forbidden multidegrees.",
+        "constants": "The coordinate inverse is a finite triangular polynomial; compact representatives use [0,1]^v. No unspecified finite computation is used.",
+        "normalizations": "Tointon weight is bracket length; manuscript weight w is a separate positive grading. The ordered group-commutator coordinate need not be a single homogeneous Lie word.",
+        "exceptional_cases": "Discarded Hall factors vanish including their BCH corrections. Saturation is proved for these monomial ideals, not asserted for arbitrary rational quotients.",
+        "limit_order": "Integral coordinate proof is over standard real groups before any ultrapower."
+      },
+      "available_from_supplier": "Published integer collection, uniqueness and lower-central basis.",
+      "needed_here": "q(Lambda intersect V_S)=q(Lambda) intersect q(V_S), a statement not supplied by the central-kernel LP13 argument.",
+      "connecting_derivation": "Lines107–117 connect Hall graded independence to homogeneous Lie brackets. Lines134–166 prove triangular real coordinates, identify the generated integer lattice, prove cocompactness, and lift retained integer Hall coordinates in S. The direct quotient argument supplies the needed saturation.",
+      "status": "author_proposed; independent acceptance absent"
+    },
+    {
+      "id": "LP04-U03",
+      "kind": "explicit_upstream_conditional_input",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 258,
+        "end_line": 281,
+        "excerpt_sha256": "27e10a934dd8bb4bb32902b8b2d092f77535ec63ca7479e88d0a576690097cf1"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+        "authors": [
+          "Ben Green",
+          "Terence Tao",
+          "Tamar Ziegler"
+        ],
+        "publication": "Annals of Mathematics 176 (2012), 1231–1372",
+        "doi": "10.4007/annals.2012.176.2.11",
+        "version": "final publisher PDF",
+        "role": "Definitions and explicitly isolated elementary premises; disputed main theorem is not a premise of LP04.",
+        "locator": "Theorem 11.1(i),(ii), pp.1301–1302; its hypotheses from Theorem 7.2 and final output of Lemma 10.10; Section12 setup pp.1308–1309"
+      },
+      "assertion": {
+        "statement": "The fixed real vertical character eta vanishes on every weight-m, length-R top commutator having at least two petal entries or at least one discarded (independent) petal entry.",
+        "objects": "Universal U with core C, linear petals L, independent petals B; T=U_(m,R); eta:T to R; final sunflower frequency representation.",
+        "hypotheses": "Full Theorem7.2 setup; final Lemma10.10 decomposition after rational-core and small-frequency removal; common fixed dimension data and standard eta; repaired additive-quadruple bias and stated independence supplied upstream.",
+        "quantifiers": "Every top commutator of the specified bad type, for every allowed generator tuple; other bracketings follow by Jacobi at the top layer.",
+        "parameter_range": "m=s-1, R=r_* with 1<=R<=m. The annihilation input is only on top weight m and length R.",
+        "uniformity": "A single fixed eta and labelled dimension vector for the selected dense subfamily; independent of h and N.",
+        "constants": "Vanishing is exact real zero, not merely zero modulo integers.",
+        "normalizations": "The final decomposition has removed small and rational frequencies. The earlier pre-removal Section12 restatement is not silently used. Repeated clauses (iii),(iv) are redundant.",
+        "exceptional_cases": "Bad words that already vanish impose no condition; no annihilation claim for eta on all of G* because eta is defined only on T.",
+        "limit_order": "Select the fixed standard data before limit h,N; upstream proof must satisfy the all-limit conventions."
+      },
+      "available_from_supplier": "The published theorem states this interface, but its analytic proof depends on repaired upstream units.",
+      "needed_here": "Only exact annihilation on G* intersect T, derived from these top-word vanishings.",
+      "connecting_derivation": "Theorem3 lines193–251 proves the quotient and character theorem conditional on precisely this input. Lines258–281 identify the available-to-needed match and expose the LP03/bias dependency. This source row is an upstream obligation, not a certification of the analytic theorem.",
+      "status": "author_proposed; independent acceptance absent"
+    },
+    {
+      "id": "LP04-U04",
+      "kind": "substantive_dependency",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 283,
+        "end_line": 324,
+        "excerpt_sha256": "0184a0d4cafe10d6311e6d2a2927bc564e8b0863c969d6d0b53201e0d6af6b08"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+        "authors": [
+          "Ben Green",
+          "Terence Tao",
+          "Tamar Ziegler"
+        ],
+        "publication": "Annals of Mathematics 176 (2012), 1231–1372",
+        "doi": "10.4007/annals.2012.176.2.11",
+        "version": "final publisher PDF",
+        "role": "Definitions and explicitly isolated elementary premises; disputed main theorem is not a premise of LP04.",
+        "locator": "Construction (6.3), pp.1254–1255; nilcharacter definition and unit-vector convention in Section6"
+      },
+      "assertion": {
+        "statement": "An integral character on a rational central top torus admits a finite-dimensional smooth unit-vector-valued function with that vertical frequency.",
+        "objects": "Compact quotient Q/Delta, central rational top group T, character eta integral on Delta intersect T.",
+        "hypotheses": "Q connected simply connected nilpotent; Delta lattice; eta continuous real homomorphism integral on the top lattice.",
+        "quantifiers": "For every fixed such quotient and character; for all points and every top-group element.",
+        "parameter_range": "Any finite dimension, including a trivial top group or zero character.",
+        "uniformity": "Dimension and Lipschitz norm depend only on fixed geometry and character, not the polynomial orbit.",
+        "constants": "Finite atlas and normalized sum of squares of bump functions; no bound uniform over unbounded characters.",
+        "normalizations": "e(t)=exp(2 pi i t); the output has Euclidean norm exactly one at every point.",
+        "exceptional_cases": "A scalar cutoff by itself does not retain norm one; the later completion uses two blocks of the same vertical character.",
+        "limit_order": "Choose the geometric function before N and h; use natural extension on all limit points."
+      },
+      "available_from_supplier": "Published example/section construction of vertical vector functions.",
+      "needed_here": "A global function for the exact descended integral character on the exact quotient lattice.",
+      "connecting_derivation": "Lines284–304 give the finite-chart, squared-partition construction and verify global smoothness, exact norm and equivariance. Lines474–496 give the two-block completion for the identified later cutoff issue.",
+      "status": "author_proposed; independent acceptance absent"
+    },
+    {
+      "id": "LP04-U05",
+      "kind": "substantive_dependency",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 357,
+        "end_line": 445,
+        "excerpt_sha256": "1ed363af6720a80b0610c7e6992277976a586d2809b775cf83c634a3b36e6da3"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-release/preview-repository/research/version14/proofs/local-gi-v1/proof/modules/03-gtz-lp13-multilinearity/proof.tex",
+        "sha256": "de1074bb94992ce5fcbffb44d8fb05474f527dd7fabe78256b1bf0d009253860",
+        "bytes": 20575,
+        "version": "lemma13-2-002",
+        "manifest": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/lemma13-2-002/MANIFEST.json",
+          "sha256": "95771803bed9d9135430152e2e20ad450c46aaae3ef0eeba0cab33bee59fd06c",
+          "bytes": 3587
+        },
+        "status": "Separately authored project proof; acceptance not supplied by this packet",
+        "locator": "Sections 2 and 6: rational generated subgroups and central rational quotient"
+      },
+      "assertion": {
+        "statement": "A connected subgroup generated by finitely many connected rational subgroups is rational; a quotient by a connected central rational subgroup has the image lattice and compact nilmanifold.",
+        "objects": "H generated inside G times G0 times Q by J_a and the diagonal image of U_a; product lattice; central top D(T).",
+        "hypotheses": "Ambient groups connected simply connected nilpotent; input lattices discrete cocompact; every generating subgroup rational; phi maps Gamma into Lambda; D(T) central and rational.",
+        "quantifiers": "For every fixed comparison filtration group and its top quotient.",
+        "parameter_range": "All admissible indices; any real coefficients and any member h of the family.",
+        "uniformity": "Comparison groups and quotient geometry are fixed independently of h and all orbit coefficients.",
+        "constants": "No new numerical bound; quotient Lipschitz cost depends on the fixed geometry.",
+        "normalizations": "H_0=H_(1,0), not the full ambient product; lattice is intersection with the ambient product lattice.",
+        "exceptional_cases": "The LP13 intersection identity is used only where its central kernel D(T) is contained in the indexed subgroup. It is not used for the earlier G*.",
+        "limit_order": "Construct H, its lattice and the quotient before the limit polynomial families."
+      },
+      "available_from_supplier": "Versioned local rational-generation and central-quotient proofs.",
+      "needed_here": "Rationality of the actually generated comparison filtration and the top-rank quotient.",
+      "connecting_derivation": "Lines357–386 define the generating subgroups, prove the commutator condition and top identity. Lines434–445 cancel the actual character and apply the central rational quotient only after verifying its hypotheses.",
+      "status": "author_proposed; independent acceptance absent"
+    },
+    {
+      "id": "LP04-U06",
+      "kind": "substantive_dependency",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 388,
+        "end_line": 406,
+        "excerpt_sha256": "541e8c390e1e15f8700aad07eed5a29e51f4d7024a65d0a6e8a8bbcd944b8eda"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/proof.tex",
+        "sha256": "71440cafc4b83b0600cb57534b8141d8960b50101a18b933bf46419605c352c5",
+        "bytes": 13507,
+        "version": "tautification-003",
+        "manifest": {
+          "path": "work/quartic-v14-prep/final-source-gtz/local-proof-theta/tautification-003/MANIFEST.json",
+          "sha256": "b4f928e7c4886ba90bbb83c9bb2488a0fc8e601495ca2112bca68c6cb6808a0f",
+          "bytes": 2771
+        },
+        "status": "Separately authored project proof; acceptance not supplied by this packet",
+        "locator": "Tautification theorem and exact all-limit vertical identity conventions"
+      },
+      "assertion": {
+        "statement": "A nilcharacter representation can first be replaced by a taut representation with G0=G_(1,0), identical values, no larger degree and the full limit vertical identity.",
+        "objects": "Original target G/Lambda and lower-rank G0/Lambda0; normalized target representations; total-frequency map phi.",
+        "hypotheses": "Rational degree–rank filtrations and polynomial orbits as in the separately proved tautification statement; preserve G_(d,0)=G_(d,1).",
+        "quantifiers": "For every input representation, before constructing the common filtered lattice map phi.",
+        "parameter_range": "Degrees at most (m,R), allowing lower degree and a trivial top group.",
+        "uniformity": "Fixed compact representatives make translated test functions uniformly Lipschitz.",
+        "constants": "Translation costs depend only on fixed geometry and the original Lipschitz bounds.",
+        "normalizations": "Order is tautification, then total-frequency lattice map, then constant normalization. Arbitrary real conjugation of phi is not assumed rational.",
+        "exceptional_cases": "Tautification may shrink zero support but preserves positive indexed subgroups; top vertical identity is required on all limit points.",
+        "limit_order": "Perform geometric replacement before selecting coefficient families; extend standard choices to representatives of limit sequences."
+      },
+      "available_from_supplier": "Exact value-preserving tautification with all-limit convention.",
+      "needed_here": "A central top group and constant normalization that leaves horizontal torus classes unchanged without changing phi.",
+      "connecting_derivation": "Lines388–406 write a(0)=v lambda, normalize a to v^-1 a lambda^-1, translate F and use [G_(1,0),G_(i,1)] subset G_(i+1,1) subset G_(i,2) to check horizontals. Centrality checks the exact vertical identity.",
+      "status": "author_proposed; independent acceptance absent"
+    },
+    {
+      "id": "LP04-U07",
+      "kind": "substantive_dependency",
+      "consumer": {
+        "path": "work/quartic-v14-prep/final-source-gtz/local-proof-arithmetic/lp04-001/proof.tex",
+        "sha256": "2da9bab0631ef7d2a5853a1712396b745e71839dbc6cafe05149a6a43d05e2ec",
+        "bytes": 32609,
+        "start_line": 408,
+        "end_line": 432,
+        "excerpt_sha256": "176f200de8818bb29069db5b6284f21d3bfcc5e17f99a249445c5f572f6daff0"
+      },
+      "supplier": {
+        "path": "work/quartic-v14-prep/final-source-dk/GTZ-final.pdf",
+        "sha256": "cd320f5c1217df9bb41395e847ae2a924e70521021ca1b01c7abc20550123be1",
+        "bytes": 1300898,
+        "title": "An inverse theorem for the Gowers U^{s+1}[N]-norm",
+        "authors": [
+          "Ben Green",
+          "Terence Tao",
+          "Tamar Ziegler"
+        ],
+        "publication": "Annals of Mathematics 176 (2012), 1231–1372",
+        "doi": "10.4007/annals.2012.176.2.11",
+        "version": "final publisher PDF",
+        "role": "Definitions and explicitly isolated elementary premises; disputed main theorem is not a premise of LP04.",
+        "locator": "Definition9.6 and following homomorphism discussion pp.1281–1282; CorollaryB.4 and LemmaB.9, AppendixB"
+      },
+      "assertion": {
+        "statement": "Polynomial sequences are closed under multiplication and inversion and have Taylor coefficients in their indexed groups; the i-th horizontal Taylor map is a homomorphism into G_(i,1)/G_(i,2).",
+        "objects": "Normalized a_h, lattice-valued correcting polynomial, E_h,i, b_h, ratio of the two third-coordinate sequences, comparison filtration H.",
+        "hypotheses": "Taut rational degree–rank filtration; sequences start at one after the stated normalization; positive Taylor coefficient membership in the relevant degree filtration.",
+        "quantifiers": "Every integer n and every finite coefficient list satisfying the filtration conditions.",
+        "parameter_range": "All i>=1 up to the nilpotency degree; rank2 at i=1 means the next index (2,0).",
+        "uniformity": "No bound on real polynomial coefficients is required; h changes the polynomial, not H or the test-function bound.",
+        "constants": "Binomial normalization binom(n,i), including negative integer n; no finite-difference constant is introduced.",
+        "normalizations": "Horizontal vector equality is obtained by explicit lattice lifts; equality modulo lattice alone is not substituted into the generated subgroup.",
+        "exceptional_cases": "A ratio with zero horizontals has Taylor coefficient in G_(i,2), and its zeroth coefficient must be one. The smaller degree filtration has zeroth group G_(1,2).",
+        "limit_order": "Fixed choice of a lattice lift defines the family before natural extension; identities persist on all limit integers."
+      },
+      "available_from_supplier": "Taylor characterization, product group property, and horizontal homomorphism.",
+      "needed_here": "The exact triple (a_h,c_h,b_h) is polynomial in H, not just its horizontal torus image.",
+      "connecting_derivation": "Lines408–416 give the lattice polynomial gauge. Lines418–432 verify Taylor membership of each triple factor and the smaller-filtration ratio before product closure.",
+      "status": "author_proposed; independent acceptance absent"
+    }
+  ],
+  "inventory_status": "author inventory; independent source-first reconstruction and coverage decision required"
+}

@@ -1,0 +1,7 @@
+# Installed inventory and approval bindings
+
+This successor binds the installed inventory, one-leaf299 contract transport, genuine independent approval/report and current registry. It retains all previous classifications and application assertions. Ten new files are review-record distribution: eight source-reconstruction/provenance records and two inventory approval/report files. Six other files are retained historical proof/code copies in archives011/015, found by explicitly enabling Git core.longpaths. Their distribution does not establish their substantive conclusions or approve execution/correctness of retained code. Original001 remains an unsubmitted incomplete enumeration;002 corrects that omission.
+
+All previous6544 paths were read and checked against accepted dependent002. Only the expected registry differs. The ten observed contributor lists are carried into author arrays using real run IDs, with authentication and newest transport provenance explicitly pending. No historical producer identity was invented. The six long-path copies add no new active proof or operational code role.
+
+The260-path execution closure changes only its registry hash from dependent002. The registry checker binds the newly referenced approval and report transitively. Root installation records a successful audit with9 historical,7 negative,19 application-negative tests and8 contracts; this packet does not assert a new remote CI run. Final S, merge and full mathematical coverage remain separate.

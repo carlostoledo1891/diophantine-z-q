@@ -1,0 +1,299 @@
+{
+  "id": "V15-GAUSSIAN",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      17544,
+      20350
+    ],
+    "excerpt_sha256": "f3e7f0fa2a5bc08384b425dc42b0799496f1194c0ffabc29235c465ef0963142"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      31917,
+      32258
+    ],
+    "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+  },
+  "dependencies": [
+    "V15-FOUNDATION"
+  ],
+  "retained_reviews": [
+    {
+      "key": "premise",
+      "path": "work/jose248-audit-20261109/238-premise-independent-001/REVIEW.json",
+      "sha256": "cffc7faa1fe9939f08a05c234b65b9cc1067138c083bbca4b13e122e9857cec6",
+      "scope": "Bounded V14-to-new-height/selection binding, including sign correction; aggregate application reused, not full re-audit.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "closure",
+      "path": "work/quartic-v15-238-20261110/closure-audit/FINAL-CLOSURE-REVIEW-003.json",
+      "sha256": "cbb6a4058ba9ee5a5d1786259a060830bf187be5d3a4fc27b942c256b3e4232b",
+      "scope": "Bounded project-proof inclusion/source closure, not whole-proof verification.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Fixed data",
+      "required": "Supply primes for fixed coefficients and congruences",
+      "constructed": "Distinct integral c_j, fixed q, odd squarefree M prime to7, and lower bounds H,Y",
+      "match": "No estimate uniform in growing q,M,k or c_j is asserted.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            17565,
+            17596
+          ],
+          "excerpt_sha256": "86202eb698ed7caecfbd96b7680eef01bad876256ade15af0011f97d90cddb18"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Generator convention",
+      "required": "Preserve arithmetic Frobenius and ray residues",
+      "constructed": "π_j≡9 mod16, 1+3i mod7, i modM; d±=Norm(π±1)",
+      "match": "The Artin element is arithmetic Frobenius, not its inverse.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            17544,
+            17596
+          ],
+          "excerpt_sha256": "1e505e759ff4971a1ca0d8df43e1881869675e3bae11d8c57babbf03523ff01d"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Local exclusions",
+      "required": "Remove self-order and cross-order common divisors",
+      "constructed": "The theorem excludes every odd common divisor at one position and across distinct positions",
+      "match": "A finite list of congruence exclusions alone would not supply this output.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            17565,
+            17590
+          ],
+          "excerpt_sha256": "8df5a9d291079b9373bd381a9c3d53248f07b16ce12e5f5a717f5c4c398324ba"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Dyadic orders",
+      "required": "Use the actual exact powers of two",
+      "constructed": "v2(d−)=6, v2(d+)=2 and every cross-sign gcd is4",
+      "match": "These are the values used when dividing the reduction orders by four.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            20330,
+            20342
+          ],
+          "excerpt_sha256": "a6daa8a164f5aae586a758fcfbd19f89896b00cad5703da25fb7a6d42e6a1690"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Analytic supplier",
+      "required": "Keep the internal Gaussian specialization and its sources",
+      "constructed": "Fixed-field Mitsui, Green–Tao factorization/equidistribution and ordinary-prime transference feed the internal proof",
+      "match": "Sun is attribution; no general-Galois or Frei–Tinková theorem is silently assumed.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            17544,
+            17564
+          ],
+          "excerpt_sha256": "edefc41ff2ef7633fc485bcc223e0b2b1876a110f3b61761b442a84beaa9b615"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Tail and mass",
+      "required": "Retain a positive count after the full obstruction tail",
+      "constructed": "Choose L with C/(L logL)<c/(32(logL)^(4k)), then fix K_L,C_L before the asymptotic theorem",
+      "match": "The fixed positive cutoff mass exceeds the large-prime tail.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            20305,
+            20331
+          ],
+          "excerpt_sha256": "633b2dd4f1ce663564b2b6d42e297b3357d9d9722197f34cff5a69fb57dd9686"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Diagonal limits",
+      "required": "Choose slow strip width after fixed data",
+      "constructed": "τ_j decreases to0; thresholds N_j make all errors smaller than the retained mass and T≥τ√N/2",
+      "match": "No interchange of fixed-field and growing-field limits occurs.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            20305,
+            20350
+          ],
+          "excerpt_sha256": "30bd91ea3c1581f94776845d42297f3b6ae9c5e2ecbc09fadf62ac5afb04ff9d"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Dilation",
+      "required": "Permit required denominator divisibility",
+      "constructed": "Replace c_j by q²c_j and w by qv, strengthening the slope bound first",
+      "match": "The resulting divisibility is fixed before selection and preserves distinctness.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            17591,
+            17596
+          ],
+          "excerpt_sha256": "fd167da7e8c1fa0c20a6ee15c9d8597ae2a0b25622403e336ef222c1ad339a95"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Actual use",
+      "required": "Supply compatible common-index and real preparation",
+      "constructed": "The later selection theorem removes a thin strip and fixes all scales/avoidance before primes; CRT then uses the exact gcds",
+      "match": "This transfers the prime-pattern statement, not every historical quartic in the original broad inventory window.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            31917,
+            32258
+          ],
+          "excerpt_sha256": "42dc6caf42700ea086d7f778d8c0fc874db13f1ff750d260359f938b8fc965c3"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ],
+  "scope_correction": "The original inventory window17522–21947 also contains historical523/540/498-variable constructions. This application selects the actual Gaussian supplier17544–20350 only; it does not claim those later historical constructions are Gaussian lemmas.",
+  "open_evidence": [
+    "Individual published analytic theorem versions and all internal Gaussian subapplication edges remain subject to source-first reconciliation. Existing broad receipts are retained only at their stated scopes."
+  ]
+}

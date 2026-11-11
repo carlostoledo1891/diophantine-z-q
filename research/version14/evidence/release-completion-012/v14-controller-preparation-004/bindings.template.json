@@ -1,0 +1,75 @@
+{
+  "schema": "v14-controller-bindings/v1",
+  "side": "public",
+  "job_id": {
+    "$required": "new actual V14 job ID"
+  },
+  "batch_id": {
+    "$required": "new actual V14 immutable batch ID"
+  },
+  "mode": {
+    "$required": "capture or finalize"
+  },
+  "target_mode": {
+    "$required": "head or merge"
+  },
+  "inputs": {
+    "pull_request": {
+      "$required": "raw pin {path,sha256,bytes} for actual pull_request"
+    },
+    "base_manifest": {
+      "$required": "raw pin {path,sha256,bytes} for actual base_manifest"
+    },
+    "head_manifest": {
+      "$required": "raw pin {path,sha256,bytes} for actual head_manifest"
+    },
+    "applications": {
+      "$required": "raw pin {path,sha256,bytes} for actual applications"
+    },
+    "changes": {
+      "$required": "raw pin {path,sha256,bytes} for actual changes"
+    },
+    "findings": {
+      "$required": "raw pin {path,sha256,bytes} for actual findings"
+    },
+    "policy": {
+      "$required": "raw pin {path,sha256,bytes} for actual policy"
+    },
+    "profile_scope": {
+      "$required": "raw pin {path,sha256,bytes} for actual profile_scope"
+    },
+    "selected_reports": {
+      "$required": "raw pin {path,sha256,bytes} for actual selected_reports"
+    },
+    "existing_operator_events": {
+      "$required": "raw pin {path,sha256,bytes} for actual existing_operator_events"
+    },
+    "new_operator_events": {
+      "$required": "raw pin {path,sha256,bytes} for actual new_operator_events"
+    },
+    "external_materials": {
+      "$required": "raw pin {path,sha256,bytes} for actual external_materials"
+    },
+    "intake_findings": {
+      "$required": "raw pin {path,sha256,bytes} for actual intake_findings"
+    },
+    "classifications": {
+      "$required": "raw pin {path,sha256,bytes} for actual classifications"
+    },
+    "required_merge_ci": {
+      "$required": "raw pin {path,sha256,bytes} for actual required_merge_ci"
+    },
+    "scope_review": {
+      "$required": "raw pin {path,sha256,bytes} for actual scope_review"
+    },
+    "policy_review": {
+      "$required": "raw pin {path,sha256,bytes} for actual policy_review"
+    },
+    "observation_provenance": {
+      "$required": "raw pin {path,sha256,bytes} for actual observation_provenance"
+    },
+    "finding_inventory": {
+      "$required": "raw pin {path,sha256,bytes} for actual finding_inventory"
+    }
+  }
+}

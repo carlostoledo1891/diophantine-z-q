@@ -29,10 +29,8 @@ def validate(record, read):
         need(digest(raw) == pin['sha256'], 'Changed bound file: ' + path)
         return raw
     tex = pinned(record['manuscript']).decode('utf-8')
-    builder = read('scripts/build_paper.py').decode('utf-8')
-    selection = re.findall(r'''^\s*source\s*=\s*ROOT\s*/\s*["']([^"']+)["']\s*/\s*["']([^"']+)["']\s*$''', builder, re.MULTILINE)
-    need(len(selection) == 1 and '/'.join(selection[0]) == record['manuscript']['path'],
-         'Current paper selection lacks a reviewed audit-history binding')
+    # This immutable register records Version 10 history. Current-edition
+    # selection and fresh application acceptance are checked separately below.
     responses = json.loads(pinned(record['responses']))
     need(record['issue'] == responses['issue'], 'Issue identity changed')
     lines = tex.splitlines(keepends=True)
@@ -74,10 +72,6 @@ def self_test(record, read):
         def altered(p, target=path):
             return read(p) + b'\nchanged' if p == target else read(p)
         cases.append(('changed bytes ' + path, record, altered))
-    def changed_selection(p):
-        raw = read(p)
-        return raw.replace(b'quartic_v10.tex', b'quartic_future.tex') if p == 'scripts/build_paper.py' else raw
-    cases.append(('new edition without reviewed binding', record, changed_selection))
     for label, data, reader in cases:
         try:
             validate(data, reader)
@@ -96,6 +90,8 @@ def main():
     print('PASS: 9 historical dispositions, evidence pins and manuscript passages. Not a mathematical proof check.')
     if args.self_test:
         self_test(record, read)
+    from check_application_reviews import check_current
+    check_current(read, args.self_test)
 
 if __name__ == '__main__':
     main()

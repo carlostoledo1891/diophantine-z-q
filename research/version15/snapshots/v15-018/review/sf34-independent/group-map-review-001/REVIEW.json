@@ -1,0 +1,53 @@
+{
+  "schema": "bounded-source-association-review/v1",
+  "decision": "accepted_with_explicit_scope",
+  "subject_sha256": "72a932c4e749ef77b76e5bf4adf164b40487fdb7e9fe5cb8125bc64ee181a342",
+  "map_sha256": "04c85d1fb2885f5e969c9fe470dcc6b10c71e2f61e7b8f7fbf19b9b41231951b",
+  "reviewer": {
+    "agent": "01a1be27-0ee1-7f53-b3df-8ccea5b94c03",
+    "task": "/root/v14_arithmetic_review",
+    "authorship_disclosure": "Reviewer authored the later V15 manuscript integration, not the original Jose 259/248 construction or this 021 map. This receipt does not independently approve the reviewer-authored manuscript transcription."
+  },
+  "scope": "Sixteen row-group/source associations and exact census. Not full SF34 typed-coordinate or arithmetic closure.",
+  "checks": {
+    "manifest_pins": 13,
+    "all_manifest_pins_match": true,
+    "source_excerpt_occurrences": 80,
+    "all_source_excerpts_match": true,
+    "excerpt_convention": "Split raw UTF-8 at LF, retain CR, join selected inclusive lines with LF without final LF.",
+    "rows": 222,
+    "groups": 16,
+    "unique_row_ids": 222,
+    "all_actual_row_ids_source_ids_names_match": true,
+    "retained": 195,
+    "changed": 27,
+    "deleted": 11
+  },
+  "basis": [
+    "Prior independent unchanged checker replay reconstructs the 248 table and SOS from the original source, with exceptional-case finite checks; see ../CHECKPOINT.json and ../replay/.",
+    "The map correctly treats 259 to 248 as arithmetic redesign rather than a witness bijection.",
+    "Zero branches q=0 and delta=0, shifted scalar anchor, actual forced prime149, and fixed-input/ineffective-N0 limitations remain explicit."
+  ],
+  "remaining": [
+    {
+      "id": "SF34-TYPED-BRIDGE",
+      "status": "not_discharged_by_021",
+      "requirement": "Explicitly derive every retained/changed coordinate group from its semantic field quantities, including component multipliers and inverse reconstruction, instead of relying on names or literal table normalization."
+    },
+    {
+      "id": "SF34-STORED-OFFSETS",
+      "status": "not_discharged_by_021",
+      "requirement": "Bind stored F=G+1 and shifted square (I+3)^2 to the later G and I^4 consumers by exact polynomial identities."
+    },
+    {
+      "id": "SF34-D-SCALES",
+      "status": "not_discharged_by_021",
+      "requirement": "Give exact D-dependent wPower2 and other field-component scales, preserving conjugation conventions and exceptional/nonzero cases."
+    }
+  ],
+  "limitations": [
+    "No new theorem claim; no full baseline arithmetic acceptance from SOS equality.",
+    "No assertion that every old259 solution maps to248 or conversely.",
+    "No V14 source, remote, deployment or gate changes."
+  ]
+}

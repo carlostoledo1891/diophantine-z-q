@@ -1,0 +1,22 @@
+{
+  "target": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+  "base_sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127",
+  "changes": [
+    {
+      "line": 16,
+      "old": "Sutherland, MIT 18.783 Fall2025 Lecture5, September18,2025, sections5.5–5.6, definitions printed p.10, Lemma5.20 and Theorem5.21 p.11, recurrence verification p.12, Lemma5.24 p.14: for a nonsingular short Weierstrass model the division polynomials have the stated parity; (phi_n/psi_n^2,omega_n/psi_n^3) gives [n]; phi_n and psi_n^2 are coprime. The displayed omega numerator has a minus sign. Exact PDF SHA256 4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7. This is an author lecture note, not a peer-reviewed article. The note verifies the psi recurrence and refers for a complete proof of the analogous identities to Washington Theorem9.33; no claim of a new independent proof of that external theorem is made. We use its stated theorem.",
+      "new": "Silverman, The Arithmetic of Elliptic Curves, second edition2009, ExerciseIII.3.7 pp105–106: for a nonsingular short Weierstrass model, the positive-index division polynomials have the stated parity and recurrences; parts(c),(d),(f) give coprimality, scalar coordinates and zeros exactly at nonidentity n-torsion. Exact published PDF SHA256 72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25. The official2011 errata p4 corrects the omega numerator to a minus sign (PDF SHA256 cc89fd821b15df1fa2e139d32dbee447793ffc004fcf4f7cd962191873a2c37a). The retained2022 errata corrects the even parity factor and requests explicit small-index conventions; here psi0=0, psi(-1)=-1 and n=1,2 are checked from the bases. These are published exercise statements with official corrections; no claim is made that the exercise solutions are printed. The former Sutherland lecture-note supplier is retained only as historical provenance."
+    },
+    {
+      "line": 22,
+      "old": "The corrected omega_n=(psi_{n+2}psi_{n-1}^2-psi_{n-2}psi_{n+1}^2)/(4y) and the even recurrence give psi_{2n}=2psi_n omega_n; n=1,2 follow from the bases. Therefore 2y([n]P)psi_n(P)^4=psi_{2n}(P), while x([n]P)psi_n(P)^2=phi_n(P). For a nonidentity point P in the torsion-free carrier and n!=0, [n]P is not the identity, so psi_n(P)!=0 by the scalar-coordinate theorem and coprimality. With this guard, the two cleared equations uniquely recover both coordinates of [n]P. The inverse-norm guard is the separately supplied field encoding of nonzero elements of K0; it is not established by division polynomials. n=0 and identity P use their explicit identity branches. Negative n uses psi_{-n}=-psi_n and group negation, preserving the ordinate sign. This supplies current278–304 and its actual scalar-template use. The inaccessible Silverman errata are not a premise: closure-batch-010 supersedes the earlier A056 source-retrieval gap with the pinned Sutherland source. Existing finite scalar tests are supplementary checks, not the proof.",
+      "new": "The corrected omega_n=(psi_{n+2}psi_{n-1}^2-psi_{n-2}psi_{n+1}^2)/(4y) and the even recurrence give psi_{2n}=2psi_n omega_n; n=1,2 follow from the bases. Therefore 2y([n]P)psi_n(P)^4=psi_{2n}(P), while x([n]P)psi_n(P)^2=phi_n(P). For a nonidentity point P in the torsion-free carrier and n!=0, [n]P is not the identity, so psi_n(P)!=0 by ExerciseIII.3.7(f), with coprimality supplied separately by part(c). With this guard, the two cleared equations uniquely recover both coordinates of [n]P. The inverse-norm guard is the separately supplied field encoding of nonzero elements of K0; it is not established by division polynomials. n=0 and identity P use their explicit identity branches. Negative n uses psi_{-n}=-psi_n and group negation, preserving the ordinate sign. This supplies current278–304 and its actual scalar-template use. The pinned official errata and published exercise now replace the Sutherland source; the earlier access limitation is historical. Existing finite scalar tests are supplementary checks, not the proof."
+    }
+  ],
+  "evidence": {
+    "author": "v14-division-polynomial-input-001",
+    "manifest": "4b763cee9d99d62ba21ab28db62d41b35b4f3e63b9c28f6a35efe421ae890a0d",
+    "review": "pending independent review"
+  },
+  "canonical_write": false
+}

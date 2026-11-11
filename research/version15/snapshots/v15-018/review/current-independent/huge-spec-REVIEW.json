@@ -1,0 +1,445 @@
+{
+  "status": "ACCEPTED_FOR_PACKAGING_FIDELITY_AND_SUPPORTED_REPRODUCTION",
+  "scope": "Exact huge-spec distribution copy, supported finite replay, relocation and current documentation only; no original mathematical review.",
+  "selection_manifest": {
+    "path": "work/v15-huge-spec-selection-001/MANIFEST.json",
+    "sha256": "e894097362548c2c3dea9175b38f63176ac84260129ea5d6708a8ab37e80ecc4"
+  },
+  "integration_manifest": {
+    "path": "review/huge-spec-integration-014/MANIFEST.json",
+    "sha256": "8a9ea6f633760bcd1afbad740c79c8e3db6c082d7a704b3b4e14e5254f48e8f5"
+  },
+  "repository_manifest_sha256": "c899c6a5d610d3863ac8bc0fb1c94977865d98a50ae8984d9f451f35e45b5494",
+  "copy": {
+    "files": 28,
+    "bytes": 41218562,
+    "all_hashes_and_sizes_match": true,
+    "expression_sha256": "4d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6",
+    "expression_bytes": 23179783
+  },
+  "checks": {
+    "integration_members": 9,
+    "relevant_repository_members": 40,
+    "current_tex_sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "command": "python scripts/check_construction.py --report <review-dir>/REPLAY.json",
+    "replay": {
+      "passed": true,
+      "node": "v24.22.1",
+      "python": "3.12.14",
+      "seconds": 14.109,
+      "source_files_verified": 25,
+      "historical_provenance_normalization_checked": false,
+      "polynomial_sha256": "4d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6",
+      "arithmetic_theorem_proved": false,
+      "scope": "Exact regeneration, structural audit, syntactic bounds, and finite arithmetic cases. See construction/README.md for exclusions.",
+      "checks": [
+        {
+          "check": "regenerate-polynomial",
+          "seconds": 2.484,
+          "result": {
+            "valid": true,
+            "evaluations": [
+              {
+                "name": "power_value",
+                "sourceNodesChecked": 474,
+                "sourceVariablesChecked": 82,
+                "operationsChecked": 386,
+                "witnesses": 17786698,
+                "privateWitnessScopeChecked": true,
+                "completeVariableCoverage": true
+              },
+              {
+                "name": "precision",
+                "sourceNodesChecked": 293620,
+                "sourceVariablesChecked": 54056,
+                "operationsChecked": 239554,
+                "witnesses": 292889492836,
+                "privateWitnessScopeChecked": true,
+                "completeVariableCoverage": true
+              }
+            ],
+            "compositions": [
+              {
+                "name": "close",
+                "callsChecked": 7,
+                "witnesses": 292890196199,
+                "completeVariableCoverage": true
+              },
+              {
+                "name": "main",
+                "callsChecked": 2,
+                "witnesses": 292890231486,
+                "completeVariableCoverage": true
+              },
+              {
+                "name": "value_union",
+                "callsChecked": 2,
+                "witnesses": 292890231892,
+                "completeVariableCoverage": true
+              },
+              {
+                "name": "value",
+                "callsChecked": 2,
+                "witnesses": 292890231899,
+                "completeVariableCoverage": true
+              },
+              {
+                "name": "integers",
+                "callsChecked": 1,
+                "witnesses": 292890231904,
+                "completeVariableCoverage": true
+              }
+            ],
+            "witnessCount": 292890231904,
+            "finiteConstructorCount": 50,
+            "scope": "Source evaluation wiring and witness partitions; separate template/source and arithmetic proofs required.",
+            "artifactSha256": "4d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6",
+            "bytes": 23179783,
+            "arithmeticTheoremProved": false
+          }
+        },
+        {
+          "check": "syntactic-size-bounds",
+          "seconds": 0.828,
+          "result": {
+            "candidate_sha256": "4d639d4c44e69ea360d36d4591b8fdc82269d68b9363af0157d1e5c1174c7af6",
+            "total_variables": 292890231905,
+            "rational_witnesses": 292890231904,
+            "explicit_constant_nodes": 173,
+            "finite_constructor_nodes": 50,
+            "root_height_bound": 256,
+            "degree_bound": "B^2048",
+            "largest_absolute_coefficient_bound": "2^(B^2048)",
+            "B": "max(2^20, T+1, 1+abs(c) for every fixedConstant value, every explicit scalar constant node, and every evaluated fixed_integer or psi index expression)",
+            "simplified_B": "T+1, by the companion proof and the literal digit checks",
+            "max_fixed_literal_decimal_digits": 3181317,
+            "scope": "Syntactic size bounds for the specified candidate; not a proof of its proposed Diophantine zero set. Companion proof justifies finite-constructor and substitution bounds."
+          }
+        },
+        {
+          "check": "verify-integer-compiler.js",
+          "seconds": 0.328,
+          "result": {
+            "passed": true,
+            "digitCases": 285,
+            "bitCases": 4096,
+            "packedCases": 30120,
+            "backendCases": 49,
+            "smokeCircuit": {
+              "variables": 2394,
+              "nodes": 13755,
+              "formulas": 1850,
+              "macroCounts": {
+                "alpha": 87,
+                "power": 29,
+                "binomial": 9,
+                "orthogonal": 6,
+                "mask": 3,
+                "bitAnd": 2
+              }
+            },
+            "limitations": [
+              "Finite tests do not prove alpha representation or the full compiler.",
+              "No full alpha witness assignment was generated.",
+              "All witnesses here are natural, not rational."
+            ]
+          }
+        },
+        {
+          "check": "verify-division-polynomials.js",
+          "seconds": 9.985,
+          "result": {
+            "passed": true,
+            "exactCases": 44,
+            "changedXCases": 44,
+            "changedYCases": 30,
+            "artifacts": [
+              {
+                "n": 0,
+                "nodes": 32,
+                "witnesses": 0
+              },
+              {
+                "n": 1,
+                "nodes": 251,
+                "witnesses": 1
+              },
+              {
+                "n": 2,
+                "nodes": 256,
+                "witnesses": 1
+              },
+              {
+                "n": 3,
+                "nodes": 348,
+                "witnesses": 1
+              },
+              {
+                "n": 4,
+                "nodes": 380,
+                "witnesses": 1
+              },
+              {
+                "n": 5,
+                "nodes": 426,
+                "witnesses": 1
+              },
+              {
+                "n": 6,
+                "nodes": 451,
+                "witnesses": 1
+              },
+              {
+                "n": 7,
+                "nodes": 504,
+                "witnesses": 1
+              },
+              {
+                "n": 8,
+                "nodes": 529,
+                "witnesses": 1
+              },
+              {
+                "n": -1,
+                "nodes": 253,
+                "witnesses": 1
+              },
+              {
+                "n": -4,
+                "nodes": 382,
+                "witnesses": 1
+              }
+            ],
+            "method": "Compare division-polynomial graph with independent affine double-and-add over Q(sqrt(2)).",
+            "limitation": "Finite checks supplement the classical division-polynomial identity; they do not establish the arithmetic certificate dependencies."
+          }
+        },
+        {
+          "check": "verify-finite-polynomial-expressions.js",
+          "seconds": 0.218,
+          "result": {
+            "passed": true,
+            "checks": [
+              {
+                "fixture": {
+                  "cstar": "4",
+                  "ell": "12",
+                  "T": "1"
+                },
+                "template": "multiply.scalar",
+                "hash": "57a8672d14b81a18f5f50bbf0053365e743193069edd8aed04c6f57bd8d0226d"
+              },
+              {
+                "fixture": {
+                  "cstar": "4",
+                  "ell": "12",
+                  "T": "1"
+                },
+                "template": "multiply.guard",
+                "hash": "a726b73271dddbc6439485e9ec0e3693f957e1fe2ad4a3ae251fd7a2ced76470"
+              },
+              {
+                "fixture": {
+                  "cstar": "4",
+                  "ell": "12",
+                  "T": "1"
+                },
+                "template": "multiply",
+                "hash": "e31fe6b03e7b7ac02087cd5f755aef9cce1396905480aa12077ce088bbfeb510"
+              },
+              {
+                "fixture": {
+                  "cstar": "4",
+                  "ell": "12",
+                  "T": "1"
+                },
+                "template": "natural",
+                "hash": "770615fa678fdb91fb39fd80de1e92eae764b20cbe295538aede3310b9dfa41e"
+              },
+              {
+                "fixture": {
+                  "cstar": "8",
+                  "ell": "144",
+                  "T": "0"
+                },
+                "template": "multiply.scalar",
+                "hash": "3080f22ed3e4ae86363ee36939c63ab770c0797a928ec356a7c62d2ecafe3335"
+              },
+              {
+                "fixture": {
+                  "cstar": "8",
+                  "ell": "144",
+                  "T": "0"
+                },
+                "template": "multiply.guard",
+                "hash": "4295a98ec9383a6ac59fbc77ea8e50e9cb2f9ff282cd8ce82f750f1841613c15"
+              },
+              {
+                "fixture": {
+                  "cstar": "8",
+                  "ell": "144",
+                  "T": "0"
+                },
+                "template": "multiply",
+                "hash": "ee464f849f46ca31f5b8cae64a36f6579f80bf2249d6c4d50d862a22aee3594c"
+              },
+              {
+                "fixture": {
+                  "cstar": "8",
+                  "ell": "144",
+                  "T": "0"
+                },
+                "template": "natural",
+                "hash": "770615fa678fdb91fb39fd80de1e92eae764b20cbe295538aede3310b9dfa41e"
+              }
+            ],
+            "invalidBindingsRejected": 4,
+            "variableCounts": [
+              {
+                "name": "multiply",
+                "parameters": 15,
+                "witnesses": 35134,
+                "nodes": 84,
+                "calls": 6
+              },
+              {
+                "name": "natural",
+                "parameters": 5,
+                "witnesses": 140604,
+                "nodes": 80,
+                "calls": 7
+              }
+            ],
+            "limitation": "Fixture values only verify expansion rules. They never replace the prescribed fixed constants in the candidate universal expression."
+          }
+        },
+        {
+          "check": "verify-six-contact.js",
+          "seconds": 0.125,
+          "result": {
+            "passed": true,
+            "contacts": [
+              "0",
+              "-15",
+              "-20",
+              "-24",
+              "-30",
+              "-60"
+            ],
+            "F": [
+              "0",
+              "12960000",
+              "2700000",
+              "216000",
+              "8250",
+              "149",
+              "1"
+            ],
+            "G": [
+              "3600",
+              "300",
+              "7"
+            ],
+            "H": [
+              "-46656000000",
+              "-11664000000",
+              "-1069200000",
+              "-43200000",
+              "-621000",
+              "4500",
+              "143"
+            ],
+            "numeratorNorm": "14533295809536000000",
+            "denominatorNorm": "3556808369970021551449",
+            "gram": [
+              [
+                "0",
+                "0",
+                "-1",
+                "1"
+              ],
+              [
+                "0",
+                "0",
+                "1",
+                "-2"
+              ],
+              [
+                "1",
+                "-1",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "2",
+                "0",
+                "0"
+              ]
+            ],
+            "resultants": [
+              {
+                "i": 0,
+                "j": 1,
+                "resultant": "29160000"
+              },
+              {
+                "i": 0,
+                "j": 2,
+                "resultant": "116640000"
+              },
+              {
+                "i": 0,
+                "j": 3,
+                "resultant": "116640000"
+              },
+              {
+                "i": 1,
+                "j": 2,
+                "resultant": "-87480000"
+              },
+              {
+                "i": 1,
+                "j": 3,
+                "resultant": "-87480000"
+              },
+              {
+                "i": 2,
+                "j": 3,
+                "resultant": "-349920000"
+              }
+            ],
+            "levelThree": {
+              "ringSize": 81,
+              "unitCount": 72,
+              "normOneCount": 36,
+              "effectiveLevelIndexBound": 36,
+              "effectiveNormalizerIndexBound": 144
+            },
+            "notes": "Only finite identities and inequalities were checked."
+          }
+        }
+      ]
+    }
+  },
+  "documentation": {
+    "scope_sha256": "4ae7befe6aee5d757b47e4be36d785cea07ecffeaed7f38399536c984808e09c",
+    "readme_sha256": "3aa12c11ba1b659996e0f9e8586546225e310325720c1e27a19fa2e404e26b1d",
+    "current_links": "README to construction/V15-SCOPE.md; scope to README.md, SOURCE_MANIFEST.json and COPY-ORIGINS.json all resolve.",
+    "historical_readme": "Preserved unchanged and explicitly identified as historical, not current Version15 approval."
+  },
+  "open_findings": [
+    {
+      "id": "MISSING-HISTORICAL-SOURCE-MAP",
+      "status": "Disclosed; manuscript repair proposed but not applied",
+      "detail": "No construction/SOURCE_MAP.json is distributed or asserted to have been recovered. Frozen manuscript8867 names it. SOURCE_MANIFEST contains original paths and hashes but is not silently renamed or claimed to be the missing map. The exact wording proposal is a separate author change needing its own acceptance."
+    }
+  ],
+  "limits": [
+    "The expression is a finite machine specification, not an expanded monomial list.",
+    "Reproduction starts from the pinned precision-natural-polynomial.json input; regeneration of that input from earlier machines is not included.",
+    "No optional original historical polynomial was supplied to this replay. The three-provenance-field historical-to-portable comparison was not rerun; exact portable copy/regeneration was checked.",
+    "No new arithmetic theorem, Protocol D closure or publication acceptance.",
+    "Missing historical SOURCE_MAP remains an open documentation discrepancy, not a failure of the supported replay."
+  ]
+}

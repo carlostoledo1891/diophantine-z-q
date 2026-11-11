@@ -1,0 +1,222 @@
+{
+  "status": "author_proposal_pending_independent_review",
+  "components": [
+    {
+      "state": "author_proposal_pending_independent_review",
+      "use": {
+        "id": "ACTIVE-POLE-POONEN-STOLL-PAIRING",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-POLE-POONEN-STOLL-PAIRING-P1"
+        ],
+        "assertion": {
+          "statement": "For the actual elliptic curve E/Q, the Cassels–Tate pairing induces a nondegenerate alternating pairing on the quotient of Sha(E) by its maximal divisible subgroup, hence on its finite2-primary quotient F in the supplied decomposition.",
+          "objects": "The canonical principal polarization on E, Sha(E), its maximal divisible subgroup, and F=Sha(E)[2∞]/Sha(E)[2∞]_div.",
+          "hypotheses": "E is an elliptic curve over Q. The supplied finite-Selmer/cofinite-generation input gives Sha(E)[2∞]=(Q2/Z2)^t⊕F with F finite. No finiteness of the full Sha group is assumed.",
+          "quantifiers": "Every elliptic curve E/Q; the finite-quotient application holds for its actual2-primary decomposition.",
+          "parameter_range": "Canonical genus-one principal polarization;2-primary quotient by maximal divisibility, not the unrestricted pairing on2-torsion.",
+          "uniformity": "No quantitative bound or uniform finiteness statement.",
+          "constants": "The quotient has paired finite primary cyclic factors; in particular dim_F2 F[2] is even.",
+          "normalizations": "Cor4 gives c via Pic^(g−1); at g=1 the trivial degree-zero class makes c=0. Cor7 gives alternation. Nondegeneracy is after maximal-divisible quotient. Different primary torsion components are orthogonal.",
+          "exceptional_cases": "Do not equate infinitely divisible elements with the maximal divisible subgroup in an arbitrary group. Current decomposition proves maximality directly. Do not infer nondegeneracy of the restriction to F[2], or finiteSha, or Mordell–Weil rank1 before RC.",
+          "limit_order": "First use the separately supplied decomposition and identify its maximal divisible subgroup. Then restrict the quotient pairing to the finite2-primary part and apply the paired-factor argument; only afterward combine with Kummer dimensions."
+        },
+        "classification": "dependency",
+        "reason": "First use the separately supplied decomposition and identify its maximal divisible subgroup. Then restrict the quotient pairing to the finite2-primary part and apply the paired-factor argument; only afterward combine with Kummer dimensions.",
+        "shared_contract_justification": null,
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1800,
+            "end_line": 1802,
+            "excerpt_sha256": "9b306b76fb383f21491d59deb7d29a22297faa2c53977db78fae4d4d72248de7"
+          },
+          "statement": "For a canonically principally polarized elliptic curve over a global field, Cassels–Tate is alternating and nondegenerate modulo maximal divisibility; Theorem8(3) gives square order of the nondivisible quotient2-torsion.",
+          "publication": {
+            "title": "The Cassels–Tate pairing on polarized abelian varieties",
+            "authors": "Bjorn Poonen and Michael Stoll",
+            "venue": "Annals of Mathematics150(1999),1109–1149",
+            "authoritative_version": "Published journal version, DOI10.2307/121064; compared with author correction2014-08-23; final PDF SHA256 bfea7cc33da490dad136355d4423437916e441f77f89c0921995adf2bfea0936",
+            "locator": "Introduction1110; notation1112; Corollary4p1120; Corollary7 and Theorem8(3)p1122; proof1123",
+            "corrections": "The author2014 correction restricts the maximal-divisible/intersection-nM equality to finiteM[p]. The present consumer avoids the unqualified1999 notation by identifying the summand directly."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 1795,
+          "end_line": 1807,
+          "excerpt_sha256": "dee78194da0dd33b6021a09294669ce3bbaf1fbce23296e37023572657cd8947"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-POLE-POONEN-STOLL-PAIRING",
+        "use_sha256": "a781b33bcbd6a697ef3d7cc45b427ab8eac0c9fd0b1845f4b5f4521a5628658b",
+        "supplier_passage_role": "application",
+        "available_assertion": {
+          "statement": "For a canonically principally polarized elliptic curve over a global field, Cassels–Tate is alternating and nondegenerate modulo maximal divisibility; Theorem8(3) gives square order of the nondivisible quotient2-torsion.",
+          "objects": "The canonical principal polarization on E, Sha(E), its maximal divisible subgroup, and F=Sha(E)[2∞]/Sha(E)[2∞]_div.",
+          "hypotheses": "E is an elliptic curve over Q. The supplied finite-Selmer/cofinite-generation input gives Sha(E)[2∞]=(Q2/Z2)^t⊕F with F finite. No finiteness of the full Sha group is assumed.",
+          "quantifiers": "Every elliptic curve E/Q; the finite-quotient application holds for its actual2-primary decomposition.",
+          "parameter_range": "Canonical genus-one principal polarization;2-primary quotient by maximal divisibility, not the unrestricted pairing on2-torsion.",
+          "uniformity": "No quantitative bound or uniform finiteness statement.",
+          "constants": "The quotient has paired finite primary cyclic factors; in particular dim_F2 F[2] is even.",
+          "normalizations": "Cor4 gives c via Pic^(g−1); at g=1 the trivial degree-zero class makes c=0. Cor7 gives alternation. Nondegeneracy is after maximal-divisible quotient. Different primary torsion components are orthogonal.",
+          "exceptional_cases": "Do not equate infinitely divisible elements with the maximal divisible subgroup in an arbitrary group. Current decomposition proves maximality directly. Do not infer nondegeneracy of the restriction to F[2], or finiteSha, or Mordell–Weil rank1 before RC.",
+          "limit_order": "First use the separately supplied decomposition and identify its maximal divisible subgroup. Then restrict the quotient pairing to the finite2-primary part and apply the paired-factor argument; only afterward combine with Kummer dimensions."
+        },
+        "needed_assertion": {
+          "statement": "For the actual elliptic curve E/Q, the Cassels–Tate pairing induces a nondegenerate alternating pairing on the quotient of Sha(E) by its maximal divisible subgroup, hence on its finite2-primary quotient F in the supplied decomposition.",
+          "objects": "The canonical principal polarization on E, Sha(E), its maximal divisible subgroup, and F=Sha(E)[2∞]/Sha(E)[2∞]_div.",
+          "hypotheses": "E is an elliptic curve over Q. The supplied finite-Selmer/cofinite-generation input gives Sha(E)[2∞]=(Q2/Z2)^t⊕F with F finite. No finiteness of the full Sha group is assumed.",
+          "quantifiers": "Every elliptic curve E/Q; the finite-quotient application holds for its actual2-primary decomposition.",
+          "parameter_range": "Canonical genus-one principal polarization;2-primary quotient by maximal divisibility, not the unrestricted pairing on2-torsion.",
+          "uniformity": "No quantitative bound or uniform finiteness statement.",
+          "constants": "The quotient has paired finite primary cyclic factors; in particular dim_F2 F[2] is even.",
+          "normalizations": "Cor4 gives c via Pic^(g−1); at g=1 the trivial degree-zero class makes c=0. Cor7 gives alternation. Nondegeneracy is after maximal-divisible quotient. Different primary torsion components are orthogonal.",
+          "exceptional_cases": "Do not equate infinitely divisible elements with the maximal divisible subgroup in an arbitrary group. Current decomposition proves maximality directly. Do not infer nondegeneracy of the restriction to F[2], or finiteSha, or Mordell–Weil rank1 before RC.",
+          "limit_order": "First use the separately supplied decomposition and identify its maximal divisible subgroup. Then restrict the quotient pairing to the finite2-primary part and apply the paired-factor argument; only afterward combine with Kummer dimensions."
+        },
+        "required_capabilities": [
+          "For the actual elliptic curve E/Q, the Cassels–Tate pairing induces a nondegenerate alternating pairing on the quotient of Sha(E) by its maximal divisible subgroup, hence on its finite2-primary quotient F in the supplied decomposition."
+        ],
+        "available_capabilities": [
+          "For a canonically principally polarized elliptic curve over a global field, Cassels–Tate is alternating and nondegenerate modulo maximal divisibility; Theorem8(3) gives square order of the nondivisible quotient2-torsion."
+        ],
+        "derived_capabilities": [
+          "For the actual elliptic curve E/Q, the Cassels–Tate pairing induces a nondegenerate alternating pairing on the quotient of Sha(E) by its maximal divisible subgroup, hence on its finite2-primary quotient F in the supplied decomposition."
+        ],
+        "connecting_derivation": {
+          "kind": "derivation",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1795,
+            "end_line": 1807,
+            "excerpt_sha256": "dee78194da0dd33b6021a09294669ce3bbaf1fbce23296e37023572657cd8947"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "For the actual elliptic curve E/Q, the Cassels–Tate pairing induces a nondegenerate alternating pairing on the quotient of Sha(E) by its maximal divisible subgroup, hence on its finite2-primary quotient F in the supplied decomposition.",
+            "objects": "The canonical principal polarization on E, Sha(E), its maximal divisible subgroup, and F=Sha(E)[2∞]/Sha(E)[2∞]_div.",
+            "hypotheses": "E is an elliptic curve over Q. The supplied finite-Selmer/cofinite-generation input gives Sha(E)[2∞]=(Q2/Z2)^t⊕F with F finite. No finiteness of the full Sha group is assumed.",
+            "quantifiers": "Every elliptic curve E/Q; the finite-quotient application holds for its actual2-primary decomposition.",
+            "parameter_range": "Canonical genus-one principal polarization;2-primary quotient by maximal divisibility, not the unrestricted pairing on2-torsion.",
+            "uniformity": "No quantitative bound or uniform finiteness statement.",
+            "constants": "The quotient has paired finite primary cyclic factors; in particular dim_F2 F[2] is even.",
+            "normalizations": "Cor4 gives c via Pic^(g−1); at g=1 the trivial degree-zero class makes c=0. Cor7 gives alternation. Nondegeneracy is after maximal-divisible quotient. Different primary torsion components are orthogonal.",
+            "exceptional_cases": "Do not equate infinitely divisible elements with the maximal divisible subgroup in an arbitrary group. Current decomposition proves maximality directly. Do not infer nondegeneracy of the restriction to F[2], or finiteSha, or Mordell–Weil rank1 before RC.",
+            "limit_order": "First use the separately supplied decomposition and identify its maximal divisible subgroup. Then restrict the quotient pairing to the finite2-primary part and apply the paired-factor argument; only afterward combine with Kummer dimensions."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "Do not equate infinitely divisible elements with the maximal divisible subgroup in an arbitrary group. Current decomposition proves maximality directly. Do not infer nondegeneracy of the restriction to F[2], or finiteSha, or Mordell–Weil rank1 before RC.",
+          "evidence": [
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1795,
+              "end_line": 1807,
+              "excerpt_sha256": "dee78194da0dd33b6021a09294669ce3bbaf1fbce23296e37023572657cd8947"
+            },
+            {
+              "pin": {
+                "side": "head",
+                "path": "manuscripts/quartic_v14.tex",
+                "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+              },
+              "start_line": 1800,
+              "end_line": 1802,
+              "excerpt_sha256": "9b306b76fb383f21491d59deb7d29a22297faa2c53977db78fae4d4d72248de7"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1795,
+            "end_line": 1807,
+            "excerpt_sha256": "dee78194da0dd33b6021a09294669ce3bbaf1fbce23296e37023572657cd8947"
+          }
+        ]
+      },
+      "passage_bindings": [
+        {
+          "id": "ACTIVE-POLE-POONEN-STOLL-PAIRING-P1",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 1795,
+            "end_line": 1807,
+            "excerpt_sha256": "dee78194da0dd33b6021a09294669ce3bbaf1fbce23296e37023572657cd8947"
+          }
+        }
+      ],
+      "initial_mapping": [],
+      "scope": "Only the published pairing input to ACTIVE-POLE-SEL2-TO-FULL-CORANK; finite Selmer structure, Kummer, RC and forward finiteSha conclusions remain separate.",
+      "source_evidence": {
+        "published": {
+          "title": "The Cassels–Tate pairing on polarized abelian varieties",
+          "authors": "Bjorn Poonen and Michael Stoll",
+          "venue": "Annals of Mathematics 150 (1999),1109–1149",
+          "doi": "10.2307/121064",
+          "url": "https://www.maths.tcd.ie/EMIS/journals/Annals/150_3/poonen.pdf",
+          "pages": {
+            "notation": 1112,
+            "corollary4": 1120,
+            "corollary7": 1122,
+            "theorem8": 1122,
+            "proof": 1123,
+            "finiteShaCorollary9": 1123
+          },
+          "sha256": "bfea7cc33da490dad136355d4423437916e441f77f89c0921995adf2bfea0936",
+          "bytes": 350255,
+          "pages_count": 41
+        },
+        "corrected_author": {
+          "path": "work/astra-final-pole-completeness-review-001/poonen-stoll.pdf",
+          "sha256": "3b9a619423358bc877fd2123b73a759157a728ec11e0f7b0aa48bd0333d7149a",
+          "date": "1998-11-06; minor correction2014-08-23",
+          "url": "https://math.mit.edu/~poonen/papers/sha.pdf",
+          "pages": {
+            "notation": "3–4",
+            "corollary4": 9,
+            "corollary7": 11,
+            "theorem8": 11,
+            "proof": 12
+          }
+        },
+        "comparison_file": "SOURCE-COMPARISON.json",
+        "comparison_sha256": "1acd143073a8cda80be5eae2d85f0dfb3173572a5131932ac5976a3ca3fa47c4",
+        "prior_consumer": {
+          "path": "work/source-risk-review-20261107/v14-main-active-connections-author-001/POLE-CORANK-COMPONENTS.json",
+          "sha256": "f774f746c4e5799bc4728dc7b5018dcfb7e95e1b5fa59cf3181fd1d64285a7a2"
+        }
+      }
+    }
+  ]
+}

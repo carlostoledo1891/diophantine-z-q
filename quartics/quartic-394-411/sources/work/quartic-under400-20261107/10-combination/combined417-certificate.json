@@ -1,0 +1,89 @@
+{
+  "source": "combined423-ir.json",
+  "sourceSha256": "3c19ce0d46ae80732e76fd243b7fd1c91599f4274e1c67b9a4ac6c5bd86899bf",
+  "steps": [
+    {
+      "step": "one_correction_label",
+      "source": "inputs/scalar24-448-ir.json",
+      "sourceSha256": "e9d6622ef87381ed2f735e849aa537ac178ccc30ec1675f32cee0be38b435609",
+      "target": "inputs/one-correction444-ir.json",
+      "targetSha256": "c2c60a1bed5c929eb633b654e76d401dc96fc0edd1f09eee44324740c4cde837",
+      "review": "inputs/one-correction-review.md",
+      "reviewSha256": "e49af5208d1f35393071d17ac369b0299e1f319a25bbbb6c46fe7e2262f4d15e",
+      "removedCoordinates": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "renamedCoordinates": [
+        65
+      ],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "correction.restrictedProduct1",
+        "correction.restrictedProduct2",
+        "correction.restrictedProduct3",
+        "correction.restrictedProduct4",
+        "correction.restrictedProduct5"
+      ],
+      "changedRows": [
+        "hybrid.10.group0.co2.0.definition",
+        "hybrid.10.group0.co2.1.definition",
+        "hybrid.det0.eval10.0.0.definition",
+        "hybrid.det1.eval10.0.0.definition",
+        "hybrid.det2.eval10.0.0.definition",
+        "reduced_scalar.root",
+        "scalar.correctedR.definition",
+        "scalar.r.definition",
+        "scalar.rFour.definition",
+        "scalar.rPair1.definition",
+        "scalar.r_power_2.definition",
+        "scalar.ratio_node.consolidated_denominator",
+        "testSquare.12.1.0.definition",
+        "testSquare.12.1.1.definition"
+      ],
+      "addedRows": {
+        "correction.singleChoice": 745
+      },
+      "variablesAfter": 419,
+      "residualsAfter": 388
+    },
+    {
+      "step": "deterministic_correction",
+      "source": "inputs/one-correction444-ir.json",
+      "sourceSha256": "c2c60a1bed5c929eb633b654e76d401dc96fc0edd1f09eee44324740c4cde837",
+      "target": "inputs/deterministic442-ir.json",
+      "targetSha256": "e163f864feb6b235f5bd3b80c6ef77abeb636ca27a88308a7ca400575ba26f86",
+      "review": "inputs/deterministic-correction-review.md",
+      "reviewSha256": "ccaf3f1c6166af2bcde71f3cfa18c11778e8fdcba12eb0cc25d46133a5b9b04a",
+      "removedCoordinates": [
+        65,
+        524
+      ],
+      "renamedCoordinates": [],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "correction.singleChoice",
+        "scalar.correctedR.definition"
+      ],
+      "changedRows": [
+        "scalar.b.definition"
+      ],
+      "addedRows": {},
+      "variablesAfter": 417,
+      "residualsAfter": 386
+    }
+  ],
+  "statistics": {
+    "variables": 417,
+    "witnesses": 416,
+    "residuals": 386,
+    "degree": 4,
+    "monomials": 6296,
+    "content": 1,
+    "maximumCoefficient": "16*3^(2^26)",
+    "candidateSha256": "b7d124eb221df55d49131854b541a4c97c5689b18882dfa4a24cc6b8c2d1b6a9",
+    "polynomialSha256": "8272326ab3ea2e7b6996221cee758658dc1a4266e68ada3748af75b5ef289ae6"
+  }
+}

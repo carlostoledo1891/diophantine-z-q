@@ -1,0 +1,412 @@
+{
+  "schema": "bounded-source-application-contracts/v1.4",
+  "author": "/root/astra_v14_assertions_arithmetic",
+  "applications": [
+    {
+      "id": "CJR-GOOD",
+      "source": "silverman",
+      "source_pin": {
+        "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+        "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "bytes": 3658085
+      },
+      "source_locator": "VII.5.5 pp197,199",
+      "available_assertion": {
+        "statement": "Integral j is equivalent to potential good reduction.",
+        "objects": "Elliptic E over the complete discretely valued field K with valuation ring R.",
+        "hypotheses": "The elliptic-curve local-field setup of VII; for the proof used here the residue characteristic is not2.",
+        "quantifiers": "Every E in this domain.",
+        "parameter_range": "The application uses K finite over Q_q, q odd.",
+        "uniformity": "The required finite extension may depend on E.",
+        "constants": "No bound on extension degree is used.",
+        "normalizations": "j is the usual elliptic invariant, not j/1728; integral means j in R.",
+        "exceptional_cases": "Residue characteristic3 is included; the characteristic2 Appendix proof is not used.",
+        "limit_order": "Choose a finite extension for each curve, then their finite compositum."
+      },
+      "needed_assertion": {
+        "statement": "Every curve in the fixed finite CM diagram has a good model over one common finite extension.",
+        "objects": "The curves, arrows, labelled O-actions and level data of Section1.",
+        "hypotheses": "Separate CM j-integrality and finite definition fields; q odd.",
+        "quantifiers": "Each finite diagram, with arbitrary finite enlargement.",
+        "parameter_range": "Integral ideals a prime to qN; complete number-field local fields.",
+        "uniformity": "Common extension depends on the finite diagram; no bound over all ideals or torsion orders.",
+        "constants": "Finitely many extensions and their compositum.",
+        "normalizations": "The chosen reduction place and CM labels are kept.",
+        "exceptional_cases": "No one finite field containing all torsion is asserted; no supersingularity conclusion.",
+        "limit_order": "Define the finite diagram and action generators before choosing the common extension."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 13,
+        "end_line": 20,
+        "excerpt_sha256": "20ce67209b27556d5d4ba2b71aacd7d9334daabcd4ba02f9a06b243d1d894f59"
+      },
+      "connecting_derivation": "Use integral j curve by curve, finite compositum, and base change of smooth proper models.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-GROUP-MODEL",
+      "source": "blr",
+      "source_pin": {
+        "path": "work/source-risk-review-20261107/cj-good-reduction-root/local-only/blr-chapter1.pdf",
+        "sha256": "32baed54631829b55af3c9e883db41cbde8820fcd1e75cfaccd75584be7149b6",
+        "bytes": 10012388
+      },
+      "source_locator": "1.4/2 p19",
+      "available_assertion": {
+        "statement": "A smooth proper model of an abelian variety over a connected Dedekind scheme carries the extending abelian-scheme group structure.",
+        "objects": "A_K and its smooth proper S-model A.",
+        "hypotheses": "S connected Dedekind, fraction field K, A_K an abelian variety.",
+        "quantifiers": "Every such model.",
+        "parameter_range": "BLR1.4/2; our S=Spec(R).",
+        "uniformity": "Unique extending structure as used by the Neron property.",
+        "constants": "No numerical constant.",
+        "normalizations": "Generic group identity and operation are the prescribed ones.",
+        "exceptional_cases": "A model without smoothness or properness is outside this assertion.",
+        "limit_order": "No limit or asymptotic assertion."
+      },
+      "needed_assertion": {
+        "statement": "The common smooth proper elliptic models are elliptic schemes.",
+        "objects": "The models from CJR-GOOD.",
+        "hypotheses": "R complete DVR; smooth proper models of the given elliptic curves.",
+        "quantifiers": "Every model in the finite diagram.",
+        "parameter_range": "Relative dimension1.",
+        "uniformity": "One common base R.",
+        "constants": "No numerical constant.",
+        "normalizations": "The same generic group laws and zero sections.",
+        "exceptional_cases": "No group law is invented on a singular model.",
+        "limit_order": "First choose the common good models, then the extending group structures."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 13,
+        "end_line": 20,
+        "excerpt_sha256": "20ce67209b27556d5d4ba2b71aacd7d9334daabcd4ba02f9a06b243d1d894f59"
+      },
+      "connecting_derivation": "Spec(R) is connected Dedekind; apply the proposition to each smooth proper model.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-EXTENSION",
+      "source": "blr",
+      "source_pin": {
+        "path": "work/source-risk-review-20261107/cj-good-reduction-root/local-only/blr-chapter1.pdf",
+        "sha256": "32baed54631829b55af3c9e883db41cbde8820fcd1e75cfaccd75584be7149b6",
+        "bytes": 10012388
+      },
+      "source_locator": "Definition1.2/1 p12; Proposition1.2/8 p15",
+      "available_assertion": {
+        "statement": "An abelian scheme over a Dedekind base has unique extension of every generic morphism from every smooth source.",
+        "objects": "Abelian scheme B/S, smooth Y/S and morphism Y_K->B_K.",
+        "hypotheses": "The BLR1.2 Dedekind-base setting.",
+        "quantifiers": "Every smooth source Y and every generic morphism.",
+        "parameter_range": "Definition1.2/1 and Proposition1.2/8.",
+        "uniformity": "Uniqueness holds for all the maps and product-source relations considered.",
+        "constants": "No numerical constant.",
+        "normalizations": "The assertion is the full Neron mapping property, not just extension of sections.",
+        "exceptional_cases": "BLR proof uses Weil4.4/1; that published transitive input is retained.",
+        "limit_order": "No limit or asymptotic assertion."
+      },
+      "needed_assertion": {
+        "statement": "The labelled actions, homomorphisms, compositions and identities in the diagram extend compatibly.",
+        "objects": "A,B,A x_R A and their generic maps.",
+        "hypotheses": "Both models are abelian schemes; each source used is smooth.",
+        "quantifiers": "Every endomorphism in O and every selected arrow; every group-law relation.",
+        "parameter_range": "Same R and fraction field.",
+        "uniformity": "Uniqueness makes finite enlargements compatible.",
+        "constants": "A finite Z-generating set defines the full O-action.",
+        "normalizations": "All O labels are retained pointwise.",
+        "exceptional_cases": "No appeal only to extension of sections; no claim for nonsmooth source schemes.",
+        "limit_order": "Extend maps, then use uniqueness on products to establish all relations."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 21,
+        "end_line": 28,
+        "excerpt_sha256": "69cdcc2efd21c474f34ef8c60a019770dbf4d1fc79baefd9c8d244d7c0dd1507"
+      },
+      "connecting_derivation": "Apply the universal property to the smooth sources A and A x A; relations agree on the generic fiber.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-DUAL",
+      "source": "silverman",
+      "source_pin": {
+        "path": "work/astra-final-size-independent-review-001/silverman-2009.pdf",
+        "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+        "bytes": 3658085
+      },
+      "source_locator": "III.6.1(a)p81; III.6.2(a),(d),(e)p83",
+      "available_assertion": {
+        "statement": "A nonconstant elliptic isogeny f has a unique dual, with both composites multiplication by deg(f); deg[n]=n^2 in every characteristic.",
+        "objects": "Elliptic curves and their isogenies.",
+        "hypotheses": "f nonconstant; field setting of III.6.",
+        "quantifiers": "Every such f and every integer n.",
+        "parameter_range": "Generic and special fields; n may be divisible by the characteristic.",
+        "uniformity": "The identities are exact, without a separability restriction on [n].",
+        "constants": "deg[n]=n^2; deg(dual f)=deg(f).",
+        "normalizations": "The dual reverses the arrow; degree is the scheme-theoretic degree.",
+        "exceptional_cases": "The zero morphism is not used as a nonconstant isogeny; published errata directions/signs retained.",
+        "limit_order": "No limit or asymptotic assertion."
+      },
+      "needed_assertion": {
+        "statement": "Reduction is injective on O; dual identities persist for the actual ideal isogeny.",
+        "objects": "Labelled alpha in O and degree-d ideal isogeny f.",
+        "hypotheses": "Nonzero alpha acts nontrivially generically; extension of the dual and identities by CJR-EXTENSION.",
+        "quantifiers": "Every alpha in O and every selected f.",
+        "parameter_range": "No q-coprimality needed for injectivity; d prime to qN in the ideal application.",
+        "uniformity": "Pointwise injectivity for the same labelled action.",
+        "constants": "Positive m=deg(alpha); deg[m]=m^2>0.",
+        "normalizations": "The dual is defined over K by uniqueness and Galois invariance.",
+        "exceptional_cases": "No reduction of degree modulo q; [q] is still a nonconstant morphism.",
+        "limit_order": "Extend identities before taking the special fiber."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 21,
+        "end_line": 28,
+        "excerpt_sha256": "69cdcc2efd21c474f34ef8c60a019770dbf4d1fc79baefd9c8d244d7c0dd1507"
+      },
+      "connecting_derivation": "If a nonzero alpha reduced to zero, its dual composite [m] would reduce to zero, contradicting the positive degree formula.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-JACOBIAN",
+      "source": "egaIV4",
+      "source_pin": {
+        "path": "work/source-risk-review-20261107/cj-good-reduction-author/local-only/egaIV4.pdf",
+        "sha256": "b4277fb99c6edf8feec5b01f54368e4b8521bcd52871316c0edf6ff4ae69389e",
+        "bytes": 49852990
+      },
+      "source_locator": "17.11.1–2 pp82–84, particularly17.11.2(c′)",
+      "available_assertion": {
+        "statement": "A map between smooth S-schemes is etale at x when its relative cotangent map after extension to k(x) is an isomorphism.",
+        "objects": "g:X->Y, X and Y locally of finite presentation over S.",
+        "hypotheses": "X smooth at x; the cotangent condition of17.11.2(c′); in our use both structural maps are smooth.",
+        "quantifiers": "Every point x.",
+        "parameter_range": "Arbitrary residue-field extensions in condition(c′).",
+        "uniformity": "Pointwise criterion, applied at all points.",
+        "constants": "No numerical constant.",
+        "normalizations": "Use pullback of relative differentials; optional tangent condition(d) has an extra residue-field hypothesis.",
+        "exceptional_cases": "Do not assume k(x)=k(y); do not use a criterion only over a field.",
+        "limit_order": "No limit or asymptotic assertion."
+      },
+      "needed_assertion": {
+        "statement": "[n] and the selected f are etale over R.",
+        "objects": "Maps of the good elliptic schemes.",
+        "hypotheses": "n prime to q; for f, dual composites are[d] with d prime to q.",
+        "quantifiers": "Every point of the source.",
+        "parameter_range": "Rank-one relative tangent bundles; finite-presentation models.",
+        "uniformity": "Translation transports the identity differential to all geometric points.",
+        "constants": "The differentials multiply to the unit d; d[n] is multiplication by n.",
+        "normalizations": "The tangent/cotangent maps are relative to R.",
+        "exceptional_cases": "No assertion that[q] is etale.",
+        "limit_order": "Differentiate group identities, then apply the cotangent criterion."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 29,
+        "end_line": 38,
+        "excerpt_sha256": "99175c30d75a3860943de28fdbae64f11e9ffa862519677c3690b87fb31faf8a"
+      },
+      "connecting_derivation": "The differential is a unit on the rank-one tangent bundle; the source and target are smooth over R.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-FINITE",
+      "source": "egaIII1",
+      "source_pin": {
+        "path": "work/source-risk-review-20261107/cj-good-reduction-author/local-only/egaIII1.pdf",
+        "sha256": "3ed59fe81da07f1ab685ddc54a93128a364419d4ddafbc7affcd8abc8b401605",
+        "bytes": 19942549
+      },
+      "source_locator": "4.4.2 p136 and4.4.11 p138; auxiliary EGAIV17.6.2p71",
+      "available_assertion": {
+        "statement": "An etale morphism is locally quasi-finite; a proper quasi-finite morphism to a locally noetherian scheme is finite.",
+        "objects": "Morphisms of schemes with the stated base conditions.",
+        "hypotheses": "For local quasi-finiteness use EGAIV17.6.2; for finiteness the target is locally noetherian and the map proper.",
+        "quantifiers": "Every such morphism.",
+        "parameter_range": "Noetherian target case of EGAIII4.4.11.",
+        "uniformity": "Exact finiteness, with no quantitative bound.",
+        "constants": "No numerical constant.",
+        "normalizations": "Quasi-finite includes quasi-compactness here; proper implies finite type.",
+        "exceptional_cases": "Proper alone does not imply finite; the etale/quasi-finite step is essential.",
+        "limit_order": "No limit or asymptotic assertion."
+      },
+      "needed_assertion": {
+        "statement": "[n], f and their kernels are finite etale.",
+        "objects": "Maps in CJR-JACOBIAN and their zero-fiber kernels.",
+        "hypotheses": "Proper elliptic source, separated elliptic target, R noetherian, and the proved etaleness.",
+        "quantifiers": "Every n prime to q and every selected ideal isogeny f.",
+        "parameter_range": "Same finite diagram and base R.",
+        "uniformity": "Compatible with base change.",
+        "constants": "No degree assertion is inferred until local freeness is used.",
+        "normalizations": "Kernels are scheme-theoretic zero fibers.",
+        "exceptional_cases": "The q-primary torsion is excluded from etaleness.",
+        "limit_order": "Prove properness by graph and projection; combine etaleness with properness; base change to the zero section."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 29,
+        "end_line": 38,
+        "excerpt_sha256": "99175c30d75a3860943de28fdbae64f11e9ffa862519677c3690b87fb31faf8a"
+      },
+      "connecting_derivation": "Use the graph/projection proof of properness, EGAIV17.6.2 and then EGAIII4.4.11.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-DEGREE",
+      "source": "egaIV4",
+      "source_pin": {
+        "path": "work/source-risk-review-20261107/cj-good-reduction-author/local-only/egaIV4.pdf",
+        "sha256": "b4277fb99c6edf8feec5b01f54368e4b8521bcd52871316c0edf6ff4ae69389e",
+        "bytes": 49852990
+      },
+      "source_locator": "18.2.3p112 and18.2.7(i)p113",
+      "available_assertion": {
+        "statement": "A finite etale morphism is finite locally free; its rank is locally constant.",
+        "objects": "f:X->Y and f_*O_X.",
+        "hypotheses": "f finite etale.",
+        "quantifiers": "Every such f and point of Y.",
+        "parameter_range": "EGAIV18.2.3 and18.2.7(i).",
+        "uniformity": "Rank constant on each connected component.",
+        "constants": "Rank equals the geometric fiber cardinality for an etale map.",
+        "normalizations": "Rank is not reduced modulo the residue characteristic.",
+        "exceptional_cases": "Connectedness must be established before claiming one global degree.",
+        "limit_order": "No limit or asymptotic assertion."
+      },
+      "needed_assertion": {
+        "statement": "The extended ideal isogeny has special degree d, equal to its generic degree.",
+        "objects": "Finite etale f:A->B over R.",
+        "hypotheses": "B connected, shown from smooth openness and connected generic fiber.",
+        "quantifiers": "Every selected degree-d isogeny.",
+        "parameter_range": "d prime to qN.",
+        "uniformity": "Same d at every point of the connected target.",
+        "constants": "d=Norm(a)>0.",
+        "normalizations": "Degree means finite locally free rank.",
+        "exceptional_cases": "No constancy across disconnected targets is presumed.",
+        "limit_order": "Prove finite etale, prove connectedness, then compare the generic and special ranks."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 39,
+        "end_line": 56,
+        "excerpt_sha256": "a1c80aca0867e469489683920375b67605d323263a2cc5714fad13632e0b1672"
+      },
+      "connecting_derivation": "Finite local freeness and connectedness force the rank to equal its known generic value d.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    },
+    {
+      "id": "CJR-HENSEL",
+      "source": "egaIV4",
+      "source_pin": {
+        "path": "work/source-risk-review-20261107/cj-good-reduction-author/local-only/egaIV4.pdf",
+        "sha256": "b4277fb99c6edf8feec5b01f54368e4b8521bcd52871316c0edf6ff4ae69389e",
+        "bytes": 49852990
+      },
+      "source_locator": "18.5.14pp133–134;18.5.15p134",
+      "available_assertion": {
+        "statement": "Finite etale algebras over a henselian local ring are equivalent to finite etale algebras over its residue field.",
+        "objects": "Henselian local R and its residue field k.",
+        "hypotheses": "R henselian; completeness implies this by18.5.14.",
+        "quantifiers": "Every finite etale algebra and every map.",
+        "parameter_range": "EGAIV18.5.15; after strict henselization k is separably closed.",
+        "uniformity": "Full faithfulness preserves every selected diagram and endomorphism.",
+        "constants": "No numerical constant.",
+        "normalizations": "Geometric points require a chosen geometric specialization.",
+        "exceptional_cases": "The statement does not apply to arbitrary finite non-etale algebras.",
+        "limit_order": "Pass to strict henselization after proving finite etaleness; then compare the same components."
+      },
+      "needed_assertion": {
+        "statement": "Prime-to-q torsion and simultaneous ideal kernels specialize compatibly, with all labels.",
+        "objects": "A[n], A[d], extended alpha_i and ker(f).",
+        "hypotheses": "n,d prime to q; chosen compatible geometric points; d in a and finitely many ideal generators.",
+        "quantifiers": "Every finite set of endomorphisms and each selected ideal a.",
+        "parameter_range": "Integral a prime to qN; geometric fibers.",
+        "uniformity": "One component bijection respects all maps in the finite diagram.",
+        "constants": "d=|O/a| implies d in a.",
+        "normalizations": "Equality is of subgroup schemes, obtained from equal constant component subsets.",
+        "exceptional_cases": "No equality of rational torsion over K is asserted, and q-primary torsion is not treated as etale.",
+        "limit_order": "Establish generic kernel equality, then identify the same components over R^sh and on the special fiber."
+      },
+      "connecting_location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 39,
+        "end_line": 56,
+        "excerpt_sha256": "a1c80aca0867e469489683920375b67605d323263a2cc5714fad13632e0b1672"
+      },
+      "connecting_derivation": "Over R^sh every finite etale scheme is constant; equal generic subsets of A[d] give identical special subgroup schemes.",
+      "status": "Authored application awaiting non-author review; source version and remaining premises explicit."
+    }
+  ],
+  "local_derivations": [
+    {
+      "id": "CJR-QUOTIENT",
+      "location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 39,
+        "end_line": 56,
+        "excerpt_sha256": "a1c80aca0867e469489683920375b67605d323263a2cc5714fad13632e0b1672"
+      },
+      "statement": "The finite etale special map represents the quotient by its computed kernel, by the explicit torsor identity."
+    },
+    {
+      "id": "CJR-ORIENTATIONS",
+      "location": {
+        "pin": {
+          "path": "work/source-risk-review-20261107/cj-good-reduction-author/PROOF.md",
+          "sha256": "37d6c76b3ccb37096421ae2d083b3a470af5129744c2e9f3cd041d6d781c2921",
+          "bytes": 12794
+        },
+        "start_line": 57,
+        "end_line": 64,
+        "excerpt_sha256": "28cb056efbe90d4d0ada2c466306c135a5212c2c733bb7f1668a35f5658a65ea"
+      },
+      "statement": "Bezout on N-torsion, compatible d-inverses on q-primary kernels, and differentiation of O-equivariance preserve the stated labels."
+    }
+  ],
+  "auxiliary_source_edges": [
+    {
+      "consumer": "CJR-FINITE",
+      "source": "egaIV4",
+      "locator": "17.6.1–2 pp70–71",
+      "role": "etale implies locally quasi-finite"
+    }
+  ]
+}

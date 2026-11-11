@@ -1,0 +1,50 @@
+{
+  "id": {
+    "$required": "unique V14 job id"
+  },
+  "publisher": {
+    "repository": "elliotglazer/diophantine-z-q",
+    "repository_id": 1446122118,
+    "app_id": 5663093,
+    "installation_id": 179741595,
+    "base_ref": "main",
+    "target_mode": {
+      "$required": "actual reviewed head or merge mode"
+    },
+    "required_merge_ci": {
+      "$required": "actual protected check names/AppIDs; preserve11requiredActionschecks"
+    }
+  },
+  "policy": {
+    "$required": "actual reviewed current TrustedPolicy and any reviewed source_transition"
+  },
+  "packet": {
+    "$required": "packets/1446122118/ACTUAL_PR/ACTUAL_HEAD/packet.json"
+  },
+  "selected_reports": {
+    "$required": "same directory/selected-reports.json"
+  },
+  "collector_sha256": "8ca4d7b1ffb49d1a329f5ab8f423b1e415b3c5616f8e6d03a052348f75f9fcef",
+  "coverage_profile": {
+    "schema": "protocol-coverage-policy/v2",
+    "protocol_version": "1.4",
+    "governing_protocol": {
+      "path": "docs/research-review/PROTOCOL.md",
+      "sha256": "3d16c4d58d030ff745460386b081eb21c8c0d3f375cbfb06c4f9777c235a12f9"
+    },
+    "runtime_policy_sha256": {
+      "$required": "current approved runtime policy digest; NOT governing protocol digest"
+    },
+    "mode": "substantive",
+    "claim_ids": {
+      "$required": "complete independently reconciled announced claim application IDs"
+    },
+    "proof_paths": {
+      "$required": "complete independently reviewed proof source paths, not arithmetic subset"
+    },
+    "allowed_nonmath_paths": [],
+    "connection_record_path": {
+      "$required": "actual source-tree protocol-connections/v1 record path"
+    }
+  }
+}

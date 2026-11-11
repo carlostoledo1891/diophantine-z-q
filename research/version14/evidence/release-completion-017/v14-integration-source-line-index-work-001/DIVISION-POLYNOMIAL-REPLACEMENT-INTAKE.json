@@ -1,0 +1,458 @@
+{
+  "before": {
+    "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS-P1",
+        "SRC-ARITH-089",
+        "SRC-ARITH-091"
+      ],
+      "assertion": {
+        "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+        "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+        "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+        "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+        "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+        "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+        "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+        "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": "The source-side occurrence uses the same E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P. Retained hypotheses: E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0. The location additions expose that exact input inside its consuming proof; they do not broaden the assertion, replace its objects, or use an outward result as its own premise. Exact already-present locations are aliases rather than additional occurrences.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 15,
+          "end_line": 17,
+          "excerpt_sha256": "af77645888885933ac768871e962c7cc9b4867d43f41659e834c719bd42dd24a"
+        },
+        "statement": "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2.",
+        "publication": {
+          "title": "Isogeny kernels and division polynomials",
+          "authors": "Andrew V. Sutherland",
+          "venue": "MIT18.783, Fall2025, Lecture5, September18,2025",
+          "authoritative_version": "Author lecture notes, not peer-reviewed article; PDF4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7",
+          "locator": "Sections5.5–5.6, definitions p.10, Lemma5.20 and Theorem5.21 p.11, recurrence verification p.12, Lemma5.24 p.14",
+          "corrections": "Uses the displayed minus-sign omega formula; no reliance on uninspected Silverman errata. The notes refer to Washington Theorem9.33 for a complete proof."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 18,
+        "end_line": 23,
+        "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS",
+      "use_sha256": "64517ec3a37d94fbd8c7ebea344983a8e9d20ffc35f587a3e12279bf1ff315b1",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2.",
+        "objects": "Short Weierstrass curve, integer-indexed division polynomials and scalar multiplication.",
+        "hypotheses": "The short model is nonsingular over characteristic0 for this use; rational-map interpretation at poles.",
+        "quantifiers": "Every nonzero integer n and every point where the affine formulas are defined.",
+        "parameter_range": "Positive n recurrences and negative n by negation.",
+        "uniformity": "Same formulas for each nonzero integer scalar on a nonsingular characteristic0 short model.",
+        "constants": "Denominators psi_n^2 and psi_n^3; omega numerator divided by4y in the generic polynomial identity.",
+        "normalizations": "Sutherland sections5.5–5.6 conventions, psi_-n=-psi_n.",
+        "exceptional_cases": "At zeros of psi_n the scalar image is the identity; polynomial identities are formed before specializing y=0.",
+        "limit_order": "Define polynomials first, establish the scalar map, then evaluate at points."
+      },
+      "needed_assertion": {
+        "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+        "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+        "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+        "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+        "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+        "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+        "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+        "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+      },
+      "required_capabilities": [
+        "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch."
+      ],
+      "available_capabilities": [
+        "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2."
+      ],
+      "derived_capabilities": [
+        "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 18,
+          "end_line": 23,
+          "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+          "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+          "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+          "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+          "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+          "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+          "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+          "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 18,
+            "end_line": 23,
+            "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 278,
+            "end_line": 304,
+            "excerpt_sha256": "8873975e105b4fe046ebc73db6b02e5a0a2fbe754b578c00a4e058b886187123"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 278,
+          "end_line": 304,
+          "excerpt_sha256": "8873975e105b4fe046ebc73db6b02e5a0a2fbe754b578c00a4e058b886187123"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "83d80fbe3af2b780ef63da85f0129db9dadc6183698356b87aa853d3cbfb5d02"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 22,
+          "end_line": 22,
+          "excerpt_sha256": "7e31cf90e94ddddf03741cf3818103e299bfa746c1ff5c338c79c984e6549cc4"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U010",
+      "scope": "Exact stated clause."
+    },
+    "retained_separate_inputs": [
+      "Established torsion-free carrier and exact inverse-norm field encoding."
+    ],
+    "source_record": {
+      "id": "sutherland",
+      "bibliography": "A. V. Sutherland,\n\\emph{Isogeny kernels and division polynomials}, MIT 18.783,\nFall 2025, Lecture 5, September 18, 2025, \\S\\S5.5--5.6.\n\\url{https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf}.",
+      "urls": [
+        "https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25_lec05.pdf"
+      ],
+      "files": [
+        {
+          "workspace_relative_path": "work/theorem-application-audit-20261105/closure/primary/sutherland-2025-lecture05.pdf",
+          "sha256": "4d638ce3bbe1127ae7947a8b4deda6c6e51247912194bbacaf3920d4c9bb19d7",
+          "bytes": 556484
+        }
+      ],
+      "version_notes": "MIT 18.783 Fall 2025 Lecture 5; September 18 2025; lecture notes, not peer-reviewed article",
+      "source_status": "bytes_pinned"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  "after": {
+    "origin": "v14-division-polynomial-input-001",
+    "state": "author_proposal_pending_independent_review",
+    "use": {
+      "id": "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS",
+      "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+      "passages": [
+        "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS-P1",
+        "SRC-ARITH-089",
+        "SRC-ARITH-091"
+      ],
+      "assertion": {
+        "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+        "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+        "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+        "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+        "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+        "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+        "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+        "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+      },
+      "classification": "dependency",
+      "reason": "Exact current elementary input; the project proof is a source-application wrapper, not the primary publication. Imported statements and local derivations remain distinct.",
+      "shared_contract_justification": "The source-side occurrence uses the same E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P. Retained hypotheses: E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0. The location additions expose that exact input inside its consuming proof; they do not broaden the assertion, replace its objects, or use an outward result as its own premise. Exact already-present locations are aliases rather than additional occurrences.",
+      "supplier": {
+        "kind": "published_external",
+        "application_id": null,
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-statements/division-polynomial-published.md",
+            "sha256": "fd79994a399f3cda36a0220b60f854d656792ca1dd1acf280dae55ac22cd2459"
+          },
+          "start_line": 5,
+          "end_line": 7,
+          "excerpt_sha256": "087e320a2ddd8a211287b480b364f874e03477a8bf921e81277a548b2c6c212c"
+        },
+        "statement": "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2.",
+        "publication": {
+          "title": "The Arithmetic of Elliptic Curves",
+          "authors": "Joseph H. Silverman",
+          "venue": "Graduate Texts in Mathematics106, Springer, second edition2009",
+          "authoritative_version": "Published second edition PDF72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25",
+          "locator": "ExerciseIII.3.7 pp105–106, parts(a)–(f)",
+          "corrections": "Official2011 errata p4 corrects omega numerator sign; official2022 pp105–106 entries correct even parity factor and clarify psi0/psi-1."
+        }
+      },
+      "application_id": null,
+      "inline_argument": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+          "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+        },
+        "start_line": 18,
+        "end_line": 23,
+        "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+      }
+    },
+    "connection": {
+      "use_id": "ACTIVE-ELEMENTARY-DIVISION-POLYNOMIALS",
+      "use_sha256": "ef6eb2cf2140aae0670334000fe3b8cb37429f3958551944080169e0f44eda8e",
+      "supplier_passage_role": "statement",
+      "available_assertion": {
+        "statement": "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2.",
+        "objects": "Short Weierstrass curve, integer-indexed division polynomials and scalar multiplication.",
+        "hypotheses": "The short model is nonsingular over characteristic0 for this use; rational-map interpretation at poles.",
+        "quantifiers": "Every nonzero integer n and every point where the affine formulas are defined.",
+        "parameter_range": "Positive n recurrences and negative n by negation.",
+        "uniformity": "Same formulas for each nonzero integer scalar on a nonsingular characteristic0 short model.",
+        "constants": "Denominators psi_n^2 and psi_n^3; omega numerator divided by4y in the generic polynomial identity.",
+        "normalizations": "Silverman ExerciseIII.3.7 short-model conventions with official corrections; negative indices extended by group negation in the connecting argument.",
+        "exceptional_cases": "At zeros of psi_n the scalar image is the identity; polynomial identities are formed before specializing y=0.",
+        "limit_order": "Define polynomials first, establish the scalar map, then evaluate at points."
+      },
+      "needed_assertion": {
+        "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+        "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+        "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+        "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+        "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+        "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+        "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+        "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+        "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+        "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+      },
+      "required_capabilities": [
+        "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch."
+      ],
+      "available_capabilities": [
+        "On a nonsingular short Weierstrass curve, parity-normalized division polynomials give [n] through (phi_n/psi_n^2,omega_n/psi_n^3), with the corrected minus-sign omega recurrence and coprime phi_n,psi_n^2."
+      ],
+      "derived_capabilities": [
+        "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch."
+      ],
+      "connecting_derivation": {
+        "kind": "derivation",
+        "location": {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 18,
+          "end_line": 23,
+          "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+        },
+        "application_id": null,
+        "output_assertion": {
+          "statement": "The actual f_n recurrences and cleared scalar equations match the short model and are reversible on the guarded nonzero torsion-free branch.",
+          "objects": "E:y^2=x^3+Ax with actual A=-d^2; f_n,psi_n,phi_n,omega_n and actual scalar-template input P.",
+          "hypotheses": "E nonsingular; P belongs to the established torsion-free carrier; n!=0 on the affine scalar branch; inverse-norm equations correctly encode nonvanishing in K0.",
+          "quantifiers": "Each integer n and each carrier input, using explicit n=0 and identity branches separately.",
+          "parameter_range": "All integer scalars; nonidentity P in the guarded branch.",
+          "uniformity": "Only the stated fixed objects and parameter range are covered; no additional uniform bound is asserted.",
+          "constants": "D0=16(x^3+Ax)^2; psi_2n=2psi_n omega_n=2 y([n]P)psi_n^4.",
+          "normalizations": "psi_n=f_n for odd n and2y f_n for even n; corrected numerator minus sign; exact displayed f0..f4.",
+          "exceptional_cases": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+          "limit_order": "Derive polynomial recurrence identities, establish psi_n(P)!=0 on this branch, then clear denominators reversibly."
+        }
+      },
+      "adverse_cases": {
+        "status": "checked",
+        "reason": "Identity and scalar0 use identity output; negative n uses negation; never cancel a specialized zero ordinate.",
+        "evidence": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+              "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+            },
+            "start_line": 18,
+            "end_line": 23,
+            "excerpt_sha256": "8099ebd44e452aa036c3a3d00e8957ce61f6515fa4a221057767ff4d41e3ee5d"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 278,
+            "end_line": 304,
+            "excerpt_sha256": "8873975e105b4fe046ebc73db6b02e5a0a2fbe754b578c00a4e058b886187123"
+          }
+        ]
+      },
+      "consumer_locations": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 278,
+          "end_line": 304,
+          "excerpt_sha256": "8873975e105b4fe046ebc73db6b02e5a0a2fbe754b578c00a4e058b886187123"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 19,
+          "end_line": 19,
+          "excerpt_sha256": "83d80fbe3af2b780ef63da85f0129db9dadc6183698356b87aa853d3cbfb5d02"
+        },
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/evidence/elementary-inputs-current/PROOF.md",
+            "sha256": "3ea9452be304c45c1e40e759834579800dadedfcfc7a537a9a0388aba8517127"
+          },
+          "start_line": 22,
+          "end_line": 22,
+          "excerpt_sha256": "7e31cf90e94ddddf03741cf3818103e299bfa746c1ff5c338c79c984e6549cc4"
+        }
+      ]
+    },
+    "initial_mapping": {
+      "use_id": "HIST-arithmetic-AR-U010",
+      "scope": "Exact stated clause."
+    },
+    "retained_separate_inputs": [
+      "Established torsion-free carrier and exact inverse-norm field encoding."
+    ],
+    "source_record": {
+      "id": "silverman2009-division-polynomials",
+      "bibliography": "J. H. Silverman, The Arithmetic of Elliptic Curves, second edition, Springer2009, ExerciseIII.3.7 pp105–106.",
+      "files": [
+        {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/theorem-application-audit-20261105/parallel-009/restoration-check/work/astra-final-size-independent-review-001/silverman-2009.pdf",
+          "sha256": "72ee67bfa1e3fdf582ac7e4b032d7ca0b35a168ed6443ac39c121fbb788cab25"
+        },
+        {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/silverman-errata-2011-root/local-only/AECErrata2011.pdf",
+          "sha256": "cc89fd821b15df1fa2e139d32dbee447793ffc004fcf4f7cd962191873a2c37a"
+        },
+        {
+          "path": "C:/Users/glaze/Documents/Codex/2026-11-02/lo/work/source-risk-review-20261107/cj-good-reduction-root/local-only/silverman-errata2022.txt",
+          "sha256": "625b19cd779811039bf3d02911b5e3897ddbade95884dc006ad1a8f5f24733f4"
+        }
+      ],
+      "source_status": "published_book_with_official_errata"
+    },
+    "scope": "Bounded current connection, not whole-proof acceptance."
+  },
+  "changes": [
+    ".origin",
+    ".use.supplier.location.pin.path",
+    ".use.supplier.location.pin.sha256",
+    ".use.supplier.location.start_line",
+    ".use.supplier.location.end_line",
+    ".use.supplier.location.excerpt_sha256",
+    ".use.supplier.publication.title",
+    ".use.supplier.publication.authors",
+    ".use.supplier.publication.venue",
+    ".use.supplier.publication.authoritative_version",
+    ".use.supplier.publication.locator",
+    ".use.supplier.publication.corrections",
+    ".connection.use_sha256",
+    ".connection.available_assertion.normalizations",
+    ".source_record.id",
+    ".source_record.bibliography",
+    ".source_record.urls",
+    ".source_record.files",
+    ".source_record.version_notes",
+    ".source_record.source_status"
+  ],
+  "inputs": [
+    {
+      "path": "v14-division-polynomial-input-001/MANIFEST.json",
+      "sha256": "4b763cee9d99d62ba21ab28db62d41b35b4f3e63b9c28f6a35efe421ae890a0d"
+    },
+    {
+      "path": "v14-division-polynomial-input-001/REVIEWER-REVIEW.json",
+      "sha256": "5922774275ef759a3d18d6e0ce4e9de6bda1df7ad39349d92686aecdf3df1ec0"
+    },
+    {
+      "path": "v14-accepted-source-installation-root-001/INSTALLATION-LOCAL-AND-DIVISION.json",
+      "sha256": "b6852195b312e86c15ba4ceae3d269b24d7b42de33d3690849500f7874732101"
+    }
+  ],
+  "note": "Exact reviewed supplier replacement; grouped elementary canonical edits remain pending."
+}

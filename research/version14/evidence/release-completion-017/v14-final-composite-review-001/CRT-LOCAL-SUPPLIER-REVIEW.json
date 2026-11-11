@@ -1,0 +1,56 @@
+{
+  "status": "accepted_existing_local_proof_supplier",
+  "reviewed_at": "2026-11-09T09:30:33.480Z",
+  "proposal": {
+    "path": "v14-integration-source-line-index-work-001/CRT-LOCAL-SUPPLIER-PROPOSAL.json",
+    "sha256": "84ddf35e3d909f015affc9e8cafe80db24d494ce49eb9d136febfbb75901dbdf"
+  },
+  "checks": {
+    "pin": true,
+    "excerpt": true,
+    "use_hash": true,
+    "assertion": true,
+    "available": true,
+    "consumers": true
+  },
+  "delta": [
+    {
+      "p": "use.supplier.kind",
+      "a": "published_external",
+      "b": "inline"
+    },
+    {
+      "p": "use.supplier.location.start_line",
+      "a": 6,
+      "b": 7
+    },
+    {
+      "p": "use.supplier.location.excerpt_sha256",
+      "a": "c34633fd682d7381fa5ab46a8f55de5e715d3287e8c76763ebc715da47c8ec3a",
+      "b": "069e06201191348e4b02645419a7b7b2663d6c2e012e95c96cce9d605273481f"
+    },
+    {
+      "p": "use.supplier.publication",
+      "a": {
+        "title": "Algebraic Number Theory",
+        "authors": "J.S. Milne",
+        "venue": "Author course notes, version3.08,19July2020",
+        "authoritative_version": "Pinned author notes, not peer-reviewed publication",
+        "locator": "Classical CRT, printed19",
+        "corrections": "Full needed Bezout proof supplied locally."
+      },
+      "b": null
+    },
+    {
+      "p": "connection.use_sha256",
+      "a": "de1b7fd2af55f43f403137b595a41a2a3e26e69bc860752aef6e83af87519052",
+      "b": "5f557cb2c3148dfa0dab8c028e44d5803686fd6cbba96df24aac00377103cc2a"
+    },
+    {
+      "p": "connection.supplier_passage_role",
+      "a": "statement",
+      "b": "proof"
+    }
+  ],
+  "finding": "Read complete existing source. Line7 gives the entire Bezout construction and unit conclusion for positive pairwise-coprime moduli. Thus the inline proof classification is accurate; the author-note citation is historical attribution rather than sole theorem supplier. No new proof source or theorem assertion is introduced. Prior realizability, progression, reciprocity and graph requirements remain separate."
+}

@@ -1,0 +1,295 @@
+{
+  "id": "V15-SCALAR245",
+  "status": "Author-prepared; independent current-use acceptance pending",
+  "supplier": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33131,
+      33156
+    ],
+    "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+  },
+  "consumer": {
+    "path": "manuscript/quartic_v15.tex",
+    "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+    "lines": [
+      33157,
+      33187
+    ],
+    "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+  },
+  "dependencies": [
+    "V15-BASE248"
+  ],
+  "retained_reviews": [
+    {
+      "key": "scalar-S-independent",
+      "path": "work/quartic248-optimization-20261109/valuation-packing/scalar-S-independent/REVIEW.json",
+      "sha256": "dbf7b114d51c1aa67b9c1e6b225f9ef14ad00d70cd4e86b328e58db7b99d3fcd",
+      "scope": "Exact named coordinate/proof-chain scope; preserve source qualifications.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    },
+    {
+      "key": "v15typing",
+      "path": "work/quartic-v15-238-20261110/premise-audit/typing-delta-review-002/REVIEW.json",
+      "sha256": "8d0492468bf531fb435d24d268a1b007f572e414692942c5f246504f667a7354",
+      "scope": "New238 argument and exact typing; inherited V14 foundation excluded.",
+      "current_edition_status": "reuse candidate; no automatic current Protocol D acceptance"
+    }
+  ],
+  "obligations": [
+    {
+      "id": 1,
+      "topic": "Object",
+      "required": "Use the unshifted comparison point S=[a]P",
+      "constructed": "S=(hS²,hS*jS), H=(chi,chi*SH), Z*jS=hS*SH",
+      "match": "This is the plain ratio z(S)/z(H); it is not substitution of a for a−1 in the old proof.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 2,
+      "topic": "Domain",
+      "required": "Keep both point charts defined",
+      "constructed": "Finite root chart excludes O; retained torsion-free S gives a≠0 and jS≠0",
+      "match": "No new nonzero hypothesis is imposed on the rational input.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 3,
+      "topic": "Rows",
+      "required": "Account for all deleted and replaced coordinates",
+      "constructed": "Delete old IDs 201–203 and rows 135,136,177; replace rows 124,125",
+      "match": "The remaining 217 rows are retained; result has 245 coordinates and 219 rows.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 4,
+      "topic": "Local extraction",
+      "required": "Retain the scalar valuation requirements",
+      "constructed": "v(F)>5ν/4, v(Z0)>23ν/8, v(Z1)>19ν/8 at the consumed positive odd ν",
+      "match": "These are the scalar245 inequalities, not the later parity237 inequalities.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 5,
+      "topic": "Index",
+      "required": "Convert formal ratios to the actual integer label",
+      "constructed": "After allowed torsion translation, [2m]S′=[4a]H",
+      "match": "Formal logarithms give divisibility of c=|a|; torsion is killed before the logarithm.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 6,
+      "topic": "Soundness",
+      "required": "Retain a uniform contradiction",
+      "constructed": "h(β)≤C3*149^(−L_N)c(1+log(c)/3), c≥149^L_N",
+      "match": "Compare with (c−4)log(c−1); L_N tends to infinity independently of the rational input.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 7,
+      "topic": "Completeness",
+      "required": "Choose a legal unshifted comparison index",
+      "constructed": "Choose H with finite/real conditions, then positive sufficiently divisible a with [a]P near O",
+      "match": "Recurrence gives the new witnesses; no bijection on old auxiliary tuples is claimed.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 8,
+      "topic": "Lucas witnesses",
+      "required": "Preserve the integer recurrence",
+      "constructed": "For a≥3 use U0=0,U1=1,Uj+1=aUj−Uj−1; take j divisible by a−2, b=Uj/(a−2), t=Uj+1",
+      "match": "Uj≡j mod(a−2) proves b integral and the exact Pell identity.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": 9,
+      "topic": "Scope",
+      "required": "Keep all later contact choices and threshold qualifications",
+      "constructed": "The remaining contact selection is inherited; one sufficiently large ineffective N0 remains",
+      "match": "This is a sufficient arithmetic replacement, not an unrestricted symbolic-parameter equivalence.",
+      "evidence": [
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33131,
+            33156
+          ],
+          "excerpt_sha256": "10ac0cc8aa9e511dad4ffe4a84ff7b7998d683c3fea32054b551877c0e784f78"
+        },
+        {
+          "path": "manuscript/quartic_v15.tex",
+          "sha256": "8867d26272fcfb91b76d1786d5126f06159fdd1ff2f7dbb33d64c392ffd976c2",
+          "lines": [
+            33157,
+            33187
+          ],
+          "excerpt_sha256": "a1305c458880ff5ac986d4b4b65a7c258979d40af23126c752cbbcd18897b877"
+        }
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

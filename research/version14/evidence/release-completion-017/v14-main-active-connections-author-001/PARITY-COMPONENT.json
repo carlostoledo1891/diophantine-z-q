@@ -1,0 +1,211 @@
+{
+  "state": "author_proposal_pending_review",
+  "additional_ordinary_file": {
+    "side": "head",
+    "path": "research/version14/source-use-incorporation-003/DOKCHITSER-SOURCE-STATEMENT.md",
+    "sha256": "3703a22272ef5c1ec96e56e2200e8cfaaaaf6da62943d9c664c623006ff1790b"
+  },
+  "use": {
+    "id": "ACTIVE-RC-RATIONAL-PARITY",
+    "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+    "passages": [
+      "ACTIVE-RC-PARITY-P1",
+      "ACTIVE-RC-PARITY-P2"
+    ],
+    "assertion": {
+      "statement": "For the actual rational elliptic curve E in (RC), full Z_2-corank Sel_(2^infinity)(E/Q)=1 implies w(E/Q)=-1.",
+      "objects": "The same E/Q and its full 2-primary Selmer group used in (RC), including the divisible part of Sha.",
+      "hypotheses": "E is an elliptic curve over Q; its full Selmer corank is one, supplied separately by the RC antecedent.",
+      "quantifiers": "For every such E/Q with full corank one.",
+      "parameter_range": "Base Q and p=2; no number-field generalization is used.",
+      "uniformity": "An exact sign identity; no quantitative uniformity is claimed.",
+      "constants": "The sign is (-1)^1=-1.",
+      "normalizations": "The source rank r_2 equals Mordell-Weil rank plus the Q_2/Z_2 multiplicity in Sha, hence full Z_2 Selmer corank by the Kummer sequence.",
+      "exceptional_cases": "No finite-Sha, ordinary reduction, semistability or rational-isogeny hypothesis is added. Finite Sha summands contribute zero corank.",
+      "limit_order": "The direct-limit Kummer sequence identifies coranks before applying the parity theorem; the corank-one premise is not deduced from the desired analytic conclusion."
+    },
+    "classification": "dependency",
+    "reason": "The RC setup and odd-witness construction consume the same full-corank parity implication. The source wrapper is a project paraphrase of the independently checked final publisher theorem, not a claim to be the original publication.",
+    "shared_contract_justification": "Both consumers use the same E/Q, p=2, full-corank-one antecedent and root-number output; later BFH choices are separate uses.",
+    "supplier": {
+      "kind": "published_external",
+      "application_id": null,
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-use-incorporation-003/DOKCHITSER-SOURCE-STATEMENT.md",
+          "sha256": "3703a22272ef5c1ec96e56e2200e8cfaaaaf6da62943d9c664c623006ff1790b"
+        },
+        "start_line": 5,
+        "end_line": 9,
+        "excerpt_sha256": "a757d6c2b6c9828adc6ff009e0394175ab2b8499ccfb1a7c77b90f39530c4930"
+      },
+      "statement": "For every elliptic curve E/Q and every prime p, (-1)^(r_p(E/Q))=w(E/Q), where r_p is Mordell-Weil rank plus the divisible p-primary Sha multiplicity.",
+      "publication": {
+        "title": "On the Birch–Swinnerton-Dyer quotient modulo squares",
+        "authors": "Tim Dokchitser and Vladimir Dokchitser",
+        "venue": "Annals of Mathematics 172 (2010), 567–596",
+        "authoritative_version": "Final publisher PDF SHA256 f13acec152f980adbe52b033f6bb20972a0e07ef995affb76c1f0bcbaaaa5306",
+        "locator": "Theorem 1.4 and definition before Conjecture 1.2, p.568",
+        "corrections": "The accepted parity review reports a bounded correction search with no affecting correction found; no universal absence claim."
+      }
+    },
+    "application_id": null,
+    "inline_argument": {
+      "pin": {
+        "side": "head",
+        "path": "research/version14/source-use-incorporation-003/DOKCHITSER-SOURCE-STATEMENT.md",
+        "sha256": "3703a22272ef5c1ec96e56e2200e8cfaaaaf6da62943d9c664c623006ff1790b"
+      },
+      "start_line": 11,
+      "end_line": 15,
+      "excerpt_sha256": "c2e68117bc27c3f5fe9adf13eb5aa6c761a72c4a347abdd142ca2964da0a971e"
+    }
+  },
+  "connection": {
+    "use_id": "ACTIVE-RC-RATIONAL-PARITY",
+    "use_sha256": "df956b567eda2c46c8f53e4685864f73882f210e7ccdccd5f50aa021403355ad",
+    "supplier_passage_role": "statement",
+    "available_assertion": {
+      "statement": "For every elliptic curve E/Q and every prime p, (-1)^(r_p(E/Q))=w(E/Q), where r_p is Mordell-Weil rank plus the divisible p-primary Sha multiplicity.",
+      "objects": "The same E/Q and its full 2-primary Selmer group used in (RC), including the divisible part of Sha.",
+      "hypotheses": "E is an elliptic curve over Q and p is a prime.",
+      "quantifiers": "For every E/Q and every prime p.",
+      "parameter_range": "All rational elliptic curves and primes p; the current specialization is p=2.",
+      "uniformity": "An exact sign identity; no quantitative uniformity is claimed.",
+      "constants": "The source sign is (-1)^(r_p).",
+      "normalizations": "The source rank r_2 equals Mordell-Weil rank plus the Q_2/Z_2 multiplicity in Sha, hence full Z_2 Selmer corank by the Kummer sequence.",
+      "exceptional_cases": "No finite-Sha, ordinary reduction, semistability or rational-isogeny hypothesis is added. Finite Sha summands contribute zero corank.",
+      "limit_order": "The direct-limit Kummer sequence identifies coranks before applying the parity theorem; the corank-one premise is not deduced from the desired analytic conclusion."
+    },
+    "needed_assertion": {
+      "statement": "For the actual rational elliptic curve E in (RC), full Z_2-corank Sel_(2^infinity)(E/Q)=1 implies w(E/Q)=-1.",
+      "objects": "The same E/Q and its full 2-primary Selmer group used in (RC), including the divisible part of Sha.",
+      "hypotheses": "E is an elliptic curve over Q; its full Selmer corank is one, supplied separately by the RC antecedent.",
+      "quantifiers": "For every such E/Q with full corank one.",
+      "parameter_range": "Base Q and p=2; no number-field generalization is used.",
+      "uniformity": "An exact sign identity; no quantitative uniformity is claimed.",
+      "constants": "The sign is (-1)^1=-1.",
+      "normalizations": "The source rank r_2 equals Mordell-Weil rank plus the Q_2/Z_2 multiplicity in Sha, hence full Z_2 Selmer corank by the Kummer sequence.",
+      "exceptional_cases": "No finite-Sha, ordinary reduction, semistability or rational-isogeny hypothesis is added. Finite Sha summands contribute zero corank.",
+      "limit_order": "The direct-limit Kummer sequence identifies coranks before applying the parity theorem; the corank-one premise is not deduced from the desired analytic conclusion."
+    },
+    "required_capabilities": [
+      "full-Selmer-corank parity over Q",
+      "identification of source rank with Selmer corank",
+      "corank-one specialization"
+    ],
+    "available_capabilities": [
+      "full-Selmer-corank parity over Q"
+    ],
+    "derived_capabilities": [
+      "identification of source rank with Selmer corank",
+      "corank-one specialization"
+    ],
+    "connecting_derivation": {
+      "kind": "derivation",
+      "location": {
+        "pin": {
+          "side": "head",
+          "path": "research/version14/source-use-incorporation-003/DOKCHITSER-SOURCE-STATEMENT.md",
+          "sha256": "3703a22272ef5c1ec96e56e2200e8cfaaaaf6da62943d9c664c623006ff1790b"
+        },
+        "start_line": 11,
+        "end_line": 15,
+        "excerpt_sha256": "c2e68117bc27c3f5fe9adf13eb5aa6c761a72c4a347abdd142ca2964da0a971e"
+      },
+      "application_id": null,
+      "output_assertion": {
+        "statement": "For the actual rational elliptic curve E in (RC), full Z_2-corank Sel_(2^infinity)(E/Q)=1 implies w(E/Q)=-1.",
+        "objects": "The same E/Q and its full 2-primary Selmer group used in (RC), including the divisible part of Sha.",
+        "hypotheses": "E is an elliptic curve over Q; its full Selmer corank is one, supplied separately by the RC antecedent.",
+        "quantifiers": "For every such E/Q with full corank one.",
+        "parameter_range": "Base Q and p=2; no number-field generalization is used.",
+        "uniformity": "An exact sign identity; no quantitative uniformity is claimed.",
+        "constants": "The sign is (-1)^1=-1.",
+        "normalizations": "The source rank r_2 equals Mordell-Weil rank plus the Q_2/Z_2 multiplicity in Sha, hence full Z_2 Selmer corank by the Kummer sequence.",
+        "exceptional_cases": "No finite-Sha, ordinary reduction, semistability or rational-isogeny hypothesis is added. Finite Sha summands contribute zero corank.",
+        "limit_order": "The direct-limit Kummer sequence identifies coranks before applying the parity theorem; the corank-one premise is not deduced from the desired analytic conclusion."
+      }
+    },
+    "adverse_cases": {
+      "status": "checked",
+      "reason": "The actual source rank retains divisible Sha. No finite-Sha or rational-isogeny premise is used; the independent corank-one input is retained.",
+      "evidence": [
+        {
+          "pin": {
+            "side": "head",
+            "path": "research/version14/source-use-incorporation-003/DOKCHITSER-SOURCE-STATEMENT.md",
+            "sha256": "3703a22272ef5c1ec96e56e2200e8cfaaaaf6da62943d9c664c623006ff1790b"
+          },
+          "start_line": 9,
+          "end_line": 17,
+          "excerpt_sha256": "2b8016447a6b5718041fb845b6f40fffe4c74031c5b315366916bafcbd2d6f38"
+        }
+      ]
+    },
+    "consumer_locations": [
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 2662,
+        "end_line": 2667,
+        "excerpt_sha256": "369b94484df1f46c57b771ed06073bd6381faa10fee4f5a35636a22cc5d1c4ae"
+      },
+      {
+        "pin": {
+          "side": "head",
+          "path": "manuscripts/quartic_v14.tex",
+          "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+        },
+        "start_line": 14831,
+        "end_line": 14834,
+        "excerpt_sha256": "cadb754710e1c0ffcd6b6050bcb827f80a71b05a674bd4b1d5291d0659513166"
+      }
+    ]
+  },
+  "consumer_locations": [
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 2662,
+      "end_line": 2667,
+      "excerpt_sha256": "369b94484df1f46c57b771ed06073bd6381faa10fee4f5a35636a22cc5d1c4ae"
+    },
+    {
+      "pin": {
+        "side": "head",
+        "path": "manuscripts/quartic_v14.tex",
+        "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+      },
+      "start_line": 14831,
+      "end_line": 14834,
+      "excerpt_sha256": "cadb754710e1c0ffcd6b6050bcb827f80a71b05a674bd4b1d5291d0659513166"
+    }
+  ],
+  "initial_mapping": [
+    {
+      "id": "HIST-arithmetic-AR-U052",
+      "part": "Only its parity clause; the modularity and fixed-parameter clauses remain separate."
+    },
+    {
+      "id": "CURRENT-037",
+      "part": "Only the parity clause at2662–2667."
+    },
+    {
+      "id": "CURRENT-066",
+      "part": "Only the parity clause, before the independent BFH applications."
+    },
+    {
+      "id": "CURRENT-062",
+      "part": "Synopsis only; reclassify as background pointing to this active use."
+    }
+  ],
+  "scope": "No entire compound initial assertion is replaced by parity alone. Original initial assertions remain immutable; final splitting records must account for their remaining clauses."
+}

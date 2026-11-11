@@ -1,0 +1,107 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "recorded_at": "2026-11-09T07:24:36.714Z",
+  "decision": "accepted as bounded clause reconciliation, with listed remaining inputs",
+  "target": "e5904e2c3e4012dc8559ea91aa0c0012b9f9742055f3818dbb64e9cf66fce01d",
+  "checks": [
+    {
+      "id": "HIST-arithmetic-AR-U033",
+      "assertion": true,
+      "use": true,
+      "connections": [
+        {
+          "id": "ACTIVE-POLE-ONE-SIDED-OBSTRUCTION",
+          "hash": true
+        }
+      ]
+    },
+    {
+      "id": "HIST-arithmetic-AR-U034",
+      "assertion": true,
+      "use": true,
+      "connections": [
+        {
+          "id": "ACTIVE-PSTAR-INPUT-PC",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-RC-RATIONAL-PARITY",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+          "hash": true
+        }
+      ]
+    },
+    {
+      "id": "HIST-arithmetic-AR-U035",
+      "assertion": true,
+      "use": true,
+      "connections": [
+        {
+          "id": "ACTIVE-POLE-SIMULTANEOUS-SELMER",
+          "hash": true
+        }
+      ]
+    },
+    {
+      "id": "HIST-arithmetic-AR-U036",
+      "assertion": true,
+      "use": true,
+      "connections": [
+        {
+          "id": "ACTIVE-POLE-SEL2-TO-FULL-CORANK",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-FORWARD-FINITE-KUMMER",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-RC-RATIONAL-PARITY",
+          "hash": true
+        }
+      ]
+    },
+    {
+      "id": "HIST-arithmetic-AR-U037",
+      "assertion": true,
+      "use": true,
+      "connections": [
+        {
+          "id": "ACTIVE-FORWARD-KOLYVAGIN",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-FORWARD-KUMMER-CORANK",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-FORWARD-PICARD-QUOTIENT",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-FORWARD-KATO14-3",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-RATIONAL-ELLIPTIC-MODULARITY",
+          "hash": true
+        },
+        {
+          "id": "ACTIVE-POLE-ACTUAL-WITNESSES",
+          "hash": true
+        }
+      ]
+    }
+  ],
+  "scope": [
+    "AR033 maps only the obstruction. The literal saved template remains separately required.",
+    "AR034 preserves the exact PC and RC domains and treats preprints as attribution. The separate non-CM integrality source and full RC proof remain required.",
+    "AR035 maps the simultaneous Selmer construction just reviewed, retaining all local and prime-selection sources.",
+    "AR036 preserves finite-quotient alternation and full corank, without finite whole Sha. The Poonen–Stoll final-source comparison remains separate from this mapping.",
+    "AR037 keeps restricted RC before forward rank and the actual Kummer lift. Kato14.3 remains an optional rank-zero branch. The exact witness scaling is the independently reviewed002 connection."
+  ],
+  "boundary": "This is not a whole-row or whole-proof closure. Repeated modularity/parity context does not replace the original corank or witness derivation. Frozen assertions and prior qualifications remain unchanged."
+}

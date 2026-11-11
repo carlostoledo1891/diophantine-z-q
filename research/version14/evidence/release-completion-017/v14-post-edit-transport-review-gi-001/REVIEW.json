@@ -1,0 +1,128 @@
+{
+  "reviewer": "/root/v14_gi_constructors",
+  "decision": "accept bounded post-edit transport and exact five contract hash-only transports",
+  "target": {
+    "path": "v14-integration-source-line-index-work-001/post-edit/MANIFEST.json",
+    "sha256": "c682d6f519684917a7a38b6efa76847fe87bd4f758711dfaaf6064e06943435f"
+  },
+  "original_review_target": {
+    "sha256": "e1549c91559914808b76e2a74e9c3e36bfb81a7fc14c52b9b04fb67a2b495cff"
+  },
+  "accepted_grouped_review": {
+    "path": "v14-grouped-source-edits-review-001/REVIEW.json",
+    "sha256": "6d43ba27746534b724ace6cadddbaed729f86a4fbefca972f9a2765b44ad27c8"
+  },
+  "checks": {
+    "objects": 1013,
+    "all_use_hashes_pass": true,
+    "reported_original_transport_entries": 6912,
+    "original_exact_excerpt_bindings": 5280,
+    "original_pin_only_entries": 1632,
+    "changed_excerpt_bindings": 37,
+    "additional_auxiliary_locations": 107,
+    "selected_transport_entries": 7019,
+    "remaining_active_component_edited_file_pin_mismatches": 0,
+    "contract_hash_only_transports": 5,
+    "unchanged_contract_spans": 28,
+    "manifest_members_all_pass": true,
+    "historical_initial_unchanged": true
+  },
+  "method": [
+    "Reconstructed both before-files by reversing exact accepted grouped changes, checked complete before/after hashes and unchanged linecounts.",
+    "Recomputed all5280 reported before/after raw excerpt hashes and37 changed flags, and checked current component whole-file pins. The1632 pin-only rows are whole-file identity transport, not invented excerpt checks.",
+    "Compared all1013 component objects to their base: only hash/location transports, catalogue supplier/profile replacement, and explicit current-versus-prior source descriptions changed. Every use hash recomputes.",
+    "Independently found107 stale auxiliary current locations; checked their repaired exact source bindings.",
+    "Compared five contracts to canonical prior objects: each changes only manuscript.sha256. Recomputed all28 registered raw spans as unchanged; verified original approval and report pins and their bounded scope.",
+    "Compared five corrected current source-scope claim_text strings to accepted edit text verbatim and verified their original strings remain prior_claim_text. Checked catalogue source_record replacement and old record retention, and isogeny metadata clarification."
+  ],
+  "findings_resolved": [
+    "Five stale elementary current claim texts with new source pins.",
+    "Catalogue still carried Milne CFT current source_record after BMOR replacement.",
+    "107 auxiliary current component locations omitted from first transport.",
+    "Isogeny source metadata still described A056 Sutherland and inaccessible errata as current."
+  ],
+  "contract_transport": [
+    {
+      "id": "KATO-1999-INDEX-AND-CLASS",
+      "before": {
+        "path": "docs/manuscript-revisions/version14/resume003/kato-1999-index-and-class-application.json",
+        "sha256": "231c9caf34b96dd377157d8c6d8326d56db20db8a82add26e7ceff3c3e4b771f"
+      },
+      "proposal": "contracts/KATO-1999-INDEX-AND-CLASS.json",
+      "after_sha256": "45434f044bdfdcce58bbf6f736b0e7435b555e96e4e38531ba3391a703de0036",
+      "decision": "hash-only transport accepted under unchanged prior scope",
+      "prior_approval": {
+        "path": "docs/manuscript-revisions/version14/resume003/kato-1999-index-and-class-approval.json",
+        "sha256": "ad0ce945e611cdd88c891b8b24618d529634832bf6dd5c9fc6e72c6a19ff1d46"
+      },
+      "prior_scope": "Current003 binding of the unchanged Kato index-domain, norm, supplied-class and K15 application, within its prior conditional source scope. Not aggregate assembly, incoming-proof closure, build or publication approval."
+    },
+    {
+      "id": "QUARTIC-498-COMPOSITION",
+      "before": {
+        "path": "docs/manuscript-revisions/version14/resume003/quartic-498-composition-application.json",
+        "sha256": "3178cd55dd58f5e96a471f1b1f5e7d27a1c761e77d183aa5fc331247c934f75d"
+      },
+      "proposal": "contracts/QUARTIC-498-COMPOSITION.json",
+      "after_sha256": "b2e8d1bb917a0d797fb1c6415075b63ef00560bfcea64eebfa9b6a8f5373486f",
+      "decision": "hash-only transport accepted under unchanged prior scope",
+      "prior_approval": {
+        "path": "docs/manuscript-revisions/version14/resume003/quartic-498-composition-approval.json",
+        "sha256": "7cae7ac270ead67dd572dc1ce524800ad6f276117dae728639ec9e67c4ee52de"
+      },
+      "prior_scope": "Current003 binding of the retained498/514 composition and independently accepted four-line V12 successor, preserving all stated arithmetic and finite-evidence inputs. Not aggregate assembly, incoming-proof closure, build or publication approval."
+    },
+    {
+      "id": "QUARTIC-394-COMPOSITION",
+      "before": {
+        "path": "docs/manuscript-revisions/version14/resume003/quartic-394-composition-application.json",
+        "sha256": "1f1095e4bf860431932ea7c90863b1a68813747b4c3c9079107cd1e17e650d2b"
+      },
+      "proposal": "contracts/QUARTIC-394-COMPOSITION.json",
+      "after_sha256": "5cc1836f5ed35e16568cd1114a07a994afbe3209d02c5bfc31b4bd3aface7580",
+      "decision": "hash-only transport accepted under unchanged prior scope",
+      "prior_approval": {
+        "path": "docs/manuscript-revisions/version14/resume003/quartic-394-composition-approval.json",
+        "sha256": "39a7690e35fa9aada2ba7ba09e0448f0ad02119015cd74abcd9242d4409dfac9"
+      },
+      "prior_scope": "Current003 binding of the unchanged394/411 composition and retained theorem consumer, within prior conditional mathematical and finite-evidence scope. Not aggregate assembly, incoming-proof closure, build or publication approval."
+    },
+    {
+      "id": "QUARTIC-299-COMPOSITION",
+      "before": {
+        "path": "docs/manuscript-revisions/version14/resume004/quartic-299-composition-application.json",
+        "sha256": "25cfa963ff405fd8dbb1c6aa2f1bfdc6f5b7163b0d89d49ea8fec555b0217b60"
+      },
+      "proposal": "contracts/QUARTIC-299-COMPOSITION.json",
+      "after_sha256": "d32c6b52416ebc13b261664160bb09c28e76dd118ad6b9513b262dd33e104a8d",
+      "decision": "hash-only transport accepted under unchanged prior scope",
+      "prior_approval": {
+        "path": "docs/manuscript-revisions/version14/resume004/quartic-299-composition-approval.json",
+        "sha256": "7c4ef4b999d368ecb356deadffcff627f904a9b9e8c1c70edfab653e60e5624d"
+      },
+      "prior_scope": "Current 299/314 composition successor with exactly one reviewed inventory-hash replacement; unchanged mathematical contract reused from its preserved accepted predecessor. All inherited interfaces and source qualifications retained. Not a new finite replay, aggregate modification, build or publication approval."
+    },
+    {
+      "id": "V14-REVIEWED-ASSEMBLY-003",
+      "before": {
+        "path": "docs/manuscript-revisions/version14/resume003-navigation006/assembly-application.json",
+        "sha256": "c8ddef2484b2c7601282d75a62915c83cb47b9391d66dc4c740ecb203f3fcd0d"
+      },
+      "proposal": "contracts/V14-REVIEWED-ASSEMBLY-003.json",
+      "after_sha256": "055e343fe97419a160eb04d0ac71e22f8623ed2a052ca25f1cb61895f9783813",
+      "decision": "hash-only transport accepted under unchanged prior scope",
+      "prior_approval": {
+        "path": "docs/manuscript-revisions/version14/resume003-navigation006/assembly-approval.json",
+        "sha256": "26a5b66da1ed4d7dac79a94e8656d363a14d61a522df4237b02f20d5d1b4cffe"
+      },
+      "prior_scope": "Limited evidence-binding transport only: exact installed navigation006 README hash and binding-editor author addition; all mathematical fields and predecessor approval limitations unchanged. Reuses predecessor approval056e17978f80abd87d13c27f2af856f51b1e8c22c1ae7e3499b1addd3c7820c2; no new aggregate mathematics, source closure, build or release approval."
+    }
+  ],
+  "boundaries": [
+    "This is the reviewer own transport receipt. No prior reviewer approval object is rewritten or reissued in another reviewer name.",
+    "The proposed registry still needs explicit reference to this transport receipt and replay of the two accepted grouped main edits. Old approvals alone do not bind new contract hashes.",
+    "This does not newly approve the mathematics of1013 objects or complete source-line coverage, recursive source eligibility, builds, finite artifact replay, or publication.",
+    "Source assertions and caller conditions remain those of prior independently accepted packets. Broad source-role classifications unchanged by this transport are not newly audited."
+  ],
+  "prior_exposure": "Reviewer authored some retained GI, elementary replacement and CJ source packets and earlier independently reviewed catalogue edit. This review concerns integration-authored transport; mathematical correctness is reused only from named independent prior receipts, including grouped002 review, not self-reauthorized."
+}

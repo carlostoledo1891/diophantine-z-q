@@ -1,0 +1,62 @@
+{
+  "schema": "bounded-independent-review/v1",
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:57:17.678Z",
+  "target": {
+    "path": "v14-v13-model-disposition-001/DISPOSITION.json",
+    "sha256": "29f525bb43a23ff8d8e0578955c7e5038c1e59561a43d9739c498e80785b4af5"
+  },
+  "status": "accepted five scoped non-direct relations",
+  "rows": [
+    {
+      "consumer": "V13-MODEL",
+      "supplier": "N08-S-HALF-RESTORATION",
+      "reason": "Old half-chart witnesses are constructed after odd root labels have already been restored. They are not needed to establish the inherited full Mordell-Weil group or the actual reciprocal point domains used here."
+    },
+    {
+      "consumer": "V13-MODEL",
+      "supplier": "N15-ABSCISSA-COEFFICIENTS",
+      "reason": "The complete explicit N07 parity input contains the abscissa coefficient calculation. The model wrapper uses its odd-label output rather than applying that calculation independently."
+    },
+    {
+      "consumer": "V13-MODEL",
+      "supplier": "N17-ROOT-SIGN-RESTORATION",
+      "reason": "The simultaneous sign action is needed to match the deleted half-chart witnesses, but it fixes the actual points. It is not needed to identify their full-group decomposition or root versus auxiliary domains."
+    },
+    {
+      "consumer": "V13-MODEL",
+      "supplier": "N36-AUXILIARY-ALL-E-VALUATIONS",
+      "reason": "Valuation periods are proved after the reciprocal points are restored and are used by detector estimates. They do not prove the elliptic model or its Mordell-Weil decomposition."
+    },
+    {
+      "consumer": "V13-MODEL",
+      "supplier": "N38-AUXILIARY-TORSION-LOG-TRANSFER",
+      "reason": "The full log-transfer theorem consumes the full-group decomposition and point domains; it is not a source of that model. The model wrapper also records the elementary doubled identities, which are the very same local calculation at23292–23304 already present in the frozen proof, not an invocation of the later order10/40 transfer conclusion."
+    }
+  ],
+  "checks": [
+    {
+      "start": 22951,
+      "end": 22972,
+      "raw_equal": true
+    },
+    {
+      "start": 23180,
+      "end": 23242,
+      "raw_equal": true
+    },
+    {
+      "start": 23292,
+      "end": 23314,
+      "raw_equal": true
+    }
+  ],
+  "reasoning": "The inherited group decomposition and current algebraic root/auxiliary domains precede half-chart matching and valuation/log transfer. N07 supplies parity including its coefficient subproof. The elementary doubled identities are explicitly the same frozen local calculation, not an appeal to the subsequent full logarithm transfer.",
+  "retained": [
+    "Independent rank, generator and squareclass calculations.",
+    "Actual N07/N40/N41/N45 inputs and product-inverse nonzero argument.",
+    "Root labels remain integral and odd in 2E(K); auxiliary labels may be half-integral.",
+    "Fixed H/V0 domain before logarithms and no implicit enlargement of the root domain."
+  ],
+  "limits": "Full current wrapper required/constructed fields checked. No whole ancestry or final coverage approval."
+}

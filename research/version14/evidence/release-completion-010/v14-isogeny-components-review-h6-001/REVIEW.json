@@ -1,0 +1,33 @@
+{
+  "reviewer": "/root/v14_h6_coverage",
+  "time_utc": "2026-11-09T07:39:27.611Z",
+  "decision": "accept_two_bounded_published_source_applications",
+  "target_manifest": {
+    "path": "v14-isogeny-components-root-001/MANIFEST.json",
+    "sha256": "bfe031665c6d30530a06fe6fd189d58c6c1ebdf3f6a5396e90ab57dbba2229e2"
+  },
+  "components_sha256": "f1173bd54cbd8eb537b024774272af43df4cc26e271ebf50abec741bba6509a8",
+  "ids": [
+    "ACTIVE-RC-MILNE-ISOGENY-RATIO",
+    "ACTIVE-RC-EDIXHOVEN-TAME-COMPONENTS"
+  ],
+  "reading": "Read both complete ten-field applications and source-application notes, current main4952–5072, Milne I7.3 proof pp97–100 and preceding height/z conventions, Edixhoven Sections2,4,5.1–5.4. Independently verified both primary PDF hashes and visually inspected Milne p98 and Edixhoven pp299–300. Text extraction was supplemented by images for the formulas.",
+  "findings": [
+    "Milne equation7.3.1 is an arithmetic identity derived by duality and Euler characteristic. The BSD-invariance theorem heading is not used as an assumption of the BSD leading-term equality. Finite Sha and the actual dual principally polarized isogenies remain explicit incoming hypotheses.",
+    "With z=ker/coker, the rational-point ratio is (tors_A/tors_B)^2 J/I. The finite Sha dual pairing supplies Sha_B/Sha_A. With IJ=2 and height functoriality, J/I=Reg_B/Reg_A=2/I². This yields precisely the stated orientation for s_A-s_B.",
+    "Milne initially uses the pullback differential. Replacing it by separately chosen global Neron generators retains the |a|_v factors, whose global product is one. Real change of variables includes kernel/cokernel; the dimension-two cotangent relation ab=4 is distinct from rank-one IJ=2. The application does not discard component factors or invoke a leading-term identity.",
+    "At an odd companion prime with good E0 and tame totally ramified quadratic extension, n2 satisfies the root-of-unity and invertibility hypotheses. Edixhoven gives a functorial residue-field filtration with connected positive part and fixed good fibre E0[2]. Since2 is invertible this is finite etale, so the component identification preserves Frobenius. Its rational count is #E[2]^Frob, equal to4 only under the actual full rational2-torsion hypothesis.",
+    "Proposition4.1 and the pre-invariants filtration5.1 give the Neron model of the Weil restriction and its connected special fibre: a good elliptic quotient with vector kernel. This is not the fixed subgroup used for the twist. The positive component-ratio valuation enters with negative sign in the determinant expression containing -s_A."
+  ],
+  "checks": {
+    "errors": [],
+    "members": 4,
+    "locations": 6,
+    "use_hashes": 2
+  },
+  "limits": [
+    "These are only the Milne-isogeny and tame-component clauses of DIRECT-MAIN-017. They do not settle its other clauses or full RC calibration.",
+    "Forward finite-Sha/rank inputs, actual polarizations and dual isogenies, fixed old-local-type/splitting conditions, determinant and specialization arguments remain separately required. No tame formula at2 or rational/geometric count substitution is approved.",
+    "No new canonical changes, source-set expansion, final coverage decision, gate approval or publication. Prior reports are provenance; this receipt relies on the direct source/application comparison described above. Primary PDFs and renders remain local-only."
+  ]
+}

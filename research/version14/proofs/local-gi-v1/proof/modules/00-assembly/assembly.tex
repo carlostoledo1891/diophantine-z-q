@@ -1,0 +1,640 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\E}{\mathbb E}
+\newcommand{\GI}{\mathrm{GI}}
+\title{Assembly of the precise inverse-theorem input}
+\author{Author successor: /root/astra\_v14\_baseline\_theta}
+\date{7 November 2026}
+\begin{document}
+\maketitle
+
+\noindent\textbf{Status.} This successor assembles the exact local proofs
+identified below and retains their separate independent decisions.
+The preceding assemblies' local splitting, selection, analytic and
+finite-family joins have conditional acceptance. The corrected base,
+degree conversions, rank iteration and final Section 12 and Section 13
+units have their own scoped decisions. The local converse and plain
+additive-quadruple argument have also been independently accepted.
+The actual Sections 9--11 reconstruction has conditional acceptance.
+The one-variable Appendix D/F packet has bounded decisions. This
+successor connects its affine-offset transfer and the multivariable
+E.11/E.13 uses to the independently reviewed local multifactor
+supplier. Its upstream and downstream decisions are separate.
+The new composition and remaining source-coverage review must
+still be assessed; no release approval is presumed here.
+This document does not convert scoped decisions into unconditional GI
+or whole-source acceptance. Exact versions, decisions and open
+interfaces are bound in the accompanying records.
+
+\section{Exact target and conventions}
+
+The target, denoted $\GI(k)$, is the following unchanged linear formulation.
+For each fixed integer $k\geq3$ and each $0<\delta\leq1$, there are a finite
+family $\mathcal M_{k,\delta}$ of nilmanifolds $G/\Gamma$, each with connected
+simply connected nilpotent group of step at most $k$ and a discrete cocompact
+lattice, fixed smooth metrics, and constants $C,c>0$, such that every
+$1$-bounded $f:[N]\to\C$ with $\|f\|_{U^{k+1}[N]}\geq\delta$ correlates with
+a $1$-bounded test $F$ of Lipschitz constant at most $C$ along a linear orbit:
+\[
+ \left|\E_{n\in[N]}f(n)F(g^nx)\right|\geq c.
+\]
+The family and constants depend on $k,\delta$, not on $N,f$ or the orbit
+parameters. Strict source thresholds can be used with $\delta/2$ to give
+this weak-inequality version. No effective numerical bounds are asserted.
+
+For $d\geq2$, the interval norm is the norm of the zero extension to a
+cyclic group of sufficiently large order divided by the norm of the
+interval indicator, as in the published GTZ definition on p.~1232.
+We use the same normalization at every inverse step. On a finite abelian
+group $A$, write
+\[
+ \|v\|_{U^d(A)}^{2^d}
+ =\E_{x,t_1,\ldots,t_d\in A}
+   \prod_{\omega\in\{0,1\}^d}\mathcal C^{|\omega|}
+     v(x+\omega\cdot t),
+\]
+where $\mathcal C$ is complex conjugation. Our correlation convention is
+$|\E f\psi|$; conjugating the test function converts the other common
+convention without changing its degree or bounds.
+
+All limit nilcharacters in the assembly are internal in the explicitly
+specified sense of the local Lemma 13.2 and tautification units: the
+vertical identity holds for all limit group elements and all limit points,
+with the natural extension of a standard vertical character. Every
+constructor used below must supply that domain, rather than only
+standard-point equivariance. This is an explicit application check, not a
+consequence of bounded Lipschitz continuity alone.
+
+The manuscript currently requires $\GI(20)$ and $\GI(39)$. The proposed
+relative inverse replacement also requires $\GI(r-1)$ for each fixed
+$r=\max(s,4)$ chosen before the norm threshold and asymptotic variable.
+A polynomial orbit without a same-step linearization or an
+$N$-dependent family does not satisfy this target.
+
+\section{Intermediate interfaces that must be supplied}
+
+The following lists the available components and the remaining
+mathematical premises of the assembly argument. A local decision applies
+only to its stated scope; the incoming source contracts remain explicit.
+
+\begin{enumerate}
+\item The compatible bounded polynomial inverse theorem of order $2$,
+proved in \texttt{gi-base-002} and independently accepted relative to
+its retained published forward bracket theorem and Bohr-set inputs.
+It gives the fixed finite family and normalized interval $U^3$ norm.
+The needed trivial-subgroup specialization of the false quadratic
+extension is proved locally, and the periodic connected polynomial
+construction replaces the affected skew-iterate route.
+\item The nilcharacter approximation/selection interface: from positive
+correlation with a bounded degree-$d$ nilsequence, obtain a degree-$d$
+unit-vector nilcharacter and a scalar component giving positive correlation.
+For a dense family of parameters, make the choices in a limit fashion and,
+after passage to a dense subfamily if necessary, keep the finite dimensions,
+complexities, bounds and positive correlation standard and uniform.
+Section 4 below gives the finite-net and unit-vector construction used
+at this interface, with conditional independent acceptance against the
+previous finite inverse family. Later selection applications retain
+their own source contracts.
+\item Linearization at inverse order $s$: for a dense family of degree
+$s-1$ nilcharacters $\chi_h$ correlated with $\Delta_hf$, obtain one
+multidegree $(1,s-1)$ nilcharacter $\chi(h,n)$ with which $\Delta_h f$
+has degree-at-most-$s-2$ correlation for many $h$.
+This is the precise Theorem 7.1 interface. The modified Proposition 7.3
+is supplied by \texttt{local-proof-sol-lp02-03-r3}; the quotient and
+rank-lower comparison by \texttt{lp04-001}; the final orbit by the
+accepted Section 12 successor; and the degree conversions, unit-vector
+recovery, finite rank iteration and rank-zero endpoint by
+\texttt{rank-iteration-001}. The frozen Sections 9--11 reconstruction
+supplies an independently reviewed proof of the one-step frequency premise at
+every newly constructed rank family, conditional on its precise
+one-variable D and F contracts. Its theorem takes the same uniform
+unit-vector degree--rank family and accumulated multidegree factor as
+the rank iteration. It reconstructs all core/linear/independent data
+anew; none is inherited. Its fixed unit padding is removed by projecting
+the first factor of the entire LP04 matrix, so the matrix is exactly
+$\chi_h\otimes\overline{\zeta_h}$ required by the next rank step.
+The Section 12 successor supplies the same fixed coordinate isometry
+as the earlier version named in the frozen rank packet; its only
+declared change makes the zero-index groups explicit. The new binding
+is recorded here without rewriting that earlier freeze. All these
+steps retain the full-limit vertical identities and uniform bounds.
+
+
+For clarity, the invariant concerns represented families: ordinary
+unit-vector tests with exact global vertical identities, fixed standard
+bounds and finitely many standard models and characters. The initial
+positive-degree selection is made among these representations, by the
+parameter-level selection argument for the preceding inverse order;
+it does not upgrade an arbitrary weak nilcharacter or preserve a
+prescribed symbol. Degree-to-rank conversion retains the represented
+function and restricts its character, so this invariant starts at
+$(m,m)$, where $m=s-1$, with accumulated factor $A=1$.
+
+Distinguish the fixed inclusion $J$ that pads the incoming $\chi_h$
+in Sections 9--11 from the final Section 12 inclusion $I$, for which
+$Z(h,n)=I\zeta_h(n)$ on the retained shift set. The full ordinary-top
+character in Section 12 is chosen before the LP04 comparison and
+restricts to its cancelling rank-top character. The comparison thus
+supplies the entire vector
+\[
+ W_h=(J\chi_h)\otimes\overline{\zeta_h}
+\]
+on one common model of degree-rank at most $(m,R-1)$. If $QJ=\mathrm{id}$
+is the coordinate projection on the first factor, then
+\[
+ (Q\otimes\mathrm{id})W_h
+   =\chi_h\otimes\overline{\zeta_h}=:V_h.
+\]
+This fixed bounded linear map preserves the common model, internal
+parameter dependence and standard Lipschitz bound. The projection
+recovering $\zeta_h$ from $Z$ is instead the one associated with $I$.
+In particular, this conclusion concerns every matrix entry, not a
+separately selected scalar entry.
+
+The identity
+$\chi_{h,a}=\sum_b\zeta_{h,b}(\chi_{h,a}\overline{\zeta_{h,b}})$
+uses the unit norm of the whole vector $\zeta_h$ and therefore uses
+exactly $V_h$ in the correlation recovery. The finite ordinary restart
+dictionary preserves the global unit and vertical identities after
+internal selection; the ordinary tests chosen in the proof of E.5 are
+extended only after their finite selection. Tensoring the accumulated
+factor with $Z$ preserves its unit norm and multidegree $(1,m)$.
+Sections 9--11 then reconstruct all frequency data for this new family.
+No ordinary degree drop is claimed before the rank endpoint: at rank
+zero the degree-rank axiom makes the remaining factor ordinary degree
+at most $m-1$, which is then absorbed into the lower-degree test.
+The geometric, analytic and source premises of all these component
+constructions remain those of their stated contracts.
+
+The centered fractional-part convention in this chain is
+$(-1/2,1/2]$, a fixed fundamental cube permitted by Section 12.
+The reconstruction's acceptance remains conditional on its suppliers;
+the affine-offset coefficient transfer is supplied by the local multifactor lemma, as connected below.
+\item Symmetrization at inverse order $s$: from that input obtain one
+degree-$s$ nilcharacter $\Theta$ and a bounded nilsequence $\Psi(h,n)$
+supported on
+\begin{equation}\label{eq:J}
+ J=\{(i,j):i+j\leq s-1\}\ \cup\ \{(i,s-i):2\leq i\leq s\},
+\end{equation}
+such that the relevant $\chi(h,n)$ is a bounded finite linear combination
+of components of
+$\Theta(n+h)\otimes\overline{\Theta(n)}\otimes\Psi(h,n)$.
+This is the required Theorem 7.4 output, supplied by the locally authored
+Section 13 proof with its scoped independent decision. It takes the
+degree-at-most-$s-2$ correlation actually supplied above; the printed
+strict hypothesis is not used. Its proof binds the corrected
+multilinearization, literal block symmetry, local Lemma 13.2 and later
+shift/sign calculations. It also retains the precise stronger
+Proposition 8.4, E.11 and E.13 applications. The precise plain
+Proposition 8.4 input is supplied by the accepted local
+\texttt{plain-quadruples-001}: select the same scalar coordinate of
+$\chi(h,\cdot)\otimes\phi_h$ and retain that entire lower factor.
+For $H\subset[-N,N]$ of density $\alpha$, correlation $\delta$ and
+global scalar bound $B$, that proof gives standard positive density
+and correlation depending only on $\alpha,\delta,B$. Its output has
+signs $++--$ and shifts in the second and fourth factors by
+$h_1-h_4$, exactly as used in Section 13. The functions have global
+polynomial representations; the interval cutoff belongs to $f$.
+The proof removes its remaining bounded cutoff by an inequality,
+not by an asserted identity. Finite component selection and the
+internal version preserve standard uniform constants.
+This is an explicit substitution of the supplying proof for the
+published Proposition 8.4 invocation in the frozen Section 13 proof,
+lines 88--125. That earlier file remains unchanged and does not itself
+refer to the later local proof. Its intervals $I_1=[-N,N]$ and $J=[N]$,
+scalar component, global test domain, and quadruple count on the
+$N^3$ scale are exactly the local theorem's data. The reparametrization
+$(h_1,h_2,h_3,h_4)=(h_0+a,h_0+b,h_0+a+b,h_0)$ is therefore unchanged;
+the subsequent pigeonhole has $h_0\in I_1$ and $a,b\in[-2N,2N]$.
+The E.11 and E.13 inputs require the
+actual multivariable Appendix D.5 factorization and all-box reconstruction;
+a one-variable D.4 proof does not supply that premise. This obligation
+is supplied by the local multifactor theorem and its two independent decisions, as connected below.
+\item Splitting for a union of two finite downsets: a fixed bounded
+nilsequence on their union is uniformly approximable, to any fixed positive
+error, by a finite sum of products of nilsequences supported on the two
+downsets, with fixed finite complexity and bounds. This is the E.4
+application used explicitly in the next section.
+\item The converse correlation bound: a bounded scalar function with
+positive correlation against a bounded degree-$d$ nilsequence has positive
+$U^{d+1}[N]$ norm, with a bound for each fixed complexity and correlation.
+The local \texttt{converse-001} proves the required implication using
+the published compact cube constraint, an explicitly normalized smooth
+average, a uniform Fourier bound and Gowers--Cauchy--Schwarz. It uses
+accepted exact same-step linearization for polynomial tests. It does not
+import the disputed averaging-domain transition in Green--Tao 11.2 or
+invoke the inverse theorem being proved. Its exact source application
+and independent decision are bound separately.
+\item Countability, up to filtered isomorphism, of the fixed rational
+filtered nilmanifolds of bounded degree, and equivalence of fixed smooth
+metrics on a compact nilmanifold. The published countability assertion is
+on p.~1250 with its Mal'cev-coordinate justification. Its exact scope must
+include the taut rational objects constructed by this project.
+\item The local increment linearization theorem: an exact polynomial
+nilsequence of degree $s$ has a same-step linear representation on fixed
+geometry with a fixed Lipschitz comparison. This is supplied by the
+separately authored and independently accepted $P_1\rtimes\R$ unit,
+rather than by the defective full-$P_0$ suspension in Appendix C.
+\end{enumerate}
+
+The increment unit supplies the exact sequence and finite-family join
+used here. It does not assert the stronger clause in the original
+Proposition C.2 about one universal projection into the original,
+unnormalized nilmanifold for every polynomial: bounded normalization is
+absorbed in the test function $F_q$. That distinction changes no part of
+the target in section 1.
+
+The successor connections to the frozen multifactor proof are as follows.
+They select a supplying proof for the existing conclusion and preserve
+the old component files. Their independent decisions are recorded
+separately when available.
+
+First, the one-variable weak factorization uses a progression
+$A+b[M]$ with $|A|=O(N)$, standard bounded nonzero integer $b$, and
+$M\asymp N$. Apply the local inverse-affine lemma with one variable
+to a real lift of the horizontal polynomial. Its input is the positive
+binomial coefficient bound on $m\mapsto f(A+bm)$. In the inverse
+substitution, the coefficient from input degree $j$ to positive output
+degree $i$ has size $O(N^{j-i})$ and a standard denominator independent
+of $A$. One standard integer multiplier clears the integer portions;
+the residual $O(N^{-j})$ becomes $O(N^{-i})$. Thus the same original
+horizontal character, multiplied by a standard positive integer,
+has the required ambient coefficient bound. It remains nonzero.
+No bound on the constant coefficient is asserted or needed. This is
+the exact proof-level transfer at DF002 lines 132--145, distinct from
+its right-coset periodicity argument.
+
+Second, at Section 13 lines 327--343 take the local multifactor bias
+theorem with dimension $s+1$, degree $s$, and its scale equal to $8N$.
+The input is the actual reflected unit nilcharacter
+$\sigma_\varepsilon$ and reflected convex polytope obtained by the
+orthant selection. Every positive progression is the full $[8N]$;
+the auxiliary lower-degree test is constant. Its conclusion supplies
+a globally represented lower-degree nilsequence agreeing with
+$\sigma_\varepsilon$ on all of $[-8N,8N]^{s+1}$.
+The inverse reflection is an integer linear substitution, so the
+same full-box conclusion holds for $\sigma$. This does not extend
+an identity from only the selected positive orthant by assumption.
+
+Third, after the displayed diagonal pullback in Section 13, the
+actual unit tensor-product representative $\xi(h,n)$ of the
+antisymmetric symbol satisfies $s![\xi]=0$ on $[-8N,8N]^2$.
+By the definition of the zero symbol, the coordinates of
+$\xi^{\otimes s!}$ are lower-degree nilsequences on that box;
+their finite product of models is one common lower-degree model.
+Apply the local torsion theorem in dimension two, degree $s$, scale
+$8N$, and positive standard tensor power $s!$. It gives a globally
+represented degree-at-most-$(s-1)$ nilsequence equal to $\xi$ on
+that same symmetric box. Only afterward restrict to
+$[-N,N]\times[N]$, as in Section 13 lines 345--363.
+
+There is also a distinct converse use at Section 13 lines 298--305.
+For $s\geq4$, put $d=s-3\geq1$ in the accepted local converse and
+apply it to the uniformly selected lower-degree test correlated
+with the chosen coordinate of $\alpha'$. This gives the positive
+$U^{s-2}[N]$ bound there, uniformly after the stated selections.
+For $s=3$, a degree-zero nilsequence is constant: a fixed positive
+correlation with a bounded constant directly implies a fixed
+positive $|\mathbb E_{n\in[N]}\alpha'(n)|$: if the correlation is
+at least $c>0$ and the constant has modulus at most $M$, this mean
+has modulus at least $c/M$. Zero extension has group mean
+$(N/|Q|)\mathbb E_{[N]}\alpha'$, and the interval indicator has
+$U^1$ quantity $N/|Q|$, so normalization gives exactly that interval
+mean. No degree-one test is inserted into this case.
+
+Closure of fixed-degree nilsequences under conjugation, scalar
+multiplication and finite products uses the actual product nilmanifold and
+product filtration. The top degree is the maximum of the input degree
+bounds. This elementary object identification is also required when it is
+used in the induction below.
+
+\section{Correct splitting of the symmetrization remainder}
+
+We first give the lattice detail needed by the splitting application.
+It uses the integral Hall-coordinate lemma in the independently reviewed
+LP04 unit, not a general assertion that disjoint rational Lie subgroups
+automatically separate points after quotienting by a lattice.
+
+\begin{lemma}[Splitting on two finite multidegree downsets]
+Let $J_1,J_2\subset\N^a$ be finite downsets. Every bounded Lipschitz
+nilsequence of multidegree supported on $J_1\cup J_2$ is uniformly
+approximable, to each fixed positive error, by a finite sum of products
+of nilsequences supported on $J_1$ and $J_2$. The construction uses
+fixed geometries and bounds before the polynomial coefficients or the
+interval length vary, for each fixed input geometry and test bound.
+\end{lemma}
+\begin{proof}
+Use bounded tautification to set the polynomial's value at zero to the
+identity and restrict the ambient group to the group generated by its
+positive coordinate groups. For each positive $j\in J_1\cup J_2$ choose
+a finite generating set of $\Gamma\cap G_j$. Its real generated group
+is $G_j$, by the rational subgroup assertion. Introduce one formal
+letter of weight $j$ for each such generator. Take the free real Lie
+algebra on these letters and discard every individual-letter multidegree
+whose total vector weight is outside $J_1\cup J_2$. This is an ideal:
+the complement of a downset is upward closed. Every letter has positive
+total weight, so the surviving length is bounded by
+$\max_{j\in J_1\cup J_2}|j|$.
+
+Let $U$ be the exponential group and $\Lambda$ the group generated by
+the exponential letters. The Hall-coordinate lemma proves that
+$\Lambda$ is a lattice and that all weight filtration groups are
+rational. Sending each letter to its chosen original lattice generator
+gives a filtered Lie homomorphism $\phi:U\to G$ with
+$\phi(\Lambda)\subseteq\Gamma$. It maps $U_j$ onto $G_j$: the letters
+of weight exactly $j$ already generate $G_j$ as a real group. Lift each
+Taylor coefficient of the normalized original polynomial through this
+surjection. The multivariate Taylor theorem, B.9, makes their ordered
+binomial product an adapted polynomial $\widetilde g$ with
+$\phi\widetilde g=g$. Pulling the test back along
+$U/\Lambda\to G/\Gamma$ therefore preserves the sequence exactly.
+Its Lipschitz bound increases by a fixed geometric factor only.
+
+For $\nu=1,2$ let $I_\nu$ be the connected ideal subgroup spanned by
+the surviving Hall words whose weight is outside $J_\nu$. The quotient
+$U/I_\nu$ has degree support in $J_\nu$. The integral Hall lemma says
+that its quotient lattice is obtained by deleting precisely those
+coordinates. No surviving Hall word is deleted by both quotients, since
+its weight belongs to $J_1\cup J_2$. Consequently the map
+\[
+ U/\Lambda\longrightarrow
+ U/(I_1\Lambda)\ \times\ U/(I_2\Lambda)
+\]
+is injective. In detail, if two cosets have equal images, their difference
+has integral coordinates in each projected Hall system. The union of
+the retained coordinate sets is the full Hall system, so every coordinate
+of the difference is integral. The difference is in $\Lambda$.
+This checks the lattice condition as well as the Lie algebra condition.
+
+The pullbacks of the two algebras of Lipschitz functions on these compact
+quotients contain the constants, are closed under conjugation, and
+together separate points by that injection. The complex
+Stone--Weierstrass theorem approximates the pulled-back test uniformly
+by the algebra they generate. Each element of that algebra is a finite
+sum of products with one factor from each quotient, since each of the
+two individual algebras is closed under multiplication. Composing with
+$\widetilde g$ gives the asserted splitting. For an internal bounded
+Lipschitz test, first approximate by one standard Lipschitz test on the
+fixed compact manifold, using Definition 5.1, and then perform this
+standard finite approximation. For a fixed uniform Lipschitz and norm
+bound, compactness of that class in the uniform norm supplies a finite
+net and thus fixed finite bounds. Only this fixed-bound form is used
+below. If the positive groups are trivial, the sequence is constant and
+the assertion follows with one constant product.
+\end{proof}
+
+The coordinate order is $(h,n)$. Set
+\[
+ A=\{(0,j):0\leq j\leq s-1\},\qquad
+ B=\{(i,j):j\leq s-2,\ i+j\leq s\}.
+\]
+Both are downsets and $A\cup B=J$. Indeed the only point of $J$ with
+$j=s-1$ is $(0,s-1)$, covered by $A$. Every other point of $J$ has
+$j\leq s-2$ and lies in $B$. Conversely a point of $B$ of total degree
+$s$ has $i\geq2$, so belongs to the second part of \eqref{eq:J}; all its
+other points lie in the first part. This proves equality in both directions.
+
+Apply interface 5 to the actual $\Psi$ with these two downsets. A sequence
+supported on $A$ is independent of $h$: its polynomial map has every
+$h$-direction derivative in the trivial first-coordinate group.
+It is a degree-at-most-$s-1$ function $\psi(n)$ of $n$ alone.
+For a factor supported on $B$, fixing $h$ gives a polynomial nilsequence
+in $n$ of degree at most $s-2$, since all higher $n$-direction groups are
+trivial. If normalization of this section at fixed $h$ is needed, the
+accepted bounded tautification theorem supplies it with uniform geometry
+and parameter dependence.
+
+Here is the needed approximation-to-correlation connection. After uniform
+selection, suppose the preceding correlation is at least a standard
+$\epsilon_0>0$ on a dense set of $h$, and the lower-degree test factors
+have magnitude at most a standard $M$. Choose the uniform splitting error
+less than $\epsilon_0/(2M)$, also absorbing the fixed finite component and
+coefficient bounds into $M$. The error in each normalized correlation is
+then at most $\epsilon_0/2$. A finite sum remains, so one summand has a
+positive standard correlation on a dense subfamily by finite pigeonhole.
+The same finite choice of components of $\Theta$ can be made on a dense
+subfamily. The result is two fixed bounded scalar nilsequences
+$\theta,\theta'$ of degree at most $s$ such that
+\begin{equation}\label{eq:factorcorr}
+ n\longmapsto f(n+h)\overline{f(n)}\theta(n+h)\theta'(n)
+\end{equation}
+is degree-at-most-$s-2$ biased for a dense set of $h$.
+The $B$-factor is absorbed into that lower-degree test. The $A$-factor
+$\psi(n)$ is multiplied into the unshifted component forming $\theta'$.
+No scalar component is divided by, or assumed to have modulus one.
+
+The printed source on p.~1272 uses the opposite coordinate restrictions
+while claiming independence of $h$. The corrected downsets and the
+approximation estimate above are the explicit replacement for that step;
+its historical printed form is preserved in the findings record.
+
+\section{Uniform nilcharacter selection and fixed geometries}
+
+Here is the selection needed at the start of each induction step. Use
+the finite-family inverse statement already obtained at the previous
+order; the finite-family extraction below is performed after each order,
+before proceeding to the next. This avoids assuming that an arbitrary
+external assignment of nilmanifolds to parameters is an internal family.
+
+On one fixed taut degree-$d$ nilmanifold, the top group is central and
+its quotient by its lattice is a compact torus $T$. For each integral
+character $\eta$ of $T$, a unit-vector smooth function with that vertical
+character exists as follows. Cover the compact quotient by $T$ by finitely
+many trivializing charts. Choose smooth real functions $\rho_j$ supported
+inside the charts with $\sum_j\rho_j^2=1$, using a smooth partition of
+unity and normalizing its vector by its positive Euclidean norm. In the
+$j$th trivialization define the $j$th component by
+$\rho_j(b)e(\eta(t))$, and extend it by zero off that chart. These
+components are smooth, have the exact character, and their squared
+magnitudes sum to one. The central rational quotient and its lattice
+are justified by the accepted quotient geometry in the local Lemma 13.2
+unit. This is the explicit construction used in published Lemma 6.4.
+
+Components of such unit-vector functions, including frequency zero,
+form a conjugation-stable multiplicative family: use tensor products
+for multiplication and conjugation for conjugation. They contain
+constants and separate points. Distinct points on the same $T$-fibre
+are separated by an integral character, with a nonzero component of
+the unit vector. Points on different fibres are separated by a smooth
+frequency-zero scalar unit function pulled back from the base.
+Stone--Weierstrass therefore gives uniform approximation of every
+continuous test by a finite linear combination of these components.
+
+For the fixed norm and Lipschitz bound in the previous inverse theorem,
+Arzela--Ascoli gives a finite uniform net of tests. Apply the preceding
+approximation to each element of that net with error smaller than a
+fixed fraction of the positive inverse correlation. There are finitely
+many models and net elements, so the total list of unit-vector test
+maps, dimensions, frequencies, coefficient bounds and Lipschitz bounds
+is fixed. Pigeonholing a scalar component of an approximating sum
+preserves a fixed positive correlation. No component is assumed to
+have modulus one; the entire vector has norm one.
+
+For each finite interval and each of its good shifts, ordinary choice
+selects one polynomial orbit and one item from this fixed finite list.
+Taking the ultralimit of these finite assignments gives an internal
+family. A finite pigeonhole step restricts to a dense set of shifts with
+one common fixed model and fixed test map if required. The unit and
+vertical identities hold at every representative and hence for all
+limit arguments, with the natural extension of the chosen standard
+character. This establishes the selection interface needed here from
+the preceding finite inverse theorem. It does not replace separate
+selection applications later in Sections 8--13, which remain with their
+actual consumers.
+
+For the countability interface, use the rational Mal'cev-coordinate
+description of a lattice in a connected simply connected nilpotent Lie
+group, as invoked in published Section 3 and p.~1250. In each finite
+dimension the rational structure constants have countably many
+possibilities. The rational subspaces defining the finitely many
+filtration groups are specified by finite matrices with rational
+entries, again a countable choice. In the rational structure determined
+by the lattice, a finite list of rational logarithmic generators
+specifies the lattice. Thus there are at most countably many such
+filtered lattice data up to isomorphism. All local constructions here
+have finite rational filtrations and discrete cocompact lattices, so
+belong to this class. On each compact quotient any two fixed smooth
+Riemannian metrics are bi-Lipschitz equivalent: compare their positive
+quadratic forms on the compact unit tangent bundle. These are the exact
+countability and metric comparisons used in the extraction below.
+
+\section{The finite-group inequality needed for the last induction step}
+
+\begin{lemma}\label{lem:CS}
+For bounded complex functions $a,b$ on a finite abelian group $Q$ and an
+integer $d\geq1$,
+\[
+ \E_{h\in Q}\|a(\cdot+h)b(\cdot)\|_{U^d(Q)}^{2^d}
+ \leq
+ \|a\|_{U^{d+1}(Q)}^{2^d}
+ \|b\|_{U^{d+1}(Q)}^{2^d}.
+\]
+\end{lemma}
+\begin{proof}
+For $t=(t_1,\ldots,t_d)$ write
+$C_a(x;t)=\prod_\omega\mathcal C^{|\omega|}a(x+\omega\cdot t)$,
+and define $C_b$ likewise. Expanding the left side and using the bijection
+$(x,h)\mapsto(x,y=x+h)$ gives
+\[
+ \E_t(\E_y C_a(y;t))(\E_x C_b(x;t)).
+\]
+Its absolute value is at most
+$\bigl(\E_t|\E_yC_a(y;t)|^2\bigr)^{1/2}
+ \bigl(\E_t|\E_xC_b(x;t)|^2\bigr)^{1/2}$.
+Each squared expression is the $(d+1)$-cube average: expand the square
+and substitute its second base point as the first plus a new increment.
+It therefore equals the corresponding $U^{d+1}$ norm to the power
+$2^{d+1}$. This proves the inequality. The original left side is
+nonnegative because it is an average of powers of Gowers seminorms.
+\end{proof}
+
+Choose a cyclic group $Q$ with size between $C_sN$ and $2C_sN$ for a fixed
+sufficiently large $C_s$, and zero-extend all functions supported on $[N]$.
+The normalized interval and group norms differ by the fixed indicator
+factor. For each fixed order that factor is bounded above by one and below
+by $N/|Q|$, using the finite-group Gowers--Cauchy--Schwarz inequality.
+Thus a fixed positive interval norm gives a fixed positive group norm,
+and conversely; the constants depend only on the fixed ambient ratio and
+order. Taking $C_s$ larger than $2^{s+1}$ ensures the same ambient group
+is valid for all interval orders used here. The zero-extended product in
+\eqref{eq:factorcorr} is exactly the group product for $|h|\leq N$;
+there is no wrapped overlap since the ambient size is larger than $4N$.
+
+By interface 6, \eqref{eq:factorcorr} has a uniformly positive
+$U^{s-1}[N]$ norm for a dense set of $h$. Let $a=f\theta$ and
+$b=\overline f\theta'$, both zero-extended. The average over all group
+shifts of $\|a(\cdot+h)b\|_{U^{s-1}(Q)}^{2^{s-1}}$ is bounded below by a
+fixed positive constant: the contributing set of interval shifts has
+positive density also in $Q$, and the other summands are nonnegative.
+Lemma~\ref{lem:CS} and the fixed bound on $b$ imply
+$\|a\|_{U^s(Q)}$ is positive by a standard amount, hence so is
+$\|f\theta\|_{U^s[N]}$. The inverse theorem at order $s-1$ now makes
+$f\theta$ correlate with a degree-at-most-$s-1$ nilsequence $\psi$.
+The actual product $\theta\psi$ is a degree-at-most-$s$ nilsequence on
+the product filtered nilmanifold. Thus $f$ is $s$-biased.
+
+\section{Starting and completing the induction}
+
+The bounded induction base is the separately frozen and reviewed
+\texttt{gi-base-002}. It starts from the exact forward bracket theorem,
+proves the affected trivial-subgroup specialization, constructs a
+periodic connected polynomial test and transfers its correlation
+directly to the normalized interval. The older base in assembly001
+is superseded and remains historical. No unpublished correction is
+treated as an accepted black box.
+
+For completeness the initial derivative step has the same normalization
+control. The cube identity on the fixed ambient cyclic group gives
+\[
+ \E_h\|\Delta_h f\|_{U^s(Q)}^{2^s}
+ =\|f\|_{U^{s+1}(Q)}^{2^{s+1}}.
+\]
+If the interval norm is positive by a standard amount, so is the right
+side. Since $f$ is bounded, all summands have a fixed upper bound. The
+nonzero differences occur only on the shifts represented by $[-N,N]$,
+so a dense subset of those shifts has a uniformly positive $U^s[N]$
+norm. Apply the inverse theorem of order $s-1$, then interface 2, to
+obtain the family required by interface 3. Interfaces 3--5 and the preceding
+section complete the induction step. The bounded limit-$N$ case is included:
+a bounded interval has standard finite size, and any function on it is
+represented by a Lipschitz function along a rational circle rotation,
+with a standard finite Lipschitz bound. Thus the induction proves the
+limit polynomial inverse conclusion for every limit $N$, conditional on
+the listed intermediate interfaces and base.
+
+We spell out the finite-family extraction rather than replace it by
+pointwise compactness. Enumerate the rational filtered nilmanifolds of
+degree at most $s$ up to isomorphism as $M_1,M_2,\ldots$, with one fixed
+smooth metric on each, using interface 7. If the finite polynomial inverse
+statement failed at some fixed $\delta>0$, for each $j$ choose a
+$1$-bounded $f_j:[N_j]\to\C$ with norm at least $\delta$, but correlation
+at most $1/j$ against every polynomial nilsequence from the first $j$
+manifolds with $1$-bounded test and Lipschitz norm at most $j$.
+Its ultralimit has positive norm, so the limit inverse conclusion gives a
+fixed standard filtered nilmanifold, bounded Lipschitz limit test and
+positive standard correlation. Normalize the test by a fixed bound to
+make it $1$-bounded. It is isomorphic to some fixed $M_{j_0}$; fixed
+metric equivalence transfers its Lipschitz bound to a standard constant.
+Representatives of the polynomial and test satisfy the same bounds with
+one slightly larger standard constant on an ultrafilter-large set.
+For $j$ larger than that constant and $j_0$, the selected correlation
+upper bound tends to zero, contradicting the positive lower bound.
+This yields the finite-family polynomial statement with all parameters
+fixed independently of $N$.
+
+Finally interface 8 converts every member of the finite polynomial family
+to a fixed nilmanifold of step at most $s$, with a fixed Lipschitz bound
+and exactly equal sequence. A finite maximum of those bounds and the
+unchanged positive correlation give the exact linear target in section 1.
+This final join depends on the reviewed increment construction; it does
+not import the failed full-polynomial suspension claim.
+
+\section{What remains before this is a complete proof}
+
+The local units and their exact incoming connections are now assembled
+relative to their retained published inputs. The affine coefficient transfer
+and multivariable factorization, bias and torsion conclusions have separate
+independent decisions. Their substitutions and the degree-zero converse
+boundary are new explicit connections in this successor. The earlier
+composition decision is not silently extended to these new bytes.
+
+The retained published forward bracket/Bohr, quantitative equal-side
+equidistribution, rational-coordinate and compact cube-constraint inputs
+keep their exact source scope. Related-use coverage and the complete
+affected-dependency audit remain separate. This packet is submitted for
+independent acceptance of the assembled target and its actual current
+consumer interfaces. It makes no release-incorporation or whole-source
+approval claim. The target keeps its original normalized norm, quantifier
+order, fixed finite family and same-step linear output.
+
+\end{document}

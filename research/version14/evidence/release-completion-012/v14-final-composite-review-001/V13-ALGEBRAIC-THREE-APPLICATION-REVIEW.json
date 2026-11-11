@@ -1,0 +1,99 @@
+{
+  "reviewer": "/root/v14_gi_selection_review",
+  "reviewed_at": "2026-11-09T07:50:29.047Z",
+  "target": "v14-v13-algebraic-inputs-001/COMPONENTS.json",
+  "target_sha256": "e152d2dae11feedfdee61d13aa7abd578d827c434c66a8fdf64e881c9cddaf92",
+  "status": "accepted_bounded_current_applications",
+  "checks": [
+    {
+      "id": "ACTIVE-N01-KUMMER-AFFINE-TO-V13-H-SUBTRACTION",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-N02-SQUARED-H-RECONSTRUCTION-TO-V13-H-SUBTRACTION",
+      "ok": true
+    },
+    {
+      "id": "ACTIVE-N29-ANCHOR-GAMMA-CHAIN-TO-V13-TORIC-POWERS",
+      "ok": true
+    },
+    {
+      "start": 22827,
+      "ok": true
+    },
+    {
+      "start": 22860,
+      "ok": true
+    },
+    {
+      "start": 22827,
+      "ok": true
+    },
+    {
+      "start": 22860,
+      "ok": true
+    },
+    {
+      "start": 22860,
+      "ok": true
+    },
+    {
+      "start": 22860,
+      "ok": true
+    },
+    {
+      "start": 22855,
+      "ok": true
+    },
+    {
+      "start": 23244,
+      "ok": true
+    },
+    {
+      "start": 22855,
+      "ok": true
+    },
+    {
+      "start": 23244,
+      "ok": true
+    },
+    {
+      "start": 23244,
+      "ok": true
+    },
+    {
+      "start": 23244,
+      "ok": true
+    },
+    {
+      "start": 23439,
+      "ok": true
+    },
+    {
+      "start": 23055,
+      "ok": true
+    },
+    {
+      "start": 23439,
+      "ok": true
+    },
+    {
+      "start": 23055,
+      "ok": true
+    },
+    {
+      "start": 23055,
+      "ok": true
+    },
+    {
+      "start": 23055,
+      "ok": true
+    }
+  ],
+  "findings": [
+    "N01 at22827–22853 supplies the exact raw chart and affine S restored by N02 at22860–22868. Division is only after f nonzero; the prior nonexceptional H requirement is not derived here.",
+    "N02 on UQ nonzero reconstructs f,F with fixed signs via the displayed rational formulas. Its actual downstream S meaning at23244–23247 is conditional on the independently restored H domain, explicitly retained.",
+    "N29 uniquely forces powers16,40,80,160 used by the actual detector coefficients23055–23070. Existence of a suitably approximated anchor and valuation conclusions are separate."
+  ],
+  "limits": "Reuses accepted N source contracts and independently checks these three new consumer bindings against actual current text. No exceptional-branch, completeness, finite-certificate or whole-ancestry closure."
+}

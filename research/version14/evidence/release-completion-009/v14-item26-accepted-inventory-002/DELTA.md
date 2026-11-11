@@ -1,0 +1,1 @@
+Select the independently accepted DF passage-alignment successor004; all mathematical assertions/use digests unchanged. Gaussian8/27 and prime-completeness reviews are now complete. Preserve the genuine new-source handling required for the added S13 selection proof.

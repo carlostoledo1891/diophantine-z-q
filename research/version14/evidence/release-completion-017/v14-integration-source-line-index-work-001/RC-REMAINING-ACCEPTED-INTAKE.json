@@ -1,0 +1,415 @@
+{
+  "inputs": [
+    {
+      "path": "v14-rc-kummer-ext-review-001/REVIEW.md",
+      "sha256": "2f55a60546b5ecf5fec4325a629651ed6a2c230fa67f9f0af345303f34d0cf25"
+    },
+    {
+      "path": "v14-rc-four-residual-inputs-review-001/REVIEW.md",
+      "sha256": "eb3c03e6ba59c9811f5e75299640af5fde0ffd79f410fe1242a3f210535101c6"
+    },
+    {
+      "path": "v14-rc-integral-ext-input-001/MANIFEST.json",
+      "sha256": "e89774bc39cdb261afe1b75962b65eec0d2c152307f8630a2454aa99b3d9913e"
+    },
+    {
+      "path": "v14-rc-tame-small-complex-input-001/MANIFEST.json",
+      "sha256": "debd357ff4bcae536ba84eb7a4d9c30a796b00f8b27ed4aab01233f164990864"
+    },
+    {
+      "path": "v14-rc-local-completion-input-001/MANIFEST.json",
+      "sha256": "8e65697c2fa0912d50dced2f17a7898e17c57f9300cc55e3bb75b78cbdef533d"
+    },
+    {
+      "path": "v14-rc-early-waldspurger-repeat-001/MANIFEST.json",
+      "sha256": "0ea3cc77a278d795ea7466ca80d87396e825b72eaa839a82b6f71c8159f738cd"
+    }
+  ],
+  "new_ids": [
+    "ACTIVE-RC-INTEGRAL-SELMER-DUALITY-EXT",
+    "ACTIVE-RC-TAME-SMALL-COMPLEX",
+    "ACTIVE-RC-LOCAL-ELLIPTIC-COMPLETION"
+  ],
+  "waldspurger": {
+    "before": {
+      "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+      "state": "author proposal",
+      "use": {
+        "id": "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE-APPLICATION"
+        ],
+        "assertion": {
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "objects": "The actual objects and maps in current main lines 14530–14622.",
+          "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+          "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+          "constants": "No new numerical constant or size bound is inferred.",
+          "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+        },
+        "classification": "dependency",
+        "reason": "Instantiate the specified published input under the displayed hypotheses. No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+        "shared_contract_justification": "Same source specialization shared only by the explicitly listed theta clauses; each local deduction remains separate.",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 14530,
+            "end_line": 14622,
+            "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+          },
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "publication": {
+            "title": "Sur les coefficients de Fourier des formes modulaires de poids demi-entier",
+            "authors": "J.-L. Waldspurger",
+            "venue": "Journal de Mathematiques Pures et Appliquees60(1981),375–484",
+            "authoritative_version": "waldspurger: 86e054b65e0ca727d5dc45cb8f711abf61ff0b373dab32da461fb248e05751ff",
+            "locator": "Proposition2,p377;Corollary2 and proof,pp483–484;sectionI.3,pp377–378",
+            "corrections": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 14530,
+          "end_line": 14622,
+          "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE",
+        "use_sha256": "6e542621709cbb3e71154d123f00924b8901f07ac8e4928261d732816284c921",
+        "supplier_passage_role": "application",
+        "available_assertion": {
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "objects": "The actual objects and maps in current main lines 14530–14622.",
+          "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+          "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+          "constants": "No new numerical constant or size bound is inferred.",
+          "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+        },
+        "needed_assertion": {
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "objects": "The actual objects and maps in current main lines 14530–14622.",
+          "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+          "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+          "constants": "No new numerical constant or size bound is inferred.",
+          "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+        },
+        "required_capabilities": [
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE"
+        ],
+        "available_capabilities": [
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE"
+        ],
+        "derived_capabilities": [],
+        "connecting_derivation": {
+          "kind": "identification",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 14530,
+            "end_line": 14622,
+            "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+            "objects": "The actual objects and maps in current main lines 14530–14622.",
+            "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+            "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+            "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+            "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+            "constants": "No new numerical constant or size bound is inferred.",
+            "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+            "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+            "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 14530,
+            "end_line": 14622,
+            "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+          }
+        ]
+      },
+      "initial_mapping": [
+        {
+          "id": "HIST-theta-T025",
+          "part": "Only this imported assertion: On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor."
+        },
+        {
+          "id": "HIST-theta-T027",
+          "part": "Only this imported assertion: On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor."
+        },
+        {
+          "id": "HIST-theta-T062",
+          "part": "Only this imported assertion: On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor."
+        }
+      ],
+      "retained_separate_inputs": [
+        "The target theta clause local argument and its other named hypotheses.",
+        "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions."
+      ],
+      "reuse_scope": "Retained published-source specializations and prior bounded source-family checks; current clause comparison still required. The location is an application, not a verbatim external-source passage."
+    },
+    "after": {
+      "origin": "v14-active-connection-collection-014/COMPONENTS.json",
+      "state": "author proposal",
+      "use": {
+        "id": "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE",
+        "consumer": "V14-MAIN-POLYNOMIAL-DEFINITION",
+        "passages": [
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE-APPLICATION",
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE-EARLY-3430"
+        ],
+        "assertion": {
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "objects": "The actual objects and maps in current main lines 14530–14622.",
+          "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+          "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+          "constants": "No new numerical constant or size bound is inferred.",
+          "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+        },
+        "classification": "dependency",
+        "reason": "Instantiate the specified published input under the displayed hypotheses. No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+        "shared_contract_justification": "The new early site and the retained detailed construction denote the same even coefficient source, eigenspace, signed indices and original support. The detailed application verifies H1, the local squareclasses including2 and the nonzero reference. No assertion of one-dimensionality or arbitrary projection nonvanishing is added.",
+        "supplier": {
+          "kind": "published_external",
+          "application_id": null,
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 14530,
+            "end_line": 14622,
+            "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+          },
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "publication": {
+            "title": "Sur les coefficients de Fourier des formes modulaires de poids demi-entier",
+            "authors": "J.-L. Waldspurger",
+            "venue": "Journal de Mathematiques Pures et Appliquees60(1981),375–484",
+            "authoritative_version": "waldspurger: 86e054b65e0ca727d5dc45cb8f711abf61ff0b373dab32da461fb248e05751ff",
+            "locator": "Proposition2,p377;Corollary2 and proof,pp483–484;sectionI.3,pp377–378",
+            "corrections": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions."
+          }
+        },
+        "application_id": null,
+        "inline_argument": {
+          "pin": {
+            "side": "head",
+            "path": "manuscripts/quartic_v14.tex",
+            "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+          },
+          "start_line": 14530,
+          "end_line": 14622,
+          "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+        }
+      },
+      "connection": {
+        "use_id": "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE",
+        "use_sha256": "295b1600529626e69cd5c3f8ea4f9a89853a3cc1e6e47da1a9f6b740fcbcc33b",
+        "supplier_passage_role": "application",
+        "available_assertion": {
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "objects": "The actual objects and maps in current main lines 14530–14622.",
+          "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+          "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+          "constants": "No new numerical constant or size bound is inferred.",
+          "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+        },
+        "needed_assertion": {
+          "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+          "objects": "The actual objects and maps in current main lines 14530–14622.",
+          "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+          "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+          "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+          "constants": "No new numerical constant or size bound is inferred.",
+          "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+        },
+        "required_capabilities": [
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE"
+        ],
+        "available_capabilities": [
+          "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE"
+        ],
+        "derived_capabilities": [],
+        "connecting_derivation": {
+          "kind": "identification",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 14530,
+            "end_line": 14622,
+            "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+          },
+          "application_id": null,
+          "output_assertion": {
+            "statement": "On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor.",
+            "objects": "The actual objects and maps in current main lines 14530–14622.",
+            "hypotheses": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+            "quantifiers": "Exactly the stated source specialization at these actual objects; preserve its stated finite choices.",
+            "parameter_range": "Nonzero scalar eigenspace supplies H1; positive squarefree pair in the same squareclass at every level prime, including2; reference value nonzero.",
+            "uniformity": "Only the source uniformity explicitly stated here and in the application; fixed data remain fixed before the later choices.",
+            "constants": "No new numerical constant or size bound is inferred.",
+            "normalizations": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+            "exceptional_cases": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+            "limit_order": "Supply this input before the local construction that consumes it; keep the application order of choices."
+          }
+        },
+        "adverse_cases": {
+          "status": "checked",
+          "reason": "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions.",
+          "evidence": [
+            {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            }
+          ]
+        },
+        "consumer_locations": [
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 14530,
+            "end_line": 14622,
+            "excerpt_sha256": "85bcc3fea914993095e8b547efac13a2845cfac966a145c3477b020d4fb28bff"
+          },
+          {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3430,
+            "end_line": 3433,
+            "excerpt_sha256": "b5cf89583bf1db4d03054ae9d959bfd49c6f84162f818ea85c8e85a352e8170f"
+          }
+        ]
+      },
+      "initial_mapping": [
+        {
+          "id": "HIST-theta-T025",
+          "part": "Only this imported assertion: On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor."
+        },
+        {
+          "id": "HIST-theta-T027",
+          "part": "Only this imported assertion: On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor."
+        },
+        {
+          "id": "HIST-theta-T062",
+          "part": "Only this imported assertion: On the full good-Hecke eigenspace, the stated same-local-squareclass positive squarefree Fourier coefficients satisfy the literal square identity with the central L-value ratio and character factor."
+        }
+      ],
+      "retained_separate_inputs": [
+        "The target theta clause local argument and its other named hypotheses.",
+        "No complex conjugation or absolute-value substitution. The same dyadic squareclass removes the use of H2 here. Old multiplicities are retained. Proportional linear functionals and rational phase descent are local deductions."
+      ],
+      "reuse_scope": "Retained published-source specializations and prior bounded source-family checks; current clause comparison still required. The location is an application, not a verbatim external-source passage."
+    },
+    "delta": {
+      "use_id": "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE",
+      "base_use_sha256": "6e542621709cbb3e71154d123f00924b8901f07ac8e4928261d732816284c921",
+      "base_passages": [
+        "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE-APPLICATION"
+      ],
+      "append": [
+        {
+          "passage_id": "ACTIVE-THETA-SOURCE-WALDSPURGER-FULL-EIGENSPACE-EARLY-3430",
+          "location": {
+            "pin": {
+              "side": "head",
+              "path": "manuscripts/quartic_v14.tex",
+              "sha256": "1f7bf748843d67c6a67d9863931ff0a15ca2548ae171ec1c1ce34b9002eb70a8"
+            },
+            "start_line": 3430,
+            "end_line": 3433,
+            "excerpt_sha256": "b5cf89583bf1db4d03054ae9d959bfd49c6f84162f818ea85c8e85a352e8170f"
+          }
+        }
+      ],
+      "reason": "The early paragraph explicitly invokes the same fixed even coefficient source and full good-Hecke eigenspace constructed in14530–14622. Both use the same original support S0, same signed parameter convention and same-local-squareclass square identity, including the dyadic class. This is an additional exposition of the same application, not a generalization to an unrelated vector or level.",
+      "preserve_assertion": true,
+      "preserve_supplier": true,
+      "preserve_derivation": true,
+      "set_shared_contract_justification": "The new early site and the retained detailed construction denote the same even coefficient source, eigenspace, signed indices and original support. The detailed application verifies H1, the local squareclasses including2 and the nonzero reference. No assertion of one-dimensionality or arbitrary projection nonvanishing is added."
+    }
+  },
+  "source_roles": [
+    {
+      "path": "v14-rc-odd-normalization-role-repair-001/ROLE-DELTAS.json",
+      "sha256": "0bc856acff5813f00fec9d8c9ed553b73561f88c9767bfb91a4c58b7e7ff51ee"
+    },
+    {
+      "path": "v14-rc-integral-ext-input-001/SOURCE-ROLES.json",
+      "sha256": "d461892b5a1a5ba4ac7b9433c1907b395205b80bef3d0f6afc7530e37ca92bb6"
+    },
+    {
+      "path": "v14-rc-early-waldspurger-repeat-001/SOURCE-ROLES.json",
+      "sha256": "4688c3d87f06ddbbb0ba57d88c3e629a13b2de71e673272a9fea7f0d483fc270"
+    }
+  ]
+}

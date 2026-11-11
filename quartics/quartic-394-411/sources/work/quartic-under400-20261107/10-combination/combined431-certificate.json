@@ -1,0 +1,102 @@
+{
+  "source": "combined435-ir.json",
+  "sourceSha256": "c4c8a0623be27e675f73363043ce2bc44956bd128257060e471abca9b53a0859",
+  "steps": [
+    {
+      "step": "H_j_elimination",
+      "source": "combined439-ir.json",
+      "sourceSha256": "403c4126d532fd3403ce0d87a258790d6b78c1a46cf09716aab0df3a7e84c4df",
+      "target": "primary437-ir.json",
+      "targetSha256": "e488bf3c4e70fda6e0484a51a3a5421cb5b4b0540d3f4cfc3a4192471b00739e",
+      "review": "inputs/primary437-review.md",
+      "reviewSha256": "ae596f97982b2c02bed099b00713457aa5e58ef6153de573577c42b425691d2f",
+      "removedCoordinates": [
+        19,
+        20
+      ],
+      "renamedCoordinates": [
+        700,
+        701
+      ],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "U0.z.definition.0",
+        "U0.z.definition.1"
+      ],
+      "changedRows": [
+        "H.chart.equation.0",
+        "H.chart.equation.1",
+        "V0.f.definition.0",
+        "V0.f.definition.1",
+        "V0.reciprocal.g.definition.0",
+        "V0.reciprocal.g.definition.1",
+        "logV0.definition.0",
+        "logV0.definition.1"
+      ],
+      "addedRows": {},
+      "variablesAfter": 433,
+      "residualsAfter": 410
+    },
+    {
+      "step": "scalar_norm_root",
+      "source": "inputs/scalar-shift450-ir.json",
+      "sourceSha256": "31d5e21d5101f31fd47352dea36dae7eb0faa5498a22cab26ebb62799d9be7e6",
+      "target": "inputs/scalar-root449-ir.json",
+      "targetSha256": "02ce0dcbeeba90a52bfba28c6968f09bcd3471c4b76847b57987f72cb6175549",
+      "review": "inputs/scalar-root-review.md",
+      "reviewSha256": "ef0daf4038d42faafeb57ec8b735cb20b2a4df127d68dd978292eeb84e2eb5f9",
+      "removedCoordinates": [
+        536
+      ],
+      "renamedCoordinates": [],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "reduced_scalar.constant_node"
+      ],
+      "changedRows": [
+        "reduced_scalar.root"
+      ],
+      "addedRows": {},
+      "variablesAfter": 432,
+      "residualsAfter": 409
+    },
+    {
+      "step": "scalar_depth24",
+      "source": "inputs/scalar-root449-ir.json",
+      "sourceSha256": "02ce0dcbeeba90a52bfba28c6968f09bcd3471c4b76847b57987f72cb6175549",
+      "target": "inputs/scalar24-448-ir.json",
+      "targetSha256": "e9d6622ef87381ed2f735e849aa537ac178ccc30ec1675f32cee0be38b435609",
+      "review": "inputs/scalar24-review.md",
+      "reviewSha256": "ac3142ee515d79b88ee85dc9951f4d495ee43ca2a6fc16473f2badc5637d8221",
+      "removedCoordinates": [
+        605
+      ],
+      "renamedCoordinates": [
+        541
+      ],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "scalar.r_power_64.definition"
+      ],
+      "changedRows": [
+        "reduced_scalar.ratio_node_squared",
+        "reduced_scalar.root",
+        "scalar.ratio_node.consolidated_denominator"
+      ],
+      "addedRows": {},
+      "variablesAfter": 431,
+      "residualsAfter": 408
+    }
+  ],
+  "statistics": {
+    "variables": 431,
+    "witnesses": 430,
+    "residuals": 408,
+    "degree": 4,
+    "monomials": 6456,
+    "content": 1,
+    "maximumCoefficient": "16*3^(2^26)",
+    "candidateSha256": "180968baa12a26f0171eeeb337df61b293a3a122786929e28b9fc94c55ba5573",
+    "polynomialSha256": "3f9ec023f0c850d0ef39b16f0832f49ce55dc4e5d009bcbd77fa69e1b72c5f50"
+  }
+}

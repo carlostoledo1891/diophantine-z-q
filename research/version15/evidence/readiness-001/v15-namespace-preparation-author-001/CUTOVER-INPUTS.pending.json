@@ -1,0 +1,112 @@
+{
+  "schema": "v15-offline-cutover-template/v1",
+  "status": "incomplete_not_executable_or_approved",
+  "candidate_manifest": {
+    "path": "work/v15-controller-integration-author-001/MANIFEST.json",
+    "sha256": "c1665c1ab5baba295533f1c78e976189b4df714e782e1a5ff8b69534dd5acc92"
+  },
+  "controller_identity": {
+    "repository": "elliotglazer/research-review-controller",
+    "repository_id": 1449903511,
+    "commit": "a7016ba2c686dcd6a49be5654eda19fff31a2c51",
+    "tree": "fe33aac18e3cf30b33430d9e6d7d3bda6293208e"
+  },
+  "namespace_ledger_ids": {
+    "protocol-state": {
+      "operator": "elliot-research-operator-20261107",
+      "intake": "elliot-research-intake-20261107"
+    },
+    "protocol-state-v15": {
+      "operator": "elliot-research-operator-v15-20261110",
+      "intake": "elliot-research-intake-v15-20261110"
+    }
+  },
+  "key_ids": {
+    "collector": "collector-20261107",
+    "intake": "intake-20261107",
+    "operator": "operator-20261107"
+  },
+  "publication_identity": {
+    "app_id": 5663093,
+    "base_ref": "main",
+    "installation_id": 179741595,
+    "repository": "elliotglazer/diophantine-z-q",
+    "repository_id": 1446122118,
+    "required_merge_ci": [],
+    "target_mode": "head"
+  },
+  "old_config": {
+    "path": "work/v15-controller-integration-author-001/candidate/controller/config.json",
+    "sha256": "062926978a4b20625ebbdd56fb00f57d222fda9ac44e1f54a4ddbf4c6186e357"
+  },
+  "old_route": {
+    "schema": "protocol-state-routing/v1",
+    "active": "protocol-state",
+    "namespaces": {
+      "protocol-state": {
+        "operator": "elliot-research-operator-20261107",
+        "intake": "elliot-research-intake-20261107"
+      }
+    },
+    "owners": null
+  },
+  "new_route": {
+    "schema": "protocol-state-routing/v1",
+    "active": "protocol-state-v15",
+    "namespaces": {
+      "protocol-state": {
+        "operator": "elliot-research-operator-20261107",
+        "intake": "elliot-research-intake-20261107"
+      },
+      "protocol-state-v15": {
+        "operator": "elliot-research-operator-v15-20261110",
+        "intake": "elliot-research-intake-v15-20261110"
+      }
+    },
+    "owners": null
+  },
+  "new_config": null,
+  "authenticated_export": {
+    "descriptor": null,
+    "descriptor_sha256": null,
+    "files": null,
+    "trusted_existing_keys_reference": null
+  },
+  "historical_publishers_reference": {
+    "path": "work/v15-controller-integration-author-001/HISTORICAL-PUBLISHERS.json",
+    "sha256": "2883a3476308cbe671faabc18dc986f8dfd14c59cbe9959ec2d7361cc08156d0"
+  },
+  "cutover": {
+    "old_branch": "protocol-state",
+    "old_state_commit": null,
+    "old_index_sha256": null,
+    "no_active_writers": null,
+    "finalization_complete": null
+  },
+  "cutover_review": null,
+  "bootstrap_observation": {
+    "schema": "protocol-bootstrap-ref-observation/v1",
+    "repository": "elliotglazer/research-review-controller",
+    "repository_id": 1449903511,
+    "approved_controller_sha": null,
+    "refs": null
+  },
+  "bootstrap_review": null,
+  "current_v15": {
+    "source_head": null,
+    "pr_number": null,
+    "base_commit": null,
+    "merge_commit": null,
+    "packet": null,
+    "job": null,
+    "selected_reports": null
+  },
+  "limits": [
+    "Old ledger IDs must match authenticated final export.",
+    "Historical owner map is derived from all authenticated freezes/captures/publisher generations and targets; never reconstruct from only current job.",
+    "New owners copy every old owner and add only actual reviewed V15 head; no reassignment.",
+    "Controller candidate base commit is not the future approved deployment commit.",
+    "Review fields remain null; no mock acceptance may be used operationally.",
+    "All remote mutation remains with root, with fresh absence/no-writer/retired-state checks and create-only ref semantics."
+  ]
+}

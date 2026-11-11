@@ -1,0 +1,97 @@
+{
+  "source": "inputs/accepted470-ir.json",
+  "sourceSha256": "eff9369864da6bd2ed46fa300f51f5a0cc9217d3b790380713644ee31f512b72",
+  "steps": [
+    {
+      "step": "V0_reciprocal",
+      "source": "inputs/released498.json",
+      "sourceSha256": "7682a1229149c75e27322e86dec424449b55321b06c48e468f90fa78bcebb61a",
+      "target": "v0-493-ir.json",
+      "targetSha256": "09a3b7255cc50441945b5bcfd4eb1fdcb5def3fff95d06cd4255d364c41c29b9",
+      "review": "inputs/v0-review.md",
+      "reviewSha256": "3c5993c12b85ee7e755b35610ae8365330767295d90e9c4a41417fe4e9457020",
+      "removedCoordinates": [
+        100,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "renamedCoordinates": [],
+      "addedCoordinates": {
+        "700": 700,
+        "701": 701
+      },
+      "deletedRows": [
+        "V0.dxInverse.definition.0",
+        "V0.slope.definition.0",
+        "V0.slope.definition.1",
+        "V0.slopeSquare.0.definition",
+        "V0.slopeSquare.1.definition",
+        "V0.yProduct.0.definition",
+        "V0.yProduct.1.definition"
+      ],
+      "changedRows": [
+        "V0.f.definition.0",
+        "V0.f.definition.1",
+        "logV0.definition.0",
+        "logV0.definition.1"
+      ],
+      "addedRows": {
+        "V0.reciprocal.g.definition.0": 661,
+        "V0.reciprocal.g.definition.1": 662
+      },
+      "variablesAfter": 465,
+      "residualsAfter": 434
+    },
+    {
+      "step": "four_tangent_guards",
+      "source": "inputs/released498.json",
+      "sourceSha256": "7682a1229149c75e27322e86dec424449b55321b06c48e468f90fa78bcebb61a",
+      "target": "inputs/tangent494-four-ir.json",
+      "targetSha256": "aaa0c6be2f08693591565bd586083255b589fe91d76f6bf718fcc29d9a57e9e7",
+      "review": "inputs/tangent-review.md",
+      "reviewSha256": "acf41c8597365475ed9fe04603290452eab05c726ad6123a94c3407897f4ee3e",
+      "removedCoordinates": [
+        108,
+        116,
+        124,
+        132
+      ],
+      "renamedCoordinates": [],
+      "addedCoordinates": {},
+      "deletedRows": [
+        "V1.dxInverse.definition.0",
+        "V2.dxInverse.definition.0",
+        "V3.dxInverse.definition.0",
+        "V4.dxInverse.definition.0"
+      ],
+      "changedRows": [],
+      "addedRows": {
+        "V1.completeTangent.0": 663,
+        "V1.completeTangent.1": 664,
+        "V2.completeTangent.0": 665,
+        "V2.completeTangent.1": 666,
+        "V3.completeTangent.0": 667,
+        "V3.completeTangent.1": 668,
+        "V4.completeTangent.0": 669,
+        "V4.completeTangent.1": 670
+      },
+      "variablesAfter": 461,
+      "residualsAfter": 438
+    }
+  ],
+  "statistics": {
+    "variables": 461,
+    "witnesses": 460,
+    "residuals": 438,
+    "degree": 4,
+    "monomials": 6996,
+    "content": 1,
+    "maximumCoefficient": "16*3^(2^26)",
+    "candidateSha256": "73d16931a8e6fb9c50927b2d059899eb77157ef76ab6d9e38fb6536a5601c99a",
+    "polynomialSha256": "e02d354ae1796e3e5fa3acecc46cf03e9392d85ba29b05663a8066740fc39bdd"
+  }
+}
